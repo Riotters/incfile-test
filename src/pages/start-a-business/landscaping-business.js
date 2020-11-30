@@ -177,7 +177,7 @@ const LandscapingBusiness = () => (
 
             <Paragraph big>The size of the landscaping sector may surprise you:</Paragraph>
 
-            <BlueBoxWithAbsoluteText absoluteText="$800B" text="Revenue in 2017, which is around 0160,000 per business." />
+            <BlueBoxWithAbsoluteText absoluteText="$800B" text="Revenue in 2017, which is around 160,000 per business." />
             <BlueBoxWithAbsoluteText absoluteText="4.8%" text="Revenues growing rate of the industry year on year." />
             <BlueBoxWithAbsoluteText absoluteText="15%" text="Generated revenues of the industry's top 50 landscaping companies." />
             <BlueBoxWithAbsoluteText absoluteText="$16B" text="U.S. households spent on lawn care and gardening services in 2015." />
@@ -310,7 +310,7 @@ const LandscapingBusiness = () => (
             </div>
 
             <div style={{ marginBottom: "30px" }}>
-              <Adventages headline="Marketing" text="Creating competitive services with reasonable profit margins, factoring in employee and materials costs" width="100%" />
+              <Adventages headline="Service pricing" text="Creating competitive services with reasonable profit margins, factoring in employee and materials costs" width="100%" />
             </div>
 
             <div style={{ marginBottom: "30px" }}>

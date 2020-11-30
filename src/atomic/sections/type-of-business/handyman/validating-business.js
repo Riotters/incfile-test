@@ -142,20 +142,9 @@ const ValidatingBusinessIdea = () => (
                         business stand out.
                     </Paragraph>
 
-                    <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", marginTop: "48px", color: color.black}}>
-                        These are all great starting points for a home handyman, but you will need to build on them to
-                        make the business your own. It’s your unique skills and approach that will really help your
-                        business stand out.
-                    </Paragraph>
-
                     <Paragraph big>
-                        Before committing too much time, energy and money into your new handyman business, it’s
-                        important to test the marketplace.
-                    </Paragraph>
-                    <Paragraph big>
-                        Not every idea you have will make it to becoming a handyman business. There are all sorts of
-                        reasons to say “yes” or “no” to specific businesses, so think about what your strengths and
-                        weaknesses are so you can choose a handyman business you’d be great at.
+                        Getting started is relatively easy, but sustaining a living and building success is harder. 
+                        Before committing too much time, energy and money into your new handyman business, it’s important to test the marketplace.
                     </Paragraph>
                 </TitleBox>
 
@@ -231,6 +220,11 @@ const ValidatingBusinessIdea = () => (
                     </TextBlockWithImage>
 
                 </GridSectionList>
+                <Paragraph big style={{ justifyContent: "center", width: "100%", maxWidth: "750px", margin: "auto" }}>
+                    Not every idea you have will make it to becoming a handyman business. There are all sorts of
+                    reasons to say “yes” or “no” to specific businesses, so think about what your strengths and
+                    weaknesses are so you can choose a handyman business you’d be great at.
+                </Paragraph>
             </GridSection>
 
         </Container>

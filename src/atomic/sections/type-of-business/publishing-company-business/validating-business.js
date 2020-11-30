@@ -105,9 +105,6 @@ const ValidatingBusinessIdea = () => (
                     <Paragraph big>
                         Before committing too much time, energy and money into your new publishing business, it’s important to test the marketplace.
                     </Paragraph>
-                    <Paragraph big>
-                        The thing to learn here is that it’s okay to say “no” to your first, second or third publishing business ideas. Very few entrepreneurs get it right the first time. In fact, getting it wrong is often a badge of honor! Still, you don’t want to waste too much time, energy or money on the wrong initiatives, so ask and answer these questions honestly to find the right way forward.
-                    </Paragraph>
                 </TitleBox>
 
                 <GridSectionList>
@@ -155,6 +152,9 @@ const ValidatingBusinessIdea = () => (
                     </TextBlockWithImage>
 
                 </GridSectionList>
+                <Paragraph big style={{ justifyContent: "center", width: "100%", maxWidth: "750px", margin: "auto" }}>
+                    The thing to learn here is that it’s okay to say “no” to your first, second or third publishing business ideas. Very few entrepreneurs get it right the first time. In fact, getting it wrong is often a badge of honor! Still, you don’t want to waste too much time, energy or money on the wrong initiatives, so ask and answer these questions honestly to find the right way forward.
+                </Paragraph>
             </GridSection>
 
         </Container>

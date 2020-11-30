@@ -32,7 +32,7 @@ const SettingBusiness = () => (
           <h4>Finances and Taxes</h4>
           <p>
             You will need a separate business bank account for your food truck business. You might also want to consider a business credit card. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile{" "}
-            <Link to="/business-accounting/">we can even help you file your taxes</Link>.
+            <Link style={{ fontWeight: "bold" }} to="/business-accounting/">we can even help you file your taxes</Link>.
           </p>
         </TopImageBox>
 
@@ -47,10 +47,9 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="location" color={color.red3}>
-          <h4>Location of Your Daycare: In Home or Out?</h4>
+          <h4>Location of your Food Truck business</h4>
           <p>
-            You’ll mainly be operating your business from the truck itself, and this will be your most important initial investment. You need a truck that has enough space to work, can fit all your equipment, allows easy access to customers, will fit into most parking lots and is easy to repair and
-            maintain.
+            You’ll mainly be operating your business from the truck itself, and this will be your most important initial investment. You need a truck that has enough space to work, can fit all your equipment, allows easy access to customers, will fit into most parking lots and is easy to repair and maintain.
             <br />
             <br />
             You might buy an empty truck and build it out yourself, buy a truck that’s already been fitted out for food service or even get a preowned vehicle. Make sure you explore all your options and figure them into your business plan and expenses.
@@ -58,10 +57,9 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="side-4" color={color.green3}>
-          <h4>Equipment for Your Daycare</h4>
+          <h4>Equipment for Your Food Truck</h4>
           <p>
-            You will need cooking and other special equipment for your food truck. Depending on the type of food you make, you may need a stove top, oven, grill, refrigerator, broiler or other cooking equipment. The appliances you choose will need to be engineered to fit into your food truck and
-            secured so they’re safe to use.
+            You will need cooking and other special equipment for your food truck. Depending on the type of food you make, you may need a stove top, oven, grill, refrigerator, broiler or other cooking equipment. The appliances you choose will need to be engineered to fit into your food truck and secured so they’re safe to use.
           </p>
         </TopImageBox>
       </ImageBoxes>

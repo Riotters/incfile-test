@@ -115,10 +115,6 @@ const WorldOfPhotography = () => (
                         these services in your area and any other local factors likely to impact the amount of photography
                         business you can win.
                     </Paragraph>
-                    <Paragraph big>
-                        The most popular types of photography in descending order are: portrait, fine arts, events, wedding,
-                        advertising, photojournalism, nature, marketing, products and architecture.
-                    </Paragraph>
                 </TitleBox>
 
                 <AdventagesBox>
@@ -279,6 +275,10 @@ const WorldOfPhotography = () => (
                         </Paragraph>
                     </AdventagesWithLongText>
                 </AdventagesBox>
+                <Paragraph big style={{ justifyContent: "center", width: "100%", maxWidth: "750px", margin: "auto" }}>
+                    The most popular types of photography in descending order are: portrait, fine arts, events, wedding,
+                    advertising, photojournalism, nature, marketing, products and architecture.
+                </Paragraph>
             </GridSection>
 
         </Container>

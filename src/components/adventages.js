@@ -29,40 +29,40 @@ const Wrapper = styled.div`
 `;
 
 const Box = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 100%;
-	width: 100%;
-	max-width: 100%;
-	padding: 56px 40px 40px;
-	position: relative;
-	background-color: ${color.white};
-	box-shadow: ${shadow.white1};
-	border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 56px 40px 40px;
+    position: relative;
+    background-color: ${color.white};
+    box-shadow: ${shadow.white1};
+    border-radius: 20px;
 
-	@media (min-width: ${(props) => props.width}) {
-		max-width: ${(props) => props.width};
-	}
+    @media (min-width: ${props => props.width}){
+        max-width: ${props => props.width};
+    }
+    
+    h4 {
+        width: 100%;
+        line-height: 27px;
+    }
 
-	h4 {
-		width: 100%;
-		line-height: 27px;
-	}
+    p {
+        margin-top: 16px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
 
-	p {
-		margin-top: 16px;
-		width: 100%;
-		font-size: 16px;
-		line-height: 24px;
-
-		a {
-			font-size: inherit;
-			line-height: inherit;
-			font-weight: bold;
-		}
-	}
-`;
+        a {
+            font-size: inherit;
+            line-height: inherit;
+            font-weight: bold;
+        }
+    }
+`
 
 const Circle = styled.span`
 	display: flex;

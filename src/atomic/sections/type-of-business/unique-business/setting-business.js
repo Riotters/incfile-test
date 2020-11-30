@@ -55,7 +55,7 @@ const SettingBusiness = () => (
             You will need a separate{" "}
             <a href="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">
               business bank account
-            </a>
+            </a>{" "}
             for your business, and you might also want to consider a{" "}
             <a href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024" target="_blank" rel="noopener noreferrer">
               business credit card

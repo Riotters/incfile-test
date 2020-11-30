@@ -13,7 +13,7 @@ export const about = {
   text: `S Corporations can be a great way to reduce the amount of tax that you pay as a business owner. You can be treated as an S Corporation by the Internal Revenue Service (IRS) in a couple of different ways. You can choose to originally file as an S Corporation, or you can start a limited liability company (LLC) and file a Form 2553 to be treated as an S Corporation for tax purposes.`,
   button: {
     text: `File Form 2553`,
-    url: `/`,
+    url: `/llc-s-corp-election/`,
   },
   header2: `Taking Earnings and Profits Out of an S Corporation`,
   list: {
@@ -23,7 +23,7 @@ export const about = {
   text2: `It’s the difference between your salary amount and your distribution amount, which reduces the amount of tax that you owe.`,
   button2: {
     text: `Learn More About S Corps`,
-    url: `/`,
+    url: `/what-is-s-corporation/`,
   },
   header3: `How an S Corporation Saves You Money`,
   text3: `S Corporations reduce your taxes by lessening the amount of payroll or self-employment tax you pay. Money that you take out as a distribution is not subject to the 15.3 percent payroll or self-employment tax, whereas your regular salary payments are.`,
@@ -80,7 +80,7 @@ export const about = {
   },
   button4: {
     text: `Have Incfile Do Your Taxes For You`,
-    url: `/`,
+    url: `/business-accounting/`,
   },
   text11: `This information is not intended to provide finance or tax advice, and everyone’s tax circumstances are different. Speak to a qualified accountant or tax preparer about your situation to ensure you get the right information and support to file and pay your taxes properly.`,
 };

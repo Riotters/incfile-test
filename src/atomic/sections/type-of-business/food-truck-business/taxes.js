@@ -7,6 +7,7 @@ import { color } from "../../../../components/styles/colors";
 import { shadow } from "../../../../components/styles/shadows";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 import { adventages2 } from "../../../../static/type-of-business/food-truck-business";
+import parse from "html-react-parser";
 
 const Taxes = () => (
 	<Wrapper>
@@ -17,7 +18,7 @@ const Taxes = () => (
 				headline="Maintaining Your Food Truck Business Documentation"
 				text="There are certain forms and legalities you need to follow to keep your food truck business in good standing."
 			/>
-
+  
 			<Container>
 				<AdventagesBox>
 					<CurveWrapper>
@@ -31,7 +32,7 @@ const Taxes = () => (
 							urlText={item.urlText}
 							circleText={item.circleText}
 							headline={item.headline}
-							text={item.text}
+							text={parse(item.text)}
 							circlePosition="center"
 							circleBackgroundColor={color.blue1}
 							circleBackgroundShadow={shadow.blue1}

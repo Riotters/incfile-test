@@ -34,14 +34,9 @@ export const howToGuide = [
 		marginBottom: 16,
 	},
 	{
-		type: `text`,
-		content: `Briefly, the benefits of starting a Mississippi LLC include:`,
-		marginBottom: 16,
-	},
-	{
 		type: `list-dot`,
 		content: {
-			header: ``,
+			header: `Briefly, the benefits of starting a Mississippi LLC include:`,
 			list: [
 				`Separating and limiting your personal liability from your business liability and debts`,
 				`Quick and simple filing, management, compliance, regulations and administration of your Mississippi LLC`,
@@ -85,13 +80,13 @@ export const howToGuide = [
 				},
 				{
 					question: `STEP 3: Provide an Official Address for Your MS LLC`,
-					answer: `Every Mississippi LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address must be inside the state of Mississippi, but it cannot be a P.O. Box.`,
+					answer: `<p>Every Mississippi LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address must be inside the state of Mississippi, but it cannot be a P.O. Box.</p></br>
+            <p>You can also use a Virtual Mailbox service if you do not have a physical address.</p>`,
 				},
 				{
 					question: `STEP 4: Assign a Mississippi Registered Agent`,
 					answer: `<p>Every Mississippi LLC must have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Mississippi Secretary of State.</p></br>
           <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Mississippi and must be present to receive important documents for your company during business hours.</p></br>
-          
           <p>At Incfile, all of our packages include a Mississippi Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
           <a href="/mississippi-llc/registered-agents-mississippi-llc/">Learn more about Mississippi Registered Agents.</a>`,
 				},
@@ -121,17 +116,22 @@ export const howToGuide = [
 		marginBottom: 16,
 	},
 	{
+		type: `text`,
+		content: `The Mississippi Secretary of State has plenty of information on forming and running a business in Mississippi. Check out additional resources below.`,
+		marginBottom: 32,
+	},
+	{
 		type: `list-dot`,
 		content: {
-			header: `The Mississippi Secretary of State has plenty of information on forming and running a business in Mississippi. Check out additional resources below.<br>These are all the basic steps for forming an LLC in Mississippi. You’ll find other useful information below.`,
+			header: `These are all the basic steps for forming an LLC in Mississippi. You’ll find other useful information below.`,
 			list: [
 				`<a href="https://www.sos.ms.gov/BusinessServices/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Mississippi Secretary of State for forming and running your KS LLC</a>`,
 				`<a href="https://mdes.ms.gov/employers/" target="_blank" rel="noopener noreferrer">Mississippi Department of Labor for Mississippi employers and hiring</a>`,
-				`<a href="https://www.dor.ms.gov/Business/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Mississippi Department of Revenue for Mississippi taxes/a>`,
+				`<a href="https://www.dor.ms.gov/Business/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Mississippi Department of Revenue for Mississippi taxes</a>`,
 			],
 		},
 		marginBottom: 32,
-		color: color.yellow3,
+		color: color.yellow2,
 	},
 	{
 		type: `header`,
@@ -145,29 +145,32 @@ export const howToGuide = [
 		marginBottom: 32,
 	},
 	{
-		type: `header`,
-		content: `Form a Professional Mississippi LLC`,
-		size: 3,
-		marginBottom: 16,
+		type: `accordion`,
+		content: {
+			items: [
+				{
+					question: `Form a Professional Mississippi LLC`,
+					answer: `<p>Some states, including Mississippi, allow certain occupations to form “Professional LLCs.” These types of business typically have specialized requirements and licensing. Here are the occupations that the MS Secretary of State allows to form Mississippi professional LLCs:</p>
+                <ul>
+                  <li>Public accountants</li>
+                  <li>Dentists</li>
+                  <li>Architects</li>
+                  <li>Veterinarians</li>
+                  <li>Osteopaths</li>
+                  <li>Physicians</li>
+                  <li>Surgeons</li>
+                  <li>Attorneys-at-law</li>
+                </ul>`,
+				},
+				{
+					question: `Form a Foreign LLC in Mississippi`,
+					answer: `<p>If your business is already operating in another state and expanding to Mississippi, you'll need to form a foreign LLC.</p></br>
+          <p><a href="/Mississippi-llc/fees-filing-requirements/">More information on Mississippi filing and licensing requirements here</a></p>`,
+				},
+			],
+		},
+		marginBottom: 48,
 	},
-	{
-		type: `text`,
-		content: `In Mississippi certain professions can form “Professional LLCs.” These are companies providing defined, professional services. Mississippi does not state the specific professions that can form professional LLCs`,
-		marginBottom: 32,
-	},
-	{
-		type: `header`,
-		content: `Form a Foreign LLC in Mississippi`,
-		size: 3,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `<p>If your business is already operating in another state and expanding to Mississippi, you’ll need to form a foreign LLC.</p></br>
-              <p><a href="/mississippi-llc/fees-filing-requirements/">More information on Mississippi filing and licensing requirements here.</a></p>`,
-		marginBottom: 32,
-	},
-
 	{
 		type: `header`,
 		content: `Detailed Information for Your Mississippi LLC`,
@@ -177,7 +180,7 @@ export const howToGuide = [
 	{
 		type: `text`,
 		content: `You’ll find plenty more insight and guidance on the other pages of this guide, including`,
-		marginBottom: 16,
+		marginBottom: 32,
 	},
 	{
 		type: `arrow-link`,
@@ -190,7 +193,7 @@ export const howToGuide = [
 	{
 		type: `text`,
 		content: `How to search the Mississippi business registry of the Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a Mississippi  LLC name and more.`,
-		marginBottom: 16,
+		marginBottom: 32,
 	},
 	{
 		type: `arrow-link`,
@@ -198,7 +201,7 @@ export const howToGuide = [
 			text: `Mississippi  Registered Agents for LLCs`,
 			url: `/mississippi-llc/registered-agents-mississippi-llc/`,
 		},
-		marginBottom: 32,
+		marginBottom: 16,
 	},
 	{
 		type: `text`,
@@ -263,7 +266,7 @@ export const namingYourBusiness = [
 	},
 	{
 		type: `text`,
-		content: `The Mississippi Mississippi of State search tool lets you enter details and search for a Mississippi LLC by the following fields:`,
+		content: `The Mississippi Secretary of State search tool lets you enter details and search for your MS LLC by the following fields:`,
 		marginBottom: 8,
 	},
 	{
@@ -271,10 +274,10 @@ export const namingYourBusiness = [
 		content: {
 			header: ``,
 			list: [
-				`By business entity name.`,
-				`By business entity ID number`,
-				`By a keyword`,
-				`By a Resident Agent's full name or keyword`,
+				`Business Name`,
+				`Business ID`,
+				`Officer Name`,
+				`Registered Agent`,
 			],
 		},
 		marginBottom: 32,
@@ -371,7 +374,7 @@ export const namingYourBusiness = [
 				`Imply a purpose that it would be illegal for your business to carry out`,
 			],
 		},
-		marginBottom: 32,
+		marginBottom: 48,
 		color: color.yellow3,
 		curve: true,
 		curveColor: color.red1,
@@ -402,63 +405,6 @@ export const namingYourBusiness = [
 		marginBottom: 32,
 	},
 	{
-		type: `list-dot`,
-		content: {
-			header: ``,
-			list: [
-				`You cannot use the following words as qualifiers in the overall Mississippi LLC business name: "companies," "corporations," "incorporation," "unlimited," “limited partnerships."`,
-				`Certain restricted words may need additional paperwork if you want to use them in your business name.`,
-			],
-		},
-		marginBottom: 48,
-		color: color.green3,
-	},
-
-	{
-		type: `header`,
-		content: `Business Name Registration for Your Mississippi LLC`,
-		size: 4,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `Once you’ve searched for your Mississippi business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your AK LLC name. There are a couple of ways to do this.`,
-		marginBottom: 16,
-	},
-	{
-		type: `list-dot`,
-		content: {
-			header: ``,
-			list: [
-				`<p>If you don’t want to form your LLC right now, you can reserve the business name with the Mississippi Division of Corporations. You will need to complete a Business Name Registration form and file it with the AK DOC. You do not need to reserve a name if you are forming your business right away.</p></br>
-              <a href="https://www.commerce.mississippi.gov/web/cbpl/Corporations/ReservingRegisteringBusinessName.aspx" target="_blank" rel="noopener noreferrer">Mississippi DOC LLC name reservation form</a>`,
-				`<p>If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Mississippi DOC, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS">let Incfile take care of it for you.</a></p>`,
-			],
-		},
-		marginBottom: 32,
-		color: color.purple3,
-	},
-	{
-		type: `header`,
-		content: `Mississippi LLC Fictitious Names`,
-		size: 4,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `According to the secretary of state website, the state of Mississippi does not register DBA, Assumed Name, Trade Name, Fictitious Name or Sole Proprietorships.`,
-		marginBottom: 16,
-	},
-	{
-		type: `button`,
-		content: {
-			text: `Incfile's assumed bussiness name service`,
-			url: `/fictitious-business-or-trade-name/`,
-		},
-		theme: `primary48`,
-		marginBottom: 32,
-	},
-	{
 		type: `header`,
 		content: `Register Your Mississippi LLC Business Entity`,
 		size: 4,
@@ -474,7 +420,7 @@ export const namingYourBusiness = [
 		content: {
 			header: ``,
 			list: [
-				`<p>If you don’t want to form your Mississippi LLC right now, you can reserve the business name/p></br>`,
+				`<p>If you don’t want to form your Mississippi LLC right now, you can reserve the business name</p></br>`,
 				`<p>If you’re ready to start your Mississippi LLC, you can register it through Incfile`,
 			],
 		},
@@ -489,8 +435,8 @@ export const namingYourBusiness = [
 	},
 	{
 		type: `text`,
-		content: `If you don’t want to form your business immediately, you can reserve a name with the Mississippi Secretary of State. You will need to complete an Application for Name Reservation with the 
-    <a href="https://corp.sos.ms.gov/corp/portal/c/page/login/portal.aspx" target="_blank" rel="noopener noreferrer">Mississippi Secretary of State through their online filing system. You do not need to reserve a name if you are forming your business right away.`,
+		content: `If you don’t want to form your business immediately, you can reserve a name with the Mississippi Secretary of State. You will need to complete an Application for Name Reservation with the Mississippi Secretary of State through their 
+    <a href="https://corp.sos.ms.gov/corp/portal/c/page/login/portal.aspx" target="_blank" rel="noopener noreferrer">online filing system.</a> You do not need to reserve a name if you are forming your business right away.`,
 		marginBottom: 32,
 	},
 	{
@@ -1394,7 +1340,7 @@ export const businessTaxes = [
 	},
 	{
 		type: `text`,
-		content: `Need help? Incfile provides a complete Business Tax Filing service.<a href="/business-accounting/"> Learn more</a>.`,
+		content: `Need help? Incfile provides a complete Business Tax Filing service.<a href="/business-accounting/"> Learn more.</a>.`,
 		marginBottom: 32,
 	},
 	{

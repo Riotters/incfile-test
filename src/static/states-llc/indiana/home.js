@@ -397,8 +397,7 @@ export const namingYourBusiness = [
     content: {
       header: `There are a couple of ways to do this:`,
       list: [
-        `<p>If you don’t want to form your Indiana LLC right now, you can reserve the business name with the Indiana Secretary of State. You will need to complete a Reservation of Business Name and file it with the IN SOS. You do not need to reserve a name if you are forming your business right away.</p>
-          <p><a href="https://www.in.gov/sos/business/2426.htm" target="_blank" rel="noopener noreferrer">Indiana SOS LLC name reservation form.</a></p>`,
+        `If you don’t want to form your Indiana LLC right now, you can reserve the business name with the Indiana Secretary of State. You will need to complete a Reservation of Business Name and file it with the IN SOS. You do not need to reserve a name if you are forming your business right away. <a href="https://www.in.gov/sos/business/2426.htm" target="_blank" rel="noopener noreferrer">Indiana SOS LLC name reservation form.</a>`,
         `If you’re ready to start your Indiana LLC, you can formally file your Articles of Organization with the Indiana SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IN" target="_blank" >let Incfile take care of it for you.</a>`,
       ],
     },

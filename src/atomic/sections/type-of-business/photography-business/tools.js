@@ -85,8 +85,7 @@ const ToolsAndLinks = () => (
                             Photo Marketing Association International Forum
                         </PathLink>
                         <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
-                            We help photographers reach their professional and artistic goals, increase consumer
-                            awareness and help position photography as an art, science and visual recorder of history.
+                            Connect with fellow members of PMA — promoting innovation and education in the business of imaging. Share industry ideas, discuss the latest photo imaging news and expand your network.
                         </Paragraph>
                     </LinkItem>
 

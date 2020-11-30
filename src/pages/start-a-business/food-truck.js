@@ -79,11 +79,11 @@ const FoodTruck = () => (
             </Colorbox>
 
             <Paragraph big style={{ marginTop: "48px" }}>
-              Read on for some insight into creating your own food truck business and becoming a food-based entrepreneur. In this guide we’ll cover:
+                Here’s our simple guide to opening up your successful food truck business. From exploring the types of food trucks you can start to the legalities of setting up your business and the realities of your day to day operations, this guide is here to help.
             </Paragraph>
 
             <Paragraph big style={{ fontFamily: "Avenir", fontWeight: "900", color: color.black }}>
-              Read on for some insight into creating your own gym, fitness center or personal training business and becoming an entrepreneur. In this guide we will cover:
+                Read on for some insight into creating your own gym, fitness center or personal training business and becoming an entrepreneur. In this guide we will cover:
             </Paragraph>
 
             <ListWrapper>
@@ -139,12 +139,9 @@ const FoodTruck = () => (
 
           <PanelWrapper>
             <Heading size={3}>Why You Should Start a Food Truck</Heading>
-            <Paragraph big>
+            <Paragraph big style={{ marginBottom: "80px" }}>
               Food trucks are incredibly popular. Aside from the initial cost of the food truck and equipment, the barriers to entry are fairly low, which makes them an ideal starting point for food-based entrepreneurs. Here are some statistics on the growth and staying power of food truck
               businesses:
-            </Paragraph>
-            <Paragraph big style={{ marginBottom: "80px" }}>
-              This is why food truck businesses are so exciting — how can you be part of that success? We're here to help you figure that out.
             </Paragraph>
 
             <BlueBoxWithAbsoluteText absoluteText="4,000" text="Approximate number of?food truck businesses in the U.S." />
@@ -156,6 +153,10 @@ const FoodTruck = () => (
             <Adventages headline="The most popular types of food trucks are desserts, Central and South American, mixed ethnicity, Greek Mediterranean, Asian and traditional American food like burgers, sandwiches and hot dogs" width="100%" />
 
             <Adventages headline="The industry employs around 15,000 people" width="100%" />
+
+            <Paragraph big>
+              This is why food truck businesses are so exciting — how can you be part of that success? We're here to help you figure that out.
+            </Paragraph>
           </PanelWrapper>
 
           <PanelWrapper>

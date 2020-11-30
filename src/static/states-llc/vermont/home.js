@@ -71,7 +71,7 @@ export const howToGuide = [
 					question: `STEP 2: Search for and Choose a Unique Business Name for Your Vermont LLC`,
 					answer: `<p>You will need a distinctive and original name for your LLC that’s not used by any other business in VT. To find out if another company is using your chosen business name, carry out a business entity name search on the VT Secretary of State website.</p></br>
                    <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to naming your Vermont LLC.</p></br>
-                   <a href="/vermont-llc/how-to-name-your-llc/"> Learn about Vermont LLC Business Naming Rules. </a>`,
+                   <a href="/vermont-llc/how-to-your-name-llc/"> Learn about Vermont LLC Business Naming Rules. </a>`,
 				},
 				{
 					question: `STEP 3: Provide an Official Address for Your VT LLC`,
@@ -115,17 +115,22 @@ export const howToGuide = [
 		marginBottom: 32,
 	},
 	{
+		type: `text`,
+		content: `The Secretary of State has plenty of other information on forming and running a business in Vermont.`,
+		marginBottom: 24,
+	},
+	{
 		type: `list-dot`,
 		content: {
-			header: `The Secretary of State has plenty of other information on forming and running a business in Vermont. You’ll find other useful information below.`,
+			header: `You’ll find other useful information below.`,
 			list: [
 				`<a href="https://sos.vermont.gov/" target="_blank" rel="noopener noreferrer">Vermont Secretary of State for forming and running your LLC</a>`,
 				`<a href="https://labor.vermont.gov/" target="_blank" rel="noopener noreferrer">Vermont Department of Labor for VT employers and hiring</a>`,
 				`<a href="https://tax.vermont.gov/" target="_blank" rel="noopener noreferrer">Vermont Department of Revenue for VT taxes</a>`,
 			],
 		},
-		marginBottom: 32,
-		color: color.yellow3,
+		marginBottom: 48,
+		color: color.yellow2,
 	},
 	{
 		type: `header`,

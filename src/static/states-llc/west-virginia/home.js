@@ -370,36 +370,10 @@ export const namingYourBusiness = [
         `Imply a purpose that it would be illegal for your business to carry out`,
       ],
     },
-    marginBottom: 32,
+    marginBottom: 48,
     color: color.yellow3,
     curve: true,
     curveColor: color.red1,
-  },
-  {
-    type: `header`,
-    content: `Specific LLC Naming Rules for Delaware`,
-    size: 3,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `In addition to the general rules listed above, the Delaware Division of Corporations has some specific business naming rules for your LLC. You will need to follow these rules if you want to name your DE business appropriately.`,
-    marginBottom: 32,
-  },
-  {
-    type: `list-dot`,
-    content: {
-      header: ``,
-      list: [
-        `The name of your LLC may contain the names of members or the words "Club," "Foundation," "Fund," "Institute," "Society," "Union," "Syndicate," or "Trust" instead of “LLC.”`,
-        `The name can include words in a foreign language, as long as you provide a translation into English when filing the LLC.`,
-        `Some words, like “Bank,” “University” or “College” are restricted and need additional paperwork`,
-        `Other words (typically those associated with certain professions and licensed individuals) require the individual to be part of the LLC — doctors, engineers or accountants, for example.`,
-        `The name may contain the name of a member or manager.`,
-      ],
-    },
-    marginBottom: 48,
-    color: color.green3,
   },
   {
     type: `header`,
@@ -420,7 +394,7 @@ export const namingYourBusiness = [
   {
     type: `button`,
     content: {
-      text: `Incfile's dba name service`,
+      text: `Incfile's DBA name service`,
       url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
@@ -443,8 +417,8 @@ export const namingYourBusiness = [
       header: ``,
       list: [
         `<p>If you don’t want to form your West Virginia LLC right now, you can reserve the business name with the West Virginia Secretary of State. You will need to complete an “Application for Name Reservation” and file it with the SOS. You do not need to reserve a name if you are forming your business right away.</p></br>
-              <a href="https://sos.wv.gov/FormSearch/Business/Multiple-Company-Types/nr1.pdf" target="_blank" rel="noopener noreferrer">West Virginia SOS LLC name reservation form</a>`,
-        `<p>If you’re ready to start your West Virginia LLC, you can formally file your Articles of Organization with the Secretary of State, or<a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WV/">let Incfile take care of it for you.</a></p>`,
+              <p><a href="https://sos.wv.gov/FormSearch/Business/Multiple-Company-Types/nr1.pdf" target="_blank" rel="noopener noreferrer">West Virginia SOS LLC name reservation form</a></p>`,
+        `<p>If you’re ready to start your West Virginia LLC, you can formally file your Articles of Organization with the Secretary of State, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WV/">let Incfile take care of it for you.</a></p>`,
       ],
     },
     marginBottom: 32,

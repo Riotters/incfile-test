@@ -92,9 +92,6 @@ const QuestionToAsk = () => (
                     <Paragraph big>
                         Running your own photography business could be a great choice as long as you are aware of a few different areas.
                     </Paragraph>
-                    <Paragraph big>
-                        If you can tick all these boxes, the chances are you would be both a great photographer and run a successful photography business. You’ll get to impress people with amazing visuals and capture memories that clients will always treasure.
-                    </Paragraph>
 
                 </TitleBox>
 
@@ -126,7 +123,7 @@ const QuestionToAsk = () => (
                             The hustle is essential
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
-                            being an expert at secondary photography skills like image editing, photographic manipulation and other areas can help you stand out.
+                            you will likely always be chasing down work and filling up your pipeline.
                         </Paragraph>
                     </TextBlockWithImage>
 
@@ -141,6 +138,10 @@ const QuestionToAsk = () => (
                     </TextBlockWithImage>
 
                 </GridSectionList>
+                <Paragraph big style={{ justifyContent: "center", width: "100%", maxWidth: "750px", margin: "auto" }}
+>
+                    If you can tick all these boxes, the chances are you would be both a great photographer and run a successful photography business. You’ll get to impress people with amazing visuals and capture memories that clients will always treasure.
+                </Paragraph>
             </GridSection>
 
         </Container>

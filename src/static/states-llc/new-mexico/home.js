@@ -29,14 +29,9 @@ export const howToGuide = [
 		marginBottom: 16,
 	},
 	{
-		type: `text`,
-		content: `Briefly, the benefits of starting a New Mexico LLC include:`,
-		marginBottom: 16,
-	},
-	{
 		type: `list-dot`,
 		content: {
-			header: ``,
+			header: `Briefly, the benefits of starting a New Mexico LLC include:`,
 			list: [
 				`Separating and limiting your personal liability from your business liability and debts`,
 				`Quick and simple filing, management, compliance, regulations and administration of your New Mexico LLC`,
@@ -74,9 +69,9 @@ export const howToGuide = [
 				},
 				{
 					question: `STEP 2: Search for and Choose a Unique Business Name for Your New Mexico LLC`,
-					answer: `<p>YYou will need a distinctive and original name for your Montana LLC that's not used by any other business in MS. To find out if another company is using your chosen business name, carry out a Montana business entity name search on the MT Secretary of State website.</p></br>
+					answer: `<p>You will need a distinctive and original name for your Montana LLC that's not used by any other business in MS. To find out if another company is using your chosen business name, carry out a Montana business entity name search on the MT Secretary of State website.</p></br>
                    <p>There are a few rules you'll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your New Mexico LLC.</p></br>
-                   <a href="/new-mexico-llc/how-to-name-your-llc/"> Learn about New Mexico LLC business naming rules.</a>`,
+                   <a href="/New-mexico-llc/how-to-name-your-llc/"> Learn about New Mexico LLC business naming rules.</a>`,
 				},
 				{
 					question: `STEP 3: Provide an Official Address for Your MS LLC`,
@@ -111,14 +106,19 @@ export const howToGuide = [
 	},
 	{
 		type: `header`,
-		content: `Review Information From the New Mexico Secretary of State`,
+		content: `Additional Information from the New Mexico Secretary of State`,
 		size: 3,
 		marginBottom: 16,
 	},
 	{
+		type: `text`,
+		content: `The Secretary of State has plenty of other information on forming and running a business in New Mexico. You’ll find other useful information below.`,
+		marginBottom: 24,
+	},
+	{
 		type: `list-dot`,
 		content: {
-			header: `The New Mexico Secretary of State has plenty of information on forming and running a business in New Mexico. Check out additional resources below.<br>These are all the basic steps for forming an LLC in New Mexico. You’ll find other useful information below.`,
+			header: `These are all the basic steps for forming an LLC in New Mexico. You’ll find other useful information below.`,
 			list: [
 				`<a href="https://www.sos.state.nm.us/online-services/" target="_blank" rel="noopener noreferrer">New Mexico Secretary of State for forming and running your LLC</a>`,
 				`<a href="https://www.dws.state.nm.us/en-us/" target="_blank" rel="noopener noreferrer">New Mexico Department of Labor for New Mexico employers and hiring</a>`,
@@ -140,50 +140,28 @@ export const howToGuide = [
 		marginBottom: 32,
 	},
 	{
+		type: `accordion`,
+		content: {
+			items: [
+				{
+					question: `Foreign LLCs in New Mexico`,
+					answer: `<p>If your business is already operating in another state and expanding to New Mexico, you’ll need to form a foreign LLC.</p></br>
+          <p><a href="/New-Mexico-llc/fees-filing-requirements/">More information on New Mexico filing and licensing requirements here.</a></p>`,
+				},
+				{
+					question: `Professional LLCs in New Mexico`,
+					answer: `<p>Some states have special requirements for “professional LLCs” (PLLCs). These are typically companies that provide professional services that require licensing, like accounting, law, and physical therapy.</p></br>
+          <p>However, New Mexico does not have specialized professional LLCs; instead, regular LLCs in New Mexico can provide professional services.</p>`,
+				},
+			],
+		},
+		marginBottom: 48,
+	},
+	{
 		type: `header`,
-		content: `Form a New Mexico Series LLC`,
+		content: `Other Information in This Guide`,
 		size: 3,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `In New Mexico, you also have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master, umbrella LLC. These can be very useful if you don’t want to set up a separate LLC for every individual business you run.`,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `<a href="/blog/post/series-llc-why-need-one/" target="_blank" rel="noopener noreferrer">Decide if a Series LLC is right for your new business.</a>`,
-		marginBottom: 32,
-	},
-	{
-		type: `header`,
-		content: `Form a Professional New Mexico LLC`,
-		size: 3,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `In New Mexico certain professions can form “Professional LLCs.” These are companies providing defined, professional services. New Mexico does not state the specific professions that can form professional LLCs`,
-		marginBottom: 32,
-	},
-	{
-		type: `header`,
-		content: `Form a Foreign LLC in New Mexico`,
-		size: 3,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `<p>If your business is already operating in another state and expanding to New Mexico, you’ll need to form a foreign LLC.</p></br>
-              <p><a href="/new-mexico-llc/form-filling-permit-requirements/">More information on New Mexico filing and licensing requirements here.</a></p>`,
-		marginBottom: 32,
-	},
-
-	{
-		type: `header`,
-		content: `Detailed Information for Your New Mexico LLC`,
-		size: 4,
-		marginBottom: 16,
+		marginBottom: 24,
 	},
 	{
 		type: `text`,

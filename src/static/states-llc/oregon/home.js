@@ -20,7 +20,7 @@ export const howToGuide = [
 	},
 	{
 		type: `text`,
-		content: `TOregon is bordered by the Pacific Ocean. It is an extremely geographically diverse and beautiful state, and it is home to the largest living organism on the planet! The state’s economy is driven by timber, agriculture, energy, tourism and technology.`,
+		content: `Oregon is bordered by the Pacific Ocean. It is an extremely geographically diverse and beautiful state, and it is home to the largest living organism on the planet! The state’s economy is driven by timber, agriculture, energy, tourism and technology.`,
 		marginBottom: 16,
 	},
 	{
@@ -29,29 +29,24 @@ export const howToGuide = [
 		marginBottom: 16,
 	},
 	{
-		type: `text`,
-		content: `Briefly, the benefits of starting a Oregon LLC include:`,
-		marginBottom: 16,
-	},
-	{
 		type: `list-dot`,
 		content: {
-			header: ``,
+			header: `Briefly, the benefits of starting a Oregon LLC include:`,
 			list: [
 				`Separating and limiting your personal liability from your business liability and debts`,
 				`Quick and simple filing, management, compliance, regulations and administration of your Oregon LLC`,
 				`Easy tax filing and potential advantages for tax treatment`,
 			],
 		},
-		marginBottom: 48,
+		marginBottom: 24,
 		color: color.blue3,
 		curve: true,
 		curveColor: color.red1,
 	},
 	{
 		type: `text`,
-		content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-		marginBottom: 16,
+		content: `<a href="/limited-liability-company/">Learn more about the benefits of the LLC business structure here</a>.`,
+		marginBottom: 48,
 	},
 	{
 		type: `header`,
@@ -74,9 +69,9 @@ export const howToGuide = [
 				},
 				{
 					question: `STEP 2: Search for and Choose a Unique Business Name for Your Oregon LLC`,
-					answer: `<p>YYou will need a distinctive and original name for your Oregon LLC that's not used by any other business in MS. To find out if another company is using your chosen business name, carry out a Oregon business entity name search on the OH Secretary of State website.</p></br>
-                   <p>There are a few rules you'll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Oregon LLC.</p></br>
-                   <a href="/oregon-llc/how-to-name-your-llc/"> Learn about Oregon LLC business naming rules.</a>`,
+					answer: `<p>You will need a distinctive and original name for your Oregon LLC that’s not used by any other business in OR. To find out if another company is using your chosen business name, carry out an Oregon business entity name search on the OR Secretary of State website.</p></br>
+                   <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Oregon LLC.</p></br>
+                   <a href="/oregon-llc/how-to-name-your-llc/">Learn about Oregon LLC business naming rules.</a>`,
 				},
 				{
 					question: `STEP 3: Provide an Official Address for Your Oregon LLC`,
@@ -86,7 +81,6 @@ export const howToGuide = [
 					question: `STEP 4: Assign a Oregon Registered Agent`,
 					answer: `<p>Every Oregon LLC must have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Oregon Secretary of State.</p></br>
           <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Oregon and must be present to receive important documents for your company during business hours.</p></br>
-          
           <p>At Incfile, all of our packages include a Oregon Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
           <a href="/oregon-llc/registered-agents-oregon-llc/">Learn more about Oregon Registered Agents.</a>`,
 				},
@@ -116,9 +110,14 @@ export const howToGuide = [
 		marginBottom: 16,
 	},
 	{
+		type: `text`,
+		content: `The Oregon Secretary of State has plenty of information on forming and running a business in Oregon. Check out additional resources below.`,
+		marginBottom: 24,
+	},
+	{
 		type: `list-dot`,
 		content: {
-			header: `The Oregon Secretary of State has plenty of information on forming and running a business in Oregon. Check out additional resources below.<br>These are all the basic steps for forming an LLC in Oregon. You’ll find other useful information below.`,
+			header: `These are all the basic steps for forming an LLC in Oregon. You’ll find other useful information below.`,
 			list: [
 				`<a href="https://sos.oregon.gov/business/Pages/domestic-limited-liability-companies-forms.aspx" target="_blank" rel="noopener noreferrer">Oregon Secretary of State for forming and running your LLC</a>`,
 				`<a href="https://www.oregon.gov/boli/Pages/P_Employopp.aspx" target="_blank" rel="noopener noreferrer">Oregon Department of Labor for Oregon employers and hiring</a>`,
@@ -126,7 +125,7 @@ export const howToGuide = [
 			],
 		},
 		marginBottom: 32,
-		color: color.yellow3,
+		color: color.yellow2,
 	},
 	{
 		type: `header`,
@@ -140,39 +139,32 @@ export const howToGuide = [
 		marginBottom: 32,
 	},
 	{
-		type: `header`,
-		content: `Form a Professional Oregon LLC`,
-		size: 3,
-		marginBottom: 16,
+		type: `accordion`,
+		content: {
+			items: [
+				{
+					question: `Form a Professional Oregon LLC`,
+					answer: `Some states, including Oregon, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. You can find more details on the occupations that the OH Secretary of State allows to form Oregon professional LLCs.`,
+				},
+				{
+					question: `Form a Foreign LLC in Oregon`,
+					answer: `<p>If your business is already operating in another state and expanding to Oregon, you’ll need to form a foreign LLC.</p></br>
+            <p><a href="/Oregon-llc/fees-filing-requirements/">More information on Oregon filing and licensing requirements here.</a></p>`,
+				},
+			],
+		},
+		marginBottom: 48,
 	},
-	{
-		type: `text`,
-		content: `Some states, including Oregon, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. You can find more details on the occupations that the OH Secretary of State allows to form Oregon professional LLCs `,
-		marginBottom: 32,
-	},
-	{
-		type: `header`,
-		content: `Form a Foreign LLC in Oregon`,
-		size: 3,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `<p>If your business is already operating in another state and expanding to Oregon, you’ll need to form a foreign LLC.</p></br>
-              <p><a href="/oregon-llc/form-filling-permit-requirements/">More information on Oregon filing and licensing requirements here.</a></p>`,
-		marginBottom: 32,
-	},
-
 	{
 		type: `header`,
 		content: `What to Do After Forming Your Oregon LLC`,
-		size: 4,
+		size: 3,
 		marginBottom: 16,
 	},
 	{
 		type: `text`,
-		content: `Want to know your next steps after creating a new LLC in Oregon? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more. `,
-		marginBottom: 32,
+		content: `Want to know your next steps after creating a new LLC in Oregon? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
+		marginBottom: 48,
 	},
 	{
 		type: `header`,
@@ -390,16 +382,10 @@ export const namingYourBusiness = [
 		marginBottom: 32,
 	},
 	{
-		type: `header`,
-		content: `Registering a Business Name in Oregon`,
-		size: 3,
-		marginBottom: 16,
-	},
-	{
 		type: `text`,
 		content: `If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Oregon SOS, or
-    <a href="/oregon-llc/form-filling-permit-requirements/"> let Incfile take care of it for you.</a>.`,
-		marginBottom: 16,
+    <a href="/oregon-llc/fees-filing-requirements/"> let Incfile take care of it for you.</a.`,
+		marginBottom: 48,
 	},
 	{
 		type: `header`,
@@ -409,9 +395,7 @@ export const namingYourBusiness = [
 	},
 	{
 		type: `text`,
-		content: `You might find the following answers useful.
-
-    `,
+		content: `You might find the following answers useful.`,
 		marginBottom: 32,
 	},
 	{

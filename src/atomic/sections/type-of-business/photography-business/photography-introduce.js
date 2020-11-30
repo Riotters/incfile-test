@@ -64,15 +64,6 @@ const PhotographyIntroduce = () => (
                     <ListBox>
                         <CkeckText>
                             <Paragraph big>
-                                Why a lack of money shouldn’t
-                                stop you
-                            </Paragraph>
-                        </CkeckText>
-                    </ListBox>
-
-                    <ListBox>
-                        <CkeckText>
-                            <Paragraph big>
                                 How you can understand the world
                                 of photography
                             </Paragraph>
