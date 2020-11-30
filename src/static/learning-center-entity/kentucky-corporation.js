@@ -257,7 +257,7 @@ export const articlesOfIncorporation = {
     list: [`The name and address of each incorporator`, `The number of shares the corporation is authorized to issue`, `The address of the corporation’s principal office`, `The signature of the registered agent accepting appointment as such, or a separately signed consent document`],
   },
   box2: {
-    header: `It’s also allowable to include other optional provisions into the articles of incorporation for those who want to formalize additional criteria, such as:`,
+    header: `Such as:`,
     list: [
       `The names and addresses of the initial directors`,
       `The corporate purpose(s)`,

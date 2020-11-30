@@ -598,13 +598,13 @@ export const registeredAgent = [
 	},
 	{
 		type: `text`,
-		content: `What can you expect from your Connecticut Registered Agent? Their main function is to accept official documents and correspondence from the CT Secretary of State. This includes:`,
+		content: `What can you expect from your Connecticut Registered Agent? Their main function is to accept official documents and correspondence from the CT Secretary of State.`,
 		marginBottom: 16,
 	},
 	{
 		type: `list-dot`,
 		content: {
-			header: ``,
+			header: `This includes:`,
 			list: [
 				`Correspondence from the Connecticut Secretary of State`,
 				`Service of process notices (e.g., if your CT LLC is sued or required to appear in court)`,
@@ -631,17 +631,12 @@ export const registeredAgent = [
 	{
 		type: `text`,
 		content: `We are authorized to conduct business in Connecticut and can legally act as your Registered Agent.`,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `Here’s what you need to know about Incfile’s CT Registered Agent service:`,
 		marginBottom: 24,
 	},
 	{
 		type: `list-dot`,
 		content: {
-			header: ``,
+			header: `Here’s what you need to know about Incfile’s CT Registered Agent service:`,
 			list: [
 				`The Registered Agent will always be available to accept documents and letters on your behalf`,
 				`We automatically notify you whenever we receive correspondence for your business from the Connecticut Secretary of State or anyone else`,
@@ -780,13 +775,13 @@ export const registeredAgent = [
 	},
 	{
 		type: `text`,
-		content: `What happens if you choose not to assign or provide details of a Registered Agent to the Connecticut Secretary of State? There are several possible ramifications, including:`,
+		content: `What happens if you choose not to assign or provide details of a Registered Agent to the Connecticut Secretary of State?`,
 		marginBottom: 16,
 	},
 	{
 		type: `list-dot`,
 		content: {
-			header: ``,
+			header: `There are several possible ramifications, including:`,
 			list: [
 				`<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
 				`<b>Falling out of good standing with the Connecticut Secretary of State: If you don’t respond to certain correspondence (like the request for your Annual Report), certain states may revoke your right to do business.`,
@@ -804,13 +799,13 @@ export const registeredAgent = [
 	},
 	{
 		type: `text`,
-		content: `If you have an address in Connecticut, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
+		content: `If you have an address in Connecticut, you can choose to be the Registered Agent for your LLC.`,
 		marginBottom: 16,
 	},
 	{
 		type: `list-dot`,
 		content: {
-			header: ``,
+			header: `We don’t recommend this approach as there can be some drawbacks:`,
 			list: [
 				`The CT Registered Agent must have a physical street address in Connecticut. If you’re forming an LLC outside CT, you will need to use an in-state Registered Agent.`,
 				`You always need to have someone on hand during business hours at the Connecticut address to sign for important documents.`,

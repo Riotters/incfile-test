@@ -1059,6 +1059,11 @@ export const feesAndRequirments = [
     color: color.yellow3,
   },
   {
+    type: `text`,
+    content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
+    marginBottom: 32,
+  },
+  {
     type: `header`,
     content: `The Incfile Business License Research Package for Your Maine LLC`,
     size: 4,

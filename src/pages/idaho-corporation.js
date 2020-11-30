@@ -169,7 +169,7 @@ const AlaskaCorporation = () => {
                             <Heading size={3} style={{ marginBottom: "24px" }}>
                                 Requirement Reports
             </Heading>
-                            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
+                            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", color: "#757575" }}>
                                 Idaho corporations must file a report with the Idaho Secretary of State each year (except for the year of incorporation) that includes:
             </Paragraph>
                             <TextBoxed style={{ marginBottom: "8px" }}>

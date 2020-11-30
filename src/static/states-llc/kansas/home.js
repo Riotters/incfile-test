@@ -386,7 +386,7 @@ export const namingYourBusiness = [
 		content: {
 			header: ``,
 			list: [
-				`Are very similar to the name of a federal or AK agency or organization (e.g. FBI, FDA, Kansas Department of Revenue, Kansas Police, Treasury, etc)`,
+				`Are very similar to the name of a federal or KS agency or organization (e.g. FBI, FDA, Kansas Department of Revenue, Kansas Police, Treasury, etc)`,
 				`Suggest affiliation with a federal or state agency or organization`,
 				`Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
 				`Imply a purpose that it would be illegal for your business to carry out`,
@@ -405,7 +405,7 @@ export const namingYourBusiness = [
 	},
 	{
 		type: `text`,
-		content: `In addition to the general rules listed above, the Kansas Secretary of State has some specific business naming rules for your LLC. You will need to follow these rules if you want to name your AK business appropriately.`,
+		content: `In addition to the general rules listed above, the Kansas Secretary of State has some specific business naming rules for your LLC. You will need to follow these rules if you want to name your KS business appropriately.`,
 		marginBottom: 32,
 	},
 	{
@@ -1319,7 +1319,7 @@ export const feesAndRequirments = [
 				},
 				{
 					question: `Do I Need to Pay an Annual Report Fee Every Year?`,
-					answer: `Yes. Most states, including AK, require you to file a report for your LLC every year. You can find out more on the <a href="/compliance-filing-requirement/">compliance page for your state.</a>`,
+					answer: `Yes. Most states, including KS, require you to file a report for your LLC every year. You can find out more on the <a href="/compliance-filing-requirement/">compliance page for your state.</a>`,
 				},
 				{
 					question: `Who Will I Need to Get Business Licenses and Permits From for My Kansas LLC?`,
