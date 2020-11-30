@@ -6,6 +6,7 @@ import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
 import OvalSvg from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import {gradient} from "../../../atoms/styles/colors";
+import {Link} from "@reach/router";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -27,7 +28,7 @@ const SettingBusiness = () => (
                 <TopImageBox image="state-filling-fees" color={color.yellow3}>
                     <h4>Finances and Taxes</h4>
                     <p>
-                        What kind of bank account will you get? Will you need a business credit card? And how will you pay your business taxes? These are all important things to consider so your consulting business stays in the green. Here at Incfile we can even help you file your taxes.
+                        What kind of bank account will you get? Will you need a <Link to="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">business credit card</Link>? And how will you pay your business taxes? These are all important things to consider so your consulting business stays in the green. Here at Incfile we can even <Link to="/business-accounting/">help you file your taxes</Link>.
                     </p>
                 </TopImageBox>
 
@@ -62,7 +63,7 @@ const SettingBusiness = () => (
                 <TopImageBox image="measuring-business-success" color={color.babyblue3}>
                     <h4>Business maintenance</h4>
                     <p>
-                        Most states require businesses to file an Annual Report report once a year. You will also be expected to pay estimated taxes on what you plan to earn in the current business year. And, your federal, state, regional and city business licenses and permits may need to be renewed on a regular basis, typically once a year.
+                        Most states require businesses to file an <Link to="/manage-your-company/annual-report/">Annual Report</Link> report once a year. You will also be expected to pay estimated taxes on what you plan to earn in the current business year. And, your federal, state, regional and city <Link to="/business-license-research-package/">business licenses and permits</Link> may need to be renewed on a regular basis, typically once a year.
                     </p>
                 </TopImageBox>
 

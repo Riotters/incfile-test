@@ -88,9 +88,9 @@ const LandscapingBusiness = () => (
         <CollapseWrapper>
           <PanelWrapper>
             <Heading size={3}>Starting a Landscaping Business</Heading>
-            <Paragraph big>
+            <Paragraph big mixed>
               The most successful businesses in the world are those that meet a genuine personal need — they provide basic necessities to people to help them feel safe, comfortable and looked after. The laundromat is a great example of this type of business, providing a basic but essential service.
-              If online selling or being a digital nomad isn’t for you, a laundromat is a reliable, sustainable alternative.
+              If <Link to="/start-a-business/amazon-business/">online selling</Link> or being a <Link to="/start-a-business/digital-nomad-business/">digital nomad</Link> isn’t for you, a laundromat is a reliable, sustainable alternative.
             </Paragraph>
             <Paragraph big>
               Like cleaning businesses, laundromats help your customers meet their most basic needs — cleanliness and comfort. It might not have the kudos of consultancy or the flashy screens of the latest consumer device, but people will always need clean clothes. Coin-operated laundromat
@@ -578,7 +578,7 @@ const LandscapingBusiness = () => (
       <UsefulTools style={{ paddingBottom: "200px" }} toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
     </ToolsWrapper>
 
-    <Conclusion to="/" buttonTitle="Start your Laundromat Business with us, today">
+    <Conclusion to={process.env.ORDER_URL + "/form-order-now.php"} buttonTitle="Start your Laundromat Business with us, today">
       <Heading size={3} style={{ fontSize: "40px" }}>
         Conclusion
       </Heading>

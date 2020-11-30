@@ -34,6 +34,7 @@ import Conclusion from "../../atomic/sections/general/conclusion";
 import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block";
 import CircleRing from "../../images/circle-graph.inline.svg";
 import OvalSvg from "../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import LightBox from "../../components/LightBox";
 
 const OnlineBusiness = () => (
   <Layout>
@@ -83,6 +84,7 @@ const OnlineBusiness = () => (
             <Paragraph big style={{ marginTop: "48px" }}>
               Here is our simple guide to starting up a successful online business. From exploring the types of business you can go into through validation and research, to the legalities of setting up your business and the realities of your day to day operations, this guide is here to help.
             </Paragraph>
+            <LightBox thumbnailVideo="how-to-start-online-business-4569" videoID="zQGomf4mwFA" />
             <Paragraph big style={{ marginTop: "48px" }}>
               Read on for some insight into creating your own online business and becoming an internet entrepreneur.
             </Paragraph>
@@ -136,7 +138,7 @@ const OnlineBusiness = () => (
 
     <ToolsAndLinks />
 
-    <Conclusion to="/" buttonTitle="Start your Online Business with us, today">
+    <Conclusion to={process.env.ORDER_URL + "/form-order-now.php"} buttonTitle="Start your Online Business with us, today">
       <Heading size={3} style={{ fontSize: "48px" }}>
         Conclusion
       </Heading>

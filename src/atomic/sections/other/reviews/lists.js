@@ -78,11 +78,11 @@ const optionsSort = [
     { value: `highest`, label: `High to Low` },
     { value: `lowest`, label: `Lowest to Highest` },
     { value: `newest`, label: `Newsest to Oldest` },
-    {value: `oldest`, label: `Oldest to Newest`},
+    { value: `oldest`, label: `Oldest to Newest` },
 ];
 
 const ListReviews = () => {
-    const totalReviews = 70;
+    const [total, setTotal] = useState(70);
     const [reviews, setReviews] = useState([]);
     const [loading, setLoading] = useState(true);
     const [filters, setFilters] = useState({
@@ -116,6 +116,7 @@ const ListReviews = () => {
     React.useEffect(() => {
         getReviews(filters._currentPage, filters._limit, filters._sort).then(data => {
             const res = [];
+            console.log(data);
             Object.keys(data).forEach(key => {
                 const vKey = data[key];
                 if (vKey.display_name) {
@@ -131,6 +132,7 @@ const ListReviews = () => {
             })
             
             setReviews(res);
+            // setTotal(data.total_count);
             setLoading(false);
         })
     }, [filters]);
@@ -175,7 +177,7 @@ const ListReviews = () => {
 
                         <Footer>
                             <div className="left">
-                                <Pagination totalRecords={totalReviews} perPage={filters._limit} setCurrentPage={setCurrentPage} />
+                                <Pagination totalRecords={total} perPage={filters._limit} setCurrentPage={setCurrentPage} />
                                 <Drop
                                     options={optionsSort}
                                     placeholder="Featured Reviews"

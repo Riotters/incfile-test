@@ -149,7 +149,6 @@ const MenuLink = styled(Link)`
   line-height: 16px;
   text-decoration: none;
   padding-right: 10px;
-  white-space: nowrap;
 
   @media (min-width: 1200px) {
     font-size: 16px;
@@ -207,6 +206,7 @@ const FlexRow = styled.div`
   justify-content: center;
   height: 100%;
   align-items: center;
+  padding-right: 17px;
   
   @media screen and (max-width: 992px) {
     justify-content: space-between;
@@ -303,7 +303,6 @@ const Login = styled.a`
     line-height: 32px;
     text-align: center;
     text-decoration: none;
-    white-space: nowrap;
     position: relative;
     padding: 6px 38px;
     margin: 24px 0 12px;
@@ -388,10 +387,10 @@ const Header = ({ siteTitle }) => {
       <MobileWrapper showNav={menu}>
         <Navigation>
           <Menu>
-            <MenuItem onClick={handleHeaderClick} className="menu-item-l1">
+            <MenuItem className="menu-item-l1">
               <FlexRow>
                 <MenuLink to="/start-your-company/">Review Entity Type</MenuLink>
-                <div>
+                <div onClick={handleHeaderClick}>
                   <DropdownSVG />
                 </div>
               </FlexRow>
@@ -415,10 +414,10 @@ const Header = ({ siteTitle }) => {
                 </SubmenuColumn>
               </DropdownMenu>
             </MenuItem>
-            <MenuItem onClick={handleHeaderClick} className="menu-item-l1">
+            <MenuItem className="menu-item-l1">
               <FlexRow>
                 <MenuLink to="/manage-your-company/">Manage Your Company</MenuLink>
-                <div>
+                <div onClick={handleHeaderClick}>
                   <DropdownSVG />
                 </div>
               </FlexRow>
@@ -489,10 +488,12 @@ const Header = ({ siteTitle }) => {
                 </SubmenuColumn>
               </DropdownMenu>
             </MenuItem>
-            <MenuItem onClick={handleHeaderClick} className="menu-item-l1">
+            <MenuItem className="menu-item-l1">
               <FlexRow>
                 <MenuLink to="/business-entity-comparison/">Learning Center</MenuLink>
-                <DropdownSVG />
+                <div onClick={handleHeaderClick}>
+                  <DropdownSVG />
+                </div>
               </FlexRow>
               <DropdownMenu>
                 <SubmenuColumn>
@@ -574,10 +575,12 @@ const Header = ({ siteTitle }) => {
                 </SubmenuColumn>
               </DropdownMenu>
             </MenuItem>
-            <MenuItem onClick={handleHeaderClick} className="menu-item-l1">
+            <MenuItem className="menu-item-l1">
               <FlexRow>
                 <MenuLink to="/about/">About</MenuLink>
-                <DropdownSVG />
+                <div onClick={handleHeaderClick}>
+                  <DropdownSVG />
+                </div>
               </FlexRow>
               <DropdownMenu>
                 <SubmenuColumn>

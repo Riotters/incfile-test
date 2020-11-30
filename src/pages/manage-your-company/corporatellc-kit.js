@@ -10,6 +10,7 @@ import GetFormationKit from "../../atomic/sections/manage-your-company/corporate
 import Articles from "../../components/partials/sections/articles";
 //texts
 import { top, unboxing, getFormationKit } from "../../static/corporate-llc-kit"
+import Cta from "../../atomic/sections/general/cta";
 
 const CorporateLlcKit = () => (
   <Layout>
@@ -23,6 +24,7 @@ const CorporateLlcKit = () => (
     </Top>
     <Unboxnig content={unboxing} />
     <GetFormationKit content={getFormationKit} />
+    <Cta />
     <Articles />
   </Layout>
 );

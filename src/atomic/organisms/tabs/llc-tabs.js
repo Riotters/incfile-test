@@ -184,11 +184,15 @@ const Arrow = styled.div`
 const Boxes = styled.div`
   display: flex;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 100%;
   grid-gap: 10px;
   width: 100%;
   position: relative;
   margin-bottom: 32px;
+  
+  @media (min-width: 576px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 const CircleWhite = styled.div`

@@ -157,7 +157,7 @@ const TeenBusiness = () => (
 
     <ToolsAndLinks />
 
-    <Conclusion to="/" buttonTitle="Start your Teen Business with us, today">
+    <Conclusion to={process.env.ORDER_URL + "/form-order-now.php"} buttonTitle="Start your Teen Business with us, today">
       <Heading size={3} style={{ fontSize: "48px" }}>
         Conclusion
       </Heading>

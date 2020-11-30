@@ -14,14 +14,14 @@ export const LicensesAccordionContent = {
                 },
                 {
                     text: `state-by-state guides to company formation`,
-                    url: `/`
+                    url: `/llc-state-information/`
                 },
                 {
                     text: `Alternatively, the Small Business Administration website has a`
                 },
                 {
                     text: `list of licenses and permits by state`,
-                    url: `/`
+                    url: `https://www.sba.gov/starting-business/business-licenses-permits/state-licenses-permits`
                 }
             ]
         },
@@ -33,7 +33,7 @@ export const LicensesAccordionContent = {
                 },
                 {
                     text: `details of any national or federal licenses and permits`,
-                    url: `/`
+                    url: `https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits`
                 },
                 {
                     text: `you might need.`
@@ -119,7 +119,7 @@ export const MaintainingAccordionContent = {
                 },
                 {
                     text: `We can file your Annual Report on your behalf.`,
-                    url: `/`
+                    url: `/manage-your-company/annual-report/`
                 }
             ]
         },
@@ -330,7 +330,7 @@ export const AccordionCounting = {
                 },
                 {
                     text: `guide to getting your EIN.`,
-                    url: `/`
+                    url: `/manage-your-company/tax-id-ein/`
                 }
             ]
         },
@@ -362,7 +362,7 @@ export const AccordionCounting = {
         {
             count: 7,
             question: "Learn About Legal Requirements and Responsibilities to Employees",
-            answer: "You do have certain responsibilities and requirements for hiring employees. In addition to getting a proper employment contract in place with them, you have a duty to provide them with a safe working environment, proper training, regular pay and certain other criteria. OSHA covers your health and safety requirements, while the U.S. Department of Labor provides information on other responsibilities."
+            answer: "You do have certain responsibilities and requirements for hiring employees. In addition to getting a proper employment contract in place with them, you have a duty to provide them with a safe working environment, proper training, regular pay and certain other criteria. <a href='https://www.osha.gov/as/opa/worker/employer-responsibility.html'>OSHA</a> covers your health and safety requirements, while the <a href='https://www.dol.gov/general/topics'>U.S. Department of Labor</a> provides information on other responsibilities."
         }
     ]
 }

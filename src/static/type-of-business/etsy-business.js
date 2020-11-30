@@ -7,7 +7,7 @@ export const BusinessInsuranceAccordionContent = {
             answer: [
                 {
                     text: `Workers’ compensation insurance `,
-                    url: `/`,
+                    url: `/blog/post/forming-an-llc-with-employees-means-purchasing-workers-compensation/`,
                 },
                 {
                     text: `provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining. You only need this insurance if you have employees.`
@@ -109,7 +109,7 @@ export const FinancesAccordionContent = {
                 },
                 {
                     text: `setting up a business account`,
-                    url: `/`
+                    url: `/research-topics/general-research/required-business-account-paperwork/`
                 },
                 {
                     text: ` for your Etsy company.`
@@ -132,7 +132,7 @@ export const FinancesAccordionContent = {
                 },
                 {
                     text: `Small Business Administration also lists financing`,
-                    url: `/`
+                    url: `https://www.sba.gov/node/13710`
                 },
                 {
                     text: ` you may be eligible for.`
@@ -147,7 +147,7 @@ export const FinancesAccordionContent = {
                 },
                 {
                     text: `Learn more today.`,
-                    url: `/`
+                    url: `https://www.capitalone.com/small-business/credit-cards/spark-cash/?external_id=INCFILE1&utm_medium=lp&utm_campaign=capitalone&utm_source=incfile&utm_content=vertical`
                 }
             ]
         },
@@ -159,34 +159,34 @@ export const FinancesAccordionContent = {
                 },
                 {
                     text: `QuickBooks,`,
-                    url: `/`
+                    url: `https://quickbooks.intuit.com/`
                 },
                 {
                     text: `FreshBooks,`,
-                    url: `/`
+                    url: `https://www.freshbooks.com/`
                 },
                 {
                     text: `FreeAgent,`,
-                    url: `/`
+                    url: `https://www.freeagent.com/`
                 },
                 {
                     text: `ZipBooks,`,
-                    url: `/`
+                    url: `https://zipbooks.com/`
                 },
                 {
                     text: `Wave Accounting,`,
-                    url: `/`
+                    url: `https://www.waveapps.com/`
                 },
                 {
                     text: `Xero,`,
-                    url: `/`
+                    url: `https://www.xero.com/`
                 },
                 {
                     text: ` and `
                 },
                 {
                     text: `Bench`,
-                    url: `/`
+                    url: `https://bench.co/`
                 },
                 {
                     text: `. Quickbooks, Wave Accounting and Outright will directly link to and integrate with your Etsy store, making financial management and reconciliation much easier.`

@@ -32,6 +32,7 @@ import Regulations from "../../atomic/sections/type-of-business/home-business/re
 import Taxes from "../../atomic/sections/type-of-business/home-business/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/home-business/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
+import {Link} from "@reach/router";
 
 const HomeBusiness = () => (
   <Layout>
@@ -43,7 +44,7 @@ const HomeBusiness = () => (
     <Top ovalColor="green" imageName="home-business-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
       <h1>How to Start a Home-Based Business</h1>
       <p>
-        Starting a new business can be a major undertaking, so for entrepreneurs wanting to start off small, a home-based business is a great idea. You’ll learn a great deal about running a business successfully, while avoiding many of the costs associated with larger businesses, like office rental,
+          Starting a new business can be a major undertaking, so for entrepreneurs wanting to start off small, <Link to="/blog/post/how-start-home-business/">a home-based business is a great idea</Link>. You’ll learn a great deal about running a business successfully, while avoiding many of the costs associated with larger businesses, like office rental,
         utilities or hiring employees.
       </p>
       <ButtonsBox>
@@ -129,7 +130,7 @@ const HomeBusiness = () => (
 
     <ToolsAndLinks />
 
-    <Conclusion to="/" buttonTitle="Start your business with us, today">
+    <Conclusion to={process.env.ORDER_URL + "/form-order-now.php"} buttonTitle="Start your business with us, today">
       <Heading size={3} style={{ fontSize: "40px", marginTop: "300px" }}>
         Conclusion
       </Heading>
