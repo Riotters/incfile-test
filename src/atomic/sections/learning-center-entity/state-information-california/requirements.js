@@ -108,7 +108,7 @@ const RequirementsSection = ({ className, content, data }) => {
 			header: `Compliance  Requirements`,
 			text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state. Failure to file this report can lead to the company being revoked or administratively dissolved.`,
 			link: {
-				text: `Other State's Ongoing`,
+				text: `Other State Requirements`,
 				url: `/compliance-filing-requirement/`,
 			},
 		},

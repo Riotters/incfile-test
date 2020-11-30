@@ -117,7 +117,7 @@ export const howToGuide = [
       header: `The PA Department of State has plenty of additional information on forming and running a business in Pennsylvania:`,
       list: [
         `<a href="https://www.dos.pa.gov/BusinessCharities/Business/Resources/Pages/Pennsylvania-Limited-Liability-Company.aspx" target="_blank" rel="noopener noreferrer">Pennsylvania Department of State for forming and running your PA LLC.</a>`,
-        `<a href="https://www.dli.pa.gov/Pages/PageNotFoundError.aspx?requestUrl=https://www.dli.pa.gov/Businesses/Pages/Services-and-Information-for-Employers.aspx" target="_blank" rel="noopener noreferrer">Pennsylvania Department of Labor for PA employers and hiring.</a>`,
+        `<a href="https://www.dli.pa.gov/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Pennsylvania Department of Labor for PA employers and hiring.</a>`,
         `<a href="https://www.revenue.pa.gov/OnlineServices/BusinessTaxes/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Pennsylvania Department of Revenue for PA taxes.</a>`,
       ],
     },
@@ -1639,7 +1639,7 @@ export const requirements = {
             text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
             text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
-              text: `Other State's Ongoing`,
+              text: `Other State Requirements`,
               url: `/`,
             },
           },

@@ -246,14 +246,6 @@ export const HomePageContent = {
         content: `Learn about Georgia naming rules, fictitious names, how to reserve a name and how to check business name availability using Incfile’s <a href="/business-name-search/" >dedicated Business Name Search tool.</a>`,
       },
       {
-        type: "button",
-        theme: `secondary56`,
-        content: {
-          text: `Search For Your Georgia LLC Name`,
-          url: `/business-name-search/`,
-        },
-      },
-      {
         type: "arrow-links",
         content: [
           {
