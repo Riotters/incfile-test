@@ -144,7 +144,7 @@ const Button = styled.button`
   min-width: 80px;
   width: 100%;
   color: #4e4e4e;
-  align-items: center;
+  align-items: flex-start;
   background: #fff;
   display: flex;
   cursor: pointer;
@@ -152,6 +152,10 @@ const Button = styled.button`
   border-radius: 5px;
   overflow: hidden;
   border: none;
+  
+  @media (min-width: 576px) {
+    align-items: center;
+  }
 
   &.active {
     border-radius: 5px 5px 0 0;
@@ -166,9 +170,15 @@ const Button = styled.button`
 const Content = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-grow: 1;
-  padding: 16px 40px 16px 0;
+  padding: 16px 20px 16px 0;
+  min-height: 100px;
+  
+  @media (min-width: 576px) {
+    align-items: center;
+    min-height: unset;
+  }
 
   span {
     color: #4e4e4e;
@@ -184,13 +194,16 @@ const Icon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80px;
-  width: 80px;
-  min-height: 80px;
-  min-width: 80px;
-  max-height: 80px;
-  max-width: 80px;
   opacity: 0.75;
+  position: absolute;
+  top: 55px;
+  z-index: 1;
+  
+  @media (min-width: 576px) {
+    position: static;
+    height: 32px;
+    width: 32px;
+  }
 
   svg {
     transform: rotate(180deg);
@@ -258,10 +271,10 @@ const AccordionWithCounting = ({ content, curve, curveRight, curveRightBottom, t
                     <Content>
                       <Counting>{item.count}</Counting>
                       <span>{item.question}</span>
+                      <Icon>
+                        <ArrowSVG />
+                      </Icon>
                     </Content>
-                    <Icon>
-                      <ArrowSVG />
-                    </Icon>
                   </Tab>
                   <Panel>
                     <PanelWrapper>

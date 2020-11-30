@@ -19,4 +19,8 @@ export const calculator = {
     text: `Calculate my sales tax`,
     url: `/`,
   },
+  button2: {
+    text: `Start Over`,
+    url: `/`,
+  },
 };

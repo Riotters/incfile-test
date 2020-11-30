@@ -33,8 +33,7 @@ const SettingBusiness = () => (
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
           <h4>Finances and Taxes</h4>
           <p>
-            You will need a separate business bank account for your party planning business. You might also want to consider a business credit card. Additionally, you will need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile
-            <Link to="/business-accounting/">we can even help you file your taxes</Link>.
+            You will need a separate <Link to="https://utility.bankofamerica.com/alliance/?formid=IF1">business bank account</Link> for your party planning business. You might also want to consider a business credit card. Additionally, you will need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile <Link to="/business-accounting/">we can even help you file your taxes</Link>.
           </p>
         </TopImageBox>
 

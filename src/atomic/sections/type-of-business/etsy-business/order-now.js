@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "../../../container";
 import LeftImageRightContent from "../../../../components/partials/blocks/left-content-right-image";
-import Button from "../../../../components/button";
 import styled from "styled-components";
 import OvalLeftSvg from "../../../../images/oval-orange-3.inline.svg";
 import OvalRightSvg from "../../../../images/oval-orange-4.inline.svg";
@@ -9,6 +8,8 @@ import OvalRight2Svg from "../../../../images/ovals/top-left-transparent-blue2.i
 import Curve from "../../../../images/curve-orange.inline.svg";
 import TabScrollable from "./TabScrollable";
 import { color } from "../../../atoms/styles/colors";
+import {Link} from "@reach/router";
+import Button from "../../../molecules/buttons/button";
 
 const OrderNow = ({ layout, columns }) => (
 	<>

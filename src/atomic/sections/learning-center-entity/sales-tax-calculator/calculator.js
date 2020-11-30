@@ -332,7 +332,12 @@ const CalculatorSection = ({ content, onSelectState, state, id }) => {
                         </TopImageBox>
                     </ImageBoxes>
                 )}
-                <Button content={content.button} theme="primary56" margin="0 0 32px 0" arrow onClick={(e) => calculatorTaxAmount(e, state.tax_rate)} />
+                {(!showResult || error) && (
+                    <Button content={content.button} theme="primary56" margin="0 0 32px 0" arrow onClick={(e) => calculatorTaxAmount(e, state.tax_rate)} />
+                )}
+                {showResult && !error && (
+                    <Button content={content.button2} theme="primary56" margin="0 0 32px 0" arrow onClick={(e) => calculatorTaxAmount(e, state.tax_rate)} />
+                )}
                 {error && (
                     <Paragraph big mixed={true} bottomMargin={0}>
                         {parser(error)}

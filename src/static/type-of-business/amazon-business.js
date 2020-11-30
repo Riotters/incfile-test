@@ -105,3 +105,13 @@ export const RingText = {
         }
     ]
 }
+
+export const hsForm = {
+    header: `Download our "Guide to Starting an Amazon Business".`,
+    text: `Not sure how to start your Amazon business? This guide has everything you'll need to know!`,
+    hs_form_id: `f8b25ab5-7a9a-4f21-b7db-425ede0e6750`,
+    button: {
+        text: "Download now",
+        url: "/",
+    },
+};

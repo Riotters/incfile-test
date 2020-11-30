@@ -7,6 +7,7 @@ import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
 import ContentCenter from "../../../partials/content-center";
 import {gradient} from "../../../atoms/styles/colors";
+import {Link} from "@reach/router";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -62,9 +63,9 @@ const SettingBusiness = () => (
                 <TopImageBox image="measuring-business-success" color={color.babyblue3}>
                     <h4>Business maintenance</h4>
                     <p>
-                        Most states require businesses to file an Annual Report once a year. You will also be expected
+                        Most states require businesses to file an <Link to="/manage-your-company/annual-report/">Annual Report</Link> once a year. You will also be expected
                         to pay estimated taxes on what you plan to earn in the current business year. Your federal,
-                        state, regional and city business licenses and permits may need to be renewed on a regular
+                        state, regional and city <Link to="/business-license-research-package/">business licenses and permits</Link> may need to be renewed on a regular
                         basis, typically once a year.
                     </p>
                 </TopImageBox>

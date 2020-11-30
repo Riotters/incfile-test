@@ -10,6 +10,7 @@ import TabHeading from "../../atomic/organisms/tabs/TabHeading";
 import TabTitle from "../../atomic/molecules/tabs/tab-title";
 import Tab1Icon from "../../images/icons/franchise-business.inline.svg";
 import Tab2Icon from "../../images/icons/light.inline.svg";
+import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
 import CollapseWrapper from "../../atomic/organisms/tabs/collapse";
 import PanelWrapper from "../../atomic/organisms/tabs/panel";
 import { Paragraph } from "../../atomic/atoms/typography/paragraph";
@@ -32,6 +33,12 @@ import styled from "styled-components";
 import OrderNow from "../../atomic/sections/type-of-business/franchise-business/order-now";
 import { color } from "../../atomic/atoms/styles/colors";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
+import TextBlockWithImage from "./landscaping-business";
+import CaseIcon from "../../images/icons/case-white.inline.svg";
+import {shadow} from "../../atomic/atoms/styles/shadows";
+import TaxesIcon from "../../images/icons/taxes-icon.inline.svg";
+import AgentIcon from "../../images/icons/registered-agent-case.inline.svg";
+import BuildingIcon from "../../images/icons/building.inline.svg";
 
 const FranchiseBusiness = () => (
   <Layout>
@@ -173,7 +180,7 @@ const FranchiseBusiness = () => (
 
     <ToolsAndLinks />
 
-    <Conclusion to="/" buttonTitle="Start your Franchise Business with us, today">
+    <Conclusion to={process.env.ORDER_URL + "/form-order-now.php"} buttonTitle="Start your Franchise Business with us, today">
       <Heading size={3} style={{ fontSize: "48px" }}>
         Conclusion
       </Heading>

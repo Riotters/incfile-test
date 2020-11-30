@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, {useState, useRef, useEffect} from "react";
 import { navigate } from "gatsby";
 import styled from "styled-components";
 import SearchSVG from "../../../../images/search.inline.svg";
@@ -25,7 +25,6 @@ const Box = styled.form`
   height: 80px;
   width: 100%;
   background-color: #fff;
-  padding: 0 0 0 40px;
   position: relative;
   border-radius: 5px 0 0 5px;
   margin-bottom: 16px;
@@ -52,8 +51,12 @@ const Input = styled.input`
   font-family: Avenir;
   font-size: 16px;
   line-height: 19px;
-  margin-left: 16px;
-`
+  padding: 0 0 0 15px;
+  
+  @media (min-width: 576px) {
+    padding: 0 0 0 40px;
+  }
+`;
 
 const SearchButton = styled.button`
     display: flex;
@@ -105,6 +108,16 @@ const Searchbar = ({ typeSubmit, getBusinessNames, ...rest }) => {
         }
     }
 
+    useEffect(() => {
+        if (window.innerWidth > 767) {
+            searchInput.current.setAttribute("placeholder", "Enter keywords like the type of business, ie: cupcakes");
+        }
+        else {
+            searchInput.current.setAttribute("placeholder", "Enter keywords");
+        }
+    });
+    
+
     return (
         <>
             <Helmet>
@@ -119,8 +132,7 @@ const Searchbar = ({ typeSubmit, getBusinessNames, ...rest }) => {
                         id="search"
                         type="text"
                         ref={searchInput}
-                        onChange={e => setKeyWord(e.target.value)}
-                        placeholder="Enter keywords like the type of business, ie: cupcakes" />
+                        onChange={e => setKeyWord(e.target.value)} />
                     <SearchButton>
                         <Icon>
                             <SearchSVG />

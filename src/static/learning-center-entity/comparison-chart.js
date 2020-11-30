@@ -96,7 +96,7 @@ export const about = {
 			},
 			{
 				header: `The C Corporation`,
-				text: `A C Corp, also known as a C Corporation, is a type of business entity that is formed and regulated on a state level. It is created by filing “Articles of Incorporation” with the secretary of state within the state of incorporation. It is the most formal type of company and a corporate structure. The policies and cost of creating a C Corp vary from state to state. Factors affecting whether you would want to create a C Corp include:`,
+				text: `A <a href='/what-is-c-corporation/'>C Corp, also known as a C Corporation</a>, is a type of business entity that is formed and regulated on a state level. It is created by filing “Articles of Incorporation” with the secretary of state within the state of incorporation. It is the most formal type of company and a corporate structure. The policies and cost of creating a C Corp vary from state to state. Factors affecting whether you would want to create a C Corp include:`,
 				box: {
 					header: `Factors affecting whether you would want to create a C Corp include:`,
 					list: [
@@ -131,7 +131,7 @@ export const about = {
 			},
 			{
 				header: `The Nonprofit Corporation`,
-				text: `A Nonprofit Corporation is a type of corporation that donates any revenues generated to achieve a specific goal that is of public benefit. Nonprofit corporations are allowed to create profits, however those profits must be used to preserve the existence and expansion of the corporation.`,
+				text: `A <a href='/what-is-non-profit-corporation/'>Nonprofit Corporation</a> is a type of corporation that donates any revenues generated to achieve a specific goal that is of public benefit. Nonprofit corporations are allowed to create profits, however those profits must be used to preserve the existence and expansion of the corporation.`,
 				text2: `In the United States, a nonprofit corporation is formed by filing articles of incorporation in the state in which it will operate. Incorporating the nonprofit creates a legal entity and enables the organization to be treated as a corporation by law, granting it the same rights and privileges afforded to for-profit corporations.`,
 				header2: `How Taxes Work In A Nonprofit`,
 				text3: `Unlike the the Limited Liability Company and the S Corporation, a corporation is required to file a corporate tax return and pay corporation taxes on any profits. When those taxes are paid to shareholders as dividends, they will also be subjected to taxation on that individual’s tax return. This is known as “double taxation.”`,
@@ -152,7 +152,7 @@ export const about = {
 			{
 				header: `A Note on Sole Proprietorships and Partnerships`,
 				text: `Before closing, a word on sole-proprietorships and partnerships: although these may not be “formal” business entities, some people may choose to complete work as a sole proprietor or partner. In these cases, there’s generally no separate business entity — the business and the proprietor (or partnership) are effectively one and the same. This means all income, expenses and other financial matters would be reported on an individual’s personal tax return, and they’d pay tax accordingly. It also means there’s no separation for areas like personal liability.`,
-				text2: `We always recommend setting up a formal business entity — it keeps everything neater, removes personal liability for your business, and may have several tax advantages. Incorporate your business today using Incfile's three easy steps to online business formation.`,
+				text2: `We always recommend setting up a formal business entity — it keeps everything neater, removes personal liability for your business, and may have several tax advantages. Incorporate your business today using <a href='${process.env.ORDER_URL}/form-order-now.php'>Incfile's three easy steps to online business formation.</a>`,
 			},
 		],
 	},

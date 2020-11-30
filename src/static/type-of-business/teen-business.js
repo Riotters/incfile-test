@@ -18,7 +18,7 @@ export const typeBusiness = {
             circleText: 3,
             imageName: "etsy-image",
             headline: "Create and Sell Products",
-            text: "If you have artistic talent, you can even sell the products that you make. You can do this through a marketplace like Etsy, or create your own store to sell art, prints and other creations. Websites like CafePress and Zazzle will even put your designs onto items and take care of everything else for you."
+            text: "If you have artistic talent, you can even sell the products that you make. You can do this through a marketplace like <a href='/start-a-business/etsy-business'>Etsy</a>, or create your own store to sell art, prints and other creations. Websites like CafePress and Zazzle will even put your designs onto items and take care of everything else for you."
         },
         {
             circleText: 4,

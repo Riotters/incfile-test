@@ -56,7 +56,7 @@ const SettingBusiness = () => (
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
           <h4>Finances and Taxes</h4>
           <p>
-            You will need a separate business bank account for your gym or personal training business. You might also want to consider a business credit card. Additionally, you will need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile{" "}
+            You will need a separate <Link to="https://utility.bankofamerica.com/alliance/?formid=IF1">business bank account</Link> for your gym or personal training business. You might also want to consider a <Link to="https://www.cardratings.com/advisors/incfile?&CCID=20415686204666272&QTR=ZZf201908011042310Za20415686Zg255Zw0Zm0Zc204666272Zs7273ZZ&CLK=719201129032210073&src=663024&&exp=y">business credit card</Link>. Additionally, you will need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile{" "}
             <Link to="/business-accounting/">we can even help you file your taxes</Link>.
           </p>
         </TopImageBox>

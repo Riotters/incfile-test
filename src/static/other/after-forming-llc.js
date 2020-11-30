@@ -22,21 +22,21 @@ export const about = {
           },
           {
             text: `annual reports`,
-            url: `/`,
+            url: `/manage-your-company/annual-report/`,
           },
           {
             text: `and state franchise tax reports, to be filed at different times. Failure to file these reports can lead to the company being revoked or administrative`,
           },
           {
             text: `business dissolution.`,
-            url: `/`,
+            url: `/manage-your-company/dissolution/`,
           },
           {
             text: `Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages—or you can`,
           },
           {
             text: `research filing times yourself.`,
-            url: `/`,
+            url: `/compliance-filing-requirement/`,
           },
         ],
       },
@@ -48,7 +48,7 @@ export const about = {
           },
           {
             text: `trademark`,
-            url: `/`,
+            url: `/trademark.php`,
           },
           {
             text: `is an essential asset for your business because it protects the brand name and identity that you worked so hard to create. When you secure a federal trademark for your business brand, it gives you exclusive rights to use your business name, logo or slogan once the trademark is approved. Federal Trademark Protection also prevents other businesses from using your brand name and brand identity. Incfile is happy to help with conducting a trademark name search on your business name. Our partnered attorneys will do the research to make sure the mark isn't already taken, ensure the filing is properly prepared and submitted to the government office, and provide sound legal advice throughout the entire process.Benefits of Incfile's Trademark service include:`,
@@ -60,7 +60,7 @@ export const about = {
           },
           {
             text: `Incfile's Trademark service`,
-            url: `/`,
+            url: `/trademark-name-search/`,
           },
           {
             text: `include:`,
@@ -81,14 +81,14 @@ export const about = {
           },
           {
             text: `business checking account`,
-            url: `/`,
+            url: `https://utility.bankofamerica.com/alliance/?formid=IF1`,
           },
           {
             text: `for your business should have minimum fees, so that your money goes into the business or your own checking account instead of spending on hidden, tricky bank fees.`,
           },
           {
             text: `According to NerdWallet`,
-            url: `/`,
+            url: `https://www.nerdwallet.com/best/banking/free-business-checking-accounts`,
           },
           {
             text: `— who looked at the 10 biggest banks in the U.S. and some additional online banks — these are the best four free business checking accounts for your LLC:`,
@@ -124,7 +124,7 @@ export const about = {
           },
           {
             text: `Expensify`,
-            url: `/`,
+            url: `https://www.expensify.com/`,
           },
           {
             text: `to track and tag business expenses from your mobile phone.`,
@@ -137,7 +137,7 @@ export const about = {
           },
           {
             text: `top 10 business credit cards in 2020`,
-            url: `/`,
+            url: `https://www.cardratings.com/advisors/incfile?&CCID=20415686204666272&QTR=ZZf201908011042310Za20415686Zg255Zw0Zm0Zc204666272Zs7273ZZ&CLK=652200221042247735&src=663024&&exp=y`,
           },
           {
             text: `that we highly recommend for small businesses.`,
@@ -149,7 +149,7 @@ export const about = {
         text7: [
           {
             text: `QuickBooks:`,
-            url: `/`,
+            url: `https://quickbooks.intuit.com/oa/selfemployed/?utm_source=oaqbse_aff&utm_medium=aff&utm_content=priorityCode=3969702399&cid=aff_cj_7898336&cvosrc=affiliate.cj.7898336&cvo_campaign=qbo_trial&priorityCode=3969702399&aid=12170614`,
           },
           {
             text: `This is a top option for a lot of business owners and starts out at only $10 a month. You can automatically important banking transactions, track your customers and vendors and related bills and expenses, and integrate with a lot of other online finance tools. If you hire an accountant or tax support, they will all likely support QuickBooks. You can even use an online version in addition to a desktop version of their software. The drawback is that the learning curve for QuickBooks can sometimes be a bit steep.`,
@@ -158,7 +158,7 @@ export const about = {
         text8: [
           {
             text: `Xero:`,
-            url: `/`,
+            url: `https://www.xero.com/`,
           },
           {
             text: `Xero is online accounting software that is a great option for those who find QuickBooks to be too complicated and difficult to understand. Their plans start out at $20 per month.`,
@@ -167,7 +167,7 @@ export const about = {
         text9: [
           {
             text: `FreshBooks:`,
-            url: `/`,
+            url: `https://www.freshbooks.com/?ref=10400&utm_source=sas&utm_medium=affiliate&utm_campaign=938781`,
           },
           {
             text: `Freshbooks is online accounting software that allows you to also track your time, expenses, collaborate on projects and view accounting reports. One drawback is that it doesn’t currently have a way to track invoices that your business needs to pay. But, accounts start out at $15 per month.`,
@@ -176,7 +176,7 @@ export const about = {
         text10: [
           {
             text: `Bench:`,
-            url: `/`,
+            url: `https://bench.co/`,
           },
           {
             text: `Bench not only allows you to track your accounts receivable, but they include the help of a real-life bookkeeper to run your accounting every month. For a Bench account starting out at $125 a month, this is quite the deal instead of hiring your own bookkeeper.`,
@@ -189,14 +189,14 @@ export const about = {
           },
           {
             text: `Shopify`,
-            url: `/`,
+            url: `https://www.shopify.com/`,
           },
           {
             text: `or`,
           },
           {
             text: `Square.`,
-            url: `/`,
+            url: `https://squareup.com/us/en`,
           },
         ],
         header8: `Look Into Business Funding Options`,
@@ -206,7 +206,7 @@ export const about = {
           },
           {
             text: `SBA & BusinessUSA’s financing tools.`,
-            url: `/`,
+            url: `https://www.sba.gov/node/13710`,
           },
           {
             text: `Also, it’s important to remember that you can also bootstrap your business — which means, only using the funds you have in your bank account and not expanding until you get more business income.`,
@@ -222,14 +222,14 @@ export const about = {
           },
           {
             text: `Web.com.`,
-            url: `/`,
+            url: `https://incfile.web.com/business-email/?trkID=PTNd237b3W`,
           },
           {
             text: `Then you need to choose a service to host your website such as`,
           },
           {
             text: `Snapweb.`,
-            url: `/`,
+            url: `https://xoopah.com/website-voucher-discount/?ref=INCFILE`,
           },
           {
             text: `Finally, design your website using a tool such as SquareSpace or WordPress. Make sure your website includes important business information such as how to contact you and business hours.`,
@@ -242,7 +242,7 @@ export const about = {
           },
           {
             text: `Grasshopper,`,
-            url: `/`,
+            url: `https://grasshopper.o9o4.net/c/1320313/503375/8652`,
           },
           {
             text: `which allows you to get a business phone that actually forwards to your cell phone, so you never miss an important call.`,
@@ -255,14 +255,14 @@ export const about = {
           },
           {
             text: `99 Designs`,
-            url: `/`,
+            url: `http://www.jdoqocy.com/click-7898336-11012409-1442446947000?cm_mmc=CJ-_-4607662-_-7898336-_-99designs%20-%20Text`,
           },
           {
             text: `or buy some really high-quality pre-made logos you can customize on`,
           },
           {
             text: `CreativeMarket.`,
-            url: `/`,
+            url: `https://creativemarket.com/`,
           },
         ],
         header5: `Get Business Cards Created`,
@@ -272,7 +272,7 @@ export const about = {
           },
           {
             text: `Vistaprint.`,
-            url: `/`,
+            url: `https://www.vistaprint.com/business-cards?txi=15626&xnid=TopNav_Business+Cards&xnav=TopNav&GP=04%2f28%2f2017+14%3a14%3a22&GPS=4378726571&GNF=0`,
           },
         ],
       },

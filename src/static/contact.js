@@ -1,3 +1,5 @@
+import {color} from "../atomic/atoms/styles/colors";
+
 export const existing = {
 	header: `Using your Client Dashboard`,
 	text: `Your client dashboard will become the central document repository and management tool that will allow you to actively
@@ -11,6 +13,56 @@ export const existing = {
 		phone1: `844.830.8267`,
 		phone2: `877.919.2613`,
 	},
+	cards: [
+		{
+			content: {
+				header: `<a href='/dashboard'>Login</a>`,
+				text: "Use this link to access your the client dashboard directly from our site. The login credentials will always be the associated email address and order number.",
+			},
+			image: "icon-login-4503",
+			color: color.blue3
+		},
+		{
+			content: {
+				header: `<a href='/dashboard'>Company Information</a>`,
+				text: "Review and obtain pertinent company information. (Please remember to always keep a valid email address on file as this will be the primary method of contact)",
+			},
+			image: "icon-company-information-2201",
+			color: color.orange3
+		},
+		{
+			content: {
+				header: `<a href='/dashboard'>Order History & Receipts</a>`,
+				text: "Use this tab to review company order history and to access associated receipts.",
+			},
+			image: "icon-order-history-and-receipts-9940",
+			color: color.yellow3
+		},
+		{
+			content: {
+				header: `<a href='/dashboard'>Track Status</a>`,
+				text: "You can always check the progress of your order or review any pending issues form this tab.",
+			},
+			image: "icon-track-status-2295",
+			color: color.purple3
+		},
+		{
+			content: {
+				header: `<a href='/dashboard'>Registered Agent</a>`,
+				text: "Obtain the name and address of your designated registered agent and review important documents. (<strong>Documents received by the your agent will be uploaded to the registered agent tab and a corresponding notification email will be deployed.</strong>)",
+			},
+			image: "icon-change-registered-agent-7749",
+			color: color.green3
+		},
+		{
+			content: {
+				header: `<a href='/compliance-filing-requirement/'>Ongoing Requirements</a>`,
+				text: "Always be in the know of the ongoing requirements such as annual reports or other obligatory filing requirements associated with your entity. A documents tab will also be available to you upon the completion of the order.",
+			},
+			image: "icon-ongoing-filling-requirements-9483",
+			color: color.babyblue3
+		},
+	]
 };
 
 export const newSales = {

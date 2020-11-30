@@ -613,8 +613,8 @@ const LandscapingBusiness = () => (
           >
             Special Considerations for Setting up a Landscaping Business Entity
           </Paragraph>
-          <Paragraph big>For more information on the advantages and disadvantages of different types of businesses, please see our in-depth guide on business entities. If you still have questions, we’ve answered them to help you choose the right business structure.</Paragraph>
-          <Paragraph big>In most cases our recommendation would be to create an LLC. We have a complete guide to everything you need to do, and we can set one up for your landscaping business. LLC formation does vary from state to state, but we’ve got you covered, wherever you are.</Paragraph>
+          <Paragraph big>For more information on the advantages and disadvantages of different types of businesses, please see our in-depth guide on business entities. If you still have questions, <Link to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/">we’ve answered them to help you choose the right business structure</Link>.</Paragraph>
+          <Paragraph big mixed>In most cases our recommendation would be to create an LLC. We have <Link to="/form-an-llc/">a complete guide to everything you need to do</Link>, and we can set one up for your landscaping business. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but we’ve got you covered, wherever you are.</Paragraph>
           <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />
         </ImageContent>
       </BusinessOwnerResponsibilities>
@@ -628,7 +628,7 @@ const LandscapingBusiness = () => (
 
     <UsefulTools style={{ paddingBottom: "200px" }} toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
 
-    <Conclusion to="/" buttonTitle="Start your Landscaping Business with us, today">
+    <Conclusion to={process.env.ORDER_URL + "/form-order-now.php"} buttonTitle="Start your Landscaping Business with us, today">
       <Heading size={3} style={{ fontSize: "40px" }}>
         Conclusion
       </Heading>
