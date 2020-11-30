@@ -1318,7 +1318,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `TThe profits of a Kansas LLC are not taxed at the business level, like those of C Corporations. Instead, tax for a Kansas LLC works as follows:`,
+    content: `The profits of a Kansas LLC are not taxed at the business level, like those of C Corporations. Instead, tax for a Kansas LLC works as follows:`,
     marginBottom: 16,
   },
   {
@@ -1347,7 +1347,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `tems 1, 2 and 3 are taxed as “pass-through” income for any LLC owners, managers or members who receive profits from the business. Any profits are reported on federal and Kansas personal tax returns, and that’s where you will pay those taxes.
+    content: `Items 1, 2 and 3 are taxed as “pass-through” income for any LLC owners, managers or members who receive profits from the business. Any profits are reported on federal and Kansas personal tax returns, and that’s where you will pay those taxes.
     `,
     marginBottom: 32,
   },
