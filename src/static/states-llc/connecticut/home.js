@@ -1395,7 +1395,7 @@ export const businessTaxes = [
 	},
 	{
 		type: `text`,
-		content: `You will need a tax registration number to pay CT taxes. You can get this by <a href="https://portal.ct.gov/DRS/DRS-Forms/Registration/Register-Your-Business" target="_blank" rel="noopener noreferrer" > registering your business online. </a>`,
+		content: `You will need a tax registration number to pay CT taxes. You can get this by <a href="https://portal.ct.gov/DRS/DRS-Forms/Registration/Register-Your-Business" target="_blank" rel="noopener noreferrer"> registering your business online. </a>`,
 		marginBottom: 32,
 	},
 	{
