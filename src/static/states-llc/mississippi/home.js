@@ -1340,7 +1340,7 @@ export const businessTaxes = [
 	},
 	{
 		type: `text`,
-		content: `Need help? Incfile provides a complete Business Tax Filing service.<a href="/business-accounting/"> Learn more.</a>.`,
+		content: `Need help? Incfile provides a complete Business Tax Filing service.<a href="/business-accounting/"> Learn more</a>.`,
 		marginBottom: 32,
 	},
 	{
