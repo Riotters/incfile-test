@@ -79,21 +79,21 @@ const Arrow = styled.div`
   }
 `;
 
-const Article = ({ children, img, top, topLG, scale }) => (
-  <Wrapper>
-    <Content href="#">
-      {img ? (
-        <ImageBox top={top} topLG={topLG} scale={scale}>
-          <Image filename={img} />
-        </ImageBox>
-      ) : null}
-      <Text>
-        <Arrow>
-          <ArrowSVG />
-        </Arrow>
-        <span>{children}</span>
-      </Text>
-    </Content>
-  </Wrapper>
+const Article = ({ children, img, top, topLG, scale, href }) => (
+    <Wrapper>
+        <Content href={href}>
+            {img ? (
+                <ImageBox top={top} topLG={topLG} scale={scale}>
+                    <img src={img} alt="Image"/>
+                </ImageBox>
+            ) : null}
+            <Text>
+                <Arrow>
+                    <ArrowSVG />
+                </Arrow>
+                <span>{children}</span>
+            </Text>
+        </Content>
+    </Wrapper>
 );
 export default Article;
