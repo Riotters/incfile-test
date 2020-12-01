@@ -1001,13 +1001,13 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
+    content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `It includes:`,
+      header: `Which includes:`,
       list: [`A complete report on all the licenses, permits and tax registrations your Indiana LLC will need`, `The application forms you will need to file with the Indiana, regional and federal licensing authorities`],
     },
     marginBottom: 16,
@@ -1092,17 +1092,6 @@ export const feesAndRequirments = [
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `To Reserve a Name`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `If you don’t want to form your business right away, you can reserve a name with the Indiana Secretary of State. You will need to pay a small fee to do this.`,
     marginBottom: 32,
   },
   {
@@ -1604,7 +1593,7 @@ export const requirements = {
             text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
             text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
-              text: `Other State's Ongoing`,
+              text: `Other State Requirements`,
               url: `/`,
             },
           },

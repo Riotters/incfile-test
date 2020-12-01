@@ -32,7 +32,11 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `Briefly, the benefits of starting a Minnesota LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your Minnesota LLC`, `Easy tax filing and potential advantages for your tax treatment`],
+      list: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulation and administration of your Minnesota LLC`,
+        `Easy tax filing and potential advantages for your tax treatment`,
+      ],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -495,7 +499,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      list: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     marginBottom: 40,
     color: color.blue3,
@@ -536,13 +545,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a Minnesota Registered Agent for your business. They are:`,
+    content: `There are certain rules that you must follow when you’re appointing a Minnesota Registered Agent for your business.`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in Minnesota.`,
         `If the Registered Agent is a business, they must be able to conduct business in Minnesota.`,
@@ -566,13 +575,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What can you expect from your Minnesota Registered Agent? Their main function is to accept official documents and correspondence from the MN Secretary of State. This includes:`,
+    content: `What can you expect from your Minnesota Registered Agent? Their main function is to accept official documents and correspondence from the MN Secretary of State.`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `This includes:`,
       list: [
         `Correspondence from the Minnesota Secretary of State`,
         `Service of process notices (e.g., if your MN LLC is sued or required to appear in court)`,
@@ -587,7 +596,7 @@ export const registeredAgent = [
   },
   {
     type: `header`,
-    content: `TA Complete Minnesota Registered Agent Service from Incfile`,
+    content: `A Complete Minnesota Registered Agent Service from Incfile`,
     size: 3,
     marginBottom: 32,
   },
@@ -602,14 +611,9 @@ export const registeredAgent = [
     marginBottom: 16,
   },
   {
-    type: `text`,
-    content: `Here’s what you need to know about Incfile’s MN Registered Agent service:`,
-    marginBottom: 24,
-  },
-  {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `Here’s what you need to know about Incfile’s MN Registered Agent service:`,
       list: [
         `The Registered Agent will always be available to accept documents and letters on your behalf.`,
         `We automatically notify you whenever we receive correspondence for your business from the Minnesota Secretary of State or anyone else.`,
@@ -748,13 +752,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Minnesota Secretary of State? There are several possible ramifications, including:`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Minnesota Secretary of State?`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `There are several possible ramifications, including:`,
       list: [
         `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing with the Minnesota Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -772,13 +776,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `If you have an address in Minnesota, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
+    content: `If you have an address in Minnesota, you can choose to be the Registered Agent for your LLC.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `We don’t recommend this approach as there can be some drawbacks:`,
       list: [
         `The MN Registered Agent must have a physical street address in Minnesota. If you’re forming an LLC outside MN, you will need to use an in-state Registered Agent. `,
         `You always need to have someone on hand during business hours at the Minnesota address to sign for important documents.`,
@@ -1014,7 +1018,10 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`A complete report on all the licenses, permits and tax registrations your Minnesota LLC will need`, `The application forms you will need to file with the Minnesota, regional and federal licensing authorities`],
+      list: [
+        `A complete report on all the licenses, permits and tax registrations your Minnesota LLC will need`,
+        `The application forms you will need to file with the Minnesota, regional and federal licensing authorities`,
+      ],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1126,7 +1133,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Minnesota Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Minnesota LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Minnesota LLC`],
+      list: [
+        `Adding, removing or changing a Minnesota LLC member or manager`,
+        `Changing the business address of your LLC`,
+        `Altering the stated business activities of your Minnesota LLC`,
+      ],
     },
     marginBottom: 24,
     color: color.yellow3,
@@ -1303,7 +1314,10 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `You will typically need to collect Minnesota sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Minnesota business might provide`],
+      list: [
+        `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
+        `Certain services that your Minnesota business might provide`,
+      ],
     },
     marginBottom: 16,
     color: color.blue3,
@@ -1481,7 +1495,11 @@ export const businessTaxes = [
               type: `list-dot-without-bg`,
               color: color.orange3,
               header: `The most common types of estimated taxes are:`,
-              content: [`Federal income tax`, `Federal self-employment tax`, `Minnesota state tax`],
+              content: [
+                `Federal income tax`,
+                `Federal self-employment tax`,
+                `Minnesota state tax`,
+              ],
             },
             {
               type: `paragraph`,
@@ -1527,7 +1545,12 @@ export const compare = {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
       [`Business incorporation service`, `$49`, `$149`, `$149`],
-      [`Registered Agent included in the price`, `check-green`, `check-red`, `check-red`],
+      [
+        `Registered Agent included in the price`,
+        `check-green`,
+        `check-red`,
+        `check-red`,
+      ],
     ],
   },
 };
@@ -1591,7 +1614,7 @@ export const requirements = {
             text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
             text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
-              text: `Other State's Ongoing`,
+              text: `Other State Requirements`,
               url: `/`,
             },
           },

@@ -257,11 +257,11 @@ export const articlesOfIncorporation = {
     list: [`The name and address of each incorporator`, `The principal corporate purpose (can be very brief; New Hampshire allows a corporation to be formed for any lawful business activity)`, `The number of shares that the corporation is authorized to issue`],
   },
   box2: {
-    header: `Some other provisions that aren’t required-but which may be included in the articles of incorporation-are:`,
+    header: `In order to be exempt from those laws, the incorporator must certify that:`,
     list: [`There will be 10 or fewer owners of the corporation`, `There will not be any published or circulated written advertising in order to ownership interests in the corporation`, `All sales of ownership interests will be completed within 60 days of the formation of the corporation`],
   },
   box3: {
-    header: `Some other provisions that aren’t required-but which may be included in the articles of incorporation-are:`,
+    header: `These can be items such as:`,
     list: [
       `Names and addresses of the initial directors`,
       `Regulations regarding the powers of the corporation, its board of directors, and shareholders`,

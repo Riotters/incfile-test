@@ -387,16 +387,20 @@ export const namingYourBusiness = [
 		size: 4,
 		marginBottom: 16,
 	},
-
+    {
+		type: `text`,
+		content: `Once you’ve searched for your Alabama business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your AL LLC name.`,
+		marginBottom: 24,
+	},
 	{
 		type: `list-dot`,
 		content: {
-			header: `Once you’ve searched for your Alabama business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your AL LLC name. There are a couple of ways to do this.`,
+			header: `There are a couple of ways to do this.`,
 			list: [
 				`If you don’t want to form your Alabama LLC right now, you can reserve the business name with the Alabama Secretary of State. You will need to complete a “Name Reservation Request Form” and file it with the AL SOS. You do not need to reserve a name if you are forming your business right away. <br>
-        <a href="https://www.sos.alabama.gov/node/1390" target="_blank" rel="noopener noreferrer">Alabama SOS LLC name reservation form</a>`,
+                <a href="https://www.sos.alabama.gov/node/1390" target="_blank" rel="noopener noreferrer">Alabama SOS LLC name reservation form</a>`,
 				`If you’re ready to start your Alabama LLC, you can formally file your Certificate of Formation with the Alabama SOS,
-        or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AL" target="_blank"> let Incfile take care of it for you. `,
+                or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AL" target="_blank"> let Incfile take care of it for you. `,
 			],
 		},
 		marginBottom: 56,
@@ -498,11 +502,15 @@ export const namingYourBusiness = [
 		size: 3,
 		marginBottom: 32,
 	},
-
+    {
+		type: `text`,
+		content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
+		marginBottom: 24,
+	},
 	{
 		type: `list-dot`,
 		content: {
-			header: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
+			header: ``,
 			list: [
 				`Appeal to your customers`,
 				`Be memorable enough to stand out`,
@@ -1615,7 +1623,7 @@ export const requirements = {
 						text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
 						text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
 						link: {
-							text: `Other State's Ongoing`,
+							text: `Other State Requirements`,
 							url: `/`,
 						},
 					},

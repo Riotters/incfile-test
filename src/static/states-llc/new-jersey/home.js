@@ -35,7 +35,7 @@ export const howToGuide = [
   },
   {
     type: "video",
-    image: 'forming-an-llc-in-new-jersey-8266',
+    image: "forming-an-llc-in-new-jersey-8266",
     id: `0sh4OgPJ3kE`,
     marginBottom: 40,
   },
@@ -43,7 +43,11 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `Briefly, the benefits of starting a New Jersey LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulations and administration of your New Jersey LLC`, `Easy tax filing and potential advantages for tax treatment`],
+      list: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulations and administration of your New Jersey LLC`,
+        `Easy tax filing and potential advantages for tax treatment`,
+      ],
     },
     marginBottom: 16,
     color: color.green3,
@@ -507,7 +511,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      list: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -910,6 +919,28 @@ export const feesAndRequirments = [
     theme: `primary48`,
     marginBottom: 48,
   },
+
+  {
+    type: `header`,
+    content: `Getting an EIN/Tax ID for Your New Jersey LLC`,
+    size: 3,
+    marginBottom: 24,
+  },
+  {
+    type: `text`,
+    content: `<p>Every New Jersey LLC should have a unique employer identification number (EIN). These are provided by the Internal Revenue Service and you use them when filing taxes, opening a business bank account and paying employees. You can get one yourself at no cost from the IRS or have Incfile obtain one on your behalf.</p>`,
+    marginBottom: 16,
+  },
+  {
+    type: `button`,
+    content: {
+      text: `Get An EIN For Your New Jersey LLC Through Incfile`,
+      url: `/manage-your-company/tax-id-ein/`,
+    },
+    theme: `primary48`,
+    marginBottom: 48,
+  },
+
   {
     type: `header`,
     content: `Foreign Qualification to Operate in a State Outside New Jersey`,
@@ -986,7 +1017,10 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
-      list: [`A complete report on all the licenses, permits and tax registrations your New Jersey LLC will need`, `The application forms you will need to file with the New Jersey, regional and federal licensing authorities`],
+      list: [
+        `A complete report on all the licenses, permits and tax registrations your New Jersey LLC will need`,
+        `The application forms you will need to file with the New Jersey, regional and federal licensing authorities`,
+      ],
     },
     marginBottom: 16,
     color: color.yellow3,
@@ -1098,7 +1132,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file New Jersey Certificate of Amendment for include:`,
-      list: [`Adding, removing or changing a New Jersey LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your New Jersey LLC`],
+      list: [
+        `Adding, removing or changing a New Jersey LLC member or manager`,
+        `Changing the business address of your LLC`,
+        `Altering the stated business activities of your New Jersey LLC`,
+      ],
     },
     marginBottom: 16,
     color: color.green3,
@@ -1285,7 +1323,10 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `You will typically need to collect New Jersey sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your New Jersey business might provide`],
+      list: [
+        `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
+        `Certain services that your New Jersey business might provide`,
+      ],
     },
     marginBottom: 16,
     color: color.purple3,
@@ -1320,7 +1361,12 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `Here are the sales tax rates for the major cities in New Jersey:`,
-      list: [`Newark:  6.875 percent`, `Jersey City:  6.875 percent`, `Edison:  6.875 percent`, `Parsippany-Troy Hills:  6.875 percent`],
+      list: [
+        `Newark:  6.875 percent`,
+        `Jersey City:  6.875 percent`,
+        `Edison:  6.875 percent`,
+        `Parsippany-Troy Hills:  6.875 percent`,
+      ],
     },
     marginBottom: 48,
     color: color.orange3,
@@ -1356,7 +1402,12 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $50,000, you would pay self-employment tax of $7,650`, `On profits of $80,000, you would pay self-employment tax of $12,240`, `On profits of $120,000, you would pay self-employment tax of $18,360`, `On profits of $160,000, you would pay self-employment tax of $24,480`],
+      list: [
+        `On profits of $50,000, you would pay self-employment tax of $7,650`,
+        `On profits of $80,000, you would pay self-employment tax of $12,240`,
+        `On profits of $120,000, you would pay self-employment tax of $18,360`,
+        `On profits of $160,000, you would pay self-employment tax of $24,480`,
+      ],
     },
     marginBottom: 32,
     color: color.babyblue3,
@@ -1468,7 +1519,11 @@ export const businessTaxes = [
               type: `list-dot-without-bg`,
               color: color.orange3,
               header: `The most common types of estimated taxes are:`,
-              content: [`Federal income tax`, `Federal self-employment tax`, `New Jersey state tax`],
+              content: [
+                `Federal income tax`,
+                `Federal self-employment tax`,
+                `New Jersey state tax`,
+              ],
             },
             {
               type: `paragraph`,
@@ -1518,7 +1573,12 @@ export const compare = {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
       [`Business incorporation service`, `$49`, `$149`, `$149`],
-      [`Registered Agent included in the price`, `check-green`, `check-red`, `check-red`],
+      [
+        `Registered Agent included in the price`,
+        `check-green`,
+        `check-red`,
+        `check-red`,
+      ],
     ],
   },
 };
@@ -1582,7 +1642,7 @@ export const requirements = {
             text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
             text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
-              text: `Other State's Ongoing`,
+              text: `Other State Requirements`,
               url: `/`,
             },
           },

@@ -251,7 +251,7 @@ const HowToGuide = ({ content, data }) => {
           {parse(content.mainSteps.step4.text1)}
         </Paragraph>
         <IconListColorBox color={color.blue3} content={content.mainSteps.step4.lists} rounded />
-        <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow margin="16px 0 0 0" marginMD="42px 0 42px 0" />
+        <Button content={content.mainSteps.step4.download_205_button} theme="secondary56" arrow margin="16px 0 0 0" marginMD="42px 0 42px 0" />
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step4.text2)}
         </Paragraph>
@@ -329,13 +329,10 @@ const HowToGuide = ({ content, data }) => {
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step6.text3)}
         </Paragraph>
+        <Button content={content.mainSteps.step4.download_205_button} theme="secondary56" arrow margin="16px 0 0 0" marginMD="16px 0 42px 0" />
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step6.text4)}
         </Paragraph>
-        <Paragraph big mixed={true}>
-          {parse(content.mainSteps.step6.text5)}
-        </Paragraph>
-        <Button content={content.mainSteps.step6.button1} theme="secondary56" arrow width="450px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />
         {/* <BoxCTA bgColor={color.orange3} bgImage={BgBoxPersonalOA} content={content.mainSteps.step6.cta} /> */}
       </TextBlockWithNumberCounting>
 
