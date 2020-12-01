@@ -95,7 +95,7 @@ export const Tools = [
     {
         title: "Ecommerce",
         tools: [
-            {text: "Volusion", url: "https://www.wix.com/"},
+            {text: "Wix", url: "https://wixstats.com/?a=22153&c=2197&s1="},
             {text: "Recurly", url: "https://recurly.com/"},
             {text: "Vendio", url: "https://www.vendio.com/"},
             {text: "Square", url: "https://squareup.com/us/en"}
@@ -104,7 +104,7 @@ export const Tools = [
     {
         title: "Website Development",
         tools: [
-            {text: "Xoopah", url: "https://xoopah.com/website-voucher-discount/?ref=INCFILE"},
+            {text: "Wix", url: "https://wixstats.com/?a=22153&c=2644&s1="},
             {text: "Squarespace", url: "https://www.squarespace.com/"},
             {text: "Wordpress", url: "https://wordpress.com/"}
         ]
@@ -121,8 +121,9 @@ export const Tools = [
         tools: [
             {text: "SemRush", url: "https://www.semrush.com/"},
             {text: "KWFinder", url: "https://kwfinder.com/"},
-            {text: "Moz", url: "https://ahrefs.com/"},
-            {text: "AHREFS", url: "https://moz.com/"}
+            {text: "AHREFS", url: "https://moz.com/"},
+            {text: "Moz", url: "https://ahrefs.com/"}
+            
         ]
     },
     {

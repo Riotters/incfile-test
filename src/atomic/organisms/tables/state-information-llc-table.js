@@ -4,138 +4,139 @@ import { color } from "../../atoms/styles/colors";
 import GridTableRow from "../../molecules/blocks/grid-table-row";
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 970px;
-  position: relative;
-  margin-bottom: 56px;
-  
-  @media (max-width: 575px) {
-    min-width: ${props => props.minWidthSM ?? 100}%;
-  }
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 970px;
+	position: relative;
+	margin-bottom: 56px;
 
-  .table-header,
-  .table-row {
-    grid-template-columns: 1fr 1fr 1fr;
+	@media (max-width: 575px) {
+		min-width: ${(props) => props.minWidthSM ?? 100}%;
+		border: 1px solid ${color.grey4};
+	}
 
-    @media (min-width: 769px) {
-      grid-template-columns: 1fr 144px 144px 144px;
-    }
+	.table-header,
+	.table-row {
+		grid-template-columns: 1fr 1fr 1fr;
 
-    @media (min-width: 992px) {
-      grid-template-columns: 1fr 200px 200px 200px;
-    }
+		@media (min-width: 769px) {
+			grid-template-columns: 1fr 144px 144px 144px;
+		}
 
-    & > div {
-      min-width: 122px;
+		@media (min-width: 992px) {
+			grid-template-columns: 1fr 200px 200px 200px;
+		}
 
-      p {
-        color: ${color.black};
-      }
+		& > div {
+			min-width: 122px;
 
-      &:not(:first-child) {
-        justify-content: center;
+			p {
+				color: ${color.black};
+			}
 
-        p {
-          font-weight: 400;
-          background-color: ${color.green3};
-          border-radius: 50px;
-          padding: 8px 26px;
-        }
-      }
-    }
-  }
+			&:not(:first-child) {
+				justify-content: center;
 
-  .table-header {
-    h4 {
-      font-size: 16px;
-    }
+				p {
+					font-weight: 400;
+					background-color: ${color.green3};
+					border-radius: 50px;
+					padding: 8px 26px;
+				}
+			}
+		}
+	}
 
-    & > div {
-      min-width: 30%;
+	.table-header {
+		h4 {
+			font-size: 16px;
+		}
 
-      @media (min-width: 470px) {
-        min-width: 122px;
-      }
+		& > div {
+			min-width: 30%;
 
-      &:nth-child(1) {
-        display: none;
+			@media (min-width: 470px) {
+				min-width: 122px;
+			}
 
-        @media (min-width: 769px) {
-          display: flex;
-        }
-      }
-    }
-  }
+			&:nth-child(1) {
+				display: none;
 
-  .table-row {
-    grid-template-areas:
-      "header header header"
-      "incfile legalzoom zenbusiness";
+				@media (min-width: 769px) {
+					display: flex;
+				}
+			}
+		}
+	}
 
-    p {
-      font-size: 12px;
-      line-height: 20px;
-    }
+	.table-row {
+		grid-template-areas:
+			"header header header"
+			"incfile legalzoom zenbusiness";
 
-    @media (min-width: 470px) {
-      p {
-        font-size: 16px;
-        line-height: 24px;
-      }
-    }
+		p {
+			font-size: 12px;
+			line-height: 20px;
+		}
 
-    @media (min-width: 769px) {
-      grid-template-areas: "header incfile legalzoom zenbusiness";
-    }
+		@media (min-width: 470px) {
+			p {
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
 
-    &:nth-child(2) {
-      p {
-        text-align: center;
-      }
-    }
+		@media (min-width: 769px) {
+			grid-template-areas: "header incfile legalzoom zenbusiness";
+		}
 
-    & > div {
-      min-width: 30%;
+		&:nth-child(2) {
+			p {
+				text-align: center;
+			}
+		}
 
-      @media (min-width: 470px) {
-        min-width: 122px;
-      }
+		& > div {
+			min-width: 30%;
 
-      &:nth-child(1) {
-        grid-area: header;
-        border-right-width: 0;
-        border-bottom: 2px solid ${color.grey4};
+			@media (min-width: 470px) {
+				min-width: 122px;
+			}
 
-        @media (min-width: 769px) {
-          border-right-width: 2px;
-          border-bottom-width: 0;
-        }
-      }
+			&:nth-child(1) {
+				grid-area: header;
+				border-right-width: 0;
+				border-bottom: 2px solid ${color.grey4};
 
-      &:nth-child(2) {
-        grid-area: incfile;
-      }
+				@media (min-width: 769px) {
+					border-right-width: 2px;
+					border-bottom-width: 0;
+				}
+			}
 
-      &:nth-child(3) {
-        grid-area: legalzoom;
-      }
+			&:nth-child(2) {
+				grid-area: incfile;
+			}
 
-      &:nth-child(4) {
-        grid-area: zenbusiness;
-      }
-    }
-  }
+			&:nth-child(3) {
+				grid-area: legalzoom;
+			}
+
+			&:nth-child(4) {
+				grid-area: zenbusiness;
+			}
+		}
+	}
 `;
 
 const TaxReturnTable = ({ className, content, minWidthSM }) => (
-  <Wrapper className={className} minWidthSM={minWidthSM}>
-    <GridTableRow className="table-header" content={content.headers} header />
-    {content.rows.map((row) => (
-      <GridTableRow className="table-row" content={row} />
-    ))}
-  </Wrapper>
+	<Wrapper className={className} minWidthSM={minWidthSM}>
+		<GridTableRow className="table-header" content={content.headers} header />
+		{content.rows.map((row) => (
+			<GridTableRow className="table-row" content={row} />
+		))}
+	</Wrapper>
 );
 
 export default TaxReturnTable;

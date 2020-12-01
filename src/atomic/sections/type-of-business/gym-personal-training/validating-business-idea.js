@@ -115,14 +115,6 @@ const ValidatingBusinessIdea = () => (
                         of gym, fitness or personal training business you want to run through conducting your own
                         research.
                     </Paragraph>
-                    <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
-                        Not every idea you have will make it through to becoming a gym, fitness or personal training
-                        business.
-                    </Paragraph>
-                    <Paragraph big>
-                        There are all sorts of reasons to say “yes” or “no” to specific businesses, so think about what
-                        your strengths and weaknesses are so you can choose a business you’d be great at.
-                    </Paragraph>
                     <Paragraph big>
                         Every fitness-based business will have many competitors, and you need to stand out - you should
                         deliver superior fitness classes and excel in your chosen area. Here's how:
@@ -181,6 +173,15 @@ const ValidatingBusinessIdea = () => (
                     </TextBlockWithImage>
 
                 </GridSectionList>
+
+                <Paragraph big style={{ justifyContent: "center", width: "100%", maxWidth: "750px", margin: "auto auto 24px auto", fontWeight: "bold" }}>
+                        Not every idea you have will make it through to becoming a gym, fitness or personal training
+                        business.
+                </Paragraph>
+                <Paragraph big style={{ justifyContent: "center", width: "100%", maxWidth: "750px", margin: "auto" }}>
+                        There are all sorts of reasons to say “yes” or “no” to specific businesses, so think about what
+                        your strengths and weaknesses are so you can choose a business you’d be great at.
+                </Paragraph>
             </GridSection>
 
         </Container>

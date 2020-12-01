@@ -1,7 +1,7 @@
 export const top = {
   header: `Sales Tax Calculator`,
   link: {
-    url: "/",
+    url: "#calculator",
     text: "View sales tax calculator"
   }
 };

@@ -63,19 +63,19 @@ export const positiveReview = {
     ],
   },
   shopper: {
-    text1: `Customers on <a href="https://www.shopperapproved.com/reviews/Incfile.com/">Shopper Review</a> like us too, awarding us an average review<br> rating of <b>4.8</b> out of <b>5</b> stars:`,
+    text1: `Customers on <a href="https://www.shopperapproved.com/reviews/Incfile.com/">Shopper Approved</a> like us too, awarding us an average review<br> rating of <b>4.8</b> out of <b>5</b> stars:`,
     reviews: [
       {
         text: `Terrific all around! Easy to use, easy to understand, and a nicely laid-out website that makes it simple to get your questions answered. Plus, it's really inexpensive, especially for the quality of service!`,
-        user: `Shopper Review`,
+        user: `Shopper Approved`,
       },
       {
         text: `This company is fantastic. I recommend it to everyone who is looking to form an LLC. Honestly, it's been a fantastic experience, and I couldn't be more happy with their services.`,
-        user: `Shopper Review`,
+        user: `Shopper Approved`,
       },
       {
         text: `Incfile keeps me up to date on all of my filings and gives me good lead time and follow up!`,
-        user: `Shopper Review`,
+        user: `Shopper Approved`,
       },
     ],
   },

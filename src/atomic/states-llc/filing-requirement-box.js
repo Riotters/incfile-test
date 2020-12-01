@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import parse from "html-react-parser";
 
@@ -43,7 +43,9 @@ const Filing = styled.div`
 		margin-bottom: 8px;
 		display: flex;
 		flex-direction: column;
-		font-size: 16px;
+        font-size: 16px;
+        gap: 30px;
+        align-items: baseline;
 
 		@media (min-width: 576px) {
 			flex-direction: row;

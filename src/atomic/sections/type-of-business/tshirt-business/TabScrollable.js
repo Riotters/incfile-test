@@ -30,58 +30,63 @@ import AgentColoredIcon from "../../../../images/icons/registered-agent-colored.
 import TaxesColoredIcon from "../../../../images/icons/other-taxes-colored.inline.svg";
 import MaintainingColoredIcon from "../../../../images/icons/maintaining-your-cleaning-business-colored.inline.svg";
 import CalcColoredIcon from "../../../../images/icons/finances-and-your-business-colored.inline.svg";
-import { BusinessInsuranceAccordionContent, FinancesAccordionContent, MaintainingAccordionContent, TaxesAccordionContent } from "../../../../static/type-of-business/tshirt-business";
+import {
+	BusinessInsuranceAccordionContent,
+	FinancesAccordionContent,
+	MaintainingAccordionContent,
+	TaxesAccordionContent,
+} from "../../../../static/type-of-business/tshirt-business";
 import VisibilitySensor from "../../../../components/VisibilitySensor";
 
 const ButtonList = [
-  {
-    title: "Local Business License",
-    icon: BusinessLicensesColoredIcon,
-    tabId: "local-business",
-    selected: false,
-  },
-  {
-    title: "State Business License",
-    icon: StateBusinessColoredIcon,
-    tabId: "state-business",
-    selected: false,
-  },
-  {
-    title: "Federal Business License",
-    icon: FederalBusinessColoredIcon,
-    tabId: "federal-business",
-    selected: false,
-  },
-  {
-    title: "Business Insurance",
-    icon: BusinessInsuranceColoredIcon,
-    tabId: "business-insurance",
-    selected: false,
-  },
-  {
-    title: "Registered Agent",
-    icon: AgentColoredIcon,
-    tabId: "registered-agent",
-    selected: false,
-  },
-  {
-    title: "Business Taxes",
-    icon: TaxesColoredIcon,
-    tabId: "taxes",
-    selected: false,
-  },
-  {
-    title: "Maintaining Your Business",
-    icon: MaintainingColoredIcon,
-    tabId: "maintaining",
-    selected: false,
-  },
-  {
-    title: "Finances",
-    icon: CalcColoredIcon,
-    tabId: "finance",
-    selected: false,
-  },
+	{
+		title: "Local Business License",
+		icon: BusinessLicensesColoredIcon,
+		tabId: "local-business",
+		selected: false,
+	},
+	{
+		title: "State Business License",
+		icon: StateBusinessColoredIcon,
+		tabId: "state-business",
+		selected: false,
+	},
+	{
+		title: "Federal Business License",
+		icon: FederalBusinessColoredIcon,
+		tabId: "federal-business",
+		selected: false,
+	},
+	{
+		title: "Business Insurance",
+		icon: BusinessInsuranceColoredIcon,
+		tabId: "business-insurance",
+		selected: false,
+	},
+	{
+		title: "Registered Agent",
+		icon: AgentColoredIcon,
+		tabId: "registered-agent",
+		selected: false,
+	},
+	{
+		title: "Business Taxes",
+		icon: TaxesColoredIcon,
+		tabId: "taxes",
+		selected: false,
+	},
+	{
+		title: "Maintaining Your Business",
+		icon: MaintainingColoredIcon,
+		tabId: "maintaining",
+		selected: false,
+	},
+	{
+		title: "Finances",
+		icon: CalcColoredIcon,
+		tabId: "finance",
+		selected: false,
+	},
 ];
 
 const TabScrollable = ({ layout, columns }) => {
@@ -416,189 +421,190 @@ const TabScrollable = ({ layout, columns }) => {
 };
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 115px;
-  position: relative;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 115px;
+	position: relative;
 
-  @media (min-width: 992px) {
-    flex-direction: ${(props) => (props.layout !== "grid" ? "row" : "column")};
-  }
+	@media (min-width: 992px) {
+		flex-direction: ${(props) => (props.layout !== "grid" ? "row" : "column")};
+	}
 
-  .accordion-panel {
-    overflow: hidden;
-  }
+	.accordion-panel {
+		overflow: hidden;
+	}
 
-  .ReactCollapse--collapse {
-    width: 100%;
-    transition: height 500ms;
-    margin-left: auto;
+	.ReactCollapse--collapse {
+		width: 100%;
+		transition: height 500ms;
+		margin-left: auto;
 
-    @media (min-width: 992px) {
-      max-width: ${(props) => (props.layout !== "grid" ? "55%" : "")};
-    }
+		@media (min-width: 992px) {
+			max-width: ${(props) => (props.layout !== "grid" ? "55%" : "")};
+		}
 
-    @media (min-width: 1200px) {
-      max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
-    }
-  }
+		@media (min-width: 1200px) {
+			max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
+		}
+	}
 `;
 
 const TabsWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	position: relative;
 
-  @media (min-width: 992px) {
-    max-width: ${(props) => (props.layout !== "grid" ? "40%" : "")};
-  }
+	@media (min-width: 992px) {
+		max-width: ${(props) => (props.layout !== "grid" ? "40%" : "")};
+	}
 
-  @media (min-width: 1200px) {
-    max-width: ${(props) => (props.layout !== "grid" ? "370px" : "")};
-  }
+	@media (min-width: 1200px) {
+		max-width: ${(props) => (props.layout !== "grid" ? "370px" : "")};
+	}
 `;
 
 const Sticky = styled.div`
-  display: ${(props) => (props.layout === "grid" ? "grid" : "flex")};
-  flex-direction: ${(props) => (props.layout !== "grid" ? "column" : "")};
-  grid-template-columns: ${(props) => (props.columns ? `repeat(${props.columns}, 1fr)` : "")};
-  grid-gap: ${(props) => (props.layout === "grid" ? "30px" : "")};
-  position: ${(props) => (props.layout !== "grid" ? "sticky" : "")};
-  top: 100px;
+	display: ${(props) => (props.layout === "grid" ? "grid" : "flex")};
+	flex-direction: ${(props) => (props.layout !== "grid" ? "column" : "")};
+	grid-template-columns: ${(props) =>
+		props.columns ? `repeat(${props.columns}, 1fr)` : ""};
+	grid-gap: ${(props) => (props.layout === "grid" ? "30px" : "")};
+	position: ${(props) => (props.layout !== "grid" ? "sticky" : "")};
+	top: 100px;
 `;
 
 const PanelWrapper = styled.article`
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
-  margin-left: auto;
-  padding-top: 24px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
+	margin-left: auto;
+	padding-top: 24px;
 
-  h3 {
-    margin-bottom: 48px;
-  }
+	h3 {
+		margin-bottom: 48px;
+	}
 
-  @media (min-width: 768px) {
-    padding-left: 30px;
-  }
+	@media (min-width: 768px) {
+		padding-left: 30px;
+	}
 `;
 
 const ButtonBox = styled.button`
-  height: 78px;
-  line-height: 78px;
-  color: #4e4e4e;
-  background: #fff;
-  transition: box-shadow 0.3s ease;
-  box-shadow: 0 20px 30px 0 #e6e6e6;
-  display: flex;
-  cursor: pointer;
-  position: relative;
-  border-radius: 5px;
-  overflow: hidden;
-  margin-bottom: 7px;
-  border: none;
-  z-index: 0;
+	height: 78px;
+	line-height: 78px;
+	color: #4e4e4e;
+	background: #fff;
+	transition: box-shadow 0.3s ease;
+	box-shadow: 0 20px 30px 0 #e6e6e6;
+	display: flex;
+	cursor: pointer;
+	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 7px;
+	border: none;
+	z-index: 0;
 
-  &.active {
-    box-shadow: 0 40px 80px 0 #e6e6e6;
-    font-weight: 600;
-    z-index: 1;
+	&.active {
+		box-shadow: 0 40px 80px 0 #e6e6e6;
+		font-weight: 600;
+		z-index: 1;
 
-    .tabArrow {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
+		.tabArrow {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
 `;
 
 const Icon = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80px;
-  width: 50px;
-  opacity: 0.75;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+	width: 50px;
+	opacity: 0.75;
 
-  @media (min-width: 992px) {
-    width: 80px;
-  }
+	@media (min-width: 992px) {
+		width: 80px;
+	}
 `;
 
 const Content = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-grow: 1;
-  padding: 0 24px;
-  border-left: 1px solid #f4f4f4;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-grow: 1;
+	padding: 0 24px;
+	border-left: 1px solid #f4f4f4;
 
-  span {
-    color: #4e4e4e;
-    font-family: Avenir;
-    font-size: 13px;
-    white-space: nowrap;
+	span {
+		color: #4e4e4e;
+		font-family: Avenir;
+		font-size: 13px;
+		white-space: nowrap;
 
-    @media (min-width: 769px) {
-      font-size: 16px;
-    }
-  }
+		@media (min-width: 769px) {
+			font-size: 16px;
+		}
+	}
 
-  .tabArrow {
-    opacity: 0;
-    transform: translateX(-3px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+	.tabArrow {
+		opacity: 0;
+		transform: translateX(-3px);
+		transition: opacity 0.3s ease, transform 0.3s ease;
 
-    svg {
-      path {
-        fill: #1d1d1d;
-      }
-    }
-  }
+		svg {
+			path {
+				fill: #1d1d1d;
+			}
+		}
+	}
 
-  &:hover {
-    .tabArrow {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
+	&:hover {
+		.tabArrow {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
 `;
 
 const Arrow = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 12px;
-  width: 12px;
-  margin-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 12px;
+	width: 12px;
+	margin-right: 10px;
 
-  svg {
-    path {
-      transition: fill 0.3s ease;
-      fill: #5088fd;
-    }
-  }
+	svg {
+		path {
+			transition: fill 0.3s ease;
+			fill: #5088fd;
+		}
+	}
 `;
 
 const ListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 `;
 
 const ListBox = styled.div`
-  width: 50%;
+	width: 50%;
 `;
 
 const StickyContainer = styled.div`
-  position: relative;
-  height: 100%;
+	position: relative;
+	height: 100%;
 `;
 
 const cn = (...args) => args.filter(Boolean).join(" ");
 
 const Tab = ({ children, ...props }) => {
-  return <ButtonBox {...props}>{children}</ButtonBox>;
+	return <ButtonBox {...props}>{children}</ButtonBox>;
 };
 
 export default TabScrollable;

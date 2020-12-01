@@ -103,7 +103,7 @@ const OnlineBusiness = () => (
             <CircleWithText textInsideCircle="70" textLine="Of U.S. entrepreneurs start their business from home - an ideal for online business." withBg={true} symbol="%" SvgChart={CircleRing} />
 
             <div style={{ marginBottom: "30px", marginTop: "48px" }}>
-              <Adventages headline="Online retail is expected to grow by between 8% and 12% year-on-year, compared to just4% for traditional retail" width="100%" />
+              <Adventages headline="Online retail is expected to grow by between 8% and 12% year-on-year, compared to just 4% for traditional retail" width="100%" />
             </div>
 
             <div style={{ marginBottom: "30px" }}>

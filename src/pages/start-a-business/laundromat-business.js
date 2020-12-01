@@ -333,9 +333,9 @@ const LandscapingBusiness = () => (
           </TextBlockWithImage>
 
           <TextBlockWithImage width={100} widthUnit="%" SvgImage={MarketIcon} imageBackgroundColor={color.yellow2} imageShadowColor={color.yellow2}>
-            <Heading size={4}>See if there are any market research reports for beauty salon businesses</Heading>
+            <Heading size={4}>See if there are any market research reports for laundromat businesses</Heading>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              See if there are any market research reports for beauty salon businesses
+                Search locally, nationally or internationally. There are several in-depth market research reports available for the laundromat business in the U.S. You will also want to research demographics in your proposed area — you’re looking for densely-populated areas with lots of renters or students.
             </Paragraph>
           </TextBlockWithImage>
 

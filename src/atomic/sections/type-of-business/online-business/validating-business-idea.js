@@ -132,13 +132,6 @@ const ValidatingBusinessIdea = () => (
                         committing too much time, energy and money into your new internet business, it’s important to
                         test the marketplace.
                     </Paragraph>
-                    <Paragraph big>
-                        The thing to learn here is that it’s okay to say “no” to your first, second or third online
-                        business ideas. Very few entrepreneurs get it right first time. In fact, getting it wrong is
-                        often a badge of honor in the online world! Still, you don’t want to waste too much time, energy
-                        or money on the wrong initiatives, so ask and answer these questions honestly to find the right
-                        way forward.
-                    </Paragraph>
 
                 </TitleBox>
 
@@ -185,6 +178,14 @@ const ValidatingBusinessIdea = () => (
                     </TextBlockWithImage>
 
                 </GridSectionList>
+                <Paragraph big style={{ justifyContent: "center", width: "100%", maxWidth: "750px", margin: "auto" }}
+>
+                    The thing to learn here is that it’s okay to say “no” to your first, second or third online
+                    business ideas. Very few entrepreneurs get it right first time. In fact, getting it wrong is
+                    often a badge of honor in the online world! Still, you don’t want to waste too much time, energy
+                    or money on the wrong initiatives, so ask and answer these questions honestly to find the right
+                    way forward.
+                </Paragraph>
             </GridSection>
 
         </Container>

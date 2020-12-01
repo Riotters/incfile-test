@@ -387,16 +387,20 @@ export const namingYourBusiness = [
 		size: 4,
 		marginBottom: 16,
 	},
-
+    {
+		type: `text`,
+		content: `Once you’ve searched for your Alabama business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your AL LLC name.`,
+		marginBottom: 24,
+	},
 	{
 		type: `list-dot`,
 		content: {
-			header: `Once you’ve searched for your Alabama business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your AL LLC name. There are a couple of ways to do this.`,
+			header: `There are a couple of ways to do this.`,
 			list: [
 				`If you don’t want to form your Alabama LLC right now, you can reserve the business name with the Alabama Secretary of State. You will need to complete a “Name Reservation Request Form” and file it with the AL SOS. You do not need to reserve a name if you are forming your business right away. <br>
-        <a href="https://www.sos.alabama.gov/node/1390" target="_blank" rel="noopener noreferrer">Alabama SOS LLC name reservation form</a>`,
+                <a href="https://www.sos.alabama.gov/node/1390" target="_blank" rel="noopener noreferrer">Alabama SOS LLC name reservation form</a>`,
 				`If you’re ready to start your Alabama LLC, you can formally file your Certificate of Formation with the Alabama SOS,
-        or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AL" target="_blank"> let Incfile take care of it for you. `,
+                or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AL" target="_blank"> let Incfile take care of it for you. `,
 			],
 		},
 		marginBottom: 56,
@@ -498,11 +502,15 @@ export const namingYourBusiness = [
 		size: 3,
 		marginBottom: 32,
 	},
-
+    {
+		type: `text`,
+		content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
+		marginBottom: 24,
+	},
 	{
 		type: `list-dot`,
 		content: {
-			header: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
+			header: ``,
 			list: [
 				`Appeal to your customers`,
 				`Be memorable enough to stand out`,
@@ -548,12 +556,13 @@ export const registeredAgent = [
 	},
 	{
 		type: `text`,
-		content: `There are certain rules that you must follow when you’re appointing an Alabama Registered Agent service for your business. They are:`,
+		content: `There are certain rules that you must follow when you’re appointing an Alabama Registered Agent service for your business.`,
 		marginBottom: 8,
 	},
 	{
 		type: `list-dot`,
 		content: {
+            header: `They are:`,
 			list: [
 				`If the Registered Agent is a person, they must reside in Alabama.`,
 				`If the Registered Agent is a business, they must be able to conduct business in Alabama.`,
@@ -577,12 +586,13 @@ export const registeredAgent = [
 	},
 	{
 		type: `text`,
-		content: `What can you expect from your Alabama Registered Agent? Their main function is to accept official documents and correspondence from the AL Secretary of State. This includes:`,
+		content: `What can you expect from your Alabama Registered Agent? Their main function is to accept official documents and correspondence from the AL Secretary of State.`,
 		marginBottom: 8,
 	},
 	{
 		type: `list-dot`,
 		content: {
+            header: `This includes:`,
 			list: [
 				`Correspondence from the Alabama Secretary of State`,
 				`Service of process notices (e.g., if your AL LLC is sued or required to appear in court)`,
@@ -606,12 +616,13 @@ export const registeredAgent = [
 	},
 	{
 		type: `text`,
-		content: `We are authorized to conduct business in Alabama and can legally act as your Registered Agent. Here’s what you need to know about Incfile’s AL Registered Agent service:`,
+		content: `We are authorized to conduct business in Alabama and can legally act as your Registered Agent.`,
 		marginBottom: 8,
 	},
 	{
 		type: `list-dot`,
 		content: {
+            header: `Here’s what you need to know about Incfile’s AL Registered Agent service:`,
 			list: [
 				`The Registered Agent will always be available to accept documents and letters on your behalf.`,
 				`We automatically notify you whenever we receive correspondence for your business from the Alabama Secretary of State or anyone else.`,
@@ -698,7 +709,7 @@ export const registeredAgent = [
 	{
 		type: `header`,
 		content: `Choose a Registered Agent Service and File Form “Change of Registered Agent or Registered Office by Entity” with the Alabama Secretary of State`,
-		size: 5,
+		size: 4,
 		marginBottom: 32,
 	},
 	{
@@ -750,13 +761,13 @@ export const registeredAgent = [
 	},
 	{
 		type: `text`,
-		content: `What happens if you choose not to assign or provide details of a Registered Agent to the Alabama Secretary of State? There are several possible ramifications, including:`,
+		content: `What happens if you choose not to assign or provide details of a Registered Agent to the Alabama Secretary of State?`,
 		marginBottom: 8,
 	},
 	{
 		type: `list-dot`,
 		content: {
-			header: `aaa`,
+			header: `There are several possible ramifications, including:`,
 			list: [
 				`Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
 				`Falling out of good standing with the Alabama Secretary of State: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -774,17 +785,18 @@ export const registeredAgent = [
 	},
 	{
 		type: `text`,
-		content: `If you have an address in Alabama, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
+		content: `If you have an address in Alabama, you can choose to be the Registered Agent for your LLC.`,
 		marginBottom: 8,
 	},
 
 	{
 		type: `list-dot`,
 		content: {
+            header: `We don’t recommend this approach as there can be some drawbacks:`,
 			list: [
 				`The AL Registered Agent must have a physical street address in Alabama. If you’re forming an LLC outside AL, you will need to use an in-state Registered Agenta`,
 				`You always need to have someone on hand during business hours at the Alabama address to sign for important documents.`,
-				`aaThe AL Registered Agent’s name and address are part of the public record and available through the Alabama Secretary of State's website. If you would prefer your name and address aren’t published, you may want to choose a Registered Agent service.a`,
+				`The AL Registered Agent’s name and address are part of the public record and available through the Alabama Secretary of State's website. If you would prefer your name and address aren’t published, you may want to choose a Registered Agent service.a`,
 				`If you change your Alabama business address or move out of state, you would need to file additional documentation with the AL Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
 			],
 		},
@@ -1611,7 +1623,7 @@ export const requirements = {
 						text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
 						text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
 						link: {
-							text: `Other State's Ongoing`,
+							text: `Other State Requirements`,
 							url: `/`,
 						},
 					},

@@ -66,6 +66,10 @@ const Bot = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 36px 0;
+ 
+  @media (max-width: 768px) {
+    display: none;  
+  }
 `;
 
 
@@ -98,7 +102,7 @@ const BusinessQuizTypeForm = () => {
             <Wrapper>
                 <Fragment>
                     <div id="type-form">
-                        <iframe id="js-typeform" src="https://ray007277.typeform.com/to/w5A28E" style={{width: `100%`, height: `100%`, frameBorder: 0}}></iframe>
+                        <iframe id="js-typeform" src="https://ray007277.typeform.com/to/w5A28E" style={{width: `100%`, height: `100%`, border: 0}}></iframe>
                     </div>
                     <SideBar>
                         <Link to="/"><LogoSVG /></Link>

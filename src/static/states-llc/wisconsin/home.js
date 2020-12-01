@@ -28,9 +28,8 @@ export const howToGuide = [
 		content: `For most business owners, the fastest and easiest way to start a business in Wisconsin is by creating a Wisconsin LLC. A limited liability company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Wisconsin corporations, but with much simpler rules and regulations.`,
 		marginBottom: 16,
 	},
-
 	{
-		type: `listt-dot`,
+		type: `list-dot`,
 		content: {
 			header: `Briefly, the benefits of starting an Wisconsin LLC include:`,
 			list: [
@@ -40,7 +39,7 @@ export const howToGuide = [
 			],
 		},
 		marginBottom: 16,
-		color: color.blue3,
+		color: color.green3,
 		curve: true,
 		curveColor: color.red1,
 	},
@@ -62,7 +61,8 @@ export const howToGuide = [
 		marginBottom: 16,
 	},
 	{
-		type: `accordion`,
+        type: `accordion`,
+        marginBottom: 48,
 		content: {
 			items: [
 				{
@@ -117,30 +117,22 @@ export const howToGuide = [
 	},
 	{
 		type: `text`,
-		content: `These are all the basic steps for forming an LLC in Wisconsin. You’ll find other useful information below:`,
+		content: `These are all the basic steps for forming an LLC in Wisconsin.`,
 		marginBottom: 16,
-	},
-	{
-		type: `arrow-link`,
-		content: {
-			text: `Wisconsin Department of Financial Institutions for forming and running your WI LLC`,
-			url: `https://www.revenue.wi.gov/Pages/Businesses/New-Business-home.aspx`,
-		},
-	},
-	{
-		type: `arrow-link`,
-		content: {
-			text: `Wisconsin Department of Workforce Development for WI employers and hiring`,
-			url: `https://dwd.wisconsin.gov/`,
-		},
-	},
-	{
-		type: `arrow-link`,
-		content: {
-			text: `Wisconsin Department of Revenue for WI taxes`,
-			url: `https://www.revenue.wi.gov/Pages/home.aspx`,
-		},
-	},
+    },
+    {
+        type: `list-dot`,
+        content: {
+          header: `You’ll find other useful information below:`,
+          list: [
+            `<a href="https://www.revenue.wi.gov/Pages/Businesses/New-Business-home.aspx"_blank" rel="noopener noreferrer">Wisconsin Department of Financial Institutions for forming and running your WI LLC</a>`,
+            `<a href="https://dwd.wisconsin.gov/" target="_blank" rel="noopener noreferrer">Wisconsin Department of Workforce Development for WI employers and hiring</a>`,
+            `<a href="https://www.revenue.wi.gov/Pages/home.aspx" target="_blank" rel="noopener noreferrer">Wisconsin Department of Revenue for WI taxes</a>`,
+          ],
+        },
+        marginBottom: 48,
+        color: color.blue3,
+      },
 	{
 		type: `header`,
 		content: `Form a Foreign LLC in Wisconsin`,
@@ -256,7 +248,7 @@ export const namingYourBusiness = [
 	{
 		type: `arrow-link`,
 		content: {
-			text: `Wisconsin Corporation Commission LLC name search tool`,
+			text: `Wisconsin Department of Financial Institutions business name search tool`,
 			url: `https://www.wdfi.org/apps/CorpSearch/Search.aspx?`,
 			externalLink: true,
 		},
@@ -264,18 +256,13 @@ export const namingYourBusiness = [
 	},
 	{
 		type: `header`,
-		content: `Wisconsin LLC DBA or Trade Names`,
+		content: `Rules on Wisconsin LLC Name Availability`,
 		size: 3,
 		marginBottom: 24,
 	},
 	{
 		type: `text`,
-		content: `You might choose to do business under a different name from your legal LLC name. In Wisconsin, doing business under a different name is known as a “Trade Name.” You might choose to use a different name from your WI formal LLC name for a variety of reasons.`,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `For example, your LLC might be called Wisconsin Travel and Tourism Holding Company LLC and you have a chain called Riverside Rovers. You should file a trade name to let the Wisconsin Department of Financial Institutions know. `,
+		content: `Once you’ve decided on a name for your LLC and checked business name availability, you’ll need to meet the Wisconsin Department of Financial Institutions’s naming rules. These do vary from state to state — we’ve got general naming rules below, as well as naming rules specific to LLC businesses formed in WI.`,
 		marginBottom: 48,
 	},
 	{
@@ -412,8 +399,7 @@ export const namingYourBusiness = [
 	},
 	{
 		type: `header`,
-		content: `Register Your Wisconsin LLC Business Name
-    `,
+		content: `Register Your Wisconsin LLC Business Name`,
 		size: 3,
 		marginBottom: 24,
 	},
@@ -1359,7 +1345,6 @@ export const businessTaxes = [
 		content: `You will first need to obtain a Wisconsin tax ID number to pay taxes to the Department of Revenue. You can do that by registering for<a href="https://www.revenue.wi.gov/Pages/Businesses/New-Business-home.aspx" target="_blank" rel="noopener noreferrer"> Wisconsin business tax</a>.`,
 		marginBottom: 48,
 	},
-
 	{
 		type: `header`,
 		content: `Wisconsin Sales Taxes on LLC Sales`,

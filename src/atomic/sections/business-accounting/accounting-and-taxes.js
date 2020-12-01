@@ -2,7 +2,6 @@ import styled from "styled-components";
 import {Heading} from "../../atoms/typography/heading";
 import ImageContent from "../../partials/left-image-right-content";
 import React from "react";
-import Buttonsbox from "../../atoms/boxes/top-buttons-box";
 import Button from "../../molecules/buttons/button-action";
 import {Paragraph} from "../../atoms/typography/paragraph";
 import { scrollToElement } from "../../../helpers/utils";
@@ -23,9 +22,7 @@ const AccountingAndTaxes = ({ content }) => (
         <ImageContent image="main-header-object-certificate-good-standing-5915">
             <Heading size={4}>{content.header}</Heading>
             <Paragraph big bottomMargin={48}>{content.text}</Paragraph>
-            <Buttonsbox>
-                <Button onClick={e => scrollToElement(e, 'js-business-tax-signup-form')} content={content.button[0]} theme="primary56" arrow />
-            </Buttonsbox>
+            <Button onClick={e => scrollToElement(e, 'js-business-tax-signup-form')} content={content.button} theme="primary56" margin="0 auto 0 0" arrow />
             <Heading size={5} topMargin={24}>{content.header2}</Heading>
         </ImageContent>
     </Wrapper>

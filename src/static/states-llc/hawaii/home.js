@@ -538,13 +538,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a Hawaii Registered Agent service for your business. They are:`,
+    content: `There are certain rules that you must follow when you’re appointing a Hawaii Registered Agent service for your business.`,
     marginBottom: 32,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in Hawaii.`,
         `If the Registered Agent is a business, they must be able to conduct business in Hawaii.`,
@@ -568,13 +568,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What can you expect from your Hawaii Registered Agent? Their main function is to accept official documents and correspondence from the HI Business Registration Division. This includes:`,
+    content: `What can you expect from your Hawaii Registered Agent? Their main function is to accept official documents and correspondence from the HI Business Registration Division.`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `This includes:`,
       list: [
         `Correspondence from the Hawaii Business Registration Division`,
         `Service of process notices (e.g., if your HI LLC is sued or required to appear in court)`,
@@ -601,17 +601,12 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `We are authorized to conduct business in Hawaii and can legally act as your Registered Agent.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Here’s what you need to know about Incfile’s HI Registered Agent service:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `Here’s what you need to know about Incfile’s HI Registered Agent service:`,
       list: [
         `The Registered Agent will always be available to accept documents and letters on your behalf.`,
         `We automatically notify you whenever we receive correspondence for your business from the Hawaii Business Registration Division or anyone else.`,
@@ -750,13 +745,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Hawaii Business Registration Division? There are several possible ramifications, including:`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Hawaii Business Registration Division?`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `There are several possible ramifications, including:`,
       list: [
         `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing with the Hawaii Business Registration Division:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -774,13 +769,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `If you have an address in Hawaii, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
+    content: `If you have an address in Hawaii, you can choose to be the Registered Agent for your LLC.`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `We don’t recommend this approach as there can be some drawbacks:`,
       list: [
         `The HI Registered Agent must have a physical street address in Hawaii. If you’re forming an LLC outside HI, you will need to use an in-state Registered Agent.`,
         `You always need to have someone on hand during business hours at the Hawaii address to sign for important documents.`,
@@ -1044,7 +1039,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a>).If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Hawaii business. You can choose to make changes to the template based on your unique requirements.`,
+    content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Hawaii business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 40,
   },
   {
@@ -1601,7 +1596,7 @@ export const requirements = {
             text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
             text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
-              text: `Other State's Ongoing`,
+              text: `Other State Requirements`,
               url: `/`,
             },
           },

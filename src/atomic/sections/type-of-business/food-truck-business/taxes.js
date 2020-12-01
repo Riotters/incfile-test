@@ -7,6 +7,7 @@ import { color } from "../../../../components/styles/colors";
 import { shadow } from "../../../../components/styles/shadows";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 import { adventages2 } from "../../../../static/type-of-business/food-truck-business";
+import parse from "html-react-parser";
 
 const Taxes = () => (
 	<Wrapper>

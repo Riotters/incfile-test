@@ -140,13 +140,10 @@ const GymPersonalTraining = () => (
 
           <PanelWrapper>
             <Heading size={3}>Why You Should Open a New Gym or Personal Training Business</Heading>
-            <Paragraph big>You might wonder if now is the right time to open your own gym or get into personal training. The answer is a resounding “yes.” Here’s how the fitness industry is performing:</Paragraph>
-            <Paragraph big style={{ marginBottom: "80px" }}>
-              This is why gym, fitness or personal training businesses are so exciting — how can you be part of that success? We're here to help you figure that out.
-            </Paragraph>
+            <Paragraph big style={{ marginBottom: "80px" }} >You might wonder if now is the right time to open your own gym or get into personal training. The answer is a resounding “yes.” Here’s how the fitness industry is performing:</Paragraph>
 
-            <BlueBoxWithAbsoluteText absoluteText="7%" text="Growth of fitness industry in the U.S. a year." />
-            <BlueBoxWithAbsoluteText absoluteText="$27.5B" text="Increase of U.S. revenues from gym, personal training and related businesses between 2015 and 2016" />
+            <BlueBoxWithAbsoluteText absoluteText="$26B - $27.5B" text="Increase of U.S. revenues from gym, personal training and related businesses between 2015 and 2016" />
+            <BlueBoxWithAbsoluteText absoluteText="4% - 7%" text="Growth of fitness industry in the U.S. a year." />
             <BlueBoxWithAbsoluteText absoluteText="$40K" text="Approximate numbers of gyms, fitness clubs and similar businesses in the U.S." />
 
             <TextWithBubbleCounting>
@@ -162,8 +159,15 @@ const GymPersonalTraining = () => (
               <Adventages headline="Boutique studios providing specialized fitness and well-being services are becoming increasingly popular" width="100%" />
             </div>
 
+            <div style={{ marginBottom: "48px" }}>
             <Adventages headline="Boutique studios providing specialized fitness and well-being services are becoming increasingly popular" width="100%" />
+            </div>
+
+            <Paragraph big>
+              This is why gym, fitness or personal training businesses are so exciting — how can you be part of that success? We're here to help you figure that out.
+            </Paragraph>
           </PanelWrapper>
+          
 
           <PanelWrapper>
             <Heading size={3}>Is a Fitness-Based Business Right for You?</Heading>

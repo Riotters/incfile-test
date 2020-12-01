@@ -104,7 +104,7 @@ export const differences = {
   header: `What Are the Differences Between an  S Corp, C Corp and LLC?`,
   text: `See how a C Corporation compares to other entities:`,
   box: {
-    header: `Enterpreneur 360 (2019)`,
+    header: `Differences between types of corporations`,
     text: `One of the main differences between C Corps and S Corps / LLCs are how income from the different types of businesses are taxed.`,
   },
   table: {
@@ -123,7 +123,7 @@ export const rocket = {
   text: `No Contracts. No Surprises.`,
   text2: `Only $0 + State Fee to Launch Your Business.`,
   button: {
-    text: `launch your business`,
+    text: `Launch your business`,
     url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation`,
   },
 };

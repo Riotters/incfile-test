@@ -111,9 +111,14 @@ export const howToGuide = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `The Secretary of State has plenty of other information on forming and running a business in South Carolina.`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `The Secretary of State has plenty of other information on forming and running a business in South Carolina. You’ll find other useful information below.`,
+      header: `You’ll find other useful information below.`,
       list: [
         `<a href="https://sos.sc.gov/online-filings/business-entities" target="_blank" rel="noopener noreferrer">South Carolina Secretary of State for forming and running your LLC</a>`,
         `<a href="https://dew.sc.gov/" target="_blank" rel="noopener noreferrer">South Carolina Department of Employment and Workforce for SC employers and hiring</a>`,
@@ -144,13 +149,13 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Want to know your next steps after creating a new LLC in South Carolina? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `Other Information in This Guide`,
     size: 3,
-    marginBottom: 32,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -180,7 +185,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `How to appoint a Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching forSouth Carolina Registered Agents.`,
+    content: `How to appoint a Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for South Carolina Registered Agents.`,
     marginBottom: 32,
   },
   {
@@ -1536,7 +1541,7 @@ export const requirements = {
             text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
             text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
-              text: `Other State's Ongoing`,
+              text: `Other State Requirements`,
               url: `/`,
             },
           },

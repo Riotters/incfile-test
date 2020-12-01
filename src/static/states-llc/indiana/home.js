@@ -397,8 +397,7 @@ export const namingYourBusiness = [
     content: {
       header: `There are a couple of ways to do this:`,
       list: [
-        `<p>If you don’t want to form your Indiana LLC right now, you can reserve the business name with the Indiana Secretary of State. You will need to complete a Reservation of Business Name and file it with the IN SOS. You do not need to reserve a name if you are forming your business right away.</p>
-          <p><a href="https://www.in.gov/sos/business/2426.htm" target="_blank" rel="noopener noreferrer">Indiana SOS LLC name reservation form.</a></p>`,
+        `If you don’t want to form your Indiana LLC right now, you can reserve the business name with the Indiana Secretary of State. You will need to complete a Reservation of Business Name and file it with the IN SOS. You do not need to reserve a name if you are forming your business right away. <a href="https://www.in.gov/sos/business/2426.htm" target="_blank" rel="noopener noreferrer">Indiana SOS LLC name reservation form.</a>`,
         `If you’re ready to start your Indiana LLC, you can formally file your Articles of Organization with the Indiana SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IN" target="_blank" >let Incfile take care of it for you.</a>`,
       ],
     },
@@ -755,8 +754,9 @@ export const registeredAgent = [
     content: {
       header: `There are several possible ramifications, including:`,
       list: [
-        `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence. Falling out of good standing with the Indiana Secretary of State: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
-        `Losing your status as an Indiana LLC: An IN Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Indiana LLC may be dissolved.`,
+        `<b>Getting served or sued and not finding out about it: </b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the Indiana Secretary of State: </b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `<b>Losing your status as an Indiana LLC: </b> An IN Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Indiana LLC may be dissolved.`,
       ],
     },
     marginBottom: 48,
@@ -1001,13 +1001,13 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
+    content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `It includes:`,
+      header: `Which includes:`,
       list: [`A complete report on all the licenses, permits and tax registrations your Indiana LLC will need`, `The application forms you will need to file with the Indiana, regional and federal licensing authorities`],
     },
     marginBottom: 16,
@@ -1092,17 +1092,6 @@ export const feesAndRequirments = [
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `To Reserve a Name`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `If you don’t want to form your business right away, you can reserve a name with the Indiana Secretary of State. You will need to pay a small fee to do this.`,
     marginBottom: 32,
   },
   {
@@ -1604,7 +1593,7 @@ export const requirements = {
             text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
             text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
-              text: `Other State's Ongoing`,
+              text: `Other State Requirements`,
               url: `/`,
             },
           },

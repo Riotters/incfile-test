@@ -8,7 +8,7 @@ export const top = {
 };
 
 export const about = {
-    header: `If you want to start a new business in Texas, you need the right name. We’ll look up your proposed business name in Texas and see if it’s available for you to form a corporation or LLC`,
+    header: `If you want to start a new business in Texas, you need the right name. We’ll look up your proposed business name in Texas and see if it’s available for you to form a corporation or LLC.`,
     text: `Trust us to check your proposed business name against the registry of businesses held by the Texas Secretary of State.`,
     box: {
         header: `Once you’ve found the right Texas business name, you can quickly register your TX LLC or corporation through us for one low fee.`,
@@ -19,8 +19,58 @@ export const about = {
 export const search = {
     header: `Use Our Free Business Name Search Tool To Find Out If Your Company Name Is Available`,
     header2: `We’ll Take Care of the Entity Search.`,
-    text: `We’ll tell you if your business name is available with
-  the Texas Division of Corporations. Just fill in your proposed business name, and we’ll search the company registrar for you.`,
+    text: `We’ll tell you if your business name is available with the Texas Division of Corporations. Just fill in your proposed business name, and we’ll search the company registrar for you.`,
+};
+
+export const newRules = {
+    header: `Rules About How You Should Name Your Texas Business`,
+    text: `All businesses formed in Texas must be named following certain rules.`,
+    cards: [
+      { text: `Your business name must be unique and not similar to or confusable with another business name in Texas.` },
+      { text: `If your Texas business is an LLC, it must contain “Limited Liability Company” or an abbreviation. If it’s a corporation, it must contain a word like “Incorporated,” “Corporation” or something similar.` },
+      { text: `Normally, you cannot imply connection with a Texas state entity or that you will be carrying out activities your TX business is not legally able to provide.` },
+    ],
+    text2: `Additionally, there are several naming rules specific to the state of Texas.`,
+};
+  
+export const llcRules = {
+    header: `Texas Limited Liability Company Naming Rules`,
+    text: `In addition to the general rules listed above, the Texas Secretary of State has some specific business naming rules for your LLC. You will need to follow these rules if you want to name your TX business appropriately. Here are some direct quotes from the Texas Secretary of State:`,
+    list: [
+      `Where prohibited by §31.005 and §181.004 of the Texas Finance Code, an entity name cannot include the words "bank," "bank and trust," "trust," "trust company" or a similar term, phrase or foreign language word unless accompanied by a no objection letter from the Banking Commissioner.`,
+      `Where prohibited by §61.313 of the Texas Education Code, an entity name cannot include the words "College," "University," "School of Medicine," "Medical School," "Health Science Center,""School of Law," "Law Center," or "Law School," whether in English or in another language, unless accompanied by a no objection letter from the Texas Higher Education Coordinating Board.`,
+      `Where prohibited by §5.062 of the Texas Business Organizations Code, an entity name cannot include the words "Veteran," "Legion," "Foreign," "Spanish," "Disabled," "War," or "World War" if the name implies the entity is created for the benefit of war veterans and their families, without written approval issued from a veterans organization pursuant to §5.062 of the Texas Business Organizations Code.`,
+      `The words "insurance" or "surety" must be accompanied by other words that remove the implication that the entity purpose is to be an insurer.`,
+    ],
+    button: {
+      text: `Read more about Texas Secretary of State business naming rules`,
+      url: `https://direct.sos.state.tx.us/help/entitynames.pdf`,
+    },
+};
+  
+export const corporationRules = {
+    header: `Texas Corporation Naming Rules`,
+    text: `<p>The words “Incorporated,” “Corporation,” “Limited” or their abbreviations generally need to appear in your business name, normally at the end.</p></br>
+        <p>The Texas Secretary of State will not typically allow you to name S Corporations or C Corporations that breach the following rules:</p>`,
+    list: [
+      `Are very similar to the name of a federal or TX agency or organization (e.g., FBI, FDA, Texas Department of Revenue, Texas Police, Treasury, etc.)`,
+      `Suggest affiliation with a federal or TX agency or organization`,
+      `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
+    ],
+};
+  
+export const startBusiness = {
+    header: `Form Your Texas LLC or Corporation Quickly and Easily`,
+    text: `We have a full guide to starting a new business in Texas.`,
+    text2: `Learn about how to start a TX LLC or a TX corporation.`,
+    button: {
+      text: `TX LLC`,
+      url: `/texas-llc/`,
+    },
+    button2: {
+      text: `TX CORPORATION`,
+      url: `/texas-corporation/`,
+    },
 };
 
 export const faq = {

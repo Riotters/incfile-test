@@ -54,11 +54,6 @@ export const howToGuide = [
 			text: `Learn more about the benefits of the LLC business structure here.`,
 			url: `/limited-liability-company/`,
 		},
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `In this guide, we’ll walk you through how to get an LLC in Nevada, as well as any special requirements or regulations you’ll need to consider.`,
 		marginBottom: 48,
 	},
 	{
@@ -1645,7 +1640,7 @@ export const requirements = {
 						text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
 						text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
 						link: {
-							text: `Other State's Ongoing`,
+							text: `Other State Requirements`,
 							url: `/`,
 						},
 					},

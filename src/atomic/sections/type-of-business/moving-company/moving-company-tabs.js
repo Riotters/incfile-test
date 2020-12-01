@@ -464,8 +464,7 @@ const MovingCompanyTabs = ({layout, columns}) => (
                                         </div>
 
                                         <Paragraph big>
-                                            This is why Airbnb businesses are so exciting — how can you be a part of
-                                            that success? We're here to help you figure that out.
+                                            This is why moving businesses are so exciting — how can you be part of that success? We're here to help you figure that out.
                                         </Paragraph>
 
                                     </PanelWrapper>

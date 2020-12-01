@@ -5,7 +5,7 @@ import { shadow } from "./styles/shadows";
 import Image from "./image";
 import Label from "./form/label";
 import Dropdown from "./form/dropdown";
-import Button from "../atomic/molecules/buttons/button";
+import Button from "../atomic/molecules/buttons/button-action";
 import { AnnualReportState } from "../helpers/annual-report-states";
 import { shortState } from "../helpers/utils";
 
@@ -71,7 +71,7 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
 
   const [extraFee, setExtraFee] = useState(extraFeeText ? extraFeeText : defaultExtraFee);
   const [showExtraFee, setShowExtraFee] = useState(true);
-  const [entityTypeSelected, setEntityTypeSelected] = useState({});
+  const [entityTypeSelected, setEntityTypeSelected] = useState('LLC');
   const [entityState, setEntityState] = useState("");
   const [compState, setCompState] = useState("");
   const [stateFormationOptions, setStateFormationOptions] = useState(dropdownTwoOptions);
@@ -85,7 +85,7 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
 
   const _onChangeEntityType = (option) => {
     let value = option.value;
-    setEntityTypeSelected(option);
+    setEntityTypeSelected(option.value);
 
     if (orderPage === "/annual-report.php") {
       let states = AnnualReportState[value];
@@ -107,7 +107,7 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
       return;
     }
 
-    let priceColumnField = `${priceColumn}${entityTypeSelected.value}`;
+    let priceColumnField = `${priceColumn}${entityTypeSelected}`;
     let endpoint = `${process.env.INCFILE_API_URL}/get-price-by-state/?state=${state}`;
     if (fields) {
       endpoint += `&_fields=${fields}`;
@@ -128,7 +128,7 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
       setCompState("");
     } else {
       setCompState(stateOfFQ);
-      let priceColumnField = `${priceColumn}${entityTypeSelected.value}`;
+      let priceColumnField = `${priceColumn}${entityTypeSelected}`;
 
       let endpoint = `${process.env.INCFILE_API_URL}/get-price-by-state/?state=${stateOfFQ}`;
       if (fields) {
@@ -141,15 +141,16 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
     }
   };
 
-  const handleOrderNow = () => {
-    if (typeof window !== "undefined") {
-      let orderUrl = `${process.env.ORDER_URL}${orderPage}?entityType=${entityTypeSelected.label}&entityState=${entityState}`;
-      if (compState) {
-        orderUrl += `&compState=${compState}`;
-      }
-      window.location.replace(orderUrl);
-    }
-  };
+    const handleOrderNow = () => {
+        if (typeof window !== "undefined") {
+            let entityTypeItem = entityOptions.filter(item => item.value === entityTypeSelected); 
+            let orderUrl = `${process.env.ORDER_URL}${orderPage}?entityType=${entityTypeItem[0].label}&entityState=${entityState}`;
+            if (compState) {
+                orderUrl += `&compState=${compState}`;
+            }
+            window.location.replace(orderUrl);
+        }
+    };
 
   const entityOptions = [
     { value: `LLC`, label: `LLC` },

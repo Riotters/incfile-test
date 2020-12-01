@@ -199,22 +199,14 @@ const CoachBusinessStructure = () => (
         <Heading size={3} style={{ maxWidth: "100%" }} bottomMargin={0}>
           Taxes when Working Remotely
         </Heading>
-
-        <Paragraph big bottomMargin={0} style={{ paddingBottom: 0 }}>
-          As a real estate investment entrepreneur, the standard or series LLC is very likely the best option for you. They do not have a lot of administrative overhead and still provide you with good liability protection.
+        <Paragraph mixed big>
+            <p>Living and working outside the U.S. does not exempt you from having to pay U.S. taxes.</p><br/>
+            <p>There may be extra filing requirements if you hold more than $10,000 in a non-U.S. bank or investment account.</p><br/>
+            <p>If you are out of the U.S. for 330 days a year, you may be able to get tax relief on some or all of your earnings. This includes the "Foreign Earned Income Exclusion," which lets Americans who live abroad exclude the first $100,000 or so that hey earn from U.S. tax liability.</p><br/>
+            <p>Foreign housing may also be deductible in certain circumstances.</p><br/>
+            <p>Check with the government in the country where you're earning money to see what your tax filing and liability is going to be there, and hire a local accountant</p>
         </Paragraph>
 
-        <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-          For more information on the advantages and disadvantages of different types of businesses, <Link to="/business-entity-comparison/">please see our in-depth guide</Link>. If you’ve still got questions,{" "}
-          <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
-            we’ve answered them to help you choose the right business structure
-          </a>{" "}
-          for your digital nomad business.
-        </Paragraph>
-        <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-          In most cases our recommendation would be to create an LLC. We have a <Link to="/form-an-llc/">complete guide to everything you need to do</Link>, and we can set one up for your digital nomad business. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but
-          we’ve got you covered, wherever you are.
-        </Paragraph>
 
         <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />
       </ImageContent>

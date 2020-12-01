@@ -38,7 +38,7 @@ const JobsAnywhere = () => (
         If you don't have a skill like that, you will need to find a type of business you can run from any location. Those types of businesses are not likely to be service driven, as you would have to learn to carry out the service at the same time as starting up a business — not an easy task.
       </Paragraph>
       <Paragraph big>Fortunately, there are plenty of ideas for those types of businesses — selling online through marketplaces like Amazon or eBay, creating information products, affiliate marketing, blogging, social media marketing and more.</Paragraph>
-      <Paragraph big>
+      <Paragraph mixed big>
         If you're stuck for inspiration, here's a{" "}
         <a href="https://choosytraveler.com/digital-nomad-job-ideas/" target="_blank" rel="noopener noreferrer">
           list of more than 500 ideas for a digital nomad business
@@ -86,7 +86,7 @@ const JobsAnywhere = () => (
     </LogosContainer>
 
     <Container style={{ paddingTop: "80px", paddingBottom: "100px" }} width={750}>
-      <Paragraph big style={{ paddingTop: "0px" }}>
+      <Paragraph mixed big style={{ paddingTop: "0px" }}>
         There are also plenty of marketplaces where you can offer freelance services as a digital nomad — some of the most popular are{" "}
         <a href="https://www.upwork.com/" target="_blank" rel="noopener noreferrer">
           UpWork
@@ -126,7 +126,7 @@ const JobsAnywhere = () => (
         can also provide plenty of opportunities. Just because you are offering services through another business marketplace doesn't mean you're not a business in your own right.
       </Paragraph>
       <Paragraph big>Finally, becoming a digital nomad comes with its own set of challenges. You must be extremely focused and very flexible, roll with internet delays and be comfortable with living and working in an isolating environment.</Paragraph>
-      <Paragraph big>
+      <Paragraph mixed big>
         You can also find <Link to="/blog/post/is-becoming-a-digital-nomad-right-for-you/">additional guidance in understanding if a digital nomad business is right for you</Link>. If this blog post, we'll help you analyze if your digital nomad business iead is a good one, conduct market research
         and build a business plan.
       </Paragraph>

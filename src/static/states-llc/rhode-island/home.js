@@ -111,9 +111,14 @@ export const howToGuide = [
     marginBottom: 32,
   },
   {
+    type: `text`,
+    content: `The Secretary of State has plenty of information on forming and running a business in Rhode Island.`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `The Secretary of State has plenty of information on forming and running a business in Rhode Island. These are all the basic steps for forming an LLC in Rhode Island. You’ll find other useful information below.`,
+      header: `These are all the basic steps for forming an LLC in Rhode Island. You’ll find other useful information below.`,
       list: [
         `<a href="https://www.sos.ri.gov/divisions/business-services/" target="_blank" rel="noopener noreferrer">Rhode Island Secretary of State for forming and running your LLC</a>`,
         `<a href="http://www.dlt.ri.gov/employer.htm" target="_blank" rel="noopener noreferrer">Rhode Island Department of Labor and Training for employers and hiring</a>`,
@@ -121,7 +126,7 @@ export const howToGuide = [
       ],
     },
     marginBottom: 32,
-    color: color.babyblue3,
+    color: color.babyblue2,
   },
   {
     type: `header`,
@@ -135,27 +140,21 @@ export const howToGuide = [
     marginBottom: 32,
   },
   {
-    type: `header`,
-    content: `Form a Professional Rhode Island LLC`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `Some states, including Rhode Island, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. You can find more information here.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Form a Foreign LLC in Rhode Island`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `<p>If your business is already operating in another state and expanding to Rhode Island, you’ll need to form a foreign LLC.</p></br>
-              <p><a href="/rhode-island-llc/form-filling-permit-requirements/">More information on Rhode Island filing and licensing requirements here.</a></p>`,
-    marginBottom: 40,
+    type: `accordion`,
+    content: {
+      items: [
+        {
+          question: `Form a Professional Rhode Island LLC`,
+          answer: `Some states, including Rhode Island, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. You can find more information here.`,
+        },
+        {
+          question: `Form a Foreign LLC in Rhode Island`,
+          answer: `<p>If your business is already operating in another state and expanding to Rhode Island, you’ll need to form a foreign LLC.</p></br>
+            <p><a href="/rhode-island-llc/form-filling-permit-requirements/">More information on Rhode Island filing and licensing requirements here.</a></p>`,
+        },
+      ],
+    },
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -166,13 +165,13 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Want to know your next steps after creating a new LLC in Rhode Island? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `Detailed Information for Your Rhode Island LLC`,
     size: 3,
-    marginBottom: 32,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1579,7 +1578,7 @@ export const requirements = {
             text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
             text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
-              text: `Other State's Ongoing`,
+              text: `Other State Requirements`,
               url: `/`,
             },
           },

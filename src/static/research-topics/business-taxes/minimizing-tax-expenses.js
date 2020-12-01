@@ -24,7 +24,7 @@ export const about = {
   },
   link: {
     text: `Your Tax Preparation Checklist`,
-    url: `/`,
+    url: `/blog/post/2019-tax-preparation-checklist/`,
   },
   header4: `Include Other Work-from-Home Expenses`,
   list4: {
@@ -34,7 +34,7 @@ export const about = {
   text6: `Note that you cannot write off telephone costs for the first landline into your home, but you can deduct the cost of additional lines used for business.`,
   link2: {
     text: `Best and Worst States for Small Business Taxes`,
-    url: `/`,
+    url: `/blog/post/best-worst-states-small-business-taxes/`,
   },
   header5: `Minimize Business Taxes by Using a Vehicle for Work`,
   text8: `If you use a vehicle for business, you can deduct expenses.`,
@@ -50,7 +50,7 @@ export const about = {
   text10: `If you do have a 401(k) provided by your business, such as a SEP or SIMPLE plan, you can deduct contributions made to the IRA portion of the plan. These plans also have higher contribution and deductible limits than Individual Retirement Accounts.`,
   link3: {
     text: `How to Set Your New Business Up for Tax Success`,
-    url: `/`,
+    url: `/blog/post/small-business-tax-tips/`,
   },
   header7: `Deduct the Costs of Business Equipment, Furniture, Technology and Other Assets`,
   text12: `If you buy equipment, furniture, hardware, software, sundries or other assets for business use, you can deduct them from your earnings.`,
@@ -76,7 +76,7 @@ export const about = {
   text16: `If you have invoices that have gone unpaid, and you use accrual accounting, you can deduct the cost of those bad debts from your business earnings.`,
   link4: {
     text: `Freelance Taxes: How Much to Budget When You’re Self-Employed`,
-    url: `/`,
+    url: `/blog/post/freelance-self-employed-taxes-budget/`,
   },
   header10: `Deduct Interest on Business Loans`,
   text18: `If you take out a loan for your business, you can normally deduct any interest on your repayments as an expense against business taxes, although there are some limitations.`,
@@ -89,7 +89,7 @@ export const about = {
   text22: `Incfile provides a Business Tax service that makes it easy for you to prepare and file your business taxes.`,
   button: {
     text: `Try Incfile's Business Tax Service`,
-    url: `/`,
+    url: `/business-accounting/`,
   },
 };
 

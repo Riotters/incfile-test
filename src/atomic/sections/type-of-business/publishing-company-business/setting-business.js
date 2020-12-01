@@ -39,7 +39,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="display-ads" color={color.purple3}>
-          <h4>Marketing Your Construction Business</h4>
+          <h4>Marketing Your Publishing House</h4>
           <p>
             Marketing will be a huge part of your publishing business. Naturally, you will need an awesome website, but you'll also need to get branding, newsletters, digital ads, social media accounts and other channels in place. As a publisher, organic SEO will be a large part of your content and
             marketing strategy.
@@ -47,7 +47,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="side-4" color={color.green3}>
-          <h4>Construction Equipment</h4>
+          <h4>Equipment for Your Publishing Business</h4>
           <p>
             As a digital publisher, it’s likely that the only equipment you will need to run your publishing business is a computer, laptop, tablet or smartphone and specialized software. If you’re producing audio or video content, you will also need a microphone, relevant recording devices and
             software to edit and add to your content.

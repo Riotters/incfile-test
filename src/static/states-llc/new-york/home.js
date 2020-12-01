@@ -107,11 +107,11 @@ export const HomePageContent = {
           header: `Here’s what is typically included:`,
           list: [`Your business name and address`, `Details of your Registered Agent`, `Name and address of the incorporator`],
         },
-        button: {
+        download_205_button: {
           text: `Download New York's Articles of Organization Form Here`,
           url: `https://www.dos.ny.gov/forms/corporations/1336-f.pdf`,
         },
-        text2: `You can file your Articles of Organization online on the New York Business Express website, mail in a form or have Incfile do it on your behalf for free. The state of New York charges a $205 fee ($200 + $5 for a paper copy) to file and start an LLC`,
+        text2: `You can file your Articles of Organization online on the New York Business Express website, mail in a form or have Incfile do it on your behalf for free. The state of New York charges a $205 fee ($200 + $5 for a paper copy) to file and start an LLC.`,
         certificate_info: [
           {
             text1: `File by Mail:`,
@@ -138,8 +138,11 @@ export const HomePageContent = {
         text1: `New York has an additional requirement for LLCs — you must publish a notice of formation in two local newspapers in the county in which your business is formed. These newspapers must be ones already approved by the County Clerk’s office.`,
         text2: `Publication must be complete within 120 days of your official LLC incorporation date, and you need to run the notices for six consecutive weeks. You can see step-by-step instructions for this process in our "How to Meet New York LLC Publication Requirements" guide.`,
         text3: `Once you’ve met the publication requirements, the newspapers will send you an Affidavit of Publication, which you then need to file with the Department of State to receive your Certificate of Publication. The state charges a $50 fee for this certificate.`,
-        text4: `<a href="https://www.dos.ny.gov/forms/corporations/1708-f-l.pdf" target="_blank" rel="noopener noreferrer">Download New York's Certificate of Publication Form</a>`,
-        text5: `
+        download_205_button: {
+            text: `Download New York's Certificate of Publication Form`,
+            url: `https://www.dos.ny.gov/forms/corporations/1708-f-l.pdf`,
+        },
+        text4: `
             <b>Where to File Your Certificate of Publication:</b></br>
             Department of State Division of Corporations</br>
             State Records and Uniform Commercial Code</br>
@@ -280,7 +283,7 @@ export const HomePageContent = {
         theme: `secondary56`,
         content: {
           text: `Search For Your New York LLC Name`,
-          url: `/`,
+          url: `/`, // okienko
         },
       },
       {

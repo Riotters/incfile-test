@@ -110,9 +110,14 @@ export const howToGuide = [
     marginBottom: 32,
   },
   {
+    type: `text`,
+    content: `The NH Secretary of State has plenty of information on forming and running a business in New Hampshire.`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `The NH Secretary of State has plenty of information on forming and running a business in New Hampshire. These are all the basic steps for forming an LLC in New Hampshire. You’ll find other useful information below.`,
+      header: `These are all the basic steps for forming an LLC in New Hampshire. You’ll find other useful information below.`,
       list: [
         `<a href="https://sos.nh.gov/nhllcforms.aspx" target="_blank" rel="noopener noreferrer">New Hampshire Secretary of State for forming and running your LLC</a>`,
         `<a href="https://www.nh.gov/labor/" target="_blank" rel="noopener noreferrer">New Hampshire Department of Labor for employers and hiring</a>`,
@@ -133,59 +138,47 @@ export const howToGuide = [
     content: `A regular New Hampshire LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
     marginBottom: 32,
   },
+
   {
-    type: `header`,
-    content: `Professional New Hampshire LLCs`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `Some states, including New Hampshire, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing.`,
-    marginBottom: 32,
-  },
-  {
-    type: `list-dot`,
+    type: `accordion`,
     content: {
-      header: `Here are the occupations that the NH Secretary of State allows to form professional LLCs:`,
-      list: [
-        `Public Accountant`,
-        `Architect`,
-        `Attorney`,
-        `Chiropractor`,
-        `Doctor of Dentistry`,
-        `Professional Engineer`,
-        `Naturopath`,
-        `Nurse`,
-        `Optometrist`,
-        `Osteopathic Physician or Surgeon`,
-        `Pharmacist`,
-        `Physician, Surgeon or Doctor of Medicine`,
-        `Physician Assistant`,
-        `Physical Therapist`,
-        `Podiatric Physician`,
-        `Psychologist`,
-        `Real Estate Principal Broker, Associate Broker or Sales Agent`,
-        `Clinical or Certified Social Worker`,
-        `Mental Health Therapist`,
-        `Veterinarian`,
-        `Real Estate Appraiser`,
+      items: [
+        {
+          question: `Professional New Hampshire LLCs`,
+          answer: `<p>Some states, including New Hampshire, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing.<p></br>
+            <p>Here are the occupations that the NH Secretary of State allows to form professional LLCs:</p>
+                <ul>
+                    <li>Public Accountant</li>
+                    <li>Architect</li>
+                    <li>Attorney</li>
+                    <li>Chiropractor</li>
+                    <li>Doctor of Dentistry</li>
+                    <li>Professional Engineer</li>
+                    <li>Naturopath</li>
+                    <li>Nurse</li>
+                    <li>Optometrist</li>
+                    <li>Osteopathic Physician or Surgeon</li>
+                    <li>Pharmacist</li>
+                    <li>Physician, Surgeon or Doctor of Medicine</li>
+                    <li>Physician Assistant</li>
+                    <li>Physical Therapist</li>
+                    <li>Podiatric Physician</li>
+                    <li>Psychologist</li>
+                    <li>Real Estate Principal Broker, Associate Broker or Sales Agent</li>
+                    <li>Clinical or Certified Social Worker</li>
+                    <li>Mental Health Therapist</li>
+                    <li>Veterinarian</li>
+                    <li>Real Estate Appraiser</li>
+                </ul>`,
+        },
+        {
+          question: `Form a Foreign LLC in New Hampshire`,
+          answer: `<p>If your business is already operating in another state and expanding to New Hampshire, you’ll need to form a foreign LLC.</p></br>
+            <p><a href="/new-hampshire-llc/form-filling-permit-requirements/">More information on New Hampshire filing and licensing requirements here.</a></p>`,
+        },
       ],
     },
-    marginBottom: 40,
-    color: color.purple3,
-  },
-  {
-    type: `header`,
-    content: `Form a Foreign LLC in New Hampshire`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `<p>If your business is already operating in another state and expanding to New Hampshire, you’ll need to form a foreign LLC.</p></br>
-              <p><a href="/new-hampshire-llc/form-filling-permit-requirements/">More information on New Hampshire filing and licensing requirements here.</a></p>`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -196,13 +189,13 @@ export const howToGuide = [
   {
     type: `text`,
     content: `Want to know your next steps after creating a new LLC in New Hampshire? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `Other Information in This Guide`,
     size: 3,
-    marginBottom: 32,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1559,7 +1552,7 @@ export const requirements = {
             text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
             text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
-              text: `Other State's Ongoing`,
+              text: `Other State Requirements`,
               url: `/`,
             },
           },

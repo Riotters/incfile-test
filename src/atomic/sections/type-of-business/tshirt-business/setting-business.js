@@ -48,7 +48,7 @@ const SettingBusiness = () => (
 
         <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
           <h4>Employees</h4>
-          <p>It’s unlikely that you will need to hire employees in the early days of your business. Instead, you might work with freelance designers, marketers and similar.</p>
+          <p>You will probably need to hire employees for your landscaping business; more on that below.</p>
         </TopImageBox>
 
         <TopImageBox image="side-yellow" color={color.yellow3}>

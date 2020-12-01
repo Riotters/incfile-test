@@ -91,7 +91,7 @@ export const protect = {
   text2: `We also provide a complete, low-cost trademark search and registration service to make it easy to protect your assumed business or trade name.`,
   link: {
     text: `Check out our  trademark search and registration service`,
-    url: `${process.env.ORDER_URL}/fictitious-business-name`,
+    url: `/trademark-name-search/`,
   },
 };
 

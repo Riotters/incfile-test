@@ -99,12 +99,10 @@ const StateSection = ({ content, getDataForVariants }) => {
                         <Dropdown className="dropdown" placeholder="Alabama" options={dropdownOptions} onChange={option => setState(option.value)} />
                     </TopImageBox>
                 </ImageBoxes>
-                <Button content={content.button} theme="primary56" arrow />
                 <Result>
                     <FilingTimeAndPriceBox data={dataApi} />                    
                     <ComplianceRequirementBox data={dataApi} />                    
                 </Result>
-                <Button content={content.button2} theme="secondary56" arrow />
             </ContentCenter>
         </State>
     );

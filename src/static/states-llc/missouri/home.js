@@ -152,7 +152,7 @@ export const howToGuide = [
           answer: `Some states allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. Missouri does not recognize professional LLCs, but professionals can form a standard LLC.`,
         },
         {
-          question: `Form a Professional Missouri LLC`,
+          question: `Form a Foreign LLC in Missouri`,
           answer: `<p>If your business is already operating in another state and expanding to Missouri, you’ll need to form a foreign LLC. </p></br>
           <p><a href="/missouri-llc/form-filling-permit-requirements/">More information on Missouri filing and licensing requirements here.</a></p>`,
         },
@@ -1595,7 +1595,7 @@ export const requirements = {
             text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
             text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
-              text: `Other State's Ongoing`,
+              text: `Other State Requirements`,
               url: `/`,
             },
           },

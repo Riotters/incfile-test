@@ -79,14 +79,13 @@ export const howToGuide = [
                    <a href="/montana-llc/how-to-name-your-llc/"> Learn about Montana LLC business naming rules.</a>`,
 				},
 				{
-					question: `STEP 3: Provide an Official Address for Your MS LLC`,
+					question: `STEP 3: Provide an Official Address for Your MT LLC`,
 					answer: `Every Montana LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address must be inside the state of Montana, but it cannot be a P.O. Box.`,
 				},
 				{
 					question: `STEP 4: Assign a Montana Registered Agent`,
 					answer: `<p>Every Montana LLC must have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Montana Secretary of State.</p></br>
           <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Montana and must be present to receive important documents for your company during business hours.</p></br>
-          
           <p>At Incfile, all of our packages include a Montana Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
           <a href="/montana-llc/registered-agents-montana-llc/">Learn more about Montana Registered Agents.</a>`,
 				},
@@ -116,9 +115,14 @@ export const howToGuide = [
 		marginBottom: 16,
 	},
 	{
+		type: `text`,
+		content: `The Montana Secretary of State has plenty of information on forming and running a business in Montana. Check out additional resources below.`,
+		marginBottom: 24,
+	},
+	{
 		type: `list-dot`,
 		content: {
-			header: `The Montana Secretary of State has plenty of information on forming and running a business in Montana. Check out additional resources below.<br>These are all the basic steps for forming an LLC in Montana. You’ll find other useful information below.`,
+			header: `These are all the basic steps for forming an LLC in Montana. You’ll find other useful information below.`,
 			list: [
 				`<a href="https://app.mt.gov/businesschecklist" target="_blank" rel="noopener noreferrer">Montana Secretary of State for forming and running your LLC</a>`,
 				`<a href="http://dli.mt.gov//" target="_blank" rel="noopener noreferrer">Montana Department of Labor for Montana employers and hiring</a>`,
@@ -175,19 +179,30 @@ export const howToGuide = [
 	{
 		type: `text`,
 		content: `<p>If your business is already operating in another state and expanding to Montana, you’ll need to form a foreign LLC.</p></br>
-              <p><a href="/montana-llc/form-filling-permit-requirements/">More information on Montana filing and licensing requirements here.</a></p>`,
+              <p><a href="/Montana-llc/fees-filing-requirements/">More information on Montana filing and licensing requirements here.</a></p>`,
+		marginBottom: 40,
+	},
+	{
+		type: `header`,
+		content: `What to Do After Forming Your Montana LLC`,
+		size: 3,
+		marginBottom: 16,
+	},
+	{
+		type: `text`,
+		content: `<p>Want to know your next steps after creating a new LLC in Montana? We’ve got you covered. <a href="/after-forming-llc/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more.</p>`,
 		marginBottom: 32,
 	},
 
 	{
 		type: `header`,
-		content: `Detailed Information for Your Montana LLC`,
+		content: `Other Information in This Guide`,
 		size: 4,
 		marginBottom: 16,
 	},
 	{
 		type: `text`,
-		content: `You’ll find plenty more insight and guidance on the other pages of this guide, including`,
+		content: `You’ll find plenty more insight and guidance on the other pages of this guide, including:`,
 		marginBottom: 32,
 	},
 	{
@@ -406,7 +421,7 @@ export const namingYourBusiness = [
 			list: [
 				`If you don’t want to form your LLC right now, you can reserve the business name with the Montana Secretary of State. You will need to complete an Application for Reservation of Name and file it with the MT SOS. You do not need to reserve a name if you are forming your business right away."`,
 				`If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Montana SOS, or
-             <a href="/montana-llc/form-filling-permit-requirements/"> let Incfile take care of it for you.</a>.`,
+         <a href="/montana-llc/form-filling-permit-requirements/"> let Incfile take care of it for you.</a>.`,
 			],
 		},
 		marginBottom: 48,
@@ -559,13 +574,13 @@ export const registeredAgent = [
 	},
 	{
 		type: `text`,
-		content: `There are certain rules that you must follow when you’re appointing a Montana Registered Agent service for your business. They are:`,
+		content: `There are certain rules that you must follow when you’re appointing a Montana Registered Agent service for your business.`,
 		marginBottom: 16,
 	},
 	{
 		type: `list-dot`,
 		content: {
-			header: ``,
+			header: `They are:`,
 			list: [
 				`If the Registered Agent is a person, they must reside in Montana.`,
 				`If the Registered Agent is a business, they must be able to conduct business in Montana.`,
@@ -589,13 +604,13 @@ export const registeredAgent = [
 	},
 	{
 		type: `text`,
-		content: `Your Montana Registered Agent carries out several valuable services for your business. They accept official communications and documents from the MT Secretary of State on your behalf. This may include:`,
+		content: `Your Montana Registered Agent carries out several valuable services for your business. They accept official communications and documents from the MT Secretary of State on your behalf.`,
 		marginBottom: 16,
 	},
 	{
 		type: `list-dot`,
 		content: {
-			header: ``,
+			header: `This may include:`,
 			list: [
 				`Correspondence from the Montana Secretary of State, like a notice to file reports and other forms`,
 				`Service of process documents (for example, if your Montana LLC has legal proceedings issued against it)`,
@@ -620,13 +635,13 @@ export const registeredAgent = [
 	},
 	{
 		type: `text`,
-		content: `We are authorized to conduct business in Montana and can legally act as your Registered Agent. Here’s what the Incfile Montana Registered Agent service provides for your LLC::`,
+		content: `We are authorized to conduct business in Montana and can legally act as your Registered Agent.`,
 		marginBottom: 16,
 	},
 	{
 		type: `list-dot`,
 		content: {
-			header: ``,
+			header: `Here’s what the Incfile Montana Registered Agent service provides for your LLC:`,
 			list: [
 				`An always-available Montana Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
 				`A digital dashboard where you can access, store and retrieve any information we’ve received for your Montana business`,
@@ -770,13 +785,13 @@ export const registeredAgent = [
 	},
 	{
 		type: `text`,
-		content: `What happens if you choose not to assign or provide details of a Registered Agent to the Montana Secretary of State? There are several possible ramifications, including:`,
+		content: `What happens if you choose not to assign or provide details of a Registered Agent to the Montana Secretary of State?`,
 		marginBottom: 16,
 	},
 	{
 		type: `list-dot`,
 		content: {
-			header: ``,
+			header: `There are several possible ramifications, including:`,
 			list: [
 				`<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
 				`<b>Falling out of good standing with the Montana Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -794,13 +809,13 @@ export const registeredAgent = [
 	},
 	{
 		type: `text`,
-		content: `If you have an address in Montana, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
+		content: `If you have an address in Montana, you can choose to be the Registered Agent for your LLC.`,
 		marginBottom: 16,
 	},
 	{
 		type: `list-dot`,
 		content: {
-			header: ``,
+			header: `We don’t recommend this approach as there can be some drawbacks:`,
 			list: [
 				`The Registered Agent must have a physical street address in Montana. If you’re forming an LLC outside Montana, you will need to use an in-state Registered Agent.`,
 				`You always need to have someone on hand during business hours at the Montana address to sign for important documents.`,
@@ -1043,13 +1058,13 @@ export const feesAndRequirments = [
 	{
 		type: `text`,
 		content: `Our Business License Research Package
-     tells you about all of the licenses and permits you will need for your Montana LLC. It includes:`,
+     tells you about all of the licenses and permits you will need for your Montana LLC.`,
 		marginBottom: 24,
 	},
 	{
 		type: `list-dot`,
 		content: {
-			header: ``,
+			header: `It includes:`,
 			list: [
 				`A complete report on all the licenses, permits and tax registrations your Montana LLC will need`,
 				`The application forms you will need to file with the Montana, regional and federal licensing authorities`,
@@ -1063,14 +1078,6 @@ export const feesAndRequirments = [
 		content: `Remember that operating your business without the required licenses can expose you to risks and fines from federal, Montana and local governments.`,
 		marginBottom: 16,
 	},
-
-	{
-		type: `header`,
-		content: `Create an Operating Agreement for Your Montana LLC`,
-		size: 4,
-		marginBottom: 16,
-	},
-
 	{
 		type: `header`,
 		content: `Create an Operating Agreement for Your Montana LLC`,
@@ -1099,6 +1106,26 @@ export const feesAndRequirments = [
 		type: `text`,
 		content: `There are several other fees or requirements that you may need to meet during the life of your Montana LLC. These ad hoc fees will only be payable in specific circumstances, which we’ve listed below.`,
 		marginBottom: 32,
+    },
+    {
+		type: `header`,
+		content: `To Obtain a Fictitious/DBA Name for Your Montana LLC`,
+		size: 4,
+		marginBottom: 16,
+	},
+	{
+		type: `text`,
+		content: `If you want your MS business to trade under a different name, you can file a form with the Montana Secretary of State. You will need to pay a Montana filing fee. Incfile can file this form on your behalf.`,
+		marginBottom: 16,
+	},
+	{
+		type: `button`,
+		content: {
+			text: `Incfile's Montana fictitious name service.`,
+			url: `/fictitious-business-or-trade-name/`,
+		},
+		theme: `primary48`,
+		marginBottom: 32,
 	},
 	{
 		type: `header`,
@@ -1116,26 +1143,6 @@ export const feesAndRequirments = [
 		content: {
 			text: `Incfile's Montana registered agent service`,
 			url: `/manage-your-company/registered-agent/`,
-		},
-		theme: `primary48`,
-		marginBottom: 32,
-	},
-	{
-		type: `header`,
-		content: `To Obtain a Fictitious/DBA Name for Your Montana LLC`,
-		size: 4,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `If you want your MS business to trade under a different name, you can file a form with the Montana Secretary of State. You will need to pay a Montana filing fee. Incfile can file this form on your behalf.`,
-		marginBottom: 16,
-	},
-	{
-		type: `button`,
-		content: {
-			text: `Incfile's Montana fictitious name service.`,
-			url: `/fictitious-business-or-trade-name/`,
 		},
 		theme: `primary48`,
 		marginBottom: 32,
@@ -1584,7 +1591,7 @@ export const requirements = {
 						text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
 						text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
 						link: {
-							text: `Other State's Ongoing`,
+							text: `Other State Requirements`,
 							url: `/`,
 						},
 					},

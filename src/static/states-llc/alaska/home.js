@@ -592,13 +592,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a Alaska Registered Agent service for your business. They are:`,
+    content: `There are certain rules that you must follow when you’re appointing a Alaska Registered Agent service for your business.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in Alaska.`,
         `If the Registered Agent is a business, they must be able to conduct business in Alaska.`,
@@ -622,13 +622,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What can you expect from your Alaska Registered Agent? Their main function is to accept official documents and correspondence. This includes:`,
+    content: `What can you expect from your Alaska Registered Agent? Their main function is to accept official documents and correspondence.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `This includes:`,
       list: [
         `Correspondence from the Alaska Division of Corporations, like a notice to file reports and other forms`,
         `Service of process documents (for example, if your Alaska LLC has legal proceedings issued against it)`,
@@ -654,17 +654,12 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `We are authorized to conduct business in Alaska and can legally act as your Registered Agent.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Here’s what the Incfile Alaska Registered Agent service provides for your LLC:`,
-    marginBottom: 16,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `Here’s what the Incfile Alaska Registered Agent service provides for your LLC`,
       list: [
         `An always-available Alaska Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
         `A digital dashboard where you can access, store and retrieve any information we’ve received for your Alaska business`,
@@ -804,13 +799,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Alaska Division of Corporations? There are several possible ramifications, including:`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Alaska Division of Corporations?`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `There are several possible ramifications, including:`,
       list: [
         `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing with the Alaska Division of Corporations:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -828,13 +823,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `If you have an address in Alaska, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
+    content: `If you have an address in Alaska, you can choose to be the Registered Agent for your LLC.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `We don’t recommend this approach as there can be some drawbacks:`,
       list: [
         `The Registered Agent must have a physical street address in Alaska. If you’re forming an LLC outside AK, you will need to use an in-state Registered Agent.`,
         `You always need to have someone on hand during business hours at the Alaska address to sign for important documents.`,
@@ -1629,7 +1624,7 @@ export const requirements = {
             text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
             text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
-              text: `Other State's Ongoing`,
+              text: `Other State Requirements`,
               url: `/`,
             },
           },
