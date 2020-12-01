@@ -1,7 +1,6 @@
-import React, {Component, Fragment, useState} from 'react';
+import React, {Fragment, useState} from 'react';
 import styled from 'styled-components';
 import parse from 'html-react-parser';
-import { Link } from 'gatsby';
 
 import { color } from '../../../../components/styles/colors';
 import Container from '../../../container';
@@ -116,7 +115,7 @@ const ListReviews = () => {
     React.useEffect(() => {
         getReviews(filters._currentPage, filters._limit, filters._sort).then(data => {
             const res = [];
-            console.log(data);
+
             Object.keys(data).forEach(key => {
                 const vKey = data[key];
                 if (vKey.display_name) {
@@ -132,8 +131,13 @@ const ListReviews = () => {
             })
             
             setReviews(res);
-            // setTotal(data.total_count);
             setLoading(false);
+            
+            const el = document.getElementById('js_reviews_list');
+            el.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
         })
     }, [filters]);
 
@@ -148,7 +152,7 @@ const ListReviews = () => {
             </Oval>
             
             {!loading && (
-                <Container>
+                <Container id="js_reviews_list">
                     <RelativeElement>
                         <AbsoluteShapCure rotate={0} right="-25px" top="-25px">
                             <ShapeCurve color={color.blue} />
