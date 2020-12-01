@@ -8,6 +8,7 @@ import Whitebox from "../../atoms/boxes/white-box";
 import IconCircle from "../../atoms/icons/circle";
 import CheckSVG from "../../../images/circle-status-check.inline.svg";
 import ExSVG from "../../../images/circle-status-x.inline.svg";
+import Image from "../../atoms/image/image_nobase64";
 
 const Wrapper = styled(Whitebox)`
 	display: grid;
@@ -37,10 +38,18 @@ const Cell = styled.div`
 	${(props) =>
 		!props.noSeparator &&
 		`
-  &:not(:last-child) {
-    border-right: 1px solid ${color.grey4};
-  }
-  `};
+        &:not(:last-child) {
+            border-right: 1px solid ${color.grey4};
+        }
+    `};
+
+	.incfile-logo {
+		width: 80px;
+	}
+
+	.legalzoom-logo {
+		width: 95px;
+	}
 `;
 
 const ListItem = styled(Paragraph)`
@@ -73,18 +82,30 @@ const GridTableRow = ({
 	<Wrapper className={className} columns={columns}>
 		{content.map((item, index) => (
 			<Cell textCenter={textCenter} noSeparator={noSeparator} key={index}>
-				{header && (
-					<Heading size={headerSize ? headerSize : "4"} bottomMargin="0">
-						{item}
-					</Heading>
-				)}
+				{header &&
+					item !== "incfile-logo" &&
+					item !== "legalzoom-logo" &&
+					item !== "zenbusiness-logo" &&
+					item !== "zenbusiness-logo" && (
+						<Heading size={headerSize ? headerSize : "4"} bottomMargin="0">
+							{item}
+						</Heading>
+					)}
 				{list &&
 					item !== "" &&
+					item !== "incfile-logo" &&
+					item !== "legalzoom-logo" &&
+					item !== "zenbusiness-logo" &&
+					item !== "zenbusiness-logo" &&
 					item !== "check-green" &&
 					item !== "check-red" && <ListItem bottomMargin="0">{item}</ListItem>}
 				{!header &&
 					!list &&
 					item !== "" &&
+					item !== "incfile-logo" &&
+					item !== "legalzoom-logo" &&
+					item !== "zenbusiness-logo" &&
+					item !== "zenbusiness-logo" &&
 					item !== "check-green" &&
 					item !== "check-red" && (
 						<Paragraph mixed bottomMargin="0">
@@ -93,6 +114,14 @@ const GridTableRow = ({
 					)}
 				{item === "check-green" && <CheckSVG />}
 				{item === "check-red" && <ExSVG />}
+				{item === "incfile-logo" && (
+					<Image className="incfile-logo" filename="incfile-logo-3483" />
+				)}
+				{item === "legalzoom-logo" && (
+					<Image className="legalzoom-logo" filename="legalzoom-logo-3482" />
+				)}
+				{item === "zenbusiness-logo" && <ExSVG />}
+				{item === "rocketlawyer-logo" && <ExSVG />}
 				{item === "" && <IconCircle theme="empty" circleColor="#E7E7E7" />}
 			</Cell>
 		))}

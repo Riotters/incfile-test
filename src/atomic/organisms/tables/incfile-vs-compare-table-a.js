@@ -21,9 +21,12 @@ const Wrapper = styled.div`
 		}
 
 		& > div {
+			justify-content: flex-start;
+			align-items: flex-start;
 			min-width: 122px;
 
 			p {
+				text-align: left;
 				color: ${color.black};
 
 				span {
@@ -31,6 +34,30 @@ const Wrapper = styled.div`
 				}
 			}
 
+			ul {
+				list-style: none;
+
+				li {
+					position: relative;
+					margin-bottom: 12px;
+
+					&::before {
+						content: "";
+						height: 4px;
+						width: 4px;
+						border-radius: 50%;
+						position: absolute;
+						top: 10px;
+						left: -12px;
+						background-color: ${color.orange1};
+					}
+				}
+			}
+		}
+	}
+
+	.table-head {
+		& > div {
 			&:nth-child(2),
 			&:nth-child(3) {
 				justify-content: center;
