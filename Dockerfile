@@ -12,4 +12,4 @@ RUN cd /source ; yarn
 # @todo: stop ignoring failures
 RUN cd /source ; gatsby build || true
 
-COPY /source/form-order-now.php /source/public/form-order-now.php
+COPY form-order-now.php /source/public/
