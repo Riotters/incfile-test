@@ -153,7 +153,7 @@ const BusinessStructure = () => (
 						<Link
 							to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
 						>
-							SeriesLLC
+							Series LLC
 						</Link>
 					</Paragraph>
 
@@ -254,7 +254,7 @@ const BusinessStructure = () => (
 					style={{ paddingTop: "48px", paddingBottom: 0 }}
 					mixed={true}
 				>
-					In most cases our recommendation would be to create an LLC. We’ve
+					In most cases our recommendation would be to create an LLC. We’ve{" "}
 					<Link to="/form-an-llc/">
 						got a complete guide to everything you need to do
 					</Link>

@@ -998,10 +998,21 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
+    type: `header`,
+    content: `The Incfile Business License Research Package for Your Rhode Island LLC`,
+    size: 3,
+    marginBottom: 32,
+  },
+  {
+    type: `text`,
+    content: `Our Business License Research Package tells you about all of the licenses and permits you will need for your Rhode Island LLC.`,
+    marginBottom: 32,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`A A complete report on all the licenses, permits and tax registrations your Rhode Island LLC will need`, `The application forms you will need to file with the Rhode Island, regional and federal licensing authorities`],
+      header: `It includes:`,
+      list: [`A complete report on all the licenses, permits and tax registrations your Rhode Island LLC will need`, `The application forms you will need to file with the Rhode Island, regional and federal licensing authorities`],
     },
     marginBottom: 24,
     color: color.purple3,

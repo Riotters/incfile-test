@@ -170,7 +170,7 @@ const BusinessStructure = () => (
           for your dog walking business.
         </Paragraph>
         <Paragraph big mixed={true} style={{ marginBottom: "48px", paddingBottom: 0 }}>
-          In most cases, our recommendation for your dog walking or pet sitting business would be to create an LLC. We’ve <Link to="/form-an-llc/">got a complete guide</Link>
+          In most cases, our recommendation for your dog walking or pet sitting business would be to create an LLC. We’ve <Link to="/form-an-llc/">got a complete guide </Link>
           to everything you need to do.<Link to="/llc-state-information/"> LLC formation does vary from state to state</Link>, but we’ve got you covered, wherever you are.
         </Paragraph>
 

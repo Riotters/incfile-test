@@ -54,7 +54,6 @@ const BusinessPlan = () => (
       <BusinessOwnerResponsibilities>
         <TextCenterLayout headlineWidth={770} headline="Your Home-Based Business Needs a Plan" />
         <Paragraph big>It's easy to overlook a business plan when starting your home-based business, but that’s a mistake. Every business needs a business plan to become successful and grow.</Paragraph>
-
         <Paragraph big>
           You need to define how you’re going to run your home-based business, market yourself, get sales, make a profit and grow. This can only come about through creating a watertight business plan. It will help you get your thinking in order and show your commitment to your home-based business.
         </Paragraph>

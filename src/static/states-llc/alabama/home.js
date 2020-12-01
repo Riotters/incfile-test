@@ -1013,11 +1013,6 @@ export const feesAndRequirments = [
 		marginBottom: 32,
 	},
 	{
-		type: `text`,
-		content: `Our Business License Research Package tells you about all of the licenses and permits you will need for your Alabama LLC. It includes:`,
-		marginBottom: 24,
-	},
-	{
 		type: `list-dot`,
 		content: {
 			header: ``,
