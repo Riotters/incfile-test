@@ -220,7 +220,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={400} scrollCheck intervalCheck scrollDelay={50}>
+            <VisibilitySensor partialVisibility minTopValue={400} offset={{ top: 100, bottom: 100 }} scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(3);
