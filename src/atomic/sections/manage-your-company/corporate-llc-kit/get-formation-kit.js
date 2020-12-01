@@ -97,8 +97,6 @@ const GetFormationKitSection = ({ className, content }) => (
         {content.header2}
       </Heading>
       <Accordion content={content.faq} />
-      <h3>{content.header3}</h3>
-      <Button content={content.button2} theme="primary56" margin="0 auto" arrow />
     </ContentCenter>
   </GetFormationKit>
 );

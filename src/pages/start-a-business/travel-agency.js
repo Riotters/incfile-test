@@ -271,7 +271,7 @@ in the U.S. by 2020"
       <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
     </ToolsWrapper>
 
-    <Conclusion to="/" buttonTitle="Start your Travel Agency Business with us, today">
+    <Conclusion to={process.env.ORDER_URL + "/form-order-now.php"} buttonTitle="Start your Travel Agency Business with us, today">
       <Heading size={3} style={{ fontSize: "40px" }}>
         Conclusion
       </Heading>

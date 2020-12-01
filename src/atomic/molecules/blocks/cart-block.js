@@ -61,7 +61,7 @@ const CartBlock = () => {
 
   React.useEffect(() => {
     getAggregrateReviews().then((data) => {
-      setFiveStarsNumber(formatNumber(data["5_star"]));
+      setFiveStarsNumber(formatNumber(data["total_reviews"]));
     });
   }, []);
 

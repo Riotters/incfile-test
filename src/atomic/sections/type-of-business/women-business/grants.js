@@ -192,7 +192,7 @@ const BoxWrapper = styled.div`
     }
 `;
 
-const Franchise = styled.a`
+const Franchise = styled(Link)`
   display: block;
   width: 100%;
   border-radius: 5px;

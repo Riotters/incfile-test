@@ -79,7 +79,7 @@ const MovingCompanyPage = () => (
 
 		<UseFulTools />
 
-		<Conclusion to="/" buttonTitle="Start your Moving Business with us, today">
+		<Conclusion to={process.env.ORDER_URL + "/form-order-now.php"} buttonTitle="Start your Moving Business with us, today">
 			<TextCenterLayout
 				headline="Conclusion"
 				text="As you can see, there are some great opportunities to start a successful relocation and moving business. If you can find a great niche, understand your competitors and put together a solid business plan, you will have every chance for success."

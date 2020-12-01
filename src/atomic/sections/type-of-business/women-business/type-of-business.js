@@ -17,6 +17,7 @@ import Icon2 from "../../../../images/icons/start-up-icon.inline.svg";
 import Icon3 from "../../../../images/icons/freedom-icon.inline.svg";
 import Icon4 from "../../../../images/icons/flexibility.inline.svg";
 import Icon5 from "../../../../images/icons/body-clothes-icon.inline.svg";
+import {Link} from "@reach/router";
 
 const TypeBusiness = () => (
     <Wrapper>
@@ -189,7 +190,7 @@ const TypeBusiness = () => (
                         <Paragraph mixed={true}>
                             If you have artistic talent, you can even sell products that you make yourself. You can do
                             this through
-                            a marketplace like Etsy, or create your own store
+                            a marketplace like <Link to="/start-a-business/etsy-business">Etsy</Link>, or create your own store
                             to sell art, prints and other creations. Websites like CafePress and Zazzle will even put
                             your designs onto items and take care of everything else for you.
                         </Paragraph>
@@ -208,7 +209,7 @@ const TypeBusiness = () => (
                         <Paragraph mixed={true}>
                             Home-based businesses aren’t just about selling products and skills, you can also provide
                             other services. For example, you might have skills
-                            as an instructor, coach, consultant, complementary therapist or counselor.
+                            as an instructor, coach, <Link to="/start-a-business/consulting-business">consultant</Link>, complementary therapist or counselor.
                         </Paragraph>
                     </AdventagesWithLongText>
 

@@ -20,6 +20,7 @@ import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
 import Circle from "../../atoms/icons/circle";
 import Table from "../tables/the-c-corp-table";
 import Table2 from "../tables/the-nonprofit-corp-table";
+import parse from "html-react-parser"
 
 const Wrapper = styled.div`
   display: flex;
@@ -237,34 +238,34 @@ const CCorpTabs = ({ layout, columns, content }) => (
               <Panel>
                 <PanelWrapper className={isVisible ? "slideUp enter panel1" : "slideUp panel1"} layout={layout}>
                   <Heading size="3">{content.content[0].header}</Heading>
-                  <Paragraph big bottomMargin="48">
-                    {content.content[0].text}
+                  <Paragraph big bottomMargin="48" mixed>
+                    {parse(content.content[0].text)}
                   </Paragraph>
                   <Heading size="3">{content.content[0].header2}</Heading>
-                  <Paragraph big bottomMargin="40">
-                    {content.content[0].text2}
+                  <Paragraph big bottomMargin="40" mixed>
+                    {parse(content.content[0].text2)}
                   </Paragraph>
                   <IconListColorBox color={color.green3} content={content.content[0].box} bottomMargin="48" rounded />
-                  <Paragraph big bottomMargin="48">
-                    {content.content[0].text3}
+                  <Paragraph big bottomMargin="48" mixed>
+                    {parse(content.content[0].text3)}
                   </Paragraph>
                   <Circle height="80" width="80" circleColor={color.purple2} bottomMargin="32">
                     <LLCLimitedSVG />
                   </Circle>
                   <Heading size="3">{content.content[0].header3}</Heading>
-                  <Paragraph big bottomMargin="48">
-                    {content.content[0].text4}
+                  <Paragraph big bottomMargin="48" mixed>
+                    {parse(content.content[0].text4)}
                   </Paragraph>
                   <Circle height="80" width="80" circleColor={color.orange2} bottomMargin="32">
                     <LLCTaxesSVG />
                   </Circle>
                   <Heading size="3">{content.content[0].header4}</Heading>
-                  <Paragraph big bottomMargin="72">
-                    {content.content[0].text5}
+                  <Paragraph big bottomMargin="72" mixed>
+                    {parse(content.content[0].text5)}
                   </Paragraph>
                   <Heading size="3">{content.content[0].header5}</Heading>
-                  <Paragraph big bottomMargin="40">
-                    {content.content[0].text6}
+                  <Paragraph big bottomMargin="40" mixed>
+                    {parse(content.content[0].text6)}
                   </Paragraph>
                   <IconListColorBox color={color.babyblue3} content={content.content[0].box2} rounded />
                 </PanelWrapper>
@@ -276,8 +277,8 @@ const CCorpTabs = ({ layout, columns, content }) => (
                     {content.content[1].text}
                   </Paragraph>
                   <IconListColorBox color={color.green3} content={content.content[1].box} bottomMargin="48" rounded />
-                  <Paragraph big bottomMargin="48">
-                    {content.content[1].text2}
+                  <Paragraph big bottomMargin="48" mixed>
+                    {parse(content.content[1].text2)}
                   </Paragraph>
                   <Heading size="3">{content.content[1].header2}</Heading>
                   <Paragraph big>{content.content[1].text3}</Paragraph>
@@ -297,8 +298,8 @@ const CCorpTabs = ({ layout, columns, content }) => (
               <Panel>
                 <PanelWrapper className="panel3" layout={layout}>
                   <Heading size="3">{content.content[2].header}</Heading>
-                  <Paragraph big bottomMargin="40">
-                    {content.content[2].text}
+                  <Paragraph big bottomMargin="40" mixed>
+                    {parse(content.content[2].text)}
                   </Paragraph>
                   <IconListColorBox color={color.yellow3} content={content.content[2].box} bottomMargin="48" rounded />
                   <Heading size="3">{content.content[2].header2}</Heading>
@@ -315,9 +316,9 @@ const CCorpTabs = ({ layout, columns, content }) => (
               <Panel>
                 <PanelWrapper className="panel4" layout={layout}>
                   <Heading size="3">{content.content[3].header}</Heading>
-                  <Paragraph big>{content.content[3].text}</Paragraph>
-                  <Paragraph big bottomMargin="48">
-                    {content.content[3].text2}
+                  <Paragraph big mixed>{parse(content.content[3].text)}</Paragraph>
+                  <Paragraph big bottomMargin="48" mixed>
+                    {parse(content.content[3].text2)}
                   </Paragraph>
                   <Heading size="3">{content.content[3].header2}</Heading>
                   <Paragraph big bottomMargin="24">
@@ -330,8 +331,8 @@ const CCorpTabs = ({ layout, columns, content }) => (
                 <PanelWrapper className="panel4" layout={layout}>
                   <Heading size="3">{content.content[4].header}</Heading>
                   <Paragraph big>{content.content[4].text}</Paragraph>
-                  <Paragraph big bottomMargin="0">
-                    {content.content[4].text2}
+                  <Paragraph big bottomMargin="0" mixed>
+                    {parse(content.content[4].text2)}
                   </Paragraph>
                 </PanelWrapper>
               </Panel>

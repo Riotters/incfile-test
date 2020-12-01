@@ -32,6 +32,7 @@ import Rocket from "../../atomic/sections/type-of-business/real-estate-business/
 import OvalTabsSvg from "../../images/ovals/bottom-left-transparent-pink.inline.svg";
 import OvalTabsSvg2 from "../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import { color } from "../../atomic/atoms/styles/colors";
+import {Link} from "@reach/router";
 
 const RealEstateBusiness = () => (
   <Layout>
@@ -308,7 +309,7 @@ const RealEstateBusiness = () => (
             </CountingTextBoxed>
 
             <Paragraph big mixed={true} style={{ marginTop: "48px" }}>
-              Check out our additional guidance in <span className="big blue">understanding if a real estate business is right for you</span>. In this blog post, we'll help you analyze your real estate business idea, conduct market research and build a business plan.
+              Check out our additional guidance in <Link to="/blog/post/is-starting-a-real-estate-business-right-for-you/">understanding if a real estate business is right for you</Link>. In this blog post, we'll help you analyze your real estate business idea, conduct market research and build a business plan.
             </Paragraph>
           </PanelWrapper>
         </CollapseWrapper>

@@ -6,6 +6,8 @@ import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import {gradient} from "../../../atoms/styles/colors";
+import {Paragraph} from "../../../atoms/typography/paragraph";
+import {Link} from "@reach/router";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -47,11 +49,11 @@ const SettingBusiness = () => (
 
                 <TopImageBox image="state-filling-fees" color={color.yellow3}>
                     <h4>Finances and Taxes</h4>
-                    <p>
-                        What kind of bank account will you get? Do you need a business credit card? How will you pay
+                    <Paragraph mixed>
+                        What kind of bank account will you get? Do you need a <Link to="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">business credit card</Link>? How will you pay
                         your business taxes? These are important questions to consider so your restaurant business stays
-                        in the green. Here at Incfile, we can even help you file your taxes.
-                    </p>
+                        in the green. Here at Incfile, we can even <Link to="/business-accounting/">help you file your taxes</Link>.
+                    </Paragraph>
                 </TopImageBox>
 
                 <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
@@ -78,7 +80,7 @@ const SettingBusiness = () => (
                         Running a restaurant business comes with certain rules, regulations and legalities you need to
                         be aware of, especially around staff health and safety and food hygiene and preparation. Incfile
                         can conduct
-                        a Business License Research package for you, or you can take the time to do the research
+                        a <Link to="business-license-research-package/">Business License Research</Link> package for you, or you can take the time to do the research
                         yourself.
                     </p>
                 </TopImageBox>
@@ -86,9 +88,9 @@ const SettingBusiness = () => (
                 <TopImageBox image="measuring-business-success" color={color.babyblue3}>
                     <h4>Business maintenance</h4>
                     <p>
-                        Most states require businesses to file an Annual Report report once a year. You will also be
+                        Most states require businesses to file an <Link to="/manage-your-company/annual-report">Annual Report</Link> report once a year. You will also be
                         expected to pay estimated taxes on what you plan to earn in the current business year. Your
-                        federal, state, regional and city business licenses and permits may need to be renewed on a
+                        federal, state, regional and city <Link to="/business-license-research-package/">business licenses and permits</Link> may need to be renewed on a
                         regular basis, typically once a year.
                     </p>
                 </TopImageBox>

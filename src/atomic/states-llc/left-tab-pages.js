@@ -143,12 +143,28 @@ const icons = [
 
 const icons2 = [<HowToGuideSVG />, <BusinessNamesSVG />, <RASVG />, <FilingFeeSVG />, <BusinessTaxesSVG />, <WhatDoNextSVG />];
 
+const getRightIcon = (nonDIY, i, name) => {
+    if(nonDIY) {
+        if( name === "What To Do Next?" && i !== 5) {
+            return icons2[icons2.length - 1];
+        }
+
+        return icons2[i];
+    }
+
+    if( name === "What To Do Next?" && i !== 6) {
+        return icons[icons.length - 1];
+    }
+
+    return icons[i];
+};
+
 const LeftTabPages = ({ layout, columns, content, nonDIY }) => (
   <TabsWrapper layout={layout}>
     <Sticky layout={layout} columns={columns}>
       {content.pages.map((page, i) => (
         <Link to={page.path} activeClassName="active">
-          <Icon> {nonDIY ? icons2[i] : icons[i]} </Icon>
+          <Icon> {getRightIcon(nonDIY, i, page.name)} </Icon>
           <Content>
             <span>{page.name}</span>
             <Arrow className="tabArrow">
