@@ -1,102 +1,102 @@
 import { color } from "../../../atomic/atoms/styles/colors";
 
 export const top = {
-	header: `Why Form a Limited Liability Company (LLC)?`,
-	text: `$0 + State Fee & 1st Year FREE Registered Agent`,
-	buttons: [
-		{
-			text: `See detailed pricing`,
-			url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS`,
-		},
-	],
+  header: `Why Form a Limited Liability Company (LLC)?`,
+  text: `$0 + State Fee & 1st Year FREE Registered Agent`,
+  buttons: [
+    {
+      text: `See detailed pricing`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS`,
+    },
+  ],
 };
 
 export const howToGuide = [
-	{
-		type: `header`,
-		content: `How to Start a Mississippi LLC`,
-		size: 2,
-		marginBottom: 40,
-	},
-	{
-		type: `text`,
-		content: `Mississippi is located in the southern U.S. and shares a border with Mexico, Alabama, Tennessee, Louisiana and Arkansas. It is a predominantly rural state and a major center for agriculture.`,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `If you want to start your own business in Mississippi, one of the best ways to do so is by forming a Mississippi LLC. Limited Liability Companies (LLCs) are a business entity designed for startups and small- and medium-sized businesses. Mississippi LLCs give you many of the protections and advantages of larger corporations without all the rules, regulations and compliance issues common to larger business entities.`,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `We cover several areas for Mississippi companies including business searches, the Mississippi Secretary of State, business licenses and sales tax.`,
-		marginBottom: 16,
-	},
-	{
-		type: `list-dot`,
-		content: {
-			header: `Briefly, the benefits of starting a Mississippi LLC include:`,
-			list: [
-				`Separating and limiting your personal liability from your business liability and debts`,
-				`Quick and simple filing, management, compliance, regulations and administration of your Mississippi LLC`,
-				`Easy tax filing and potential advantages for tax treatment`,
-			],
-		},
-		marginBottom: 48,
-		color: color.blue3,
-		curve: true,
-		curveColor: color.red1,
-	},
-	{
-		type: `text`,
-		content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-		marginBottom: 16,
-	},
-	{
-		type: `header`,
-		content: `Six Quick Steps for Setting Up Your Mississippi Company`,
-		size: 3,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `We've got lots of useful information on starting a business in MS. On this page you'll find the basic steps of how to form a Mississippi LLC, with more in-depth content throughout the rest of our guide.`,
-		marginBottom: 32,
-	},
-	{
-		type: `accordion`,
-		content: {
-			items: [
-				{
-					question: `STEP 1: Gather Information for Your Members`,
-					answer: `First, you need to gather basic information about your LLC, including the names and addresses of the managers or members. The LLC members are typically the people who own and run the business. They are also the ones who can take profits out of the business to pay themselves.`,
-				},
-				{
-					question: `STEP 2: Search for and Choose a Unique Business Name for Your Mississippi LLC`,
-					answer: `<p>YYou will need a distinctive and original name for your Mississippi LLC that's not used by any other business in MS. To find out if another company is using your chosen business name, carry out a Mississippi business entity name search on the MS Secretary of State website.</p></br>
+  {
+    type: `header`,
+    content: `How to Start a Mississippi LLC`,
+    size: 2,
+    marginBottom: 40,
+  },
+  {
+    type: `text`,
+    content: `Mississippi is located in the southern U.S. and shares a border with Mexico, Alabama, Tennessee, Louisiana and Arkansas. It is a predominantly rural state and a major center for agriculture.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `If you want to start your own business in Mississippi, one of the best ways to do so is by forming a Mississippi LLC. Limited Liability Companies (LLCs) are a business entity designed for startups and small- and medium-sized businesses. Mississippi LLCs give you many of the protections and advantages of larger corporations without all the rules, regulations and compliance issues common to larger business entities.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `We cover several areas for Mississippi companies including business searches, the Mississippi Secretary of State, business licenses and sales tax.`,
+    marginBottom: 16,
+  },
+  {
+    type: `list-dot`,
+    content: {
+      header: `Briefly, the benefits of starting a Mississippi LLC include:`,
+      list: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulations and administration of your Mississippi LLC`,
+        `Easy tax filing and potential advantages for tax treatment`,
+      ],
+    },
+    marginBottom: 48,
+    color: color.blue3,
+    curve: true,
+    curveColor: color.red1,
+  },
+  {
+    type: `text`,
+    content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
+    marginBottom: 16,
+  },
+  {
+    type: `header`,
+    content: `Six Quick Steps for Setting Up Your Mississippi Company`,
+    size: 3,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `We've got lots of useful information on starting a business in MS. On this page you'll find the basic steps of how to form a Mississippi LLC, with more in-depth content throughout the rest of our guide.`,
+    marginBottom: 32,
+  },
+  {
+    type: `accordion`,
+    content: {
+      items: [
+        {
+          question: `STEP 1: Gather Information for Your Members`,
+          answer: `First, you need to gather basic information about your LLC, including the names and addresses of the managers or members. The LLC members are typically the people who own and run the business. They are also the ones who can take profits out of the business to pay themselves.`,
+        },
+        {
+          question: `STEP 2: Search for and Choose a Unique Business Name for Your Mississippi LLC`,
+          answer: `<p>YYou will need a distinctive and original name for your Mississippi LLC that's not used by any other business in MS. To find out if another company is using your chosen business name, carry out a Mississippi business entity name search on the MS Secretary of State website.</p></br>
                    <p>There are a few rules you'll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Mississippi LLC.</p></br>
                    <a href="/mississippi-llc/how-to-name-your-llc/"> Learn about Mississippi LLC business naming rules.</a>`,
-				},
-				{
-					question: `STEP 3: Provide an Official Address for Your MS LLC`,
-					answer: `<p>Every Mississippi LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address must be inside the state of Mississippi, but it cannot be a P.O. Box.</p></br>
+        },
+        {
+          question: `STEP 3: Provide an Official Address for Your MS LLC`,
+          answer: `<p>Every Mississippi LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address must be inside the state of Mississippi, but it cannot be a P.O. Box.</p></br>
             <p>You can also use a Virtual Mailbox service if you do not have a physical address.</p>`,
-				},
-				{
-					question: `STEP 4: Assign a Mississippi Registered Agent`,
-					answer: `<p>Every Mississippi LLC must have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Mississippi Secretary of State.</p></br>
+        },
+        {
+          question: `STEP 4: Assign a Mississippi Registered Agent`,
+          answer: `<p>Every Mississippi LLC must have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Mississippi Secretary of State.</p></br>
           <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Mississippi and must be present to receive important documents for your company during business hours.</p></br>
           <p>At Incfile, all of our packages include a Mississippi Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
           <a href="/mississippi-llc/registered-agents-mississippi-llc/">Learn more about Mississippi Registered Agents.</a>`,
-				},
-				{
-					question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
-					answer: `You will need an EIN to identify your business with the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Mississippi LLC business formation process.`,
-				},
-				{
-					question: `STEP 6: File Articles of Organization with the Mississippi Secretary of state`,
-					answer: `<p> Once you've gathered all the information for your LLC, you’ll need to file a formal document with the Mississippi Secretary of State. This document is known as your “Articles of Organization,” and filing the document creates your Mississippi LLC. Here’s what is typically included:</p></br>
+        },
+        {
+          question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
+          answer: `You will need an EIN to identify your business with the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Mississippi LLC business formation process.`,
+        },
+        {
+          question: `STEP 6: File Articles of Organization with the Mississippi Secretary of state`,
+          answer: `<p> Once you've gathered all the information for your LLC, you’ll need to file a formal document with the Mississippi Secretary of State. This document is known as your “Articles of Organization,” and filing the document creates your Mississippi LLC. Here’s what is typically included:</p></br>
                    <ul>
                    <li> Your business name and address </li>
                    <li> Details of your Registered Agent </li>
@@ -104,53 +104,53 @@ export const howToGuide = [
                    </ul></br>
                    <p>You can file your Mississippi Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Mississippi, but you only need to file your Articles of Organization once.</p></br>
                    <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MS"> Form your LLC now </a>`,
-				},
-			],
-		},
-		marginBottom: 48,
-	},
-	{
-		type: `header`,
-		content: `Review Information From the Mississippi Secretary of State`,
-		size: 3,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `The MS Secretary of State has plenty of information on forming and running a business in Mississippi. These are all the basic steps for forming an LLC in Mississippi.`,
-		marginBottom: 32,
-	},
-	{
-		type: `list-dot`,
-		content: {
-			header: `You’ll find other useful information below.`,
-			list: [
-				`<a href="https://www.sos.ms.gov/BusinessServices/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Mississippi Secretary of State for forming and running your KS LLC</a>`,
-				`<a href="https://mdes.ms.gov/employers/" target="_blank" rel="noopener noreferrer">Mississippi Department of Labor for Mississippi employers and hiring</a>`,
-				`<a href="https://www.dor.ms.gov/Business/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Mississippi Department of Revenue for Mississippi taxes</a>`,
-			],
-		},
-		marginBottom: 32,
-		color: color.blue3,
-	},
-	{
-		type: `header`,
-		content: `Special Types of Mississippi LLCs`,
-		size: 3,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `A regular Mississippi LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
-		marginBottom: 32,
-	},
-	{
-		type: `accordion`,
-		content: {
-			items: [
-				{
-					question: `Form a Professional Mississippi LLC`,
-					answer: `<p>Some states, including Mississippi, allow certain occupations to form “Professional LLCs.” These types of business typically have specialized requirements and licensing. Here are the occupations that the MS Secretary of State allows to form Mississippi professional LLCs:</p>
+        },
+      ],
+    },
+    marginBottom: 48,
+  },
+  {
+    type: `header`,
+    content: `Review Information From the Mississippi Secretary of State`,
+    size: 3,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `The Mississippi Secretary of State has plenty of information on forming and running a business in Mississippi. Check out additional resources below.`,
+    marginBottom: 32,
+  },
+  {
+    type: `list-dot`,
+    content: {
+      header: `These are all the basic steps for forming an LLC in Mississippi. You’ll find other useful information below.`,
+      list: [
+        `<a href="https://www.sos.ms.gov/BusinessServices/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Mississippi Secretary of State for forming and running your KS LLC</a>`,
+        `<a href="https://mdes.ms.gov/employers/" target="_blank" rel="noopener noreferrer">Mississippi Department of Labor for Mississippi employers and hiring</a>`,
+        `<a href="https://www.dor.ms.gov/Business/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Mississippi Department of Revenue for Mississippi taxes</a>`,
+      ],
+    },
+    marginBottom: 32,
+    color: color.yellow2,
+  },
+  {
+    type: `header`,
+    content: `Special Types of Mississippi LLCs`,
+    size: 3,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `A regular Mississippi LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
+    marginBottom: 32,
+  },
+  {
+    type: `accordion`,
+    content: {
+      items: [
+        {
+          question: `Form a Professional Mississippi LLC`,
+          answer: `<p>Some states, including Mississippi, allow certain occupations to form “Professional LLCs.” These types of business typically have specialized requirements and licensing. Here are the occupations that the MS Secretary of State allows to form Mississippi professional LLCs:</p>
                 <ul>
                   <li>Public accountants</li>
                   <li>Dentists</li>
@@ -463,99 +463,98 @@ export const namingYourBusiness = [
 	{
 		type: `text`,
 		content: `You might find the following answers useful.
-
     `,
-		marginBottom: 32,
-	},
-	{
-		type: `accordion`,
-		content: {
-			items: [
-				{
-					question: `How Do I Search for My Mississippi LLC Business Name?`,
-					answer: `Just go to the <a href="https://corp.sos.ms.gov/corp/portal/c/page/corpbusinessidsearch/portal.aspx?#clear=1" target="_blank" rel="noopener noreferrer">business name search tool</a> and enter your proposed business name. You can search the register of the Mississippi Secretary of State, which will tell you if there are any Mississippi corporations or LLCs with that name.`,
-				},
-				{
-					question: `Are There Any Rules on Naming My Mississippi LLC?`,
-					answer: `Yes. Most LLCs will be bound by general rules (applicable to all LLCs) and specific rules (applicable in the state of Mississippi). We’ve detailed these rules above.`,
-				},
-				{
-					question: `Can I Do Business Under a Different Name Than My LLC Name in Mississippi?`,
-					answer: `Yes. Known as “assumed names,” “fictitious names,” “doing business as names” or “trade names,” you can choose to conduct business under a different name. See our section on “Mississippi LLC Trade Names” above.`,
-				},
-				{
-					question: `Can I Reserve a Name for My Mississippi LLC?`,
-					answer: `Yes. The Mississippi Secretary of State allows you to reserve a name if you don’t want to start your business immediately. If you are ready to start your business now, you do not need to reserve a name`,
-				},
-			],
-		},
-		marginBottom: 32,
-	},
-	{
-		type: `header`,
-		content: `Useful Resources for Naming Your Mississippi LLC`,
-		size: 4,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `You might find these other resources helpful.`,
-		marginBottom: 32,
-	},
-	{
-		type: `header`,
-		content: `Trademarks and Service Marks`,
-		size: 3,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `You must be careful that your Mississippi LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
-		marginBottom: 16,
-	},
-	{
-		type: `button`,
-		content: {
-			text: `Incfile trademark search and registration service`,
-			url: `/trademark-name-search/`,
-		},
-		theme: `primary48`,
-		marginBottom: 32,
-	},
-	{
-		type: `header`,
-		content: `Find the Perfect Name for Your Mississippi LLC`,
-		size: 3,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
-		marginBottom: 16,
-	},
-	{
-		type: `list-dot`,
-		content: {
-			header: ``,
-			list: [
-				`Appeal to your customers`,
-				`Be memorable enough to stand out`,
-				`Best represent your product or services`,
-				`Not be used by another business`,
-			],
-		},
-		marginBottom: 40,
-		color: color.blue3,
-	},
+    marginBottom: 32,
+  },
+  {
+    type: `accordion`,
+    content: {
+      items: [
+        {
+          question: `How Do I Search for My Mississippi LLC Business Name?`,
+          answer: `Just go to the <a href="https://corp.sos.ms.gov/corp/portal/c/page/corpbusinessidsearch/portal.aspx?#clear=1" target="_blank" rel="noopener noreferrer">business name search tool</a> and enter your proposed business name. You can search the register of the Mississippi Secretary of State, which will tell you if there are any Mississippi corporations or LLCs with that name.`,
+        },
+        {
+          question: `Are There Any Rules on Naming My Mississippi LLC?`,
+          answer: `Yes. Most LLCs will be bound by general rules (applicable to all LLCs) and specific rules (applicable in the state of Mississippi). We’ve detailed these rules above.`,
+        },
+        {
+          question: `Can I Do Business Under a Different Name Than My LLC Name in Mississippi?`,
+          answer: `Yes. Known as “assumed names,” “fictitious names,” “doing business as names” or “trade names,” you can choose to conduct business under a different name. See our section on “Mississippi LLC Trade Names” above.`,
+        },
+        {
+          question: `Can I Reserve a Name for My Mississippi LLC?`,
+          answer: `Yes. The Mississippi Secretary of State allows you to reserve a name if you don’t want to start your business immediately. If you are ready to start your business now, you do not need to reserve a name`,
+        },
+      ],
+    },
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
+    content: `Useful Resources for Naming Your Mississippi LLC`,
+    size: 4,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `You might find these other resources helpful.`,
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
+    content: `Trademarks and Service Marks`,
+    size: 3,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `You must be careful that your Mississippi LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
+    marginBottom: 16,
+  },
+  {
+    type: `button`,
+    content: {
+      text: `Incfile trademark search and registration service`,
+      url: `/trademark-name-search/`,
+    },
+    theme: `primary48`,
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
+    content: `Find the Perfect Name for Your Mississippi LLC`,
+    size: 3,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `The perfect business name can be elusive. We have a complete guide to choosing the right business name, but basically, you'll want to choose a name that will:`,
+    marginBottom: 16,
+  },
+  {
+    type: `list-dot`,
+    content: {
+      header: ``,
+      list: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
+    },
+    marginBottom: 40,
+    color: color.blue3,
+  },
 
-	{
-		type: `arrow-link`,
-		content: {
-			text: `Incfile guide to choosing a business name`,
-			url: `/blog/post/llc-name-search-50-states/`,
-		},
-		marginBottom: 32,
-	},
+  {
+    type: `arrow-link`,
+    content: {
+      text: `Incfile guide to choosing a business name`,
+      url: `/blog/post/llc-name-search-50-states/`,
+    },
+    marginBottom: 32,
+  },
 ];
 
 export const registeredAgent = [
@@ -879,38 +878,38 @@ export const registeredAgent = [
 					question: `When Can I Assign a Mississippi Registered Agent Service?`,
 					answer: `You can either do it when you incorporate your Mississippi business through paperwork filed with the KS Secretary of State or afterward by filing the correct form. If you form your business through Incfile, we will file all necessary forms on your behalf.
           `,
-				},
-				{
-					question: `Can I Be My Own Registered Agent in Mississippi?`,
-					answer: `Yes, but we don’t recommend it for the reasons listed above. If you still want to be your own Registered Agent, you need to fill in the correct forms and pay a fee to the Mississippi Secretary of State.`,
-				},
-				{
-					question: `Does My Registered Agent Need to Have an Address in Mississippi?`,
-					answer: `Yes. Additionally, if they are a business providing Registered Agent services, they must be legally able to conduct business in your state.`,
-				},
-			],
-		},
-		marginBottom: 48,
-	},
-	{
-		type: `header`,
-		content: `Useful Resources for Mississippi Registered Agent Services`,
-		size: 3,
-		marginBottom: 24,
-	},
-	{
-		type: `list-dot`,
-		content: {
-			header: `You might find these resources helpful:`,
-			list: [
-				`<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Mississippi Registered Agent</a>`,
-				`<a href="/manage-your-company/change-of-registered-agent/">Changing Your Mississippi Registered Agent</a>`,
-				`<a href="/research-topics/registered-agent/registered-agent-tasks/">What a Mississippi Registered Agent Does</a>`,
-			],
-		},
-		marginBottom: 48,
-		color: color.babyblue3,
-	},
+        },
+        {
+          question: `Can I Be My Own Registered Agent in Mississippi?`,
+          answer: `Yes, but we don’t recommend it for the reasons listed above. If you still want to be your own Registered Agent, you need to fill in the correct forms and pay a fee to the Mississippi Secretary of State.`,
+        },
+        {
+          question: `Does My Registered Agent Need to Have an Address in Mississippi?`,
+          answer: `Yes. Additionally, if they are a business providing Registered Agent services, they must be legally able to conduct business in your state.`,
+        },
+      ],
+    },
+    marginBottom: 48,
+  },
+  {
+    type: `header`,
+    content: `Useful Resources for Mississippi Registered Agent Services`,
+    size: 3,
+    marginBottom: 24,
+  },
+  {
+    type: `list-dot`,
+    content: {
+      header: `You might find these resources helpful:`,
+      list: [
+        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Mississippi Registered Agent</a>`,
+        `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Mississippi Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-tasks/">What a Mississippi Registered Agent Does</a>`,
+      ],
+    },
+    marginBottom: 48,
+    color: color.babyblue3,
+  },
 ];
 export const feesAndRequirments = [
 	{
@@ -1285,500 +1284,500 @@ export const feesAndRequirments = [
                   <li>Federal, state and local regulations</li>
                   </ul></br>
                   That’s why our <a href="/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Mississippi LLC needs to be compliant.`,
-				},
-			],
-		},
-		marginBottom: 48,
-	},
+        },
+      ],
+    },
+    marginBottom: 48,
+  },
 ];
 
 export const businessTaxes = [
-	{
-		type: `header`,
-		content: `The Federal, State, Sales and Other Taxes You Need to Pay for Your Mississippi LLC`,
-		size: 2,
-		marginBottom: 40,
-	},
-	{
-		type: `text`,
-		content: `Business taxes are a fact of life, and your MS LLC will need to pay a variety of taxes to both the federal and Mississippi governments. We’ll cover all the main taxes in Mississippi including self-employment, payroll, federal, Mississippi state tax and Mississippi sales tax.`,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `Need help? Incfile provides a complete Business Tax Filing service.<a href="/business-accounting/"> Learn more</a>.`,
-		marginBottom: 32,
-	},
-	{
-		type: `header`,
-		content: `How Your Mississippi LLC Will Be Taxed`,
-		size: 3,
-		marginBottom: 24,
-	},
-	{
-		type: `text`,
-		content: `TThe profits of a Mississippi LLC are not taxed at the business level, like those of C Corporations. Instead, tax for a Mississippi LLC works as follows:`,
-		marginBottom: 16,
-	},
-	{
-		type: `numeric-list`,
-		content: [
-			{
-				text: `Mississippi LLC owners pay self-employment tax on business profits`,
-			},
-			{
-				text: `Mississippi LLC owners pay KS state tax on any profits, less state allowances or deductions`,
-			},
-			{
-				text: `All LLC owners pay federal income tax on any profits less federal allowances or deductions`,
-			},
-			{
-				text: `Some KS LLCs pay Mississippi sales tax on products`,
-			},
-			{
-				text: `Employers pay payroll tax on any salaries they pay to employees`,
-			},
-			{
-				text: `Employees pay federal, state and payroll tax on their earnings.`,
-			},
-		],
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `tems 1, 2 and 3 are taxed as “pass-through” income for any LLC owners, managers or members who receive profits from the business. Any profits are reported on federal and Mississippi personal tax returns, and that’s where you will pay those taxes.
+  {
+    type: `header`,
+    content: `The Federal, State, Sales and Other Taxes You Need to Pay for Your Mississippi LLC`,
+    size: 2,
+    marginBottom: 40,
+  },
+  {
+    type: `text`,
+    content: `Business taxes are a fact of life, and your MS LLC will need to pay a variety of taxes to both the federal and Mississippi governments. We’ll cover all the main taxes in Mississippi including self-employment, payroll, federal, Mississippi state tax and Mississippi sales tax.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `Need help? Incfile provides a complete Business Tax Filing service.<a href="/business-accounting/"> Learn more.</a>.`,
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
+    content: `How Your Mississippi LLC Will Be Taxed`,
+    size: 3,
+    marginBottom: 24,
+  },
+  {
+    type: `text`,
+    content: `The profits of a Mississippi LLC are not taxed at the business level, like those of C Corporations. Instead, tax for a Mississippi LLC works as follows:`,
+    marginBottom: 16,
+  },
+  {
+    type: `numeric-list`,
+    content: [
+      {
+        text: `Mississippi LLC owners pay self-employment tax on business profits`,
+      },
+      {
+        text: `Mississippi LLC owners pay KS state tax on any profits, less state allowances or deductions`,
+      },
+      {
+        text: `All LLC owners pay federal income tax on any profits less federal allowances or deductions`,
+      },
+      {
+        text: `Some KS LLCs pay Mississippi sales tax on products`,
+      },
+      {
+        text: `Employers pay payroll tax on any salaries they pay to employees`,
+      },
+      {
+        text: `Employees pay federal, state and payroll tax on their earnings.`,
+      },
+    ],
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `Items 1, 2 and 3 are taxed as “pass-through” income for any LLC owners, managers or members who receive profits from the business. Any profits are reported on federal and Mississippi personal tax returns, and that’s where you will pay those taxes.
     `,
-		marginBottom: 32,
-	},
-	{
-		type: `header`,
-		content: `Mississippi Business Taxes Payable to the MS Government`,
-		size: 3,
-		marginBottom: 24,
-	},
-	{
-		type: `text`,
-		content: `There are two main types of tax that you will pay to the Mississippi Department of Revenue: Mississippi state income tax and Mississippi state sales tax.`,
-		marginBottom: 32,
-	},
-	{
-		type: `header`,
-		content: `Mississippi State Tax on Your LLC Earnings`,
-		size: 3,
-		marginBottom: 24,
-	},
-	{
-		type: `text`,
-		content: `As a Mississippi business owner, you will need to pay MS state tax on any money you pay to yourself. These earnings flow through to your personal tax return, which is where you will pay Mississippi income tax. You will be taxed at the standard rates for Mississippi state taxes, and you will also get to apply regular allowances and deductions.`,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `Any salaried employees will also need to pay personal Mississippi state taxes.`,
-		marginBottom: 16,
-	},
-	{
-		type: `list-dot`,
-		content: {
-			header: `The graduated Mississippi state income tax rate is:`,
-			list: [
-				`3 percent on the first $5,000 of taxable income`,
-				`4 percent on the next $5,000 of taxable income`,
-				`5 percent on all taxable income over $10,000`,
-			],
-		},
-		marginBottom: 16,
-		color: color.blue3,
-		curve: true,
-		curveColor: color.red1,
-	},
-	{
-		type: `text`,
-		content: `​If filing a combined return, each spouse can calculate their tax liability separately and add the results.`,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `Get more details on the Mississippi state tax on on the  <a href="https://www.dor.ms.gov/Individual/Pages/Tax-Rates.aspx" target="_blank" rel="noopener noreferrer"> MS SOS website.</a>.`,
-		marginBottom: 32,
-	},
-	{
-		type: `header`,
-		content: `Your Mississippi LLC and MS Sales Taxes`,
-		size: 3,
-		marginBottom: 24,
-	},
-	{
-		type: `text`,
-		content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the KS Department of Revenue. Mississippi sales tax is collected at the point of purchase. Mississippi sales tax rates do vary depending on the region, county or city where you are located.`,
-		marginBottom: 32,
-	},
-	{
-		type: `list-dot`,
-		content: {
-			header: `You will typically need to collect Mississippi sales tax on:`,
-			list: [
-				`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
-				`Certain services that your Mississippi business might provide.`,
-			],
-		},
-		marginBottom: 16,
-		color: color.green3,
-		curve: true,
-		curveColor: color.red1,
-	},
-	{
-		type: `text`,
-		content: `Most states do not levy sales tax on goods that are considered necessities, like food, medications, clothing or gas.`,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `Get more details on sales tax in Mississippi from the <a href="https://www.dor.ms.gov/Business/Pages/Sales-Use-Tax-landing.aspx" target="_blank" rel="noopener noreferrer"> MS SOS website.</a>`,
-		marginBottom: 32,
-	},
-	{
-		type: `header`,
-		content: `Sales Tax Rates for Your Mississippi LLC`,
-		size: 3,
-		marginBottom: 24,
-	},
-	{
-		type: `text`,
-		content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that. Here are the sales tax rates for the major cities in Mississippi:
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
+    content: `Mississippi Business Taxes Payable to the MS Government`,
+    size: 3,
+    marginBottom: 24,
+  },
+  {
+    type: `text`,
+    content: `There are two main types of tax that you will pay to the Mississippi Department of Revenue: Mississippi state income tax and Mississippi state sales tax.`,
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
+    content: `Mississippi State Tax on Your LLC Earnings`,
+    size: 3,
+    marginBottom: 24,
+  },
+  {
+    type: `text`,
+    content: `As a Mississippi business owner, you will need to pay MS state tax on any money you pay to yourself. These earnings flow through to your personal tax return, which is where you will pay Mississippi income tax. You will be taxed at the standard rates for Mississippi state taxes, and you will also get to apply regular allowances and deductions.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `Any salaried employees will also need to pay personal Mississippi state taxes.`,
+    marginBottom: 16,
+  },
+  {
+    type: `list-dot`,
+    content: {
+      header: `The graduated Mississippi state income tax rate is:`,
+      list: [
+        `3 percent on the first $5,000 of taxable income`,
+        `4 percent on the next $5,000 of taxable income`,
+        `5 percent on all taxable income over $10,000`,
+      ],
+    },
+    marginBottom: 16,
+    color: color.blue3,
+    curve: true,
+    curveColor: color.red1,
+  },
+  {
+    type: `text`,
+    content: `If filing a combined return, each spouse can calculate their tax liability separately and add the results.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `Get more details on the Mississippi state tax on on the  <a href="https://www.dor.ms.gov/Individual/Pages/Tax-Rates.aspx" target="_blank" rel="noopener noreferrer"> MS SOS website.</a>.`,
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
+    content: `Your Mississippi LLC and MS Sales Taxes`,
+    size: 3,
+    marginBottom: 24,
+  },
+  {
+    type: `text`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the KS Department of Revenue. Mississippi sales tax is collected at the point of purchase. Mississippi sales tax rates do vary depending on the region, county or city where you are located.`,
+    marginBottom: 32,
+  },
+  {
+    type: `list-dot`,
+    content: {
+      header: `You will typically need to collect Mississippi sales tax on:`,
+      list: [
+        `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
+        `Certain services that your Mississippi business might provide.`,
+      ],
+    },
+    marginBottom: 16,
+    color: color.green3,
+    curve: true,
+    curveColor: color.red1,
+  },
+  {
+    type: `text`,
+    content: `Most states do not levy sales tax on goods that are considered necessities, like food, medications, clothing or gas.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `Get more details on sales tax in Mississippi from the <a href="https://www.dor.ms.gov/Business/Pages/Sales-Use-Tax-landing.aspx" target="_blank" rel="noopener noreferrer"> MS SOS website.</a>`,
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
+    content: `Sales Tax Rates for Your Mississippi LLC`,
+    size: 3,
+    marginBottom: 24,
+  },
+  {
+    type: `text`,
+    content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that. Here are the sales tax rates for the major cities in Mississippi:
     `,
-		marginBottom: 32,
-	},
-	{
-		type: `list-dot`,
-		content: {
-			list: [
-				`Jackson, MS sales tax rate is 8 percent`,
-				`Gulfport, MS sales tax rate is 7 percent`,
-				`Southaven, MS sales tax rate is 7 percent`,
-				`Hattiesburg, MS sales tax rate is 7 percent`,
-			],
-		},
-		marginBottom: 16,
-		color: color.green3,
-		curve: true,
-		curveColor: color.red1,
-	},
-	{
-		type: `header`,
-		content: `Federal Taxes for Your Mississippi LLC: Self-Employment and Income Taxes`,
-		size: 3,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `There are a couple different federal taxes that every LLC will need to pay, including Mississippi LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
-		marginBottom: 32,
-	},
-	{
-		type: `header`,
-		content: `Mississippi LLC Federal Self-Employment Tax`,
-		size: 4,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `All Mississippi LLC business members or managers who take profits out of the LLC will need to pay self-employment tax. This tax is also known as FICA, Social Security or Medicare tax. It applies to all the earnings you withdraw from your Mississippi business. The current self-employment tax rate is 15.3 percent.`,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-		marginBottom: 16,
-	},
-	{
-		type: `list-dot`,
-		content: {
-			header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-			list: [
-				`On profits of $10,000, you would pay self-employment tax of $1,530.`,
-				`On profits of $40,000, you would pay self-employment tax of $6,120.`,
-				`On profits of $70,000, you would pay self-employment tax of $10,710.`,
-				`On profits of $90,000, you would pay self-employment tax of $13,770.`,
-			],
-		},
-		marginBottom: 48,
-		color: color.babyblue3,
-		curve: true,
-		curveColor: color.purple3,
-	},
-	{
-		type: `header`,
-		content: `Pay Less Self-Employment Tax by Treating Your Mississippi LLC as an S Corporation`,
-		size: 4,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `The Internal Revenue Service allows LLCs to ask to be treated as an S Corporation for tax purposes. This can help you reduce the amount of self-employment tax that you pay by declaring some of your income as salary and other income as distributions or withdrawals.`,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `Speak to your accountant for more information on reducing your Mississippi LLC self-employment tax through an S Corporation tax election.`,
-		marginBottom: 32,
-	},
-	{
-		type: `header`,
-		content: `Mississippi LLC Federal Income Tax`,
-		size: 4,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `You must also pay regular federal income tax on any earnings you take out of your Mississippi LLC. The amount of income tax you pay depends on your earnings, current income tax brackets, deductions and how you file.`,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `You only pay federal income tax on your Mississippi LLC profits that you take out of the business, less certain deductions and allowances. This includes your tax-free amount, plus LLC business expenses and other deductions for areas such as healthcare and some retirement plans. Speak to your accountant for more information.`,
-		marginBottom: 16,
-	},
-	{
-		type: `text`,
-		content: `You can find details of federal income tax brackets and tax calculators online.`,
-		marginBottom: 32,
-	},
-	{
-		type: `header`,
-		content: `Employee and Employer Taxes for Your Mississippi LLC`,
-		size: 3,
-		marginBottom: 24,
-	},
-	{
-		type: `text`,
-		content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
-		marginBottom: 32,
-	},
-	{
-		type: `accordion`,
-		content: {
-			items: [
-				{
-					question: `Mississippi LLC Employer Payroll Tax Withholding`,
-					answer: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
-				},
-				{
-					question: `Employer Federal and State Tax Withholding for Your Mississippi LLC`,
-					answer: `You may also choose to withhold federal and Mississippi state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
-				},
-				{
-					question: `Employees May Need to File Tax Returns`,
-					answer: `Regardless of whether you withhold federal and Mississippi state income tax, your employees may need to file their own tax returns.`,
-				},
-				{
-					question: `Mississippi LLC Employee Insurance and Other Requirements`,
-					answer2: [
-						{
-							type: `paragraph`,
-							content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
-						},
-						{
-							type: `arrow-links`,
-							content: [
-								{
-									styles: { marginTop: `24px` },
-									text: `Get more requirements from the Mississippi Department of Employment Security website.`,
-									url: `https://mdes.ms.gov/`,
-								},
-							],
-						},
-					],
-				},
-				{
-					question: `Other Taxes and Duties for Your Mississippi LLC`,
-					answer: `Depending on the industry you are in, your Mississippi LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-				},
-				{
-					question: `Estimated Taxes for Your Mississippi LLC`,
-					answer2: [
-						{
-							type: `paragraph`,
-							content: `Most Mississippi LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. `,
-						},
-						{
-							type: `list-dot-without-bg`,
-							color: color.orange3,
-							header: `The most common types of estimated taxes are:`,
-							content: [
-								`Federal income tax`,
-								`Federal self-employment tax`,
-								`Mississippi state tax`,
-							],
-						},
-						{
-							type: `paragraph`,
-							content: `Most Mississippi LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
-						},
-					],
-				},
-			],
-		},
-		marginBottom: 32,
-	},
-	{
-		type: `header`,
-		content: `FAQs on Mississippi LLC Business Taxes`,
-		size: 3,
-		marginBottom: 32,
-	},
-	{
-		type: `accordion`,
-		content: {
-			items: [
-				{
-					question: `Does Mississippi Have Sales Tax?`,
-					answer: `Yes. Mississippi does have a sales tax, which may vary among cities and counties. You can find more information above.`,
-				},
-				{
-					question: `Does Mississippi Have a State Tax?`,
-					answer: `Yes. Mississippi does have a general state income tax. You can find more information above.`,
-				},
-				{
-					question: `What Is the Sales Tax Rate in Mississippi?`,
-					answer: `We have listed common sales tax rates in Mississippi cities above.`,
-				},
-				{
-					question: `Do I Need to Pay Estimated Taxes?`,
-					answer: `Yes. In most cases you must pay estimated taxes on your Mississippi tax, federal income tax and self-employment tax. Speak to your accountant for more information.`,
-				},
-			],
-		},
-		marginBottom: 24,
-	},
+    marginBottom: 32,
+  },
+  {
+    type: `list-dot`,
+    content: {
+      list: [
+        `Jackson, MS sales tax rate is 8 percent`,
+        `Gulfport, MS sales tax rate is 7 percent`,
+        `Southaven, MS sales tax rate is 7 percent`,
+        `Hattiesburg, MS sales tax rate is 7 percent`,
+      ],
+    },
+    marginBottom: 16,
+    color: color.green3,
+    curve: true,
+    curveColor: color.red1,
+  },
+  {
+    type: `header`,
+    content: `Federal Taxes for Your Mississippi LLC: Self-Employment and Income Taxes`,
+    size: 3,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `There are a couple different federal taxes that every LLC will need to pay, including Mississippi LLCs. These are self-employment tax and federal income tax, which are taxed as “pass-through” income via your tax return forms.`,
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
+    content: `Mississippi LLC Federal Self-Employment Tax`,
+    size: 4,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `All Mississippi LLC business members or managers who take profits out of the LLC will need to pay self-employment tax. This tax is also known as FICA, Social Security or Medicare tax. It applies to all the earnings you withdraw from your Mississippi business. The current self-employment tax rate is 15.3 percent.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
+    marginBottom: 16,
+  },
+  {
+    type: `list-dot`,
+    content: {
+      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
+      list: [
+        `On profits of $10,000, you would pay self-employment tax of $1,530.`,
+        `On profits of $40,000, you would pay self-employment tax of $6,120.`,
+        `On profits of $70,000, you would pay self-employment tax of $10,710.`,
+        `On profits of $90,000, you would pay self-employment tax of $13,770.`,
+      ],
+    },
+    marginBottom: 48,
+    color: color.babyblue3,
+    curve: true,
+    curveColor: color.purple3,
+  },
+  {
+    type: `header`,
+    content: `Pay Less Self-Employment Tax by Treating Your Mississippi LLC as an S Corporation`,
+    size: 4,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `The Internal Revenue Service allows LLCs to ask to be treated as an S Corporation for tax purposes. This can help you reduce the amount of self-employment tax that you pay by declaring some of your income as salary and other income as distributions or withdrawals.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `You can do this by making an “S Corporation Tax Election” with the IRS using a form known as Form 2553. We can file your Form 2553 with the IRS on your behalf.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `Speak to your accountant for more information on reducing your Mississippi LLC self-employment tax through an S Corporation tax election.`,
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
+    content: `Mississippi LLC Federal Income Tax`,
+    size: 4,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `You must also pay regular federal income tax on any earnings you take out of your Mississippi LLC. The amount of income tax you pay depends on your earnings, current income tax brackets, deductions and how you file.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `You only pay federal income tax on your Mississippi LLC profits that you take out of the business, less certain deductions and allowances. This includes your tax-free amount, plus LLC business expenses and other deductions for areas such as healthcare and some retirement plans. Speak to your accountant for more information.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `You can find details of federal income tax brackets and tax calculators online.`,
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
+    content: `Employee and Employer Taxes for Your Mississippi LLC`,
+    size: 3,
+    marginBottom: 24,
+  },
+  {
+    type: `text`,
+    content: `If you pay employees, there are some slightly different tax implications. Speak to your accountant to get clear guidance for your own unique situation.`,
+    marginBottom: 32,
+  },
+  {
+    type: `accordion`,
+    content: {
+      items: [
+        {
+          question: `Mississippi LLC Employer Payroll Tax Withholding`,
+          answer: `All employers must collect and withhold payroll tax from their employees when they receive their salaries. You would normally withhold 7.65 percent of the taxable salary that you pay to your employees.`,
+        },
+        {
+          question: `Employer Federal and State Tax Withholding for Your Mississippi LLC`,
+          answer: `You may also choose to withhold federal and Mississippi state income tax on the wages you pay to employees. Speak to your accountant for more information.`,
+        },
+        {
+          question: `Employees May Need to File Tax Returns`,
+          answer: `Regardless of whether you withhold federal and Mississippi state income tax, your employees may need to file their own tax returns.`,
+        },
+        {
+          question: `Mississippi LLC Employee Insurance and Other Requirements`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
+            },
+            {
+              type: `arrow-links`,
+              content: [
+                {
+                  styles: { marginTop: `24px` },
+                  text: `Get more requirements from the Mississippi Department of Employment Security website.`,
+                  url: `https://mdes.ms.gov/`,
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: `Other Taxes and Duties for Your Mississippi LLC`,
+          answer: `Depending on the industry you are in, your Mississippi LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
+        },
+        {
+          question: `Estimated Taxes for Your Mississippi LLC`,
+          answer2: [
+            {
+              type: `paragraph`,
+              content: `Most Mississippi LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. `,
+            },
+            {
+              type: `list-dot-without-bg`,
+              color: color.orange3,
+              header: `The most common types of estimated taxes are:`,
+              content: [
+                `Federal income tax`,
+                `Federal self-employment tax`,
+                `Mississippi state tax`,
+              ],
+            },
+            {
+              type: `paragraph`,
+              content: `Most Mississippi LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
+            },
+          ],
+        },
+      ],
+    },
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
+    content: `FAQs on Mississippi LLC Business Taxes`,
+    size: 3,
+    marginBottom: 32,
+  },
+  {
+    type: `accordion`,
+    content: {
+      items: [
+        {
+          question: `Does Mississippi Have Sales Tax?`,
+          answer: `Yes. Mississippi does have a sales tax, which may vary among cities and counties. You can find more information above.`,
+        },
+        {
+          question: `Does Mississippi Have a State Tax?`,
+          answer: `Yes. Mississippi does have a general state income tax. You can find more information above.`,
+        },
+        {
+          question: `What Is the Sales Tax Rate in Mississippi?`,
+          answer: `We have listed common sales tax rates in Mississippi cities above.`,
+        },
+        {
+          question: `Do I Need to Pay Estimated Taxes?`,
+          answer: `Yes. In most cases you must pay estimated taxes on your Mississippi tax, federal income tax and self-employment tax. Speak to your accountant for more information.`,
+        },
+      ],
+    },
+    marginBottom: 24,
+  },
 ];
 
 export const compare = {
-	header: `How We Compare. <br>Get more for less.`,
-	table: {
-		headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
-		rows: [
-			[`Business incorporation service`, `$49`, `$149`, `$149`],
-			[
-				`Registered Agent included in the price`,
-				`check-green`,
-				`check-red`,
-				`check-red`,
-			],
-		],
-	},
+  header: `How We Compare. <br>Get more for less.`,
+  table: {
+    headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
+    rows: [
+      [`Business incorporation service`, `$49`, `$149`, `$149`],
+      [
+        `Registered Agent included in the price`,
+        `check-green`,
+        `check-red`,
+        `check-red`,
+      ],
+    ],
+  },
 };
 
 export const requirements = {
-	header: `Fees and requirements in California.`,
-	rows: [
-		{
-			box: {
-				fields: [
-					{
-						header: `$75`,
-						text: `State fee`,
-					},
-					{
-						header: `15 days`,
-						text: `State filing time`,
-					},
-					{
-						header: `5 days`,
-						text: `Expected filling time`,
-					},
-				],
-			},
-			content: {
-				columns: [
-					{
-						content: [
-							{
-								type: `heading`,
-								size: 3,
-								content: `Filing time and price`,
-							},
-							{
-								type: `paragraph`,
-								content: `The state charges this amount to file a new business entity. This fee goes directly to the Secretary of State.`,
-							},
-							{
-								type: `paragraph`,
-								content: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
-							},
-							{
-								type: `arrow-links`,
-								content: {
-									text: `State Filing Times`,
-									url: `/`,
-								},
-								bottomMargin: 16,
-							},
-							{
-								type: `arrow-links`,
-								content: {
-									text: `State Filing Prices`,
-									url: `/`,
-								},
-							},
-						],
-					},
-					{
-						header: `Compliance  Requirements`,
-						text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
-						text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
-						link: {
-							text: `Other State's Ongoing`,
-							url: `/`,
-						},
-					},
-				],
-			},
-		},
-		{
-			box: {
-				fields: [
-					{
-						header: `Annually`,
-						text: `Frequency`,
-					},
-					{
-						header: `$800 (min)`,
-						text: `Filing fee`,
-					},
-				],
-			},
-			content: {
-				header: `California Franchise Tax`,
-				text: `$800 payment for the LLC Franchise Tax is due by 15th day of the 4th month after your LLC is filed. The month your LLC is filed counts as Month 1, regardless if you file on the 1st of the month, the last of the month, or any day of the month, really.`,
-				text2: `This means that if you were to file your LLC on March 22nd, then you must pay the $800 fee no later than June 15th (in this example, March is Month 1, April is Month 2, May is Month 3, and June is Month 4). Then, every year after your first payment $800 LLC Franchise Tax will be due April 15th. You pay the $800 LLC Franchise Tax using Form 3522 called the LLC Tax Voucher.`,
-			},
-		},
-		{
-			box: {
-				fields: [
-					{
-						header: `Biennially`,
-						text: `Frequency`,
-					},
-					{
-						header: `$20`,
-						text: `Filing fee`,
-					},
-				],
-			},
-			content: {
-				header: `Statement of Information`,
-				header2: `Due Date:`,
-				text: `During six-month period ending on last day of anniversary month of incorporation or qualification.`,
-				header3: `Important:`,
-				text2: `The initial Statement of Information filing is due within 90 days of the entity formation date.`,
-			},
-		},
-	],
+  header: `Fees and requirements in California.`,
+  rows: [
+    {
+      box: {
+        fields: [
+          {
+            header: `$75`,
+            text: `State fee`,
+          },
+          {
+            header: `15 days`,
+            text: `State filing time`,
+          },
+          {
+            header: `5 days`,
+            text: `Expected filling time`,
+          },
+        ],
+      },
+      content: {
+        columns: [
+          {
+            content: [
+              {
+                type: `heading`,
+                size: 3,
+                content: `Filing time and price`,
+              },
+              {
+                type: `paragraph`,
+                content: `The state charges this amount to file a new business entity. This fee goes directly to the Secretary of State.`,
+              },
+              {
+                type: `paragraph`,
+                content: `Ut tincidunt neque a viverra egestas. Suspendisse tempus metu.`,
+              },
+              {
+                type: `arrow-links`,
+                content: {
+                  text: `State Filing Times`,
+                  url: `/`,
+                },
+                bottomMargin: 16,
+              },
+              {
+                type: `arrow-links`,
+                content: {
+                  text: `State Filing Prices`,
+                  url: `/`,
+                },
+              },
+            ],
+          },
+          {
+            header: `Compliance  Requirements`,
+            text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
+            text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
+            link: {
+              text: `Other State Requirements`,
+              url: `/`,
+            },
+          },
+        ],
+      },
+    },
+    {
+      box: {
+        fields: [
+          {
+            header: `Annually`,
+            text: `Frequency`,
+          },
+          {
+            header: `$800 (min)`,
+            text: `Filing fee`,
+          },
+        ],
+      },
+      content: {
+        header: `California Franchise Tax`,
+        text: `$800 payment for the LLC Franchise Tax is due by 15th day of the 4th month after your LLC is filed. The month your LLC is filed counts as Month 1, regardless if you file on the 1st of the month, the last of the month, or any day of the month, really.`,
+        text2: `This means that if you were to file your LLC on March 22nd, then you must pay the $800 fee no later than June 15th (in this example, March is Month 1, April is Month 2, May is Month 3, and June is Month 4). Then, every year after your first payment $800 LLC Franchise Tax will be due April 15th. You pay the $800 LLC Franchise Tax using Form 3522 called the LLC Tax Voucher.`,
+      },
+    },
+    {
+      box: {
+        fields: [
+          {
+            header: `Biennially`,
+            text: `Frequency`,
+          },
+          {
+            header: `$20`,
+            text: `Filing fee`,
+          },
+        ],
+      },
+      content: {
+        header: `Statement of Information`,
+        header2: `Due Date:`,
+        text: `During six-month period ending on last day of anniversary month of incorporation or qualification.`,
+        header3: `Important:`,
+        text2: `The initial Statement of Information filing is due within 90 days of the entity formation date.`,
+      },
+    },
+  ],
 };

@@ -28,9 +28,8 @@ export const howToGuide = [
 		content: `For most business owners, the fastest and easiest way to start a business in Wisconsin is by creating a Wisconsin LLC. A limited liability company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Wisconsin corporations, but with much simpler rules and regulations.`,
 		marginBottom: 16,
 	},
-
 	{
-		type: `listt-dot`,
+		type: `list-dot`,
 		content: {
 			header: `Briefly, the benefits of starting an Wisconsin LLC include:`,
 			list: [
@@ -40,7 +39,7 @@ export const howToGuide = [
 			],
 		},
 		marginBottom: 16,
-		color: color.blue3,
+		color: color.green3,
 		curve: true,
 		curveColor: color.red1,
 	},
@@ -62,7 +61,8 @@ export const howToGuide = [
 		marginBottom: 16,
 	},
 	{
-		type: `accordion`,
+        type: `accordion`,
+        marginBottom: 48,
 		content: {
 			items: [
 				{
@@ -117,30 +117,22 @@ export const howToGuide = [
 	},
 	{
 		type: `text`,
-		content: `These are all the basic steps for forming an LLC in Wisconsin. You’ll find other useful information below:`,
+		content: `These are all the basic steps for forming an LLC in Wisconsin.`,
 		marginBottom: 16,
-	},
-	{
-		type: `arrow-link`,
-		content: {
-			text: `Wisconsin Department of Financial Institutions for forming and running your WI LLC`,
-			url: `https://www.revenue.wi.gov/Pages/Businesses/New-Business-home.aspx`,
-		},
-	},
-	{
-		type: `arrow-link`,
-		content: {
-			text: `Wisconsin Department of Workforce Development for WI employers and hiring`,
-			url: `https://dwd.wisconsin.gov/`,
-		},
-	},
-	{
-		type: `arrow-link`,
-		content: {
-			text: `Wisconsin Department of Revenue for WI taxes`,
-			url: `https://www.revenue.wi.gov/Pages/home.aspx`,
-		},
-	},
+    },
+    {
+        type: `list-dot`,
+        content: {
+          header: `You’ll find other useful information below:`,
+          list: [
+            `<a href="https://www.revenue.wi.gov/Pages/Businesses/New-Business-home.aspx"_blank" rel="noopener noreferrer">Wisconsin Department of Financial Institutions for forming and running your WI LLC</a>`,
+            `<a href="https://dwd.wisconsin.gov/" target="_blank" rel="noopener noreferrer">Wisconsin Department of Workforce Development for WI employers and hiring</a>`,
+            `<a href="https://www.revenue.wi.gov/Pages/home.aspx" target="_blank" rel="noopener noreferrer">Wisconsin Department of Revenue for WI taxes</a>`,
+          ],
+        },
+        marginBottom: 48,
+        color: color.blue3,
+      },
 	{
 		type: `header`,
 		content: `Form a Foreign LLC in Wisconsin`,
