@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import ArrowSVG from "../images/arrow.inline.svg";
-import Image from "./image";
 
 const Wrapper = styled.article`
   margin-bottom: 8px;
@@ -34,16 +33,17 @@ const Content = styled.a`
 `;
 
 const ImageBox = styled.div`
-  height: 180px;
-  background-color: #a4eed0;
-  overflow: hidden;
+    height: 180px;
+    background-color: #a4eed0;
+    overflow: hidden;
 
-  img {
-    top: ${(props) => (props.top ? props.top : "0")} !important;
-    transform: scale(${(props) => (props.scale ? props.scale : "1")});
+    img {
+        max-width: 100%;
+        top: ${(props) => (props.top ? props.top : "0")} !important;
+        transform: scale(${(props) => (props.scale ? props.scale : "1")});
 
     @media (min-width: 1070px) {
-      top: ${(props) => (props.topLG ? props.topLG : "0")} !important;
+        top: ${(props) => (props.topLG ? props.topLG : "0")} !important;
     }
   }
 `;

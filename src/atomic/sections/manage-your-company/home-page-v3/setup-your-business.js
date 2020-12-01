@@ -1,14 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { color } from "../../../atoms/styles/colors";
-import Container from "../../../container";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
-import Image from "../../../atoms/image/image";
 import ContentCenter from "../../../partials/content-center";
 import Curve from "../../../atoms/icons/curve";
 import CurveSVG from "../../../../images/curves/top-left-right-orange2-big.inline.svg";
-import PlayerSVG from "../../../../images/icons/player.inline.svg";
 import Customers from "./customers";
 import { gradient } from "../../../atoms/styles/colors";
 import Oval from "../../../atoms/icons/oval";
