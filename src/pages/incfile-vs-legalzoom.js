@@ -8,7 +8,12 @@ import Resources from "../atomic/sections/learn-more/resources";
 import Video from "../atomic/sections/learn-more/video";
 import ToolsSection from "../atomic/sections/learn-more/tools";
 import { tools, help } from "../static/learn-more";
-import { top, conclusion, calculator } from "../static/incfile-vs-legalzoom";
+import {
+	top,
+	about,
+	conclusion,
+	calculator,
+} from "../static/incfile-vs-legalzoom";
 import Comparison from "../atomic/sections/learn-more/comparison";
 import CartBlock from "../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../atomic/molecules/blocks/rating-block";
@@ -85,7 +90,7 @@ const IncfileVsLegalzoom = () => {
 					<RatingBlock />
 				</RatingRow>
 			</Top>
-			<About />
+			<About content={about} />
 			<Conclusion content={conclusion} />
 			<Calculator
 				content={calculator}

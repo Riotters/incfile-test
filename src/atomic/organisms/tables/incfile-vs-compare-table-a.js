@@ -1,0 +1,66 @@
+import React from "react";
+import styled from "styled-components";
+import { color } from "../../atoms/styles/colors";
+import GridTableRow from "../../molecules/blocks/grid-table-row";
+
+const Wrapper = styled.div`
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 970px;
+	position: relative;
+
+	.table-head,
+	.table-row {
+		@media (min-width: 769px) {
+			grid-template-columns: 33.33% 33.33% 33.33%;
+		}
+
+		@media (min-width: 992px) {
+			grid-template-columns: 33.33% 33.33% 33.33%;
+		}
+
+		& > div {
+			min-width: 122px;
+
+			p {
+				color: ${color.black};
+
+				span {
+					font-weight: normal;
+				}
+			}
+
+			&:nth-child(2),
+			&:nth-child(3) {
+				justify-content: center;
+			}
+		}
+	}
+
+	.table-row {
+		& > div {
+			&:first-child {
+				p {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+`;
+
+const IncfileVsCompareTableA = ({ className, content }) => (
+	<Wrapper className={className}>
+		<GridTableRow
+			className="table-head"
+			content={content.headers}
+			header
+			headerSize="5"
+		/>
+		{content.rows.map((row) => (
+			<GridTableRow className="table-row" content={row} />
+		))}
+	</Wrapper>
+);
+
+export default IncfileVsCompareTableA;

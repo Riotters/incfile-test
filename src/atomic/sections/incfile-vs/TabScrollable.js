@@ -19,12 +19,12 @@ import TaxesIcon from "../../../images/icons/other-taxes.inline.svg";
 import BusinessInsuranceIcon from "../../../images/icons/business-insurance.inline.svg";
 import AgentIcon from "../../../images/icons/registered-agent.inline.svg";
 import MaintainingIcon from "../../../images/icons/maintaining-your-cleaning-business.inline.svg";
-import BusinessLicensesColoredIcon from "../../../images/icons/business-licenses-and-permits-colored.inline.svg";
-
-import BusinessInsuranceColoredIcon from "../../../images/icons/business-insurance-colored.inline.svg";
-import AgentColoredIcon from "../../../images/icons/registered-agent-colored.inline.svg";
-import TaxesColoredIcon from "../../../images/icons/other-taxes-colored.inline.svg";
-import MaintainingColoredIcon from "../../../images/icons/maintaining-your-cleaning-business-colored.inline.svg";
+//tab icons
+import BusinessLicensesColoredIcon from "../../../images/icons/icons-incfile-vs/icon-4.inline.svg";
+import BusinessInsuranceColoredIcon from "../../../images/icons/icons-incfile-vs/icon-5.inline.svg";
+import AgentColoredIcon from "../../../images/icons/icons-incfile-vs/icon-3.inline.svg";
+import TaxesColoredIcon from "../../../images/icons/icons-incfile-vs/icon-2.inline.svg";
+import MaintainingColoredIcon from "../../../images/icons/icons-incfile-vs/icon-1.inline.svg";
 
 import {
 	BusinessInsuranceAccordionContent,
@@ -33,36 +33,37 @@ import {
 	TaxesAccordionContent,
 } from "../../../static/type-of-business/cleaning-business";
 import VisibilitySensor from "../../../components/VisibilitySensor";
+import IncfileVsCompareTableA from "../../organisms/tables/incfile-vs-compare-table-a";
 
 const ButtonList = [
 	{
-		title: "Business Licenses and Premits",
+		title: "Summary",
 		icon: BusinessLicensesColoredIcon,
 		tabId: "local-business",
 	},
 	{
-		title: "Business Insurance",
+		title: "Expertise",
 		icon: BusinessInsuranceColoredIcon,
 		tabId: "business-insurance",
 	},
 	{
-		title: "Registered Agent",
+		title: "Ease",
 		icon: AgentColoredIcon,
 		tabId: "registered-agent",
 	},
 	{
-		title: "Taxes",
+		title: "Cost",
 		icon: TaxesColoredIcon,
 		tabId: "taxes",
 	},
 	{
-		title: "Maintaining Your Business",
+		title: "Other Services",
 		icon: MaintainingColoredIcon,
 		tabId: "maintaining",
 	},
 ];
 
-const TabScrollable = ({ layout, columns }) => {
+const TabScrollable = ({ layout, columns, content }) => {
 	const [isActive, setActive] = useState(0);
 
 	const handleClick = (index, elementId) => {
@@ -107,14 +108,6 @@ const TabScrollable = ({ layout, columns }) => {
 					</TabsWrapper>
 
 					<PanelWrapper>
-						<Heading size={3}>
-							Rules, Regulations and Laws for Your Cleaning Business
-						</Heading>
-						<Paragraph big mixed={true}>
-							Of course, along with running a business there are certain rules,
-							regulations and legalities you need to be aware of.
-						</Paragraph>
-
 						<VisibilitySensor partialVisibility minTopValue={0}>
 							{({ isVisible }) => {
 								if (isVisible) {
@@ -122,39 +115,10 @@ const TabScrollable = ({ layout, columns }) => {
 								}
 								return (
 									<div id={ButtonList[0].tabId}>
-										<TextBlockWithImage
-											SvgImage={BusinessLicenseIcon}
-											textBackgroundColor="transparent"
-											imageBackgroundColor={color.orange2}
-											imageShadowColor={shadow.orange2}
-											imageShadowOpacity={0.5}
-											boxShadow={false}
-											paddingLeft={0}
-											style={{ marginTop: "140px" }}
-											circleShadowY={40}
-											circleShadowBlure={80}
-											width={100}
-											widthUnit="%"
-										>
-											<Paragraph
-												big
-												flex
-												flexAlign={true}
-												style={{ color: color.black, fontWeight: "bold" }}
-												mixed={true}
-											>
-												Business Licenses and Permits
-											</Paragraph>
-
-											<Paragraph big>
-												Required licenses and permits for your cleaning business
-												will vary depending on where you're operating and what
-												regulations apply. In general, there are different
-												permits required at the local, state and federal levels.
-											</Paragraph>
-
-											<Accordion tab content={LicensesAccordionContent} />
-										</TextBlockWithImage>
+										<Heading size="3">
+											Incfile Compared to LegalZoom: A Summary
+										</Heading>
+										<IncfileVsCompareTableA content={content.table} />
 									</div>
 								);
 							}}

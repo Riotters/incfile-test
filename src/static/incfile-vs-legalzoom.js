@@ -6,6 +6,27 @@ export const top = {
     why we’ve put together this objective review, comparing our company formation services with one of our competitors, LegalZoom.`,
 };
 
+export const about = {
+	table: {
+		headers: ["Company", "aaa", "aaa"],
+		rows: [
+			[
+				"Cost for Standing an LLC <span>(Basic Package)</span>",
+				"$0 + state fee",
+				"$79 + state fee",
+			],
+			["Processing Time", "1 day", "30 days"],
+			["Expedited State Filing", "+$50", "Not available in standard package"],
+			[
+				"Registered Agent",
+				"Free for the first year, then $119 a year thereafter",
+				"$299 a year",
+			],
+			["Other Services Offered", "list", "list"],
+		],
+	},
+};
+
 export const conclusion = {
 	header: `All of these services are more expensive through LegalZoom than Incfile.`,
 	text: `Here at Incfile, we’ve worked hard to provide a comprehensive range of business formation and management services 
