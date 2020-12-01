@@ -760,8 +760,9 @@ export const registeredAgent = [
     content: {
       header: `There are several possible ramifications, including:`,
       list: [
-        `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence. Falling out of good standing with the Iowa Secretary of State: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
-        `Losing your status as an Iowa LLC: An IA Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Iowa LLC may be dissolved.`,
+        `<b>Getting served or sued and not finding out about it: </b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the Iowa Secretary of State: </b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `<b>Losing your status as an Iowa LLC: </b> An IA Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Iowa LLC may be dissolved.`,
       ],
     },
     marginBottom: 48,

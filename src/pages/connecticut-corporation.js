@@ -178,7 +178,7 @@ const AlaskaCorporation = () => {
                                 Connecticut corporations must file an annual or biannual report with the Connecticut Secretary of State. The first report must be filed within 30 days after its organizational meeting. This report must include the corporation’s name, its principal office, and the names and addresses of
                                 the directors and officers.
             </Paragraph>
-                            <Paragraph big style={{ marginBottom: "24px", fontFamily: "Avenir", fontWeight: "900", color: "#1e1e1e" }}>
+                            <Paragraph big style={{ marginBottom: "24px"}}>
                                 A corporation shall mail required annual financial statements to each shareholder within 120 days after the close of each fiscal year. If a shareholder requests it, a corporation must send its most recent annual report and financial statement.
             </Paragraph>
                         </PanelWrapper>

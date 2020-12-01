@@ -100,7 +100,7 @@ const AlaskaCorporation = () => {
                                 {parse(`Selecting the name of your new Michigan corporation is one of the first official steps toward actually conducting business in the Wolverine State. The
 <a href="michigan-entity-search/">business name</a> you choose must be distinguishable from other business entities registered or reserved in Michigan (with some exceptions).`)}
                             </Paragraph>
-                            <Paragraph big>
+                            <Paragraph big mixed>
                                 {parse(`Your new <a href="/michigan-entity-search/">business’ name</a> may not state or imply that it is organized for any other purpose that what’s permitted by state law and laid out in its articles
 of incorporation. The name also cannot contain a word, phrase, abbreviation, or a derivative of a word or phrase whose use is forbidden or restricted by
 state law. The name must include one of the following terms or its abbreviation: “Incorporated,” “Corporation,” “Company,” or “Limited.”`)}

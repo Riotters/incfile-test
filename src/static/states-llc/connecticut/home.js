@@ -528,313 +528,307 @@ export const namingYourBusiness = [
 ];
 
 export const registeredAgent = [
-  {
-    type: `header`,
-    content: `A Connecticut Registered Agent for Your LLC`,
-    size: 2,
-    marginBottom: 40,
-  },
-  {
-    type: `text`,
-    content: `Your CT LLC is legally required to have a Connecticut Registered Agent. Your Registered Agent is a person or a business who is formally recognized by the Connecticut Secretary of State to accept business documents and correspondence on behalf of your company.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Your LLC must have a Connecticut Registered Agent at all times. You can appoint a Registered Agent when you first start your business. You can also replace your existing CT Registered Agent at a later date, provided there is a smooth transition between the old and new Registered Agent service.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `What the Connecticut Secretary of State Says About CT Registered Agents`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `Here’s some important information from the Connecticut Secretary of State on CT Registered Agent services.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `“A registered agent is a responsible third-party who is registered in the same state in which a business entity was established and who is designated to receive service of process notices and correspondence on behalf of the corporation or LLC.”`,
-    marginBottom: 40,
-  },
-  {
-    type: `header`,
-    content: `Rules for Connecticut Registered Agents`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a Connecticut Registered Agent service for your business.`,
-    marginBottom: 16,
-  },
-  {
-    type: `list-dot`,
-    content: {
-      header: `They are:`,
-      list: [
-        `If the Registered Agent is a person, they must reside in Connecticut.`,
-        `If the Registered Agent is a business, they must be able to conduct business in Connecticut.`,
-        `The Registered Agent must have a physical street address in Connecticut, not a P.O. Box.`,
-        `The CT Registered Agent must be available in person during normal business hours to sign for any correspondence.`,
-      ],
-    },
-    marginBottom: 32,
-    color: color.yellow3,
-  },
-  {
-    type: `text`,
-    content: `Note that the CT Registered Agent address does not need to be the same as your Connecticut LLC business address.`,
-    marginBottom: 48,
-  },
-  {
-    type: `header`,
-    content: `What to Expect From a Connecticut Registered Agent Service`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `What can you expect from your Connecticut Registered Agent? Their main function is to accept official documents and correspondence from the CT Secretary of State. This includes:`,
-    marginBottom: 16,
-  },
-  {
-    type: `list-dot`,
-    content: {
-      header: ``,
-      list: [
-        `Correspondence from the Connecticut Secretary of State`,
-        `Service of process notices (e.g., if your CT LLC is sued or required to appear in court)`,
-        `Official Connecticut state and federal government correspondence and notifications`,
-        `Tax forms and requests to complete permits, company filings and reports`,
-      ],
-    },
-    marginBottom: 32,
-    color: color.purple3,
-    curve: true,
-    curveColor: color.blue1,
-  },
-  {
-    type: `header`,
-    content: `The Incfile Registered Agent Service for Connecticut LLCs`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `If you have an LLC that’s incorporated in Connecticut and you need a CT Registered Agent, we can help. Incfile provides a complete Registered Agent service for any Connecticut business. If you form your business through Incfile, we’ll act as your Registered Agent free for your first year (normally a $119 annual cost).`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `We are authorized to conduct business in Connecticut and can legally act as your Registered Agent.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Here’s what you need to know about Incfile’s CT Registered Agent service:`,
-    marginBottom: 24,
-  },
-  {
-    type: `list-dot`,
-    content: {
-      header: ``,
-      list: [
-        `The Registered Agent will always be available to accept documents and letters on your behalf`,
-        `We automatically notify you whenever we receive correspondence for your business from the Connecticut Secretary of State or anyone else`,
-        `We scan your correspondence and upload it to a dashboard, so you can review it when convenient`,
-        `We forward all correspondence to an address you choose`,
-      ],
-    },
-    marginBottom: 32,
-    color: color.green3,
-  },
-  {
-    type: `button`,
-    content: {
-      text: `Order Incfile's Connecticut registered agent service`,
-      url: `/manage-your-company/registered-agent/`,
-    },
-    theme: `primary48`,
-    marginBottom: 48,
-  },
-  {
-    type: `header`,
-    content: `How to Appoint a Connecticut Registered Agent for Your LLC`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `You can appoint a Registered Agent when you first incorporate your Connecticut LLC or at any point after that. Here’s how to go about it.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Assign Your Connecticut Registered Agent When You Form Your CT LLC`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `Your business needs to have a Connecticut Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `File a Certificate of Organization With the Connecticut Secretary of State`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `You will need to include details of your Registered Agent in your Certificate of Organization. This is the form that you file with the CT Secretary of State to formally create your business.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Incorporate Through Incfile and Get a Free Connecticut Registered Agent `,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `When you incorporate through us, we complete and file your Certificate of Organization based on the information you’ve provided. Additionally, we give you a free Connecticut Registered Agent service for the first year, and we’ll include details of your CT Registered Agent in the form that we file.`,
-    marginBottom: 16,
-  },
-  {
-    type: `button`,
-    content: {
-      text: `Incorporate your business through Incfile`,
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CT`,
-    },
-    theme: `primary48`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Change Your Connecticut Registered Agent After Your LLC Is Formed`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `You can also change your CT Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
-    marginBottom: 24,
-  },
-  {
-    type: `header`,
-    content: `Choose a Registered Agent Service and File a Change of Agent Form`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `Once you’ve chosen a new Connecticut Registered Agent, you can complete a Change of Agent form online. Once you’ve filled it out, send it to the secretary of state so they can update your records.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Sign up for Incfile’s Connecticut Registered Agent Service, and We’ll File the Change on Your Behalf`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `When you choose to use our CT Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete a Change of Agent form on your behalf and send it to the Connecticut Secretary of State. We’ll let you know once we officially become your Registered Agent. `,
-    marginBottom: 16,
-  },
-  {
-    type: `button`,
-    content: {
-      text: `Order Incfile's Connecticut registered agent service`,
-      url: `/manage-your-company/registered-agent/`,
-    },
-    theme: `primary48`,
-    marginBottom: 40,
-  },
-  {
-    type: `header`,
-    content: `CT Registered Agent Search`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `In some situations, you might want to know the name of the Registered Agent that represents another Connecticut LLC. If you do, you can search the business database of the Connecticut Secretary of State, which will often provide details of a specific business’ Registered Agent.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `If the CT Registered Agent isn’t available from the searchable business registry, contact the Connecticut Secretary of State requesting the information.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `The Problems Caused When You Don’t Appoint a Connecticut Registered Agent Service`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Connecticut Secretary of State? There are several possible ramifications, including:`,
-    marginBottom: 16,
-  },
-  {
-    type: `list-dot`,
-    content: {
-      header: ``,
-      list: [
-        `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
-        `<b>Falling out of good standing with the Connecticut Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your Annual Report), certain states may revoke your right to do business.`,
-        `<b>Losing your status as a Connecticut LLC:</b> A CT Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
-      ],
-    },
-    marginBottom: 48,
-    color: color.blue3,
-  },
-  {
-    type: `header`,
-    content: `You Can Appoint Yourself as Your Own Connecticut Registered Agent`,
-    size: 3,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `If you have an address in Connecticut, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
-    marginBottom: 16,
-  },
-  {
-    type: `list-dot`,
-    content: {
-      header: ``,
-      list: [
-        `The CT Registered Agent must have a physical street address in Connecticut. If you’re forming an LLC outside CT, you will need to use an in-state Registered Agent.`,
-        `You always need to have someone on hand during business hours at the Connecticut address to sign for important documents.`,
-        `The CT Registered Agent’s name and address are part of the public record and available through the Connecticut Secretary of State's website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.`,
-        `If you change your Connecticut business address or move out of state, you would need to file additional documentation with the CT Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
-      ],
-    },
-    marginBottom: 48,
-    color: color.green3,
-  },
-  {
-    type: `header`,
-    content: `FAQs About Connecticut Registered Agents`,
-    size: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `accordion`,
-    content: {
-      items: [
-        {
-          question: `Do I Need to Appoint a Connecticut Registered Agent?`,
-          answer: `Yes. All CT LLCs are required to have a Registered Agent. This is mandated by the Connecticut Secretary of State.
-
+	{
+		type: `header`,
+		content: `A Connecticut Registered Agent for Your LLC`,
+		size: 2,
+		marginBottom: 40,
+	},
+	{
+		type: `text`,
+		content: `Your CT LLC is legally required to have a Connecticut Registered Agent. Your Registered Agent is a person or a business who is formally recognized by the Connecticut Secretary of State to accept business documents and correspondence on behalf of your company.`,
+		marginBottom: 16,
+	},
+	{
+		type: `text`,
+		content: `Your LLC must have a Connecticut Registered Agent at all times. You can appoint a Registered Agent when you first start your business. You can also replace your existing CT Registered Agent at a later date, provided there is a smooth transition between the old and new Registered Agent service.`,
+		marginBottom: 32,
+	},
+	{
+		type: `header`,
+		content: `What the Connecticut Secretary of State Says About CT Registered Agents`,
+		size: 3,
+		marginBottom: 32,
+	},
+	{
+		type: `text`,
+		content: `Here’s some important information from the Connecticut Secretary of State on CT Registered Agent services.`,
+		marginBottom: 16,
+	},
+	{
+		type: `text`,
+		content: `“A registered agent is a responsible third-party who is registered in the same state in which a business entity was established and who is designated to receive service of process notices and correspondence on behalf of the corporation or LLC.”`,
+		marginBottom: 40,
+	},
+	{
+		type: `header`,
+		content: `Rules for Connecticut Registered Agents`,
+		size: 3,
+		marginBottom: 32,
+	},
+	{
+		type: `text`,
+		content: `There are certain rules that you must follow when you’re appointing a Connecticut Registered Agent service for your business.`,
+		marginBottom: 16,
+	},
+	{
+		type: `list-dot`,
+		content: {
+			header: `They are:`,
+			list: [
+				`If the Registered Agent is a person, they must reside in Connecticut.`,
+				`If the Registered Agent is a business, they must be able to conduct business in Connecticut.`,
+				`The Registered Agent must have a physical street address in Connecticut, not a P.O. Box.`,
+				`The CT Registered Agent must be available in person during normal business hours to sign for any correspondence.`,
+			],
+		},
+		marginBottom: 32,
+		color: color.yellow3,
+	},
+	{
+		type: `text`,
+		content: `Note that the CT Registered Agent address does not need to be the same as your Connecticut LLC business address.`,
+		marginBottom: 48,
+	},
+	{
+		type: `header`,
+		content: `What to Expect From a Connecticut Registered Agent Service`,
+		size: 3,
+		marginBottom: 32,
+	},
+	{
+		type: `text`,
+		content: `What can you expect from your Connecticut Registered Agent? Their main function is to accept official documents and correspondence from the CT Secretary of State.`,
+		marginBottom: 16,
+	},
+	{
+		type: `list-dot`,
+		content: {
+			header: `This includes:`,
+			list: [
+				`Correspondence from the Connecticut Secretary of State`,
+				`Service of process notices (e.g., if your CT LLC is sued or required to appear in court)`,
+				`Official Connecticut state and federal government correspondence and notifications`,
+				`Tax forms and requests to complete permits, company filings and reports`,
+			],
+		},
+		marginBottom: 32,
+		color: color.purple3,
+		curve: true,
+		curveColor: color.blue1,
+	},
+	{
+		type: `header`,
+		content: `The Incfile Registered Agent Service for Connecticut LLCs`,
+		size: 3,
+		marginBottom: 32,
+	},
+	{
+		type: `text`,
+		content: `If you have an LLC that’s incorporated in Connecticut and you need a CT Registered Agent, we can help. Incfile provides a complete Registered Agent service for any Connecticut business. If you form your business through Incfile, we’ll act as your Registered Agent free for your first year (normally a $119 annual cost).`,
+		marginBottom: 16,
+	},
+	{
+		type: `text`,
+		content: `We are authorized to conduct business in Connecticut and can legally act as your Registered Agent.`,
+		marginBottom: 24,
+	},
+	{
+		type: `list-dot`,
+		content: {
+			header: `Here’s what you need to know about Incfile’s CT Registered Agent service:`,
+			list: [
+				`The Registered Agent will always be available to accept documents and letters on your behalf`,
+				`We automatically notify you whenever we receive correspondence for your business from the Connecticut Secretary of State or anyone else`,
+				`We scan your correspondence and upload it to a dashboard, so you can review it when convenient`,
+				`We forward all correspondence to an address you choose`,
+			],
+		},
+		marginBottom: 32,
+		color: color.green3,
+	},
+	{
+		type: `button`,
+		content: {
+			text: `Order Incfile's Connecticut registered agent service`,
+			url: `/manage-your-company/registered-agent/`,
+		},
+		theme: `primary48`,
+		marginBottom: 48,
+	},
+	{
+		type: `header`,
+		content: `How to Appoint a Connecticut Registered Agent for Your LLC`,
+		size: 3,
+		marginBottom: 32,
+	},
+	{
+		type: `text`,
+		content: `You can appoint a Registered Agent when you first incorporate your Connecticut LLC or at any point after that. Here’s how to go about it.`,
+		marginBottom: 32,
+	},
+	{
+		type: `header`,
+		content: `Assign Your Connecticut Registered Agent When You Form Your CT LLC`,
+		size: 3,
+		marginBottom: 32,
+	},
+	{
+		type: `text`,
+		content: `Your business needs to have a Connecticut Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
+		marginBottom: 32,
+	},
+	{
+		type: `header`,
+		content: `File a Certificate of Organization With the Connecticut Secretary of State`,
+		size: 4,
+		marginBottom: 16,
+	},
+	{
+		type: `text`,
+		content: `You will need to include details of your Registered Agent in your Certificate of Organization. This is the form that you file with the CT Secretary of State to formally create your business.`,
+		marginBottom: 32,
+	},
+	{
+		type: `header`,
+		content: `Incorporate Through Incfile and Get a Free Connecticut Registered Agent `,
+		size: 4,
+		marginBottom: 16,
+	},
+	{
+		type: `text`,
+		content: `When you incorporate through us, we complete and file your Certificate of Organization based on the information you’ve provided. Additionally, we give you a free Connecticut Registered Agent service for the first year, and we’ll include details of your CT Registered Agent in the form that we file.`,
+		marginBottom: 16,
+	},
+	{
+		type: `button`,
+		content: {
+			text: `Incorporate your business through Incfile`,
+			url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CT`,
+		},
+		theme: `primary48`,
+		marginBottom: 32,
+	},
+	{
+		type: `header`,
+		content: `Change Your Connecticut Registered Agent After Your LLC Is Formed`,
+		size: 3,
+		marginBottom: 32,
+	},
+	{
+		type: `text`,
+		content: `You can also change your CT Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
+		marginBottom: 24,
+	},
+	{
+		type: `header`,
+		content: `Choose a Registered Agent Service and File a Change of Agent Form`,
+		size: 3,
+		marginBottom: 32,
+	},
+	{
+		type: `text`,
+		content: `Once you’ve chosen a new Connecticut Registered Agent, you can complete a Change of Agent form online. Once you’ve filled it out, send it to the secretary of state so they can update your records.`,
+		marginBottom: 32,
+	},
+	{
+		type: `header`,
+		content: `Sign up for Incfile’s Connecticut Registered Agent Service, and We’ll File the Change on Your Behalf`,
+		size: 3,
+		marginBottom: 32,
+	},
+	{
+		type: `text`,
+		content: `When you choose to use our CT Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete a Change of Agent form on your behalf and send it to the Connecticut Secretary of State. We’ll let you know once we officially become your Registered Agent. `,
+		marginBottom: 16,
+	},
+	{
+		type: `button`,
+		content: {
+			text: `Order Incfile's Connecticut registered agent service`,
+			url: `/manage-your-company/registered-agent/`,
+		},
+		theme: `primary48`,
+		marginBottom: 40,
+	},
+	{
+		type: `header`,
+		content: `CT Registered Agent Search`,
+		size: 3,
+		marginBottom: 32,
+	},
+	{
+		type: `text`,
+		content: `In some situations, you might want to know the name of the Registered Agent that represents another Connecticut LLC. If you do, you can search the business database of the Connecticut Secretary of State, which will often provide details of a specific business’ Registered Agent.`,
+		marginBottom: 16,
+	},
+	{
+		type: `text`,
+		content: `If the CT Registered Agent isn’t available from the searchable business registry, contact the Connecticut Secretary of State requesting the information.`,
+		marginBottom: 32,
+	},
+	{
+		type: `header`,
+		content: `The Problems Caused When You Don’t Appoint a Connecticut Registered Agent Service`,
+		size: 3,
+		marginBottom: 32,
+	},
+	{
+		type: `text`,
+		content: `What happens if you choose not to assign or provide details of a Registered Agent to the Connecticut Secretary of State?`,
+		marginBottom: 16,
+	},
+	{
+		type: `list-dot`,
+		content: {
+			header: `There are several possible ramifications, including:`,
+			list: [
+				`<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+				`<b>Falling out of good standing with the Connecticut Secretary of State: If you don’t respond to certain correspondence (like the request for your Annual Report), certain states may revoke your right to do business.`,
+				`<b>Losing your status as a Connecticut LLC:</b> A CT Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
+			],
+		},
+		marginBottom: 48,
+		color: color.blue3,
+	},
+	{
+		type: `header`,
+		content: `You Can Appoint Yourself as Your Own Connecticut Registered Agent`,
+		size: 3,
+		marginBottom: 24,
+	},
+	{
+		type: `text`,
+		content: `If you have an address in Connecticut, you can choose to be the Registered Agent for your LLC.`,
+		marginBottom: 16,
+	},
+	{
+		type: `list-dot`,
+		content: {
+			header: `We don’t recommend this approach as there can be some drawbacks:`,
+			list: [
+				`The CT Registered Agent must have a physical street address in Connecticut. If you’re forming an LLC outside CT, you will need to use an in-state Registered Agent.`,
+				`You always need to have someone on hand during business hours at the Connecticut address to sign for important documents.`,
+				`The CT Registered Agent’s name and address are part of the public record and available through the Connecticut Secretary of State's website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.`,
+				`If you change your Connecticut business address or move out of state, you would need to file additional documentation with the CT Secretary of State for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
+			],
+		},
+		marginBottom: 48,
+		color: color.green3,
+	},
+	{
+		type: `header`,
+		content: `FAQs About Connecticut Registered Agents`,
+		size: 3,
+		marginBottom: 32,
+	},
+	{
+		type: `accordion`,
+		content: {
+			items: [
+				{
+					question: `Do I Need to Appoint a Connecticut Registered Agent?`,
+					answer: `Yes. All CT LLCs are required to have a Registered Agent. This is mandated by the Connecticut Secretary of State.
           `,
         },
         {

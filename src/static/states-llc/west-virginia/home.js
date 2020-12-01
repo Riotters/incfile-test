@@ -20,48 +20,28 @@ export const howToGuide = [
   },
   {
     type: `text`,
+    content: `Famed for its mountains and hills, West Virginia is a state rich in natural resources, with an active outdoor culture. Located in the mid-Atlantic region of the U.S., it is ideally placed for many types of businesses.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
     content: `If you want to start your own business in West Virginia, one of the best ways to do so is by forming a West Virginia LLC. Limited liability companies (LLCs) are a business entity designed for startups and small- and medium-sized businesses. West Virginia LLCs give you many of the protections and advantages of larger corporations without all the rules, regulations and compliance issues common to larger business entities.`,
     marginBottom: 16,
   },
   {
-    type: `text`,
-    content: `Briefly, the benefits of starting a West Virginia LLC include:`,
-    marginBottom: 16,
-  },
-  {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your Delaware LLC`, `Easy tax filing and potential advantages for your tax treatment`],
+      header: `Briefly, the benefits of starting a West Virginia LLC include:`,
+      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your West Virginia LLC`, `Easy tax filing and potential advantages for your tax treatment`],
     },
-  },
-  {
-    type: `text`,
-    content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Briefly, the benefits of starting a Delaware LLC include:`,
-    marginBottom: 16,
-  },
-  {
-    type: `list-dot`,
-    content: {
-      header: ``,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your Delaware LLC`, `Easy tax filing and potential advantages for your tax treatment`],
-    },
-    marginBottom: 48,
+    marginBottom: 32,
     color: color.blue3,
-    curve: true,
-    curveColor: color.red1,
   },
   {
     type: `text`,
     content: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure here</a>.`,
-    marginBottom: 16,
+    marginBottom: 48,
   },
-
   {
     type: `header`,
     content: `Six Steps to Filing an LLC with the WV Secretary of State`,
@@ -82,13 +62,13 @@ export const howToGuide = [
           answer: `First, you need to gather basic information about your LLC, including the names and addresses of the managers or members. The LLC members are typically the people who own and run the business. They are also the ones who can take profits out of the business to pay themselves.`,
         },
         {
-          question: `STEP 2: Search for and Choose a Unique Business Name for Your Delaware LLC`,
+          question: `STEP 2: Choose a Unique Business Name`,
           answer: `<p>You will need a distinctive and original name for your LLC that’s not used by any other business in WV. To find out if another company is using your chosen business name, carry out a business entity name search on the WV Secretary of State website.</p>
                    <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to naming your West Virginia LLC.</p></br>
                    <a href="/west-virginia-llc/how-to-name-your-llc/"> Learn about West Virginia LLC business naming rules. </a>`,
         },
         {
-          question: `STEP 3: STEP 3: Provide an Official Address for your DE LLC`,
+          question: `STEP 3: Provide an Official Address for your LLC`,
           answer: `Every West Virginia LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address must be inside the state of West Virginia, but it cannot be a P.O. Box.`,
         },
         {
@@ -125,16 +105,21 @@ export const howToGuide = [
     type: `header`,
     content: `Additional Information from the West Virginia Secretary of State`,
     size: 3,
-    marginBottom: 16,
+    marginBottom: 32,
+  },
+  {
+    type: `text`,
+    content: `The Secretary of State has plenty of other information on forming and running a business in West Virginia.`,
+    marginBottom: 32,
   },
   {
     type: `list-dot`,
     content: {
-      header: `The Secretary of State has plenty of other information on forming and running a business in West Virginia. You’ll find other useful information below:`,
+      header: `You’ll find other useful information below:`,
       list: [
         `<a href="https://sos.wv.gov/business/Pages/StartWVBus.aspx" target="_blank" rel="noopener noreferrer">West Virginia Secretary of State for forming and running your LLC</a>`,
         `<a href="https://labor.wv.gov/Pages/default.aspx" target="_blank" rel="noopener noreferrer">West Virginia Division of Labor for employers and hiring </a>`,
-        `<a href="href="https://tax.wv.gov/Pages/default.aspx">" target="_blank" rel="noopener noreferrer">West Virginia Department of Revenue for WV taxes</a>`,
+        `<a href="href="https://tax.wv.gov/Pages/default.aspx" target="_blank" rel="noopener noreferrer">West Virginia Department of Revenue for WV taxes</a>`,
       ],
     },
     marginBottom: 32,
@@ -152,44 +137,39 @@ export const howToGuide = [
     marginBottom: 32,
   },
   {
-    type: `header`,
-    content: `Professional LLCs in West Virginia`,
-    size: 3,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Some states, including West Virginia, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. Here are the occupations that the WV Secretary of State allows to form professional LLCs:`,
-    marginBottom: 32,
-  },
-  {
-    type: `list-dot`,
+    type: `accordion`,
     content: {
-      header: ``,
-      list: [`Attorneys-at-law`, `Physicians`, `Podiatrists`, `Dentists`, `Optometrists`, `Accountants`, `Veterinarians`, `Architects`, `Engeneers`, `Osteopathic physicians and surgeons`, `Chiropractors`, `Psychologists`, `Social workers`, `Acupuncturists`, `Land surveyors`],
+        items: [
+            {
+                question: `Professional LLCs in West Virginia`,
+                answer: `<p>Some states, including West Virginia, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. Here are the occupations that the WV Secretary of State allows to form professional LLCs:</p>
+                        <ul>
+                        <li>Attorneys-at-law</li>
+                        <li>Physicians</li>
+                        <li>Podiatrists</li>
+                        <li>Dentists</li>
+                        <li>Optometrists</li>
+                        <li>Accountants</li>
+                        <li>Veterinarians</li>
+                        <li>Architects</li>
+                        <li>Engeneers</li>
+                        <li>Osteopathic physicians and surgeons</li>
+                        <li>Chiropractors</li>
+                        <li>Psychologists</li>
+                        <li>Social workers</li>
+                        <li>Acupuncturists</li>
+                        <li>Land surveyors</li>
+                        </ul>`,
+            },
+            {
+                question: `Foreign LLCs Doing Business in West Virginia`,
+                answer: `<p>If your business is already operating in another state and expanding to West Virginia, you’ll need to form a foreign LLC.</p></br>
+                         <a href="/west-virginia-llc/form-filling-permit-requirements/">More information on West Virginia filing and licensing requirements.</a>`,
+            },
+        ],
     },
-  },
-  {
-    type: `header`,
-    content: `Foreign LLCs Doing Business in West Virginia`,
-    size: 3,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `If your business is already operating in another state and expanding to West Virginia, you’ll need to form a foreign LLC.`,
-    marginBottom: 16,
-  },
-  {
-    type: `button`,
-    content: {
-      text: `More information on West Virginia filing and licensing requirements `,
-      url: `/west-virginia-llc/form-filling-permit-requirements/`,
-    },
-    theme: `primary48`,
     marginBottom: 48,
   },
-
   {
     type: `header`,
     content: `What to Do After Forming Your West Virginia LLC`,
@@ -204,53 +184,66 @@ export const howToGuide = [
   {
     type: `header`,
     content: `More Information About West Virginia LLCs`,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
     content: `You’ll find plenty more insight and guidance on the other pages of this guide, including:`,
     marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Naming Your West Virginia LLC`,
+},
+{
+    type: `arrow-link`,
+    content: {
+        text: `Naming Your West Virginia LLC`,
+        url: `/west-virginia-llc/how-to-name-your-llc/`,
+    },
     marginBottom: 16,
-  },
-  {
+},
+{
     type: `text`,
     content: `How to search the West Virginia business registry of the Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a West Virginia LLC name and more.`,
     marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `West Virginia Registered Agents for LLCs`,
+},
+{
+    type: `arrow-link`,
+    content: {
+        text: `West Virginia Registered Agents for LLCs`,
+        url: `/west-virginia-llc/registered-agents-west-virginia-llc/`,
+    },
     marginBottom: 16,
-  },
-  {
+},
+{
     type: `text`,
-    content: `How to appoint a Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching forWest Virginia Registered Agents.`,
+    content: `How to appoint a Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for West Virginia Registered Agents.`,
     marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Fees and Requirements for West Virginia LLCs`,
+},
+{
+    type: `arrow-link`,
+    content: {
+        text: `Fees and Requirements for West Virginia LLCs`,
+        url: `/west-virginia-llc/form-filling-permit-requirements/`,
+    },
     marginBottom: 16,
-  },
-  {
+},
+{
     type: `text`,
     content: `How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and West Virginia rules. Includes details of Employer Identification Numbers (EINs), West Virginia and federal business licenses, annual reports and more.`,
     marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Federal, State, Sales and Other Taxes for Your West Virginia LLC`,
+},
+{
+    type: `arrow-link`,
+    content: {
+        text: `Federal, State, Sales and Other Taxes for Your West Virginia LLC`,
+        url: `/west-virginia-llc/business-taxes/`,
+    },
     marginBottom: 16,
-  },
-  {
+},
+{
     type: `text`,
     content: `How to understand the various taxes you will need to pay to the federal and West Virginia government. Includes details of federal taxes like income and self-employment, and West Virginia taxes like sales tax and income tax.`,
     marginBottom: 32,
-  },
+},
 ];
 
 export const namingYourBusiness = [
@@ -303,7 +296,7 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Your LLC Business Name Must Be Unique`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
@@ -320,7 +313,7 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `It’s not enough for your DE LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Delaware. For example, you cannot use the following factors to say your name is different from the name of another business:`,
+    content: `It’s not enough for your LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in West Virginia. For example, you cannot use the following factors to say your name is different from the name of another business:`,
     marginBottom: 32,
   },
   {
@@ -364,7 +357,7 @@ export const namingYourBusiness = [
     content: {
       header: ``,
       list: [
-        `Are very similar to the name of a federal or DE agency or organization (e.g., FBI, FDA, Delaware Division of Revenue, Delaware Police, Treasury, etc.)`,
+        `Are very similar to the name of a federal or WV agency or organization (e.g., FBI, FDA, West Virginia Department of Revenue, West Virginia Police, Treasury, etc.)`,
         `Suggest affiliation with a federal or state agency or organization`,
         `Use the term “Olympic” or any terms that are trademarks of the Olympic organization`,
         `Imply a purpose that it would be illegal for your business to carry out`,
@@ -378,7 +371,7 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `“Trade Names” or DBAs in West Virginia`,
-    size: 4,
+    size: 3,
     marginBottom: 32,
   },
   {
@@ -403,12 +396,12 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Register Your LLC Name with the Secretary of State`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
     type: `text`,
-    content: `Once you’ve searched for your Delaware business name and checked availability through our business search tool, it’s time for next steps. You will need to follow naming rules and decide whether or not you need a fictitious name. Once you’ve done that, you can register your WV LLC name. There are a couple of ways to do this:`,
+    content: `Once you’ve checked name availability, followed the naming rules and decided whether you need a fictitious name, you can register your WV LLC name. There are a couple of ways to do this.`,
     marginBottom: 16,
   },
   {
@@ -421,14 +414,14 @@ export const namingYourBusiness = [
         `<p>If you’re ready to start your West Virginia LLC, you can formally file your Articles of Organization with the Secretary of State, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WV/">let Incfile take care of it for you.</a></p>`,
       ],
     },
-    marginBottom: 32,
+    marginBottom: 48,
     color: color.purple3,
   },
   {
     type: `header`,
     content: `FAQs on Naming Your West Virginia LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -462,8 +455,8 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Additional Resources for Naming Your West Virginia LLC`,
-    size: 4,
-    marginBottom: 16,
+    size: 3,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -473,7 +466,7 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Trademarks and Service Marks`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
@@ -493,7 +486,7 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `How to Choose a Business Name`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
@@ -545,17 +538,21 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a West Virginia Agent for your business. They are:`,
+    content: `There are certain rules that you must follow when you’re appointing a West Virginia Agent for your business.`,
     marginBottom: 16,
   },
   {
-    header: ``,
+    type: `list-dot`,
+    content: {
+    header: `They are:`,
     list: [
       `If the Registered Agent is a person, they must reside in West Virginia`,
       `If the Registered Agent is a business, they must be able to conduct business in West Virginia`,
       `The Registered Agent must have a physical street address in West Virginia, not a P.O. Box`,
-      `The DE Registered Agent must be available in person during normal business hours to sign for any correspondence`,
+      `The Registered Agent must be available in person during normal business hours to sign for any correspondence`,
     ],
+   },
+    marginBottom: 40,
   },
   {
     type: `text`,
@@ -570,13 +567,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Your West Virginia Registered Agent carries out several valuable services for your business. They accept official communications and documents from the Secretary of State on your behalf. This may include:`,
+    content: `Your West Virginia Registered Agent carries out several valuable services for your business. They accept official communications and documents from the Secretary of State on your behalf.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `This may include:`,
       list: [
         `Correspondence from the West Virginia Secretary of State, like a notice to file reports and other forms`,
         `Service of process documents (for example, if your LLC has legal proceedings issued against it)`,
@@ -585,33 +582,6 @@ export const registeredAgent = [
     },
     marginBottom: 32,
     color: color.yellow3,
-  },
-
-  {
-    type: `header`,
-    content: `The Purpose of a DE Registered Agent`,
-    size: 3,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Your Delaware Registered Agent carries out several valuable services for your business. They accept official communications and documents from the DE Division of Corporations on your behalf. This may include:`,
-    marginBottom: 16,
-  },
-  {
-    type: `list-dot`,
-    content: {
-      header: ``,
-      list: [
-        `Correspondence from the Delaware Division of Corporations, like a notice to file reports and other forms`,
-        `Service of process documents (for example, if your Delaware LLC has legal proceedings issued against it)`,
-        `Official Delaware and federal government documents, form filings and requests for information (including taxes, permits and company filings)`,
-      ],
-    },
-    marginBottom: 24,
-    color: color.red3,
-    curve: true,
-    curveColor: color.blue1,
   },
   {
     type: `header`,
@@ -630,19 +600,15 @@ export const registeredAgent = [
     marginBottom: 16,
   },
   {
-    type: `text`,
-    content: `Here’s what the Infile Delaware Registered Agent service provides for your LLC.`,
-    marginBottom: 16,
-  },
-  {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `Here’s what the Incfile West Virginia Registered Agent service provides for your LLC:`,
       list: [
         `An always-available West Virginia Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
-        `A digital dashboard where you can access, store and retrieve any information we’ve received for your Delaware business`,
-        `Email notification whenever we receive documents for your Delaware business`,
+        `A digital dashboard where you can access, store and retrieve any information we’ve received for your business`,
+        `Email notification whenever we receive documents for your business`,
         `Automatic forwarding of all legal correspondence, documentation and information directly to you`,
+        `Your first year free (+ state fee), whether you incorporate with Incfile or not`,
       ],
     },
     marginBottom: 32,
@@ -651,7 +617,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Delaware registered agent service`,
+      text: `Order Incfile's West Virginia Registered Agent Service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -677,7 +643,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `Your business needs to have a West Virginia Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -698,7 +664,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `When you incorporate through us, we complete and file your Certificate of Formation based on the information you’ve provided. Additionally, we give you a free Delaware Registered Agent Service for the first year, and we’ll include details of your DE Registered Agent in the form that we file.`,
+    content: `When you incorporate through us, we complete and file your Articles of Organization based on the information you’ve provided. Additionally, we give you a free West Virginia Registered Agent service for the first year, and we’ll include details of your Registered Agent in the form that we file.`,
     marginBottom: 16,
   },
   {
@@ -708,7 +674,7 @@ export const registeredAgent = [
       url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=WV`,
     },
     theme: `primary48`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -719,7 +685,7 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `You can also change your Registered Agent service after you’ve formed your LLC. There are a couple of ways to achieve this.`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -740,17 +706,17 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `When you choose to use our DE Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete the form on your behalf and send it to the Delaware Division of Corporations. We’ll let you know once we officially become your Registered Agent.`,
+    content: `When you choose to use our Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete the necessary form on your behalf and send it to the West Virginia Secretary of State. We’ll let you know once we officially become your Registered Agent.`,
     marginBottom: 16,
   },
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Delaware registered agent service`,
+      text: `Order Incfile's West Virginia Registered Agent Service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
-    marginBottom: 40,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -760,7 +726,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `In some situations, you might want to know the name of the Registered Agent that represents another West Virginia LLC. If you do, you can search the <a href="https://icis.corp.delaware.gov/ecorp/entitysearch/namesearch.aspx" target="_blank" rel="noopener noreferrer">  business database </a>of the Delaware Division of Corporations, as this will often provide details of a specific business’s Registered Agent.`,
+    content: `In some situations, you might want to know the name of the Registered Agent that represents another West Virginia LLC. If you do, you can search the business database of the Secretary of State, which will often provide details of a specific business’s Registered Agent.`,
     marginBottom: 16,
   },
   {
@@ -776,16 +742,16 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: ``,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the West Virginia Secretary of State? `,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `What happens if you choose not to assign or provide details of a Registered Agent to the West Virginia Secretary of State? There are several possible ramifications, including:`,
+      header: `There are several possible ramifications, including:`,
       list: [
-        `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
-        `<b>Falling out of good standing with the Delaware Division of Corporations: </b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `<b>Getting served or sued and not finding out about it: </b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the West Virginia Secretary of State: </b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
         `<b>Losing your status as a West Virginia LLC: </b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your West Virginia LLC may be dissolved.`,
       ],
     },
@@ -857,9 +823,9 @@ export const registeredAgent = [
     content: {
       header: `You might find these resources helpful:`,
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Delaware Registered Agentt</a>`,
-        `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Delaware Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent/registered-agent-tasks/">What a Delaware Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a West Virginia Registered Agent</a>`,
+        `<a href="/manage-your-company/change-of-registered-agent/">Changing Your West Virginia Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent/registered-agent-tasks/">What a West Virginia Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -989,7 +955,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Incfile can also complete and file your Delaware franchise report on your behalf.`,
+    content: `Incfile can also complete and file your West Virginia annual report on your behalf.`,
     marginBottom: 48,
   },
   {
@@ -1033,23 +999,32 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
+    type: `header`,
+    size: 4,
+    content: `The Incfile Business License Research Package for Your West Virginia LLC`,
+    marginBottom: 32,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`A complete report on all the licenses, permits and tax registrations your Delaware LLC will need`, `The application forms you will need to file with the Delaware, regional and federal licensing authorities`],
+        header: ``,
+        list: [
+            `A complete report on all the licenses, permits and tax registrations your West Virginia LLC will need`,
+            `The application forms you will need to file with the West Virginia, regional and federal licensing authorities`,
+        ],
     },
     marginBottom: 24,
     color: color.purple3,
   },
   {
     type: `text`,
-    content: `Remember that operating your business without the required licenses can expose you to risks and fines from federal, Delaware and local governments.`,
+    content: `Remember that operating your business without the required licenses can expose you to risks and fines from federal, West Virginia and local governments.`,
     marginBottom: 16,
   },
   {
     type: `button`,
     content: {
-      text: `Incfile's Delaware business license research package`,
+      text: `Incfile's West Virginia Business License Research Package`,
       url: `/business-license-research-package/`,
     },
     theme: `primary48`,
@@ -1176,11 +1151,11 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Delaware certificate of good standing service`,
+      text: `Incfile's West Virginia Certificate of Good Standing service`,
       url: `/manage-your-company/certificate-of-good-standing/`,
     },
     theme: `primary48`,
-    marginBottom: 16,
+    marginBottom: 32,
   },
   {
     type: `text`,
@@ -1208,7 +1183,7 @@ export const feesAndRequirments = [
         },
         {
           question: `Do I Need to Pay an Annual Report Fee Every Year?`,
-          answer: `Usually, yes. Most states require you file a report for your LLC every year. You can find out more on the <a href="/compliance-filing-requirement/">compliance page for your state.</a>`,
+          answer: `Yes. Most states, including WV, require you to file a report for your LLC every year. You can find out more on the <a href="/compliance-filing-requirement/">compliance page for your state.</a>`,
         },
         {
           question: `Who Will I Need to Get Business Licenses and Permits From for My West Virginia LLC?`,
@@ -1219,7 +1194,7 @@ export const feesAndRequirments = [
                   <li>Governing organizations in your industry</li>
                   <li>Federal, state and local regulations</li>
                   </ul></br>
-                  That’s why our <a href="/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your Delaware LLC needs to be compliant.`,
+                  That’s why our <a href="/business-license-research-package/">business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your West Virginia LLC needs to be compliant.`,
         },
       ],
     },
@@ -1334,7 +1309,7 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Federal Taxes`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1345,7 +1320,7 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Federal Self-Employment Tax`,
-    size: 3,
+    size: 4,
     marginBottom: 16,
   },
   {
@@ -1411,7 +1386,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You only pay federal income tax on your Delaware LLC profits that you take out of the business, less certain deductions and allowances. This includes your tax-free amount, plus LLC business expenses and other deductions for areas such as healthcare and some retirement plans. Speak to your accountant for more information.`,
+    content: `You only pay federal income tax on your LLC profits that you take out of the business, less certain deductions and allowances. This includes your tax-free amount, plus LLC business expenses and other deductions for areas such as healthcare and some retirement plans. Speak to your accountant for more information.`,
     marginBottom: 32,
   },
   {
