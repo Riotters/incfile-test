@@ -7,8 +7,8 @@ import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 import Top from "../../atomic/partials/top";
 import styled from "styled-components";
-import {Paragraph} from "../../atomic/atoms/typography/paragraph";
-import {Heading} from "../../atomic/atoms/typography/heading";
+import { Paragraph } from "../../atomic/atoms/typography/paragraph";
+import { Heading } from "../../atomic/atoms/typography/heading";
 import TheArtOfBootstrapping from "../../atomic/sections/type-of-business/with-no-money-business/the-art-of-bootstrapping";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import Bootstrapping from "../../atomic/sections/type-of-business/with-no-money-business/bootstrapping";
@@ -26,68 +26,88 @@ import TaxesIntroduce from "../../atomic/sections/type-of-business/with-no-money
 import ToolsAndLinks from "../../atomic/sections/type-of-business/with-no-money-business/tools";
 
 const WithNoMoneyBusiness = () => (
-    <Layout>
-        <SEO title="How to Start a Business with Little or No Money"
-             description="There’s something very powerful about the idea of starting a business, but what can you do if money is a major obstacle? Many businesses require significant capital expenditure, and if you don’t have the funds to begin your venture, that will be an issue. All is not lost though - with some creative thinking and a slightly different approach, you can “bootstrap” your business with very little cash."/>
+  <Layout>
+    <SEO
+      title="How to Start a Business with Little or No Money"
+      description="There’s something very powerful about the idea of starting a business, but what can you do if money is a major obstacle? Many businesses require significant capital expenditure, and if you don’t have the funds to begin your venture, that will be an issue. All is not lost though - with some creative thinking and a slightly different approach, you can “bootstrap” your business with very little cash."
+    />
 
-        <Top ovalColor="babyblue" imageName="with-no-money-business-main" imageAlt="Mr Bulb with seedling"
-             headlineWidth={700}>
-            <h1>How to Start a Business with Little or No Money</h1>
-            <p>
-                There’s something very powerful about the idea of starting a business,
-                but what can you do if money is a major obstacle? Many businesses
-                require significant capital expenditure, and if you don’t have the funds
-                to begin your venture, that will be an issue. All is not lost though -
-                with some creative thinking and a slightly different approach,
-                you can “bootstrap” your business with very little cash.
-            </p>
-            <ButtonsBox>
-                <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{text: "Start Now", url: "/"}} />
-            </ButtonsBox>
+    <Top
+      ovalColor="babyblue"
+      imageName="with-no-money-business-main"
+      imageAlt="Mr Bulb with seedling"
+      headlineWidth={700}
+    >
+      <h1>How to Start a Business with Little or No Money</h1>
+      <p>
+        There’s something very powerful about the idea of starting a business,
+        but what can you do if money is a major obstacle? Many businesses
+        require significant capital expenditure, and if you don’t have the funds
+        to begin your venture, that will be an issue. All is not lost though -
+        with some creative thinking and a slightly different approach, you can
+        “bootstrap” your business with very little cash.
+      </p>
+      <ButtonsBox>
+        <Button
+          theme="primary56"
+          marginMD="0 24px 0 0"
+          arrow
+          content={{
+            url: `${process.env.ORDER_URL}/form-order-now.php`,
+            text: "Start Now",
+          }}
+        />
+      </ButtonsBox>
 
-            <RatingRow>
-                <CartBlock/>
-                <RatingBlock/>
-            </RatingRow>
-        </Top>
+      <RatingRow>
+        <CartBlock />
+        <RatingBlock />
+      </RatingRow>
+    </Top>
 
-        <Bootstrapping />
-        
-        <LackOfMoney />
+    <Bootstrapping />
 
-        <Expecting />
+    <LackOfMoney />
 
-        <TypeBusinessIntroduce />
+    <Expecting />
 
-        <TypeBusiness />
+    <TypeBusinessIntroduce />
 
-        <TheArtOfBootstrapping/>
+    <TypeBusiness />
 
-        <BusinessPlan />
+    <TheArtOfBootstrapping />
 
-        <BusinessStructure />
+    <BusinessPlan />
 
-        <SettingBusiness />
+    <BusinessStructure />
 
-        <OrderNow />
+    <SettingBusiness />
 
-        <Regulations />
+    <OrderNow />
 
-        <TaxesIntroduce />
+    <Regulations />
 
-        <Taxes />
+    <TaxesIntroduce />
 
-        <ToolsAndLinks />
+    <Taxes />
 
-        <Conclusion to={process.env.ORDER_URL + "/form-order-now.php"} buttonTitle="Start your No Money Business with us, today">
-            <Heading size={3} style={{fontSize: "48px"}}>
-                Conclusion
-            </Heading>
-            <Paragraph big>
-                We hope this guide has shown you that starting a business with no money isn’t just possible, it’s practical. You can start with nothing and build something unique that will make a powerful difference in your life and the lives of all the people you touch.
-            </Paragraph>
-        </Conclusion>
-    </Layout>
+    <ToolsAndLinks />
+
+    <Conclusion
+      to={process.env.ORDER_URL + "/form-order-now.php"}
+      buttonTitle="Start your No Money Business with us, today"
+    >
+      <Heading size={3} style={{ fontSize: "48px" }}>
+        Conclusion
+      </Heading>
+      <Paragraph big>
+        We hope this guide has shown you that starting a business with no money
+        isn’t just possible, it’s practical. You can start with nothing and
+        build something unique that will make a powerful difference in your life
+        and the lives of all the people you touch.
+      </Paragraph>
+    </Conclusion>
+  </Layout>
 );
 
 const ButtonsBox = styled.div`
