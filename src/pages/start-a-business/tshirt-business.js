@@ -661,7 +661,13 @@ const TshirtBusiness = () => (
               style={{ color: color.blue1, fontWeight: "bold" }}
               mixed={true}
             >
-              Sole Proprietorship
+              <Link
+                to={
+                  process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"
+                }
+              >
+                Sole Proprietorship
+              </Link>
             </Paragraph>
 
             <Paragraph big>

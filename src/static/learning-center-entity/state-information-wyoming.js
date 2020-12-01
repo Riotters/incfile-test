@@ -17,7 +17,7 @@ import ProprietorshipSVG from "../../images/icons/icon-sole-proprietorship.inlin
 import LockpadSVG from "../../images/icons/icon-user-lockpad.inline.svg";
 import ProcentSVG from "../../images/icons/icon-user-percentge.inline.svg";
 import BillSVG from "../../images/icons/icon-person-bill.inline.svg";
-import FolderProcentSVG from "../../images/icons/icon-folder-procent.inline.svg"
+import FolderProcentSVG from "../../images/icons/icon-folder-procent.inline.svg";
 import { color } from "../../atomic/atoms/styles/colors";
 import { shadow } from "../../atomic/atoms/styles/shadows";
 
@@ -35,13 +35,13 @@ export const launchBusiness = {
   header: `Launch your business with Incfile`,
   text: `No Contracts. No Surprises. Only $0 + State Fee to Launch Your Business.`,
   button: {
-    text: `Launch your business`,
+    text: `Launch your business!`,
     url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
   },
 };
 
 export const subscription = {
-  header: `Subscribe now to learn more about Corporation and starting a business`,
+  header: `Subscribe now to learn more about LLC and starting a business`,
   button: {
     text: `Subscribe Now`,
     url: `/`,
@@ -91,17 +91,20 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "A place of staggering natural beauty, Wyoming is one of the largest, most open and least-densely populated places in the country. The state has a population of just over half a million people and is home to two national parks as well as many forests, monuments and historic sites.",
+    content:
+      "A place of staggering natural beauty, Wyoming is one of the largest, most open and least-densely populated places in the country. The state has a population of just over half a million people and is home to two national parks as well as many forests, monuments and historic sites.",
     marginBottom: 48,
   },
   {
     type: "text",
-    content: "Wyoming's economy is focused around natural resource extraction, agriculture and tourism. Entrepreneurs interested in those and other areas can find a welcome home for their business in this state.",
+    content:
+      "Wyoming's economy is focused around natural resource extraction, agriculture and tourism. Entrepreneurs interested in those and other areas can find a welcome home for their business in this state.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "There are a couple of other good reasons for starting a business in Wyoming:",
+    content:
+      "There are a couple of other good reasons for starting a business in Wyoming:",
     marginBottom: 24,
   },
   {
@@ -124,12 +127,14 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "When it comes to starting a business in Wyoming, you have a few options for the type of business you want to create. This is known as your “legal business entity,” and it defines how your business will be treated by the state, the law, the IRS and other official bodies. ",
+    content:
+      "When it comes to starting a business in Wyoming, you have a few options for the type of business you want to create. This is known as your “legal business entity,” and it defines how your business will be treated by the state, the law, the IRS and other official bodies. ",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Most new entrepreneurs have a choice of several business types — sole proprietorship, partnership, Limited Liability Company (LLC), S Corporation or C Corporation. ",
+    content:
+      "Most new entrepreneurs have a choice of several business types — sole proprietorship, partnership, Limited Liability Company (LLC), S Corporation or C Corporation. ",
     marginBottom: 24,
   },
   {
@@ -153,7 +158,8 @@ export const corporation = [
       },
       {
         header: "California Limited Liability Companies (LLCs)",
-        text: "LLCs are a great option for smaller CA businesses. LLCs are quick and easy to create, inexpensive to administer, light on regulations and have simple taxation and rules.",
+        text:
+          "LLCs are a great option for smaller CA businesses. LLCs are quick and easy to create, inexpensive to administer, light on regulations and have simple taxation and rules.",
         svg: LockpadSVG,
         link: {
           text: "Learn how to create an LLC in California",
@@ -167,7 +173,8 @@ export const corporation = [
       },
       {
         header: "California S Corporations",
-        text: "You might choose to form a California S Corporation because it’s a good compromise between the simplicity of the LLC and the complexity of the C Corporation. Note that CA S Corporations are subject to more rules and regulations than a CA LLC, but they can mean that you pay less tax.",
+        text:
+          "You might choose to form a California S Corporation because it’s a good compromise between the simplicity of the LLC and the complexity of the C Corporation. Note that CA S Corporations are subject to more rules and regulations than a CA LLC, but they can mean that you pay less tax.",
         svg: ProcentSVG,
         link: {
           text: "Learn how to create an LLC in California",
@@ -201,7 +208,8 @@ export const corporation = [
     type: "colorbox",
     icon: FolderProcentSVG,
     header: "Other Entity Types",
-    text: "There are some other business entity structures like nonprofits, Limited Liability Partnerships (LLPs) and B Corporations, but they will not be relevant for the majority of entrepreneurs.",
+    text:
+      "There are some other business entity structures like nonprofits, Limited Liability Partnerships (LLPs) and B Corporations, but they will not be relevant for the majority of entrepreneurs.",
     curve: true,
     curveColor: color.blue1,
     color: color.blue3,
@@ -233,7 +241,8 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "There are several reasons an entrepreneur might choose to form a corporation instead of an LLC in Wyoming.",
+    content:
+      "There are several reasons an entrepreneur might choose to form a corporation instead of an LLC in Wyoming.",
     marginBottom: 24,
   },
   {
@@ -254,7 +263,8 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "Here’s a side-by-side comparison between the various business types. This table focuses on the areas apart from company stock and shareholders. ",
+    content:
+      "Here’s a side-by-side comparison between the various business types. This table focuses on the areas apart from company stock and shareholders. ",
     marginBottom: 24,
   },
   {
@@ -522,7 +532,8 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "This table shows the differences between Wyoming business entities when it comes to issuing, buying and selling stock. ",
+    content:
+      "This table shows the differences between Wyoming business entities when it comes to issuing, buying and selling stock. ",
     marginBottom: 24,
   },
   {
@@ -695,13 +706,15 @@ export const corporation = [
   },
   {
     type: "header",
-    content: "A Quick Note on the Differences Between Wyoming S Corporations and C Corporations ",
+    content:
+      "A Quick Note on the Differences Between Wyoming S Corporations and C Corporations ",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "When a corporation is initially created, it is automatically assumed to be a C Corporation and only becomes an S Corporation (and will be taxed as such) if you file the IRS Small Business Tax Election form 2553 . ",
+    content:
+      "When a corporation is initially created, it is automatically assumed to be a C Corporation and only becomes an S Corporation (and will be taxed as such) if you file the IRS Small Business Tax Election form 2553 . ",
     marginBottom: 24,
   },
   {
@@ -736,7 +749,8 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "In addition to the general benefits above, Wyoming S Corporations provide several other advantages. ",
+    content:
+      "In addition to the general benefits above, Wyoming S Corporations provide several other advantages. ",
     marginBottom: 24,
   },
   {
@@ -763,7 +777,8 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "In addition to the general benefits above, Wyoming C Corporations provide several other advantages. ",
+    content:
+      "In addition to the general benefits above, Wyoming C Corporations provide several other advantages. ",
     marginBottom: 24,
   },
   {
@@ -789,7 +804,8 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "Here are some areas to be aware of when you’re creating a corporation in Wyoming. ",
+    content:
+      "Here are some areas to be aware of when you’re creating a corporation in Wyoming. ",
     marginBottom: 24,
   },
   {
@@ -814,7 +830,8 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "Are you ready to start your Wyoming corporation? If so, we can help. We provide comprehensive corporation formation services for both S Corporations and C Corporations in Wyoming. ",
+    content:
+      "Are you ready to start your Wyoming corporation? If so, we can help. We provide comprehensive corporation formation services for both S Corporations and C Corporations in Wyoming. ",
     marginBottom: 48,
   },
   {
@@ -825,7 +842,8 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "Now that you’ve decided a corporation is right for you, here’s how to form one. At Incfile, we make the corporation formation process easy. With prices starting at just $0 plus the Wyoming filing fee, you get excellent value too. ",
+    content:
+      "Now that you’ve decided a corporation is right for you, here’s how to form one. At Incfile, we make the corporation formation process easy. With prices starting at just $0 plus the Wyoming filing fee, you get excellent value too. ",
     marginBottom: 24,
   },
   {
@@ -861,8 +879,10 @@ export const corporation = [
           ],
         },
         {
-          question: "Establish Street and Mailing Addresses for Your Wyoming Corporation ",
-          answer: "An Wyoming corporation must have a designated address. That could be your home address (if you’re running the company from your residence), where your office is located or any physical address of your preference — even outside of Wyoming. It cannot be a P.O. Box. ",
+          question:
+            "Establish Street and Mailing Addresses for Your Wyoming Corporation ",
+          answer:
+            "An Wyoming corporation must have a designated address. That could be your home address (if you’re running the company from your residence), where your office is located or any physical address of your preference — even outside of Wyoming. It cannot be a P.O. Box. ",
         },
         {
           question: "Appoint a Registered Agent for Your Wyoming Corporation ",
@@ -875,11 +895,13 @@ export const corporation = [
             "The Registered Agent must be present or available during normal business hours (9 a.m. to 5 p.m. Monday to Friday) to receive any legal correspondence delivered, since the type of documents delivered to the registered agent require a signature on delivery.",
             "Some people travel or are not always at their business location to receive these documents.",
           ],
-          text: "At Incfile, all of our packages include a Registered Agent service that is free for the first year and $99 per year thereafter. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf. ",
+          text:
+            "At Incfile, all of our packages include a Registered Agent service that is free for the first year and $99 per year thereafter. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf. ",
         },
         {
           question: "Draft Your Articles of Incorporation",
-          answer: "The legal document required to create your new corporation is called the Articles of Incorporation . You will need to gather various details for your Wyoming filing including:",
+          answer:
+            "The legal document required to create your new corporation is called the Articles of Incorporation . You will need to gather various details for your Wyoming filing including:",
           list: [
             "The corporation’s name",
             "The corporation’s mailing address and street address",
@@ -889,12 +911,16 @@ export const corporation = [
           ],
         },
         {
-          question: "File Your Articles of Incorporation With the Wyoming Secretary of State",
-          answer: "Once your articles are drafted, you can file them with the Wyoming Secretary of State. Filing your Articles of Incorporation creates your Wyoming corporation. You can do this online, mail in a form or have Incfile do it on your behalf. ",
+          question:
+            "File Your Articles of Incorporation With the Wyoming Secretary of State",
+          answer:
+            "Once your articles are drafted, you can file them with the Wyoming Secretary of State. Filing your Articles of Incorporation creates your Wyoming corporation. You can do this online, mail in a form or have Incfile do it on your behalf. ",
         },
         {
-          question: "Complete the Legal and Compliance Requirements for Your Wyoming Corporation ",
-          answer: "Once your corporation has been created, you will need to get certain legal requirements in place. These include:",
+          question:
+            "Complete the Legal and Compliance Requirements for Your Wyoming Corporation ",
+          answer:
+            "Once your corporation has been created, you will need to get certain legal requirements in place. These include:",
           list: [
             "File IRS Small Business Tax Election form 2553 if you want to be treated as an S Corporation",
             "Any S Corporations that are formed through Incfile will also include a prepared Form 2553 that will be delivered with the state formation documents",
@@ -984,7 +1010,8 @@ export const naming = [
   },
   {
     type: "text",
-    content: "You need the right name for your Wyoming corporation. Choosing the right name is vital because it tells your suppliers, customers and employees what your business does. Wyoming has several rules and regulations about what you can call your new business. Let’s explore what they are.",
+    content:
+      "You need the right name for your Wyoming corporation. Choosing the right name is vital because it tells your suppliers, customers and employees what your business does. Wyoming has several rules and regulations about what you can call your new business. Let’s explore what they are.",
     marginBottom: 24,
   },
   {
@@ -1009,7 +1036,8 @@ export const naming = [
   },
   {
     type: "header",
-    content: "General Wyoming Secretary of State Rules on Naming Your Corporation",
+    content:
+      "General Wyoming Secretary of State Rules on Naming Your Corporation",
     size: 4,
     marginBottom: 24,
   },
@@ -1031,7 +1059,8 @@ export const naming = [
   },
   {
     type: "header",
-    content: "Don't Confuse Your Wyoming Corporation Name With Another Business Name",
+    content:
+      "Don't Confuse Your Wyoming Corporation Name With Another Business Name",
     size: 4,
     marginBottom: 24,
   },
@@ -1055,7 +1084,8 @@ export const naming = [
   },
   {
     type: "text",
-    content: "For example, you can’t claim that Purple People Co., Purple People Corporation, Purple People Incorporated, Purple People Corp. or Purple People are different from one another.",
+    content:
+      "For example, you can’t claim that Purple People Co., Purple People Corporation, Purple People Incorporated, Purple People Corp. or Purple People are different from one another.",
     marginBottom: 48,
   },
   {
@@ -1101,7 +1131,8 @@ export const naming = [
   },
   {
     type: "header",
-    content: "Rules on Infringing on Service Marks or Trademarks Inside or Outside Wyoming",
+    content:
+      "Rules on Infringing on Service Marks or Trademarks Inside or Outside Wyoming",
     size: 4,
     marginBottom: 24,
   },
@@ -1126,8 +1157,15 @@ export const naming = [
   {
     type: "list-dot",
     content: {
-      text: "Finding the perfect name can be tough. You want a business name that:",
-      list: ["Describes what your Wyoming business does", "Appeals to your planned audience", "Makes your business easy to find", "Is relatively unique", "Doesn’t limit you to a particular location or type of product or service"],
+      text:
+        "Finding the perfect name can be tough. You want a business name that:",
+      list: [
+        "Describes what your Wyoming business does",
+        "Appeals to your planned audience",
+        "Makes your business easy to find",
+        "Is relatively unique",
+        "Doesn’t limit you to a particular location or type of product or service",
+      ],
     },
     color: color.green3,
     marginBottom: 41,
@@ -1135,7 +1173,8 @@ export const naming = [
   },
   {
     type: "text",
-    content: "Fortunately, we have some good advice on seeking out the perfect business name for your Wyoming corporation. Check out our guidance on naming your business and get inspired.",
+    content:
+      "Fortunately, we have some good advice on seeking out the perfect business name for your Wyoming corporation. Check out our guidance on naming your business and get inspired.",
     marginBottom: 48,
   },
   {
@@ -1146,7 +1185,8 @@ export const naming = [
   },
   {
     type: "text",
-    content: "Once you’ve found the right name for your business, it’s time to make it a reality. Check out our packages for starting your Wyoming corporation and form either an S Corporation or a C Corporation today.",
+    content:
+      "Once you’ve found the right name for your business, it’s time to make it a reality. Check out our packages for starting your Wyoming corporation and form either an S Corporation or a C Corporation today.",
     marginBottom: 24,
   },
   {
@@ -1178,7 +1218,8 @@ export const agents = [
   },
   {
     type: "text",
-    content: "Your Wyoming corporation needs to have a Registered Agent. They’re chosen by you and can accept legal notices and other correspondence for your Wyoming corporation on your behalf. There are some rules on choosing Registered Agents:",
+    content:
+      "Your Wyoming corporation needs to have a Registered Agent. They’re chosen by you and can accept legal notices and other correspondence for your Wyoming corporation on your behalf. There are some rules on choosing Registered Agents:",
     marginBottom: 41,
   },
   {
@@ -1197,7 +1238,8 @@ export const agents = [
   },
   {
     type: "text",
-    content: "Incorporate your S Corporation or C Corporation through us to get your first year of Registered Agent services for free.",
+    content:
+      "Incorporate your S Corporation or C Corporation through us to get your first year of Registered Agent services for free.",
     marginBottom: 24,
   },
   {
@@ -1222,13 +1264,15 @@ export const agents = [
   },
   {
     type: "header",
-    content: "Wyoming Registered Agents: What Type of Legal Notices Might They Receive?",
+    content:
+      "Wyoming Registered Agents: What Type of Legal Notices Might They Receive?",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "An Wyoming Registered Agent may receive, on behalf of your corporation:",
+    content:
+      "An Wyoming Registered Agent may receive, on behalf of your corporation:",
     marginBottom: 24,
   },
   {
@@ -1248,7 +1292,8 @@ export const agents = [
   },
   {
     type: "text",
-    content: "Note that the Wyoming Secretary of State does need the address of your Registered Agent and it needs to be a street address, not a P.O. Box.",
+    content:
+      "Note that the Wyoming Secretary of State does need the address of your Registered Agent and it needs to be a street address, not a P.O. Box.",
     marginBottom: 48,
   },
   {
@@ -1259,7 +1304,8 @@ export const agents = [
   },
   {
     type: "text",
-    content: "If you live in Wyoming, you might choose to be the Registered Agent for your corporation. Be aware that there may be some drawbacks to this:",
+    content:
+      "If you live in Wyoming, you might choose to be the Registered Agent for your corporation. Be aware that there may be some drawbacks to this:",
     marginBottom: 24,
   },
   {
@@ -1278,18 +1324,21 @@ export const agents = [
   },
   {
     type: "text",
-    content: "There are more considerations, but this should help you with your decision to use a <a href='/'>Registered Agent service</a>.",
+    content:
+      "There are more considerations, but this should help you with your decision to use a <a href='/'>Registered Agent service</a>.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "If You Don’t Have a Registered Agent for Your Wyoming Corporation",
+    content:
+      "If You Don’t Have a Registered Agent for Your Wyoming Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Failing to have a Registered Agent in Wyoming can cause your business issues. These include:",
+    content:
+      "Failing to have a Registered Agent in Wyoming can cause your business issues. These include:",
     marginBottom: 41,
   },
   {
@@ -1307,7 +1356,8 @@ export const agents = [
   },
   {
     type: "header",
-    content: "Incfile Will Provide a Registered Agent for Wyoming on Behalf of Your Corporation",
+    content:
+      "Incfile Will Provide a Registered Agent for Wyoming on Behalf of Your Corporation",
     size: 4,
     marginBottom: 24,
   },
@@ -1319,7 +1369,8 @@ export const agents = [
   },
   {
     type: "text",
-    content: "We are authorized to conduct business in Wyoming and can legally act as your Registered Agent for your WY corporation.<br /><br /> Here’s what you need to know about Incfile’s WY Registered Agent service for corporations:",
+    content:
+      "We are authorized to conduct business in Wyoming and can legally act as your Registered Agent for your WY corporation.<br /><br /> Here’s what you need to know about Incfile’s WY Registered Agent service for corporations:",
     marginBottom: 41,
   },
   {
@@ -1347,7 +1398,8 @@ export const agents = [
   },
   {
     type: "text",
-    content: "Form your C Corporation or S Corporation with us today to get your first year of Registered Agent service for free, including easy access to our comprehensive online dashboard.",
+    content:
+      "Form your C Corporation or S Corporation with us today to get your first year of Registered Agent service for free, including easy access to our comprehensive online dashboard.",
     marginBottom: 24,
   },
   {
@@ -1380,17 +1432,20 @@ export const filing = [
   },
   {
     type: "text",
-    content: "If you want to form a corporation in Wyoming, there are certain forms, requirements and legalities you must have in place.",
+    content:
+      "If you want to form a corporation in Wyoming, there are certain forms, requirements and legalities you must have in place.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Below is a rundown of what you’ll need to do, together with information on the requirements for your Wyoming corporation. Some of these forms you only need to submit once, while others must be filed on a regular basis.",
+    content:
+      "Below is a rundown of what you’ll need to do, together with information on the requirements for your Wyoming corporation. Some of these forms you only need to submit once, while others must be filed on a regular basis.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "You will need to set reminders in your calendar to file forms regularly if you're filing yourself. At Incfile, we provide an optional, paid renewal service and can take care of certain renewals for you when you instruct us to do so.",
+    content:
+      "You will need to set reminders in your calendar to file forms regularly if you're filing yourself. At Incfile, we provide an optional, paid renewal service and can take care of certain renewals for you when you instruct us to do so.",
     marginBottom: 24,
   },
   {
@@ -1428,7 +1483,13 @@ export const filing = [
   {
     type: "list-dot",
     content: {
-      list: ["The corporation’s name", "The corporation’s mailing address and street address", "The corporation's Registered Agent and their address", "The corporation’s capital structure (number of shares to be issued, who owns them, pricing, etc.)", "The name and address of the incorporators"],
+      list: [
+        "The corporation’s name",
+        "The corporation’s mailing address and street address",
+        "The corporation's Registered Agent and their address",
+        "The corporation’s capital structure (number of shares to be issued, who owns them, pricing, etc.)",
+        "The name and address of the incorporators",
+      ],
     },
     color: color.green3,
     marginBottom: 48,
@@ -1460,7 +1521,8 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Various cities in Wyoming have slightly different rules and fees for permits and licenses for corporations. Check with your local Wyoming city administration to see what their rules are. You will need a separate permit or license for each city your Wyoming corporation operates in.",
+    content:
+      "Various cities in Wyoming have slightly different rules and fees for permits and licenses for corporations. Check with your local Wyoming city administration to see what their rules are. You will need a separate permit or license for each city your Wyoming corporation operates in.",
     marginBottom: 48,
   },
   {
@@ -1471,7 +1533,8 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Depending on the type of business you are running, you may need to get additional permits and licenses from the county or state of Wyoming. You can get an idea of the types of permits and licenses your S Corporation or C Corporation might need from the State of Wyoming website.",
+    content:
+      "Depending on the type of business you are running, you may need to get additional permits and licenses from the county or state of Wyoming. You can get an idea of the types of permits and licenses your S Corporation or C Corporation might need from the State of Wyoming website.",
     marginBottom: 48,
   },
   {
@@ -1482,12 +1545,14 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Some corporations will need to get licenses and permits from the federal government and various national agencies. You can find a complete list on the U.S. Small Business Administration website.",
+    content:
+      "Some corporations will need to get licenses and permits from the federal government and various national agencies. You can find a complete list on the U.S. Small Business Administration website.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Incfile Business License Research Package for Your Wyoming Corporation",
+    content:
+      "Incfile Business License Research Package for Your Wyoming Corporation",
     size: 4,
     marginBottom: 24,
   },
@@ -1500,7 +1565,10 @@ export const filing = [
   {
     type: "list-dot",
     content: {
-      list: ["A comprehensive package of all the licenses, permits and tax registrations required for your business", "The application forms to file with the appropriate licensing authorities"],
+      list: [
+        "A comprehensive package of all the licenses, permits and tax registrations required for your business",
+        "The application forms to file with the appropriate licensing authorities",
+      ],
     },
     color: color.blue3,
     marginBottom: 48,
@@ -1508,7 +1576,8 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Your customized Business License Research Package will be emailed to you within two days of your Wyoming Corporation being formed by the Wyoming Secretary of State.",
+    content:
+      "Your customized Business License Research Package will be emailed to you within two days of your Wyoming Corporation being formed by the Wyoming Secretary of State.",
     marginBottom: 24,
   },
   {
@@ -1528,7 +1597,8 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Because you’re forming a corporation, there are certain other legal, regulatory and compliance areas you need to meet.",
+    content:
+      "Because you’re forming a corporation, there are certain other legal, regulatory and compliance areas you need to meet.",
     marginBottom: 24,
   },
   {
@@ -1539,7 +1609,8 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Bylaws are the formal, internal rules that your Wyoming corporation must follow to stay active. You will need to create and agree to bylaws in certain areas.",
+    content:
+      "Bylaws are the formal, internal rules that your Wyoming corporation must follow to stay active. You will need to create and agree to bylaws in certain areas.",
     marginBottom: 41,
   },
   {
@@ -1570,7 +1641,8 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Ownership in a Wyoming corporation is expressed through the issuance of shares. You must create stock certificates and formally issue stock to any agreed initial shareholders in the corporation.",
+    content:
+      "Ownership in a Wyoming corporation is expressed through the issuance of shares. You must create stock certificates and formally issue stock to any agreed initial shareholders in the corporation.",
     marginBottom: 48,
   },
   {
@@ -1593,7 +1665,8 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Officers are the individuals who manage the Wyoming corporation on a day-to-day basis. At minimum a WY corporation should have a president, secretary and treasurer. Theoretically, one person could hold more than one position.",
+    content:
+      "Officers are the individuals who manage the Wyoming corporation on a day-to-day basis. At minimum a WY corporation should have a president, secretary and treasurer. Theoretically, one person could hold more than one position.",
     marginBottom: 48,
   },
   {
@@ -1628,13 +1701,18 @@ export const filing = [
   },
   {
     type: "text",
-    content: "You may need to hire employees for your Wyoming corporation. You will need:",
+    content:
+      "You may need to hire employees for your Wyoming corporation. You will need:",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
-      list: ["An Employer Identification Number (EIN)", "Worker’s Compensation Insurance", "General Liability Insurance"],
+      list: [
+        "An Employer Identification Number (EIN)",
+        "Worker’s Compensation Insurance",
+        "General Liability Insurance",
+      ],
     },
     color: color.blue3,
     marginBottom: 48,
@@ -1657,13 +1735,19 @@ export const filing = [
   },
   {
     type: "text",
-    content: "You must hold a yearly meeting that all directors, officers and shareholders of the WY corporation are invited to. The purpose of an AGM is generally to:",
+    content:
+      "You must hold a yearly meeting that all directors, officers and shareholders of the WY corporation are invited to. The purpose of an AGM is generally to:",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
-      list: ["Discuss important information", "Make strategic decisions", "Understand opportunities, risks and issues", "Vote on important resolutions and other matters"],
+      list: [
+        "Discuss important information",
+        "Make strategic decisions",
+        "Understand opportunities, risks and issues",
+        "Vote on important resolutions and other matters",
+      ],
     },
     color: color.babyblue3,
     marginBottom: 48,
@@ -1677,13 +1761,20 @@ export const filing = [
   },
   {
     type: "text",
-    content: "You will need to register for certain taxes when you form your corporation. These include:",
+    content:
+      "You will need to register for certain taxes when you form your corporation. These include:",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
-      list: ["Federal income tax", "Corporation tax (only for C Corporations)", "Wyoming state tax", "Sales and Use Tax", "Employment taxes"],
+      list: [
+        "Federal income tax",
+        "Corporation tax (only for C Corporations)",
+        "Wyoming state tax",
+        "Sales and Use Tax",
+        "Employment taxes",
+      ],
     },
     color: color.green3,
     marginBottom: 48,
@@ -1691,7 +1782,8 @@ export const filing = [
   },
   {
     type: "text",
-    content: "You can find details on the <a href='/'> Wyoming Department of Revenue</a> and IRS websites.",
+    content:
+      "You can find details on the <a href='/'> Wyoming Department of Revenue</a> and IRS websites.",
     marginBottom: 24,
   },
   {
@@ -1702,17 +1794,20 @@ export const filing = [
   },
   {
     type: "text",
-    content: "You must file an annual report with the Wyoming Secretary of State on an annual basis. If you do not file your annual report each year, you will be charged a late fee and your corporation may be dissolved. Here at Incfile, we can file your annual report on your behalf.",
+    content:
+      "You must file an annual report with the Wyoming Secretary of State on an annual basis. If you do not file your annual report each year, you will be charged a late fee and your corporation may be dissolved. Here at Incfile, we can file your annual report on your behalf.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "As you can see, there are several forms and permits you need to submit to conduct business, both initially and on an annual basis.",
+    content:
+      "As you can see, there are several forms and permits you need to submit to conduct business, both initially and on an annual basis.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "<a href='/'>Learn about your ongoing Wyoming corporation filing requirements</a> and business filing deadlines with our helpful Wyoming ongoing filing lookup tool.",
+    content:
+      "<a href='/'>Learn about your ongoing Wyoming corporation filing requirements</a> and business filing deadlines with our helpful Wyoming ongoing filing lookup tool.",
     marginBottom: 24,
   },
   {
@@ -1732,7 +1827,8 @@ export const filing = [
   },
   {
     type: "text",
-    content: "You may need a Certificate of Good Standing for your Wyoming corporation to carry out some business-related services like opening a bank account.",
+    content:
+      "You may need a Certificate of Good Standing for your Wyoming corporation to carry out some business-related services like opening a bank account.",
     marginBottom: 24,
   },
   {
@@ -1752,12 +1848,14 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Incfile provides a cost-effective service to help you create your Wyoming corporation. We guide you through the process and handle most of the administrative steps, such as filing the necessary forms on your behalf.",
+    content:
+      "Incfile provides a cost-effective service to help you create your Wyoming corporation. We guide you through the process and handle most of the administrative steps, such as filing the necessary forms on your behalf.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Our basic package also provides a free Registered Agent service for the first year. If you're looking for help starting an S Corporation or C Corporation, our comprehensive services provide outstanding value.",
+    content:
+      "Our basic package also provides a free Registered Agent service for the first year. If you're looking for help starting an S Corporation or C Corporation, our comprehensive services provide outstanding value.",
     marginBottom: 24,
   },
   {
@@ -1790,7 +1888,8 @@ export const taxes = [
   },
   {
     type: "text",
-    content: "Here’s a breakdown of the likely taxes and fees you’ll incur when you start and run a corporation in Wyoming.",
+    content:
+      "Here’s a breakdown of the likely taxes and fees you’ll incur when you start and run a corporation in Wyoming.",
     marginBottom: 48,
   },
   {
@@ -1805,7 +1904,8 @@ export const taxes = [
       items: [
         {
           question: "Turnaround times for forming a corporation in Wyoming",
-          answer: "You will normally have the option of a “Standard” turnaround time and an “Expedited” turnaround time for forming your corporation. You can learn about those times here. ",
+          answer:
+            "You will normally have the option of a “Standard” turnaround time and an “Expedited” turnaround time for forming your corporation. You can learn about those times here. ",
         },
         {
           question: "Fees for forming a corporation in Wyoming",
@@ -1832,7 +1932,8 @@ export const taxes = [
   },
   {
     type: "text",
-    content: "The way that S Corporations and C Corporations pay tax is different. We’ll take each one separately.",
+    content:
+      "The way that S Corporations and C Corporations pay tax is different. We’ll take each one separately.",
     marginBottom: 48,
   },
   {
@@ -1841,19 +1942,23 @@ export const taxes = [
       items: [
         {
           question: "Payroll Tax",
-          answer: "Your corporation will need to pay employer payroll tax on salaries paid to employees.",
+          answer:
+            "Your corporation will need to pay employer payroll tax on salaries paid to employees.",
         },
         {
           question: "Wyoming State Income Tax",
-          answer: "You will pay Wyoming state income tax on your earnings. <a href='/'>Find out more here</a>.",
+          answer:
+            "You will pay Wyoming state income tax on your earnings. <a href='/'>Find out more here</a>.",
         },
         {
           question: "Wyoming State Sales/Use Tax",
-          answer: "If you’re selling products or services in Wyoming you may need to pay a state sales tax. You can register and pay state sales tax here.",
+          answer:
+            "If you’re selling products or services in Wyoming you may need to pay a state sales tax. You can register and pay state sales tax here.",
         },
         {
           question: "Wyoming Other Taxes",
-          answer: "You may need to pay other taxes and fees, depending on the type of Wyoming corporation you run. Find out more on the Wyoming Department of Revenue website.",
+          answer:
+            "You may need to pay other taxes and fees, depending on the type of Wyoming corporation you run. Find out more on the Wyoming Department of Revenue website.",
         },
       ],
     },
@@ -1867,12 +1972,14 @@ export const taxes = [
   },
   {
     type: "text",
-    content: "If you employ others, you will need to pay insurance and taxes to the state for each employee. <a href='/'>Here’s how to register for the various employee taxes, insurance and other costs</a>.",
+    content:
+      "If you employ others, you will need to pay insurance and taxes to the state for each employee. <a href='/'>Here’s how to register for the various employee taxes, insurance and other costs</a>.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Get more requirements from the <a href='/'>Wyoming Department of Labor website</a>.",
+    content:
+      "Get more requirements from the <a href='/'>Wyoming Department of Labor website</a>.",
     marginBottom: 48,
   },
   {
@@ -1909,7 +2016,8 @@ export const taxes = [
   },
   {
     type: "text",
-    content: "You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:",
+    content:
+      "You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:",
     marginBottom: 41,
   },
   {
@@ -1948,7 +2056,8 @@ export const taxes = [
   },
   {
     type: "header",
-    content: "Taxes Payable by All Individuals Working for Wyoming Corporations",
+    content:
+      "Taxes Payable by All Individuals Working for Wyoming Corporations",
     size: 5,
     marginBottom: 24,
   },
@@ -1959,7 +2068,8 @@ export const taxes = [
   },
   {
     type: "text",
-    content: "You will also need to pay regular federal income tax when you file your tax return every year. Note that you will be able to apply your standard deduction, personal exemption and business expenses to this tax.",
+    content:
+      "You will also need to pay regular federal income tax when you file your tax return every year. Note that you will be able to apply your standard deduction, personal exemption and business expenses to this tax.",
     marginBottom: 48,
   },
   {
@@ -1970,12 +2080,14 @@ export const taxes = [
   },
   {
     type: "text",
-    content: "Incfile provides a cost-effective service to help you create your Wyoming corporation. We guide you through the process and handle most of the administrative steps, such as filing the necessary forms on your behalf.",
+    content:
+      "Incfile provides a cost-effective service to help you create your Wyoming corporation. We guide you through the process and handle most of the administrative steps, such as filing the necessary forms on your behalf.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Our basic package also provides a free Registered Agent service for the first year. If you're looking for help starting an S Corporation or C Corporation, our comprehensive services provide outstanding value.",
+    content:
+      "Our basic package also provides a free Registered Agent service for the first year. If you're looking for help starting an S Corporation or C Corporation, our comprehensive services provide outstanding value.",
     marginBottom: 24,
   },
   {
@@ -2036,8 +2148,14 @@ export const afterFormation = [
   {
     type: "list-dot",
     content: {
-      header: "Benefits of <a href='/trademark-name-search/'>Incfile's Trademark service</a> include:",
-      list: ["Legal counsel from an experienced trademark attorney", "A thorough search of existing trademarks", "A registered trademark with the USPTO", "Handling all correspondence with the USPTO until the name is approved."],
+      header:
+        "Benefits of <a href='/trademark-name-search/'>Incfile's Trademark service</a> include:",
+      list: [
+        "Legal counsel from an experienced trademark attorney",
+        "A thorough search of existing trademarks",
+        "A registered trademark with the USPTO",
+        "Handling all correspondence with the USPTO until the name is approved.",
+      ],
     },
     color: color.blue3,
     marginBottom: 48,
@@ -2087,7 +2205,8 @@ export const afterFormation = [
   },
   {
     type: "text",
-    content: "Here are some favorite accounting software options for Corporation business owners:",
+    content:
+      "Here are some favorite accounting software options for Corporation business owners:",
     marginBottom: 24,
   },
   {
@@ -2112,7 +2231,8 @@ export const afterFormation = [
           text: "Xero",
           url: "/",
         },
-        text: "Xero is online accounting software that is a great option for those who find QuickBooks to be too complicated and difficult to understand. Their plans start out at $20 per month.",
+        text:
+          "Xero is online accounting software that is a great option for those who find QuickBooks to be too complicated and difficult to understand. Their plans start out at $20 per month.",
       },
       {
         link: {
@@ -2127,7 +2247,8 @@ export const afterFormation = [
           text: "Bench",
           url: "/",
         },
-        text: "Bench not only allows you to track your accounts receivable, but they include the help of a real-life bookkeeper to run your accounting every month. For a Bench account starting out at $125 a month, this is quite the deal instead of hiring your own bookkeeper.",
+        text:
+          "Bench not only allows you to track your accounts receivable, but they include the help of a real-life bookkeeper to run your accounting every month. For a Bench account starting out at $125 a month, this is quite the deal instead of hiring your own bookkeeper.",
         marginBottom: "52px",
       },
     ],
@@ -2158,7 +2279,8 @@ export const afterFormation = [
   },
   {
     type: "header",
-    content: "Business Operations & Marketing for Your Wyoming \n" + "Corporation",
+    content:
+      "Business Operations & Marketing for Your Wyoming \n" + "Corporation",
     size: 4,
     marginBottom: 24,
   },
@@ -2214,7 +2336,8 @@ export const afterFormation = [
   },
   {
     type: "header",
-    content: "Choose the Best Business Tools to Run Your Wyoming \n" + "Corporation",
+    content:
+      "Choose the Best Business Tools to Run Your Wyoming \n" + "Corporation",
     size: 4,
     marginBottom: 24,
   },

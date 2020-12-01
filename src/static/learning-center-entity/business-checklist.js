@@ -7,7 +7,6 @@ import Operations from "../../images/icons/operations.inline.svg";
 import Workforce from "../../images/icons/workforce.inline.svg";
 import Marketing from "../../images/icons/marketing.inline.svg";
 
-
 export const top = {
   header: `The Complete "Start Your Business" Checklist`,
   text: `A Clear and Comprehensive Guide to Starting Your Business the Right Way`,
@@ -24,15 +23,15 @@ export const top = {
 };
 
 export const hsForm = {
-    header: "Download The Complete Starting a Business Checklist",
-    text: "From developing your business idea to measuring success, our free guide has all the info you need to get your business off the ground.",
-    hs_form_id: `d077bdb7-f266-4cc6-b69f-a8f4b53acf21`,
-    button: {
-      text: "Download now",
-      url: "/",
-    },
-  };
-
+  header: "Download The Complete Starting a Business Checklist",
+  text:
+    "From developing your business idea to measuring success, our free guide has all the info you need to get your business off the ground.",
+  hs_form_id: `d077bdb7-f266-4cc6-b69f-a8f4b53acf21`,
+  button: {
+    text: "Download now",
+    url: "/",
+  },
+};
 
 export const checks = {
   checklists: [
@@ -47,8 +46,10 @@ export const checks = {
         {
           isCompleted: false,
           id: 0,
-          name: "Register Your Fictitious, Assumed or “Doing Business As” Name if Necessary",
-          description: "<p>You might want to conduct business under a different name from your legal entity name. For example, your official business name might be “Northwest Restaurant Holdings LLC,” but you might run a restaurant called “Portland Plants and Whole Foods.” If that’s the case, you may want to register the new name as your assumed, fictitious or doing business as name.</p><p>This can be much easier than setting up a new business since there’s much less bookkeeping and administration, and you’ll have fewer challenges with bank accounts, finances and tax returns. We have a fictitious names service and are happy to register your assumed business name on your behalf.</p>",
+          name:
+            "Register Your Fictitious, Assumed or “Doing Business As” Name if Necessary",
+          description:
+            "<p>You might want to conduct business under a different name from your legal entity name. For example, your official business name might be “Northwest Restaurant Holdings LLC,” but you might run a restaurant called “Portland Plants and Whole Foods.” If that’s the case, you may want to register the new name as your assumed, fictitious or doing business as name.</p><p>This can be much easier than setting up a new business since there’s much less bookkeeping and administration, and you’ll have fewer challenges with bank accounts, finances and tax returns. We have a fictitious names service and are happy to register your assumed business name on your behalf.</p>",
           height: 80,
         },
         {
@@ -99,7 +100,8 @@ export const checks = {
         {
           isCompleted: false,
           id: 1,
-          name: "Obtain a Federal Employer Identification Number (EIN)/Tax ID Number",
+          name:
+            "Obtain a Federal Employer Identification Number (EIN)/Tax ID Number",
           description: `<p>Whether you intend to employ people or not, we recommend getting a Federal Employment Number (EIN) from the IRS. This unique number allows LLCs, corporations and sole proprietors to identify themselves for tax purposes.</p><p>Think of your EIN as a social security number for your business. You use it when paying wages, filing taxes and paying any money you owe to the IRS. Your state government may also use an EIN for certain tax-related administration or payment. Although you can get an EIN directly from the IRS, it will probably be easier for us to <a href="/manage-your-company/tax-id-ein/" target="_blank">get an EIN on your behalf.</a> For a single low fee, you can get your EIN when you’re incorporating your business with us.</p>`,
           height: 80,
         },
@@ -196,7 +198,8 @@ export const checks = {
         {
           isCompleted: false,
           id: 4,
-          name: "Decide If You Want Your LLC Treated as an S Corporation for Tax Purposes",
+          name:
+            "Decide If You Want Your LLC Treated as an S Corporation for Tax Purposes",
           description: `<p>If you’re forming an LLC and want to reduce the amount of tax you pay, you might want to complete an <a href="www.incfile.com/llc-s-corp-election/" rel="noopener noreferrer nofollow" target="_blank">S Corporation Tax Election.</a> This tells the Internal Revenue Service to treat your business like an S Corporation, which could reduce the amount of income on which you need to pay self-employment tax (Social Security, Medicare and FICA). This can substantially reduce your tax bill, with only a slight increase in administrative overhead for you and your accountant. We can file the S Corporation Tax Election on your behalf.</p>`,
           height: 80,
         },
@@ -244,7 +247,7 @@ export const checks = {
           isCompleted: false,
           id: 8,
           name: "Understand Sales Tax",
-            description: `<p>If your business sells physical products or certain types of services, you may need to collect sales tax and pay it to your state’s department of revenue. Sales tax is typically collected at the point of purchase when you sell the product or service to your customer. Sales tax rates do vary slightly depending on the region, county or city your business is located in.</p>
+          description: `<p>If your business sells physical products or certain types of services, you may need to collect sales tax and pay it to your state’s department of revenue. Sales tax is typically collected at the point of purchase when you sell the product or service to your customer. Sales tax rates do vary slightly depending on the region, county or city your business is located in.</p>
               <p>The types of offerings you need to collect sales tax on typically include:</p>
               <ul>
                   <li>Goods you sell like books, cars, electronics, furniture, appliances, raw materials, etc.</li>
@@ -257,14 +260,16 @@ export const checks = {
           isCompleted: false,
           id: 9,
           name: "Know About the Sales Tax Nexus",
-          description: "<p>Another important concept for sales taxes is that of a “nexus.” A nexus, also known as a “sufficient physical presence” helps define whether you'll need to pay sales tax in a particular state. For example, if you have a nexus in North Carolina, you must pay NC sales taxes. For traditional brick and mortar businesses, the idea of a sales tax nexus is straightforward — if you have a physical store, office location or other presence, you will need to pay sales tax to the state government.</p><p>Where it gets more complicated is if you’re an online retailer or ecommerce website. Because you’re selling across state lines, whether you have a nexus or not is a little more confusing. Typically, you will be defined as having a nexus if you have an office, employee, warehouse or affiliate in a state. Some states may also define a sales tax nexus if you make a certain number or amount of sales, or if you are temporarily doing business in a state.</p><p>If you do have a nexus, you will need to collect sales tax and pay it to the state government. Because nexus rules can be confusing, we recommend seeking professional advice from your accountant.</p>",
+          description:
+            "<p>Another important concept for sales taxes is that of a “nexus.” A nexus, also known as a “sufficient physical presence” helps define whether you'll need to pay sales tax in a particular state. For example, if you have a nexus in North Carolina, you must pay NC sales taxes. For traditional brick and mortar businesses, the idea of a sales tax nexus is straightforward — if you have a physical store, office location or other presence, you will need to pay sales tax to the state government.</p><p>Where it gets more complicated is if you’re an online retailer or ecommerce website. Because you’re selling across state lines, whether you have a nexus or not is a little more confusing. Typically, you will be defined as having a nexus if you have an office, employee, warehouse or affiliate in a state. Some states may also define a sales tax nexus if you make a certain number or amount of sales, or if you are temporarily doing business in a state.</p><p>If you do have a nexus, you will need to collect sales tax and pay it to the state government. Because nexus rules can be confusing, we recommend seeking professional advice from your accountant.</p>",
           height: 80,
         },
         {
           isCompleted: false,
           id: 10,
           name: "Create Merchant Accounts to Accept Credit Card Payments",
-          description: "<p>You may need a special merchant account to accept credit and debit card payments from your customers. Some accounting software, payment gateways and other setups let you accept cards automatically, especially if you just take payments online. If you take payments in person (like in a brick-and-mortar store), you might want to look into merchant account providers to get the best rates on your card transactions.</p>",
+          description:
+            "<p>You may need a special merchant account to accept credit and debit card payments from your customers. Some accounting software, payment gateways and other setups let you accept cards automatically, especially if you just take payments online. If you take payments in person (like in a brick-and-mortar store), you might want to look into merchant account providers to get the best rates on your card transactions.</p>",
           height: 80,
         },
       ],
@@ -281,14 +286,16 @@ export const checks = {
           isCompleted: false,
           id: 0,
           name: "Get Equipment",
-          description: "<p>The equipment you need depends on your industry and the type of work you do. Will you need a laptop, computer, smartphone or tablet? Think also about your needs for transportation or specialized equipment. You might be able to lease certain equipment or buy used versions if you’re trying to keep costs down. Remember to record exactly what you’re spending so you can write it off as business expenses on your taxes.</p>",
+          description:
+            "<p>The equipment you need depends on your industry and the type of work you do. Will you need a laptop, computer, smartphone or tablet? Think also about your needs for transportation or specialized equipment. You might be able to lease certain equipment or buy used versions if you’re trying to keep costs down. Remember to record exactly what you’re spending so you can write it off as business expenses on your taxes.</p>",
           height: 80,
         },
         {
           isCompleted: false,
           id: 1,
           name: "Research and Choose the Best Vendors and Suppliers",
-          description: "<p>If you’re selling a product, you will need to source it from somewhere. Choosing the right vendor or supplier is a vital part of managing your supply chain. Look at multiple suppliers, read reviews and speak to other people in the industry. Talk with your suppliers and understand the terms and conditions that you will both have to work with.</p><p>There are plenty of online vendor marketplaces where you can find and research products and suppliers, including Alibaba, ThomasNet, EC21 and more.</p>",
+          description:
+            "<p>If you’re selling a product, you will need to source it from somewhere. Choosing the right vendor or supplier is a vital part of managing your supply chain. Look at multiple suppliers, read reviews and speak to other people in the industry. Talk with your suppliers and understand the terms and conditions that you will both have to work with.</p><p>There are plenty of online vendor marketplaces where you can find and research products and suppliers, including Alibaba, ThomasNet, EC21 and more.</p>",
           height: 80,
         },
         {
@@ -313,7 +320,8 @@ export const checks = {
         {
           isCompleted: false,
           id: 5,
-          name: "Look Into Business Documents, Agreements and Contracts You Might Need",
+          name:
+            "Look Into Business Documents, Agreements and Contracts You Might Need",
           description: `<p>If there’s one truth of business, it’s that there’s always plenty of paperwork! With all of the effort you're putting into your new venture, you will want to have all the right agreements and contracts in place from the start. We offer a <a href="/blog/post/25-lawyer-approved-legal-documents-incfiles-contract-library/" target="_blank">comprehensive range of agreements, contracts and documents</a> including:</p>
             <ul>
                 <li>Operating Agreement</li>
@@ -334,7 +342,8 @@ export const checks = {
           isCompleted: false,
           id: 6,
           name: "Connect With Other Entrepreneurs",
-          description: "<p>Running a business can sometimes be lonely. That’s why we recommend joining local groups like meetups or your chamber of commerce. This lets you talk with other business owners who have faced similar challenges and can help you brainstorm solutions. You can also look at online networking through LinkedIn, professional Facebook groups or other dedicated business forums. Don’t be afraid to ask questions and share your expertise.</p>",
+          description:
+            "<p>Running a business can sometimes be lonely. That’s why we recommend joining local groups like meetups or your chamber of commerce. This lets you talk with other business owners who have faced similar challenges and can help you brainstorm solutions. You can also look at online networking through LinkedIn, professional Facebook groups or other dedicated business forums. Don’t be afraid to ask questions and share your expertise.</p>",
           height: 80,
         },
         {
@@ -358,7 +367,8 @@ export const checks = {
           isCompleted: false,
           id: 0,
           name: "Decide on a Payroll Service",
-          description: "<p>If your business needs employees, you are going to have to pay them. The easiest way to do this is via a payroll service — these services will work out salaries, payments and benefits and help you with payroll taxes. We recommend Xero, Quickbooks Payroll or Paychex.</p>",
+          description:
+            "<p>If your business needs employees, you are going to have to pay them. The easiest way to do this is via a payroll service — these services will work out salaries, payments and benefits and help you with payroll taxes. We recommend Xero, Quickbooks Payroll or Paychex.</p>",
           height: 80,
         },
         {
@@ -372,20 +382,23 @@ export const checks = {
           isCompleted: false,
           id: 2,
           name: "Establish Your Freelance and On-Demand Workforce Needs",
-          description: "<p>Every business needs something different from the people who work for them. If you’re a solopreneur, freelancer, knowledge worker or you’ve started a business with a partner, you might not need employees. Most other businesses will probably need to build a workforce at some point. When it comes to hiring people to work with, you have a few different options.</p><p>If you’re looking for specialists and experts who can help you with specific tasks, you’re probably best off using a freelancer. There are plenty of freelance marketplaces like Freelancer, Upwork or Toptal — but if you just want straightforward, easy-to-use services, Fiverr is hard to beat. They’ve also launched Fiverr Pro, where you can find vetted freelancers for more demanding projects.</p><p>If you need help on a do basis but don’t want the expense and overhead of an employee, you could take advantage of virtual assistant and concierge services. They specialize in administrative tasks and can lessen the burden of your to-do list. One Concierge, Red Butler, Fancy Hands and Zirtual all provide virtual assistant services for business owners.</p>",
+          description:
+            "<p>Every business needs something different from the people who work for them. If you’re a solopreneur, freelancer, knowledge worker or you’ve started a business with a partner, you might not need employees. Most other businesses will probably need to build a workforce at some point. When it comes to hiring people to work with, you have a few different options.</p><p>If you’re looking for specialists and experts who can help you with specific tasks, you’re probably best off using a freelancer. There are plenty of freelance marketplaces like Freelancer, Upwork or Toptal — but if you just want straightforward, easy-to-use services, Fiverr is hard to beat. They’ve also launched Fiverr Pro, where you can find vetted freelancers for more demanding projects.</p><p>If you need help on a do basis but don’t want the expense and overhead of an employee, you could take advantage of virtual assistant and concierge services. They specialize in administrative tasks and can lessen the burden of your to-do list. One Concierge, Red Butler, Fancy Hands and Zirtual all provide virtual assistant services for business owners.</p>",
           height: 80,
         },
         {
           isCompleted: false,
           id: 3,
           name: "Establish Your Permanent Workforce Needs",
-          description: "<p>Of course, you can also hire permanent employees. You might choose to go to a specialized staffing agency, or you can recruit employees yourself. Whatever route you use, you will need to advertise the role, find candidates, review resumes, shortlist applicants, interview them, agree on terms and hire the right people.</p>",
+          description:
+            "<p>Of course, you can also hire permanent employees. You might choose to go to a specialized staffing agency, or you can recruit employees yourself. Whatever route you use, you will need to advertise the role, find candidates, review resumes, shortlist applicants, interview them, agree on terms and hire the right people.</p>",
           height: 80,
         },
         {
           isCompleted: false,
           id: 4,
-          name: "Learn About Legal Requirements and Responsibilities to Employees",
+          name:
+            "Learn About Legal Requirements and Responsibilities to Employees",
           description: `<p>You will need to make sure you have proper worker's compensation insurance to cover injuries, illness and medical costs. You should run payroll and compensate your employees on a regular frequency, which may be mandated by your state. You will also need to calculate and keep back income tax so you can pay the appropriate bodies including the employer portion of the payroll tax. If all this sounds like a lot, you could outsource your HR services to a third-party provider like Insperity, Oasis Outsourcing or ADP Total Source.</p><p>In addition to getting a proper employment contract in place with them, you have a duty to provide them with a safe working environment, proper training, regular pay and certain other criteria. <a href="www.osha.gov/as/opa/worker/employer-responsibility.html" rel="noopener noreferrer nofollow" target="_blank">OSHA</a> covers your health and safety requirements, while the <a href="www.dol.gov/general/topics" rel="noopener noreferrer nofollow" target="_blank">US Department of Labor</a> provides information on other responsibilities.</p>`,
           height: 80,
         },
@@ -410,7 +423,8 @@ export const checks = {
           isCompleted: false,
           id: 1,
           name: "Create a Branded Email Signature",
-          description: "<p>One easy way to increase visibility of your business is by adding your logo or other branding to your email signature. This is easy to do in Gmail, Outlook and various other email clients. Make sure to include a link to your business website and give people a reason to click through.</p>",
+          description:
+            "<p>One easy way to increase visibility of your business is by adding your logo or other branding to your email signature. This is easy to do in Gmail, Outlook and various other email clients. Make sure to include a link to your business website and give people a reason to click through.</p>",
           height: 80,
         },
         {
@@ -423,22 +437,26 @@ export const checks = {
         {
           isCompleted: false,
           id: 3,
-          name: "Use Google Analytics and Google Search Console on Your Website",
-          description: "<p>Google Analytics and Google Search Console are two incredibly powerful tools that give you lots of insight into your website visitors. Google Analytics lets you understand how visitors are finding your website, what they do when they get there, popular pages, user demographics and much more.</p><p>Google Search Console shows how your pages are doing on organic Google searches. You can track the search queries your website pages are showing for and optimize them so you increase visibility in organic search. Use Google Analytics and Google Search Console together to optimize your website for user experience, conversions and sales.</p>",
+          name:
+            "Use Google Analytics and Google Search Console on Your Website",
+          description:
+            "<p>Google Analytics and Google Search Console are two incredibly powerful tools that give you lots of insight into your website visitors. Google Analytics lets you understand how visitors are finding your website, what they do when they get there, popular pages, user demographics and much more.</p><p>Google Search Console shows how your pages are doing on organic Google searches. You can track the search queries your website pages are showing for and optimize them so you increase visibility in organic search. Use Google Analytics and Google Search Console together to optimize your website for user experience, conversions and sales.</p>",
           height: 80,
         },
         {
           isCompleted: false,
           id: 4,
           name: "Advertise Locally",
-          description: "<p>If you’re a local business, it makes sense to get the word out in your community. You can try local advertising in papers, on billboards or through the radio. You could also sponsor local organizations or events and partner with other businesses to generate goodwill. Incentivizing customers through loyalty schemes will often build repeat business and help them spread the word about you through advocacy.</p>",
+          description:
+            "<p>If you’re a local business, it makes sense to get the word out in your community. You can try local advertising in papers, on billboards or through the radio. You could also sponsor local organizations or events and partner with other businesses to generate goodwill. Incentivizing customers through loyalty schemes will often build repeat business and help them spread the word about you through advocacy.</p>",
           height: 80,
         },
         {
           isCompleted: false,
           id: 5,
           name: "Create Your Google Business Profile and Google Maps Listing",
-          description: "<p>Local Google search is a great way to let customers in your city know about your business. You can easily claim a business profile from Google and enter vital information about your business like opening hours, location, contact details and more. Combine this with a Google Maps listing that lets you appear in map searches to make it easy for customers to find you.</p>",
+          description:
+            "<p>Local Google search is a great way to let customers in your city know about your business. You can easily claim a business profile from Google and enter vital information about your business like opening hours, location, contact details and more. Combine this with a Google Maps listing that lets you appear in map searches to make it easy for customers to find you.</p>",
           height: 80,
         },
         {
@@ -452,7 +470,8 @@ export const checks = {
           isCompleted: false,
           id: 7,
           name: "Try Social Media Advertising",
-          description: "<p>Social media networks like Twitter, Facebook and Pinterest all provide advertising that helps you promote your services to potential customers. The trick with social media advertising is to carefully define your audience, then present your products in a way that will keep their interest. Make sure you carefully track what you’re spending so you get the best return on investment.</p>",
+          description:
+            "<p>Social media networks like Twitter, Facebook and Pinterest all provide advertising that helps you promote your services to potential customers. The trick with social media advertising is to carefully define your audience, then present your products in a way that will keep their interest. Make sure you carefully track what you’re spending so you get the best return on investment.</p>",
           height: 80,
         },
         {
@@ -481,11 +500,13 @@ export const about = {
     header: `Relax, we’ve got you covered.`,
     text: `We’re experts at incorporating LLCs and corporations, and we’ve learned a thing or two about starting and running businesses. 
         That’s why we put together this complete and easy-to-understand business checklist — to make it faster and simpler for you to get stuff done. `,
-    },
-    text2: `The majority of larger businesses in the United States are structured as C Corporations, although a C Corp could, theoretically, consist of just one person. 
+  },
+  text2: `The majority of larger businesses in the United States are structured as C Corporations, although a C Corp could, theoretically, consist of just one person. 
       The information below will help you decide if a C Corporation structure is right for your business.`,
-    text3: "Whether you’re a new entrepreneur or a business veteran, use our start a business checklist to bring your ideas to life.",
-    text4: "We’ve even got <a href='/start-a-business/'>specialized guides</a> depending on the type of business you’re building."
+  text3:
+    "Whether you’re a new entrepreneur or a business veteran, use our start a business checklist to bring your ideas to life.",
+  text4:
+    "We’ve even got <a href='/start-a-business/'>specialized guides</a> depending on the type of business you’re building.",
 };
 
 export const help = {
@@ -523,7 +544,7 @@ export const rocket = {
   text2: `Only $0 + State Fee to Launch Your Business.`,
   button: {
     text: `Launch your business`,
-    url: `/`,
+    url: `{process.env.ORDER_URL}/form-order-now.php`,
   },
 };
 

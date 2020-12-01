@@ -32,7 +32,11 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `Briefly, the benefits of starting a South Carolina LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your South Carolina LLC`, `Easy tax filing and potential advantages for your tax treatment`],
+      list: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulation and administration of your South Carolina LLC`,
+        `Easy tax filing and potential advantages for your tax treatment`,
+      ],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -466,7 +470,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      list: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     marginBottom: 40,
     color: color.blue3,
@@ -968,7 +977,7 @@ export const feesAndRequirments = [
         `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
       ],
     },
-    marginBottom: 32,
+    marginBottom: 24,
     color: color.green3,
     curve: true,
     curveColor: color.blue1,
@@ -976,13 +985,27 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
-    marginBottom: 32,
+    marginBottom: 48,
+  },
+  {
+    type: `header`,
+    content: `The Incfile Business License Research Package for Your South Carolina LLC`,
+    size: 4,
+    marginBottom: 24,
+  },
+  {
+    type: `text`,
+    content: `Our Business License Research Package tells you about all of the licenses and permits you will need for your South Carolina LLC.`,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`A complete report on all the licenses, permits and tax registrations your South Carolina LLC will need`, `The application forms you will need to file with the South Carolinaa, regional and federal licensing authorities`],
+      header: `It includes:`,
+      list: [
+        `A complete report on all the licenses, permits and tax registrations your South Carolina LLC will need`,
+        `The application forms you will need to file with the South Carolinaa, regional and federal licensing authorities`,
+      ],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1004,8 +1027,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Create an Operating Agreement for Your South Carolina LLC`,
-    size: 3,
-    marginBottom: 32,
+    size: 4,
+    marginBottom: 24,
   },
   {
     type: `text`,
@@ -1094,7 +1117,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file South Carolina Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a South Carolina LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your South Carolina LLC`],
+      list: [
+        `Adding, removing or changing a South Carolina LLC member or manager`,
+        `Changing the business address of your LLC`,
+        `Altering the stated business activities of your South Carolina LLC`,
+      ],
     },
     marginBottom: 24,
     color: color.yellow3,
@@ -1271,7 +1298,10 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `You will typically need to collect South Carolina sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your South Carolina business might provide`],
+      list: [
+        `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
+        `Certain services that your South Carolina business might provide`,
+      ],
     },
     marginBottom: 16,
     color: color.blue3,
@@ -1319,7 +1349,12 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $30,000, you would pay self-employment tax of $4,590`, `On profits of $60,000, you would pay self-employment tax of $9,180`, `On profits of $100,000, you would pay self-employment tax of $15,300.`, `On profits of $120,000, you would pay self-employment tax of $18,360`],
+      list: [
+        `On profits of $30,000, you would pay self-employment tax of $4,590`,
+        `On profits of $60,000, you would pay self-employment tax of $9,180`,
+        `On profits of $100,000, you would pay self-employment tax of $15,300.`,
+        `On profits of $120,000, you would pay self-employment tax of $18,360`,
+      ],
     },
     marginBottom: 48,
     color: color.green3,
@@ -1432,7 +1467,11 @@ export const businessTaxes = [
               type: `list-dot-without-bg`,
               color: color.orange3,
               header: `The most common types of estimated taxes are:`,
-              content: [`Federal income tax`, `Federal self-employment tax`, `South Carolina state tax`],
+              content: [
+                `Federal income tax`,
+                `Federal self-employment tax`,
+                `South Carolina state tax`,
+              ],
             },
             {
               type: `paragraph`,
@@ -1477,7 +1516,12 @@ export const compare = {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
       [`Business incorporation service`, `$49`, `$149`, `$149`],
-      [`Registered Agent included in the price`, `check-green`, `check-red`, `check-red`],
+      [
+        `Registered Agent included in the price`,
+        `check-green`,
+        `check-red`,
+        `check-red`,
+      ],
     ],
   },
 };

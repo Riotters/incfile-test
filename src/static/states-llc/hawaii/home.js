@@ -32,7 +32,11 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `Briefly, the benefits of starting a Hawaii LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your Hawaii LLC`, `Easy tax filing and potential advantages for your tax treatment`],
+      list: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulation and administration of your Hawaii LLC`,
+        `Easy tax filing and potential advantages for your tax treatment`,
+      ],
     },
     marginBottom: 40,
     color: color.yellow3,
@@ -481,7 +485,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      list: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     marginBottom: 40,
     color: color.blue3,
@@ -998,19 +1007,22 @@ export const feesAndRequirments = [
         `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
       ],
     },
-    marginBottom: 32,
+    marginBottom: 48,
     color: color.green3,
-    curve: true,
-    curveColor: color.blue1,
   },
   {
-    type: `text`,
-    content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:
-              <ul>
-              <li>A complete report on all the licenses, permits and tax registrations your Hawaii LLC will need</li>
-              <li>The application forms you will need to file with the Hawaii, regional and federal licensing authorities</li>
-              </ul>`,
+    type: `list-dot`,
+    content: {
+      header: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
+      list: [
+        `A complete report on all the licenses, permits and tax registrations your Hawaii LLC will need`,
+        `The application forms you will need to file with the Hawaii, regional and federal licensing authorities`,
+      ],
+    },
     marginBottom: 32,
+    color: color.babyblue3,
+    curve: true,
+    curveColor: color.orange1,
   },
   {
     type: `text`,
@@ -1119,7 +1131,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Hawaii Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Hawaii LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Hawaii LLC`],
+      list: [
+        `Adding, removing or changing a Hawaii LLC member or manager`,
+        `Changing the business address of your LLC`,
+        `Altering the stated business activities of your Hawaii LLC`,
+      ],
     },
     marginBottom: 24,
     color: color.yellow3,
@@ -1307,7 +1323,10 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `You will typically need to collect  Hawaii sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Hawaii business might provide`],
+      list: [
+        `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
+        `Certain services that your Hawaii business might provide`,
+      ],
     },
     marginBottom: 24,
     color: color.blue3,
@@ -1486,7 +1505,11 @@ export const businessTaxes = [
               type: `list-dot-without-bg`,
               color: color.orange3,
               header: `The most common types of estimated taxes are:`,
-              content: [`Federal income tax`, `Federal self-employment tax`, `Hawaii state tax`],
+              content: [
+                `Federal income tax`,
+                `Federal self-employment tax`,
+                `Hawaii state tax`,
+              ],
             },
             {
               type: `paragraph`,
@@ -1532,7 +1555,12 @@ export const compare = {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
       [`Business incorporation service`, `$49`, `$149`, `$149`],
-      [`Registered Agent included in the price`, `check-green`, `check-red`, `check-red`],
+      [
+        `Registered Agent included in the price`,
+        `check-green`,
+        `check-red`,
+        `check-red`,
+      ],
     ],
   },
 };

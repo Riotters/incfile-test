@@ -75,7 +75,8 @@ export const fillingRequirements = {
           style: { "font-weight": "bold" },
         },
         {
-          label: "Domestic (Louisianan) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
+          label:
+            "Domestic (Louisianan) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
           type: "label",
           textCenter: true,
           className: "text-left",
@@ -160,7 +161,8 @@ export const fillingRequirements = {
           style: { "font-weight": "bold" },
         },
         {
-          label: "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
+          label:
+            "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
           type: "label",
           textCenter: true,
           className: "text-left",

@@ -32,7 +32,11 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `Briefly, the benefits of starting a West Virginia LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your West Virginia LLC`, `Easy tax filing and potential advantages for your tax treatment`],
+      list: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulation and administration of your West Virginia LLC`,
+        `Easy tax filing and potential advantages for your tax treatment`,
+      ],
     },
     marginBottom: 32,
     color: color.blue3,
@@ -139,10 +143,10 @@ export const howToGuide = [
   {
     type: `accordion`,
     content: {
-        items: [
-            {
-                question: `Professional LLCs in West Virginia`,
-                answer: `<p>Some states, including West Virginia, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. Here are the occupations that the WV Secretary of State allows to form professional LLCs:</p>
+      items: [
+        {
+          question: `Professional LLCs in West Virginia`,
+          answer: `<p>Some states, including West Virginia, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. Here are the occupations that the WV Secretary of State allows to form professional LLCs:</p>
                         <ul>
                         <li>Attorneys-at-law</li>
                         <li>Physicians</li>
@@ -160,13 +164,13 @@ export const howToGuide = [
                         <li>Acupuncturists</li>
                         <li>Land surveyors</li>
                         </ul>`,
-            },
-            {
-                question: `Foreign LLCs Doing Business in West Virginia`,
-                answer: `<p>If your business is already operating in another state and expanding to West Virginia, you’ll need to form a foreign LLC.</p></br>
+        },
+        {
+          question: `Foreign LLCs Doing Business in West Virginia`,
+          answer: `<p>If your business is already operating in another state and expanding to West Virginia, you’ll need to form a foreign LLC.</p></br>
                          <a href="/west-virginia-llc/form-filling-permit-requirements/">More information on West Virginia filing and licensing requirements.</a>`,
-            },
-        ],
+        },
+      ],
     },
     marginBottom: 48,
   },
@@ -191,59 +195,59 @@ export const howToGuide = [
     type: `text`,
     content: `You’ll find plenty more insight and guidance on the other pages of this guide, including:`,
     marginBottom: 32,
-},
-{
+  },
+  {
     type: `arrow-link`,
     content: {
-        text: `Naming Your West Virginia LLC`,
-        url: `/west-virginia-llc/how-to-name-your-llc/`,
+      text: `Naming Your West Virginia LLC`,
+      url: `/west-virginia-llc/how-to-name-your-llc/`,
     },
     marginBottom: 16,
-},
-{
+  },
+  {
     type: `text`,
     content: `How to search the West Virginia business registry of the Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a West Virginia LLC name and more.`,
     marginBottom: 32,
-},
-{
+  },
+  {
     type: `arrow-link`,
     content: {
-        text: `West Virginia Registered Agents for LLCs`,
-        url: `/west-virginia-llc/registered-agents-west-virginia-llc/`,
+      text: `West Virginia Registered Agents for LLCs`,
+      url: `/west-virginia-llc/registered-agents-west-virginia-llc/`,
     },
     marginBottom: 16,
-},
-{
+  },
+  {
     type: `text`,
     content: `How to appoint a Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for West Virginia Registered Agents.`,
     marginBottom: 32,
-},
-{
+  },
+  {
     type: `arrow-link`,
     content: {
-        text: `Fees and Requirements for West Virginia LLCs`,
-        url: `/west-virginia-llc/form-filling-permit-requirements/`,
+      text: `Fees and Requirements for West Virginia LLCs`,
+      url: `/west-virginia-llc/form-filling-permit-requirements/`,
     },
     marginBottom: 16,
-},
-{
+  },
+  {
     type: `text`,
     content: `How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and West Virginia rules. Includes details of Employer Identification Numbers (EINs), West Virginia and federal business licenses, annual reports and more.`,
     marginBottom: 32,
-},
-{
+  },
+  {
     type: `arrow-link`,
     content: {
-        text: `Federal, State, Sales and Other Taxes for Your West Virginia LLC`,
-        url: `/west-virginia-llc/business-taxes/`,
+      text: `Federal, State, Sales and Other Taxes for Your West Virginia LLC`,
+      url: `/west-virginia-llc/business-taxes/`,
     },
     marginBottom: 16,
-},
-{
+  },
+  {
     type: `text`,
     content: `How to understand the various taxes you will need to pay to the federal and West Virginia government. Includes details of federal taxes like income and self-employment, and West Virginia taxes like sales tax and income tax.`,
     marginBottom: 32,
-},
+  },
 ];
 
 export const namingYourBusiness = [
@@ -498,7 +502,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      list: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     marginBottom: 40,
     color: color.blue3,
@@ -544,14 +553,14 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-    header: `They are:`,
-    list: [
-      `If the Registered Agent is a person, they must reside in West Virginia`,
-      `If the Registered Agent is a business, they must be able to conduct business in West Virginia`,
-      `The Registered Agent must have a physical street address in West Virginia, not a P.O. Box`,
-      `The Registered Agent must be available in person during normal business hours to sign for any correspondence`,
-    ],
-   },
+      header: `They are:`,
+      list: [
+        `If the Registered Agent is a person, they must reside in West Virginia`,
+        `If the Registered Agent is a business, they must be able to conduct business in West Virginia`,
+        `The Registered Agent must have a physical street address in West Virginia, not a P.O. Box`,
+        `The Registered Agent must be available in person during normal business hours to sign for any correspondence`,
+      ],
+    },
     marginBottom: 40,
   },
   {
@@ -1005,13 +1014,18 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
+    type: `text`,
+    content: `Our Business License Research Package tells you about all of the licenses and permits you will need for your West Virginia LLC.`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-        header: ``,
-        list: [
-            `A complete report on all the licenses, permits and tax registrations your West Virginia LLC will need`,
-            `The application forms you will need to file with the West Virginia, regional and federal licensing authorities`,
-        ],
+      header: `It includes:`,
+      list: [
+        `A complete report on all the licenses, permits and tax registrations your West Virginia LLC will need`,
+        `The application forms you will need to file with the West Virginia, regional and federal licensing authorities`,
+      ],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1123,7 +1137,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file West Virginia Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a West Virginia LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your West Virginia LLC`],
+      list: [
+        `Adding, removing or changing a West Virginia LLC member or manager`,
+        `Changing the business address of your LLC`,
+        `Altering the stated business activities of your West Virginia LLC`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -1336,7 +1354,12 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $30,000, you would pay self-employment tax of $4,590.`, `On profits of $60,000, you would pay self-employment tax of $9,180.`, `On profits of $90,000, you would pay self-employment tax of $13,770.`, `On profits of $140,000, you would pay self-employment tax of $21,420.`],
+      list: [
+        `On profits of $30,000, you would pay self-employment tax of $4,590.`,
+        `On profits of $60,000, you would pay self-employment tax of $9,180.`,
+        `On profits of $90,000, you would pay self-employment tax of $13,770.`,
+        `On profits of $140,000, you would pay self-employment tax of $21,420.`,
+      ],
     },
     marginBottom: 48,
     color: color.green3,
@@ -1450,7 +1473,11 @@ export const businessTaxes = [
               type: `list-dot-without-bg`,
               color: color.orange3,
               header: `The most common types of estimated taxes are:`,
-              content: [`Federal income tax`, `Federal self-employment tax`, `West Virginia state tax`],
+              content: [
+                `Federal income tax`,
+                `Federal self-employment tax`,
+                `West Virginia state tax`,
+              ],
             },
             {
               type: `paragraph`,

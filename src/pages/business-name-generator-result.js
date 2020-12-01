@@ -37,71 +37,96 @@ const Wrapper = styled.div`
 `;
 
 const BusinessNameGeneratorResult = ({ location }) => {
-    const [keyword, setKeyWord] = React.useState('');
-    const [businessNames, setBusinessNames] = React.useState([]);
-    const [isLoading, setIsLoading] = React.useState(true);
+  const [keyword, setKeyWord] = React.useState("");
+  const [businessNames, setBusinessNames] = React.useState([]);
+  const [isLoading, setIsLoading] = React.useState(true);
 
-    React.useEffect(() => {
-        let keyword = typeof window !== `undefined` ? location.state.keyword : '';    
-        setKeyWord(keyword);
+  React.useEffect(() => {
+    let keyword = typeof window !== `undefined` ? location.state.keyword : "";
+    setKeyWord(keyword);
 
-        getBusinessNames(keyword).then(data => {
-            setBusinessNames(data);
-            setIsLoading(false);
-        });
-    }, []);
+    getBusinessNames(keyword).then((data) => {
+      setBusinessNames(data);
+      setIsLoading(false);
+    });
+  }, []);
 
-    const getBusinessNames = async (keyword) => {
-        const data = await fetch(`${process.env.INCFILE_API_URL}/businessNameGenerator`, {
-            method: 'post',
-            headers: {'Content-Type':'application/x-www-form-urlencoded'},
-            body: `keywords=${keyword}`
-        }).then(response => response.json());
+  const getBusinessNames = async (keyword) => {
+    const data = await fetch(
+      `${process.env.INCFILE_API_URL}/businessNameGenerator`,
+      {
+        method: "post",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `keywords=${keyword}`,
+      }
+    ).then((response) => response.json());
 
-        return data;
-    }
+    return data;
+  };
 
-    const reloadBusinessNames = (keyword) => {
-        setIsLoading(true);
-        getBusinessNames(keyword).then(data => {
-            setBusinessNames(data);
-            setKeyWord(keyword);
-            setIsLoading(false);
-        });
-    }
+  const reloadBusinessNames = (keyword) => {
+    setIsLoading(true);
+    getBusinessNames(keyword).then((data) => {
+      setBusinessNames(data);
+      setKeyWord(keyword);
+      setIsLoading(false);
+    });
+  };
 
-    return (
-        <Layout>
-            <SEO title={seo.title} description={seo.desc} />
+  return (
+    <Layout>
+      <SEO title={seo.title} description={seo.desc} />
 
-            <Wrapper>
-                <Oval className="oval" height="570" width="570" top="0" left="0" y="35">
-                    <OvalSVG />
-                </Oval>
+      <Wrapper>
+        <Oval className="oval" height="570" width="570" top="0" left="0" y="35">
+          <OvalSVG />
+        </Oval>
 
-                <Oval className="oval" height="570" width="570" bottom="0" right="0" y="-30">
-                    <OvalSVG2 />
-                </Oval>
+        <Oval
+          className="oval"
+          height="570"
+          width="570"
+          bottom="0"
+          right="0"
+          y="-30"
+        >
+          <OvalSVG2 />
+        </Oval>
 
-                <Container>
-                    <Link to="/business-name-generator/" className="back-link">
-                        <span><ArrowLeft /></span>Back
-                    </Link>
+        <Container>
+          <Link to="/business-name-generator/" className="back-link">
+            <span>
+              <ArrowLeft />
+            </span>
+            Back
+          </Link>
 
-                    <ContentCenter>
-                        <RelativeElement maxWidth="670px" margin="60px 0 0 0" style={{ width: `100%` }}>
-                            <AbsoluteShapCure rotate={0} right="-30px" top="0">
-                                <ShapeCurve color={color.orange1} />
-                            </AbsoluteShapCure>
-                            <Searchbar contentWidth="auto" typeSubmit="itself" getBusinessNames={reloadBusinessNames.bind(this)} />
-                        </RelativeElement>
+          <ContentCenter>
+            <RelativeElement
+              maxWidth="670px"
+              margin="60px 0 0 0"
+              style={{ width: `100%` }}
+            >
+              <AbsoluteShapCure rotate={0} right="-30px" top="0">
+                <ShapeCurve color={color.orange1} />
+              </AbsoluteShapCure>
+              <Searchbar
+                contentWidth="auto"
+                typeSubmit="itself"
+                getBusinessNames={reloadBusinessNames.bind(this)}
+              />
+            </RelativeElement>
 
-                        <ResultSection content={businessNames} keyword={keyword} isLoading={isLoading} />
-                    </ContentCenter>
-                </Container>
-            </Wrapper>
-        </Layout>
-    );
+            <ResultSection
+              content={businessNames}
+              keyword={keyword}
+              isLoading={isLoading}
+            />
+          </ContentCenter>
+        </Container>
+      </Wrapper>
+    </Layout>
+  );
 };
 
 export default BusinessNameGeneratorResult;

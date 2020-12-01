@@ -527,13 +527,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a New Mexico Registered Agent service for your business. They are:`,
+    content: `There are certain rules that you must follow when you’re appointing a New Mexico Registered Agent service for your business.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in New Mexico.`,
         `If the Registered Agent is a business, they must be able to conduct business in New Mexico.`,
@@ -557,13 +557,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Your New Mexico Registered Agent carries out several valuable services for your business. They accept official communications and documents from the NM Secretary of State on your behalf. This may include:`,
+    content: `Your New Mexico Registered Agent carries out several valuable services for your business. They accept official communications and documents from the NM Secretary of State on your behalf.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `This may include:`,
       list: [
         `Correspondence from the New Mexico Secretary of State, like a notice to file reports and other forms`,
         `Service of process documents (for example, if your New Mexico LLC has legal proceedings issued against it)`,
@@ -593,13 +593,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Incfile is authorized to conduct business in New Mexico and can legally act as your Registered Agent. Here’s what the service includes:`,
+    content: `Incfile is authorized to conduct business in New Mexico and can legally act as your Registered Agent.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `Here’s what the service includes:`,
       list: [
         `An always-available Montana Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
         `A digital dashboard where you can access, store and retrieve any information we’ve received for your New Mexico business`,
@@ -743,13 +743,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the New Mexico Secretary of State? There are several possible ramifications, including:`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the New Mexico Secretary of State?`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `There are several possible ramifications, including:`,
       list: [
         `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing with the New Mexico Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -767,13 +767,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `If you have an address in New Mexico, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
+    content: `If you have an address in New Mexico, you can choose to be the Registered Agent for your LLC.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `We don’t recommend this approach as there can be some drawbacks:`,
       list: [
         `The Registered Agent must have a physical street address in New Mexico. If you’re forming an LLC outside New Mexico, you will need to use an in-state Registered Agent.`,
         `You always need to have someone on hand during business hours at the New Mexico address to sign for important documents.`,
@@ -959,7 +959,7 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `<a href="/new-mexico-llc/form-filling-permit-requirements/">Learn about your ongoing New Mexico LLC filing requirements</a>
-    and business filing deadlines with our helpful New Mexico ongoing filing lookup tool..`,
+    and business filing deadlines with our helpful New Mexico ongoing filing lookup tool.`,
     marginBottom: 16,
   },
   {
@@ -1010,13 +1010,13 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Our Business License Research Package
-     tells you about all of the licenses and permits you will need for your New Mexico LLC. It includes:`,
+     tells you about all of the licenses and permits you will need for your New Mexico LLC.`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `It includes:`,
       list: [
         `A complete report on all the licenses, permits and tax registrations your New Mexico LLC will need`,
         `The application forms you will need to file with the New Mexico, regional and federal licensing authorities`,
@@ -1028,7 +1028,16 @@ export const feesAndRequirments = [
   {
     type: `text`,
     content: `Remember that operating your business without the required licenses can expose you to risks and fines from federal, New Mexico and local governments.`,
-    marginBottom: 32,
+    marginBottom: 24,
+  },
+  {
+    type: `button`,
+    content: {
+      text: `Incfile's New Mexico Business License Research Package`,
+      url: `/business-license-research-package/`,
+    },
+    theme: `primary48`,
+    marginBottom: 48,
   },
   {
     type: `header`,
