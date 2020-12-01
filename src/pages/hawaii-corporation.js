@@ -198,9 +198,12 @@ const AlaskaCorporation = () => {
                             <TextBoxed style={{ marginBottom: "8px" }}>
                                 <Paragraph bottomMargin={0}>A brief description of the nature of its business.</Paragraph>
                             </TextBoxed>
-                            <TextBoxed style={{ marginBottom: "8px" }}>
+                            <TextBoxed style={{ marginBottom: "32px" }}>
                                 <Paragraph bottomMargin={0}>If it’s a domestic corporation, the total number of authorized shares, itemized by class and series, and the total number of issued and outstanding shares, itemized by class and series within each class.</Paragraph>
                             </TextBoxed>
+                            <Paragraph big style={{ marginBottom: "16px" }}>
+                            Additionally, the board must send an annual report to all shareholders by a filing date based on the date of incorporation.
+                            </Paragraph>
                         </PanelWrapper>
                         <PanelWrapper>
                             <Heading size={3} style={{ marginBottom: "24px" }}>

@@ -570,13 +570,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Your Arkansas Registered Agent carries out several valuable services for your business. They accept official communications and documents from the Secretary of State on your behalf. This may include:`,
+    content: `Your Arkansas Registered Agent carries out several valuable services for your business. They accept official communications and documents from the Secretary of State on your behalf.`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `This may include:`,
       list: [
         `Correspondence from the Secretary of State, like a notice to file reports and other forms`,
         `Service of process documents (for example, if your Arkansas LLC has legal proceedings issued against it)`,
@@ -602,17 +602,12 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `We are authorized to conduct business in Arkansas and can legally act as your Registered Agent.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Here’s what you need to know about Incfile’s Registered Agent service:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `Here’s what you need to know about Incfile’s Registered Agent service:`,
       list: [
         `The Registered Agent will always be available to accept documents and letters on your behalf.`,
         `We automatically notify you whenever we receive correspondence for your business from the Arkansas Secretary of State or anyone else.`,
@@ -752,13 +747,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Arkansas Secretary of State? There are several possible ramifications, including:`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Arkansas Secretary of State?`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `There are several possible ramifications, including:`,
       list: [
         `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing with the Arkansas Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -776,13 +771,13 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `If you have an address in Arkansas, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
+    content: `If you have an address in Arkansas, you can choose to be the Registered Agent for your LLC.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: ``,
+      header: `We don’t recommend this approach as there can be some drawbacks:`,
       list: [
         `The Registered Agent must have a physical street address in Arkansas. If you’re forming an LLC outside AR , you will need to use an in-state Registered Agent.`,
         `You always need to have someone on hand during business hours at the Arkansas address to sign for important documents.`,
