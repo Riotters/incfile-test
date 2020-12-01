@@ -54,13 +54,17 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "create-redirect": "cp form-order-now.php public/form-order-now.php",
+    "postbuild": "npm run create-redirect",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "postdeploy": "npm run create-redirect"
+
   },
   "repository": {
     "type": "git",
