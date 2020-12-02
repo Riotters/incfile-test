@@ -22,6 +22,14 @@ const Wrapper = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 556px) {
+        padding: 75px 0;
+
+        a{
+            margin-bottom: 16px;
+        }
+    }
 `
 
 const Map = styled.div`
@@ -62,7 +70,7 @@ const TrustSection = ({ content }) => {
                 <TextCenterLayout headline={content.header} headlineWidth="770"/>
 
                 <Buttonsbox>
-                    <Button content={content.button1} theme="primary56" arrow />
+                    <Button externalLink={true} content={content.button1} theme="primary56" arrow />
                     <Button content={content.button2} theme="secondary56"/>
                 </Buttonsbox>
             </ContentCenter>

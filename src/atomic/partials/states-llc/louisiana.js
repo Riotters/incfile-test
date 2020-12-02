@@ -14,7 +14,6 @@ import Subscription from "../../sections/learning-center-entity/state-informatio
 import Articles from "../../sections/articles";
 // Content
 import { compare, requirements } from "../../../static/states-llc/arizona/home";
-import { rocket } from "../../../static/states-llc/arizona/general";
 import { subscription } from "../../../static/learning-center-entity/state-information-california";
 
 const Wrapper = styled.div`

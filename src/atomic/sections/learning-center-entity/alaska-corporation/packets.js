@@ -11,6 +11,7 @@ import CurveSVG from "../../../../images/curves/top-right-babyblue1.inline.svg";
 import { color } from "../../../atoms/styles/colors";
 import HeadingCenter from "../../../../atomic/partials/heading-center";
 import { packagePrice } from "../../../../helpers/global-variables";
+import { shortState } from "../../../../helpers/utils";
 
 const Wrapper = styled.div`
   display: flex;
@@ -49,7 +50,7 @@ const PacketsSection = ({ className, fullInfo, data }) => {
       image: "",
       button: {
         text: "Get the Silver package",
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=${entityState}`,
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=${shortState(entityState)}`,
       },
       fees: [
         {
@@ -73,8 +74,8 @@ const PacketsSection = ({ className, fullInfo, data }) => {
       price: `${packagePrice.gold + stateFee}`,
       image: "",
       button: {
-        text: "Get the Silver package",
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=${entityState}`,
+        text: "Get the Gold package",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=${shortState(entityState)}`,
       },
       fees: [
         {
@@ -98,8 +99,8 @@ const PacketsSection = ({ className, fullInfo, data }) => {
       price: `${packagePrice.platinum + stateFee}`,
       image: "",
       button: {
-        text: "Get the Silver package",
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=${entityState}`,
+        text: "Get the Platinum package",
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=${shortState(entityState)}`,
       },
       fees: [
         {

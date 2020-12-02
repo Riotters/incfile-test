@@ -43,8 +43,6 @@ import Curve2SVG from "../images/curves/bottom-left-top-right-reverse-big.inline
 import Curve from "../atomic/atoms/icons/curve";
 import PacketsSection from "../atomic/sections/learning-center-entity/alaska-corporation/packets";
 import Accordion from "../atomic/organisms/accordion/accordion";
-import Adventages from "../components/adventages";
-import Container from "../atomic/container";
 import Rocket from "../atomic/sections/learning-center-entity/alaska-corporation/rocket";
 import Colorbox from "../atomic/molecules/blocks/left-icon-block-colored";
 import FilingTimeAndPriceBox from "../atomic/state-corporation/filing-time-and-price-box";
