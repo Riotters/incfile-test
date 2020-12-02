@@ -90,22 +90,15 @@ const ButtonList = [
 ];
 
 const TabScrollable = ({ layout, columns }) => {
-  const [isActive, setActive] = useState(ButtonList[0].tabId);
+  const [isActive, setActive] = useState(0);
 
   const handleClick = (index, elementId) => {
-    // setActive(elementId ?? ButtonList[index].tabId);
+    setActive(index);
 
     let element = document.getElementById(elementId);
     if (null !== element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  };
-
-  const getClassName = (item) => {
-    // if(item.tabId === isActive) return "accordion-tab active";
-    // else {
-    return "accordion-tab";
-    // }
   };
 
   return (
@@ -121,7 +114,9 @@ const TabScrollable = ({ layout, columns }) => {
                       key={item.tabId}
                       onClick={() => handleClick(index, item.tabId)}
                       id={`tab-selector-${item.tabId}`}
-                      className={getClassName(item)}
+                      className={
+                        "accordion-tab" + (isActive === index ? " active" : "")
+                      }
                     >
                       <Icon>
                         <item.icon />
@@ -151,10 +146,10 @@ const TabScrollable = ({ layout, columns }) => {
               </Link>
             </Paragraph>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  // handleClick(0);
+                  handleClick(0);
                 }
                 return (
                   <div id={ButtonList[0].tabId}>
@@ -194,10 +189,10 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  // handleClick(1);
+                  handleClick(1);
                 }
                 return (
                   <div id={ButtonList[1].tabId}>
@@ -248,10 +243,10 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  // handleClick(2);
+                  handleClick(2);
                 }
                 return (
                   <div id={ButtonList[2].tabId}>
@@ -297,10 +292,16 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor
+              partialVisibility
+              minTopValue={400}
+              scrollCheck
+              intervalCheck
+              scrollDelay={50}
+            >
               {({ isVisible }) => {
                 if (isVisible) {
-                  // handleClick(3);
+                  handleClick(3);
                 }
                 return (
                   <div id={ButtonList[3].tabId}>
@@ -344,10 +345,10 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
-                  // handleClick(4);
+                  handleClick(4);
                 }
                 return (
                   <div id={ButtonList[4].tabId}>
@@ -410,10 +411,16 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor
+              partialVisibility
+              minTopValue={500}
+              scrollCheck
+              intervalCheck
+              scrollDelay={50}
+            >
               {({ isVisible }) => {
                 if (isVisible) {
-                  // handleClick(5);
+                  handleClick(5);
                 }
                 return (
                   <div id={ButtonList[5].tabId}>
@@ -462,10 +469,16 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor
+              partialVisibility
+              minTopValue={500}
+              scrollCheck
+              intervalCheck
+              scrollDelay={50}
+            >
               {({ isVisible }) => {
                 if (isVisible) {
-                  // handleClick(6);
+                  handleClick(6);
                 }
                 return (
                   <div id={ButtonList[6].tabId}>
@@ -505,10 +518,16 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor
+              partialVisibility
+              minTopValue={400}
+              scrollCheck
+              intervalCheck
+              scrollDelay={50}
+            >
               {({ isVisible }) => {
                 if (isVisible) {
-                  // handleClick(7);
+                  handleClick(7);
                 }
                 return (
                   <div id={ButtonList[7].tabId}>

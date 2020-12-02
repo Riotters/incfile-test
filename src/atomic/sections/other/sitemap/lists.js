@@ -1,21 +1,8 @@
-import React, { Component, Fragment, useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import parse from "html-react-parser";
-import { Link } from "gatsby";
-
-import { color } from "../../../../components/styles/colors";
-import Container from "../../../container";
-import Image from "../../../atoms/image/image_nobase64";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import OvalSVG2 from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
-import StarSVG from "../../../../images/icons/star.inline.svg";
-import ShapeCurve from "../../../atoms/shapes/curve";
-import RelativeElement from "../../../elements/relative-e";
-import AbsoluteShapCure from "../../../elements/absolute-shape-curve-e";
-import Whitebox from "../../../atoms/boxes/white-box";
-import { Paragraph } from "../../../atoms/typography/paragraph";
-import Drop from "../../../../components/form/dropdown";
 import ContentCenter from "../../../partials/content-center";
 import { Heading } from "../../../atoms/typography/heading";
 import ArrowLink from "../../../molecules/buttons/text";

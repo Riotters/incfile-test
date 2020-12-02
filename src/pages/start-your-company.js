@@ -6,7 +6,7 @@ import Top from "../atomic/partials/top";
 import About from "../atomic/sections/review-entity-types/home/about";
 import Rocket from "../atomic/sections/review-entity-types/home/rocket";
 import BusinessStructure from "../atomic/sections/learning-center-entity/comparison-chart/business-structure";
-import Articles from "../components/partials/sections/articles";
+import Articles from "../atomic/sections/articles";
 import Cta from "../atomic/sections/general/cta";
 //Texts
 import { top, about, businessStructure, rocket, cta } from "../static/review-entity-types";
@@ -183,7 +183,6 @@ const ReviewEntityType = () => {
     };
 
     let modalClases = ["lightbox-content"];
-    //if (formSubmitted) modalClases.push("form-submitted");
 
     return (
         <Layout>
@@ -198,7 +197,7 @@ const ReviewEntityType = () => {
             <Rocket content={rocket}/>
             <BusinessStructure content={businessStructure}/>
             <Cta cta={cta} storageKey="start-your-company-modal-1" onViewportEntry={() => setModalVisible(true)} />
-            <Articles/>
+            <Articles categoryId={277} />
             <LightBoxModal visible={modalVisible} className="modal-overlay">
                 <LightBoxContent style={{pointerEvents: "all"}} class={modalClases.join(" ")}>
                     <Flex>

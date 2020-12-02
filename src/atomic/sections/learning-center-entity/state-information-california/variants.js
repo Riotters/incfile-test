@@ -4,6 +4,8 @@ import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import VariantsCards from "../../../organisms/cards/variants-cards.js";
 import { packagePrice } from "../../../../helpers/global-variables";
+import { shortState } from "../../../../helpers/utils";
+import PropTypes from "prop-types";
 
 const Variants = styled.section`
   padding-top: 48px;
@@ -11,7 +13,7 @@ const Variants = styled.section`
   position: relative;
 `;
 
-const VariantsSection = ({ data }) => {
+const VariantsSection = ({ data, entityType }) => {
   let stateFee = data?.prices ? data.prices.statefee : 0;
   let entityState = data?.prices ? data.prices.state : "";
   const headerSection = {
@@ -29,7 +31,7 @@ const VariantsSection = ({ data }) => {
       price: `${packagePrice.silver + stateFee}`,
       button: {
         text: `Get the Silver package`,
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=${entityState}`,
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=${entityType}&entityState=${shortState(entityState)}`,
       },
       fees: [
         {
@@ -53,7 +55,7 @@ const VariantsSection = ({ data }) => {
       price: `${packagePrice.gold + stateFee}`,
       button: {
         text: `Get the Gold package`,
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=${entityState}`,
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=${entityType}&entityState=${shortState(entityState)}`,
       },
       fees: [
         {
@@ -68,7 +70,7 @@ const VariantsSection = ({ data }) => {
         },
       ],
       include: `The sliver package, and:`,
-      list: [`EIN Business Tax Number`, `IRS Form 2553`, `Operating Agreement`, `Banking Resolution`, `Express Shipping`, `Lifetime Company Alerts`, `Online Access Dashboard`, `Unlimited Phone & Email Support`, `Business Banking Account`, `Business Tax Consultation`],
+      list: [`EIN Business Tax Number`, `IRS Form 2553`, `Operating Agreement`, `Banking Resolution`, `Lifetime Company Alerts`, `Online Access Dashboard`, `Unlimited Phone & Email Support`, `Business Banking Account`, `Business Tax Consultation`],
     },
     {
       variant: `Best value`,
@@ -77,7 +79,7 @@ const VariantsSection = ({ data }) => {
       price: `${packagePrice.platinum + stateFee}`,
       button: {
         text: `Get the Platinum package`,
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=${entityState}`,
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=${entityType}&entityState=${shortState(entityState)}`,
       },
       fees: [
         {
@@ -92,7 +94,7 @@ const VariantsSection = ({ data }) => {
         },
       ],
       include: `The gold package, and:`,
-      list: [`Business Contract Templates`, `Expedited Filing`, `FedEx Delivery`, `Domain Name + Business Email`],
+      list: [`Business Contract Templates`, `Expedited Filing`, `Domain Name + Business Email`],
     },
   ];
 
@@ -107,3 +109,11 @@ const VariantsSection = ({ data }) => {
 };
 
 export default VariantsSection;
+
+VariantsSection.propTypes = {
+    entityType: PropTypes.string
+}
+
+VariantsSection.defaultProps = {
+    entityType: 'LLC'
+}

@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 import {shadow} from "../../atoms/styles/shadows";
 import ExSVG from "../../../images/circle-status-x.inline.svg"

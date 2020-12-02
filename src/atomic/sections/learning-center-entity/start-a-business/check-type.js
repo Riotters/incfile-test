@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { color } from "../../../atoms/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
-import { Paragraph } from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
 import Tabs from "../../../organisms/tabs/check-types-tabs";
 import ContentCenter from "../../../partials/content-center";

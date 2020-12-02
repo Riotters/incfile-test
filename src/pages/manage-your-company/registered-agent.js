@@ -29,7 +29,7 @@ const RegisteredAgent = () => (
     <Offering content={offering} />
     <Faq content={faq} />
     <Benefits page="registered-agent" />
-    <Articles />
+    <Articles categoryId={324} />
   </Layout>
 );
 

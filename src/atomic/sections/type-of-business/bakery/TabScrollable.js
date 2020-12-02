@@ -122,7 +122,8 @@ const TabScrollable = ({ layout, columns }) => {
             </Paragraph>
 
             <VisibilitySensor partialVisibility minTopValue={0}>
-              {({ isVisible }) => {
+              {({ isVisible, ...rest }) => {
+                console.log(isVisible, rest);
                 if (isVisible) {
                   handleClick(0);
                 }
