@@ -56,7 +56,7 @@ export const signupFreeTaxConsultation = async (formData) => {
 
 
 export const getRelatedPosts = async (categoryId, limit = 9) => {
-    const data = await fetch(`https://api.cool/api/v1/posts/by-category?categoryId=${categoryId}&limit=${limit}`)
+    const data = await fetch(`${process.env.INCFILE_API_URL}/posts/by-category?categoryId=${categoryId}&limit=${limit}`)
         .then(response => response.json());
     
     return data;
