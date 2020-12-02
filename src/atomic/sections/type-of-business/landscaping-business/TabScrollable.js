@@ -153,7 +153,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(1);
@@ -188,7 +188,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}offset={{ bottom: 100 }}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(2);
@@ -213,11 +213,11 @@ const TabScrollable = ({ layout, columns }) => {
                         Federal Business Licenses and Permits
                       </Paragraph>
 
-                      <Paragraph mixed big>
-                        The Small Business Administration provides{" "}
+                      <Paragraph big mixed>
+                        The Small Business Administration provides&nbsp;
                         <a href="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits" target="_blank" rel="noopener noreferrer">
                           details of any national or federal licenses and permits
-                        </a>{" "}
+                        </a>&nbsp;
                         you might need.
                       </Paragraph>
                     </TextBlockWithImage>
@@ -226,7 +226,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(3);
@@ -260,7 +260,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor partialVisibility minTopValue={500} scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(4);
@@ -300,7 +300,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor partialVisibility minTopValue={500} scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(5);
@@ -338,7 +338,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor partialVisibility minTopValue={500} scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(6);
@@ -376,7 +376,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor partialVisibility minTopValue={500} scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(7);

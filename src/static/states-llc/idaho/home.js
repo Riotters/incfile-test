@@ -782,9 +782,9 @@ export const registeredAgent = [
     content: {
       header: `There are several possible ramifications, including:`,
       list: [
-        `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
-        `Falling out of good standing with the Idaho Secretary of State: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
-        `Losing your status as a Idaho LLC: A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
+        `<b>Getting served or sued and not finding out about it: </b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the Idaho Secretary of State: </b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `<b>Losing your status as a Idaho LLC: </b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
       ],
     },
     marginBottom: 48,
@@ -1026,13 +1026,18 @@ export const feesAndRequirments = [
         `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
       ],
     },
-    marginBottom: 48,
+    marginBottom: 16,
     color: color.yellow3,
+  },
+  {
+    type: `text`,
+    content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `The Incfile Business License Research Package for Your Idaho LLC`,
-    size: 3,
+    size: 4,
     marginBottom: 24,
   },
   {
@@ -1066,7 +1071,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Create an Operating Agreement for Your Idaho LLC`,
-    size: 3,
+    size: 4,
     marginBottom: 24,
   },
   {
@@ -1612,7 +1617,7 @@ export const requirements = {
             text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
             text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
-              text: `Other State's Ongoing`,
+              text: `Other State Requirements`,
               url: `/`,
             },
           },

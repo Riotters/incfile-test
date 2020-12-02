@@ -40,7 +40,11 @@ import PlaneIcon from "../../images/icons/plane.inline.svg";
 import RockerIcon from "../../images/icons/rocket.inline.svg";
 import SettingBusiness from "../../atomic/sections/type-of-business/tshirt-business/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/tshirt-business/order-now";
-import { AccordionCounting, RingText, toolsList } from "../../static/type-of-business/tshirt-business";
+import {
+  AccordionCounting,
+  RingText,
+  toolsList,
+} from "../../static/type-of-business/tshirt-business";
 import HireEmployees from "../../atomic/sections/type-of-business/tshirt-business/hire-employees";
 import UsefulTools from "../../atomic/partials/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
@@ -59,13 +63,34 @@ import { Link } from "gatsby";
 
 const TshirtBusiness = () => (
   <Layout>
-    <SEO title="How to Start a T-shirt Business" description="There can be few things more thrilling than seeing someone wearing a piece of art that you have created. One way to achieve this is to go into the T-shirt business, create amazing designs and then sell them to people online." />
+    <SEO
+      title="How to Start a T-shirt Business"
+      description="There can be few things more thrilling than seeing someone wearing a piece of art that you have created. One way to achieve this is to go into the T-shirt business, create amazing designs and then sell them to people online."
+    />
 
-    <Top ovalColor="green" imageName="t-shirt-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+    <Top
+      ovalColor="green"
+      imageName="t-shirt-main"
+      imageAlt="Mr Bulb with seedling"
+      headlineWidth={700}
+    >
       <h1>How to Start a T-shirt Business</h1>
-      <p>There can be few things more thrilling than seeing someone wearing a piece of art that you have created. One way to achieve this is to go into the T-shirt business, create amazing designs and then sell them to people online.</p>
+      <p>
+        There can be few things more thrilling than seeing someone wearing a
+        piece of art that you have created. One way to achieve this is to go
+        into the T-shirt business, create amazing designs and then sell them to
+        people online.
+      </p>
       <ButtonsBox>
-        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
+        <Button
+          theme="primary56"
+          marginMD="0 24px 0 0"
+          arrow
+          content={{
+            url: `${process.env.ORDER_URL}/form-order-now.php`,
+            text: "Start Now",
+          }}
+        />
       </ButtonsBox>
 
       <RatingRow>
@@ -91,38 +116,60 @@ const TshirtBusiness = () => (
         <CollapseWrapper>
           <PanelWrapper>
             <Heading size={3}>Starting a T-shirt business</Heading>
-            <Paragraph big>Historically, only established clothing brands could create and sell T-shirts, but that’s all changed. With the rise of ecommerce and print-on-demand T-shirt services, you can create and start selling T-shirts online in just a couple of days.</Paragraph>
+            <Paragraph big>
+              Historically, only established clothing brands could create and
+              sell T-shirts, but that’s all changed. With the rise of ecommerce
+              and print-on-demand T-shirt services, you can create and start
+              selling T-shirts online in just a couple of days.
+            </Paragraph>
             <Paragraph big style={{ marginBottom: "0px" }}>
-              Don’t be fooled though — running a successful T-shirt printing business can be tough. There are low barriers to entry, so finding the right niche, creating eye-catching designs, branding your business properly, ensuring quality and having great marketing are essential.
+              Don’t be fooled though — running a successful T-shirt printing
+              business can be tough. There are low barriers to entry, so finding
+              the right niche, creating eye-catching designs, branding your
+              business properly, ensuring quality and having great marketing are
+              essential.
             </Paragraph>
 
             <Heading size={3} style={{ marginTop: "48px", fontSize: "20px" }}>
               T-shirt Business formation guide
             </Heading>
-            <Paragraph big>In this guide we’ll explore everything you need to do to set up your T-shirt business and maximize your chances for success. We’ll cover:</Paragraph>
+            <Paragraph big>
+              In this guide we’ll explore everything you need to do to set up
+              your T-shirt business and maximize your chances for success. We’ll
+              cover:
+            </Paragraph>
 
             <ListWrapper>
               <ListBox>
                 <CkeckText>
-                  <Paragraph big>Understanding the world of the T-shirt business</Paragraph>
+                  <Paragraph big>
+                    Understanding the world of the T-shirt business
+                  </Paragraph>
                 </CkeckText>
               </ListBox>
 
               <ListBox>
                 <CkeckText>
-                  <Paragraph big>Paying taxes and for your T-shirt business</Paragraph>
+                  <Paragraph big>
+                    Paying taxes and for your T-shirt business
+                  </Paragraph>
                 </CkeckText>
               </ListBox>
 
               <ListBox>
                 <CkeckText>
-                  <Paragraph big>Deciding if you’re ready to start a T-shirt business</Paragraph>
+                  <Paragraph big>
+                    Deciding if you’re ready to start a T-shirt business
+                  </Paragraph>
                 </CkeckText>
               </ListBox>
 
               <ListBox>
                 <CkeckText>
-                  <Paragraph big>Hiring employees, managing finances and administering your T-shirt business</Paragraph>
+                  <Paragraph big>
+                    Hiring employees, managing finances and administering your
+                    T-shirt business
+                  </Paragraph>
                 </CkeckText>
               </ListBox>
 
@@ -134,25 +181,36 @@ const TshirtBusiness = () => (
 
               <ListBox>
                 <CkeckText>
-                  <Paragraph big>Locating other resources for your T-shirt business</Paragraph>
+                  <Paragraph big>
+                    Locating other resources for your T-shirt business
+                  </Paragraph>
                 </CkeckText>
               </ListBox>
 
               <ListBox>
                 <CkeckText>
-                  <Paragraph big>Determining the best legal structure for your new organization</Paragraph>
+                  <Paragraph big>
+                    Determining the best legal structure for your new
+                    organization
+                  </Paragraph>
                 </CkeckText>
               </ListBox>
 
               <ListBox>
                 <CkeckText>
-                  <Paragraph big>Determining the best legal structure for your new organization</Paragraph>
+                  <Paragraph big>
+                    Determining the best legal structure for your new
+                    organization
+                  </Paragraph>
                 </CkeckText>
               </ListBox>
 
               <ListBox>
                 <CkeckText>
-                  <Paragraph big>Determining the best legal structure for your new organization</Paragraph>
+                  <Paragraph big>
+                    Determining the best legal structure for your new
+                    organization
+                  </Paragraph>
                 </CkeckText>
               </ListBox>
 
@@ -163,37 +221,78 @@ const TshirtBusiness = () => (
               </ListBox>
             </ListWrapper>
 
-            <Paragraph big>By the time you’ve read through our complete T-shirt business guide, you will have all the information you need to set up and manage a thriving T-shirt business. Let’s get into it.</Paragraph>
+            <Paragraph big>
+              By the time you’ve read through our complete T-shirt business
+              guide, you will have all the information you need to set up and
+              manage a thriving T-shirt business. Let’s get into it.
+            </Paragraph>
           </PanelWrapper>
 
           <PanelWrapper>
-            <Heading size={3}>Understanding the World of the T-Shirt Business</Heading>
+            <Heading size={3}>
+              Understanding the World of the T-Shirt Business
+            </Heading>
 
             <Paragraph big style={{ fontWeight: "bold" }}>
               Key T-Shirt Business and Background Data and Statistics
             </Paragraph>
 
-            <Paragraph big>It’s important to understand the opportunities in the online T-shirt printing and ecommerce space. Here are the key facts you need to know:</Paragraph>
-
-            <BlueBoxWithAbsoluteText absoluteText="$3B" text="Total revenue for online T-shirt printing and sales a year" />
-            <BlueBoxWithAbsoluteText absoluteText="$10B" text="Market is expected to grow 2025" />
-
-            <ColorFulCircleWithTextAndList style={{ marginBottom: "48px" }} CircleSVG={ColorfulRing} title={RingText.title} list={RingText.list} withBg={true} />
-
-            <Adventages headline="There are over 400 online T-shirt design and printing ecommerce businesses, and the number of businesses is growing by around 11 percent a year" width="100%" />
-
-            <Adventages headline="Together, these companies employ around 2,500 people" width="100%" />
-
-            <Adventages headline="Cafepress, CustomInk, Threadless and Teespring are some of the large businesses in the space" width="100%" />
-
-            <Paragraph big style={{ marginTop: "48px" }}>
-              This all points to the T-shirt industry being ripe with new opportunities for focused entrepreneurs, so now might be the perfect time to dive into starting your T-shirt business. Incfile is here to help you form your T-shirt business and understand the ins and outs of owning a T-shirt
-              company.
+            <Paragraph big>
+              It’s important to understand the opportunities in the online
+              T-shirt printing and ecommerce space. Here are the key facts you
+              need to know:
             </Paragraph>
 
-            <Heading size={3}>What Your T-Shirt Customers Are Looking for</Heading>
+            <BlueBoxWithAbsoluteText
+              absoluteText="$3B"
+              text="Total revenue for online T-shirt printing and sales a year"
+            />
+            <BlueBoxWithAbsoluteText
+              absoluteText="$10B"
+              text="Market is expected to grow 2025"
+            />
 
-            <Paragraph big>When it comes to creating a custom T-shirt business, it’s important to stand out — there’s a lot of competition in the space. If you want to be successful, you need to focus on several key areas:</Paragraph>
+            <ColorFulCircleWithTextAndList
+              style={{ marginBottom: "48px" }}
+              CircleSVG={ColorfulRing}
+              title={RingText.title}
+              list={RingText.list}
+              withBg={true}
+            />
+
+            <Adventages
+              headline="There are over 400 online T-shirt design and printing ecommerce businesses, and the number of businesses is growing by around 11 percent a year"
+              width="100%"
+            />
+
+            <Adventages
+              headline="Together, these companies employ around 2,500 people"
+              width="100%"
+            />
+
+            <Adventages
+              headline="Cafepress, CustomInk, Threadless and Teespring are some of the large businesses in the space"
+              width="100%"
+            />
+
+            <Paragraph big style={{ marginTop: "48px" }}>
+              This all points to the T-shirt industry being ripe with new
+              opportunities for focused entrepreneurs, so now might be the
+              perfect time to dive into starting your T-shirt business. Incfile
+              is here to help you form your T-shirt business and understand the
+              ins and outs of owning a T-shirt company.
+            </Paragraph>
+
+            <Heading size={3}>
+              What Your T-Shirt Customers Are Looking for
+            </Heading>
+
+            <Paragraph big>
+              When it comes to creating a custom T-shirt business, it’s
+              important to stand out — there’s a lot of competition in the
+              space. If you want to be successful, you need to focus on several
+              key areas:
+            </Paragraph>
 
             <Adventages
               headline="The Right Niche"
@@ -207,20 +306,30 @@ const TshirtBusiness = () => (
               width="100%"
             />
 
-            <Adventages headline="Strong Branding" text="You want your T-shirt brand to stand out so you can start to build customer loyalty. Spend some time creating a powerful, recognizable brand that you can use on your website, in your marketing and elsewhere." width="100%" />
+            <Adventages
+              headline="Strong Branding"
+              text="You want your T-shirt brand to stand out so you can start to build customer loyalty. Spend some time creating a powerful, recognizable brand that you can use on your website, in your marketing and elsewhere."
+              width="100%"
+            />
 
-            <Adventages headline="High Quality Materials" text="You will want T-shirts that combine comfort, durability and style. It’s worth spending a little more to find higher quality cloth and cuts as these will last longer and stand out in the minds of your customers." width="100%" />
+            <Adventages
+              headline="High Quality Materials"
+              text="You will want T-shirts that combine comfort, durability and style. It’s worth spending a little more to find higher quality cloth and cuts as these will last longer and stand out in the minds of your customers."
+              width="100%"
+            />
 
             <Adventages
               headline="Awesome Marketing"
               text="There’s a great deal of competition in the T-shirt design space. You will need innovative, audacious marketing to make a splash and get noticed. Combine your niche with your brand to create powerful messages with striking imagery so your customers will remember you."
               width="100%"
             />
-
           </PanelWrapper>
 
           <PanelWrapper>
-            <Heading size={3}>The Benefits and Challenges of Being a Successful T-Shirt Entrepreneur</Heading>
+            <Heading size={3}>
+              The Benefits and Challenges of Being a Successful T-Shirt
+              Entrepreneur
+            </Heading>
 
             <Paragraph big style={{ fontWeight: "bold", color: color.black }}>
               What Are the Main Challenges for a T-Shirt Entrepreneur?
@@ -232,7 +341,11 @@ const TshirtBusiness = () => (
               width="100%"
             />
 
-            <Adventages headline="Low profit margins" text="The profit margins on custom T-shirts are quite thin. You will need a rock solid understanding of your revenue and finances to ensure you’re able to make a profit on every item sold." width="100%" />
+            <Adventages
+              headline="Low profit margins"
+              text="The profit margins on custom T-shirts are quite thin. You will need a rock solid understanding of your revenue and finances to ensure you’re able to make a profit on every item sold."
+              width="100%"
+            />
 
             <Adventages
               headline="High initial cost if you print yourself"
@@ -250,7 +363,11 @@ const TshirtBusiness = () => (
               width="100%"
             />
 
-            <Adventages headline="Great introduction to entrepreneurship" text="Most T-shirt entrepreneurs don’t stop there. This type of business is a relatively low-risk way to learn about running your own business, especially in the ecommerce space." width="100%" />
+            <Adventages
+              headline="Great introduction to entrepreneurship"
+              text="Most T-shirt entrepreneurs don’t stop there. This type of business is a relatively low-risk way to learn about running your own business, especially in the ecommerce space."
+              width="100%"
+            />
           </PanelWrapper>
         </CollapseWrapper>
       </TabsSection>
@@ -262,12 +379,21 @@ const TshirtBusiness = () => (
       </Oval2>
       <Container>
         <CenterBox>
-          <TextCenterLayout headlineWidth={770} headline="A Plan for Starting Your T-Shirt Business" />
+          <TextCenterLayout
+            headlineWidth={770}
+            headline="A Plan for Starting Your T-Shirt Business"
+          />
           <Paragraph big>
-            Before you start your business, there are a few key areas you need to focus on. You will need to establish whether there’s a demand for your T-shirt business services, look at potential benefits and pitfalls, understand how your business finances might look and ensure everything is in
-            order.
+            Before you start your business, there are a few key areas you need
+            to focus on. You will need to establish whether there’s a demand for
+            your T-shirt business services, look at potential benefits and
+            pitfalls, understand how your business finances might look and
+            ensure everything is in order.
           </Paragraph>
-          <Paragraph big>Here are the steps you’ll need to take to setup your custom T-shirt business.</Paragraph>
+          <Paragraph big>
+            Here are the steps you’ll need to take to setup your custom T-shirt
+            business.
+          </Paragraph>
         </CenterBox>
       </Container>
 
@@ -280,59 +406,129 @@ const TshirtBusiness = () => (
           <Paragraph big style={{ fontWeight: "bold", color: color.black }}>
             Do Market Research and Validate Your T-Shirt Products and Services
           </Paragraph>
-          <Paragraph big>Before you launch your T-shirt business, you need to understand if there’s a demand for what you’re selling. That means carrying out market research and “validating” your products and services. Here’s how to go about it:</Paragraph>
+          <Paragraph big>
+            Before you launch your T-shirt business, you need to understand if
+            there’s a demand for what you’re selling. That means carrying out
+            market research and “validating” your products and services. Here’s
+            how to go about it:
+          </Paragraph>
         </CenterBox>
 
         <GridSectionList>
-          <TextBlockWithImage width={100} widthUnit="%" SvgImage={IdentifyIcon} imageBackgroundColor={color.babyblue2} imageShadowColor={color.babyblue2}>
-            <Heading size={4}>Identify your business’s unique selling points (USPs)</Heading>
+          <TextBlockWithImage
+            width={100}
+            widthUnit="%"
+            SvgImage={IdentifyIcon}
+            imageBackgroundColor={color.babyblue2}
+            imageShadowColor={color.babyblue2}
+          >
+            <Heading size={4}>
+              Identify your business’s unique selling points (USPs)
+            </Heading>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              These are the areas that will set you apart from competitors and encourage customers to come to you. You might have better pricing, more exciting designs, an underserved niche, a higher-quality service, faster delivery or some other special feature.
+              These are the areas that will set you apart from competitors and
+              encourage customers to come to you. You might have better pricing,
+              more exciting designs, an underserved niche, a higher-quality
+              service, faster delivery or some other special feature.
             </Paragraph>
           </TextBlockWithImage>
 
-          <TextBlockWithImage width={100} widthUnit="%" SvgImage={LookIcon} imageBackgroundColor={color.green2} imageShadowColor={color.green2}>
-            <Heading size={4}>Look at who your competitors are in the space</Heading>
+          <TextBlockWithImage
+            width={100}
+            widthUnit="%"
+            SvgImage={LookIcon}
+            imageBackgroundColor={color.green2}
+            imageShadowColor={color.green2}
+          >
+            <Heading size={4}>
+              Look at who your competitors are in the space
+            </Heading>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              There are likely to be plenty of competitors. Look through them and see the types of clothing and designs that they are offering so you can find a gap in the market.
+              There are likely to be plenty of competitors. Look through them
+              and see the types of clothing and designs that they are offering
+              so you can find a gap in the market.
             </Paragraph>
           </TextBlockWithImage>
 
-          <TextBlockWithImage width={100} widthUnit="%" SvgImage={ValidateIcon} imageBackgroundColor={color.orange2} imageShadowColor={color.orange2}>
+          <TextBlockWithImage
+            width={100}
+            widthUnit="%"
+            SvgImage={ValidateIcon}
+            imageBackgroundColor={color.orange2}
+            imageShadowColor={color.orange2}
+          >
             <Heading size={4}>Validate your products and services</Heading>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              Test whether people will commit to spending real money on what you’re offering.
+              Test whether people will commit to spending real money on what
+              you’re offering.
             </Paragraph>
           </TextBlockWithImage>
 
-          <TextBlockWithImage width={100} widthUnit="%" SvgImage={TalkIcon} imageBackgroundColor={color.purple2} imageShadowColor={color.purple2}>
+          <TextBlockWithImage
+            width={100}
+            widthUnit="%"
+            SvgImage={TalkIcon}
+            imageBackgroundColor={color.purple2}
+            imageShadowColor={color.purple2}
+          >
             <Heading size={4}>Talk to clients</Heading>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              Speak with potential customers to understand what they want from your T-shirt products.
+              Speak with potential customers to understand what they want from
+              your T-shirt products.
             </Paragraph>
           </TextBlockWithImage>
 
-          <TextBlockWithImage width={100} widthUnit="%" SvgImage={InvolvedIcon} imageBackgroundColor={color.red2} imageShadowColor={color.red2}>
-            <Heading size={4}>Get involved with business communities and discussion groups</Heading>
+          <TextBlockWithImage
+            width={100}
+            widthUnit="%"
+            SvgImage={InvolvedIcon}
+            imageBackgroundColor={color.red2}
+            imageShadowColor={color.red2}
+          >
+            <Heading size={4}>
+              Get involved with business communities and discussion groups
+            </Heading>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              Ask questions about T-shirt businesses. You can find links to some excellent discussion groups later in the article.
+              Ask questions about T-shirt businesses. You can find links to some
+              excellent discussion groups later in the article.
             </Paragraph>
           </TextBlockWithImage>
 
-          <TextBlockWithImage width={100} widthUnit="%" SvgImage={MarketIcon} imageBackgroundColor={color.yellow2} imageShadowColor={color.yellow2}>
-            <Heading size={4}>See if there are any market research reports for T-shirt businesses</Heading>
+          <TextBlockWithImage
+            width={100}
+            widthUnit="%"
+            SvgImage={MarketIcon}
+            imageBackgroundColor={color.yellow2}
+            imageShadowColor={color.yellow2}
+          >
+            <Heading size={4}>
+              See if there are any market research reports for T-shirt
+              businesses
+            </Heading>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              Search locally, nationally or internationally to help you find your T-shirt niche.
+              Search locally, nationally or internationally to help you find
+              your T-shirt niche.
             </Paragraph>
           </TextBlockWithImage>
         </GridSectionList>
 
         <CenterBox>
-          <Heading size={3}>Understand Your T-Shirt Business Model and Financial Projections</Heading>
-          <Paragraph big>All businesses need a business model, which is how you will generate sales, provide products and make money. Think about your business model now, because it’s better to have that in place so you can start acquiring customers and generating revenue from day one.</Paragraph>
+          <Heading size={3}>
+            Understand Your T-Shirt Business Model and Financial Projections
+          </Heading>
           <Paragraph big>
-            You will also need to look at financial projections for your T-shirt business. What are your expected sales and revenues? What is your profitability? How much money will you keep in the business to grow it? How much will you pay yourself and others? If you can, try to plan your revenue
-            for the next month, three months, year and two years.
+            All businesses need a business model, which is how you will generate
+            sales, provide products and make money. Think about your business
+            model now, because it’s better to have that in place so you can
+            start acquiring customers and generating revenue from day one.
+          </Paragraph>
+          <Paragraph big>
+            You will also need to look at financial projections for your T-shirt
+            business. What are your expected sales and revenues? What is your
+            profitability? How much money will you keep in the business to grow
+            it? How much will you pay yourself and others? If you can, try to
+            plan your revenue for the next month, three months, year and two
+            years.
           </Paragraph>
         </CenterBox>
       </Container>
@@ -347,25 +543,33 @@ const TshirtBusiness = () => (
       </Oval4>
       <Container>
         <CenterBox>
-          <Heading>Write a Business Plan for Your T-Shirt Business</Heading>
+          <Heading size={2} style={{ textAlign: "left" }}>
+            Write a Business Plan for Your T-Shirt Business
+          </Heading>
 
-          <Paragraph big>Finally, you should put your business plan together. Business plans do vary slightly, but they should cover the following areas:</Paragraph>
+          <Paragraph big>
+            Finally, you should put your business plan together. Business plans
+            do vary slightly, but they should cover the following areas:
+          </Paragraph>
 
           <CountingTextBoxed number={1}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              An executive summary with the most important points from your business plan
+              An executive summary with the most important points from your
+              business plan
             </Paragraph>
           </CountingTextBoxed>
 
           <CountingTextBoxed number={2}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              Your goals and what you hope to achieve with your coaching business
+              Your goals and what you hope to achieve with your coaching
+              business
             </Paragraph>
           </CountingTextBoxed>
 
           <CountingTextBoxed number={3}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              A description of your life or business coaching niche, background information and context
+              A description of your life or business coaching niche, background
+              information and context
             </Paragraph>
           </CountingTextBoxed>
 
@@ -377,7 +581,8 @@ const TshirtBusiness = () => (
 
           <CountingTextBoxed number={5}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              An overview of how your life or business coaching organization is structured
+              An overview of how your life or business coaching organization is
+              structured
             </Paragraph>
           </CountingTextBoxed>
 
@@ -406,7 +611,10 @@ const TshirtBusiness = () => (
           </CountingTextBoxed>
 
           <Paragraph big mixed={true} style={{ marginTop: "50px" }}>
-            We’ve got the perfect <Link to="/blog/post/keys-successful-business-plan/">guide to writing your business plan.</Link>
+            We’ve got the perfect{" "}
+            <Link to="/blog/post/keys-successful-business-plan/">
+              guide to writing your business plan.
+            </Link>
           </Paragraph>
         </CenterBox>
       </Container>
@@ -424,9 +632,15 @@ const TshirtBusiness = () => (
       <BusinessOwnerResponsibilities>
         <ImageContent image="unique-business-2" paddingTop="60">
           <Heading size={4} style={{ fontSize: "24px" }}>
-            Choose the Right Business Structure and Register Your T-Shirt Business
+            Choose the Right Business Structure and Register Your T-Shirt
+            Business
           </Heading>
-          <Paragraph big>Now that you have all the background information for your T-shirt business, it’s time to make it into a reality. Starts by choosing the right structure or “legal entity” for your business. In the U.S., there are four main business structures. They are:</Paragraph>
+          <Paragraph big>
+            Now that you have all the background information for your T-shirt
+            business, it’s time to make it into a reality. Starts by choosing
+            the right structure or “legal entity” for your business. In the
+            U.S., there are four main business structures. They are:
+          </Paragraph>
 
           <TextBlockWithImage
             SvgImage={HandsIcon}
@@ -442,11 +656,20 @@ const TshirtBusiness = () => (
             width={100}
             widthUnit="%"
           >
-            <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
+            <Paragraph
+              big
+              style={{ color: color.blue1, fontWeight: "bold" }}
+              mixed={true}
+            >
               Sole Proprietorship
             </Paragraph>
 
-            <Paragraph big>This is the "default" business structure and is what your business will be if you decide not to create a more formal structure. We don't recommend this type of business as it doesn't give you the legal protections you need.</Paragraph>
+            <Paragraph big>
+              This is the "default" business structure and is what your business
+              will be if you decide not to create a more formal structure. We
+              don't recommend this type of business as it doesn't give you the
+              legal protections you need.
+            </Paragraph>
           </TextBlockWithImage>
 
           <TextBlockWithImage
@@ -463,11 +686,25 @@ const TshirtBusiness = () => (
             width={100}
             widthUnit="%"
           >
-            <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Limited Liability Company or LLC</Link>
+            <Paragraph
+              big
+              style={{ color: color.blue1, fontWeight: "bold" }}
+              mixed={true}
+            >
+              <Link
+                to={
+                  process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"
+                }
+              >
+                Limited Liability Company or LLC
+              </Link>
             </Paragraph>
 
-            <Paragraph big>The most common type of business entity. An LLC is fast, simple and inexpensive to setup and maintain. It protects your personal finances and assets and is a great way to start your real estate</Paragraph>
+            <Paragraph big>
+              The most common type of business entity. An LLC is fast, simple
+              and inexpensive to setup and maintain. It protects your personal
+              finances and assets and is a great way to start your real estate
+            </Paragraph>
           </TextBlockWithImage>
 
           <TextBlockWithImage
@@ -484,11 +721,26 @@ const TshirtBusiness = () => (
             width={100}
             widthUnit="%"
           >
-            <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Series LLC</Link>
+            <Paragraph
+              big
+              style={{ color: color.blue1, fontWeight: "bold" }}
+              mixed={true}
+            >
+              <Link
+                to={
+                  process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"
+                }
+              >
+                Series LLC
+              </Link>
             </Paragraph>
 
-            <Paragraph big>This is a special type of LLC entity that's only available in certain states. It allows you to create "mini" LLCs, each with their own limited liability and separate assets, under the umbrella of a master LLC.</Paragraph>
+            <Paragraph big>
+              This is a special type of LLC entity that's only available in
+              certain states. It allows you to create "mini" LLCs, each with
+              their own limited liability and separate assets, under the
+              umbrella of a master LLC.
+            </Paragraph>
           </TextBlockWithImage>
 
           <TextBlockWithImage
@@ -505,11 +757,25 @@ const TshirtBusiness = () => (
             width={100}
             widthUnit="%"
           >
-            <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=S-Corporation"}>S Corporation</Link>
+            <Paragraph
+              big
+              style={{ color: color.blue1, fontWeight: "bold" }}
+              mixed={true}
+            >
+              <Link
+                to={
+                  process.env.ORDER_URL +
+                  "/form-order-now.php?entityType=S-Corporation"
+                }
+              >
+                S Corporation
+              </Link>
             </Paragraph>
 
-            <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organization.</Paragraph>
+            <Paragraph big>
+              This is a more complex type of business and isn't generally
+              recommended for smaller organization.
+            </Paragraph>
           </TextBlockWithImage>
 
           <TextBlockWithImage
@@ -526,26 +792,75 @@ const TshirtBusiness = () => (
             width={100}
             widthUnit="%"
           >
-            <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=C-Corporation"}>C Corporation</Link>
+            <Paragraph
+              big
+              style={{ color: color.blue1, fontWeight: "bold" }}
+              mixed={true}
+            >
+              <Link
+                to={
+                  process.env.ORDER_URL +
+                  "/form-order-now.php?entityType=C-Corporation"
+                }
+              >
+                C Corporation
+              </Link>
             </Paragraph>
 
-            <Paragraph big>These are the largest and most complex types of businesses and are far more than the average entrepreneur or business owner will need.</Paragraph>
+            <Paragraph big>
+              These are the largest and most complex types of businesses and are
+              far more than the average entrepreneur or business owner will
+              need.
+            </Paragraph>
           </TextBlockWithImage>
 
-          <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-            For more information on the advantages and disadvantages of different types of businesses, <Link to="/business-entity-comparison/">please see our in-depth guide</Link>. If you’ve still got questions,{" "}
-            <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
-              we’ve answered them to help you choose the right business structure
+          <Paragraph
+            big
+            style={{ paddingTop: "48px", paddingBottom: 0 }}
+            mixed={true}
+          >
+            For more information on the advantages and disadvantages of
+            different types of businesses,{" "}
+            <Link to="/business-entity-comparison/">
+              please see our in-depth guide
+            </Link>
+            . If you’ve still got questions,{" "}
+            <a
+              href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              we’ve answered them to help you choose the right business
+              structure
             </a>{" "}
             for your t-shirt business.
           </Paragraph>
-          <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-            In most cases our recommendation would be to create an LLC. We have a <Link to="/form-an-llc/">complete guide to everything you need to do</Link>, and we can set one up for your T-shirt business. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but
-            we’ve got you covered, wherever you are.
+          <Paragraph
+            big
+            style={{ paddingTop: "48px", paddingBottom: 0 }}
+            mixed={true}
+          >
+            In most cases our recommendation would be to create an LLC. We have
+            a{" "}
+            <Link to="/form-an-llc/">
+              complete guide to everything you need to do
+            </Link>
+            , and we can set one up for your T-shirt business.{" "}
+            <Link to="/llc-state-information/">
+              LLC formation does vary from state to state
+            </Link>
+            , but we’ve got you covered, wherever you are.
           </Paragraph>
 
-          <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />
+          <Button
+            theme="primary48"
+            width="365px"
+            arrow
+            content={{
+              url: `${process.env.ORDER_URL}/form-order-now.php`,
+              text: `Start your business with us, today!`,
+            }}
+          />
         </ImageContent>
       </BusinessOwnerResponsibilities>
     </OrangeContainer>
@@ -560,16 +875,29 @@ const TshirtBusiness = () => (
       <Oval6>
         <TabOvalSvg2 />
       </Oval6>
-      <UsefulTools style={{ paddingBottom: "200px" }} toolsList={toolsList.tools} headlineText={toolsList.headlineText} description={toolsList.description} />
+      <UsefulTools
+        style={{ paddingBottom: "200px" }}
+        toolsList={toolsList.tools}
+        headlineText={toolsList.headlineText}
+        description={toolsList.description}
+      />
     </ToolsWrapper>
 
-    <Conclusion to={process.env.ORDER_URL + "/form-order-now.php"} buttonTitle="Start your Tshirt Business with us, today">
+    <Conclusion
+      to={process.env.ORDER_URL + "/form-order-now.php"}
+      buttonTitle="Start your Tshirt Business with us, today"
+    >
       <Heading size={3} style={{ fontSize: "40px" }}>
         Conclusion
       </Heading>
       <Paragraph big>
-        Starting a T-shirt business is a great way to get exposure to the fast-moving worlds of e-commerce and creative products. Although it’s difficult to succeed as a T-shirt entrepreneur, with the right niche, awesome designs and great marketing, you can certainly make an impression. Just
-        remember to stay on top of your profit margins, try new things and learn how your T-shirts can help your customers express themselves.
+        Starting a T-shirt business is a great way to get exposure to the
+        fast-moving worlds of e-commerce and creative products. Although it’s
+        difficult to succeed as a T-shirt entrepreneur, with the right niche,
+        awesome designs and great marketing, you can certainly make an
+        impression. Just remember to stay on top of your profit margins, try new
+        things and learn how your T-shirts can help your customers express
+        themselves.
       </Paragraph>
     </Conclusion>
   </Layout>
@@ -653,7 +981,11 @@ const BusinessOwnerResponsibilities = styled.section`
 
 const OrangeContainer = styled.div`
   background: rgb(255, 255, 255);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(254, 246, 237, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(254, 246, 237, 1) 100%
+  );
   padding-bottom: 100px;
   position: relative;
 `;

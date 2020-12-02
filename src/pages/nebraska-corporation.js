@@ -188,28 +188,28 @@ const AlaskaCorporation = () => {
                                 The report must be current as of January 1 of the filing year and must include:
             </Paragraph>
                             <TextBoxed style={{ marginBottom: "8px" }}>
-                                <Paragraph bottomMargin={0}>aaaa</Paragraph>
+                                <Paragraph bottomMargin={0}>The name of the corporation</Paragraph>
                             </TextBoxed>
                             <TextBoxed style={{ marginBottom: "8px" }}>
-                                <Paragraph bottomMargin={0}>aaaa</Paragraph>
+                                <Paragraph bottomMargin={0}>The street address of the corporation’s registered office in Nebraska</Paragraph>
                             </TextBoxed>
                             <TextBoxed style={{ marginBottom: "8px" }}>
-                                <Paragraph bottomMargin={0}>aaaa</Paragraph>
+                                <Paragraph bottomMargin={0}>The name of the corporation’s registered agent there</Paragraph>
                             </TextBoxed>
                             <TextBoxed style={{ marginBottom: "8px" }}>
-                                <Paragraph bottomMargin={0}>aaaa</Paragraph>
+                                <Paragraph bottomMargin={0}>The street address of the corporation’s principal office</Paragraph>
                             </TextBoxed>
                             <TextBoxed style={{ marginBottom: "8px" }}>
-                                <Paragraph bottomMargin={0}>aaaa</Paragraph>
+                                <Paragraph bottomMargin={0}>The names and street addresses of the corporation’s directors and principal officers (president, secretary, and treasurer)</Paragraph>
                             </TextBoxed>
                             <TextBoxed style={{ marginBottom: "8px" }}>
-                                <Paragraph bottomMargin={0}>aaaa</Paragraph>
+                                <Paragraph bottomMargin={0}>A brief description of the nature of the corporation’s business</Paragraph>
                             </TextBoxed>
                             <TextBoxed style={{ marginBottom: "8px" }}>
-                                <Paragraph bottomMargin={0}>aaaa</Paragraph>
+                                <Paragraph bottomMargin={0}>The amount of paid-up capital stock</Paragraph>
                             </TextBoxed>
-                            <TextBoxed style={{ marginBottom: "8px" }}>
-                                <Paragraph bottomMargin={0}>aaaa</Paragraph>
+                            <TextBoxed style={{ marginBottom: "16px" }}>
+                                <Paragraph bottomMargin={0}>Any changes in the preceding information since the last biennial report</Paragraph>
                             </TextBoxed>
                             <Paragraph big>
                                 The corporation must provide its shareholders an annual financial statement within 120 days after the close of each fiscal year. These statements must include a year-end balance sheet, an income statement for that year, and a statement of changes in shareholders’ equity for that year

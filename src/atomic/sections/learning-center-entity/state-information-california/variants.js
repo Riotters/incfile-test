@@ -19,8 +19,8 @@ const VariantsSection = ({ data, entityType }) => {
   const headerSection = {
     header: `See how easy it can be to get your business incorporated`,
     link: {
-      text: `Learn more`,
-      url: `${process.env.ORDER_URL}/form-order-now.php`,
+      text: ``,
+      url: ``,
     },
   };
   const cards = [

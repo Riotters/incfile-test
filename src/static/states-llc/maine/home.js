@@ -32,7 +32,11 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `Briefly, the benefits of starting a Maine LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your Maine LLC`, `Easy tax filing and potential advantages for tax treatment`],
+      list: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulation and administration of your Maine LLC`,
+        `Easy tax filing and potential advantages for tax treatment`,
+      ],
     },
     marginBottom: 16,
     color: color.green3,
@@ -511,7 +515,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      list: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -688,12 +697,12 @@ export const registeredAgent = [
       url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ME`,
     },
     theme: `primary48`,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `Assign a Different Maine Registered Agent Service After Incorporation`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -746,53 +755,6 @@ export const registeredAgent = [
   {
     type: `text`,
     content: `If the Registered Agent isn’t available from the searchable business registry, contact the Maine Secretary of State requesting the information.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
-    content: `Choose a Registered Agent Service and File a Form with the Maine Secretary of State`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Once you’ve chosen a new Maine Registered Agent, you can complete a form. Once you’ve filled it out, send it to the secretary of state so they can update your records.`,
-    marginBottom: 48,
-  },
-  {
-    type: `header`,
-    content: `Sign Up for Incfile’s Maine Registered Agent Service and We’ll File the Change on Your Behalf`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `When you choose to use our KY Registered Agent service, we take care of all the form filling and filing for you. We’ll collect important information about your business, complete the form on your behalf and send it to the Maine Secretary of State. We’ll let you know once we officially become your Registered Agent.`,
-    marginBottom: 16,
-  },
-  {
-    type: `button`,
-    content: {
-      text: `Order Incfile's Maine registered agent service`,
-      url: `/manage-your-company/registered-agent/`,
-    },
-    theme: `primary48`,
-    marginBottom: 48,
-  },
-  {
-    type: `header`,
-    content: `Maine Registered Agent Search`,
-    size: 3,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `In some situations, you might want to know the name of the Registered Agent that represents another Maine LLC. If you do, you can search the business database of the Maine Secretary of State, which will often provide details of a specific business’s Registered Agent.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `If the Registered Agent isn’t available from the searchable business registry, contact the Maine Secretary of State requesting the information.`,
     marginBottom: 48,
   },
   {
@@ -811,9 +773,9 @@ export const registeredAgent = [
     content: {
       header: `There are several possible ramifications, including:`,
       list: [
-        `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
-        `Falling out of good standing with the Maine Secretary of State: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
-        `Losing your status as a Maine LLC: A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
+        `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the Maine Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `<b>Losing your status as a Maine LLC:</b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
       ],
     },
     marginBottom: 48,
@@ -1059,6 +1021,11 @@ export const feesAndRequirments = [
     color: color.yellow3,
   },
   {
+    type: `text`,
+    content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
+    marginBottom: 32,
+  },
+  {
     type: `header`,
     content: `The Incfile Business License Research Package for Your Maine LLC`,
     size: 4,
@@ -1073,7 +1040,10 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `It includes:`,
-      list: [`A complete report on all the licenses, permits and tax registrations your Maine LLC will need`, `The application forms you will need to file with the Maine, regional and federal licensing authorities`],
+      list: [
+        `A complete report on all the licenses, permits and tax registrations your Maine LLC will need`,
+        `The application forms you will need to file with the Maine, regional and federal licensing authorities`,
+      ],
     },
     marginBottom: 16,
     color: color.green3,
@@ -1185,7 +1155,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Maine Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Maine LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Maine LLC`],
+      list: [
+        `Adding, removing or changing a Maine LLC member or manager`,
+        `Changing the business address of your LLC`,
+        `Altering the stated business activities of your Maine LLC`,
+      ],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -1374,7 +1348,10 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `You will typically need to collect Maine sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Maine business might provide`],
+      list: [
+        `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
+        `Certain services that your Maine business might provide`,
+      ],
     },
     marginBottom: 16,
     color: color.purple3,
@@ -1542,7 +1519,11 @@ export const businessTaxes = [
               type: `list-dot-without-bg`,
               color: color.orange3,
               header: `The most common types of estimated taxes are:`,
-              content: [`Federal income tax`, `Federal self-employment tax`, `Maine state tax`],
+              content: [
+                `Federal income tax`,
+                `Federal self-employment tax`,
+                `Maine state tax`,
+              ],
             },
             {
               type: `paragraph`,
@@ -1588,7 +1569,12 @@ export const compare = {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
       [`Business incorporation service`, `$49`, `$149`, `$149`],
-      [`Registered Agent included in the price`, `check-green`, `check-red`, `check-red`],
+      [
+        `Registered Agent included in the price`,
+        `check-green`,
+        `check-red`,
+        `check-red`,
+      ],
     ],
   },
 };
@@ -1652,7 +1638,7 @@ export const requirements = {
             text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
             text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
-              text: `Other State's Ongoing`,
+              text: `Other State Requirements`,
               url: `/`,
             },
           },

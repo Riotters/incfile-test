@@ -9,10 +9,10 @@ import Curve from "../../../images/curve-orange.inline.svg";
 import TabScrollable from "./TabScrollable";
 import { color } from "../../atoms/styles/colors";
 
-const About = ({ layout, columns }) => (
+const About = ({ content }) => (
 	<>
 		<TabScrollableWrapper>
-			<TabScrollable />
+			<TabScrollable content={content} />
 		</TabScrollableWrapper>
 	</>
 );

@@ -70,7 +70,7 @@ export const howToGuide = [
 				{
 					question: `STEP 2: Search for and Choose a Unique Business Name for Your Washington DC LLC`,
 					answer: `<p>You will need a distinctive and original name for your Washington DC LLC that’s not used by any other business in DC. To find out if another company is using your chosen business name, carry out a Washington DC business entity name search on the DC Department of Consumer and Regulatory Affairs website.</p>
-                    <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Washington DC LLC.</p>
+                    <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Washington DC LLC.</p></br>
                     <p><a href="/washington-dc-llc/how-to-name-your-llc/">Learn about Washington DC LLC business naming rules.</a></p>`,
 				},
 				{
@@ -81,7 +81,7 @@ export const howToGuide = [
 					question: `STEP 4: Assign a Registered Agent for Your Washington DC LLC`,
 					answer: `<p>Every LLC must have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Washington DC Department of Consumer and Regulatory Affairs.</p>
                     <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Washington DC and must be present to receive important documents for your company during business hours.</p>
-                    <p>At Incfile, all of our packages include a Washington DC Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p>
+                    <p>At Incfile, all of our packages include a Washington DC Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
                     <p><a href="/washington-dc-llc/registered-agents-washington-dc-llc/">Learn more about Washington DC Registered Agents</a></p>`,
 				},
 				{
@@ -99,7 +99,7 @@ export const howToGuide = [
                     <li>Purpose of your business</li>
                     <li>Name of the incorporator</li>
                 </ul></br>
-                <p>You can file your Washington DC LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Washington DC. You only need to file your Articles of Organization once.</p>
+                <p>You can file your Washington DC LLC Articles of Organization online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start an LLC in Washington DC. You only need to file your Articles of Organization once.</p></br>
                 <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&amp;entityState=DC"> Form Your LLC now</a> `,
 				},
 			],
@@ -118,14 +118,9 @@ export const howToGuide = [
 		marginBottom: 16,
 	},
 	{
-		type: `text`,
-		content: `These are all the basic steps for forming an LLC in Washington DC. You’ll find other useful information below:`,
-		marginBottom: 16,
-	},
-	{
 		type: `list-dot`,
 		content: {
-			header: ``,
+			header: `These are all the basic steps for forming an LLC in Washington DC. You’ll find other useful information below:`,
 			list: [
 				`<a href="https://dcra.dc.gov/service/domestic-limited-liability-company" target="_blank" rel="noopener noreferrer">Washington DC Department of Consumer and Regulatory Affairs for forming and running your LLC</a>`,
 				`<a href="https://does.dc.gov/" targer="_blank" rel="noopener noreferrer">Washington DC Department of Employment Services for DC employers and hiring</a>`,
@@ -133,31 +128,26 @@ export const howToGuide = [
 			],
 		},
 		marginBottom: 48,
-		color: color.blue2,
+		color: color.blue3,
+    },
+    {
+		type: `accordion`,
+		content: {
+			items: [
+				{
+					question: `Form a Professional Washington DC LLC`,
+					answer: `Some regions, including Washington DC, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. The DC Department of Consumer and Regulatory Affairs says that “professionals—such as lawyers, architects, accountants, engineers and doctors, etc.—shall register Professional LLC (PLLC).”`,
+				},
+				{
+					question: `Form a Foreign LLC in Washington DC`,
+					answer: `If your business is already operating in another state and expanding to Washington DC, you’ll need to form a foreign LLC.</br>
+                    <a href="/washington-dc-llc/form-filling-permit-requirements/">More information on Washington DC filing and licensing requirements here</a>`,
+				},
+			],
+        },
+        marginBottom: 48,
 	},
-	{
-		type: `header`,
-		content: `Form a Professional Washington DC LLC`,
-		size: 3,
-		marginBottom: 24,
-	},
-	{
-		type: `text`,
-		content: `Some regions, including Washington DC, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. The DC Department of Consumer and Regulatory Affairs says that “professionals—such as lawyers, architects, accountants, engineers and doctors, etc.—shall register Professional LLC (PLLC).”`,
-		marginBottom: 48,
-	},
-	{
-		type: `header`,
-		size: 3,
-		content: `Form a Foreign LLC in Washington DC`,
-		marginBottom: 24,
-	},
-	{
-		type: `text`,
-		content: `If your business is already operating in another state and expanding to Washington DC, you’ll need to form a foreign LLC.</br>
-    <a href="/washington-dc-llc/form-filling-permit-requirements/">More information on Washington DC filing and licensing requirements here</a>`,
-		marginBottom: 40,
-	},
+
 	{
 		type: `header`,
 		size: 3,
@@ -176,33 +166,62 @@ export const howToGuide = [
 		marginBottom: 24,
 	},
 	{
-		type: `text`,
-		content: `You’ll find plenty more insight and guidance on the other pages of this guide, including:`,
-		marginBottom: 16,
-	},
-	{
-		type: `accordion`,
-		content: {
-			items: [
-				{
-					question: `Naming Your Washington DC LLC`,
-					answer: `How to search the Washington DC business registry of the DC Department of Consumer and Regulatory Affairs and find the right name. Includes information on naming rules, fictitious names, reserving a Washington DC LLC name and more.`,
-				},
-				{
-					question: `Washington DC Registered Agents for Your LLC`,
-					answer: `How to appoint a Washington DC Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Washington DC Registered Agents.`,
-				},
-				{
-					question: `Fees and Requirements for Your Washington DC LLC`,
-					answer: `How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Washington DC rules. Includes details of Employee Identification Numbers (EINs), Washington DC and federal business licenses, Washington DC Annual Reports and more.`,
-				},
-				{
-					question: `Federal, State, Sales and Other Taxes for Your Washington DC LLC`,
-					answer: `How to understand the various taxes you will need to pay to the federal and Washington DC government. Includes details of federal taxes like income and self-employment, and Washington DC taxes like sales tax and income tax.`,
-				},
-			],
-		},
-	},
+        type: `text`,
+        content: `You’ll find plenty more insight and guidance on the other pages of this guide, including:`,
+        marginBottom: 32,
+    },
+    {
+        type: `arrow-link`,
+        content: {
+            text: `Naming Your Washington DC LLC`,
+            url: `/washington-dc-llc/how-to-name-your-llc/`,
+        },
+        marginBottom: 16,
+    },
+    {
+        type: `text`,
+        content: `How to search the Washington DC business registry of the DC Department of Consumer and Regulatory Affairs and find the right name. Includes information on naming rules, fictitious names, reserving a Washington DC LLC name and more.`,
+        marginBottom: 32,
+    },
+    {
+        type: `arrow-link`,
+        content: {
+            text: `Washington DC Registered Agents for Your LLC`,
+            url: `/washington-dc-llc/registered-agents-washington-dc-llc/`,
+        },
+        marginBottom: 16,
+    },
+    {
+        type: `text`,
+        content: `How to appoint a Washington DC Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Washington DC Registered Agents.`,
+        marginBottom: 32,
+    },
+    {
+        type: `arrow-link`,
+        content: {
+            text: `Fees and Requirements for Your Washington DC LLC`,
+            url: `/washington-dc-llc/form-filling-permit-requirements/`,
+        },
+        marginBottom: 16,
+    },
+    {
+        type: `text`,
+        content: `How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Washington DC rules. Includes details of Employee Identification Numbers (EINs), Washington DC and federal business licenses, Washington DC Annual Reports and more.`,
+        marginBottom: 32,
+    },
+    {
+        type: `arrow-link`,
+        content: {
+            text: `Federal, State, Sales and Other Taxes for Your Washington DC LLC`,
+            url: `/washington-dc-llc/business-taxes/`,
+        },
+        marginBottom: 16,
+    },
+    {
+        type: `text`,
+        content: `How to understand the various taxes you will need to pay to the federal and Washington DC government. Includes details of federal taxes like income and self-employment, and Washington DC taxes like sales tax and income tax.`,
+        marginBottom: 32,
+    },
 ];
 
 export const namingYourBusiness = [

@@ -75,11 +75,6 @@ export const differences = {
 
 export const variants = {
   header: `See how easy it can be to get your business incorporated`,
-
-  link: {
-    text: `Learn more`,
-    url: `/`,
-  },
   cards: [
     {
       variant: ``,

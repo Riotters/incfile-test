@@ -31,7 +31,7 @@ import VisibilitySensor from "../../../../components/VisibilitySensor";
 
 const ButtonList = [
   {
-    title: "Business Licenses and Premits",
+    title: "Business Licenses and Permits",
     icon: BusinessLicensesColoredIcon,
     tabId: "local-business",
   },
@@ -135,7 +135,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50} intervalDelay={20}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(1);
@@ -169,7 +169,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(2);
@@ -209,7 +209,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor partialVisibility minTopValue={500} scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(3);
@@ -247,7 +247,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor partialVisibility minTopValue={400} scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(4);

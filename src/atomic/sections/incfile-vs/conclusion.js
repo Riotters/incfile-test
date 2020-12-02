@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Container from "../../container";
 import Image from "../../atoms/image/image_nobase64";
-import OvalSVG from "../../../images/ovals/top-right-orange3-to-transparent.inline.svg";
+import OvalSVG from "../../../images/ovals/top-right-orange1-to-transparent.inline.svg";
 import { color } from "../../atoms/styles/colors";
 
 const Wrapper = styled.div`
@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 	background-color: ${color.orange3};
 
 	@media (min-width: 576px) {
-		padding: 100px 0;
+		padding: 16px 0 56px;
 	}
 `;
 
