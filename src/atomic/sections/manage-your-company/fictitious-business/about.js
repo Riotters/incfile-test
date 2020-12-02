@@ -36,23 +36,23 @@ const About = styled.section`
 `;
 
 const AboutSection = ({ className, content }) => (
-  <About className={className}>
-    <Oval className="oval" height="570" width="570" y="-40">
-      <OvalSVG />
-    </Oval>
-    <HeadingCenter className="heading" headline={content.header} headlineWidth="770" />
-    <ContentCenter>
-      <Diagram content={content.diagram} />
-      <Paragraph maxWidth="970" style={{ textAlign: "center" }}>
-        {content.text}
-      </Paragraph>
-      <Heading size="4" bottomMargin="48" style={{ textAlign: "center" }}>
-        {content.header2}
-      </Heading>
-      <LightBoxVideo thumbnailVideo="what-does-dba-mean-7388" videoID="jPE31BJPUeY" bottomMargin="48" />
-      <Button theme="secondary56" content={content.button} arrow />
-    </ContentCenter>
-  </About>
+    <About className={className}>
+        <Oval className="oval" height="570" width="570" y="-40">
+            <OvalSVG />
+        </Oval>
+        <HeadingCenter className="heading" headline={content.header} headlineWidth="770" />
+        <ContentCenter>
+            <Diagram content={content.diagram} />
+            <Paragraph maxWidth="970" style={{ textAlign: "center" }}>
+                {content.text}
+            </Paragraph>
+            <Heading size="4" bottomMargin="48" style={{ textAlign: "center" }}>
+                {content.header2}
+            </Heading>
+            <LightBoxVideo thumbnailVideo="what-does-dba-mean-7388" videoID="jPE31BJPUeY" bottomMargin="48" />
+            <Button theme="secondary56" content={content.button} arrow />
+        </ContentCenter>
+    </About>
 );
 
 export default AboutSection;
