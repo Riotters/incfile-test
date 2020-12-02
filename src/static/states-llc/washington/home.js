@@ -36,7 +36,6 @@ export const howToGuide = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Separating and limiting your personal liability from your business liability and debts`,
         `Quick and simple filing, management, compliance, regulation and administration of your Washington LLC`,
@@ -118,13 +117,12 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `The Secretary of State has plenty of other information on forming and running a business in Washington.`,
+    content: `The Secretary of State has plenty of other information on forming and running a business in Washington. You’ll find other useful information below:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You’ll find other useful information below:`,
       list: [
         `<a href="https://www.sos.wa.gov/corps/limitedliabilitycompaniesllconlineandpaperregistrations.aspx" target="_blank" rel="noopener noreferrer">Washington Secretary of State for forming and running your LLC</a>`,
         `<a href="https://www.lni.wa.gov/" target="_blank" rel="noopener noreferrer">Washington Division of Labor for employers and hiring</a>`,
@@ -155,13 +153,12 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Some states, including Washington, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing.`,
+    content: `Some states, including Washington, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. Here are the occupations that the WA Secretary of State allows to form professional LLCs:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are the occupations that the WA Secretary of State allows to form professional LLCs:`,
       list: [
         `Attorneys-at-law`,
         `Physicians`,
@@ -356,13 +353,12 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `It’s not enough for your LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in the state of Washington. `,
+    content: `It’s not enough for your LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in the state of Washington. For example, you cannot use the following factors to say your name is different from the name of another business:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `For example, you cannot use the following factors to say your name is different from the name of another business:`,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
         `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
@@ -398,7 +394,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Are very similar to the name of a federal or DC agency or organization (e.g., FBI, FDA, Washington DC Office of Tax and Revenue, Washington DC Police, Treasury, etc.)`,
         `Suggest affiliation with a federal or state agency or organization`,
@@ -467,13 +462,12 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `Once you’ve searched for your Washington business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your WA LLC name.`,
+    content: `Once you’ve searched for your Washington business name, checked availability, followed the naming rules and decided whether you need a fictitious name, you can register your WA LLC name. There are a couple of ways to do this:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `There are a couple of ways to do this:`,
       list: [
         `If you don’t want to form your LLC right now, you can reserve the business name with the Washington Secretary of State. You will need to complete a Name Reservation form and file it with the WA SOS. You do not need to reserve a name if you are forming your business right away.</br>
             <a href="https://www.sos.wa.gov/_assets/corps/namereservation2010.pdf" target="_blank" rel="noopener noreferrer">Washington SOS LLC name reservation form</a>`,
@@ -565,7 +559,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Appeal to your customers`,
         `Be memorable enough to stand out`,
@@ -628,13 +621,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a Washington Registered Agent service for your business.`,
+    content: `There are certain rules that you must follow when you’re appointing a Washington Registered Agent service for your business. They are:`,
     marginBottom: 48,
   },
   {
     type: `list-dot`,
     content: {
-      header: `They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in Washington.`,
         `If the Registered Agent is a business, they must be able to conduct business in Washington.`,
@@ -663,13 +655,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `We are authorized to conduct business in Washington and can legally act as your Registered Agent.`,
+    content: `We are authorized to conduct business in Washington and can legally act as your Registered Agent. Here’s what you need to know about Incfile’s WA Registered Agent service:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here’s what you need to know about Incfile’s WA Registered Agent service:`,
       list: [
         `The Registered Agent will always be available to accept documents and letters on your behalf.`,
         `We automatically notify you whenever we receive correspondence for your business from the Washington Secretary of State or anyone else.`,
@@ -808,13 +799,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Washington Secretary of State?`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Washington Secretary of State? There are several possible ramifications, including:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `There are several possible ramifications, including:`,
       list: [
         `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing with the Washington Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain areas may revoke your right to do business.`,
@@ -838,7 +828,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `The Registered Agent must have a physical street address in Washington. If you’re forming an LLC outside WA, you will need to use an in-state Registered Agent.`,
         `You always need to have someone on hand during business hours at the Washington address to sign for important documents.`,
@@ -894,7 +883,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Washington Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Washington Registered Agent</a>`,
@@ -1053,13 +1041,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your Washington LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Washington, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
+    content: `Your Washington LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Washington, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. Permits and licenses vary based on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your Washington DC LLC operates in (e.g., restaurants will need health permits)`,
         `The location of your LLC (state, county or city) (e.g., a license to conduct business from the city of Spokane)`,
@@ -1077,7 +1064,6 @@ export const feesAndRequirments = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `A complete report on all the licenses, permits and tax registrations your Washington DC LLC willl need`,
         `The application forms you will need to file with the Washington DC, regional and federal licensing authorities`,
@@ -1186,13 +1172,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your Washington business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Washington Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    content: `Your business formation documents state certain facts about your Washington business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Washington Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file Washington DC Articles of Amendment for include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Areas you might want to file Washington DC Articles of Amendment for include:`,
       list: [
         `Adding, removing or changing an Washington LLC member or manager`,
         `Changing the business address of your LLC`,
@@ -1501,9 +1486,12 @@ export const businessTaxes = [
               content: `Most Washington LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
             },
             {
+              type: `paragraph`,
+              content: `The most common types of estimated taxes are:`,
+            },
+            {
               type: `list-dot-without-bg`,
               color: color.orange3,
-              header: `The most common types of estimated taxes are:`,
               content: [`Federal income tax`, `Federal self-employment tax`],
             },
             {

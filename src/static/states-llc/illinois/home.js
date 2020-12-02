@@ -28,10 +28,14 @@ export const HomePageContent = {
         "The Prairie State is a great place to start a business. With Chicago in the northeast, small industrial cities and immense agricultural productivity in the north and center of the state and natural resources such as coal, timber and petroleum in the south, Illinois has a diverse economic base and is a major transportation hub.",
       text2:
         "For most business owners, the fastest and easiest way to start a business in Illinois is by creating an Illinois LLC. A limited liability company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Illinois corporations but with much simpler rules and regulations.",
-      heading4: `Briefly, the benefits of starting a Illinois LLC include:`,
-      lists: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulations and administration of your Illinois LLC`, `Easy tax filing and potential advantages for tax treatment`],
+      text3: "Briefly, the benefits of starting a Illinois LLC include:",
+      lists: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulations and administration of your Illinois LLC`,
+        `Easy tax filing and potential advantages for tax treatment`,
+      ],
       learnmore: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure.</a>`,
-      text3: `In this guide you’ll find information on starting your Illinois business, searching for and naming your LLC, registering your business, getting a Illinois Registered Agent, the fees you’ll need to pay, business taxes and much more.`,
+      text4: `In this guide you’ll find information on starting your Illinois business, searching for and naming your LLC, registering your business, getting a Illinois Registered Agent, the fees you’ll need to pay, business taxes and much more.`,
     },
     mainSteps: {
       heading3: `Forming Your Illinois LLC Yourself: 6 Main Steps`,

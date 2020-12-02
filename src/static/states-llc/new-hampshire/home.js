@@ -29,9 +29,13 @@ export const howToGuide = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `Briefly, the benefits of starting a New Hampshire LLC include:`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `Briefly, the benefits of starting a New Hampshire LLC include:`,
       list: [
         `Separating and limiting your personal liability from your business liability and debts`,
         `Quick and simple filing, management, compliance, regulation and administration of your New Hampshire LLC`,
@@ -115,13 +119,12 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `The NH Secretary of State has plenty of information on forming and running a business in New Hampshire.`,
+    content: `The NH Secretary of State has plenty of information on forming and running a business in New Hampshire. These are all the basic steps for forming an LLC in New Hampshire. You’ll find other useful information below.`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `These are all the basic steps for forming an LLC in New Hampshire. You’ll find other useful information below.`,
       list: [
         `<a href="https://sos.nh.gov/nhllcforms.aspx" target="_blank" rel="noopener noreferrer">New Hampshire Secretary of State for forming and running your LLC</a>`,
         `<a href="https://www.nh.gov/labor/" target="_blank" rel="noopener noreferrer">New Hampshire Department of Labor for employers and hiring</a>`,
@@ -332,7 +335,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
         `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
@@ -368,7 +370,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Are very similar to the name of a federal or NH agency or organization (e.g., FBI, FDA, New Hampshire Department of Revenue Administration, New Hampshire Police, Treasury, etc.)`,
         `Suggest affiliation with a federal or state agency or organization`,
@@ -420,7 +421,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `If you don’t want to form your LLC right now, you can reserve the business name with the New Hampshire Secretary of State. You will need to complete an Application for Reservation of Name and file it with the NH SOS. You do not need to reserve a name if you are forming your business right away.
               <a href="https://sos.nh.gov/nhllcforms.aspx" target="_blank" rel="noopener noreferrer">New Hampshire SOS LLC name reservation form</a>`,
@@ -510,7 +510,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Appeal to your customers`,
         `Be memorable enough to stand out`,
@@ -557,13 +556,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a New Hampshire Registered Agent service for your business.`,
+    content: `There are certain rules that you must follow when you’re appointing a New Hampshire Registered Agent service for your business. They are:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in New Hampshire.`,
         `If the Registered Agent is a business, they must be able to conduct business in New Hampshire.`,
@@ -587,13 +585,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What can you expect from your New Hampshire Registered Agent? Their main function is to accept official documents and correspondence.`,
+    content: `What can you expect from your New Hampshire Registered Agent? Their main function is to accept official documents and correspondence. This includes:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `This includes:`,
       list: [
         `Correspondence from the New Hampshire Secretary of State`,
         `Service of process notices (e.g., if your LLC is sued or required to appear in court)`,
@@ -619,13 +616,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `We are authorized to conduct business in New Hampshire and can legally act as your Registered Agent.`,
+    content: `We are authorized to conduct business in New Hampshire and can legally act as your Registered Agent. Here’s what the Incfile New Hampshire Registered Agent service provides for your LLC:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here’s what the Incfile New Hampshire Registered Agent service provides for your LLC:`,
       list: [
         `An always-available New Hampshire Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
         `A digital dashboard where you can access, store and retrieve any information we’ve received for your New Hampshire business`,
@@ -764,13 +760,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the New Hampshire Secretary of State?`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the New Hampshire Secretary of State? There are several possible ramifications, including:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `There are several possible ramifications, including:`,
       list: [
         `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing with the New Hampshire Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -788,13 +783,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `If you have an address in New Hampshire, you can choose to be the Registered Agent for your LLC.`,
+    content: `If you have an address in New Hampshire, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `We don’t recommend this approach as there can be some drawbacks:`,
       list: [
         `The Registered Agent must have a physical street address in New Hampshire. If you’re forming an LLC outside NH, you will need to use an in-state Registered Agent.`,
         `You always need to have someone on hand during business hours at the New Hampshire address to sign for important documents.`,
@@ -842,9 +836,13 @@ export const registeredAgent = [
     marginBottom: 32,
   },
   {
+    type: `text`,
+    content: `You might find these resources helpful:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You might find these resources helpful:`,
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a New Hampshire Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your New Hampshire Registered Agent</a>`,
@@ -1003,13 +1001,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Some New Hampshire LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis.`,
+    content: `Some New Hampshire LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis. Permits and licenses vary based on:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your New Hampshire LLC operates in (e.g., restaurants will need health permits)`,
         `The location of your New Hampshire LLC (state, county or city) (e.g., a license to conduct business from the city of Pittsburgh)`,
@@ -1040,7 +1037,6 @@ export const feesAndRequirments = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `A complete report on all the licenses, permits and tax registrations your New Hampshire LLC will need`,
         `The application forms you will need to file with the New Hampshire, regional and federal licensing authorities`,
@@ -1149,13 +1145,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your New Hampshire business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    content: `Your business formation documents state certain facts about your New Hampshire business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file New Hampshire Articles of Amendment for include:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Areas you might want to file New Hampshire Articles of Amendment for include:`,
       list: [
         `Adding, removing or changing a New Hampshire LLC member or manager`,
         `Changing the business address of your LLC`,
@@ -1338,13 +1333,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
+    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
       list: [
         `On profits of $50,000, you would pay self-employment tax of $7,650.`,
         `On profits of $80,000, you would pay self-employment tax of $12,240.`,
@@ -1461,9 +1455,12 @@ export const businessTaxes = [
               content: `Most New Hampshire LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
             },
             {
+              type: `paragraph`,
+              content: `The most common types of estimated taxes are:`,
+            },
+            {
               type: `list-dot-without-bg`,
               color: color.orange3,
-              header: `The most common types of estimated taxes are:`,
               content: [
                 `Federal income tax`,
                 `Federal self-employment tax`,

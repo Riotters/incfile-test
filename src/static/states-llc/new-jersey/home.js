@@ -40,9 +40,13 @@ export const howToGuide = [
     marginBottom: 40,
   },
   {
+    type: `text`,
+    content: `Briefly, the benefits of starting a New Jersey LLC include:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `Briefly, the benefits of starting a New Jersey LLC include:`,
       list: [
         `Separating and limiting your personal liability from your business liability and debts`,
         `Quick and simple filing, management, compliance, regulations and administration of your New Jersey LLC`,
@@ -120,13 +124,12 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `The NJ Division of Revenue and Enterprise Services has plenty of additional information on forming and running a business in New Jersey.`,
+    content: `The NJ Division of Revenue and Enterprise Services has plenty of additional information on forming and running a business in New Jersey. These are all the basic steps for forming an LLC in New Jersey. You’ll find other useful information below:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `These are all the basic steps for forming an LLC in New Jersey. You’ll find other useful information below:`,
       list: [
         `<a href="https://www.state.nj.us/treasury/revenue/" target="_blank" rel="noopener noreferrer">New Jersey Division of Revenue and Enterprise Services for forming and running your NJ LLC</a>`,
         `<a href="https://www.nj.gov/labor/" target="_blank" rel="noopener noreferrer">New Jersey Department of Labor for NJ employers and hiring</a>`,
@@ -306,13 +309,12 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `It’s not enough for your NJ LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in New Jersey.`,
+    content: `It’s not enough for your NJ LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in New Jersey. For example, you cannot use the following factors to say your name is different from the name of another business:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `For example, you cannot use the following factors to say your name is different from the name of another business:`,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
         `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
@@ -348,7 +350,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Are very similar to the name of a federal or NJ agency or organization (e.g., FBI, FDA, New Jersey Division of Taxation, New Jersey Police, Treasury, etc.)`,
         `Suggest affiliation with a federal or state agency or organization`,
@@ -510,7 +511,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Appeal to your customers`,
         `Be memorable enough to stand out`,
@@ -556,13 +556,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a New Jersey Registered Agent service for your business.`,
+    content: `There are certain rules that you must follow when you’re appointing a New Jersey Registered Agent service for your business. They are:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in New Jersey`,
         `If the Registered Agent is a business, they must be able to conduct business in New Jersey`,
@@ -586,13 +585,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What can you expect from your New Jersey Registered Agent? Their main function is to accept official documents and correspondence from the NJ Division of Revenue and Enterprise Services.`,
+    content: `What can you expect from your New Jersey Registered Agent? Their main function is to accept official documents and correspondence from the NJ Division of Revenue and Enterprise Services. This may include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `This may include:`,
       list: [
         `Correspondence from the New Jersey Division of Revenue and Enterprise Services`,
         `Service of process notices (e.g., if your NJ LLC is sued or required to appear in court)`,
@@ -616,13 +614,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `We are authorized to conduct business in New Jersey and can legally act as your Registered Agent.`,
+    content: `We are authorized to conduct business in New Jersey and can legally act as your Registered Agent. Here’s what you need to know about Incfile’s NJ Registered Agent service:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here’s what you need to know about Incfile’s NJ Registered Agent service:`,
       list: [
         `The Registered Agent will always be available to accept documents and letters on your behalf`,
         `We automatically notify you whenever we receive correspondence for your business from the New Jersey Division of Revenue and Enterprise Services or anyone else`,
@@ -761,13 +758,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the New Jersey DORES?`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the New Jersey DORES? There are several possible ramifications, including:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `There are several possible ramifications, including:`,
       list: [
         `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing With the New Jersey Division of Revenue and Enterprise Services:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -785,13 +781,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `If you have an address in New Jersey, you can choose to be the Registered Agent for your LLC.`,
+    content: `If you have an address in New Jersey, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `We don’t recommend this approach as there can be some drawbacks:`,
       list: [
         `The NJ Registered Agent must have a physical street address in New Jersey. If you’re forming an LLC outside NJ, you will need to use an in-state Registered Agent.`,
         `You always need to have someone on hand during business hours at the New Jersey address to sign for important documents.`,
@@ -839,9 +834,13 @@ export const registeredAgent = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `You might find these resources helpful:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You might find these resources helpful:`,
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/" target="_blank">The Main Functions of a New Jersey Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your New Jersey Registered Agent</a>`,
@@ -997,13 +996,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your New Jersey LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by New Jersey, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
+    content: `Your New Jersey LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by New Jersey, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. Permits and licenses vary based on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your New Jersey LLC operates in (e.g., restaurants will need health permits)`,
         `The location of your New Jersey LLC (state, county or city) (e.g., a license to conduct business from the city of Newark.)`,
@@ -1014,9 +1012,13 @@ export const feesAndRequirments = [
     color: color.purple3,
   },
   {
+    type: `text`,
+    content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
       list: [
         `A complete report on all the licenses, permits and tax registrations your New Jersey LLC will need`,
         `The application forms you will need to file with the New Jersey, regional and federal licensing authorities`,
@@ -1125,13 +1127,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your New Jersey business when it was originally formed. Over time, these facts might change — if they do, you need to file a “Certificate of Amendment” with the New Jersey Division of Revenue and Enterprise Services. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    content: `Your business formation documents state certain facts about your New Jersey business when it was originally formed. Over time, these facts might change — if they do, you need to file a “Certificate of Amendment” with the New Jersey Division of Revenue and Enterprise Services. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file New Jersey Certificate of Amendment for include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Areas you might want to file New Jersey Certificate of Amendment for include:`,
       list: [
         `Adding, removing or changing a New Jersey LLC member or manager`,
         `Changing the business address of your LLC`,
@@ -1316,13 +1317,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the NJ Division of Taxation. New Jersey sales tax is collected at the point of purchase. New Jersey sales tax rates do vary depending on the region, county or city where you are located.`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the NJ Division of Taxation. New Jersey sales tax is collected at the point of purchase. New Jersey sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect New Jersey sales tax on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will typically need to collect New Jersey sales tax on:`,
       list: [
         `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
         `Certain services that your New Jersey business might provide`,
@@ -1354,13 +1354,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that.`,
+    content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that. Here are the sales tax rates for the major cities in New Jersey:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are the sales tax rates for the major cities in New Jersey:`,
       list: [
         `Newark:  6.875 percent`,
         `Jersey City:  6.875 percent`,
@@ -1395,13 +1394,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
+    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
       list: [
         `On profits of $50,000, you would pay self-employment tax of $7,650`,
         `On profits of $80,000, you would pay self-employment tax of $12,240`,
@@ -1516,9 +1514,12 @@ export const businessTaxes = [
               content: `Most New Jersey LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
             },
             {
+              type: `paragraph`,
+              content: `The most common types of estimated taxes are:`,
+            },
+            {
               type: `list-dot-without-bg`,
               color: color.orange3,
-              header: `The most common types of estimated taxes are:`,
               content: [
                 `Federal income tax`,
                 `Federal self-employment tax`,

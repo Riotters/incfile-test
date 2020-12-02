@@ -34,9 +34,13 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
+    type: `text`,
+    content: `Briefly, the benefits of starting a Mississippi LLC include:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `Briefly, the benefits of starting a Mississippi LLC include:`,
       list: [
         `Separating and limiting your personal liability from your business liability and debts`,
         `Quick and simple filing, management, compliance, regulations and administration of your Mississippi LLC`,
@@ -117,13 +121,12 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `The Mississippi Secretary of State has plenty of information on forming and running a business in Mississippi. Check out additional resources below.`,
+    content: `The Mississippi Secretary of State has plenty of information on forming and running a business in Mississippi. Check out additional resources below. These are all the basic steps for forming an LLC in Mississippi. You’ll find other useful information below.`,
     marginBottom: 32,
   },
   {
     type: `list-dot`,
     content: {
-      header: `These are all the basic steps for forming an LLC in Mississippi. You’ll find other useful information below.`,
       list: [
         `<a href="https://www.sos.ms.gov/BusinessServices/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Mississippi Secretary of State for forming and running your MS LLC</a>`,
         `<a href="https://mdes.ms.gov/employers/" target="_blank" rel="noopener noreferrer">Mississippi Department of Labor for Mississippi employers and hiring</a>`,
@@ -261,13 +264,12 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `If the business name is already used by an LLC or Corporation in Mississippi, that means it’s not available and you won’t be able to register it. Try searching for a different business name instead.`,
+    content: `If the business name is already used by an LLC or Corporation in Mississippi, that means it’s not available and you won’t be able to register it. Try searching for a different business name instead. The Mississippi Secretary of State search tool lets you enter details and search for your MS LLC by the following fields:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `The Mississippi Secretary of State search tool lets you enter details and search for your MS LLC by the following fields:`,
       list: [
         `Business Name`,
         `Business ID`,
@@ -325,7 +327,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
         `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
@@ -361,7 +362,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Are very similar to the name of a federal or MS agency or organization (e.g. FBI, FDA, Mississippi Department of Revenue, Mississippi Police, Treasury, etc)`,
         `Suggest affiliation with a federal or state agency or organization`,
@@ -413,7 +413,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `If you don’t want to form your Mississippi LLC right now, you can reserve the business name`,
         `If you’re ready to start your Mississippi LLC, you can register it through Incfile`,
@@ -535,7 +534,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Appeal to your customers`,
         `Be memorable enough to stand out`,
@@ -598,13 +596,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a Mississippi Registered Agent service for your business.`,
+    content: `There are certain rules that you must follow when you’re appointing a Mississippi Registered Agent service for your business. They are:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in Mississippi.`,
         `If the Registered Agent is a business, they must be able to conduct business in Mississippi.`,
@@ -628,13 +625,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Your Mississippi Registered Agent carries out several valuable services for your business. They accept official communications and documents from the MS Secretary of State on your behalf.`,
+    content: `Your Mississippi Registered Agent carries out several valuable services for your business. They accept official communications and documents from the MS Secretary of State on your behalf. This includes:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `This includes:`,
       list: [
         `Correspondence from the Mississippi Secretary of State, like a notice to file reports and other forms`,
         `Service of process documents (for example, if your Mississippi LLC has legal proceedings issued against it)`,
@@ -664,13 +660,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `We are authorized to conduct business in Mississippi and can legally act as your Registered Agent. We also have an address in Mississippi, which is required to operate as a Registered Agent.`,
+    content: `We are authorized to conduct business in Mississippi and can legally act as your Registered Agent. We also have an address in Mississippi, which is required to operate as a Registered Agent. Here’s what you need to know about Incfile’s MS Registered Agent service:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here’s what you need to know about Incfile’s MS Registered Agent service:`,
       list: [
         `The Registered Agent will always be available to accept documents and letters on your behalf`,
         `We automatically notify you whenever we receive correspondence for your business from the Mississippi Secretary of State or anyone else`,
@@ -814,13 +809,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Mississippi Secretary of State?`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Mississippi Secretary of State? There are several possible ramifications, including:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `There are several possible ramifications, including:`,
       list: [
         `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing with the Mississippi Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -838,13 +832,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `If you have an address in Mississippi, you can choose to be the Registered Agent for your LLC.`,
+    content: `If you have an address in Mississippi, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `We don’t recommend this approach as there can be some drawbacks:`,
       list: [
         `The Registered Agent must have a physical street address in Mississippi. If you’re forming an LLC outside Mississippi, you will need to use an in-state Registered Agent.`,
         `You always need to have someone on hand during business hours at the Mississippi address to sign for important documents.`,
@@ -898,9 +891,13 @@ export const registeredAgent = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `You might find these resources helpful:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You might find these resources helpful:`,
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Mississippi Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Mississippi Registered Agent</a>`,
@@ -1053,13 +1050,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your Mississippi LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Mississippi, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
+    content: `Your Mississippi LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Mississippi, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. Permits and licenses vary based on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your Mississippi LLC operates in (e.g., restaurants will need health permits)`,
         `The location of your Mississippi LLC (state, county or city) (e.g., a license to conduct business from the city of Jackson)`,
@@ -1084,14 +1080,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Our <a href="/business-license-research-package/">Business License Research Package</a>
-     tells you about all of the licenses and permits you will need for your Mississippi LLC.`,
+    content: `Our <a href="/business-license-research-package/">Business License Research Package</a> tells you about all of the licenses and permits you will need for your Mississippi LLC. It includes:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `It includes:`,
       list: [
         `A complete report on all the licenses, permits and tax registrations your Mississippi LLC will need`,
         `The application forms you will need to file with the Mississippi, regional and federal licensing authorities`,
@@ -1201,13 +1195,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your Mississippi business when it was originally formed. Over time, these facts might change — if they do, you need to file a “Certificate of Amendment” with the Mississippi Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    content: `Your business formation documents state certain facts about your Mississippi business when it was originally formed. Over time, these facts might change — if they do, you need to file a “Certificate of Amendment” with the Mississippi Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file Mississippi Articles of Amendment for include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Areas you might want to file Mississippi Articles of Amendment for include:`,
       list: [
         `Adding, removing or changing a Mississippi LLC member or manager`,
         `Changing the business address of your LLC`,
@@ -1373,13 +1366,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Any salaried employees will also need to pay personal Mississippi state taxes.`,
+    content: `Any salaried employees will also need to pay personal Mississippi state taxes. The graduated Mississippi state income tax rate is:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `The graduated Mississippi state income tax rate is:`,
       list: [
         `3 percent on the first $5,000 of taxable income`,
         `4 percent on the next $5,000 of taxable income`,
@@ -1409,13 +1401,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the MS Department of Revenue. Mississippi sales tax is collected at the point of purchase. Mississippi sales tax rates do vary depending on the region, county or city where you are located.`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the MS Department of Revenue. Mississippi sales tax is collected at the point of purchase. Mississippi sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Mississippi sales tax on:`,
     marginBottom: 32,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will typically need to collect Mississippi sales tax on:`,
       list: [
         `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
         `Certain services that your Mississippi business might provide.`,
@@ -1493,7 +1484,6 @@ export const businessTaxes = [
   {
     type: `list-dot`,
     content: {
-      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
       list: [
         `On profits of $10,000, you would pay self-employment tax of $1,530.`,
         `On profits of $40,000, you would pay self-employment tax of $6,120.`,
@@ -1603,12 +1593,15 @@ export const businessTaxes = [
           answer2: [
             {
               type: `paragraph`,
-              content: `Most Mississippi LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. `,
+              content: `Most Mississippi LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
+            },
+            {
+              type: `paragraph`,
+              content: `The most common types of estimated taxes are:`,
             },
             {
               type: `list-dot-without-bg`,
               color: color.orange3,
-              header: `The most common types of estimated taxes are:`,
               content: [
                 `Federal income tax`,
                 `Federal self-employment tax`,

@@ -27,7 +27,7 @@ export const HomePageContent = {
       text1:
         "Florida is a great place to start a business. A rich culture, beautiful cities like Miami and Orlando and access to many of the world’s best transport networks make the state home to some of the biggest businesses in the U.S. Companies like Publix, Tupperware, Burger King and more are proud to call Florida home. Disney, one of the world’s largest entertainment companies, is famous for its Disney World theme park in Orlando.",
       text2: `For most business owners, the fastest and easiest way to start a business in Florida is by creating a Florida LLC. A limited liability company (LLC) is a type of <a href="/florida-entity-search/">business entity</a> that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Florida corporations, but with much simpler rules and regulations.`,
-      heading4: `To summarize, the benefits of starting a Florida LLC include:`,
+      text3: `To summarize, the benefits of starting a Florida LLC include:`,
       lists: [
         `Separating and limiting your personal liability from your business liability and debts`,
         `Quick and simple filing, management, compliance, regulations and administration of your Florida LLC`,
@@ -35,7 +35,7 @@ export const HomePageContent = {
         `There are no state taxes in Florida, so you get to keep more of your LLC earnings`,
       ],
       learnmore: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure.</a>`,
-      text3: `In this guide you’ll find information on starting your Florida business, searching for and naming your LLC, registering your business, getting a Florida Registered Agent, the fees you’ll need to pay, business taxes and much more.`,
+      text4: `In this guide you’ll find information on starting your Florida business, searching for and naming your LLC, registering your business, getting a Florida Registered Agent, the fees you’ll need to pay, business taxes and much more.`,
     },
     mainSteps: {
       heading3: `Forming Your Florida LLC Yourself: 6 Main Steps`,
@@ -100,10 +100,15 @@ export const HomePageContent = {
       },
       step4: {
         heading1: `File Your Certificate of Formation (Form 205) With the Florida Secretary of State`,
-        text1: `Once you've gathered all the information for your Florida LLC, you’ll need to file a formal document with the FL Department of State. This document is known as your Articles of Organization, and filing the document creates your Florida LLC.`,
+        text1: `Once you've gathered all the information for your Florida LLC, you’ll need to file a formal document with the FL Department of State. This document is known as your Articles of Organization, and filing the document creates your Florida LLC. Here’s what is typically included:`,
         lists: {
-          header: `Here’s what is typically included:`,
-          list: [`A cover letter with your name, address and daytime phone number`, `Your business name and address`, `Details of your Registered Agent`, `Names of managers or members of the LLC at the time of filing`, `Addresses of managers or members of the LLC at the time of filing`],
+          list: [
+            `A cover letter with your name, address and daytime phone number`,
+            `Your business name and address`,
+            `Details of your Registered Agent`,
+            `Names of managers or members of the LLC at the time of filing`,
+            `Addresses of managers or members of the LLC at the time of filing`,
+          ],
         },
         dowload_205_button: {
           text: `Download Form 205`,
@@ -132,7 +137,6 @@ export const HomePageContent = {
         },
         heading2: `Can I Expedite the Formation of My Business in Florida?`,
         text4: `The State of Florida does not offer expedited filing for LLCs and will process online filings in the order in which they are received. Incfile can internally expedite your order to ensure the fastest delivery to the state for filing.`,
-        
       },
       step5: {
         heading1: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
@@ -178,12 +182,11 @@ export const HomePageContent = {
       },
       {
         type: `paragraph`,
-        content: `Some states, including Florida, allow certain occupations to form “Professional LLCs.” These types of business typically have specialized requirements and licensing.`,
+        content: `Some states, including Florida, allow certain occupations to form “Professional LLCs.” These types of business typically have specialized requirements and licensing. Here are the occupations that the FL Secretary of State allows to form Florida professional LLCs:`,
       },
       {
         type: `list-dot`,
         content: {
-          header: `Here are the occupations that the FL Secretary of State allows to form Florida professional LLCs:`,
           list: [
             `Certified public accountants`,
             `Public accountants`,

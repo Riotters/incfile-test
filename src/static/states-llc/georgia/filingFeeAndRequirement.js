@@ -176,14 +176,13 @@ export const filingFeeAndRequirementContent = {
     },
     {
       type: `paragraph`,
-      content: `Your Georgia LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Georgia , regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
+      content: `Your Georgia LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Georgia , regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. Permits and licenses vary based on:`,
     },
     {
       type: `iconListColorBox`,
       styles: { marginBottom: `55px` },
       boxColor: color.blue3,
       content: {
-        header: `Permits and licenses vary based on:`,
         list: [
           `The industry your Georgia LLC operates in (e.g., restaurants will need health permits)`,
           `The location of your Georgia LLC (state, county or city) (e.g., a license to conduct business from the city of Savannah)`,
@@ -201,7 +200,10 @@ export const filingFeeAndRequirementContent = {
     },
     {
       type: `textBoxWithCheckIcon`,
-      content: [`A complete report on all the licenses, permits and tax registrations your Georgia LLC will need`, `The application forms you will need to file with the Georgia, regional and federal licensing authorities`],
+      content: [
+        `A complete report on all the licenses, permits and tax registrations your Georgia LLC will need`,
+        `The application forms you will need to file with the Georgia, regional and federal licensing authorities`,
+      ],
     },
     {
       type: `button`,
@@ -342,12 +344,21 @@ export const filingFeeAndRequirementContent = {
             Atlanta, GA 30334`,
     },
     {
+      type: `paragraph`,
+      content: `Situations in which you might want to file Georgia Articles of Amendment:`,
+    },
+    {
       type: `iconListColorBox`,
       styles: { marginBottom: `55px` },
       boxColor: color.blue3,
       content: {
-        header: `Situations in which you might want to file Georgia Articles of Amendment:`,
-        list: [`Adding, removing or changing a Georgia LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Georgia LLC`, `Changing the management structure of your LLC`, `Changing the name of your LLC`],
+        list: [
+          `Adding, removing or changing a Georgia LLC member or manager`,
+          `Changing the business address of your LLC`,
+          `Altering the stated business activities of your Georgia LLC`,
+          `Changing the management structure of your LLC`,
+          `Changing the name of your LLC`,
+        ],
       },
     },
     {
@@ -420,7 +431,12 @@ export const filingFeeAndRequirementContent = {
               {
                 type: `list-dot-without-bg`,
                 color: color.blue3,
-                content: [`The type of business you run`, `Where you are located`, `Governing organizations in your industry`, `Federal, state and local regulations`],
+                content: [
+                  `The type of business you run`,
+                  `Where you are located`,
+                  `Governing organizations in your industry`,
+                  `Federal, state and local regulations`,
+                ],
               },
               {
                 type: `paragraph`,

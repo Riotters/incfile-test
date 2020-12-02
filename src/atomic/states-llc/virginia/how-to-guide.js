@@ -108,13 +108,23 @@ const HowToGuide = ({ content }) => {
       </Heading>
 
       <div id="video">
-        <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="gXFjp7S_Fsw" bottomMargin="32" />
+        <LightBoxVideo
+          thumbnailVideo="comparison-chart-video-3611"
+          videoID="gXFjp7S_Fsw"
+          bottomMargin="32"
+        />
       </div>
 
       {content.mainSteps.navSteps.map((step) => (
         <Link to="/#" onClick={(e) => handleMenuStepClick(step.blockID, e)}>
           <WhiteBoxLink bottomMargin="8px" padding="24px" flex>
-            <Circle circleColor={color.orange3} iconColor={color.orange1} rightMargin="24" transform="rotate(90deg)" className="circle">
+            <Circle
+              circleColor={color.orange3}
+              iconColor={color.orange1}
+              rightMargin="24"
+              transform="rotate(90deg)"
+              className="circle"
+            >
               <ArrowSVG />
             </Circle>
             <Paragraph mixed={true} bottomMargin="0">
@@ -148,7 +158,11 @@ const HowToGuide = ({ content }) => {
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step1.text2)}
         </Paragraph>
-        <BoxCTA bgColor={color.purple3} bgImage={BgBoxBusinessNameSearchTool} content={content.mainSteps.step1.cta} />
+        <BoxCTA
+          bgColor={color.purple3}
+          bgImage={BgBoxBusinessNameSearchTool}
+          content={content.mainSteps.step1.cta}
+        />
       </TextBlockWithNumberCounting>
 
       <TextBlockWithNumberCounting
@@ -230,8 +244,18 @@ const HowToGuide = ({ content }) => {
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step4.text1)}
         </Paragraph>
-        <IconListColorBox color={color.blue3} content={content.mainSteps.step4.lists} rounded />
-        <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow margin="16px 0 0 0" marginMD="42px 0 42px 0" />
+        <IconListColorBox
+          color={color.blue3}
+          content={content.mainSteps.step4.lists}
+          rounded
+        />
+        <Button
+          content={content.mainSteps.step4.dowload_205_button}
+          theme="secondary56"
+          arrow
+          margin="16px 0 0 0"
+          marginMD="42px 0 42px 0"
+        />
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step4.text2)}
         </Paragraph>
@@ -242,7 +266,11 @@ const HowToGuide = ({ content }) => {
           </AbsoluteShapeCurveElement>
           {content.mainSteps.step4.certificate_info.map((item) => (
             <Whitebox flex padding="24px" bottomMargin="8px">
-              <Paragraph mixed={true} bottomMargin={0} style={{ fontWeight: `bold`, minWidth: `300px` }}>
+              <Paragraph
+                mixed={true}
+                bottomMargin={0}
+                style={{ fontWeight: `bold`, minWidth: `300px` }}
+              >
                 {item.text1}
               </Paragraph>
               <Paragraph mixed={true} bottomMargin={0}>
@@ -254,14 +282,22 @@ const HowToGuide = ({ content }) => {
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step4.text3)}
         </Paragraph>
-        <BoxCTA bgColor={color.orange3} bgImage={BgBoxHandlePaperWorks} content={content.mainSteps.step4.cta} />
+        <BoxCTA
+          bgColor={color.orange3}
+          bgImage={BgBoxHandlePaperWorks}
+          content={content.mainSteps.step4.cta}
+        />
 
         <Heading size={4} style={{ marginTop: `40px` }}>
           {parse(content.mainSteps.step4.annualReport[0].title)}
         </Heading>
         {content.mainSteps.step4.annualReport[0].items.map((item) => (
           <Whitebox flex padding="24px" bottomMargin="8px">
-            <Paragraph mixed={true} bottomMargin={0} style={{ fontWeight: `bold`, minWidth: `300px` }}>
+            <Paragraph
+              mixed={true}
+              bottomMargin={0}
+              style={{ fontWeight: `bold`, minWidth: `300px` }}
+            >
               {item.text1}
             </Paragraph>
             <Paragraph mixed={true} bottomMargin={0}>
@@ -275,7 +311,11 @@ const HowToGuide = ({ content }) => {
         </Heading>
         {content.mainSteps.step4.annualReport[1].items.map((item) => (
           <Whitebox flex padding="24px" bottomMargin="8px">
-            <Paragraph mixed={true} bottomMargin={0} style={{ fontWeight: `bold`, minWidth: `300px` }}>
+            <Paragraph
+              mixed={true}
+              bottomMargin={0}
+              style={{ fontWeight: `bold`, minWidth: `300px` }}
+            >
               {item.text1}
             </Paragraph>
             <Paragraph mixed={true} bottomMargin={0}>
@@ -332,8 +372,19 @@ const HowToGuide = ({ content }) => {
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step6.text2)}
         </Paragraph>
-        <Button content={content.mainSteps.step6.button1} theme="secondary56" arrow width="450px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />
-        <BoxCTA bgColor={color.orange3} bgImage={BgBoxPersonalOA} content={content.mainSteps.step6.cta} />
+        <Button
+          content={content.mainSteps.step6.button1}
+          theme="secondary56"
+          arrow
+          width="450px"
+          margin="16px 0 0 0"
+          marginMD="42px 0 42px 0"
+        />
+        <BoxCTA
+          bgColor={color.orange3}
+          bgImage={BgBoxPersonalOA}
+          content={content.mainSteps.step6.cta}
+        />
       </TextBlockWithNumberCounting>
 
       {content.otherInfo.map((item, i) => (
@@ -357,9 +408,24 @@ const HowToGuide = ({ content }) => {
               </ArrowLink>
             ))}
 
-          {item.type === "list-dot" && <IconListColorBox color={color.blue3} content={item.content} rounded />}
+          {item.type === "list-dot" && (
+            <IconListColorBox
+              color={color.blue3}
+              content={item.content}
+              rounded
+            />
+          )}
 
-          {item.type === "button" && <Button content={item.content} theme={item.theme} arrow width="350px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />}
+          {item.type === "button" && (
+            <Button
+              content={item.content}
+              theme={item.theme}
+              arrow
+              width="350px"
+              margin="16px 0 0 0"
+              marginMD="42px 0 42px 0"
+            />
+          )}
         </div>
       ))}
     </Wrapper>

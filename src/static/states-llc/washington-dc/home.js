@@ -29,9 +29,13 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
+    type: `text`,
+    content: `Briefly, the benefits of starting a Washington DC LLC include:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `Briefly, the benefits of starting a Washington DC LLC include:`,
       list: [
         `Separating and limiting your personal liability from your business liability and debts`,
         `Quick and simple filing, management, compliance, regulation and administration of your Washington DC LLC`,
@@ -114,13 +118,12 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `In most states, LLC formation and registration is handled by the Secretary of State. In the Commonwealth of Washington DC, businesses are administered by the DC State Corporation Commission. They have plenty of information on forming and registering a business in Washington DC.`,
+    content: `In most states, LLC formation and registration is handled by the Secretary of State. In the Commonwealth of Washington DC, businesses are administered by the DC State Corporation Commission. They have plenty of information on forming and registering a business in Washington DC. These are all the basic steps for forming an LLC in Washington DC. You’ll find other useful information below:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `These are all the basic steps for forming an LLC in Washington DC. You’ll find other useful information below:`,
       list: [
         `<a href="https://dcra.dc.gov/service/domestic-limited-liability-company" target="_blank" rel="noopener noreferrer">Washington DC Department of Consumer and Regulatory Affairs for forming and running your LLC</a>`,
         `<a href="https://does.dc.gov/" targer="_blank" rel="noopener noreferrer">Washington DC Department of Employment Services for DC employers and hiring</a>`,
@@ -290,13 +293,12 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `It’s not enough for your DC LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Washington DC.`,
+    content: `It’s not enough for your DC LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Washington DC. For example, you cannot use the following factors to say your name is different from the name of another business:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `For example, you cannot use the following factors to say your name is different from the name of another business:`,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
         `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
@@ -332,7 +334,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Are very similar to the name of a federal or DC agency or organization (e.g., FBI, FDA, Washington DC Office of Tax and Revenue, Washington DC Police, Treasury, etc.)`,
         `Suggest affiliation with a federal or state agency or organization`,
@@ -449,7 +450,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Appeal to your customers`,
         `Be memorable enough to stand out`,
@@ -511,13 +511,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a Washington DC Registered Agent service for your business.`,
+    content: `There are certain rules that you must follow when you’re appointing a Washington DC Registered Agent service for your business. They are:`,
     marginBottom: 48,
   },
   {
     type: `list-dot`,
     content: {
-      header: `They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in Washington DC.`,
         `If the Registered Agent is a business, they must be able to conduct business in Washington DC.`,
@@ -541,13 +540,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Your Washington DC Registered Agent carries out several valuable services for your business. They accept official communications and documents from the DC Department of Consumer and Regulatory Affairs on your behalf.`,
+    content: `Your Washington DC Registered Agent carries out several valuable services for your business. They accept official communications and documents from the DC Department of Consumer and Regulatory Affairs on your behalf. This may include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `This may include:`,
       list: [
         `Correspondence from the Washington DC Department of Consumer and Regulatory Affairs, like a notice to file reports and other forms`,
         `Service of process documents (for example, if your LLC has legal proceedings issued against it)`,
@@ -570,13 +568,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Incfile is authorized to conduct business in Washington DC and can legally act as your Registered Agent.`,
+    content: `Incfile is authorized to conduct business in Washington DC and can legally act as your Registered Agent. Here’s what the Incfile Washington DC Registered Agent service provides for your LLC:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here’s what the Incfile Washington DC Registered Agent service provides for your LLC:`,
       list: [
         `An always-available Washington DC Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
         `A digital dashboard where you can access, store and retrieve any information we’ve received for your business`,
@@ -715,13 +712,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Washington DC Department of Consumer and Regulatory Affairs?`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Washington DC Department of Consumer and Regulatory Affairs? There are several possible ramifications, including:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `There are several possible ramifications, including:`,
       list: [
         `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing with the Washington DC Department of Consumer and Regulatory Affairs:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain areas may revoke your right to do business.`,
@@ -739,13 +735,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `If you have an address in Washington DC, you can choose to be the Registered Agent for your LLC. `,
+    content: `If you have an address in Washington DC, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `We don’t recommend this approach as there can be some drawbacks:`,
       list: [
         `The Registered Agent must have a physical street address in Washington DC. You always need to have someone on hand during business hours at the Washington DC address to sign for important documents.`,
         `The Registered Agent’s name and address are part of the public record and available through the Washington DC Department of Consumer and Regulatory Affairs's website. If you prefer your name and address aren’t published, you should choose a Registered Agent service.`,
@@ -937,25 +932,28 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your Washington DC LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Washington DC, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
+    content: `Your Washington DC LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Washington DC, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. Permits and licenses vary based on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your Washington DC LLC operates in (e.g., restaurants will need health permits)`,
         `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
       ],
     },
-    marginBottom: 16,
+    marginBottom: 24,
     color: color.green3,
+  },
+  {
+    type: `text`,
+    content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
       list: [
         `A complete report on all the licenses, permits and tax registrations your Washington DC LLC willl need`,
         `The application forms you will need to file with the Washington DC, regional and federal licensing authorities`,
@@ -1064,13 +1062,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your Washington DC business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Washington DC Department of Consumer and Regulatory Affairs. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    content: `Your business formation documents state certain facts about your Washington DC business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Washington DC Department of Consumer and Regulatory Affairs. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file Washington DC Articles of Amendment for include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Areas you might want to file Washington DC Articles of Amendment for include:`,
       list: [
         `Adding, removing or changing an Washington DC LLC member or manager`,
         `Changing the business address of your LLC`,
@@ -1244,13 +1241,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the DC Department of Revenue. Washington DC sales tax is collected at the point of purchase. Washington DC sales tax rates do vary depending on the region, county or city where you are located.`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the DC Department of Revenue. Washington DC sales tax is collected at the point of purchase. Washington DC sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Washington DC sales tax on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will typically need to collect Washington DC sales tax on:`,
       list: [
         `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
         `Certain services that your Washington DC business might provide`,
@@ -1408,7 +1404,6 @@ export const businessTaxes = [
             {
               type: `list-dot-without-bg`,
               color: color.orange3,
-              header: ``,
               content: [
                 `Federal income tax`,
                 `Federal self-employment tax`,

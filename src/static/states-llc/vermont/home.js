@@ -29,9 +29,13 @@ export const howToGuide = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `Briefly, the benefits of starting a Vermont LLC include:`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `Briefly, the benefits of starting a Vermont LLC include:`,
       list: [
         `Separating and limiting your personal liability from your business liability and debts`,
         `Quick and simple filing, management, compliance, regulation and administration of your Vermont LLC`,
@@ -116,13 +120,12 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `The Secretary of State has plenty of other information on forming and running a business in Vermont.`,
+    content: `The Secretary of State has plenty of other information on forming and running a business in Vermont. You’ll find other useful information below.`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You’ll find other useful information below.`,
       list: [
         `<a href="https://sos.vermont.gov/" target="_blank" rel="noopener noreferrer">Vermont Secretary of State for forming and running your LLC</a>`,
         `<a href="https://labor.vermont.gov/" target="_blank" rel="noopener noreferrer">Vermont Department of Labor for VT employers and hiring</a>`,
@@ -291,7 +294,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
         `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
@@ -327,7 +329,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Are very similar to the name of a federal or VT agency or organization (e.g., FBI, FDA, Vermont Department of Taxes, Vermont Police, Treasury, etc.)`,
         `Suggest affiliation with a federal or state agency or organization`,
@@ -379,7 +380,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `If you don’t want to form your LLC right now, you can reserve the business name with the Vermont Secretary of State. You will need to complete a “Application to Reserve a Specified Business Name” and file it with the VT SOS. You do not need to reserve a name if you are forming your business right away.
               <a href="https://sos.vermont.gov/" target="_blank" rel="noopener noreferrer">Vermont SOS LLC name reservation</a>
@@ -469,7 +469,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Appeal to your customers`,
         `Be memorable enough to stand out`,
@@ -538,7 +537,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `If the Registered Agent is a person, they must reside in Vermont.`,
         `If the Registered Agent is a business, they must be able to conduct business in Vermont.`,
@@ -568,7 +566,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Correspondence from the Vermont Secretary of State, like a notice to file reports and other forms`,
         `Service of process documents (for example, if your Vermont LLC has legal proceedings issued against it)`,
@@ -593,13 +590,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `We are authorized to conduct business in Vermont and can legally act as your Registered Agent.`,
+    content: `We are authorized to conduct business in Vermont and can legally act as your Registered Agent. Here’s what the Incfile Vermont Registered Agent service provides for your VT LLC:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here’s what the Incfile Vermont Registered Agent service provides for your VT LLC:`,
       list: [
         `An always-available Vermont Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
         `A digital dashboard where you can access, store and retrieve any information we’ve received for your Vermont business`,
@@ -744,7 +740,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing with the Vermont Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -768,7 +763,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `The Registered Agent must have a physical street address in Vermont. If you’re forming an LLC outside VT, you will need to use an in-state Registered Agent. You always need to have someone on hand during business hours at the Vermont address to sign for important documents.`,
         `The Registered Agent’s name and address are part of the public record and available through the Vermont Secretary of State's website. If you would prefer your name and address aren’t published, you should choose a Registered Agent service.`,
@@ -815,9 +809,13 @@ export const registeredAgent = [
     marginBottom: 32,
   },
   {
+    type: `text`,
+    content: `You might find these resources helpful:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You might find these resources helpful:`,
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Vermont Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Vermont Registered Agent</a>`,
@@ -971,13 +969,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Some Vermont LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis.`,
+    content: `Some Vermont LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis. Permits and licenses vary based on:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your Vermont LLC operates in (e.g., restaurants will need health permits)`,
         `The location of your Vermont LLC (state, county or city) (e.g., a license to conduct business from the city of Pittsburgh)`,
@@ -1003,13 +1000,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Our Business License Research Package tells you about all of the licenses and permits you will need for your Vermont LLC.`,
+    content: `Our Business License Research Package tells you about all of the licenses and permits you will need for your Vermont LLC. It includes:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `It includes:`,
       list: [
         `A complete report on all the licenses, permits and tax registrations your Vermont LLC will need`,
         `The application forms you will need to file with the Vermont, regional and federal licensing authorities`,
@@ -1118,13 +1114,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your Vermont business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    content: `Your business formation documents state certain facts about your Vermont business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file Vermont Articles of Amendment for include:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Areas you might want to file Vermont Articles of Amendment for include:`,
       list: [
         `Adding, removing or changing a Vermont LLC member or manager`,
         `Changing the business address of your LLC`,
@@ -1299,13 +1294,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the VT Department of Revenue. Vermont sales tax is collected at the point of purchase. Sales tax rates do vary depending on the region, county or city where you are located.`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the VT Department of Revenue. Vermont sales tax is collected at the point of purchase. Sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Vermont sales tax on:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will typically need to collect Vermont sales tax on:`,
       list: [
         `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
         `Certain services that your Vermont business might provide`,
@@ -1350,13 +1344,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
+    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
       list: [
         `On profits of $50,000, you would pay self-employment tax of $7,650.`,
         `On profits of $80,000, you would pay self-employment tax of $12,240.`,
@@ -1473,9 +1466,12 @@ export const businessTaxes = [
               content: `Most Vermont LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
             },
             {
+              type: `paragraph`,
+              content: `The most common types of estimated taxes are:`,
+            },
+            {
               type: `list-dot-without-bg`,
               color: color.orange3,
-              header: `The most common types of estimated taxes are:`,
               content: [
                 `Federal income tax`,
                 `Federal self-employment tax`,

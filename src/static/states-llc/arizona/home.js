@@ -31,12 +31,16 @@ export const howToGuide = [
   {
     type: `text`,
     content: `For most business owners, the fastest and easiest way to start a business in Arizona is by creating an Arizona LLC. A Limited Liability Company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Arizona corporations but with much simpler rules and regulations.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `Briefly, the benefits of starting an Arizona LLC include:`,
     marginBottom: 32,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Briefly, the benefits of starting an Arizona LLC include:`,
       list: [
         `Separating and limiting your personal liability from your business liability and debts`,
         `Quick and simple filing, management, compliance, regulations and administration of your Arizona LLC`,
@@ -128,9 +132,13 @@ export const howToGuide = [
     marginBottom: 32,
   },
   {
+    type: `text`,
+    content: `In addition to what you’ll find in this guide, the AZ Corporation Commission has plenty of information on forming and running a business in Arizona.`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `In addition to what you’ll find in this guide, the AZ Corporation Commission has plenty of information on forming and running a business in Arizona.`,
       list: [
         `<a href="https://azsos.gov/business" target="_blank" rel="noopener noreferrer">Arizona Secretary of State for forming and running your AZ LLC</a>`,
         `<a href="https://www.azica.gov/" target="_blank" rel="noopener noreferrer"> Arizona Bureau of Workers' Compensation for AZ employers and hiring</a>`,
@@ -330,7 +338,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
         `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
@@ -366,7 +373,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Are very similar to the name of a federal or AZ agency or organization (e.g., FBI, FDA, Arizona Department of Revenue, Arizona Police, Treasury, etc.)`,
         `Suggest affiliation with a federal or state agency or organization`,
@@ -385,13 +391,12 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `In addition to the general rules listed above, the Arizona Corporation Commission has some specific business naming rules for your LLC. `,
+    content: `In addition to the general rules listed above, the Arizona Corporation Commission has some specific business naming rules for your LLC. You will need to follow these rules if you want to name your AZ business appropriately:`,
     marginBottom: 32,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will need to follow these rules if you want to name your AZ business appropriately:`,
       list: [
         `If the LLC name contains any of the following words, prior written approval must be obtained from the Arizona Department of Financial Institutions before registration is allowed: Bank; Banker; Banking; Banc; Banco; Banque; Credit Union; Deposit; Savings Association; Building Association; Savings and Loan Association; Building and Loan Association; Savings Bank; Thrift; Trust; or Trust Company`,
         `Non-professional LLCs shall contain the words “limited liability company” or “limited company” or the abbreviations “L.L.C.”, “L.C.”, “LLC”, or “LC”. If the existing limited liability company name or the fictitious name adopted for use in Arizona does not contain one of those words or an abbreviation of one of those words, then one of those words or an abbreviation of one of those words must be added to it. `,
@@ -538,7 +543,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Appeal to your customers`,
         `Be memorable enough to stand out`,
@@ -595,7 +599,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `If the Statutory Agent is a person, they must reside in Arizona`,
         `If the Statutory Agent is a business, they must be able to conduct business in Arizona`,
@@ -625,7 +628,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Correspondence from the Arizona Corporation Commission, like a notice to file reports and other forms`,
         `Service of process documents (for example, if your Arizona LLC has legal proceedings issued against it)`,
@@ -654,7 +656,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `An always-available Arizona Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
         `A digital dashboard where you can access, store and retrieve any information we’ve received for your Arizona business`,
@@ -799,7 +800,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `Falling out of good standing with the Arizona Corporation Commission: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -823,7 +823,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `The AZ Statutory Agent must have a physical street address in Arizona. If you’re forming an LLC outside AZ, you will need to use an in-state Statutory Agent.`,
         `You always need to have someone on hand during business hours at the Arizona address to sign for important documents.`,
@@ -871,9 +870,13 @@ export const registeredAgent = [
     marginBottom: 32,
   },
   {
+    type: `text`,
+    content: `You might find these resources helpful:`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You might find these resources helpful:`,
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of an Arizona Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Arizona Registered Agent</a>`,
@@ -1015,13 +1018,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your Arizona LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Arizona, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
+    content: `Your Arizona LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Arizona, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. Permits and licenses vary based on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your Arizona LLC operates in (e.g., restaurants will need health permits)`,
         `The location of your Arizona LLC (state, county or city) (e.g., a license to conduct business from the city of Phoenix)`,
@@ -1032,9 +1034,13 @@ export const feesAndRequirments = [
     color: color.green3,
   },
   {
+    type: `text`,
+    content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
+    marginBottom: 32,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
       list: [
         `A complete report on all the licenses, permits and tax registrations your Arizona LLC will need`,
         `The application forms you will need to file with the state, regional and federal licensing authorities`,
@@ -1143,13 +1149,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your Arizona business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Arizona Corporation Commission. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    content: `Your business formation documents state certain facts about your Arizona business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Arizona Corporation Commission. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file Arizona Articles of Amendment for include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Areas you might want to file Arizona Articles of Amendment for include:`,
       list: [
         `Adding, removing or changing an Arizona LLC member or manager`,
         `Changing the business address of your LLC`,
@@ -1335,13 +1340,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (known in Arizona as a Transaction Privilege Tax) and then pay it to the AZ Department of Revenue. Arizona sales tax is collected at the point of purchase. Arizona sales tax rates do vary depending on the region, county or city where you are located.`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (known in Arizona as a Transaction Privilege Tax) and then pay it to the AZ Department of Revenue. Arizona sales tax is collected at the point of purchase. Arizona sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Arizona sales tax on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will typically need to collect Arizona sales tax on:`,
       list: [
         `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
         `Certain services that your Arizona business might provide`,
@@ -1386,13 +1390,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
+    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
       list: [
         `On profits of $20,000, you would pay self-employment tax of $3,060`,
         `On profits of $50,000, you would pay self-employment tax of $7,650`,
@@ -1582,13 +1585,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Most Arizona LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
+    content: `Most Arizona LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. The most common types of estimated tax are:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `The most common types of estimated tax are:`,
       list: [
         `Federal income tax`,
         `Federal self-employment tax`,

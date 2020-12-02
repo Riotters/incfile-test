@@ -124,7 +124,12 @@ export const businessNamesContent = {
     },
     {
       type: `textBoxWithCheckIcon`,
-      content: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      content: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     {
       type: `button`,
