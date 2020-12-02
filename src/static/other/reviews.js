@@ -7,7 +7,7 @@ export const seo = {
 
 export const top = {
   header: `Incfile.com Reviews`,
-  text: `<p>We've been trusted by 250,000+ business owners worldwide since 2004. </br>See what your fellow entrepreneurs are saying about Incfile.</p>`,
+  text: `<p>We've been trusted by 500,000 business owners worldwide since 2004. </br>See what your fellow entrepreneurs are saying about Incfile.</p>`,
   box1: {
     text1: `4.8`,
     text2: `Out of 5.0`,

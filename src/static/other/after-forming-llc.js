@@ -10,7 +10,13 @@ export const top = {
 
 export const about = {
   tabs: {
-    panels: [`LLC Filing Requirements`, `Business Name Trademark`, `Finances & Accounting`, `Set up Business Operations`, `Choose Business Tools`],
+    panels: [
+      `LLC Filing Requirements`,
+      `Business Name Trademark`,
+      `Finances & Accounting`,
+      `Set up Business Operations`,
+      `Choose Business Tools`,
+    ],
     content: [
       {
         header: `Haven't formed your LLC yet? Read our How to Start an LLC guide for your state`,
@@ -68,7 +74,12 @@ export const about = {
         ],
         box: {
           header: `Incfile’s Trademark Service Benefits`,
-          list: [`Legal counsel from an experienced trademark attorney`, `A thorough search of existing trademarks`, `A registered trademark with the USPTO`, `Handling all correspondence with the USPTO until the name is approved.`],
+          list: [
+            `Legal counsel from an experienced trademark attorney`,
+            `A thorough search of existing trademarks`,
+            `A registered trademark with the USPTO`,
+            `Handling all correspondence with the USPTO until the name is approved.`,
+          ],
         },
       },
       {
@@ -228,8 +239,8 @@ export const about = {
             text: `Then you need to choose a service to host your website such as`,
           },
           {
-            text: `Snapweb.`,
-            url: `https://xoopah.com/website-voucher-discount/?ref=INCFILE`,
+            text: `Wix.`,
+            url: `https://wixstats.com/?a=22153&c=2644&s1=`,
           },
           {
             text: `Finally, design your website using a tool such as SquareSpace or WordPress. Make sure your website includes important business information such as how to contact you and business hours.`,
@@ -254,8 +265,8 @@ export const about = {
             text: `A logo will reflect your business branding everywhere your customers interact with you — on your website, on your invoices, in your email signature, on business cards and more. Instead of trying to design a logo yourself, try a logo making service such as`,
           },
           {
-            text: `99 Designs`,
-            url: `http://www.jdoqocy.com/click-7898336-11012409-1442446947000?cm_mmc=CJ-_-4607662-_-7898336-_-99designs%20-%20Text`,
+            text: `Wix`,
+            url: `https://wixstats.com/?a=22153&c=2548&s1=`,
           },
           {
             text: `or buy some really high-quality pre-made logos you can customize on`,
@@ -281,7 +292,8 @@ export const about = {
         text: `In addition to accounting software, there is a number of online business software options that will lift a number of menial tasks and burdens off your full business-owner plate. Below are important business functions for your LLC and what we think are the best business tools for your LLC.`,
         toolsList: {
           headlineText: "Useful Online Tools for Bookstore Owners",
-          description: "The right software and apps will make it much easier to run your bookstore business. Here are our recommendations for some of the best tools out there to make business operations a breeze.",
+          description:
+            "The right software and apps will make it much easier to run your bookstore business. Here are our recommendations for some of the best tools out there to make business operations a breeze.",
           tools: [
             {
               title: "Project Management",
@@ -364,11 +376,11 @@ export const guide = {
 };
 
 export const hsForm = {
-    header: `Download our "What to Do After Formation" Guide.`,
-    text: `You filed your Articles of Organization and started your LLC—now what? Here are the most important next steps to ensuring your business is successful.`,
-    hs_form_id: `f8b25ab5-7a9a-4f21-b7db-425ede0e6750`,
-    button: {
-      text: "Download now",
-      url: "/",
-    },
-  };
+  header: `Download our "What to Do After Formation" Guide.`,
+  text: `You filed your Articles of Organization and started your LLC—now what? Here are the most important next steps to ensuring your business is successful.`,
+  hs_form_id: `f8b25ab5-7a9a-4f21-b7db-425ede0e6750`,
+  button: {
+    text: "Download now",
+    url: "/",
+  },
+};
