@@ -4,7 +4,6 @@ import styled from "styled-components";
 // import { motion } from "framer-motion"
 import { Tabs, Tab, TabList, TabPanel } from "react-tabs";
 import Container from "../../container";
-import ArrowLink from "../../../components/arrow-link";
 import CaseSVG from "../../../images/icons/case-orange.inline.svg";
 import TypesSVG from "../../../images/icons/types-of-llc.inline.svg";
 import ArrowSVG from "../../../images/arrow.inline.svg";
@@ -16,6 +15,7 @@ import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
 import VisibilitySensor from "../../../components/VisibilitySensor";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
+import LightBoxVideo from "../../../components/LightBox";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -433,4 +433,5 @@ const CCorpTabs = ({ layout, columns, content }) => {
 		</Container>
 	);
 };
+
 export default CCorpTabs;

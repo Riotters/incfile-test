@@ -36,7 +36,7 @@ const ForeignQualification = () => (
     <Help content={help} />
     <Faq content={faq} />
     <Benefits page="foreign-qualification" />
-    <Articles />
+    <Articles categoryId={309} />
   </Layout>
 );
 

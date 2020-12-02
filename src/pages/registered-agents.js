@@ -9,7 +9,6 @@ import RatingBlock from "../atomic/molecules/blocks/rating-block";
 import HSFormModal from "../components/hubspot/standard-post-form-modal";
 //Sections
 import Top from "../atomic/partials/top";
-import Help from "../atomic/sections/manage-your-company/annual-report/help";
 import About from "../atomic/sections/learning-center-entity/registered-agents/about";
 import WhatAgentDo from "../atomic/sections/learning-center-entity/registered-agents/what-agent-do";
 import OtherNames from "../atomic/sections/learning-center-entity/registered-agents/other-names";
@@ -74,7 +73,7 @@ const RegisteredAgents = () => {
             <Faq content={faq}/>
             <Service content={service}/>
             <LearnMore content={learnMore}/>
-            <Articles/>
+            <Articles categoryId={324} />
             <LightBoxModal visible={modalVisible} className="modal-overlay">
                 <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
                     {!formSubmitted && <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />}

@@ -29,7 +29,7 @@ const BusinessLicence = () => (
     <WhatYouGet content={whatyouget} />
     <ResearchPackage content={researchpackage} />
     <Cta content={cta} />
-    <Articles />
+    <Articles categoryId={279} />
   </Layout>
 );
 
