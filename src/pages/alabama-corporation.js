@@ -122,11 +122,16 @@ const AlaskaCorporation = () => {
                 is organized for some purpose other than the one specified in
                 its articles of incorporation.
               </Paragraph>
-              <Paragraph big style={{ marginBottom: "0" }}>
+              <Paragraph big style={{ marginBottom: "32px" }}>
                 You must reserve your new corporation’s name with the state
                 filing office before filing your articles of incorporation. This
                 costs $10 and is good for up to 120 days.
               </Paragraph>
+              <LightBoxVideo
+                thumbnailVideo="what-is-a-corporation-8899"
+                videoID="oYZShvmf9eQ"
+              />
+
             </PanelWrapper>
             <PanelWrapper>
               <Heading size={3} style={{ marginBottom: "24px" }}>
@@ -180,7 +185,7 @@ const AlaskaCorporation = () => {
                 must be either an adult Alabama resident, or a corporation with
                 a business office identical to the registered office. The
                 registered office may be at any of the corporation’s places of
-                business..
+                business.
               </Paragraph>
             </PanelWrapper>
             <PanelWrapper>
@@ -294,7 +299,8 @@ const AlaskaCorporation = () => {
                   The nature of the corporation’s business.
                 </Paragraph>
               </TextBoxed>
-              <TextBoxed style={{ marginBottom: "24px" }}>
+              <TextBoxed style={{ marginBottom: "8px" }}>
+
                 <Paragraph bottomMargin={0}>
                   The names and addresses of the corporation’s president and
                   secretary.

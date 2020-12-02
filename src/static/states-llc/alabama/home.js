@@ -985,93 +985,88 @@ export const feesAndRequirments = [
     type: `text`,
     content: `<a href="/business-filing-deadlines/">Learn about your ongoing Alabama LLC filing requirements</a> and business filing deadlines with our helpful Alabama filing lookup tool.
     Incfile can also complete and file your Alabama Annual Report on your behalf.`,
-    marginBottom: 16,
-  },
-  {
-    type: `button`,
-    content: {
-      text: `INCFILE'S ALABAMA ANNUAL REPORT FILING SERVICE`,
-      url: `/manage-your-company/annual-report/`,
-    },
-    theme: `primary48`,
-    marginBottom: 48,
-  },
-  {
-    type: `header`,
-    content: `Alabama Business Licenses and Permits`,
-    size: 3,
-    marginBottom: 24,
-  },
-  {
-    type: `text`,
-    content: `Your Alabama LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Alabama, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. Permits and licenses vary based on:`,
-    marginBottom: 16,
-  },
-  {
-    type: `list-dot`,
-    content: {
-      list: [
-        `The industry your Alabama LLC operates in (e.g., restaurants will need health permits)`,
-        `The location of your Alabama LLC (state, county or city) (e.g., a license to conduct business from the city of Anchorage)`,
-        `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
-      ],
-    },
-    marginBottom: 32,
-    color: color.green3,
-    curve: true,
-    curveColor: color.blue1,
-  },
-  {
-    type: `text`,
-    content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `Our Business License Research Package tells you about all of the licenses and permits you will need for your Alabama LLC. It includes:`,
-    marginBottom: 24,
-  },
-  {
-    type: `list-dot`,
-    content: {
-      list: [
-        `A complete report on all the licenses, permits and tax registrations your Alabama LLC will need`,
-        `The application forms you will need to file with the Alabama, regional and federal licensing authorities`,
-      ],
-    },
-    marginBottom: 24,
-    color: color.purple3,
-  },
-  {
-    type: `text`,
-    content: `Remember that operating your business without the required licenses can expose you to risks and fines from federal, Alabama and local governments.`,
-    marginBottom: 16,
-  },
-  {
-    type: `button`,
-    content: {
-      text: `INCFILE'S ALABAMA BUSINESS LICENSE RESEARCH PACKAGE`,
-      url: `/business-license-research-package/`,
-    },
-    theme: `primary48`,
-    marginBottom: 48,
-  },
-  {
-    type: `header`,
-    content: `An Operating Agreement for Your Alaba LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `An Operating Agreement is a business document that covers how the business will be run, how managers and members are chosen, rights and duties of members and several other key areas.`,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `An Operating Agreement is extremely useful for several reasons(<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a>) If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Alabama business. You can choose to make changes to the template based on your unique requirements. 
-
-    `,
+		marginBottom: 16,
+	},
+	{
+		type: `button`,
+		content: {
+			text: `INCFILE'S ALABAMA ANNUAL REPORT FILING SERVICE`,
+			url: `/manage-your-company/annual-report/`,
+		},
+		theme: `primary48`,
+		marginBottom: 48,
+	},
+	{
+		type: `header`,
+		content: `Alabama Business Licenses and Permits`,
+		size: 3,
+		marginBottom: 24,
+	},
+	{
+		type: `text`,
+		content: `Your Alabama LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Alabama, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. `,
+		marginBottom: 16,
+	},
+	{
+		type: `list-dot`,
+		content: {
+			header: `Permits and licenses vary based on:`,
+			list: [
+				`The industry your Alabama LLC operates in (e.g., restaurants will need health permits)`,
+				`The location of your Alabama LLC (state, county or city) (e.g., a license to conduct business from the city of Anchorage)`,
+				`The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
+			],
+		},
+		marginBottom: 32,
+		color: color.green3,
+		curve: true,
+		curveColor: color.blue1,
+	},
+	{
+		type: `text`,
+		content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
+		marginBottom: 32,
+	},
+	{
+		type: `list-dot`,
+		content: {
+			header: ``,
+			list: [
+				`A complete report on all the licenses, permits and tax registrations your Alabama LLC will need`,
+				`The application forms you will need to file with the Alabama, regional and federal licensing authorities`,
+			],
+		},
+		marginBottom: 24,
+		color: color.purple3,
+	},
+	{
+		type: `text`,
+		content: `Remember that operating your business without the required licenses can expose you to risks and fines from federal, Alabama and local governments.`,
+		marginBottom: 16,
+	},
+	{
+		type: `button`,
+		content: {
+			text: `INCFILE'S ALABAMA BUSINESS LICENSE RESEARCH PACKAGE`,
+			url: `/business-license-research-package/`,
+		},
+		theme: `primary48`,
+		marginBottom: 48,
+	},
+	{
+		type: `header`,
+		content: `An Operating Agreement for Your Alaba LLC`,
+		size: 4,
+		marginBottom: 16,
+	},
+	{
+		type: `text`,
+		content: `An Operating Agreement is a business document that covers how the business will be run, how managers and members are chosen, rights and duties of members and several other key areas.`,
+		marginBottom: 16,
+	},
+	{
+		type: `text`,
+		content: `An Operating Agreement is extremely useful for several reasons(<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a>) If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Alabama business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 16,
   },
   {

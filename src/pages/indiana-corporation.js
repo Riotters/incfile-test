@@ -132,10 +132,15 @@ const AlaskaCorporation = () => {
                 bank holding company, so long as it does not imply that it
                 offers the same services as a bank or trust company.
               </Paragraph>
-              <Paragraph big style={{ marginBottom: "0" }}>
+              <Paragraph big style={{ marginBottom: "32px" }}>
                 Available corporate names may be reserved for up to 120 days for
                 $20.
               </Paragraph>
+              <LightBoxVideo
+                thumbnailVideo="what-is-a-corporation-8899"
+                videoID="oYZShvmf9eQ"
+              />
+
             </PanelWrapper>
             <PanelWrapper>
               <Heading size={3} style={{ marginBottom: "24px" }}>
@@ -321,7 +326,12 @@ const AlaskaCorporation = () => {
                 </Paragraph>
               </TextBoxed>
             </PanelWrapper>
-
+            <Paragraph big>
+              The board must also report certain information about director
+              indemnification and expenses, as well as future promises or
+              promissory note issuance, to all shareholders with or before
+              notice of the next shareholders’ meeting.
+            </Paragraph>
             <PanelWrapper>
               <Heading size={3} style={{ marginBottom: "24px" }}>
                 Taxes
@@ -411,7 +421,6 @@ const AlaskaCorporation = () => {
       {/*</AdventagesBox>*/}
       {/*</Container>*/}
       {/*</InfoSection>*/}
-
       <Rocket />
     </Layout>
   );
