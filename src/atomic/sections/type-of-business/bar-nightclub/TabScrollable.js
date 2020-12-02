@@ -13,6 +13,7 @@ import CkeckText from "../../../../components/static-check/text-only";
 import TextBoxed from "../../../molecules/static-check/circle-checkmark-text-boxed";
 import { Link } from "gatsby";
 import VisibilitySensor from "../../../../components/VisibilitySensor";
+import {InView} from "react-intersection-observer";
 
 const ButtonList = [
   {
@@ -76,12 +77,7 @@ const TabScrollable = ({ layout, columns }) => {
               Of course, along with running a business there are many rules, regulations and legalities you need to be aware of.
             </Paragraph>
 
-            <VisibilitySensor partialVisibility scrollCheck intervalCheck scrollDelay={50}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(0);
-                }
-                return (
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(0); }}>
                   <div id={ButtonList[0].tabId}>
                     <Paragraph big mixed={true} style={{ fontFamily: "Avenir", fontWeight: "900", color: color.black, marginTop: "140px" }}>
                       Liquor Licenses, Business Licenses and Permits
@@ -200,16 +196,9 @@ const TabScrollable = ({ layout, columns }) => {
                       </ListBox>
                     </ListWrapper>
                   </div>
-                );
-              }}
-            </VisibilitySensor>
+            </InView>
 
-            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(1);
-                }
-                return (
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(1); }}>
                   <div id={ButtonList[1].tabId}>
                     <Heading size={3} style={{ marginTop: "140px", marginBottom: "24px" }}>
                       Business Insurance
@@ -235,16 +224,9 @@ const TabScrollable = ({ layout, columns }) => {
                       </div>
                     </CountingTextBoxed>
                   </div>
-                );
-              }}
-            </VisibilitySensor>
+            </InView>
 
-            <VisibilitySensor partialVisibility minTopValue={400} scrollCheck intervalCheck scrollDelay={50}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(2);
-                }
-                return (
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(2); }}>
                   <div id={ButtonList[2].tabId}>
                     <Heading size={3} style={{ marginTop: "140px", marginBottom: "24px" }}>
                       Registered Agents
@@ -328,9 +310,7 @@ const TabScrollable = ({ layout, columns }) => {
                       </div>
                     </TextBoxed>
                   </div>
-                );
-              }}
-            </VisibilitySensor>
+            </InView>
 
             <Paragraph big style={{ marginTop: "48px" }}>
               As a rule of thumb, we recommend keeping back around a third of your earnings to pay your taxes. We can <Link to="/business-accounting/">prepare and file your tax returns for you</Link>.
