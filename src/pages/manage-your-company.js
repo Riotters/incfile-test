@@ -21,7 +21,7 @@ const ManageYourCompany = () => (
     <Benefits />
     <Certificates content={certificates} />
     <Help content={help} />
-    <Articles oval />
+    <Articles oval categoryId={310} />
   </Layout>
 );
 

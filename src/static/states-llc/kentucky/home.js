@@ -32,7 +32,11 @@ export const howToGuide = [
     type: `list-dot`,
     content: {
       header: `Briefly, the benefits of starting a Kentucky LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulations and administration of your Kentucky LLC`, `Easy tax filing and potential advantages for tax treatment`],
+      list: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulations and administration of your Kentucky LLC`,
+        `Easy tax filing and potential advantages for tax treatment`,
+      ],
     },
     marginBottom: 16,
     color: color.green3,
@@ -509,7 +513,12 @@ export const namingYourBusiness = [
     type: `list-dot`,
     content: {
       header: ``,
-      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      list: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -761,9 +770,9 @@ export const registeredAgent = [
     content: {
       header: `There are several possible ramifications, including:`,
       list: [
-        `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
-        `Falling out of good standing with the Kentucky Secretary of State: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
-        `Losing your status as a Kentucky LLC: A KY Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Kentucky LLC may be dissolved.`,
+        `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the Kentucky Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `<b>Losing your status as a Kentucky LLC:</b> A KY Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Kentucky LLC may be dissolved.`,
       ],
     },
     marginBottom: 48,
@@ -1016,7 +1025,10 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `It includes:`,
-      list: [`A complete report on all the licenses, permits and tax registrations your Kentucky LLC will need`, `The application forms you will need to file with the Kentucky, regional and federal licensing authorities`],
+      list: [
+        `A complete report on all the licenses, permits and tax registrations your Kentucky LLC will need`,
+        `The application forms you will need to file with the Kentucky, regional and federal licensing authorities`,
+      ],
     },
     marginBottom: 16,
     color: color.green3,
@@ -1128,7 +1140,11 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       header: `Areas you might want to file Kentucky Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Kentucky LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Kentucky LLC`],
+      list: [
+        `Adding, removing or changing a Kentucky LLC member or manager`,
+        `Changing the business address of your LLC`,
+        `Altering the stated business activities of your Kentucky LLC`,
+      ],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -1306,7 +1322,10 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `You will typically need to collect sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Kentucky business might provide`],
+      list: [
+        `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
+        `Certain services that your Kentucky business might provide`,
+      ],
     },
     marginBottom: 16,
     color: color.purple3,
@@ -1368,7 +1387,12 @@ export const businessTaxes = [
     type: `list-dot`,
     content: {
       header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $30,000, you would pay self-employment tax of $4,590.`, `On profits of $60,000, you would pay self-employment tax of $9,180.`, `On profits of $90,000, you would pay self-employment tax of $13,770.`, `On profits of $120,000, you would pay self-employment tax of $18,360.`],
+      list: [
+        `On profits of $30,000, you would pay self-employment tax of $4,590.`,
+        `On profits of $60,000, you would pay self-employment tax of $9,180.`,
+        `On profits of $90,000, you would pay self-employment tax of $13,770.`,
+        `On profits of $120,000, you would pay self-employment tax of $18,360.`,
+      ],
     },
     marginBottom: 32,
     color: color.orange3,
@@ -1480,7 +1504,11 @@ export const businessTaxes = [
               type: `list-dot-without-bg`,
               color: color.orange3,
               header: `The most common types of estimated taxes are:`,
-              content: [`Federal income tax`, `Federal self-employment tax`, `Kentucky state tax`],
+              content: [
+                `Federal income tax`,
+                `Federal self-employment tax`,
+                `Kentucky state tax`,
+              ],
             },
             {
               type: `paragraph`,
@@ -1526,7 +1554,12 @@ export const compare = {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
       [`Business incorporation service`, `$49`, `$149`, `$149`],
-      [`Registered Agent included in the price`, `check-green`, `check-red`, `check-red`],
+      [
+        `Registered Agent included in the price`,
+        `check-green`,
+        `check-red`,
+        `check-red`,
+      ],
     ],
   },
 };
@@ -1590,7 +1623,7 @@ export const requirements = {
             text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state.`,
             text2: `Failure to file this report can lead to the company being revoked or administratively dissolved.`,
             link: {
-              text: `Other State's Ongoing`,
+              text: `Other State Requirements`,
               url: `/`,
             },
           },

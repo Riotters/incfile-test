@@ -91,63 +91,19 @@ export const business_formation = {
 export const setup = {
   header: "Set up your business easily",
   text: "Watch this short video to see",
-  // customers: {
-  //   header: "Why Do Our Customers Love Us?",
-  //   text: "4.8 Overall Satisfaction Rating based on 13,797 reviews",
-  //   opinions: {
-  //     items: [
-  //       {
-  //         image: "mattweik",
-  //         header: "Martin G",
-  //         subheader: "Los Angeles, CA",
-  //         text: "This is my third time working with Incfile. Great service. Professional and prompt. Will continue to do business with them.",
-  //       },
-  //       {
-  //         image: "mattweik",
-  //         header: "Martin G",
-  //         subheader: "Los Angeles, CA",
-  //         text: "This is my third time working with Incfile. Great service. Professional and prompt. Will continue to do business with them.",
-  //       },
-  //       {
-  //         image: "mattweik",
-  //         header: "Martin G",
-  //         subheader: "Los Angeles, CA",
-  //         text: "This is my third time working with Incfile. Great service. Professional and prompt. Will continue to do business with them.",
-  //       },
-  //     ],
-  //   },
-  // },
   customers: [
     {
-      photo: `mattweik`,
+      photo: `mattweik-11`,
       name: `Jade B.`,
       city: `California`,
       text: `Very easy to use, there are no questions if I'm doing things wrong or if I'm forgetting anything. incfile has it covered.`,
     },
     {
-      photo: `mattweik`,
+      photo: `mattweik-12`,
       name: `Jarret C.`,
       city: `Pennsylvania`,
       text: `I normally get my corp filings from another company, but after purchasing a corp thru incfile.com, and how fast I received everything, this is my new go-to for legal business filings. Highly recommend!`,
     },
-    // {
-    //   photo: `mattweik`,
-    //   name: `Martin G`,
-    //   city: `Los Angeles, CA`,
-    //   text: `This is my third time working with Incfile. Great service. Professional and prompt. Will continue to do business with them.`,
-    // },
-    // {
-    //   photo: `mattweik`,
-    //   name: `Martin G`,
-    //   city: `Los Angeles, CA`,
-    //   text: `This is my third time working with Incfile. Great service. Professional and prompt. Will continue to do business with them.`,
-    // },
-    // {
-    //   photo: `mattweik`,
-    //   name: `Martin G`,
-    //   city: `Los Angeles, CA`,
-    //   text: `This is my third time working with Incfile. Great service. Professional and prompt. Will continue to do business with them.`,
-    // },
   ],
 };
 

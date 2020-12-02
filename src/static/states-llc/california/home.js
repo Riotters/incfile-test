@@ -259,7 +259,7 @@ export const HomePageContent = {
           theme: `secondary56`,
           content: {
             text: `Search For Your California LLC Name`,
-            url: `/`,
+            url: `/`, // okienko
           },
         },
         {

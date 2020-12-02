@@ -7,10 +7,8 @@ import TextCenterLayout from "../atomic/partials/heading-center.js";
 import styled from "styled-components";
 import Top from "../atomic/partials/top";
 import About from "../atomic/sections/manage-your-company/llc-s-corp-election/about";
-import ImageContent from "../components/partials/blocks/left-image-right-content";
 import ContentObject from "../atomic/partials/left-content-right-object";
 import ObjectContent from "../atomic/partials/left-object-right-content";
-import Articles from "../components/partials/sections/articles";
 import { color, gradient } from "../components/styles/colors";
 import Accordion from "../atomic/organisms/accordion/accordion";
 import Benefits from "../atomic/sections/manage-your-company/manage-your-company/benefits";
@@ -28,6 +26,7 @@ import TotalSavings from "../atomic/organisms/forms/total-savings";
 import LeftContentRightImage from "../atomic/partials/left-content-right-image";
 import BusinessRevenue from "../atomic/molecules/blocks/business-revenue";
 import parse from "html-react-parser";
+import Articles from "../atomic/sections/articles";
 
 const LLCsTax = styled.section`
   position: relative;
@@ -248,7 +247,7 @@ const CorpElection = () => (
       </ContentCenter>
     </Help>
     <Benefits />
-    <Articles />
+    <Articles categoryId={293} />
   </Layout>
 );
 

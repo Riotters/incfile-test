@@ -8,7 +8,7 @@ import Button from "../atomic/molecules/buttons/button";
 import Top from "../atomic/partials/top";
 import About from "../atomic/sections/review-entity-types/llc/about";
 import Faq from "../atomic/sections/review-entity-types/llc/faq";
-import Articles from "../components/partials/sections/articles";
+import Articles from "../atomic/sections/articles";
 //Texts
 import { top, about, faq, form, thanks_form } from "../static/review-entity-types/llc";
 import styled from "styled-components";
@@ -62,7 +62,7 @@ class LLC extends React.Component {
                 </Top>
                 <About content={about} clickOpenModal={this.popup.bind(this)} />
                 <Faq content={faq} onClick={this.popup.bind(this)} />
-                <Articles />
+                <Articles categoryId={274} />
 
                 <LightBoxModal visible={this.state.modalVisible} className="modal-overlay">
                     <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>

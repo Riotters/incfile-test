@@ -153,7 +153,7 @@ export const businessNamesContent = {
       width: `450px`,
       content: {
         text: `Search for your Florida LLC name`,
-        url: `/`,
+        url: `/`, // okienko
       },
     },
     {

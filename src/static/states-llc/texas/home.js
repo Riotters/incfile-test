@@ -291,7 +291,7 @@ export const HomePageContent = {
         theme: `secondary56`,
         content: {
           text: `Search For Your texas LLC Name`,
-          url: `/`,
+          url: `/`, // okienko
         },
       },
       {

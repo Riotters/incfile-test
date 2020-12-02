@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
-
+import parse from "html-react-parser";
 import { color } from "../../atoms/styles/colors";
 import { shadow } from "../../atoms/styles/shadows";
 import { Heading } from "../../atoms/typography/heading";
@@ -19,12 +19,12 @@ import TaxesIcon from "../../../images/icons/other-taxes.inline.svg";
 import BusinessInsuranceIcon from "../../../images/icons/business-insurance.inline.svg";
 import AgentIcon from "../../../images/icons/registered-agent.inline.svg";
 import MaintainingIcon from "../../../images/icons/maintaining-your-cleaning-business.inline.svg";
-import BusinessLicensesColoredIcon from "../../../images/icons/business-licenses-and-permits-colored.inline.svg";
-
-import BusinessInsuranceColoredIcon from "../../../images/icons/business-insurance-colored.inline.svg";
-import AgentColoredIcon from "../../../images/icons/registered-agent-colored.inline.svg";
-import TaxesColoredIcon from "../../../images/icons/other-taxes-colored.inline.svg";
-import MaintainingColoredIcon from "../../../images/icons/maintaining-your-cleaning-business-colored.inline.svg";
+//tab icons
+import BusinessLicensesColoredIcon from "../../../images/icons/icons-incfile-vs/icon-4.inline.svg";
+import BusinessInsuranceColoredIcon from "../../../images/icons/icons-incfile-vs/icon-5.inline.svg";
+import AgentColoredIcon from "../../../images/icons/icons-incfile-vs/icon-3.inline.svg";
+import TaxesColoredIcon from "../../../images/icons/icons-incfile-vs/icon-2.inline.svg";
+import MaintainingColoredIcon from "../../../images/icons/icons-incfile-vs/icon-1.inline.svg";
 
 import {
 	BusinessInsuranceAccordionContent,
@@ -33,36 +33,38 @@ import {
 	TaxesAccordionContent,
 } from "../../../static/type-of-business/cleaning-business";
 import VisibilitySensor from "../../../components/VisibilitySensor";
+import IncfileVsCompareTableA from "../../organisms/tables/incfile-vs-compare-table-a";
+import NumericBoxedList from "../../organisms/lists/numeric-boxed-list";
 
 const ButtonList = [
 	{
-		title: "Business Licenses and Premits",
+		title: "Summary",
 		icon: BusinessLicensesColoredIcon,
 		tabId: "local-business",
 	},
 	{
-		title: "Business Insurance",
+		title: "Expertise",
 		icon: BusinessInsuranceColoredIcon,
 		tabId: "business-insurance",
 	},
 	{
-		title: "Registered Agent",
+		title: "Ease",
 		icon: AgentColoredIcon,
 		tabId: "registered-agent",
 	},
 	{
-		title: "Taxes",
+		title: "Cost",
 		icon: TaxesColoredIcon,
 		tabId: "taxes",
 	},
 	{
-		title: "Maintaining Your Business",
+		title: "Other Services",
 		icon: MaintainingColoredIcon,
 		tabId: "maintaining",
 	},
 ];
 
-const TabScrollable = ({ layout, columns }) => {
+const TabScrollable = ({ layout, columns, content }) => {
 	const [isActive, setActive] = useState(0);
 
 	const handleClick = (index, elementId) => {
@@ -107,14 +109,6 @@ const TabScrollable = ({ layout, columns }) => {
 					</TabsWrapper>
 
 					<PanelWrapper>
-						<Heading size={3}>
-							Rules, Regulations and Laws for Your Cleaning Business
-						</Heading>
-						<Paragraph big mixed={true}>
-							Of course, along with running a business there are certain rules,
-							regulations and legalities you need to be aware of.
-						</Paragraph>
-
 						<VisibilitySensor partialVisibility minTopValue={0}>
 							{({ isVisible }) => {
 								if (isVisible) {
@@ -122,39 +116,8 @@ const TabScrollable = ({ layout, columns }) => {
 								}
 								return (
 									<div id={ButtonList[0].tabId}>
-										<TextBlockWithImage
-											SvgImage={BusinessLicenseIcon}
-											textBackgroundColor="transparent"
-											imageBackgroundColor={color.orange2}
-											imageShadowColor={shadow.orange2}
-											imageShadowOpacity={0.5}
-											boxShadow={false}
-											paddingLeft={0}
-											style={{ marginTop: "140px" }}
-											circleShadowY={40}
-											circleShadowBlure={80}
-											width={100}
-											widthUnit="%"
-										>
-											<Paragraph
-												big
-												flex
-												flexAlign={true}
-												style={{ color: color.black, fontWeight: "bold" }}
-												mixed={true}
-											>
-												Business Licenses and Permits
-											</Paragraph>
-
-											<Paragraph big>
-												Required licenses and permits for your cleaning business
-												will vary depending on where you're operating and what
-												regulations apply. In general, there are different
-												permits required at the local, state and federal levels.
-											</Paragraph>
-
-											<Accordion tab content={LicensesAccordionContent} />
-										</TextBlockWithImage>
+										<Heading size="3">{parse(content.header)}</Heading>
+										<IncfileVsCompareTableA content={content.table} />
 									</div>
 								);
 							}}
@@ -167,40 +130,10 @@ const TabScrollable = ({ layout, columns }) => {
 								}
 								return (
 									<div id={ButtonList[1].tabId}>
-										<TextBlockWithImage
-											SvgImage={BusinessInsuranceIcon}
-											textBackgroundColor="transparent"
-											imageBackgroundColor={color.orange2}
-											imageShadowColor={shadow.orange2}
-											imageShadowOpacity={0.5}
-											boxShadow={false}
-											paddingLeft={0}
-											style={{ marginTop: "140px" }}
-											circleShadowY={40}
-											circleShadowBlure={80}
-											width={100}
-											widthUnit="%"
-										>
-											<Paragraph
-												big
-												flex
-												flexAlign={true}
-												style={{ color: color.black, fontWeight: "bold" }}
-												mixed={true}
-											>
-												Business Insurance
-											</Paragraph>
-
-											<Paragraph big>
-												Your cleaning business must have comprehensive business
-												insurance. There are various types to consider.
-											</Paragraph>
-
-											<Accordion
-												tab
-												content={BusinessInsuranceAccordionContent}
-											/>
-										</TextBlockWithImage>
+										<Heading size="3">{parse(content.header2)}</Heading>
+										<Paragraph big mixed>
+											{parse(content.text)}
+										</Paragraph>
 									</div>
 								);
 							}}
@@ -213,60 +146,29 @@ const TabScrollable = ({ layout, columns }) => {
 								}
 								return (
 									<div id={ButtonList[2].tabId}>
-										<TextBlockWithImage
-											SvgImage={AgentIcon}
-											textBackgroundColor="transparent"
-											imageBackgroundColor={color.orange2}
-											imageShadowColor={shadow.orange2}
-											imageShadowOpacity={0.5}
-											boxShadow={false}
-											paddingLeft={0}
-											style={{ marginTop: "140px" }}
-											circleShadowY={40}
-											circleShadowBlure={80}
-											width={100}
-											widthUnit="%"
-										>
-											<Paragraph
-												big
-												flex
-												flexAlign={true}
-												style={{ color: color.black, fontWeight: "bold" }}
-												mixed={true}
-											>
-												Registered Agent
-											</Paragraph>
-
-											<Paragraph big mixed={true}>
-												All businesses need to have a{" "}
-												<Link to="/manage-your-company/registered-agent/">
-													Registered Agent
-												</Link>
-												. These are individuals or other businesses that can
-												accept legal documents on behalf of your landscaping
-												company.
-											</Paragraph>
-											<Paragraph big>
-												Although you can act as your own registered agent, we
-												recommend using a professional service. It ensures there
-												will always be someone available to receive important
-												legal documentation on your behalf and also removes your
-												name and address from the public record.
-											</Paragraph>
-											<Paragraph big mixed={true}>
-												When you{" "}
-												<Link
-													to={`${process.env.ORDER_URL}/form-order-now.php`}
-												>
-													incorporate through us
-												</Link>
-												, we provide a{" "}
-												<Link to="/manage-your-company/registered-agent/">
-													complete Registered Agent service
-												</Link>{" "}
-												free for the first year.
-											</Paragraph>
-										</TextBlockWithImage>
+										<Heading size="3">{parse(content.header3)}</Heading>
+										<Paragraph big mixed>
+											{parse(content.text2)}
+										</Paragraph>
+										<Heading size="3">{parse(content.header4)}</Heading>
+										<Paragraph big mixed>
+											{parse(content.text3)}
+										</Paragraph>
+										<NumericBoxedList content={content.list} />
+										<Paragraph big mixed>
+											{parse(content.text4)}
+										</Paragraph>
+										<Heading size="3">{parse(content.header5)}</Heading>
+										<Paragraph big mixed>
+											{parse(content.text5)}
+										</Paragraph>
+										<NumericBoxedList content={content.list2} />
+										<Paragraph big mixed>
+											{parse(content.text6)}
+										</Paragraph>
+										<Paragraph big mixed>
+											{parse(content.text7)}
+										</Paragraph>
 									</div>
 								);
 							}}
@@ -279,46 +181,13 @@ const TabScrollable = ({ layout, columns }) => {
 								}
 								return (
 									<div id={ButtonList[3].tabId}>
-										<TextBlockWithImage
-											SvgImage={TaxesIcon}
-											textBackgroundColor="transparent"
-											imageBackgroundColor={color.orange2}
-											imageShadowColor={shadow.orange2}
-											imageShadowOpacity={0.5}
-											boxShadow={false}
-											paddingLeft={0}
-											style={{ marginTop: "140px" }}
-											circleShadowY={40}
-											circleShadowBlure={80}
-											width={100}
-											widthUnit="%"
-										>
-											<Paragraph
-												big
-												flex
-												flexAlign={true}
-												style={{ color: color.black, fontWeight: "bold" }}
-												mixed={true}
-											>
-												Taxes
-											</Paragraph>
-
-											<Paragraph big>
-												Taxes are a fact of life. If you’re in business, there
-												are various ways you will need to file and pay them.
-											</Paragraph>
-
-											<Accordion tab content={TaxesAccordionContent} />
-
-											<Paragraph big mixed={true} style={{ marginTop: "48px" }}>
-												As a rule of thumb, we recommend keeping back around a
-												third of your earnings to pay your taxes. We can even{" "}
-												<Link to="/business-accounting/">
-													prepare and file your tax returns for you
-												</Link>
-												.
-											</Paragraph>
-										</TextBlockWithImage>
+										<Heading size="3">{parse(content.header6)}</Heading>
+										<Paragraph big mixed>
+											{parse(content.text8)}
+										</Paragraph>
+										<IncfileVsCompareTableA content={content.table2} />
+										<IncfileVsCompareTableA content={content.table3} />
+										<IncfileVsCompareTableA content={content.table4} />
 									</div>
 								);
 							}}
@@ -331,46 +200,10 @@ const TabScrollable = ({ layout, columns }) => {
 								}
 								return (
 									<div id={ButtonList[4].tabId}>
-										<TextBlockWithImage
-											SvgImage={MaintainingIcon}
-											textBackgroundColor="transparent"
-											imageBackgroundColor={color.orange2}
-											imageShadowColor={shadow.orange2}
-											imageShadowOpacity={0.5}
-											boxShadow={false}
-											paddingLeft={0}
-											style={{ marginTop: "140px" }}
-											circleShadowY={40}
-											circleShadowBlure={80}
-											width={100}
-											widthUnit="%"
-										>
-											<Paragraph
-												big
-												flex
-												flexAlign={true}
-												style={{ color: color.black, fontWeight: "bold" }}
-												mixed={true}
-											>
-												Maintaining Your Business
-											</Paragraph>
-
-											<Paragraph big>
-												There are certain forms and legalities you need to
-												follow to keep your cleaning business in good standing.
-											</Paragraph>
-
-											<Accordion tab content={MaintainingAccordionContent} />
-
-											<Paragraph big mixed={true} style={{ marginTop: "48px" }}>
-												As a rule of thumb, we recommend keeping back around a
-												third of your earnings to pay your taxes. We can even{" "}
-												<Link to="/business-accounting/">
-													prepare and file your tax returns for you
-												</Link>
-												.
-											</Paragraph>
-										</TextBlockWithImage>
+										<Heading size="3">{parse(content.header7)}</Heading>
+										<Paragraph big mixed>
+											{parse(content.text9)}
+										</Paragraph>
 									</div>
 								);
 							}}

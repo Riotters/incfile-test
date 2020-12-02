@@ -26,7 +26,7 @@ const Dissolution = () => (
     <Requirements content={requirements} />
     <Faq content={faq} />
     <Benefits page="dissolution" />
-    <Articles />
+    <Articles categoryId={336} />
   </Layout>
 );
 

@@ -124,7 +124,7 @@ const TabScrollable = ({ layout, columns }) => {
               significant permit and licensing needs beyond the basic licenses we cover below.
             </Paragraph>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
+            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(0);
@@ -158,7 +158,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={200}>
+            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(1);
@@ -193,7 +193,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={200}>
+            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(2);
@@ -225,7 +225,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={600}>
+            <VisibilitySensor partialVisibility minTopValue={400} scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(3);
@@ -259,7 +259,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={140}>
+            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(4);
@@ -299,7 +299,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={300}>
+            <VisibilitySensor partialVisibility minTopValue={500} scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(5);
@@ -337,7 +337,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={300}>
+            <VisibilitySensor partialVisibility minTopValue={500} scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(6);
@@ -372,7 +372,7 @@ const TabScrollable = ({ layout, columns }) => {
               }}
             </VisibilitySensor>
 
-            <VisibilitySensor partialVisibility minTopValue={300}>
+            <VisibilitySensor partialVisibility minTopValue={500} scrollCheck intervalCheck scrollDelay={50}>
               {({ isVisible }) => {
                 if (isVisible) {
                   handleClick(7);

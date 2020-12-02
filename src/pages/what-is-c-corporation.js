@@ -14,7 +14,7 @@ import Differences from "../atomic/sections/review-entity-types/c-corporation/di
 import Requirements from "../atomic/sections/review-entity-types/c-corporation/requirements";
 import Rocket from "../atomic/sections/review-entity-types/c-corporation/rocket";
 import Forming from "../atomic/sections/review-entity-types/c-corporation/forming";
-import Articles from "../components/partials/sections/articles";
+import Articles from "../atomic/sections/articles";
 import Cta from "../atomic/sections/general/cta";
 //Texts
 import { top, about, adventages, disadventages, differences, requirements, rocket, cta, forming, hsForm } from "../static/review-entity-types/c-corporation";
@@ -65,7 +65,7 @@ const CCorporation = () => {
       <Requirements content={requirements} />
       <Rocket content={rocket} />
       <Forming content={forming} onClick={popup} />
-      <Articles />
+      <Articles categoryId={284} />
       <Cta cta={cta} />
 
       <LightBoxModal visible={modalVisible} className="modal-overlay">

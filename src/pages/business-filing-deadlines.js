@@ -8,7 +8,7 @@ import Top from "../atomic/partials/top";
 import About from "../atomic/sections/learning-center-entity/annual-report/about";
 import NextState from "../atomic/sections/learning-center-entity/annual-report/next-state";
 import Faq from "../atomic/sections/learning-center-entity/annual-report/faq";
-import Articles from "../components/partials/sections/articles";
+//import Articles from "../components/partials/sections/articles";
 import { scrollToElement } from '../helpers/utils';
 
 //Texts
@@ -28,7 +28,7 @@ const AnnualReport = () => {
             <About content={about} />
             <NextState content={nextStateDue} id="js-check-duedate-form" />
             <Faq content={faq} />
-            <Articles />
+            {/* <Articles /> */}
         </Layout>
     );
 };

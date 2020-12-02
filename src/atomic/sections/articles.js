@@ -9,6 +9,8 @@ import PinkCurveSVG from "../../images/pink-curve.inline.svg";
 import VisibilitySensor from "../VisibilitySensor";
 import Oval from "../../atomic/atoms/icons/oval";
 import OvalSVG from "../../images/ovals/top-right-transparent-purple2.inline.svg";
+import { getRelatedPosts } from "../../api/Api";
+import HTMLReactParser from "html-react-parser";
 
 const Wrapper = styled.div`
   padding-top: 80px;
@@ -43,7 +45,7 @@ const Content = styled.div`
 const CarouselWrapper = styled.div`
   margin: 0 -15px;
   overflow: hidden;
-  padding: 0 15px;
+  padding: 0 10px 42px 10px;
   
   @media (max-width: 768px) {contact/new-sales
     .react-multi-carousel-list {
@@ -129,73 +131,49 @@ const responsive = {
   },
 };
 
-const Articles = ({ oval }) => (
-  <Wrapper>
-    {oval && (
-      <Oval height="341" width="341" top="25" right="0">
-        <OvalSVG />
-      </Oval>
-    )}
-    <Container>
-      <Content>
-        <VisibilitySensor partialVisibility once>
-          {({ isVisible }) => <h3 className={isVisible ? "slideUp enter" : "slideUp"}>Related Articles</h3>}
-        </VisibilitySensor>
-        <CarouselWrapper>
-          <PurpleCurve>
-            <PurpleCurveSVG />
-          </PurpleCurve>
-          <PinkCurve>
-            <PinkCurveSVG />
-          </PinkCurve>
-          <Carousel responsive={responsive} arrows={false} showDots renderDotsOutside>
-            <Article img="bike" top="0" topLG="-50px" scale="1.1">
-              Here’s Seven Tips to Steer You in the Right Direction.
-            </Article>
-            <Article img="baloons">How to Balance Owning Multiple Businesses.</Article>
-            <Article img="newspaper" top="0" topLG="-30px" scale="1.1">
-              Here’s Seven Tips to Steer You in the Right Direction.
-            </Article>
-            <Article img="bike" top="0" topLG="-50px" scale="1.1">
-              How to Balance Owning Multiple Businesses.
-            </Article>
-            <Article img="newspaper" top="0" topLG="-30px" scale="1.1">
-              Here’s Seven Tips to Steer You in the Right Direction.
-            </Article>
-            <Article img="baloons">How to Balance Owning Multiple Businesses.</Article>
-            <Article img="bike" top="0" topLG="-50px" scale="1.1">
-              Here’s Seven Tips to Steer You in the Right Direction.
-            </Article>
-            <Article img="baloons">How to Balance Owning Multiple Businesses.</Article>
-            <Article img="newspaper" top="0" topLG="-30px" scale="1.1">
-              Here’s Seven Tips to Steer You in the Right Direction.
-            </Article>
-            <Article img="bike" top="0" topLG="-50px" scale="1.1">
-              How to Balance Owning Multiple Businesses.
-            </Article>
-            <Article img="newspaper" top="0" topLG="-30px" scale="1.1">
-              Here’s Seven Tips to Steer You in the Right Direction.
-            </Article>
-            <Article img="baloons">How to Balance Owning Multiple Businesses.</Article>
-          </Carousel>
-        </CarouselWrapper>
-        {/*<MobileWrapper>*/}
-          {/*<Article img="bike">Here’s Seven Tips to Steer You in the Right Direction.</Article>*/}
-          {/*<Article img="baloons">How to Balance Owning Multiple Businesses.</Article>*/}
-          {/*<Article img="newspaper">Here’s Seven Tips to Steer You in the Right Direction.</Article>*/}
-          {/*<Article img="bike">How to Balance Owning Multiple Businesses.</Article>*/}
-          {/*<Article img="newspaper">Here’s Seven Tips to Steer You in the Right Direction.</Article>*/}
-          {/*<Article img="baloons">How to Balance Owning Multiple Businesses.</Article>*/}
-          {/*<Article img="bike">Here’s Seven Tips to Steer You in the Right Direction.</Article>*/}
-          {/*<Article img="baloons">How to Balance Owning Multiple Businesses.</Article>*/}
-          {/*<Article img="newspaper">Here’s Seven Tips to Steer You in the Right Direction.</Article>*/}
-          {/*<Article img="bike">How to Balance Owning Multiple Businesses.</Article>*/}
-          {/*<Article img="newspaper">Here’s Seven Tips to Steer You in the Right Direction.</Article>*/}
-          {/*<Article img="baloons">How to Balance Owning Multiple Businesses.</Article>*/}
-        {/*</MobileWrapper>*/}
-      </Content>
-    </Container>
-  </Wrapper>
-);
+const Articles = ({ oval, categoryId }) => {
+    const [posts, setPosts] = React.useState([]);
+
+    React.useEffect(() => {
+        getRelatedPosts(categoryId)
+            .then(data => {
+                setPosts(data);
+            });
+    }, [categoryId]);
+    
+    return (
+        <Wrapper>
+            {oval && (
+                <Oval height="341" width="341" top="25" right="0">
+                    <OvalSVG />
+                </Oval>
+            )}
+            {posts.length > 0 && (<Container>
+                <Content>
+                    <VisibilitySensor partialVisibility once>
+                        {({ isVisible }) => <h3 className={isVisible ? "slideUp enter" : "slideUp"}>Related Articles</h3>}
+                    </VisibilitySensor>
+                    <CarouselWrapper>
+                        <PurpleCurve>
+                            <PurpleCurveSVG />
+                        </PurpleCurve>
+                        <PinkCurve>
+                            <PinkCurveSVG />
+                        </PinkCurve>
+                        <Carousel responsive={responsive} arrows={false} showDots renderDotsOutside>
+                            {posts.map((post, index) => (
+                                <Article img={post.featured_image} top="0" topLG="-50px" scale="1.1" href={post.link} key={index}>
+                                    {HTMLReactParser(post.title.rendered)}
+                                </Article>
+                            ))}
+                            
+                        </Carousel>
+                    </CarouselWrapper>
+                </Content>
+            </Container>
+            )}
+        </Wrapper>
+    );
+};
 
 export default Articles;
