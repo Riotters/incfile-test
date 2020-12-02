@@ -5,7 +5,10 @@ import {Heading} from "../atomic/atoms/typography/heading";
 
 const Redirect = ({ }) => {
     useEffect(() => {
-       window.location.href = "https://orders.incfile.com/form-order-now.php";
+        if (typeof window !== 'undefined') {
+            const queryString = window.location.search || '';
+            window.location.href = `${process.env.ORDER_URL}/form-order-now.php${queryString}`;
+        }
     });
 
     return (

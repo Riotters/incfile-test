@@ -27,7 +27,7 @@ const TaxIdEin = () => (
     <Help content={help} />
     <Faq content={faq} />
     <Benefits page="tax-id-ein" />
-    <Articles />
+    <Articles categoryId={313} />
   </Layout>
 );
 

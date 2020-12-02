@@ -12,7 +12,7 @@ import About from "../../atomic/sections/manage-your-company/annual-report/about
 import Help from "../../atomic/sections/manage-your-company/annual-report/help";
 import Faq from "../../atomic/sections/manage-your-company/annual-report/faq";
 import Benefits from "../../atomic/sections/benefits";
-import Articles from "../../components/partials/sections/articles";
+import Articles from "../../atomic/sections/articles";
 //Texts
 import { top, about, help, faq } from "../../static/manage-your-company/annual-report";
 
@@ -34,7 +34,7 @@ const AnnualReport = () => (
     <Help content={help} />
     <Faq content={faq} />
     <Benefits page="annual-report" />
-    <Articles />
+    <Articles categoryId={334} />
   </Layout>
 );
 

@@ -31,7 +31,7 @@ const TrademarkNameSearch = () => (
     <Benefits />
     <Faq content={faq} />
     <Cta content={cta} />
-    <Articles />
+    <Articles categoryId={288} />
   </Layout>
 );
 

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Tabs, Panel, useTabState } from "@bumaga/tabs";
 // import { motion } from "framer-motion"
 import Container from "../../container";
-import ArrowLink from "../../../components/arrow-link";
 import CaseSVG from "../../../images/icons/case-orange.inline.svg";
 import TypesSVG from "../../../images/icons/types-of-llc.inline.svg";
 import ArrowSVG from "../../../images/arrow.inline.svg";
@@ -15,6 +14,7 @@ import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
 import VisibilitySensor from "../../../components/VisibilitySensor";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
+import LightBoxVideo from "../../../components/LightBox";
 
 const Wrapper = styled.div`
   display: flex;
@@ -231,7 +231,8 @@ const CCorpTabs = ({ layout, columns, content }) => (
             <Collapse isOpened={true}>
               <Panel>
                 <PanelWrapper className={isVisible ? "slideUp enter panel1" : "slideUp panel1"} layout={layout}>
-                  <Heading size="3">{content.content[0].header}</Heading>
+                    <Heading size="3">{content.content[0].header}</Heading>
+                    <LightBoxVideo thumbnailVideo="what-is-an-s-corp-7321" videoID="fAlXeIWEoT0" bottomMargin="32" />
                   <Paragraph big>{content.content[0].text}</Paragraph>
                   <IconTextColorBox color={color.yellow3} Icon={IconSVG} content={content.content[0].box} rounded curve />
                 </PanelWrapper>

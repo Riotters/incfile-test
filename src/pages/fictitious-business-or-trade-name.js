@@ -14,7 +14,7 @@ import Protect from "../atomic/sections/manage-your-company/fictitious-business/
 import States from "../atomic/sections/manage-your-company/fictitious-business/states";
 import Help from "../atomic/sections/manage-your-company/fictitious-business/help";
 import Faq from "../atomic/sections/manage-your-company/fictitious-business/faq";
-import Articles from "../components/partials/sections/articles";
+import Articles from "../atomic/sections/articles";
 //texts
 import { top, about, businessesChoose, otherTerms, register, behalf, protect, states, help, faq } from "../static/fictitious-business";
 
@@ -37,7 +37,7 @@ const FictitiousBusiness = () => (
     <States content={states} />
     <Help content={help} />
     <Faq content={faq} />
-    <Articles />
+    <Articles categoryId={317} />
   </Layout>
 );
 

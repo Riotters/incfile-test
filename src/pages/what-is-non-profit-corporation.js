@@ -11,7 +11,7 @@ import About from "../components/partials/sections/about";
 import Rocket from "../atomic/sections/rocket";
 import Faq from "../atomic/sections/review-entity-types/nonprofit/faq";
 import Cta from "../atomic/sections/general/cta";
-import Articles from "../components/partials/sections/articles";
+import Articles from "../atomic/sections/articles";
 import { ThankYouContent } from "../components/hubspot/thank-you-modal";
 import HSFormModal from "../components/hubspot/standard-post-form-modal";
 
@@ -57,7 +57,7 @@ const IndexPage = () => {
       <Rocket statesDropdown />
       <Faq content={faq} onClick={popup} />
       <Cta cta={cta} />
-      <Articles />
+      <Articles categoryId={318} />
       <LightBoxModal visible={modalVisible} className="modal-overlay">
         <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
           {!formSubmitted && <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />}
