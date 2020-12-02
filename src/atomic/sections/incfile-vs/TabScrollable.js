@@ -35,6 +35,7 @@ import {
 import VisibilitySensor from "../../../components/VisibilitySensor";
 import IncfileVsCompareTableA from "../../organisms/tables/incfile-vs-compare-table-a";
 import NumericBoxedList from "../../organisms/lists/numeric-boxed-list";
+import {InView} from "react-intersection-observer";
 
 const ButtonList = [
 	{
@@ -109,105 +110,70 @@ const TabScrollable = ({ layout, columns, content }) => {
 					</TabsWrapper>
 
 					<PanelWrapper>
-						<VisibilitySensor partialVisibility minTopValue={0}>
-							{({ isVisible }) => {
-								if (isVisible) {
-									handleClick(0);
-								}
-								return (
-									<div id={ButtonList[0].tabId}>
-										<Heading size="3">{parse(content.header)}</Heading>
-										<IncfileVsCompareTableA content={content.table} />
-									</div>
-								);
-							}}
-						</VisibilitySensor>
+						<InView trackVisibility onChange={(visible) => { if( visible ) setActive(0); }}>
+							<div id={ButtonList[0].tabId}>
+								<Heading size="3">{parse(content.header)}</Heading>
+								<IncfileVsCompareTableA content={content.table} />
+							</div>
+						</InView>
 
-						<VisibilitySensor partialVisibility minTopValue={0}>
-							{({ isVisible }) => {
-								if (isVisible) {
-									handleClick(1);
-								}
-								return (
-									<div id={ButtonList[1].tabId}>
-										<Heading size="3">{parse(content.header2)}</Heading>
-										<Paragraph big mixed>
-											{parse(content.text)}
-										</Paragraph>
-									</div>
-								);
-							}}
-						</VisibilitySensor>
+						<InView trackVisibility onChange={(visible) => { if( visible ) setActive(1); }}>
+							<div id={ButtonList[1].tabId}>
+								<Heading size="3">{parse(content.header2)}</Heading>
+								<Paragraph big mixed>
+									{parse(content.text)}
+								</Paragraph>
+							</div>
+						</InView>
 
-						<VisibilitySensor partialVisibility minTopValue={0}>
-							{({ isVisible }) => {
-								if (isVisible) {
-									handleClick(2);
-								}
-								return (
-									<div id={ButtonList[2].tabId}>
-										<Heading size="3">{parse(content.header3)}</Heading>
-										<Paragraph big mixed>
-											{parse(content.text2)}
-										</Paragraph>
-										<Heading size="3">{parse(content.header4)}</Heading>
-										<Paragraph big mixed>
-											{parse(content.text3)}
-										</Paragraph>
-										<NumericBoxedList content={content.list} />
-										<Paragraph big mixed>
-											{parse(content.text4)}
-										</Paragraph>
-										<Heading size="3">{parse(content.header5)}</Heading>
-										<Paragraph big mixed>
-											{parse(content.text5)}
-										</Paragraph>
-										<NumericBoxedList content={content.list2} />
-										<Paragraph big mixed>
-											{parse(content.text6)}
-										</Paragraph>
-										<Paragraph big mixed>
-											{parse(content.text7)}
-										</Paragraph>
-									</div>
-								);
-							}}
-						</VisibilitySensor>
+						<InView trackVisibility onChange={(visible) => { if( visible ) setActive(2); }}>
+							<div id={ButtonList[2].tabId}>
+								<Heading size="3">{parse(content.header3)}</Heading>
+								<Paragraph big mixed>
+									{parse(content.text2)}
+								</Paragraph>
+								<Heading size="3">{parse(content.header4)}</Heading>
+								<Paragraph big mixed>
+									{parse(content.text3)}
+								</Paragraph>
+								<NumericBoxedList content={content.list} />
+								<Paragraph big mixed>
+									{parse(content.text4)}
+								</Paragraph>
+								<Heading size="3">{parse(content.header5)}</Heading>
+								<Paragraph big mixed>
+									{parse(content.text5)}
+								</Paragraph>
+								<NumericBoxedList content={content.list2} />
+								<Paragraph big mixed>
+									{parse(content.text6)}
+								</Paragraph>
+								<Paragraph big mixed>
+									{parse(content.text7)}
+								</Paragraph>
+							</div>
+						</InView>
 
-						<VisibilitySensor partialVisibility minTopValue={0}>
-							{({ isVisible }) => {
-								if (isVisible) {
-									handleClick(3);
-								}
-								return (
-									<div id={ButtonList[3].tabId}>
-										<Heading size="3">{parse(content.header6)}</Heading>
-										<Paragraph big mixed>
-											{parse(content.text8)}
-										</Paragraph>
-										<IncfileVsCompareTableA content={content.table2} />
-										<IncfileVsCompareTableA content={content.table3} />
-										<IncfileVsCompareTableA content={content.table4} />
-									</div>
-								);
-							}}
-						</VisibilitySensor>
+						<InView trackVisibility onChange={(visible) => { if( visible ) setActive(3); }}>
+							<div id={ButtonList[3].tabId}>
+								<Heading size="3">{parse(content.header6)}</Heading>
+								<Paragraph big mixed>
+									{parse(content.text8)}
+								</Paragraph>
+								<IncfileVsCompareTableA content={content.table2} />
+								<IncfileVsCompareTableA content={content.table3} />
+								<IncfileVsCompareTableA content={content.table4} />
+							</div>
+						</InView>
 
-						<VisibilitySensor partialVisibility minTopValue={0}>
-							{({ isVisible }) => {
-								if (isVisible) {
-									handleClick(4);
-								}
-								return (
-									<div id={ButtonList[4].tabId}>
-										<Heading size="3">{parse(content.header7)}</Heading>
-										<Paragraph big mixed>
-											{parse(content.text9)}
-										</Paragraph>
-									</div>
-								);
-							}}
-						</VisibilitySensor>
+						<InView trackVisibility onChange={(visible) => { if( visible ) setActive(4); }}>
+							<div id={ButtonList[4].tabId}>
+								<Heading size="3">{parse(content.header7)}</Heading>
+								<Paragraph big mixed>
+									{parse(content.text9)}
+								</Paragraph>
+							</div>
+						</InView>
 					</PanelWrapper>
 				</Wrapper>
 			</Container>

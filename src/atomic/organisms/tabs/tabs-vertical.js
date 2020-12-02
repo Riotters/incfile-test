@@ -372,99 +372,47 @@ const CCorpTabs = ({ layout, columns, content }) => {
 					</TabsWrapper>
 					{/* <Panels> */}
 					<Collapse isOpened={true}>
-						<TabPanel>
-							<PanelWrapper
-								//className={isVisible ? "slideUp enter panel1" : "slideUp panel1"}
-								layout={layout}
-							>
-								<Heading size="3">{content.content[0].header}</Heading>
-								<Paragraph big bottomMargin="48">
-									{content.content[0].text}
-								</Paragraph>
-								<Heading size="3">{content.content[0].header2}</Heading>
-								<Paragraph big bottomMargin="48">
-									{content.content[0].text2}
-								</Paragraph>
-								<AccordionWithCheckmark
-									content={content.content[0].list}
-									tab
-									bottomMargin="40"
-								/>
-								<Heading size="3">{content.content[0].header3}</Heading>
-								<LightBoxVideo
-									thumbnailVideo="how-to-start-an-llc-2379"
-									videoID="R_oIgzYh7NU"
-									bottomMargin="40"
-								/>
-								<Paragraph big bottomMargin="48">
-									{content.content[0].text3}
-								</Paragraph>
-								<AccordionWithCounting
-									content={content.content[0].list2}
-									tab
-									bottomMargin="40"
-								/>
-								<Heading size="3">{content.content[0].header4}</Heading>
-								<Paragraph big bottomMargin="0">
-									{content.content[0].text4}
-								</Paragraph>
-							</PanelWrapper>
-						</TabPanel>
-						<TabPanel>
-							<PanelWrapper className="panel2" layout={layout}>
-								<Heading size="3">{content.content[1].header}</Heading>
-								<Paragraph big>{content.content[1].text}</Paragraph>
-								<Paragraph big bottomMargin="24">
-									{content.content[1].text2}
-								</Paragraph>
-								<ArrowLink content={content.content[1].link} />
-							</PanelWrapper>
-						</TabPanel>
-						<TabPanel>
-							<PanelWrapper className="panel3" layout={layout}>
-								<Heading size="3">{content.content[2].header}</Heading>
-								<Paragraph big bottomMargin="56">
-									{content.content[2].text}
-								</Paragraph>
-								<Grid>
-									{content.content[2].boxes.map((box, i) => (
-										<ColorBox>
-											<ColorboxIcon>{iconsState[i]}</ColorboxIcon>
-											<Text>{box}</Text>
-										</ColorBox>
-									))}
-								</Grid>
-								<ArrowLink content={content.content[2].link} />
-								<Paragraph big bottomMargin="56">
-									{content.content[2].text2}
-								</Paragraph>
-							</PanelWrapper>
-						</TabPanel>
-						<TabPanel>
-							<PanelWrapper className="panel4" layout={layout}>
-								<Heading size="3">{content.content[3].header}</Heading>
-								<Paragraph big>{content.content[3].text}</Paragraph>
-							</PanelWrapper>
-						</TabPanel>
-						<TabPanel>
-							<PanelWrapper className="panel4" layout={layout}>
-								<Heading size="3">{content.content[4].header}</Heading>
-								<Paragraph big>{content.content[4].text}</Paragraph>
-								<IconListColorBox
-									color={color.blue3}
-									content={content.content[4].box}
-									rounded
-									bottomMargin="48"
-								/>
-								<Paragraph big>{content.content[4].text2}</Paragraph>
-							</PanelWrapper>
-						</TabPanel>
-						<TabPanel>
-							<PanelWrapper className="panel6" layout={layout}>
-								<Heading size="3">{content.content[5].header}</Heading>
-								<Paragraph big>{content.content[5].text}</Paragraph>
-							</PanelWrapper>
-						</TabPanel>
+						{content.panels.map((afds) => (
+							<TabPanel>
+								<PanelWrapper
+									//className={isVisible ? "slideUp enter panel1" : "slideUp panel1"}
+									layout={layout}
+								>
+									<Heading size="3">{content.content[0].header}</Heading>
+									<Paragraph big bottomMargin="48">
+										{content.content[0].text}
+									</Paragraph>
+									<Heading size="3">{content.content[0].header2}</Heading>
+									<Paragraph big bottomMargin="48">
+										{content.content[0].text2}
+									</Paragraph>
+									<AccordionWithCheckmark
+										content={content.content[0].list}
+										tab
+										bottomMargin="40"
+									/>
+									<Heading size="3">{content.content[0].header3}</Heading>
+									<LightBoxVideo
+										thumbnailVideo="how-to-start-an-llc-2379"
+										videoID="R_oIgzYh7NU"
+										bottomMargin="40"
+									/>
+									<Paragraph big bottomMargin="48">
+										{content.content[0].text3}
+									</Paragraph>
+									<AccordionWithCounting
+										content={content.content[0].list2}
+										tab
+										bottomMargin="40"
+									/>
+									<Heading size="3">{content.content[0].header4}</Heading>
+									<Paragraph big bottomMargin="0">
+										{content.content[0].text4}
+									</Paragraph>
+								</PanelWrapper>
+							</TabPanel>
+						))}
+						;
 					</Collapse>
 					{/* </Panels> */}
 				</Tabs>

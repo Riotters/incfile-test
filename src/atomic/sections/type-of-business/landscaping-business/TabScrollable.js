@@ -33,6 +33,7 @@ import CalcColoredIcon from "../../../../images/icons/finances-and-your-business
 
 import { BusinessInsuranceAccordionContent, FinancesAccordionContent, MaintainingAccordionContent, TaxesAccordionContent } from "../../../../static/type-of-business/landscaping-business";
 import VisibilitySensor from "../../../../components/VisibilitySensor";
+import {InView} from "react-intersection-observer";
 
 const ButtonList = [
   {
@@ -121,12 +122,7 @@ const TabScrollable = ({ layout, columns }) => {
               Rules, Regulations and Laws for Your Landscaping Business
             </Paragraph>
 
-            <VisibilitySensor partialVisibility minTopValue={0}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(0);
-                }
-                return (
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(0); }}>
                   <div id={ButtonList[0].tabId}>
                     <TextBlockWithImage
                       SvgImage={BusinessLicenseIcon}
@@ -149,16 +145,9 @@ const TabScrollable = ({ layout, columns }) => {
                       <Paragraph big>Your region, county or city may require you to have licenses or permits to operate a business. Talk to your city’s Chamber of Commerce to learn about your local licensing and permit requirements.</Paragraph>
                     </TextBlockWithImage>
                   </div>
-                );
-              }}
-            </VisibilitySensor>
+            </InView>
 
-            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(1);
-                }
-                return (
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(1); }}>
                   <div id={ButtonList[1].tabId}>
                     <TextBlockWithImage
                       SvgImage={StateBusinessIcon}
@@ -184,16 +173,9 @@ const TabScrollable = ({ layout, columns }) => {
                       </Paragraph>
                     </TextBlockWithImage>
                   </div>
-                );
-              }}
-            </VisibilitySensor>
+            </InView>
 
-            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}offset={{ bottom: 100 }}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(2);
-                }
-                return (
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(2); }}>
                   <div id={ButtonList[2].tabId}>
                     <TextBlockWithImage
                       SvgImage={FederalBusinessIcon}
@@ -222,16 +204,9 @@ const TabScrollable = ({ layout, columns }) => {
                       </Paragraph>
                     </TextBlockWithImage>
                   </div>
-                );
-              }}
-            </VisibilitySensor>
+            </InView>
 
-            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(3);
-                }
-                return (
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(3); }}>
                   <div id={ButtonList[3].tabId}>
                     <TextBlockWithImage
                       SvgImage={BusinessInsuranceIcon}
@@ -256,16 +231,9 @@ const TabScrollable = ({ layout, columns }) => {
                       <Accordion tab content={BusinessInsuranceAccordionContent} />
                     </TextBlockWithImage>
                   </div>
-                );
-              }}
-            </VisibilitySensor>
+            </InView>
 
-            <VisibilitySensor partialVisibility minTopValue={500} scrollCheck intervalCheck scrollDelay={50}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(4);
-                }
-                return (
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(4); }}>
                   <div id={ButtonList[4].tabId}>
                     <TextBlockWithImage
                       SvgImage={AgentIcon}
@@ -296,16 +264,9 @@ const TabScrollable = ({ layout, columns }) => {
                       </Paragraph>
                     </TextBlockWithImage>
                   </div>
-                );
-              }}
-            </VisibilitySensor>
+            </InView>
 
-            <VisibilitySensor partialVisibility minTopValue={500} scrollCheck intervalCheck scrollDelay={50}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(5);
-                }
-                return (
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(5); }}>
                   <div id={ButtonList[5].tabId}>
                     <TextBlockWithImage
                       SvgImage={TaxesIcon}
@@ -334,16 +295,9 @@ const TabScrollable = ({ layout, columns }) => {
                       </Paragraph>
                     </TextBlockWithImage>
                   </div>
-                );
-              }}
-            </VisibilitySensor>
+            </InView>
 
-            <VisibilitySensor partialVisibility minTopValue={500} scrollCheck intervalCheck scrollDelay={50}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(6);
-                }
-                return (
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(6); }}>
                   <div id={ButtonList[6].tabId}>
                     <TextBlockWithImage
                       SvgImage={MaintainingIcon}
@@ -372,16 +326,9 @@ const TabScrollable = ({ layout, columns }) => {
                       </Paragraph>
                     </TextBlockWithImage>
                   </div>
-                );
-              }}
-            </VisibilitySensor>
+            </InView>
 
-            <VisibilitySensor partialVisibility minTopValue={500} scrollCheck intervalCheck scrollDelay={50}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(7);
-                }
-                return (
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(7); }}>
                   <div id={ButtonList[7].tabId}>
                     <TextBlockWithImage
                       SvgImage={CalcIcon}
@@ -406,9 +353,7 @@ const TabScrollable = ({ layout, columns }) => {
                       <Accordion tab content={FinancesAccordionContent} />
                     </TextBlockWithImage>
                   </div>
-                );
-              }}
-            </VisibilitySensor>
+            </InView>
           </PanelWrapper>
         </Wrapper>
       </Container>

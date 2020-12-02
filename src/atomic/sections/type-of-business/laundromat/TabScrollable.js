@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
-
 import { color } from "../../../atoms/styles/colors";
 import { shadow } from "../../../atoms/styles/shadows";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
-
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-
 import Accordion from "../../../organisms/accordion/accordion";
-
 import Container from "../../../../components/container";
 
 import BusinessLicenseIcon from "../../../../images/icons/business-licenses-and-permits.inline.svg";
@@ -32,7 +28,7 @@ import MaintainingColoredIcon from "../../../../images/icons/maintaining-your-cl
 import CalcColoredIcon from "../../../../images/icons/finances-and-your-business-colored.inline.svg";
 
 import { BusinessInsuranceAccordionContent, FinancesAccordionContent, MaintainingAccordionContent, TaxesAccordionContent } from "../../../../static/type-of-business/laundromat";
-import VisibilitySensor from "../../../../components/VisibilitySensor";
+import {InView} from "react-intersection-observer";
 
 const ButtonList = [
   {
@@ -121,288 +117,225 @@ const TabScrollable = ({ layout, columns }) => {
               Of course, along with running a business there are certain rules, regulations and legalities you need to be aware of. We can also help with researching your business licensing needs.
             </Paragraph>
 
-            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(0);
-                }
-                return (
-                  <div id={ButtonList[0].tabId}>
-                    <TextBlockWithImage
-                      SvgImage={BusinessLicenseIcon}
-                      textBackgroundColor="transparent"
-                      imageBackgroundColor={color.orange2}
-                      imageShadowColor={shadow.orange2}
-                      imageShadowOpacity={0.5}
-                      boxShadow={false}
-                      paddingLeft={0}
-                      style={{ marginTop: "140px" }}
-                      circleShadowY={40}
-                      circleShadowBlure={80}
-                      width={100}
-                      widthUnit="%"
-                    >
-                      <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
-                        Local Business Licenses and Permits
-                      </Paragraph>
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(0); }}>
+              <div id={ButtonList[0].tabId}>
+                <TextBlockWithImage
+                    SvgImage={BusinessLicenseIcon}
+                    textBackgroundColor="transparent"
+                    imageBackgroundColor={color.orange2}
+                    imageShadowColor={shadow.orange2}
+                    imageShadowOpacity={0.5}
+                    boxShadow={false}
+                    paddingLeft={0}
+                    style={{ marginTop: "140px" }}
+                    circleShadowY={40}
+                    circleShadowBlure={80}
+                    width={100}
+                    widthUnit="%"
+                >
+                  <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
+                    Local Business Licenses and Permits
+                  </Paragraph>
 
-                      <Paragraph big>Your region, county or city may require you to have licenses or permits to operate a business. Talk to your city’s Chamber of Commerce to learn about your local licensing and permit requirements.</Paragraph>
-                    </TextBlockWithImage>
-                  </div>
-                );
-              }}
-            </VisibilitySensor>
+                  <Paragraph big>Your region, county or city may require you to have licenses or permits to operate a business. Talk to your city’s Chamber of Commerce to learn about your local licensing and permit requirements.</Paragraph>
+                </TextBlockWithImage>
+              </div>
+            </InView>
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(1); }}>
+              <div id={ButtonList[1].tabId}>
+                <TextBlockWithImage
+                    SvgImage={StateBusinessIcon}
+                    textBackgroundColor="transparent"
+                    imageBackgroundColor={color.orange2}
+                    imageShadowColor={shadow.orange2}
+                    imageShadowOpacity={0.5}
+                    boxShadow={false}
+                    paddingLeft={0}
+                    style={{ marginTop: "140px" }}
+                    circleShadowY={40}
+                    circleShadowBlure={80}
+                    width={100}
+                    widthUnit="%"
+                >
+                  <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
+                    State Business Licenses and Permits
+                  </Paragraph>
 
-            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(1);
-                }
-                return (
-                  <div id={ButtonList[1].tabId}>
-                    <TextBlockWithImage
-                      SvgImage={StateBusinessIcon}
-                      textBackgroundColor="transparent"
-                      imageBackgroundColor={color.orange2}
-                      imageShadowColor={shadow.orange2}
-                      imageShadowOpacity={0.5}
-                      boxShadow={false}
-                      paddingLeft={0}
-                      style={{ marginTop: "140px" }}
-                      circleShadowY={40}
-                      circleShadowBlure={80}
-                      width={100}
-                      widthUnit="%"
-                    >
-                      <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
-                        State Business Licenses and Permits
-                      </Paragraph>
+                  <Paragraph big mixed={true}>
+                    You can find all the information you need about statewide licenses and permits on your state’s Secretary of State website. You can also find those details in our <Link to="/llc-state-information/">state-by-state guides to company formation.</Link> Alternatively, the Small
+                    Business Administration website has a <a href="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits" target="_blank" rel="noopener noreferrer">list of licenses and permits by state.</a>
+                  </Paragraph>
+                </TextBlockWithImage>
+              </div>
+            </InView>
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(2); }}>
+              <div id={ButtonList[2].tabId}>
+                <TextBlockWithImage
+                    SvgImage={FederalBusinessIcon}
+                    textBackgroundColor="transparent"
+                    imageBackgroundColor={color.orange2}
+                    imageShadowColor={shadow.orange2}
+                    imageShadowOpacity={0.5}
+                    boxShadow={false}
+                    paddingLeft={0}
+                    style={{ marginTop: "140px" }}
+                    circleShadowY={40}
+                    circleShadowBlure={80}
+                    width={100}
+                    widthUnit="%"
+                >
+                  <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
+                    Federal Business Licenses and Permits
+                  </Paragraph>
 
-                      <Paragraph big mixed={true}>
-                        You can find all the information you need about statewide licenses and permits on your state’s Secretary of State website. You can also find those details in our <Link to="/llc-state-information/">state-by-state guides to company formation.</Link> Alternatively, the Small
-                        Business Administration website has a <a href="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits" target="_blank" rel="noopener noreferrer">list of licenses and permits by state.</a>
-                      </Paragraph>
-                    </TextBlockWithImage>
-                  </div>
-                );
-              }}
-            </VisibilitySensor>
+                  <Paragraph big>The Small Business Administration provides details of any national or federal licenses and permits you might need.</Paragraph>
+                </TextBlockWithImage>
+              </div>
+            </InView>
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(3); }}>
+              <div id={ButtonList[3].tabId}>
+                <TextBlockWithImage
+                    SvgImage={BusinessInsuranceIcon}
+                    textBackgroundColor="transparent"
+                    imageBackgroundColor={color.orange2}
+                    imageShadowColor={shadow.orange2}
+                    imageShadowOpacity={0.5}
+                    boxShadow={false}
+                    paddingLeft={0}
+                    style={{ marginTop: "140px" }}
+                    circleShadowY={40}
+                    circleShadowBlure={80}
+                    width={100}
+                    widthUnit="%"
+                >
+                  <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
+                    Business Insurance
+                  </Paragraph>
 
-            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(2);
-                }
-                return (
-                  <div id={ButtonList[2].tabId}>
-                    <TextBlockWithImage
-                      SvgImage={FederalBusinessIcon}
-                      textBackgroundColor="transparent"
-                      imageBackgroundColor={color.orange2}
-                      imageShadowColor={shadow.orange2}
-                      imageShadowOpacity={0.5}
-                      boxShadow={false}
-                      paddingLeft={0}
-                      style={{ marginTop: "140px" }}
-                      circleShadowY={40}
-                      circleShadowBlure={80}
-                      width={100}
-                      widthUnit="%"
-                    >
-                      <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
-                        Federal Business Licenses and Permits
-                      </Paragraph>
+                  <Paragraph big>Most landscaping businesses should have comprehensive business insurance. There are various types.</Paragraph>
 
-                      <Paragraph big>The Small Business Administration provides details of any national or federal licenses and permits you might need.</Paragraph>
-                    </TextBlockWithImage>
-                  </div>
-                );
-              }}
-            </VisibilitySensor>
+                  <Accordion tab content={BusinessInsuranceAccordionContent} />
+                </TextBlockWithImage>
+              </div>
+            </InView>
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(4); }}>
+              <div id={ButtonList[4].tabId}>
+                <TextBlockWithImage
+                    SvgImage={AgentIcon}
+                    textBackgroundColor="transparent"
+                    imageBackgroundColor={color.orange2}
+                    imageShadowColor={shadow.orange2}
+                    imageShadowOpacity={0.5}
+                    boxShadow={false}
+                    paddingLeft={0}
+                    style={{ marginTop: "140px" }}
+                    circleShadowY={40}
+                    circleShadowBlure={80}
+                    width={100}
+                    widthUnit="%"
+                >
+                  <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
+                    Registered Agent
+                  </Paragraph>
 
-            <VisibilitySensor partialVisibility minTopValue={400} offset={{ top: 100, bottom: 100 }} scrollCheck intervalCheck scrollDelay={50}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(3);
-                }
-                return (
-                  <div id={ButtonList[3].tabId}>
-                    <TextBlockWithImage
-                      SvgImage={BusinessInsuranceIcon}
-                      textBackgroundColor="transparent"
-                      imageBackgroundColor={color.orange2}
-                      imageShadowColor={shadow.orange2}
-                      imageShadowOpacity={0.5}
-                      boxShadow={false}
-                      paddingLeft={0}
-                      style={{ marginTop: "140px" }}
-                      circleShadowY={40}
-                      circleShadowBlure={80}
-                      width={100}
-                      widthUnit="%"
-                    >
-                      <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
-                        Business Insurance
-                      </Paragraph>
+                  <Paragraph big mixed={true}>
+                    All businesses need to have a Registered Agent. These are individuals or other businesses that can accept legal documents on behalf of your landscaping company.
+                  </Paragraph>
+                  <Paragraph big>
+                    Although you can act as your own registered agent, we recommend using a professional service. It ensures there will always be someone available to receive important legal documentation on your behalf and also removes your name and address from the public record.
+                  </Paragraph>
+                  <Paragraph big mixed={true}>
+                    When you incorporate through us, we provide a <Link to="/manage-your-company/registered-agent/">complete Registered Agent service free</Link> for the first year.
+                  </Paragraph>
+                </TextBlockWithImage>
+              </div>
+            </InView>
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(5); }}>
+              <div id={ButtonList[5].tabId}>
+                <TextBlockWithImage
+                    SvgImage={TaxesIcon}
+                    textBackgroundColor="transparent"
+                    imageBackgroundColor={color.orange2}
+                    imageShadowColor={shadow.orange2}
+                    imageShadowOpacity={0.5}
+                    boxShadow={false}
+                    paddingLeft={0}
+                    style={{ marginTop: "140px" }}
+                    circleShadowY={40}
+                    circleShadowBlure={80}
+                    width={100}
+                    widthUnit="%"
+                >
+                  <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
+                    Taxes
+                  </Paragraph>
 
-                      <Paragraph big>Most landscaping businesses should have comprehensive business insurance. There are various types.</Paragraph>
+                  <Paragraph big>Taxes are a fact of life. If you’re in business, there are various ways you will need to file and pay them.</Paragraph>
 
-                      <Accordion tab content={BusinessInsuranceAccordionContent} />
-                    </TextBlockWithImage>
-                  </div>
-                );
-              }}
-            </VisibilitySensor>
+                  <Accordion tab content={TaxesAccordionContent} />
 
-            <VisibilitySensor scrollCheck intervalCheck scrollDelay={50}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(4);
-                }
-                return (
-                  <div id={ButtonList[4].tabId}>
-                    <TextBlockWithImage
-                      SvgImage={AgentIcon}
-                      textBackgroundColor="transparent"
-                      imageBackgroundColor={color.orange2}
-                      imageShadowColor={shadow.orange2}
-                      imageShadowOpacity={0.5}
-                      boxShadow={false}
-                      paddingLeft={0}
-                      style={{ marginTop: "140px" }}
-                      circleShadowY={40}
-                      circleShadowBlure={80}
-                      width={100}
-                      widthUnit="%"
-                    >
-                      <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
-                        Registered Agent
-                      </Paragraph>
+                  <Paragraph big mixed={true} style={{ marginTop: "48px" }}>
+                    As a rule of thumb, we recommend keeping back around a third of your earnings to pay your taxes. We can even prepare and file your tax returns for you.
+                  </Paragraph>
+                </TextBlockWithImage>
+              </div>
+            </InView>
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(6); }}>
+              <div id={ButtonList[6].tabId}>
+                <TextBlockWithImage
+                    SvgImage={MaintainingIcon}
+                    textBackgroundColor="transparent"
+                    imageBackgroundColor={color.orange2}
+                    imageShadowColor={shadow.orange2}
+                    imageShadowOpacity={0.5}
+                    boxShadow={false}
+                    paddingLeft={0}
+                    style={{ marginTop: "140px" }}
+                    circleShadowY={40}
+                    circleShadowBlure={80}
+                    width={100}
+                    widthUnit="%"
+                >
+                  <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
+                    Maintaining Your Laundromat Business
+                  </Paragraph>
 
-                      <Paragraph big mixed={true}>
-                        All businesses need to have a Registered Agent. These are individuals or other businesses that can accept legal documents on behalf of your landscaping company.
-                      </Paragraph>
-                      <Paragraph big>
-                        Although you can act as your own registered agent, we recommend using a professional service. It ensures there will always be someone available to receive important legal documentation on your behalf and also removes your name and address from the public record.
-                      </Paragraph>
-                      <Paragraph big mixed={true}>
-                        When you incorporate through us, we provide a <Link to="/manage-your-company/registered-agent/">complete Registered Agent service free</Link> for the first year.
-                      </Paragraph>
-                    </TextBlockWithImage>
-                  </div>
-                );
-              }}
-            </VisibilitySensor>
+                  <Paragraph big>There are certain forms and legalities you need to follow to keep your laundromat business in good standing.</Paragraph>
 
-            <VisibilitySensor partialVisibility minTopValue={500} scrollCheck intervalCheck scrollDelay={50}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(5);
-                }
-                return (
-                  <div id={ButtonList[5].tabId}>
-                    <TextBlockWithImage
-                      SvgImage={TaxesIcon}
-                      textBackgroundColor="transparent"
-                      imageBackgroundColor={color.orange2}
-                      imageShadowColor={shadow.orange2}
-                      imageShadowOpacity={0.5}
-                      boxShadow={false}
-                      paddingLeft={0}
-                      style={{ marginTop: "140px" }}
-                      circleShadowY={40}
-                      circleShadowBlure={80}
-                      width={100}
-                      widthUnit="%"
-                    >
-                      <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
-                        Taxes
-                      </Paragraph>
+                  <Accordion tab={0} content={MaintainingAccordionContent} />
 
-                      <Paragraph big>Taxes are a fact of life. If you’re in business, there are various ways you will need to file and pay them.</Paragraph>
+                  <Paragraph big mixed={true} style={{ marginTop: "48px" }}>
+                    As a rule of thumb, we recommend keeping back around a third of your earnings to pay your taxes. We can even <Link to="/business-accounting/">prepare and file your tax returns for you</Link>.
+                  </Paragraph>
+                </TextBlockWithImage>
+              </div>
+            </InView>
+            <InView trackVisibility onChange={(visible) => { if( visible ) setActive(7); }}>
+              <div id={ButtonList[7].tabId}>
+                <TextBlockWithImage
+                    SvgImage={CalcIcon}
+                    textBackgroundColor="transparent"
+                    imageBackgroundColor={color.orange2}
+                    imageShadowColor={shadow.orange2}
+                    imageShadowOpacity={0.5}
+                    boxShadow={false}
+                    paddingLeft={0}
+                    style={{ marginTop: "140px" }}
+                    circleShadowY={40}
+                    circleShadowBlure={80}
+                    width={100}
+                    widthUnit="%"
+                >
+                  <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
+                    Finances and Your Laundromat Business
+                  </Paragraph>
 
-                      <Accordion tab content={TaxesAccordionContent} />
+                  <Paragraph big>You need money to run a successful laundromat business. Here are our tips on staying financially healthy.</Paragraph>
 
-                      <Paragraph big mixed={true} style={{ marginTop: "48px" }}>
-                        As a rule of thumb, we recommend keeping back around a third of your earnings to pay your taxes. We can even prepare and file your tax returns for you.
-                      </Paragraph>
-                    </TextBlockWithImage>
-                  </div>
-                );
-              }}
-            </VisibilitySensor>
-
-            <VisibilitySensor partialVisibility minTopValue={500} scrollCheck intervalCheck scrollDelay={50}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(6);
-                }
-                return (
-                  <div id={ButtonList[6].tabId}>
-                    <TextBlockWithImage
-                      SvgImage={MaintainingIcon}
-                      textBackgroundColor="transparent"
-                      imageBackgroundColor={color.orange2}
-                      imageShadowColor={shadow.orange2}
-                      imageShadowOpacity={0.5}
-                      boxShadow={false}
-                      paddingLeft={0}
-                      style={{ marginTop: "140px" }}
-                      circleShadowY={40}
-                      circleShadowBlure={80}
-                      width={100}
-                      widthUnit="%"
-                    >
-                      <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
-                        Maintaining Your Laundromat Business
-                      </Paragraph>
-
-                      <Paragraph big>There are certain forms and legalities you need to follow to keep your laundromat business in good standing.</Paragraph>
-
-                      <Accordion tab={0} content={MaintainingAccordionContent} />
-
-                      <Paragraph big mixed={true} style={{ marginTop: "48px" }}>
-                        As a rule of thumb, we recommend keeping back around a third of your earnings to pay your taxes. We can even <Link to="/business-accounting/">prepare and file your tax returns for you</Link>.
-                      </Paragraph>
-                    </TextBlockWithImage>
-                  </div>
-                );
-              }}
-            </VisibilitySensor>
-
-            <VisibilitySensor partialVisibility minTopValue={500} scrollCheck intervalCheck scrollDelay={50}>
-              {({ isVisible }) => {
-                if (isVisible) {
-                  handleClick(7);
-                }
-                return (
-                  <div id={ButtonList[7].tabId}>
-                    <TextBlockWithImage
-                      SvgImage={CalcIcon}
-                      textBackgroundColor="transparent"
-                      imageBackgroundColor={color.orange2}
-                      imageShadowColor={shadow.orange2}
-                      imageShadowOpacity={0.5}
-                      boxShadow={false}
-                      paddingLeft={0}
-                      style={{ marginTop: "140px" }}
-                      circleShadowY={40}
-                      circleShadowBlure={80}
-                      width={100}
-                      widthUnit="%"
-                    >
-                      <Paragraph big flex flexAlign={true} style={{ color: color.black, fontWeight: "bold" }} mixed={true}>
-                        Finances and Your Laundromat Business
-                      </Paragraph>
-
-                      <Paragraph big>You need money to run a successful laundromat business. Here are our tips on staying financially healthy.</Paragraph>
-
-                      <Accordion tab={0} content={FinancesAccordionContent} />
-                    </TextBlockWithImage>
-                  </div>
-                );
-              }}
-            </VisibilitySensor>
+                  <Accordion tab={0} content={FinancesAccordionContent} />
+                </TextBlockWithImage>
+              </div>
+            </InView>
           </PanelWrapper>
         </Wrapper>
       </Container>
