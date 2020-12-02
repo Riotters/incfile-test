@@ -52,6 +52,10 @@ const Wrapper = styled.div`
             margin: 16px 0 32px;
         }
     }
+
+    @media screen and (max-width: 556px) {
+        padding: 50px 0;
+    }
 `
 
 const Footer = styled.div`
@@ -70,6 +74,16 @@ const Footer = styled.div`
 
     .right{
         width: 186px;
+    }
+
+    @media screen and (max-width: 556px) {
+        flex-direction: column;
+        
+        .left{
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
     }
 `
 
