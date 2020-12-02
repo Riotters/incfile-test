@@ -21,11 +21,10 @@ export const agentPageContent = {
       content: `A California Agent for Service of Process provides various services for your LLC, including the acceptance of formal documents and correspondence from the California Secretary of State. You will appoint an Agent for Service of Process when you first <a href="/blog/post/starting-a-small-business-in-california-is-easiest-with-incfile/">start your business</a> — you can change this agent later, but your LLC must have one at all times.`,
     },
     {
-        type: `video`,
-        image: `what-is-a-registered-agent-7199`,
-        id: `wSsZAvrT-IU`,
+      type: `video`,
+      image: `what-is-a-registered-agent-7199`,
+      id: `wSsZAvrT-IU`,
     },
-
 
     // Rules for agents
     {
@@ -35,13 +34,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `There are certain rules that you must follow when you’re appointing a California Registered Agent service for your business.`,
+      content: `There are certain rules that you must follow when you’re appointing a California Registered Agent service for your business. They are:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.blue3,
       content: {
-        header: `They are:`,
         list: [
           `If the Registered Agent is a person, they must reside in California`,
           `If the Registered Agent is a business, they must be able to conduct business in California`,
@@ -64,13 +62,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `What can you expect from your California Registered Agent? Their main function is to accept official documents and correspondence from the CA Secretary of State.`,
+      content: `What can you expect from your California Registered Agent? Their main function is to accept official documents and correspondence from the CA Secretary of State. This includes:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.orange3,
       content: {
-        header: `This includes:`,
         list: [
           `Correspondence from the California Secretary of State`,
           `Service of process notices (e.g., if your CA LLC is sued or required to appear in court)`,
@@ -89,16 +86,17 @@ export const agentPageContent = {
       type: `paragraph`,
       content: `If you have an LLC that’s incorporated in California and you need a Registered Agent, we can help. Incfile provides a complete Registered Agent service for any California business. If you form your business through Incfile, we’ll act as your Registered Agent free for your first year (normally a $119 annual cost).`,
     },
-
+    {
+      type: `paragraph`,
+      content: `Incfile is authorized to conduct business in California and can legally act as your Registered Agent. Here’s what the Incfile California Registered Agent service provides for your CA LLC:`,
+    },
     {
       type: `iconListColorBox`,
       boxColor: color.purple3,
       content: {
-        header: `Incfile is authorized to conduct business in California and can legally act as your Registered Agent. Here’s what the Incfile California Registered Agent service provides for your CA LLC.`,
         list: [
           `The Registered Agent will always be available to accept documents and letters on your behalf.`,
-          `We automatically notify you whenever we receive correspondence for your business from the California Secretary of State or anyone else.
-                    `,
+          `We automatically notify you whenever we receive correspondence for your business from the California Secretary of State or anyone else.`,
           `We scan your correspondence and upload it to a dashboard, so you can review it when convenient.`,
           `We forward all correspondence to an address you choose.`,
           `If you incorporate with us, your Registered Agent is free for the first year ($119 a year after).`,
@@ -237,13 +235,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `What happens if you choose not to assign or provide details of a Registered Agent to the California Secretary of State?`,
+      content: `What happens if you choose not to assign or provide details of a Registered Agent to the California Secretary of State? There are several possible ramifications, including:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.green3,
       content: {
-        header: `There are several possible ramifications, including:`,
         list: [
           `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
           `Falling out of good standing with the California Secretary of State: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,

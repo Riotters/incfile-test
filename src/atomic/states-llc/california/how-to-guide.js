@@ -106,8 +106,9 @@ const HowToGuide = ({ content, data }) => {
       <Paragraph big mixed>
         {parse(content.whyChoose.text2)}
       </Paragraph>
-
-      <Heading size={4}>{content.whyChoose.heading4}</Heading>
+      <Paragraph big mixed>
+        {parse(content.whyChoose.text3)}
+      </Paragraph>
       <ListFlex>
         {content.whyChoose.lists.map((item) => (
           <TextCheck>
@@ -118,7 +119,7 @@ const HowToGuide = ({ content, data }) => {
       <Paragraph big mixed={true}>
         {parse(content.whyChoose.learnmore)}
       </Paragraph>
-      <Paragraph big>{content.whyChoose.text3}</Paragraph>
+      <Paragraph big>{content.whyChoose.text4}</Paragraph>
 
       {/* Main Steps */}
       <Heading size={3} bottomMargin="40" style={{ marginTop: `48px` }}>
@@ -126,13 +127,23 @@ const HowToGuide = ({ content, data }) => {
       </Heading>
 
       <div id="video">
-        <LightBoxVideo thumbnailVideo="ca-llc-video-thumbnail-01" videoID="5A75PcGNC54" bottomMargin="32" />
+        <LightBoxVideo
+          thumbnailVideo="ca-llc-video-thumbnail-01"
+          videoID="5A75PcGNC54"
+          bottomMargin="32"
+        />
       </div>
 
       {content.mainSteps.navSteps.map((step) => (
         <Link to="/#" onClick={(e) => handleMenuStepClick(step.blockID, e)}>
           <WhiteBoxLink bottomMargin="8px" padding="24px" flex>
-            <Circle circleColor={color.orange3} iconColor={color.orange1} rightMargin="24" transform="rotate(90deg)" className="circle">
+            <Circle
+              circleColor={color.orange3}
+              iconColor={color.orange1}
+              rightMargin="24"
+              transform="rotate(90deg)"
+              className="circle"
+            >
               <ArrowSVG />
             </Circle>
             <Paragraph mixed={true} bottomMargin="0">
@@ -169,7 +180,11 @@ const HowToGuide = ({ content, data }) => {
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step1.text3)}
         </Paragraph>
-        <BoxCTA bgColor={color.purple3} bgImage={BgBoxBusinessNameSearchTool} content={content.mainSteps.step1.cta} />
+        <BoxCTA
+          bgColor={color.purple3}
+          bgImage={BgBoxBusinessNameSearchTool}
+          content={content.mainSteps.step1.cta}
+        />
       </TextBlockWithNumberCounting>
 
       <TextBlockWithNumberCounting
@@ -251,8 +266,18 @@ const HowToGuide = ({ content, data }) => {
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step4.text1)}
         </Paragraph>
-        <IconListColorBox color={color.blue3} content={content.mainSteps.step4.lists} rounded />
-        <Button content={content.mainSteps.step4.dowload_205_button} theme="secondary56" arrow margin="16px 0 0 0" marginMD="42px 0 42px 0" />
+        <IconListColorBox
+          color={color.blue3}
+          content={content.mainSteps.step4.lists}
+          rounded
+        />
+        <Button
+          content={content.mainSteps.step4.dowload_205_button}
+          theme="secondary56"
+          arrow
+          margin="16px 0 0 0"
+          marginMD="42px 0 42px 0"
+        />
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step4.text2)}
         </Paragraph>
@@ -263,7 +288,11 @@ const HowToGuide = ({ content, data }) => {
           </AbsoluteShapeCurveElement>
           {content.mainSteps.step4.certificate_info.map((item) => (
             <WhiteBoxColumn padding="24px" bottomMargin="8px">
-              <Paragraph mixed={true} bottomMargin={0} style={{ fontWeight: `bold`, minWidth: `50%` }}>
+              <Paragraph
+                mixed={true}
+                bottomMargin={0}
+                style={{ fontWeight: `bold`, minWidth: `50%` }}
+              >
                 {item.text1}
               </Paragraph>
               <Paragraph mixed={true} bottomMargin={0}>
@@ -278,7 +307,11 @@ const HowToGuide = ({ content, data }) => {
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step4.text4)}
         </Paragraph>
-        <BoxCTA bgColor={color.orange3} bgImage={BgBoxHandlePaperWorks} content={content.mainSteps.step4.cta} />
+        <BoxCTA
+          bgColor={color.orange3}
+          bgImage={BgBoxHandlePaperWorks}
+          content={content.mainSteps.step4.cta}
+        />
 
         <AnnualReportFilingBox data={data} />
       </TextBlockWithNumberCounting>
@@ -330,8 +363,19 @@ const HowToGuide = ({ content, data }) => {
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step6.text2)}
         </Paragraph>
-        <Button content={content.mainSteps.step6.button1} theme="secondary56" arrow width="450px" margin="16px 0 0 0" marginMD="42px 0 42px 0" />
-        <BoxCTA bgColor={color.orange3} bgImage={BgBoxPersonalOA} content={content.mainSteps.step6.cta} />
+        <Button
+          content={content.mainSteps.step6.button1}
+          theme="secondary56"
+          arrow
+          width="450px"
+          margin="16px 0 0 0"
+          marginMD="42px 0 42px 0"
+        />
+        <BoxCTA
+          bgColor={color.orange3}
+          bgImage={BgBoxPersonalOA}
+          content={content.mainSteps.step6.cta}
+        />
       </TextBlockWithNumberCounting>
 
       {content.otherInfo.map((item, i) => (
@@ -355,9 +399,24 @@ const HowToGuide = ({ content, data }) => {
               </ArrowLink>
             ))}
 
-          {item.type === "list-dot" && <IconListColorBox color={color.blue3} content={item.content} rounded />}
+          {item.type === "list-dot" && (
+            <IconListColorBox
+              color={color.blue3}
+              content={item.content}
+              rounded
+            />
+          )}
 
-          {item.type === "button" && <Button content={item.content} theme={item.theme} arrow width="350px" margin="16px 0 26px 0" marginMD="42px 0 42px 0" />}
+          {item.type === "button" && (
+            <Button
+              content={item.content}
+              theme={item.theme}
+              arrow
+              width="350px"
+              margin="16px 0 26px 0"
+              marginMD="42px 0 42px 0"
+            />
+          )}
         </div>
       ))}
     </Wrapper>

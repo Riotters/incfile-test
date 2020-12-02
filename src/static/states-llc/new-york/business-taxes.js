@@ -105,12 +105,18 @@ export const businessTaxesPageContent = {
       content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the NY Department of Taxation and Finance. New York sales tax is collected at the point of purchase. New York sales tax rates do vary depending on the region, county or city where you are located.`,
     },
     {
+      type: `paragraph`,
+      content: `You will typically need to collect New York sales tax on:`,
+    },
+    {
       type: `iconListColorBox`,
       boxColor: color.green3,
       styles: { margin: `56px 0` },
       content: {
-        header: `You will typically need to collect New York sales tax on:`,
-        list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your New York business might provide`],
+        list: [
+          `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
+          `Certain services that your New York business might provide`,
+        ],
       },
     },
     {
@@ -139,11 +145,14 @@ export const businessTaxesPageContent = {
       content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that.`,
     },
     {
+      type: `paragraph`,
+      content: `Here are the sales tax rates for the major cities in New York:`,
+    },
+    {
       type: `iconListColorBox`,
       boxColor: color.blue3,
       styles: { margin: `56px 0` },
       content: {
-        header: `Here are the sales tax rates for the major cities in New York:`,
         list: [
           `<strong>New York, NY</strong> sales tax rate is <strong>8.875%</strong>`,
           `<strong>Buffalo, NY</strong> sales tax rate is <strong>8.75%</strong>`,
@@ -175,14 +184,13 @@ export const businessTaxesPageContent = {
     },
     {
       type: `paragraph`,
-      content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
+      content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.green3,
       styles: { margin: `56px 0` },
       content: {
-        header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
         list: [
           `On profits of <strong>$30,000</strong>, you would pay self-employment tax of <strong>$4,590</strong>`,
           `On profits of <strong>$60,000</strong>, you would pay self-employment tax of <strong>$9,180</strong>`,
@@ -290,7 +298,11 @@ export const businessTaxesPageContent = {
               {
                 type: `list-dot-without-bg`,
                 color: color.orange3,
-                content: [`Federal income tax`, `Federal self-employment tax`, `New York state tax`],
+                content: [
+                  `Federal income tax`,
+                  `Federal self-employment tax`,
+                  `New York state tax`,
+                ],
               },
               {
                 type: `paragraph`,

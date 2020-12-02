@@ -131,6 +131,7 @@ const AlaskaCorporation = () => {
                 thumbnailVideo="what-is-a-corporation-8899"
                 videoID="oYZShvmf9eQ"
               />
+
             </PanelWrapper>
             <PanelWrapper>
               <Heading size={3} style={{ marginBottom: "24px" }}>
@@ -299,11 +300,17 @@ const AlaskaCorporation = () => {
                 </Paragraph>
               </TextBoxed>
               <TextBoxed style={{ marginBottom: "8px" }}>
+
                 <Paragraph bottomMargin={0}>
                   The names and addresses of the corporation’s president and
                   secretary.
                 </Paragraph>
               </TextBoxed>
+              <Paragraph big>
+                An Alabama corporation is also required to send annual financial
+                statements to all shareholders within 120 days after the end of
+                each fiscal year.
+              </Paragraph>
             </PanelWrapper>
             <PanelWrapper>
               <Heading size={3} style={{ marginBottom: "24px" }}>

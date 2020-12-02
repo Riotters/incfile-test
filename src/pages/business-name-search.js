@@ -12,7 +12,13 @@ import Features from "../atomic/sections/learning-center-entity/business-name-se
 import Faq from "../atomic/sections/learning-center-entity/business-name-search/faq";
 import Articles from "../components/partials/sections/articles";
 //Texts
-import { top, about, care, faq, features } from "../static/learning-center-entity/business-name-search";
+import {
+  top,
+  about,
+  care,
+  faq,
+  features,
+} from "../static/learning-center-entity/business-name-search";
 
 const BusinessNameSearch = () => {
   const scrollToElement = (e, l) => {
@@ -23,12 +29,24 @@ const BusinessNameSearch = () => {
   };
   return (
     <Layout>
-      <SEO title="Business Name Search | Is Your Company Name Available?" description="Starting a new business? Check to see if your preferred business name is available in your state with Incfile’s easy name search tool. Try it now." />
-      <Top imageName="mr-bulb-business-name-search-5927" imageAlt="Mrs Bulb and with checklist" ovalColor="blue" headlineWidth="500">
+      <SEO
+        title="Business Name Search | Is Your Company Name Available?"
+        description="Starting a new business? Check to see if your preferred business name is available in your state with Incfile’s easy name search tool. Try it now."
+      />
+      <Top
+        imageName="mr-bulb-business-name-search-5927"
+        imageAlt="Mrs Bulb and with checklist"
+        ovalColor="blue"
+        headlineWidth="500"
+      >
         <h1>{top.header}</h1>
         <p>{top.text}</p>
         <Buttonsbox>
-          <Button content={top.buttons[0]} theme="primary56" onClick={(e) => scrollToElement(e, "js-business-name-search-form")} />
+          <Button
+            content={top.buttons[0]}
+            theme="primary56"
+            onClick={(e) => scrollToElement(e, "js-business-name-search-form")}
+          />
         </Buttonsbox>
       </Top>
       <About content={about} />

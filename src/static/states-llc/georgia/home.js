@@ -28,10 +28,14 @@ export const HomePageContent = {
         "Georgia is a wonderful place to start a business — it’s an innovator’s dream as one of the main technical hubs in the U.S. with access to international trade and the world’s busiest airport (Atlanta). Great universities, access to talent and a rich culture combine to create the perfect backdrop for a successful business venture. Georgia is already home to the headquarters of the most famous brand in the world (Coca-Cola); other businesses, including the Home Depot, UPS, Delta and Suntrust, also call the state home.",
       text2:
         "For most business owners, the fastest and easiest way to start a business in Georgia is by creating a Georgia LLC. A limited liability company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Georgia corporations but with much simpler rules and regulations.",
-      heading4: `The benefits of starting a Georgia LLC:`,
-      lists: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulations and administration of your Georgia LLC`, `Easy tax filing and potential advantages for tax treatment`],
+      text3: "The benefits of starting a Georgia LLC:",
+      lists: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulations and administration of your Georgia LLC`,
+        `Easy tax filing and potential advantages for tax treatment`,
+      ],
       learnmore: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure.</a>`,
-      text3: `In this guide you’ll find information on searching for and naming your TX LLC, getting a Georgia Registered Agent, the fees you’ll need to pay, Georgia business taxes and much more. We also cover the various ways you’ll interact with the Georgia Secretary of State, filing your LLC and your registration needs.`,
+      text4: `In this guide you’ll find information on searching for and naming your TX LLC, getting a Georgia Registered Agent, the fees you’ll need to pay, Georgia business taxes and much more. We also cover the various ways you’ll interact with the Georgia Secretary of State, filing your LLC and your registration needs.`,
     },
     mainSteps: {
       heading3: `Create Your Georgia LLC Yourself: 6 Main Steps`,

@@ -39,10 +39,18 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
+    type: `text`,
+    content: `Briefly, the benefits of starting an LLC in Virginia include:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `Briefly, the benefits of starting an LLC in Virginia include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulations and administration of your Virginia LLC`, `Easy tax filing and potential advantages for tax treatment`],
+      list: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulations and administration of your Virginia LLC`,
+        `Easy tax filing and potential advantages for tax treatment`,
+      ],
     },
     marginBottom: 24,
     color: color.green3,
@@ -120,13 +128,12 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `In most states, LLC formation and registration is handled by the Secretary of State. In the Commonwealth of Virginia, businesses are administered by the VA State Corporation Commission. They have plenty of information on forming and registering a business in Virginia.`,
+    content: `In most states, LLC formation and registration is handled by the Secretary of State. In the Commonwealth of Virginia, businesses are administered by the VA State Corporation Commission. They have plenty of information on forming and registering a business in Virginia. These are all the basic steps for forming an LLC in Virginia. You’ll find other useful information below:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `These are all the basic steps for forming an LLC in Virginia. You’ll find other useful information below:`,
       list: [
         `<a href="https://www.scc.virginia.gov/index.aspx" target="_blank" rel="noopener noreferrer">Virginia State Corporation Commission for forming and running your VA LLC</a>`,
         `<a href="https://www.vec.virginia.gov/employers/agricultural-services/labor-laws" target="_blank" rel="noopener noreferrer">Virginia Department of Labor and Industry for VA employers and hiring</a>`,
@@ -339,13 +346,12 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `It’s not enough for your VA LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Virginia.`,
+    content: `It’s not enough for your VA LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Virginia. For example, you cannot use the following factors to say your name is different from the name of another business:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `For example, you cannot use the following factors to say your name is different from the name of another business:`,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
         `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
@@ -381,7 +387,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Are very similar to the name of a federal or VA agency or organization (e.g., FBI, FDA, Virginia Department of Taxation, Virginia Police, Treasury, etc.)`,
         `Suggest affiliation with a federal or state agency or organization`,
@@ -400,13 +405,12 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `In addition to the general rules listed above, the Virginia State Corporation Commission has some specific business naming rules for your LLC.`,
+    content: `In addition to the general rules listed above, the Virginia State Corporation Commission has some specific business naming rules for your LLC. You will need to follow these rules if you want to name your VA business appropriately:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will need to follow these rules if you want to name your VA business appropriately:`,
       list: [
         `The name of a corporation, limited liability company or limited partnership may not include any word, abbreviation or combination of characters that states or implies that it is a different type of business entity. Under this standard, for example, the name of a limited liability company may not include the word “corporation” or “incorporated,” or the designation “Corp.” or “Inc.”`,
         `The name of a corporation may not imply that it is or will be conducting business as a bank, trust company, insurance company, or public service company, such as a railroad, telephone company, utility, or water or sewer company, unless it will actually be engaged in such business.`,
@@ -556,8 +560,12 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      list: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -613,13 +621,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a Virginia Registered Agent service for your business.`,
+    content: `There are certain rules that you must follow when you’re appointing a Virginia Registered Agent service for your business. They are:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in Virginia`,
         `If the Registered Agent is a business, they must be able to conduct business in Virginia`,
@@ -643,13 +650,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What can you expect from your Virginia Registered Agent? Their main function is to accept official documents and correspondence from the VA State Corporation Commission.`,
+    content: `What can you expect from your Virginia Registered Agent? Their main function is to accept official documents and correspondence from the VA State Corporation Commission. This may include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `This may include:`,
       list: [
         `Correspondence from the Virginia State Corporation Commission`,
         `Service of process notices (e.g., if your VA LLC is sued or required to appear in court)`,
@@ -673,13 +679,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `We are authorized to conduct business in Virginia and can legally act as your Registered Agent.`,
+    content: `We are authorized to conduct business in Virginia and can legally act as your Registered Agent. Here’s what the Infile Virginia Registered Agent service provides for your VA LLC:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here’s what the Infile Virginia Registered Agent service provides for your VA LLC:`,
       list: [
         `An always-available Virginia Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
         `A digital dashboard where you can access, store and retrieve any information we’ve received for your Virginia business`,
@@ -818,13 +823,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Virginia State Corporation Commission?`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Virginia State Corporation Commission? There are several possible ramifications, including:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `There are several possible ramifications, including:`,
       list: [
         `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `Falling out of good standing with the Virginia State Corporation Commission: If you don’t respond to certain correspondence (like the request for your Annual Report), certain states may revoke your right to do business.`,
@@ -842,13 +846,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `If you have an address in Virginia, you can choose to be the Registered Agent for your LLC`,
+    content: `If you have an address in Virginia, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach, as there can be some drawbacks:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `We don’t recommend this approach, as there can be some drawbacks:`,
       list: [
         `The VA Registered Agent must have a physical street address in Virginia. If you’re forming an LLC outside VA, you will need to use an in-state Registered Agent.`,
         `You always need to have someone on hand during business hours at the Virginia address to sign for important documents.`,
@@ -896,9 +899,13 @@ export const registeredAgent = [
     marginBottom: 16,
   },
   {
+    type: `text`,
+    content: `You might find these resources helpful:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You might find these resources helpful:`,
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/" target="_blank">The Main Functions of a Virginia Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Virginia Registered Agent</a>`,
@@ -1060,13 +1067,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your Virginia LLC may need certain business permits and licenses to comply with specific requirements. These business permits and licenses might be issued by Virginia, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
+    content: `Your Virginia LLC may need certain business permits and licenses to comply with specific requirements. These business permits and licenses might be issued by Virginia, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. Permits and licenses vary based on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your Virginia LLC operates in (e.g., restaurants will need health permits)`,
         `The location of your Virginia LLC (state, county or city) (e.g., a license to conduct business from the city of Richmond)`,
@@ -1084,8 +1090,10 @@ export const feesAndRequirments = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`A complete report on all the licenses, permits and tax registrations your Virginia LLC will need`, `The application forms you will need to file with the Virginia, regional and federal licensing authorities`],
+      list: [
+        `A complete report on all the licenses, permits and tax registrations your Virginia LLC will need`,
+        `The application forms you will need to file with the Virginia, regional and federal licensing authorities`,
+      ],
     },
     marginBottom: 16,
     color: color.yellow3,
@@ -1190,14 +1198,17 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your Virginia business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Virginia State Corporation Commission. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    content: `Your business formation documents state certain facts about your Virginia business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Virginia State Corporation Commission. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file Virginia Articles of Amendment for include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Areas you might want to file Virginia Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Virginia LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Virginia LLC`],
+      list: [
+        `Adding, removing or changing a Virginia LLC member or manager`,
+        `Changing the business address of your LLC`,
+        `Altering the stated business activities of your Virginia LLC`,
+      ],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -1373,14 +1384,16 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the VA Department of Taxation. Virginia sales tax is collected at the point of purchase. Virginia sales tax rates do vary depending on the region, county or city where you are located.`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the VA Department of Taxation. Virginia sales tax is collected at the point of purchase. Virginia sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Virginia sales tax on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will typically need to collect Virginia sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Virginia business might provide`],
+      list: [
+        `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
+        `Certain services that your Virginia business might provide`,
+      ],
     },
     marginBottom: 16,
     color: color.purple3,
@@ -1435,14 +1448,17 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
+    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $70,000, you would pay self-employment tax of $10,710`, `On profits of $100,000, you would pay self-employment tax of $15,300`, `On profits of $160,000, you would pay self-employment tax of $24,480`],
+      list: [
+        `On profits of $70,000, you would pay self-employment tax of $10,710`,
+        `On profits of $100,000, you would pay self-employment tax of $15,300`,
+        `On profits of $160,000, you would pay self-employment tax of $24,480`,
+      ],
     },
     marginBottom: 32,
     color: color.orange3,
@@ -1551,10 +1567,17 @@ export const businessTaxes = [
               content: `Most Virginia LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
             },
             {
+              type: `paragraph`,
+              content: `The most common types of estimated taxes are:`,
+            },
+            {
               type: `list-dot-without-bg`,
               color: color.orange3,
-              header: `The most common types of estimated taxes are:`,
-              content: [`Federal income tax`, `Federal self-employment tax`, `Virginia state tax`],
+              content: [
+                `Federal income tax`,
+                `Federal self-employment tax`,
+                `Virginia state tax`,
+              ],
             },
             {
               type: `paragraph`,
@@ -1600,7 +1623,12 @@ export const compare = {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
       [`Business incorporation service`, `$49`, `$149`, `$149`],
-      [`Registered Agent included in the price`, `check-green`, `check-red`, `check-red`],
+      [
+        `Registered Agent included in the price`,
+        `check-green`,
+        `check-red`,
+        `check-red`,
+      ],
     ],
   },
 };

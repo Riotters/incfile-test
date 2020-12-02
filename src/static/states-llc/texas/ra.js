@@ -54,13 +54,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `There are certain rules that you must follow when you’re appointing a Texas Registered Agent service for your business.`,
+      content: `There are certain rules that you must follow when you’re appointing a Texas Registered Agent service for your business. They are:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.blue3,
       content: {
-        header: `They are:`,
         list: [
           `If the Registered Agent is a person, they must reside in Texas`,
           `If the Registered Agent is a business, they must be able to conduct business in Texas`,
@@ -83,13 +82,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `What can you expect from your Texas Registered Agent? Their main function is to accept official documents and correspondence from the TX Secretary of State.`,
+      content: `What can you expect from your Texas Registered Agent? Their main function is to accept official documents and correspondence from the TX Secretary of State. This includes:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.orange3,
       content: {
-        header: `This includes:`,
         list: [
           `Correspondence from the Texas Secretary of State`,
           `Service of process notices (e.g., if your TX LLC is sued or required to appear in court)`,
@@ -107,13 +105,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `Incfile provides a complete Texas Registered Agent service for any LLC that’s incorporated in TX. Even better, if you choose to incorporate your Texas business through Incfile, your Registered Agent is completely free for the first year and only $119 a year after that.`,
+      content: `Incfile provides a complete Texas Registered Agent service for any LLC that’s incorporated in TX. Even better, if you choose to incorporate your Texas business through Incfile, your Registered Agent is completely free for the first year and only $119 a year after that. Incfile is authorized to conduct business in Texas and can legally act as your Registered Agent. Here’s what the Incfile Texas Registered Agent service provides for your TX LLC.`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.purple3,
       content: {
-        header: `Incfile is authorized to conduct business in Texas and can legally act as your Registered Agent. Here’s what the Incfile Texas Registered Agent service provides for your TX LLC.`,
         list: [
           `An always-available Texas Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
           `A digital dashboard where you can access, store and retrieve any information we’ve received for your Texas business`,
@@ -254,13 +251,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `What happens if you choose not to assign or provide details of a Registered Agent to the Texas Secretary of State?`,
+      content: `What happens if you choose not to assign or provide details of a Registered Agent to the Texas Secretary of State? There are several possible ramifications, including:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.green3,
       content: {
-        header: `There are several possible ramifications, including:`,
         list: [
           `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
           `Falling out of good standing with the Texas Secretary of State: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -283,7 +279,6 @@ export const agentPageContent = {
       type: `iconListColorBox`,
       boxColor: color.blue3,
       content: {
-        header: `If you have an address in Texas, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
         list: [
           `The TX Registered Agent must have a physical street address in Texas. If you’re forming an LLC outside TX, you will need to use an in-state Registered Agent.`,
           `You always need to have someone on hand during business hours at the Texas address to sign for important documents.`,

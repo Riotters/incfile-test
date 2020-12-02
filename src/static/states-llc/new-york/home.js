@@ -28,10 +28,14 @@ export const HomePageContent = {
         "The Empire State is a fantastic place to build the company of your dreams. A combination of rich cultures, diverse cities and a healthy economy makes New York State a center of opportunity. New York is the fourth most populous state in the union, with very strong industries in the technology, finance, investment, media, entertainment and tourism sectors.",
       text2:
         "If you want to start your own business in New York, one of the best ways to do so is by forming a New York LLC. Limited liability companies (LLCs) are a business entity designed for startups and small- and medium-sized businesses. New York LLCs give you many of the protections and advantages of larger corporations without all the rules, regulations and compliance issues common to larger business entities.",
-      heading4: `To summarize, the benefits of starting a New York LLC include:`,
-      lists: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulations and administration of your New York LLC`, `Easy tax filing and potential advantages for tax treatment`],
+      text3: "To summarize, the benefits of starting a New York LLC include:",
+      lists: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulations and administration of your New York LLC`,
+        `Easy tax filing and potential advantages for tax treatment`,
+      ],
       learnmore: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure.</a>`,
-      text3: `In this guide you’ll find information on searching for and naming your NY LLC, getting a New York Registered Agent, the fees you’ll need to pay, NY business taxes and much more. `,
+      text4: `In this guide you’ll find information on searching for and naming your NY LLC, getting a New York Registered Agent, the fees you’ll need to pay, NY business taxes and much more. `,
     },
     mainSteps: {
       heading3: `File Your New York LLC Yourself: 7 Main Steps`,
@@ -102,10 +106,13 @@ export const HomePageContent = {
       },
       step4: {
         heading1: ` File Your Articles of Incorporation with the New York Division of Corporations`,
-        text1: `Once you've gathered all the information together for your New York LLC, you’ll need to file a formal document with the NY Department of State, Division of Corporations. This document is known as your “Articles of Organization,” and filing the document creates your New York LLC.`,
+        text1: `Once you've gathered all the information together for your New York LLC, you’ll need to file a formal document with the NY Department of State, Division of Corporations. This document is known as your “Articles of Organization,” and filing the document creates your New York LLC. Here’s what is typically included:`,
         lists: {
-          header: `Here’s what is typically included:`,
-          list: [`Your business name and address`, `Details of your Registered Agent`, `Name and address of the incorporator`],
+          list: [
+            `Your business name and address`,
+            `Details of your Registered Agent`,
+            `Name and address of the incorporator`,
+          ],
         },
         download_205_button: {
           text: `Download New York's Articles of Organization Form Here`,
@@ -139,8 +146,8 @@ export const HomePageContent = {
         text2: `Publication must be complete within 120 days of your official LLC incorporation date, and you need to run the notices for six consecutive weeks. You can see step-by-step instructions for this process in our "How to Meet New York LLC Publication Requirements" guide.`,
         text3: `Once you’ve met the publication requirements, the newspapers will send you an Affidavit of Publication, which you then need to file with the Department of State to receive your Certificate of Publication. The state charges a $50 fee for this certificate.`,
         download_205_button: {
-            text: `Download New York's Certificate of Publication Form`,
-            url: `https://www.dos.ny.gov/forms/corporations/1708-f-l.pdf`,
+          text: `Download New York's Certificate of Publication Form`,
+          url: `https://www.dos.ny.gov/forms/corporations/1708-f-l.pdf`,
         },
         text4: `
             <b>Where to File Your Certificate of Publication:</b></br>

@@ -104,7 +104,12 @@ export const businessNamesContent = {
     },
     {
       type: `textBoxWithCheckIcon`,
-      content: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      content: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     {
       type: `button`,
@@ -167,7 +172,17 @@ export const businessNamesContent = {
     },
     {
       type: `list-dot-without-bg`,
-      content: [`Entity Name`, `Officer/Registered Agent`, `Registered Agent Name`, `Trademark Name`, `Trademark Owner Name`, `FEI/EIN`, `Detail by Document Number`, `Zip Code`, `Street Address`],
+      content: [
+        `Entity Name`,
+        `Officer/Registered Agent`,
+        `Registered Agent Name`,
+        `Trademark Name`,
+        `Trademark Owner Name`,
+        `FEI/EIN`,
+        `Detail by Document Number`,
+        `Zip Code`,
+        `Street Address`,
+      ],
     },
     {
       type: `paragraph`,

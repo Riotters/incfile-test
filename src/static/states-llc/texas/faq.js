@@ -29,13 +29,12 @@ export const faqContent = {
     },
     {
       type: `paragraph`,
-      content: `The bare minimum needed to start a TX LLC is a completed Certificate of Formation, a business name and a fee you pay to the Texas Secretary of State.`,
+      content: `The bare minimum needed to start a TX LLC is a completed Certificate of Formation, a business name and a fee you pay to the Texas Secretary of State. We recommend taking some other steps before formally starting your LLC:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.blue3,
       content: {
-        header: `We recommend taking some other steps before formally starting your LLC:`,
         list: [
           `<a href="/blog/post/perform-market-research-assess-demand-before-you-start-business/">Research your target market</a> to make sure there’s a demand for the products and services you provide.`,
           `<a href="/blog/post/keys-successful-business-plan/">Create a comprehensive business plan</a> that defines the most important aspects of your Texas business.`,
@@ -121,11 +120,15 @@ export const faqContent = {
       },
     },
     {
+      type: `paragraph`,
+      styles: { marginTop: `32px`, marginBottom: `16px` },
+      content: `There are a few ways to register your Texas LLC name.`,
+    },
+    {
       type: `iconListColorBox`,
       boxColor: color.blue3,
       styles: { margin: `56px 0` },
       content: {
-        header: `There are a few ways to register your Texas LLC name.`,
         list: [
           `If you’re creating a new business and your business name is unique in Texas and meets state naming rules, you simply include it in your Certificate of Formation.`,
           `If you want to change the legal name of your business, file Form 424 - Certificate of Amendment with the Secretary of State.`,
@@ -245,15 +248,18 @@ export const faqContent = {
     },
     {
       type: `paragraph`,
-      content: `As an LLC, <a href='/business-accounting/'>any business profits</a> you earn will be reported on your personal 1040 filing and reported and taxed as “pass-through” income.`,
+      content: `As an LLC, <a href='/business-accounting/'>any business profits</a> you earn will be reported on your personal 1040 filing and reported and taxed as “pass-through” income. You will typically need to pay:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.green3,
       styles: { margin: `56px 0` },
       content: {
-        header: `You will typically need to pay:`,
-        list: [`Self-employment or payroll tax on all business profits`, `Federal income tax on profits after you meet your tax-free allowance`, `Sales tax for selling taxable products and services`],
+        list: [
+          `Self-employment or payroll tax on all business profits`,
+          `Federal income tax on profits after you meet your tax-free allowance`,
+          `Sales tax for selling taxable products and services`,
+        ],
       },
     },
     {
@@ -308,14 +314,13 @@ export const faqContent = {
     },
     {
       type: `paragraph`,
-      content: `Some businesses will need to pay a franchise tax in Texas.`,
+      content: `Some businesses will need to pay a franchise tax in Texas. You will typically need to pay:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.blue3,
       styles: { margin: `56px 0` },
       content: {
-        //header: `You will typically need to pay:`,
         list: [
           `Typically, if your business has margins of less than $1,180,000 (for 2020 and 2021) a year, you will not need to pay franchise tax.`,
           `If your margin is higher than this, you will pay a franchise tax of between 0.375 and 0.75 percent.`,

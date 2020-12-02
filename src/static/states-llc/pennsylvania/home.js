@@ -29,10 +29,18 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
+    type: `text`,
+    content: `Briefly, the benefits of starting a Pennsylvania LLC include:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `Briefly, the benefits of starting a Pennsylvania LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your Pennsylvania LLC`, `Easy tax filing and potential advantages for tax treatment`],
+      list: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulation and administration of your Pennsylvania LLC`,
+        `Easy tax filing and potential advantages for tax treatment`,
+      ],
     },
     marginBottom: 16,
     color: color.green3,
@@ -108,13 +116,12 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `The Secretary of State has plenty of information on forming and running a business in Pennsylvania.`,
+    content: `The Secretary of State has plenty of information on forming and running a business in Pennsylvania. The PA Department of State has plenty of additional information on forming and running a business in Pennsylvania:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `The PA Department of State has plenty of additional information on forming and running a business in Pennsylvania:`,
       list: [
         `<a href="https://www.dos.pa.gov/BusinessCharities/Business/Resources/Pages/Pennsylvania-Limited-Liability-Company.aspx" target="_blank" rel="noopener noreferrer">Pennsylvania Department of State for forming and running your PA LLC.</a>`,
         `<a href="https://www.dli.pa.gov/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Pennsylvania Department of Labor for PA employers and hiring.</a>`,
@@ -306,13 +313,12 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `It’s not enough for your PA LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Pennsylvania.`,
+    content: `It’s not enough for your PA LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Pennsylvania. For example, you cannot use the following factors to say your name is different from the name of another business:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `For example, you cannot use the following factors to say your name is different from the name of another business:`,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
         `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
@@ -348,7 +354,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Are very similar to the name of a federal or PA agency or organization (e.g., FBI, FDA, Pennsylvania Department of Revenue, Pennsylvania Police, Treasury, etc.)`,
         `Suggest affiliation with a federal or state agency or organization`,
@@ -372,13 +377,12 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `There are certain prohibited and restricted words that have limitations on how they can be used in a Pennsylvania LLC name.`,
+    content: `There are certain prohibited and restricted words that have limitations on how they can be used in a Pennsylvania LLC name. These include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `These include:`,
       list: [
         `"bank," ‘‘banking," ‘‘banker," ‘‘trust," ‘‘college," ‘‘university," ‘‘seminary," ‘‘certified public accountant," ‘‘public accountant," ‘‘architect," ‘‘architecture," ‘‘engineer," "engineering," ‘‘surveyor," ‘‘surveying," ‘‘pharmacist," ‘‘druggist," ‘‘apothecary," ‘‘drug store," ‘‘pharmacy," ‘‘drugs," ‘‘medicine store," ‘‘medicines," ‘‘drug shop," ‘‘pharmaceutical," ‘‘homeopathic," ‘‘homeopathy," “‘annuity," ‘‘assurance," ‘‘beneficial," ‘‘bond," ‘‘casualty," ‘‘endowment," ‘‘fidelity," ‘‘fraternal," ‘‘guaranty," ‘‘indemnity," ‘‘insurance," ‘‘insurer," ‘‘reassurance," ‘‘reinsurance," ‘‘surety," ‘‘title" ‘‘mutual," or “electricity or gas utilities.”`,
       ],
@@ -523,8 +527,12 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      list: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -569,13 +577,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a Pennsylvania Registered Agent or CROP service for your business.`,
+    content: `There are certain rules that you must follow when you’re appointing a Pennsylvania Registered Agent or CROP service for your business. They are:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in Pennsylvania`,
         `If the Registered Agent is a business, they must be able to conduct business in Pennsylvania`,
@@ -599,13 +606,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Your Pennsylvania Registered Agent or CROP carries out several valuable services for your business. They accept official communications and documents from the PA Department of State on your behalf.`,
+    content: `Your Pennsylvania Registered Agent or CROP carries out several valuable services for your business. They accept official communications and documents from the PA Department of State on your behalf. This may include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `This may include:`,
       list: [
         `Correspondence from the Pennsylvania Department of State, like a notice to file reports and other forms`,
         `Service of process documents (for example, if your Pennsylvania LLC has legal proceedings issued against it)`,
@@ -628,13 +634,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `To "We are authorized to conduct business in Pennsylvania and can legally act as your Commercial Registered Office Provider.`,
+    content: `To "We are authorized to conduct business in Pennsylvania and can legally act as your Commercial Registered Office Provider. Here’s what you need to know about Incfile’s PA Registered Agent service:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here’s what you need to know about Incfile’s PA Registered Agent service:`,
       list: [
         `The Registered Agent will always be available to accept documents and letters on your behalf`,
         `We automatically notify you whenever we receive correspondence for your business from the Pennsylvania Department of State or anyone else`,
@@ -773,13 +778,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Pennsylvania Department of State?`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Pennsylvania Department of State? There are several possible ramifications, including:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `There are several possible ramifications, including:`,
       list: [
         `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `Falling out of good standing with the Pennsylvania Department of State: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -797,13 +801,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `If you have an address in Pennsylvania, you can choose to be the Registered Agent for your LLC.`,
+    content: `If you have an address in Pennsylvania, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `We don’t recommend this approach as there can be some drawbacks:`,
       list: [
         `The PA Registered Agent must have a physical street address in Pennsylvania. If you’re forming an LLC outside PA, you will need to use an in-state Registered Agent.`,
         `You always need to have someone on hand during business hours at the Pennsylvania address to sign for important documents.`,
@@ -851,9 +854,13 @@ export const registeredAgent = [
     marginBottom: 16,
   },
   {
+    type: `text`,
+    content: `You might find these resources helpful:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You might find these resources helpful:`,
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/" target="_blank">The Main Functions of a Pennsylvania Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Pennsylvania Registered Agent</a>`,
@@ -1002,13 +1009,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Some PA LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis.`,
+    content: `Some PA LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis. Permits and licenses vary based on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your Pennsylvania LLC operates in (e.g., restaurants will need health permits)`,
         `The location of your Pennsylvania LLC (state, county or city) (e.g., a license to conduct business from the city of Pittsburgh)`,
@@ -1031,14 +1037,16 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Our Business License Research Package tells you about all of the licenses and permits you will need for your Pennsylvania LLC.`,
+    content: `Our Business License Research Package tells you about all of the licenses and permits you will need for your Pennsylvania LLC. It includes:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `It includes:`,
-      list: [`A complete report on all the licenses, permits and tax registrations your Pennsylvania LLC will need`, `The application forms you will need to file with the Pennsylvania, regional and federal licensing authorities`],
+      list: [
+        `A complete report on all the licenses, permits and tax registrations your Pennsylvania LLC will need`,
+        `The application forms you will need to file with the Pennsylvania, regional and federal licensing authorities`,
+      ],
     },
     marginBottom: 16,
     color: color.yellow3,
@@ -1143,14 +1151,17 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your Pennsylvania business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Pennsylvania Department of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    content: `Your business formation documents state certain facts about your Pennsylvania business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Pennsylvania Department of State. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file Pennsylvania Articles of Amendment for include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Areas you might want to file Pennsylvania Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Pennsylvania LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Pennsylvania LLC`],
+      list: [
+        `Adding, removing or changing a Pennsylvania LLC member or manager`,
+        `Changing the business address of your LLC`,
+        `Altering the stated business activities of your Pennsylvania LLC`,
+      ],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -1335,14 +1346,16 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the PA Department of Revenue. Pennsylvania sales tax is collected at the point of purchase. Pennsylvania sales tax rates do vary depending on the region, county or city where you are located.`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the PA Department of Revenue. Pennsylvania sales tax is collected at the point of purchase. Pennsylvania sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Pennsylvania sales tax on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will typically need to collect Pennsylvania sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Pennsylvania business might provide`],
+      list: [
+        `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
+        `Certain services that your Pennsylvania business might provide`,
+      ],
     },
     marginBottom: 16,
     color: color.purple3,
@@ -1370,14 +1383,18 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that.`,
+    content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that. Here are the sales tax rates for the major cities in Pennsylvania:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are the sales tax rates for the major cities in Pennsylvania:`,
-      list: [`Philadelphia: 8 percent`, `Pittsburgh: 7 percent`, `Allentown: 6 percent`, `Lancaster: 6 percent`],
+      list: [
+        `Philadelphia: 8 percent`,
+        `Pittsburgh: 7 percent`,
+        `Allentown: 6 percent`,
+        `Lancaster: 6 percent`,
+      ],
     },
     marginBottom: 48,
     color: color.orange3,
@@ -1406,14 +1423,18 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
+    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $40,000, you would pay self-employment tax of $6,120`, `On profits of $70,000, you would pay self-employment tax of $10,710`, `On profits of $100,000, you would pay self-employment tax of $15,300`, `On profits of $140,000, you would pay self-employment tax of $21,420`],
+      list: [
+        `On profits of $40,000, you would pay self-employment tax of $6,120`,
+        `On profits of $70,000, you would pay self-employment tax of $10,710`,
+        `On profits of $100,000, you would pay self-employment tax of $15,300`,
+        `On profits of $140,000, you would pay self-employment tax of $21,420`,
+      ],
     },
     marginBottom: 32,
     color: color.babyblue3,
@@ -1522,10 +1543,17 @@ export const businessTaxes = [
               content: `Most Pennsylvania LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
             },
             {
+              type: `paragraph`,
+              content: `The most common types of estimated taxes are:`,
+            },
+            {
               type: `list-dot-without-bg`,
               color: color.orange3,
-              header: `The most common types of estimated taxes are:`,
-              content: [`Federal income tax`, `Federal self-employment tax`, `Pennsylvania state tax`],
+              content: [
+                `Federal income tax`,
+                `Federal self-employment tax`,
+                `Pennsylvania state tax`,
+              ],
             },
             {
               type: `paragraph`,
@@ -1575,7 +1603,12 @@ export const compare = {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
       [`Business incorporation service`, `$49`, `$149`, `$149`],
-      [`Registered Agent included in the price`, `check-green`, `check-red`, `check-red`],
+      [
+        `Registered Agent included in the price`,
+        `check-green`,
+        `check-red`,
+        `check-red`,
+      ],
     ],
   },
 };

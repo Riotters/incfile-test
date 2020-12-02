@@ -140,6 +140,7 @@ const AlaskaCorporation = () => {
                 thumbnailVideo="what-is-a-corporation-8899"
                 videoID="oYZShvmf9eQ"
               />
+
             </PanelWrapper>
             <PanelWrapper>
               <Heading size={3} style={{ marginBottom: "24px" }}>
@@ -420,7 +421,6 @@ const AlaskaCorporation = () => {
       {/*</AdventagesBox>*/}
       {/*</Container>*/}
       {/*</InfoSection>*/}
-
       <Rocket />
     </Layout>
   );

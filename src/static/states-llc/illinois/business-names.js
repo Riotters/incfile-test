@@ -131,7 +131,12 @@ export const businessNamesContent = {
     },
     {
       type: `textBoxWithCheckIcon`,
-      content: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      content: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     {
       type: `button`,
@@ -166,10 +171,13 @@ export const businessNamesContent = {
       content: `Once you have an idea of what business name you’d like to use, you’ll need to complete an Illinois business entity search. Incfile offers a fast, simple and convenient tool to look up your proposed business name. The Illinois SOS also has a tool that lets you search the register of IL LLCs and corporations to see if someone already has your desired business name.`,
     },
     {
+      type: `paragraph`,
+      content: `The Illinois Secretary of State search tool lets you enter details and search for your IL LLC by the following fields:`,
+    },
+    {
       type: `iconListColorBox`,
       boxColor: color.orange3,
       content: {
-        header: `The Illinois Secretary of State search tool lets you enter details and search for your IL LLC by the following fields:`,
         list: [`Name`, `Keyword`, `Partial Word`, `File Number`],
       },
     },

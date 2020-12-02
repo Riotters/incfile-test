@@ -398,34 +398,34 @@ const AlaskaCorporation = () => {
 };
 
 const InfoSection = styled.section`
-  margin-bottom: 148px;
+	margin-bottom: 148px;
 `;
 
 const QuestionSection = styled.section`
-  background-image: ${gradient.orange3};
-  position: relative;
-  padding-top: 100px;
-  margin-top: 52px;
-  margin-bottom: 148px;
+	background-image: ${gradient.orange3};
+	position: relative;
+	padding-top: 100px;
+	margin-top: 52px;
+	margin-bottom: 148px;
 `;
 
 const PackageSection = styled.section``;
 
 const ServiceSection = styled.section`
-  background-image: ${gradient.blue3};
-  padding-top: 100px;
-  position: relative;
-  margin-bottom: 100px;
-  overflow: hidden;
+	background-image: ${gradient.blue3};
+	padding-top: 100px;
+	position: relative;
+	margin-bottom: 100px;
+	overflow: hidden;
 `;
 
 const TabsWrapper = styled.section`
-  position: relative;
-  margin-top: 120px;
+	position: relative;
+	margin-top: 120px;
 
-  @media (min-width: 992px) {
-    margin-top: 21px;
-  }
+	@media (min-width: 992px) {
+		margin-top: 21px;
+	}
 `;
 
 const AdventagesBox = styled.div`
