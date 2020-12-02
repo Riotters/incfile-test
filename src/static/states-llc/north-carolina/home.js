@@ -34,10 +34,18 @@ export const howToGuide = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `Briefly, the benefits of starting a North Carolina LLC include:`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `Briefly, the benefits of starting a North Carolina LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your North Carolina LLC`, `Easy tax filing and potential advantages for your tax treatment`],
+      list: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulation and administration of your North Carolina LLC`,
+        `Easy tax filing and potential advantages for your tax treatment`,
+      ],
     },
     marginBottom: 48,
     color: color.blue3,
@@ -117,9 +125,13 @@ export const howToGuide = [
     marginBottom: 32,
   },
   {
+    type: `text`,
+    content: `The NC Secretary of State has plenty of additional information on forming and running a business in North Carolina.`,
+    marginBottom: 32,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `The NC Secretary of State has plenty of additional information on forming and running a business in North Carolina.`,
       list: [
         `<a href="https://www.sosnc.gov/divisions/business_registration" target="_blank" rel="noopener noreferrer">North Carolina Secretary of State for forming and running your NC LLC</a>`,
         `<a href="https://www.labor.nc.gov/" target="_blank" rel="noopener noreferrer">North Carolina Department of Labor for NC employers and hiring</a>`,
@@ -311,7 +323,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
         `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
@@ -347,7 +358,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Are very similar to the name of a federal or NC agency or organization (e.g., FBI, FDA, North Carolina Department of Revenue, North Carolina Police, Treasury, etc.)`,
         `Suggest affiliation with a federal or state agency or organization`,
@@ -399,8 +409,9 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`If you’re ready to start your North Carolina LLC, you can formally file your Articles of Organization with the North Carolina SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NC">let Incfile take care of it for you</a>.`],
+      list: [
+        `If you’re ready to start your North Carolina LLC, you can formally file your Articles of Organization with the North Carolina SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NC">let Incfile take care of it for you</a>.`,
+      ],
     },
     marginBottom: 40,
     color: color.purple3,
@@ -481,8 +492,12 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      list: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     marginBottom: 40,
     color: color.blue3,
@@ -528,13 +543,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `You must identify the business entity’s Registered Agent name. The sole duty of the Registered Agent is to forward to the business entity at its last known address any notice, process, or demand that is served on the Registered Agent.`,
+    content: `You must identify the business entity’s Registered Agent name. The sole duty of the Registered Agent is to forward to the business entity at its last known address any notice, process, or demand that is served on the Registered Agent. A Registered Agent may be any one of the following:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `A Registered Agent may be any one of the following:`,
       list: [
         `An individual who resides in North Carolina and whose business address is identical to the registered office;`,
         `A domestic business corporation, nonprofit corporation, limited liability company, whose business address is identical to the registered office; or`,
@@ -563,7 +577,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `If the Registered Agent is a person, they must reside in North Carolina.`,
         `If the Registered Agent is a business, they must be able to conduct business in North Carolina.`,
@@ -593,7 +606,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Correspondence from the North Carolina Secretary of State`,
         `Service of process notices (e.g., if your NC LLC is sued or required to appear in court)`,
@@ -630,7 +642,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `An always-available North Carolina Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
         `A digital dashboard where you can access, store and retrieve any information we’ve received for your North Carolina business`,
@@ -775,7 +786,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing with the North Carolina Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -799,7 +809,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `The NC Registered Agent must have a physical street address in North Carolina. If you’re forming an LLC outside NC, you will need to use an in-state Registered Agent.`,
         `You always need to have someone on hand during business hours at the North Carolina address to sign for important documents.`,
@@ -847,9 +856,13 @@ export const registeredAgent = [
     marginBottom: 32,
   },
   {
+    type: `text`,
+    content: `You might find these resources helpful:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You might find these resources helpful:`,
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a North Carolina Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your North Carolina Registered Agent</a>`,
@@ -1008,13 +1021,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your North Carolina LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by North Carolina, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
+    content: `Your North Carolina LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by North Carolina, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. Permits and licenses vary based on:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your North Carolina LLC operates in (e.g., restaurants will need health permits)`,
         `The location of your North Carolina LLC (state, county or city) (e.g., a license to conduct business from the city of Raleigh)`,
@@ -1034,8 +1046,10 @@ export const feesAndRequirments = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`A complete report on all the licenses, permits and tax registrations your North Carolina LLC will need`, `The application forms you will need to file with the North Carolina, regional and federal licensing authorities`],
+      list: [
+        `A complete report on all the licenses, permits and tax registrations your North Carolina LLC will need`,
+        `The application forms you will need to file with the North Carolina, regional and federal licensing authorities`,
+      ],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1129,14 +1143,17 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your North Carolina business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the North Carolina Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    content: `Your business formation documents state certain facts about your North Carolina business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the North Carolina Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file North Carolina Articles of Amendment for include:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Areas you might want to file North Carolina Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a North Carolina LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your North Carolina LLC`],
+      list: [
+        `Adding, removing or changing a North Carolina LLC member or manager`,
+        `Changing the business address of your LLC`,
+        `Altering the stated business activities of your North Carolina LLC`,
+      ],
     },
     marginBottom: 24,
     color: color.yellow3,
@@ -1317,14 +1334,16 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the NC Department of Revenue. North Carolina sales tax is collected at the point of purchase. North Carolina sales tax rates do vary depending on the region, county or city where you are located.`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the NC Department of Revenue. North Carolina sales tax is collected at the point of purchase. North Carolina sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect North Carolina sales tax on:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will typically need to collect North Carolina sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your North Carolina business might provide`],
+      list: [
+        `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
+        `Certain services that your North Carolina business might provide`,
+      ],
     },
     marginBottom: 16,
     color: color.blue3,
@@ -1376,14 +1395,18 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
+    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $30,000, you would pay self-employment tax of $4,590`, `On profits of $60,000, you would pay self-employment tax of $9,180`, `On profits of $90,000, you would pay self-employment tax of $13,770`, `On profits of $140,000, you would pay self-employment tax of $21,420`],
+      list: [
+        `On profits of $30,000, you would pay self-employment tax of $4,590`,
+        `On profits of $60,000, you would pay self-employment tax of $9,180`,
+        `On profits of $90,000, you would pay self-employment tax of $13,770`,
+        `On profits of $140,000, you would pay self-employment tax of $21,420`,
+      ],
     },
     marginBottom: 48,
     color: color.green3,
@@ -1494,10 +1517,17 @@ export const businessTaxes = [
               content: `Most North Carolina LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
             },
             {
+              type: `paragraph`,
+              content: `The most common types of estimated taxes are:`,
+            },
+            {
               type: `list-dot-without-bg`,
               color: color.orange3,
-              header: `The most common types of estimated taxes are:`,
-              content: [`Federal income tax`, `Federal self-employment tax`, `North Carolina state tax`],
+              content: [
+                `Federal income tax`,
+                `Federal self-employment tax`,
+                `North Carolina state tax`,
+              ],
             },
             {
               type: `paragraph`,
@@ -1542,7 +1572,12 @@ export const compare = {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
       [`Business incorporation service`, `$49`, `$149`, `$149`],
-      [`Registered Agent included in the price`, `check-green`, `check-red`, `check-red`],
+      [
+        `Registered Agent included in the price`,
+        `check-green`,
+        `check-red`,
+        `check-red`,
+      ],
     ],
   },
 };

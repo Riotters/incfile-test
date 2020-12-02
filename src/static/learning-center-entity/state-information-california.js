@@ -42,7 +42,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `/`,
+      url: `${process.env.ORDER_URL}/form-order-now.php`,
     },
   ],
 };
@@ -50,13 +50,13 @@ export const launchBusiness = {
   header: `Launch your business with Incfile`,
   text: `No Contracts. No Surprises. Only $0 + State Fee to Launch Your Business.`,
   button: {
-    text: `Launch your business`,
+    text: `Launch your business!`,
     url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=CA`,
   },
 };
 
 export const subscription = {
-  header: `Subscribe now to learn more about Corporation and starting a business`,
+  header: `Subscribe now to learn more about LLC and starting a business`,
   button: {
     text: `Subscribe Now`,
     url: `/`,
@@ -111,12 +111,14 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "California is a leader in great companies and household names. From Silicon Valley to Los Angeles, the state houses some of the biggest technological and entertainment businesses on the planet.",
+    content:
+      "California is a leader in great companies and household names. From Silicon Valley to Los Angeles, the state houses some of the biggest technological and entertainment businesses on the planet.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "For entrepreneurs with big dreams, starting a corporation is a powerful way to show your commitment and bring those ideas to life. In this guide we’ll talk you through everything you need to know on how to start a corporation in the state of California.",
+    content:
+      "For entrepreneurs with big dreams, starting a corporation is a powerful way to show your commitment and bring those ideas to life. In this guide we’ll talk you through everything you need to know on how to start a corporation in the state of California.",
     marginBottom: 48,
   },
   {
@@ -127,7 +129,8 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "Most entrepreneurs will have a choice of starting an LLC, an S Corporation or a C Corporation in California. We’ll help you select the right type of business entity, as each one is treated differently by the CA Secretary of State, the law, the IRS and other official bodies.",
+    content:
+      "Most entrepreneurs will have a choice of starting an LLC, an S Corporation or a C Corporation in California. We’ll help you select the right type of business entity, as each one is treated differently by the CA Secretary of State, the law, the IRS and other official bodies.",
     marginBottom: 24,
   },
   {
@@ -151,7 +154,8 @@ export const corporation = [
       },
       {
         header: "California Limited Liability Companies (LLCs)",
-        text: "LLCs are a great option for smaller CA businesses. LLCs are quick and easy to create, inexpensive to administer, light on regulations and have simple taxation and rules.",
+        text:
+          "LLCs are a great option for smaller CA businesses. LLCs are quick and easy to create, inexpensive to administer, light on regulations and have simple taxation and rules.",
         svg: LockpadSVG,
         link: {
           text: "Learn how to create an LLC in California",
@@ -165,7 +169,8 @@ export const corporation = [
       },
       {
         header: "California S Corporations",
-        text: "You might choose to form a California S Corporation because it’s a good compromise between the simplicity of the LLC and the complexity of the C Corporation. Note that CA S Corporations are subject to more rules and regulations than a CA LLC, but they can mean that you pay less tax.",
+        text:
+          "You might choose to form a California S Corporation because it’s a good compromise between the simplicity of the LLC and the complexity of the C Corporation. Note that CA S Corporations are subject to more rules and regulations than a CA LLC, but they can mean that you pay less tax.",
         svg: ProcentSVG,
         link: {
           text: "Learn how to create an LLC in California",
@@ -199,7 +204,8 @@ export const corporation = [
     type: "colorbox",
     icon: FolderProcentSVG,
     header: "Other Entity Types",
-    text: "There are some other business entity structures like nonprofits, Limited Liability Partnerships (LLPs) and B Corporations, but they will not be relevant for the majority of entrepreneurs.",
+    text:
+      "There are some other business entity structures like nonprofits, Limited Liability Partnerships (LLPs) and B Corporations, but they will not be relevant for the majority of entrepreneurs.",
     curve: true,
     curveColor: color.blue1,
     color: color.blue3,
@@ -231,7 +237,8 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "Why might you want to choose to incorporate as a CA S Corp or C Corp instead of an LLC? Here are a few reasons.",
+    content:
+      "Why might you want to choose to incorporate as a CA S Corp or C Corp instead of an LLC? Here are a few reasons.",
     marginBottom: 48,
   },
   {
@@ -267,7 +274,8 @@ export const corporation = [
     type: "colorbox",
     header: "Buying Stock",
     icon: StockSVG,
-    text: "California S Corporations and C Corporations make it much easier to buy, sell and transfer stock. C Corporations also allow you to file an IPO and list stock on the public stock market.",
+    text:
+      "California S Corporations and C Corporations make it much easier to buy, sell and transfer stock. C Corporations also allow you to file an IPO and list stock on the public stock market.",
     curve: true,
     curveColor: color.green1,
     color: color.green3,
@@ -275,7 +283,8 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "C Corporations provide certain benefits when it comes to buying, selling and transferring stock. Here are the rules for both S Corps and C Corps:",
+    content:
+      "C Corporations provide certain benefits when it comes to buying, selling and transferring stock. Here are the rules for both S Corps and C Corps:",
     marginBottom: 41,
   },
   {
@@ -302,7 +311,8 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "In addition to the general benefits above, California C Corporations provide several other advantages.",
+    content:
+      "In addition to the general benefits above, California C Corporations provide several other advantages.",
     marginBottom: 24,
   },
   {
@@ -323,18 +333,21 @@ export const corporation = [
   },
   {
     type: "header",
-    content: "What You Need to Know About Forming a California \n" + "Corporation",
+    content:
+      "What You Need to Know About Forming a California \n" + "Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Here are some areas to be aware of when you’re creating a corporation in California.",
+    content:
+      "Here are some areas to be aware of when you’re creating a corporation in California.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "First, CA corporations are formed on the state level by filing Articles of Incorporation with the Secretary of State. Incfile specializes in helping entrepreneurs form California S Corporations and C Corporations and can collect the information and file this form on your behalf.",
+    content:
+      "First, CA corporations are formed on the state level by filing Articles of Incorporation with the Secretary of State. Incfile specializes in helping entrepreneurs form California S Corporations and C Corporations and can collect the information and file this form on your behalf.",
     marginBottom: 24,
   },
   {
@@ -345,14 +358,18 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "There are some similarities and some differences between S Corps and C Corps:",
+    content:
+      "There are some similarities and some differences between S Corps and C Corps:",
     marginBottom: 40,
   },
   {
     type: "list-dot",
     content: {
       header: "S Corporations and C Corporations in California",
-      list: ["<strong>Similarities:</strong> California S Corporations and C Corporations have similar rules and regulations for liability, governance, management and ownership", "<strong>Differences:</strong> Key differences are taxation and the ease of buying, selling and transferring stock"],
+      list: [
+        "<strong>Similarities:</strong> California S Corporations and C Corporations have similar rules and regulations for liability, governance, management and ownership",
+        "<strong>Differences:</strong> Key differences are taxation and the ease of buying, selling and transferring stock",
+      ],
     },
     color: color.green3,
     marginBottom: 32,
@@ -361,14 +378,16 @@ export const corporation = [
   {
     type: "arrow-link",
     content: {
-      text: "Learn what you need to do to create a California S Corporation or C Corporation",
+      text:
+        "Learn what you need to do to create a California S Corporation or C Corporation",
       url: "/",
     },
     marginBottom: 40,
   },
   {
     type: "text",
-    content: "Your California Corporation Must Follow Certain Rules and Regulations",
+    content:
+      "Your California Corporation Must Follow Certain Rules and Regulations",
     marginBottom: 32,
   },
   {
@@ -395,7 +414,8 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "All California corporations must follow stringent compliance rules and regulations. These include financial reports, bylaws, corporate formalities, taxes, fees, business licenses and the like. You can find links to these below.",
+    content:
+      "All California corporations must follow stringent compliance rules and regulations. These include financial reports, bylaws, corporate formalities, taxes, fees, business licenses and the like. You can find links to these below.",
     marginBottom: 24,
   },
   {
@@ -417,7 +437,8 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "Are you ready to start your California corporation? If so, we can help. We provide comprehensive corporation formation services for both S Corporations and C Corporations in California.",
+    content:
+      "Are you ready to start your California corporation? If so, we can help. We provide comprehensive corporation formation services for both S Corporations and C Corporations in California.",
     marginBottom: 32,
   },
   {
@@ -460,7 +481,8 @@ export const corporation = [
   },
   {
     type: "text",
-    content: "You’ll find plenty more insight and guidance on the other pages of this guide, including:",
+    content:
+      "You’ll find plenty more insight and guidance on the other pages of this guide, including:",
     marginBottom: 24,
   },
   {
@@ -468,7 +490,8 @@ export const corporation = [
     content: [
       {
         header: "Forming Your California Corporation",
-        text: "The six steps you need to take to start a California S Corporation or C Corporation.",
+        text:
+          "The six steps you need to take to start a California S Corporation or C Corporation.",
         link: {
           text: "Learn more",
           url: "/",
@@ -482,7 +505,8 @@ export const corporation = [
       },
       {
         header: "Naming Your California Corporation",
-        text: "How to search the California business registry of the CA Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a California corporation name and more.",
+        text:
+          "How to search the California business registry of the CA Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a California corporation name and more.",
         link: {
           text: "Learn more",
           url: "/",
@@ -496,7 +520,8 @@ export const corporation = [
       },
       {
         header: "California Registered Agents for Your Corporation",
-        text: "How to appoint a California Registered Agent to your new corporation or change to a different Registered Agent. Includes information on Registered Agent rules and searching for California Registered Agents.",
+        text:
+          "How to appoint a California Registered Agent to your new corporation or change to a different Registered Agent. Includes information on Registered Agent rules and searching for California Registered Agents.",
         link: {
           text: "Learn more",
           url: "/",
@@ -524,8 +549,10 @@ export const corporation = [
         boxShadow: false,
       },
       {
-        header: "Federal, State, Sales and Other Taxes for Your California Corporation",
-        text: "How to understand the various taxes you will need to pay to the federal and California government. Includes details of federal taxes like income and self-employment, and California taxes like sales tax and income tax.",
+        header:
+          "Federal, State, Sales and Other Taxes for Your California Corporation",
+        text:
+          "How to understand the various taxes you will need to pay to the federal and California government. Includes details of federal taxes like income and self-employment, and California taxes like sales tax and income tax.",
         link: {
           text: "Learn more",
           url: "/",
@@ -550,12 +577,14 @@ export const startCaCorp = [
   },
   {
     type: "text",
-    content: "Setting up a CA corporation doesn’t have to be complicated. We’ve created this straightforward guide on how to form a corporation in California.",
+    content:
+      "Setting up a CA corporation doesn’t have to be complicated. We’ve created this straightforward guide on how to form a corporation in California.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Starting your California S Corporation or C Corporation with Incfile is fast and easy. We’ll gather all the information we need from you and file it with the CA Secretary of State. Here are the six steps you need to follow to form a corporation in California.",
+    content:
+      "Starting your California S Corporation or C Corporation with Incfile is fast and easy. We’ll gather all the information we need from you and file it with the CA Secretary of State. Here are the six steps you need to follow to form a corporation in California.",
     marginBottom: 24,
   },
   {
@@ -606,7 +635,8 @@ export const startCaCorp = [
   },
   {
     type: "text",
-    content: "If you don’t need the options for buying and selling stock, a California LLC may be a better choice for your business. You can even have your LLC treated as an S Corporation for tax purposes to save you money.",
+    content:
+      "If you don’t need the options for buying and selling stock, a California LLC may be a better choice for your business. You can even have your LLC treated as an S Corporation for tax purposes to save you money.",
     marginBottom: 24,
   },
   {
@@ -628,7 +658,8 @@ export const startCaCorp = [
     content: {
       items: [
         {
-          question: "Search for and Choose the Right Name for Your CA Corporation",
+          question:
+            "Search for and Choose the Right Name for Your CA Corporation",
           answer: "",
         },
         {
@@ -637,7 +668,8 @@ export const startCaCorp = [
             "Every California S Corporation or C Corporation must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address can be outside CA, but it cannot be a P.O. Box.",
         },
         {
-          question: "Assign an Agent for Service of Process to Your California Corporation",
+          question:
+            "Assign an Agent for Service of Process to Your California Corporation",
           answer: "",
         },
         {
@@ -645,11 +677,13 @@ export const startCaCorp = [
           answer: "",
         },
         {
-          question: "Send Your California Articles of Incorporation to the Secretary of State",
+          question:
+            "Send Your California Articles of Incorporation to the Secretary of State",
           answer: "",
         },
         {
-          question: "Your CA Corporation Will Need to Meet Certain Legal and Compliance Requirements",
+          question:
+            "Your CA Corporation Will Need to Meet Certain Legal and Compliance Requirements",
           answer: "",
         },
       ],
@@ -658,7 +692,8 @@ export const startCaCorp = [
   },
   {
     type: "header",
-    content: "Useful Corporation Information From the State \n" + "of California",
+    content:
+      "Useful Corporation Information From the State \n" + "of California",
     size: 4,
     marginBottom: 24,
   },
@@ -694,7 +729,8 @@ export const startCaCorp = [
   },
   {
     type: "text",
-    content: "A regular California S Corporation or C Corporation is suitable for almost all business needs, but you also have a few other options to incorporate a special type of corporation.",
+    content:
+      "A regular California S Corporation or C Corporation is suitable for almost all business needs, but you also have a few other options to incorporate a special type of corporation.",
     marginBottom: 52,
   },
   {
@@ -711,7 +747,8 @@ export const startCaCorp = [
   },
   {
     type: "text",
-    content: "“Before submitting the completed form, contact the California state board or agency that controls your profession to find out if your profession is authorized to be a corporation in California and if there are any specific corporate name style rules.”",
+    content:
+      "“Before submitting the completed form, contact the California state board or agency that controls your profession to find out if your profession is authorized to be a corporation in California and if there are any specific corporate name style rules.”",
     marginBottom: 52,
   },
   {
@@ -761,7 +798,8 @@ export const startCaCorp = [
 export const naming = [
   {
     type: "header",
-    content: "CA Name Search and Registration for Your \n" + "California Corporation",
+    content:
+      "CA Name Search and Registration for Your \n" + "California Corporation",
     size: 4,
     marginBottom: 24,
   },
@@ -805,7 +843,8 @@ export const naming = [
   },
   {
     type: "text",
-    content: "If your S Corporation or C Corporation name is already used by any type of business entity in California, that means it’s not available and you won’t be able to register it. Try searching for a different CA corporation name instead.",
+    content:
+      "If your S Corporation or C Corporation name is already used by any type of business entity in California, that means it’s not available and you won’t be able to register it. Try searching for a different CA corporation name instead.",
     marginBottom: 24,
   },
   {
@@ -818,13 +857,15 @@ export const naming = [
   },
   {
     type: "header",
-    content: "California Secretary of State Rules for Naming Your \n" + "Corporation",
+    content:
+      "California Secretary of State Rules for Naming Your \n" + "Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Once you’ve found an original name for your California S Corp or C Corp, you will need to make sure it meets California Secretary of State naming rules.",
+    content:
+      "Once you’ve found an original name for your California S Corp or C Corp, you will need to make sure it meets California Secretary of State naming rules.",
     marginBottom: 48,
   },
   {
@@ -835,7 +876,8 @@ export const naming = [
   },
   {
     type: "text",
-    content: "The rules below generally apply to all corporations, wherever they are formed.",
+    content:
+      "The rules below generally apply to all corporations, wherever they are formed.",
     marginBottom: 48,
   },
   {
@@ -846,18 +888,22 @@ export const naming = [
   },
   {
     type: "text",
-    content: "The name you have chosen for your S Corporation or C Corporation cannot be used by any other registered business in the state of California. This is why you must check business name availability on the CA Secretary of State website.",
+    content:
+      "The name you have chosen for your S Corporation or C Corporation cannot be used by any other registered business in the state of California. This is why you must check business name availability on the CA Secretary of State website.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Your CA Corporation Name Must Not Be Confusable With \n" + "Another Business Name",
+    content:
+      "Your CA Corporation Name Must Not Be Confusable With \n" +
+      "Another Business Name",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Not only must your CA corporation name be unique, it cannot be similar to another corporation or LLC name in California. You cannot use the following factors to say your name is different from the name of another business:",
+    content:
+      "Not only must your CA corporation name be unique, it cannot be similar to another corporation or LLC name in California. You cannot use the following factors to say your name is different from the name of another business:",
     marginBottom: 24,
   },
   {
@@ -876,7 +922,8 @@ export const naming = [
   },
   {
     type: "text",
-    content: "For example, you can’t claim that Purple People Co., Purple People Corporation, Purple People Incorporated, Purple People Corp. or Purple People are different from one another.",
+    content:
+      "For example, you can’t claim that Purple People Co., Purple People Corporation, Purple People Incorporated, Purple People Corp. or Purple People are different from one another.",
     marginBottom: 48,
   },
   {
@@ -887,7 +934,8 @@ export const naming = [
   },
   {
     type: "text",
-    content: "The name of your business typically needs to contain the words “Corporation,” “Incorporated” or “Limited,” normally at the end of the name. These suffixes can be abbreviated.",
+    content:
+      "The name of your business typically needs to contain the words “Corporation,” “Incorporated” or “Limited,” normally at the end of the name. These suffixes can be abbreviated.",
     marginBottom: 48,
   },
   {
@@ -898,7 +946,8 @@ export const naming = [
   },
   {
     type: "text",
-    content: "Most states will not allow you to form S Corporations or C Corporations with names that:",
+    content:
+      "Most states will not allow you to form S Corporations or C Corporations with names that:",
     marginBottom: 24,
   },
   {
@@ -923,7 +972,8 @@ export const naming = [
   },
   {
     type: "text",
-    content: "There are additional, specific rules you will need to follow from the California Secretary of State for naming your CA S Corporation or C Corporation.",
+    content:
+      "There are additional, specific rules you will need to follow from the California Secretary of State for naming your CA S Corporation or C Corporation.",
     marginBottom: 24,
   },
   {
@@ -969,7 +1019,9 @@ export const naming = [
   },
   {
     type: "header",
-    content: "Rules on Infringing on Service Marks or Trademarks Inside \n" + "or Outside California",
+    content:
+      "Rules on Infringing on Service Marks or Trademarks Inside \n" +
+      "or Outside California",
     size: 4,
     marginBottom: 24,
   },
@@ -993,7 +1045,8 @@ export const naming = [
   },
   {
     type: "text",
-    content: "Once you’ve found the right name for your business, it’s time to make it a reality. Check out our packages for starting your California corporation and form either an S Corporation or a C Corporation today.",
+    content:
+      "Once you’ve found the right name for your business, it’s time to make it a reality. Check out our packages for starting your California corporation and form either an S Corporation or a C Corporation today.",
     marginBottom: 24,
   },
   {
@@ -1019,7 +1072,8 @@ export const naming = [
 export const agents = [
   {
     type: "header",
-    content: "Why Your California Corporation Needs a Registered \n" + "Agent Service",
+    content:
+      "Why Your California Corporation Needs a Registered \n" + "Agent Service",
     size: 4,
     marginBottom: 24,
   },
@@ -1045,7 +1099,8 @@ export const agents = [
   },
   {
     type: "text",
-    content: "Incorporate your S Corporation or C Corporation through us to get your first year of Registered Agent services for free.",
+    content:
+      "Incorporate your S Corporation or C Corporation through us to get your first year of Registered Agent services for free.",
     marginBottom: 24,
   },
   {
@@ -1070,13 +1125,16 @@ export const agents = [
   },
   {
     type: "header",
-    content: "Information on the California Secretary of State and CA \n" + "Registered Agent Services",
+    content:
+      "Information on the California Secretary of State and CA \n" +
+      "Registered Agent Services",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Registered Agents in California are known as “Agents for Service of Process.” Here’s some important information from the California Secretary of State on CA Registered Agent services.",
+    content:
+      "Registered Agents in California are known as “Agents for Service of Process.” Here’s some important information from the California Secretary of State on CA Registered Agent services.",
     marginBottom: 24,
   },
   {
@@ -1093,7 +1151,8 @@ export const agents = [
   },
   {
     type: "text",
-    content: "What can your corporation expect from your California Registered Agent? Their main function is to accept official documents and correspondence from the CA Secretary of State that will affect your corporation. This includes:",
+    content:
+      "What can your corporation expect from your California Registered Agent? Their main function is to accept official documents and correspondence from the CA Secretary of State that will affect your corporation. This includes:",
     marginBottom: 41,
   },
   {
@@ -1111,13 +1170,16 @@ export const agents = [
   },
   {
     type: "header",
-    content: "Why Assigning Yourself as the California Registered \n" + "Agent for Your Corporation Might Be a Bad Idea",
+    content:
+      "Why Assigning Yourself as the California Registered \n" +
+      "Agent for Your Corporation Might Be a Bad Idea",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "You can choose to act as your own CA Registered Agent for your California S Corp or C Corp.",
+    content:
+      "You can choose to act as your own CA Registered Agent for your California S Corp or C Corp.",
     marginBottom: 24,
   },
   {
@@ -1136,18 +1198,22 @@ export const agents = [
   },
   {
     type: "text",
-    content: "There are more considerations, but this should help you with your decision to use a Registered Agent service.",
+    content:
+      "There are more considerations, but this should help you with your decision to use a Registered Agent service.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Possible Outcomes of Not Assigning a Registered Agent \n" + "for Your California Corporation",
+    content:
+      "Possible Outcomes of Not Assigning a Registered Agent \n" +
+      "for Your California Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "What happens if you choose not to assign or provide details of a Registered Agent to the California Secretary of State? There are several possible ramifications, including:",
+    content:
+      "What happens if you choose not to assign or provide details of a Registered Agent to the California Secretary of State? There are several possible ramifications, including:",
     marginBottom: 41,
   },
   {
@@ -1165,7 +1231,9 @@ export const agents = [
   },
   {
     type: "header",
-    content: "Incfile Provides a Free California Corporation Registered \n" + "Agent Service for the First Year",
+    content:
+      "Incfile Provides a Free California Corporation Registered \n" +
+      "Agent Service for the First Year",
     size: 4,
     marginBottom: 24,
   },
@@ -1177,7 +1245,8 @@ export const agents = [
   },
   {
     type: "text",
-    content: "We are authorized to conduct business in California and can legally act as your Registered Agent for your CA corporation. Here’s what you need to know about Incfile’s CA Registered Agent service for corporations:",
+    content:
+      "We are authorized to conduct business in California and can legally act as your Registered Agent for your CA corporation. Here’s what you need to know about Incfile’s CA Registered Agent service for corporations:",
     marginBottom: 41,
   },
   {
@@ -1205,7 +1274,8 @@ export const agents = [
   },
   {
     type: "text",
-    content: "Form your C Corporation or S Corporation with us today to get your first year of Registered Agent service for free, including easy access to our comprehensive online dashboard.",
+    content:
+      "Form your C Corporation or S Corporation with us today to get your first year of Registered Agent service for free, including easy access to our comprehensive online dashboard.",
     marginBottom: 24,
   },
   {
@@ -1279,7 +1349,8 @@ export const filing = [
   },
   {
     type: "text",
-    content: "We provide a paid service to take care of certain filings and forms for your California corporation. Alternatively, you can choose to file these requirements yourself — make sure that you set calendar reminders.",
+    content:
+      "We provide a paid service to take care of certain filings and forms for your California corporation. Alternatively, you can choose to file these requirements yourself — make sure that you set calendar reminders.",
     marginBottom: 24,
   },
   {
@@ -1310,18 +1381,26 @@ export const filing = [
   },
   {
     type: "text",
-    content: "The California Secretary of State requires a formal document from you to form your CA S Corporation or C Corporation. This document is known as your Articles of Incorporation.",
+    content:
+      "The California Secretary of State requires a formal document from you to form your CA S Corporation or C Corporation. This document is known as your Articles of Incorporation.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Once the Articles of Incorporation document is filed with the CA Secretary of State, your business is legally formed as a California corporation. The Articles of Incorporation typically includes:",
+    content:
+      "Once the Articles of Incorporation document is filed with the CA Secretary of State, your business is legally formed as a California corporation. The Articles of Incorporation typically includes:",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
-      list: ["The corporation’s name", "The corporation’s mailing address and street address", "The corporation's Registered Agent and their address", "The corporation’s capital structure (number of shares to be issued, who owns them, pricing, etc.)", "The name and address of the incorporator"],
+      list: [
+        "The corporation’s name",
+        "The corporation’s mailing address and street address",
+        "The corporation's Registered Agent and their address",
+        "The corporation’s capital structure (number of shares to be issued, who owns them, pricing, etc.)",
+        "The name and address of the incorporator",
+      ],
     },
     color: color.green3,
     marginBottom: 48,
@@ -1329,18 +1408,22 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Here at Incfile, we automatically create and file your Articles of Incorporation on your behalf when you start your S Corporation or C Corporation with us.",
+    content:
+      "Here at Incfile, we automatically create and file your Articles of Incorporation on your behalf when you start your S Corporation or C Corporation with us.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Get the Right Permits and Licenses for Your \n" + "California S Corp or C Corp",
+    content:
+      "Get the Right Permits and Licenses for Your \n" +
+      "California S Corp or C Corp",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Most CA corporations will need to file and pay for various permits and business licenses as you will need them to legally carry out business in California. We can help you understand the exact permits and licenses required for your business to be compliant.",
+    content:
+      "Most CA corporations will need to file and pay for various permits and business licenses as you will need them to legally carry out business in California. We can help you understand the exact permits and licenses required for your business to be compliant.",
     marginBottom: 48,
   },
   {
@@ -1363,7 +1446,8 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Depending on the type of business you are running, you may need to get additional permits and licenses from the county or state of California. You can get an idea of the types of permits and licenses your S Corporation or C Corporation might need from the State of California website.",
+    content:
+      "Depending on the type of business you are running, you may need to get additional permits and licenses from the county or state of California. You can get an idea of the types of permits and licenses your S Corporation or C Corporation might need from the State of California website.",
     marginBottom: 48,
   },
   {
@@ -1374,12 +1458,15 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Some corporations will need to get licenses and permits from the federal government and various national agencies. You can find a complete list on the U.S. Small Business Administration website.",
+    content:
+      "Some corporations will need to get licenses and permits from the federal government and various national agencies. You can find a complete list on the U.S. Small Business Administration website.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Learn What Permits and Licenses Your California \n" + "Corporation Needs With Incfile",
+    content:
+      "Learn What Permits and Licenses Your California \n" +
+      "Corporation Needs With Incfile",
     size: 4,
     marginBottom: 24,
   },
@@ -1392,7 +1479,10 @@ export const filing = [
   {
     type: "list-dot",
     content: {
-      list: ["A comprehensive package of all the licenses, permits and tax registrations required for your business", "The application forms to file with the appropriate licensing authorities"],
+      list: [
+        "A comprehensive package of all the licenses, permits and tax registrations required for your business",
+        "The application forms to file with the appropriate licensing authorities",
+      ],
     },
     color: color.blue3,
     marginBottom: 48,
@@ -1400,7 +1490,8 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Your customized Business License Research Package will be emailed to you within two days of your California Corporation being formed by the California Secretary of State.",
+    content:
+      "Your customized Business License Research Package will be emailed to you within two days of your California Corporation being formed by the California Secretary of State.",
     marginBottom: 24,
   },
   {
@@ -1414,13 +1505,15 @@ export const filing = [
   },
   {
     type: "header",
-    content: "Other Special Requirements for Your California \n" + "S Corp or C Corp",
+    content:
+      "Other Special Requirements for Your California \n" + "S Corp or C Corp",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Because you’re forming a corporation, there are certain other legal, regulatory and compliance areas you need to meet.",
+    content:
+      "Because you’re forming a corporation, there are certain other legal, regulatory and compliance areas you need to meet.",
     marginBottom: 24,
   },
   {
@@ -1431,7 +1524,8 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Bylaws are the formal, internal rules that your California corporation must follow to stay active. You will need to create and agree to bylaws in certain areas.",
+    content:
+      "Bylaws are the formal, internal rules that your California corporation must follow to stay active. You will need to create and agree to bylaws in certain areas.",
     marginBottom: 41,
   },
   {
@@ -1462,7 +1556,8 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Ownership in a California corporation is expressed through the issuance of shares. You must create stock certificates and formally issue stock to any agreed initial shareholders in the corporation.",
+    content:
+      "Ownership in a California corporation is expressed through the issuance of shares. You must create stock certificates and formally issue stock to any agreed initial shareholders in the corporation.",
     marginBottom: 48,
   },
   {
@@ -1485,7 +1580,8 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Officers are the individuals who manage the California corporation on a day-to-day basis. At minimum a CA corporation should have a president, secretary and treasurer. Theoretically, one person could hold more than one position.",
+    content:
+      "Officers are the individuals who manage the California corporation on a day-to-day basis. At minimum a CA corporation should have a president, secretary and treasurer. Theoretically, one person could hold more than one position.",
     marginBottom: 48,
   },
   {
@@ -1508,13 +1604,18 @@ export const filing = [
   },
   {
     type: "text",
-    content: "You may need to hire employees for your California corporation. You will need:",
+    content:
+      "You may need to hire employees for your California corporation. You will need:",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
-      list: ["An Employer Identification Number (EIN)", "Worker’s Compensation Insurance", "General Liability Insurance"],
+      list: [
+        "An Employer Identification Number (EIN)",
+        "Worker’s Compensation Insurance",
+        "General Liability Insurance",
+      ],
     },
     color: color.blue3,
     marginBottom: 48,
@@ -1537,13 +1638,19 @@ export const filing = [
   },
   {
     type: "text",
-    content: "You must hold a yearly meeting that all directors, officers and shareholders of the CA corporation are invited to. The purpose of an AGM is generally to:",
+    content:
+      "You must hold a yearly meeting that all directors, officers and shareholders of the CA corporation are invited to. The purpose of an AGM is generally to:",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
-      list: ["Discuss important information", "Make strategic decisions", "Understand opportunities, risks and issues", "Vote on important resolutions and other matters"],
+      list: [
+        "Discuss important information",
+        "Make strategic decisions",
+        "Understand opportunities, risks and issues",
+        "Vote on important resolutions and other matters",
+      ],
     },
     color: color.babyblue3,
     marginBottom: 48,
@@ -1557,13 +1664,20 @@ export const filing = [
   },
   {
     type: "text",
-    content: "You will need to register for certain taxes when you form your corporation. These include:",
+    content:
+      "You will need to register for certain taxes when you form your corporation. These include:",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
-      list: ["The corporation’s name", "The corporation’s mailing address and street address", "The corporation's Registered Agent and their address", "The corporation’s capital structure (number of shares to be issued, who owns them, pricing, etc.)", "The name and address of the incorporator"],
+      list: [
+        "The corporation’s name",
+        "The corporation’s mailing address and street address",
+        "The corporation's Registered Agent and their address",
+        "The corporation’s capital structure (number of shares to be issued, who owns them, pricing, etc.)",
+        "The name and address of the incorporator",
+      ],
     },
     color: color.green3,
     marginBottom: 48,
@@ -1571,28 +1685,34 @@ export const filing = [
   },
   {
     type: "text",
-    content: "You can find details on the <a href='/'>California Tax Service Center</a> and IRS websites.",
+    content:
+      "You can find details on the <a href='/'>California Tax Service Center</a> and IRS websites.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "<a href='/'>Learn more about taxes for your California corporation.</a>",
+    content:
+      "<a href='/'>Learn more about taxes for your California corporation.</a>",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Annual Statement of Information Report for Your \n" + "California Corporation",
+    content:
+      "Annual Statement of Information Report for Your \n" +
+      "California Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "In California, S Corporations and C Corporations must file a Statement of Information report with the secretary of state every year. Failure to file the report could result in late fees or your CA corporation being dissolved.",
+    content:
+      "In California, S Corporations and C Corporations must file a Statement of Information report with the secretary of state every year. Failure to file the report could result in late fees or your CA corporation being dissolved.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "<a href='/'>Learn about your ongoing California corporation filing requirements</a> and business filing deadlines with our helpful California ongoing filing lookup tool.",
+    content:
+      "<a href='/'>Learn about your ongoing California corporation filing requirements</a> and business filing deadlines with our helpful California ongoing filing lookup tool.",
     marginBottom: 0,
   },
   {
@@ -1618,13 +1738,15 @@ export const filing = [
   },
   {
     type: "header",
-    content: "Certificate of Good Standing for Your California \n" + "Corporation",
+    content:
+      "Certificate of Good Standing for Your California \n" + "Corporation",
     size: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "You may need a Certificate of Good Standing for your California corporation to carry out some business-related services like opening a bank account.",
+    content:
+      "You may need a Certificate of Good Standing for your California corporation to carry out some business-related services like opening a bank account.",
     marginBottom: 0,
   },
   {
@@ -1644,12 +1766,14 @@ export const filing = [
   },
   {
     type: "text",
-    content: "Incfile provides a cost-effective service to help you create your California corporation. We guide you through the process and handle most of the administrative steps, such as filing the necessary forms on your behalf.",
+    content:
+      "Incfile provides a cost-effective service to help you create your California corporation. We guide you through the process and handle most of the administrative steps, such as filing the necessary forms on your behalf.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Our basic package also provides a free Registered Agent service for the first year. If you're looking for help starting an S Corporation or C Corporation, our comprehensive services provide outstanding value.",
+    content:
+      "Our basic package also provides a free Registered Agent service for the first year. If you're looking for help starting an S Corporation or C Corporation, our comprehensive services provide outstanding value.",
     marginBottom: 24,
   },
   {
@@ -1682,7 +1806,8 @@ export const taxes = [
   },
   {
     type: "text",
-    content: "You’ll need to pay certain taxes and fees for your California S Corp or C Corp. We’ve included the more common ones below.",
+    content:
+      "You’ll need to pay certain taxes and fees for your California S Corp or C Corp. We’ve included the more common ones below.",
     marginBottom: 48,
   },
   {
@@ -1723,12 +1848,15 @@ export const taxes = [
   },
   {
     type: "text",
-    content: "California S Corporations and C Corporations are taxed differently. Find the details below.",
+    content:
+      "California S Corporations and C Corporations are taxed differently. Find the details below.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Both S Corporations and C Corporations in California Need to Pay \n" + "These Taxes",
+    content:
+      "Both S Corporations and C Corporations in California Need to Pay \n" +
+      "These Taxes",
     size: 5,
     marginBottom: 24,
   },
@@ -1746,7 +1874,8 @@ export const taxes = [
         },
         {
           question: "Sales and Use Tax Payable to the State of California",
-          answer: "If your CA corporation is selling products or services in California, you may need to pay a state sales tax. Find out more on the <a href='/'>California Tax Service Center</a> website.",
+          answer:
+            "If your CA corporation is selling products or services in California, you may need to pay a state sales tax. Find out more on the <a href='/'>California Tax Service Center</a> website.",
         },
         {
           question: "Franchise Tax in California",
@@ -1768,13 +1897,18 @@ export const taxes = [
   },
   {
     type: "text",
-    content: "Most California corporations will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. The most common types of estimated tax are:",
+    content:
+      "Most California corporations will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. The most common types of estimated tax are:",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
-      list: ["Federal income tax", "Federal self-employment tax", "California state tax"],
+      list: [
+        "Federal income tax",
+        "Federal self-employment tax",
+        "California state tax",
+      ],
     },
     color: color.babyblue3,
     marginBottom: 48,
@@ -1782,7 +1916,8 @@ export const taxes = [
   },
   {
     type: "text",
-    content: "Most California S Corporations and C Corporations will pay estimated taxes four times a year. Speak to your accountant for more information.",
+    content:
+      "Most California S Corporations and C Corporations will pay estimated taxes four times a year. Speak to your accountant for more information.",
     marginBottom: 48,
   },
   {
@@ -1793,23 +1928,27 @@ export const taxes = [
   },
   {
     type: "text",
-    content: "If your CA corporation employs workers, you will need to pay insurance and taxes to the state for each employee.",
+    content:
+      "If your CA corporation employs workers, you will need to pay insurance and taxes to the state for each employee.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Get more requirements from the <a href='/'>California Labor and Workforce Development Agency website</a>.",
+    content:
+      "Get more requirements from the <a href='/'>California Labor and Workforce Development Agency website</a>.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Taxes Payable by All Individuals Working for California Corporations",
+    content:
+      "Taxes Payable by All Individuals Working for California Corporations",
     size: 5,
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Pay Federal Income Tax on California Corporation Earnings, Dividends and Distributions. You will need to pay regular federal income tax when you file your tax return every year.",
+    content:
+      "Pay Federal Income Tax on California Corporation Earnings, Dividends and Distributions. You will need to pay regular federal income tax when you file your tax return every year.",
     marginBottom: 48,
   },
   {
@@ -1823,7 +1962,8 @@ export const taxes = [
     content: [
       {
         header: "Self-Employment Tax",
-        text: "In a California S Corporation, your earnings “flow through” from the business to your personal tax return. This means you must pay self-employment tax on those earnings at a rate of 15.3 percent. Note that you can deduct standard tax deductions and business expenses.",
+        text:
+          "In a California S Corporation, your earnings “flow through” from the business to your personal tax return. This means you must pay self-employment tax on those earnings at a rate of 15.3 percent. Note that you can deduct standard tax deductions and business expenses.",
         svg: SelfEmployedTaxSVG,
         backgroundColor: color.orange2,
         shadowColor: shadow.orange2,
@@ -1845,13 +1985,19 @@ export const taxes = [
   },
   {
     type: "text",
-    content: "You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:",
+    content:
+      "You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:",
     marginBottom: 41,
   },
   {
     type: "list-dot",
     content: {
-      list: ["On profits of $40,000, you would pay self-employment tax of $6,120", "On profits of $90,000, you would pay self-employment tax of $13,770", "On profits of $140,000, you would pay self-employment tax of $21,420", "On profits of $160,000, you would pay self-employment tax of $24,480"],
+      list: [
+        "On profits of $40,000, you would pay self-employment tax of $6,120",
+        "On profits of $90,000, you would pay self-employment tax of $13,770",
+        "On profits of $140,000, you would pay self-employment tax of $21,420",
+        "On profits of $160,000, you would pay self-employment tax of $24,480",
+      ],
     },
     color: color.green3,
     marginBottom: 48,
@@ -1859,7 +2005,8 @@ export const taxes = [
   },
   {
     type: "text",
-    content: "In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax.",
+    content:
+      "In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax.",
     marginBottom: 24,
   },
   {
@@ -1913,12 +2060,14 @@ export const taxes = [
   },
   {
     type: "text",
-    content: "Incfile provides a cost-effective service to help you create your California corporation. We guide you through the process and handle most of the administrative steps, such as filing the necessary forms on your behalf.",
+    content:
+      "Incfile provides a cost-effective service to help you create your California corporation. We guide you through the process and handle most of the administrative steps, such as filing the necessary forms on your behalf.",
     marginBottom: 24,
   },
   {
     type: "text",
-    content: "Our basic package also provides a free Registered Agent service for the first year. If you're looking for help starting an S Corporation or C Corporation, our comprehensive services provide outstanding value.",
+    content:
+      "Our basic package also provides a free Registered Agent service for the first year. If you're looking for help starting an S Corporation or C Corporation, our comprehensive services provide outstanding value.",
     marginBottom: 24,
   },
   {
@@ -1969,11 +2118,12 @@ export const afterFormation = [
   },
   {
     type: "text",
-    content: "You must file an annual statement of information for your California corporation.",
+    content:
+      "You must file an annual statement of information for your California corporation.",
     marginBottom: 24,
   },
   {
-    type: "dynamic_filing_requirement"
+    type: "dynamic_filing_requirement",
   },
 
   {
@@ -1991,8 +2141,14 @@ export const afterFormation = [
   {
     type: "list-dot",
     content: {
-      header: "Benefits of <a href='/'>Incfile's Trademark service</a> include:",
-      list: ["Legal counsel from an experienced trademark attorney", "A thorough search of existing trademarks", "A registered trademark with the USPTO", "Handling all correspondence with the USPTO until the name is approved."],
+      header:
+        "Benefits of <a href='/'>Incfile's Trademark service</a> include:",
+      list: [
+        "Legal counsel from an experienced trademark attorney",
+        "A thorough search of existing trademarks",
+        "A registered trademark with the USPTO",
+        "Handling all correspondence with the USPTO until the name is approved.",
+      ],
     },
     color: color.blue3,
     marginBottom: 48,
@@ -2040,7 +2196,8 @@ export const afterFormation = [
             style: { "font-weight": "bold" },
           },
           {
-            label: "Allows 150 transactions a month for free. Has 3.000 bank branches in addition to online banking.",
+            label:
+              "Allows 150 transactions a month for free. Has 3.000 bank branches in addition to online banking.",
             type: "label",
             textCenter: true,
           },
@@ -2064,7 +2221,8 @@ export const afterFormation = [
             style: { "font-weight": "bold" },
           },
           {
-            label: "Make 10 debit transactions a month and the $14 monthly free is waived. Offers a total of 200 free monthly transactions and no charge for the first $7.500 in cash deposits each month.",
+            label:
+              "Make 10 debit transactions a month and the $14 monthly free is waived. Offers a total of 200 free monthly transactions and no charge for the first $7.500 in cash deposits each month.",
             type: "label",
             textCenter: true,
           },
@@ -2076,7 +2234,8 @@ export const afterFormation = [
             style: { "font-weight": "bold" },
           },
           {
-            label: "Online-only bank that offers 200 free transactions a month and unlimited fee reimbursement for ATMs in the US.",
+            label:
+              "Online-only bank that offers 200 free transactions a month and unlimited fee reimbursement for ATMs in the US.",
             type: "label",
             textCenter: true,
           },
@@ -2111,7 +2270,8 @@ export const afterFormation = [
   },
   {
     type: "text",
-    content: "Here are some favorite accounting software options for Corporation business owners:",
+    content:
+      "Here are some favorite accounting software options for Corporation business owners:",
     marginBottom: 24,
   },
   {
@@ -2136,7 +2296,8 @@ export const afterFormation = [
           text: "Xero",
           url: "/",
         },
-        text: "Xero is online accounting software that is a great option for those who find QuickBooks to be too complicated and difficult to understand. Their plans start out at $20 per month.",
+        text:
+          "Xero is online accounting software that is a great option for those who find QuickBooks to be too complicated and difficult to understand. Their plans start out at $20 per month.",
       },
       {
         link: {
@@ -2151,7 +2312,8 @@ export const afterFormation = [
           text: "Bench",
           url: "/",
         },
-        text: "Bench not only allows you to track your accounts receivable, but they include the help of a real-life bookkeeper to run your accounting every month. For a Bench account starting out at $125 a month, this is quite the deal instead of hiring your own bookkeeper.",
+        text:
+          "Bench not only allows you to track your accounts receivable, but they include the help of a real-life bookkeeper to run your accounting every month. For a Bench account starting out at $125 a month, this is quite the deal instead of hiring your own bookkeeper.",
         marginBottom: "52px",
       },
     ],
@@ -2182,7 +2344,8 @@ export const afterFormation = [
   },
   {
     type: "header",
-    content: "Business Operations & Marketing for Your California \n" + "Corporation",
+    content:
+      "Business Operations & Marketing for Your California \n" + "Corporation",
     size: 4,
     marginBottom: 24,
   },
@@ -2238,7 +2401,9 @@ export const afterFormation = [
   },
   {
     type: "header",
-    content: "Choose the Best Business Tools to Run Your California \n" + "Corporation",
+    content:
+      "Choose the Best Business Tools to Run Your California \n" +
+      "Corporation",
     size: 4,
     marginBottom: 24,
   },

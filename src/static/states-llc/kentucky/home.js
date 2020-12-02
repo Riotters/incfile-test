@@ -29,9 +29,13 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
+    type: `text`,
+    content: `Briefly, the benefits of starting a Kentucky LLC include:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `Briefly, the benefits of starting a Kentucky LLC include:`,
       list: [
         `Separating and limiting your personal liability from your business liability and debts`,
         `Quick and simple filing, management, compliance, regulations and administration of your Kentucky LLC`,
@@ -118,13 +122,12 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `These are all the basic steps for forming an LLC in Kentucky.`,
+    content: `These are all the basic steps for forming an LLC in Kentucky. You’ll find other useful information below:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You’ll find other useful information below:`,
       list: [
         `<a href="https://www.sos.ky.gov/bus/business-filings/Pages/default.aspx" target="_blank" rel="noopener noreferrer">Kentucky Secretary of State for forming and running your KY LLC</a>`,
         `<a href="https://labor.ky.gov/Pages/index.aspx" target="_blank" rel="noopener noreferrer">Kentucky Labor Cabinet for KY employers and hiring</a>`,
@@ -333,13 +336,12 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `It’s not enough for your KY LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Kentucky.`,
+    content: `It’s not enough for your KY LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Kentucky. For example, you cannot use the following factors to say your name is different from the name of another business:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `For example, you cannot use the following factors to say your name is different from the name of another business:`,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
         `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
@@ -375,7 +377,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Are very similar to the name of a federal or KY agency or organization (e.g., FBI, FDA, Kentucky Department of Revenue, Kentucky Police, Treasury, etc.)`,
         `Suggest affiliation with a federal or state agency or organization`,
@@ -512,7 +513,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Appeal to your customers`,
         `Be memorable enough to stand out`,
@@ -558,13 +558,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a Kentucky Registered Agent service for your business.`,
+    content: `There are certain rules that you must follow when you’re appointing a Kentucky Registered Agent service for your business. They are:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: ` They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in Kentucky.`,
         `If the Registered Agent is a business, they must be able to conduct business in Kentucky.`,
@@ -588,13 +587,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Your Kentucky Registered Agent carries out several valuable services for your business. They accept official communications and documents from the KY Secretary of State on your behalf.`,
+    content: `Your Kentucky Registered Agent carries out several valuable services for your business. They accept official communications and documents from the KY Secretary of State on your behalf. This includes:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `This includes:`,
       list: [
         `Correspondence from the Kentucky Secretary of State, like a notice to file reports and other forms`,
         `Service of process documents (for example, if your Kentucky LLC has legal proceedings issued against it)`,
@@ -617,13 +615,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `We are authorized to conduct business in Kentucky and can legally act as your Registered Agent.`,
+    content: `We are authorized to conduct business in Kentucky and can legally act as your Registered Agent. Here’s what you need to know about Incfile’s KY Registered Agent service:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here’s what you need to know about Incfile’s KY Registered Agent service:`,
       list: [
         `The Registered Agent will always be available to accept documents and letters on your behalf.`,
         `We automatically notify you whenever we receive correspondence for your business from the Kentucky Secretary of State or anyone else.`,
@@ -762,13 +759,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Kentucky Secretary of State?`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Kentucky Secretary of State? There are several possible ramifications, including:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `There are several possible ramifications, including:`,
       list: [
         `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing with the Kentucky Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -786,13 +782,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `If you have an address in Kentucky, you can choose to be the Registered Agent for your LLC.`,
+    content: `If you have an address in Kentucky, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `We don’t recommend this approach as there can be some drawbacks:`,
       list: [
         `The KY Registered Agent must have a physical street address in Kentucky. If you’re forming an LLC outside KY, you will need to use an in-state Registered Agent. You always need to have someone on hand during business hours at the Kentucky address to sign for important documents.`,
         `The KY Registered Agent’s name and address are part of the public record and available through the Kentucky Secretary of State's website. If you would prefer your name and address aren’t published, you should choose a Registered Agent service.`,
@@ -839,9 +834,13 @@ export const registeredAgent = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `You might find these resources helpful:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You might find these resources helpful:`,
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/" target="_blank">The Main Functions of a Kentucky Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Kentucky Registered Agent</a>`,
@@ -1000,13 +999,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Some KY LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis.`,
+    content: `Some KY LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis. Permits and licenses vary based on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your Kentucky LLC operates in (e.g., restaurants will need health permits)`,
         `The location of your Kentucky LLC (state, county or city) (e.g., a license to conduct business from the city of Lexington)`,
@@ -1024,7 +1022,6 @@ export const feesAndRequirments = [
   {
     type: `list-dot`,
     content: {
-      header: `It includes:`,
       list: [
         `A complete report on all the licenses, permits and tax registrations your Kentucky LLC will need`,
         `The application forms you will need to file with the Kentucky, regional and federal licensing authorities`,
@@ -1133,13 +1130,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your Kentucky business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Kentucky Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    content: `Your business formation documents state certain facts about your Kentucky business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Kentucky Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file Kentucky Articles of Amendment for include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Areas you might want to file Kentucky Articles of Amendment for include:`,
       list: [
         `Adding, removing or changing a Kentucky LLC member or manager`,
         `Changing the business address of your LLC`,
@@ -1315,13 +1311,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the KY Department of Revenue. Kentucky sales tax is collected at the point of purchase. Kentucky sales tax rates do vary depending on the region, county or city where you are located.`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the KY Department of Revenue. Kentucky sales tax is collected at the point of purchase. Kentucky sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect sales tax on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will typically need to collect sales tax on:`,
       list: [
         `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
         `Certain services that your Kentucky business might provide`,
@@ -1380,13 +1375,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
+    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
       list: [
         `On profits of $30,000, you would pay self-employment tax of $4,590.`,
         `On profits of $60,000, you would pay self-employment tax of $9,180.`,
@@ -1498,12 +1492,15 @@ export const businessTaxes = [
           answer2: [
             {
               type: `paragraph`,
-              content: `Most Kentucky LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. `,
+              content: `Most Kentucky LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
+            },
+            {
+              type: `paragraph`,
+              content: `The most common types of estimated taxes are:`,
             },
             {
               type: `list-dot-without-bg`,
               color: color.orange3,
-              header: `The most common types of estimated taxes are:`,
               content: [
                 `Federal income tax`,
                 `Federal self-employment tax`,

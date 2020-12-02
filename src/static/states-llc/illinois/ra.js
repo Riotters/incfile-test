@@ -27,7 +27,7 @@ export const agentPageContent = {
     {
       type: "video",
       url: "wSsZAvrT-IU",
-      thumbnail: "what-is-a-registered-agent-7199"
+      thumbnail: "what-is-a-registered-agent-7199",
     },
     {
       type: `heading`,
@@ -35,10 +35,13 @@ export const agentPageContent = {
       content: `What the Illinois Secretary of State Says About Registered Agents`,
     },
     {
+      type: `paragraph`,
+      content: `Here’s some important information from the Illinois Secretary of State on Registered Agents.`,
+    },
+    {
       type: `iconListColorBox`,
       boxColor: color.orange3,
       content: {
-        header: `Here’s some important information from the Illinois Secretary of State on Registered Agents.`,
         list: [
           `Every domestic and foreign corporation must, at all times, maintain a registered agent with a registered office within the State of Illinois`,
           `The registered agent can be either a natural person or a domestic or foreign (licensed to transact business in this State) artificial legal entity (Corporation, LLC, LP or LLP)`,
@@ -55,13 +58,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `There are certain rules that you must follow when you’re appointing a Illinois Registered Agent service for your business.`,
+      content: `There are certain rules that you must follow when you’re appointing a Illinois Registered Agent service for your business. They are:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.blue3,
       content: {
-        header: `They are:`,
         list: [
           `If the Registered Agent is a person, they must reside in Illinois`,
           `If the Registered Agent is a business, they must be able to conduct business in Illinois`,
@@ -84,13 +86,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `What can you expect from your Illinois Registered Agent? Their main function is to accept official documents and correspondence from the IL Secretary of State.`,
+      content: `What can you expect from your Illinois Registered Agent? Their main function is to accept official documents and correspondence from the IL Secretary of State. This includes:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.orange3,
       content: {
-        header: `This includes:`,
         list: [
           `Correspondence from the Illinois Secretary of State`,
           `Service of process notices (e.g., if your IL LLC is sued or required to appear in court)`,
@@ -108,13 +109,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `Incfile provides a complete Illinois Registered Agent service for any LLC that’s incorporated in IL. Even better, if you choose to incorporate your Illinois business through Incfile, your Registered Agent is completely free for the first year and only $119 a year after that.`,
+      content: `Incfile provides a complete Illinois Registered Agent service for any LLC that’s incorporated in IL. Even better, if you choose to incorporate your Illinois business through Incfile, your Registered Agent is completely free for the first year and only $119 a year after that. Incfile is authorized to conduct business in Illinois and can legally act as your Registered Agent. Here’s what the Incfile Illinois Registered Agent service provides for your IL LLC.`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.purple3,
       content: {
-        header: `Incfile is authorized to conduct business in Illinois and can legally act as your Registered Agent. Here’s what the Incfile Illinois Registered Agent service provides for your IL LLC.`,
         list: [
           `An always-available Illinois Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
           `A digital dashboard where you can access, store and retrieve any information we’ve received for your Illinois business`,
@@ -255,13 +255,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `What happens if you choose not to assign or provide details of a Registered Agent to the Illinois Secretary of State?`,
+      content: `What happens if you choose not to assign or provide details of a Registered Agent to the Illinois Secretary of State? There are several possible ramifications, including:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.green3,
       content: {
-        header: `There are several possible ramifications, including:`,
         list: [
           `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
           `Falling out of good standing with the Illinois Secretary of State: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -284,7 +283,6 @@ export const agentPageContent = {
       type: `iconListColorBox`,
       boxColor: color.blue3,
       content: {
-        header: `If you have an address in Illinois, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
         list: [
           `The IL Registered Agent must have a physical street address in Illinois. If you’re forming an LLC outside IL, you will need to use an in-state Registered Agent.`,
           `You always need to have someone on hand during business hours at the Illinois address to sign for important documents.`,

@@ -29,10 +29,18 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
+    type: `text`,
+    content: `Briefly, the benefits of starting a West Virginia LLC include:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `Briefly, the benefits of starting a West Virginia LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your West Virginia LLC`, `Easy tax filing and potential advantages for your tax treatment`],
+      list: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulation and administration of your West Virginia LLC`,
+        `Easy tax filing and potential advantages for your tax treatment`,
+      ],
     },
     marginBottom: 32,
     color: color.blue3,
@@ -109,13 +117,12 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `The Secretary of State has plenty of other information on forming and running a business in West Virginia.`,
+    content: `The Secretary of State has plenty of other information on forming and running a business in West Virginia. You’ll find other useful information below:`,
     marginBottom: 32,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You’ll find other useful information below:`,
       list: [
         `<a href="https://sos.wv.gov/business/Pages/StartWVBus.aspx" target="_blank" rel="noopener noreferrer">West Virginia Secretary of State for forming and running your LLC</a>`,
         `<a href="https://labor.wv.gov/Pages/default.aspx" target="_blank" rel="noopener noreferrer">West Virginia Division of Labor for employers and hiring </a>`,
@@ -139,10 +146,10 @@ export const howToGuide = [
   {
     type: `accordion`,
     content: {
-        items: [
-            {
-                question: `Professional LLCs in West Virginia`,
-                answer: `<p>Some states, including West Virginia, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. Here are the occupations that the WV Secretary of State allows to form professional LLCs:</p>
+      items: [
+        {
+          question: `Professional LLCs in West Virginia`,
+          answer: `<p>Some states, including West Virginia, allow certain occupations to form “Professional LLCs.” These types of businesses typically have special requirements and licensing. Here are the occupations that the WV Secretary of State allows to form professional LLCs:</p>
                         <ul>
                         <li>Attorneys-at-law</li>
                         <li>Physicians</li>
@@ -160,13 +167,13 @@ export const howToGuide = [
                         <li>Acupuncturists</li>
                         <li>Land surveyors</li>
                         </ul>`,
-            },
-            {
-                question: `Foreign LLCs Doing Business in West Virginia`,
-                answer: `<p>If your business is already operating in another state and expanding to West Virginia, you’ll need to form a foreign LLC.</p></br>
+        },
+        {
+          question: `Foreign LLCs Doing Business in West Virginia`,
+          answer: `<p>If your business is already operating in another state and expanding to West Virginia, you’ll need to form a foreign LLC.</p></br>
                          <a href="/west-virginia-llc/form-filling-permit-requirements/">More information on West Virginia filing and licensing requirements.</a>`,
-            },
-        ],
+        },
+      ],
     },
     marginBottom: 48,
   },
@@ -191,59 +198,59 @@ export const howToGuide = [
     type: `text`,
     content: `You’ll find plenty more insight and guidance on the other pages of this guide, including:`,
     marginBottom: 32,
-},
-{
+  },
+  {
     type: `arrow-link`,
     content: {
-        text: `Naming Your West Virginia LLC`,
-        url: `/west-virginia-llc/how-to-name-your-llc/`,
+      text: `Naming Your West Virginia LLC`,
+      url: `/west-virginia-llc/how-to-name-your-llc/`,
     },
     marginBottom: 16,
-},
-{
+  },
+  {
     type: `text`,
     content: `How to search the West Virginia business registry of the Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a West Virginia LLC name and more.`,
     marginBottom: 32,
-},
-{
+  },
+  {
     type: `arrow-link`,
     content: {
-        text: `West Virginia Registered Agents for LLCs`,
-        url: `/west-virginia-llc/registered-agents-west-virginia-llc/`,
+      text: `West Virginia Registered Agents for LLCs`,
+      url: `/west-virginia-llc/registered-agents-west-virginia-llc/`,
     },
     marginBottom: 16,
-},
-{
+  },
+  {
     type: `text`,
     content: `How to appoint a Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for West Virginia Registered Agents.`,
     marginBottom: 32,
-},
-{
+  },
+  {
     type: `arrow-link`,
     content: {
-        text: `Fees and Requirements for West Virginia LLCs`,
-        url: `/west-virginia-llc/form-filling-permit-requirements/`,
+      text: `Fees and Requirements for West Virginia LLCs`,
+      url: `/west-virginia-llc/form-filling-permit-requirements/`,
     },
     marginBottom: 16,
-},
-{
+  },
+  {
     type: `text`,
     content: `How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and West Virginia rules. Includes details of Employer Identification Numbers (EINs), West Virginia and federal business licenses, annual reports and more.`,
     marginBottom: 32,
-},
-{
+  },
+  {
     type: `arrow-link`,
     content: {
-        text: `Federal, State, Sales and Other Taxes for Your West Virginia LLC`,
-        url: `/west-virginia-llc/business-taxes/`,
+      text: `Federal, State, Sales and Other Taxes for Your West Virginia LLC`,
+      url: `/west-virginia-llc/business-taxes/`,
     },
     marginBottom: 16,
-},
-{
+  },
+  {
     type: `text`,
     content: `How to understand the various taxes you will need to pay to the federal and West Virginia government. Includes details of federal taxes like income and self-employment, and West Virginia taxes like sales tax and income tax.`,
     marginBottom: 32,
-},
+  },
 ];
 
 export const namingYourBusiness = [
@@ -319,7 +326,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
         `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
@@ -355,7 +361,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Are very similar to the name of a federal or WV agency or organization (e.g., FBI, FDA, West Virginia Department of Revenue, West Virginia Police, Treasury, etc.)`,
         `Suggest affiliation with a federal or state agency or organization`,
@@ -407,7 +412,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `<p>If you don’t want to form your West Virginia LLC right now, you can reserve the business name with the West Virginia Secretary of State. You will need to complete an “Application for Name Reservation” and file it with the SOS. You do not need to reserve a name if you are forming your business right away.</p></br>
               <p><a href="https://sos.wv.gov/FormSearch/Business/Multiple-Company-Types/nr1.pdf" target="_blank" rel="noopener noreferrer">West Virginia SOS LLC name reservation form</a></p>`,
@@ -497,8 +501,12 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      list: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     marginBottom: 40,
     color: color.blue3,
@@ -538,20 +546,19 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a West Virginia Agent for your business.`,
+    content: `There are certain rules that you must follow when you’re appointing a West Virginia Agent for your business. They are:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-    header: `They are:`,
-    list: [
-      `If the Registered Agent is a person, they must reside in West Virginia`,
-      `If the Registered Agent is a business, they must be able to conduct business in West Virginia`,
-      `The Registered Agent must have a physical street address in West Virginia, not a P.O. Box`,
-      `The Registered Agent must be available in person during normal business hours to sign for any correspondence`,
-    ],
-   },
+      list: [
+        `If the Registered Agent is a person, they must reside in West Virginia`,
+        `If the Registered Agent is a business, they must be able to conduct business in West Virginia`,
+        `The Registered Agent must have a physical street address in West Virginia, not a P.O. Box`,
+        `The Registered Agent must be available in person during normal business hours to sign for any correspondence`,
+      ],
+    },
     marginBottom: 40,
   },
   {
@@ -567,13 +574,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Your West Virginia Registered Agent carries out several valuable services for your business. They accept official communications and documents from the Secretary of State on your behalf.`,
+    content: `Your West Virginia Registered Agent carries out several valuable services for your business. They accept official communications and documents from the Secretary of State on your behalf. This may include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `This may include:`,
       list: [
         `Correspondence from the West Virginia Secretary of State, like a notice to file reports and other forms`,
         `Service of process documents (for example, if your LLC has legal proceedings issued against it)`,
@@ -596,13 +602,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `We are authorized to conduct business in West Virginia and can legally act as your Registered Agent.`,
+    content: `We are authorized to conduct business in West Virginia and can legally act as your Registered Agent. Here’s what the Incfile West Virginia Registered Agent service provides for your LLC:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here’s what the Incfile West Virginia Registered Agent service provides for your LLC:`,
       list: [
         `An always-available West Virginia Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
         `A digital dashboard where you can access, store and retrieve any information we’ve received for your business`,
@@ -742,13 +747,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the West Virginia Secretary of State? `,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the West Virginia Secretary of State? There are several possible ramifications, including:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `There are several possible ramifications, including:`,
       list: [
         `<b>Getting served or sued and not finding out about it: </b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing with the West Virginia Secretary of State: </b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -772,7 +776,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `The Registered Agent must have a physical street address in West Virginia. If you’re forming an LLC outside WV, you will need to use an in-state Registered Agent. You always need to have someone on hand during business hours at the West Virginia address to sign for important documents.`,
         `The Registered Agent’s name and address are part of the public record and available through the West Virginia Secretary of State's website. If you would prefer your name and address aren’t published, you should choose a Registered Agent service.`,
@@ -819,9 +822,13 @@ export const registeredAgent = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `You might find these resources helpful:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You might find these resources helpful:`,
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a West Virginia Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your West Virginia Registered Agent</a>`,
@@ -981,7 +988,6 @@ export const feesAndRequirments = [
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your West Virginia LLC operates in (e.g., restaurants will need health permits)`,
         `The location of your West Virginia LLC (state, county or city) (e.g., a license to conduct business from the city of Pittsburgh)`,
@@ -1005,13 +1011,17 @@ export const feesAndRequirments = [
     marginBottom: 32,
   },
   {
+    type: `text`,
+    content: `Our Business License Research Package tells you about all of the licenses and permits you will need for your West Virginia LLC. It includes:`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-        header: ``,
-        list: [
-            `A complete report on all the licenses, permits and tax registrations your West Virginia LLC will need`,
-            `The application forms you will need to file with the West Virginia, regional and federal licensing authorities`,
-        ],
+      list: [
+        `A complete report on all the licenses, permits and tax registrations your West Virginia LLC will need`,
+        `The application forms you will need to file with the West Virginia, regional and federal licensing authorities`,
+      ],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1116,14 +1126,17 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your West Virginia business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    content: `Your business formation documents state certain facts about your West Virginia business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file West Virginia Articles of Amendment for include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Areas you might want to file West Virginia Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a West Virginia LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your West Virginia LLC`],
+      list: [
+        `Adding, removing or changing a West Virginia LLC member or manager`,
+        `Changing the business address of your LLC`,
+        `Altering the stated business activities of your West Virginia LLC`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -1232,7 +1245,6 @@ export const businessTaxes = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `West Virginia LLC owners pay self-employment tax on business profits.`,
         `West Virginia LLC owners pay WV state tax on any profits, less state allowances or deductions.`,
@@ -1287,13 +1299,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the WV Department of Revenue. West Virginia sales tax is collected at the point of purchase. Sales tax rates do vary depending on the region, county or city where you are located.`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the WV Department of Revenue. West Virginia sales tax is collected at the point of purchase. Sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect West Virginia sales tax on:`,
     marginBottom: 32,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will typically need to collect West Virginia sales tax on:`,
       list: [
         `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc. Certain services that your business might provide`,
         `Most states do not levy sales tax on goods that are considered necessities, like food, medications, clothing or gas.`,
@@ -1335,8 +1346,12 @@ export const businessTaxes = [
   {
     type: `list-dot`,
     content: {
-      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $30,000, you would pay self-employment tax of $4,590.`, `On profits of $60,000, you would pay self-employment tax of $9,180.`, `On profits of $90,000, you would pay self-employment tax of $13,770.`, `On profits of $140,000, you would pay self-employment tax of $21,420.`],
+      list: [
+        `On profits of $30,000, you would pay self-employment tax of $4,590.`,
+        `On profits of $60,000, you would pay self-employment tax of $9,180.`,
+        `On profits of $90,000, you would pay self-employment tax of $13,770.`,
+        `On profits of $140,000, you would pay self-employment tax of $21,420.`,
+      ],
     },
     marginBottom: 48,
     color: color.green3,
@@ -1444,13 +1459,20 @@ export const businessTaxes = [
           answer2: [
             {
               type: `paragraph`,
-              content: `Most West Virginia LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. `,
+              content: `Most West Virginia LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
+            },
+            {
+              type: `paragraph`,
+              content: `The most common types of estimated taxes are:`,
             },
             {
               type: `list-dot-without-bg`,
               color: color.orange3,
-              header: `The most common types of estimated taxes are:`,
-              content: [`Federal income tax`, `Federal self-employment tax`, `West Virginia state tax`],
+              content: [
+                `Federal income tax`,
+                `Federal self-employment tax`,
+                `West Virginia state tax`,
+              ],
             },
             {
               type: `paragraph`,

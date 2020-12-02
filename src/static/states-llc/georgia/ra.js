@@ -55,13 +55,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `You must follow certain rules when you’re appointing a Georgia Registered Agent for your business.`,
+      content: `You must follow certain rules when you’re appointing a Georgia Registered Agent for your business. They are:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.blue3,
       content: {
-        header: `They are:`,
         list: [
           `If the Registered Agent is a person, they must reside in Georgia`,
           `If the Registered Agent is a business, they must be able to conduct business in Georgia`,
@@ -84,13 +83,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `What can you expect from your Georgia Registered Agent? Their main function is to accept official documents and correspondence from the GA Secretary of State.`,
+      content: `What can you expect from your Georgia Registered Agent? Their main function is to accept official documents and correspondence from the GA Secretary of State. This includes:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.orange3,
       content: {
-        header: `This includes:`,
         list: [
           `Correspondence from the Georgia Secretary of State`,
           `Service of process notices (e.g., if your GA LLC is sued or required to appear in court)`,
@@ -108,13 +106,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `We are authorized to conduct business in Georgia and can legally act as your Registered Agent.`,
+      content: `We are authorized to conduct business in Georgia and can legally act as your Registered Agent. Here’s what you get with Incfile’s Registered Agent service:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.purple3,
       content: {
-        header: `Here’s what you get with Incfile’s Registered Agent service:`,
         list: [
           `An always-available Georgia Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
           `A digital dashboard where you can access, store and retrieve any information we’ve received for your Georgia business`,
@@ -256,13 +253,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `What happens if you choose not to assign or provide details of a Registered Agent to the Georgia Secretary of State?`,
+      content: `What happens if you choose not to assign or provide details of a Registered Agent to the Georgia Secretary of State? There are several possible ramifications, including:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.green3,
       content: {
-        header: `There are several possible ramifications, including:`,
         list: [
           `<b>Getting served or sued and not finding out about it:</b>If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
           `<b>Falling out of good standing with the Georgia Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -285,7 +281,6 @@ export const agentPageContent = {
       type: `iconListColorBox`,
       boxColor: color.blue3,
       content: {
-        header: ``,
         list: [
           `The GA Registered Agent must have a physical street address in Georgia. If you’re forming an LLC outside GA, you will need to use an in-state Registered Agent.`,
           `You always need to have someone on hand during business hours at the Georgia address to sign for important documents.`,

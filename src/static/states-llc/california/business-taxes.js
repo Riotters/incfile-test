@@ -94,15 +94,18 @@ export const businessTaxesPageContent = {
     },
     {
       type: `paragraph`,
-      content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the TX Comptroller. California sales tax is collected at the point of purchase. California sales tax rates do vary depending on the region, county or city where you are located.`,
+      content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the TX Comptroller. California sales tax is collected at the point of purchase. California sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect California sales tax on:`,
     },
+
     {
       type: `iconListColorBox`,
       boxColor: color.green3,
       styles: { margin: `56px 0` },
       content: {
-        header: `You will typically need to collect California sales tax on:`,
-        list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your California business might provide`],
+        list: [
+          `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
+          `Certain services that your California business might provide`,
+        ],
       },
     },
     {
@@ -135,7 +138,6 @@ export const businessTaxesPageContent = {
       boxColor: color.blue3,
       styles: { margin: `56px 0` },
       content: {
-        header: `Here are the sales tax rates for the major cities in California:`,
         list: [
           `<strong>Los Angeles, CA</strong> sales tax rate is <strong>9.5%</strong>`,
           `<strong>San Francisco, CA</strong> sales tax rate is <strong>8.5%</strong>`,
@@ -167,14 +169,13 @@ export const businessTaxesPageContent = {
     },
     {
       type: `paragraph`,
-      content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. `,
+      content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.green3,
       styles: { margin: `56px 0` },
       content: {
-        header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
         list: [
           `On profits of <strong>$60,000</strong>, you would pay self-employment tax of <strong>$9,180</strong>`,
           `On profits of <strong>$100,000</strong>, you would pay self-employment tax of <strong>$15,300</strong>`,
@@ -283,7 +284,11 @@ export const businessTaxesPageContent = {
               {
                 type: `list-dot-without-bg`,
                 color: color.orange3,
-                content: [`Federal income tax`, `Federal self-employment tax`, `California state tax`],
+                content: [
+                  `Federal income tax`,
+                  `Federal self-employment tax`,
+                  `California state tax`,
+                ],
               },
               {
                 type: `paragraph`,

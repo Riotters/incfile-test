@@ -29,9 +29,13 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
+    type: `text`,
+    content: `Briefly, the benefits of starting a Kansas LLC include:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `Briefly, the benefits of starting a Kansas LLC include:`,
       list: [
         `Separating and limiting your personal liability from your business liability and debts`,
         `Quick and simple filing, management, compliance, regulation and administration of your Kansas LLC`,
@@ -112,13 +116,12 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `The KS Secretary of State has plenty of information on forming and running a business in Kansas. Check out additional resources below.`,
+    content: `The KS Secretary of State has plenty of information on forming and running a business in Kansas. Check out additional resources below. These are all the basic steps for forming an LLC in Kansas. You’ll find other useful information below.`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `These are all the basic steps for forming an LLC in Kansas. You’ll find other useful information below.`,
       list: [
         `<a href="https://sos.kansas.gov/business/" target="_blank" rel="noopener noreferrer">Kansas Secretary of State for forming and running your KS LLC</a>`,
         `<a href="https://www.dol.ks.gov/" target="_blank" rel="noopener noreferrer">Kansas Department of Labor for KS employers and hiring</a>`,
@@ -290,7 +293,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `By business entity name.`,
         `By business entity ID number`,
@@ -348,7 +350,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
         `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
@@ -384,7 +385,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Are very similar to the name of a federal or AK agency or organization (e.g. FBI, FDA, Kansas Department of Revenue, Kansas Police, Treasury, etc)`,
         `Suggest affiliation with a federal or state agency or organization`,
@@ -411,7 +411,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `You cannot use the following words as qualifiers in the overall Kansas LLC business name: "companies," "corporations," "incorporation," "unlimited," “limited partnerships."`,
         `Certain restricted words may need additional paperwork if you want to use them in your business name.`,
@@ -454,7 +453,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `If you don’t want to form your LLC right now, you can reserve the business name`,
         `If you’re ready to start your Kansas LLC, you can register it through Incfile`,
@@ -572,7 +570,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Appeal to your customers`,
         `Be memorable enough to stand out`,
@@ -635,13 +632,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a Kansas Registered Agent service for your business.`,
+    content: `There are certain rules that you must follow when you’re appointing a Kansas Registered Agent service for your business. They are:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in Kansas.`,
         `If the Registered Agent is a business, they must be able to conduct business in Kansas.`,
@@ -665,13 +661,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What can you expect from your Kansas Registered Agent? Their main function is to accept official documents and correspondence.`,
+    content: `What can you expect from your Kansas Registered Agent? Their main function is to accept official documents and correspondence. This includes:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `This includes:`,
       list: [
         `Correspondence from the Kansas Secretary of State, like a notice to file reports and other forms`,
         `Service of process documents (for example, if your Kansas LLC has legal proceedings issued against it)`,
@@ -696,13 +691,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `We are authorized to conduct business in Kansas and can legally act as your Registered Agent. We also have an address in Kansas, which is required to operate as a Registered Agent. Here's what the Infile Kansas Resident Agent service provides for your KS LLC.`,
+    content: `We are authorized to conduct business in Kansas and can legally act as your Registered Agent. We also have an address in Kansas, which is required to operate as a Registered Agent. Here's what the Infile Kansas Resident Agent service provides for your KS LLC. Here’s what the Incfile Kansas Registered Agent service provides for your LLC:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here’s what the Incfile Kansas Registered Agent service provides for your LLC:`,
       list: [
         `An always-available Kansas Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
         `A digital dashboard where you can access, store and retrieve any information we’ve received for your Kansas business`,
@@ -846,13 +840,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Kansas Secretary of State?`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Kansas Secretary of State? There are several possible ramifications, including:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `There are several possible ramifications, including:`,
       list: [
         `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing with the Kansas Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -876,7 +869,6 @@ export const registeredAgent = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `The Registered Agent must have a physical street address in Kansas. If you’re forming an LLC outside KS, you will need to use an in-state Registered Agent.`,
         `You always need to have someone on hand during business hours at the Kansas address to sign for important documents.`,
@@ -930,9 +922,13 @@ export const registeredAgent = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `You might find these resources helpful:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You might find these resources helpful:`,
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Kansas Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Kansas Registered Agent</a>`,
@@ -1085,13 +1081,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your Kansas LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Kansas, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
+    content: `Your Kansas LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Kansas, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. Permits and licenses vary based on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your Kansas LLC operates in (e.g., restaurants will need health permits)`,
         `The location of your Kansas LLC (state, county or city) (e.g., a license to conduct business from the city of Topeka)`,
@@ -1122,7 +1117,6 @@ export const feesAndRequirments = [
   {
     type: `list-dot`,
     content: {
-      header: `It includes:`,
       list: [
         `A complete report on all the licenses, permits and tax registrations your Kansas LLC will need`,
         `The application forms you will need to file with the Kansas, regional and federal licensing authorities`,
@@ -1203,13 +1197,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your Kansas business when it was originally formed. Over time, these facts might change — if they do, you need to file a “Certificate of Amendment” with the Kansas Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    content: `Your business formation documents state certain facts about your Kansas business when it was originally formed. Over time, these facts might change — if they do, you need to file a “Certificate of Amendment” with the Kansas Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file Kansas Articles of Amendment for include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Areas you might want to file Kansas Articles of Amendment for include:`,
       list: [
         `Adding, removing or changing a Kansas LLC member or manager`,
         `Changing the business address of your LLC`,
@@ -1375,13 +1368,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `Any salaried employees will also need to pay personal Kansas state taxes.`,
+    content: `Any salaried employees will also need to pay personal Kansas state taxes. Here are the Kansas state tax rates if you’re filing single:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are the Kansas state tax rates if you’re filing single:`,
       list: [
         `2.7 percent on the first $15,000 of taxable income`,
         `4.6 percent on taxable income of $15,001 and more`,
@@ -1410,13 +1402,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the KS Department of Revenue. Kansas sales tax is collected at the point of purchase. Kansas sales tax rates do vary depending on the region, county or city where you are located.`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the KS Department of Revenue. Kansas sales tax is collected at the point of purchase. Kansas sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Kansas sales tax on:`,
     marginBottom: 32,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will typically need to collect Kansas sales tax on:`,
       list: [
         `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
         `Certain services that your Kansas business might provide.`,
@@ -1488,13 +1479,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
+    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
       list: [
         `On profits of $40,000, you would pay self-employment tax of $6,120.`,
         `On profits of $70,000, you would pay self-employment tax of $10,710.`,

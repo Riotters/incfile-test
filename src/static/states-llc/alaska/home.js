@@ -26,13 +26,21 @@ export const howToGuide = [
   {
     type: `text`,
     content: `If you want to start your own business in Alaska, one of the best ways to do so is by forming an Alaska LLC. Limited liability companies (LLCs) are a business entity designed for startups and small- and medium-sized businesses. Alaska LLCs give you many of the protections and advantages of larger corporations without all the rules, regulations and compliance issues common to larger business entities.`,
-    marginBottom: 32,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `Briefly, the benefits of starting a Alaska LLC include:`,
+    marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Briefly, the benefits of starting a Alaska LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your Alaska LLC`, `Easy tax filing and potential advantages for your tax treatment`],
+      list: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulation and administration of your Alaska LLC`,
+        `Easy tax filing and potential advantages for your tax treatment`,
+      ],
     },
     marginBottom: 24,
     color: color.green3,
@@ -109,9 +117,13 @@ export const howToGuide = [
     marginBottom: 40,
   },
   {
+    type: `text`,
+    content: `The Division of Corporations has plenty of information on forming and running a business in Alaska. Check out additional resources below.`,
+    marginBottom: 48,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `The Division of Corporations has plenty of information on forming and running a business in Alaska. Check out additional resources below.</br></br>`,
       list: [
         `<a href="https://www.commerce.alaska.gov/web/cbpl/Corporations.aspx" target="_blank" rel="noopener noreferrer">Alaska Division of Corporations for forming and running your LLC</a>`,
         `<a href="https://labor.alaska.gov/" target="_blank" rel="noopener noreferrer">Alaska Department of Labor for employers and hiring</a>`,
@@ -314,7 +326,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
         `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
@@ -350,7 +361,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Are very similar to the name of a federal or AK agency or organization (e.g., FBI, FDA, Alaska Department of Revenue, Alaska Police, Treasury, etc.)`,
         `Suggest affiliation with a federal or state agency or organization`,
@@ -377,7 +387,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `An unincorporated business may not use "incorporated" or "corporation" as part of its name, whereas an incorporated name must contain "corporation," "company," "incorporation," "limited" or an abbreviation. A business name may not imply that the organization is a governmental unit (e.g. a city, village or borough) unless they are a governmental unit.`,
         `Entity names that mislead regarding corporate purpose are not allowed. For example: An entity’s whose true purpose is clothing tailoring/design could not use the word “construction” in its name since the word “construction” misleads and implies the purpose of the entity is construction contracting.`,
@@ -434,7 +443,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `If you don’t want to form your LLC right now, you can reserve the business name with the Alaska Division of Corporations. You will need to complete a Business Name Registration form and file it with the AK DOC. You do not need to reserve a name if you are forming your business right away.</br>
               <a href="https://www.commerce.alaska.gov/web/cbpl/Corporations/ReservingRegisteringBusinessName.aspx" target="_blank" rel="noopener noreferrer">Alaska DOC LLC name reservation form</a>`,
@@ -524,8 +532,12 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      list: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     marginBottom: 40,
     color: color.blue3,
@@ -592,13 +604,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a Alaska Registered Agent service for your business.`,
+    content: `There are certain rules that you must follow when you’re appointing a Alaska Registered Agent service for your business. They are:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in Alaska.`,
         `If the Registered Agent is a business, they must be able to conduct business in Alaska.`,
@@ -622,13 +633,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What can you expect from your Alaska Registered Agent? Their main function is to accept official documents and correspondence.`,
+    content: `What can you expect from your Alaska Registered Agent? Their main function is to accept official documents and correspondence. This includes:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `This includes:`,
       list: [
         `Correspondence from the Alaska Division of Corporations, like a notice to file reports and other forms`,
         `Service of process documents (for example, if your Alaska LLC has legal proceedings issued against it)`,
@@ -653,13 +663,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `We are authorized to conduct business in Alaska and can legally act as your Registered Agent.`,
+    content: `We are authorized to conduct business in Alaska and can legally act as your Registered Agent. Here’s what the Incfile Alaska Registered Agent service provides for your LLC:`,
     marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here’s what the Incfile Alaska Registered Agent service provides for your LLC`,
       list: [
         `An always-available Alaska Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
         `A digital dashboard where you can access, store and retrieve any information we’ve received for your Alaska business`,
@@ -799,13 +808,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Alaska Division of Corporations?`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Alaska Division of Corporations? There are several possible ramifications, including:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `There are several possible ramifications, including:`,
       list: [
         `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing with the Alaska Division of Corporations:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -823,13 +831,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `If you have an address in Alaska, you can choose to be the Registered Agent for your LLC.`,
+    content: `If you have an address in Alaska, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `We don’t recommend this approach as there can be some drawbacks:`,
       list: [
         `The Registered Agent must have a physical street address in Alaska. If you’re forming an LLC outside AK, you will need to use an in-state Registered Agent.`,
         `You always need to have someone on hand during business hours at the Alaska address to sign for important documents.`,
@@ -877,9 +884,13 @@ export const registeredAgent = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `You might find these resources helpful:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You might find these resources helpful:`,
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Alaska Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Alaska Registered Agent</a>`,
@@ -1039,13 +1050,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Some Alaska LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis. `,
+    content: `Some Alaska LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis. Permits and licenses vary based on:`,
     marginBottom: 32,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your Alaska LLC operates in (e.g., restaurants will need health permits)`,
         `The location of your Alaska LLC (state, county or city) (e.g., a license to conduct business from the city of Anchorage)`,
@@ -1076,8 +1086,10 @@ export const feesAndRequirments = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`A complete report on all the licenses, permits and tax registrations your Alaska LLC will need`, `The application forms you will need to file with the Alaska, regional and federal licensing authorities`],
+      list: [
+        `A complete report on all the licenses, permits and tax registrations your Alaska LLC will need`,
+        `The application forms you will need to file with the Alaska, regional and federal licensing authorities`,
+      ],
     },
     marginBottom: 24,
     color: color.purple3,
@@ -1182,14 +1194,17 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your Alaska business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Division of Corporations. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    content: `Your business formation documents state certain facts about your Alaska business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Division of Corporations. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file Alaska Articles of Amendment for include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Areas you might want to file Alaska Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Alaska LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Alaska LLC`],
+      list: [
+        `Adding, removing or changing a Alaska LLC member or manager`,
+        `Changing the business address of your LLC`,
+        `Altering the stated business activities of your Alaska LLC`,
+      ],
     },
     marginBottom: 32,
     color: color.yellow3,
@@ -1341,14 +1356,16 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to your local or regional authority. Alaska sales tax is collected at the point of purchase. Alaska sales tax rates do vary depending on the region, county or city where you are located, although Alaska does not have a statewide sales tax rate.`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to your local or regional authority. Alaska sales tax is collected at the point of purchase. Alaska sales tax rates do vary depending on the region, county or city where you are located, although Alaska does not have a statewide sales tax rate. You will typically need to collect Alaska sales tax on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will typically need to collect Alaska sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Alaska business might provide`],
+      list: [
+        `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
+        `Certain services that your Alaska business might provide`,
+      ],
     },
     marginBottom: 16,
     color: color.blue3,
@@ -1389,13 +1406,12 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
+    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
       list: [
         `On profits of $40,000, you would pay self-employment tax of $6,120.`,
         `On profits of $70,000, you would pay self-employment tax of $10,710.`,
@@ -1560,7 +1576,12 @@ export const compare = {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
       [`Business incorporation service`, `$49`, `$149`, `$149`],
-      [`Registered Agent included in the price`, `check-green`, `check-red`, `check-red`],
+      [
+        `Registered Agent included in the price`,
+        `check-green`,
+        `check-red`,
+        `check-red`,
+      ],
     ],
   },
 };

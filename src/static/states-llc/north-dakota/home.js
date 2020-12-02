@@ -29,10 +29,18 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
+    type: `text`,
+    content: `Briefly, the benefits of starting a North Dakota LLC include:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `Briefly, the benefits of starting a North Dakota LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulation and administration of your North Dakota LLC`, `Easy tax filing and potential advantages for tax treatment`],
+      list: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulation and administration of your North Dakota LLC`,
+        `Easy tax filing and potential advantages for tax treatment`,
+      ],
     },
     marginBottom: 24,
     color: color.green3,
@@ -113,13 +121,12 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `The Secretary of State has plenty of information on forming and running a business in North Dakota.`,
+    content: `The Secretary of State has plenty of information on forming and running a business in North Dakota. These are all the basic steps for forming an LLC in North Dakota. You’ll find other useful information below.`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `These are all the basic steps for forming an LLC in North Dakota. You’ll find other useful information below.`,
       list: [
         `<a href="https://sos.nd.gov/business/business-services/business-structures/limited-liability-companies/limited-liability-company-llc" target="_blank" rel="noopener noreferrer">North Dakota Secretary of State for forming and running your LLC</a>`,
         `<a href="https://www.nd.gov/labor/" target="_blank" rel="noopener noreferrer">North Dakota Department of Labor and Human Rights for employers and hiring</a>`,
@@ -306,13 +313,12 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `It’s not enough for your LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in North Dakota.`,
+    content: `It’s not enough for your LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in North Dakota. For example, you cannot use the following factors to say your name is different from the name of another business:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `For example, you cannot use the following factors to say your name is different from the name of another business:`,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
         `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
@@ -348,7 +354,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Are very similar to the name of a federal or ND agency or organization (e.g., FBI, FDA, North Dakota Department of Revenue, North Dakota Police, Treasury, etc.)`,
         `Suggest affiliation with a federal or state agency or organization`,
@@ -488,8 +493,12 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      list: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -571,13 +580,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a North Dakota Registered Agent service for your business.`,
+    content: `There are certain rules that you must follow when you’re appointing a North Dakota Registered Agent service for your business. They are:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in North Dakota.`,
         `If the Registered Agent is a business, they must be able to conduct business in North Dakota.`,
@@ -601,13 +609,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Your North Dakota Registered Agent carries out several valuable services for your business. They accept official communications and documents from the Secretary of State on your behalf.`,
+    content: `Your North Dakota Registered Agent carries out several valuable services for your business. They accept official communications and documents from the Secretary of State on your behalf. This may include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `This may include:`,
       list: [
         `Correspondence from the North Dakota Secretary of State`,
         `Service of process notices (e.g., if your ND LLC is sued or required to appear in court)`,
@@ -631,13 +638,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Incfile is authorized to conduct business in North Dakota and can legally act as your Registered Agent.`,
+    content: `Incfile is authorized to conduct business in North Dakota and can legally act as your Registered Agent. Here’s what the Incfile North Dakota Registered Agent service provides for your LLC:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here’s what the Incfile North Dakota Registered Agent service provides for your LLC:`,
       list: [
         `An always-available North Dakota Registered Agent who can receive correspondence, documents and legal proceedings on your LLC’s behalf`,
         `A digital dashboard where you can access, store and retrieve any information we’ve received for your business`,
@@ -776,13 +782,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the North Dakota Secretary of State?`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the North Dakota Secretary of State? There are several possible ramifications, including:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `There are several possible ramifications, including:`,
       list: [
         `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `Falling out of good standing with the North Dakota Secretary of State: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -800,13 +805,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `If you have an address in North Dakota, you can choose to be the Registered Agent for your LLC.`,
+    content: `If you have an address in North Dakota, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `We don’t recommend this approach as there can be some drawbacks:`,
       list: [
         `The Registered Agent must have a physical street address in North Dakota. If you’re forming an LLC outside ND, you will need to use an in-state Registered Agent.`,
         `You always need to have someone on hand during business hours at the North Dakota address to sign for important documents.`,
@@ -854,9 +858,13 @@ export const registeredAgent = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `You might find these resources helpful:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You might find these resources helpful:`,
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/" target="_blank">The Main Functions of a North Dakota Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your North Dakota Registered Agent</a>`,
@@ -1015,13 +1023,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Some ND LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis.`,
+    content: `Some ND LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis. Permits and licenses vary based on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your North Dakota LLC operates in (e.g., restaurants will need health permits)`,
         `The location of your North Dakota LLC (state, county or city) (e.g., a license to conduct business from the city of Pittsburgh)`,
@@ -1044,14 +1051,16 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Our Business License Research Package tells you about all of the licenses and permits you will need for your North Dakota LLC.`,
+    content: `Our Business License Research Package tells you about all of the licenses and permits you will need for your North Dakota LLC. It includes:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `It includes:`,
-      list: [`A complete report on all the licenses, permits and tax registrations your North Dakota LLC will need`, `The application forms you will need to file with the North Dakota, regional and federal licensing authorities`],
+      list: [
+        `A complete report on all the licenses, permits and tax registrations your North Dakota LLC will need`,
+        `The application forms you will need to file with the North Dakota, regional and federal licensing authorities`,
+      ],
     },
     marginBottom: 16,
     color: color.yellow3,
@@ -1156,14 +1165,17 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your North Dakota business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the North Dakota Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    content: `Your business formation documents state certain facts about your North Dakota business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the North Dakota Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file North Dakota Articles of Amendment for include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Areas you might want to file North Dakota Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a North Dakota LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your North Dakota LLC`],
+      list: [
+        `Adding, removing or changing a North Dakota LLC member or manager`,
+        `Changing the business address of your LLC`,
+        `Altering the stated business activities of your North Dakota LLC`,
+      ],
     },
     marginBottom: 16,
     color: color.green3,
@@ -1348,14 +1360,16 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the ND Department of Revenue. North Dakota sales tax is collected at the point of purchase. Sales tax rates do vary depending on the region, county or city where you are located.`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the ND Department of Revenue. North Dakota sales tax is collected at the point of purchase. Sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect North Dakota sales tax on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will typically need to collect North Dakota sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your North Dakota business might provide`],
+      list: [
+        `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
+        `Certain services that your North Dakota business might provide`,
+      ],
     },
     marginBottom: 16,
     color: color.purple3,
@@ -1399,14 +1413,18 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
+    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $20,000, you would pay self-employment tax of $3,060.`, `On profits of $50,000, you would pay self-employment tax of $7,650.`, `On profits of $70,000, you would pay self-employment tax of $10,710.`, `On profits of $90,000, you would pay self-employment tax of $13,770.`],
+      list: [
+        `On profits of $20,000, you would pay self-employment tax of $3,060.`,
+        `On profits of $50,000, you would pay self-employment tax of $7,650.`,
+        `On profits of $70,000, you would pay self-employment tax of $10,710.`,
+        `On profits of $90,000, you would pay self-employment tax of $13,770.`,
+      ],
     },
     marginBottom: 32,
     color: color.orange3,
@@ -1512,13 +1530,20 @@ export const businessTaxes = [
           answer2: [
             {
               type: `paragraph`,
-              content: `Most North Dakota LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. `,
+              content: `Most North Dakota LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
+            },
+            {
+              type: `paragraph`,
+              content: `The most common types of estimated taxes are:`,
             },
             {
               type: `list-dot-without-bg`,
               color: color.orange3,
-              header: `The most common types of estimated taxes are:`,
-              content: [`Federal income tax`, `Federal self-employment tax`, `North Dakota state tax`],
+              content: [
+                `Federal income tax`,
+                `Federal self-employment tax`,
+                `North Dakota state tax`,
+              ],
             },
             {
               type: `paragraph`,
@@ -1564,7 +1589,12 @@ export const compare = {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
       [`Business incorporation service`, `$49`, `$149`, `$149`],
-      [`Registered Agent included in the price`, `check-green`, `check-red`, `check-red`],
+      [
+        `Registered Agent included in the price`,
+        `check-green`,
+        `check-red`,
+        `check-red`,
+      ],
     ],
   },
 };

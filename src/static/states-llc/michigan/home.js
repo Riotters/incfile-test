@@ -34,10 +34,18 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
+    type: `text`,
+    content: `Briefly, here are the benefits of filing an LLC in Michigan:`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `Briefly, here are the benefits of filing an LLC in Michigan:`,
-      list: [`Limit your personal liability and keep personal assets separate from your business liability and debts`, `Enjoy quick and simple filing, management, compliance, regulations and administration`, `Benefit from easy tax filing and potential advantages for tax treatment`],
+      list: [
+        `Limit your personal liability and keep personal assets separate from your business liability and debts`,
+        `Enjoy quick and simple filing, management, compliance, regulations and administration`,
+        `Benefit from easy tax filing and potential advantages for tax treatment`,
+      ],
     },
     marginBottom: 16,
     color: color.green3,
@@ -234,13 +242,12 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `The MI Department of Licensing and Regulatory Affairs has plenty of information on forming and running a business in Michigan.`,
+    content: `The MI Department of Licensing and Regulatory Affairs has plenty of information on forming and running a business in Michigan. Here are a few additional resources you may find helpful:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are a few additional resources you may find helpful:`,
       list: [
         `<a href="https://www.michigan.gov/som/0,4669,7-192-29943---,00.html" target="_blank" rel="noopener noreferrer">Michigan Department of Licensing and Regulatory Affairs for forming and running your MI LLC</a>`,
         `<a href="https://www.michigan.gov/leo/0,5863,7-336-94422_17485---,00.html" target="_blank" rel="noopener noreferrer">Michigan Bureau of Employment Relations for MI employers and hiring</a>`,
@@ -348,13 +355,12 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `It’s not enough for your MI LLC name to be unique. It also cannot be similar to the name of another corporation or LLC in Michigan.`,
+    content: `It’s not enough for your MI LLC name to be unique. It also cannot be similar to the name of another corporation or LLC in Michigan. For example, you cannot use the following factors to say your name is different from the name of another business:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `For example, you cannot use the following factors to say your name is different from the name of another business:`,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
         `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
@@ -390,7 +396,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Are very similar to the name of a federal or MI agency or organization (e.g., FBI, FDA, Michigan Department of Treasury, Michigan Police, Treasury, etc.)`,
         `Suggest affiliation with a federal or state agency or organization`,
@@ -565,8 +570,12 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      list: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -595,13 +604,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Your LLC must have a Michigan Registered Agent at all times, and you can appoint a Registered Agent when you first start your business. You can also replace your existing MI Registered Agent at a later date, provided there is a smooth transition between the old and new Registered Agent service.`,
+    content: `Your LLC must have a Michigan Registered Agent at all times, and you can appoint a Registered Agent when you first start your business. You can also replace your existing MI Registered Agent at a later date, provided there is a smooth transition between the old and new Registered Agent service. Here’s what we cover:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: ` Here’s what we cover:`,
       list: [
         `Information on the Michigan Department of Licensing and Regulatory Affairs and MI Resident Agent Services`,
         `Rules for Michigan Resident Agents`,
@@ -624,13 +632,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `In Michigan, a Registered Agent is formally known as a “Resident Agent;” we’ll use those names interchangeably in this guide. A Resident Agent’s functions and requirements are identical to those of Registered Agents described above.`,
+    content: `In Michigan, a Registered Agent is formally known as a “Resident Agent;” we’ll use those names interchangeably in this guide. A Resident Agent’s functions and requirements are identical to those of Registered Agents described above. Here’s some important information from the Michigan Department of Licensing and Regulatory Affairs on MI Resident Agent services:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here’s some important information from the Michigan Department of Licensing and Regulatory Affairs on MI Resident Agent services:`,
       list: [
         `<i>“A resident agent and registered office must be included in the Articles of Organization. A resident agent is someone who is appointed by the company to receive any documents, notices, or demands served upon the company. The resident agent must be a Michigan resident, a Michigan corporation, a foreign corporation with a certificate of authority to transact business in Michigan, a Michigan limited liability company or a foreign limited liability company authorized to transact business in this state.”</i>`,
       ],
@@ -646,13 +653,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a Michigan Registered Agent service for your business.`,
+    content: `There are certain rules that you must follow when you’re appointing a Michigan Registered Agent service for your business. They are:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in Michigan`,
         `If the Registered Agent is a business, they must be able to conduct business in Michigan`,
@@ -676,13 +682,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Your Michigan Registered Agent carries out several valuable services for your business. They accept official communications and documents from the MI Department of Licensing and Regulatory Affairs on your behalf.`,
+    content: `Your Michigan Registered Agent carries out several valuable services for your business. They accept official communications and documents from the MI Department of Licensing and Regulatory Affairs on your behalf. This includes:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `This includes:`,
       list: [
         `Correspondence from the Michigan Department of Licensing and Regulatory Affairs, like a notice to file reports and other forms`,
         `Service of process documents (for example, if your Michigan LLC has legal proceedings issued against it)`,
@@ -705,13 +710,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `We are authorized to conduct business in Michigan and can legally act as your Registered Agent.`,
+    content: `We are authorized to conduct business in Michigan and can legally act as your Registered Agent. Here’s what you need to know about Incfile’s MI Registered Agent service:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here’s what you need to know about Incfile’s MI Registered Agent service:`,
       list: [
         `The Registered Agent will always be available to accept documents and letters on your behalf`,
         `We automatically notify you whenever we receive correspondence for your business from the Michigan Department of Licensing and Regulatory Affairs or anyone else`,
@@ -850,13 +854,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Michigan Department of Licensing and Regulatory Affairs?`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Michigan Department of Licensing and Regulatory Affairs? There are several possible ramifications, including:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `There are several possible ramifications, including:`,
       list: [
         `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `Falling out of good standing with the Michigan Department of Licensing and Regulatory Affairs: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -874,13 +877,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `If you have an address in Michigan, you can choose to be the Registered Agent for your LLC.`,
+    content: `If you have an address in Michigan, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach, as there can be some drawbacks:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `We don’t recommend this approach, as there can be some drawbacks:`,
       list: [
         `The MI Registered Agent must have a physical street address in Michigan. If you’re forming an LLC outside MI, you will need to use an in-state Registered Agent.`,
         `You always need to have someone on hand during business hours at the Michigan address to sign for important documents.`,
@@ -928,9 +930,13 @@ export const registeredAgent = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `You might find these resources helpful:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You might find these resources helpful:`,
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/" target="_blank">The Main Functions of a Michigan Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Michigan Registered Agent</a>`,
@@ -1089,13 +1095,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Some MI LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis.`,
+    content: `Some MI LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis. Permits and licenses vary based on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your Michigan LLC operates in (e.g., restaurants will need health permits)`,
         `The location of your Michigan LLC (state, county or city) (e.g., a license to conduct business from the city of Detroit)`,
@@ -1106,10 +1111,17 @@ export const feesAndRequirments = [
     color: color.purple3,
   },
   {
+    type: `text`,
+    content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
-      list: [`A complete report on all the licenses, permits and tax registrations your Michigan LLC will need`, `The application forms you will need to file with the state, regional and federal licensing authorities`],
+      list: [
+        `A complete report on all the licenses, permits and tax registrations your Michigan LLC will need`,
+        `The application forms you will need to file with the state, regional and federal licensing authorities`,
+      ],
     },
     marginBottom: 16,
     color: color.yellow3,
@@ -1214,14 +1226,17 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your Michigan business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Michigan Department of Licensing and Regulatory Affairs. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    content: `Your business formation documents state certain facts about your Michigan business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Michigan Department of Licensing and Regulatory Affairs. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file Michigan Articles of Amendment for include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Areas you might want to file Michigan Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Michigan LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Michigan LLC`],
+      list: [
+        `Adding, removing or changing a Michigan LLC member or manager`,
+        `Changing the business address of your LLC`,
+        `Altering the stated business activities of your Michigan LLC`,
+      ],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -1406,14 +1421,16 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the MI Department of Treasury. Michigan sales tax is collected at the point of purchase. Michigan sales tax rates do vary depending on the region, county or city where you are located.`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the MI Department of Treasury. Michigan sales tax is collected at the point of purchase. Michigan sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Michigan sales tax on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will typically need to collect Michigan sales tax on:`,
-      list: [`Tangible, personal property and goods you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Michigan business might provide`],
+      list: [
+        `Tangible, personal property and goods you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
+        `Certain services that your Michigan business might provide`,
+      ],
     },
     marginBottom: 16,
     color: color.purple3,
@@ -1468,14 +1485,18 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
+    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $30,000, you would pay self-employment tax of $4,590`, `On profits of $70,000, you would pay self-employment tax of $10,710`, `On profits of $120,000, you would pay self-employment tax of $18,360`, `On profits of $160,000, you would pay self-employment tax of $24,480`],
+      list: [
+        `On profits of $30,000, you would pay self-employment tax of $4,590`,
+        `On profits of $70,000, you would pay self-employment tax of $10,710`,
+        `On profits of $120,000, you would pay self-employment tax of $18,360`,
+        `On profits of $160,000, you would pay self-employment tax of $24,480`,
+      ],
     },
     marginBottom: 32,
     color: color.babyblue3,
@@ -1587,7 +1608,11 @@ export const businessTaxes = [
               type: `list-dot-without-bg`,
               color: color.orange3,
               header: `The most common types of estimated taxes are:`,
-              content: [`Federal income tax`, `Federal self-employment tax`, `Michigan state tax`],
+              content: [
+                `Federal income tax`,
+                `Federal self-employment tax`,
+                `Michigan state tax`,
+              ],
             },
             {
               type: `paragraph`,
@@ -1633,7 +1658,12 @@ export const compare = {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
       [`Business incorporation service`, `$49`, `$149`, `$149`],
-      [`Registered Agent included in the price`, `check-green`, `check-red`, `check-red`],
+      [
+        `Registered Agent included in the price`,
+        `check-green`,
+        `check-red`,
+        `check-red`,
+      ],
     ],
   },
 };

@@ -24,10 +24,11 @@ export const HomePageContent = {
   content: {
     whyChoose: {
       heading: "Why Choose Texas for Your LLC?",
-      text1: "The Lone Star state is a great place to start a business. A combination of natural resources, lots of land area and culturally diverse cities makes Texas a center of opportunity.",
+      text1:
+        "The Lone Star state is a great place to start a business. A combination of natural resources, lots of land area and culturally diverse cities makes Texas a center of opportunity.",
       text2:
         "For most business owners, the fastest and easiest way to start a business in Texas is by creating a Texas LLC. A Limited Liability Company (LLC) is a type of business entity that’s ideal for startups and small- to medium-sized businesses. You get the advantages and protections of larger Texas corporations but with much simpler rules and regulations.",
-      heading4: `The benefits of starting a Texas LLC:`,
+      text3: `The benefits of starting a Texas LLC:`,
       lists: [
         `Separating and limiting your personal liability from your business liability and debts`,
         `Quick and simple filing, management, compliance, regulations and administration of your Texas LLC`,
@@ -35,7 +36,7 @@ export const HomePageContent = {
         `Texas doesn’t have a state income tax, so you keep more of your TX LLC earnings`,
       ],
       learnmore: `Learn more about the <a href="/limited-liability-company/">benefits of the LLC business structure.</a>`,
-      text3: `In this guide you’ll find information on searching for and naming your TX LLC, getting a Texas Registered Agent, the fees you’ll need to pay, TX business taxes and much more. We also cover the various ways you’ll interact with the Texas Secretary of State, filing your LLC and your registration needs.`,
+      text4: `In this guide you’ll find information on searching for and naming your TX LLC, getting a Texas Registered Agent, the fees you’ll need to pay, TX business taxes and much more. We also cover the various ways you’ll interact with the Texas Secretary of State, filing your LLC and your registration needs.`,
     },
     mainSteps: {
       heading3: `Forming Your Texas LLC Yourself: 6 Main Steps`,
@@ -100,10 +101,17 @@ export const HomePageContent = {
       },
       step4: {
         heading1: `File Your Certificate of Formation (Form 205) With the Texas Secretary of State`,
-        text1: `Once you've gathered all the information for your Texas LLC, you’ll need to file a formal document with the Texas Secretary of State. This document is known as your “Certificate of Formation,” and filing the document officially creates your Texas LLC.`,
+        text1: `Once you've gathered all the information for your Texas LLC, you’ll need to file a formal document with the Texas Secretary of State. This document is known as your “Certificate of Formation,” and filing the document officially creates your Texas LLC. Here’s what is typically included:`,
         lists: {
-          header: `Here’s what is typically included:`,
-          list: [`Your business name and address`, `Details of your Registered Agent`, `Governing authority`, `Purpose of the LLC`, `Supplemental provisions`, `Name of the organizer`, `Whether your LLC will be member-managed or manager-managed`],
+          list: [
+            `Your business name and address`,
+            `Details of your Registered Agent`,
+            `Governing authority`,
+            `Purpose of the LLC`,
+            `Supplemental provisions`,
+            `Name of the organizer`,
+            `Whether your LLC will be member-managed or manager-managed`,
+          ],
         },
         dowload_205_button: {
           text: `Download Form 205`,
@@ -201,13 +209,22 @@ export const HomePageContent = {
       },
       {
         type: `paragraph`,
-        content: `Some states, including Texas, allow certain occupations to form “Professional LLCs.” These types of business typically have specialized requirements and licensing.`,
+        content: `Some states, including Texas, allow certain occupations to form “Professional LLCs.” These types of business typically have specialized requirements and licensing. Here are the occupations that the TX Secretary of State allows to form Texas professional LLCs:`,
       },
       {
         type: `list-dot`,
         content: {
-          header: `Here are the occupations that the TX Secretary of State allows to form Texas professional LLCs:`,
-          list: [`Doctors of medicine`, `Doctors of osteopathy`, `Podiatrists`, `Mental health professionals`, `Optometrists`, `Therapeutic optometrists`, `Chiropractors`, `Dentists`, `Veterinarians`],
+          list: [
+            `Doctors of medicine`,
+            `Doctors of osteopathy`,
+            `Podiatrists`,
+            `Mental health professionals`,
+            `Optometrists`,
+            `Therapeutic optometrists`,
+            `Chiropractors`,
+            `Dentists`,
+            `Veterinarians`,
+          ],
         },
       },
       {

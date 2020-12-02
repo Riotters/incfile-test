@@ -300,7 +300,7 @@ export const list = {
                 },
                 {
                   text: `Check Order Status`,
-                  url: `${process.env.ORDER_URL}/dashboard`, 
+                  url: `${process.env.ORDER_URL}/dashboard`,
                 },
                 {
                   text: `Entity Comparison Chart`,

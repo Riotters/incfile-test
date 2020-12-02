@@ -27,7 +27,10 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="56">
         {content.text2}
       </Paragraph>
-      <LightBoxVideo thumbnailVideo="how-do-i-perform-a-business-name-search-5332" videoID="XePRillB3UE" />
+      <LightBoxVideo
+        thumbnailVideo="how-do-i-perform-a-business-name-search-5332"
+        videoID="XePRillB3UE"
+      />
     </ImageContent>
   </About>
 );

@@ -34,10 +34,18 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
+    type: `text`,
+    content: `Briefly, the benefits of starting a Missouri LLC include:`,
+    marginBottom: 24,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `Briefly, the benefits of starting a Missouri LLC include:`,
-      list: [`Separating and limiting your personal liability from your business liability and debts`, `Quick and simple filing, management, compliance, regulations and administration of your Missouri LLC`, `Easy tax filing and potential advantages for tax treatment`],
+      list: [
+        `Separating and limiting your personal liability from your business liability and debts`,
+        `Quick and simple filing, management, compliance, regulations and administration of your Missouri LLC`,
+        `Easy tax filing and potential advantages for tax treatment`,
+      ],
     },
     marginBottom: 24,
     color: color.green3,
@@ -116,13 +124,12 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `The MO Secretary of State has plenty of information on forming and running a business in Missouri.`,
+    content: `The MO Secretary of State has plenty of information on forming and running a business in Missouri. You’ll find other useful information below:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You’ll find other useful information below:`,
       list: [
         `<a href="https://www.sos.mo.gov/business/corporations" target="_blank" rel="noopener noreferrer">Missouri Secretary of State for forming and running your MO LLC</a>`,
         `<a href="https://labor.mo.gov/" target="_blank" rel="noopener noreferrer">Missouri Department of Labor for MO employers and hiring</a>`,
@@ -304,13 +311,12 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `It’s not enough for your MO LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Missouri.`,
+    content: `It’s not enough for your MO LLC name to be unique. It also cannot be similar to the name of a corporation or LLC in Missouri. For example, you cannot use the following factors to say your name is different from the name of another business:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `For example, you cannot use the following factors to say your name is different from the name of another business:`,
       list: [
         `Suffixes, such as Corporation, Company, Incorporated, Incorporation, Limited, Corp., Co., Inc., Ltd., LLC, etc.`,
         `Definite articles like “A,” “And,” “An,” “&,” “The,” etc.`,
@@ -346,7 +352,6 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `Are very similar to the name of a federal or MO agency or organization (e.g., FBI, FDA, Missouri Department of Revenue, Missouri Police, Treasury, etc.)`,
         `Suggest affiliation with a federal or state agency or organization`,
@@ -487,8 +492,12 @@ export const namingYourBusiness = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
-      list: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      list: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -544,13 +553,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a Missouri Registered Agent service for your business.`,
+    content: `There are certain rules that you must follow when you’re appointing a Missouri Registered Agent service for your business. They are:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `They are:`,
       list: [
         `If the Registered Agent is a person, they must reside in Missouri.`,
         `If the Registered Agent is a business, they must be able to conduct business in Missouri.`,
@@ -574,13 +582,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What can you expect from your Missouri Registered Agent? Their main function is to accept official documents and correspondence from the MO Secretary of State.`,
+    content: `What can you expect from your Missouri Registered Agent? Their main function is to accept official documents and correspondence from the MO Secretary of State. This includes:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `This includes:`,
       list: [
         `Correspondence from the Missouri Secretary of State`,
         `Service of process notices (e.g., if your MO LLC is sued or required to appear in court)`,
@@ -604,13 +611,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `We are authorized to conduct business in Missouri and can legally act as your Registered Agent.`,
+    content: `We are authorized to conduct business in Missouri and can legally act as your Registered Agent. Here’s what you need to know about Incfile’s MO Registered Agent service:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here’s what you need to know about Incfile’s MO Registered Agent service:`,
       list: [
         `The Registered Agent will always be available to accept documents and letters on your behalf.`,
         `We automatically notify you whenever we receive correspondence for your business from the Missouri Secretary of State or anyone else.`,
@@ -749,13 +755,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Missouri Secretary of State?`,
+    content: `What happens if you choose not to assign or provide details of a Registered Agent to the Missouri Secretary of State? There are several possible ramifications, including:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `There are several possible ramifications, including:`,
       list: [
         `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `Falling out of good standing with the Missouri Secretary of State: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -773,13 +778,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `If you have an address in Missouri, you can choose to be the Registered Agent for your LLC.`,
+    content: `If you have an address in Missouri, you can choose to be the Registered Agent for your LLC. We don’t recommend this approach as there can be some drawbacks:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `We don’t recommend this approach as there can be some drawbacks:`,
       list: [
         `The MO Registered Agent must have a physical street address in Missouri. If you’re forming an LLC outside MO, you will need to use an in-state Registered Agent.`,
         `You always need to have someone on hand during business hours at the Missouri address to sign for important documents.`,
@@ -827,9 +831,13 @@ export const registeredAgent = [
     marginBottom: 24,
   },
   {
+    type: `text`,
+    content: `You might find these resources helpful:`,
+    marginBottom: 16,
+  },
+  {
     type: `list-dot`,
     content: {
-      header: `You might find these resources helpful:`,
       list: [
         `<a href="/research-topics/registered-agent/registered-agent-function/" target="_blank">The Main Functions of a Missouri Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Missouri Registered Agent</a>`,
@@ -974,29 +982,35 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your Missouri LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Missouri, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
+    content: `Your Missouri LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Missouri, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. Permits and licenses vary based on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your Missouri LLC operates in (e.g., restaurants will need health permits)`,
         `The location of your Missouri LLC (state, county or city) (e.g., a license to conduct business from the city of St. Louis)`,
         `The type of business that you run (e.g., healthcare providers must meet HIPAA requirements)`,
       ],
     },
-    marginBottom: 16,
+    marginBottom: 24,
     color: color.yellow3,
+  },
+  {
+    type: `text`,
+    content: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
+    marginBottom: 24,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You can research these permits and licenses yourself or use Incfile’s Business License Research Package, which includes:`,
-      list: [`A complete report on all the licenses, permits and tax registrations your Missouri LLC will need`, `The application forms you will need to file with the Missouri, regional and federal licensing authorities`],
+      list: [
+        `A complete report on all the licenses, permits and tax registrations your Missouri LLC will need`,
+        `The application forms you will need to file with the Missouri, regional and federal licensing authorities`,
+      ],
     },
-    marginBottom: 16,
+    marginBottom: 24,
     color: color.yellow3,
   },
   {
@@ -1099,14 +1113,17 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your Missouri business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Missouri Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    content: `Your business formation documents state certain facts about your Missouri business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Missouri Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file Missouri Articles of Amendment for include:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Areas you might want to file Missouri Articles of Amendment for include:`,
-      list: [`Adding, removing or changing a Missouri LLC member or manager`, `Changing the business address of your LLC`, `Altering the stated business activities of your Missouri LLC`],
+      list: [
+        `Adding, removing or changing a Missouri LLC member or manager`,
+        `Changing the business address of your LLC`,
+        `Altering the stated business activities of your Missouri LLC`,
+      ],
     },
     marginBottom: 16,
     color: color.orange3,
@@ -1292,14 +1309,16 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the MO Department of Revenue. Missouri sales tax is collected at the point of purchase. Missouri sales tax rates do vary depending on the region, county or city where you are located.`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the MO Department of Revenue. Missouri sales tax is collected at the point of purchase. Missouri sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Missouri sales tax on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `You will typically need to collect Missouri sales tax on:`,
-      list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Missouri business might provide`],
+      list: [
+        `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
+        `Certain services that your Missouri business might provide`,
+      ],
     },
     marginBottom: 16,
     color: color.purple3,
@@ -1366,14 +1385,18 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.`,
+    content: `You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
-      list: [`On profits of $30,000, you would pay self-employment tax of $4,590`, `On profits of $60,000, you would pay self-employment tax of $9,180.`, `On profits of $80,000, you would pay self-employment tax of $12,240.`, `On profits of $140,000, you would pay self-employment tax of $21,420.`],
+      list: [
+        `On profits of $30,000, you would pay self-employment tax of $4,590`,
+        `On profits of $60,000, you would pay self-employment tax of $9,180.`,
+        `On profits of $80,000, you would pay self-employment tax of $12,240.`,
+        `On profits of $140,000, you would pay self-employment tax of $21,420.`,
+      ],
     },
     marginBottom: 48,
     color: color.orange3,
@@ -1485,7 +1508,11 @@ export const businessTaxes = [
               type: `list-dot-without-bg`,
               color: color.orange3,
               header: `The most common types of estimated taxes are:`,
-              content: [`Federal income tax`, `Federal self-employment tax`, `Missouri state tax`],
+              content: [
+                `Federal income tax`,
+                `Federal self-employment tax`,
+                `Missouri state tax`,
+              ],
             },
             {
               type: `paragraph`,
@@ -1531,7 +1558,12 @@ export const compare = {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
       [`Business incorporation service`, `$49`, `$149`, `$149`],
-      [`Registered Agent included in the price`, `check-green`, `check-red`, `check-red`],
+      [
+        `Registered Agent included in the price`,
+        `check-green`,
+        `check-red`,
+        `check-red`,
+      ],
     ],
   },
 };

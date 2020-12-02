@@ -35,7 +35,6 @@ export const agentPageContent = {
       type: `iconListColorBox`,
       boxColor: color.blue3,
       content: {
-        header: `They are:`,
         list: [
           `If the Registered Agent is a person, they must reside in New York`,
           `If the Registered Agent is a business, they must be able to conduct business in New York`,
@@ -58,13 +57,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `Your Registered Agent carries out several valuable services for your business. They accept official communications and documents from the NY Department of State on your behalf.`,
+      content: `Your Registered Agent carries out several valuable services for your business. They accept official communications and documents from the NY Department of State on your behalf. This includes:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.orange3,
       content: {
-        header: `This includes:`,
         list: [
           `Correspondence from the New York Department of State, such as a notice to file reports and other forms`,
           `Service of process documents (for example, if your New York LLC has legal proceedings issued against it)`,
@@ -81,13 +79,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `If you have an LLC that’s incorporated in New York and you need a Registered Agent, we can help. Incfile provides a complete Registered Agent service for any New York business. If you form your business through Incfile, we’ll act as your Registered Agent free for your first year (normally a $119 annual cost).`,
+      content: `If you have an LLC that’s incorporated in New York and you need a Registered Agent, we can help. Incfile provides a complete Registered Agent service for any New York business. If you form your business through Incfile, we’ll act as your Registered Agent free for your first year (normally a $119 annual cost). Incfile is authorized to conduct business in New York and can legally act as your Registered Agent. Here’s what the Incfile Texas Registered Agent service provides for your NY LLC.`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.purple3,
       content: {
-        header: `Incfile is authorized to conduct business in New York and can legally act as your Registered Agent. Here’s what the Incfile Texas Registered Agent service provides for your NY LLC.`,
         list: [
           `The Registered Agent will always be available to accept documents and letters on your behalf.`,
           `We automatically notify you whenever we receive correspondence for your business from the New York Department of State or anyone else.`,
@@ -229,13 +226,12 @@ export const agentPageContent = {
     },
     {
       type: `paragraph`,
-      content: `What happens if you choose not to assign or provide details of a Registered Agent to the New York Department of State?`,
+      content: `What happens if you choose not to assign or provide details of a Registered Agent to the New York Department of State? There are several possible ramifications, including:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.green3,
       content: {
-        header: `There are several possible ramifications, including:`,
         list: [
           `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
           `<b>Falling out of good standing with the New York Department of State: </b>If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
@@ -258,7 +254,6 @@ export const agentPageContent = {
       type: `iconListColorBox`,
       boxColor: color.blue3,
       content: {
-        header: ``,
         list: [
           `The Registered Agent must have a physical street address in New York. If you’re forming an LLC outside NY, you will need to use an in-state Registered Agent.`,
           `You always need to have someone on hand during business hours at the New York address to sign for important documents.`,

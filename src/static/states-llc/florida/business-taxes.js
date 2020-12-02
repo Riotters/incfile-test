@@ -74,15 +74,17 @@ export const businessTaxesPageContent = {
     },
     {
       type: `paragraph`,
-      content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the FL Department of Revenue. Florida sales tax is collected at the point of purchase. Florida sales tax rates do vary depending on the region, county or city where you are located.`,
+      content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the FL Department of Revenue. Florida sales tax is collected at the point of purchase. Florida sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Florida sales tax on:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.green3,
       styles: { margin: `56px 0` },
       content: {
-        header: `You will typically need to collect Florida sales tax on:`,
-        list: [`Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`, `Certain services that your Florida business might provide`],
+        list: [
+          `Tangible, personal property and goods that you sell like furniture, cars, electronics, appliances, books, raw materials, etc.`,
+          `Certain services that your Florida business might provide`,
+        ],
       },
     },
     {
@@ -108,15 +110,19 @@ export const businessTaxesPageContent = {
     },
     {
       type: `paragraph`,
-      content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that.`,
+      content: `Sales tax rates do vary between states, counties and cities. Typically, the state will set a base sales tax rate, then specific counties and cities may levy small additional sales tax amounts on top of that. Here are the sales tax rates for the major cities in Florida:`,
     },
     {
       type: `iconListColorBox`,
       boxColor: color.blue3,
       styles: { margin: `56px 0` },
       content: {
-        header: `Here are the sales tax rates for the major cities in Florida:`,
-        list: [`<strong>Jacksonville, FL</strong> sales tax rate is <strong>7%</strong>`, `<strong>Miami, FL</strong> sales tax rate is <strong>7%</strong>`, `<strong>Tampa, FL</strong> sales tax rate is <strong>8.5%</strong>`, `<strong>Orlando, FL</strong> sales tax rate is <strong>6.5%</strong>`],
+        list: [
+          `<strong>Jacksonville, FL</strong> sales tax rate is <strong>7%</strong>`,
+          `<strong>Miami, FL</strong> sales tax rate is <strong>7%</strong>`,
+          `<strong>Tampa, FL</strong> sales tax rate is <strong>8.5%</strong>`,
+          `<strong>Orlando, FL</strong> sales tax rate is <strong>6.5%</strong>`,
+        ],
       },
     },
 
@@ -148,7 +154,6 @@ export const businessTaxesPageContent = {
       boxColor: color.green3,
       styles: { margin: `56px 0` },
       content: {
-        header: `Here are some examples of how much self-employment tax you may need to pay, depending on your earnings:`,
         list: [
           `On profits of <strong>$30,000</strong>, you would pay self-employment tax of <strong>$4,590</strong>`,
           `On profits of <strong>$70,000</strong>, you would pay self-employment tax of <strong>$10,710</strong>`,
