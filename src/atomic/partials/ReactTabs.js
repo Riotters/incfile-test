@@ -12,6 +12,7 @@ import {Collapse} from "react-collapse";
 const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 100px;
 
 	@media (min-width: 769px) {
 		flex-direction: ${(props) => (props.layout !== "grid" ? "row" : "column")};

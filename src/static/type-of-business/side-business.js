@@ -1,4 +1,6 @@
 import {color} from "../../components/styles/colors";
+import Tab1Icon from "../../images/icons/handyman.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
 
 export const LicensesAccordionContent = {
     items: [
@@ -287,3 +289,16 @@ export const InfoCards = [
         content: "If you are working from home on the administration of your handyman business or driving a vehicle for work, check whether your existing home and auto policies cover you for work use of your home or car. If not, you should either expand your policy so you’re covered or get dedicated business insurance."
     }
 ];
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Side Business`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Is This Business For You?`
+        }
+    ]
+}

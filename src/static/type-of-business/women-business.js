@@ -1,3 +1,6 @@
+import Tab1Icon from "../../images/icons/women-business.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
+
 export const adventages2 = {
     items: [
         {
@@ -102,6 +105,19 @@ export const toolsList = {
         {
             title: "SEO",
             tools: ["SemRush", "KWFinder", "Moz", "AHREFS"]
+        }
+    ]
+}
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Business for women`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Why This Industry?`
         }
     ]
 }

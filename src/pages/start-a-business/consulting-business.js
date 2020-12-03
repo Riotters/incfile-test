@@ -457,7 +457,6 @@ const ListBox = styled.div`
 const TabsWrapper = styled.section`
 	margin-top: 120px;
 	position: relative;
-	margin-bottom: 100px;
 	@media (min-width: 992px) {
 		margin-top: 21px;
 	}

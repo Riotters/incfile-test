@@ -1,4 +1,7 @@
 import {color} from "../../components/styles/colors";
+import Tab1Icon from "../../images/icons/real-estate-business.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
+import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
 
 export const typeBusiness = {
     items: [
@@ -172,6 +175,23 @@ export const RingText = {
         {
             color: color.yellow1,
             text: "The sale and rental of residential property accounts for around 72% of real estate business income in the US."
+        }
+    ]
+}
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Real Estate Business`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Why This Industry?`
+        },
+        {
+            icon: Tab3Icon,
+            name: `Is This Business For You?`
         }
     ]
 }
