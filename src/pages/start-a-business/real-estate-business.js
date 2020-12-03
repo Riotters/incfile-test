@@ -33,6 +33,7 @@ import OvalTabsSvg from "../../images/ovals/bottom-left-transparent-pink.inline.
 import OvalTabsSvg2 from "../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import { color } from "../../atomic/atoms/styles/colors";
 import {Link} from "@reach/router";
+import { Helmet } from "react-helmet";
 
 const RealEstateBusiness = () => (
   <Layout>
@@ -324,7 +325,23 @@ const RealEstateBusiness = () => (
 
     <ToolsAndLinks />
 
-    <Rocket />
+        <Rocket />
+        
+        <Helmet>
+            <script type="application/ld+json">
+                {`{
+                    "@context": "http://schema.org",
+                    "@type": "VideoObject",
+                    "name": "How to Start a Real Estate Business by Incfile",
+                    "description": "Are you looking to get into real estate? There has been a significant spike in properties sold in the last year already, so now's a great time to start a real estate business. From quick-growth cities like Boston and Indy, to millennial meccas like Madison and Grand Rapids, there’s no shortage of real estate opportunities.   There are a few different ways to launch a money-making real estate investing business.  1) You might “flip” homes or commercial properties by buying, renovating and reselling.  2) Or you can purchase properties and rent them out — either long-term as a landlord or short-term through platforms like Airbnb and VRBO.   Whatever you choose, the real estate industry shows huge potential for entrepreneurs, as long as you stay informed of any changes in local and state economies and take the proper precautions to protect your personal assets by forming the right business entity.  We work with real estate investors every day to make financial independence possible for them. Are you next? Learn more about how to start a real estate business here: https://www.incfile.com/start-a-business/real-estate-business/",
+                    "thumbnailUrl": "https://i.ytimg.com/vi/Eef5Zuas2dQ/default.jpg",
+                    "uploadDate": "2020-07-31T17:03:39Z",
+                    "duration": "PT1M38S",
+                    "embedUrl": "https://www.youtube.com/embed/Eef5Zuas2dQ",
+                    "interactionCount": "4"
+                }`}
+            </script>
+        </Helmet>
   </Layout>
 );
 

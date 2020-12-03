@@ -32,6 +32,7 @@ import OvalSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.svg
 import { color } from "../../atomic/atoms/styles/colors";
 import {ThankYouContent} from "../../components/hubspot/thank-you-modal";
 import HSFormModal from "../../components/hubspot/standard-post-form-modal";
+import { Helmet } from "react-helmet";
 
 const ConsultingBusiness = () => {
 	const [modalVisible, setModalVisible] = React.useState(false);
@@ -435,6 +436,24 @@ const ConsultingBusiness = () => {
 					{formSubmitted && <ThankYouContent modalExit={popup}/>}
 				</LightBoxContent>
 			</LightBoxModal>
+
+
+            <Helmet>
+                <script type="application/ld+json">
+                    {`{
+                        "@context": "http://schema.org",
+                        "@type": "VideoObject",
+                        "name": "How to Start a Consulting Business by Incfile",
+                        "description": "When launching your own consulting business, your expertise is the highlighted product you’re selling. Here’s a step-by-step plan to help you level up your consulting game and create a successful business:  1) Create a Business Plan You’ll need a laser-focused business plan that builds a reputation for your       services and ensures you can grow with your business. Take professional help if required but have a proper plan in place before you start.   2) Figure Out Your Finances You’re going to need cash to survive getting your first client, or three. So, do some calculations and make sure you have enough in the bank to make ends meet.  3) Hire, if Necessary Think you’ll need a team? Sometimes it’s better to start out solo, but sometimes you’ll need a team. Take additional help if required.   4) Form a Business Entity Forming a business entity is huge when it comes to protecting yourself from financial and legal liabilities. Consider creating a $0 LLC with Incfile to simplify your finances during tax time.   5) Decide if You’re Remote or Need an Office Many consultants have the ability to work from their computer or phone without a physical office. But, if you’re going to be hiring a team and launching an agency, you might decide to be fully remote or rent an office.   6) Market, Market, Market The key is to reach people in the spaces that they already hold, like social media. Start marketing where your audience is most likely to be present and continue putting efforts in that direction.   For more specifics, check out Incfile's helpful tools and guides:  - A Free Downloadable Guide to Starting a Consulting Business: http://info.incfile.com/download-how-to-start-a-consulting-business  - Stats and Tips for Starting a Consulting Business: https://www.incfile.com/start-a-business/consulting-business/ - Form Your LLC for Free: https://www.incfile.com",
+                        "thumbnailUrl": "https://i.ytimg.com/vi/xAihjHQWaZk/default.jpg",
+                        "uploadDate": "2020-10-22T22:02:41Z",
+                        "duration": "PT1M46S",
+                        "embedUrl": "https://www.youtube.com/embed/xAihjHQWaZk",
+                        "interactionCount": "0"
+                    }`}
+                </script>
+            </Helmet>
+
 		</Layout>
 	);
 };
