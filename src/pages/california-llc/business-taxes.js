@@ -15,6 +15,7 @@ import Rocket from "../../atomic/sections/rocket";
 // Content
 import { businessTaxesPageContent } from "../../static/states-llc/california/business-taxes";
 import { tabPages, rocket } from "../../static/states-llc/california/general";
+import { Helmet } from "react-helmet";
 
 const Wrapper = styled.div`
   display: flex;
@@ -56,7 +57,15 @@ const CaliforniaBusinessTaxes = () => (
       </Wrapper>
     </WrapperContent>
 
-    <Rocket url="?entityType=LLC&entityState=CA" />
+        <Rocket url="?entityType=LLC&entityState=CA" />
+        
+        <Helmet>
+            <script type="application/ld+json">
+                {`{
+                    "@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does California Have Sales Tax?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. California does have a sales tax, which may vary among cities and counties. You can find more information above.</p>"}},{"@type":"Question","name":"Does Florida Have a State Tax?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. California does have a general state income tax. You can find more information above.</p>"}},{"@type":"Question","name":"What Is the Sales Tax Rate in California?","acceptedAnswer":{"@type":"Answer","text":"<p>We have listed common sales tax rates in California cities above.</p>"}},{"@type":"Question","name":"Do I Need to Pay Estimated Taxes?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. In most cases you must pay estimated taxes on your California tax, federal income tax and self-employment tax. Speak to your accountant for more information.</p>"}}]
+                }`}
+            </script>
+        </Helmet>
   </Layout>
 );
 

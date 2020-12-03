@@ -41,21 +41,21 @@ const Wrapper = styled.div`
 `;
 
 const GeorgiaBusinessTaxes = () => (
-  <Layout>
-    <SEO title="Georgia Business & Sales Taxes | Incfile.com" description="Do you have an Georgia LLC? Learn about the required federal, state, and sales taxes you might need to pay. Read more." />
+    <Layout>
+        <SEO title="Georgia Business & Sales Taxes | Incfile.com" description="Do you have an Georgia LLC? Learn about the required federal, state, and sales taxes you might need to pay. Read more." />
 
-    <LinearBgHeader imageMapName="tx-map-2x">
-      <ContentHeader content={businessTaxesPageContent.header} />
-    </LinearBgHeader>
+        <LinearBgHeader imageMapName="tx-map-2x">
+            <ContentHeader content={businessTaxesPageContent.header} />
+        </LinearBgHeader>
 
-    <WrapperContent>
-      <Wrapper>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-          <BusinessTaxesSection content={businessTaxesPageContent.content} />
-        </MainPageContent>
-      </Wrapper>
-    </WrapperContent>
+        <WrapperContent>
+            <Wrapper>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <BusinessTaxesSection content={businessTaxesPageContent.content} />
+                </MainPageContent>
+            </Wrapper>
+        </WrapperContent>
 
         <Rocket url="?entityType=LLC&entityState=GA" />
         
@@ -66,7 +66,7 @@ const GeorgiaBusinessTaxes = () => (
                 }`}
             </script>
         </Helmet>
-  </Layout>
+    </Layout>
 );
 
 export default GeorgiaBusinessTaxes;
