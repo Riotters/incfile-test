@@ -2,27 +2,21 @@ import React from "react";
 import styled from "styled-components";
 import Container from "../../container";
 import Image from "../../atoms/image/image_nobase64";
-import OvalSVG from "../../../images/ovals/top-right-orange1-to-transparent.inline.svg";
+import Oval from "../../atoms/icons/oval";
+import OvalSVG from "../../../images/ovals/top-left-orange-transparent.inline.svg";
+import OvalSVG2 from "../../../images/ovals/top-right-transparent-orange.inline.svg";
+import Curve from "../../atoms/icons/curve";
+import CurveSVG from "../../../images/curves/top-left-right-orange2-big.inline.svg";
 import { color } from "../../atoms/styles/colors";
+import { Heading } from "../../atoms/typography/heading";
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
 	padding: 60px 0;
 	position: relative;
 	background-color: ${color.orange3};
-
+	overflow: hidden;
 	@media (min-width: 576px) {
 		padding: 16px 0 56px;
-	}
-`;
-
-const Iconbox = styled.div`
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-
-	svg {
-		height: 100%;
 	}
 `;
 
@@ -58,10 +52,6 @@ const Content = styled.div`
 			text-align: left;
 		}
 	}
-
-	h2 {
-		padding-bottom: 40px;
-	}
 `;
 
 const Imagebox = styled.div`
@@ -82,13 +72,36 @@ const Imagebox = styled.div`
 const Conclusion = ({ content }) => {
 	return (
 		<Wrapper>
-			<Iconbox>
+			<Oval
+				className="oval"
+				height="420"
+				width="420"
+				top="0"
+				left="0"
+				zIndex="0"
+			>
 				<OvalSVG />
-			</Iconbox>
+			</Oval>
+			<Oval
+				className="oval"
+				height="570"
+				width="570"
+				top="12"
+				right="0"
+				zIndex="0"
+				x="30"
+			>
+				<OvalSVG2 />
+			</Oval>
 			<Container>
 				<Flex>
 					<Content>
-						<h2>{content.header}</h2>
+						<Heading size="2" bottomMargin="40" relative>
+							<Curve top="-115" left="-95" rotate={-8}>
+								<CurveSVG />
+							</Curve>
+							{content.header}
+						</Heading>
 						<p>{content.text}</p>
 					</Content>
 					<Imagebox>

@@ -37,8 +37,6 @@ import Curve2SVG from "../images/curves/bottom-left-top-right-reverse-big.inline
 import Curve from "../atomic/atoms/icons/curve";
 import PacketsSection from "../atomic/sections/learning-center-entity/alaska-corporation/packets";
 import Accordion from "../atomic/organisms/accordion/accordion";
-import Adventages from "../components/adventages";
-import Container from "../atomic/container";
 import Rocket from "../atomic/sections/learning-center-entity/alaska-corporation/rocket";
 import Colorbox from "../atomic/molecules/blocks/left-icon-block-colored";
 import FilingTimeAndPriceBox from '../atomic/state-corporation/filing-time-and-price-box';
@@ -282,10 +280,6 @@ const AlaskaCorporation = () => {
     );
 }
 
-const InfoSection = styled.section`
-  margin-bottom: 148px;
-`;
-
 const QuestionSection = styled.section`
   background-image: ${gradient.orange3};
   position: relative;
@@ -293,8 +287,6 @@ const QuestionSection = styled.section`
   margin-top: 52px;
   margin-bottom: 148px;
 `;
-
-const PackageSection = styled.section``;
 
 const ServiceSection = styled.section`
   background-image: ${gradient.blue3};
@@ -311,25 +303,6 @@ const TabsWrapper = styled.section`
   @media (min-width: 992px) {
     margin-top: 21px;
   }
-`;
-
-const AdventagesBox = styled.div`
-  display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 100%;
-    justify-content: center;
-    column-gap: 30px;
-    row-gap: 20px;
-    margin-top: 76px;
-    margin-bottom 76px; 
-    
-    @media (min-width: 490px){
-        grid-template-columns: 470px;
-    }
-    
-    @media (min-width: 992px){
-        grid-template-columns: 470px 470px;
-    }
 `;
 
 export default AlaskaCorporation;

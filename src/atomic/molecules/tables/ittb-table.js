@@ -9,23 +9,15 @@ const Wrapper = styled.div`
 	width: 100%;
 	max-width: 970px;
 	position: relative;
-	margin-bottom: ${(props) =>
-		props.bottomMargin ? `${props.bottomMargin}px` : ""};
 
 	.table-head,
 	.table-row {
-		grid-template-columns: 50% 50%;
-		grid-template-areas:
-			"header header"
-			"col1 col2";
-
 		@media (min-width: 769px) {
-			grid-template-columns: 33.33% 33.33% 33.33%;
-			grid-template-areas: "header col1 col2";
+			grid-template-columns: 33.33% 66.67%;
 		}
 
 		@media (min-width: 992px) {
-			grid-template-columns: 33.33% 33.33% 33.33%;
+			grid-template-columns: 33.33% 66.67%;
 		}
 
 		& > div {
@@ -33,19 +25,8 @@ const Wrapper = styled.div`
 			align-items: flex-start;
 			min-width: 122px;
 
-			&:nth-child(1) {
-				grid-area: header;
-			}
-			&:nth-child(2) {
-				grid-area: col1;
-			}
-			&:nth-child(3) {
-				grid-area: col2;
-			}
-
 			p {
 				text-align: left;
-				color: ${color.black};
 
 				span {
 					font-weight: normal;
@@ -76,34 +57,28 @@ const Wrapper = styled.div`
 
 	.table-head {
 		& > div {
-			align-items: flex-end;
-
-			&:nth-child(2),
-			&:nth-child(3) {
-				justify-content: center;
+			p {
+				color: ${color.black};
 			}
 		}
 	}
 
 	.table-row {
 		& > div {
-			&:first-child {
-				p {
-					font-weight: bold;
-				}
+			p {
+				color: ${color.grey1};
 			}
 		}
 	}
 `;
 
-const IncfileVsCompareTableA = ({ className, content }) => (
-	<Wrapper className={className} bottomMargin={content.bottomMargin}>
+const ITTBTable = ({ className, content }) => (
+	<Wrapper className={className}>
 		<GridTableRow
 			className="table-head"
 			content={content.headers}
 			header
 			headerSize="5"
-			badge={content.badge}
 		/>
 		{content.rows.map((row) => (
 			<GridTableRow className="table-row" content={row} />
@@ -111,4 +86,4 @@ const IncfileVsCompareTableA = ({ className, content }) => (
 	</Wrapper>
 );
 
-export default IncfileVsCompareTableA;
+export default ITTBTable;
