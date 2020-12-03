@@ -3,7 +3,7 @@ import parse from "html-react-parser";
 import SEO from "../../components/seo";
 import Top from "../../atomic/partials/top";
 import Layout from "../../components/layout";
-import { top, opinions, choose } from "../../static/form/page";
+import { top, opinions, choose, care } from "../../static/form/page";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
@@ -15,6 +15,7 @@ import Selections from "../../atomic/sections/incfile-vs/selections";
 import Rocket from "../../atomic/sections/rocket";
 import Opinions from "../../atomic/sections/form/opinions";
 import Choose from "../../atomic/sections/form/choose";
+import Care from "../../atomic/sections/form/care";
 import { setup } from "../../static/manage-your-company/home-page-v3";
 const IncfileVsLegalzoom = () => {
 	return (
@@ -45,6 +46,7 @@ const IncfileVsLegalzoom = () => {
 			</Top>
 			<Opinions content={opinions} />
 			<Choose content={choose} />
+			<Care content={care} />
 			<Rocket />
 		</Layout>
 	);

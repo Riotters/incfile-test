@@ -60,3 +60,32 @@ export const choose = {
 		},
 	],
 };
+
+export const care = {
+	header: `We Take Care<br>Of Everything For You!`,
+	text: `There's a reason over <span>250,000</span> businesses have started with incfile.
+    We include many amazing benefits with all packages.`,
+	list: [
+		`Company name verification`,
+		`Next business day processing`,
+		`Free first year registered agent`,
+		`Lifetime company alerts`,
+		`Preparation and filing of articles`,
+		`Online order status tracking`,
+		`Free business tax consult and lifetime customer support`,
+	],
+	cards: [
+		{
+			text: `I am very satisfied with the services I received from Incfile. My business has been using this service for 3 years, keeping me updated on all facets pertaining 
+            to business.`,
+			author: `Martin G`,
+			state: `Los Angeles, CA`,
+		},
+		{
+			text: `Everyone at IncFile has been first class and quick to respond to my service needs. 
+            I appreciate you going above and beyond and taking the time to educate me.`,
+			author: `Tim A`,
+			state: `Florida, FL`,
+		},
+	],
+};
