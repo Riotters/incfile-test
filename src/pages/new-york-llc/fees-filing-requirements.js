@@ -16,6 +16,7 @@ import FeeFilingRequirementSection from "../../atomic/states-llc/new-york/fee-fi
 import { filingFeeAndRequirementContent } from "../../static/states-llc/new-york/filingFeeAndRequirement";
 import { tabPages, rocket } from "../../static/states-llc/new-york/general";
 import { getFullPricesAndFilings } from '../../api/Api';
+import { Helmet } from "react-helmet";
 
 
 const Wrapper = styled.div`
@@ -68,6 +69,15 @@ const FilingFeeAndRequirementPage = () => {
             </WrapperContent>
 
             <Rocket url="?entityType=LLC&entityState=NY" />
+
+            <Helmet>
+                <script type="application/ld+json">
+                    {`{
+                        "@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What Happens to the State Fees That I Am Charged When Forming My New York LLC?","acceptedAnswer":{"@type":"Answer","text":"<p>We charge you for this fee at cost and then pay the fee to the secretary of state on your behalf when forming your New York business.</p>"}},{"@type":"Question","name":"Do I Need to Pay an Annual Report Fee Every Year?","acceptedAnswer":{"@type":"Answer","text":"<p>Usually, yes. Most states require you file a report for your LLC every year. Some states require filing biennially (every other year), though a handful don’t require annual reports. You can find out more on the <a href='https://www.incfile.com/compliance-filing-requirement/'>compliance page for your state.</a></p>"}},{"@type":"Question","name":"Who Will I Need to Get Business Licenses and Permits From for My New York LLC?","acceptedAnswer":{"@type":"Answer",
+                        "text":"<p>It depends on various factors including:</p><ul>    <li>The type of business you run</li>    <li>Where you are located</li>    <li>Governing organizations in your industry</li>    <li>Federal, state and local regulations</li></ul><p>That’s why our <a href='https://www.incfile.com/business-license-research-package/'>business license research package</a> is so useful. It explores all of these areas for you and provides a comprehensive overview of exactly what your New York LLC needs to be compliant.</p>"}}]
+                    }`}
+                </script>
+            </Helmet>
         </Layout>
     );
 }
