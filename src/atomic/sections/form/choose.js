@@ -24,9 +24,13 @@ const Choose = styled.section`
 
 const Grid = styled.div`
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 100%;
 	grid-gap: 30px;
 	padding: 56px 0 100px;
+
+	@media (min-width: 992px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
 
 	& > div {
 		h4,
@@ -34,19 +38,21 @@ const Grid = styled.div`
 			text-align: center;
 		}
 
-		&:first-child {
-			border-radius: 50px 5px 5px 50px;
+		@media (min-width: 992px) {
+			&:first-child {
+				border-radius: 50px 5px 5px 50px;
 
-			.top {
-				border-radius: 35px 5px 5px 5px;
+				.top {
+					border-radius: 35px 5px 5px 5px;
+				}
 			}
-		}
 
-		&:last-child {
-			border-radius: 5px 50px 50px 5px;
+			&:last-child {
+				border-radius: 5px 50px 50px 5px;
 
-			.top {
-				border-radius: 5px 35px 5px 5px;
+				.top {
+					border-radius: 5px 35px 5px 5px;
+				}
 			}
 		}
 	}

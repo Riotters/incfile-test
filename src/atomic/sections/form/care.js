@@ -61,8 +61,14 @@ const Care = styled.section`
 
 const Grid = styled.div`
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 100%;
 	grid-gap: 30px;
+	padding-top: 128px;
+	padding-bottom: 64px;
+
+	@media (min-width: 769px) {
+		grid-template-columns: 1fr 1fr;
+	}
 `;
 
 const CareSection = ({ className, content }) => (

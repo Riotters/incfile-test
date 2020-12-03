@@ -17,6 +17,7 @@ import Opinions from "../../atomic/sections/form/opinions";
 import Choose from "../../atomic/sections/form/choose";
 import Care from "../../atomic/sections/form/care";
 import { setup } from "../../static/manage-your-company/home-page-v3";
+import ButtonVideo from "../../atomic/molecules/buttons/button-video";
 const IncfileVsLegalzoom = () => {
 	return (
 		<Layout>
@@ -36,8 +37,13 @@ const IncfileVsLegalzoom = () => {
 				<h1>{top.header}</h1>
 				<p>{parse(top.text)}</p>
 				<Buttonsbox>
-					<Button content={top.buttons[0]} theme="primary56" arrow />
-					<Button content={top.buttons[1]} theme="secondary56" arrow />
+					<Button
+						content={top.buttons[0]}
+						theme="primary56"
+						arrow
+						margin="0 0 32px 0"
+					/>
+					<ButtonVideo videoID="372490609" vimeo />
 				</Buttonsbox>
 				<RatingRow topMargin="0">
 					<CartBlock />
@@ -47,7 +53,7 @@ const IncfileVsLegalzoom = () => {
 			<Opinions content={opinions} />
 			<Choose content={choose} />
 			<Care content={care} />
-			<Rocket />
+			<Rocket textButton="launch your business" />
 		</Layout>
 	);
 };

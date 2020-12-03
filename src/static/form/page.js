@@ -8,11 +8,15 @@ export const top = {
 	buttons: [
 		{
 			text: "Get Started",
-			url: `${process.env.ORDER_URL}/kit-info.php`,
+			url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=`,
 		},
 		{
 			text: "Watch Video",
 			url: `${process.env.ORDER_URL}/kit-info.php`,
+		},
+		{
+			text: "Watch Video",
+			url: `/`,
 		},
 	],
 };
@@ -63,7 +67,7 @@ export const choose = {
 
 export const care = {
 	header: `We Take Care<br>Of Everything For You!`,
-	text: `There's a reason over <span>250,000</span> businesses have started with incfile.
+	text: `There's a reason over <span>500,000</span> businesses have started with incfile.
     We include many amazing benefits with all packages.`,
 	list: [
 		`Company name verification`,
