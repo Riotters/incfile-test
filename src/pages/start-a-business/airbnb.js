@@ -37,6 +37,10 @@ import TabsOvalOneSvg from "../../images/ovals/bottom-right-transparent-babyblue
 import TabsOvalTwoSvg from "../../images/ovals/bottom-right-transparent-green3.inline.svg";
 import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block";
 import CircleSvg from "../../images/circle-percentage.inline.svg";
+import ReactTabs from "../../atomic/partials/ReactTabs";
+import {tabs} from "../../static/type-of-business/airbnb";
+import {TabPanel} from "react-tabs";
+import {Panel} from "@bumaga/tabs";
 
 const Airbnb = () => (
   <Layout>
@@ -64,14 +68,9 @@ const Airbnb = () => (
         <TabsOvalTwoSvg />
       </TabOvalTwo>
 
-      <TabsSection>
-        <TabHeading>
-          <TabTitle title="Airbnb Business" SvgIcon={OverviewSVG} />
-          <TabTitle title="Why This Industry" SvgIcon={LightIcon} />
-          <TabTitle title="Is This Business For You?" SvgIcon={CalcIcon} />
-        </TabHeading>
+      <ReactTabs content={tabs}>
 
-        <CollapseWrapper>
+        <TabPanel>
           <PanelWrapper>
             <Heading size={3} style={{ marginBottom: "24px" }}>
               Starting an Airbnb Business
@@ -142,7 +141,9 @@ const Airbnb = () => (
               </ListBox>
             </ListWrapper>
           </PanelWrapper>
+        </TabPanel>
 
+        <TabPanel>
           <PanelWrapper>
             <Heading size={2} style={{ fontSize: "24px", textAlign: "left" }}>
               Why You Should Start a New Airbnb Business
@@ -171,7 +172,9 @@ const Airbnb = () => (
               This is why Airbnb businesses are so exciting — how can you be a part of that success? We're here to help you figure that out.
             </Paragraph>
           </PanelWrapper>
+        </TabPanel>
 
+        <TabPanel>
           <PanelWrapper>
             <Heading size={3} style={{ fontSize: "24px", marginBottom: "24px" }}>
               Is Running an Airbnb Right for You?
@@ -274,9 +277,10 @@ const Airbnb = () => (
             <Adventages headline="Easy access to the property" width="100%" />
 
             <Adventages headline="Important information like contact details, good local restaurants, transit stops, emergency service numbers, etc." width="100%" />
+
           </PanelWrapper>
-        </CollapseWrapper>
-      </TabsSection>
+        </TabPanel>
+      </ReactTabs>
     </TabsWrapper>
 
     <BlueContainer />

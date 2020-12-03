@@ -1,4 +1,7 @@
 import {color} from "../../components/styles/colors";
+import Tab1Icon from "../../images/icons/airbnb.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
+import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
 
 export const InfoCards = {
     title: `Insurance for Your Airbnb Business`,
@@ -132,4 +135,22 @@ export const adventages = {
         },
     ]
 };
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Airbnb Business`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Why This Industry`
+        },
+        {
+            icon: Tab3Icon,
+            name: `Is This Business For You?`
+        },
+    ]
+}
+
 
