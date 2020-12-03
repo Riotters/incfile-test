@@ -76,16 +76,16 @@ const SCorporation = () => {
                 <script type="application/ld+json">{`
                 {
                     "@context": "http://schema.org",
-                "@type": "VideoObject",
-                "name": "What is an S Corp? by Incfile",
-                "description": "Paying taxes is unavoidable, but there’s a way to minimize your tax burden — with an S Corp.  Here’s how it works. “S Corporation” is a tax status granted by the IRS. Once a corporation elects to be an S Corp, income and losses pass through to shareholders and are reported on each person’s tax return. So instead of both the corporation and shareholders paying taxes, they are only paid one time, by the shareholders.  Electing to be taxes as an S Corporation requires you to fill out form 2553—but before you do that, double check the rules for S Corps:   - S Corps can’t have more than 100 shareholders. - All shareholders must be individual people. - Shareholders must be U.S. citizens or residents. - Stock must be only one class.  The timing to file an S Corp election can be tricky, but you can take Incfile’s help if you’re not sure of doing it yourself. Learn more at https://www.incfile.com/llc-s-corp-election/  Other Helpful Resources:  - Learn more about the pros and cons of S Corporations: https://www.incfile.com/what-is-s-corporation/ - Calculate your tax savings an S Corp with Incfile's S Corp Tax Calculator: https://www.incfile.com/s-corporation-tax-calculator/ - Get help from an accountant to figure out if an S Corp election is right for your business: https://www.incfile.com/business-accounting/",
-                "thumbnailUrl": "https://i.ytimg.com/vi/fAlXeIWEoT0/default.jpg",
-                "uploadDate": "2020-10-03T17:42:43Z",
-                "duration": "PT1M3S",
-                "embedUrl": "https://www.youtube.com/embed/fAlXeIWEoT0",
-                "interactionCount": "15"
-                }
-            `}</script>
+                    "@type": "VideoObject",
+                    "name": "What is an S Corp? by Incfile",
+                    "description": "Paying taxes is unavoidable, but there’s a way to minimize your tax burden — with an S Corp.  Here’s how it works. “S Corporation” is a tax status granted by the IRS. Once a corporation elects to be an S Corp, income and losses pass through to shareholders and are reported on each person’s tax return. So instead of both the corporation and shareholders paying taxes, they are only paid one time, by the shareholders.  Electing to be taxes as an S Corporation requires you to fill out form 2553—but before you do that, double check the rules for S Corps:   - S Corps can’t have more than 100 shareholders. - All shareholders must be individual people. - Shareholders must be U.S. citizens or residents. - Stock must be only one class.  The timing to file an S Corp election can be tricky, but you can take Incfile’s help if you’re not sure of doing it yourself. Learn more at https://www.incfile.com/llc-s-corp-election/  Other Helpful Resources:  - Learn more about the pros and cons of S Corporations: https://www.incfile.com/what-is-s-corporation/ - Calculate your tax savings an S Corp with Incfile's S Corp Tax Calculator: https://www.incfile.com/s-corporation-tax-calculator/ - Get help from an accountant to figure out if an S Corp election is right for your business: https://www.incfile.com/business-accounting/",
+                    "thumbnailUrl": "https://i.ytimg.com/vi/fAlXeIWEoT0/default.jpg",
+                    "uploadDate": "2020-10-03T17:42:43Z",
+                    "duration": "PT1M3S",
+                    "embedUrl": "https://www.youtube.com/embed/fAlXeIWEoT0",
+                    "interactionCount": "15"
+                    }
+                `}</script>
             </Helmet>
 
             <LightBoxModal visible={modalVisible}>

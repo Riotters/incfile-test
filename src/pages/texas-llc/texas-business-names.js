@@ -15,6 +15,7 @@ import BusinessNames from "../../atomic/states-llc/texas/business-names";
 // Content
 import { businessNamesContent } from "../../static/states-llc/texas/business-names";
 import { tabPages, rocket } from "../../static/states-llc/texas/general";
+import { Helmet } from "react-helmet";
 
 const Wrapper = styled.div`
   display: flex;
@@ -56,7 +57,15 @@ const TexasBusinessNames = () => (
       </Wrapper>
     </WrapperContent>
 
-    <Rocket url="?entityType=LLC&entityState=TX" />
+        <Rocket url="?entityType=LLC&entityState=TX" />
+        
+        <Helmet>
+            <script type="application/ld+json">{`
+                {
+                    "@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How Do I Search for My Texas LLC Business Name?","acceptedAnswer":{"@type":"Answer","text":"<p>Just go to the <a href='https://mycpa.cpa.state.tx.us/coa/Index.html' target='_blank'>business name search tool</a> and enter your proposed business name. You can search the register of the Texas Secretary of State, which will tell you if there are any TX corporations or LLCs with that name.</p>"}},{"@type":"Question","name":"Are There Any Rules on Naming My Texas LLC?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. Most LLCs will be bound by general rules (applicable to all LLCs) and specific rules (applicable in the state of Texas). We’ve detailed these rules above.</p>"}},{"@type":"Question","name":"Can I Do Business Under a Different Name Than My LLC Name in Texas?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. Known as “assumed names,” “fictitious names,” “doing business as names” or “trade names,” you can choose to conduct business under a different name. Details are above.</p>"}},{"@type":"Question","name":"Can I Reserve a Name for My Texas LLC?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. The Texas Secretary of State allows you to reserve a name if you don’t want to start your business immediately. Details are above. If you are ready to start your business now, you do not need to reserve a name.</p>"}}]
+                }
+            `}</script>
+        </Helmet>
   </Layout>
 );
 

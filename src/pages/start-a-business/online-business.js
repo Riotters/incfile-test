@@ -32,6 +32,7 @@ import LightBox from "../../components/LightBox";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import {tabs} from "../../static/type-of-business/online-business";
 import {TabPanel} from "react-tabs";
+import { Helmet } from "react-helmet";
 
 const OnlineBusiness = () => (
     <Layout>
@@ -170,6 +171,22 @@ const OnlineBusiness = () => (
                 niche, understand your competitors and put together a solid business plan, you will have every chance
                 for success</Paragraph>
         </Conclusion>
+
+        <Helmet>
+        <script type="application/ld+json">
+                {`{
+                    "@context": "http://schema.org",
+                    "@type": "VideoObject",
+                    "name": "How to Start an Online Business by Incfile",
+                    "description": "All right — we hear you’re ready to set up the next big online business. But how do you get started? We'll walk you through the important steps to forming an online business and make it successful.   Step 1: Validate Your Online Business Idea Be sure your business idea is unique and that you’ve researched and vetted your idea.  Step 2: Conduct Market Research Find out if there’s demand for your product or service  Step 3: Pick a Unique Business Name You'll want to conduct a business name search (Incfile has a free name search tool for your state here: https://www.incfile.com/business-name-search) to make sure your chosen business name is legally available.   Step 4: Set up Your Digital Presence  You'll need to check to see if someone already owns the URL you want, and you'll want to check for available account handles on popular social media networks, like Facebook, Instagram, and Twitter.   Step 5: Figure Out Product or Service Logistics Make sure you know what kind of products or services you'll offer, and how you'll deliver them to clients.   Step 6: Research your customers and competitors  What do your ideal customers want from you? Where do they spend their time online? How will you solve their problems?   Step 7: Make it official with Incfile’s $0 LLC formation Don’t forget that until your business is filed as an LLC or a corporation, your personal assets are at risk. Make it official by securing your LLC with Incfile today for free at https://www.incfile.com/free-llc/   Resources: Free LLC Filing: https://www.incfile.com/free-llc/ Business Name Search Tool: https://www.incfile.com/business-name-search",
+                    "thumbnailUrl": "https://i.ytimg.com/vi/zQGomf4mwFA/default.jpg",
+                    "uploadDate": "2020-08-13T18:55:52Z",
+                    "duration": "PT1M38S",
+                    "embedUrl": "https://www.youtube.com/embed/zQGomf4mwFA",
+                    "interactionCount": "17"
+                }`}
+            </script>
+        </Helmet>
     </Layout>
 );
 

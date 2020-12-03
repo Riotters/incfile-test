@@ -15,6 +15,7 @@ import Rocket from "../../atomic/sections/rocket";
 // Content
 import { businessTaxesPageContent } from "../../static/states-llc/illinois/business-taxes";
 import { tabPages, rocket } from "../../static/states-llc/illinois/general";
+import { Helmet } from "react-helmet";
 
 const Wrapper = styled.div`
   display: flex;
@@ -56,7 +57,15 @@ const IllinoisBusinessTaxes = () => (
       </Wrapper>
     </WrapperContent>
 
-    <Rocket url="?entityType=LLC&entityState=IL" />
+        <Rocket url="?entityType=LLC&entityState=IL" />
+        
+        <Helmet>
+            <script type="application/ld+json">
+                {`{
+                    "@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Illinois Have Sales Tax?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. Illinois does have a sales tax, which may vary among cities and counties. You can find more information above.</p>"}},{"@type":"Question","name":"Does Illinois Have a State Tax?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. Illinois does have a general state income tax. You can find more information above.</p>"}},{"@type":"Question","name":"What Is the Sales Tax Rate in Illinois?","acceptedAnswer":{"@type":"Answer","text":"<p>We have listed common sales tax rates in Illinois cities above.</p>"}},{"@type":"Question","name":"Do I Need to Pay Estimated Taxes?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. In most cases you must pay estimated taxes on your Illinois tax, federal income tax and self-employment tax. Speak to your accountant for more information.</p>"}}]
+                }`}
+            </script>
+        </Helmet>
   </Layout>
 );
 

@@ -19,6 +19,12 @@ export const agentPageContent = {
     {
       type: `paragraph`,
       content: `A New York Registered Agent provides various services for your LLC, including the acceptance of formal documents and correspondence from the New York Department of State. You will appoint a Registered Agent when you first start your business — you can change this Registered Agent later, but your LLC must have a New York Registered Agent at all times.`,
+      },
+      
+      {
+        type: `video`,
+        videoID: `wSsZAvrT-IU`,
+        videoThumb: `what-is-a-registered-agent-7199`
     },
 
     // Rules for agents

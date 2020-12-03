@@ -73,18 +73,18 @@ function GeorgiaLLCIndex() {
 
       <Helmet>
         <script type="application/ld+json">{`
-                    {
-                        "@context": "http://schema.org",
-                        "@type": "VideoObject",
-                        "name": "Forming an LLC in Georgia by Incfile",
-                        "description": "Starting an LLC in Georgia is the quickest way to create a new business. An LLC, or limited liability company, will protect you from financial and legal liabilities that could otherwise sink your ship before you even sail.  Top brands like Coca-Cola, The Home Depot and UPS have all chosen Georgia to be their headquarters. If you’re only as good as the company you keep, it would be pretty hard to lose in the “Empire State of the South.” Luckily, forming an LLC in Georgia is a breeze. The paperwork is minimal and you still get all the legal protections of a big corporation.  Steps to Starting an LLC in Georgia: 1) To begin with, make sure you’ve got the names of all your business partners as well as their addresses.  2) Next, pick a name for your LLC that’s unique to your business. Incfile offers a business name search tool that can help you find a name that’s legally available.   3) Every LLC in Georgia must have a Registered Agent who receives all your official business documents. You can be your own Registered Agent or pick an individual you trust. In fact, when you create an LLC with Incfile, you get one full year of Registered Agent service for free!   4) Next, you’ll need to apply for an EIN. This is used to identify your business when you pay taxes and your employees.  5) Finally, file your Articles of Organization with the Georgia Secretary of State to make your business official.  Let Incfile be your guide to setting up shop in the Peach State. We can help you find a Registered Agent, apply for an EIN and even file your Articles of Organization.   Links:  https://www.incfile.com/business-name-search/ https://www.incfile.com/manage-your-company/registered-agent/  https://www.incfile.com/manage-your-company/tax-id-ein/ https://www.incfile.com/ https://www.incfile.com/manage-your-company/",
-                        "thumbnailUrl": "https://i.ytimg.com/vi/teObxHzLcxE/default.jpg",
-                        "uploadDate": "2020-09-07T16:42:51Z",
-                        "duration": "PT1M36S",
-                        "embedUrl": "https://www.youtube.com/embed/teObxHzLcxE",
-                        "interactionCount": "9"
-                    }
-                `}</script>
+            {
+                "@context": "http://schema.org",
+                "@type": "VideoObject",
+                "name": "Forming an LLC in Georgia by Incfile",
+                "description": "Starting an LLC in Georgia is the quickest way to create a new business. An LLC, or limited liability company, will protect you from financial and legal liabilities that could otherwise sink your ship before you even sail.  Top brands like Coca-Cola, The Home Depot and UPS have all chosen Georgia to be their headquarters. If you’re only as good as the company you keep, it would be pretty hard to lose in the “Empire State of the South.” Luckily, forming an LLC in Georgia is a breeze. The paperwork is minimal and you still get all the legal protections of a big corporation.  Steps to Starting an LLC in Georgia: 1) To begin with, make sure you’ve got the names of all your business partners as well as their addresses.  2) Next, pick a name for your LLC that’s unique to your business. Incfile offers a business name search tool that can help you find a name that’s legally available.   3) Every LLC in Georgia must have a Registered Agent who receives all your official business documents. You can be your own Registered Agent or pick an individual you trust. In fact, when you create an LLC with Incfile, you get one full year of Registered Agent service for free!   4) Next, you’ll need to apply for an EIN. This is used to identify your business when you pay taxes and your employees.  5) Finally, file your Articles of Organization with the Georgia Secretary of State to make your business official.  Let Incfile be your guide to setting up shop in the Peach State. We can help you find a Registered Agent, apply for an EIN and even file your Articles of Organization.   Links:  https://www.incfile.com/business-name-search/ https://www.incfile.com/manage-your-company/registered-agent/  https://www.incfile.com/manage-your-company/tax-id-ein/ https://www.incfile.com/ https://www.incfile.com/manage-your-company/",
+                "thumbnailUrl": "https://i.ytimg.com/vi/teObxHzLcxE/default.jpg",
+                "uploadDate": "2020-09-07T16:42:51Z",
+                "duration": "PT1M36S",
+                "embedUrl": "https://www.youtube.com/embed/teObxHzLcxE",
+                "interactionCount": "9"
+            }
+        `}</script>
       </Helmet>
     </Layout>
   );

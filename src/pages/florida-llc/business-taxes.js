@@ -14,7 +14,8 @@ import Rocket from "../../atomic/sections/rocket";
 
 // Content
 import { businessTaxesPageContent } from "../../static/states-llc/florida/business-taxes";
-import { tabPages, rocket } from "../../static/states-llc/florida/general";
+import { tabPages } from "../../static/states-llc/florida/general";
+import { Helmet } from "react-helmet";
 
 const Wrapper = styled.div`
   display: flex;
@@ -40,24 +41,32 @@ const Wrapper = styled.div`
 `;
 
 const FloridaBusinessTaxes = () => (
-  <Layout>
-    <SEO title="Florida Business & Sales Taxes | Incfile.com" description="Do you have an Florida LLC? Learn about the required federal, state, and sales taxes you might need to pay. Read more." />
+    <Layout>
+        <SEO title="Florida Business & Sales Taxes | Incfile.com" description="Do you have an Florida LLC? Learn about the required federal, state, and sales taxes you might need to pay. Read more." />
 
-    <LinearBgHeader imageMapName="tx-map-2x">
-      <ContentHeader content={businessTaxesPageContent.header} />
-    </LinearBgHeader>
+        <LinearBgHeader imageMapName="tx-map-2x">
+            <ContentHeader content={businessTaxesPageContent.header} />
+        </LinearBgHeader>
 
-    <WrapperContent>
-      <Wrapper>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-          <BusinessTaxesSection content={businessTaxesPageContent.content} />
-        </MainPageContent>
-      </Wrapper>
-    </WrapperContent>
+        <WrapperContent>
+            <Wrapper>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <BusinessTaxesSection content={businessTaxesPageContent.content} />
+                </MainPageContent>
+            </Wrapper>
+        </WrapperContent>
 
-    <Rocket url="?entityType=LLC&entityState=FL" />
-  </Layout>
+        <Rocket url="?entityType=LLC&entityState=FL" />
+        
+        <Helmet>
+            <script type="application/ld+json">
+                {`{
+                   "@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Florida Have Sales Tax?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. Florida does have a sales tax, which may vary among cities and counties. You can find more information above.</p>"}},{"@type":"Question","name":"Does Florida Have a State Tax?","acceptedAnswer":{"@type":"Answer","text":"<p>No. Florida does not have a general state income tax.</p>"}},{"@type":"Question","name":"What Is the Sales Tax Rate in Florida?","acceptedAnswer":{"@type":"Answer","text":"<p>We have listed common sales tax rates in Florida cities above.</p>"}},{"@type":"Question","name":"Do I Need to Pay Estimated Taxes?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. In most cases you must pay estimated taxes on your Florida tax, federal income tax and self-employment tax. Speak to your accountant for more information.</p>"}}]
+                }`}
+            </script>
+        </Helmet>
+    </Layout>
 );
 
 export default FloridaBusinessTaxes;

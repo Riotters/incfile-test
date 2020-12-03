@@ -17,10 +17,17 @@ import Articles from "../../atomic/sections/articles";
 
 //Texts
 import { seo, top, about, requirements, faq } from "../../static/manage-your-company/amendment";
+import ProductSchema from "../../components/product-schema";
 
 const Amendment = () => (
   <Layout>
-    <SEO title={seo.title} description={seo.desc} />
+        <SEO title={seo.title} description={seo.desc} />
+        <ProductSchema
+            productUrl="hptts://orders.incfile.com/amendment.php"
+            productName="Articles of Amendment for LLCs or Corporations"
+            productPrice="99"
+            productDescription="File an official amendment to change members, your business address, authorized shares, or to alter business activities."
+        />
     <Top imageName="mr-amendment-name-change" imageWidth="948" imagePositionRight="50%" imageAlt="Mrs Bulb holding a closed sign" ovalColor="orange" imageMobilePosition={0} tabletVariantClass="tablet--shopper" tabletImgScale={1} tabletImgPosX={40} tabletImgPosY={-450}>
       <h1>{top.header}</h1>
       <Buttonsbox>
