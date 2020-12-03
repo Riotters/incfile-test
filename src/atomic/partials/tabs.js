@@ -1,38 +1,29 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 //import { Tabs } from "@bumaga/tabs";
-import { Tabs, Tab, TabList, TabPanel } from "react-tabs";
+import {Tabs} from "react-tabs";
 import styled from "styled-components";
 import Container from "../../atomic/container";
 //import VisibilitySensor from "../../components/VisibilitySensor";
 import PropTypes from "prop-types";
 
-const TabsSection = ({ layout, column, children, oval, ...rest }) => {
-	const [tabIndex, setTabIndex] = useState(0);
+const TabsSection = ({layout, column, children, oval, ...rest}) => {
+    const [tabIndex, setTabIndex] = useState(0);
 
-	return (
-		<MainWrapper id="tabs-wrapper" {...rest}>
-			<Container>
-				<Wrapper layout={layout}>
-					{/* <VisibilitySensor partialVisibility once> */}
-					{/* {({ layout, column }) => ( */}
-					<Tabs
-						forceRenderTabPanel="true"
-						selectedIndex={tabIndex}
-						onSelect={(index) => setTabIndex(index)}
-					>
-						{React.Children.map(children, (child) =>
-							React.cloneElement(child, {
-								//layout: layout,
-								//column: column,
-							})
-						)}
-					</Tabs>
-					{/* )} */}
-					{/* </VisibilitySensor> */}
-				</Wrapper>
-			</Container>
-		</MainWrapper>
-	);
+    return (
+        <Container>
+            <MainWrapper id="tabs-wrapper" {...rest}>
+                <Wrapper layout={layout}>
+                    <Tabs
+                        forceRenderTabPanel={true}
+                        selectedIndex={tabIndex}
+                        onSelect={(index) => setTabIndex(index)}
+                    >
+                        {children}
+                    </Tabs>
+                </Wrapper>
+            </MainWrapper>
+        </Container>
+    );
 };
 
 const MainWrapper = styled.div`
@@ -107,7 +98,7 @@ const Wrapper = styled.div`
 `;
 
 TabsSection.propTypes = {
-	layout: PropTypes.string,
+    layout: PropTypes.string,
 };
 
 export default TabsSection;

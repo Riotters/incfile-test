@@ -1,16 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Collapse } from "react-collapse/lib/Collapse";
+import { Collapse } from "react-collapse";
 
-const CollapseWrapper = ({ isOpened, layout, children }) => (
+const CollapseWrapper = ({ isOpened, children }) => (
 	<Collapse isOpened={isOpened}>
-		{React.Children.map(children, (child, i) =>
-			React.cloneElement(child, {
-				//isVisible: isVisible,
-				//layout: layout,
-				//panelNo: i,
-			})
-		)}
+		{children}
 	</Collapse>
 );
 

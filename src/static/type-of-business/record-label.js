@@ -1,4 +1,7 @@
 import {color} from "../../components/styles/colors";
+import Tab1Icon from "../../images/icons/icon-start-a-business-color-beauty-salon.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
+import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
 
 export const InfoCards = {
     title: `Insurance for Your Record Label Business`,
@@ -97,5 +100,22 @@ export const toolsList = {
             title: "SEO",
             tools: ["SemRush", "KWFinder", "Moz", "AHREFS"]
         }
+    ]
+}
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Record Label Business`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Why This Industry?`
+        },
+        {
+            icon: Tab3Icon,
+            name: `Is This Business For You?`
+        },
     ]
 }

@@ -1,16 +1,18 @@
 import React from "react";
-import { useTabState } from "@bumaga/tabs";
 import styled from "styled-components";
+import {TabList} from "react-tabs";
 
-const TabHeading = ({ title, filename, children, ...props }) => (
-	<TabsWrapper
-		//className={props.isVisible ? "slideUp enter" : "slideUp"}
-		layout={props.layout}
-	>
-		<Sticky layout={props.layout} columns={props.columns}>
-			{children}
-		</Sticky>
-	</TabsWrapper>
+const TabHeading = ({title, filename, children, ...props}) => (
+    <TabsWrapper
+        //className={props.isVisible ? "slideUp enter" : "slideUp"}
+        layout={props.layout}
+    >
+        <Sticky layout={props.layout} columns={props.columns}>
+            <TabList>
+                {children}
+            </TabList>
+        </Sticky>
+    </TabsWrapper>
 );
 
 const TabsWrapper = styled.div`
@@ -31,7 +33,7 @@ const Sticky = styled.div`
 	display: ${(props) => (props.layout === "grid" ? "grid" : "flex")};
 	flex-direction: ${(props) => (props.layout !== "grid" ? "column" : "")};
 	grid-template-columns: ${(props) =>
-		props.columns ? `repeat(${props.columns}, 1fr)` : ""};
+    props.columns ? `repeat(${props.columns}, 1fr)` : ""};
 	grid-gap: ${(props) => (props.layout === "grid" ? "30px" : "")};
 	position: ${(props) => (props.layout !== "grid" ? "sticky" : "")};
 	top: 100px;
