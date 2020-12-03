@@ -1,3 +1,6 @@
+import Tab1Icon from "../../images/icons/restaurant.inline.svg";
+import Tab2Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
+
 export const typeBusiness = {
     items: [
         {
@@ -112,6 +115,19 @@ export const toolsList = {
         {
             title: "SEO",
             tools: ["SemRush", "KWFinder", "Moz", "AHREFS"]
+        }
+    ]
+}
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Restaurant`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Is This Business For You?`
         }
     ]
 }

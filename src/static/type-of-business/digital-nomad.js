@@ -1,4 +1,7 @@
 import {color} from "../../components/styles/colors";
+import Tab1Icon from "../../images/icons/digital-nomad.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
+import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
 
 export const typeBusiness = {
     items: [
@@ -185,5 +188,22 @@ export const RingText = {
             color: color.yellow1,
             text: "Nearly 80% of people said they would not go from being a digital nomad back into a more traditional job role"
         }
+    ]
+}
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Digital Nomad Business`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Why This Industry`
+        },
+        {
+            icon: Tab3Icon,
+            name: `Is This Business For You?`
+        },
     ]
 }

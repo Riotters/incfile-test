@@ -7,19 +7,13 @@ import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 import Top from "../../atomic/partials/top";
 import styled from "styled-components";
-import TabHeading from "../../atomic/organisms/tabs/TabHeading";
-import TabTitle from "../../atomic/molecules/tabs/tab-title";
-import Tab1Icon from "../../images/icons/teen-business.inline.svg";
-import Tab2Icon from "../../images/icons/light.inline.svg";
-import CollapseWrapper from "../../atomic/organisms/tabs/collapse";
 import PanelWrapper from "../../atomic/organisms/tabs/panel";
-import { Paragraph } from "../../atomic/atoms/typography/paragraph";
+import {Paragraph} from "../../atomic/atoms/typography/paragraph";
 import Colorbox from "../../components/color-box";
 import MegafornIcon from "../../images/icons/megafon.inline.svg";
-import { color } from "../../components/styles/colors";
-import { Heading } from "../../atomic/atoms/typography/heading";
+import {color} from "../../components/styles/colors";
+import {Heading} from "../../atomic/atoms/typography/heading";
 import Adventages from "../../components/adventages";
-import TabsSection from "../../atomic/partials/tabs";
 import TypeBusiness from "../../atomic/sections/type-of-business/teen-business/type-business";
 import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/teen-business/validating-business-idea";
 import BusinessPlan from "../../atomic/sections/type-of-business/teen-business/business-plan";
@@ -32,138 +26,158 @@ import ToolsAndLinks from "../../atomic/sections/type-of-business/teen-business/
 import Conclusion from "../../atomic/sections/general/conclusion";
 import Image from "../../atomic/atoms/image/image";
 import OvalSvg from "../../images/ovals/bottom-right-transparent-green3.inline.svg";
+import ReactTabs from "../../atomic/partials/ReactTabs";
+import {tabs} from "../../static/type-of-business/teen-business";
+import {TabPanel} from "react-tabs";
 
 const TeenBusiness = () => (
-  <Layout>
-    <SEO
-      title="How to Start a Teen Business"
-      description="The internet has revolutionized business — it has broadened marketplaces, made products and services available to every one and lowered the barriers to starting a successful company. With the right approach and understanding, anyone can become a successful online entrepreneur."
-    />
+    <Layout>
+        <SEO
+            title="How to Start a Teen Business"
+            description="The internet has revolutionized business — it has broadened marketplaces, made products and services available to every one and lowered the barriers to starting a successful company. With the right approach and understanding, anyone can become a successful online entrepreneur."
+        />
 
-    <Top ovalColor="sun" imageName="teen-business-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
-      <h1>How to Start a Teen Business</h1>
-      <p>
-        Some entrepreneurs start young, and there are no rules that say you need to be in your twenties or older before you start a business. If you’re just earning a few dollars a week, there probably aren’t any big advantages to creating a formal business right now. But if you’re making more than
-        that — or you want other people to take your work seriously - it might be worth going a step further.
-      </p>
-      <ButtonsBox>
-        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
-      </ButtonsBox>
+        <Top ovalColor="sun" imageName="teen-business-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+            <h1>How to Start a Teen Business</h1>
+            <p>
+                Some entrepreneurs start young, and there are no rules that say you need to be in your twenties or older
+                before you start a business. If you’re just earning a few dollars a week, there probably aren’t any big
+                advantages to creating a formal business right now. But if you’re making more than
+                that — or you want other people to take your work seriously - it might be worth going a step further.
+            </p>
+            <ButtonsBox>
+                <Button theme="primary56" marginMD="0 24px 0 0" arrow
+                        content={{url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now"}}/>
+            </ButtonsBox>
 
-      <RatingRow>
-        <CartBlock />
-        <RatingBlock />
-      </RatingRow>
-    </Top>
+            <RatingRow>
+                <CartBlock/>
+                <RatingBlock/>
+            </RatingRow>
+        </Top>
 
-    <TabsWrapper>
-      <Oval>
-        <OvalSvg />
-      </Oval>
-      <TabsSection>
-        <TabHeading>
-          <TabTitle title="Teen Business" SvgIcon={Tab1Icon} />
-          <TabTitle title="Why This Industry?" SvgIcon={Tab2Icon} />
-        </TabHeading>
+        <TabsWrapper>
+            <Oval>
+                <OvalSvg/>
+            </Oval>
+            <ReactTabs content={tabs}>
+                <TabPanel>
+                    <PanelWrapper>
+                        <Paragraph big>If you’re too young to form a business yourself, your parents may be able to
+                            help. If your state does allow teenagers to register their own company, why not stand out
+                            from the crowd and boost your business to the next level?</Paragraph>
 
-        <CollapseWrapper>
-          <PanelWrapper>
-            <Paragraph big>If you’re too young to form a business yourself, your parents may be able to help. If your state does allow teenagers to register their own company, why not stand out from the crowd and boost your business to the next level?</Paragraph>
+                        <Colorbox className="box" theme="icon" Icon={MegafornIcon} color={color.green3} curve
+                                  curveColor={color.green1}>
+                            <Heading size={4}>We know it can be daunting to start a teen business, and we’re here to
+                                help.</Heading>
+                            <Paragraph bottomPadding={0} bottomMargin={0}>
+                                We’ve helped over 500,000 people form their business and provided answers, guidance and
+                                support to transform them into entrepreneurs.
+                            </Paragraph>
+                        </Colorbox>
 
-            <Colorbox className="box" theme="icon" Icon={MegafornIcon} color={color.green3} curve curveColor={color.green1}>
-              <Heading size={4}>We know it can be daunting to start a teen business, and we’re here to help.</Heading>
-              <Paragraph bottomPadding={0} bottomMargin={0}>
-                We’ve helped over 500,000 people form their business and provided answers, guidance and support to transform them into entrepreneurs.
-              </Paragraph>
-            </Colorbox>
+                        <Paragraph big style={{marginTop: "48px"}}>
+                            We know it can be daunting to start a teen business, and we’re here to help. We’ve helped
+                            over 250,000 people form their business and provided answers, guidance and support to
+                            transform them into entrepreneurs.
+                        </Paragraph>
+                        <Paragraph big style={{marginTop: "0"}}>
+                            Here is our simple guide to starting up a successful teen business. We’ll share some
+                            business ideas that are suitable for kids, teens and students, and let you know how to get
+                            your business off the ground. From exploring the types of business you can start to the
+                            legalities of setting
+                            up your business and the realities of your day-to-day operations, this guide is here to
+                            help.
+                        </Paragraph>
+                        <Paragraph big>Read on for some insight into creating your own teen business and becoming an
+                            entrepreneur.</Paragraph>
+                    </PanelWrapper>
+                </TabPanel>
 
-            <Paragraph big style={{ marginTop: "48px" }}>  
-              We know it can be daunting to start a teen business, and we’re here to help. We’ve helped over 250,000 people form their business and provided answers, guidance and support to transform them into entrepreneurs.
-            </Paragraph>
-            <Paragraph big style={{ marginTop: "0" }}>
-              Here is our simple guide to starting up a successful teen business. We’ll share some business ideas that are suitable for kids, teens and students, and let you know how to get your business off the ground. From exploring the types of business you can start to the legalities of setting
-              up your business and the realities of your day-to-day operations, this guide is here to help.
-            </Paragraph>
-            <Paragraph big>Read on for some insight into creating your own teen business and becoming an entrepreneur.</Paragraph>
-          </PanelWrapper>
+                <TabPanel>
+                    <PanelWrapper>
+                        <Heading size={3}>Why You Should Become a Teen Entrepreneur</Heading>
+                        <Paragraph big style={{marginBottom: "52px"}}>
+                            You might be surprised at the number of teen businesses out there. Here are some interesting
+                            facts:
+                        </Paragraph>
 
-          <PanelWrapper>
-            <Heading size={3}>Why You Should Become a Teen Entrepreneur</Heading>
-            <Paragraph big style={{ marginBottom: "52px" }}>
-              You might be surprised at the number of teen businesses out there. Here are some interesting facts:
-            </Paragraph>
+                        <Adventages headline="Around a quarter of teenagers work in some capacity" width="100%"/>
 
-            <Adventages headline="Around a quarter of teenagers work in some capacity" width="100%" />
+                        <Adventages headline="Around a quarter of teenagers work in some capacity" width="100%"/>
 
-            <Adventages headline="Around a quarter of teenagers work in some capacity" width="100%" />
+                        <BubblesWrapper>
+                            <Bubbles>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-color"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
+                                </BubbleImage>
+                                <BubbleImage>
+                                    <Image filename="mrs-bulb-final-comp-thumb-up-copy-4"/>
+                                </BubbleImage>
+                            </Bubbles>
+                            <Text>8 out of 10 teens want to work for themselves</Text>
+                        </BubblesWrapper>
 
-            <BubblesWrapper>
-              <Bubbles>
-                <BubbleImage>
-                  <Image filename="mrs-bulb-final-comp-thumb-up-color" />
-                </BubbleImage>
-                <BubbleImage>
-                  <Image filename="mrs-bulb-final-comp-thumb-up-color" />
-                </BubbleImage>
-                <BubbleImage>
-                  <Image filename="mrs-bulb-final-comp-thumb-up-color" />
-                </BubbleImage>
-                <BubbleImage>
-                  <Image filename="mrs-bulb-final-comp-thumb-up-color" />
-                </BubbleImage>
-                <BubbleImage>
-                  <Image filename="mrs-bulb-final-comp-thumb-up-color" />
-                </BubbleImage>
-                <BubbleImage>
-                  <Image filename="mrs-bulb-final-comp-thumb-up-color" />
-                </BubbleImage>
-                <BubbleImage>
-                  <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
-                </BubbleImage>
-                <BubbleImage>
-                  <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
-                </BubbleImage>
-                <BubbleImage>
-                  <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
-                </BubbleImage>
-                <BubbleImage>
-                  <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
-                </BubbleImage>
-              </Bubbles>
-              <Text>8 out of 10 teens want to work for themselves</Text>
-            </BubblesWrapper>
+                        <Paragraph big>This is why teen businesses are so exciting. So how can you be part of that
+                            success? We're here to help you figure that out.</Paragraph>
+                    </PanelWrapper>
+                </TabPanel>
+            </ReactTabs>
+        </TabsWrapper>
 
-            <Paragraph big>This is why teen businesses are so exciting. So how can you be part of that success? We're here to help you figure that out.</Paragraph>
-          </PanelWrapper>
-        </CollapseWrapper>
-      </TabsSection>
-    </TabsWrapper>
+        <TypeBusiness/>
 
-    <TypeBusiness />
+        <ValidatingBusinessIdea/>
 
-    <ValidatingBusinessIdea />
+        <BusinessPlan/>
 
-    <BusinessPlan />
+        <BusinessStructure/>
 
-    <BusinessStructure />
+        <SettingBusiness/>
 
-    <SettingBusiness />
+        <OrderNow/>
 
-    <OrderNow />
+        <Regulations/>
 
-    <Regulations />
+        <Taxes/>
 
-    <Taxes />
+        <ToolsAndLinks/>
 
-    <ToolsAndLinks />
-
-    <Conclusion to={process.env.ORDER_URL + "/form-order-now.php"} buttonTitle="Start your Teen Business with us, today">
-      <Heading size={3} style={{ fontSize: "48px" }}>
-        Conclusion
-      </Heading>
-      <Paragraph big>The internet has made teen entrepreneurship available to everyone. If you can find a great idea, build a niche, develop your reputation and put together a solid business plan, you will have every chance for success.</Paragraph>
-    </Conclusion>
-  </Layout>
+        <Conclusion to={process.env.ORDER_URL + "/form-order-now.php"}
+                    buttonTitle="Start your Teen Business with us, today">
+            <Heading size={3} style={{fontSize: "48px"}}>
+                Conclusion
+            </Heading>
+            <Paragraph big>The internet has made teen entrepreneurship available to everyone. If you can find a great
+                idea, build a niche, develop your reputation and put together a solid business plan, you will have every
+                chance for success.</Paragraph>
+        </Conclusion>
+    </Layout>
 );
 
 const ButtonsBox = styled.div`

@@ -323,7 +323,7 @@ const DaycareBusiness = () => (
 							childcare to their children, while keeping them engaged and
 							entertained. If you can meet those needs while managing the
 							administration of your business, your daycare will thrive.
-						</Paragraph> 
+						</Paragraph>
 					</PanelWrapper>
 				</TabPanel>
 			</ReactTabs>

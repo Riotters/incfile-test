@@ -9,6 +9,9 @@ import Icon8 from "../../images/icons/social-media-tab3-icon8.inline.svg";
 import Icon9 from "../../images/icons/social-media-tab3-icon9.inline.svg";
 import Icon10 from "../../images/icons/social-media-tab3-icon10.inline.svg";
 import Icon11 from "../../images/icons/social-media-tab3-icon11.inline.svg";
+import Tab1Icon from "../../images/icons/social-media-business.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
+import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
 
 export const AveragePricingFollowerCount = [
     {icon: Icon1, text: "Fewer than 1,000 followers: $83 per post"},
@@ -26,3 +29,20 @@ export const AveragePricingNiche = [
     {icon: Icon10, text: "Beauty: $205 per post"},
     {icon: Icon11, text: "Fashion and design: $217 per post"}
 ]
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Social Media Business`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Why This Industry`
+        },
+        {
+            icon: Tab3Icon,
+            name: `Is This Business For You?`
+        }
+    ]
+}
