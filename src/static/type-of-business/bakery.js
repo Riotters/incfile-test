@@ -1,4 +1,8 @@
 import {color} from "../../components/styles/colors";
+import Tab1Icon from "../../images/icons/handyman.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
+import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
+
 export const InfoCards = {
     title: `Insurance for Your Brewery Business`,
     description: `Most brewery businesses should have comprehensive business insurance. There are various types.`,
@@ -477,5 +481,22 @@ export const FinancesAccordionContent = {
                     url: `https://bench.co/`
                 }]
         }
+    ]
+}
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Bakery`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Why This Industry`
+        },
+        {
+            icon: Tab3Icon,
+            name: `Is This Business For You?`
+        },
     ]
 }

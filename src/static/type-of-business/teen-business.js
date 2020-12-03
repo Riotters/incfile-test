@@ -1,4 +1,6 @@
 import {color} from "../../components/styles/colors";
+import Tab1Icon from "../../images/icons/teen-business.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
 
 export const typeBusiness = {
     items: [
@@ -182,6 +184,19 @@ export const toolsList = {
         {
             title: "SEO",
             tools: ["SemRush", "KWFinder", "Moz", "AHREFS"]
+        }
+    ]
+}
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Teen Business`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Why This Industry?`
         }
     ]
 }

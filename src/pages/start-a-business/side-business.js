@@ -7,13 +7,7 @@ import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
-import TabsSection from "../../atomic/partials/tabs";
-import TabHeading from "../../atomic/organisms/tabs/TabHeading";
-import TabTitle from "../../atomic/molecules/tabs/tab-title";
-import CollapseWrapper from "../../atomic/organisms/tabs/collapse";
 import PanelWrapper from "../../atomic/organisms/tabs/panel";
-import Tab1Icon from "../../images/icons/handyman.inline.svg";
-import Tab2Icon from "../../images/icons/light.inline.svg";
 import { Heading } from "../../atomic/atoms/typography/heading";
 import { Paragraph } from "../../atomic/atoms/typography/paragraph";
 import Container from "../../atomic/container";
@@ -44,6 +38,9 @@ import OvalSvg from "../../images/ovals/top-right-transparent-yellow.inline.svg"
 import OvalSvg2 from "../../images/ovals/top-left-transparent-orange2.inline.svg";
 import { shadow } from "../../atomic/atoms/styles/shadows";
 import { Link } from "gatsby";
+import ReactTabs from "../../atomic/partials/ReactTabs";
+import { tabs } from "../../static/type-of-business/side-business";
+import { TabPanel } from "react-tabs";
 
 const SideBusiness = () => (
 	<Layout>
@@ -87,13 +84,8 @@ const SideBusiness = () => (
 			<TabOval>
 				<OvalSvg />
 			</TabOval>
-			<TabsSection>
-				<TabHeading>
-					<TabTitle title="Side Business" SvgIcon={Tab1Icon} />
-					<TabTitle title="Why This Industry?" SvgIcon={Tab2Icon} />
-				</TabHeading>
-
-				<CollapseWrapper>
+			<ReactTabs content={tabs}>
+				<TabPanel>
 					<PanelWrapper>
 						<Paragraph big>
 							Of course, if the side business does work out and starts to grow,
@@ -120,7 +112,7 @@ const SideBusiness = () => (
 								help.
 							</Paragraph>
 							<Paragraph bottomMargin={0}>
-								We’ve supported over 250,000 people to form their business and
+								We’ve supported over 500,000 people to form their business and
 								provided answers to transform them into entrepreneurs. We’ll
 								guide you through what you need to know to create your side
 								business and get it off the ground.
@@ -138,7 +130,8 @@ const SideBusiness = () => (
 							becoming an entrepreneur.
 						</Paragraph>
 					</PanelWrapper>
-
+				</TabPanel>
+				<TabPanel>
 					<PanelWrapper>
 						<Heading size={3}>Why You Should Start a New Side Business</Heading>
 
@@ -228,8 +221,8 @@ const SideBusiness = () => (
 							do that.
 						</Paragraph>
 					</PanelWrapper>
-				</CollapseWrapper>
-			</TabsSection>
+				</TabPanel>
+			</ReactTabs>
 		</TabsWrapper>
 
 		<TypeOfBusiness />
@@ -568,7 +561,10 @@ const SideBusiness = () => (
 
 		<Links />
 
-		<Conclusion to={process.env.ORDER_URL + "/form-order-now.php"} buttonTitle="Start your Side Business with us, today">
+		<Conclusion
+			to={process.env.ORDER_URL + "/form-order-now.php"}
+			buttonTitle="Start your Side Business with us, today"
+		>
 			<Heading size={3} style={{ fontSize: "40px" }}>
 				Conclusion
 			</Heading>

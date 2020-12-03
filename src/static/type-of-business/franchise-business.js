@@ -1,4 +1,6 @@
 import {color} from "../../components/styles/colors";
+import Tab1Icon from "../../images/icons/franchise-business.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
 
 export const RingText = {
     list: [
@@ -89,4 +91,18 @@ export const toolsList = {
         }
     ]
 }
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Franchise Business`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Why This Industry?`
+        }
+    ]
+}
+
 

@@ -1,3 +1,7 @@
+import Tab1Icon from "../../images/icons/blockchain-technology.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
+import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
+
 export const typeBusiness = {
     items: [
         {
@@ -24,5 +28,22 @@ export const typeBusiness = {
             headline: "Insurance startup businesses",
             text: "Capturing policy details, managing claims or making payments"
         }
+    ]
+}
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Blockchain Technology`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Why This Industry`
+        },
+        {
+            icon: Tab3Icon,
+            name: `Is This Business For You?`
+        },
     ]
 }

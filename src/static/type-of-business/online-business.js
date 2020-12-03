@@ -1,4 +1,6 @@
 import {color} from "../../components/styles/colors";
+import Tab1Icon from "../../images/icons/online-business.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
 
 export const typeBusiness = {
     items: [
@@ -173,3 +175,17 @@ export const toolsList = {
         }
     ]
 }
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Online business`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Why This Industry?`
+        }
+    ]
+}
+

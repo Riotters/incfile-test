@@ -1,4 +1,7 @@
 import { color } from "../../components/styles/colors";
+import Tab1Icon from "../../images/icons/t-shirt-business.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
+import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
 
 export const BusinessInsuranceAccordionContent = {
   items: [
@@ -395,3 +398,20 @@ export const RingText = {
     },
   ],
 };
+
+export const tabs = {
+  panels: [
+    {
+      icon: Tab1Icon,
+      name: `T-shirt Business`
+    },
+    {
+      icon: Tab2Icon,
+      name: `Why This Industry?`
+    },
+    {
+      icon: Tab3Icon,
+      name: `Is This Business For You?`
+    }
+  ]
+}

@@ -36,6 +36,9 @@ import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block
 import Adventages from "../../components/adventages";
 import TextBoxed from "../../atomic/molecules/text-blocks/text-boxed";
 import TabsOvalTwoSvg from "../../images/ovals/bottom-right-transparent-green3.inline.svg";
+import ReactTabs from "../../atomic/partials/ReactTabs";
+import {tabs} from "../../static/type-of-business/daycare-business";
+import {TabPanel} from "react-tabs";
 
 const DaycareBusiness = () => (
 	<Layout>
@@ -76,14 +79,8 @@ const DaycareBusiness = () => (
 				<TabsOvalTwoSvg />
 			</TabOvalOne>
 
-			<TabsSection>
-				<TabHeading>
-					<TabTitle title="Daycare" SvgIcon={DaycareIcon} />
-					<TabTitle title="Why This Industry" SvgIcon={Tab2Icon} />
-					<TabTitle title="Is This Business For You?" SvgIcon={Tab3Icon} />
-				</TabHeading>
-
-				<CollapseWrapper>
+			<ReactTabs content={tabs}>
+				<TabPanel>
 					<PanelWrapper>
 						<Paragraph big>
 							If you have experience looking after children, then starting a
@@ -135,7 +132,9 @@ const DaycareBusiness = () => (
 							organization and becoming an entrepreneur.
 						</Paragraph>
 					</PanelWrapper>
+				</TabPanel>
 
+				<TabPanel>
 					<PanelWrapper>
 						<Heading size={3}>
 							Why You Should Start a New Daycare Business
@@ -186,7 +185,9 @@ const DaycareBusiness = () => (
 							that success!
 						</Paragraph>
 					</PanelWrapper>
+				</TabPanel>
 
+				<TabPanel>
 					<PanelWrapper>
 						<Heading size={3}>Is a Childcare Business Right for You?</Heading>
 						<Paragraph big style={{ marginBottom: "48px" }}>
@@ -324,8 +325,8 @@ const DaycareBusiness = () => (
 							administration of your business, your daycare will thrive.
 						</Paragraph>
 					</PanelWrapper>
-				</CollapseWrapper>
-			</TabsSection>
+				</TabPanel>
+			</ReactTabs>
 		</TabWrapper>
 
 		<TypeBusiness />

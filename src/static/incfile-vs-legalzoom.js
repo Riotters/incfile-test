@@ -346,7 +346,7 @@ export const about = {
 			bottomMargin: `48`,
 		},
 		{
-			image: `bc-18`,
+			image: `icon-shield-7266`,
 			boxColor: `${color.yellow3}`,
 			header: `Trademark Search and Registration`,
 			text: `Trademark searches look for trademarks similar to those you want to register. Trademark registration takes care of the trademark filing and approval process.`,

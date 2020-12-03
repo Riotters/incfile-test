@@ -1,4 +1,7 @@
 import {color} from "../../components/styles/colors";
+import Tab2Icon from "../../images/icons/light.inline.svg";
+import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
+import Tab1Icon from "../../images/icons/construction-company.inline.svg";
 
 export const adventages = {
     items: [
@@ -163,5 +166,22 @@ export const toolsList = {
             title: "SEO",
             tools: ["SemRush", "KWFinder", "Moz", "AHREFS"]
         }
+    ]
+}
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Construction Company`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Why This Industry`
+        },
+        {
+            icon: Tab3Icon,
+            name: `Is This Business For You?`
+        },
     ]
 }

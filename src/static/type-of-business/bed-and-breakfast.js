@@ -1,4 +1,7 @@
 import {color} from "../../components/styles/colors";
+import Tab1Icon from "../../images/icons/bed-and-breakfast.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
+import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
 
 export const InfoCards = {
     title: `Insurance for Your Bed and Breakfast or Hotel Business`,
@@ -175,5 +178,22 @@ export const typeBusiness = {
             headline: "Airbnb",
             text: "Airbnb is another great way to make a living as a boutique hotel, especially if you only have one or two rooms available."
         }
+    ]
+}
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Guesthouse or hotel`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Why This Industry`
+        },
+        {
+            icon: Tab3Icon,
+            name: `Is This Business For You?`
+        },
     ]
 }

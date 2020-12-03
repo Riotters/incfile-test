@@ -1,4 +1,8 @@
 import {color} from "../../components/styles/colors";
+import Tab1Icon from "../../images/icons/landscaping-business.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
+import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
+
 export const InfoCards = [
     {
         backgroundColor: color.babyblue3,
@@ -452,6 +456,23 @@ export const FinancesAccordionContent = {
                     text: `Bench.`,
                     url: `https://bench.co/`
                 }]
+        }
+    ]
+}
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Landscaping Business`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Why This Industry?`
+        },
+        {
+            icon: Tab3Icon,
+            name: `Is This Business For You?`
         }
     ]
 }

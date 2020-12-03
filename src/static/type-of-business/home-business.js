@@ -1,3 +1,6 @@
+import Tab1Icon from "../../images/icons/construction-company.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
+
 export const adventages = {
     items: [
         {
@@ -147,6 +150,19 @@ export const toolsList = {
         {
             title: "Hiring",
             tools: ["ZipRecruiter"]
+        }
+    ]
+}
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Home-Based Business`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Why This Industry?`
         }
     ]
 }
