@@ -1,4 +1,7 @@
 import {color} from "../../components/styles/colors";
+import Tab1Icon from "../../images/icons/amazon-business.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
+import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
 
 export const toolsList = {
     headlineText: "Useful Online Tools for Your Amazon Business",
@@ -115,3 +118,20 @@ export const hsForm = {
         url: "/",
     },
 };
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Amazon Business`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Why this industry?`
+        },
+        {
+            icon: Tab3Icon,
+            name: `Is This Business For You?`
+        },
+    ]
+}

@@ -1,4 +1,7 @@
 import {color} from "../../atomic/atoms/styles/colors";
+import Tab1Icon from "../../images/icons/catering-business.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
+import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
 
 export const LicensesAccordionContent = {
     items: [
@@ -309,5 +312,22 @@ export const adventages2 = {
             headline: "Blinds and Curtains",
             text: "Cleaning all types of window treatments and finishes"
         }
+    ]
+}
+
+export const tabs = {
+    panels: [
+        {
+            icon: Tab1Icon,
+            name: `Catering Business`
+        },
+        {
+            icon: Tab2Icon,
+            name: `Why This Industry`
+        },
+        {
+            icon: Tab3Icon,
+            name: `Is This Business For You?`
+        },
     ]
 }
