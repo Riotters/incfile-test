@@ -5,13 +5,13 @@ import Oval from "../../atoms/icons/oval";
 import TopLeftOvalSVG from "../../../images/ovals/home-page-v3-customers-top-left.inline.svg";
 import TextCenterLayout from "../../partials/heading-center";
 
-const Opinions = styled.section`
+const Care = styled.section`
 	position: relative;
 	padding-top: 100px;
 `;
 
-const OpinionsSection = ({ className, content }) => (
-	<Opinions>
+const CareSection = ({ className, content }) => (
+	<Care>
 		<Oval className="oval" height="570" width="570" top="0" left="0">
 			<TopLeftOvalSVG />
 		</Oval>
@@ -22,7 +22,7 @@ const OpinionsSection = ({ className, content }) => (
 			textWidth="770"
 		/>
 		<Customers content={content} padding="48px 0" />
-	</Opinions>
+	</Care>
 );
 
-export default OpinionsSection;
+export default CareSection;
