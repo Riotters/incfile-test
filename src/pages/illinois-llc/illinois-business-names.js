@@ -14,7 +14,8 @@ import BusinessNames from "../../atomic/states-llc/illinois/business-names";
 
 // Content
 import { businessNamesContent } from "../../static/states-llc/illinois/business-names";
-import { tabPages, rocket } from "../../static/states-llc/illinois/general";
+import { tabPages } from "../../static/states-llc/illinois/general";
+import { Helmet } from "react-helmet";
 
 const Wrapper = styled.div`
   display: flex;
@@ -56,7 +57,15 @@ const IllinoisBusinessNames = () => (
       </Wrapper>
     </WrapperContent>
 
-    <Rocket url="?entityType=LLC&entityState=IL" />
+        <Rocket url="?entityType=LLC&entityState=IL" />
+        
+        <Helmet>
+            <script type="application/ld+json">
+                {`{
+                    "@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How Do I Search for My Illinois LLC Business Name?","acceptedAnswer":{"@type":"Answer","text":"<p>Just go to the <a href='https://www.incfile.com/business-name-search/'>business name search tool</a> and enter your proposed business name. You can <a href='https://www.ilsos.gov/corporatellc/'>search the register of the Illinois  Secretary of State</a>, which will tell you if there are any Illinois corporations or LLCs with that name.</p>"}},{"@type":"Question","name":"Are There Any Rules on Naming My Illinois  LLC?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. Most LLCs will be bound by general rules (applicable to all LLCs) and specific rules (applicable in the state of Illinois). We’ve detailed these rules above.</p>"}},{"@type":"Question","name":"Can I Do Business Under a Different Name Than My LLC Name in Illinois ?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. Known as “assumed names,” “fictitious names,” “doing business as names” or “trade names,” you can choose to conduct business under a different name. Details are above.</p>"}},{"@type":"Question","name":"Can I Reserve a Name for My Illinois  LLC?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. The Illinois Secretary of State allows you to reserve a name if you don’t want to start your business immediately. Details are above. If you are ready to start your business now, you do not need to reserve a name.</p>"}}]
+                }`}
+            </script>
+        </Helmet>
   </Layout>
 );
 

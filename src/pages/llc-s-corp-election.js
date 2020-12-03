@@ -27,6 +27,7 @@ import LeftContentRightImage from "../atomic/partials/left-content-right-image";
 import BusinessRevenue from "../atomic/molecules/blocks/business-revenue";
 import parse from "html-react-parser";
 import Articles from "../atomic/sections/articles";
+import ProductSchema from "../components/product-schema";
 
 const LLCsTax = styled.section`
   position: relative;
@@ -144,7 +145,13 @@ const Savings = <TotalSavings />;
 
 const CorpElection = () => (
   <Layout>
-    <SEO title="Have Your LLC Taxed as an S Corp - S Corp Election Form 2553" description="Reduce the tax you pay by having your LLC treated as an S Corp for tax purposes. Learn more about how to file IRS form 2553 - or have us file for you!" />
+        <SEO title="Have Your LLC Taxed as an S Corp - S Corp Election Form 2553" description="Reduce the tax you pay by having your LLC treated as an S Corp for tax purposes. Learn more about how to file IRS form 2553 - or have us file for you!" />
+        <ProductSchema
+            productUrl="https://orders.incfile.com/s-corp-election-form?action=new&type=24"
+            productName="Form 2553"
+            productPrice="50"
+            productDescription="Reduce the tax you pay by having your LLC treated as an S Corp for tax purposes. Incfile will do all the paperwork for you."
+        />
     <Top imageName="mrs-bulb-business-taxes" imageAlt="Mrs Bulb checking forms on notebook" ovalColor="sun">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
