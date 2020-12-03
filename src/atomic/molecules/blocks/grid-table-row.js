@@ -30,6 +30,7 @@ const Cell = styled.div`
 	padding: 24px;
 	min-width: 160px;
 	${(props) => (props.textCenter ? "justify-content: center" : "")};
+	position: relative;
 
 	@media (min-width: 769px) {
 		min-width: auto;
@@ -43,12 +44,38 @@ const Cell = styled.div`
         }
     `};
 
+	.incfile-logo,
+	.legalzoom-logo {
+		margin-top: ${(props) => (props.badge ? "16px" : "")};
+	}
+
 	.incfile-logo {
 		width: 80px;
 	}
 
 	.legalzoom-logo {
 		width: 95px;
+	}
+
+	&::before {
+		content: ${(props) => (props.badge ? `"${props.badge}"` : false)};
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 32px;
+		width: 143px;
+		font-family: MarkPro, sans-serif;
+		font-size: 12px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: ${color.blue1};
+		background-color: ${color.white};
+		border-radius: 4px;
+		border: solid 2px ${color.blue1};
+		position: absolute;
+		top: -20px;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 `;
 
@@ -78,10 +105,18 @@ const GridTableRow = ({
 	columns,
 	textCenter,
 	noSeparator,
+	badge,
 }) => (
 	<Wrapper className={className} columns={columns}>
+		{console.log(badge)}
 		{content.map((item, index) => (
-			<Cell textCenter={textCenter} noSeparator={noSeparator} key={index}>
+			<Cell
+				textCenter={textCenter}
+				noSeparator={noSeparator}
+				key={index}
+				badge={badge ? badge[index] : false}
+			>
+				{console.log(badge && badge[index])}
 				{header &&
 					item !== "incfile-logo" &&
 					item !== "legalzoom-logo" &&

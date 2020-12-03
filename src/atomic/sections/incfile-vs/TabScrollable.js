@@ -35,7 +35,10 @@ import {
 import VisibilitySensor from "../../../components/VisibilitySensor";
 import IncfileVsCompareTableA from "../../organisms/tables/incfile-vs-compare-table-a";
 import NumericBoxedList from "../../organisms/lists/numeric-boxed-list";
-import {InView} from "react-intersection-observer";
+import { InView } from "react-intersection-observer";
+import ImageInColoredBox from "../../molecules/image-blocks/image-in-colored-block";
+import ImageTextTableBlock from "../../organisms/blocks/image-text-table-block";
+import IncfileVsCard from "../../organisms/cards/incfile-vs-card";
 
 const ButtonList = [
 	{
@@ -110,54 +113,77 @@ const TabScrollable = ({ layout, columns, content }) => {
 					</TabsWrapper>
 
 					<PanelWrapper>
-						<InView trackVisibility onChange={(visible) => { if( visible ) setActive(0); }}>
+						<InView
+							onChange={(visible) => {
+								if (visible) setActive(0);
+							}}
+						>
 							<div id={ButtonList[0].tabId}>
-								<Heading size="3">{parse(content.header)}</Heading>
+								<Heading size="3" bottomMargin="48">
+									{parse(content.header)}
+								</Heading>
 								<IncfileVsCompareTableA content={content.table} />
 							</div>
 						</InView>
 
-						<InView trackVisibility onChange={(visible) => { if( visible ) setActive(1); }}>
+						<InView
+							onChange={(visible) => {
+								if (visible) setActive(1);
+							}}
+						>
 							<div id={ButtonList[1].tabId}>
-								<Heading size="3">{parse(content.header2)}</Heading>
-								<Paragraph big mixed>
+								<Heading size="3" bottomMargin="56">
+									{parse(content.header2)}
+								</Heading>
+								{content.cards.map((card) => (
+									<IncfileVsCard content={card} />
+								))}
+								<Paragraph big mixed bottomMargin="56">
 									{parse(content.text)}
 								</Paragraph>
 							</div>
 						</InView>
 
-						<InView trackVisibility onChange={(visible) => { if( visible ) setActive(2); }}>
+						<InView
+							onChange={(visible) => {
+								if (visible) setActive(2);
+							}}
+						>
 							<div id={ButtonList[2].tabId}>
 								<Heading size="3">{parse(content.header3)}</Heading>
-								<Paragraph big mixed>
+								<Paragraph big mixed bottomMargin="48">
 									{parse(content.text2)}
 								</Paragraph>
 								<Heading size="3">{parse(content.header4)}</Heading>
 								<Paragraph big mixed>
 									{parse(content.text3)}
 								</Paragraph>
-								<NumericBoxedList content={content.list} />
-								<Paragraph big mixed>
+								<NumericBoxedList content={content.list} bottomMargin="32" />
+								<Paragraph big mixed bottomMargin="56">
 									{parse(content.text4)}
 								</Paragraph>
 								<Heading size="3">{parse(content.header5)}</Heading>
 								<Paragraph big mixed>
 									{parse(content.text5)}
 								</Paragraph>
-								<NumericBoxedList content={content.list2} />
+								<NumericBoxedList content={content.list2} bottomMargin="32" />
 								<Paragraph big mixed>
 									{parse(content.text6)}
 								</Paragraph>
-								<Paragraph big mixed>
+								<Paragraph big mixed bottomMargin="56">
 									{parse(content.text7)}
 								</Paragraph>
 							</div>
 						</InView>
 
-						<InView trackVisibility onChange={(visible) => { if( visible ) setActive(3); }}>
+						<InView
+							onChange={(visible) => {
+								if (visible) setActive(3);
+							}}
+						>
 							<div id={ButtonList[3].tabId}>
 								<Heading size="3">{parse(content.header6)}</Heading>
-								<Paragraph big mixed>
+								<Paragraph big mixed bottomMargin="64">
 									{parse(content.text8)}
 								</Paragraph>
 								<IncfileVsCompareTableA content={content.table2} />
@@ -166,12 +192,19 @@ const TabScrollable = ({ layout, columns, content }) => {
 							</div>
 						</InView>
 
-						<InView trackVisibility onChange={(visible) => { if( visible ) setActive(4); }}>
+						<InView
+							onChange={(visible) => {
+								if (visible) setActive(4);
+							}}
+						>
 							<div id={ButtonList[4].tabId}>
 								<Heading size="3">{parse(content.header7)}</Heading>
-								<Paragraph big mixed>
+								<Paragraph big mixed bottomMargin="64">
 									{parse(content.text9)}
 								</Paragraph>
+								{content.services.map((service) => (
+									<ImageTextTableBlock content={service} />
+								))}
 							</div>
 						</InView>
 					</PanelWrapper>
@@ -205,7 +238,13 @@ const Wrapper = styled.div`
 		}
 
 		@media (min-width: 1200px) {
-			max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
+			max-width: ${(props) => (props.layout !== "grid" ? "700px" : "")};
+		}
+	}
+
+	h3 {
+		span {
+			color: ${color.orange1};
 		}
 	}
 `;
@@ -239,13 +278,10 @@ const PanelWrapper = styled.article`
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
+	width: 100%;
+	max-width: ${(props) => (props.layout !== "grid" ? "700px" : "")};
 	margin-left: auto;
 	padding-top: 24px;
-
-	h3 {
-		margin-bottom: 48px;
-	}
 
 	@media (min-width: 768px) {
 		padding-left: 30px;
