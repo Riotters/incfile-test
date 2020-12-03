@@ -17,6 +17,7 @@ import HSFormModal from "../components/hubspot/standard-post-form-modal";
 
 //Texts
 import { top, about, faq, cta, hsForm } from "../static/review-entity-types/nonprofit";
+import ProductSchema from "../components/product-schema";
 
 const IndexPage = () => {
   const [modalVisible, setModalVisible] = React.useState(false);
@@ -43,29 +44,35 @@ const IndexPage = () => {
     setFormSubmitted(true);
   };
 
-  return (
-    <Layout>
-      <SEO title="What is a Nonprofit Organization? How to Start a Nonprofit" description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground." />
-      <Top imageName="mr-bulb-nonprofit-7282" imageAlt="Mr Bulb with seedling" ovalColor="yellow">
-        <h1>{top.header}</h1>
-        <p>{top.text}</p>
-        <Buttonsbox>
-          <ExternalLink content={top.button[0]} theme="primary56" width="280px" target="_self" arrow />
-        </Buttonsbox>
-      </Top>
-      <About content={about} openModal={popup} />
-      <Rocket statesDropdown />
-      <Faq content={faq} onClick={popup} />
-      <Cta cta={cta} />
-      <Articles categoryId={318} />
-      <LightBoxModal visible={modalVisible} className="modal-overlay">
-        <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
-          {!formSubmitted && <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />}
-          {formSubmitted && <ThankYouContent modalExit={popup} />}
-        </LightBoxContent>
-      </LightBoxModal>
-    </Layout>
-  );
+    return (
+        <Layout>
+            <SEO title="What is a Nonprofit Organization? How to Start a Nonprofit" description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground." />
+
+            <ProductSchema
+                productUrl="https://orders.incfile.com/form-order-now.php?entityType=Nonprofit"
+                productName="Non Profit Corp"
+                productDescription="Information regarding the steps necessary to form and operate a Nonprofit Corporation in all 50 states. Start your Non Profit Corp with Incfile."
+            />
+            <Top imageName="mr-bulb-nonprofit-7282" imageAlt="Mr Bulb with seedling" ovalColor="yellow">
+                <h1>{top.header}</h1>
+                <p>{top.text}</p>
+                <Buttonsbox>
+                    <ExternalLink content={top.button[0]} theme="primary56" width="280px" target="_self" arrow />
+                </Buttonsbox>
+            </Top>
+            <About content={about} openModal={popup} />
+            <Rocket statesDropdown />
+            <Faq content={faq} onClick={popup} />
+            <Cta cta={cta} />
+            <Articles categoryId={318} />
+            <LightBoxModal visible={modalVisible} className="modal-overlay">
+                <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
+                    {!formSubmitted && <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />}
+                    {formSubmitted && <ThankYouContent modalExit={popup} />}
+                </LightBoxContent>
+            </LightBoxModal>
+        </Layout>
+    );
 };
 
 const LightBoxModal = styled.div`

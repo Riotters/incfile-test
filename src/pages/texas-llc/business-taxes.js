@@ -15,6 +15,7 @@ import Rocket from "../../atomic/sections/rocket";
 // Content
 import { businessTaxesPageContent } from "../../static/states-llc/texas/business-taxes";
 import { tabPages, rocket } from "../../static/states-llc/texas/general";
+import { Helmet } from "react-helmet";
 
 const Wrapper = styled.div`
   display: flex;
@@ -40,24 +41,30 @@ const Wrapper = styled.div`
 `;
 
 const TexasBusinessTaxes = () => (
-  <Layout>
-    <SEO title="Texas Business & Sales Taxes | Incfile.com" description="Do you have an Texas LLC? Learn about the required federal, state, and sales taxes you might need to pay. Read more." />
+    <Layout>
+        <SEO title="Texas Business & Sales Taxes | Incfile.com" description="Do you have an Texas LLC? Learn about the required federal, state, and sales taxes you might need to pay. Read more." />
 
-    <LinearBgHeader imageMapName="tx-map-2x">
-      <ContentHeader content={businessTaxesPageContent.header} />
-    </LinearBgHeader>
+        <LinearBgHeader imageMapName="tx-map-2x">
+            <ContentHeader content={businessTaxesPageContent.header} />
+        </LinearBgHeader>
 
-    <WrapperContent>
-      <Wrapper>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-          <BusinessTaxesSection content={businessTaxesPageContent.content} />
-        </MainPageContent>
-      </Wrapper>
-    </WrapperContent>
+        <WrapperContent>
+            <Wrapper>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <BusinessTaxesSection content={businessTaxesPageContent.content} />
+                </MainPageContent>
+            </Wrapper>
+        </WrapperContent>
 
-    <Rocket url="?entityType=LLC&entityState=TX" />
-  </Layout>
+        <Rocket url="?entityType=LLC&entityState=TX" />
+
+        <Helmet>
+            <script type="application/ld+json">{`
+            {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Texas Have Sales Tax?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. Texas does have a sales tax, which may vary among cities and counties. You can find more information above.</p>"}},{"@type":"Question","name":"Does Texas Have a State Tax?","acceptedAnswer":{"@type":"Answer","text":"<p>No. Texas does not have a general state income tax.</p>"}},{"@type":"Question","name":"What Is the Sales Tax Rate in Texas?","acceptedAnswer":{"@type":"Answer","text":"<p>We have listed common sales tax rates in Texas cities above.</p>"}},{"@type":"Question","name":"Do I Need to Pay Estimated Taxes?","acceptedAnswer":{"@type":"Answer","text":"<p>Yes. In most cases you must pay estimated taxes on your Texas tax, federal income tax and self-employment tax. Speak to your accountant for more information.</p>"}}]}
+            `}</script>
+        </Helmet>
+    </Layout>
 );
 
 export default TexasBusinessTaxes;
