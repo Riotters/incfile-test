@@ -22,8 +22,6 @@ const GlossaryPage = () => {
         return jsonGlossary.push(obj);
     });
 
-    console.log('HH', jsonGlossary);
-
     return (
         <Layout>
             <SEO title="Business Terms Glossary: Definitions of Important Terminology" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
