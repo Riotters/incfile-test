@@ -12,6 +12,7 @@ import ContentMap from "../../atomic/partials/content-map";
 import { top, namingYourBusiness } from "../../static/states-llc/new-jersey/home";
 import { tabPages } from "../../static/states-llc/new-jersey/general";
 import { getFullPricesAndFilings } from '../../api/Api';
+import { Helmet } from 'react-helmet';
 
 const BusinessNamesPage = () => {
     const [dataApi, setDataApi] = React.useState({});

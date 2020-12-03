@@ -18,10 +18,19 @@ import Articles from "../atomic/sections/articles";
 //texts
 import { top, about, businessesChoose, otherTerms, register, behalf, protect, states, help, faq } from "../static/fictitious-business";
 import { Helmet } from "react-helmet";
+import ProductSchema from "../components/product-schema";
 
 const FictitiousBusiness = () => (
     <Layout>
         <SEO title="DBA Filing | Create a Fictitious Business or Trade Name" description="If you want to do business with a name other than your legal business name, you might need to file an assumed business name with your state. Learn more." />
+
+        <ProductSchema
+            productDescription="File a fictitious business or assumed business name to do business under a name other than your legal business name."
+            productPrice="99"
+            productName="File a Fictitious Business Name or DBA"
+            productUrl="https://orders.incfile.com/fictitious-business-name"
+        />
+
         <Top imageName="mrs-bulb-dba" imageAlt="Mr. Bulb choosing his fictitious business name" ovalColor="purple">
             <h1>{top.header}</h1>
             <p>{top.text}</p>
