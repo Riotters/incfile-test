@@ -1,20 +1,15 @@
 export const about = {
-    links: [
-      {
+    links: [{
         text: `View All Topics`,
         url: `/help-center/`,
-      },
-    ],
+    }, ],
     header: `General`,
-  }
+}
 
 export const related = {
-    header: 
-        `General`,
-    text:
-        `Other users were also interested in knowing about…`,
-    buttons: [
-        {
+    header: `General`,
+    text: `Other users were also interested in knowing about…`,
+    buttons: [{
             header: `How to Get a Trademark: A Complete Guide`,
             url: `/research-topics/general-research-topics/how-to-get-trademark/`,
         },
@@ -82,5 +77,5 @@ export const related = {
             header: `What is the Customized Corporate/LLC Kit?`,
             url: `/research-topics/general-research-topics/customized-corp-llc-kit/`,
         },
-      ],
-  }
+    ],
+}
