@@ -33,7 +33,7 @@ import {getFullPricesAndFilings} from "../api/Api";
 import ReactTabs from "../atomic/partials/ReactTabs";
 import {TabPanel} from "react-tabs";
 
-const AlaskaCorporation = () => {
+const IowaCorporation = () => {
     const [dataApi, setDataApi] = React.useState({});
     const [
         filingTimeAndRequirementHeader,
@@ -424,4 +424,4 @@ const TabsWrapper = styled.section`
   }
 `;
 
-export default AlaskaCorporation;
+export default IowaCorporation;
