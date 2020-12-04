@@ -75,7 +75,6 @@ const Arrow = styled.div`
 
 const ArrowLink = ({ children, className, url, externalLink, ...rest }) => (
   <>
-    {console.log(externalLink)}
     {!externalLink ? (
       <Wrapper to={url ?? "/"} className={className} {...rest}>
         <Arrow>

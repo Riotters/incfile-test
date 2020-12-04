@@ -409,10 +409,6 @@ const AlabamaCorporation = () => {
     );
 };
 
-const InfoSection = styled.section`
-  margin-bottom: 148px;
-`;
-
 const QuestionSection = styled.section`
   background-image: ${gradient.orange3};
   position: relative;
@@ -420,8 +416,6 @@ const QuestionSection = styled.section`
   margin-top: 52px;
   margin-bottom: 148px;
 `;
-
-const PackageSection = styled.section``;
 
 const ServiceSection = styled.section`
   background-image: ${gradient.blue3};

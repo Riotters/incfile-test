@@ -8,7 +8,6 @@ import ContentObject from "../../../partials/left-content-right-object";
 import Card from "../../../../components/certificate-card";
 import Oval from "../../../atoms/icons/oval";
 import Curve from "../../../atoms/icons/curve";
-import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import Oval2SVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import CurveSVG from "../../../../images/curves/bottom-left-top-right-big.inline.svg";
 import TextCheck from "../../../molecules/static-check/circle-checkmark-text";

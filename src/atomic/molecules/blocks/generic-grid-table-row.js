@@ -245,8 +245,8 @@ const Panel = ({ children }) => {
 
 const GenericGridTableRow = ({ className, content, settings, columns }) => (
   <Wrapper className={className} columns={columns}>
-    {content.map((item) => (
-      <Cell textCenter={item.textCenter ?? false} style={item.style ?? {}} padding={settings?.padding}>
+    {content.map((item, i) => (
+      <Cell textCenter={item.textCenter ?? false} style={item.style ?? {}} padding={settings?.padding} key={i}>
         {item.header && (
           <Heading size={item.headerSize ?? "5"} bottomMargin="0" style={{}}>
             {item.label}
@@ -346,14 +346,14 @@ const GenericGridTableRow = ({ className, content, settings, columns }) => (
         {item.subcontent && (
           <Panel>
             {item.subcontent.items &&
-              item.subcontent.items.map((subitem) => (
-                <FlexColumn>
+              item.subcontent.items.map((subitem, index) => (
+                <FlexColumn key={index}>
                   {subitem.header && <Heading size={5}>{subitem.header}</Heading>}
                   {subitem.text && <Paragraph className="left">{subitem.text}</Paragraph>}
                   {subitem.items && (
                     <ul>
-                      {subitem.items.map((listItem) => (
-                        <UlListItem>{listItem}</UlListItem>
+                      {subitem.items.map((listItem, i) => (
+                        <UlListItem key={i}>{listItem}</UlListItem>
                       ))}
                     </ul>
                   )}

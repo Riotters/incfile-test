@@ -6,8 +6,6 @@ import { color } from "../../atoms/styles/colors";
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  //width: 100%;
-  //padding-top: 72px;
 
   h5 {
     font-family: Avenir, sans-serif;
@@ -62,8 +60,8 @@ const TaxReturnTable = ({ className, content }) => {
   return (
     <Wrapper className={className}>
       <GridTableRow className="head" content={content.headers} header headerSize="5" columns="1fr 1fr 1fr 1fr" />
-      {content.rows.map((row) => (
-        <GridTableRow className="row" content={row} columns="1fr 1fr 1fr 1fr"  />
+      {content.rows.map((row, i) => (
+        <GridTableRow key={i} className="row" content={row} columns="1fr 1fr 1fr 1fr"  />
       ))}
     </Wrapper>
   );

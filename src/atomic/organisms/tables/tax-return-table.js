@@ -21,8 +21,8 @@ const TaxReturnTable = ({ className, content }) => {
         <CurveSVG />
       </Curve>
       <GridTableRow content={content.headers} columns="2" header />
-      {content.rows.map((row) => (
-        <GridTableRow content={row} columns="2" list />
+      {content.rows.map((row, i) => (
+        <GridTableRow key={i} content={row} columns="2" list />
       ))}
     </Wrapper>
   );

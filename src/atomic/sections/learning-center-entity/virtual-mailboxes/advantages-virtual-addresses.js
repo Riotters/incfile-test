@@ -11,11 +11,6 @@ import Curve from "../../../atoms/icons/curve";
 import CurveSVG from "../../../../images/curves/top-left-right-orange2-big.inline.svg";
 import CurveSVG2 from "../../../../images/curves/bottom-right-reverse-big-orange2.inline.svg";
 import Cards from "../../../organisms/cards/entity-search-adventages";
-import parse from "html-react-parser";
-import Image from "../../../atoms/image/image_nobase64";
-import Whitebox from "../../../atoms/boxes/white-box";
-import ArrowLink from "../../../molecules/buttons/text";
-import { moreInfo } from "../../../../static/learning-center-entity/virtual-mailboxes";
 import Card from "../../../../atomic/molecules/mixed-blocks/top-image-box";
 
 const AdvantagesSection = styled.section`
@@ -23,50 +18,6 @@ const AdvantagesSection = styled.section`
 	padding: 108px 0;
 	background: linear-gradient(${color.orange3}, #fff);
 	overflow: hidden;
-`;
-
-const Improvement = styled.div`
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-gap: 30px;
-	align-items: center;
-	margin-top: 110px;
-
-	@media screen and (min-width: 850px) {
-		grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
-	}
-
-	.improvement__item {
-		padding: 20px;
-		align-items: flex-start;
-		flex-direction: column;
-		text-align: left;
-
-		@media screen and (min-width: 769px) {
-			padding: 40px;
-			width: 470px;
-
-			&:nth-child(2) {
-				grid-column: 2 /4;
-				grid-row: 0/3;
-			}
-		}
-
-		.gatsby-image-wrapper {
-			width: 96px;
-			align-self: center;
-			margin-bottom: 20px;
-		}
-	}
-`;
-
-const ImageWrapper = styled.div`
-	padding: 16px 0;
-	display: flex;
-	width: 100%;
-	margin-bottom: 24px;
-	justify-content: center;
-	background: ${(props) => (props.background ? props.background : color.white)};
 `;
 
 const CardsWrapper = styled.div`
@@ -115,10 +66,11 @@ const SearchSection = ({ className, content }) => (
 				</Paragraph>
 
 				<Grid>
-					{content.cards2.map((item) => (
+					{content.cards2.map((item, i) => (
 						<>
 							{item.link && (
-								<Card
+                                <Card
+                                    key={i}
 									content={{
 										header: item.header,
 										text: item.text,
@@ -129,7 +81,8 @@ const SearchSection = ({ className, content }) => (
 								/>
 							)}
 							{!item.link && (
-								<Card
+                                <Card
+                                    key={i}
 									content={{
 										header: item.header,
 										text: item.text,

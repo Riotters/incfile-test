@@ -4,7 +4,6 @@ import { color, gradient } from "../../../atoms/styles/colors";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import HeadingCenter from "../../../partials/heading-center";
 import ContentLeft from "../../../partials/content-left";
-import ContentCenter from "../../../partials/content-center";
 import CenterGrid from "../../../partials/center-grid";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-orange.inline.svg";

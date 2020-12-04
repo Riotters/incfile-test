@@ -99,15 +99,6 @@ const PanelWrapper = styled.div`
     font-size: 14px;
     line-height: 19px;
   }
-
-  // ul {
-  //   //list-style: none;
-  //   padding-left: 16px;
-
-  //   li {
-  //     padding-top: 16px;
-  //   }
-  // }
 `;
 
 const ListItems = styled.ul`
