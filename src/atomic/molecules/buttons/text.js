@@ -73,7 +73,7 @@ const Arrow = styled.div`
 const ArrowLink = ({ className, content, maxWidth, bottomPadding, bottomMargin, topMargin, onClick }) => (
   <>
     {!content.externalLink ? (
-      <Wrapper to={content.url} className={className} maxWidth={maxWidth} bottomPadding={bottomPadding} bottomMargin={bottomMargin} topMargin={topMargin} onClick={onClick}>
+      <Wrapper to={content.url.replace(/\/?$/, '/')} className={className} maxWidth={maxWidth} bottomPadding={bottomPadding} bottomMargin={bottomMargin} topMargin={topMargin} onClick={onClick}>
         <Arrow>
           <ArrowSVG />
         </Arrow>

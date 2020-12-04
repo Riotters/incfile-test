@@ -17,17 +17,17 @@ export const pages = [{
     {
         header: `LLC`,
         text: `What Does LLC Mean?`,
-        url: `/research-topics/llc-info/llc-meaning/#answers`,
+        url: `/research-topics/llc-info/what-does-llc-mean/`,
     },
     {
         header: `LLC`,
         text: `Can an LLC be formed without listing the members on on…`,
-        url: `/research-topics/llc-info/can-an-llc-or-formed-without-listing-the-members-on-on-the-articles-of-organization/#answers`,
+        url: `/research-topics/llc-info/can-an-llc-or-formed-without-listing-the-members-on-on-the-articles-of-organization/`,
     },
     {
         header: `LLC`,
         text: `Can another business entity be a member of an LLC?`,
-        url: `/research-topics/llc-info/llc-business-entity-member/#answers`,
+        url: `/research-topics/llc-info/can-another-business-entity-be-a-member-of-an-llc/`,
     },
 
     {

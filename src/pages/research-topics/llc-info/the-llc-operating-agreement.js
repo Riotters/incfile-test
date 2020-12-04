@@ -3,7 +3,7 @@ import Layout from "../../../components/layout";
 import SEO from "../../../components/seo";
 //Sections
 import Top from "../../../atomic/partials/top";
-import About from "../../../atomic/sections/research-topics/llc-info/llc-vs-s-corporation";
+import About from "../../../atomic/sections/research-topics/llc-info/llc-operating-agreement";
 import Related from "../../../atomic/sections/learning-center-entity/help-center-article/related";
 import Categories from "../../../atomic/sections/learning-center-entity/help-center-article/categories";
 import Service from "../../../atomic/sections/learning-center-entity/help-center/service";
@@ -12,7 +12,7 @@ import Rocket from "../../../atomic/sections/review-entity-types/c-corporation/r
 import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 //Texts
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
-import { about } from "../../../static/research-topics/llc-info/llc-vs-s-corporation";
+import { about } from "../../../static/research-topics/llc-info/llc-operating-agreement";
 
 import { related } from "../../../static/research-topics/llc-info";
 
@@ -36,10 +36,7 @@ const HelpCenter = () => {
 
     return (
         <Layout>
-            <SEO
-                title="S-Corporation vs LLC: Which Is Best for Your Business?"
-                description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state."
-            />
+            <SEO title="The LLC operating agreement" description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state." />
             <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
                 <h1>{top.header}</h1>
                 <p>{top.text}</p>
@@ -54,4 +51,5 @@ const HelpCenter = () => {
         </Layout>
     );
 }
+
 export default HelpCenter;
