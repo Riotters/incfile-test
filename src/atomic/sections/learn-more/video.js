@@ -1,9 +1,7 @@
 import React from "react";
 import HeadingCenter from "../../partials/heading-center";
-import { service } from "../../../static/learning-center-entity/alaska-corporation";
 import ContentCenter from "../../partials/content-center";
 import Curve from "../../atoms/icons/curve";
-import { color } from "../../atoms/styles/colors";
 import Curve2SVG from "../../../images/curves/bottom-left-top-right-reverse-big.inline.svg";
 import LightBoxVideo from "../../../components/LightBox";
 import styled from "styled-components";
