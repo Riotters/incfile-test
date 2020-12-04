@@ -99,9 +99,13 @@ const AlaskaCorporation = () => {
             </Paragraph>
                             <Paragraph big>Your new business’ name must include one of the following words, an abbreviation thereof, or words of similar meaning in another language: “Incorporated,” “Corporation,” or “Company.”</Paragraph>
                             <Paragraph big>An available corporate name may be reserved for up to four months by for a $22 fee.</Paragraph>
-                            <Paragraph big style={{ marginBottom: "0" }}>
+                            <Paragraph big style={{ marginBottom: "32px" }}>
                                 Utah state law also restricts the use of certain words and phrases in business names, such as “Olympics,” “Olympiad,” “College,” “University,” and “Institute.”
             </Paragraph>
+            <LightBoxVideo
+                thumbnailVideo="what-is-a-corporation-8899"
+                videoID="oYZShvmf9eQ"
+              />
                         </PanelWrapper>
                         <PanelWrapper>
                             <Heading size={3} style={{ marginBottom: "24px" }}>

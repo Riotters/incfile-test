@@ -1112,8 +1112,7 @@ export const naming = [
   {
     type: "header",
     content:
-      "Rules on Infringing on Service Marks or Trademarks Inside \n" +
-      "or Outside Georgia",
+      "Why You Don’t Want to Infringe on Trademark or Service Mark Names",
     size: 4,
     marginBottom: 24,
   },
