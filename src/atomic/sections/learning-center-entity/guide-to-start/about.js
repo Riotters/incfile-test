@@ -41,7 +41,13 @@ const AboutSection = ({ className, content, hsOpenForm }) => (
         {content.text}
       </Paragraph>
       <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve />
-      <LightBox thumbnailVideo="comparison-chart-video-3611" videoID="M-SlUnCHmXU" />
+      <LightBox thumbnailVideo="comparison-chart-video-3611" videoID="M-SlUnCHmXU" videoSchema={{
+          name: "\"How to Start a Business: 4 Simple Steps to Starting Your Own Company\" by Incfile",
+          description: "Want to know how to start a business? As an entrepreneur, you can likely relate to the excitement and fear that comes with starting a business. But these four simple steps will help anyone dreaming of starting their own business take it to becoming a reality.",
+          uploadDate: "2020-03-22",
+          duration: "1:50",
+          interactionCount: "1761",
+      }} />
       <Paragraph big bottomMargin="32" topMargin={32}>
         {content.text2}
       </Paragraph>

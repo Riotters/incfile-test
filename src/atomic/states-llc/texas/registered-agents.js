@@ -41,6 +41,7 @@ const RegisteredAgentSection = ({ content }) => {
                             thumbnailVideo={item.videoThumb}
                             videoID={item.videoID}
                             bottomMargin="32"
+                            videoSchema={item.schema}
                         />
                     )}
 

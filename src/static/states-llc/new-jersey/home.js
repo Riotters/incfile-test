@@ -38,6 +38,33 @@ export const howToGuide = [
     image: "forming-an-llc-in-new-jersey-8266",
     id: `0sh4OgPJ3kE`,
     marginBottom: 40,
+    schema: {
+      name: "\"Forming an LLC in New Jersey\" by Incfile",
+      description: "\n" +
+          "With an LLC formed in New Jersey, you get the protection and advantages of a corporation, but with much simpler rules to follow. And we all like easy rules, don’t we?\n" +
+          "\n" +
+          "The Garden State is filled with big ideas and new innovations. Forming an LLC is the quickest and most legal way to start your business and make your dream a reality. It protects your personal assets from unpleasant situations, such as getting sued or going bankrupt. \n" +
+          "\n" +
+          "How to Start an LLC in New Jersey: \n" +
+          "Step 1: Gather Your Members\n" +
+          "Step 2: Choose a Unique Business Name\n" +
+          "Step 3: Provide an Official Address\n" +
+          "Step 4: Assign a Registered Agent\n" +
+          "Step 5: Get an Employer Identification Number (EIN)\n" +
+          "Step 6: Make It Official with the State of New Jersey \n" +
+          "\n" +
+          "Here are some links that will be useful in getting your LLC set up: \n" +
+          "\n" +
+          "- https://www.incfile.com/business-name-search/\n" +
+          "- https://www.incfile.com/manage-your-company/registered-agent/ \n" +
+          "- https://www.incfile.com/manage-your-company/tax-id-ein/\n" +
+          "- https://www.incfile.com/\n" +
+          "- https://www.incfile.com/manage-your-company/ \n" +
+          "- https://www.incfile.com/free-llc/\n",
+      duration: "1:49",
+      uploadDate: "2020-10-05",
+      interactionCount: "91",
+    }
   },
   {
     type: `text`,

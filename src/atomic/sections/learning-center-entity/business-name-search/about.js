@@ -30,6 +30,16 @@ const AboutSection = ({ className, content }) => (
       <LightBoxVideo
         thumbnailVideo="how-do-i-perform-a-business-name-search-5332"
         videoID="XePRillB3UE"
+        videoSchema={{
+            name: "\"How Do I Perform a Business Name Search?\" by Incfile",
+            description: "\n" +
+                "Picking the perfect business name is hard! Once you've narrowed down your options, you'll need to run a business entity search to ensure your preferred name is available and not already taken by another business in your state. This can be done on your state's Secretary of State website using their business lookup tool, or through Incfile's Business Name Search Tool, which searches your state's business registry for you. \n" +
+                "\n" +
+                "To check your business name's availability, visit the Incfile Business Name Search Tool here: https://www.youtube.com/redirect?q=https%3A%2F%2Fwww.incfile.com%2Fbusiness-name-search%2F&redir_token=QUFFLUhqazhYbmpFY2w1Q1hoQlg5Z0NtRUpmVWtJa2JfQXxBQ3Jtc0tuVlMxdlA4NHB6cjBnWkdCaW0yTnlPNTZGTF9HUF9IM2FyNGR3OUdjT05QZDhPMGtWYzNnVVRacGFISUh1ZEF4clFybllJSDBQU2RNbGVzd0YtSUJjREVVNk4tSWQ3VVNMYzQtdU9yaFp6cXd4T0pfUQ%3D%3D&event=video_description&v=XePRillB3UE.\n",
+            uploadDate: "2020-07-03",
+            duration: "1:18",
+            interactionCount: "60",
+        }}
       />
     </ImageContent>
   </About>

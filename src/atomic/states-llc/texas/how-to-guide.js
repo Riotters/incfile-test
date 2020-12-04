@@ -125,6 +125,21 @@ const HowToGuide = ({ content, data }) => {
           thumbnailVideo="tx-llc-video-thumbnail-01"
           videoID="wGAzGRmy6m8"
           bottomMargin="32"
+          videoSchema={{
+              name: "\"Forming an LLC in Texas\" by Incfile",
+              description: "\n" +
+                  "Want to form a Texas LLC but not sure where to start? We'll walk you through the steps to starting your Texas business, including securing a unique business name, getting a registered agent, writing an operating agreement, and filing Form 501 (your certificate of formation) with the Texas Secretary of State. Incorporate your new Texas LLC today!\n" +
+                  "\n" +
+                  "Here are a few additional resources that are useful for forming an LLC in the state of Texas:\n" +
+                  "Incfile’s Business Name Search tool: https://www.youtube.com/redirect?q=https%3A%2F%2Fwww.incfile.com%2Fbusiness-name-search%2F&redir_token=QUFFLUhqbHpKZ1pGUUZWXzJzOFczdEdxVmh5dUk2Vmh5d3xBQ3Jtc0trd3ZteXE2LWFBTGFqSjNzem5jTVRYczBabUtWM3UwSkttYzRzNmhCY2dwZ0Q1MUlYZ2FsbF96ZmFDSlhvSDBfRDg1MXVTaURmZ2RsemhTTVlJNkpIMThvYnNyV2dpVV9TV3ZycWk1dmdsVmwxTGxtOA%3D%3D&v=wGAzGRmy6m8&event=video_description \n" +
+                  "\n" +
+                  "Incfile Information Regarding Registered Agents: https://www.youtube.com/redirect?q=https%3A%2F%2Fwww.incfile.com%2Fregistered-agents%2F&redir_token=QUFFLUhqa2xHU0c5WXNPMm02b0tfcVpHQ2tFbzU0RUxQd3xBQ3Jtc0tuV1dOMmNBbmNOam9WcXg2dUVmQlZSZnE5Q3VReVRIcXBRUG5FSDJJSlhTaGg3bnVOa0hxS2p5blBlMU5Fay1ISWx4SDJnN0lHTDQzWG4zdGRIYWdTT0pCUUhNblhmMlh5WE5hTzlHUnM0QXYweERrZw%3D%3D&v=wGAzGRmy6m8&event=video_description.\n" +
+                  "\n" +
+                  "Incfile Register Your LLC Packages: https://www.youtube.com/redirect?q=https%3A%2F%2Fwww.incfile.com%2Fform-order-now.php%3FentityType%3D%26entityState%3D&redir_token=QUFFLUhqbWswR2daUUtyc3NfcUxMTmhTcmhnelJYclpBQXxBQ3Jtc0tsS2VBWWh5NjNLY3E1bWtLbjF6M2xjVzUwdGp5emI1bTVidWdaZzhtWkxQclhKVkpxZGFMZmg0WW5feDBMNnAwV2Z4aVRnb0Jzc0tBbE0yeXVaMjhkZzVlOVg5QmJNcERaWkYxZmR2TThhZFZ4a3A2RQ%3D%3D&v=wGAzGRmy6m8&event=video_description.\n",
+              uploadDate: "2020-06-03",
+              duration: "1:48",
+              interactionCount: "857",
+          }}
         />
       </div>
 

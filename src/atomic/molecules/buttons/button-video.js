@@ -7,6 +7,8 @@ import { createPortal } from "react-dom";
 import Arrow2SVG from "../../../images/arrow2.inline.svg";
 import PlayerSVG from "../../../images/icons/player.inline.svg";
 import CloseSVG from "../../../images/icons/close.inline.svg";
+import { buildSchemaJSON } from "../../../components/LightBox";
+import Helmet from "react-helmet";
 
 const PortalComponent = ({ children, visible }) => {
 	return createPortal(
@@ -30,7 +32,7 @@ class ButtonVideo extends Component {
 	};
 
 	render() {
-		const { videoID, thumbnailVideo, vimeo, bottomMargin } = this.props;
+		const { videoID, thumbnailVideo, vimeo, bottomMargin, videoSchema } = this.props;
 		const { showLightBox } = this.state;
 
 		return (
@@ -66,6 +68,11 @@ class ButtonVideo extends Component {
 						</LightBoxContent>
 					</PortalComponent>
 				)}
+				<Helmet>
+					<script type="application/ld+json">
+						{`${buildSchemaJSON(videoID, videoSchema ?? null, vimeo ? "vimeo" : "youtube")}`}
+					</script>
+				</Helmet>
 			</Fragment>
 		);
 	}
@@ -227,4 +234,11 @@ export default ButtonVideo;
 ButtonVideo.propTypes = {
 	thumbnailVideo: PropTypes.string.isRequired,
 	videoID: PropTypes.string.isRequired,
+	videoSchema: PropTypes.shape({
+		name: PropTypes.string,
+		description: PropTypes.string,
+		uploadDate: PropTypes.string,
+		duration: PropTypes.string,
+		interactionCount: PropTypes.string,
+	}),
 };

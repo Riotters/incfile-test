@@ -25,9 +25,27 @@ export const agentPageContent = {
       content: `Your LLC must have a Georgia Registered Agent at all times. You can appoint a Registered Agent when you first start your business, and you can also replace your existing GA Registered Agent at a later date, provided there is a smooth transition between the old and new Registered Agent service.`,
     },
     {
-      type: `video`,
-      image: `what-is-a-registered-agent-7199`,
-      id: `wSsZAvrT-IU`,
+      type: "video",
+      url: "wSsZAvrT-IU",
+      thumbnail: "what-is-a-registered-agent-7199",
+      schema: {
+        name: "\"What is a Registered Agent?\" by Incfile",
+        description: "\n" +
+            "A Registered Agent is an individual or organization that receives legal documents like tax forms, subpoenas, lawsuits and summons for your business. They are required by every state if you form a business.\n" +
+            "\n" +
+            "Also known as an Agent for Service of Process, a Statutory Agent, or a Resident Agent, a Registered Agent receives important documents on your behalf so you don’t have to. \n" +
+            "\n" +
+            "You can choose to be your own Registered Agent, or you can put it in the hands of someone who is legally equipped to be your Registered Agent.\n" +
+            "\n" +
+            "Want to learn more about Registered Agents? Visit the links below: \n" +
+            "- Incfile's Registered Agent Service (free for the first year when you incorporate with us): https://www.youtube.com/redirect?event=video_description&v=wSsZAvrT-IU&redir_token=QUFFLUhqbEJZQ3JXeERZYWtiRGt6MDNZNk0zZHk3dkNXUXxBQ3Jtc0tsVk9wX2dTZ1dISEIzWkJoU3pwd2ZaTzhzMmQxb2JpTmE4dnNfWXRxS2pveTU5Z0hhYlFjZDlWSTlrUVNBbDNXS0JSNF83WGVLeFp0c1V0WU1KUElJeWxYRDJXSjJPVlV0SUtVTkgyb2hwMlROWW5XQQ%3D%3D&q=https%3A%2F%2Fwww.incfile.com%2Fmanage-your-company%2Fregistered-agent%2F\n" +
+            "- Everything You Need to Know About Registered Agents: https://www.youtube.com/redirect?event=video_description&v=wSsZAvrT-IU&redir_token=QUFFLUhqbXh0T1ZmMWhFUFZaRzZORnZJZl95bkstZTk2QXxBQ3Jtc0trb0JYLXAzTlhkbmJrQWhFYXBTb0t4dW5GWnB2T2dsYTMtX3pSS1h4bnNMU3AtZWdEcWsteE9JdzZBMkZVWVpBZXFkeHFZVkZPSEJySHlyTDBJczdzX3Z2UFNlNnc2elMyUk8wazNNZS1HMGMwX0dtSQ%3D%3D&q=https%3A%2F%2Fwww.incfile.com%2Fregistered-agents%2F\n" +
+            "- Can I Act as My Own Registered Agent?: https://www.youtube.com/redirect?event=video_description&v=wSsZAvrT-IU&redir_token=QUFFLUhqbUgtdTgtZHpVUE1iMU9rT3ZhZ0xRSnRxYlZUQXxBQ3Jtc0trYTZ4OEdaLUZmX2ZTdVJod0ZYUFROanpSOFNPN1dzamNkeWFTOW0xQTYwbkFQbW1XVERVS0RjTkxjQXc3alR2Z0hRdEw5dHFfRnR2STNpeEIzSWRlNVlHNUZrWW9ER3QyU3RQOElWWjRBcUlfcXpfVQ%3D%3D&q=https%3A%2F%2Fwww.incfile.com%2Fresearch-topics%2Fregistered-agent-help%2Fcan-i-act-as-my-own-registered-agent%2F\n" +
+            "- Filing a Change of Registered Agent: https://www.youtube.com/redirect?event=video_description&v=wSsZAvrT-IU&redir_token=QUFFLUhqbG9tVU1RRHE4WlRlYkx1NDF1TjdQSEpWZC1rZ3xBQ3Jtc0tudkV5bU10a1NvX3J6UXJQbFdleXZNbUxwbFpBLXJiUFdkX2lCRjFWSVpieEpKMnR0R2o2Wml6MzFkQS1MUWhqTTJpT19nVWF6cDV6QW8zdE5tcVVVU0FYWHFfd3FzcWlTV25oQldzRTlHRmhMcWlmRQ%3D%3D&q=https%3A%2F%2Fwww.incfile.com%2Fmanage-your-company%2Fchange-of-registered-agent%2F\n",
+        uploadDate: "2020-06-05",
+        duration: "1:16",
+        interactionCount: "595760",
+      },
     },
     {
       type: `heading`,

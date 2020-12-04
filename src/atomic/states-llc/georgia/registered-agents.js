@@ -66,7 +66,7 @@ const RegisteredAgentSection = ({ content }) => {
 
           {item.type === "accordionWithCounting" && <AcccordionCounting content={item.content} tab />}
 
-          {item.type === "video" && <LightBoxVideo thumbnailVideo={item.image} videoID={item.id} />}
+          {item.type === "video" && <LightBoxVideo thumbnailVideo={item.image} videoID={item.id} videoSchema={item.schema} />}
         </div>
       ))}
     </Wrapper>

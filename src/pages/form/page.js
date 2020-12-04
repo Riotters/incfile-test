@@ -43,7 +43,14 @@ const IncfileVsLegalzoom = () => {
 						arrow
 						margin="0 0 32px 0"
 					/>
-					<ButtonVideo videoID="372490609" vimeo />
+					<ButtonVideo videoID="372490609" vimeo videoSchema={{
+						name: "Easy LLC Formation $0",
+						image: "https://i.vimeocdn.com/video/830330144_640.jpg",
+						description: "Create an LLC with ease",
+						uploadDate: "2019-11-11 17:29:41",
+						duration: "1:16",
+						interactionCount: "141246",
+					}} />
 				</Buttonsbox>
 				<RatingRow topMargin="0">
 					<CartBlock />

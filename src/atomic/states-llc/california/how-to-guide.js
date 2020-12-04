@@ -131,6 +131,34 @@ const HowToGuide = ({ content, data }) => {
           thumbnailVideo="ca-llc-video-thumbnail-01"
           videoID="5A75PcGNC54"
           bottomMargin="32"
+          videoSchema={{
+              name: "\"Forming an LLC in California\" by Incfile",
+              description: "\n" +
+                  "Want to learn how to start a California LLC? From the influential tech scene of Silicon Valley to rugged and rural Northern California, California boasts the most powerful economy in the U.S. \n" +
+                  "\n" +
+                  "So, put your shades on and let’s get started on how you can form an LLC in the Golden State.\n" +
+                  "By creating a California LLC, you get the advantages and protections of larger California corporations, but with much simpler rules and regulations.\n" +
+                  "\n" +
+                  "Steps to Forming a California LLC:\n" +
+                  "1) Gather your members' information\n" +
+                  "2) Choose a name and make sure it's available\n" +
+                  "3) Provide an official business address\n" +
+                  "4) Designate a California Registered Agent\n" +
+                  "5) File your Articles of Incorporation with the CA SOS\n" +
+                  "6) Get an EIN number\n" +
+                  "7) File a Statement of Information \n" +
+                  "\n" +
+                  "Here are some valuable resources for additional info and to get you started:\n" +
+                  "\n" +
+                  "- A Complete Guide to California LLCs:  https://www.incfile.com/california-llc/ \n" +
+                  "- California Business Entity Search: https://www.incfile.com/business-name-search/ \n" +
+                  "- Registered Agent Services: https://www.incfile.com/manage-your-company/registered-agent/\n" +
+                  "- Getting a Federal EIN for Your Business: https://www.incfile.com/manage-your-company/tax-id-ein/\n" +
+                  "- File Your Articles of Incorporation with the CA Secretary of State for free with Incfile: https://www.incfile.com/\n",
+              uploadDate: "2020-08-03",
+              duration: "1:28",
+              interactionCount: "303",
+          }}
         />
       </div>
 

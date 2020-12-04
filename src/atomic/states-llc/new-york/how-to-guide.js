@@ -131,6 +131,36 @@ const HowToGuide = ({ content, data }) => {
           thumbnailVideo="ny-llc-video-thumbnail-01"
           videoID="8ddZw2R7Hig"
           bottomMargin="32"
+          videoSchema={{
+              name: "\"Forming an LLC in NY\" by Incfile",
+              description: "\n" +
+                  "New York is home to some big-time industries and has the population to support almost any market, making it an excellent choice for starting an LLC. \n" +
+                  "\n" +
+                  "How to Start a New York LLC: \n" +
+                  "When you're ready to start a new business, forming an LLC is your best bet for creating a quick, legal and protected company in the Empire State. It usually only takes about six steps to get you from start to finish.\n" +
+                  "\n" +
+                  "1) Compile your business member information. Gather a list of everyone involved with your LLC, including their names, addresses and the roles they’ll fulfill.\n" +
+                  "\n" +
+                  "2) Name your LLC. Pick a name for your LLC that’s unique to your business. Incfile offers a business name search tool that can help you find a name that’s legally available (link below).\n" +
+                  "\n" +
+                  "3) Pick a Registered Agent: That’s just a fancy term for the person you’ll designate to handle your business’s legal and tax documentation. The Registered Agent could be you or another member of the LLC, or we can appoint one for you. In fact, with a $0 LLC formation, Incfile offers one full year of Registered Agent service for free!\n" +
+                  "\n" +
+                  "4) File for a Tax ID number/EIN. You’ll need to apply for an EIN. This is used to identify your business when you pay your employees and file taxes.\n" +
+                  "\n" +
+                  "5) File your Articles of Organization. Every LLC must file Articles of Organization with the New York Department of State. These are the official documents that declare your business name and who’s in charge of the nitty-gritty details.\n" +
+                  "\n" +
+                  "6) Make it official. New York State has an extra LLC publication requirement that you need to make sure you meet within 120 days of filing your Articles of Organization. To meet this requirement, publish your Articles of Organization in two newspapers designated by your county clerk. You get a Certificate of Publication to hold onto as a testament to this momentous achievement. \n" +
+                  "\n" +
+                  "Ready to form your LLC? Here are a few resources to get you started:\n" +
+                  "\n" +
+                  "- Read a detailed guide to starting an LLC in New York: https://www.incfile.com/new-york-llc/\n" +
+                  "- Check to see if your business name is available in New York: https://www.youtube.com/redirect?v=8ddZw2R7Hig&redir_token=QUFFLUhqbFB6R25sUGxwSjE4RGtIX1R0eEJrb0RXZVVPZ3xBQ3Jtc0tsamV2elFsRnVFOG5yUzhPNHFhRW01LVNkN2JmekZSaEFWQ1Z5WWF1LVh3OWYySWFiMlYyVDFmb2VWY1RHWDlVaHQtWlVveFJhRnhRYk8tUWh1dDdobUFBYWxDTU00WkZEWDlJalgtaW55bUw2ZGVHOA%3D%3D&q=https%3A%2F%2Fwww.incfile.com%2Fbusiness-name-search%2F&event=video_description\n" +
+                  "- Get a Registered Agent: https://www.youtube.com/redirect?v=8ddZw2R7Hig&redir_token=QUFFLUhqbFpmNG41UGNvT3M5ZWE4a1JWS1BIalhQVWthZ3xBQ3Jtc0trTXJXNnVKZlczbW4wckdSVVNMdjdVOC1qUHotWmdFNThqNjVSUGFla3QyNVdsaDRlS0lBRkNGSXp4c1BleEs5TTh0TXNIYi11QmNVMDU0alZtbE0yLVNUQlFoMWNkOFg0aUV0TWRaWWp3bEFPX0ZDZw%3D%3D&q=https%3A%2F%2Fwww.incfile.com%2Fmanage-your-company%2Fregistered-agent%2F&event=video_description \n" +
+                  "- Get a Federal Tax ID / EIN Number: https://www.youtube.com/redirect?v=8ddZw2R7Hig&redir_token=QUFFLUhqbjFIVjY0aXdXYVN4MUtHbldkOFhGVVJGZUJVZ3xBQ3Jtc0trNURKSTF2QnowUUpJS2E4ZHlHYmNrWGU5R1p1RGtYX0k3c3Q4TlVjRE5oXzJMTUhFeFVEbk9fNy1zUjJwcEFNZmMxenVZSHJuelhWbkw0NTA3cFRZcm94WFNPcF81NzN5ckdHaFd2Y1lwN21MUm1oRQ%3D%3D&q=https%3A%2F%2Fwww.incfile.com%2Fmanage-your-company%2Ftax-id-ein%2F&event=video_description\n",
+              uploadDate: "2020-09-20",
+              duration: "1:46",
+              interactionCount: "104",
+          }}
         />
       </div>
 

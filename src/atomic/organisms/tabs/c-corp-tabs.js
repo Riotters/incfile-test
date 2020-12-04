@@ -315,6 +315,27 @@ const CCorpTabs = ({ layout, columns, content }) => {
 									thumbnailVideo="what-is-a-c-corporation-2737"
 									videoID="BmZ7zyLd710"
 									bottomMargin="32"
+									videoSchema={{
+										name: "\"What is a C Corporation?\" by Incfile",
+										description: "\n" +
+											"A C Corporation is one of several ways to legally structure a business. Whether it is for tax or regulatory purposes, a C Corp is a practical way to organize your business, especially if you plan to grow significantly or become public.\n" +
+											"\n" +
+											" We all want to grow big, don’t we?\n" +
+											"\n" +
+											" So, if you’re planning an IPO or intend to trade shares publicly, a C Corp is the way to go. Beyond that, it’s also more attractive to investors and venture capitalists.\n" +
+											"\n" +
+											"\n" +
+											"Want to learn more about C Corporations? Here are some resources: \n" +
+											"\n" +
+											"- What is a Corp? : https://www.incfile.com/what-is-c-corporation/\n" +
+											"Learn about the benefits, disadvantages, c corp taxes, and more. \n" +
+											"\n" +
+											"- Business Entity Quiz: https://www.incfile.com/business-entity-quiz/\n" +
+											"Take our quiz to help determine the best business entity type for your new business.\n",
+										uploadDate: "2020-07-05",
+										duration: "2:00",
+										interactionCount: "1015",
+									}}
 								/>
 								<Paragraph big>{content.content[0].text}</Paragraph>
 								<IconTextColorBox

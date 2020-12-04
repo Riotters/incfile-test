@@ -163,7 +163,7 @@ const Content = ({ content, data }) => {
 
           {item.type === "dynamic_filing_requirement" && <FilingRequirementBox data={data} margin="0 0 42px 0" />}
 
-          {item.type === "video" && <LightBoxVideo thumbnailVideo={item.image} videoID={item.id} bottomMargin={item.marginBottom} />}
+          {item.type === "video" && <LightBoxVideo thumbnailVideo={item.image} videoID={item.id} bottomMargin={item.marginBottom} videoSchema={item.schema} />}
         </>
       ))}
     </Wrapper>

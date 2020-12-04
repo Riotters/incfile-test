@@ -91,7 +91,34 @@ const OnlineBusiness = () => (
                             setting up your business and the realities of your day to day operations, this guide is here
                             to help.
                         </Paragraph>
-                        <LightBox thumbnailVideo="how-to-start-online-business-4569" videoID="zQGomf4mwFA"/>
+                        <LightBox thumbnailVideo="how-to-start-online-business-4569" videoID="zQGomf4mwFA" videoSchema={{
+                            name: "\"How to Start an Online Business\" by Incfile",
+                            description: "All right — we hear you’re ready to set up the next big online business. But how do you get started? We'll walk you through the important steps to forming an online business and make it successful. \n" +
+                                "\n" +
+                                "Step 1: Validate Your Online Business Idea\n" +
+                                "Be sure your business idea is unique and that you’ve researched and vetted your idea.\n" +
+                                "\n" +
+                                "Step 2: Conduct Market Research\n" +
+                                "Find out if there’s demand for your product or service\n" +
+                                "\n" +
+                                "Step 3: Pick a Unique Business Name\n" +
+                                "You'll want to conduct a business name search (Incfile has a free name search tool for your state here: https://www.incfile.com/business-name...) to make sure your chosen business name is legally available. \n" +
+                                "\n" +
+                                "Step 4: Set up Your Digital Presence\n" +
+                                " You'll need to check to see if someone already owns the URL you want, and you'll want to check for available account handles on popular social media networks, like Facebook, Instagram, and Twitter. \n" +
+                                "\n" +
+                                "Step 5: Figure Out Product or Service Logistics\n" +
+                                "Make sure you know what kind of products or services you'll offer, and how you'll deliver them to clients. \n" +
+                                "\n" +
+                                "Step 6: Research your customers and competitors \n" +
+                                "What do your ideal customers want from you? Where do they spend their time online? How will you solve their problems? \n" +
+                                "\n" +
+                                "Step 7: Make it official with Incfile’s $0 LLC formation\n" +
+                                "Don’t forget that until your business is filed as an LLC or a corporation, your personal assets are at risk. Make it official by securing your LLC with Incfile today for free at https://www.incfile.com/free-llc/",
+                            uploadDate: "2020-08-13",
+                            duration: "1:37",
+                            interactionCount: "219",
+                        }} />
                         <Paragraph big style={{marginTop: "48px"}}>
                             Read on for some insight into creating your own online business and becoming an internet
                             entrepreneur.

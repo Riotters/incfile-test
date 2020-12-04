@@ -77,7 +77,7 @@ const RegisteredAgentSection = ({ content }) => {
                     )}
 
                     {item.type === "video" && (
-                        <LightBoxVideo thumbnailVideo={item.thumbnail} videoID={item.url} />
+                        <LightBoxVideo thumbnailVideo={item.thumbnail} videoID={item.url} videoSchema={item.schema} />
                     )}
                 </div>
             ))}

@@ -23,6 +23,36 @@ export const howToGuide = [
     image: "forming-an-llc-in-delaware-2361",
     id: `imnAJolDWoU`,
     marginBottom: 40,
+    schema: {
+      name: "\"Forming an LLC in Delaware\" by Incfile",
+      description: "\n" +
+          "If you’re looking to start a business in Delaware, you’re in luck. There’s zero sales tax and a few unique state laws that benefit businesses, making it a popular place to form an LLC. \n" +
+          "\n" +
+          "If you’re forming an LLC in Delaware, you’ll benefit from easier maintenance and compliance, great tax benefits and personal asset protection.\n" +
+          "\n" +
+          "To form an LLC in Delaware, first round up all the necessary information of all co-founders. \n" +
+          "\n" +
+          "Second, pick a unique name that’s legally available in Delaware. Check out Incfile’s Business Name Search Tool to know if your LLC name is available. \n" +
+          "\n" +
+          "Next, provide your business address and name a Registered Agent. You’ll get one full free year of Registered Agent service when you file your LLC with us for $0 plus state fee! \n" +
+          "\n" +
+          "Then, you’ll need an EIN from the IRS. \n" +
+          "\n" +
+          "And finally, file a Certificate of Formation with the Delaware Division of Corporations. \n" +
+          "\n" +
+          "And you are on!\n" +
+          "\n" +
+          "Don’t forget to check out the links below and get all the help you need: \n" +
+          "\n" +
+          "- https://www.incfile.com/delaware-llc/ \n" +
+          "- https://www.incfile.com/business-name-search/\n" +
+          "- https://www.incfile.com/manage-your-company/registered-agent/\n" +
+          "- https://www.incfile.com/manage-your-company/tax-id-ein/\n" +
+          "- https://www.incfile.com/\n",
+      duration: "1:04",
+      uploadDate: "2020-09-07",
+      interactionCount: "148"
+    }
   },
   {
     type: `text`,

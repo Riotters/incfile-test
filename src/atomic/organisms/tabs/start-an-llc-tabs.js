@@ -395,6 +395,24 @@ const CCorpTabs = ({ layout, columns, content }) => {
 									thumbnailVideo="how-to-start-an-llc-2379"
 									videoID="R_oIgzYh7NU"
 									bottomMargin="40"
+									videoSchema={{
+										name: "\"How to Start an LLC\" by Incfile",
+										description: "\n" +
+											"Are you ready to make your business official and protect your personal assets? Learn how to form an LLC and officially incorporate your business, including:\n" +
+											"1) choosing a business name and running a business entity search in your state\n" +
+											"2) finding a Registered Agent\n" +
+											"3) creating an LLC operating agreement\n" +
+											"4) filing your Articles of Organization\n" +
+											"\n" +
+											"Learn more about setting up an LLC at https://www.incfile.com/form-an-llc/\n" +
+											"\n" +
+											"Additional Resources: \n" +
+											"Incfile's 'Business Name Search' tool: https://www.incfile.com/business-name-search/\n" +
+											"State-by-State Guides to Starting an LLC: https://www.incfile.com/llc-state-information/\n",
+										uploadDate: "2020-04-11",
+										duration: "2:58",
+										interactionCount: "2085",
+									}}
 								/>
 								<Paragraph big bottomMargin="48">
 									{content.content[0].text3}

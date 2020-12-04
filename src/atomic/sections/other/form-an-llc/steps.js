@@ -50,7 +50,24 @@ const StepsSection = ({ className, content }) => (
           <Curve top="-25" right="-29" color={color.purple1}>
             <CurveSVG />
           </Curve>
-          <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="R_oIgzYh7NU" />
+          <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="R_oIgzYh7NU" videoSchema={{
+              name: "\"How to Start an LLC\" by Incfile",
+              description: "\n" +
+                  "Are you ready to make your business official and protect your personal assets? Learn how to form an LLC and officially incorporate your business, including:\n" +
+                  "1) choosing a business name and running a business entity search in your state\n" +
+                  "2) finding a Registered Agent\n" +
+                  "3) creating an LLC operating agreement\n" +
+                  "4) filing your Articles of Organization\n" +
+                  "\n" +
+                  "Learn more about setting up an LLC at https://www.incfile.com/form-an-llc/\n" +
+                  "\n" +
+                  "Additional Resources: \n" +
+                  "Incfile's 'Business Name Search' tool: https://www.youtube.com/redirect?redir_token=QUFFLUhqbjQyVTh6UE8yendwekk2SEd4QWZWM0pxNHVNQXxBQ3Jtc0tsSGxrX1FEQ0dDd2xnSU1CSkVoc2o4TkR3Wm9UMmxOLVBHZkY5VUljMGw0VWw1MjFSeGJQVzRSbEVYNUVNQ1VWb3U5aURzUzRPXzNsQ1JXM1RDbG81RWpmcXpubmI0bzkxc0l2R0JyZF9oYzBISlZ3RQ%3D%3D&event=video_description&v=R_oIgzYh7NU&q=https%3A%2F%2Fwww.incfile.com%2Fbusiness-name-search%2F\n" +
+                  "State-by-State Guides to Starting an LLC: https://www.youtube.com/redirect?redir_token=QUFFLUhqa0pNUmM5bzEzdTRxUVAwN01aRW1PMDU5ZW42UXxBQ3Jtc0tsNnJ3UDlkU2F3aVYxbW4yS2dSWDc3OVVqdEp1VUFGaWUyQkdzMmpUX1Z3aGVjbWxKNG1NTDRuYlpNUDZLRTBaaGQxeERVcHZQYjRtWnhaUmdWTnpwMXVpTjBOZ055OFlvajhKYTBRbUE4Z2dGb1JUWQ%3D%3D&event=video_description&v=R_oIgzYh7NU&q=https%3A%2F%2Fwww.incfile.com%2Fllc-state-information%2F\n",
+              uploadDate: "2020-04-11",
+              duration: "2:58",
+              interactionCount: "2084",
+          }} />
         </Video>
       }
       contentWidth="500"

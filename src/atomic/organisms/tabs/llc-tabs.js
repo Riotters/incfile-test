@@ -395,6 +395,16 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => {
 								<LightBoxVideo
 									thumbnailVideo="what-is-an-llc-7280"
 									videoID="ZuadTwgek5U"
+									videoSchema={{
+										name: "\"What is an LLC?\" by Incfile",
+										description: "\n" +
+											"What exactly does LLC stand for? LLC stands for Limited Liability Company and it means exactly what it says. Forming an LLC limits the liability or risk your personal assets have related to your business. In the case of debt, bankruptcy, or lawsuit, you'll be protected.\n" +
+											"\n" +
+											"For more, check out the Incfile resource library mentioned in the video: https://www.incfile.com/business-resources/.\n",
+										uploadDate: "2020-04-26",
+										duration: "1:24",
+										interactionCount: "5093",
+									}}
 								/>
 								<Paragraph big topMargin="32">
 									{content.content[0].text2}

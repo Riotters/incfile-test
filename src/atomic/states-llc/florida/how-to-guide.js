@@ -131,6 +131,36 @@ const HowToGuide = ({ content, data }) => {
           thumbnailVideo="fl-llc-video-thumbnail-01"
           videoID="gXFjp7S_Fsw"
           bottomMargin="32"
+          videoSchema={{
+              name: "\"Forming an LLC in Florida\" by Incfile",
+              description: "\n" +
+                  "Florida is home to some of the biggest businesses in America—but is it the best place to form your LLC? \n" +
+                  "\n" +
+                  "Starting an LLC in Florida means you get the advantages and protections of larger Florida corporations, but with much simpler rules and regulations. Your Florida LLC will: \n" +
+                  "- Separate your personal assets from business liability or debt\n" +
+                  "- Be easy to maintain and keep compliant \n" +
+                  "- Pass tax benefits to you \n" +
+                  "\n" +
+                  "How to Form an LLC in Florida: \n" +
+                  "1. Gather your members’ info\n" +
+                  "2. Pick a name that's available in Florida\n" +
+                  "3. Provide an official address\n" +
+                  "4. Pick a Florida Registered Agent\n" +
+                  "5. Get an EIN / federal tax ID number\n" +
+                  "6. File a Certificate of Formation with the Florida Secretary of State\n" +
+                  "\n" +
+                  "\n" +
+                  "Here are some additional links you might find useful for your Florida LLC:\n" +
+                  "\n" +
+                  "https://www.incfile.com/florida-llc/ - Our \"How To\" Guide All About Florida LLCs\n" +
+                  "https://www.incfile.com/business-name-search/ - Conduct a business entity search with the Florida Sunbiz / Secretary of State\n" +
+                  "https://www.incfile.com/manage-your-company/registered-agent/ - Get a Florida Registered Agent\n" +
+                  "https://www.incfile.com/manage-your-company/tax-id-ein/ - Get an EIN for your Florida LLC\n" +
+                  "https://www.incfile.com/ - Start an LLC in Florida for Free\n",
+              uploadDate: "2020-07-28",
+              duration: "1:22",
+              interactionCount: "363",
+          }}
         />
       </div>
 

@@ -49,7 +49,18 @@ const AboutSection = ({ className, content }) => (
             <Heading size="4" bottomMargin="48" style={{ textAlign: "center" }}>
                 {content.header2}
             </Heading>
-            <LightBoxVideo thumbnailVideo="what-does-dba-mean-7388" videoID="jPE31BJPUeY" bottomMargin="48" />
+            <LightBoxVideo thumbnailVideo="what-does-dba-mean-7388" videoID="jPE31BJPUeY" bottomMargin="48" videoSchema={{
+                name: "\"What Does DBA Mean?\" by Incfile",
+                description: "\n" +
+                    "A DBA, which stands for \"doing business as,\" is often used by sole proprietors who want to operate their business under a different name. In some states, a DBA is referred to as a \"fictitious business name,\" an \"assumed name,\" or a \"trade name.\" \n" +
+                    "\n" +
+                    "In most states, registering a DBA gives your business the ability to use this alternate name—but using a DBA doesn’t give you official rights to your business name or any protections. If you haven’t registered your business as an LLC, anyone who registers a legal business entity can take your chosen DBA name. \n" +
+                    "\n" +
+                    "To learn more, visit the following link:  https://www.incfile.com/fictitious-business-or-trade-name/.\n",
+                uploadDate: "2020-06-19",
+                duration: "1:10",
+                interactionCount: "247046",
+            }} />
             <Button theme="secondary56" content={content.button} arrow />
         </ContentCenter>
     </About>

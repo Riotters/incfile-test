@@ -318,6 +318,20 @@ const CCorpTabs = ({ layout, columns, content }) => {
 								<LightBoxVideo
 									thumbnailVideo="business-for-you-3432"
 									videoID="_u4u3-PQ8a0"
+									videoSchema={{
+										name: "\"Which Business Entity Structure Is Right For You?\" by Incfile",
+										description: "\n" +
+											"Unsure what business structure is best for you?\n" +
+											"\n" +
+											"You’ve probably seen LLC, Inc., Co. or Corporation mentioned after a business name—as in Portfolio Coffeehouse LLC, Apple Inc., or Sony Corporation. \n" +
+											"\n" +
+											"All of these indicate that these businesses have been “incorporated” and have officially filed their business entity with their state. But which business structure should you choose? What even is the difference between all of these official business types? Let us explain.\n" +
+											"\n" +
+											"Still unsure as to which business structure is right for you? We’ve created an easy-to-use, interactive quiz to suggest the type of legal entity that could work for your new business venture: https://www.incfile.com/business-enti....\n",
+										uploadDate: "2020-05-09",
+										duration: "2:41",
+										interactionCount: "2203",
+									}}
 								/>
 								<Heading size="3" topMargin="48">
 									{content.content[0].header2}

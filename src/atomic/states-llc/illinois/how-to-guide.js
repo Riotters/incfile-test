@@ -114,6 +114,32 @@ const HowToGuide = ({ content, data }) => {
           thumbnailVideo="il-llc-video-thumbnail-01"
           videoID="Rx9Ns_xqp2A"
           bottomMargin="32"
+          videoSchema={{
+              name: "\"Forming an LLC in Illinois\" by Incfile",
+              description: "\n" +
+                  "Starting your business in Illinois has never been easier!\n" +
+                  "\n" +
+                  "Home to the amazing city of Chicago and a critical ground for culture and politics, Illinois is a great state for LLC formation. When you create an LLC in Illinois, you get the protection and advantages of a corporation with much simpler rules to follow.\n" +
+                  "\n" +
+                  "Ready to learn all about starting an LLC in Illinois? \n" +
+                  "Step 1: Gather Information for Your Members\n" +
+                  "Step 2: Choose a Unique Business Name and Complete a Business Entity Search\n" +
+                  "Step 3: Provide an Official Illinois Address\n" +
+                  "Step 4: Assign a Registered Agent in Illinois\n" +
+                  "Step 5: Get an Employer Identification Number (EIN)\n" +
+                  "Step 6: File your Articles of Organization with the Illinois Secretary of State\n" +
+                  "\n" +
+                  "For more information on how to start an LLC in IL, check out the following resources: \n" +
+                  "\n" +
+                  "- File Your LLC Paperwork for Free: https://www.incfile.com\n" +
+                  "- Incfile's Guide to Illinois LLCs: https://www.incfile.com/illinois-llc/\n" +
+                  "- Business Name Search tool: https://www.incfile.com/business-name\n" +
+                  "- Virtual Business Address: https://www.incfile.com/virtual-mailbox/\n" +
+                  "- Registered Agent Service: https://www.incfile.com/manage-your-company/registered-agent/\n",
+              uploadDate: "2020-07-28",
+              duration: "1:52",
+              interactionCount: "253",
+          }}
         />
       </div>
 

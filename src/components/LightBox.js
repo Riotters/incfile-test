@@ -1,17 +1,55 @@
-import React, { Component, Fragment } from "react";
+import React, {Component, Fragment} from "react";
 import PropTypes from "prop-types";
 import parse from "html-react-parser";
 import styled from "styled-components";
-import { color } from "./styles/colors";
+import {color} from "./styles/colors";
 import Image from "../atomic/atoms/image/image";
 
-import { createPortal } from "react-dom";
+import {createPortal} from "react-dom";
 
 import PlayerSVG from "../images/icons/player.inline.svg";
 import CloseSVG from "../images/icons/close.inline.svg";
+import Helmet from "react-helmet";
 
 const PortalComponent = ({ children, visible }) => {
   return createPortal(<LightBoxModal visible={visible}>{children}</LightBoxModal>, document.getElementById("portal-lightbox"));
+};
+
+const convertToISO8601P = (duration) => {
+  let parts = duration.split(":");
+
+  return parts.length === 3 ? `PT${parts[0]}H${parts[1]}M${parts[2]}S` : (parts.length === 2 ? `PT${parts[0]}M${parts[1]}S` : `PT${parts[0]}S`);
+};
+//
+// const getISO8601DateFromVimeoAPI = (date) => {
+//   return date ? (new Date(date)).toISOString() : null;
+// };
+//
+// const getISO8601DurationFromVimeoAPI = (time) => {
+//   return convertToISO8601P(new Date(parseInt(time) * 1000).toISOString().substr(11, 8));
+// };
+
+const buildSchemaJSON = (videoId, videoData, type = "youtube") => {
+  // if( type === "vimeo" ) {
+  //   var vimeoData = (async () => await fetch(`https://vimeo.com/api/v2/video/${videoId}.json`).then(resp => resp.json()))();
+  //   vimeoData = vimeoData[0];
+  //
+  //   console.log(vimeoData, videoId);
+  // }
+
+  var data = {
+    "@context": "http://schema.org",
+    "@type": "VideoObject",
+    "name": videoData?.name ?? "",
+    "description": videoData?.description ?? "",
+    "thumbnailUrl": type === "youtube" ? `https://i.ytimg.com/vi/${videoId ?? ""}/default.jpg` : videoData?.image ?? "",
+    "uploadDate": (videoData?.uploadDate != null ? (new Date(videoData?.uploadDate)).toISOString() : null) ?? "",
+    "duration": convertToISO8601P(videoData?.duration) ?? "",
+    "embedUrl": type === "youtube" ? `https://www.youtube.com/embed/${videoId ?? ""}` : `https://player.vimeo.com/video/${videoId ?? ""}`,
+    "interactionCount": videoData?.interactionCount ?? ""
+  };
+
+  return JSON.stringify(data).toString();
 };
 
 class LightBox extends Component {
@@ -29,7 +67,7 @@ class LightBox extends Component {
   };
 
   render() {
-    const { videoID, thumbnailVideo, vimeo, bottomMargin } = this.props;
+    const { videoID, thumbnailVideo, vimeo, bottomMargin, videoSchema } = this.props;
     const { showLightBox } = this.state;
 
     return (
@@ -67,6 +105,14 @@ class LightBox extends Component {
             </LightBoxContent>
           </PortalComponent>
         )}
+
+        <Helmet>
+          (
+            <script type="application/ld+json">
+              {`${buildSchemaJSON(videoID, videoSchema ?? null, vimeo ? "vimeo" : "youtube")}`}
+            </script>
+          )
+        </Helmet>
       </Fragment>
     );
   }
@@ -191,8 +237,16 @@ const Control = styled.div`
 `;
 
 export default LightBox;
+export { buildSchemaJSON };
 
 LightBox.propTypes = {
   thumbnailVideo: PropTypes.string.isRequired,
   videoID: PropTypes.string.isRequired,
+  videoSchema: PropTypes.shape({
+    name: PropTypes.string,
+    description: PropTypes.string,
+    uploadDate: PropTypes.string,
+    duration: PropTypes.string,
+    interactionCount: PropTypes.string,
+  }),
 };

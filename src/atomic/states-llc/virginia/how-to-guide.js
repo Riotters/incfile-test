@@ -112,6 +112,36 @@ const HowToGuide = ({ content }) => {
           thumbnailVideo="comparison-chart-video-3611"
           videoID="gXFjp7S_Fsw"
           bottomMargin="32"
+          videoSchema={{
+              name: "\"Forming an LLC in Florida\" by Incfile",
+              description: "\n" +
+                  "Florida is home to some of the biggest businesses in America—but is it the best place to form your LLC? \n" +
+                  "\n" +
+                  "Starting an LLC in Florida means you get the advantages and protections of larger Florida corporations, but with much simpler rules and regulations. Your Florida LLC will: \n" +
+                  "- Separate your personal assets from business liability or debt\n" +
+                  "- Be easy to maintain and keep compliant \n" +
+                  "- Pass tax benefits to you \n" +
+                  "\n" +
+                  "How to Form an LLC in Florida: \n" +
+                  "1. Gather your members’ info\n" +
+                  "2. Pick a name that's available in Florida\n" +
+                  "3. Provide an official address\n" +
+                  "4. Pick a Florida Registered Agent\n" +
+                  "5. Get an EIN / federal tax ID number\n" +
+                  "6. File a Certificate of Formation with the Florida Secretary of State\n" +
+                  "\n" +
+                  "\n" +
+                  "Here are some additional links you might find useful for your Florida LLC:\n" +
+                  "\n" +
+                  "https://www.incfile.com/florida-llc/ - Our \"How To\" Guide All About Florida LLCs\n" +
+                  "https://www.youtube.com/redirect?event=video_description&v=gXFjp7S_Fsw&q=https%3A%2F%2Fwww.incfile.com%2Fbusiness-name-search%2F&redir_token=QUFFLUhqbVJrY0ZFSUgwNzFtcVJ2VjJHODdCODZTY1hoQXxBQ3Jtc0trMy1lVmlNek5JSVhmV3c3QzFpalpvN0FmeXp0T2pVYnBlZXdIZ25Ud0k5SEw0WGt2dFpISE4tUEprWmNCaWpjbWNEeWFLd0QzbXBLcnQ3VEF5enZ0NGZlNE5kZGJKMm5rNWxOemlCdnhSRjhFRGpSOA%3D%3D - Conduct a business entity search with the Florida Sunbiz / Secretary of State\n" +
+                  "https://www.youtube.com/redirect?event=video_description&v=gXFjp7S_Fsw&q=https%3A%2F%2Fwww.incfile.com%2Fmanage-your-company%2Fregistered-agent%2F&redir_token=QUFFLUhqbngwVnJiTEwtZlA4RDk1RTdWaXExYy1mYkRQd3xBQ3Jtc0tsS0hmMjBpa3pMWnJfZk5FNk9wWm90WHFwQjR4S3lVWE4yNm95VHRLc0JNS3FqbXBLZ3hERTdmRHA2LUc0Q3NLWEIyd25uVk9zcUxKR0xKOXJXVnNjNDE2WE1wUXVoSU5FQ2gxM0tMcXRrajFTNEZzcw%3D%3D - Get a Florida Registered Agent\n" +
+                  "https://www.youtube.com/redirect?event=video_description&v=gXFjp7S_Fsw&q=https%3A%2F%2Fwww.incfile.com%2Fmanage-your-company%2Ftax-id-ein%2F&redir_token=QUFFLUhqbU1oZWpUOWp1Z1JRY09zbGxaeXJaZTlmWmhMZ3xBQ3Jtc0ttdi0xMFBnU3h6UHJIVXJJMW5KcTZnYndiQmlmQXdwVU1yYl90VDhIaWNMaHZZZXVadnF5bkxsYnJKbGhCZDdRSDV4WmtMV2hlOTNTdFJJMHp3cmo5WUozR3NJVGRqLUhwMW1rd2t6OVFwVkNzSjNCVQ%3D%3D - Get an EIN for your Florida LLC\n" +
+                  "https://www.incfile.com/ - Start an LLC in Florida for Free\n",
+              uploadDate: "2020-07-28",
+              duration: "1:22",
+              interactionCount: "362",
+          }}
         />
       </div>
 

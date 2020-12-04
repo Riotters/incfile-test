@@ -24,7 +24,14 @@ const ResearchTopicsService = ({ className, content }) => {
             <Paragraph topMargin="24" bottomMargin="24">
                 Take a moment to view our instructional video and see how easy it can be to get your business incorporated.
             </Paragraph>
-            <LightBoxVideo thumbnailVideo="how-to-start-a-consulting-business-9829" videoID="372490609" vimeo />
+            <LightBoxVideo thumbnailVideo="how-to-start-a-consulting-business-9829" videoID="372490609" vimeo videoSchema={{
+                name: "Easy LLC Formation $0",
+                image: "https://i.vimeocdn.com/video/830330144_640.jpg",
+                description: "Create an LLC with ease",
+                uploadDate: "2019-11-11 17:29:41",
+                duration: "1:16",
+                interactionCount: "141233",
+            }} />
         </Whitebox>
     </Wrapper>
   )
