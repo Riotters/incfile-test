@@ -68,22 +68,22 @@ export const tabPages = {
       icon: FloridaCorpSVG,
     },
     {
-      name: `How to guide`,
+      name: `How To Guide`,
       path: `/florida-corporation/start-a-fl-corporation/`,
       icon: EntitySVG,
     },
     {
-      name: `Naming your corporation`,
+      name: `Naming Your Corporation`,
       path: `/florida-corporation/how-to-name-your-corporation/`,
       icon: PenSVG,
     },
     {
-      name: `Registered agents`,
+      name: `Registered Agents`,
       path: `/florida-corporation/registered-agents-florida/`,
       icon: RegisteredAgentSVG,
     },
     {
-      name: `Filing requirements`,
+      name: `Filing Requirements`,
       path: `/florida-corporation/form-filling-permit-requirements/`,
       icon: PrinterSVG,
     },
@@ -93,7 +93,7 @@ export const tabPages = {
       icon: PriceTagSVG,
     },
     {
-      name: `After filing`,
+      name: `After Formation`,
       path: `/florida-corporation/know-your-ongoing-filing-requirements/`,
       icon: CoffeeSVG,
     },
@@ -104,25 +104,32 @@ export const corporation = [
   {
     type: "header",
     content: "Florida Corporations",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
     content:
       "Florida is a great place to start a business. A combination of a rich culture, beautiful cities like Miami, Orlando or Tampa Bay, and access to the world’s transport networks makes the state home to some of the biggest businesses in the U.S. Headquarters of companies like Publix, Tupperware, Burger King and more are proud to call Florida home. One of the world’s largest entertainment companies, Disney, is famous for its Disney World theme park in Orlando. The lack of a state tax can also make it financially advantageous to start a business there. ",
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: "header",
     content: "What Type of Florida Corporation Should You Choose? ",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
+    type: "video",
+    image: "what-is-a-corporation-8899",
+    id: `oYZShvmf9eQ`,
+    marginBottom: 32,
+  },
+  {
     type: "text",
-    content:
-      "When it comes to incorporating a business in Florida, you have a few options for the type of corporation you want to create. This is known as your “legal business entity,” and it defines how your Florida business will be treated by the FL Division of Corporations, the law, the IRS and other official bodies. ",
+    content: `When it comes to incorporating a business in Florida, you have a few options for the type of corporation you want to create. This is known as your <a href="/florida-entity-search/">“legal business entity”</a>, and it defines how your Florida business will be treated by the FL Division of Corporations, the law, the IRS and other official bodies. `,
     marginBottom: 24,
   },
   {
@@ -157,8 +164,8 @@ export const corporation = [
           "LLCs are a great option for smaller FL businesses. LLCs are quick and easy to create, inexpensive to administer, light on regulations and have simple taxation and rules.",
         svg: LockpadSVG,
         link: {
-          text: "Learn how to create an LLC in Florida",
-          url: "/",
+          text: "You can learn how to create an LLC in Florida here.",
+          url: "/florida-llc/",
         },
         backgroundColor: color.babyblue2,
         shadowColor: shadow.babyblue2,
@@ -172,8 +179,8 @@ export const corporation = [
           "You might choose to form a Florida S Corporation because it’s a good compromise between the simplicity of the LLC and the complexity of the C Corporation. Note that FL S Corporations are subject to more rules and regulations than a FL LLC, but they can mean that you pay less tax.",
         svg: ProcentSVG,
         link: {
-          text: "Learn how to create an LLC in Florida",
-          url: "/",
+          text: "Learn about forming an S Corporation.",
+          url: "/what-is-s-corporation/",
         },
         backgroundColor: color.green2,
         shadowColor: shadow.green2,
@@ -184,11 +191,11 @@ export const corporation = [
       {
         header: "Florida C Corporations",
         text:
-          "If you plan to start a large business or want to trade your shares on the public stock market, a FL C Corporation is your only choice. Be aware that Florida C Corporations are subject to many rules and regulations, and they have a substantial amount of administrative overhead. Additionally, the tax rules for a Florida C Corporation are not as advantageous as for a FL S Corporation or LLC.",
+          "Florida C Corporations are the most complex type of business. They are best suited to larger businesses and are necessary if shares in the business will be traded on public stock markets. C Corporations have much more significant regulation, compliance and legal rules, and they are not as tax efficient as S Corporations or LLCs.",
         svg: BillSVG,
         link: {
-          text: "Learn about forming a C Corporation",
-          url: "/",
+          text: "Learn about forming a C Corporation.",
+          url: "/what-is-c-corporation/",
         },
         backgroundColor: color.yellow2,
         shadowColor: shadow.yellow2,
@@ -202,7 +209,6 @@ export const corporation = [
   {
     type: "colorbox",
     icon: FolderProcentSVG,
-    header: "Other Entity Types",
     text:
       "There are some other business entity structures like nonprofits, Limited Liability Partnerships (LLPs) and B Corporations, but they will not be relevant for the majority of entrepreneurs.",
     curve: true,
@@ -213,7 +219,7 @@ export const corporation = [
       {
         content: {
           text: "Start Your S-Corp",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=FL`,
         },
         arrow: true,
         theme: "primary56",
@@ -221,7 +227,7 @@ export const corporation = [
       {
         content: {
           text: "Start Your C-Corp",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=FL`,
         },
         arrow: true,
         theme: "primary56",
@@ -229,10 +235,21 @@ export const corporation = [
     ],
   },
   {
+    type: "header",
+    content: "Advantages of Forming a Florida Corporation",
+    size: 2,
+    template: 3,
+    marginBottom: 32,
+  },
+  {
+    type: "text",
+    content: "Florida corporations have several benefits for business owners. ",
+    marginBottom: 32,
+  },
+  {
     type: "list-dot",
     content: {
-      header: "Advantages of Forming a Florida Corporation",
-      text: "Florida corporations have several benefits for business owners. ",
+      header: "",
       list: [
         "Florida corporations provide the strongest form of liability protection possible. They insulate your personal assets and finances from those of your business. ",
         "This means that any liabilities created by your corporation (debts, obligations, damages, bankruptcy or other liabilities) should not impact your personal money, property or assets — they are considered completely separate from a legal perspective. ",
@@ -246,7 +263,8 @@ export const corporation = [
   {
     type: "header",
     content: "The Advantages of a Florida Corporation Versus an LLC ",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -258,7 +276,8 @@ export const corporation = [
   {
     type: "header",
     content: "Taxation Benefits of a Florida S Corporation Over an LLC ",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -271,7 +290,7 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn about the tax benefits of S Corporations.",
-      url: "/",
+      url: "/research-topics/c-corporation-info/what-is-the-form-2553/",
     },
     marginBottom: 32,
   },
@@ -279,7 +298,7 @@ export const corporation = [
     type: "button",
     content: {
       text: "File From 2553 with the IRS",
-      url: "/",
+      url: "/s-corp-election-form",
     },
     theme: "primary56",
     marginBottom: 64,
@@ -288,7 +307,8 @@ export const corporation = [
     type: "header",
     content:
       "Florida S Corporations and C Corporations Make It Much Easier to Transfer Stock and Ownership ",
-    size: 4,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -298,12 +318,23 @@ export const corporation = [
     marginBottom: 24,
   },
   {
+    type: "header",
+    content:
+      "Florida C Corporations Provide the Main Advantages for Buying and Selling Stock",
+    size: 3,
+    template: 3,
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content:
+      "C Corporations provide certain benefits when it comes to buying, selling and transferring stock. Here are the rules for both S Corps and C Corps: ",
+    marginBottom: 24,
+  },
+  {
     type: "list-dot",
     content: {
-      header:
-        "Florida C Corporations Provide the Main Advantages for Buying and Selling Stock",
-      text:
-        "C Corporations provide certain benefits when it comes to buying, selling and transferring stock. Here are the rules for both S Corps and C Corps: ",
+      header: "",
       list: [
         "If you want up to 100 shareholders who are U.S. citizens or residents and want to issue one type of stock, you can be an S Corporation or a C Corporation. ",
         "If you want more than 100 shareholders, want to issue more than one type of stock or have international shareholders, you will need a C Corporation. ",
@@ -319,22 +350,33 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn more about the differences between business entities",
-      url: "/",
+      url: "/start-your-company/",
     },
     marginBottom: 48,
   },
   {
+    type: "header",
+    content: "Advantages of Opening an S Corporation in Florida ",
+    size: 3,
+    template: 3,
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content:
+      "In addition to the general benefits above, FL S Corporations provide several other advantages: ",
+    marginBottom: 24,
+  },
+  {
     type: "list-dot",
     content: {
-      header: "Advantages of Opening an S Corporation in Florida ",
-      text:
-        "In addition to the general benefits above, FL S Corporations provide several other advantages: ",
+      header: "",
       list: [
         "Florida S Corporations can have up to 100 shareholders.",
         "Running an S Corporation in Florida is simpler than running a C Corporation.",
         "It is easy to transfer ownership in an S Corporation by selling your stock.",
-        "In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax. Find out how this can save you money using our S Corporation Tax Calculator .",
-        "LLCs can <a href='/'>choose to be taxed as S Corporations</a> to take advantage of this.",
+        `In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax. Find out how this can save you money using our <a href="/s-corporation-tax-calculator/">S Corporation Tax Calculator</a> .`,
+        "LLCs can <a href='/research-topics/llc-info/llc-taxed-as-an-s-corp/'>choose to be taxed as S Corporations</a> to take advantage of this.",
       ],
     },
     color: color.orange3,
@@ -346,14 +388,16 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn more about the advantages of forming an S Corporation. ",
-      url: "/",
+      url:
+        "/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/",
     },
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Advantages of Opening a C Corporation in Florida ",
-    size: 4,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -382,7 +426,8 @@ export const corporation = [
     type: "header",
     content:
       "Important Points About How to Start a Corporation in the State of Florida ",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -427,15 +472,16 @@ export const corporation = [
     content: {
       text:
         "Learn what you need to do to create a Florida S Corporation or C Corporation ",
-      url: "/",
+      url: "/florida-corporation/start-a-fl-corporation/",
     },
-    marginBottom: 24,
+    marginBottom: 32,
   },
   {
     type: "header",
     content:
       "Your State of Florida Corporation Must Follow Certain Rules and Regulations ",
-    size: 4,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -470,7 +516,7 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn about Florida corporation requirements . ",
-      url: "/",
+      url: "/florida-corporation/form-filling-permit-requirements/",
     },
     marginBottom: 24,
   },
@@ -478,7 +524,7 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn about Florida corporation taxes and fees . ",
-      url: "/",
+      url: "/florida-corporation/taxes-and-fees-for-your-corporation/",
     },
     marginBottom: 24,
   },
@@ -496,10 +542,10 @@ export const corporation = [
         roundLeft: true,
         image: "s-corp-certificate-5609",
         content: {
-          header: "S Corporation",
+          header: "Start your S Corp with Incfile",
           link: {
             text: "Incorporate now",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=FL`,
           },
         },
         noShadow: false,
@@ -509,16 +555,30 @@ export const corporation = [
         roundRight: true,
         image: "c-crop-certificate-3409",
         content: {
-          header: "C Corporation",
+          header: "Start your C Corp with Incfile",
           link: {
             text: "Incorporate now",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=FL`,
           },
         },
         noShadow: false,
         color: color.orange3,
       },
     ],
+  },
+  {
+    type: "header",
+    content: "Detailed Information for Your Florida Corporation",
+    size: 2,
+    template: 3,
+    marginBottom: 32,
+  },
+  {
+    type: "text",
+    content:
+      "You’ll find plenty more insight and guidance on the other pages of this guide, including:",
+
+    marginBottom: 24,
   },
   {
     type: "svg-color-text-box",
@@ -529,7 +589,7 @@ export const corporation = [
           "The six steps you need to take to start a Florida S Corporation or C Corporation.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/florida-corporation/start-a-fl-corporation/",
         },
         svg: TodoSVG,
         backgroundColor: color.red2,
@@ -544,7 +604,7 @@ export const corporation = [
           "How to search the Florida business registry of the FL Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a Florida corporation name and more.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/florida-corporation/how-to-name-your-corporation/",
         },
         svg: QuestionSVG,
         backgroundColor: color.orange3,
@@ -559,7 +619,7 @@ export const corporation = [
           "How to appoint a Florida Registered Agent to your new corporation or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Florida Registered Agents.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/florida-corporation/registered-agents-florida/",
         },
         svg: IdSVG,
         backgroundColor: color.purple2,
@@ -574,7 +634,7 @@ export const corporation = [
           "How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Florida rules. Includes details of Employee Identification Numbers (EINs), Florida and federal business licenses, Florida Statement of Information reports and more.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/florida-corporation/form-filling-permit-requirements/",
         },
         svg: BillPadSVG,
         backgroundColor: color.orange2,
@@ -590,7 +650,7 @@ export const corporation = [
           "How to understand the various taxes you will need to pay to the federal and Florida government. Includes details of federal taxes like income and self-employment, and Florida taxes like sales tax and income tax.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/florida-corporation/taxes-and-fees-for-your-corporation/",
         },
         svg: DollarUpSVG,
         backgroundColor: color.green2,
@@ -608,8 +668,9 @@ export const startCaCorp = [
   {
     type: "header",
     content: "How to Form a Corporation in Florida",
-    size: 3,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -646,7 +707,8 @@ export const startCaCorp = [
   {
     type: "header",
     content: "How to Form a Corporation in Florida — The Benefits",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -686,8 +748,9 @@ export const startCaCorp = [
   {
     type: "header",
     content: "How to Create a Corporation in Florida in Six Steps",
-    size: 3,
-    marginBottom: 24,
+    size: 2,
+    template: 3,
+    marginBottom: 32,
   },
   {
     type: "accordion",
@@ -762,8 +825,9 @@ export const startCaCorp = [
   {
     type: "header",
     content: "Opening Your Florida Corporation — Useful Resources",
-    size: 3,
-    marginBottom: 24,
+    size: 2,
+    template: 3,
+    marginBottom: 32,
   },
   {
     type: "arrow-link",
@@ -793,7 +857,8 @@ export const startCaCorp = [
   {
     type: "header",
     content: "Special Types of Florida Corporations  ",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -822,7 +887,8 @@ export const startCaCorp = [
   {
     type: "header",
     content: "Need to Form a Florida Corporation Quickly \n" + "and Easily?",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -854,10 +920,10 @@ export const startCaCorp = [
 export const naming = [
   {
     type: "header",
-    content:
-      "Florida Name Lookup and Registration for Your Florida Corporation",
-    size: 3,
-    marginBottom: 24,
+    content: `Florida Name Lookup and Registration for Your Florida Corporation`,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -1522,12 +1588,12 @@ export const filing = [
     type: "text",
     content:
       "Because you’re forming a corporation, there are certain other legal, regulatory and compliance areas you need to meet.",
-    marginBottom: 24,
+    marginBottom: 48,
   },
   {
     type: "header",
     content: "Create Bylaws for Your Florida Corporation",
-    size: 4,
+    size: 3,
     marginBottom: 24,
   },
   {
@@ -1559,7 +1625,7 @@ export const filing = [
   {
     type: "header",
     content: "Corporation Shareholders Must Be Issued Stock",
-    size: 4,
+    size: 3,
     marginBottom: 24,
   },
   {
@@ -1571,7 +1637,7 @@ export const filing = [
   {
     type: "header",
     content: "A Board of Directors Must Be Appointed",
-    size: 4,
+    size: 3,
     marginBottom: 24,
   },
   {
@@ -1583,7 +1649,7 @@ export const filing = [
   {
     type: "header",
     content: "Assign Officers to the Corporation",
-    size: 4,
+    size: 3,
     marginBottom: 24,
   },
   {
@@ -1595,7 +1661,7 @@ export const filing = [
   {
     type: "header",
     content: "Get a Corporate Records Book",
-    size: 4,
+    size: 3,
     marginBottom: 24,
   },
   {
@@ -1607,7 +1673,7 @@ export const filing = [
   {
     type: "header",
     content: "Get a Corporate Records Book",
-    size: 4,
+    size: 3,
     marginBottom: 24,
   },
   {
@@ -1619,7 +1685,7 @@ export const filing = [
   {
     type: "header",
     content: "Hire Employees",
-    size: 4,
+    size: 3,
     marginBottom: 24,
   },
   {
@@ -1653,7 +1719,7 @@ export const filing = [
   {
     type: "header",
     content: "Your Florida Corporation Must Hold an Annual General Meeting",
-    size: 4,
+    size: 3,
     marginBottom: 24,
   },
   {
@@ -1759,7 +1825,7 @@ export const filing = [
   {
     type: "header",
     content: "Ready to Start Your Florida Corporation?",
-    size: 4,
+    size: 3,
     marginBottom: 24,
   },
   {
