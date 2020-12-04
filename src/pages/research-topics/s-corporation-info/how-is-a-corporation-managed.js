@@ -1,9 +1,10 @@
 import React from "react";
 import Layout from "../../../components/layout";
 import SEO from "../../../components/seo";
+
 //Sections
 import Top from "../../../atomic/partials/top";
-import About from "../../../atomic/sections/research-topics/s-corporation-info/what-are-bylaws";
+import About from "../../../atomic/sections/research-topics/s-corporation-info/corp-managing";
 import Related from "../../../atomic/sections/learning-center-entity/help-center-article/related";
 import Categories from "../../../atomic/sections/learning-center-entity/help-center-article/categories";
 import Service from "../../../atomic/sections/learning-center-entity/help-center/service";
@@ -12,8 +13,7 @@ import Rocket from "../../../atomic/sections/review-entity-types/c-corporation/r
 import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 //Texts
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
-import { about } from "../../../static/research-topics/s-corporation-info/what-are-bylaws";
-
+import { about } from "../../../static/research-topics/s-corporation-info/corp-managing";
 import { related } from "../../../static/research-topics/s-corporation-info";
 
 const HelpCenter = () => {
@@ -37,7 +37,7 @@ const HelpCenter = () => {
     return (
         <Layout>
             <SEO
-                title="What are Bylaws?"
+                title="How is a Corporation Managed?"
                 description="Q & A for LLC and other forms of corporations. Learning Center for
     Incorporating in every state."
             />
