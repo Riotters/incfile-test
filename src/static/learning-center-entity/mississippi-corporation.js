@@ -1,3 +1,12 @@
+import Tab1Icon from "../../images/icons/icon-manage-your-company-color-business-license-research.inline.svg";
+import Tab2Icon from "../../images/icons/light.inline.svg";
+import Tab3Icon from "../../images/icons/icon-32-multi-color-registered-agent.inline.svg";
+import Tab4Icon from "../../images/icons/icon-learning-center-color-how-to-guide.inline.svg";
+import Tab5Icon
+  from "../../images/icons/icon-learning-center-color-all-ca-corporations-must-have-elected-board-of-directors.inline.svg";
+import Tab6Icon from "../../images/icons/icon-start-a-business-color-maintaining-your-cleaning-business.inline.svg";
+import Tab7Icon from "../../images/icons/icon-learning-center-color-business-taxes.inline.svg";
+
 export const top = {
   header: `Form a Corporation in Mississippi.`,
   text: `$0 + State Fee & 1st Year FREE Registered Agent`,
@@ -277,3 +286,36 @@ export const corporationName = {
   header: `An available corporate name may be reserved for up to 120 days for $25.`,
   text: `A proposed corporate name may be registered for an annual fee of $25. It is important to note that Mississippi state law does not allow businesses to register fictitious or assumed (“doing business as”) names.`,
 };
+
+export const tabs = {
+  panels: [
+    {
+      icon: Tab1Icon,
+      name: `Corporation Name`
+    },
+    {
+      icon: Tab2Icon,
+      name: `Articles of Incorporation`
+    },
+    {
+      icon: Tab3Icon,
+      name: `Registered Agent`
+    },
+    {
+      icon: Tab4Icon,
+      name: `Bylaws`
+    },
+    {
+      icon: Tab5Icon,
+      name: `Directors`
+    },
+    {
+      icon: Tab6Icon,
+      name: `Required Reports`
+    },
+    {
+      icon: Tab7Icon,
+      name: `Taxes`
+    },
+  ]
+}
