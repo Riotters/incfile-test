@@ -81,17 +81,17 @@ export const pages = [{
     {
         header: `Registered Agent`,
         text: `What is the main function of the Registered Agent?`,
-        url: `/research-topics/general-research/registered-agent-function/#answers`,
+        url: `/research-topics/general-research-help/what-is-the-main-function-of-the-registered-agent/`,
     },
     {
         header: `Registered Agent`,
         text: `What is the name and address of my Registered Agent?`,
-        url: `/research-topics/registered-agent/registered-agent-address/#answers`,
+        url: `/research-topics/registered-agent-help/what-is-the-name-and-address-of-my-registered-agent/`,
     },
     {
         header: `Registered Agent`,
         text: `What happens if I require the signature of my Registered A…`,
-        url: `/research-topics/registered-agent/registered-agent-signature/#answers`,
+        url: `/research-topics/registered-agent-help/what-happens-if-i-require-the-signature-of-my-registered-agent/`,
     },
 
     {
