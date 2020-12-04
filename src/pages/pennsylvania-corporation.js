@@ -105,9 +105,13 @@ const AlaskaCorporation = () => {
                                 The name must include one of the following terms or its abbreviation (or words or abbreviations of the same meaning in another language): “Incorporated,” “Corporation,” “Company,” “Limited,” “Association,” “Fund,” or “Syndicate.” “Company” or “Co.” may be immediately preceded by “and”
                                 or the symbol “&.”
             </Paragraph>
-                            <Paragraph big style={{ marginBottom: "0" }}>
+                            <Paragraph big style={{ marginBottom: "32px" }}>
                                 Available corporate names may be reserved for up to 120 days for a $70 fee.
             </Paragraph>
+            <LightBoxVideo
+                thumbnailVideo="what-is-a-corporation-8899"
+                videoID="oYZShvmf9eQ"
+              />
                         </PanelWrapper>
                         <PanelWrapper>
                             <Heading size={3} style={{ marginBottom: "24px" }}>

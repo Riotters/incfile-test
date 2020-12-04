@@ -59,12 +59,12 @@ export const tabPages = {
       icon: PenSVG,
     },
     {
-      name: `Registered agents`,
+      name: `Registered Agents`,
       path: `/illinois-corporation/registered-agents-illinois`,
       icon: RegisteredAgentSVG,
     },
     {
-      name: `Corporation requirements`,
+      name: `Corporation Requirements`,
       path: `/illinois-corporation/form-filling-permit-requirements`,
       icon: PrinterSVG,
     },
