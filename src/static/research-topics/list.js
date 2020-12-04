@@ -113,18 +113,18 @@ export const pages = [{
     {
         header: `Employer Identification Number (EIN)`,
         text: `Employer Identification Number`,
-        url: `/manage-your-company/tax-id-ein/#answers`,
+        url: `research-topics/ein-info/employer-identification-number/`,
     },
 
     {
         header: `Individual State Information`,
         text: `Meeting the New York Publication Requirement`,
-        url: `/research-topics/state-info/ny-publication-requirement/#answers`
+        url: `/research-topics/individual-state-info/ny-publication-rmeeting-the-new-york-publication-requirement/`
     },
     {
         header: `Individual State Information`,
         text: `How To Publish Your Notice Of Incorporation In Georgia`,
-        url: `/research-topics/state-info/publish-inc-notice-georgia/#answers`,
+        url: `/research-topics/individual-state-info/how-to-publish-your-notice-of-incorporation-in-georgia/`,
     },
 
     {
