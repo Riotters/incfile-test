@@ -23,6 +23,7 @@ import Articles from "../atomic/sections/articles";
 import { top, about, whatAgentDo, otherNames, need, requirements, whatHappens, faq, service, learnMore, hsForm } from "../static/learning-center-entity/registered-agents";
 import styled from "styled-components";
 import {ThankYouContent} from "../components/hubspot/thank-you-modal";
+import RASchema from "../atomic/sections/learning-center-entity/registered-agents/schema";
 
 const RegisteredAgents = () => {
     const [modalVisible, setModalVisible] = React.useState(false);
@@ -52,7 +53,10 @@ const RegisteredAgents = () => {
     return (
         <Layout>
             <SEO title="What is a Registered Agent? Everything You Need to Know"
-                 description="Every formal business entity in the United States, whether it’s an LLC, S corp or C corp, must have a Registered Agent. Learn more."/>
+                description="Every formal business entity in the United States, whether it’s an LLC, S corp or C corp, must have a Registered Agent. Learn more." />
+            
+            <RASchema />
+           
             <Top imageName="mr-bulb-registered-agents" imageAlt="Mrs Bulb and with checklist" ovalColor="sun">
                 <h1>{top.header}</h1>
                 <p>{top.text}</p>

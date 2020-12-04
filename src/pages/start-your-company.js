@@ -26,6 +26,7 @@ import { validEmail } from "../helpers/form-validate";
 import { postHSForm } from '../api/Api';
 import ExternalLink from "../atomic/molecules/buttons/external-link";
 import { Helmet } from "react-helmet";
+import ProductSchema from "../components/product-schema";
 
 const LightBoxModal = styled.div`
   transition: all .8s;
@@ -187,7 +188,11 @@ const ReviewEntityType = () => {
     return (
         <Layout>
             <SEO title="Start a Company | Learn about Business Entity Types"
-                 description="Want to start a business? Learn about different types of business structures—from LLC to S Corp to non profit—and find the entity that suits your needs."/>
+                description="Want to start a business? Learn about different types of business structures—from LLC to S Corp to non profit—and find the entity that suits your needs." />
+            <ProductSchema
+                productName="Form a Business Entity"
+                productDescription="Forming an official business entity helps provide liability protection for your company. Start an LLC, S-Corporation, C-Corporation or Non-Profit by having Incfile file and manage the correct paperwork for you."
+            />
             <Top imageName="mr-bulb-main-header-illustration-7201" imageAlt="Mrs Bulb and with checklist"
                  ovalColor="purple-2" headlineWidth="560" textWidth="450" tabletVariantClass="tablet--shopper" tabletImgPosX={45}>
                 <h1>{top.header}</h1>

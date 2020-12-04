@@ -12,6 +12,7 @@ import Faq from "../atomic/sections/manage-your-company/trademark-name-search/fa
 import Benefits from "../atomic/sections/benefits";
 import Cta from "../atomic/sections/manage-your-company/trademark-name-search/cta";
 import Articles from "../atomic/sections/articles";
+import ProductSchema from "../components/product-schema";
 //Texts
 import {
 	top,
@@ -27,7 +28,13 @@ const TrademarkNameSearch = () => (
 		<SEO
 			title="File a Trademark | Trademark Search & Registration"
 			description="Protect your brand and reputation with a legal trademark. From trademark searches to registration, Incfile makes it easy. Learn more."
-		/>
+        />
+        <ProductSchema
+            productUrl="https://orders.incfile.com/trademark.php"
+            productName="Register a Trademark"
+            productPrice="199"
+            productDescription="Protect your business name with a trademark. Our partnered attorneys will do the research to make sure the mark isn't already taken, ensure the filing gets accepted by the government office, and provide sound legal advice throughout the entire process."
+        />
 		<Top
 			imageName="mrs-bulb-trademark"
 			imageAlt="Mr Bulb holding a certificate and tossing an orginal and a trademark sign"

@@ -17,6 +17,7 @@ import Rocket from "../../atomic/sections/rocket";
 // Content
 import { tabPages, rocket } from "../../static/states-llc/texas/general";
 import { faqContent } from "../../static/states-llc/texas/faq";
+import FAQSchemaTX from "../../atomic/states-llc/texas/faq-schema";
 
 const Wrapper = styled.div`
   display: flex;
@@ -42,30 +43,32 @@ const Wrapper = styled.div`
 `;
 
 const TexasFaq = () => (
-  <Layout>
-    <SEO title="Frequently Asked Questions About Forming a Texas LLC" description="Getting ready to start an LLC in the Lone Star state? Here are the most frequently asked questions to help your business get up and running. Read more." />
+    <Layout>
+        <SEO title="Frequently Asked Questions About Forming a Texas LLC" description="Getting ready to start an LLC in the Lone Star state? Here are the most frequently asked questions to help your business get up and running. Read more." />
 
-    <Top imageName="mrs-bulb-question" imageAlt="Frequently question" headlineWidth={700} stateName="TX">
-      <h1>{faqContent.header.title}</h1>
-      <p>{faqContent.header.subline}</p>
+        <Top imageName="mrs-bulb-question" imageAlt="Frequently question" headlineWidth={700} stateName="TX">
+            <h1>{faqContent.header.title}</h1>
+            <p>{faqContent.header.subline}</p>
 
-      <RatingRow topMargin="0">
-        <CartBlock />
-        <RatingBlock />
-      </RatingRow>
-    </Top>
+            <RatingRow topMargin="0">
+                <CartBlock />
+                <RatingBlock />
+            </RatingRow>
+        </Top>
 
-    <WrapperContent>
-      <Wrapper>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-          <FaqSection content={faqContent.content} />
-        </MainPageContent>
-      </Wrapper>
-    </WrapperContent>
+        <WrapperContent>
+            <Wrapper>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <FaqSection content={faqContent.content} />
+                </MainPageContent>
+            </Wrapper>
+        </WrapperContent>
 
-    <Rocket url="?entityType=LLC&entityState=TX" />
-  </Layout>
+        <Rocket url="?entityType=LLC&entityState=TX" />
+
+        <FAQSchemaTX />
+    </Layout>
 );
 
 export default TexasFaq;

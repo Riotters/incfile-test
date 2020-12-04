@@ -15,6 +15,8 @@ import Rocket from "../../atomic/sections/rocket";
 // Content
 import { agentPageContent } from "../../static/states-llc/illinois/ra";
 import { tabPages, rocket } from "../../static/states-llc/illinois/general";
+import RASchemaNY from "../../atomic/states-llc/new-york/ra-ny-schema";
+import RASchemaIL from "../../atomic/states-llc/illinois/ra-il-schema";
 
 const Wrapper = styled.div`
   display: flex;
@@ -40,24 +42,26 @@ const Wrapper = styled.div`
 `;
 
 const RegisteredAgentIllinois = () => (
-  <Layout>
-    <SEO title="Registered Agents for Your Illinois LLC | Incfile.com" description="Do you need a registered agent for your Illinois LLC? Learn what registered agents do and how to get one with Incfile's helpful guide." />
+    <Layout>
+        <SEO title="Registered Agents for Your Illinois LLC | Incfile.com" description="Do you need a registered agent for your Illinois LLC? Learn what registered agents do and how to get one with Incfile's helpful guide." />
+        
+        <RASchemaIL />
 
-    <LinearBgHeader imageMapName="tx-map-2x">
-      <TaxesHeader content={agentPageContent.header} />
-    </LinearBgHeader>
+        <LinearBgHeader imageMapName="tx-map-2x">
+            <TaxesHeader content={agentPageContent.header} />
+        </LinearBgHeader>
 
-    <WrapperContent>
-      <Wrapper>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-          <RegisteredAgentSection content={agentPageContent.content} />
-        </MainPageContent>
-      </Wrapper>
-    </WrapperContent>
+        <WrapperContent>
+            <Wrapper>
+                <LeftTabPages content={tabPages} />
+                <MainPageContent>
+                    <RegisteredAgentSection content={agentPageContent.content} />
+                </MainPageContent>
+            </Wrapper>
+        </WrapperContent>
 
-    <Rocket url="?entityType=LLC&entityState=IL" />
-  </Layout>
+        <Rocket url="?entityType=LLC&entityState=IL" />
+    </Layout>
 );
 
 export default RegisteredAgentIllinois;

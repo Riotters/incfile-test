@@ -12,10 +12,17 @@ import Benefits from "../../atomic/sections/benefits";
 import Articles from "../../atomic/sections/articles";
 //Texts
 import { top, about, requirements, faq } from "../../static/manage-your-company/dissolution";
+import ProductSchema from "../../components/product-schema";
 
 const Dissolution = () => (
   <Layout>
-    <SEO title="Company Dissolution | How to Dissolve an LLC or Corporation" description="To legally close a corporation or LLC, the company must file Articles of Dissolution with the state of incorporation. Learn more." />
+        <SEO title="Company Dissolution | How to Dissolve an LLC or Corporation" description="To legally close a corporation or LLC, the company must file Articles of Dissolution with the state of incorporation. Learn more." />
+        <ProductSchema
+            productUrl="hptts://orders.incfile.com/dissolution.php"
+            productName="Corporate Dissolution"
+            productPrice="149"
+            productDescription="File official dissolution paperwork for your LLC or corporation."
+        />
     <Top imageName="mrs-bulb-dissolution" imageAlt="Mrs Bulb holding a closed sign" ovalColor="darkblue">
       <h1>{top.header}</h1>
       <Buttonsbox>
