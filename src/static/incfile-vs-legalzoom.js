@@ -81,7 +81,7 @@ export const about = {
 			header: `Comparing Different Business Entity Types`,
 			text: `Prospective business owners will need to review their options when deciding on the right business structure. It’s important to have the right information so you can make an informed, educated choice.`,
 			textWidth: "470",
-			bottomMargin: `40`,
+			bottomMargin: `48`,
 			boxes: [
 				{
 					radius: "15px 15px 0 0",
