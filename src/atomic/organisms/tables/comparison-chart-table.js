@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import styled from "styled-components";
 import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
 import { motion } from "framer-motion";
@@ -259,8 +258,7 @@ const Panel = ({ children }) => {
 };
 
 const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, curveLeftBottom, curveColor, tab }) => {
-  const columnsNo = content.headers.length;
-
+  
   return (
     <VisibilitySensor partialVisibility once>
       {({ isVisible }) => (
@@ -273,8 +271,8 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
           <GridTableRow className="head" content={content.headers} header headerSize="5" columns="minmax(368px, 1fr) 160px 160px 160px 160px" />
           <Tabs>
             <TabsWrapper>
-              {content.items.map((item) => (
-                <TabBox>
+              {content.items.map((item, index) => (
+                <TabBox key={index}>
                   {item.separator && (
                     <Separator>
                       <span>{item.separator}</span>
@@ -293,8 +291,8 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                       {typeof item.answer === "string" ? <p>{item.answer}</p> : null}
                       {typeof item.answer === "object" ? (
                         <Grid>
-                          {item.answer.map((el) => (
-                            <Column>
+                          {item.answer.map((el, i) => (
+                            <Column key={i}>
                               <Heading size="5">{el.header}</Heading>
                               <Paragraph bottomMargin="0">{el.text}</Paragraph>
                             </Column>
@@ -303,8 +301,8 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                       ) : null}
                       {item.list && (
                         <ul>
-                          {item.list.map((listitem) => (
-                            <li>{listitem}</li>
+                          {item.list.map((listitem, i) => (
+                            <li key={i}>{listitem}</li>
                           ))}
                         </ul>
                       )}

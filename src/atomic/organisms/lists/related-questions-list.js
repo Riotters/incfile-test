@@ -30,8 +30,8 @@ const RelatedQuestionsList = ({ className, content }) => {
         <CurveSVG />
       </Curve>
       <List>
-        {content.buttons.map((button) => (
-          <BoxedButton className="article-link" content={button} />
+        {content.buttons.map((button, index) => (
+          <BoxedButton className="article-link" content={button} key={index} />
         ))}
       </List>
     </Wrapper>

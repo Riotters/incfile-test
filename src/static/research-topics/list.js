@@ -1,17 +1,17 @@
 export const pages = [{
         header: `General`,
         text: `Should I assume that if I form an LLC or incorporate that no…`,
-        url: `/research-topics/general-research/llc-incorporate-name/#answers`,
+        url: `/research-topics/general-research-topics/in-which-state-should-i-form-my-llc-or-corporation/`,
     },
     {
         header: `General`,
         text: `How to Get a Trademark: A Complete Guide`,
-        url: `/research-topics/general-research/how-to-get-trademark/#answers`,
+        url: `/research-topics/general-research-topics/how-to-get-trademark/`,
     },
     {
         header: `General`,
         text: `What is a Corporate Seal?`,
-        url: `/research-topics/general-research/corp-seal/#answers`,
+        url: `/research-topics/general-research-topics/what-is-a-corporate-seal/`,
     },
 
     {
@@ -38,7 +38,7 @@ export const pages = [{
     {
         header: `S-Corporation`,
         text: `Is there a limit to the amount of shareholders an S Corporat…`,
-        url: `-info/is-there-a-limit-to-the-amount-of-shareholders-an-s-corporation-can-have/`,
+        url: `/research-topics/s-corporation-info/is-there-a-limit-to-the-amount-of-shareholders-an-s-corporation-can-have/`,
     },
     {
         header: `S-Corporation`,

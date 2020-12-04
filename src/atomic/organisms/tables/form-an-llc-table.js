@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
 import GridTableRow from "../../molecules/blocks/form-an-llc-table-row";
-import Curve from "../../atoms/icons/curve";
-import CurveSVG from "../../../images/curves/bottom-left-top-right.inline.svg";
 
 const Wrapper = styled.div`
   display: flex;
@@ -34,8 +32,8 @@ const Wrapper = styled.div`
 
 const FormAnLLCTable = ({ className, content, bottomMargin }) => (
   <Wrapper className={className} bottomMargin={bottomMargin}>
-    {content.rows.map((row) => (
-      <GridTableRow className="table-row" content={row} noSeparator />
+    {content.rows.map((row, i) => (
+      <GridTableRow key={i} className="table-row" content={row} noSeparator />
     ))}
   </Wrapper>
 );

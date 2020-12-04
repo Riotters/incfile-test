@@ -9,8 +9,6 @@ import ObjectContent from "../../../partials/left-object-right-content";
 import ColorBox from "../../../molecules/colored-blocks/color-box-with-top-icon";
 import ArrowLink from "../../../molecules/buttons/text";
 import ClockSVG from "../../../../images/icons/clock.inline.svg";
-import TaxesSVG from "../../../../images/icons/taxes4.inline.svg";
-import CalendarSVG from "../../../../images/icons/calendar.inline.svg";
 import FilingRequirementBox from "../../../states-llc/filing-requirement-box";
 
 const Requirements = styled.section`

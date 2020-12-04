@@ -13,12 +13,15 @@ const Wrapper = styled.div`
   position: relative;
 `;
 
-const BoxedPathBtn = ({ className, content }) => (
-  <Wrapper className={className}>
-    <PathLink to={content.url.replace(/\/?$/, '/')} textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
-      {content.header}
-    </PathLink>
-  </Wrapper>
-);
+const BoxedPathBtn = ({ className, content }) => {
+    let mixUrl = typeof content.url !== 'undefined' ? content.url.replace(/\/?$/, '/') : content.url;
+    return (
+        <Wrapper className={className}>
+            <PathLink to={mixUrl} textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                {content.header}
+            </PathLink>
+        </Wrapper>
+    );
+};
 
 export default BoxedPathBtn;
