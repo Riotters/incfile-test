@@ -30,7 +30,7 @@ const ImageTextTableBlock = ({ content }) => (
 				image={content.image}
 			/>
 			<Texts>
-				<Heading size="4" bottomMargin="12">
+				<Heading size={3} template={4} bottomMargin="12">
 					{parse(content.header)}
 				</Heading>
 				<Paragraph big mixed>

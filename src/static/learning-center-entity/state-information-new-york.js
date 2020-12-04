@@ -67,22 +67,22 @@ export const tabPages = {
       icon: NewYorkCorpSVG,
     },
     {
-      name: `How to guide`,
+      name: `How To Guide`,
       path: `/new-york-corporation/start-a-ny-corporation`,
       icon: EntitySVG,
     },
     {
-      name: `Naming your corporation`,
+      name: `Naming Your Corporation`,
       path: `/new-york-corporation/how-to-name-your-corporation`,
       icon: PenSVG,
     },
     {
-      name: `Registered agents`,
+      name: `Registered Agents`,
       path: `/new-york-corporation/registered-agents-new-york`,
       icon: RegisteredAgentSVG,
     },
     {
-      name: `Filing requirements`,
+      name: `Filing Requirements`,
       path: `/new-york-corporation/form-filling-permit-requirements`,
       icon: PrinterSVG,
     },
@@ -92,7 +92,7 @@ export const tabPages = {
       icon: PriceTagSVG,
     },
     {
-      name: `After filing`,
+      name: `After Forming`,
       path: `/new-york-corporation/know-your-ongoing-filing-requirements`,
       icon: CoffeeSVG,
     },

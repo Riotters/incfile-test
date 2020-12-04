@@ -25,7 +25,8 @@ const Wrapper = styled(WhiteBox)`
 		margin-bottom: 32px;
 	}
 
-	& > p {
+	& > p,
+	& > h3 {
 		text-align: center;
 	}
 `;
@@ -43,7 +44,7 @@ const IncfileVsCard = ({ className, content }) => {
 	return (
 		<Wrapper className={className} bottomMargin={content.bottomMargin}>
 			<Image filename={content.image} />
-			<Heading size="4" bottomMargin="32">
+			<Heading size={3} template={4} bottomMargin="32">
 				{parse(content.header)}
 			</Heading>
 			<Paragraph mixed maxWidth={content.textWidth}>

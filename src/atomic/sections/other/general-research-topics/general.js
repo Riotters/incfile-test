@@ -1,14 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../../../atoms/styles/colors";
 import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import List from "../../../organisms/lists/general-questions-list";
-import Oval from "../../../atoms/icons/oval";
-import Curve from "../../../atoms/icons/curve";
-import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
-import Oval2SVG from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
-import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
 
 const General = styled.section`
   position: relative;

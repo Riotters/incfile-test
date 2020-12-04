@@ -50,7 +50,7 @@ const IconTextColoredList = ({ className, content, color, Icon, withOr, lightFir
   return (
     <Wrapper className={className}>
             {content.map((item, id) => (
-                <Item lightFirst={lightFirst}>
+                <Item lightFirst={lightFirst} key={id}>
                     <IconTextColorBox color={color} Icon={Icon} content={item} />
                     {withOr && id === contentLen - 1 && (
                         <CircleOr className="circle-or"/>
