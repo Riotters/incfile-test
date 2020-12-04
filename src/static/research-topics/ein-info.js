@@ -16,7 +16,7 @@ export const related = {
     buttons: [
         {
             header: `Employer Identification Number`,
-            url: `/research-topics/ein-info/identification-number`,
+            url: `/research-topics/ein-info/employer-identification-number/`,
         },
       ],
   }

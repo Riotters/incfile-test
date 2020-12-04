@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../../atomic/atoms/styles/colors";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import Top from "../../atomic/partials/blog-top";
-import Container from "../../atomic/container";
-import StartBusinessCard from "../../atomic/organisms/cards/start-business-card";
-import Path from "../../atomic/molecules/blocks/video-lib-path";
-import ContentCard from "../../atomic/organisms/cards/help-center-content-card";
-import Articles from "../../atomic/sections/articles";
-import Service from "../../atomic/organisms/cards/research-topics-service-card";
-import Tools from "../../atomic/organisms/cards/research-topics-tools-card";
-import Tags from "../../atomic/organisms/cards/research-topics-tags-card";
+import { color } from "../../../atomic/atoms/styles/colors";
+import Layout from "../../../components/layout";
+import SEO from "../../../components/seo";
+import Top from "../../../atomic/partials/blog-top";
+import Container from "../../../atomic/container";
+import StartBusinessCard from "../../../atomic/organisms/cards/start-business-card";
+import Path from "../../../atomic/molecules/blocks/video-lib-path";
+import ContentCard from "../../../atomic/organisms/cards/help-center-content-card";
+import Articles from "../../../atomic/sections/articles";
+import Service from "../../../atomic/organisms/cards/research-topics-service-card";
+import Tools from "../../../atomic/organisms/cards/research-topics-tools-card";
+import Tags from "../../../atomic/organisms/cards/research-topics-tags-card";
 
 const Wrapper = styled.section`
   padding: 72px 0;
