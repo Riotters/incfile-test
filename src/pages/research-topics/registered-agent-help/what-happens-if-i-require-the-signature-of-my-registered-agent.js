@@ -15,6 +15,7 @@ import { top, rocket, categories, service, tools } from "../../../static/learnin
 import { about } from "../../../static/research-topics/registered-agent/registered-agent-signature";
 
 import { related } from "../../../static/research-topics/registered-agent";
+import { Helmet } from "react-helmet";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';
@@ -52,6 +53,24 @@ const HelpCenter = () => {
             <Service content={service} />
             <Tools content={tools} />
             <Rocket content={rocket} />
+            <Helmet>
+                <script type="application/ld+json">
+                    {`{
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": {
+                        "@type": "Question",
+                        "name": "What happens if I require the signature of my Registered Agent?",
+                        "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "If the signature of the Registered Agent is required please contact our support staff
+                        for assistance. We are typically able to return the signed documents to our clients electronically
+                        however some states require original signatures on official documents. If an original signature is
+                        required we will mail you the signed documents."
+                        }}
+                    }`}
+                </script>
+            </Helmet>
         </Layout>
     );
 }

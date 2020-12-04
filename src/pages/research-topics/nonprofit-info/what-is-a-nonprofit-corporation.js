@@ -14,6 +14,7 @@ import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
 import { about } from "../../../static/research-topics/nonprofit-info/what-is-a-nonprofit";
 import { related } from "../../../static/research-topics/nonprofit-info";
+import { Helmet } from "react-helmet";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';
@@ -47,6 +48,25 @@ const HelpCenter = () => {
             <Service content={service} />
             <Tools content={tools} />
             <Rocket content={rocket} />
+            <Helmet>
+                <script type="application/ld+json">
+                    {`{
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": {
+                        "@type": "Question",
+                        "name": "What is a Nonprofit Corporation?",
+                        "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A Nonprofit Corporation is a Corporation whose principal purpose is public benefit
+                        and not for producing a profit. A Nonprofit Corporation may not distribute income to benefit its
+                        officers and/or directors. More importantly, a Nonprofit Corporation is not an ordinary business
+                        and should not be used as an alternative form for a business with the primary purpose of
+                        generating a profit."
+                        }}
+                    }`}
+                </script>
+            </Helmet>
         </Layout>
     );
 }

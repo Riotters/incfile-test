@@ -15,6 +15,7 @@ import { top, rocket, categories, service, tools } from "../../../static/learnin
 import { about } from "../../../static/research-topics/registered-agent/own-registered-agent";
 
 import { related } from "../../../static/research-topics/registered-agent";
+import { Helmet } from "react-helmet";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';
@@ -52,6 +53,69 @@ const HelpCenter = () => {
             <Service content={service} />
             <Tools content={tools} />
             <Rocket content={rocket} />
+            <Helmet>
+                <script type="application/ld+json">
+                    {`{
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [{
+                        "@type": "Question",
+                        "name": "Can I Be My Own Registered Agent?",
+                        "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "You can act as your own Registered Agent for a corporation or LLC as long as you
+                        have a physical street address in the state where your corporation or LLC is formed. The actual
+                        corporation or LLC being formed, however, cannot name itself as its own Registered Agent."
+                        }
+                        },{
+                        "@type": "Question",
+                        "name": "Should I Be My Own Registered Agent?",
+                        "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Although becoming a Registered Agent for your LLC or corporation will save you the
+                        cost of a professional Registered Agent Service, there are some things you’ll need to consider:
+                        The Registered Agent must have a physical street address (not a P.O. Box) in the state where
+                        the company is operating. If you’re forming an LLC outside your home state, you will need to
+                        use an in-state Registered Agent.
+                        You always need to have someone on hand during business hours at the Registered Agent
+                        address to sign for important documents.
+                        The Registered Agent’s name and address are part of the public record and available through
+                        the secretary of state’s website. If you would prefer your name and address aren’t published,
+                        you might choose to use a Registered Agent service instead.
+                        If you change your business address or move out of state, you would need to file additional
+                        documentation with the secretary of state for the new address if you act as your own Registered
+                        Agent. This would not be the case if you use a Registered Agent service, making a move or
+                        address change much simpler."
+                        }
+                        },{
+                        "@type": "Question",
+                        "name": "Can an LLC or Corporation Act as Its Own Registered Agent?",
+                        "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "An LLC or corporation cannot name itself as its own Registered Agent. Typically, if
+                        you do not use a Registered Agent Service, you would give your personal name as the
+                        Registered Agent for your business entity."
+                        }
+                        },{
+                        "@type": "Question",
+                        "name": "Using a Registered Agent Service",
+                        "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "If you choose not to be your own Registered Agent for your company, you can select
+                        a Registered Agent service to act as a Registered Agent for your corporation or LLC. They will
+                        accept documents on your behalf and forward them to you as required. This includes:
+                        Correspondence from the secretary of state
+                        Service of process notices (e.g., if your business is sued or required to appear in court)
+                        
+                        Official state and federal government correspondence and notifications
+                        Tax forms and requests to complete permits, company filings and reports
+                        Incfile offers comprehensive Registered Agent services across all 50 states — and if you
+                        incorporate through us, we’ll provide the service for free for the first year."
+                        }
+                        }]
+                    }`}
+                </script>
+            </Helmet>
         </Layout>
     );
 }

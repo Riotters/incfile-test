@@ -14,6 +14,7 @@ import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
 import { about  } from "../../../static/research-topics/s-corporation-info/s-corp-taxing";
 import { related } from "../../../static/research-topics/s-corporation-info";
+import { Helmet } from "react-helmet";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';
@@ -51,6 +52,30 @@ const HelpCenter = () => {
             <Service content={service} />
             <Tools content={tools} />
             <Rocket content={rocket} />
+
+            <Helmet>
+                <script type="application/ld+json">
+                    {`{
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": {
+                        "@type": "Question",
+                        "name": "How is an S Corporation Taxed?",
+                        "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "For purposes of federal taxation, an S Corporation is taxed differently than a C
+                        Corporation. Typically, the S Corporation files its annual return using the Form 1120S, as
+                        opposed to the 1120 for a C Corporation. The 1120S is an informational return; it simply informs
+                        the federal tax authorities the amount of net profit/loss made by the S Corporation, the
+                        shareholders amongst which the profit/loss will be distributed, and the proportion in which the
+                        profit/loss is distributed to the shareholders. There is no tax payment/refund associated with the
+                        1120S tax return, as the S Corporation does not have the independent tax status that a C
+                        Corporation has. Instead, the profits/losses of the S Corporation are considered distributed to
+                        the shareholders in proportion to the ownership interest of the shareholder."
+                        }}
+                    }`}
+                </script>
+            </Helmet>
         </Layout>
     );
 }

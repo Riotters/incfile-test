@@ -15,6 +15,7 @@ import { top, rocket, categories, service, tools } from "../../../static/learnin
 import { about } from "../../../static/research-topics/general-research/required-business-account-paperwork";
 
 import { related } from "../../../static/research-topics/general-research";
+import { Helmet } from "react-helmet";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';
@@ -48,6 +49,25 @@ const HelpCenter = () => {
             <Service content={service} />
             <Tools content={tools} />
             <Rocket content={rocket} />
+            <Helmet>
+                <script type="application/ld+json">
+                    {`{
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": {
+                        "@type": "Question",
+                        "name": "What paperwork is required in order to open a business checking account?",
+                        "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "In most cases in order to open a business checking account for an LLC or
+                        corporation the bank will require that the client provide a copy of the filed articles of organization
+                        for LLC’s or articles of incorporation for a corporation and an Employer Identification Number
+                        (EIN). Unless these two items are presented to the banking officer a business checking account
+                        will be difficult to open."
+                        }}
+                    }`}
+                </script>
+            </Helmet>
         </Layout>
     );
 }
