@@ -99,9 +99,13 @@ const AlaskaCorporation = () => {
                                 Your new business’ name must include one of the following words, an abbreviation thereof, or words of similar meaning in another language: “Incorporated,” “Corporation,” “Company,” or “Limited.” However, the name must not state or imply that the corporation is organized for some
                                 purpose other than the one specified in its articles of incorporation or one permitted by state law.
             </Paragraph>
-                            <Paragraph big style={{ marginBottom: "0" }}>
+                            <Paragraph big style={{ marginBottom: "32px" }}>
                                 An available corporate name may be reserved for 120 days by filing two copies of an Application to Reserve Corporate Name form, along with a $25 fee.
             </Paragraph>
+            <LightBoxVideo
+                thumbnailVideo="what-is-a-corporation-8899"
+                videoID="oYZShvmf9eQ"
+              />
                         </PanelWrapper>
                         <PanelWrapper>
                             <Heading size={3} style={{ marginBottom: "24px" }}>
