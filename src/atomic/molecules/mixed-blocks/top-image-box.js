@@ -70,7 +70,7 @@ const TopImageBox = ({
 			<div className="top">{image && <Image filename={image} />}</div>
 			<div className="content">
 				<div>
-					<Heading size="4" bottomMargin="16">
+					<Heading size={3} template={4} bottomMargin="16">
 						{parse(content.header)}
 					</Heading>
 					<Paragraph bottomMargin="0" mixed>
