@@ -47,6 +47,27 @@ const HelpCenter = () => {
             <Service content={service} />
             <Tools content={tools} />
             <Rocket content={rocket} />
+            <Helmet>
+                <script type="application/ld+json">
+                    {`{
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": {
+                        "@type": "Question",
+                        "name": "What Steps Need to be Taken to Form a Nonprofit Corporation?",
+                        "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "You must incorporate the nonprofit organization in your particular state, which
+                        consists of filing your organization’s articles of incorporation with the state. It is important that
+                        your organizing documents contain the required language and specific clauses, such as a
+                        detailed exempt purpose statement, to ensure that your nonprofit will meet the requirements to
+                        qualify for Federal 501(c)(3) tax-exempt status. If you choose to incorporate your nonprofit
+                        through IncFile, you only need to complete the online order form. IncFile will prepare and file
+                        your organizing documents."
+                        }}
+                    }`}
+                </script>
+            </Helmet>
         </Layout>
     );
 }

@@ -15,6 +15,7 @@ import { top, rocket, categories, service, tools } from "../../../static/learnin
 import { about } from "../../../static/research-topics/general-research/registered-agent-function";
 
 import { related } from "../../../static/research-topics/general-research";
+import { Helmet } from "react-helmet";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';
@@ -48,6 +49,25 @@ const HelpCenter = () => {
             <Service content={service} />
             <Tools content={tools} />
             <Rocket content={rocket} />
+            <Helmet>
+                <script type="application/ld+json">
+                    {`{
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": {
+                        "@type": "Question",
+                        "name": "What is the main function of the Registered Agent?",
+                        "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The main function of the Registered Agent is to receive and forward important legal
+                        and tax correspondence on behalf of the corporation or LLC. Typical documents delivered to the
+                        Registered Agent are Service of Process which is a notification of a pending lawsuit as well as
+                        mail from the secretary of state; such as annual reports or tax documents sent by the state’s
+                        governing tax authority."
+                        }}
+                    }`}
+                </script>
+            </Helmet>
         </Layout>
     );
 }

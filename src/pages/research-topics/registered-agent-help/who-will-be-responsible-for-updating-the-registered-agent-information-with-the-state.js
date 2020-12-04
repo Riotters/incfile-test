@@ -52,6 +52,25 @@ const HelpCenter = () => {
             <Service content={service} />
             <Tools content={tools} />
             <Rocket content={rocket} />
+            <Helmet>
+                <script type="application/ld+json">
+                    {`{
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": {
+                        "@type": "Question",
+                        "name": "Who will be responsible for updating the Registered Agent information with the
+                        state?",
+                        "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Filing the Change of Agent for your company will be offered within the order process.
+                        If you select this option the state fee will be added to the cost of the Registered Agent service. If
+                        you elect to not have us update the Registered Agent on file it will be your responsibility to
+                        submit the necessary paperwork."
+                        }}
+                    }`}
+                </script>
+            </Helmet>
         </Layout>
     );
 }
