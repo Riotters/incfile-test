@@ -49,17 +49,17 @@ export const pages = [{
     {
         header: `C-Corporation`,
         text: `Which entity offers the best tax advantages?`,
-        url: `/research-topics/c-corporation-info/which-entity-offers-the-best-tax-advantages/#answers`,
+        url: `/research-topics/c-corporation-info/which-entity-offers-the-best-tax-advantages/`,
     },
     {
         header: `C-Corporation`,
         text: `The benefits of filing a C-corporation`,
-        url: `/research-topics/c-corporation-info/filing-a-c-corporation/#answers`,
+        url: `/research-topics/c-corporation-info/the-benefits-of-filing-a-c-corporation/`,
     },
     {
         header: `C-Corporation`,
         text: `LLCs vs C-Corporation: Which Is Best for Your Business?`,
-        url: `/research-topics/c-corporation-info/llcs-vs-c-corporation/#answers`,
+        url: `/research-topics/c-corporation-info/llcs-vs-c-corporation-which-is-best-for-your-business/`,
     },
 
     {

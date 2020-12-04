@@ -3,7 +3,7 @@ import Layout from "../../../components/layout";
 import SEO from "../../../components/seo";
 //Sections
 import Top from "../../../atomic/partials/top";
-import About from "../../../atomic/sections/research-topics/c-corporation-info/what-are-bylaws";
+import About from "../../../atomic/sections/research-topics/c-corporation-info/c-corp-taxing";
 import Related from "../../../atomic/sections/learning-center-entity/help-center-article/related";
 import Categories from "../../../atomic/sections/learning-center-entity/help-center-article/categories";
 import Service from "../../../atomic/sections/learning-center-entity/help-center/service";
@@ -12,7 +12,7 @@ import Rocket from "../../../atomic/sections/review-entity-types/c-corporation/r
 import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 //Texts
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
-import { about } from "../../../static/research-topics/c-corporation-info/what-are-bylaws";
+import { about } from "../../../static/research-topics/c-corporation-info/c-corp-taxing";
 
 import { related } from "../../../static/research-topics/c-corporation-info";
 
@@ -36,7 +36,7 @@ const HelpCenter = () => {
 
     return (
         <Layout>
-            <SEO title="What are Bylaws? | Archive articles" description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state." />
+            <SEO title="How is a C Corporation Taxed? | Archive articles" description="A C Corporation is one of several ways to legally recognize a business for tax, regulatory and official reasons. See if starting a C Corp is right for you." />
             <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
                 <h1>{top.header}</h1>
                 <p>{top.text}</p>
