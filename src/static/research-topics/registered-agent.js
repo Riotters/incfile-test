@@ -56,7 +56,7 @@ export const related = {
         },
         {
             header: `What does a Registered Agent do?`,
-            url: `/research-topics/registered-agent-help/registered-agent-help/what-does-a-registered-agent-do/`,
+            url: `/research-topics/registered-agent-help/what-does-a-registered-agent-do/`,
         },
       ],
 }

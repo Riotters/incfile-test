@@ -12,8 +12,8 @@ import Rocket from "../../../atomic/sections/review-entity-types/c-corporation/r
 import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 //Texts
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
-import { about } from "../../../static/research-topics/registered-agent-help/registered-agent-function";
-import { related } from "../../../static/research-topics/c-corporation-info";
+import { about } from "../../../static/research-topics/registered-agent/registered-agent-function";
+import { related } from "../../../static/research-topics/registered-agent";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';

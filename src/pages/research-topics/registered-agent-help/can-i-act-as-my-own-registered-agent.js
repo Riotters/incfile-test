@@ -12,7 +12,7 @@ import Rocket from "../../../atomic/sections/review-entity-types/c-corporation/r
 import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 //Texts
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
-import { about } from "../../../static/research-topics/registered-agent-help/own-registered-agent";
+import { about } from "../../../static/research-topics/registered-agent/own-registered-agent";
 
 import { related } from "../../../static/research-topics/registered-agent";
 

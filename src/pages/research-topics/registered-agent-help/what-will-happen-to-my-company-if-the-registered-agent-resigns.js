@@ -14,7 +14,7 @@ import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
 import { about } from "../../../static/research-topics/registered-agent/registered-agent-resigns";
 
-import { related } from "../../../static/research-topics/c-corporation-info";
+import { related } from "../../../static/research-topics/registered-agent";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';

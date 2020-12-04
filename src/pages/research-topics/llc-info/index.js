@@ -3,7 +3,6 @@ import Layout from "../../../components/layout";
 import SEO from "../../../components/seo";
 //Sections
 import Top from "../../../atomic/partials/top";
-import About from "../../../atomic/sections/research-topics/llc-info";
 import Related from "../../../atomic/sections/learning-center-entity/help-center-article/related";
 import Categories from "../../../atomic/sections/learning-center-entity/help-center-article/categories";
 import Service from "../../../atomic/sections/learning-center-entity/help-center/service";
