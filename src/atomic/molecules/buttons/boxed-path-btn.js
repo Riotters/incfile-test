@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 
 const BoxedPathBtn = ({ className, content }) => (
   <Wrapper className={className}>
-    <PathLink to={content.url} textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+    <PathLink to={content.url.replace(/\/?$/, '/')} textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
       {content.header}
     </PathLink>
   </Wrapper>

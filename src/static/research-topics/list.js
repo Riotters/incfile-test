@@ -97,7 +97,7 @@ export const pages = [{
     {
         header: `Business Tax`,
         text: `Which entity offers the best tax advantages?`,
-        url: `/research-topics/business-taxes/tax-advantages/#answers`,
+        url: `/research-topics/business-taxes/which-entity-offers-the-best-tax-advantages/`,
     },
     {
         header: `Business Tax`,
@@ -107,7 +107,7 @@ export const pages = [{
     {
         header: `Business Tax`,
         text: `How is an S Corporation Taxed?`,
-        url: `/research-topics/business-taxes/s-corp-taxing/#answers`,
+        url: `/research-topics/business-taxes/how-is-an-s-corporation-taxed/`,
     },
 
     {
