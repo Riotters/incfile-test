@@ -14,7 +14,11 @@ import ChapterLayout from "../../atomic/partials/chapter-layout";
 function LLCIndex() {
     return (
         <Layout>
-            <SEO title="Start Your Own Business | Incfile's Step-by-Step Course" description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+            <SEO
+                robots="none"
+                title="Start Your Own Business | Incfile's Step-by-Step Course"
+                description="Ready to start your own business? Our DIY business formation course will take you through each step, so you can hit the ground running. Learn more."
+            />
             <ChapterLayout top={top.footprint}>
                 <LeftTabPages content={tabPages} nonDIY pointerEventsTab="none"/>
                 <MainPageContent>
