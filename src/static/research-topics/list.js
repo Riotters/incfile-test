@@ -65,17 +65,17 @@ export const pages = [{
     {
         header: `Nonprofit`,
         text: `Forming a Nonprofit Corporation`,
-        url: `/research-topics/nonprofit-info/forming-nonprofit-corp/#answers`,
+        url: `/research-topics/nonprofit-info/forming-a-nonprofit-corporation/`,
     },
     {
         header: `Nonprofit`,
         text: `Can a Nonprofit Corporation Make a Profit?`,
-        url: `/research-topics/nonprofit-info/profit-from-nonprofit/#answers`,
+        url: `/research-topics/nonprofit-info/can-a-nonprofit-corporation-make-a-profit/`,
     },
     {
         header: `Nonprofit`,
         text: `What is a Nonprofit Corporation?`,
-        url: `/research-topics/nonprofit-info/what-is-a-nonprofit/#answers`,
+        url: `/research-topics/nonprofit-info/what-is-a-nonprofit-corporation/`,
     },
 
     {

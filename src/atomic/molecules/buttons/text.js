@@ -79,7 +79,7 @@ const ArrowLink = ({ className, content, maxWidth, bottomPadding, bottomMargin, 
                     <Arrow>
                         <ArrowSVG />
                     </Arrow>
-                    <span>{content.text}</span>
+                    <span>{typeof content.text !=='undefined' ? content.text : content.header}</span>
                 </Wrapper>
             ) : (
                     <WrapperExternal href={content.url} className={className} maxWidth={maxWidth} bottomPadding={bottomPadding} bottomMargin={bottomMargin} topMargin={topMargin} target="_blank" rel="noopener noreferrer">

@@ -66,18 +66,18 @@ const Lists = ({ content }) => (
           <Heading size="3" maxWidth="1170" bottomMargin="32">
             {section.header}
           </Heading>
-          {section.rows.map((row) => (
-            <Row>
+          {section.rows.map((row, index) => (
+            <Row key={index}>
               {row.header ? (
                 <Heading size="5" maxWidth="1170" bottomMargin="12">
                   {row.header}
                 </Heading>
               ) : null}
               <Grid>
-                {row.columns.map((column) => (
-                  <Column>
-                    {column.links.map((link) => (
-                      <ArrowLink content={link} bottomMargin="12" />
+                {row.columns.map((column, i) => (
+                  <Column key={i}>
+                    {column.links.map((link, _i) => (
+                      <ArrowLink content={link} bottomMargin="12" key={_i} />
                     ))}
                   </Column>
                 ))}

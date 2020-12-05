@@ -15,6 +15,7 @@ import { top, rocket, categories, service, tools } from "../../../static/learnin
 import { about } from "../../../static/research-topics/registered-agent/registered-agent-address";
 
 import { related } from "../../../static/research-topics/registered-agent";
+import { Helmet } from "react-helmet";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';
@@ -52,6 +53,22 @@ const HelpCenter = () => {
             <Service content={service} />
             <Tools content={tools} />
             <Rocket content={rocket} />
+            <Helmet>
+                <script type="application/ld+json">
+                    {`{
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": {
+                        "@type": "Question",
+                        "name": "What is the name and address of my Registered Agent?",
+                        "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The Registered Agent information will be listed in the confirmation email. It may also
+                        be obtained by logging into the Registered Agent Dashboard after the order is placed."
+                        }}
+                    }`}
+                </script>
+            </Helmet>
         </Layout>
     );
 }

@@ -15,6 +15,7 @@ import { top, rocket, categories, service, tools } from "../../../static/learnin
 import { about } from "../../../static/research-topics/business-taxes/nonprofit-tax-exempt";
 
 import { related } from "../../../static/research-topics/business-taxes";
+import { Helmet } from "react-helmet";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';
@@ -52,6 +53,25 @@ const HelpCenter = () => {
             <Service content={service} />
             <Tools content={tools} />
             <Rocket content={rocket} />
+            <Helmet>
+                <script type="application/ld+json">
+                    {`{
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": {
+                        "@type": "Question",
+                        "name": "Is “Nonprofit” the Same as “Tax-Exempt”?",
+                        "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Absolutely not. Being formed as a Nonprofit Corporation does not automatically
+                        mean that the corporation is tax-exempt for federal and, in some instances, state income tax. A
+                        “tax-exempt” Corporation is a distinctive entity that has gained an exemption from income tax
+                        liability. A Nonprofit Corporation is not eligible for exemption from income tax liability until it
+                        applies for and has been approved by the IRS for tax-exempt status."
+                        }}
+                    }`}
+                </script>
+            </Helmet>
         </Layout>
     );
 }

@@ -15,6 +15,7 @@ import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
 import { about } from "../../../static/research-topics/s-corporation-info/corp-managing";
 import { related } from "../../../static/research-topics/s-corporation-info";
+import { Helmet } from "react-helmet";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';
@@ -52,6 +53,29 @@ const HelpCenter = () => {
             <Service content={service} />
             <Tools content={tools} />
             <Rocket content={rocket} />
+
+            <Helmet>
+                <script type="application/ld+json">
+                    {`{
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": {
+                            "@type": "Question",
+                            "name": "How is a Corporation Managed?",
+                            "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "A Corporation is managed and run by its directors and officers. The directors are
+                            appointed by the shareholders and are responsible for the overall management and corporate
+                            governance of the corporation. The directors appoint the officers who are responsible for the
+                            day to management and operations of the corporation. The typical officer positions are
+                            president, vice-president, treasurer, and secretary, although there can be more and sometimes
+                            different titles are used. In most states only one director and one officer is required, and they
+                            can usually be the same person."
+                            }
+                        }
+                    }`}
+                </script>
+            </Helmet>
         </Layout>
     );
 }

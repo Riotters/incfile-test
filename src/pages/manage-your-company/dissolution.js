@@ -13,14 +13,15 @@ import Articles from "../../atomic/sections/articles";
 //Texts
 import { top, about, requirements, faq } from "../../static/manage-your-company/dissolution";
 import ProductSchema from "../../components/product-schema";
+import { servicePrice } from "../../helpers/global-variables";
 
 const Dissolution = () => (
   <Layout>
         <SEO title="Company Dissolution | How to Dissolve an LLC or Corporation" description="To legally close a corporation or LLC, the company must file Articles of Dissolution with the state of incorporation. Learn more." />
         <ProductSchema
-            productUrl="hptts://orders.incfile.com/dissolution.php"
+            productUrl={`${process.env.ORDER_URL}/dissolution.php`}
             productName="Corporate Dissolution"
-            productPrice="149"
+            productPrice={servicePrice.dissolution}
             productDescription="File official dissolution paperwork for your LLC or corporation."
         />
     <Top imageName="mrs-bulb-dissolution" imageAlt="Mrs Bulb holding a closed sign" ovalColor="darkblue">

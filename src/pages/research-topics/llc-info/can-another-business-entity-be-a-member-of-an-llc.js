@@ -15,6 +15,7 @@ import { top, rocket, categories, service, tools } from "../../../static/learnin
 import { about } from "../../../static/research-topics/llc-info/llc-business-entity-member";
 
 import { related } from "../../../static/research-topics/llc-info";
+import { Helmet } from "react-helmet";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';
@@ -48,6 +49,27 @@ const HelpCenter = () => {
             <Service content={service} />
             <Tools content={tools} />
             <Rocket content={rocket} />
+            <Helmet>
+                <script type="application/ld+json">
+                    {`{
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": {
+                        "@type": "Question",
+                        "name": "Can another business entity be a member of an LLC?",
+                        "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "In the majority of states, The members of an LLC can be individuals, corporations, or
+                        other LLCs. These members of the LLC can be out of state residents or even foreign nationals.
+                        Furthermore there is no limit to the amount of members that an LLC can have.
+                        The flexibility of an LLC in contrast to an S Corporation is stark considering the S corporations
+                        are limited to 75 shareholders who must either be United States citizens or Lawful Permanent
+                        Residents."
+                        }
+                        }
+                    }`}
+                </script>
+            </Helmet>
         </Layout>
     );
 }

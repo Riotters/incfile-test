@@ -3,8 +3,6 @@ import {Link} from "gatsby";
 import Container from "../../container";
 import styled from "styled-components";
 import {shadow} from "../../atoms/styles/shadows";
-import IconSvg from "../../../images/icon-32-status-x.inline.svg";
-import ExSVG from "../../../images/circle-status-x.inline.svg"
 import {Paragraph} from "../../atoms/typography/paragraph";
 import FeesTableRow from "./fees-table-row";
 
