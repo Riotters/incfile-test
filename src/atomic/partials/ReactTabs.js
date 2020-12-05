@@ -24,7 +24,7 @@ const Wrapper = styled.div`
 
 	.react-tabs {
 		display: flex;
-		justify-content: space-beteen;
+		justify-content: space-between;
 		width: 100%;
 
 		&__tab-list {

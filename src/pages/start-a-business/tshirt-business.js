@@ -946,7 +946,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 12px;
-    margin-bottom 76px; 
+    margin-bottom: 76px; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;

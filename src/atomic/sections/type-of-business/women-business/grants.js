@@ -177,7 +177,7 @@ const BoxWrapper = styled.div`
     column-gap: 30px;
     row-gap: 72px;
     margin-top: 76px;
-    margin-bottom 76px; 
+    margin-bottom: 76px; 
     
     @media (min-width: 390px){
         grid-template-columns: 370px;
@@ -266,7 +266,7 @@ const AdventagesWrapper = styled.div`
     column-gap: 30px;
     row-gap: 20px;
     margin-top: 76px;
-    margin-bottom 76px; 
+    margin-bottom: 76px; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;
