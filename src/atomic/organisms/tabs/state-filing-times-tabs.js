@@ -140,8 +140,8 @@ const StateFilingTimesTabs = ({ content }) => (
         </Scroller>
       </TabsWrapper>
       <PanelsWrapper>
-        {content.map((table) => (
-          <Panel>
+        {content.map((table, index) => (
+          <Panel key={index}>
             <ContentCenter className="content">
               <Table content={table} />
             </ContentCenter>
