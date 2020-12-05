@@ -20,7 +20,7 @@ const Resources = () => (
       Resources, guides, and articles.
     </Heading>
     <Wrapper>
-      <Item to="/research-topics/general-research-topics/">
+      <Item to="/research-topics/general-research/">
         <Icon>
           <SearchIcon />
         </Icon>

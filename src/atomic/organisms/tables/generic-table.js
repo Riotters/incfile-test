@@ -104,8 +104,8 @@ const GenericTable = ({ className, content, style, settings, responsive }) => {
     <Wrapper className={className + " " + (responsive ? " responsive" : "")} style={style}>
       <ResponsiveWrapper width={250} className={+" " + (responsive ? " responsive" : "")}>
         {content.headers && <GenericGridTableRow content={content.headers} settings={settings} columns={content.headerColumnsDef} />}
-        {content.rows.map((row, i) => (
-          <GenericGridTableRow key={i} className="row" content={row} columns={content.rowColumnsDef} settings={settings} />
+        {content.rows.map((row) => (
+          <GenericGridTableRow className="row" content={row} columns={content.rowColumnsDef} settings={settings} />
         ))}
       </ResponsiveWrapper>
     </Wrapper>

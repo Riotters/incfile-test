@@ -13,6 +13,7 @@ import BusinessSVG from "../../../../images/icons/case-white.inline.svg";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-orange-transparent.inline.svg";
 
+
 const Essentials = styled.section`
     position: relative;
     padding-top: 112px;

@@ -60,12 +60,12 @@ export const tabPages = {
       icon: PenSVG,
     },
     {
-      name: `Registered Agents`,
+      name: `Registered agents`,
       path: `/wyoming-corporation/registered-agents-wyoming/`,
       icon: RegisteredAgentSVG,
     },
     {
-      name: `Corporation Requirements`,
+      name: `Corporation requirements`,
       path: `/wyoming-corporation/form-filling-permit-requirements/`,
       icon: PrinterSVG,
     },

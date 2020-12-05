@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
 import GridTableRow from "../../molecules/blocks/grid-table-row";
+import Curve from "../../atoms/icons/curve";
+import CurveSVG from "../../../images/curves/bottom-left-top-right.inline.svg";
 
 const Wrapper = styled.div`
   display: flex;
@@ -43,8 +45,8 @@ const Wrapper = styled.div`
 
 const TaxReturnTable = ({ className, content }) => (
     <Wrapper className={className}>
-        {content.rows.map((row, i) => (
-        <GridTableRow key={i} className="table-row" content={row} columns="1fr 1fr" />
+        {content.rows.map((row) => (
+        <GridTableRow className="table-row" content={row} columns="1fr 1fr" />
         ))}
     </Wrapper>
 );

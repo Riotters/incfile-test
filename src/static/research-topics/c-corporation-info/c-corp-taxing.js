@@ -6,7 +6,7 @@ export const about = {
     },
     {
       text: `C Corporation Information`,
-      url: `/research-topics/c-corporation-info/`,
+      url: `/research-topics/c-corporation-info`,
     },
   ],
   header: `How is a C Corporation Taxed?`,

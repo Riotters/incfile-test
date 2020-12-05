@@ -8,7 +8,7 @@ export const top = {
 	buttons: [
 		{
 			text: "Get Started",
-			url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC`,
+			url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=`,
 		},
 		{
 			text: "Watch Video",

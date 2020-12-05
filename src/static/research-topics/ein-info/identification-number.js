@@ -6,7 +6,7 @@ export const about = {
     },
     {
       text: `Employer Identification Number (EIN)`,
-      url: `/research-topics/ein-info/`,
+      url: `/research-topics/ein-info`,
     },
   ],
   header: `Employer Identification Number`,
@@ -57,7 +57,7 @@ export const related = {
   buttons: [
     {
       header: `Employer Identification Number`,
-      url: `/research-topics/ein-info/employer-identification-number/`,
+      url: `/research-topics/ein-info/identification-number`,
     },
   ],
 };

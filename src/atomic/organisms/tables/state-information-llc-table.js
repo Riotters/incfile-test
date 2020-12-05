@@ -133,8 +133,8 @@ const Wrapper = styled.div`
 const TaxReturnTable = ({ className, content, minWidthSM }) => (
 	<Wrapper className={className} minWidthSM={minWidthSM}>
 		<GridTableRow className="table-header" content={content.headers} header />
-		{content.rows.map((row, i) => (
-			<GridTableRow key={i} className="table-row" content={row} />
+		{content.rows.map((row) => (
+			<GridTableRow className="table-row" content={row} />
 		))}
 	</Wrapper>
 );

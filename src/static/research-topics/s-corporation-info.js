@@ -20,15 +20,15 @@ export const related = {
       },
       {
           header: `What is a Corporate Seal?`,
-          url: `/research-topics/s-corporation-info/what-is-a-corporate-seal/`,
+          url: `/research-topics/s-corporation-info/corp-seal/`,
       },
       {
           header: `Which entity offers the best tax advantages?`,
-          url: `/research-topics/s-corporation-info/which-entity-offers-the-best-tax-advantages/`,
+          url: `/research-topics/s-corporation-info/tax-advantages/`,
       },
       {
           header: `The Advantages of Forming an S Corporation`,
-          url: `/research-topics/s-corporation-info/the-advantages-of-forming-an-s-corporation/`,
+          url: `/research-topics/s-corporation-info/s-corp-form-advantages/`,
       },
       {
           header: `LLC vs. S Corporation`,
@@ -36,39 +36,39 @@ export const related = {
       },
       {
           header: `What are the Advantages of an S Corporation?`,
-          url: `/research-topics/s-corporation-info/what-are-the-advantages-of-an-s-corporation/`,
+          url: `/research-topics/s-corporation-info/s-corp-advantages/`,
       },
       {
           header: `What are the Disadvantages of an S Corporation?`,
-          url: `/research-topics/s-corporation-info/what-are-the-disadvantages-of-an-s-corporation/`,
+          url: `/research-topics/s-corporation-info/s-corp-disadvantages/`,
       },
       {
           header: `How is an S Corporation Taxed?`,
-          url: `/research-topics/s-corporation-info/how-is-an-s-corporation-taxed/`,
+          url: `/research-topics/s-corporation-info/s-corp-taxing/`,
       },
       {
           header: `Who Will Typically Elect the S Corporation Status?`,
-          url: `/research-topics/s-corporation-info/who-will-typically-elect-the-s-corporation-status/`,
+          url: `/research-topics/s-corporation-info/s-corporation-status/`,
       },
       {
           header: `Is there a limit to the amount of shareholders an S Corporation can have?`,
-          url: `/research-topics/s-corporation-info/is-there-a-limit-to-the-amount-of-shareholders-an-s-corporation-can-have/`,
+          url: `/research-topics/s-corporation-info/amount-of-shareholders/`,
       },
       {
           header: `Can a foreign resident be a shareholder in an S Corporation?`,
-          url: `/research-topics/s-corporation-info/can-a-foreign-resident-be-a-shareholder-in-an-s-corporation/`,
+          url: `/research-topics/s-corporation-info/foreign-resident-shareholder/`,
       },
       {
           header: `How is a Corporation Managed?`,
-          url: `/research-topics/s-corporation-info/how-is-a-corporation-managed/`,
+          url: `/research-topics/s-corporation-info/corp-managing/`,
       },
       {
           header: `Am I Required to Hold Corporate Meetings?`,
-          url: `/research-topics/s-corporation-info/am-i-required-to-hold-corporate-meetings/`,
+          url: `/research-topics/s-corporation-info/corporate-meetings/`,
       },
       {
           header: `How Many Shares of Stock will my Corporation Need?`,
-          url: `/research-topics/s-corporation-info/how-many-shares-of-stock-will-my-corporation-need/`,
+          url: `/research-topics/s-corporation-info/corporation-need/`,
       },
       {
           header: `What are Bylaws?`,
@@ -76,27 +76,27 @@ export const related = {
       },
       {
           header: `What is Stock Par Value?`,
-          url: `/research-topics/s-corporation-info/what-is-stock-par-value/`,
+          url: `/research-topics/s-corporation-info/stock-par-value/`,
       },
       {
           header: `What is the Form 2553?`,
-          url: `/research-topics/s-corporation-info/what-is-the-form-2553/`,
+          url: `/research-topics/s-corporation-info/form-2553/`,
       },
       {
           header: `What are the Differences Between Officers, Directors and Shareholders?`,
-          url: `/research-topics/s-corporation-info/what-are-the-differences-between-officers-directors-and-shareholders/`,
+          url: `/research-topics/s-corporation-info/directors-and-shareholders/`,
       },
       {
           header: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
-          url: `/research-topics/s-corporation-info/does-forming-an-llc-limited-liability-company-or-corporation-require-an-attorney/`,
+          url: `/research-topics/s-corporation-info/require-an-attorney/`,
       },
       {
           header: `What is a Publication Requirement?`,
-          url: `/research-topics/s-corporation-info/what-is-a-publication-requirement/`,
+          url: `/research-topics/s-corporation-info/publication-requirement/`,
       },
       {
           header: `What is the Customized Corporate/LLC Kit?`,
-          url: `/research-topics/s-corporation-info/what-is-the-customized-corporatellc-kit/`,
+          url: `/research-topics/s-corporation-info/customized-corp-llc-kit/`,
       },
     ],
 }

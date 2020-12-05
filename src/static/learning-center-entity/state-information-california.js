@@ -70,22 +70,22 @@ export const tabPages = {
       icon: CaliforniaCorpSVG,
     },
     {
-      name: `How To Guide`,
+      name: `How to guide`,
       path: `/california-corporation/start-a-ca-corporation`,
       icon: EntitySVG,
     },
     {
-      name: `Naming Your Corporation`,
+      name: `Naming your corporation`,
       path: `/california-corporation/how-to-name-your-corporation`,
       icon: PenSVG,
     },
     {
-      name: `Registered Agents`,
+      name: `Registered agents`,
       path: `/california-corporation/registered-agents-california`,
       icon: RegisteredAgentSVG,
     },
     {
-      name: `Filing Requirements`,
+      name: `Filing requirements`,
       path: `/california-corporation/form-filling-permit-requirements`,
       icon: PrinterSVG,
     },
@@ -95,7 +95,7 @@ export const tabPages = {
       icon: PriceTagSVG,
     },
     {
-      name: `After Formation`,
+      name: `After filing`,
       path: `/california-corporation/know-your-ongoing-filing-requirements`,
       icon: CoffeeSVG,
     },

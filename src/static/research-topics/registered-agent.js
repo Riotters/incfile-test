@@ -16,47 +16,47 @@ export const related = {
     buttons: [
         {
             header: `Can I Be My Own Registered Agent?`,
-            url: `/research-topics/registered-agent-help/can-i-act-as-my-own-registered-agent/`,
+            url: `/research-topics/registered-agent/own-registered-agent`,
         },
         {
             header: `What is the main function of the Registered Agent?`,
-            url: `/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
+            url: `/research-topics/registered-agent/registered-agent-function`,
         },
         {
             header: `What happens if I require the signature of my Registered Agent?`,
-            url: `/research-topics/registered-agent-help/what-happens-if-i-require-the-signature-of-my-registered-agent/`,
+            url: `/research-topics/registered-agent/registered-agent-signature`,
         },
         {
             header: `What is the name and address of my Registered Agent?`,
-            url: `/research-topics/registered-agent-help/what-is-the-name-and-address-of-my-registered-agent/`,
+            url: `/research-topics/registered-agent/registered-agent-address`,
         },
         {
             header: `Who will be responsible for updating the Registered Agent information with the state?`,
-            url: `/research-topics/registered-agent-help/who-will-be-responsible-for-updating-the-registered-agent-information-with-the-state/`,
+            url: `/research-topics/registered-agent/registered-agent-info-update`,
         },
         {
             header: `How much will it cost to renew my Registered Agent service?`,
-            url: `/research-topics/registered-agent-help/how-much-will-it-cost-to-renew-my-registered-agent-service/`,
+            url: `/research-topics/registered-agent/service-cost`,
         },
         {
             header: `How will I know when it is time to renew my Registered Agent?`,
-            url: `/research-topics/registered-agent-help/how-will-i-know-when-it-is-time-to-renew-my-registered-agent/`,
+            url: `/research-topics/registered-agent/registered-agent-renew`,
         },
         {
             header: `How will I be notified if service of process is received?`,
-            url: `/research-topics/registered-agent-help/how-will-i-be-notified-if-service-of-process-is-received/`,
+            url: `/research-topics/registered-agent/service-process-notify`,
         },
         {
             header: `What will happen to my company if the registered agent resigns?`,
-            url: `/research-topics/registered-agent-help/what-will-happen-to-my-company-if-the-registered-agent-resigns/`,
+            url: `/research-topics/registered-agent/registered-agent-resigns`,
         },
         {
             header: `Can the registered agent be a company?`,
-            url: `/research-topics/registered-agent-help/can-the-registered-agent-be-a-company/`,
+            url: `/research-topics/registered-agent/registered-agent-company`,
         },
         {
             header: `What does a Registered Agent do?`,
-            url: `/research-topics/registered-agent-help/what-does-a-registered-agent-do/`,
+            url: `/research-topics/registered-agent/registered-agent-tasks`,
         },
       ],
 }

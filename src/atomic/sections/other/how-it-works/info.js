@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { gradient } from "../../../atoms/styles/colors";
+import { color, gradient } from "../../../atoms/styles/colors";
 import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
+import Image from "../../../atoms/image/image_nobase64";
 import CalculatorSVG from "../../../../images/icons/calculator-color.inline.svg";
 import DocumentSVG from "../../../../images/icons/document-color.inline.svg";
 import CalendarSVG from "../../../../images/icons/calendar-color.inline.svg";
