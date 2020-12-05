@@ -22,6 +22,7 @@ import {
 	faq,
 	cta,
 } from "../static/manage-your-company/trademark-name-search";
+import { servicePrice } from "../helpers/global-variables";
 
 const TrademarkNameSearch = () => (
 	<Layout>
@@ -30,9 +31,9 @@ const TrademarkNameSearch = () => (
 			description="Protect your brand and reputation with a legal trademark. From trademark searches to registration, Incfile makes it easy. Learn more."
         />
         <ProductSchema
-            productUrl="https://orders.incfile.com/trademark.php"
+            productUrl={`${process.env.ORDER_URL}/trademark.php`}
             productName="Register a Trademark"
-            productPrice="199"
+            productPrice={servicePrice.trademark}
             productDescription="Protect your business name with a trademark. Our partnered attorneys will do the research to make sure the mark isn't already taken, ensure the filing gets accepted by the government office, and provide sound legal advice throughout the entire process."
         />
 		<Top

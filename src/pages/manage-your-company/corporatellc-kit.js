@@ -12,14 +12,15 @@ import GetFormationKit from "../../atomic/sections/manage-your-company/corporate
 import { top, unboxing, getFormationKit } from "../../static/corporate-llc-kit"
 import Cta from "../../atomic/sections/general/cta";
 import ProductSchema from "../../components/product-schema";
+import { servicePrice } from "../../helpers/global-variables";
 
 const CorporateLlcKit = () => (
     <Layout>
         <SEO title="LLC Kit | Incfile Personlized Corporate Kit | LLC Corporate Kit" description="Incfile offers your LLC or corporate kit. Learn what an LLC Kit is and how to obtain one" />
         <ProductSchema
-            productUrl="hptts://orders.incfile.com/kit-info.php"
+            productUrl={`${process.env.ORDER_URL}/kit-info.php`}
             productName="Business Formation Kit"
-            productPrice="99"
+            productPrice={servicePrice.kit}
             productDescription="Your official state documents will be delivered in a high quality and professional kit with your company name stamped along the spine of the book."
         />
         <Top imageName="mrs-bulb-llc-corporate-kit" imageAlt="Mr. Bulb getting LLC or corporate kit" ovalColor="blue">

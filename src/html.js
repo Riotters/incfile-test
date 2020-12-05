@@ -51,9 +51,10 @@ export default function HTML(props) {
                 {props.postBodyComponents}
                     
                 {/* clickAttributionData */}
-                {process.env.ENABLE_CLICK === true && (
+                {process.env.ENABLE_CLICK && (
                     <>
                         <script
+                            key="click_attribution"
                             dangerouslySetInnerHTML={{
                                 __html: `
                                 var clickAttributionData = clickAttributionData || {};
@@ -62,6 +63,7 @@ export default function HTML(props) {
                             }}
                         />
                         <script
+                            key="click_attribution_purchase"
                             defer 
                             src="https://clickattribution.com/scripts/v2/path-to-purchase.min.js"
                         />
@@ -69,7 +71,7 @@ export default function HTML(props) {
                 )}
                 
                 {/* Hotjar Tracking Code */}
-                {process.env.ENABLE_HOTJAR === true && (
+                {process.env.ENABLE_HOTJAR && (
                     <script
                         key="hotjar_function"
                         defer
@@ -89,7 +91,7 @@ export default function HTML(props) {
                 )}
 
                 {/* Visual Website Optimizer Asynchronous Code */}
-                {process.env.ENABLE_VWO === true && (
+                {process.env.ENABLE_VWO && (
                     <script
                         key="vwo_function"
                         defer
