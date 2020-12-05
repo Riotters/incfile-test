@@ -20,6 +20,18 @@ const ResponsiveWrapper = styled.div`
 	}
 `;
 
+const icons = [
+	"state-filling-times-3050",
+	"starting-a-home-business-3959",
+	"corporation-state-information-3850",
+	"ongoing-filling-requirement-2930",
+	"business-plan-tips-3859",
+	"small-business-workshops-2049",
+	"state-filling-fees",
+	"s-corp-tax-calculator-9404",
+	"entity-comparison-chart-2959",
+];
+
 const CompareSection = ({ className, content }) => (
 	<Compare className={className}>
 		<HeadingCenter

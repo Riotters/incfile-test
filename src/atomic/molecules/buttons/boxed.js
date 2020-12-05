@@ -5,7 +5,9 @@ import Whitebox from "../../atoms/boxes/white-box";
 import Circle from "../../atoms/icons/circle";
 import Image from "../../atoms/image/image";
 import { Heading } from "../../atoms/typography/heading";
+import { Paragraph } from "../../atoms/typography/paragraph";
 import { color } from "../../atoms/styles/colors";
+import ArrowLink from "../../molecules/buttons/text";
 import ArrowSVG from "../../../images/arrow.inline.svg";
 import { shadow } from "../../atoms/styles/shadows";
 

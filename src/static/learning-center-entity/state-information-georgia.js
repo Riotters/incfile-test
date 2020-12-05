@@ -67,22 +67,22 @@ export const tabPages = {
       icon: NewYorkCorpSVG,
     },
     {
-      name: `How To Guide`,
+      name: `How to guide`,
       path: `/georgia-corporation/start-a-ga-corporation`,
       icon: EntitySVG,
     },
     {
-      name: `Naming Your Corporation`,
+      name: `Naming your corporation`,
       path: `/georgia-corporation/how-to-name-your-corporation`,
       icon: PenSVG,
     },
     {
-      name: `Registered Agents`,
+      name: `Registered agents`,
       path: `/georgia-corporation/registered-agents-georgia`,
       icon: RegisteredAgentSVG,
     },
     {
-      name: `Filing Requirements`,
+      name: `Filing requirements`,
       path: `/georgia-corporation/form-filling-permit-requirements`,
       icon: PrinterSVG,
     },
@@ -92,7 +92,7 @@ export const tabPages = {
       icon: PriceTagSVG,
     },
     {
-      name: `After Formation`,
+      name: `After filing`,
       path: `/georgia-corporation/know-your-ongoing-filing-requirements`,
       icon: CoffeeSVG,
     },
@@ -1112,7 +1112,8 @@ export const naming = [
   {
     type: "header",
     content:
-      "Why You Don’t Want to Infringe on Trademark or Service Mark Names",
+      "Rules on Infringing on Service Marks or Trademarks Inside \n" +
+      "or Outside Georgia",
     size: 4,
     marginBottom: 24,
   },

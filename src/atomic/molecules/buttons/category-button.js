@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import OverviewSVG from "../../../images/icons/coaching-business.inline.svg";
+import ArrowSVG from "../../../images/arrow.inline.svg";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 

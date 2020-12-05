@@ -6,7 +6,7 @@ export const about = {
     },
     {
       text: `S Corporation Information`,
-      url: `/research-topics/s-corporation-info/`,
+      url: `/research-topics/s-corporation-info`,
     },
   ],
   header: `How to Take a Distribution from an S Corp`,

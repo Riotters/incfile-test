@@ -66,22 +66,22 @@ export const tabPages = {
       icon: TexasCorpSVG,
     },
     {
-      name: `How To Guide`,
+      name: `How to guide`,
       path: `/texas-corporation/start-a-tx-corporation`,
       icon: EntitySVG,
     },
     {
-      name: `Naming Your Corporation`,
+      name: `Naming your corporation`,
       path: `/texas-corporation/how-to-name-your-corporation`,
       icon: PenSVG,
     },
     {
-      name: `Registered Agents`,
+      name: `Registered agents`,
       path: `/texas-corporation/registered-agents-texas`,
       icon: RegisteredAgentSVG,
     },
     {
-      name: `Filing Requirements`,
+      name: `Filing requirements`,
       path: `/texas-corporation/form-filling-permit-requirements`,
       icon: PrinterSVG,
     },
@@ -91,7 +91,7 @@ export const tabPages = {
       icon: PriceTagSVG,
     },
     {
-      name: `After Forming`,
+      name: `After filing`,
       path: `/texas-corporation/know-your-ongoing-filing-requirements`,
       icon: CoffeeSVG,
     },

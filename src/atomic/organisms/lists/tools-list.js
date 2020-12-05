@@ -6,8 +6,8 @@ import {Tools} from "../../../static/tools"
 
 const ToolsList = ({ tools, tab, forcePropsTools = false }) => (
   <ToolsWrapper tab={tab}>
-    {(forcePropsTools ? tools : Tools).map((item, index) => (
-      <WhiteBoxWithToolsList list={item.tools} title={item.title} key={index} />
+    {(forcePropsTools ? tools : Tools).map((item) => (
+      <WhiteBoxWithToolsList list={item.tools} title={item.title} />
     ))}
   </ToolsWrapper>
 );

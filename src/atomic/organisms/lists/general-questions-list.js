@@ -1,7 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
+import Whitebox from "../../atoms/boxes/white-box-li";
+import { Heading } from "../../atoms/typography/heading";
+import { Paragraph } from "../../atoms/typography/paragraph";
+import ArrowLink from "../../molecules/buttons/text";
+import ArrowSVG from "../../../images/arrow.inline.svg";
 import BoxedButton from "../../molecules/buttons/boxed";
+import Circle from "../../atoms/icons/circle";
+import TaxesSVG from "../../../images/icons/taxes.inline.svg";
 import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/top-left-bottom-right.inline.svg";
 

@@ -108,6 +108,7 @@ const GridTableRow = ({
 	badge,
 }) => (
 	<Wrapper className={className} columns={columns}>
+		{console.log(badge)}
 		{content.map((item, index) => (
 			<Cell
 				textCenter={textCenter}

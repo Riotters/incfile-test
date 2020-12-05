@@ -68,22 +68,22 @@ export const tabPages = {
       icon: DelawareCorpSVG,
     },
     {
-      name: `How To Guide`,
+      name: `How to guide`,
       path: `/delaware-corporation/start-a-de-corporation`,
       icon: EntitySVG,
     },
     {
-      name: `Naming Your Corporation`,
+      name: `Naming your corporation`,
       path: `/delaware-corporation/how-to-name-your-corporation`,
       icon: PenSVG,
     },
     {
-      name: `Registered Agents`,
+      name: `Registered agents`,
       path: `/delaware-corporation/registered-agents-delaware`,
       icon: RegisteredAgentSVG,
     },
     {
-      name: `Filing Requirements`,
+      name: `Filing requirements`,
       path: `/delaware-corporation/form-filling-permit-requirements`,
       icon: PrinterSVG,
     },
@@ -93,7 +93,7 @@ export const tabPages = {
       icon: PriceTagSVG,
     },
     {
-      name: `After Formation`,
+      name: `After filing`,
       path: `/delaware-corporation/know-your-ongoing-filing-requirements`,
       icon: CoffeeSVG,
     },

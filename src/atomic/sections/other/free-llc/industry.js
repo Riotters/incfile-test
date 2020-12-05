@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { color, gradient } from "../../../atoms/styles/colors";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
+import CenterGrid from "../../../partials/center-grid";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-pink2.inline.svg";
+import BoxedButton from "../../../molecules/buttons/boxed";
 import RatingRow from "../../../atoms/boxes/rating-row";
 import CartBlock from "../../../molecules/blocks/cart-block";
 import RatingBlock from "../../../molecules/blocks/rating-block";

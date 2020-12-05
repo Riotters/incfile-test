@@ -58,8 +58,8 @@ const BrowseByCategoryList = ({ className, content, icon, circleColor, curve }) 
             <CurveSVG />
           </Curve>
         )}
-        {content.buttons.map((button, index) => (
-          <BoxedButton className="article-link" key={index} content={button} ellipsis />
+        {content.buttons.map((button) => (
+          <BoxedButton className="article-link" content={button} ellipsis />
         ))}
       </List>
       <ArrowLink content={content.link} />
