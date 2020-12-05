@@ -40,7 +40,7 @@ import FilingTimeAndPriceBox from "../atomic/state-corporation/filing-time-and-p
 import ComplianceRequirementBox from "../atomic/state-corporation/compliance-requirement-box";
 import {getFullPricesAndFilings} from "../api/Api";
 import ReactTabs from "../atomic/partials/ReactTabs";
-import TabPanel from "react-tabs/src/components/__tests__/helpers/higherOrder/TabPanelWrapper";
+import {TabPanel} from "react-tabs";
 
 const NewJerseyCorporation = () => {
     const [dataApi, setDataApi] = React.useState({});
