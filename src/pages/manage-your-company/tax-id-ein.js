@@ -14,14 +14,15 @@ import Articles from "../../atomic/sections/articles";
 import { top, about, help, faq } from "../../static/manage-your-company/ein-tax-id";
 import ProductSchema from "../../components/product-schema";
 import { Helmet } from "react-helmet";
+import { servicePrice } from "../../helpers/global-variables";
 
 const TaxIdEin = () => (
     <Layout>
         <SEO title="EIN / Tax ID Number | How to Apply for a Federal EIN" description="Also known as a “Tax ID number,” the EIN is a business federal tax ID that works like a Social Security Number for your business. Learn more." />
         <ProductSchema
-            productUrl="https://orders.incfile.com/ein-form.php"
+            productUrl={`${process.env.ORDER_URL}/ein-form.php`}
             productName="Business EIN / Tax ID Number"
-            productPrice="70"
+            productPrice={servicePrice.ein}
             productDescription="Obtain a federal employer identification number for your business."
         />
         <Top imageName="mrs-bulb-tax-number" imageAlt="Mrs Bulb with tax numbers" ovalColor="blackpink">

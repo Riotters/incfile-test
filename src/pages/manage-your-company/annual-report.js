@@ -16,14 +16,15 @@ import Articles from "../../atomic/sections/articles";
 //Texts
 import { top, about, help, faq } from "../../static/manage-your-company/annual-report";
 import ProductSchema from "../../components/product-schema";
+import { servicePrice } from "../../helpers/global-variables";
 
 const AnnualReport = () => (
     <Layout>
         <SEO title="File LLC Annual Report | Business Annual Reports | Information on Filling Annual Business Reports" description="File LLC and Corporation Annual Reports using Incfile for all your document needs." />
         <ProductSchema
-            productUrl="hptts://orders.incfile.com/annual-report.php"
+            productUrl={`${process.env.ORDER_URL}/annual-report.php`}
             productName="Annual Report Filing for LLCs or Corporations"
-            productPrice="99"
+            productPrice={servicePrice.annualReport}
             productDescription="File the corporate reports required by your Secretary of State. Incfile takes care of it all for you."
         />
         <Top imageName="mrs-bulb-annual-report" imageAlt="Mrs Bulb and with checklist" ovalColor="green">

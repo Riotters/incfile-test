@@ -55,7 +55,7 @@ class LLC extends React.Component {
             <Layout>
                 <SEO title="Limited Liability Company | Should I start an LLC for my Business?" description="Learn about the benefits of forming an LLC, the legal protections it offers you, and if an LLC is the right choice for your business." />
                 <ProductSchema
-                    productUrl="https://orders.incfile.com/form-order-now.php?entityType=LLC"
+                    productUrl={`${process.env.ORDER_URL}/form-order-now.php?entityType=LLC`}
                     productName="Limited Liability Company"
                     productDescription="Learn about the benefits of forming an LLC, the legal protections it offers you, and if an LLC is the right choice for your business."                
                 />

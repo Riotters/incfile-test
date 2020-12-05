@@ -6,8 +6,6 @@ import CartBlock from "../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../atomic/molecules/blocks/rating-block";
 import Layout from "../components/layout";
 import FeesTable from "../atomic/sections/state-filing-fees/fees-table";
-import IncludedInAll from "../atomic/sections/manage-your-company/home-page-v3/included-in-all-packages";
-import { content } from "../static/state-filing-fees";
 import Rocket from "../atomic/sections/rocket";
 
 const StateFilingFees = () => (
