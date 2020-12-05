@@ -73,11 +73,6 @@ const HeadingWrapper = styled.div`
 		word-break: break-word;
 	}
 
-	@media (min-width: 769px) {
-		margin-bottom: ${(props) =>
-			props.bottomMarginMD ? `${props.bottomMarginMD}px` : ""};
-	}
-
 	${({ template }) => templateStyle(template)};
 `;
 
@@ -87,7 +82,6 @@ export const Heading = ({
 	left,
 	children,
 	bottomMargin,
-	bottomMarginMD,
 	topMargin,
 	bottomPadding,
 	maxWidth,
@@ -100,7 +94,6 @@ export const Heading = ({
 		template={template}
 		left={left}
 		bottomMargin={bottomMargin}
-		bottomMarginMD={bottomMarginMD}
 		topMargin={topMargin}
 		bottomPadding={bottomPadding}
 		maxWidth={maxWidth}
