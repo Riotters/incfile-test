@@ -515,7 +515,7 @@ export const corporation = [
   {
     type: "arrow-link",
     content: {
-      text: "Learn about Florida corporation requirements . ",
+      text: "Learn about Florida corporation requirements. ",
       url: "/florida-corporation/form-filling-permit-requirements/",
     },
     marginBottom: 24,
@@ -523,7 +523,7 @@ export const corporation = [
   {
     type: "arrow-link",
     content: {
-      text: "Learn about Florida corporation taxes and fees . ",
+      text: "Learn about Florida corporation taxes and fees. ",
       url: "/florida-corporation/taxes-and-fees-for-your-corporation/",
     },
     marginBottom: 24,
@@ -954,7 +954,8 @@ export const naming = [
   {
     type: "header",
     content: "Florida Corporation Search",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -981,7 +982,8 @@ export const naming = [
     type: "header",
     content:
       "Florida Division of Corporations Rules for Naming Your Corporation",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -992,8 +994,9 @@ export const naming = [
   },
   {
     type: "header",
-    content: "General Rules for Naming Your S Corp or C Corp",
+    content: "General Corporation Naming Rules",
     size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1004,8 +1007,9 @@ export const naming = [
   },
   {
     type: "header",
-    content: "Your Florida Corporation Name Must Be Unique",
+    content: "All FL Registered Corporations Must Have a Unique Name",
     size: 4,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1020,6 +1024,7 @@ export const naming = [
       "Your FL Corporation Name Must Not Be Confusable With \n" +
       "Another Business Name",
     size: 4,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1052,6 +1057,7 @@ export const naming = [
     type: "header",
     content: "Your Florida Corporation Name Must Contain Certain Words",
     size: 4,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1064,6 +1070,7 @@ export const naming = [
     type: "header",
     content: "Other General Rules on Naming Your Florida Corporation",
     size: 4,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1089,7 +1096,8 @@ export const naming = [
   {
     type: "header",
     content: "Florida Corporation Fictitious Names",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1109,9 +1117,9 @@ export const naming = [
   {
     type: "header",
     content:
-      "Rules on Infringing on Service Marks or Trademarks Inside \n" +
-      "or Outside Florida",
-    size: 3,
+      "Why You Don’t Want to Infringe on Trademark or Service Mark Names",
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1129,7 +1137,8 @@ export const naming = [
   {
     type: "header",
     content: "You’ve Found the Perfect Name, What Next?",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1162,14 +1171,15 @@ export const agents = [
   {
     type: "header",
     content: "Why Your Florida Corporation Needs a Registered Agent Service",
-    size: 3,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
     content:
       "Every corporation in Florida needs to formally appoint a person or business to act as a Registered Agent. Your Florida Registered Agent provides various services to FL S Corporations and C Corporations, including the acceptance of formal documents and correspondence from the Florida Division of Corporations.",
-    marginBottom: 41,
+    marginBottom: 32,
   },
   {
     type: "list-dot",
@@ -1215,7 +1225,8 @@ export const agents = [
     type: "header",
     content:
       "Services Provided by a Florida Registered Agent to Your Corporation",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1242,14 +1253,15 @@ export const agents = [
     type: "header",
     content:
       "Why Assigning Yourself as the Florida Registered Agent for Your Corporation Might Be a Bad Idea",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
       "If you live in Florida, you might choose to be the Registered Agent for your corporation. Be aware that there may be some drawbacks to this:",
-    marginBottom: 41,
+    marginBottom: 40,
   },
   {
     type: "list-dot",
@@ -1274,9 +1286,9 @@ export const agents = [
   {
     type: "header",
     content:
-      "Possible Outcomes of Not Assigning a Registered Agent \n" +
-      "for Your Florida Corporation",
-    size: 3,
+      "The Problems Caused When You Don’t Appoint a Florida Registered Agent Service",
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1302,7 +1314,8 @@ export const agents = [
     type: "header",
     content:
       "A Complete Florida Corporation Registered Agent Service From Incfile",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1369,7 +1382,8 @@ export const agents = [
   {
     type: "header",
     content: "Useful Resources for Florida Registered Agent \n" + "Services",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1406,8 +1420,9 @@ export const filing = [
   {
     type: "header",
     content: "Florida Corporation Form, Filing and Permit Requirements",
-    size: 3,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -1450,7 +1465,8 @@ export const filing = [
   {
     type: "header",
     content: "File Your Articles of Incorporation",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1492,7 +1508,8 @@ export const filing = [
   {
     type: "header",
     content: "Business Licenses and Permits for Your Florida Corporation",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1504,7 +1521,8 @@ export const filing = [
   {
     type: "header",
     content: "City Licenses and Permits for Your Corporation",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1516,7 +1534,8 @@ export const filing = [
   {
     type: "header",
     content: "County and State Business Permits and Licenses",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1528,7 +1547,8 @@ export const filing = [
   {
     type: "header",
     content: "Federal Licenses and Permits",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1541,7 +1561,8 @@ export const filing = [
     type: "header",
     content:
       "Incfile Business License Research Package for Your Florida Corporation",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1581,7 +1602,8 @@ export const filing = [
     type: "header",
     content:
       "Other Special Requirements for Your Florida \n" + "S Corp or C Corp",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1594,6 +1616,7 @@ export const filing = [
     type: "header",
     content: "Create Bylaws for Your Florida Corporation",
     size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1626,6 +1649,7 @@ export const filing = [
     type: "header",
     content: "Corporation Shareholders Must Be Issued Stock",
     size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1636,8 +1660,9 @@ export const filing = [
   },
   {
     type: "header",
-    content: "A Board of Directors Must Be Appointed",
+    content: "Appoint a Board of Directors",
     size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1650,6 +1675,7 @@ export const filing = [
     type: "header",
     content: "Assign Officers to the Corporation",
     size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1662,6 +1688,7 @@ export const filing = [
     type: "header",
     content: "Get a Corporate Records Book",
     size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1672,20 +1699,9 @@ export const filing = [
   },
   {
     type: "header",
-    content: "Get a Corporate Records Book",
-    size: 3,
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "Your Florida corporation will need a book to record important information about the business. This book will include details like your Articles of Incorporation, corporate bylaws, meeting minutes, AGM details, directors, officers, stock certificate information, transfer documents and more.",
-    marginBottom: 24,
-  },
-  {
-    type: "header",
     content: "Hire Employees",
     size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1720,6 +1736,7 @@ export const filing = [
     type: "header",
     content: "Your Florida Corporation Must Hold an Annual General Meeting",
     size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1745,7 +1762,8 @@ export const filing = [
   {
     type: "header",
     content: "Florida Corporation Tax Registration",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1777,7 +1795,8 @@ export const filing = [
   {
     type: "header",
     content: "Your Florida Corporation Will Need to File an Annual Report",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1804,7 +1823,8 @@ export const filing = [
   {
     type: "header",
     content: "Your Florida Corporation May Need a Certificate of Good Standing",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1825,7 +1845,8 @@ export const filing = [
   {
     type: "header",
     content: "Ready to Start Your Florida Corporation?",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1865,8 +1886,9 @@ export const taxes = [
   {
     type: "header",
     content: "Florida Corporation Taxes and Fees",
-    size: 3,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -1877,7 +1899,8 @@ export const taxes = [
   {
     type: "header",
     content: "Common Fees for a Florida Corporation",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 32,
   },
   {
@@ -1905,7 +1928,8 @@ export const taxes = [
   {
     type: "header",
     content: "Taxes Payable by Your Florida Corporation",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1920,6 +1944,7 @@ export const taxes = [
       "Both S Corporations and C Corporations in Florida \n" +
       "Need to Pay These Taxes",
     size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1951,6 +1976,7 @@ export const taxes = [
     type: "header",
     content: "Estimated Taxes for Your Florida Corporation",
     size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1982,6 +2008,7 @@ export const taxes = [
     type: "header",
     content: "Florida Corporation Employee Taxes and Insurance",
     size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2001,6 +2028,7 @@ export const taxes = [
     content:
       "Individuals Working for Florida Corporations Are Liable for These Taxes",
     size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2019,6 +2047,7 @@ export const taxes = [
     type: "header",
     content: "Florida S Corporations — Additional Tax Liabilities",
     size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2087,6 +2116,7 @@ export const taxes = [
     type: "header",
     content: "Taxes Payable by Florida C Corporations",
     size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2120,7 +2150,8 @@ export const taxes = [
   {
     type: "header",
     content: "Ready to Start Your Florida Corporation?",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2160,8 +2191,9 @@ export const afterFormation = [
   {
     type: "header",
     content: "Understand Your Ongoing Corporate Filing Requirements",
-    size: 3,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -2172,6 +2204,7 @@ export const afterFormation = [
     type: "header",
     content: "Florida's Ongoing Corporate File Requirements:",
     size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2181,20 +2214,26 @@ export const afterFormation = [
   {
     type: "header",
     content: "Protect Your Business Name with a Trademark",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
       "A trademark is an essential asset for your business because it protects the brand name and identity that you worked so hard to create. When you secure a federal trademark for your business brand, it gives you exclusive rights to use your business name, logo or slogan once the trademark is approved. Federal Trademark Protection also prevents other businesses from using your brand name and brand identity. Incfile is happy to help with conducting a trademark name search on your Corporation business name. Our partnered attorneys will do the research to make sure the mark isn't already taken, ensure the filing is properly prepared and submitted to the government office, and provide sound legal advice throughout the entire process.",
-    marginBottom: 41,
+    marginBottom: 40,
+  },
+  {
+    type: "text",
+    content:
+      "Benefits of <a href='/trademark-name-search/'>Incfile's Trademark service</a> include:",
+    marginBottom: 32,
   },
   {
     type: "list-dot",
     content: {
-      header:
-        "Benefits of <a href='/trademark-name-search/'>Incfile's Trademark service</a> include:",
+      header: "",
       list: [
         "Legal counsel from an experienced trademark attorney",
         "A thorough search of existing trademarks",
@@ -2209,7 +2248,8 @@ export const afterFormation = [
   {
     type: "header",
     content: "Finances & Accounting for Your Florida Corporation",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2221,7 +2261,8 @@ export const afterFormation = [
   {
     type: "header",
     content: "Choose a Bank for Your Florida Corporation",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -2232,7 +2273,8 @@ export const afterFormation = [
   {
     type: "header",
     content: "Separate Business & Personal Expenses",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -2244,19 +2286,20 @@ export const afterFormation = [
   {
     type: "header",
     content: "Set Up Accounting Software",
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "Here are some favorite accounting software options for Corporation business owners:",
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
       "Choosing the right accounting software will allow you to track your accounts receivable — the money that is flowing in and out of your Corporation. Accounting software will allow you to track bills, invoices, expenses and customers. This is also another important step in simplifying your year-end tax burden. With a clear, separate business checking account and card and an organized accounting software system, you’ll (barely) dread tax season as a business owner.",
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content:
+      "Here are some favorite accounting software options for Corporation business owners:",
     marginBottom: 24,
   },
   {
@@ -2302,7 +2345,8 @@ export const afterFormation = [
   {
     type: "header",
     content: "Determine How You’ll Accept Credit Cards",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -2314,7 +2358,8 @@ export const afterFormation = [
   {
     type: "header",
     content: "Look Into Business Funding Options",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -2326,7 +2371,8 @@ export const afterFormation = [
     type: "header",
     content:
       "Business Operations & Marketing for Your Florida \n" + "Corporation",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2383,7 +2429,8 @@ export const afterFormation = [
     type: "header",
     content:
       "Choose the Best Business Tools to Run Your Florida \n" + "Corporation",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2465,7 +2512,8 @@ export const afterFormation = [
   {
     type: "header",
     content: "Get a “Start a Business Checklist” to Follow",
-    size: 3,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
