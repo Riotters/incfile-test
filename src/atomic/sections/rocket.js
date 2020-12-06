@@ -93,7 +93,7 @@ const Rocket = ({
                             {text1 ? parse(text1) : "No Contracts. No Surprises."}
                         </Paragraph>
                         <Paragraph>
-                            {text2 ? text2 : "Only $0 + State Fee to Launch Your Business."}
+                            {text2 ? parse(text2) : "Only $0 + State Fee to Launch Your Business."}
                         </Paragraph>
                         <ExternalLink
                             content={{

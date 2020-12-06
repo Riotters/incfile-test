@@ -1,10 +1,7 @@
 import React from 'react';
 import parse from "html-react-parser";
 import PropTypes from "prop-types";
-import { opinions, choose, care } from "../../../static/form/page";
-import {
-	business_formation,
-} from "../../../static/manage-your-company/home-page-v3";
+import { opinions, care } from "../../../static/form/page";
 import CartBlock from "../../molecules/blocks/cart-block";
 import RatingBlock from "../../molecules/blocks/rating-block";
 import RatingRow from "../../atoms/boxes/rating-row";
@@ -12,7 +9,6 @@ import Buttonsbox from "../../atoms/boxes/top-buttons-box";
 import Button from "../../molecules/buttons/button";
 import Rocket from "../../sections/rocket";
 import Opinions from "../../sections/form/opinions";
-import Choose from "../../sections/form/choose";
 import Care from "../../sections/form/care";
 import SEO from '../../../components/seo';
 import Top from '../top';
