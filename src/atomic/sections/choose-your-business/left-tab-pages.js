@@ -138,7 +138,10 @@ const LeftTabPages = ({ layout, columns, content, pointerEventsTab }) => {
 				pointerEventsTab={pointerEventsTab}
 			>
 				{content.pages.map((page, i) => (
-					<Link to={page.path} activeClassName="active">
+                    <Link
+                        key={i}
+                        to={typeof page.path !== 'undefined' ? page.path.replace(/\/?$/, '/') : page.path}
+                        activeClassName="active">
 						<Icon>
 							<page.icon />
 						</Icon>
