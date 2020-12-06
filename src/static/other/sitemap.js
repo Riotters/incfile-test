@@ -26,7 +26,7 @@ const _generateStateLinks = (prefix = 'LLC') => {
     const urls = [];
     const _states = states.map(state => {
         const stateName = `${state.name} ${prefix}`;
-        const stateURL = stateName.replaceAll(" ", "-").toLowerCase();
+        const stateURL = stateName.replace(/\s+/g, "-").toLowerCase();
       
         return {
             text: stateName,
