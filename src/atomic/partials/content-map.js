@@ -47,6 +47,7 @@ const Content = ({ content, data }) => {
 							bottomMargin={item.marginBottom}
 							template={item.template}
 							left={item.left}
+							style={item.style}
 						>
 							{item.content}
 						</Heading>
