@@ -58,6 +58,11 @@ const GridCard = styled.div`
     border-radius: 5px;
     background-color: ${color.white};
     
+    h3 {
+      text-align: center;
+      align-self: center;
+    }
+    
     p {
         background: ${props => props.color ?? "#fff"};
         padding: 15px;
@@ -95,7 +100,7 @@ const ChooseEntitySection = ({ className, content }) => (
                             <ImageWrapper>
                                 <Image filename={type.image} />
                             </ImageWrapper>
-                            <Heading size={4} bottomMargin={32}>{type.header}</Heading>
+                            <Heading size={3} template={4} bottomMargin={32}>{type.header}</Heading>
                             <Paragraph>{type.text}</Paragraph>
                         </GridCard>
                     ))}

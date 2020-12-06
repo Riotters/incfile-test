@@ -257,7 +257,7 @@ const Panel = ({ children }) => {
   );
 };
 
-const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, curveLeftBottom, curveColor, tab }) => {
+const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, headerSize = 3, headerSizeTemplate = 5, curveLeftBottom, curveColor, tab }) => {
   
   return (
     <VisibilitySensor partialVisibility once>
@@ -268,7 +268,7 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
               <CurveSVG />
             </Curve>
           )}
-          <GridTableRow className="head" content={content.headers} header headerSize="5" columns="minmax(368px, 1fr) 160px 160px 160px 160px" />
+          <GridTableRow className="head" content={content.headers} header headerSize={headerSize} headerSizeTemplate={headerSizeTemplate} columns="minmax(368px, 1fr) 160px 160px 160px 160px" />
           <Tabs>
             <TabsWrapper>
               {content.items.map((item, index) => (
@@ -293,7 +293,7 @@ const Accordion = ({ content, curve, curveRight, curveRightBottom, curveLeft, cu
                         <Grid>
                           {item.answer.map((el, i) => (
                             <Column key={i}>
-                              <Heading size="5">{el.header}</Heading>
+                              <Heading size="4" template={5}>{el.header}</Heading>
                               <Paragraph bottomMargin="0">{el.text}</Paragraph>
                             </Column>
                           ))}

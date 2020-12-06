@@ -111,6 +111,7 @@ const GridTableRow = ({
     content,
     header,
     headerSize,
+    headerSizeTemplate,
     list,
     columns,
     textCenter,
@@ -133,6 +134,7 @@ const GridTableRow = ({
                     item !== "rocket-lawyer-logo" && (
                         <Heading
                             size={headerSize ? headerSize : "4"}
+                            template={headerSizeTemplate}
                             bottomMargin="0"
                         >
                             {item}

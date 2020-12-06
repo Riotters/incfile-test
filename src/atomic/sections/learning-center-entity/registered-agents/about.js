@@ -23,11 +23,11 @@ const AboutSection = ({ className, content, openHSForm }) => (
       <OvalSVG />
     </Oval>
     <ImageContent image="registered-agents-about-8281">
-      <Heading size={3}>{content.header}</Heading>
+      <Heading size={2} template={3} left>{content.header}</Heading>
       <Paragraph big bottomMargin="72">
         {content.text}
       </Paragraph>
-      <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} rounded curve bottomMargin={48} />
+      <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} rounded curve bottomMargin={48} headingSize={3} />
       <LightBox thumbnailVideo="what-is-a-registered-agent-7199" videoID="wSsZAvrT-IU" />
         <TopButtonsBox style={{ justifyContent: "center" }}>
             <Button onClick={openHSForm} content={content.button} theme="primary56" arrow margin="48px 0 0" />

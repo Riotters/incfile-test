@@ -34,7 +34,7 @@ const AboutSection = ({ className, content }) => (
       <OvalSVG />
     </Oval>
     <ImageContent image="registered-agents-about-9001">
-      <Heading size={3} bottomMargin="24">
+      <Heading size={2} template={3} left bottomMargin="24">
         {content.header}
       </Heading>
       <Paragraph big bottomMargin="40">
@@ -44,7 +44,7 @@ const AboutSection = ({ className, content }) => (
         {content.text2}
       </Paragraph>
       <Button content={content.button} theme="primary56" margin="0 auto 48px 0" arrow />
-      <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve />
+      <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve headingSize={3} />
       <Paragraph big bottomMargin="32" mixed={true}>
         {parser(content.text3)}
       </Paragraph>

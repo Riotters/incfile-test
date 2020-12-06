@@ -110,7 +110,7 @@ const HowItWorksSection = ({ className, content }) => (
           <div className="icon">
             <Image filename="needs-947" imageAlt="an comic speech bubble icon" />
           </div>
-          <h4>Tell us what you need</h4>
+          <Heading size={3} template={4}>Tell us what you need</Heading>
           <p>A trademark attorney will follow up with you to get a better understanding of your needs and provide guidance on how the process works.</p>
         </div>
         <div className="circle">
@@ -122,7 +122,7 @@ const HowItWorksSection = ({ className, content }) => (
           <div className="icon">
             <Image filename="work-8320" imageAlt="a papersheet icon with a magnifire" />
           </div>
-          <h4>We get to work</h4>
+          <Heading size={3} template={4}>We get to work</Heading>
           <p>The trademark attorney will conduct a trademark search to ensure the availability, then provide the search results along with a plan of action.</p>
         </div>
         <div className="circle">
@@ -134,7 +134,7 @@ const HowItWorksSection = ({ className, content }) => (
           <div className="icon">
             <Image filename="trademark" imageAlt="a papersheet with a trademark icon" />
           </div>
-          <h4>We will file your trademark wih the Patent and Trademark office</h4>
+          <Heading size={3} template={4}>We will file your trademark wih the Patent and Trademark office</Heading>
           <p>The attorney will file the trademark with the US Patent and Trademark office and deliver the approved trademark documentation.</p>
         </div>
       </Boxes>

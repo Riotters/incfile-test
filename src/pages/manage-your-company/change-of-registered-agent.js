@@ -14,6 +14,7 @@ import Articles from "../../atomic/sections/articles";
 import { top, about, help, faq } from "../../static/manage-your-company/change-registered-agent";
 import ProductSchema from "../../components/product-schema";
 import { servicePrice } from "../../helpers/global-variables";
+import {Heading} from "../../atomic/atoms/typography/heading";
 
 const ChangeOfRegisteredAgent = () => (
   <Layout>

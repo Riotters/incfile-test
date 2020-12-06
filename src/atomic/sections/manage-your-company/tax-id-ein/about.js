@@ -31,8 +31,8 @@ const AboutSection = ({ className, content }) => (
         {content.text}
       </Paragraph>
       <LightBoxVideo thumbnailVideo="how-to-get-tax-id-3437.png" videoID="8AuLOTqFHQ4" bottomMargin="64" />
-      <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve />
-      <Heading size={3} bottomMargin="24">
+      <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve headingSize={2} left />
+      <Heading size={2} template={3} left bottomMargin="24">
         {content.header}
       </Heading>
       <Paragraph big bottomMargin="40">

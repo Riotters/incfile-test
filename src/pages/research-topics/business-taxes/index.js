@@ -38,7 +38,7 @@ const HelpCenter = () => (
 			<Searchbar />
 		</Top>
 		{/* <About content={about} /> */}
-		<Related content={related} />
+		<Related content={related} headingSize={1} />
 		<Categories content={categories} />
 		<Service content={service} />
 		<Tools content={tools} />
