@@ -71,7 +71,7 @@ const GymPersonalTraining = () => (
 
                         <Colorbox className="box" theme="icon" Icon={MegafornIcon} color={color.blue3} curve
                                   curveColor={color.orange2}>
-                            <Heading size={4}>The question is, just where do you start?</Heading>
+                            <Heading size={2} template={4} left>The question is, just where do you start?</Heading>
                             <Paragraph bottomPadding={0} bottomMargin={0}>
                                 Here at Incfile, we know the answer, and we’ve shared it with more than 100,000 people
                                 who we've helped to form their businesses. Since 2004, we’ve supported gym, fitness or
@@ -153,7 +153,7 @@ const GymPersonalTraining = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Why You Should Open a New Gym or Personal Training Business</Heading>
+                        <Heading size={2} template={3} left>Why You Should Open a New Gym or Personal Training Business</Heading>
                         <Paragraph big style={{marginBottom: "80px"}}>You might wonder if now is the right time to open
                             your own gym or get into personal training. The answer is a resounding “yes.” Here’s how the
                             fitness industry is performing:</Paragraph>
@@ -195,7 +195,7 @@ const GymPersonalTraining = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Is a Fitness-Based Business Right for You?</Heading>
+                        <Heading size={2} template={3} left>Is a Fitness-Based Business Right for You?</Heading>
                         <Paragraph big style={{marginBottom: "48px"}}>
                             Although it can be exciting to form a gym or personal training business, there will be
                             significant demands on you as a small business owner. Here are some of the things you can

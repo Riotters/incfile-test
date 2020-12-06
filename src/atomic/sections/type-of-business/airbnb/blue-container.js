@@ -124,9 +124,9 @@ const BlueContainer = () => (
         </OvalCenter>
 
         <Container>
-
+            {/*HEADINGS O.K*/}
             <TextBorderedSection>
-                <Heading size={3}>Creating a Unique Airbnb Business</Heading>
+                <Heading size={2} template={3} left>Creating a Unique Airbnb Business</Heading>
                 <Paragraph big style={{marginBottom: "80px"}}>
                     When it comes to starting an Airbnb business, you want to make sure that your property
                     and listings are unique, so you can attract customers. You can do this by highlighting certain
@@ -169,13 +169,13 @@ const BlueContainer = () => (
 
                 </TextBorderedList>
             </TextBorderedSection>
-
+            {/*HEADINGS O.K*/}
             <GridSection>
                 <TitleBox>
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={3}>Validating Your Airbnb Business</Heading>
+                    <Heading size={2} template={3} left>Validating Your Airbnb Business</Heading>
                     <Paragraph big>
                         Getting started in an Airbnb business is easy, but becoming a success is harder.
                         Before committing too much time, energy and money into your new Airbnb business, it’s
@@ -186,7 +186,7 @@ const BlueContainer = () => (
                 <GridSectionList>
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={IdentifyIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Identify your Airbnb business’s unique selling points (USPs)
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -198,7 +198,7 @@ const BlueContainer = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={LookIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Look at who your competitors are in the space
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -210,7 +210,7 @@ const BlueContainer = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={MarketIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Understand your market
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -223,7 +223,7 @@ const BlueContainer = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={InvolvedIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Get involved with business communities and discussion groups
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>

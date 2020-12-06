@@ -6,6 +6,7 @@ import TopImageBox from "../../../../components/top-image-box";
 import { color } from "../../../../components/styles/colors";
 import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
+import {Heading} from "../../../atoms/typography/heading";
 
 const BusinessOperations = () => (
   <GreenContainer>
@@ -18,19 +19,19 @@ const BusinessOperations = () => (
     <Container>
       <ImageBoxes>
         <TopImageBox image="display-ads" color={color.purple3}>
-          <h4>Marketing Your Moving Business</h4>
+          <Heading size={3} template={4}>Marketing Your Moving Business</Heading>
           <p>
             Marketing will be a huge part of your moving business. Word-of-mouth and referrals will be necessary for attracting customers, and you’ll also want a really good website. Focus on delivering excellent customer service to get good reviews, which will help to drive customer acquisition.
           </p>
         </TopImageBox>
 
         <TopImageBox image="side-4" color={color.green3}>
-          <h4>Equipment for Your Moving Business</h4>
+          <Heading size={3} template={4}>Equipment for Your Moving Business</Heading>
           <p>Much of the capital expenditure for your business will be for vehicles, equipment and consumables. You will need to purchase a moving truck, moving tools, packing materials, safety equipment and various other supplies. You’ll also need a computer, laptop, tablet or smartphone.</p>
         </TopImageBox>
 
         <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-          <h4>Employees</h4>
+          <Heading size={3} template={4}>Employees</Heading>
           <p>
             If you’re managing very small, local moves, you can probably run the business yourself. If you’re doing anything larger, like whole-house moves, you will likely need to hire at least one other person. For bigger moves, or if you want to do more moves at once, you’ll need to hire even
             more employees.
@@ -38,7 +39,7 @@ const BusinessOperations = () => (
         </TopImageBox>
 
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
-          <h4>Finances and Taxes</h4>
+          <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             You will need a separate{" "}
             <a href="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">
@@ -49,7 +50,7 @@ const BusinessOperations = () => (
         </TopImageBox>
 
         <TopImageBox image="location" color={color.red3}>
-          <h4>Location of Your Moving Business</h4>
+          <Heading size={3} template={4}>Location of Your Moving Business</Heading>
           <p>
             You will almost certainly need office space for your moving business. You’ll need room to store your vehicles and equipment, meet with employees and clients, store goods as required and otherwise manage your business. Ideally, the office space should be located close to a major highway
             to make it quicker and easier to drive a moving truck to your customers.
@@ -57,7 +58,7 @@ const BusinessOperations = () => (
         </TopImageBox>
 
         <TopImageBox image="software" color={color.blue3}>
-          <h4>Software and Processes</h4>
+          <Heading size={3} template={4}>Software and Processes</Heading>
           <p>The right software and processes will make running your moving business much easier. See our list of the best apps and software at the end of this guide.</p>
         </TopImageBox>
       </ImageBoxes>
@@ -97,7 +98,7 @@ const Oval = styled.div`
     width: 100%;
     
     @media (min-width: 720px){
-        width 720px;
+        width: 720px;
     }
 `;
 

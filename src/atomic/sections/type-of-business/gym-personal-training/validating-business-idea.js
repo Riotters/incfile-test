@@ -34,7 +34,7 @@ const TitleBox = styled.div`
         margin: 0 auto;
     }
     
-    h3{
+    h2{
         color: #1d1d1d;
         font-size: 40px;
         text-align: left;
@@ -50,7 +50,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 12px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;
@@ -109,7 +109,7 @@ const ValidatingBusinessIdea = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={3}>Validating Your Fitness Business Idea</Heading>
+                    <Heading size={2} template={3} left>Validating Your Fitness Business Idea</Heading>
                     <Paragraph big>
                         Remember, the ideas above are just a starting point. You can define and tweak exactly what type
                         of gym, fitness or personal training business you want to run through conducting your own
@@ -125,7 +125,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={IdetifyIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Identify your gym or personal training business’ unique selling points (USPs)
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -138,7 +138,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={LookIcon} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.red2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Look at who your competitors are in the space
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -150,7 +150,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={MarketIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Understand your market
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -162,7 +162,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={TalkIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Talk to possible members
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>

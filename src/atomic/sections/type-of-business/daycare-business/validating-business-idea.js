@@ -33,7 +33,7 @@ const TitleBox = styled.div`
         margin: 0 auto;
     }
     
-    h3{
+    h2{
         color: #1d1d1d;
         font-size: 40px;
         text-align: left;
@@ -49,7 +49,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 76px;
-    margin-bottom 76px;
+    margin-bottom: 76px;;
     
     @media (min-width: 490px){
         grid-template-columns: 470px;
@@ -100,7 +100,7 @@ const ValidatingBusinessIdea = () => (
 
             <GridSection>
                 <TitleBox>
-                    <Heading size={3}>Validating Your Daycare Business Idea</Heading>
+                    <Heading size={2} template={3} left>Validating Your Daycare Business Idea</Heading>
                     <Paragraph big style={{marginBottom: "40px"}}>
                     The areas we’ve listed above are just starting points — there are many different types of daycare businesses. Once you’ve identified specific daycare areas you might like to go into, you need to validate your daycare business idea.
                     </Paragraph>
@@ -113,7 +113,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width="100" widthUnit="%" SvgImage={LookIcon} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.red2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Look at who your childcare competitors are in the space
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -129,7 +129,7 @@ const ValidatingBusinessIdea = () => (
                         <AbsoluteCurve>
                             <Curve/>
                         </AbsoluteCurve>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Identify your daycare business’s unique selling points (USPs)
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -141,7 +141,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width="100" widthUnit="%" SvgImage={MarketIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Understand your market
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -153,7 +153,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width="100" widthUnit="%" SvgImage={OkIcon} imageBackgroundColor={color.yellow2}
                                         imageShadowColor={color.yellow2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Talk to parents
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>

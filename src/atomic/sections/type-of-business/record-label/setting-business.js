@@ -7,6 +7,7 @@ import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 import { Link } from "gatsby";
 import { gradient } from "../../../atoms/styles/colors";
+import {Heading} from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
   <GreenContainer>
@@ -19,26 +20,26 @@ const SettingBusiness = () => (
     <Container>
       <ImageBoxes>
         <TopImageBox image="display-ads" color={color.purple3}>
-          <h4>Marketing Your Record Label Business</h4>
+          <Heading size={3} template={4}>Marketing Your Record Label Business</Heading>
           <p>
             Marketing will be a huge part of your record label business and a big part of your budget. Naturally, you will need an awesome website for your record label and artists, but you'll also need to get branding, newsletters, digital ads, social media accounts and other channels in place.
           </p>
         </TopImageBox>
 
         <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-          <h4>Employees</h4>
+          <Heading size={3} template={4}>Employees</Heading>
           <p>To begin with, you probably won’t need to hire anyone else for your record label business on a permanent basis, especially if you’re a good administrator. Instead, you’ll likely be making use of contract, on-demand services like producers, graphic designers, engineers and the like.</p>
         </TopImageBox>
 
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
-          <h4>Finances and Taxes</h4>
+          <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             You will need a separate <Link to="https://utility.bankofamerica.com/alliance/?formid=IF1">business bank account</Link> for your party planning business. You might also want to consider a business credit card. Additionally, you will need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile <Link to="/business-accounting/">we can even help you file your taxes</Link>.
           </p>
         </TopImageBox>
 
         <TopImageBox image="location" color={color.red3}>
-          <h4>Location of Your Record Label business</h4>
+          <Heading size={3} template={4}>Location of Your Record Label business</Heading>
           <p>
             To begin with, you can likely run your record label from home or a shared working space. This is great as it reduces your office costs considerably. You will, of course, need to arrange meetings with artists, producers, engineers and others, so look for local places that let you hire out
             meeting rooms for that purpose. You’ll also need to make arrangements with recording studios, and you can start by exploring local options. Don't forget that if you work from home, you can write off part of your utility and housing costs against your taxes.
@@ -46,12 +47,12 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="side-4" color={color.green3}>
-          <h4>Equipment for Your Record Label business</h4>
+          <Heading size={3} template={4}>Equipment for Your Record Label business</Heading>
           <p>The day-to-day administration of your business will only need a computer, laptop, tablet or smartphone. Actually recording your artists requires a special studio setup that can cost hundreds of dollars an hour.</p>
         </TopImageBox>
 
         <TopImageBox image="software" color={color.blue3}>
-          <h4>Software and Process</h4>
+          <Heading size={3} template={4}>Software and Process</Heading>
           <p>Record label entrepreneurs make extensive use of software; see our great list of the top apps at the end of this guide.</p>
         </TopImageBox>
       </ImageBoxes>

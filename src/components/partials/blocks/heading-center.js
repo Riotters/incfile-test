@@ -3,6 +3,7 @@ import styled from "styled-components"
 import ArrowLink from "../../arrow-link"
 import VisibilitySensor from "../../VisibilitySensor"
 import parse from "html-react-parser"
+import {Heading} from "../../../atomic/atoms/typography/heading";
 
 const Wrapper = styled.div`
   display: flex;
@@ -26,16 +27,16 @@ const Wrapper = styled.div`
   }
 `
 
-const TextCenterLayout = ({className, headline, headlineWidth, text, textWidth, linkText, linkUrl, ...rest}) => {
+const TextCenterLayout = ({className, headline, headlineSize = 2, headlineSizeTemplate = 2, headlineWidth, text, textWidth, linkText, linkUrl, ...rest}) => {
 
   return (
     <Wrapper className={className} headlineWidth={headlineWidth} textWidth={textWidth} {...rest}>
         {headline && (
             <VisibilitySensor partialVisibility once>
                 {({ isVisible }) => (
-                <h2 className={isVisible ? "slideUp enter" : "slideUp"}>
+                <Heading size={headlineSize} template={headlineSizeTemplate} className={isVisible ? "slideUp enter" : "slideUp"}>
                     {headline}
-                </h2>
+                </Heading>
                 )}
             </VisibilitySensor>
         )}

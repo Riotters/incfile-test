@@ -92,7 +92,7 @@ const TeenBusiness = () => (
 							curve
 							curveColor={color.green1}
 						>
-							<Heading size={4}>
+							<Heading size={2} template={4} left>
 								We know it can be daunting to start a teen business, and we’re
 								here to help.
 							</Heading>
@@ -127,7 +127,7 @@ const TeenBusiness = () => (
 
 				<TabPanel>
 					<PanelWrapper>
-						<Heading size={3}>
+						<Heading size={2} template={3} left>
 							Why You Should Become a Teen Entrepreneur
 						</Heading>
 						<Paragraph big style={{ marginBottom: "52px" }}>

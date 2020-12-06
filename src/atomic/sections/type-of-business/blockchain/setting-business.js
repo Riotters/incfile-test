@@ -5,6 +5,7 @@ import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
 import OvalSvg from "../../../../images/ovals/bottom-right-transparent-blue3.inline.svg";
+import {Heading} from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -27,8 +28,8 @@ const SettingBusiness = () => (
             <ImageBoxes>
 
                 <TopImageBox image="ongoing-filling-requirements" color={color.blue3}>
-                    <h4>Decide on Exactly What Parts of Your Business, Information, and Technology You Want to Use the
-                        Blockchain For</h4>
+                    <Heading size={3} template={4}>Decide on Exactly What Parts of Your Business, Information, and Technology You Want to Use the
+                        Blockchain For</Heading>
                     <p>
                         If you do decide a blockchain solution would work best, it’s important to understand the scope
                         of the solution. Carefully establish exactly what functionality you want to get from the
@@ -37,8 +38,8 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="business-planning-and-funding" color={color.orange3}>
-                    <h4>Build Your Blockchain Solution Into Your Business Plan, Costs, Revenues and Profit
-                        Estimates</h4>
+                    <Heading size={3} template={4}>Build Your Blockchain Solution Into Your Business Plan, Costs, Revenues and Profit
+                        Estimates</Heading>
                     <p>
                         The choice to move to a blockchain application may affect your costs, revenue and profit
                         margins. Ensure you understand the costs associated with developing a blockchain application and
@@ -47,7 +48,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="business-plan-tips" color={color.purple3}>
-                    <h4>Decide on the Best Framework for Your Blockchain Application</h4>
+                    <Heading size={3} template={4}>Decide on the Best Framework for Your Blockchain Application</Heading>
                     <p>
                         There are several ways to go about building
                         a blockchain application. You may be able to adapt
@@ -60,10 +61,10 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="executive-relationship-and-culture-coaching" color={color.babyblue3}>
-                    <h4>
+                    <Heading size={3} template={4}>
                         Develop the Blockchain Application
                         in Partnership With All Stakeholders
-                    </h4>
+                    </Heading>
                     <p>
                         As you start building a blockchain application and business, ensure you have regular feedback
                         on requirements from all parties that will be using the application. Take their feedback into
@@ -77,8 +78,8 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="confirm-that-a-blockchain-application-is-the-best-for-your-need" color={color.blue3}>
-                    <h4>Confirm That a Blockchain Application
-                        Is the Best Solution for Your Business Needs</h4>
+                    <Heading size={3} template={4}>Confirm That a Blockchain Application
+                        Is the Best Solution for Your Business Needs</Heading>
                     <p>
                         It’s worth spending some time exploring and confirming that a blockchain solution really is the best choice for your startup. Speak to your chief technology officer, consultants, development partners and others to independently verify if a blockchain solution is the right choice, or if something else could work better.
                     </p>

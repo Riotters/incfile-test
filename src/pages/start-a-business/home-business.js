@@ -96,7 +96,7 @@ const HomeBusiness = () => (
                 </TabPanel>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Why You Should Start a Business from Home</Heading>
+                        <Heading size={2} template={3} left>Why You Should Start a Business from Home</Heading>
 
                         <Paragraph big style={{marginBottom: "52px"}}>
                             You’re probably wondering whether a home-based business is for you. If so, we’ve got some

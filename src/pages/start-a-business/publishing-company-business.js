@@ -39,11 +39,11 @@ import {TabPanel} from "react-tabs";
 
 const ConstructionCompany = () => (
     <Layout>
-        <SEO title="How to Start Publishing Company"
-             description="Everyone likes traveling — new horizons, beautiful destinations and unique experiences mean we love packing our bags and spending time away from work and home."/>
+        <SEO title="How to Start a Publishing Company | Trends, Tips & Advice"
+             description="We want to help you get your publishing business off the ground. Read our guide for ideas, tips, and important things to know before you get started."/>
 
         <Top ovalColor="blue" imageName="publishing-company-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
-            <h1>How to Start Publishing Company</h1>
+            <h1>How to Start a Publishing Company</h1>
             <p>The world of publishing is changing fast, and if you have an interesting and unique approach, you can
                 create a thriving publishing business.</p>
             <ButtonsBox>
@@ -71,7 +71,7 @@ const ConstructionCompany = () => (
                             digital media are becoming increasingly popular.
                         </Paragraph>
 
-                        <Heading size={3}>For an entrepreneur with the right idea, publishing can be a great industry to
+                        <Heading size={2} template={3} left>For an entrepreneur with the right idea, publishing can be a great industry to
                             get into.</Heading>
 
                         <Paragraph big style={{marginBottom: "40px"}}>
@@ -84,7 +84,7 @@ const ConstructionCompany = () => (
 
                         <Colorbox className="box" theme="icon" Icon={MegafonIcon} color={color.babyblue3} curve
                                   curveColor={color.babyblue1}>
-                            <Heading size={4}>We know it can be daunting to start a publishing business, and we’re here
+                            <Heading size={3} template={4}>We know it can be daunting to start a publishing business, and we’re here
                                 to help.</Heading>
 
                             <Paragraph bottomMargin={0}>We’ve supported over 100,000 people to form their business and
@@ -166,7 +166,7 @@ const ConstructionCompany = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Why You Should Start a New Travel Agency</Heading>
+                        <Heading size={2} template={3} left>Why You Should Start a New Travel Agency</Heading>
 
                         <Paragraph big>This is why publishing businesses are so exciting — how can you be part of that
                             success? We're here to help you figure that out.</Paragraph>
@@ -201,7 +201,7 @@ const ConstructionCompany = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Is a Publishing Company Right for You?</Heading>
+                        <Heading size={2} template={3} left>Is a Publishing Company Right for You?</Heading>
 
                         <Paragraph big bottomMargin={52}>
                             Although it can be exciting to form a publishing business, there will be significant demands

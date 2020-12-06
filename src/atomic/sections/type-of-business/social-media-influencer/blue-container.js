@@ -76,7 +76,7 @@ const BlueContainer = () => (
                     <Curve color={color.blue1}/>
                 </AbsoluteCurve>
 
-                <Heading size={3} style={{textAlign: "left"}}>
+                <Heading size={2} template={3} left style={{textAlign: "left"}}>
                     The Best Platforms for Influencers — Instagram and YouTube
                 </Heading>
                 <Paragraph big>

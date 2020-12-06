@@ -77,7 +77,7 @@ const BedAndBreakfast = () => (
 
                         <Colorbox className="box" theme="icon" Icon={QuestionIcon} color={color.green3} curve
                                   curveColor={color.blue1}>
-                            <Heading size={4}>The question is, just where do you start?</Heading>
+                            <Heading size={2} template={4} left>The question is, just where do you start?</Heading>
                             <Paragraph bottomPadding={0} bottomMargin={0}>
                                 Here at Incfile, we know the answer, and we’ve shared it with more than 100,000 people
                                 who we've helped to form their businesses. Since 2004, we’ve supported hospitality
@@ -184,7 +184,7 @@ const BedAndBreakfast = () => (
                 </TabPanel>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Why You Should Start a New Bed and Breakfast</Heading>
+                        <Heading size={2} template={3} left>Why You Should Start a New Bed and Breakfast</Heading>
                         <Paragraph big>You might be wondering just how popular bed and breakfasts are. Is it a growing
                             sector, and can you make money running a boutique hotel? The statistics might surprise
                             you.</Paragraph>
@@ -216,13 +216,13 @@ const BedAndBreakfast = () => (
                 </TabPanel>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Is a B&B Business Right for You?</Heading>
+                        <Heading size={2} template={3} left>Is a B&B Business Right for You?</Heading>
                         <Paragraph big style={{marginBottom: "48px"}}>
                             Although it can be exciting to open your own bed and breakfast, there will be significant
                             demands on you as a small business owner. Here are some of the things you can expect.
                         </Paragraph>
 
-                        <Heading size={3}>A Day in the Life of a Bed and Breakfast Business Owner</Heading>
+                        <Heading size={2} template={3} left>A Day in the Life of a Bed and Breakfast Business Owner</Heading>
                         <Paragraph big>Here are some of the typical tasks you’ll be performing for your bed and
                             breakfast business on a daily basis:</Paragraph>
 

@@ -12,7 +12,7 @@ const Regulations = () => (
       <OvalSvg />
     </Oval>
     <Container style={{ paddingTop: "100px", paddingBottom: "100px" }} width={750}>
-      <Heading size={4} style={{ fontSize: "40px" }}>
+      <Heading size={2} template={4} left style={{ fontSize: "40px" }}>
         Rules, Regulations and Taxes for Your Coaching Business
       </Heading>
       <Paragraph big mixed>
@@ -30,7 +30,7 @@ const Oval = styled.div`
     position: absolute; 
     bottom: 0;
     left: 0;
-    width: 100%:
+    width: 100%;
     
     @media (min-width: 136px){
         width: 136px;

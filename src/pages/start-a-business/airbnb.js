@@ -34,6 +34,7 @@ import ReactTabs from "../../atomic/partials/ReactTabs";
 import {tabs} from "../../static/type-of-business/airbnb";
 import {TabPanel} from "react-tabs";
 
+{/*HEADINGS O.K*/}
 const Airbnb = () => (
     <Layout>
         <SEO
@@ -82,7 +83,7 @@ const Airbnb = () => (
             <ReactTabs content={tabs}>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3} style={{marginBottom: "24px"}}>
+                        <Heading size={2} template={3} left style={{marginBottom: "24px"}}>
                             Starting an Airbnb Business
                         </Heading>
                         <Paragraph big>
@@ -98,7 +99,7 @@ const Airbnb = () => (
                             through what you need to know to start your Airbnb venture and get
                             it off the ground.
                         </Paragraph>
-                        <Heading size={3} style={{marginBottom: "24px"}}>
+                        <Heading size={2} template={3} left style={{marginBottom: "24px"}}>
                             Airbnb Business formation guide
                         </Heading>
                         <Paragraph big>
@@ -221,26 +222,36 @@ const Airbnb = () => (
 
                         <Adventages
                             headline="Half of Airbnb users stay in an Airbnb instead of a hotel"
+                            headlineSize={3}
+                            headlineTemplateSize={4}
                             width="100%"
                         />
 
                         <Adventages
                             headline="More than two million people stay at an Airbnb on any given day"
+                            headlineSize={3}
+                            headlineTemplateSize={4}
                             width="100%"
                         />
 
                         <Adventages
                             headline="Almost nine in ten reservations are for two or more people"
+                            headlineSize={3}
+                            headlineTemplateSize={4}
                             width="100%"
                         />
 
                         <Adventages
                             headline="The compound growth rate since 2009 has been over 150 percent a year"
+                            headlineSize={3}
+                            headlineTemplateSize={4}
                             width="100%"
                         />
 
                         <Adventages
                             headline="There has been a 45 percent increase in U.S. bookings year-to-year"
+                            headlineSize={3}
+                            headlineTemplateSize={4}
                             width="100%"
                         />
 
@@ -254,7 +265,9 @@ const Airbnb = () => (
                 <TabPanel>
                     <PanelWrapper>
                         <Heading
-                            size={3}
+                            size={2}
+                            template={3}
+                            left
                             style={{fontSize: "24px", marginBottom: "24px"}}
                         >
                             Is Running an Airbnb Right for You?
@@ -265,7 +278,9 @@ const Airbnb = () => (
                         </Paragraph>
 
                         <Heading
-                            size={3}
+                            size={2}
+                            template={3}
+                            left
                             style={{fontSize: "24px", marginBottom: "24px"}}
                         >
                             A Day in the Life of an Airbnb Host
@@ -332,7 +347,9 @@ const Airbnb = () => (
                         </CountingTextBoxed>
 
                         <Heading
-                            size={3}
+                            size={2}
+                            template={3}
+                            left
                             style={{
                                 fontSize: "24px",
                                 marginTop: "41px",
@@ -348,26 +365,36 @@ const Airbnb = () => (
 
                         <Adventages
                             headline="Organizational skills to stay on top of your enquiries and bookings"
+                            headlineSize={3}
+                            headlineTemplateSize={4}
                             width="100%"
                         />
 
                         <Adventages
                             headline="Interpersonal skills for managing the people that provide cleaning, maitenance and other services at your properties"
+                            headlineSize={3}
+                            headlineTemplateSize={4}
                             width="100%"
                         />
 
                         <Adventages
                             headline="Planning skills to offer the amenities, supplies and services that your guests want"
+                            headlineSize={3}
+                            headlineTemplateSize={4}
                             width="100%"
                         />
 
                         <Adventages
                             headline="Financial management skills so you understand the money you’re earning from rentals"
+                            headlineSize={3}
+                            headlineTemplateSize={4}
                             width="100%"
                         />
 
                         <Heading
-                            size={3}
+                            size={2}
+                            template={3}
+                            left
                             style={{
                                 fontSize: "24px",
                                 textAlign: "left",
@@ -383,28 +410,38 @@ const Airbnb = () => (
 
                         <Adventages
                             headline="Properties that match the listings provided by the host"
+                            headlineSize={3}
+                            headlineTemplateSize={4}
                             width="100%"
                         />
 
                         <Adventages
                             headline="Properties that are safe, clean, and well-located for their needs"
+                            headlineSize={3}
+                            headlineTemplateSize={4}
                             width="100%"
                         />
 
                         <Adventages
                             headline="Properties that are priced appropriately for their location, demand and the time of year"
+                            headlineSize={3}
+                            headlineTemplateSize={4}
                             width="100%"
                         />
 
                         <Adventages
                             headline="Common amenities including clean sheets, toiletries, a first aid kit, etc."
+                            headlineSize={3}
+                            headlineTemplateSize={4}
                             width="100%"
                         />
 
-                        <Adventages headline="Easy access to the property" width="100%"/>
+                        <Adventages headline="Easy access to the property" headlineSize={3} headlineTemplateSize={4} width="100%"/>
 
                         <Adventages
                             headline="Important information like contact details, good local restaurants, transit stops, emergency service numbers, etc."
+                            headlineSize={3}
+                            headlineTemplateSize={4}
                             width="100%"
                         />
                     </PanelWrapper>

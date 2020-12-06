@@ -22,7 +22,7 @@ const BusinessOwnerResponsibilities = styled.section`
     margin: 0 auto;
   }
 
-  h4.title {
+  h2.title {
     font-size: 40px;
     margin-bottom: 56px;
   }

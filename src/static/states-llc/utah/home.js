@@ -15,7 +15,8 @@ export const howToGuide = [
   {
     type: `header`,
     content: `Setting Up an LLC in Utah`,
-    size: 2,
+    size: 1,
+		template: 2,
     marginBottom: 24,
   },
   {

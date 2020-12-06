@@ -79,7 +79,7 @@ const LandscapingBusiness = () => (
             <ReactTabs content={tabs}>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Starting a Landscaping Business</Heading>
+                        <Heading size={2} template={3} left>Starting a Landscaping Business</Heading>
                         <Paragraph big mixed>
                             The most successful businesses in the world are those that meet a genuine personal need —
                             they provide basic necessities to people to help them feel safe, comfortable and looked
@@ -172,7 +172,7 @@ const LandscapingBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Understanding the World of the Laundromat Business</Heading>
+                        <Heading size={2} template={3} left>Understanding the World of the Laundromat Business</Heading>
 
                         <Paragraph big style={{fontWeight: "bold"}}>
                             Key Laundromat Business and Background Data and Statistics
@@ -265,7 +265,7 @@ const LandscapingBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>What Are the Challenges and Benefits of a Laundromat Entrepreneur?</Heading>
+                        <Heading size={2} template={3} left>What Are the Challenges and Benefits of a Laundromat Entrepreneur?</Heading>
 
                         <Paragraph big>If you want to start a laundromat business, it’s important to know what to
                             expect.</Paragraph>
@@ -376,7 +376,7 @@ const LandscapingBusiness = () => (
                 <GridSectionList>
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={IdentifyIcon}
                                         imageBackgroundColor={color.babyblue2} imageShadowColor={color.babyblue2}>
-                        <Heading size={4}>Identify your business’s unique selling points (USPs)</Heading>
+                        <Heading size={3} template={4}>Identify your business’s unique selling points (USPs)</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             These are the areas that will set you apart from competitors and encourage customers to come
                             to you. You might have better pricing, a higher-quality service, a loyalty plan or some
@@ -386,7 +386,7 @@ const LandscapingBusiness = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={LookIcon}
                                         imageBackgroundColor={color.green2} imageShadowColor={color.green2}>
-                        <Heading size={4}>Look at who your competitors are in the space</Heading>
+                        <Heading size={3} template={4}>Look at who your competitors are in the space</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             Having competitors is a good thing as it shows there’s a market. See how many other
                             laundromats are operating in your town or city and their “catchment area” — try to find an
@@ -396,7 +396,7 @@ const LandscapingBusiness = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={InvolvedIcon}
                                         imageBackgroundColor={color.red2} imageShadowColor={color.red2}>
-                        <Heading size={4}>Get involved with business communities and discussion groups</Heading>
+                        <Heading size={3} template={4}>Get involved with business communities and discussion groups</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             Ask questions about laundromat businesses. You can find links to some excellent discussion
                             groups later in the article.
@@ -405,7 +405,7 @@ const LandscapingBusiness = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={MarketIcon}
                                         imageBackgroundColor={color.yellow2} imageShadowColor={color.yellow2}>
-                        <Heading size={4}>See if there are any market research reports for laundromat
+                        <Heading size={3} template={4}>See if there are any market research reports for laundromat
                             businesses</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             Search locally, nationally or internationally. There are several in-depth market research
@@ -417,7 +417,7 @@ const LandscapingBusiness = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={TalkIcon}
                                         imageBackgroundColor={color.purple2} imageShadowColor={color.purple2}>
-                        <Heading size={4}>Talk to clients</Heading>
+                        <Heading size={3} template={4}>Talk to clients</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             See if there are any market research reports for landscaping businesses: Search locally,
                             nationally or internationally.
@@ -450,7 +450,7 @@ const LandscapingBusiness = () => (
 
             <Container>
                 <CenterBox>
-                    <Heading>Write a Business Plan for Your Laundromat Business</Heading>
+                    <Heading size={2} template={1} left>Write a Business Plan for Your Laundromat Business</Heading>
 
                     <Paragraph big>Finally, you should put your business plan together. Business plans do vary slightly,
                         but they should cover the following areas:</Paragraph>
@@ -524,7 +524,7 @@ const LandscapingBusiness = () => (
 
             <BusinessOwnerResponsibilities>
                 <ImageContent image="unique-business-2" paddingTop="60">
-                    <Heading size={4} style={{fontSize: "24px"}}>
+                    <Heading size={2} template={4} left style={{fontSize: "24px"}}>
                         Choose the Right Business Structure and Register Your Laundromat Business
                     </Heading>
                     <Paragraph big>Now that you have all the background information for your laundromat business, it’s
@@ -749,7 +749,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 76px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;

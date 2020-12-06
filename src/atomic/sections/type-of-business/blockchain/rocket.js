@@ -24,7 +24,7 @@ const Rocket = () => (
         <Image filename="rocket-2x" alt="rocket lunch" />
       </RocketWrapper>
       <Content>
-        <Heading size={4} style={{ fontFamily: "MarkPro, sans-serif", fontSize: "40px" }}>
+        <Heading size={2} template={4} left style={{ fontFamily: "MarkPro, sans-serif", fontSize: "40px" }}>
           Launch your business with Incfile
         </Heading>
         <Paragraph big mixed>
@@ -49,7 +49,7 @@ const Wrapper = styled.div`
 `;
 
 const RocketWrapper = styled.div`
-  position absolute;
+  position: absolute;
     left: -15%;
     top: calc(50% - 313px);
     width: 720px;

@@ -21,7 +21,7 @@ const Taxes = () => (
 
     <Container>
       <TextWrapper>
-        <Heading style={3} style={{ fontSize: "40px", textAlign: "center" }}>
+        <Heading size={2} template={3} left style={{ fontSize: "40px", textAlign: "center" }}>
           Rules, Regulations and Taxes for Your Influencer Marketing Business
         </Heading>
 

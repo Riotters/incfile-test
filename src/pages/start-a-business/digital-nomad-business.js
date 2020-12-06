@@ -57,7 +57,7 @@ const DigitalNomadBusiness = () => (
             <ReactTabs style={{marginTop: "100px"}} content={tabs}>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Starting a Digital Nomad business</Heading>
+                        <Heading size={2} template={3} left>Starting a Digital Nomad business</Heading>
                         <Paragraph big>The barriers to entry for international travel and starting a business are all
                             but gone, and digital nomads are at the forefront of combining these two areas to create
                             successful enterprises they can operate from anywhere in the world.</Paragraph>
@@ -156,7 +156,7 @@ const DigitalNomadBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>What is a Digital Nomad?</Heading>
+                        <Heading size={2} template={3} left>What is a Digital Nomad?</Heading>
                         <Paragraph big>So, what is a digital nomad business? There are lots of definitions, but we think
                             a digital nomad business is one where you can run the business from anywhere in the world
                             with an internet connection, sometimes even when you're on the road.</Paragraph>
@@ -204,7 +204,7 @@ const DigitalNomadBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Questions to Ask Before Becoming a Digital Nomad</Heading>
+                        <Heading size={2} template={3} left>Questions to Ask Before Becoming a Digital Nomad</Heading>
                         <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Is Digital Nomad Entrepreneurship For You?
                         </Paragraph>

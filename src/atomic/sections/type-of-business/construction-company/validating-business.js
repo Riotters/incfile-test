@@ -36,7 +36,7 @@ const TitleBox = styled.div`
         margin: 0 auto;
     }
     
-    h3{
+    h2{
         color: #1d1d1d;
         font-size: 40px;
         text-align: left;
@@ -52,7 +52,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 76px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;
@@ -96,7 +96,7 @@ const ValidatingBusinessIdea = () => (
 
             <GridSection>
                 <TitleBox>
-                    <Heading size={3}>Validating Your Construction Business Idea</Heading>
+                    <Heading size={2 } template={3} left>Validating Your Construction Business Idea</Heading>
                     <Paragraph big>
                         The construction areas above are just starting points — there are many different types of
                         construction businesses. Once you’ve identified the areas you’d like
@@ -114,7 +114,7 @@ const ValidatingBusinessIdea = () => (
                 <GridSectionList>
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon1} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Identify your construction business’s unique selling points (USPs)
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -127,7 +127,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon2} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Look at who your construction competitors are in the space
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -138,7 +138,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon4} imageBackgroundColor={color.yellow2}
                                         imageShadowColor={color.yellow2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Talk to clients
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -148,7 +148,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon3} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Understand your construction market
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>

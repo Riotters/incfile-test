@@ -7,6 +7,7 @@ import styled from "styled-components";
 import Curve from "../../../../images/green-curve.inline.svg";
 import GreenOval from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
 import { Link } from "gatsby";
+import {Heading} from "../../../atoms/typography/heading";
 const SettingBusiness = () => (
   <GreenContainer>
     <Oval>
@@ -18,7 +19,7 @@ const SettingBusiness = () => (
     <Container>
       <ImageBoxes>
         <TopImageBox image="location" color={color.red3}>
-          <h4>Location of Your Coaching Business</h4>
+          <Heading size={3} template={4}>Location of Your Coaching Business</Heading>
           <p>
             Almost all coaching entrepreneurs can work from home, although you may need a dedicated space to meet with clients (or you may want to travel to their home or business location). This is great as it reduces your office costs considerably. Don't forget that if you work from home, you can
             write off part of your utility and housing costs against your taxes.
@@ -26,22 +27,22 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="side-4" color={color.green3}>
-          <h4>Equipment for Your Coaching Business</h4>
+          <Heading size={3} template={4}>Equipment for Your Coaching Business</Heading>
           <p>It’s likely that the only equipment you will need to run your life or business coaching venture is a computer, laptop, tablet or smartphone. You will also want to invest in a wardrobe that keeps you presentable for client meetings.</p>
         </TopImageBox>
 
         <TopImageBox image="display-ads" color={color.purple3}>
-          <h4>Marketing Your Coaching Business</h4>
+          <Heading size={3} template={4}>Marketing Your Coaching Business</Heading>
           <p>Marketing will be a huge part of your coaching business. Naturally, you will need an awesome website, but you'll also need to get branding, newsletters, digital ads, social media accounts and other channels in place.</p>
         </TopImageBox>
 
         <TopImageBox image="software" color={color.blue3}>
-          <h4>Software and Processes</h4>
+          <Heading size={3} template={4}>Software and Processes</Heading>
           <p>Life or business coaching entrepreneurs make extensive use of software; see our great list of the top apps at the end of this guide.</p>
         </TopImageBox>
 
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
-          <h4>Finances and Taxes</h4>
+          <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             You will need a separate{" "}
             <a href="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">
@@ -52,7 +53,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="permits-licences" color={color.babyblue3}>
-          <h4>Life or Business Coach Qualification, Certification and Training</h4>
+          <Heading size={3} template={4}>Life or Business Coach Qualification, Certification and Training</Heading>
           <p>It will likely help you to prove your expertise as a life or business coach with the right qualifications. Types of qualifications and certifications will vary depending on your chosen field.</p>
 
           <GreenCurve>
@@ -61,7 +62,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-          <h4>Employees</h4>
+          <Heading size={3} template={4}>Employees</Heading>
           <p>To begin with, you probably won’t need to hire anyone else for your life or business coaching business, especially if you’re a good administrator.</p>
         </TopImageBox>
       </ImageBoxes>

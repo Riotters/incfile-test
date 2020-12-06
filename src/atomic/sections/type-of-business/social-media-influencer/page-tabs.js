@@ -82,7 +82,7 @@ const PageTabs = () => (
         <ReactTabs content={tabs}>
             <TabPanel>
                 <PanelWrapper>
-                    <Heading size={3}>Starting a Business as a Social Media Influencer</Heading>
+                    <Heading size={2} template={3} left>Starting a Business as a Social Media Influencer</Heading>
                     <Paragraph big>
                         Social networks like Instagram and YouTube are dominated by influencers
                         whose followers act as a built-in audience for photogenic or disruptive
@@ -296,8 +296,8 @@ const PageTabs = () => (
 
             <TabPanel>
                 <PanelWrapper>
-                    <Heading size={3}
-                             style={{fontSize: "24px", textAlign: "left", marginBottom: "24px"}}>
+                    <Heading size={2} template={3} left
+                             style={{textAlign: "left", marginBottom: "24px"}}>
                         What It Means to Be a Social Media Influencer on Instagram, YouTube and
                         Other Networks
                     </Heading>

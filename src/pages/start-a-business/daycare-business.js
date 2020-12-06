@@ -101,7 +101,7 @@ const DaycareBusiness = () => (
 							curve
 							curveColor={color.blue1}
 						>
-							<Heading size={4}>
+							<Heading size={2} template={4} left>
 								We want to help you get your daycare business off the ground.
 							</Heading>
 							<Paragraph bottomPadding={0} bottomMargin={0}>
@@ -136,7 +136,7 @@ const DaycareBusiness = () => (
 
 				<TabPanel>
 					<PanelWrapper>
-						<Heading size={3}>
+						<Heading size={2} template={3} left>
 							Why You Should Start a New Daycare Business
 						</Heading>
 						<Paragraph big style={{ marginBottom: "80px" }}>
@@ -189,7 +189,7 @@ const DaycareBusiness = () => (
 
 				<TabPanel>
 					<PanelWrapper>
-						<Heading size={3}>Is a Childcare Business Right for You?</Heading>
+						<Heading size={2} template={3} left>Is a Childcare Business Right for You?</Heading>
 						<Paragraph big style={{ marginBottom: "48px" }}>
 							Although it can be exciting to form a daycare business, there will
 							be significant demands on you as a small business owner. Here are

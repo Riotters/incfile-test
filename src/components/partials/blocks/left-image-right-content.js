@@ -21,8 +21,8 @@ const Content = styled.div`
 
   h2, h3 {
     text-align: left;
-    max-width: 410px;
-    padding-bottom: 40px;
+    //max-width: 410px;
+    //padding-bottom: 40px;
   }
 
   & > p {

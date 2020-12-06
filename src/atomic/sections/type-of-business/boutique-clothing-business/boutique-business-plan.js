@@ -16,7 +16,7 @@ const BusinessOwnerResponsibilities = styled.section`
   width: 100%;
   max-width: 770px;
 
-  h4.title {
+  h2.title {
     font-size: 40px;
     padding-bottom: 56px;
   }
@@ -58,7 +58,7 @@ const BoutiqueBusinessPlan = () => (
     </OvalCenter>
     <Container>
       <BusinessOwnerResponsibilities>
-        <Heading size={4} className="title">
+        <Heading size={2} template={4} left className="title">
           Boutique Business Plans
         </Heading>
         <Paragraph big>

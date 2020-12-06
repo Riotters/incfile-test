@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 // Components
 import Top from "../../partials/top";
+import { Heading } from "../../atoms/typography/heading";
 import Buttonsbox from "../../atoms/boxes/top-buttons-box";
 import Button from "../../molecules/buttons/button";
 import WrapperContent from "../../states-llc/wrapper-content";
@@ -60,7 +61,9 @@ const LLCLayout = ({ children, data, top }) => {
 				ovalColor="purple-2"
 				textWidth="530"
 			>
-				<h1>{top.header}</h1>
+				<Heading size={2} template={1} maxWidth="480" left>
+					{top.header}
+				</Heading>
 				<p>{top.text}</p>
 				<Buttonsbox>
 					<Button content={top.buttons[0]} theme="primary56" arrow />

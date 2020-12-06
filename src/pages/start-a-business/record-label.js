@@ -158,7 +158,7 @@ const RecordLabel = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Why You Should Start Your Own Music Label</Heading>
+                        <Heading size={2} template={3} left>Why You Should Start Your Own Music Label</Heading>
                         <Paragraph big style={{marginBottom: "48px"}}>
                             Although the recording industry is driven by a handful of major labels, there’s still room
                             for
@@ -195,7 +195,7 @@ const RecordLabel = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Is Starting an Independent Record Label Business Right for You?</Heading>
+                        <Heading size={2} template={3} left>Is Starting an Independent Record Label Business Right for You?</Heading>
                         <Paragraph big>Although it can be exciting to form a record label business, there will be significant demands on you as a small business owner. Here are some of the things you can expect.</Paragraph>
                         <Paragraph big style={{ marginTop: "48px", fontFamily: "Avenir", fontWeight: "900", color: color.black }}>
                             A Day in the Life of a Record Label Business Owner

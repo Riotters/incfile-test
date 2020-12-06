@@ -7,6 +7,7 @@ import {color} from "../../../../components/styles/colors";
 import OvalLeftSvg from "../../../../images/ovals/top-left-transparent-orange2.inline.svg";
 import OvalRightSvg from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
 import Curve from "../../../../images/curve-orange.inline.svg";
+import {Heading} from "../../../atoms/typography/heading";
 
 const OrderNow = () => (
     <OrderNowWrapper>
@@ -23,13 +24,13 @@ const OrderNow = () => (
 
             <LeftImageRightContent image="after-formation-image" imageWidth="515" textWidth="570">
 
-                <h2 style={{position: "relative"}}>
+                <Heading size={2} style={{position: "relative"}}>
                     <CurveWrapper>
                         <Curve />
                     </CurveWrapper>
 
                     The Complete "Start Your Business" Checklist
-                </h2>
+                </Heading>
                 <p>A Clear and Comprehensive Guide to Starting Your Business the Right Way</p>
                 <ButtonsBox>
                     <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/starting-a-business-checklist/", text: "Business Checklist"}}/>

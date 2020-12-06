@@ -7,6 +7,7 @@ import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/top-left-transparent-green1.inline.svg";
 import { gradient } from "../../../atoms/styles/colors";
 import { Link } from "gatsby";
+import {Heading} from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
 	<WrapperContainer>
@@ -28,7 +29,7 @@ const SettingBusiness = () => (
 		<Container>
 			<ImageBoxes>
 				<TopImageBox image="state-filling-fees" color={color.yellow3}>
-					<h4>Finances and Taxes</h4>
+					<Heading size={3} template={4}>Finances and Taxes</Heading>
 					<p>
 						What kind of{" "}
 						<a
@@ -53,7 +54,7 @@ const SettingBusiness = () => (
 				</TopImageBox>
 
 				<TopImageBox image="software" color={color.blue3}>
-					<h4>Software and Process</h4>
+					<Heading size={3} template={4}>Software and Process</Heading>
 					<p>
 						Is there software that can help you manage and market your business?
 						See our list of software at the end of this article for some great
@@ -62,7 +63,7 @@ const SettingBusiness = () => (
 				</TopImageBox>
 
 				<TopImageBox image="organization-change-02" color={color.green3}>
-					<h4>Processes</h4>
+					<Heading size={3} template={4}>Processes</Heading>
 					<p>
 						What business processes are you going to use to run your business
 						efficiently and effectively? You will need to get good financial,
@@ -74,7 +75,7 @@ const SettingBusiness = () => (
 				</TopImageBox>
 
 				<TopImageBox image="display-ads" color={color.red3}>
-					<h4>Marketing</h4>
+					<Heading size={3} template={4}>Marketing</Heading>
 					<p>
 						Do you need to build a website for your digital nomad business?
 						(We're going to always go with a YES for that one.) Should you have
@@ -85,7 +86,7 @@ const SettingBusiness = () => (
 				</TopImageBox>
 
 				<TopImageBox image="measuring-business-success" color={color.babyblue3}>
-					<h4>Business Maintenance</h4>
+					<Heading size={3} template={4}>Business Maintenance</Heading>
 					<p>
 						Most states require businesses to file an{" "}
 						<Link to="/manage-your-company/annual-report/">Annual Report</Link>{" "}
@@ -100,7 +101,7 @@ const SettingBusiness = () => (
 				</TopImageBox>
 
 				<TopImageBox image="location" color={color.red3}>
-					<h4>Business Location</h4>
+					<Heading size={3} template={4}>Business Location</Heading>
 					<p>
 						Where are you going to run your business from? The joy of being a
 						digital nomad is you can theoretically run it from anywhere, but
@@ -110,7 +111,7 @@ const SettingBusiness = () => (
 				</TopImageBox>
 
 				<TopImageBox image="side-3" color={color.orange3}>
-					<h4>Equipment</h4>
+					<Heading size={3} template={4}>Equipment</Heading>
 					<p>
 						What equipment do you need to manage your digital nomad business
 						apart from a laptop, computer, smartphone or tablet? What about

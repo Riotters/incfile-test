@@ -19,7 +19,7 @@ const BusinessOwnerResponsibilities = styled.section`
     margin: 0 auto;
   }
 
-  h4.title {
+  h2.title {
     font-size: 40px;
     padding-bottom: 56px;
   }
@@ -63,7 +63,7 @@ const CoachBusinessPlan = () => (
     </OvalCenter>
     <Container>
       <BusinessOwnerResponsibilities>
-        <Heading size={4} className="title">
+        <Heading size={2} template={4} left className="title">
           Your Life or Business Coaching Business Needs a Plan
         </Heading>
         <Paragraph big>
