@@ -1,7 +1,7 @@
 import React from 'react';
 import parse from "html-react-parser";
 import PropTypes from "prop-types";
-import { opinions, choose, care } from "../../../static/form/page";
+import { opinions, care } from "../../../static/form/page";
 import CartBlock from "../../molecules/blocks/cart-block";
 import RatingBlock from "../../molecules/blocks/rating-block";
 import RatingRow from "../../atoms/boxes/rating-row";
@@ -9,12 +9,11 @@ import Buttonsbox from "../../atoms/boxes/top-buttons-box";
 import Button from "../../molecules/buttons/button";
 import Rocket from "../../sections/rocket";
 import Opinions from "../../sections/form/opinions";
-import Choose from "../../sections/form/choose";
 import Care from "../../sections/form/care";
 import SEO from '../../../components/seo';
 import Top from '../top';
 import ButtonVideo from '../../molecules/buttons/button-video';
-
+import PPCWhyChooseIncfile from './ppc-why-choose-incfile';
 import { statesArray } from "../../../static/states-v2";
 
 const PPCCorporationLayout = ({ stateCode, videoID, vimeo }) => {
@@ -27,6 +26,14 @@ const PPCCorporationLayout = ({ stateCode, videoID, vimeo }) => {
     const top = {
         header: `The Fastest & Easiest Way To Set Up Your ${state.name} Corporation`,
 	    text: `Join Over <span>250,000</span> Businesses Launched With incfile Since <span>2004</span>`,
+    }
+
+    const whyChooseIncfile = {
+        header: `Why Choose IncFile For Your ${state.name} Corporation?`,
+        text1: "We're entrepreneurs - just like you.",
+        text2: `An ${state.name} Corporation can be the fastest and easiest way to start a business in ${state.name}.`,
+        text3: `We make registering a company as easy as possible, so you can focus on the important things. Beyond that, we have a full suite of startup services (like banking and bookkeeping), which means Incfile not only helps you get started, but supports you in your continued success as your one-stop shop.`,
+        text4: `Our mission is to provide you with a superior and modern experience at an unparalleled value.`
     }
 
     return (
@@ -66,7 +73,7 @@ const PPCCorporationLayout = ({ stateCode, videoID, vimeo }) => {
                 </RatingRow>
             </Top>
             <Opinions content={opinions} />
-            <Choose content={choose} />
+            <PPCWhyChooseIncfile content={whyChooseIncfile} />
             <Care content={care} />
             <Rocket
                 externalLink
