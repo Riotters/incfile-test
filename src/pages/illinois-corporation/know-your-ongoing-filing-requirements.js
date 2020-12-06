@@ -13,45 +13,59 @@ import Variants from "../../atomic/sections/learning-center-entity/state-informa
 import Subscription from "../../atomic/sections/learning-center-entity/state-information-california/subscription";
 import Articles from "../../atomic/sections/articles";
 //Texts
-import { top, tabPages, afterFormation, launchBusiness, subscription } from "../../static/learning-center-entity/state-information-illinois";
+import {
+	top,
+	tabPages,
+	afterFormation,
+	launchBusiness,
+	subscription,
+} from "../../static/learning-center-entity/state-information-illinois";
 import LeftTabPages from "../../atomic/sections/choose-your-business/left-tab-pages";
 import MainPageContent from "../../atomic/states-llc/page-content";
 import ContentMap from "../../atomic/partials/content-map";
 import CorporationLayout from "../../atomic/partials/corporation-layout";
-import { getFullPricesAndFilings } from '../../api/Api';
+import { getFullPricesAndFilings } from "../../api/Api";
 
 const IllinoisCorporation = () => {
-    const [dataApi, setDataApi] = React.useState({});
-    React.useEffect(() => {
-        getFullPricesAndFilings('Illinois', 'Corporation').then(data => {
-            setDataApi(data);
-        });
-    }, []);
-    return (
-        <Layout>
-            <SEO title="Illinois Corporation Requirements | Incfile.com" description="Incorporating a business in Illinois? Learn about the forms, requirements, and legalities of forming a corporation in Illinois." />
-            <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
-                <h1>{top.header}</h1>
-                <p>{top.text}</p>
-                <Buttonsbox>
-                    <Button content={top.buttons[0]} theme="primary56" arrow />
-                </Buttonsbox>
-            </Top>
-            <CorporationLayout>
-                <LeftTabPages content={tabPages} nonDIY />
-                <MainPageContent>
-                    <ContentMap content={afterFormation} data={dataApi} />
-                </MainPageContent>
-            </CorporationLayout>
-            <Rocket content={launchBusiness} />
-            <Requirements data={dataApi} />
-            <LearnMore data={dataApi} />
-            <QuickLinks />
-            <Variants data={dataApi} />
-            <Subscription content={subscription} />
-            <Articles />
-        </Layout>
-    );
-}
+	const [dataApi, setDataApi] = React.useState({});
+	React.useEffect(() => {
+		getFullPricesAndFilings("Illinois", "Corporation").then((data) => {
+			setDataApi(data);
+		});
+	}, []);
+	return (
+		<Layout>
+			<SEO
+				title="Ongoing Corporation Filing Requirements in Illinois | Incfile.com"
+				description="Incorporating a business in Illinois? Learn about the forms, requirements, and legalities of forming a corporation in Illinois."
+			/>
+			<Top
+				imageName="mr-bulb-corporation-california-8302"
+				imageAlt="Mrs Bulb and with checklist"
+				ovalColor="purple-2"
+				textWidth="530"
+			>
+				<h1>{top.header}</h1>
+				<p>{top.text}</p>
+				<Buttonsbox>
+					<Button content={top.buttons[0]} theme="primary56" arrow />
+				</Buttonsbox>
+			</Top>
+			<CorporationLayout>
+				<LeftTabPages content={tabPages} nonDIY />
+				<MainPageContent>
+					<ContentMap content={afterFormation} data={dataApi} />
+				</MainPageContent>
+			</CorporationLayout>
+			<Rocket content={launchBusiness} />
+			<Requirements data={dataApi} />
+			<LearnMore data={dataApi} />
+			<QuickLinks />
+			<Variants data={dataApi} />
+			<Subscription content={subscription} />
+			<Articles />
+		</Layout>
+	);
+};
 
 export default IllinoisCorporation;

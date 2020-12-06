@@ -24,7 +24,7 @@ import ToolsAndLinks from "../../atomic/sections/type-of-business/photography-bu
 const WithNoMoneyBusiness = () => (
 	<Layout>
 		<SEO
-			title="How to Start a Photography Business"
+			title="How to Start a Photography Business | Guide to Starting a Photo Business"
 			description="For those with a creative eye, a flair for framing and the ability to capture memories, photography can be a great career choice. Whether you’re taking photos yourself, editing photos after they’ve been taken or you’re involved in post production, there are plenty of ways to use your skills."
 		/>
 

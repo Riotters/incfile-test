@@ -11,30 +11,33 @@ import ContentMap from "../../atomic/partials/content-map";
 // Content
 import { top, howToGuide } from "../../static/states-llc/new-jersey/home";
 import { tabPages } from "../../static/states-llc/new-jersey/general";
-import { getFullPricesAndFilings } from '../../api/Api';
+import { getFullPricesAndFilings } from "../../api/Api";
 import { Helmet } from "react-helmet";
 
 function LLCIndex() {
-    const [dataApi, setDataApi] = React.useState({});
+	const [dataApi, setDataApi] = React.useState({});
 
-    React.useEffect(() => {
-        getFullPricesAndFilings('New Jersey').then(data => {
-            setDataApi(data);
-        });
-    }, []);
-    return (
-        <Layout>
-            <SEO title="LLCs in New Jersey | Guide to Forming an LLC in New Jersey" description="Ready to form your New Jersey LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
-            <LLCLayout data={dataApi} top={top}>
-                <LeftTabPages content={tabPages} nonDIY />
-                <MainPageContent>
-                    <ContentMap content={howToGuide} data={dataApi} />
-                </MainPageContent>
-            </LLCLayout>
+	React.useEffect(() => {
+		getFullPricesAndFilings("New Jersey").then((data) => {
+			setDataApi(data);
+		});
+	}, []);
+	return (
+		<Layout>
+			<SEO
+				title="How to Start an LLC in New Jersey | Incfile.com"
+				description="Ready to form your New Jersey LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+			/>
+			<LLCLayout data={dataApi} top={top}>
+				<LeftTabPages content={tabPages} nonDIY />
+				<MainPageContent>
+					<ContentMap content={howToGuide} data={dataApi} />
+				</MainPageContent>
+			</LLCLayout>
 
-            <Helmet>
-                <script type="application/ld+json">
-                    {`{
+			<Helmet>
+				<script type="application/ld+json">
+					{`{
                     "@context": "http://schema.org",
                     "@type": "VideoObject",
                     "name": "Forming an LLC in New Jersey by Incfile",
@@ -45,10 +48,10 @@ function LLCIndex() {
                     "embedUrl": "https://www.youtube.com/embed/0sh4OgPJ3kE",
                     "interactionCount": "2"
                     }`}
-                </script>
-            </Helmet>
-        </Layout>
-    );
+				</script>
+			</Helmet>
+		</Layout>
+	);
 }
 
 export default LLCIndex;

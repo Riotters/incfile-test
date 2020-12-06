@@ -11,28 +11,31 @@ import ContentMap from "../atomic/partials/content-map";
 // Content
 import { top, howToGuide } from "../static/states-llc/minnesota/home";
 import { tabPages } from "../static/states-llc/minnesota/general";
-import { getFullPricesAndFilings } from '../api/Api';
+import { getFullPricesAndFilings } from "../api/Api";
 
 function LLCIndex() {
-    const [dataApi, setDataApi] = React.useState({});
-    
-    React.useEffect(() => {
-        getFullPricesAndFilings('Minnesota').then(data => {
-            setDataApi(data);
-        });
-    }, []);
+	const [dataApi, setDataApi] = React.useState({});
 
-    return (
-        <Layout>
-            <SEO title="LLCs in Minnesota | Guide to Forming an LLC in Minnesota" description="Ready to form your Minnesota LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
-            <LLCLayout data={dataApi} top={top}>
-                <LeftTabPages content={tabPages} nonDIY />
-                <MainPageContent>
-                    <ContentMap content={howToGuide} />
-                </MainPageContent>
-            </LLCLayout>
-        </Layout>
-    );
+	React.useEffect(() => {
+		getFullPricesAndFilings("Minnesota").then((data) => {
+			setDataApi(data);
+		});
+	}, []);
+
+	return (
+		<Layout>
+			<SEO
+				title="Minnesota LLCs | Starting a Business in Minnesota"
+				description="Ready to form your Minnesota LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+			/>
+			<LLCLayout data={dataApi} top={top}>
+				<LeftTabPages content={tabPages} nonDIY />
+				<MainPageContent>
+					<ContentMap content={howToGuide} />
+				</MainPageContent>
+			</LLCLayout>
+		</Layout>
+	);
 }
 
 export default LLCIndex;

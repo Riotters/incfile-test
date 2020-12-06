@@ -9,21 +9,37 @@ import Service from "../atomic/sections/learning-center-entity/help-center/servi
 import Rocket from "../atomic/sections/review-entity-types/c-corporation/rocket";
 import Searchbar from "../atomic/molecules/form/help-center-searchbar";
 //Texts
-import { top, about, help, faq, rocket, categories, service, tools } from "../static/learning-center-entity/help-center";
+import {
+	top,
+	about,
+	help,
+	faq,
+	rocket,
+	categories,
+	service,
+	tools,
+} from "../static/learning-center-entity/help-center";
 
 const HelpCenter = () => (
-  <Layout>
-    <SEO title="Incfile Business Help Center for LLC, Incorporating | Q & A" description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state." />
-    <Top imageName="mrs-bulb-question-7726" imageAlt="Mrs Bulb and with checklist" ovalColor="darkblue">
-      <h1>{top.header}</h1>
-      <p>{top.text}</p>
-      <Searchbar />
-    </Top>
-    <Categories content={categories} />
-    <Service content={service} />
-    <Tools content={tools} />
-    <Rocket content={rocket} />
-  </Layout>
+	<Layout>
+		<SEO
+			title="Incfile Business Help Center for LLC, Incorporating| Q & A"
+			description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state."
+		/>
+		<Top
+			imageName="mrs-bulb-question-7726"
+			imageAlt="Mrs Bulb and with checklist"
+			ovalColor="darkblue"
+		>
+			<h1>{top.header}</h1>
+			<p>{top.text}</p>
+			<Searchbar />
+		</Top>
+		<Categories content={categories} />
+		<Service content={service} />
+		<Tools content={tools} />
+		<Rocket content={rocket} />
+	</Layout>
 );
 
 export default HelpCenter;

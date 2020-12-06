@@ -28,7 +28,7 @@ import OvalSvg from "../../images/ovals/bottom-left-transparent-pink1.inline.svg
 const UniqueBusiness = () => (
 	<Layout>
 		<SEO
-			title="How to Start a Unique Business"
+			title="Unique Business Ideas | Starting a Unique Business"
 			description="Some of us like to do things a little differently, and that’s also true of business owners and entrepreneurs. If you’ve looked at some standard business ideas and thought “that’s not for me,” perhaps you need something a more unique."
 		/>
 
@@ -69,7 +69,12 @@ const UniqueBusiness = () => (
 			</Oval>
 
 			<ImageContent image="business-startup-guides" paddingTop="60">
-				<Heading size={2} template={3} left style={{ marginBottom: 0, maxWidth: "100%" }}>
+				<Heading
+					size={2}
+					template={3}
+					left
+					style={{ marginBottom: 0, maxWidth: "100%" }}
+				>
 					Starting a niche business could be a great idea
 				</Heading>
 				<Paragraph big bottomMargin={0}>

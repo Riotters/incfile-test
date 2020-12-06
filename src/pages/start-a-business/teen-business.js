@@ -33,7 +33,7 @@ import { TabPanel } from "react-tabs";
 const TeenBusiness = () => (
 	<Layout>
 		<SEO
-			title="How to Start a Teen Business"
+			title="Business Ideas for Teens | Guide for Teen Entrepreneurs"
 			description="The internet has revolutionized business — it has broadened marketplaces, made products and services available to every one and lowered the barriers to starting a successful company. With the right approach and understanding, anyone can become a successful online entrepreneur."
 		/>
 

@@ -11,31 +11,34 @@ import ContentMap from "../../atomic/partials/content-map";
 // Content
 import { top, howToGuide } from "../../static/states-llc/delaware/home";
 import { tabPages } from "../../static/states-llc/delaware/general";
-import { getFullPricesAndFilings } from '../../api/Api';
+import { getFullPricesAndFilings } from "../../api/Api";
 import { Helmet } from "react-helmet";
 
 function DelawareIndexPage() {
-    const [dataApi, setDataApi] = React.useState({});
+	const [dataApi, setDataApi] = React.useState({});
 
-    React.useEffect(() => {
-        getFullPricesAndFilings('Delaware').then(data => {
-            setDataApi(data);
-        });
-    }, []);
-    
-    return (
-        <Layout>
-            <SEO title="LLCs in Delaware | Guide to Forming an LLC in Delaware" description="Ready to form your Delaware LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
-            <LLCLayout data={dataApi} top={top}>
-                <LeftTabPages content={tabPages} nonDIY />
-                <MainPageContent>
-                    <ContentMap content={howToGuide} data={dataApi} />
-                </MainPageContent>
-            </LLCLayout>
+	React.useEffect(() => {
+		getFullPricesAndFilings("Delaware").then((data) => {
+			setDataApi(data);
+		});
+	}, []);
 
-            <Helmet>
-                <script type="application/ld+json">
-                    {`{
+	return (
+		<Layout>
+			<SEO
+				title="Delaware LLCs | Forming an LLC in Delaware"
+				description="Ready to form your Delaware LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+			/>
+			<LLCLayout data={dataApi} top={top}>
+				<LeftTabPages content={tabPages} nonDIY />
+				<MainPageContent>
+					<ContentMap content={howToGuide} data={dataApi} />
+				</MainPageContent>
+			</LLCLayout>
+
+			<Helmet>
+				<script type="application/ld+json">
+					{`{
                     "@context": "http://schema.org",
                     "@type": "VideoObject",
                     "name": "Forming an LLC in Delaware by Incfile",
@@ -46,10 +49,10 @@ function DelawareIndexPage() {
                     "embedUrl": "https://www.youtube.com/embed/imnAJolDWoU",
                     "interactionCount": "51"
                 }`}
-                </script>
-            </Helmet>
-        </Layout>
-    );
+				</script>
+			</Helmet>
+		</Layout>
+	);
 }
 
 export default DelawareIndexPage;

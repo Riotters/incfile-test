@@ -26,97 +26,97 @@ import TaxesIntroduce from "../../atomic/sections/type-of-business/with-no-money
 import ToolsAndLinks from "../../atomic/sections/type-of-business/with-no-money-business/tools";
 
 const WithNoMoneyBusiness = () => (
-  <Layout>
-    <SEO
-      title="How to Start a Business with Little or No Money"
-      description="There’s something very powerful about the idea of starting a business, but what can you do if money is a major obstacle? Many businesses require significant capital expenditure, and if you don’t have the funds to begin your venture, that will be an issue. All is not lost though - with some creative thinking and a slightly different approach, you can “bootstrap” your business with very little cash."
-    />
+	<Layout>
+		<SEO
+			title="Low Cost Startups | Business Ideas with Low Investment"
+			description="There’s something very powerful about the idea of starting a business, but what can you do if money is a major obstacle? Many businesses require significant capital expenditure, and if you don’t have the funds to begin your venture, that will be an issue. All is not lost though - with some creative thinking and a slightly different approach, you can “bootstrap” your business with very little cash."
+		/>
 
-    <Top
-      ovalColor="babyblue"
-      imageName="with-no-money-business-main"
-      imageAlt="Mr Bulb with seedling"
-      headlineWidth={700}
-    >
-      <h1>How to Start a Business with Little or No Money</h1>
-      <p>
-        There’s something very powerful about the idea of starting a business,
-        but what can you do if money is a major obstacle? Many businesses
-        require significant capital expenditure, and if you don’t have the funds
-        to begin your venture, that will be an issue. All is not lost though -
-        with some creative thinking and a slightly different approach, you can
-        “bootstrap” your business with very little cash.
-      </p>
-      <ButtonsBox>
-        <Button
-          theme="primary56"
-          marginMD="0 24px 0 0"
-          arrow
-          content={{
-            url: `${process.env.ORDER_URL}/form-order-now.php`,
-            text: "Start Now",
-          }}
-        />
-      </ButtonsBox>
+		<Top
+			ovalColor="babyblue"
+			imageName="with-no-money-business-main"
+			imageAlt="Mr Bulb with seedling"
+			headlineWidth={700}
+		>
+			<h1>How to Start a Business with Little or No Money</h1>
+			<p>
+				There’s something very powerful about the idea of starting a business,
+				but what can you do if money is a major obstacle? Many businesses
+				require significant capital expenditure, and if you don’t have the funds
+				to begin your venture, that will be an issue. All is not lost though -
+				with some creative thinking and a slightly different approach, you can
+				“bootstrap” your business with very little cash.
+			</p>
+			<ButtonsBox>
+				<Button
+					theme="primary56"
+					marginMD="0 24px 0 0"
+					arrow
+					content={{
+						url: `${process.env.ORDER_URL}/form-order-now.php`,
+						text: "Start Now",
+					}}
+				/>
+			</ButtonsBox>
 
-      <RatingRow>
-        <CartBlock />
-        <RatingBlock />
-      </RatingRow>
-    </Top>
+			<RatingRow>
+				<CartBlock />
+				<RatingBlock />
+			</RatingRow>
+		</Top>
 
-    <Bootstrapping />
+		<Bootstrapping />
 
-    <LackOfMoney />
+		<LackOfMoney />
 
-    <Expecting />
+		<Expecting />
 
-    <TypeBusinessIntroduce />
+		<TypeBusinessIntroduce />
 
-    <TypeBusiness />
+		<TypeBusiness />
 
-    <TheArtOfBootstrapping />
+		<TheArtOfBootstrapping />
 
-    <BusinessPlan />
+		<BusinessPlan />
 
-    <BusinessStructure />
+		<BusinessStructure />
 
-    <SettingBusiness />
+		<SettingBusiness />
 
-    <OrderNow />
+		<OrderNow />
 
-    <Regulations />
+		<Regulations />
 
-    <TaxesIntroduce />
+		<TaxesIntroduce />
 
-    <Taxes />
+		<Taxes />
 
-    <ToolsAndLinks />
+		<ToolsAndLinks />
 
-    <Conclusion
-      to={process.env.ORDER_URL + "/form-order-now.php"}
-      buttonTitle="Start your No Money Business with us, today"
-    >
-      <Heading size={3} style={{ fontSize: "48px" }}>
-        Conclusion
-      </Heading>
-      <Paragraph big>
-        We hope this guide has shown you that starting a business with no money
-        isn’t just possible, it’s practical. You can start with nothing and
-        build something unique that will make a powerful difference in your life
-        and the lives of all the people you touch.
-      </Paragraph>
-    </Conclusion>
-  </Layout>
+		<Conclusion
+			to={process.env.ORDER_URL + "/form-order-now.php"}
+			buttonTitle="Start your No Money Business with us, today"
+		>
+			<Heading size={3} style={{ fontSize: "48px" }}>
+				Conclusion
+			</Heading>
+			<Paragraph big>
+				We hope this guide has shown you that starting a business with no money
+				isn’t just possible, it’s practical. You can start with nothing and
+				build something unique that will make a powerful difference in your life
+				and the lives of all the people you touch.
+			</Paragraph>
+		</Conclusion>
+	</Layout>
 );
 
 const ButtonsBox = styled.div`
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  @media (min-width: 769px) {
-    flex-direction: row;
-  }
+	@media (min-width: 769px) {
+		flex-direction: row;
+	}
 `;
 
 export default WithNoMoneyBusiness;

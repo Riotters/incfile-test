@@ -38,7 +38,7 @@ const Blockchain = () => (
 			imageAlt="Mr Bulb with seedling"
 			headlineWidth={700}
 		>
-			<h1>How to Make Your Business a Blockchain Startup</h1>
+			<h1>How to Start a Blockchain Startup or Cryptocurrency Business</h1>
 			<p>
 				Blockchain is one of the most popular buzzwords in business right now,
 				but unless you have a good understanding of “immutable, publicly

@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../../components/layout";
 import SEO from "../../../components/seo";
+import { Heading } from "../../../atomic/atoms/typography/heading";
 //Sections
 import Top from "../../../atomic/partials/top";
 import About from "../../../atomic/sections/research-topics/registered-agent/registered-agent-info-update";
@@ -54,7 +55,9 @@ const HelpCenter = () => {
 				imageAlt="Mrs Bulb and with checklist"
 				ovalColor="green"
 			>
-				<h1>{top.header}</h1>
+				<Heading size={2} template={1} left>
+					{top.header}
+				</Heading>
 				<p>{top.text}</p>
 				<Searchbar />
 			</Top>

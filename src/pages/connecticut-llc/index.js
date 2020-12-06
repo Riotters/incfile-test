@@ -12,29 +12,31 @@ import ContentMap from "../../atomic/partials/content-map";
 import { top, howToGuide } from "../../static/states-llc/connecticut/home";
 import { tabPages } from "../../static/states-llc/connecticut/general";
 
-import { getFullPricesAndFilings } from '../../api/Api';
-
+import { getFullPricesAndFilings } from "../../api/Api";
 
 function ConnecticutIndexPage() {
-    const [dataApi, setDataApi] = React.useState({});
+	const [dataApi, setDataApi] = React.useState({});
 
-    React.useEffect(() => {
-        getFullPricesAndFilings('Connecticut').then(data => {
-            setDataApi(data);
-        });
-    }, []);
+	React.useEffect(() => {
+		getFullPricesAndFilings("Connecticut").then((data) => {
+			setDataApi(data);
+		});
+	}, []);
 
-    return (
-        <Layout>
-            <SEO title="LLCs in Connecticut | Guide to Forming an LLC in Connecticut" description="Ready to form your Connecticut LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
-            <LLCLayout data={dataApi} top={top}>
-                <LeftTabPages content={tabPages} nonDIY />
-                <MainPageContent>
-                    <ContentMap content={howToGuide} data={dataApi} />
-                </MainPageContent>
-            </LLCLayout>
-        </Layout>
-    );
+	return (
+		<Layout>
+			<SEO
+				title="LLCs in CT | Starting a Connecticut LLC"
+				description="Ready to form your Connecticut LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+			/>
+			<LLCLayout data={dataApi} top={top}>
+				<LeftTabPages content={tabPages} nonDIY />
+				<MainPageContent>
+					<ContentMap content={howToGuide} data={dataApi} />
+				</MainPageContent>
+			</LLCLayout>
+		</Layout>
+	);
 }
 
 export default ConnecticutIndexPage;

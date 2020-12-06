@@ -12,17 +12,27 @@ import Help from "../components/partials/sections/help";
 import { top, help, certificates } from "../static/manage-your-company";
 
 const ManageYourCompany = () => (
-  <Layout>
-    <SEO title="Managing and Operating Your LLC or Corporation | Documents Needed to Manage your Company or Corporation" description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing." />
-    <Top imageName="mrs-bulb-final-paper-stock" imageAlt="Mr Bulb with a briefcase holding a sign pointing foward" ovalColor="purple" tabletVariantClass="tablet--shopper" tabletImgScale={.8} tabletImgPosX={40}>
-      <h1>{top.header}</h1>
-      <p>{top.text}</p>
-    </Top>
-    <Benefits />
-    <Certificates content={certificates} />
-    <Help content={help} />
-    <Articles oval categoryId={310} />
-  </Layout>
+	<Layout>
+		<SEO
+			title="Documents Needed to Manage your LLC or Corporation"
+			description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing."
+		/>
+		<Top
+			imageName="mrs-bulb-final-paper-stock"
+			imageAlt="Mr Bulb with a briefcase holding a sign pointing foward"
+			ovalColor="purple"
+			tabletVariantClass="tablet--shopper"
+			tabletImgScale={0.8}
+			tabletImgPosX={40}
+		>
+			<h1>{top.header}</h1>
+			<p>{top.text}</p>
+		</Top>
+		<Benefits />
+		<Certificates content={certificates} />
+		<Help content={help} />
+		<Articles oval categoryId={310} />
+	</Layout>
 );
 
 export default ManageYourCompany;
