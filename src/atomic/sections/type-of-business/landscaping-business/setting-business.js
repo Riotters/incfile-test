@@ -8,6 +8,7 @@ import GreenOval from "../../../../images/ovals/top-right-transparent-green2.inl
 import ContentCenter from "../../../partials/content-center";
 import {gradient} from "../../../atoms/styles/colors";
 import {Link} from "@reach/router";
+import {Heading} from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -29,7 +30,7 @@ const SettingBusiness = () => (
 
             <ImageBoxes>
                 <TopImageBox image="location" color={color.red3}>
-                    <h4>Location of Your Business</h4>
+                    <Heading size={3} template={4}>Location of Your Business</Heading>
                     <p>
                         Where are you going to run your business from? Will you work from home, get an office or
                         something else? At the very least, you will need space to store equipment, consumables and
@@ -38,7 +39,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="display-ads" color={color.purple3}>
-                    <h4>Marketing</h4>
+                    <Heading size={3} template={4}>Marketing</Heading>
                     <p>
                         You will probably need to build a website, and you will definitely need excellent local
                         marketing expertise.
@@ -46,7 +47,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-                    <h4>Employees</h4>
+                    <Heading size={3} template={4}>Employees</Heading>
                     <p>
                         It’s unlikely that you will need to hire employees in the early days of your business. Instead,
                         you might work with freelance designers, marketers and similar.
@@ -54,14 +55,14 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="software" color={color.green3}>
-                    <h4>Software</h4>
+                    <Heading size={3} template={4}>Software</Heading>
                     <p>
                         Special software exists to make it easier to run your landscaping business.
                     </p>
                 </TopImageBox>
 
                 <TopImageBox image="measuring-business-success" color={color.babyblue3}>
-                    <h4>Business maintenance</h4>
+                    <Heading size={3} template={4}>Business maintenance</Heading>
                     <p>
                         Most states require businesses to file an <Link to="/manage-your-company/annual-report/">Annual Report</Link> once a year. You will also be expected
                         to pay estimated taxes on what you plan to earn in the current business year. Your federal,
@@ -71,7 +72,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="state-filling-fees" color={color.yellow3}>
-                    <h4>Finances and taxes</h4>
+                    <Heading size={3} template={4}>Finances and taxes</Heading>
                     <p>
                         What kind of bank account will you get? Do you need a business credit card? How will you pay
                         your business taxes? These are important questions to consider so your landscaping business
@@ -80,7 +81,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="side-yellow" color={color.yellow3}>
-                    <h4>Equipment</h4>
+                    <Heading size={3} template={4}>Equipment</Heading>
                     <p>
                         What equipment do you need to manage your landscaping business? Depending on the types of
                         services you offer you will need tools like lawnmowers, weed whackers and trimmers. You may also
@@ -133,7 +134,7 @@ const Oval = styled.div`
     width: 100%;
     
     @media (min-width: 720px){
-        width 720px;
+        width: 720px;
     }
 `;
 

@@ -7,6 +7,7 @@ import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/top-left-transparent-green1.inline.svg";
 import ContentCenter from "../../../partials/content-center";
 import { Link } from "gatsby";
+import {Heading} from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
   <GreenContainer>
@@ -25,39 +26,39 @@ const SettingBusiness = () => (
     <Container>
       <ImageBoxes>
         <TopImageBox image="location" color={color.red3}>
-          <h4>Location of your workshop</h4>
+          <Heading size={3} template={4}>Location of your workshop</Heading>
           <p>If you’re using a print-on-demand service, you should be able to run your business from your home. If you’re printing yourself, you will likely need a warehouse or something similar.</p>
         </TopImageBox>
 
         <TopImageBox image="permits-licences" color={color.blue3}>
-          <h4>Permits and licenses</h4>
+          <Heading size={3} template={4}>Permits and licenses</Heading>
           <p>
             Running a T-shirt business comes with certain rules, regulations and legalities you need to be aware of. Incfile offers a <Link to="/business-license-research-package/">Business License Research Package</Link> for you, or you can take the time to do the research yourself.
           </p>
         </TopImageBox>
 
         <TopImageBox image="display-ads" color={color.purple3}>
-          <h4>Marketing</h4>
+          <Heading size={3} template={4}>Marketing</Heading>
           <p>Branding and marketing are vital to help you build a distinctive identity. This is one of the areas that you should invest plenty of time and resources into.</p>
         </TopImageBox>
 
         <TopImageBox image="organization-change-02" color={color.green3}>
-          <h4>Processes</h4>
+          <Heading size={3} template={4}>Processes</Heading>
           <p>Make sure you understand all your profit margins and get strong analytics in place so you can understand exactly what is and isn’t selling.</p>
         </TopImageBox>
 
         <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-          <h4>Employees</h4>
+          <Heading size={3} template={4}>Employees</Heading>
           <p>You will probably need to hire employees for your landscaping business; more on that below.</p>
         </TopImageBox>
 
         <TopImageBox image="side-yellow" color={color.yellow3}>
-          <h4>Equipment</h4>
+          <Heading size={3} template={4}>Equipment</Heading>
           <p>Branding and marketing are vital to help you build a distinctive identity. This is one of the areas that you should invest plenty of time and resources into.</p>
         </TopImageBox>
 
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
-          <h4>Finances and taxes</h4>
+          <Heading size={3} template={4}>Finances and taxes</Heading>
           <p>
             What kind of bank account will you get? Do you need a{" "}
             <a href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024" target="_blank" rel="noopener noreferrer">
@@ -68,7 +69,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="measuring-business-success" color={color.babyblue3}>
-          <h4>Business maintenance</h4>
+          <Heading size={3} template={4}>Business maintenance</Heading>
           <p>
             Most states require businesses to file an <Link to="/manage-your-company/annual-report/">Annual Report</Link> once a year. You will also be expected to pay estimated taxes on what you plan to earn in the current business year. Your federal, state, regional and city{" "}
             <Link to="/business-license-research-package/">business licenses and permits</Link> may need to be renewed on a regular basis, typically once a year.
@@ -115,7 +116,7 @@ const Oval = styled.div`
     width: 100%;
     left: 0;
     top: 0;
-    position absolute;
+    position: absolute;
     
     @media (min-width: 720px){
         width: 720px;
@@ -127,7 +128,7 @@ const Oval2 = styled.div`
     right: 0;
     top: 220px;
     transform: scaleX(-1);
-    position absolute;
+    position: absolute;
     
     @media (min-width: 720px){
         width: 720px;

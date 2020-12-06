@@ -8,6 +8,7 @@ import GreenOval from "../../../../images/ovals/bottom-right-transparent-blue2.i
 import {gradient} from "../../../atoms/styles/colors";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import {Link} from "@reach/router";
+import {Heading} from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -28,7 +29,7 @@ const SettingBusiness = () => (
             <ImageBoxes>
 
                 <TopImageBox image="location" color={color.red3}>
-                    <h4>Business location</h4>
+                    <Heading size={3} template={4}>Business location</Heading>
                     <p>
                         This is one of the most important choices for a restaurant owner. You will need to find a
                         location that’s easily accessible, can meet the needs of your staff and guests and that won’t
@@ -38,7 +39,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="side-4" color={color.green3}>
-                    <h4>Equipment and ingredients</h4>
+                    <Heading size={3} template={4}>Equipment and ingredients</Heading>
                     <p>
                         Restaurants need a lot of upfront capital outlay on equipment, fixtures, furniture and
                         decoration. From kitchen equipment through to tables, chairs, plates and silverware, you will
@@ -48,7 +49,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="state-filling-fees" color={color.yellow3}>
-                    <h4>Finances and Taxes</h4>
+                    <Heading size={3} template={4}>Finances and Taxes</Heading>
                     <Paragraph mixed>
                         What kind of bank account will you get? Do you need a <Link to="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">business credit card</Link>? How will you pay
                         your business taxes? These are important questions to consider so your restaurant business stays
@@ -57,7 +58,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-                    <h4>Employees</h4>
+                    <Heading size={3} template={4}>Employees</Heading>
                     <p>
                         You will need to hire employees throughout your restaurant business. From executive chefs to bar
                         staff and servers to assistant cooks, getting your staff balance right is essential to your
@@ -66,7 +67,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="display-ads" color={color.purple3}>
-                    <h4>Marketing</h4>
+                    <Heading size={3} template={4}>Marketing</Heading>
                     <p>
                         Your restaurant likely needs its own website, and you will also need to develop a local brand,
                         logo and other marketing collateral. You should engage with local marketing firms who understand
@@ -75,7 +76,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="permits-licences" color={color.blue3}>
-                    <h4>Permits and licenses</h4>
+                    <Heading size={3} template={4}>Permits and licenses</Heading>
                     <p>
                         Running a restaurant business comes with certain rules, regulations and legalities you need to
                         be aware of, especially around staff health and safety and food hygiene and preparation. Incfile
@@ -86,7 +87,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="measuring-business-success" color={color.babyblue3}>
-                    <h4>Business maintenance</h4>
+                    <Heading size={3} template={4}>Business maintenance</Heading>
                     <p>
                         Most states require businesses to file an <Link to="/manage-your-company/annual-report">Annual Report</Link> report once a year. You will also be
                         expected to pay estimated taxes on what you plan to earn in the current business year. Your
@@ -96,7 +97,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="software" color={color.blue3}>
-                    <h4>Software</h4>
+                    <Heading size={3} template={4}>Software</Heading>
                     <p>
                         There’s a variety of software products specifically
                         for restaurants that can make managing one much easier. From taking orders to food preparation

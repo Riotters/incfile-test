@@ -76,7 +76,7 @@ const GymPersonalTraining = () => (
 
                         <Colorbox className="box" theme="icon" Icon={CupIcon} color={color.green3} curve
                                   curveColor={color.blue1}>
-                            <Heading size={4}>We know it can be daunting to start a brewery business, and we’re here to
+                            <Heading size={2} template={4} left>We know it can be daunting to start a brewery business, and we’re here to
                                 help.</Heading>
                             <Paragraph>We’ve supported over 100,000 people to form their business and provided answers,
                                 guidance and support to transform them into entrepreneurs. We’ll guide you through what
@@ -170,7 +170,7 @@ const GymPersonalTraining = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Why You Should Start a Brewery or Microbrewery</Heading>
+                        <Heading size={2} template={3} left>Why You Should Start a Brewery or Microbrewery</Heading>
                         <Paragraph big>So, just how popular are breweries in the U.S.? You’d be surprised.</Paragraph>
 
                         <BlueBoxWithAbsoluteText absoluteText="6,200" text="Number of craft breweries across the U.S."/>
@@ -206,7 +206,7 @@ const GymPersonalTraining = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Is a Brewery Right for You?</Heading>
+                        <Heading size={2} template={3} left>Is a Brewery Right for You?</Heading>
                         <Paragraph big style={{marginBottom: "48px"}}>
                             Although it can be exciting to form a brewery business, there will be significant demands on
                             you as a small business owner. Here are some of the things you can expect.

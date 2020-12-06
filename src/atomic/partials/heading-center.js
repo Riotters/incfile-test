@@ -5,6 +5,7 @@ import ArrowLink from "../molecules/buttons/text";
 import VisibilitySensor from "../../components/VisibilitySensor";
 import ContentCenter from "./content-center";
 import Button from "../molecules/buttons/button";
+import {Heading} from "../atoms/typography/heading";
 
 const Wrapper = styled.div`
   position: relative;
@@ -34,7 +35,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const TextCenterLayout = ({ className, headline, headlineWidth, text, textWidth, linkText, linkUrl, linkOnClick, bottomMargin, bottomMarginMD, bottomMarginLG, useButton = false }) => {
+const TextCenterLayout = ({ className, headline, headlineSize = 2, headlineSizeTemplate = 2, headlineWidth, text, textWidth, linkText, linkUrl, linkOnClick, bottomMargin, bottomMarginMD, bottomMarginLG, useButton = false }) => {
   const content = {
     text: linkText,
     url: linkUrl,
@@ -45,7 +46,7 @@ const TextCenterLayout = ({ className, headline, headlineWidth, text, textWidth,
       <ContentCenter>
         {headline && (
           <VisibilitySensor partialVisibility once>
-            {({ isVisible }) => <h2 className={isVisible ? "slideUp enter" : "slideUp"}>{parse(headline)}</h2>}
+            {({ isVisible }) => <Heading size={headlineSize} template={headlineSizeTemplate} className={isVisible ? "slideUp enter" : "slideUp"}>{parse(headline)}</Heading>}
           </VisibilitySensor>
         )}
         {text && (

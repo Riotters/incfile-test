@@ -80,7 +80,7 @@ const BeautySalon = () => (
             <ReactTabs content={tabs}>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Starting a Beauty Salon business</Heading>
+                        <Heading size={2} template={3} left>Starting a Beauty Salon business</Heading>
                         <Paragraph big>To begin with, it’s largely immune to the trend toward ecommerce since beauty
                             salons provide hyper-localized personalized services. Secondly, if you provide great
                             service, you will quickly develop an excellent reputation that will lead to repeat
@@ -165,7 +165,7 @@ const BeautySalon = () => (
                 </TabPanel>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Understanding the World of the Beauty Salon Business</Heading>
+                        <Heading size={2} template={3} left>Understanding the World of the Beauty Salon Business</Heading>
 
                         <Paragraph big style={{
                             fontFamily: "Avenir",
@@ -244,7 +244,7 @@ const BeautySalon = () => (
                 </TabPanel>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>What Are the Main Skills, Expertise and Experience Needed to be a Successful
+                        <Heading size={2} template={3} left>What Are the Main Skills, Expertise and Experience Needed to be a Successful
                             Beauty Salon Entrepreneur?</Heading>
                         <Paragraph big>When it comes to skill sets, you need wide-ranging expertise to be a successful
                             beauty salon owner. These skills should include:</Paragraph>
@@ -307,7 +307,7 @@ const BeautySalon = () => (
                     <Paragraph big>In short, you need a business plan — here’s how to think about your business
                         idea.</Paragraph>
 
-                    <Heading size={3} style={{marginTop: "80px"}}>
+                    <Heading size={2} template={3} left style={{marginTop: "80px"}}>
                         Do Market Research and Validate Your Beauty Salon Products and Services
                     </Heading>
 
@@ -321,7 +321,7 @@ const BeautySalon = () => (
                 <GridSectionList>
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={IdentifyIcon}
                                         imageBackgroundColor={color.babyblue2} imageShadowColor={color.babyblue2}>
-                        <Heading size={4}>Identify your business’s unique selling points (USPs)</Heading>
+                        <Heading size={3} template={4}>Identify your business’s unique selling points (USPs)</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             These are the areas that will set you apart from competitors and encourage customers to come
                             to you. You might have better pricing, a higher-quality service, a loyalty plan or some
@@ -331,7 +331,7 @@ const BeautySalon = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={LookIcon}
                                         imageBackgroundColor={color.green2} imageShadowColor={color.green2}>
-                        <Heading size={4}>Look at who your competitors are in the space</Heading>
+                        <Heading size={3} template={4}>Look at who your competitors are in the space</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             Having competitors is a good thing as it shows there’s a market. Make a note of all local
                             competitors, their pricing and the beauty treatment services they provide.
@@ -340,7 +340,7 @@ const BeautySalon = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={InvolvedIcon}
                                         imageBackgroundColor={color.red2} imageShadowColor={color.red2}>
-                        <Heading size={4}>Get involved with business communities and discussion groups</Heading>
+                        <Heading size={3} template={4}>Get involved with business communities and discussion groups</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             Ask questions about beauty salon businesses. You can find links to some excellent discussion
                             groups later in the article.
@@ -349,7 +349,7 @@ const BeautySalon = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={TalkIcon}
                                         imageBackgroundColor={color.purple2} imageShadowColor={color.purple2}>
-                        <Heading size={4}>Talk to clients</Heading>
+                        <Heading size={3} template={4}>Talk to clients</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             Speak with potential customers to understand what they want from your beauty salon products
                             and services. See if there is a specific demand for niche treatments.
@@ -358,7 +358,7 @@ const BeautySalon = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={ValidateIcon}
                                         imageBackgroundColor={color.orange2} imageShadowColor={color.orange2}>
-                        <Heading size={4}>See if there are any market research reports for beauty salon
+                        <Heading size={3} template={4}>See if there are any market research reports for beauty salon
                             businesses</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             Search locally, nationally or internationally. Explore statewide and national trends to
@@ -368,7 +368,7 @@ const BeautySalon = () => (
                 </GridSectionList>
 
                 <CenterBox>
-                    <Heading size={3} style={{marginTop: "70px"}}>
+                    <Heading size={2} template={3} left style={{marginTop: "70px"}}>
                         Understand Your Beauty Salon Business Model and Financial Projections
                     </Heading>
                     <Paragraph big>All businesses need a business model, which is how you will generate sales, provide
@@ -395,7 +395,7 @@ const BeautySalon = () => (
             </Oval4>
             <Container>
                 <CenterBox>
-                    <Heading>Write a Business Plan for Your Beauty Salon Business</Heading>
+                    <Heading size={2} template={1} left>Write a Business Plan for Your Beauty Salon Business</Heading>
 
                     <Paragraph big>Finally, you should put your business plan together. Business plans do vary slightly,
                         but they should cover the following areas:</Paragraph>
@@ -469,7 +469,7 @@ const BeautySalon = () => (
 
             <BusinessOwnerResponsibilities>
                 <ImageContent image="unique-business-2" paddingTop="60">
-                    <Heading size={4} style={{fontSize: "24px"}}>
+                    <Heading size={2} template={4} left style={{fontSize: "24px", "max-width": "unset"}}>
                         Choose the Right Business Structure and Register Your Beauty Salon Business
                     </Heading>
                     <Paragraph big>Now that you have all the background information for your beauty salon business, it’s
@@ -694,7 +694,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 76px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;

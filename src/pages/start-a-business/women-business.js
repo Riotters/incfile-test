@@ -100,7 +100,7 @@ const WomenBusiness = () => (
                             curve
                             curveColor={color.purple1}
                         >
-                            <Heading size={4}>
+                            <Heading size={2} template={4} left>
                                 We want to help you get your business off the ground.
                             </Heading>
                             <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -121,7 +121,7 @@ const WomenBusiness = () => (
                 </TabPanel>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>
+                        <Heading size={2} template={3} left>
                             Why You Should Start a New Woman-Owned Business
                         </Heading>
                         <Paragraph big style={{marginBottom: "52px"}}>

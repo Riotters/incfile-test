@@ -75,7 +75,7 @@ const OnlineBusiness = () => (
 
                         <Colorbox className="box" theme="icon" Icon={MegafornIcon} color={color.purple3} curve
                                   curveColor={color.purple1}>
-                            <Heading size={4}>The question is, just where do you start?</Heading>
+                            <Heading size={2} template={4} left>The question is, just where do you start?</Heading>
                             <Paragraph bottomPadding={0} bottomMargin={0}>
                                 Here at Incfile, we know the answer, and we’ve shared it with more 100,000 people who
                                 we've helped in forming their business. Since 2004, we’ve supported online entrepreneurs
@@ -101,7 +101,7 @@ const OnlineBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Why You Should Start a New Online Business</Heading>
+                        <Heading size={2} template={3} left>Why You Should Start a New Online Business</Heading>
                         <Paragraph big style={{marginBottom: "52px"}}>
                             The internet has opened up new frontiers, created amazing technologies and helped us connect
                             with others around the globe. It’s made everything more accessible, allowing us to easily

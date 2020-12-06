@@ -53,10 +53,10 @@ const AirBnB1BusinessStructure = () => (
     <Oval>
       <OvalOrange2Svg />
     </Oval>
-
+    {/*HEADINGS O.K*/}
     <BusinessOwnerResponsibilities>
       <ImageContent image="unique-business-2" paddingTop="60">
-        <Heading size={4} style={{ fontSize: "24px" }}>
+        <Heading size={2} template={4} left style={{ fontSize: "24px", "max-width": "unset" }}>
           Choose the Right Business Structure for Your Airbnb Business
         </Heading>
         <Paragraph big>Now that you have all the background information for your Airbnb business, it’s time to make it into a reality. That starts by choosing the right structure or “legal entity” for your business. In the US, there are five main business structures. They are:</Paragraph>

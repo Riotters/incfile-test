@@ -70,7 +70,7 @@ const MovingCompanyTabs = () => (
         <ReactTabs content={tabs}>
             <TabPanel>
                 <PanelWrapper>
-                    <Heading size={3}>Starting a Moving Company</Heading>
+                    <Heading size={2} template={3} left>Starting a Moving Company</Heading>
                     <Paragraph big>
                         We’ve never had more choices of where to live or work — that need for
                         relocation means there’s plenty of opportunities for starting a reliable and
@@ -87,7 +87,7 @@ const MovingCompanyTabs = () => (
                     <Colorbox className="box" theme="icon" Icon={MegafonIcon} color={color.yellow3}
                               curve
                               curveColor={color.yellow1}>
-                        <Heading size={4}>We want to help you get your business off the
+                        <Heading size={3} template={4}>We want to help you get your business off the
                             ground.</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             There are lots of questions involved in starting a moving business, and

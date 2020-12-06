@@ -7,6 +7,7 @@ import { color } from "../../../atoms/styles/colors";
 import styled from "styled-components";
 import Curve from "../../../../images/green-curve.inline.svg";
 import GreenOval from "../../../../images/ovals/top-left-transparent-green1.inline.svg";
+import {Heading} from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
   <GreenContainer>
@@ -19,7 +20,7 @@ const SettingBusiness = () => (
     <Container>
       <ImageBoxes>
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
-          <h4>Finance</h4>
+          <Heading size={3} template={4}>Finance</Heading>
           <p>
             You will need a separate{" "}
             <a href="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">
@@ -30,17 +31,17 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="location" color={color.red3}>
-          <h4>Location of your Airbnb Business</h4>
+          <Heading size={3} template={4}>Location of your Airbnb Business</Heading>
           <p>You can almost certainly administer your Airbnb business from home. This is great as it reduces your office costs considerably. Don't forget that if you work from home, you can write off part of your utility and housing costs against your taxes.</p>
         </TopImageBox>
 
         <TopImageBox image="side" color={color.purple3}>
-          <h4>Equipment for Your Airbnb Business</h4>
+          <Heading size={3} template={4}>Equipment for Your Airbnb Business</Heading>
           <p>It’s likely that the only equipment you will need to run your Airbnb business is a computer, laptop, tablet or smartphone. Of course, you’ll also need to have supplies on hand for your properties.</p>
         </TopImageBox>
 
         <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-          <h4>Employees</h4>
+          <Heading size={3} template={4}>Employees</Heading>
           <p>You probably don’t need to hire any employees to help run your Airbnb business, but you’ll likely want to contract with cleaners, maintenance crews or a handyman.</p>
 
           <GreenCurve>
@@ -49,7 +50,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="software" color={color.blue3}>
-          <h4>Software and Processes</h4>
+          <Heading size={3} template={4}>Software and Processes</Heading>
           <p>The right software and processes will make running your Airbnb business much easier. See our list of the best apps and software at the end of this guide.</p>
         </TopImageBox>
       </ImageBoxes>

@@ -78,7 +78,7 @@ const TabScrollable = ({ layout, columns }) => {
 					</TabsWrapper>
 
 					<PanelWrapper>
-						<Heading size={3}>
+						<Heading size={2} template={3} left>
 							Rules, Regulations and Laws for Bars and Clubs
 						</Heading>
 						<Paragraph big mixed={true}>

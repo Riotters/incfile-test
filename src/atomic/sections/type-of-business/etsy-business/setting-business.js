@@ -8,6 +8,7 @@ import Curve from "../../../../images/green-curve.inline.svg";
 import GreenOval from "../../../../images/ovals/top-left-transparent-green1.inline.svg";
 import ContentCenter from "../../../partials/content-center";
 import {Link} from "@reach/router";
+import {Heading} from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -33,7 +34,7 @@ const SettingBusiness = () => (
         <Container>
             <ImageBoxes>
                 <TopImageBox image="location" color={color.red3}>
-                    <h4>Location of your workshop</h4>
+                    <Heading size={3} template={4}>Location of your workshop</Heading>
                     <p>
                         Where are you going to create your products and run your business from? Some crafters may have a
                         workshop at home, but remember you will need to store inventory and manage shipping. This can
@@ -43,7 +44,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="software" color={color.blue3}>
-                    <h4>Software that Integrates with Etsy</h4>
+                    <Heading size={3} template={4}>Software that Integrates with Etsy</Heading>
                     <p>
                         Is there software that can help you manage and market your Etsy business? Some tools integrate
                         with Etsy to help you manage your orders, estimate profits, create email campaigns, manage
@@ -54,7 +55,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="display-ads" color={color.purple3}>
-                    <h4>Marketing on Etsy</h4>
+                    <Heading size={3} template={4}>Marketing on Etsy</Heading>
                     <p>
                         You will need to develop a brand and use digital marketing channels to drive traffic to your
                         Etsy shop. This can include using keyword optimization in your Etsy listings so you show up in
@@ -65,7 +66,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="side-4" color={color.green3}>
-                    <h4>Equipment</h4>
+                    <Heading size={3} template={4}>Equipment</Heading>
                     <p>
                         What equipment do you need to manage your Etsy business? You will need a computer and smartphone
                         at minimum, but you will also require crafting tools, machinery and raw materials. Make sure you
@@ -76,7 +77,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="state-filling-fees" color={color.yellow3}>
-                    <h4>Finances and Taxes</h4>
+                    <Heading size={3} template={4}>Finances and Taxes</Heading>
                     <p>
                         What kind of <Link to="https://utility.bankofamerica.com/alliance/?formid=IF1">bank account</Link> will you get? Do you need a <Link to="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">business credit card</Link>? How will you pay
                         your business taxes? These are important questions to consider so your Etsy business stays in
@@ -85,7 +86,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="permits-licences" color={color.babyblue3}>
-                    <h4>Life or Business Coach Qualification, Certification and Training</h4>
+                    <Heading size={3} template={4}>Life or Business Coach Qualification, Certification and Training</Heading>
                     <p>
                         Running an Etsy business comes with certain rules, regulations and legalities you need to be
                         aware of. Incfile offers a Business License Research Package for you or you can take the time to
@@ -94,7 +95,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="measuring-business-success" color={color.babyblue3}>
-                    <h4>Business maintenance</h4>
+                    <Heading size={3} template={4}>Business maintenance</Heading>
                     <p>
                         Most states require businesses to file an <Link to="/manage-your-company/annual-report/">Annual Report</Link> once a year. You will also be expected
                         to pay estimated taxes on what you plan to earn in the current business year. Your federal,
@@ -104,7 +105,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-                    <h4>Employees</h4>
+                    <Heading size={3} template={4}>Employees</Heading>
                     <p>
                         To begin with, you probably won’t need to hire anyone else for your life or business coaching
                         business, especially if you’re a good administrator.
@@ -116,7 +117,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="organization-change-02" color={color.green3}>
-                    <h4>Processes</h4>
+                    <Heading size={3} template={4}>Processes</Heading>
                     <p>
                         Make sure you have the right processes in place to understand what your most popular products
                         are and analytics on how your business is doing. Etsy has some built-in analytics that will help

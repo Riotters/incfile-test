@@ -20,7 +20,7 @@ const Wrapper = styled.div`
             padding: ${props => (props.theme==="icon" ? "40px 40px 40px 112px" : "40px")};
         }
         
-        h4 {
+        h2, h2.h4 {
             padding-bottom: ${props => (props.theme==="icon" ? "16px" : "24px")};
         }
     

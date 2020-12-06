@@ -37,6 +37,7 @@ import HSFormModal from "../../components/hubspot/standard-post-form-modal";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import {TabPanel} from "react-tabs";
 
+{/*HEADINGS O.K*/}
 const AmazonBusiness = () => {
     const [modalVisible, setModalVisible] = React.useState(false);
     const [formSubmitted, setFormSubmitted] = React.useState(false);
@@ -249,7 +250,7 @@ const AmazonBusiness = () => {
                     </TabPanel>
                     <TabPanel>
                         <PanelWrapper>
-                            <Heading size={3}>
+                            <Heading size={2} template={3} left>
                                 Understanding the World of the Amazon Business
                             </Heading>
                             <Paragraph big>
@@ -267,7 +268,7 @@ const AmazonBusiness = () => {
                                 curve
                                 curveColor={color.orange2}
                             >
-                                <Heading size={4}>"Sold by Amazon" Sellers</Heading>
+                                <Heading size={3} template={4}>"Sold by Amazon" Sellers</Heading>
                                 <Paragraph bottomPadding={0} bottomMargin={0}>
                                     Sellers who source, procure, store and ship the goods
                                     themselves including taking care of customer service and
@@ -283,7 +284,7 @@ const AmazonBusiness = () => {
                                 Icon={FBAIcon}
                                 color={color.blue3}
                             >
-                                <Heading size={4}>
+                                <Heading size={3} template={4}>
                                     Key Amazon Business and Background Data and Statistics
                                 </Heading>
                                 <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -292,7 +293,7 @@ const AmazonBusiness = () => {
                                 </Paragraph>
                             </Colorbox>
 
-                            <Heading style={{marginTop: "70px"}} size={3}>
+                            <Heading style={{marginTop: "70px"}} size={2} template={3} left>
                                 Understanding the World of the Amazon Business
                             </Heading>
                             <Paragraph big bottomMargin={70}>
@@ -321,7 +322,7 @@ const AmazonBusiness = () => {
                                 CircleSVG={CircleSvg}
                             />
 
-                            <Heading style={{marginTop: "70px"}} size={3}>
+                            <Heading style={{marginTop: "70px"}} size={2} template={3} left>
                                 Amazon sellers had sales of $100K or more in 2016
                             </Heading>
                             <Paragraph big bottomMargin={70}>
@@ -334,7 +335,7 @@ const AmazonBusiness = () => {
                                 profit.
                             </Paragraph>
 
-                            <Heading size={3}>
+                            <Heading size={2} template={3} left>
                                 What Your Amazon Business Customers Are Looking For
                             </Heading>
                             <Paragraph big bottomMargin={70}>

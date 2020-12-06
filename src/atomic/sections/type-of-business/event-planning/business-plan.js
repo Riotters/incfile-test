@@ -24,7 +24,7 @@ const BusinessOwnerResponsibilities = styled.section`
     margin: 0 auto;
   }
 
-  h4.title {
+  h2.title {
     font-size: 40px;
     padding-bottom: 56px;
   }
@@ -78,7 +78,7 @@ const BusinessPlan = () => (
         />
 
         <Colorbox className="box" theme="icon" Icon={BoxIcon} color={color.orange3} curve curveColor={color.orange3}>
-          <Heading size={4}>You will also need to look at financial projections for your party or event planning business.</Heading>
+          <Heading size={3} template={4}>You will also need to look at financial projections for your party or event planning business.</Heading>
           <Paragraph bottomPadding={0} bottomMargin={0}>
             What are your expected sales and revenues? What is your profitability? How much money will you keep in the business to grow it? How much will you pay yourself and others?
           </Paragraph>

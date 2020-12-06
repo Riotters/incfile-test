@@ -98,7 +98,7 @@ const TshirtBusiness = () => (
             <ReactTabs content={tabs}>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Starting a T-shirt business</Heading>
+                        <Heading size={2} template={3} left>Starting a T-shirt business</Heading>
                         <Paragraph big>
                             Historically, only established clothing brands could create and
                             sell T-shirts, but that’s all changed. With the rise of ecommerce
@@ -214,7 +214,7 @@ const TshirtBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>
+                        <Heading size={2} template={3} left>
                             Understanding the World of the T-Shirt Business
                         </Heading>
 
@@ -313,7 +313,7 @@ const TshirtBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>
+                        <Heading size={2} template={3} left>
                             The Benefits and Challenges of Being a Successful T-Shirt
                             Entrepreneur
                         </Heading>
@@ -409,7 +409,7 @@ const TshirtBusiness = () => (
                         imageBackgroundColor={color.babyblue2}
                         imageShadowColor={color.babyblue2}
                     >
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Identify your business’s unique selling points (USPs)
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -427,7 +427,7 @@ const TshirtBusiness = () => (
                         imageBackgroundColor={color.green2}
                         imageShadowColor={color.green2}
                     >
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Look at who your competitors are in the space
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -444,7 +444,7 @@ const TshirtBusiness = () => (
                         imageBackgroundColor={color.orange2}
                         imageShadowColor={color.orange2}
                     >
-                        <Heading size={4}>Validate your products and services</Heading>
+                        <Heading size={3} template={4}>Validate your products and services</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             Test whether people will commit to spending real money on what
                             you’re offering.
@@ -458,7 +458,7 @@ const TshirtBusiness = () => (
                         imageBackgroundColor={color.purple2}
                         imageShadowColor={color.purple2}
                     >
-                        <Heading size={4}>Talk to clients</Heading>
+                        <Heading size={3} template={4}>Talk to clients</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             Speak with potential customers to understand what they want from
                             your T-shirt products.
@@ -472,7 +472,7 @@ const TshirtBusiness = () => (
                         imageBackgroundColor={color.red2}
                         imageShadowColor={color.red2}
                     >
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Get involved with business communities and discussion groups
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -488,7 +488,7 @@ const TshirtBusiness = () => (
                         imageBackgroundColor={color.yellow2}
                         imageShadowColor={color.yellow2}
                     >
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             See if there are any market research reports for T-shirt
                             businesses
                         </Heading>
@@ -618,7 +618,7 @@ const TshirtBusiness = () => (
 
             <BusinessOwnerResponsibilities>
                 <ImageContent image="unique-business-2" paddingTop="60">
-                    <Heading size={4} style={{fontSize: "24px"}}>
+                    <Heading size={2} template={4} left style={{fontSize: "24px"}}>
                         Choose the Right Business Structure and Register Your T-Shirt
                         Business
                     </Heading>
@@ -946,7 +946,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 12px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;
@@ -987,7 +987,7 @@ const Oval = styled.div`
     width: 100%;
     left: 0;
     top: 211px;
-    position absolute;
+    position: absolute;
     display: none;
     
     @media (min-width: 570px){
@@ -1007,7 +1007,7 @@ const TabOval = styled.div`
     width: 100%;
     left: 0;
     top: 0;
-    position absolute;
+    position: absolute;
     z-index: -1;
     
     @media (min-width: 420px){
@@ -1019,7 +1019,7 @@ const TabOval2 = styled.div`
     width: 100%;
     right: 0;
     top: 436px;
-    position absolute;
+    position: absolute;
     z-index: -1;
     
     @media (min-width: 420px){
@@ -1032,7 +1032,7 @@ const Oval2 = styled.div`
     right: 0;
     top: 0;
     transform: scaleY(-1);
-    position absolute;
+    position: absolute;
     
     @media (min-width: 570px){
         width: 570px;
@@ -1044,7 +1044,7 @@ const Oval3 = styled.div`
     left: 0;
     top: 0;
     transform: scaleX(-1);
-    position absolute;
+    position: absolute;
     
     svg{
         transform: scaleY(-1);
@@ -1060,7 +1060,7 @@ const Oval4 = styled.div`
     right: 0;
     bottom: 100px;
     transform: scaleX(-1);
-    position absolute;
+    position: absolute;
     
     @media (min-width: 720px){
         width: 720px;
@@ -1072,7 +1072,7 @@ const Oval5 = styled.div`
     right: 0;
     bottom: 140px;
     transform: scaleX(-1);
-    position absolute;
+    position: absolute;
     
     @media (min-width: 570px){
         width: 570px;
@@ -1084,7 +1084,7 @@ const Oval6 = styled.div`
     left: 0;
     top: 0px;
     transform: scaleX(-1);
-    position absolute;
+    position: absolute;
     z-index: -1;
     
     svg{

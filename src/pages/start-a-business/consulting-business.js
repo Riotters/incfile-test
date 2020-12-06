@@ -204,7 +204,7 @@ const ConsultingBusiness = () => {
 
                     <TabPanel>
                         <PanelWrapper>
-                            <Heading size={3}>
+                            <Heading size={2} template={3} left>
                                 Key Consulting Business Background Data and Statistics
                             </Heading>
                             <Paragraph big>
@@ -250,7 +250,7 @@ const ConsultingBusiness = () => {
 
                     <TabPanel>
                         <PanelWrapper>
-                            <Heading size={3}>
+                            <Heading size={2} template={3} left>
                                 Questions to Ask Before You Start a Consulting Business
                             </Heading>
                             <Paragraph

@@ -82,7 +82,7 @@ const EtsyBusiness = () => (
             <ReactTabs content={tabs}>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3} style={{marginBottom: "24px"}}>
+                        <Heading size={2} template={3} left style={{marginBottom: "24px"}}>
                             Starting an Etsy Business
                         </Heading>
                         <Paragraph big>What used to be the purview of craft fairs and market stands can now easily be
@@ -168,15 +168,13 @@ const EtsyBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3} style={{fontWeight: "bold", fontSize: "24px", marginBottom: "64px"}}>
+                        <Heading size={2} template={3} left style={{fontWeight: "bold", fontSize: "24px", marginBottom: "64px"}}>
                             How to Make Money on Etsy
                         </Heading>
-                        <Heading
-                            big
+                        <Heading size={3}
                             style={{
                                 fontWeight: "bold",
                                 color: color.black,
-                                fontSize: "24px",
                                 marginBottom: "24px",
                             }}
                         >
@@ -216,7 +214,7 @@ const EtsyBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3} style={{marginBottom: "24px"}}>
+                        <Heading size={2} template={3} left style={{marginBottom: "24px"}}>
                             The Keys to Success: What Etsy Customers Want
                         </Heading>
                         <Paragraph big style={{marginBottom: "48px"}}>
@@ -427,7 +425,7 @@ const EtsyBusiness = () => (
             </BusinessPlanOval2>
             <Container>
                 <CenterBox>
-                    <Heading>Write a Business Plan for Your Etsy Business</Heading>
+                    <Heading size={2} template={1} left>Write a Business Plan for Your Etsy Business</Heading>
 
                     <Paragraph big>Finally, you should put your business plan together. Business plans do vary slightly,
                         but they should cover the following areas:</Paragraph>
@@ -501,7 +499,7 @@ const EtsyBusiness = () => (
 
             <BusinessOwnerResponsibilities>
                 <ImageContent image="unique-business-2" paddingTop="60">
-                    <Heading size={4} style={{fontSize: "24px"}}>
+                    <Heading size={2} template={4} left style={{fontSize: "24px"}}>
                         Do I Need an LLC to Sell on Etsy?
                     </Heading>
                     <Paragraph big>
@@ -727,7 +725,7 @@ const GridSectionList = styled.div`
     justify-content: center;
     column-gap: 30px;
     row-gap: 70px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;

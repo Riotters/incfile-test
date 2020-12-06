@@ -79,7 +79,7 @@ const EventPlanning = () => (
 
                         <Colorbox className="box" theme="icon" Icon={FireworksIcon} color={color.purple3} curve
                                   curveColor={color.purple1}>
-                            <Heading size={4}>We want to help you get your party or event planning business off the
+                            <Heading size={2} template={4} left>We want to help you get your party or event planning business off the
                                 ground.</Heading>
                             <Paragraph>Since 2004, we’ve helped over 100,000 people to become entrepreneurs, starting
                                 exciting businesses and bringing their ideas to life. We’ll give you the support,
@@ -172,7 +172,7 @@ const EventPlanning = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Why You Should Become an Event Planner</Heading>
+                        <Heading size={2} template={3} left>Why You Should Become an Event Planner</Heading>
                         <Paragraph big style={{marginBottom: "52px"}}>
                             There are plenty of opportunities in the party and event planning space, and it’s a growing
                             industry.
@@ -210,7 +210,7 @@ const EventPlanning = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Is a Party or Event Planning Business Right for You?</Heading>
+                        <Heading size={2} template={3} left>Is a Party or Event Planning Business Right for You?</Heading>
                         <Paragraph big style={{marginBottom: "48px"}}>
                             Although it can be exciting to form a planning business, there will be significant demands
                             on you as a small business owner. Here are some of the things you can expect.

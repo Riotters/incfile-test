@@ -36,7 +36,7 @@ const TitleBox = styled.div`
         margin: 0 auto;
     }
     
-    h3{
+    h2{
         color: #1d1d1d;
         font-size: 40px;
         text-align: left;
@@ -52,7 +52,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 76px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;
@@ -94,7 +94,7 @@ const ValidatingBusinessIdea = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={3}>Validating Your Bookstore Idea</Heading>
+                    <Heading size={2} template={3} left>Validating Your Bookstore Idea</Heading>
                     <Paragraph big>
                         Remember, the ideas above are just a starting point. You can define and tweak exactly how you’re going to run your bookstore business through conducting your own research.
                     </Paragraph>
@@ -105,7 +105,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={IdetifyIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Identify your bookstore business’ unique selling points (USPs)
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -115,7 +115,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={LookIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Look at who your competitors
                             are in the space
                         </Heading>
@@ -128,7 +128,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={MarketIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Understand your market
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -139,7 +139,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={TalkIcon} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.red2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Talk to customers
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>

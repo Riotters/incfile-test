@@ -7,6 +7,7 @@ import { color } from "../../../../components/styles/colors";
 import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/bottom-left-transparent-blue1.inline.svg";
 import { gradient } from "../../../atoms/styles/colors";
+import {Heading} from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
   <WrapperContainer>
@@ -19,7 +20,7 @@ const SettingBusiness = () => (
     <Container>
       <ImageBoxes>
         <TopImageBox image="location" color={color.red3}>
-          <h4>Location of Your Brewery</h4>
+          <Heading size={3} template={4}>Location of Your Brewery</Heading>
           <p>
             Your location will be essential. The space needs to be large enough for your brewing operation and prepared to handle the unique requirements of making alcoholic beverages. If you also have a bar or brewpub, you should factor in local footfall, traffic access and parking. You will also
             need space to store drinks, manage the business, host musicians and more.
@@ -27,7 +28,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="display-ads" color={color.purple3}>
-          <h4>Brewery Equipment</h4>
+          <Heading size={3} template={4}>Brewery Equipment</Heading>
           <p>
             Marketing will be a huge part of your brewery business. Naturally, you will need an awesome website, but you'll also need to get branding, newsletters, digital ads, social media accounts and other channels in place. You should also focus on local marketing and branding, especially if you
             are selling into retail stores.
@@ -35,12 +36,12 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-          <h4>Employees</h4>
+          <Heading size={3} template={4}>Employees</Heading>
           <p>You won’t be able to do everything by yourself - it’s rare to find someone who can be everything a brewery needs (administrator, marketer, brewmaster, server and more). This means you will need to hire employees and have the right attitude, approach and support for your workers.</p>
         </TopImageBox>
 
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
-          <h4>Finances and Taxes</h4>
+          <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             You will need a separate{" "}
             <a href="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">
@@ -51,12 +52,12 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="side-4" color={color.green3}>
-          <h4>Brewery Equipment</h4>
+          <Heading size={3} template={4}>Brewery Equipment</Heading>
           <p>Breweries are extremely reliant on specialized equipment. From brew kettles and mash tuns to barrels and endless amounts of cleaning fluid, this is where the majority of your capital expenditure will be in the early days.</p>
         </TopImageBox>
 
         <TopImageBox image="software" color={color.blue3}>
-          <h4>Software and Process</h4>
+          <Heading size={3} template={4}>Software and Process</Heading>
           <p>Brewery entrepreneurs make extensive use of software; see our great list of the top apps at the end of this guide.</p>
         </TopImageBox>
       </ImageBoxes>

@@ -53,7 +53,7 @@ const CoachBusinessStructure = () => (
 
     <BusinessOwnerResponsibilities>
       <ImageContent image="unique-business-green" paddingTop="60">
-        <Heading size={4} style={{ fontSize: "24px" }}>
+        <Heading size={2} template={4} left style={{ fontSize: "24px" }}>
           Choose the Right Business Structure and Register Your Construction Business
         </Heading>
         <Paragraph big>Now that you have all the background information for your construction business, it’s time to make it into a reality. That starts by choosing the right structure or “legal entity” for your business. In the U.S., there are five main business structures. They are:</Paragraph>

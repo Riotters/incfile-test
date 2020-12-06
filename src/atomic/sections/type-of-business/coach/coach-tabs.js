@@ -76,7 +76,7 @@ const CoachTabs = () => (
     <ReactTabs content={tabs}>
         <TabPanel>
             <PanelWrapper>
-                <Heading size={3}>Starting a Coaching Business</Heading>
+                <Heading size={2} template={3} left>Starting a Coaching Business</Heading>
                 <Paragraph big>
                     If you can provide practical advice and guidance to help people change their perspective or their business practices, you could have the makings of a great coach. Whether you decide to go into life coaching or executive and business coaching, there are plenty of excellent opportunities in this growing industry.
                 </Paragraph>
@@ -85,7 +85,7 @@ const CoachTabs = () => (
                 </Paragraph>
 
                 <Colorbox className="box" theme="icon" Icon={MegafonIcon} color={color.green3} curve curveColor={color.green1}>
-                    <Heading size={4}>We want to help you get your business off the ground.</Heading>
+                    <Heading size={3} template={4}>We want to help you get your business off the ground.</Heading>
                     <Paragraph bottomPadding={0} bottomMargin={0}>
                         Since 2004, we’ve helped over 500,000 people start exciting businesses and bring their ideas to life. We’ll give you the support, guidance and advice you need to create a woman-owned business and make it into a success.
                     </Paragraph>

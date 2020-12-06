@@ -68,7 +68,7 @@ const TravelAgency = () => (
                             build memories that will stay with us forever.
                         </Paragraph>
 
-                        <Heading size={3}>Even with the rise of online travel booking, many vacationers want the
+                        <Heading size={2} template={3} left>Even with the rise of online travel booking, many vacationers want the
                             reassurance of a travel expert to talk them through countries, destinations, hotels,
                             flights, tours and more.</Heading>
 
@@ -79,7 +79,7 @@ const TravelAgency = () => (
 
                         <Colorbox className="box" theme="icon" Icon={TravelIconColorBox} color={color.blue3} curve
                                   curveColor={color.blue1}>
-                            <Heading size={4}>Here’s how social media influencers make money:</Heading>
+                            <Heading size={3} template={4}>Here’s how social media influencers make money:</Heading>
 
                             <Paragraph bottomMargin={0}>We’ve helped over 100,000 people form their business and
                                 provided answers, guidance and support to transform them into entrepreneurs. We’ll guide
@@ -160,7 +160,7 @@ const TravelAgency = () => (
                 </TabPanel>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Why You Should Start a New Travel Agency</Heading>
+                        <Heading size={2} template={3} left>Why You Should Start a New Travel Agency</Heading>
 
                         <Paragraph big bottomMargin={52}>
                             The time to take advantage is now — we’ll help you be a part of that success!
@@ -193,7 +193,7 @@ in the U.S. by 2020"
                 </TabPanel>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Is a Travel Agency Business Right for You?</Heading>
+                        <Heading size={2} template={3} left>Is a Travel Agency Business Right for You?</Heading>
 
                         <Paragraph big bottomMargin={52}>
                             Before deciding to start a travel agency, it’s important to understand the skills and
@@ -364,7 +364,7 @@ const OvalTools = styled.div`
     width: 100%;
     right: 0;
     top: calc(50% - 210px);
-    position absolute;
+    position: absolute;
     z-index: -1;
     transform: rotate(180deg);
     
@@ -377,7 +377,7 @@ const OvalTools2 = styled.div`
     width: 100%;
     left: 0;
     bottom: 0;
-    position absolute;
+    position: absolute;
     z-index: -1;
     
     @media (min-width: 420px){

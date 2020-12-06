@@ -163,7 +163,7 @@ const BarNightclub = () => (
                 </TabPanel>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3} style={{marginBottom: "24px"}}>
+                        <Heading size={2} template={3} left style={{marginBottom: "24px"}}>
                             Understanding the Bar and Club Industry
                         </Heading>
 
@@ -289,7 +289,7 @@ const BarNightclub = () => (
                 </TabPanel>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>The Challenges of Running a Bar or Club</Heading>
+                        <Heading size={2} template={3} left>The Challenges of Running a Bar or Club</Heading>
 
                         <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Is Being a Bar or Club Owner Right for You?
@@ -428,7 +428,7 @@ const BarNightclub = () => (
             </OvalGreen2>
             <Container>
                 <CenterBox>
-                    <Heading size={3} style={{fontSize: "40px"}}>
+                    <Heading size={2} template={3} left style={{fontSize: "40px"}}>
                         Understand Your Bar or Club Business Model and Financial Projections
                     </Heading>
                     <Paragraph big>
@@ -444,7 +444,7 @@ const BarNightclub = () => (
                     </Paragraph>
                 </CenterBox>
                 <CenterBox>
-                    <Heading size={3} style={{fontSize: "40px"}}>
+                    <Heading size={2} template={3} left style={{fontSize: "40px"}}>
                         Write a Business Plan for Your Bar or Club Business
                     </Heading>
 
@@ -520,7 +520,7 @@ const BarNightclub = () => (
 
             <BusinessOwnerResponsibilities>
                 <ImageContent image="unique-business-2" paddingTop="60">
-                    <Heading size={4} style={{fontSize: "24px"}}>
+                    <Heading size={2} template={4} left style={{fontSize: "24px", "max-width": "unset"}}>
                         Choose the Right Business Structure and Register Your Bar or Club Business
                     </Heading>
                     <Paragraph big>Now that you have all the background information for your bar or club business, it’s
@@ -706,7 +706,7 @@ display: flex;
 flex-direction: column;
 
 @media (min-width: 769px) {
-    flex - direction: row;
+    flex-direction: row;
 }
 `;
 
@@ -745,7 +745,7 @@ padding-top: 75px;
 padding-bottom: 64px;
 
 .colorbox {
-    margin - bottom: 48px;
+    margin-bottom: 48px;
 }
 `;
 
