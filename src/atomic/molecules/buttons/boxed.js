@@ -23,7 +23,7 @@ const Wrapper = styled(Link)`
     .box {
       box-shadow: ${shadow.white2};
 
-      h4 {
+      h3 {
         color: ${color.orange1};
       }
     }
@@ -35,8 +35,8 @@ const TextWrapper = styled.div`
   align-items: center;
   margin-right: 32px;
 
-  h4,
-  h5 {
+  h3,
+  h4 {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: ${(props) => (props.ellipsis ? "1" : "")};
@@ -45,7 +45,7 @@ const TextWrapper = styled.div`
     color: ${(props) => (props.icon ? color.blue1 : props.textColor ? props.textColor : "")};
   }
 
-  h4 {
+  h3 {
     font-size: 16px;
 
     @media (min-width: 400px) {
@@ -82,18 +82,18 @@ const ImageWrapper = styled.div`
   }
 `;
 
-const BoxedButton = ({ className, content, textColor, icon, iconColor, iconPadding, ellipsis }) => {
+const BoxedButton = ({ className, content, textColor, icon, headingSizes = [ 3, 4 ], iconColor, iconPadding, ellipsis }) => {
   return (
-    <Wrapper to={content.url} className={className} icon={icon} ellipsis={ellipsis}>
+    <Wrapper to={content.url} className={className} icon={icon} ellipsis={ellipsis} headingSizes={headingSizes}>
       <Whitebox className="box">
-        <TextWrapper textColor={textColor} icon={icon} ellipsis={ellipsis}>
+        <TextWrapper textColor={textColor} icon={icon} ellipsis={ellipsis} headingSizes={headingSizes}>
           {icon && (
             <ImageWrapper iconColor={iconColor} iconPadding={iconPadding}>
               <Image filename={icon} />
             </ImageWrapper>
           )}
           {content.header && (
-            <Heading size={icon ? "4" : "5"} bottomMargin="0">
+            <Heading size={icon ? headingSizes[0] : headingSizes[1]} template={icon ? 4 : 5} bottomMargin="0">
               {content.header}
             </Heading>
           )}

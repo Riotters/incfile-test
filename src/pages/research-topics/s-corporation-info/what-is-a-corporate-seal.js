@@ -17,6 +17,7 @@ import { about } from "../../../static/research-topics/s-corporation-info/corp-s
 import { Helmet } from "react-helmet";
 
 import { related } from "../../../static/research-topics/s-corporation-info";
+import {Heading} from "../../../atomic/atoms/typography/heading";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';
@@ -40,7 +41,7 @@ const HelpCenter = () => {
         <Layout>
             <SEO title="What is a Corporate Seal or Company Seal? | Incfile" description="Learn about corporate and company seals and stamps, when you might need one, what they’re used for and more." />
             <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
-                <h1>{top.header}</h1>
+                <Heading size={2} template={1} left>{top.header}</Heading>
                 <p>{top.text}</p>
                 <Searchbar />
             </Top>

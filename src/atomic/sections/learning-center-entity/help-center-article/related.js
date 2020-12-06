@@ -17,7 +17,7 @@ const Related = styled.section`
 const RelatedSection = ({ className, content }) => (
 	<Related className={className}>
 		<ContentCenter contentWidth="770">
-			<Heading size={1} template={2} bottomMargin="24" maxWidth="700">
+			<Heading size={2} left bottomMargin="24" maxWidth="700">
 				{content.header}
 			</Heading>
 			<Paragraph big bottomMargin={104}>

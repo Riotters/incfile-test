@@ -86,7 +86,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const IconTextColorBox = ({ className, color, content, bottomMargin, rounded, curve, curveColor, ...rest }) => {
+const IconTextColorBox = ({ className, color, headingSize = 3, headingTemplateSize = 4, content, bottomMargin, rounded, curve, curveColor, ...rest }) => {
     return (
         <Wrapper className={className} rounded={rounded} bottomMargin={bottomMargin} color={color} {...rest}>
             {curve && (
@@ -96,7 +96,7 @@ const IconTextColorBox = ({ className, color, content, bottomMargin, rounded, cu
             )}
             <Colorbox className="box" color={color}>
                 {content?.header && (
-                    <Heading size="4" bottomMargin="24">
+                    <Heading size={headingSize} template={headingTemplateSize} bottomMargin="24">
                         {parse(content.header)}
                     </Heading>
                 )}

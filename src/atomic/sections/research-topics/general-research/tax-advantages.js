@@ -64,7 +64,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text7}
 			</Paragraph>
-			<Heading size={1} template={3} bottomMargin="32">
+			<Heading size={2} left template={3} bottomMargin="32">
 				{content.header3}
 			</Heading>
 			<Paragraph big bottomMargin="24">
