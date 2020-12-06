@@ -11,36 +11,48 @@ import Faq from "../../atomic/sections/manage-your-company/tax-id-ein/faq";
 import Benefits from "../../atomic/sections/benefits";
 import Articles from "../../atomic/sections/articles";
 //Texts
-import { top, about, help, faq } from "../../static/manage-your-company/ein-tax-id";
+import {
+	top,
+	about,
+	help,
+	faq,
+} from "../../static/manage-your-company/ein-tax-id";
 import ProductSchema from "../../components/product-schema";
 import { Helmet } from "react-helmet";
 import { servicePrice } from "../../helpers/global-variables";
 
 const TaxIdEin = () => (
-    <Layout>
-        <SEO title="EIN / Tax ID Number | How to Apply for a Federal EIN" description="Also known as a “Tax ID number,” the EIN is a business federal tax ID that works like a Social Security Number for your business. Learn more." />
-        <ProductSchema
-            productUrl={`${process.env.ORDER_URL}/ein-form.php`}
-            productName="Business EIN / Tax ID Number"
-            productPrice={servicePrice.ein}
-            productDescription="Obtain a federal employer identification number for your business."
-        />
-        <Top imageName="mrs-bulb-tax-number" imageAlt="Mrs Bulb with tax numbers" ovalColor="blackpink">
-            <h1 style={{ maxWidth: "520px" }}>{top.header}</h1>
-            <p>{top.text}</p>
-            <Buttonsbox>
-                <Button content={top.button[0]} theme="primary56" width="200px" arrow />
-            </Buttonsbox>
-        </Top>
-        <About content={about} />
-        <Help content={help} />
-        <Faq content={faq} />
-        <Benefits page="tax-id-ein" />
-        <Articles categoryId={313} />
+	<Layout>
+		<SEO
+			title="EIN / Tax ID Number | How to Apply for a Federal EIN"
+			description="Also known as a “Tax ID number,” the EIN is a business federal tax ID that works like a Social Security Number for your business. Learn more. "
+		/>
+		<ProductSchema
+			productUrl={`${process.env.ORDER_URL}/ein-form.php`}
+			productName="Business EIN / Tax ID Number"
+			productPrice={servicePrice.ein}
+			productDescription="Obtain a federal employer identification number for your business."
+		/>
+		<Top
+			imageName="mrs-bulb-tax-number"
+			imageAlt="Mrs Bulb with tax numbers"
+			ovalColor="blackpink"
+		>
+			<h1 style={{ maxWidth: "520px" }}>{top.header}</h1>
+			<p>{top.text}</p>
+			<Buttonsbox>
+				<Button content={top.button[0]} theme="primary56" width="200px" arrow />
+			</Buttonsbox>
+		</Top>
+		<About content={about} />
+		<Help content={help} />
+		<Faq content={faq} />
+		<Benefits page="tax-id-ein" />
+		<Articles categoryId={313} />
 
-        <Helmet>
-            <script type="application/ld+json">
-                {`{
+		<Helmet>
+			<script type="application/ld+json">
+				{`{
                     "@context": "http://schema.org",
                     "@type": "VideoObject",
                     "name": "How to Get an EIN / Tax ID Number for your Business by Incfile",
@@ -51,9 +63,9 @@ const TaxIdEin = () => (
                     "embedUrl": "https://www.youtube.com/embed/8AuLOTqFHQ4",
                     "interactionCount": "33"
                 }`}
-            </script>
-        </Helmet>
-    </Layout>
+			</script>
+		</Helmet>
+	</Layout>
 );
 
 export default TaxIdEin;

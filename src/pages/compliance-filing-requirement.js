@@ -13,36 +13,55 @@ import ComplianceRequirementBox from "../atomic/state-corporation/compliance-req
 import ContentCenter from "../atomic/partials/content-center";
 
 //Texts
-import { top, about, entityTypeAndState, rocket } from "../static/learning-center-entity/ongoing-filing-requirements";
+import {
+	top,
+	about,
+	entityTypeAndState,
+	rocket,
+} from "../static/learning-center-entity/ongoing-filing-requirements";
 
 const OngoingFilingRequirements = () => {
-  const [dataApi, setDataApi] = React.useState({});
-  const [isLoading, setIsLoading] = React.useState(true);
-  const [header, setHeader] = React.useState("");
-  const renderComplianceSection = (data) => {
-    setDataApi(data);
-    setIsLoading(false);
-    setHeader(`Mandatory ${data.prices.state} Compliance Requirements`);
-  };
-  return (
-    <Layout>
-      <SEO title="Research State by State Compliance Filing Requirements" description="Research State by State Compliance Filing Requirements" />
-      <Top imageName="mrs-bulb-ongoing-filing-requirements-7487" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
-        <h1>{top.header}</h1>
-        <p>{top.text}</p>
-      </Top>
-      <About content={about} />
-      <EntityTypeAndState content={entityTypeAndState} getDataApi={renderComplianceSection} />
-      {!isLoading && dataApi && (
-        <ContentCenter contentWidth="970">
-          <TextCenterLayout headline={header} headlineWidth="700" style={{ marginBottom: `52px` }} />
-          <FilingTimeAndPriceBox data={dataApi} />
-          <ComplianceRequirementBox data={dataApi} />
-        </ContentCenter>
-      )}
-      <Rocket />
-    </Layout>
-  );
+	const [dataApi, setDataApi] = React.useState({});
+	const [isLoading, setIsLoading] = React.useState(true);
+	const [header, setHeader] = React.useState("");
+	const renderComplianceSection = (data) => {
+		setDataApi(data);
+		setIsLoading(false);
+		setHeader(`Mandatory ${data.prices.state} Compliance Requirements`);
+	};
+	return (
+		<Layout>
+			<SEO
+				title="Research State by State Compliance Filing Requirements"
+				description=""
+			/>
+			<Top
+				imageName="mrs-bulb-ongoing-filing-requirements-7487"
+				imageAlt="Mrs Bulb and with checklist"
+				ovalColor="green"
+			>
+				<h1>{top.header}</h1>
+				<p>{top.text}</p>
+			</Top>
+			<About content={about} />
+			<EntityTypeAndState
+				content={entityTypeAndState}
+				getDataApi={renderComplianceSection}
+			/>
+			{!isLoading && dataApi && (
+				<ContentCenter contentWidth="970">
+					<TextCenterLayout
+						headline={header}
+						headlineWidth="700"
+						style={{ marginBottom: `52px` }}
+					/>
+					<FilingTimeAndPriceBox data={dataApi} />
+					<ComplianceRequirementBox data={dataApi} />
+				</ContentCenter>
+			)}
+			<Rocket />
+		</Layout>
+	);
 };
 
 export default OngoingFilingRequirements;

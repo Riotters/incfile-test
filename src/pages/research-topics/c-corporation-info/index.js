@@ -24,7 +24,7 @@ const HelpCenter = () => (
 	<Layout>
 		<SEO
 			title="C Corporation Resources & Information | Incfile"
-			description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state."
+			description="Learn all about C Corporations, including requirements, business tax regulations, and the benefits of choosing this structure for your business. "
 		/>
 		<Top
 			imageName="mrs-bulb-help-center-article"

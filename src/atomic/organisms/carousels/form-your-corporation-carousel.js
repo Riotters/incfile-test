@@ -135,7 +135,7 @@ const Name = styled.span`
 	font-family: Avenir;
 	font-weight: 900;
 	font-size: 20px;
-	line-height: 1.2;
+	line-height: 28px;
 	color: ${color.black};
 	margin-bottom: 4px;
 `;

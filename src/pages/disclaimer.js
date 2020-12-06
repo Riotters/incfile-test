@@ -8,11 +8,14 @@ import Top from "../atomic/sections/manage-your-company/compare-state-filling-ti
 import LegalSections from "../atomic/sections/legal-disclaimer/legal-sections";
 
 const CompareStateTimes = () => (
-  <Layout>
-    <SEO title="Incfile Disclaimer Page" description="Incfile Legal Disclaimer" />
-    <Top content={top} />
-    <LegalSections content={legal_sections} />
-  </Layout>
+	<Layout>
+		<SEO
+			title="Incfile Disclaimer Page"
+			description="Incfile Legal Disclaimer "
+		/>
+		<Top content={top} />
+		<LegalSections content={legal_sections} />
+	</Layout>
 );
 
 export default CompareStateTimes;

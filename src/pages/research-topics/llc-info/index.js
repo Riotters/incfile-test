@@ -24,7 +24,7 @@ const HelpCenter = () => (
 	<Layout>
 		<SEO
 			title="LLC Resources & Articles | Incfile Help Center"
-			description="Starting or running an LLC? Find useful information about incorporating your LLC and keeping it legal, from annual reports to business taxes."
+			description="Starting or running an LLC? Find useful information about incorporating your LLC and keeping it legal, from annual reports to business taxes. "
 		/>
 		<Top
 			imageName="mrs-bulb-help-center-article"

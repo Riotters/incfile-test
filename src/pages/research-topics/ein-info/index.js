@@ -24,7 +24,7 @@ const HelpCenter = () => (
 	<Layout>
 		<SEO
 			title="Resources about Employer Identification Numbers | Incfile"
-			description="Find information and instructions for getting and managing the EIN number for your business. Read more here."
+			description="Find information and instructions for getting and managing the EIN number for your business. Read more here. "
 		/>
 		<Top
 			imageName="mrs-bulb-help-center-article"

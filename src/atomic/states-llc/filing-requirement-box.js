@@ -29,7 +29,7 @@ const Filing = styled.div`
 		font-family: Avenir;
 		font-weight: 900;
 		font-size: 20px;
-		line-height: 1.2;
+		line-height: 28px;
 		margin-bottom: 15px;
 		margin-top: 42px;
 	}
@@ -43,9 +43,9 @@ const Filing = styled.div`
 		margin-bottom: 8px;
 		display: flex;
 		flex-direction: column;
-        font-size: 16px;
-        gap: 30px;
-        align-items: baseline;
+		font-size: 16px;
+		gap: 30px;
+		align-items: baseline;
 
 		@media (min-width: 576px) {
 			flex-direction: row;

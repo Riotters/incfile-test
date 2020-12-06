@@ -24,7 +24,7 @@ const HelpCenter = () => (
 	<Layout>
 		<SEO
 			title="General Articles & Information on Forming an LLC or Corporation"
-			description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state."
+			description="Find general information regarding incorpoating a small business. We cover all the topics you need to know"
 		/>
 		<Top
 			imageName="mrs-bulb-help-center-article"
