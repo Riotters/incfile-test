@@ -32,7 +32,7 @@ const templateStyle = (template) => {
 			return `
                 font-family: MarkPro;
                 font-size: 24px;
-                line-height: 1.2;
+                line-height: 32px;
             `;
 		}
 		case 4: {
@@ -40,7 +40,7 @@ const templateStyle = (template) => {
                 font-family: Avenir;
                 font-weight: 900;
                 font-size: 20px;
-                line-height: 1.2;
+                line-height: 28px;
             `;
 		}
 		case 5: {
