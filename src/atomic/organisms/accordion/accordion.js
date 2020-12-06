@@ -330,9 +330,9 @@ const AccordionFaq = ({
 											</Icon>
 											<Content>
 												{!header && <span>{item.question}</span>}
-												{header === "3" && <h3>{item.question}</h3>}
-												{header === "4" && <h4>{item.question}</h4>}
-												{header === "5" && <h5>{item.question}</h5>}
+												{header === 3 && <h3>{item.question}</h3>}
+												{header === 4 && <h4>{item.question}</h4>}
+												{header === 5 && <h5>{item.question}</h5>}
 											</Content>
 										</Button>
 									</AccordionItemButton>
