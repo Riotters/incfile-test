@@ -15,7 +15,8 @@ export const howToGuide = [
   {
     type: `header`,
     content: `How to Start an LLC in Nebraska`,
-    size: 2,
+    size: 1,
+		template: 2,
     marginBottom: 40,
   },
   {

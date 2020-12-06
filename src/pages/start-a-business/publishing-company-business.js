@@ -39,11 +39,11 @@ import {TabPanel} from "react-tabs";
 
 const ConstructionCompany = () => (
     <Layout>
-        <SEO title="How to Start Publishing Company"
-             description="Everyone likes traveling — new horizons, beautiful destinations and unique experiences mean we love packing our bags and spending time away from work and home."/>
+        <SEO title="How to Start a Publishing Company | Trends, Tips & Advice"
+             description="We want to help you get your publishing business off the ground. Read our guide for ideas, tips, and important things to know before you get started."/>
 
         <Top ovalColor="blue" imageName="publishing-company-main" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
-            <h1>How to Start Publishing Company</h1>
+            <h1>How to Start a Publishing Company</h1>
             <p>The world of publishing is changing fast, and if you have an interesting and unique approach, you can
                 create a thriving publishing business.</p>
             <ButtonsBox>

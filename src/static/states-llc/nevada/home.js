@@ -1,7 +1,7 @@
 import { color } from "../../../atomic/atoms/styles/colors";
 
 export const top = {
-	header: `Forming an LLC in Nevada: Your Complete Guide`,
+	header: `Why Form a Limited Liability Company (LLC)?`,
 	text: `$0 + State Fee & 1st Year FREE Registered Agent`,
 	buttons: [
 		{
@@ -15,7 +15,8 @@ export const howToGuide = [
 	{
 		type: `header`,
 		content: `Forming an LLC in Nevada: Your Complete Guide`,
-		size: 2,
+		size: 1,
+		template: 2,
 		marginBottom: 24,
 	},
 	{
