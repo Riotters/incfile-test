@@ -6,7 +6,7 @@ import parse from "html-react-parser";
 
 const InfoCardContent = ({title, content}) => (
     <ContentWrapper>
-        <Heading size={5} style={{fontSize: "24px"}}>{title}</Heading>
+        <Heading size={3} template={5} style={{fontSize: "24px"}}>{title}</Heading>
         <Paragraph mixed>{parse(content)}</Paragraph>
     </ContentWrapper>
 );
