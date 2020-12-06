@@ -795,6 +795,7 @@ export const corporation = [
   },
   {
     type: "accordion",
+    header: 3,
     content: {
       items: [
         {
@@ -1797,6 +1798,7 @@ export const taxes = [
   },
   {
     type: "accordion",
+    header: 4,
     content: {
       items: [
         {
@@ -1864,8 +1866,7 @@ export const taxes = [
     content: [
       {
         header: "Self-Employment Tax",
-        text: `<p>Because your Illinois corporation income flows through to your personal tax return, you must pay self-employment tax (also known as FICA, Social Security or Medicare tax) on your earnings. This is typically at a rate of 15.3 percent. You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.</p>
-           <p>In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary” so it would not be subject to self-employment tax. <a href="s-corporation-tax-calculator/">Find out how this can save you money.</a></p>`,
+        text: `Because your Illinois corporation income flows through to your personal tax return, you must pay self-employment tax (also known as FICA, Social Security or Medicare tax) on your earnings. This is typically at a rate of 15.3 percent. You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary” so it would not be subject to self-employment tax. <a href="s-corporation-tax-calculator/">Find out how this can save you money.</a>`,
         svg: SelfEmployedTaxSVG,
         backgroundColor: color.orange2,
         shadowColor: shadow.orange2,
@@ -1911,7 +1912,7 @@ export const taxes = [
       {
         header: "Stock Dividends From C Corporations",
         text:
-          "A Illinois C Corporation may pay shareholders dividends as a share of the profits of the company. The value of dividends that each shareholder is entitled to depends on how many shares they own.<br /><br />Dividends that are distributed to shareholders are taxed twice: first at the corporate level as profit (on the corporation’s Form 1120) and again at the individual level as stock dividends (on the shareholder's Form 1040).",
+          "A C Corporation may pay shareholders dividends as a share of the profits of the company. The value of dividends that each shareholder is entitled to depends on how many shares they own.<br /><br />Dividends that are distributed to shareholders are taxed twice: first at the corporate level as profit (on the corporation’s Form 1120) and again at the individual level as stock dividends (on the shareholder's Form 1040).",
         svg: DividentsSVG,
         backgroundColor: color.purple2,
         shadowColor: shadow.purple2,
@@ -1992,9 +1993,14 @@ export const afterFormation = [
     marginBottom: 48,
   },
   {
+    type: "text",
+    content: "Benefits of Incfile's Trademark service include:",
+    marginBottom: 48,
+  },
+  {
     type: "list-dot",
     content: {
-      header: "Benefits of Incfile's Trademark service include:",
+      header: "",
       list: [
         "Legal counsel from an experienced trademark attorney",
         "A thorough search of existing trademarks",
