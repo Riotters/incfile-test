@@ -83,7 +83,7 @@ const LandscapingBusiness = () => (
             <ReactTabs content={tabs}>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Starting a Landscaping Business</Heading>
+                        <Heading size={2} template={3} left>Starting a Landscaping Business</Heading>
                         <Paragraph big>
                             We all want to live in a beautiful environment, and part of that is ensuring our yards and
                             gardens are properly designed, maintained and looked after. This provides landscape business
@@ -174,7 +174,7 @@ const LandscapingBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Understanding the World of the Landscaping Business</Heading>
+                        <Heading size={2} template={3} left>Understanding the World of the Landscaping Business</Heading>
 
                         <Paragraph big style={{fontWeight: "bold"}}>
                             Key Landscaping Business and Background Data and Statistics
@@ -227,7 +227,7 @@ const LandscapingBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>What Your Landscaping Customers Are Looking for</Heading>
+                        <Heading size={2} template={3} left>What Your Landscaping Customers Are Looking for</Heading>
 
                         <Paragraph big>What your customers need will depend on the type of services you provide and the
                             types of clients you plan to work for. Here are some examples based on what you decide to
@@ -399,7 +399,7 @@ const LandscapingBusiness = () => (
                 <GridSectionList>
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={IdentifyIcon}
                                         imageBackgroundColor={color.babyblue2} imageShadowColor={color.babyblue2}>
-                        <Heading size={4}>Identify your business’s unique selling points (USPs)</Heading>
+                        <Heading size={2} template={4} left>Identify your business’s unique selling points (USPs)</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             These are the areas that will set you apart from competitors and encourage customers to come
                             to you. You might have better pricing, a higher-quality service, faster delivery or some
@@ -411,7 +411,7 @@ const LandscapingBusiness = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={LookIcon}
                                         imageBackgroundColor={color.green2} imageShadowColor={color.green2}>
-                        <Heading size={4}>Look at who your competitors are in the space</Heading>
+                        <Heading size={2} template={4} left>Look at who your competitors are in the space</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             Look at who your competitors are in the space: Having competitors is a good thing as it
                             shows there’s a market. You will want to find out what local competitors offer the same
@@ -421,7 +421,7 @@ const LandscapingBusiness = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={MarketIcon}
                                         imageBackgroundColor={color.orange2} imageShadowColor={color.orange2}>
-                        <Heading size={4}>Do market research</Heading>
+                        <Heading size={2} template={4} left>Do market research</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             Test whether people will commit to spending real money on what you’re offering.
                         </Paragraph>
@@ -429,7 +429,7 @@ const LandscapingBusiness = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={TalkIcon}
                                         imageBackgroundColor={color.purple2} imageShadowColor={color.purple2}>
-                        <Heading size={4}>Talk to clients</Heading>
+                        <Heading size={2} template={4} left>Talk to clients</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             See if there are any market research reports for landscaping businesses: Search locally,
                             nationally or internationally.
@@ -438,7 +438,7 @@ const LandscapingBusiness = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={InvolvedIcon}
                                         imageBackgroundColor={color.red2} imageShadowColor={color.red2}>
-                        <Heading size={4}>Get involved with business communities and discussion groups</Heading>
+                        <Heading size={2} template={4} left>Get involved with business communities and discussion groups</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             Ask questions about landscaping businesses. You can find links to some excellent discussion
                             groups later in the article.
@@ -473,7 +473,7 @@ const LandscapingBusiness = () => (
             </Oval4>
             <Container>
                 <CenterBox>
-                    <Heading>Write a Business Plan for Your Landscaping Business</Heading>
+                    <Heading size={2} template={1} left>Write a Business Plan for Your Landscaping Business</Heading>
 
                     <Paragraph big>Finally, you should put your business plan together. Business plans do vary slightly,
                         but they should cover the following areas:</Paragraph>
@@ -547,7 +547,7 @@ const LandscapingBusiness = () => (
 
             <BusinessOwnerResponsibilities>
                 <ImageContent image="unique-business-2" paddingTop="60">
-                    <Heading size={4} style={{fontSize: "24px"}}>
+                    <Heading size={2} template={4} left style={{fontSize: "24px"}}>
                         Choose the Right Business Structure and Register Your Landscaping Business
                     </Heading>
                     <Paragraph big>Now that you have all the background information for your landscaping business, it’s
@@ -786,7 +786,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 76px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;

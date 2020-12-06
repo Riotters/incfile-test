@@ -36,7 +36,7 @@ const TitleBox = styled.div`
         margin: 0 auto;
     }
     
-    h3{
+    h2{
         color: #1d1d1d;
         font-size: 40px;
         text-align: left;
@@ -52,7 +52,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 76px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;
@@ -91,7 +91,7 @@ const ValidatingBusinessIdea = () => (
 
             <GridSection>
                 <TitleBox>
-                    <Heading size={3}>Validating Your Publishing Business Idea</Heading>
+                    <Heading size={2} template={3} left>Validating Your Publishing Business Idea</Heading>
                     <Paragraph big>
                         These areas are just starting points — there are many different types of publishing businesses. Once you’ve identified the areas you’d like to go into, you need
                         to validate your publishing business idea.
@@ -110,7 +110,7 @@ const ValidatingBusinessIdea = () => (
                 <GridSectionList>
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon1} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Identify your publishing business’ unique selling points (USPs)
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -120,7 +120,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon3} imageBackgroundColor={color.yellow2}
                                         imageShadowColor={color.yellow2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Understand your construction market
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -132,7 +132,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon2} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Look at who your construction competitors are in the space
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -143,7 +143,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon4} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Get involved with business communities and discussion groups
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>

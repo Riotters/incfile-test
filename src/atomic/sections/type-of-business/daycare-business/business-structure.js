@@ -53,7 +53,7 @@ const CoachBusinessStructure = () => (
 
     <BusinessOwnerResponsibilities>
       <ImageContent image="unique-business-green" paddingTop="60">
-        <Heading size={4} style={{ fontSize: "24px" }}>
+        <Heading size={2} template={4} left style={{ fontSize: "24px", "max-width": "unset" }}>
           Choose the Right Business Structure and Register Your Daycare Business
         </Heading>
         <Paragraph big>There are five main business structures you can have in the U.S., and it’s important to choose the right one. We’ve shared your options below. They are:</Paragraph>

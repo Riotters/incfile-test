@@ -8,10 +8,11 @@ import IconCircle from "./icons/circle";
 import Image from "../atomic/atoms/image/image";
 import CloseIcon from "../images/icons/close.inline.svg";
 import parse from "html-react-parser";
+import {Heading} from "../atomic/atoms/typography/heading";
 
 const Wrapper = styled.div`
     padding-top: 24px;
-    width 100%;
+    width: 100%;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -45,7 +46,7 @@ const Box = styled.div`
         max-width: ${props => props.width};
     }
     
-    h4 {
+    h3 {
         width: 100%;
         line-height: 27px;
     }
@@ -127,6 +128,8 @@ const AdeventageLink = styled(Link)`
 const Adventages = ({
 	className,
 	headline,
+	headlineSize = 3,
+	headlineTemplateSize = 4,
 	text,
 	colorStroke,
 	circleBackgroundColor,
@@ -178,7 +181,7 @@ const Adventages = ({
 						<Image filename={imageName} />
 					</ImageWrapper>
 				)}
-				{headline && <h4>{headline}</h4>}
+				{headline && <Heading size={headlineSize} template={headlineTemplateSize}>{headline}</Heading>}
 
 				{text && <p>{parse(text)}</p>}
 

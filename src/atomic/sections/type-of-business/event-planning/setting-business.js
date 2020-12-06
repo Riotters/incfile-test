@@ -6,6 +6,7 @@ import { color } from "../../../../components/styles/colors";
 import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/bottom-left-transparent-green2.inline.svg";
 import { Link } from "gatsby";
+import {Heading} from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
   <GreenContainer>
@@ -20,7 +21,7 @@ const SettingBusiness = () => (
     <Container>
       <ImageBoxes>
         <TopImageBox image="display-ads" color={color.purple3}>
-          <h4>Marketing Your Party Planning Business</h4>
+          <Heading size={3} template={4}>Marketing Your Party Planning Business</Heading>
           <p>
             Marketing will be a huge part of your party or event planning business, and most of your advertising will target local clients. Naturally, you will need an awesome website, but you'll also need to get branding, newsletters, digital ads, social media accounts and other channels in place.
             Be sure to target your identified niche and promote the unique selling points of your planning business.
@@ -28,7 +29,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="side-4" color={color.green3}>
-          <h4>Equipment Needed by an Event Planner</h4>
+          <Heading size={3} template={4}>Equipment Needed by an Event Planner</Heading>
           <p>
             You will almost certainly use onsite equipment, fixtures, features and furnishings for your parties and events, or you will rent them as needed. To begin with, you probably won’t need to hold much stock yourself — but it will be helpful to have an excellent idea of what your vendors can
             provide. You will need equipment for your home office, including a computer, laptop or tablet.
@@ -36,7 +37,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
-          <h4>Finances and Taxes</h4>
+          <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             You will need a separate business bank account for your party planning business. You might also want to consider a business credit card. Additionally, you will need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile
             <Link to="/business-accounting/">we can even help you file your taxes</Link>.
@@ -44,7 +45,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="software" color={color.blue3}>
-          <h4>Software and Process</h4>
+          <Heading size={3} template={4}>Software and Process</Heading>
           <p>
             You will need a separate business bank account for your party planning business. You might also want to consider a business credit card. Additionally, you will need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile we can even help you file your
             taxes.
@@ -52,7 +53,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-          <h4>Employees</h4>
+          <Heading size={3} template={4}>Employees</Heading>
           <p>
             To begin with, you probably won’t need to hire anyone else for your event planning business, especially if you’re a good administrator. You will be relying on vendors to provide staff and expertise, including contracting with local temporary staffing businesses to provide workers for
             events. You will also work with locations like hotels to source employees for parties held on their premises.
@@ -60,7 +61,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="location" color={color.red3}>
-          <h4>Location of Your Planning Business</h4>
+          <Heading size={3} template={4}>Location of Your Planning Business</Heading>
           <p>
             Although you will be arranging parties and events in big locations, it’s likely you can administer and manage your party planning business from home or a shared working space. This is great as it reduces your office costs considerably. Don't forget that if you work from home, you can
             write off part of your utility and housing costs against your taxes.

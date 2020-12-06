@@ -170,7 +170,7 @@ const RestaurantBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>
+                        <Heading size={2} template={3} left>
                             Understanding the World of the Restaurant Business
                         </Heading>
                         <Paragraph big>

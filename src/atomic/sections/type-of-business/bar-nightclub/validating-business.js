@@ -32,7 +32,7 @@ const TitleBox = styled.div`
         margin: 0 auto;
     }
     
-    h3{
+    h2{
         color: #1d1d1d;
         font-size: 40px;
         text-align: left;
@@ -48,7 +48,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 76px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;
@@ -100,7 +100,7 @@ const ValidatingBusinessIdea = () => (
 
             <GridSection>
                 <TitleBox>
-                    <Heading size={3}>
+                    <Heading size={2} template={3} left>
                         Plan Your Bar or Club Business
                     </Heading>
                     <Paragraph big>
@@ -111,7 +111,7 @@ const ValidatingBusinessIdea = () => (
                         In short, you need a business plan — here’s how to think about your business idea.
                     </Paragraph>
 
-                    <Heading size={3} style={{ marginTop: "100px" }}>
+                    <Heading size={2} template={3} left style={{ marginTop: "100px" }}>
                         Do Market Research and Validate Your Bar or Club Products and Services
                     </Heading>
 
@@ -125,7 +125,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={MarketIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Find market research reports for bar or club businesses
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -135,7 +135,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={LookIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Check out your competitors in the space
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -145,7 +145,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={TalkIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Talk to patrons
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -155,7 +155,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={IdetifyIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Identify your business’s unique selling points (USPs)
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -167,7 +167,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={InvolvedIcon} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.purple2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Get involved with business communities and discussion groups
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>

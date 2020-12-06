@@ -137,7 +137,7 @@ const FranchiseBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Understanding the World of the Franchise Business</Heading>
+                        <Heading size={2} template={3} left>Understanding the World of the Franchise Business</Heading>
 
                         <Paragraph big style={{fontFamily: "Avenir", fontWeight: "900", color: color.black}}>
                             Key Franchise Business Background Data and Statistics

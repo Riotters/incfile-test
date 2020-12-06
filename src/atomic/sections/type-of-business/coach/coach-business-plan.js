@@ -63,7 +63,7 @@ const CoachBusinessPlan = () => (
     </OvalCenter>
     <Container>
       <BusinessOwnerResponsibilities>
-        <Heading size={4} className="title">
+        <Heading size={2} template={4} left className="title">
           Your Life or Business Coaching Business Needs a Plan
         </Heading>
         <Paragraph big>

@@ -39,7 +39,7 @@ const TitleBox = styled.div`
         margin: 0 auto;
     }
     
-    h3{
+    h2{
         color: #1d1d1d;
         font-size: 40px;
         text-align: left;
@@ -55,7 +55,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 76px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;
@@ -98,7 +98,7 @@ const ValidatingBusinessIdea = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={3}>Validating Your Travel Agency Business Idea</Heading>
+                    <Heading size={2} template={3} left>Validating Your Travel Agency Business Idea</Heading>
                     <Paragraph big>
                         The travel and tourism ideas above are all great starting points, but you will need to build on
                         them to make the business your own. You have unique skills and insight that you can use to
@@ -111,7 +111,7 @@ const ValidatingBusinessIdea = () => (
                 <GridSectionList>
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon1} imageBackgroundColor={color.yellow2}
                                         imageShadowColor={color.yellow2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Identify your travel agency business’s unique selling points (USPs)
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -123,7 +123,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon2} imageBackgroundColor={color.blue2}
                                         imageShadowColor={color.blue2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Look at who your travel competitors
                             are in the space
                         </Heading>
@@ -137,7 +137,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon3} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Understand your travel and tourism market
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -149,7 +149,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon4} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Talk to clients
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -160,7 +160,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon5} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Get involved with business communities and discussion groups
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>

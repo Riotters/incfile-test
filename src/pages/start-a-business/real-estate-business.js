@@ -60,7 +60,7 @@ const RealEstateBusiness = () => (
             <ReactTabs content={tabs} style={{marginTop: "100px"}}>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Starting a Real Estate business</Heading>
+                        <Heading size={2} template={3} left>Starting a Real Estate business</Heading>
                         <Paragraph big>
                             The world of real estate investing is an exciting one to get into. Whether you want to buy,
                             sell, develop, or rent out real estate, there are plenty of opportunities in the residential
@@ -137,7 +137,7 @@ const RealEstateBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Understand the World of Real Estate Investing</Heading>
+                        <Heading size={2} template={3} left>Understand the World of Real Estate Investing</Heading>
                         <Paragraph big>Let’s start by exploring the world of real estate and understanding what the
                             opportunities are.</Paragraph>
                         <Paragraph big style={{
@@ -274,7 +274,7 @@ const RealEstateBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Questions to Ask Before You Get into Real Estate</Heading>
+                        <Heading size={2} template={3} left>Questions to Ask Before You Get into Real Estate</Heading>
                         <Paragraph big style={{
                             marginTop: "48px",
                             fontFamily: "Avenir",

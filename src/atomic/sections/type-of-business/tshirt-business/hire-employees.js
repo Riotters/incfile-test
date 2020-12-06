@@ -31,7 +31,7 @@ const Oval = styled.div`
     width: 570px;
     right: 0;
     top: 0px;
-    position absolute;
+    position: absolute;
     display: none;
     
     @media (min-width: 1200px){

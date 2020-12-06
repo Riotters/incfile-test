@@ -33,7 +33,7 @@ const Wrapper = styled.div`
         }
     }
 
-    h4 {
+    h3 {
         padding: 24px 24px 16px;
     }
 

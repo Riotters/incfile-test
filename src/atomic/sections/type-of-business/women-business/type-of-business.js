@@ -51,7 +51,7 @@ const TypeBusiness = () => (
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon1}
                                         imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             A business that fits with your schedule
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -63,7 +63,7 @@ const TypeBusiness = () => (
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon2}
                                         imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             A business that doesn’t cost much
                             to start up
                         </Heading>
@@ -77,7 +77,7 @@ const TypeBusiness = () => (
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon3}
                                         imageBackgroundColor={color.yellow2}
                                         imageShadowColor={color.yellow2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             A business that gives you freedom
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -89,7 +89,7 @@ const TypeBusiness = () => (
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon4}
                                         imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             A business that gives you flexibility
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -100,7 +100,7 @@ const TypeBusiness = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={Icon5} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.red2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             A business that fits around
                             caregiving needs
                         </Heading>
@@ -358,7 +358,7 @@ const TitleBox = styled.div`
         margin: 0 auto;
     }
     
-    h3{
+    h2{
         color: #1d1d1d;
         font-size: 40px;
         text-align: left;
@@ -374,7 +374,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 76px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;

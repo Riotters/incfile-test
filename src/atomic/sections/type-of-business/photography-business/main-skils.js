@@ -5,6 +5,7 @@ import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
+import {Heading} from "../../../atoms/typography/heading";
 
 const MainSkils = () => (
     <WrapperContainer>
@@ -24,28 +25,28 @@ const MainSkils = () => (
 
             <ImageBoxes>
                 <TopImageBox image="display-ads" color={color.purple3}>
-                    <h4>Marketing skills</h4>
+                    <Heading size={3} template={4}>Marketing skills</Heading>
                     <p>
                         Branding, local advertising, local search-engine optimization, understanding of local businesses and freelance photography job market.
                     </p>
                 </TopImageBox>
 
                 <TopImageBox image="business-administration" color={color.yellow3}>
-                    <h4>Business management skills</h4>
+                    <Heading size={3} template={4}>Business management skills</Heading>
                     <p>
                         Accounting, financial management, administration and client relationship management.
                     </p>
                 </TopImageBox>
 
                 <TopImageBox image="secondary-photography-skills" color={color.blue3}>
-                    <h4>Secondary photography skills</h4>
+                    <Heading size={3} template={4}>Secondary photography skills</Heading>
                     <p>
                         Photo editing and manipulation (like Photoshop), post-production skills, etc.
                     </p>
                 </TopImageBox>
 
                 <TopImageBox image="specialized-photography-skills-2" color={color.red3}>
-                    <h4>Specialized photography skills</h4>
+                    <Heading size={3} template={4}>Specialized photography skills</Heading>
                     <p>
                         You will want extensive training and certification in your chosen area.
                     </p>

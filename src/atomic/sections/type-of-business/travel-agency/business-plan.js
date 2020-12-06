@@ -67,7 +67,7 @@ const BusinessPlan = () => (
     </OvalCenter>
     <Container>
       <BusinessOwnerResponsibilities>
-        <Heading size={4} className="title">
+        <Heading size={2} template={4} left className="title">
           Your Travel Agency Needs a Business Plan
         </Heading>
         <Paragraph big>Profit margins in travel agency businesses can be tight (between 6 and 12 percent), so you need to stay on top of your finances and business planning.</Paragraph>

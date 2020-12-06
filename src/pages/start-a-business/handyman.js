@@ -74,7 +74,7 @@ const Handyman = () => (
             <ReactTabs content={tabs}>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>A handyman business has several advantages over other types of
+                        <Heading size={2} template={3} left>A handyman business has several advantages over other types of
                             business:</Heading>
 
                         <ListWrapper>
@@ -206,7 +206,7 @@ const Handyman = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Helpful software for handyman business owners</Heading>
+                        <Heading size={2} template={3} left>Helpful software for handyman business owners</Heading>
 
                         <Paragraph big>How successful can you be as a handyman? Let’s dig into the facts and
                             figures.</Paragraph>
@@ -233,7 +233,7 @@ const Handyman = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Is a Handyman Business Right for You?</Heading>
+                        <Heading size={2} template={3} left>Is a Handyman Business Right for You?</Heading>
                         <Paragraph big>Although it can be exciting to form a handyman business, there will be
                             significant demands on you as a small business owner. Here are some of the things you can
                             expect.</Paragraph>
@@ -358,7 +358,7 @@ const Handyman = () => (
             </OvalGreen2>
             <Container>
                 <CenterBox>
-                    <Heading>Your Handyman Business Needs a Plan</Heading>
+                    <Heading size={2} template={1} left>Your Handyman Business Needs a Plan</Heading>
 
                     <Paragraph big>If you’re a home handyman business, you might be wondering if you really need a
                         business plan? Yes, you do.</Paragraph>
@@ -454,7 +454,7 @@ const Handyman = () => (
 
             <BusinessOwnerResponsibilities>
                 <ImageContent image="unique-business-green" paddingTop="60">
-                    <Heading size={4} style={{fontSize: "24px"}}>
+                    <Heading size={2} template={4} left style={{fontSize: "24px"}}>
                         Choose the Right Business Structure and Register Your Handyman Business
                     </Heading>
                     <Paragraph big>There are five main business structures you can have in the U.S., and it’s important

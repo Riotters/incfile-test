@@ -133,7 +133,7 @@ const SideBusiness = () => (
 				</TabPanel>
 				<TabPanel>
 					<PanelWrapper>
-						<Heading size={3}>Why You Should Start a New Side Business</Heading>
+						<Heading size={2} template={3} left>Why You Should Start a New Side Business</Heading>
 
 						<Paragraph big>
 							If you’re wondering how viable it is to start a side business in
@@ -235,7 +235,7 @@ const SideBusiness = () => (
 			</OvalGreen>
 			<Container>
 				<CenterBox>
-					<Heading>Your Side Business Needs a Business Plan</Heading>
+					<Heading size={2} template={1} left>Your Side Business Needs a Business Plan</Heading>
 
 					<Paragraph big>
 						It’s easy to think you won’t need a business plan for a side
@@ -322,7 +322,7 @@ const SideBusiness = () => (
 
 			<BusinessOwnerResponsibilities>
 				<ImageContent image="unique-business-2" paddingTop="60">
-					<Heading size={4} style={{ fontSize: "24px" }}>
+					<Heading size={2} template={4} left style={{ fontSize: "24px" }}>
 						Choose the Right Business Structure and Register Your Side Business
 					</Heading>
 					<Paragraph big>

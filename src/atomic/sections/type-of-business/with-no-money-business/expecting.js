@@ -56,7 +56,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 76px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;
@@ -103,7 +103,7 @@ const Expecting = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={BallsIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             There will always be too much to do and too little money
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -113,7 +113,7 @@ const Expecting = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={BombIcon} imageBackgroundColor={color.yellow2}
                                         imageShadowColor={color.yellow2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             The biggest issue you will have
                             is cash flow
                         </Heading>
@@ -125,7 +125,7 @@ const Expecting = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={CompetitionIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             There is lots (and lots) of competition
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -137,7 +137,7 @@ const Expecting = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={HeartIcon} imageBackgroundColor={color.red2}
                                         imageShadowColor={color.red2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             There are plenty of people out there who can help
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -149,7 +149,7 @@ const Expecting = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={PaperIcon} imageBackgroundColor={color.blue2}
                                         imageShadowColor={color.blue2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Getting your idea and product or service fit right is essential
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -160,7 +160,7 @@ const Expecting = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={BookIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Grow organically
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -171,7 +171,7 @@ const Expecting = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={LearnIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Learn from your mistakes
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -181,7 +181,7 @@ const Expecting = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={BoltIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Expect to be stressed and anxious
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>

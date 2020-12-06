@@ -8,6 +8,7 @@ import { Link } from "gatsby";
 import OvalSvg from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import OvalSvg2 from "../../../../images/ovals/bottom-right-transparent-babyblue2.inline.svg";
 import ContentCenter from "../../../partials/content-center";
+import {Heading} from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
   <GreenContainer>
@@ -25,7 +26,7 @@ const SettingBusiness = () => (
     <Container>
       <ImageBoxes>
         <TopImageBox image="location" color={color.red3}>
-          <h4>Location of your business</h4>
+          <Heading size={3} template={4}>Location of your business</Heading>
           <p>
             The location of your side business will depend on the type of business you run. In almost all cases, you’ll run your side business mainly from home, even if your main place of work is your car or property that you’re renting out. Remember that if you’re selling products, you will need
             space to store your stock.
@@ -33,12 +34,12 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="side-3" color={color.orange3}>
-          <h4>Equipment</h4>
+          <Heading size={3} template={4}>Equipment</Heading>
           <p>Just like the location of your business, the equipment you need will depend on the type of side business you’re running. In most cases a laptop and smartphone will be sufficient, although other types of side businesses may need more specialized equipment.</p>
         </TopImageBox>
 
         <TopImageBox image="display-ads" color={color.purple3}>
-          <h4>Marketing</h4>
+          <Heading size={3} template={4}>Marketing</Heading>
           <p>
             If you’re in an online marketplace, you probably won’t need to do much marketing. It’s important to represent yourself in the best possible way and gather good reviews. For people with another type of side business, your marketing needs will vary depending on the specifics of what you’re
             selling.
@@ -46,7 +47,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
-          <h4>Finances and Taxes</h4>
+          <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             You will need a separate{" "}
             <a href="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">
@@ -57,7 +58,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="software" color={color.blue3}>
-          <h4>Software and Processes</h4>
+          <Heading size={3} template={4}>Software and Processes</Heading>
           <p>The right software can make running your side business quicker and more efficient. See our great list of the top apps at the end of this guide.</p>
         </TopImageBox>
       </ImageBoxes>

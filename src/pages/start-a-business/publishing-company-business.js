@@ -71,7 +71,7 @@ const ConstructionCompany = () => (
                             digital media are becoming increasingly popular.
                         </Paragraph>
 
-                        <Heading size={3}>For an entrepreneur with the right idea, publishing can be a great industry to
+                        <Heading size={2} template={3} left>For an entrepreneur with the right idea, publishing can be a great industry to
                             get into.</Heading>
 
                         <Paragraph big style={{marginBottom: "40px"}}>
@@ -84,7 +84,7 @@ const ConstructionCompany = () => (
 
                         <Colorbox className="box" theme="icon" Icon={MegafonIcon} color={color.babyblue3} curve
                                   curveColor={color.babyblue1}>
-                            <Heading size={4}>We know it can be daunting to start a publishing business, and we’re here
+                            <Heading size={3} template={4}>We know it can be daunting to start a publishing business, and we’re here
                                 to help.</Heading>
 
                             <Paragraph bottomMargin={0}>We’ve supported over 100,000 people to form their business and
@@ -166,7 +166,7 @@ const ConstructionCompany = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Why You Should Start a New Travel Agency</Heading>
+                        <Heading size={2} template={3} left>Why You Should Start a New Travel Agency</Heading>
 
                         <Paragraph big>This is why publishing businesses are so exciting — how can you be part of that
                             success? We're here to help you figure that out.</Paragraph>
@@ -201,7 +201,7 @@ const ConstructionCompany = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Is a Publishing Company Right for You?</Heading>
+                        <Heading size={2} template={3} left>Is a Publishing Company Right for You?</Heading>
 
                         <Paragraph big bottomMargin={52}>
                             Although it can be exciting to form a publishing business, there will be significant demands

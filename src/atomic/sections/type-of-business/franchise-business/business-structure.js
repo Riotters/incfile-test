@@ -57,7 +57,7 @@ const BusinessStructure = () => (
 
 		<BusinessOwnerResponsibilities>
 			<ImageContent image="unique-business-green" paddingTop="60">
-				<Heading size={4} style={{ fontSize: "24px" }}>
+				<Heading size={2} template={4} left style={{ fontSize: "24px" }}>
 					Choose the Right Business Structure and Register Your Franchise
 					Business
 				</Heading>

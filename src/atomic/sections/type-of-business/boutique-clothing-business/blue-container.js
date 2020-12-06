@@ -50,7 +50,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 76px;
-    margin-bottom 76px;
+    margin-bottom: 76px;;
     
     @media (min-width: 992px){
         grid-template-columns: 470px 470px;
@@ -88,7 +88,7 @@ const BlueContainer = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={3}>Validating Your Boutique Business Idea</Heading>
+                    <Heading size={2} template={3} left>Validating Your Boutique Business Idea</Heading>
                     <Paragraph big>
                         Remember, the ideas above are just a starting point, You can define and tweak exactly what type of boutique clothing business you want to run by conducting your own research. Before committing too much time, energy and money into your new retail clothing store, it’s important to test the marketplace.
                     </Paragraph>
@@ -97,7 +97,7 @@ const BlueContainer = () => (
                 <GridSectionList>
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={Icon1} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Identify your boutique clothing business’ unique selling points (USPs)
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -107,7 +107,7 @@ const BlueContainer = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={Icon2} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Look at who your competitors are in the space
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -117,7 +117,7 @@ const BlueContainer = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={Icon3} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Understand your market
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -127,7 +127,7 @@ const BlueContainer = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" className="containerMargin" SvgImage={Icon4} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Talk to clients
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>

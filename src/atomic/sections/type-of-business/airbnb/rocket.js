@@ -8,7 +8,7 @@ import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Button from "../../../molecules/buttons/button";
 
-const Rocket = () => (
+const Rocket = ({ headingSize = 2, headingSeizeTemplate = 4, left=true }) => (
   <Wrapper>
     <Oval>
       <OvalSVG />
@@ -24,7 +24,7 @@ const Rocket = () => (
         <Image filename="rocket-2x" alt="rocket lunch" />
       </RocketWrapper>
       <Content>
-        <Heading size={4} style={{ fontFamily: "MarkPro, sans-serif", fontSize: "40px" }}>
+        <Heading size={headingSize} template={headingSeizeTemplate} left={left} style={{ fontFamily: "MarkPro, sans-serif", fontSize: "40px" }}>
           Are You Ready to Start an Airbnb?
         </Heading>
         <Paragraph big>If you have an extra room, or a whole property you want to rent out, Airbnb makes it easy. If you can create great listings, build positive reviews, understand your competitors and put together a solid business plan, you will have every chance for success</Paragraph>
@@ -46,7 +46,7 @@ const Wrapper = styled.div`
 `;
 
 const RocketWrapper = styled.div`
-  position absolute;
+  position: absolute;
     left: -15%;
     top: calc(50% - 313px);
     width: 720px;

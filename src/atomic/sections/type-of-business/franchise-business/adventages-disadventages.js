@@ -37,7 +37,7 @@ const AdventagesSection = () => (
 
                                 <TopImageBox image="choose-to-form-your-business-immediately-if-name-is-available-02"
                                              color={color.yellow3}>
-                                    <h4>Branding</h4>
+                                    <Heading size={3} template={4}>Branding</Heading>
                                     <p>
                                         You get access to a business with a recognized brand, immediately setting you
                                         apart from independent businesses. Franchisors have spent time, effort and
@@ -46,7 +46,7 @@ const AdventagesSection = () => (
                                 </TopImageBox>
 
                                 <TopImageBox image="display-ads" color={color.purple3}>
-                                    <h4>Marketing</h4>
+                                    <Heading size={3} template={4}>Marketing</Heading>
                                     <p>
                                         Local marketing and strong branding will be essential to your success. You will
                                         likely need a website and a strong social media presence too.
@@ -54,7 +54,7 @@ const AdventagesSection = () => (
                                 </TopImageBox>
 
                                 <TopImageBox image="we-have-an-interactive-help-service-02" color={color.blue3}>
-                                    <h4>Support</h4>
+                                    <Heading size={3} template={4}>Support</Heading>
                                     <p>
                                         Franchisors are familiar with helping their franchisees get set up. They will
                                         provide resources, training, advice, coaching and support in creating a
@@ -68,7 +68,7 @@ const AdventagesSection = () => (
                             <ImageBoxes>
 
                                 <TopImageBox image="not-guaranted-icon" color={color.red3}>
-                                    <h4>Results are not guaranteed</h4>
+                                    <Heading size={3} template={4}>Results are not guaranteed</Heading>
                                     <p>
                                         Even with a successful franchisor behind you, results are not guaranteed. The
                                         success of your business will still be mainly down to your management skills,
@@ -78,7 +78,7 @@ const AdventagesSection = () => (
                                 </TopImageBox>
 
                                 <TopImageBox image="the-gig-economy" color={color.orange3}>
-                                    <h4>You need to pay fees</h4>
+                                    <Heading size={3} template={4}>You need to pay fees</Heading>
                                     <p>
                                         You will need to pay a fee to buy a license to start a franchise, and then
                                         continue to pay an ongoing royalty or other fees to the franchisor. Initial fees
@@ -90,7 +90,7 @@ const AdventagesSection = () => (
                                 </TopImageBox>
 
                                 <TopImageBox image="entity-comparison-chart" color={color.green3}>
-                                    <h4>There are rules to follow</h4>
+                                    <Heading size={3} template={4}>There are rules to follow</Heading>
                                     <p>
                                         Franchisors often have strict rules you will need to agree to. This could be
                                         anything from signage and staff uniforms to how you market and talk about your
@@ -99,7 +99,7 @@ const AdventagesSection = () => (
                                 </TopImageBox>
 
                                 <TopImageBox image="executive-relationship-and-culture-coaching" color={color.blue3}>
-                                    <h4>You need to convince the franchisor</h4>
+                                    <Heading size={3} template={4}>You need to convince the franchisor</Heading>
                                     <p>
                                         You do not need to take in and sell stock, meaning you don’t have money tied up
                                         in inventory

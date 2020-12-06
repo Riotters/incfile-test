@@ -7,6 +7,7 @@ import styled from "styled-components";
 import OvalSvg from "../../../../images/ovals/bottom-left-transparent-blue1.inline.svg";
 import { gradient } from "../../../atoms/styles/colors";
 import { Link } from "gatsby";
+import {Heading} from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
   <WrapperContainer>
@@ -19,7 +20,7 @@ const SettingBusiness = () => (
     <Container>
       <ImageBoxes>
         <TopImageBox image="location" color={color.red3}>
-          <h4>Location of Your Bookstore</h4>
+          <Heading size={3} template={4}>Location of Your Bookstore</Heading>
           <p>
             The location of your bookstore will be vital. You’ll need somewhere that has good passing traffic with enough space so you can display a decent selection of books. You’ll also need storage space for your inventory. Talk to other local business owners to establish the best places in your
             city and inquire with commercial real estate agents so you can figure your lease and rental costs into your business plan.
@@ -27,7 +28,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="display-ads" color={color.red3}>
-          <h4>Marketing Your Bookstore</h4>
+          <Heading size={3} template={4}>Marketing Your Bookstore</Heading>
           <p>
             Marketing will be a huge part of your bookstore business. Naturally, you will need an awesome website, but you'll also need to get branding, newsletters, digital ads, social media accounts and other channels in place. You should leverage your local community offerings in your marketing
             to make your bookstore attractive to your niche customers.
@@ -35,14 +36,14 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-          <h4>Employees</h4>
+          <Heading size={3} template={4}>Employees</Heading>
           <p>
             You may not need employees to begin with, especially if you’re operating on a low budget. As your bookstore expands and becomes more popular, consider taking on some part-time help to cover busy periods. You may also hire temporary employees during busy times of year like the holidays.
           </p>
         </TopImageBox>
 
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
-          <h4>Finances and Taxes</h4>
+          <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             You will need a separate business bank account for your bookstore business. You might also want to consider a business credit card. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile we can even{" "}
             <Link style={{ fontWeight: "bold" }} to="/business-accounting/">help you file your taxes</Link>.
@@ -50,7 +51,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="side-4" color={color.green3}>
-          <h4>Stock and Equipment for Bookstores</h4>
+          <Heading size={3} template={4}>Stock and Equipment for Bookstores</Heading>
           <p>
             You will need a fair amount of fixtures, fittings, equipment and inventory to get going. You’ll need to furnish your store, including bookshelves and displays. You’ll also need a cash register and a counter for taking payment. You may need to carpet and paint the space, and you will also
             need a good stock of books.
@@ -58,7 +59,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="software" color={color.blue3}>
-          <h4>Software and Processes</h4>
+          <Heading size={3} template={4}>Software and Processes</Heading>
           <p>Bookstore entrepreneurs make extensive use of software; see our great list of the top apps at the end of this guide.</p>
         </TopImageBox>
       </ImageBoxes>

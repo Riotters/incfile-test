@@ -6,6 +6,7 @@ import { color } from "../../../../components/styles/colors";
 import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
 import { Link } from "gatsby";
+import {Heading} from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
   <GreenContainer>
@@ -30,7 +31,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="display-ads" color={color.purple3}>
-          <h4>Marketing Your Daycare Business</h4>
+          <Heading size={3} template={4}>Marketing Your Daycare Business</Heading>
           <p>
             Marketing will be a huge part of your daycare business. Naturally, you will need an awesome website, but you'll also need to get branding, newsletters, digital ads, social media accounts and other channels in place. Make sure that you clearly explain the unique approach you take with
             childcare to build reassurance and trust with parents.
@@ -38,12 +39,12 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="side-4" color={color.green3}>
-          <h4>Equipment for Your Daycare</h4>
+          <Heading size={3} template={4}>Equipment for Your Daycare</Heading>
           <p>In addition to the computer equipment you will need to manage your business, you will also need toys, games, art supplies and more to keep the children occupied and entertained. This could include both inside and outside activities, so plan for both.</p>
         </TopImageBox>
 
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
-          <h4>Finances and Taxes</h4>
+          <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             You will need a separate business bank account for your construction business. You might also want to consider a business credit card. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile{" "}
             <Link to="/business-accounting/">we can even help you file your taxes</Link>.
@@ -51,12 +52,12 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-          <h4>Employees</h4>
+          <Heading size={3} template={4}>Employees</Heading>
           <p>Many daycare business owners don’t employ anyone else to begin with. Once your business gets off the ground you can look into hiring other qualified childcare professionals.</p>
         </TopImageBox>
 
         <TopImageBox image="software" color={color.blue3}>
-          <h4>Software and Process</h4>
+          <Heading size={3} template={4}>Software and Process</Heading>
           <p>The right software and processes will make running your daycare business much easier. See our list of the best apps and software at the end of this guide.</p>
         </TopImageBox>
       </ImageBoxes>
