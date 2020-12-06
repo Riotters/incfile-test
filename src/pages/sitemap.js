@@ -10,13 +10,15 @@ import TrustSection from "../atomic/sections/other/sitemap/trust";
 //Texts
 import { seo, top, list, trust } from "../static/other/sitemap";
 
-const Sitemap = () => (
-  <Layout>
-    <SEO title={seo.title} description={seo.desc} />
-    <Top content={top} />
-    <List content={list} />
-    <TrustSection content={trust} />
-  </Layout>
-);
+const Sitemap = () => {
+    return (
+        <Layout>
+            <SEO title={seo.title} description={seo.desc} />
+            <Top content={top} />
+            <List content={list} />
+            <TrustSection content={trust} />
+        </Layout>
+    );
+};
 
 export default Sitemap;
