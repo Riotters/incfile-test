@@ -14,7 +14,8 @@ import Opinions from "../../atomic/sections/form/opinions";
 import Choose from "../../atomic/sections/form/choose";
 import Care from "../../atomic/sections/form/care";
 import ButtonVideo from "../../atomic/molecules/buttons/button-video";
-const IncfileVsLegalzoom = () => {
+
+const FormIncfile = () => {
   return (
     <Layout>
       <SEO
@@ -54,4 +55,5 @@ const IncfileVsLegalzoom = () => {
   );
 };
 
-export default IncfileVsLegalzoom;
+
+export default FormIncfile;
