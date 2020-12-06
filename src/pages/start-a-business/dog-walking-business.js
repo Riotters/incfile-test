@@ -76,7 +76,7 @@ const DogWalkingBusiness = () => (
 
                         <Colorbox className="box" theme="icon" Icon={MegafornIcon} color={color.green3} curve
                                   curveColor={color.orange2}>
-                            <Heading size={4}>We want to help you get your business off the ground.</Heading>
+                            <Heading size={2} template={4} left>We want to help you get your business off the ground.</Heading>
                             <Paragraph>Since 2004, we’ve helped over 500,000 people start exciting businesses and bring
                                 their ideas to life. We’ll give you the support, guidance and advice you need to create
                                 a woman-owned business and make it into a success.</Paragraph>
@@ -163,7 +163,7 @@ const DogWalkingBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Why You Should Start a New Dog Walking, Pet Sitting or Similar
+                        <Heading size={2} template={3} left>Why You Should Start a New Dog Walking, Pet Sitting or Similar
                             Business</Heading>
                         <Paragraph big>
                             The fact is that pets (and dogs in particular) are more than just animals - they’re family
@@ -206,7 +206,7 @@ const DogWalkingBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Is a Dog Walking or Pet Sitting Business Right for You?</Heading>
+                        <Heading size={2} template={3} left>Is a Dog Walking or Pet Sitting Business Right for You?</Heading>
                         <Paragraph big style={{marginBottom: "48px"}}>
                             Although it can be exciting to form a dog walking or pet sitting business, there will be
                             significant demands on you as a small business owner. Here are some of the things you can
@@ -419,7 +419,8 @@ const TabsOval = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100% @media (min-width: 420px) {
+  width: 100%;
+   @media (min-width: 420px) {
     width: 420px;
   }
 `;

@@ -95,7 +95,7 @@ const FoodTruck = () => (
                             curve
                             curveColor={color.green1}
                         >
-                            <Heading size={4}>
+                            <Heading size={2} template={4} left>
                                 We know it can be daunting to start a food truck business, and
                                 we’re here to help.
                             </Heading>
@@ -196,7 +196,7 @@ const FoodTruck = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Why You Should Start a Food Truck</Heading>
+                        <Heading size={2} template={3} left>Why You Should Start a Food Truck</Heading>
                         <Paragraph big style={{marginBottom: "80px"}}>
                             Food trucks are incredibly popular. Aside from the initial cost of
                             the food truck and equipment, the barriers to entry are fairly
@@ -246,7 +246,7 @@ const FoodTruck = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>
+                        <Heading size={2} template={3} left>
                             Is Running a Food Truck Business Right for You?
                         </Heading>
                         <Paragraph big style={{marginBottom: "48px"}}>
@@ -539,7 +539,7 @@ const Oval = styled.div`
     width: 100%;
     left: 0;
     top: 0px;
-    position absolute;
+    position: absolute;
     
     @media (min-width: 570px){
         width: 570px;

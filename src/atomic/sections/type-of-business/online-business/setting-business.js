@@ -6,6 +6,7 @@ import { color } from "../../../../components/styles/colors";
 import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/bottom-left-transparent-green2.inline.svg";
 import { Link } from "gatsby";
+import {Heading} from "../../../atoms/typography/heading";
 const SettingBusiness = () => (
   <GreenContainer>
     <Oval>
@@ -20,32 +21,32 @@ const SettingBusiness = () => (
     <Container>
       <ImageBoxes>
         <TopImageBox image="location" color={color.red3}>
-          <h4>Location of your business</h4>
+          <Heading size={3} template={4}>Location of your business</Heading>
           <p>Almost all internet entrepreneurs can work from home or a shared working space. This is great as it reduces your office costs considerably. Don't forget that if you work from home, you can write off part of your utility and housing costs against your taxes.</p>
         </TopImageBox>
 
         <TopImageBox image="display-ads" color={color.purple3}>
-          <h4>Marketing</h4>
+          <Heading size={3} template={4}>Marketing</Heading>
           <p>Marketing will be a huge part of your online business. Naturally, you will need an awesome website, but you'll also need to get branding, newsletters, digital ads, social media accounts and other channels in place.</p>
         </TopImageBox>
 
         <TopImageBox image="side-4" color={color.green3}>
-          <h4>Equipment</h4>
+          <Heading size={3} template={4}>Equipment</Heading>
           <p>It’s likely that the only equipment you will need to run your online business is a computer, laptop, tablet or smartphone.</p>
         </TopImageBox>
 
         <TopImageBox image="software" color={color.blue3}>
-          <h4>Software and Process</h4>
+          <Heading size={3} template={4}>Software and Process</Heading>
           <p>Online entrepreneurs make extensive use of software; see our great list of the top apps at the end of this article.</p>
         </TopImageBox>
 
         <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-          <h4>Employees</h4>
+          <Heading size={3} template={4}>Employees</Heading>
           <p>To begin with, you probably won’t need to hire anyone else for your online business, especially if you’re a good administrator.</p>
         </TopImageBox>
 
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
-          <h4>Finances and Taxes</h4>
+          <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             You will need a separate{" "}
             <a href="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">

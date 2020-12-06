@@ -36,7 +36,7 @@ const TitleBox = styled.div`
         margin: 0 auto;
     }
     
-    h3{
+    h2{
         color: #1d1d1d;
         font-size: 40px;
         text-align: left;
@@ -111,7 +111,7 @@ const ValidatingBusinessIdea = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={3}>Validating Your Online Business Idea</Heading>
+                    <Heading size={2} template={3} left>Validating Your Online Business Idea</Heading>
                     <Paragraph big>
                         These areas are just starting points — there are hundreds of different types of online
                         businesses. Once you’ve identified the areas you’d like to go into, you need to validate your
@@ -149,7 +149,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage SvgImage={IdetifyIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Identify your online business’s unique selling points (USPs)
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -159,7 +159,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage SvgImage={LookIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Look at who your competitors are in the space
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -169,7 +169,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage SvgImage={TalkIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Talk to clients
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -179,7 +179,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage SvgImage={InvolvedIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Get involved with business communities and discussion groups
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>

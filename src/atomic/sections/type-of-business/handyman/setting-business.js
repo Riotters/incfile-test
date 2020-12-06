@@ -8,6 +8,7 @@ import OvalSvg from "../../../../images/ovals/bottom-right-transparent-blue2.inl
 import OvalSvg2 from "../../../../images/ovals/bottom-right-transparent-babyblue2.inline.svg";
 import ContentCenter from "../../../partials/content-center";
 import { Link } from "gatsby";
+import {Heading} from "../../../atoms/typography/heading";
 const SettingBusiness = () => (
   <GreenContainer>
     <Oval>
@@ -25,7 +26,7 @@ const SettingBusiness = () => (
     <Container>
       <ImageBoxes>
         <TopImageBox image="location" color={color.red3}>
-          <h4>Location of Your Handyman Business</h4>
+          <Heading size={3} template={4}>Location of Your Handyman Business</Heading>
           <p>
             Although it’s likely that you can run much of your handyman business from a home office, there are a couple of areas where you may need more space. First, if you’re building items offsite for installation at a client’s home, you’ll need a shop with the right space and tools for whatever
             you’re working on. Second, if you need to hold materials before using them, you’ll need a storage location. Look into the costs of renting these spaces versus buying them outright for yourself.
@@ -35,7 +36,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="providing-products-and-services" color={color.green3}>
-          <h4>Equipment for Your Handyman Business</h4>
+          <Heading size={3} template={4}>Equipment for Your Handyman Business</Heading>
           <p>
             Like any modern business, you’ll need a computer and a smartphone to help you run your business. In addition to that, you’ll need tools and possibly specialized equipment. Good tools are likely to be a significant portion of your startup budget, whether that’s simple hand tools or large,
             floor-mounted shop tools for bigger jobs. If you need larger equipment for one-off jobs, you can easily rent them from a local provider so you don’t have the capital cost of buying specialized equipment yourself.
@@ -45,7 +46,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="display-ads" color={color.purple3}>
-          <h4>Marketing Your Handyman Business</h4>
+          <Heading size={3} template={4}>Marketing Your Handyman Business</Heading>
           <p>
             Marketing will be a huge part of your handyman business. Naturally, you will need an awesome website, but you'll also need to get branding, newsletters, digital ads, social media accounts and other channels in place. You will probably want to focus most of your attention on local
             advertising. Look at Google Local listings, Facebook local groups and locally-based social networks like Nextdoor.
@@ -53,7 +54,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
-          <h4>Finances and Taxes</h4>
+          <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             You will need a separate{" "}
             <a href="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">
@@ -64,12 +65,12 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-          <h4>Employees</h4>
+          <Heading size={3} template={4}>Employees</Heading>
           <p>To begin with, you probably won’t need to hire anyone else for your handyman business, especially if you’re a good administrator. As you get busier, you might want to go into partnership with another handyman, or even train an apprentice.</p>
         </TopImageBox>
 
         <TopImageBox image="software" color={color.blue3}>
-          <h4>Software</h4>
+          <Heading size={3} template={4}>Software</Heading>
           <p>The right software and processes will make running your handyman business much easier. See our list of the best apps and software at the end of this guide.</p>
         </TopImageBox>
       </ImageBoxes>

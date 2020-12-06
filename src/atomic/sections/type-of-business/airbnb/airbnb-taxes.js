@@ -47,7 +47,7 @@ const AirbnbTaxes = () => (
             <CurveSvg />
           </CurveWrapper>
           {adventages.items.map((item) => (
-            <Adventages className="containerMargin" style={{ textAlign: "center" }} url={item.url} urlText={item.urlText} circleText={item.circleText} headline={item.headline} text={item.text} circlePosition="center" circleBackgroundColor={color.blue1} circleBackgroundShadow={shadow.blue1} />
+            <Adventages className="containerMargin" headlineSize={3} headlineTemplateSize={4} style={{ textAlign: "center" }} url={item.url} urlText={item.urlText} circleText={item.circleText} headline={item.headline} text={item.text} circlePosition="center" circleBackgroundColor={color.blue1} circleBackgroundShadow={shadow.blue1} />
           ))}
         </AdventagesBox>
       </Container>
@@ -91,7 +91,7 @@ const AdventagesBox = styled.div`
     column-gap: 30px;
     row-gap: 20px;
     margin-top: 76px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;

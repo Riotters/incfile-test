@@ -71,7 +71,7 @@ const GymPersonalTraining = () => (
 
                         <Colorbox className="box" theme="icon" Icon={BookIcon} color={color.green3} curve
                                   curveColor={color.orange2}>
-                            <Heading size={4}>We know it can be daunting to start a bookstore business, and we’re here
+                            <Heading size={2} template={4} left>We know it can be daunting to start a bookstore business, and we’re here
                                 to help.</Heading>
                             <Paragraph bottomPadding={0} bottomMargin={0}>
                                 We’ve supported over 100,000 people to form their business and provided answers,

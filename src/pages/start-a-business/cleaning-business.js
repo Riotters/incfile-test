@@ -98,7 +98,7 @@ const CleaningBusiness = () => (
             <ReactTabs content={tabs}>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Starting a Cleaning Business</Heading>
+                        <Heading size={2} template={3} left>Starting a Cleaning Business</Heading>
                         <Paragraph big>
                             Starting a cleaning business can be an ideal way to begin your
                             journey as an entrepreneur. Although they may seem simple,
@@ -219,7 +219,7 @@ const CleaningBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>
+                        <Heading size={2} template={3} left>
                             Understanding the World of a Cleaning Business
                         </Heading>
 
@@ -293,7 +293,7 @@ const CleaningBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>
+                        <Heading size={2} template={3} left>
                             Questions to Ask Before You Start a Cleaning Business
                         </Heading>
 
@@ -670,7 +670,7 @@ const CleaningBusiness = () => (
 
             <BusinessOwnerResponsibilities>
                 <ImageContent image="unique-business-2" paddingTop="60">
-                    <Heading size={4} style={{fontSize: "24px"}}>
+                    <Heading size={2} template={4} left style={{fontSize: "24px", "max-width": "unset"}}>
                         Choose the Right Business Structure and Register Your Cleaning
                         Business
                     </Heading>
@@ -1010,7 +1010,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 12px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;

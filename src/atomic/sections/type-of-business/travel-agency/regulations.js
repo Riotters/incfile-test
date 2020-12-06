@@ -16,7 +16,7 @@ const Regulations = () => (
       <OvalSvg2 />
     </Oval2>
     <Container style={{ paddingTop: "100px", paddingBottom: "100px" }} width={750}>
-      <Heading size={4} style={{ fontSize: "40px" }}>
+      <Heading size={2} template={4} left style={{ fontSize: "40px" }}>
         Rules, Regulations and Taxes for Your Travel Agency
       </Heading>
       <Paragraph big mixed={true}>

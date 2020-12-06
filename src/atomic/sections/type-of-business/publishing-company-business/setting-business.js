@@ -8,6 +8,7 @@ import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inl
 import OvalSvg2 from "../../../../images/ovals/bottom-right-transparent-pink2.inline.svg";
 import { gradient } from "../../../atoms/styles/colors";
 import { Link } from "gatsby";
+import {Heading} from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
   <WrapperContainer>
@@ -23,7 +24,7 @@ const SettingBusiness = () => (
     <Container>
       <ImageBoxes>
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
-          <h4>Finances and Taxes</h4>
+          <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             You will need a separate business bank account for your publishing business. You might also want to consider a business credit card. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile{" "}
             <Link to="/business-accounting/">we can even help you file your taxes</Link>.
@@ -31,7 +32,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="location" color={color.red3}>
-          <h4>Location</h4>
+          <Heading size={3} template={4}>Location</Heading>
           <p>
             If you’re a digital publisher, it’s very likely that you can work from home or a shared working space, at least initially. This is great as it reduces your office costs considerably. If you’re a more specialized publisher or you publish in a traditional way, you may need extra space for
             support staff and equipment.
@@ -39,7 +40,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="display-ads" color={color.purple3}>
-          <h4>Marketing Your Publishing House</h4>
+          <Heading size={3} template={4}>Marketing Your Publishing House</Heading>
           <p>
             Marketing will be a huge part of your publishing business. Naturally, you will need an awesome website, but you'll also need to get branding, newsletters, digital ads, social media accounts and other channels in place. As a publisher, organic SEO will be a large part of your content and
             marketing strategy.
@@ -47,7 +48,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="side-4" color={color.green3}>
-          <h4>Equipment for Your Publishing Business</h4>
+          <Heading size={3} template={4}>Equipment for Your Publishing Business</Heading>
           <p>
             As a digital publisher, it’s likely that the only equipment you will need to run your publishing business is a computer, laptop, tablet or smartphone and specialized software. If you’re producing audio or video content, you will also need a microphone, relevant recording devices and
             software to edit and add to your content.
@@ -55,12 +56,12 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-          <h4>Employees</h4>
+          <Heading size={3} template={4}>Employees</Heading>
           <p>If you’re a digital publisher, you probably won’t need to hire anyone else for your publishing business until you have grown, especially if you’re a good administrator.</p>
         </TopImageBox>
 
         <TopImageBox image="software" color={color.blue3}>
-          <h4>Software and Processes</h4>
+          <Heading size={3} template={4}>Software and Processes</Heading>
           <p>The right software and processes will make running your publishing business much easier. See our list of the best apps and software at the end of this guide.</p>
         </TopImageBox>
       </ImageBoxes>

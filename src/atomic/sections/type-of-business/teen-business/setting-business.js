@@ -7,6 +7,7 @@ import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import { gradient } from "../../../atoms/styles/colors";
 import { Link } from "gatsby";
+import {Heading} from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
   <GreenContainer>
@@ -19,17 +20,17 @@ const SettingBusiness = () => (
     <Container>
       <ImageBoxes>
         <TopImageBox image="location" color={color.red3}>
-          <h4>Location</h4>
+          <Heading size={3} template={4}>Location</Heading>
           <p>The location you work from will be defined by the type of teen business you start. Some businesses can be run successfully from home, although others may need a specific location.</p>
         </TopImageBox>
 
         <TopImageBox image="software" color={color.blue3}>
-          <h4>Software and Process</h4>
+          <Heading size={3} template={4}>Software and Process</Heading>
           <p>The right software and processes will make running your teen business much easier. See our list of the best apps and software at the end of this guide.</p>
         </TopImageBox>
 
         <TopImageBox image="display-ads" color={color.purple3}>
-          <h4>Marketing</h4>
+          <Heading size={3} template={4}>Marketing</Heading>
           <p>
             Marketing to your local neighborhood is much easier than marketing to a broader audience. Spend some time and effort identifying who your audience is and the best channels to reach them. If you’re selling online, you will probably want an awesome website, but you'll also need to get
             branding, newsletters, digital ads, social media accounts and other channels in place. If you’re selling locally, then signs and flyers should work.
@@ -37,7 +38,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
-          <h4>Finances and Taxes</h4>
+          <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             If you make more than $400 a year (around $8 a week) from your teen business, you will need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile <Link to="/business-accounting/">we can even help you file your taxes</Link>. If you have an LLC, you will
             also need a separate business bank account.
@@ -45,7 +46,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="side-4" color={color.green3}>
-          <h4>Equipment</h4>
+          <Heading size={3} template={4}>Equipment</Heading>
           <p>Depending on the type of teen business you run, equipment needs will vary widely.</p>
         </TopImageBox>
       </ImageBoxes>

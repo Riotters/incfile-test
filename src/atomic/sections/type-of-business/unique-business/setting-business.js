@@ -7,6 +7,7 @@ import styled from "styled-components";
 import OvalSvg from "../../../../images/ovals/bottom-left-transparent-blue1.inline.svg";
 import { gradient } from "../../../atoms/styles/colors";
 import { Link } from "gatsby";
+import {Heading} from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
   <ColorContainer>
@@ -19,7 +20,7 @@ const SettingBusiness = () => (
     <Container>
       <ImageBoxes>
         <TopImageBox image="location" color={color.red3}>
-          <h4>Location</h4>
+          <Heading size={3} template={4}>Location</Heading>
           <p>
             The location you work from will be defined by the type of business you start. Many unique businesses can be run successfully from home, although other businesses may need a specialized location. Don't forget that if you work from home, you can write off part of your utility and housing
             costs against your taxes.
@@ -27,7 +28,7 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="display-ads" color={color.purple3}>
-          <h4>Marketing</h4>
+          <Heading size={3} template={4}>Marketing</Heading>
           <p>
             Marketing to a very defined niche is much easier than marketing to a broader audience. Spend some time and effort identifying who your audience is and the best channels to reach them. You will probably want an awesome website, but you'll also need to get branding, newsletters, digital
             ads, social media accounts and other channels in place.
@@ -35,22 +36,22 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox image="software" color={color.blue3}>
-          <h4>Software</h4>
+          <Heading size={3} template={4}>Software</Heading>
           <p>The right software and processes will make running your unique business much easier. See our list of the best apps and software at the end of this guide.</p>
         </TopImageBox>
 
         <TopImageBox image="side-4" color={color.green3}>
-          <h4>Equipment</h4>
+          <Heading size={3} template={4}>Equipment</Heading>
           <p>Depending on the type of unique business you run, equipment needs will vary widely. For selling services, you will probably only need a computer, laptop, tablet or smartphone.</p>
         </TopImageBox>
 
         <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-          <h4>Employees</h4>
+          <Heading size={3} template={4}>Employees</Heading>
           <p>To begin with, you probably won’t need to hire anyone else for your unique business, especially if you’re a good administrator. But start thinking about who else you may want to bring on board as your business grows.</p>
         </TopImageBox>
 
         <TopImageBox image="state-filling-fees" color={color.blue3}>
-          <h4>Finances and Taxes</h4>
+          <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             You will need a separate{" "}
             <a href="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">

@@ -54,7 +54,7 @@ const BusinessStructure = () => (
 
     <BusinessOwnerResponsibilities>
       <ImageContent image="unique-business-green" paddingTop="60">
-        <Heading size={4} style={{ fontSize: "24px" }}>
+        <Heading size={2} template={4} left style={{ fontSize: "24px" }}>
           Formally Registering Your Real Estate Investment Business
         </Heading>
         <Paragraph big>Now that you have all the background information for your real estate business, it's time to choose the right structure or "legal entity" for your business. In the U.S., there are several business structures. They are:</Paragraph>

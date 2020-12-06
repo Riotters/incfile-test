@@ -90,7 +90,7 @@ const Bakery = () => (
                             into a success.
                         </Paragraph>
 
-                        <Heading size={3}>Here is our simple guide to starting up a successful bakery
+                        <Heading size={2} template={3} left>Here is our simple guide to starting up a successful bakery
                             business.</Heading>
 
                         <Paragraph big style={{marginBottom: "72px"}}>
@@ -99,7 +99,7 @@ const Bakery = () => (
                             to help.
                         </Paragraph>
 
-                        <Heading size={3}>Read on for some insight into creating your own bakery business and becoming
+                        <Heading size={2} template={3} left>Read on for some insight into creating your own bakery business and becoming
                             an entrepreneur.In this guide we will cover:</Heading>
 
                         <Paragraph big>From exploring the types of business you can start, through research, to the
@@ -167,7 +167,7 @@ const Bakery = () => (
                 </TabPanel>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3} style={{marginTop: "72px"}}>
+                        <Heading size={2} template={3} left style={{marginTop: "72px"}}>
                             Why You Should Open a New Baking Business
                         </Heading>
 
@@ -225,13 +225,13 @@ const Bakery = () => (
                 </TabPanel>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Is Owning a Bakery Right for You?</Heading>
+                        <Heading size={2} template={3} left>Is Owning a Bakery Right for You?</Heading>
                         <Paragraph big style={{marginBottom: "48px"}}>
                             Before deciding to open a bakery, it’s important to understand the skills and approach
                             you’re likely to need.
                         </Paragraph>
 
-                        <Heading size={3}>A Day in the Life of a Bakery Business Owner</Heading>
+                        <Heading size={2} template={3} left>A Day in the Life of a Bakery Business Owner</Heading>
                         <Paragraph big style={{marginBottom: "48px"}}>
                             Here are some of the typical tasks you’ll be performing for your bakery business on a daily
                             basis.
@@ -257,7 +257,7 @@ const Bakery = () => (
 
                         <Adventages headline="Dealing with customers" width="100%"/>
 
-                        <Heading size={3} style={{marginTop: "48px"}}>
+                        <Heading size={2} template={3} left style={{marginTop: "48px"}}>
                             Skills Needed by a Bakery Business Entrepreneur
                         </Heading>
                         <Paragraph big style={{marginBottom: "48px"}}>
@@ -279,7 +279,7 @@ const Bakery = () => (
 
                         <Adventages headline="Marketing skills to get people into the bakery" width="100%"/>
 
-                        <Heading size={3} style={{marginTop: "48px"}}>
+                        <Heading size={2} template={3} left style={{marginTop: "48px"}}>
                             What Your Bakery Customers are Looking For
                         </Heading>
                         <Paragraph big style={{marginBottom: "48px"}}>
@@ -332,7 +332,7 @@ const Bakery = () => (
                 <GridSectionList>
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={IdentifyIcon}
                                         imageBackgroundColor={color.babyblue2} imageShadowColor={color.babyblue2}>
-                        <Heading size={4}>Identify your business’s unique selling points (USPs)</Heading>
+                        <Heading size={3} template={4}>Identify your business’s unique selling points (USPs)</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             You need something that’s going to help your bakery stand out, whether that’s the quality of
                             your products, the range of what you sell, the ambiance of your location or something else.
@@ -344,7 +344,7 @@ const Bakery = () => (
                         <Curve top="-110" right="-30" color={color.blue1}>
                             <Curve2SVG/>
                         </Curve>
-                        <Heading size={4}>Look at who your competitors are in the space</Heading>
+                        <Heading size={3} template={4}>Look at who your competitors are in the space</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             Having competitors is a good thing as it shows there’s a market, but if there are too many
                             local challengers, you’re likely to struggle without a really good unique selling point.
@@ -356,7 +356,7 @@ const Bakery = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={TalkIcon}
                                         imageBackgroundColor={color.orange2} imageShadowColor={color.orange2}>
-                        <Heading size={4}>Understand your customers</Heading>
+                        <Heading size={3} template={4}>Understand your customers</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             Talking to customers will help you find out what they’re looking for, so you can tailor your
                             products and offerings accordingly.
@@ -365,7 +365,7 @@ const Bakery = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={InvolvedIcon}
                                         imageBackgroundColor={color.purple2} imageShadowColor={color.purple2}>
-                        <Heading size={4}>Get involved with local business communities and discussion groups</Heading>
+                        <Heading size={3} template={4}>Get involved with local business communities and discussion groups</Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
                             There are plenty of great communities and discussion groups. Get involved in them and learn
                             the ins and outs of your chosen market before committing.
@@ -382,7 +382,7 @@ const Bakery = () => (
 
             <Container>
                 <CenterBox>
-                    <Heading>Your Bakery Needs a Business Plan</Heading>
+                    <Heading size={2} template={1} left>Your Bakery Needs a Business Plan</Heading>
 
                     <Paragraph big>
                         You need to define how you’re going to run your bakery business, market yourself, get sales,
@@ -465,7 +465,7 @@ const Bakery = () => (
 
             <BusinessOwnerResponsibilities>
                 <ImageContent image="unique-business-2" paddingTop="60">
-                    <Heading size={4} style={{fontSize: "24px"}}>
+                    <Heading size={2} template={4} left style={{fontSize: "24px", "max-width": "unset"}}>
                         Choose the Right Business Structure and Register Your Bakery Business
                     </Heading>
                     <Paragraph big>There are five main business structures you can have in the US, and it’s important to
@@ -690,7 +690,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 76px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;

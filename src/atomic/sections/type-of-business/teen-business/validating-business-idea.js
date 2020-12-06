@@ -34,7 +34,7 @@ const TitleBox = styled.div`
         margin: 0 auto;
     }
     
-    h3{
+    h2{
         color: #1d1d1d;
         font-size: 40px;
         text-align: left;
@@ -50,7 +50,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 76px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;
@@ -93,7 +93,7 @@ const ValidatingBusinessIdea = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={3}>Validating Your Teen Business Idea</Heading>
+                    <Heading size={2} template={3} left>Validating Your Teen Business Idea</Heading>
                     <Paragraph big>
                         Remember, the ideas above are just a starting point. You can define and tweak exactly what type
                         of teen business you want to run by conducting your own research.
@@ -123,7 +123,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={IdetifyIcon} imageBackgroundColor={color.green2}
                                         imageShadowColor={color.green2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Identify your unique selling points (USPs)
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -135,7 +135,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={InvolvedIcon} imageBackgroundColor={color.babyblue2}
                                         imageShadowColor={color.babyblue2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Understand your market
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -148,7 +148,7 @@ const ValidatingBusinessIdea = () => (
 
                     <TextBlockWithImage width={100} widthUnit="%" SvgImage={TalkIcon} imageBackgroundColor={color.orange2}
                                         imageShadowColor={color.orange2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Talk to clients
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>

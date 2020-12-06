@@ -73,7 +73,7 @@ const CateringBusiness = () => (
             <ReactTabs content={tabs}>
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Starting a Catering Business</Heading>
+                        <Heading size={2} template={3} left>Starting a Catering Business</Heading>
                         <Paragraph big>When it comes to food-based businesses, you have a few choices — you could go
                             into business as a restaurateur or start a catering business.</Paragraph>
                         <Paragraph big>A catering business can be a great choice if you don’t want the expense of
@@ -162,7 +162,7 @@ const CateringBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>Understanding the World of the Catering Business</Heading>
+                        <Heading size={2} template={3} left>Understanding the World of the Catering Business</Heading>
 
                         <Paragraph big>
                             Caterers exist to provide food for major events, parties and functions. They exist to take
@@ -210,7 +210,7 @@ const CateringBusiness = () => (
 
                 <TabPanel>
                     <PanelWrapper>
-                        <Heading size={3}>What Your Catering Clients Are Looking For</Heading>
+                        <Heading size={2} template={3} left>What Your Catering Clients Are Looking For</Heading>
                         <Paragraph big>When it comes to catering, your clients want several things:</Paragraph>
 
                         <Adventages headline="Reliability"
@@ -341,7 +341,7 @@ const CateringBusiness = () => (
             </Oval3>
             <Container>
                 <CenterBox>
-                    <Heading>Write a Business Plan for Your Catering Business</Heading>
+                    <Heading size={2} template={1} left>Write a Business Plan for Your Catering Business</Heading>
 
                     <Paragraph big>Finally, you should put your business plan together. Business plans do vary slightly,
                         but they should cover the following areas:</Paragraph>
@@ -423,7 +423,7 @@ const CateringBusiness = () => (
 
             <BusinessOwnerResponsibilities>
                 <ImageContent image="unique-business-2" paddingTop="60">
-                    <Heading size={4} style={{fontSize: "24px"}}>
+                    <Heading size={2} left template={4} style={{fontSize: "24px", "max-width": "unset"}}>
                         Choose the Right Business Structure and Register Your Catering Business
                     </Heading>
                     <Paragraph big>Now that you have all the background information for your catering business, it’s

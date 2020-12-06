@@ -69,7 +69,7 @@ const BoutiqueClothingTabs = () => (
         <ReactTabs content={tabs}>
             <TabPanel>
                 <PanelWrapper>
-                    <Heading size={3}>Starting a Botique Clothing Business</Heading>
+                    <Heading size={2} template={3} left>Starting a Botique Clothing Business</Heading>
                     <Paragraph big>Rather than selling everyday garments, boutique businesses focus on specific
                         garments, tastes, designs and customers. If you have a unique taste and can curate the perfect
                         collection, you can certainly start a successful retail clothing business.</Paragraph>

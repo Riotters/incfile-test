@@ -75,7 +75,7 @@ const Blockchain = () => (
 							is, and help you understand if your business could benefit from
 							becoming a blockchain startup.
 						</Paragraph>
-						<Heading size={3}>
+						<Heading size={2} template={3} left>
 							Blockchain Business Technology, Briefly Explained
 						</Heading>
 						<Paragraph big>
@@ -147,7 +147,9 @@ const Blockchain = () => (
 				</TabPanel>
 				<TabPanel>
 					<PanelWrapper>
-						<Heading size={3}>Blockchain Businesses and Cryptocurrency</Heading>
+						<Heading size={2} template={3} left>
+							Blockchain Businesses and Cryptocurrency
+						</Heading>
 						<Paragraph big>
 							It’s likely that you’ve heard blockchain mentioned in the same
 							breath as cryptocurrencies like Bitcoin. While blockchain is the
@@ -198,7 +200,7 @@ const Blockchain = () => (
 				</TabPanel>
 				<TabPanel>
 					<PanelWrapper>
-						<Heading size={3}>
+						<Heading size={2} template={3} left>
 							Why You Should Consider Using Blockchain for Your Startup
 						</Heading>
 						<Paragraph big style={{ marginBottom: "48px" }}>

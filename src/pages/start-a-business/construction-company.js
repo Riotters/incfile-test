@@ -66,7 +66,7 @@ const ConstructionCompany = () => (
                             construction business could be a great way to build a solid future.
                         </Paragraph>
 
-                        <Heading size={3}>There’s plenty of room for specialty construction businesses too, so finding
+                        <Heading size={2} template={3} left>There’s plenty of room for specialty construction businesses too, so finding
                             the right building niche will help you get a reputation for specific expertise.</Heading>
 
                         <Paragraph big style={{marginBottom: "40px"}}>
@@ -76,7 +76,7 @@ const ConstructionCompany = () => (
 
                         <Colorbox className="box" theme="icon" Icon={MegafonIcon} color={color.green3} curve
                                   curveColor={color.blue1}>
-                            <Heading size={4}>We want to help you get your construction business off the
+                            <Heading size={3} template={4}>We want to help you get your construction business off the
                                 ground.</Heading>
 
                             <Paragraph bottomMargin={0}>Since 2004, we’ve helped over 100,000 people to become

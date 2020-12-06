@@ -34,7 +34,7 @@ const TypeBusinessIntroduce = () => (
         <Container>
             <BusinessOwnerResponsibilities>
                 <ImageContent image="with-no-money-business-2" paddingTop="60">
-                    <Heading size={4} style={{fontSize: "24px"}}>
+                    <Heading size={2} template={4} left style={{fontSize: "24px"}}>
                         Choosing a Type of Business to Start with Little
                         or No Money
                     </Heading>
@@ -42,21 +42,21 @@ const TypeBusinessIntroduce = () => (
                         The type of business you start will be constrained by your lack of capital, but you still have hundreds of options available. Although bootstrapping is a major factor in the type of business you choose to start, there are several other factors at play.
                     </Paragraph>
 
-                    <Heading size={4} style={{fontSize: "24px"}}>
+                    <Heading size={3} template={4} style={{fontSize: "24px"}}>
                         What Are Your Current Skills, Interests, Expertise and Experiences?
                     </Heading>
                     <Paragraph big>
                         Go into a field you already know something about. Choose a business type that aligns with your expertise and insight.
                     </Paragraph>
 
-                    <Heading size={4} style={{fontSize: "24px"}}>
+                    <Heading size={3} template={4} style={{fontSize: "24px"}}>
                         Can You See Yourself Doing This in 10 Years?
                     </Heading>
                     <Paragraph big>
                         If you want to run a business for the long-term, think five or 10 years out. Can you still see yourself doing it after all that time? What will success look like to you then?
                     </Paragraph>
 
-                    <Heading size={4} style={{fontSize: "24px"}}>
+                    <Heading size={3} template={4} style={{fontSize: "24px"}}>
                         Have You Researched the Types of Businesses Out There?
                     </Heading>
                     <Paragraph big>

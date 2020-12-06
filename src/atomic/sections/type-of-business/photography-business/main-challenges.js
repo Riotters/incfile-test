@@ -35,7 +35,7 @@ const TitleBox = styled.div`
         margin: 0 auto;
     }
     
-    h3{
+    h2{
         color: #1d1d1d;
         font-size: 40px;
         text-align: left;
@@ -51,7 +51,7 @@ const GridSectionList = styled.div`
     column-gap: 30px;
     row-gap: 70px;
     margin-top: 76px;
-    margin-bottom 76px; 
+    margin-bottom: 76px;; 
     
     @media (min-width: 490px){
         grid-template-columns: 470px;
@@ -90,7 +90,7 @@ const MainChallenges = () => (
 
             <GridSection>
                 <TitleBox>
-                    <Heading size={3}>What Are the Main Challenges for a Photography Entrepreneur?</Heading>
+                    <Heading size={2} template={3} left>What Are the Main Challenges for a Photography Entrepreneur?</Heading>
                     <Paragraph big>
                         The main challenge for a photographer is not the photography itself. If you have the right
                         skills and training, good equipment, strong methods and techniques and an eye for detail, you
@@ -113,7 +113,7 @@ const MainChallenges = () => (
 
                     <TextBlockWithImage SvgImage={FinancialIcon} imageBackgroundColor={color.yellow2}
                                         imageShadowColor={color.yellow2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Financial management
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -124,7 +124,7 @@ const MainChallenges = () => (
 
                     <TextBlockWithImage SvgImage={RealtionshipIcon} imageBackgroundColor={color.blue2}
                                         imageShadowColor={color.blue2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Client relationship management
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>
@@ -135,7 +135,7 @@ const MainChallenges = () => (
 
                     <TextBlockWithImage SvgImage={SeekingIcon} imageBackgroundColor={color.purple2}
                                         imageShadowColor={color.purple2}>
-                        <Heading size={4}>
+                        <Heading size={3} template={4}>
                             Marketing and seeking out work
                         </Heading>
                         <Paragraph bottomPadding={0} bottomMargin={0}>

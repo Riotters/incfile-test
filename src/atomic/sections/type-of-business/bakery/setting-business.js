@@ -7,6 +7,7 @@ import styled from "styled-components";
 import GreenOval from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import ContentCenter from "../../../partials/content-center";
 import {gradient} from "../../../atoms/styles/colors";
+import {Heading} from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
     <GreenContainer>
@@ -28,7 +29,7 @@ const SettingBusiness = () => (
 
             <ImageBoxes>
                 <TopImageBox image="location" color={color.red3}>
-                    <h4>Location Of Your Bakery Business</h4>
+                    <Heading size={3} template={4}>Location Of Your Bakery Business</Heading>
                     <p>
                         The location you choose will depend on the type
                         of bakery you want to run. If you’re only producing baked goods to sell to other businesses, you won’t need a shop front. On the other hand, if you’re selling to the public or operating as a bakery cafe, you’ll need a retail location.
@@ -36,7 +37,7 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="side-yellow" color={color.yellow3}>
-                    <h4>Equipment For Your Bakery Business</h4>
+                    <Heading size={3} template={4}>Equipment For Your Bakery Business</Heading>
                     <p>
                         Bakeries will require specialized equipment. You’ll need a professional kitchen that’s licensed for commercial food production. You’ll need counters, shelf fixtures, display cases and other furniture
                         to show your products. You’ll also require tables and chairs if you want people to eat at your bakery.
@@ -44,28 +45,28 @@ const SettingBusiness = () => (
                 </TopImageBox>
 
                 <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
-                    <h4>Employees</h4>
+                    <Heading size={3} template={4}>Employees</Heading>
                     <p>
                         Unless you want to do everything yourself, you’re going to need employees. Bakery owners often work very long hours, and you can’t be making products and service customers at the same time. You’ll need to attract and employ great staff that are well-versed in customer service.
                     </p>
                 </TopImageBox>
 
                 <TopImageBox image="state-filling-fees" color={color.yellow3}>
-                    <h4>Finances and taxes</h4>
+                    <Heading size={3} template={4}>Finances and taxes</Heading>
                     <p>
                         Unless you want to do everything yourself, you’re going to need employees. Bakery owners often work very long hours, and you can’t be making products and service customers at the same time. You’ll need to attract and employ great staff that are well-versed in customer service.
                     </p>
                 </TopImageBox>
 
                 <TopImageBox image="software.png" color={color.blue3}>
-                    <h4>Software And Processes</h4>
+                    <Heading size={3} template={4}>Software And Processes</Heading>
                     <p>
                         There’s some specialist bakery software out there, and of course you’ll need a point of sale (POS) system. There are many other apps that can help you, see our list at the end of this guide.
                     </p>
                 </TopImageBox>
 
                 <TopImageBox image="display-ads" color={color.purple3}>
-                    <h4>Marketing</h4>
+                    <Heading size={3} template={4}>Marketing</Heading>
                     <p>
                         Marketing will probably be part of your bakery business. At the very least you’ll need signs to attract people in, but you should also look into local advertising, both offline and online. It’s also a good idea to create a website where you can share details and photos of what you bake.
                     </p>
