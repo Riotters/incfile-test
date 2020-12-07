@@ -17,12 +17,13 @@ import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 //Texts
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
 import { about, related } from "../../../static/research-topics/ein-info/identification-number";
+import {Heading} from "../../../atomic/atoms/typography/heading";
 
 const HelpCenter = () => (
   <Layout>
     <SEO title="Resources about Employer Identification Numbers | Incfile" description="Find information and instructions for getting and managing the EIN number for your business. Read more here." />
     <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
-      <h1>{top.header}</h1>
+      <Heading size={2} template={1} left>{top.header}</Heading>
       <p>{top.text}</p>
       <Searchbar />
     </Top>

@@ -15,6 +15,7 @@ import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
 import { about } from "../../../static/research-topics/s-corporation-info/s-corp-distribution";
 import { related } from "../../../static/research-topics/s-corporation-info";
+import {Heading} from "../../../atomic/atoms/typography/heading";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';
@@ -41,7 +42,7 @@ const HelpCenter = () => {
                 description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state."
             />
             <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
-                <h1>{top.header}</h1>
+                <Heading size={2} template={1} left>{top.header}</Heading>
                 <p>{top.text}</p>
                 <Searchbar />
             </Top>

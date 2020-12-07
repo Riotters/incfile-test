@@ -41,7 +41,7 @@ const AboutSection = ({ className, content }) => (
       <OvalSVG />
     </Oval>
     <ImageContent image="s-corporation-tax-calculator-about-3829">
-      <Heading size="3">{content.header}</Heading>
+      <Heading size={2} template={3} left>{content.header}</Heading>
       <Paragraph big>{content.text}</Paragraph>
       <Paragraph big>{content.text2}</Paragraph>
       {/* <BoxedButton className="boxed-button boxed-button--1" content={content.button} textColor={color.grey1} />
@@ -54,7 +54,7 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="40" mixed>
         {parse(content.text7)}
       </Paragraph>
-      <IconTextColorBox color={color.green3} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve />
+      <IconTextColorBox color={color.green3} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve headingSize={3} />
       <Heading size="3">{content.header2}</Heading>
       <Paragraph big>{content.text3}</Paragraph>
       <Paragraph big bottomMargin="96">

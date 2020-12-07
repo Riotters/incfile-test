@@ -21,7 +21,7 @@ const Wrapper = styled.div`
     box-shadow: ${(props) => (props.noShadow ? "" : shadow.white1)};
     margin: auto;
 
-    & > h4, & > p {
+    & > h3, & > h4, & > p {
         text-align: center;
     }
 `;
@@ -45,7 +45,7 @@ const ColorBox = styled.div`
 
 const colorBlue = color.blue1;
 
-const SCorpTaxBox = ({ className, image, color, content, curve }) => {
+const SCorpTaxBox = ({ className, image, headingSize = 3, headingSizeTemplate = 4, color, content, curve }) => {
   return (
     <Wrapper className={className}>
         {curve && (
@@ -56,7 +56,7 @@ const SCorpTaxBox = ({ className, image, color, content, curve }) => {
         <ImageWrapper>
             <Image filename={image} />
         </ImageWrapper>
-        <Heading size="4" bottomMargin="16">
+        <Heading size={headingSize} template={headingSizeTemplate} bottomMargin="16">
           {content.header}
         </Heading>
         <Paragraph maxWidth="358">{content.text}</Paragraph>
