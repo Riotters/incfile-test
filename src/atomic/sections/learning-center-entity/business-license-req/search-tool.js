@@ -65,8 +65,7 @@ const ImageBoxes = styled.div`
   .box {
       padding: 16px 16px 56px;
 
-    h4 {
-        text-align: center;
+    h3 {
         padding: 24px 0 0;
     }
 
@@ -251,7 +250,9 @@ const SearchToolSection = ({ content, businessIndustryList }) => {
 								image="your-state-7282"
 								color={color.blue3}
 							>
-								<Heading size="4">{cards[0]}</Heading>
+								<Heading size={3} template={4} center>
+									{cards[0]}
+								</Heading>
 								<Dropdown
 									className="dropdown"
 									placeholder="Select"
@@ -264,7 +265,9 @@ const SearchToolSection = ({ content, businessIndustryList }) => {
 								image="forming-a-corporation"
 								color={color.orange3}
 							>
-								<Heading size="4">{cards[1]}</Heading>
+								<Heading size={3} template={4} center>
+									{cards[1]}
+								</Heading>
 								<Dropdown
 									className="dropdown"
 									placeholder="Select"

@@ -6,9 +6,6 @@ import { MapData } from "./map-data";
 import { MapLabels } from "./map-labels";
 import { MapLabelsCorporations } from "./map-labels-corporations";
 import ArrowIcon from "../../images/arrow-circle.inline.svg";
-import { color } from "../../atomic/atoms/styles/colors";
-import Curve from "../../atomic/atoms/icons/curve";
-import CurveSVG from "../../images/curves/top-left-bottom-right.inline.svg";
 
 const Wrapper = styled.div`
   display: flex;

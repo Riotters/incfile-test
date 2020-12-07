@@ -9,14 +9,10 @@ import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
-import About from "../../atomic/sections/incfile-vs/legalzoom/about";
-import Conclusion from "../../atomic/sections/incfile-vs/legalzoom/conclusion";
-import Selections from "../../atomic/sections/incfile-vs/legalzoom/selections";
 import Rocket from "../../atomic/sections/rocket";
 import Opinions from "../../atomic/sections/form/opinions";
 import Choose from "../../atomic/sections/form/choose";
 import Care from "../../atomic/sections/form/care";
-import { setup } from "../../static/manage-your-company/home-page-v3";
 import ButtonVideo from "../../atomic/molecules/buttons/button-video";
 const IncfileVsLegalzoom = () => {
   return (

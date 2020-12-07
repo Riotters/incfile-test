@@ -34,29 +34,50 @@ const Wrapper = styled.div`
 
 	.react-tabs {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-beteen;
 		width: 100%;
 
+		@media (min-width: 769px) {
+			flex-direction: row;
+		}
+
 		&__tab-list {
 			list-style: none;
+			display: flex;
+			overflow: auto;
+
+			@media (min-width: 769px) {
+				flex-direction: column;
+				overflow: visible;
+			}
 		}
 
 		&__tab {
 			padding: 0;
 
-			button {
-				width: 100%;
-			}
-
 			&--selected {
 				button {
-					box-shadow: 0 40px 80px 0 #e6e6e6;
-					font-weight: 600;
-					z-index: 1;
+					border-bottom: 2px solid ${color.blue1};
 
-					.tabArrow {
-						opacity: 1;
-						transform: translateX(0);
+					span {
+						font-weight: 600;
+						color: ${color.blue1};
+					}
+
+					@media (min-width: 769px) {
+						box-shadow: 0 40px 80px 0 #e6e6e6;
+						z-index: 1;
+						border-bottom: 0px;
+
+						span {
+							color: #4e4e4e;
+						}
+
+						.tabArrow {
+							opacity: 1;
+							transform: translateX(0);
+						}
 					}
 				}
 			}
@@ -120,40 +141,40 @@ const PanelWrapper = styled.article`
 `;
 
 const Button = styled.button`
-	height: 78px;
-	line-height: 78px;
+	height: 48px;
+	width: 100%;
+	line-height: 48px;
 	color: #4e4e4e;
-	background: #fff;
-	transition: box-shadow 0.3s ease;
-	box-shadow: 0 20px 30px 0 #e6e6e6;
+	background: transparent;
 	display: flex;
 	cursor: pointer;
 	position: relative;
-	border-radius: 5px;
 	overflow: hidden;
 	margin-bottom: 7px;
 	border: none;
 	z-index: 0;
 
-	&.active {
-		box-shadow: 0 40px 80px 0 #e6e6e6;
-		font-weight: 600;
-		z-index: 1;
-
-		.tabArrow {
-			opacity: 1;
-			transform: translateX(0);
-		}
+	@media (min-width: 769px) {
+		box-shadow: 0 20px 30px 0 #e6e6e6;
+		transition: box-shadow 0.3s ease;
+		background: #fff;
+		border-radius: 5px;
+		height: 78px;
+		line-height: 78px;
 	}
 `;
 
 const Icon = styled.div`
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
 	height: 80px;
 	width: 50px;
 	opacity: 0.75;
+
+	@media (min-width: 769px) {
+		display: flex;
+	}
 
 	@media (min-width: 992px) {
 		width: 80px;
@@ -165,24 +186,29 @@ const Content = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	flex-grow: 1;
-	padding: 0 24px;
-	border-left: 1px solid #f4f4f4;
+	padding: 0 16px;
+
+	@media (min-width: 769px) {
+		border-left: 1px solid #f4f4f4;
+		padding: 0 24px;
+	}
 
 	span {
 		color: #4e4e4e;
 		font-family: Avenir;
-		font-size: 13px;
+		font-size: 16px;
 		white-space: nowrap;
-
-		@media (min-width: 769px) {
-			font-size: 16px;
-		}
 	}
 
 	.tabArrow {
+		display: none;
 		opacity: 0;
 		transform: translateX(-3px);
 		transition: opacity 0.3s ease, transform 0.3s ease;
+
+		@media (min-width: 769px) {
+			display: flex;
+		}
 
 		svg {
 			path {

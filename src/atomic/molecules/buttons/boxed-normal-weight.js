@@ -6,7 +6,6 @@ import Circle from "../../atoms/icons/circle";
 import Image from "../../atoms/image/image";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import { color } from "../../atoms/styles/colors";
-import ArrowLink from "../../molecules/buttons/text";
 import ArrowSVG from "../../../images/arrow.inline.svg";
 
 const Wrapper = styled(Link)`

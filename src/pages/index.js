@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import styled from "styled-components";
+import parse from "html-react-parser";
 import SEO from "../components/seo";
 //Sections
 import Top from "../atomic/partials/top";
@@ -14,10 +14,6 @@ import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import BusinessFormation from "../atomic/sections/manage-your-company/home-page-v3/business-formation";
 import SetupYourBusiness from "../atomic/sections/manage-your-company/home-page-v3/setup-your-business";
 import Rocket from "../atomic/sections/rocket";
-import { shadow } from "../atomic/atoms/styles/shadows";
-import { color } from "../atomic/atoms/styles/colors";
-import { getAggregrateReviews } from "../api/Api";
-import { formatNumber } from "../helpers/utils";
 import RatingRow from "../atomic/atoms/boxes/rating-row";
 import CartBlock from "../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../atomic/molecules/blocks/rating-block";
@@ -38,7 +34,7 @@ const HomePageV3 = () => {
 				imageMobilePosition="-8%"
 			>
 				<h1>{top.header}</h1>
-				<p>{top.text}</p>
+				<p>{parse(top.text)}</p>
 				<Buttonsbox>
 					<Button content={top.button[0]} theme="primary56" arrow />
 				</Buttonsbox>
