@@ -13,46 +13,60 @@ import Variants from "../../atomic/sections/learning-center-entity/state-informa
 import Subscription from "../../atomic/sections/learning-center-entity/state-information-california/subscription";
 import Articles from "../../atomic/sections/articles";
 //Texts
-import { top, tabPages, afterFormation, launchBusiness, subscription } from "../../static/learning-center-entity/state-information-california";
+import {
+	top,
+	tabPages,
+	afterFormation,
+	launchBusiness,
+	subscription,
+} from "../../static/learning-center-entity/state-information-california";
 import LeftTabPages from "../../atomic/sections/choose-your-business/left-tab-pages";
 import MainPageContent from "../../atomic/states-llc/page-content";
 import ContentMap from "../../atomic/partials/content-map";
 import CorporationLayout from "../../atomic/partials/corporation-layout";
-import { getFullPricesAndFilings } from '../../api/Api';
+import { getFullPricesAndFilings } from "../../api/Api";
 
 const CaliforniaCorporation = () => {
-    const [dataApi, setDataApi] = React.useState({});
-    React.useEffect(() => {
-        getFullPricesAndFilings('California', 'Corporation').then(data => {
-            setDataApi(data);
-        });
-    }, []);
+	const [dataApi, setDataApi] = React.useState({});
+	React.useEffect(() => {
+		getFullPricesAndFilings("California", "Corporation").then((data) => {
+			setDataApi(data);
+		});
+	}, []);
 
-    return (
-        <Layout>
-            <SEO title="Forms & Filing Rules for California S Corps & C Corps" description="From annual reports to business licenses and permits, learn about the forms and filing requirements for your California corporation." />
-            <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
-                <h1>{top.header}</h1>
-                <p>{top.text}</p>
-                <Buttonsbox>
-                    <Button externalLink content={top.buttons[0]} theme="primary56" arrow />
-                </Buttonsbox>
-            </Top>
-            <CorporationLayout>
-                <LeftTabPages content={tabPages} nonDIY />
-                <MainPageContent>
-                    <ContentMap content={afterFormation} data={dataApi} />
-                </MainPageContent>
-            </CorporationLayout>
-            <Rocket content={launchBusiness} />
-            <Requirements data={dataApi} />
-            <LearnMore data={dataApi} />
-            <QuickLinks />
-            <Variants data={dataApi} />
-            <Subscription content={subscription} />
-            <Articles />
-        </Layout>
-    );
-}
+	return (
+		<Layout>
+			<SEO
+				title="Managing Your California S Corp or C Corp"
+				description="From annual reports to business licenses and permits, learn about the forms and filing requirements for your California corporation."
+			/>
+			<Top
+				imageName="mr-bulb-corporation-california-8302"
+				imageAlt="Mrs Bulb and with checklist"
+				ovalColor="purple-2"
+				textWidth="530"
+			>
+				<h1>{top.header}</h1>
+				<p>{top.text}</p>
+				<Buttonsbox>
+					<Button externalLink content={top.buttons[0]} theme="primary56" arrow />
+				</Buttonsbox>
+			</Top>
+			<CorporationLayout>
+				<LeftTabPages content={tabPages} nonDIY />
+				<MainPageContent>
+					<ContentMap content={afterFormation} data={dataApi} />
+				</MainPageContent>
+			</CorporationLayout>
+			<Rocket content={launchBusiness} />
+			<Requirements data={dataApi} />
+			<LearnMore data={dataApi} />
+			<QuickLinks />
+			<Variants data={dataApi} />
+			<Subscription content={subscription} />
+			<Articles />
+		</Layout>
+	);
+};
 
 export default CaliforniaCorporation;

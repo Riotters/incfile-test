@@ -37,7 +37,7 @@ const CaliforniaCorporation = () => {
 	return (
 		<Layout>
 			<SEO
-				title="Forms & Filing Rules for California S Corps & C Corps"
+				title="Managing Your California S Corp or C Corp"
 				description="From annual reports to business licenses and permits, learn about the forms and filing requirements for your California corporation."
 			/>
 			<Top

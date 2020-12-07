@@ -1,28 +1,34 @@
 import styled from "styled-components";
-import {Heading} from "../../atoms/typography/heading";
+import { Heading } from "../../atoms/typography/heading";
 import React from "react";
-import {Paragraph} from "../../atoms/typography/paragraph";
+import { Paragraph } from "../../atoms/typography/paragraph";
 import ContentCenter from "../../partials/content-center";
 
 const Wrapper = styled.div`
-    position: relative;
-    padding: 120px 0 0;
-    
-    @media (min-width: 576px) {
-        padding: 120px 0 133px;
-    }
-    
-    text-align: center;
+	position: relative;
+	padding: 120px 0 0;
+
+	@media (min-width: 576px) {
+		padding: 120px 0 133px;
+	}
+
+	text-align: center;
 `;
 
 const AccountingAndBookkeepingService = ({ content }) => (
-    <Wrapper>
-        <ContentCenter contentWidth={770}>
-            <Heading size={2} bottomMargin={49}>{content.header}</Heading>
-            <Paragraph big bottomMargin={40}>{content.text}</Paragraph>
-            <Paragraph big bottomMargin={32}>{content.text2}</Paragraph>
-        </ContentCenter>
-    </Wrapper>
+	<Wrapper>
+		<ContentCenter contentWidth={770}>
+			<Heading size={2} bottomMargin={49}>
+				{content.header}
+			</Heading>
+			<Paragraph big bottomMargin={40}>
+				{content.text}
+			</Paragraph>
+			<Paragraph big bottomMargin={32}>
+				{content.text2}
+			</Paragraph>
+		</ContentCenter>
+	</Wrapper>
 );
 
 export default AccountingAndBookkeepingService;

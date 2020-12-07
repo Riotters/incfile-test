@@ -20,55 +20,63 @@ import { faqContent } from "../../static/states-llc/florida/faq";
 import FAQSchemaFL from "../../atomic/states-llc/florida/faq-fl-schema";
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  @media (min-width: 769px) {
-    flex-direction: ${(props) => (props.layout !== "grid" ? "row" : "column")};
-  }
+	@media (min-width: 769px) {
+		flex-direction: ${(props) => (props.layout !== "grid" ? "row" : "column")};
+	}
 
-  .ReactCollapse--collapse {
-    width: 100%;
-    transition: height 500ms;
-    margin-left: auto;
+	.ReactCollapse--collapse {
+		width: 100%;
+		transition: height 500ms;
+		margin-left: auto;
 
-    @media (min-width: 769px) {
-      max-width: ${(props) => (props.layout !== "grid" ? "55%" : "")};
-    }
+		@media (min-width: 769px) {
+			max-width: ${(props) => (props.layout !== "grid" ? "55%" : "")};
+		}
 
-    @media (min-width: 1200px) {
-      max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
-    }
-  }
+		@media (min-width: 1200px) {
+			max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
+		}
+	}
 `;
 
 const FloridaFaq = () => (
-    <Layout>
-        <SEO title="Frequently Asked Questions About Forming a Florida LLC" description="Getting ready to start an LLC in the Lone Star state? Here are the most frequently asked questions to help your business get up and running. Read more." />
-        
-        <FAQSchemaFL />
+	<Layout>
+		<SEO
+			title="Frequently Asked Questions About Starting a Florida LLC"
+			description="Getting ready to start an LLC in the Lone Star state? Here are the most frequently asked questions to help your business get up and running. Read more."
+		/>
 
-        <Top imageName="mrs-bulb-question" imageAlt="Frequently question" headlineWidth={700} stateName="TX">
-            <h1>{faqContent.header.title}</h1>
-            <p>{faqContent.header.subline}</p>
+		<FAQSchemaFL />
 
-            <RatingRow topMargin="0">
-                <CartBlock />
-                <RatingBlock />
-            </RatingRow>
-        </Top>
+		<Top
+			imageName="mrs-bulb-question"
+			imageAlt="Frequently question"
+			headlineWidth={700}
+			stateName="TX"
+		>
+			<h1>{faqContent.header.title}</h1>
+			<p>{faqContent.header.subline}</p>
 
-        <WrapperContent>
-            <Wrapper>
-                <LeftTabPages content={tabPages} />
-                <MainPageContent>
-                    <FaqSection content={faqContent.content} />
-                </MainPageContent>
-            </Wrapper>
-        </WrapperContent>
+			<RatingRow topMargin="0">
+				<CartBlock />
+				<RatingBlock />
+			</RatingRow>
+		</Top>
 
-        <Rocket url="?entityType=LLC&entityState=FL" />
-    </Layout>
+		<WrapperContent>
+			<Wrapper>
+				<LeftTabPages content={tabPages} />
+				<MainPageContent>
+					<FaqSection content={faqContent.content} />
+				</MainPageContent>
+			</Wrapper>
+		</WrapperContent>
+
+		<Rocket url="?entityType=LLC&entityState=FL" />
+	</Layout>
 );
 
 export default FloridaFaq;

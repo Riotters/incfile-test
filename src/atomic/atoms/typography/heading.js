@@ -32,7 +32,7 @@ const templateStyle = (template) => {
 			return `
                 font-family: MarkPro;
                 font-size: 24px;
-                line-height: 1.2;
+                line-height: 32px;
             `;
 		}
 		case 4: {
@@ -40,7 +40,7 @@ const templateStyle = (template) => {
                 font-family: Avenir;
                 font-weight: 900;
                 font-size: 20px;
-                line-height: 1.2;
+                line-height: 28px;
             `;
 		}
 		case 5: {
@@ -68,7 +68,8 @@ const HeadingWrapper = styled.div`
 		props.bottomPadding ? `${props.bottomPadding}px` : ""};
 	max-width: ${(props) => (props.maxWidth ? `${props.maxWidth}px` : "")};
 	position: ${(props) => (props.relative ? "relative" : "")};
-	text-align: ${(props) => (props.left ? "left" : "")};
+	text-align: ${(props) =>
+		props.left ? "left" : props.center ? "center" : ""};
 	@media (max-width: 575px) {
 		word-break: break-word;
 	}
@@ -85,6 +86,7 @@ export const Heading = ({
 	size,
 	template,
 	left,
+	center,
 	children,
 	bottomMargin,
 	bottomMarginMD,
@@ -99,6 +101,7 @@ export const Heading = ({
 		as={`h${size}`}
 		template={template}
 		left={left}
+		center={center}
 		bottomMargin={bottomMargin}
 		bottomMarginMD={bottomMarginMD}
 		topMargin={topMargin}

@@ -13,43 +13,55 @@ import Path from "../../molecules/blocks/research-topics-path";
 import LightBoxVideo from "../../../components/LightBox";
 
 const About = styled.section`
-  position: relative;
-  padding-bottom: 104px;
+	position: relative;
+	padding-bottom: 104px;
 `;
 
 const AboutSection = ({ className, content }) => (
-  <About className={className} id="answers">
-    <Oval className="oval" height="570" width="570" y="-40">
-      <OvalSVG />
-    </Oval>
-    <ImageContent image="web-address-search">
-      <Path content={content.links} />
-      <Heading size={3} bottomMargin="32">
-        {content.header}
-      </Heading>
-      <Heading size={3} bottomMargin="24">
-        {content.header2}
-      </Heading>
-      <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="R_oIgzYh7NU" bottomMargin="48" />
-      <Paragraph big bottomMargin="48">
-        {content.text}
-      </Paragraph>
-      <Heading size={3} bottomMargin="24">
-        {content.header3}
-      </Heading>
-      <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="R_oIgzYh7NU" bottomMargin="48" />
-      <Paragraph big bottomMargin="48">
-        {content.text2}
-      </Paragraph>
-      <Heading size={3} bottomMargin="24">
-        {content.header4}
-      </Heading>
-      <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="R_oIgzYh7NU" bottomMargin="48" />
-      <Paragraph big bottomMargin="48">
-        {content.text3}
-      </Paragraph>
-    </ImageContent>
-  </About>
+	<About className={className} id="answers">
+		<Oval className="oval" height="570" width="570" y="-40">
+			<OvalSVG />
+		</Oval>
+		<ImageContent image="web-address-search">
+			<Path content={content.links} />
+			<Heading size={1} template={3} bottomMargin="32">
+				{content.header}
+			</Heading>
+			<Heading size={3} bottomMargin="24">
+				{content.header2}
+			</Heading>
+			<LightBoxVideo
+				thumbnailVideo="comparison-chart-video-3611"
+				videoID="R_oIgzYh7NU"
+				bottomMargin="48"
+			/>
+			<Paragraph big bottomMargin="48">
+				{content.text}
+			</Paragraph>
+			<Heading size={3} bottomMargin="24">
+				{content.header3}
+			</Heading>
+			<LightBoxVideo
+				thumbnailVideo="comparison-chart-video-3611"
+				videoID="R_oIgzYh7NU"
+				bottomMargin="48"
+			/>
+			<Paragraph big bottomMargin="48">
+				{content.text2}
+			</Paragraph>
+			<Heading size={3} bottomMargin="24">
+				{content.header4}
+			</Heading>
+			<LightBoxVideo
+				thumbnailVideo="comparison-chart-video-3611"
+				videoID="R_oIgzYh7NU"
+				bottomMargin="48"
+			/>
+			<Paragraph big bottomMargin="48">
+				{content.text3}
+			</Paragraph>
+		</ImageContent>
+	</About>
 );
 
 export default AboutSection;

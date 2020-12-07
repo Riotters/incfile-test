@@ -11,27 +11,30 @@ import ContentMap from "../../atomic/partials/content-map";
 // Content
 import { top, howToGuide } from "../../static/states-llc/idaho/home";
 import { tabPages } from "../../static/states-llc/idaho/general";
-import { getFullPricesAndFilings } from '../../api/Api';
+import { getFullPricesAndFilings } from "../../api/Api";
 
 function IdahoIndexPage() {
-    const [dataApi, setDataApi] = React.useState({});
-    
-    React.useEffect(() => {
-        getFullPricesAndFilings('Idaho').then(data => {
-            setDataApi(data);
-        });
-    }, []);
-    return (
-        <Layout>
-            <SEO title="LLCs in Idaho | Guide to Forming an LLC in Idaho" description="Ready to form your Idaho LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
-            <LLCLayout data={dataApi} top={top}>
-                <LeftTabPages content={tabPages} nonDIY />
-                <MainPageContent>
-                    <ContentMap content={howToGuide} data={dataApi} />
-                </MainPageContent>
-            </LLCLayout>
-        </Layout>
-    );
+	const [dataApi, setDataApi] = React.useState({});
+
+	React.useEffect(() => {
+		getFullPricesAndFilings("Idaho").then((data) => {
+			setDataApi(data);
+		});
+	}, []);
+	return (
+		<Layout>
+			<SEO
+				title="Idaho LLCs | Forming an LLC in Idaho"
+				description="Ready to form your Idaho LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+			/>
+			<LLCLayout data={dataApi} top={top}>
+				<LeftTabPages content={tabPages} nonDIY />
+				<MainPageContent>
+					<ContentMap content={howToGuide} data={dataApi} />
+				</MainPageContent>
+			</LLCLayout>
+		</Layout>
+	);
 }
 
 export default IdahoIndexPage;

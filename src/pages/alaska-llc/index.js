@@ -11,30 +11,31 @@ import ContentMap from "../../atomic/partials/content-map";
 // Content
 import { top, howToGuide } from "../../static/states-llc/alaska/home";
 import { tabPages } from "../../static/states-llc/alaska/general";
-import { getFullPricesAndFilings } from '../../api/Api';
-
+import { getFullPricesAndFilings } from "../../api/Api";
 
 function AlaskaIndexPage() {
-    const [dataApi, setDataApi] = React.useState({});
+	const [dataApi, setDataApi] = React.useState({});
 
-    React.useEffect(() => {
-        getFullPricesAndFilings('Alaska').then(data => {
-            setDataApi(data);
-        });
-    }, []);
-    
-    return (
-        <Layout>
-            <SEO title="LLCs in Alaska | Guide to Forming an LLC in Alaska" 
-            description="Ready to register your AK LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
-            <LLCLayout data={dataApi} top={top}>
-                <LeftTabPages content={tabPages} nonDIY />
-                <MainPageContent>
-                    <ContentMap content={howToGuide} data={dataApi} />
-                </MainPageContent>
-            </LLCLayout>
-        </Layout>
-    );
+	React.useEffect(() => {
+		getFullPricesAndFilings("Alaska").then((data) => {
+			setDataApi(data);
+		});
+	}, []);
+
+	return (
+		<Layout>
+			<SEO
+				title="Alaska LLCs | Starting an LLC in Alaska"
+				description="Ready to register your AK LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+			/>
+			<LLCLayout data={dataApi} top={top}>
+				<LeftTabPages content={tabPages} nonDIY />
+				<MainPageContent>
+					<ContentMap content={howToGuide} data={dataApi} />
+				</MainPageContent>
+			</LLCLayout>
+		</Layout>
+	);
 }
 
 export default AlaskaIndexPage;

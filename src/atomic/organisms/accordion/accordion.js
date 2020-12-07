@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import parse from "html-react-parser";
 import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
-
+import Heading from "../../atoms/typography/heading";
 import ListWithDot from "../../states-llc/list-with-dot";
 import { color } from "../../atoms/styles/colors";
 import ArrowLink from "../../../components/arrow-link";
@@ -204,13 +204,18 @@ const Content = styled.div`
 	flex-grow: 1;
 	padding: 16px 40px 16px 0;
 
-	span {
+	span,
+	h3,
+	h4,
+	h5 {
 		color: #4e4e4e;
 		font-family: Avenir;
 		font-size: 16px;
+		font-weight: normal;
 		text-align: left;
 		width: 100%;
 		line-height: 24px;
+		max-width: 100%;
 	}
 `;
 
@@ -235,7 +240,13 @@ const Icon = styled.div`
 const TabHeading = styled(AccordionItemHeading)`
 	.accordion__button[aria-expanded="true"] {
 		border-radius: 5px 5px 0 0;
-		font-weight: 900;
+
+		span,
+		h3,
+		h4,
+		h5 {
+			font-weight: 900;
+		}
 
 		svg {
 			transform: rotate(0deg);
@@ -283,6 +294,7 @@ const AccordionFaq = ({
 	noAutoWidth,
 	topMargin,
 	bottomMargin,
+	header,
 }) => {
 	return (
 		// <VisibilitySensor partialVisibility once>
@@ -317,7 +329,10 @@ const AccordionFaq = ({
 												<ArrowSVG />
 											</Icon>
 											<Content>
-												<span>{item.question}</span>
+												{!header && <span>{item.question}</span>}
+												{header === 3 && <h3>{item.question}</h3>}
+												{header === 4 && <h4>{item.question}</h4>}
+												{header === 5 && <h5>{item.question}</h5>}
 											</Content>
 										</Button>
 									</AccordionItemButton>

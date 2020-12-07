@@ -13,46 +13,60 @@ import Variants from "../../atomic/sections/learning-center-entity/state-informa
 import Subscription from "../../atomic/sections/learning-center-entity/state-information-california/subscription";
 import Articles from "../../atomic/sections/articles";
 //Texts
-import { top, tabPages, corporation, launchBusiness, subscription } from "../../static/learning-center-entity/state-information-new-york";
+import {
+	top,
+	tabPages,
+	corporation,
+	launchBusiness,
+	subscription,
+} from "../../static/learning-center-entity/state-information-new-york";
 import LeftTabPages from "../../atomic/sections/choose-your-business/left-tab-pages";
 import MainPageContent from "../../atomic/states-llc/page-content";
 import ContentMap from "../../atomic/partials/content-map";
 import CorporationLayout from "../../atomic/partials/corporation-layout";
 
-import { getFullPricesAndFilings } from '../../api/Api';
+import { getFullPricesAndFilings } from "../../api/Api";
 
 const NewYorkCorporation = () => {
-    const [dataApi, setDataApi] = React.useState({});
-    React.useEffect(() => {
-        getFullPricesAndFilings('New York', 'Corporation').then(data => {
-            setDataApi(data);
-        });
-    }, []);
-    return (
-        <Layout>
-            <SEO title="New York Corporations & Other Business Entities " description="Thinking of starting an S Corp, C Corp, or LLC in New York? Learn about corporations in CA and decide which business type is right for you." />
-            <Top imageName="mr-bulb-corporation-california-8302" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" textWidth="530">
-                <h1>{top.header}</h1>
-                <p>{top.text}</p>
-                <Buttonsbox>
-                    <Button content={top.buttons[0]} theme="primary56" arrow />
-                </Buttonsbox>
-            </Top>
-            <CorporationLayout>
-                <LeftTabPages content={tabPages} nonDIY />
-                <MainPageContent>
-                    <ContentMap content={corporation} />
-                </MainPageContent>
-            </CorporationLayout>
-            <Rocket content={launchBusiness} />
-            <Requirements data={dataApi} />
-            <LearnMore data={dataApi} />
-            <QuickLinks />
-            <Variants data={dataApi} entityType="CCorporation" />
-            <Subscription content={subscription} />
-            <Articles />
-        </Layout>
-    );
-}
+	const [dataApi, setDataApi] = React.useState({});
+	React.useEffect(() => {
+		getFullPricesAndFilings("New York", "Corporation").then((data) => {
+			setDataApi(data);
+		});
+	}, []);
+	return (
+		<Layout>
+			<SEO
+				title="New York Corporations & Other Business Entities "
+				description="Thinking of starting an S Corp, C Corp, or LLC in New York? Learn about corporations in FL and decide which business type is right for you."
+			/>
+			<Top
+				imageName="mr-bulb-corporation-california-8302"
+				imageAlt="Mrs Bulb and with checklist"
+				ovalColor="purple-2"
+				textWidth="530"
+			>
+				<h1>{top.header}</h1>
+				<p>{top.text}</p>
+				<Buttonsbox>
+					<Button content={top.buttons[0]} theme="primary56" arrow />
+				</Buttonsbox>
+			</Top>
+			<CorporationLayout>
+				<LeftTabPages content={tabPages} nonDIY />
+				<MainPageContent>
+					<ContentMap content={corporation} />
+				</MainPageContent>
+			</CorporationLayout>
+			<Rocket content={launchBusiness} />
+			<Requirements data={dataApi} />
+			<LearnMore data={dataApi} />
+			<QuickLinks />
+			<Variants data={dataApi} entityType="CCorporation" />
+			<Subscription content={subscription} />
+			<Articles />
+		</Layout>
+	);
+};
 
 export default NewYorkCorporation;

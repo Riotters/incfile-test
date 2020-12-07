@@ -45,7 +45,7 @@ import { TabPanel } from "react-tabs";
 const SideBusiness = () => (
 	<Layout>
 		<SEO
-			title="How to Start a Side Business"
+			title="Side Business Ideas | How to Start a Side Business"
 			description="Starting a side business is a great way to dip your toe into the waters of entrepreneurship. You can create and manage a side business alongside your normal job, so you’re reducing your risk and have a fallback position if the side business doesn’t work out."
 		/>
 
@@ -133,7 +133,9 @@ const SideBusiness = () => (
 				</TabPanel>
 				<TabPanel>
 					<PanelWrapper>
-						<Heading size={2} template={3} left>Why You Should Start a New Side Business</Heading>
+						<Heading size={2} template={3} left>
+							Why You Should Start a New Side Business
+						</Heading>
 
 						<Paragraph big>
 							If you’re wondering how viable it is to start a side business in
@@ -235,7 +237,9 @@ const SideBusiness = () => (
 			</OvalGreen>
 			<Container>
 				<CenterBox>
-					<Heading size={2} template={1} left>Your Side Business Needs a Business Plan</Heading>
+					<Heading size={2} template={1} left>
+						Your Side Business Needs a Business Plan
+					</Heading>
 
 					<Paragraph big>
 						It’s easy to think you won’t need a business plan for a side

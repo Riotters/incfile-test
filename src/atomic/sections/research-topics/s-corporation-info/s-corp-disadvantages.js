@@ -13,29 +13,36 @@ import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Path from "../../../molecules/blocks/research-topics-path";
 
 const About = styled.section`
-  position: relative;
-  padding-bottom: 104px;
+	position: relative;
+	padding-bottom: 104px;
 `;
 
 const AboutSection = ({ className, content }) => (
-  <About className={className} id="answers">
-    <Oval className="oval" height="570" width="570" y="-40">
-      <OvalSVG />
-    </Oval>
-    <ImageContent image="web-address-search">
-      <Path content={content.links} />
-      <Heading size={3} bottomMargin="32">
-        {content.header}
-      </Heading>
-      <Paragraph big bottomMargin="16">
-        {content.text}
-      </Paragraph>
-      <Paragraph big bottomMargin="24">
-        {content.text2}
-      </Paragraph>
-      <IconListColorBox content={content.list} color={color.green3} curve curveColor={color.greenpurple2} rounded bottomMargin="48" />
-    </ImageContent>
-  </About>
+	<About className={className} id="answers">
+		<Oval className="oval" height="570" width="570" y="-40">
+			<OvalSVG />
+		</Oval>
+		<ImageContent image="web-address-search">
+			<Path content={content.links} />
+			<Heading size={1} template={3} bottomMargin="32">
+				{content.header}
+			</Heading>
+			<Paragraph big bottomMargin="16">
+				{content.text}
+			</Paragraph>
+			<Paragraph big bottomMargin="24">
+				{content.text2}
+			</Paragraph>
+			<IconListColorBox
+				content={content.list}
+				color={color.green3}
+				curve
+				curveColor={color.greenpurple2}
+				rounded
+				bottomMargin="48"
+			/>
+		</ImageContent>
+	</About>
 );
 
 export default AboutSection;

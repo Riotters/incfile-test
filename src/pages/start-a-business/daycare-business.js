@@ -37,13 +37,13 @@ import Adventages from "../../components/adventages";
 import TextBoxed from "../../atomic/molecules/text-blocks/text-boxed";
 import TabsOvalTwoSvg from "../../images/ovals/bottom-right-transparent-green3.inline.svg";
 import ReactTabs from "../../atomic/partials/ReactTabs";
-import {tabs} from "../../static/type-of-business/daycare-business";
-import {TabPanel} from "react-tabs";
+import { tabs } from "../../static/type-of-business/daycare-business";
+import { TabPanel } from "react-tabs";
 
 const DaycareBusiness = () => (
 	<Layout>
 		<SEO
-			title="How to Start a Daycare"
+			title="How to Start a Daycare | Opening a Childcare Business"
 			description="Parents are increasingly having to work more jobs or longer hours to make ends meet — that means there’s never been a greater need for reliable daycare organizations that can take care of the little ones."
 		/>
 
@@ -189,7 +189,9 @@ const DaycareBusiness = () => (
 
 				<TabPanel>
 					<PanelWrapper>
-						<Heading size={2} template={3} left>Is a Childcare Business Right for You?</Heading>
+						<Heading size={2} template={3} left>
+							Is a Childcare Business Right for You?
+						</Heading>
 						<Paragraph big style={{ marginBottom: "48px" }}>
 							Although it can be exciting to form a daycare business, there will
 							be significant demands on you as a small business owner. Here are
@@ -349,7 +351,10 @@ const DaycareBusiness = () => (
 
 		<ToolsAndLinks />
 
-		<Conclusion to={process.env.ORDER_URL + "/form-order-now.php"} buttonTitle="Start your Daycare Business with us, today">
+		<Conclusion
+			to={process.env.ORDER_URL + "/form-order-now.php"}
+			buttonTitle="Start your Daycare Business with us, today"
+		>
 			<Heading size={3} style={{ fontSize: "48px" }}>
 				Conclusion
 			</Heading>

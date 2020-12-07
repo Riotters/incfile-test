@@ -24,7 +24,7 @@ function MontanaIndexPage() {
 	return (
 		<Layout>
 			<SEO
-				title="LLCs in Montana | Guide to Forming an LLC in Montana"
+				title="Montana LLCs | Starting an LLC in Montana"
 				description="Ready to form your Montana LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
 			/>
 			<LLCLayout data={dataApi} top={top}>

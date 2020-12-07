@@ -25,7 +25,6 @@ export const about = {
 				header2: `Limited Liability Company (LLC)`,
 				text2: `The LLC is one of the most popular types of business entities. It’s ideally suited for smaller organizations and startups, for several reasons:`,
 				box: {
-					header: `Advantages of LLCs`,
 					list: [
 						`LLCs are fast and easy to setup.`,
 						`LLCs have a simple business structure.`,
@@ -43,7 +42,6 @@ export const about = {
 				header5: `Types of Tax an LLC is Liable For`,
 				text6: `It’s important to note that an LLC will be liable for certain types of tax, for example:`,
 				box2: {
-					header: `Typical LLC Taxes`,
 					list: [
 						`Payroll tax on salaries paid to employees (but not to members or owners — they will pay self-employment tax on their personal tax returns).`,
 						`Sales tax on goods purchased by and for the business.`,
@@ -56,9 +54,8 @@ export const about = {
 			{
 				header: `Subchapter or Small Business Corporation 
         (S Corporation or S Corp)`,
-				text: `The S Corporation, or S Corp, is a business entity that was created and enacted into law by Congress in 1958. It was created to encourage small and family business creation, while eliminating the double taxation that conventional corporations (C Corps) had to pay. `,
+				text: `The S Corporation, or S Corp, is a business entity that was created and enacted into law by Congress in 1958. It was created to encourage small and family business creation, while eliminating the double taxation that conventional corporations (C Corps) had to pay. Key factors for S Corps include:`,
 				box: {
-					header: `Key factors for S Corps include:`,
 					list: [
 						`S Corps are formed and regulated on a state level.`,
 						`The liability of the S Corp and the personal liability of the owners and investors are separate.`,
@@ -77,7 +74,6 @@ export const about = {
 				header3: `Forming an LLC but Paying Tax as an S Corp`,
 				text5: `When you create an LLC, you may have the option to choose to be treated as an S Corp for taxation purposes. This takes advantage of both business types, as follows:`,
 				box2: {
-					header: `Key factors for S Corps include:`,
 					list: [
 						`The rules and regulations for running an LLC are less onerous than running an S Corp.`,
 						`There may be tax advantages to being taxed as an S Corp, specifically around owners and members taking money out of the business.`,
@@ -98,7 +94,6 @@ export const about = {
 				header: `The C Corporation`,
 				text: `A <a href='/what-is-c-corporation/'>C Corp, also known as a C Corporation</a>, is a type of business entity that is formed and regulated on a state level. It is created by filing “Articles of Incorporation” with the secretary of state within the state of incorporation. It is the most formal type of company and a corporate structure. The policies and cost of creating a C Corp vary from state to state. Factors affecting whether you would want to create a C Corp include:`,
 				box: {
-					header: `Factors affecting whether you would want to create a C Corp include:`,
 					list: [
 						`A C Corp has limited liability, so the investors and owners of a C Corp are not generally liable for business debts and other liabilities.`,
 						`Ownership of a C Corp is determined by who owns stock in the company.`,

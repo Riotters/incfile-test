@@ -12,13 +12,10 @@ import OvalTopRightSVG from "../../../../images/ovals/business-quiz-top-section-
 import Image from "../../../atoms/image/image";
 
 const Wrapper = styled.section`
-	padding: 180px 0 100px;
+	padding: 180px 0 168px;
 	position: relative;
 	overflow-x: hidden;
-
-	@media (min-width: 992px) {
-		overflow-x: initial;
-	}
+	overflow-y: visible;
 
 	.main-top-content p,
 	h1,

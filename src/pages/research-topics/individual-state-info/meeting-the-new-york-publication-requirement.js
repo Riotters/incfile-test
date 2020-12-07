@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../../components/layout";
 import SEO from "../../../components/seo";
+import { Heading } from "../../../atomic/atoms/typography/heading";
 //Sections
 import Top from "../../../atomic/partials/top";
 import About from "../../../atomic/sections/research-topics/state-info/ny-publication-requirement";
@@ -18,55 +19,56 @@ import {
 	service,
 	tools,
 } from "../../../static/learning-center-entity/help-center-article";
-import {
-	about
-} from "../../../static/research-topics/state-info/ny-publication-requirement";
+import { about } from "../../../static/research-topics/state-info/ny-publication-requirement";
 
 import { related } from "../../../static/research-topics/state-info";
 import { Helmet } from "react-helmet";
 
 const HelpCenter = () => {
-    const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';
-    const relatedInfo = {
-        header: `Related Articles`,
-        text: `Other users were also interested in knowing about…`,
-        buttons: related.buttons.filter(item => {
-            return item.url !== currentUri;
-        })
-    };
+	const currentUri =
+		typeof window !== "undefined" ? window.location.pathname : "";
+	const relatedInfo = {
+		header: `Related Articles`,
+		text: `Other users were also interested in knowing about…`,
+		buttons: related.buttons.filter((item) => {
+			return item.url !== currentUri;
+		}),
+	};
 
-    React.useEffect(() => {
-        const el = document.getElementById('answers');
-        el.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    })
+	React.useEffect(() => {
+		const el = document.getElementById("answers");
+		el.scrollIntoView({
+			behavior: "smooth",
+			block: "start",
+		});
+	});
 
-    return (
-        <Layout>
-            <SEO
-                title="How to Meet the New York LLC Publication Requirement"
-                description="Want to know how to get your certification of publication in New York? Learn about the NY LLC publication requirement & how to meet it."
-            />
-            <Top
-                imageName="mrs-bulb-help-center-article"
-                imageAlt="Mrs Bulb and with checklist"
-                ovalColor="green"
-            >
-                <h1>{top.header}</h1>
-                <p>{top.text}</p>
-                <Searchbar />
-            </Top>
-            <About content={about} />
-            <Related content={relatedInfo} />
-            <Categories content={categories} />
-            <Service content={service} />
-            <Tools content={tools} />
-            <Rocket content={rocket} />
-            <Helmet>
-                <script type="application/ld+json">
-                    {`{
+	return (
+		<Layout>
+			<SEO
+				title="How to Meet the New York LLC Publication Requirement"
+				description="Want to know how to get your certification of publication in New York? Learn about the NY LLC publication requirement & how to meet it."
+			/>
+			<Top
+				imageName="mrs-bulb-help-center-article"
+				imageAlt="Mrs Bulb and with checklist"
+				ovalColor="green"
+			>
+				<Heading size={2} template={1} left>
+					{top.header}
+				</Heading>
+				<p>{top.text}</p>
+				<Searchbar />
+			</Top>
+			<About content={about} />
+			<Related content={relatedInfo} />
+			<Categories content={categories} />
+			<Service content={service} />
+			<Tools content={tools} />
+			<Rocket content={rocket} />
+			<Helmet>
+				<script type="application/ld+json">
+					{`{
                         "@context": "https://schema.org",
                         "@type": "FAQPage",
                         "mainEntity": [{
@@ -216,10 +218,10 @@ const HelpCenter = () => {
                         }
                         }]
                     }`}
-                </script>
-            </Helmet>
-        </Layout>
-    );
-}
+				</script>
+			</Helmet>
+		</Layout>
+	);
+};
 
 export default HelpCenter;
