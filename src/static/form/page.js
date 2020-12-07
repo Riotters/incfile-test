@@ -23,7 +23,7 @@ export const top = {
 
 export const opinions = {
 	header: `Why Do Our Customers Love Us?`,
-	text: `4.8 Overall Satisfaction Rating based on 13,797 reviews`,
+	text: `4.8 Overall Satisfaction Rating based on <span id="js_dynamic_total_review">0</span> reviews`,
 	customers: [
 		{
 			photo: `mattweik-11`,

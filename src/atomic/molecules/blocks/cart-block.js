@@ -61,7 +61,12 @@ const CartBlock = () => {
 
   React.useEffect(() => {
     getAggregrateReviews().then((data) => {
-      setFiveStarsNumber(formatNumber(data["total_reviews"]));
+        setFiveStarsNumber(formatNumber(data["total_reviews"]));
+
+        if (document.getElementById('js_dynamic_total_review')) {
+            const jsDynamicTotalReviews = document.getElementById('js_dynamic_total_review');
+            jsDynamicTotalReviews.innerHTML = formatNumber(data["total_reviews"]);
+        }
     });
   }, []);
 
