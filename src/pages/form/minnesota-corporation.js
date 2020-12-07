@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../../components/layout";
-import PPCLLCLayout from "../../atomic/partials/ppc/ppc-llc-layout";
+import PPCCorporationLayout from "../../atomic/partials/ppc/ppc-corporation-layout";
 
 const FormALCorporation = () => {
     return (
         <Layout>
-            <PPCLLCLayout stateCode="WV" />
+            <PPCCorporationLayout stateCode="MN" />
         </Layout>
     );
 };
