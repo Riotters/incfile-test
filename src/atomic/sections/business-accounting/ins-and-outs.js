@@ -44,25 +44,47 @@ const Wrapper = styled.div`
 `;
 
 const Anchor = styled.div`
-  position: relative;
+	position: relative;
 `;
 
 const InsAndOuts = ({ content }) => (
-  <Wrapper>
-    <HeadingCenter headline={content.header} headlineWidth="770" text={content.text} textWidth="770" bottomMargin="40" />
-    <ImageContent image={content.image} contentCenter={false} className="colorbox-content">
-      <Anchor>
-        <Curve top="-20" right="-20" rotate={5}>
-          <CurveSVG />
-        </Curve>
-        <Colorbox color={content.box.color} className="ins-and-outs-colorbox" content={content.box.content} dotsColor={content.box.dotsColor} />
-      </Anchor>
+	<Wrapper>
+		<HeadingCenter
+			headline={content.header}
+			headlineWidth="770"
+			text={content.text}
+			textWidth="770"
+			bottomMargin="40"
+		/>
+		<ImageContent
+			image={content.image}
+			contentCenter={false}
+			className="colorbox-content"
+		>
+			<Anchor>
+				<Curve top="-20" right="-20" rotate={5}>
+					<CurveSVG />
+				</Curve>
+				<Colorbox
+					color={content.box.color}
+					className="ins-and-outs-colorbox"
+					content={content.box.content}
+					dotsColor={content.box.dotsColor}
+					paragraphHeader
+				/>
+			</Anchor>
 
-      <Colorbox color={content.box1.color} className="ins-and-outs-colorbox last" content={content.box1.content} dotsColor={content.box1.dotsColor} />
+			<Colorbox
+				color={content.box1.color}
+				className="ins-and-outs-colorbox last"
+				content={content.box1.content}
+				dotsColor={content.box1.dotsColor}
+				paragraphHeader
+			/>
 
-      <Accordion tab content={content.faq} />
-    </ImageContent>
-  </Wrapper>
+			<Accordion tab content={content.faq} />
+		</ImageContent>
+	</Wrapper>
 );
 
 export default InsAndOuts;

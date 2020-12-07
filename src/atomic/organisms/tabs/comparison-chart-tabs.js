@@ -314,11 +314,15 @@ const CCorpTabs = ({ layout, columns, content }) => {
 								//className={isVisible ? "slideUp enter panel1" : "slideUp panel1"}
 								layout={layout}
 							>
-								<Heading size="3">{content.content[0].header}</Heading>
+								<Heading size={2} template={3} left>
+									{content.content[0].header}
+								</Heading>
 								<Paragraph big bottomMargin="48" mixed>
 									{parse(content.content[0].text)}
 								</Paragraph>
-								<Heading size="3">{content.content[0].header2}</Heading>
+								<Heading size={2} template={3} left>
+									{content.content[0].header2}
+								</Heading>
 								<Paragraph big bottomMargin="40" mixed>
 									{parse(content.content[0].text2)}
 								</Paragraph>
@@ -351,11 +355,11 @@ const CCorpTabs = ({ layout, columns, content }) => {
 								>
 									<LLCTaxesSVG />
 								</Circle>
-								<Heading size="3">{content.content[0].header4}</Heading>
+								<Heading size={3}>{content.content[0].header4}</Heading>
 								<Paragraph big bottomMargin="72" mixed>
 									{parse(content.content[0].text5)}
 								</Paragraph>
-								<Heading size="3">{content.content[0].header5}</Heading>
+								<Heading size={3}>{content.content[0].header5}</Heading>
 								<Paragraph big bottomMargin="40" mixed>
 									{parse(content.content[0].text6)}
 								</Paragraph>
@@ -368,7 +372,9 @@ const CCorpTabs = ({ layout, columns, content }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel2" layout={layout}>
-								<Heading size="3">{content.content[1].header}</Heading>
+								<Heading size={2} template={3} left>
+									{content.content[1].header}
+								</Heading>
 								<Paragraph big bottomMargin="40">
 									{content.content[1].text}
 								</Paragraph>
@@ -381,12 +387,12 @@ const CCorpTabs = ({ layout, columns, content }) => {
 								<Paragraph big bottomMargin="48" mixed>
 									{parse(content.content[1].text2)}
 								</Paragraph>
-								<Heading size="3">{content.content[1].header2}</Heading>
+								<Heading size={3}>{content.content[1].header2}</Heading>
 								<Paragraph big>{content.content[1].text3}</Paragraph>
 								<Paragraph big bottomMargin="48">
 									{content.content[1].text4}
 								</Paragraph>
-								<Heading size="3">{content.content[1].header3}</Heading>
+								<Heading size={3}>{content.content[1].header3}</Heading>
 								<Paragraph big bottomMargin="40">
 									{content.content[1].text5}
 								</Paragraph>
@@ -403,7 +409,9 @@ const CCorpTabs = ({ layout, columns, content }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel3" layout={layout}>
-								<Heading size="3">{content.content[2].header}</Heading>
+								<Heading size={2} template={3} left>
+									{content.content[2].header}
+								</Heading>
 								<Paragraph big bottomMargin="40" mixed>
 									{parse(content.content[2].text)}
 								</Paragraph>
@@ -413,11 +421,11 @@ const CCorpTabs = ({ layout, columns, content }) => {
 									bottomMargin="48"
 									rounded
 								/>
-								<Heading size="3">{content.content[2].header2}</Heading>
+								<Heading size={3}>{content.content[2].header2}</Heading>
 								<Paragraph big bottomMargin="48">
 									{content.content[2].text2}
 								</Paragraph>
-								<Heading size="3">{content.content[2].header3}</Heading>
+								<Heading size={3}>{content.content[2].header3}</Heading>
 								<Paragraph big bottomMargin="24">
 									{content.content[2].text3}
 								</Paragraph>
@@ -426,14 +434,16 @@ const CCorpTabs = ({ layout, columns, content }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel4" layout={layout}>
-								<Heading size="3">{content.content[3].header}</Heading>
+								<Heading size={2} template={3} left>
+									{content.content[3].header}
+								</Heading>
 								<Paragraph big mixed>
 									{parse(content.content[3].text)}
 								</Paragraph>
 								<Paragraph big bottomMargin="48" mixed>
 									{parse(content.content[3].text2)}
 								</Paragraph>
-								<Heading size="3">{content.content[3].header2}</Heading>
+								<Heading size={3}>{content.content[3].header2}</Heading>
 								<Paragraph big bottomMargin="24">
 									{content.content[3].text3}
 								</Paragraph>
@@ -442,7 +452,9 @@ const CCorpTabs = ({ layout, columns, content }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel4" layout={layout}>
-								<Heading size="3">{content.content[4].header}</Heading>
+								<Heading size={2} template={3} left>
+									{content.content[4].header}
+								</Heading>
 								<Paragraph big>{content.content[4].text}</Paragraph>
 								<Paragraph big bottomMargin="0" mixed>
 									{parse(content.content[4].text2)}

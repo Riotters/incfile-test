@@ -359,11 +359,24 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => {
 								//className={isVisible ? "slideUp enter panel1" : "slideUp panel1"}
 								layout={layout}
 							>
-								<Heading size="3">{content.content[0].header}</Heading>
+								<Paragraph
+									big
+									bottomMargin={24}
+									style={{
+										fontWeight: "bold",
+										color: color.black,
+										fontSize: "24px",
+										lineHeight: "32px",
+									}}
+								>
+									{content.content[0].header}
+								</Paragraph>
 								<Paragraph big bottomMargin="48">
 									{content.content[0].text}
 								</Paragraph>
-								<Heading size="3">{content.content[0].header2}</Heading>
+								<Heading size={2} template={3} left>
+									{content.content[0].header2}
+								</Heading>
 								<Paragraph big bottomMargin="0">
 									{content.content[0].text2}
 								</Paragraph>
@@ -371,7 +384,9 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel2" layout={layout}>
-								<Heading size="3">{content.content[1].header}</Heading>
+								<Heading size={2} template={3} left>
+									{content.content[1].header}
+								</Heading>
 								<Paragraph big>{content.content[1].text}</Paragraph>
 								<Paragraph big bottomMargin="40">
 									{content.content[1].text2}
@@ -385,11 +400,15 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel3" layout={layout}>
-								<Heading size="3">{content.content[2].header}</Heading>
+								<Heading size={2} template={3} left>
+									{content.content[2].header}
+								</Heading>
 								<Paragraph big bottomMargin="48">
 									{content.content[2].text}
 								</Paragraph>
-								<Heading size="4">{content.content[2].header2}</Heading>
+								<Heading size={3} template={4}>
+									{content.content[2].header2}
+								</Heading>
 								<Paragraph big bottomMargin="40">
 									{content.content[2].text2}
 								</Paragraph>
@@ -400,16 +419,31 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => {
 									margin="0 0 80px"
 									marginSM="0 auto 80px 0"
 								/>
-								<Heading size="3" bottomMargin="32">
+								<span
+									style={{
+										color: color.black,
+										marginBottom: "32px",
+										fontSize: "24px",
+										lineHeight: "32px",
+										fontWeight: "bold",
+									}}
+								>
 									{content.content[2].header3}
-								</Heading>
+								</span>
 								<BoxesWrapper>
 									{content.content[2].table.map((item) => (
 										<Box>
 											<div>
-												<Heading size="5" bottomMargin="0">
+												<span
+													style={{
+														color: color.black,
+														fontSize: "16px",
+														lineHeight: "24px",
+														fontWeight: "bold",
+													}}
+												>
 													{item.header}
-												</Heading>
+												</span>
 											</div>
 											<div>
 												<Paragraph bottomMargin="0">{item.text}</Paragraph>
@@ -425,7 +459,9 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => {
 								>
 									<BusinessWebsiteSVG />
 								</Circle>
-								<Heading size="4">{content.content[2].header4}</Heading>
+								<Heading size={3} template={4}>
+									{content.content[2].header4}
+								</Heading>
 								<Paragraph big>{content.content[2].text3}</Paragraph>
 								<Circle
 									height="80"
@@ -435,7 +471,9 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => {
 								>
 									<BusinessWebsiteSVG />
 								</Circle>
-								<Heading size="4">{content.content[2].header5}</Heading>
+								<Heading size={3} template={4}>
+									{content.content[2].header5}
+								</Heading>
 								<Paragraph big bottomMargin="48">
 									{content.content[2].text4}
 								</Paragraph>
@@ -447,7 +485,9 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => {
 								>
 									<BusinessWebsiteSVG />
 								</Circle>
-								<Heading size="4">{content.content[2].header6}</Heading>
+								<Heading size={3} template={4}>
+									{content.content[2].header6}
+								</Heading>
 								<Paragraph big>{content.content[2].text5}</Paragraph>
 								<Paragraph big>{content.content[2].text6}</Paragraph>
 								<Paragraph big>{content.content[2].text7}</Paragraph>
@@ -464,7 +504,9 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => {
 								>
 									<BusinessWebsiteSVG />
 								</Circle>
-								<Heading size="4">{content.content[2].header7}</Heading>
+								<Heading size={3} template={4}>
+									{content.content[2].header7}
+								</Heading>
 								<Paragraph big bottomMargin="48">
 									{content.content[2].text11}
 								</Paragraph>
@@ -476,7 +518,9 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => {
 								>
 									<BusinessWebsiteSVG />
 								</Circle>
-								<Heading size="4">{content.content[2].header8}</Heading>
+								<Heading size={3} template={4}>
+									{content.content[2].header8}
+								</Heading>
 								<Paragraph big bottomMargin="0">
 									{content.content[2].text12}
 								</Paragraph>
@@ -484,7 +528,7 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel4" layout={layout}>
-								<Heading size="3" bottomMargin="40">
+								<Heading size={2} template={3} left bottomMargin={40}>
 									{content.content[3].header}
 								</Heading>
 								<Circle
@@ -495,7 +539,9 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => {
 								>
 									<BusinessWebsiteSVG />
 								</Circle>
-								<Heading size="4">{content.content[3].header2}</Heading>
+								<Heading size={3} template={4}>
+									{content.content[3].header2}
+								</Heading>
 								<Paragraph big bottomMargin="48">
 									{content.content[3].text}
 								</Paragraph>
@@ -507,7 +553,9 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => {
 								>
 									<PhoneSystemSVG />
 								</Circle>
-								<Heading size="4">{content.content[3].header3}</Heading>
+								<Heading size={3} template={4}>
+									{content.content[3].header3}
+								</Heading>
 								<Paragraph big bottomMargin="48">
 									{content.content[3].text2}
 								</Paragraph>
@@ -519,7 +567,9 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => {
 								>
 									<BusinessLogoSVG />
 								</Circle>
-								<Heading size="4">{content.content[3].header4}</Heading>
+								<Heading size={3} template={4}>
+									{content.content[3].header4}
+								</Heading>
 								<Paragraph big bottomMargin="48">
 									{content.content[3].text3}
 								</Paragraph>
@@ -531,7 +581,9 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => {
 								>
 									<GetBusinessSVG />
 								</Circle>
-								<Heading size="4">{content.content[3].header5}</Heading>
+								<Heading size={3} template={4}>
+									{content.content[3].header5}
+								</Heading>
 								<Paragraph big bottomMargin="0">
 									{content.content[3].text4}
 								</Paragraph>
@@ -539,7 +591,9 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel4" layout={layout}>
-								<Heading size="3">{content.content[4].header}</Heading>
+								<Heading size={2} template={3} left>
+									{content.content[4].header}
+								</Heading>
 								<Paragraph big bottomMargin="40">
 									{content.content[4].text}
 								</Paragraph>

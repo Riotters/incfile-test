@@ -5,7 +5,6 @@ import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
 import { createPortal } from "react-dom";
 import Arrow2SVG from "../../../images/arrow2.inline.svg";
-import PlayerSVG from "../../../images/icons/player.inline.svg";
 import CloseSVG from "../../../images/icons/close.inline.svg";
 
 const PortalComponent = ({ children, visible }) => {
@@ -47,17 +46,17 @@ class ButtonVideo extends Component {
 						<LightBoxContent>
 							{vimeo
 								? parse(`<iframe 
-                src="https://player.vimeo.com/video/${videoID}"  
-                frameborder="0" 
-                allow="autoplay; fullscreen" 
-                allowfullscreen></iframe>`)
-								: parse(`<iframe
-                src="https://www.youtube.com/embed/${videoID}?rel=0&autoplay=1"
-                width="500"
-                height="349"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>`)}
+                                src="https://player.vimeo.com/video/${videoID}"  
+                                frameborder="0" 
+                                allow="autoplay; fullscreen" 
+                                allowfullscreen></iframe>`)
+                                : parse(`<iframe
+                                src="https://www.youtube.com/embed/${videoID}?rel=0&autoplay=1"
+                                width="500"
+                                height="349"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>`)}
 							<Control>
 								<button onClick={(e) => this.closeModal(e)}>
 									<CloseSVG />

@@ -8,62 +8,62 @@ import IconCircle from "./icons/circle";
 import Image from "../atomic/atoms/image/image";
 import CloseIcon from "../images/icons/close.inline.svg";
 import parse from "html-react-parser";
-import {Heading} from "../atomic/atoms/typography/heading";
+import { Heading } from "../atomic/atoms/typography/heading";
 
 const Wrapper = styled.div`
-    padding-top: 24px;
-    width: 100%;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    @media (min-width: 470px) {
-        max-width: ${(props) => (props.width ? props.width : "470px")};
-    }
-    
-    @media(min-width: 1060px){
-      &.containerMargin{
-         margin-left: 15px;
-         margin-right: 15px;
-      }
-    }
+	padding-top: 24px;
+	width: 100%;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media (min-width: 470px) {
+		max-width: ${(props) => (props.width ? props.width : "470px")};
+	}
+
+	@media (min-width: 1060px) {
+		&.containerMargin {
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+	}
 `;
 
 const Box = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
-    padding: 56px 40px 40px;
-    position: relative;
-    background-color: ${color.white};
-    box-shadow: ${shadow.white1};
-    border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+	padding: 56px 40px 40px;
+	position: relative;
+	background-color: ${color.white};
+	box-shadow: ${shadow.white1};
+	border-radius: 20px;
 
-    @media (min-width: ${props => props.width}){
-        max-width: ${props => props.width};
-    }
-    
-    h3 {
-        width: 100%;
-        line-height: 27px;
-    }
+	@media (min-width: ${(props) => props.width}) {
+		max-width: ${(props) => props.width};
+	}
 
-    p {
-        margin-top: 16px;
-        width: 100%;
-        font-size: 16px;
-        line-height: 24px;
+	h3 {
+		width: 100%;
+		line-height: 27px;
+	}
 
-        a {
-            font-size: inherit;
-            line-height: inherit;
-            font-weight: bold;
-        }
-    }
-`
+	p {
+		margin-top: 16px;
+		width: 100%;
+		font-size: 16px;
+		line-height: 24px;
+
+		a {
+			font-size: inherit;
+			line-height: inherit;
+			font-weight: bold;
+		}
+	}
+`;
 
 const Circle = styled.span`
 	display: flex;
@@ -181,7 +181,15 @@ const Adventages = ({
 						<Image filename={imageName} />
 					</ImageWrapper>
 				)}
-				{headline && <Heading size={headlineSize} template={headlineTemplateSize}>{headline}</Heading>}
+				{headline && (
+					<Heading
+						size={headlineSize}
+						template={headlineTemplateSize}
+						bottomMargin={0}
+					>
+						{headline}
+					</Heading>
+				)}
 
 				{text && <p>{parse(text)}</p>}
 

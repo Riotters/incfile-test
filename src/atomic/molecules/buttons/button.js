@@ -267,7 +267,9 @@ const Button = ({
 	right,
 	wrap,
 	onClick,
-	externalLink,
+    externalLink,
+    target,
+    rel
 }) => (
 	<>
 		{!externalLink ? (
@@ -317,8 +319,8 @@ const Button = ({
 				padding={padding}
 				wrap={wrap}
 				onClick={onClick}
-				rel="noopener noreferrer nofollow"
-				target="_blank"
+				rel={rel}
+				target={target}
 			>
 				{content.text ? content.text : content}
 				{arrow && (
@@ -339,7 +341,9 @@ const Button = ({
 export default Button;
 
 Button.propTypes = {
-	width: PropTypes.string,
+    width: PropTypes.string,
+    target: PropTypes.string,
+    rel: PropTypes.string,
 	content: {
 		text: PropTypes.string.isRequired,
 		url: PropTypes.string.isRequired,
@@ -347,6 +351,8 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
+    rel: "noopener noreferrer nofollow",
+    target: "_blank",
 	width: "auto",
 	content: {
 		text: "Start your business with us, today!",
