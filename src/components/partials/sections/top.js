@@ -181,31 +181,31 @@ const ImageContainer = styled.div`
 
 const Top = ({ children, imageName, imageAlt, headlineWidth, ovalColor }) => (
 	<Wrapper>
-		<VisibilitySensor partialVisibility once delayedCall>
-			{({ isVisible }) => (
-				<Oval
-					className={isVisible ? "scaleUp enter" : "scaleUp"}
-					ovalColor={ovalColor}
-				>
-					<OvalSVG />
-				</Oval>
-			)}
-		</VisibilitySensor>
+		{/* <VisibilitySensor partialVisibility once>
+			{({ isVisible }) => ( */}
+		<Oval
+			//className={isVisible ? "scaleUp enter" : "scaleUp"}
+			ovalColor={ovalColor}
+		>
+			<OvalSVG />
+		</Oval>
+		{/* )}
+		</VisibilitySensor> */}
 		<ImageContainer>
 			<Image filename={imageName} alt={imageAlt} />
 		</ImageContainer>
 		<Container>
 			<Content>
-				<VisibilitySensor partialVisibility once delayedCall>
-					{({ isVisible }) => (
-						<TextContainer
-							className={isVisible ? "slideRight enter" : "slideRight"}
-							headlineWidth={headlineWidth}
-						>
-							{children}
-						</TextContainer>
-					)}
-				</VisibilitySensor>
+				{/* <VisibilitySensor partialVisibility once>
+					{({ isVisible }) => ( */}
+				<TextContainer
+					//className={isVisible ? "slideRight enter" : "slideRight"}
+					headlineWidth={headlineWidth}
+				>
+					{children}
+				</TextContainer>
+				{/* )}
+				</VisibilitySensor> */}
 			</Content>
 		</Container>
 	</Wrapper>

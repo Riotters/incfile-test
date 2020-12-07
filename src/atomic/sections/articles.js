@@ -131,18 +131,18 @@ const Articles = ({ oval, categoryId }) => {
 			{posts.length > 0 && (
 				<Container>
 					<div>
-						<VisibilitySensor partialVisibility once>
-							{({ isVisible }) => (
-								<Heading
-									size={2}
-									template={3}
-									bottomMargin={36}
-									className={isVisible ? "slideUp enter" : "slideUp"}
-								>
-									Related Articles
-								</Heading>
-							)}
-						</VisibilitySensor>
+						{/* <VisibilitySensor partialVisibility once>
+							{({ isVisible }) => ( */}
+						<Heading
+							size={2}
+							template={3}
+							bottomMargin={36}
+							//className={isVisible ? "slideUp enter" : "slideUp"}
+						>
+							Related Articles
+						</Heading>
+						{/* )}
+						</VisibilitySensor> */}
 						<CarouselWrapper>
 							<PurpleCurve>
 								<PurpleCurveSVG />
