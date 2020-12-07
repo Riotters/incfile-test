@@ -17,21 +17,22 @@ import PPCWhyChooseIncfile from './ppc-why-choose-incfile';
 import { statesArray } from "../../../static/states-v2";
 
 const PPCCorporationLayout = ({ stateCode, videoID, vimeo }) => {
-    const state = statesArray.filter(state => state.code === stateCode)[0];
+    const state = stateCode ? statesArray.filter(state => state.code === stateCode)[0] : false;
+    const stateName = state ? state.name : '';
     const buttonInfo = {
         text: `Launch My Corporation`,
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=${stateCode}`,
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=${stateCode ?? ''}`,
     }
 
     const top = {
-        header: `The Fastest & Easiest Way To Set Up Your ${state.name} Corporation`,
+        header: `The Fastest & Easiest Way To Set Up Your ${stateName} Corporation`,
 	    text: `Join Over <span>250,000</span> Businesses Launched With incfile Since <span>2004</span>`,
     }
 
     const whyChooseIncfile = {
-        header: `Why Choose IncFile For Your ${state.name} Corporation?`,
+        header: `Why Choose IncFile For Your ${stateName} Corporation?`,
         text1: "We're entrepreneurs - just like you.",
-        text2: `An ${state.name} Corporation can be the fastest and easiest way to start a business in ${state.name}.`,
+        text2: `An ${stateName} Corporation can be the fastest and easiest way to start a business in ${stateName}.`,
         text3: `We make registering a company as easy as possible, so you can focus on the important things. Beyond that, we have a full suite of startup services (like banking and bookkeeping), which means Incfile not only helps you get started, but supports you in your continued success as your one-stop shop.`,
         text4: `Our mission is to provide you with a superior and modern experience at an unparalleled value.`
     }
@@ -40,8 +41,8 @@ const PPCCorporationLayout = ({ stateCode, videoID, vimeo }) => {
         <>
             <SEO
                 robots="noindex, follow"
-                title={`${state.name} Corporation Filing`}
-                description={`Form a Corporation in ${state.name}`}
+                title={`${stateName} Corporation Filing`}
+                description={`Form a Corporation in ${stateName}`}
             />
 
             <Top
@@ -77,11 +78,11 @@ const PPCCorporationLayout = ({ stateCode, videoID, vimeo }) => {
             <Care content={care} />
             <Rocket
                 externalLink
-                textHeading={`Easily Start Your <br>${state.name} Corporation Today`}
-                text1="There's A Reason More Than 250,000 <br>Businesses Have Started With Incfile"
+                textHeading={`Easily Start Your ${stateName} <br>Corporation Today`}
+                text1="There's A Reason More Than <b>250,000</b> Businesses <br>Have Started With Incfile"
                 text2=" "
                 textButton="Launch My Corporation"
-                url={`?entityType=CCorporation&entityState=${stateCode}`}
+                url={`?entityType=CCorporation&entityState=${stateCode ?? ''}`}
             />
         </>
     );
