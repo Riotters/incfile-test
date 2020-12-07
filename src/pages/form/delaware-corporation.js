@@ -1,6 +1,6 @@
 import React from "react";
-import PPCCorporationLayout from "../../atomic/partials/ppc/ppc-corporation-layout";
 import Layout from "../../components/layout";
+import PPCCorporationLayout from "../../atomic/partials/ppc/ppc-corporation-layout";
 
 const FormDECorporation = () => {
   return (

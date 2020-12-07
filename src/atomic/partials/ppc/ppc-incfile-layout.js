@@ -48,7 +48,7 @@ const PPCIncfileLayout = ({
                 textWidth={400}
                 imageMobilePosition="-8%"
             >
-                {content.heroHeadLine && <p style={{fontSize: `20px`, marginBottom:`16px`}}>{ parse(content.heroHeadLine)}</p>}
+                {content?.heroHeadLine && <p style={{fontSize: `20px`, marginBottom:`16px`}}>{ parse(content.heroHeadLine)}</p>}
                 <h1>{parse(content?.heroTitle ? content.heroTitle : `The Fastest & Easiest Way To Set Up Your LLC`)}</h1>
                 <p style={{fontSize: `32px`, color: '#1D1D1D', fontWeight: `bold`}}>Price: $0 + State Fee</p>
                 <p>{parse(content?.heroText ? content.heroText : `Join Over <span>250,000</span> Businesses Launched With incfile Since <span>2004</span>`)}</p>
@@ -104,4 +104,11 @@ PPCIncfileLayout.defaultProps = {
     robots: "noindex, follow",
     seoTitle: `Incfile Incoporation Service`,
     seoDesc: `Form an LLC (Limited Liability Company) or Corporation Online`,
+    content: {
+        rocket: {
+            header: `Ready to Start?`,
+            text1: `Getting started is easy. Click the Get Started button below. <br>Fill out the basic form steps and just minutes from now you <br>will have your new LLC.`,
+            textButton: `Get Started`
+        }
+    }
 }
