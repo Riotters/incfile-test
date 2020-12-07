@@ -17,8 +17,9 @@ import PPCWhyChooseIncfile from "./ppc-why-choose-incfile";
 
 import { statesArray } from "../../../static/states-v2";
 
-const PPCLLCLayout = ({ stateCode, videoID, vimeo }) => {
+const PPCLLCLayout = ({ stateCode, videoID, vimeo, quotes }) => {
     const state = statesArray.filter(state => state.code === stateCode)[0];
+    const stateName = state ? state.name : '';
     const buttonInfo = {
         text: `Launch My LLC`,
         url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=${stateCode}`,
@@ -73,7 +74,7 @@ const PPCLLCLayout = ({ stateCode, videoID, vimeo }) => {
                     <RatingBlock />
                 </RatingRow>
             </Top>
-            <Opinions content={opinions} />
+            <Opinions content={opinions} quotes={quotes} stateName={stateName} />
             <PPCWhyChooseIncfile content={whyChooseIncfile} />
             <Care content={care} />
             <Rocket
@@ -98,4 +99,16 @@ PPCLLCLayout.propTypes = {
 PPCLLCLayout.defaultProps = {
     videoID: "372490609",
     vimeo: true,
+    quotes: [
+        {
+            text: `Its been an easy process with them. They practically do everything for you and the provide you with all the tools that you need to start your business running.`,
+            author: `Martin G`,
+            state: ``,
+        },
+        {
+            text: `Life and business are uncertain enough - go ahead and delegate this vital task to a team that has been perfecting their craft for 16 years strong!`,
+            author: `Tim A`,
+            state: ``,
+        },
+    ]
 }

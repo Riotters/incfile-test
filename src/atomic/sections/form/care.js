@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import LeftContentRightImage from "../../partials/left-content-right-image";
@@ -71,7 +72,7 @@ const Grid = styled.div`
 	}
 `;
 
-const CareSection = ({ className, content }) => (
+const CareSection = ({ className, content, showQuotes }) => (
 	<Care>
 		<LeftContentRightImage
 			image="after-formation-cta-7994"
@@ -85,22 +86,33 @@ const CareSection = ({ className, content }) => (
 				{parse(content.text)}
 			</Paragraph>
 			<ul className="numericlist">
-				{content.list.map((item) => (
-					<li>
+				{content.list.map((item, i) => (
+					<li key={i}>
 						<CheckBlueSVG />
 						<span>{item}</span>
 					</li>
 				))}
 			</ul>
-		</LeftContentRightImage>
-		<ContentCenter>
-			<Grid>
-				{content.cards.map((card) => (
-					<QuoteCard content={card} />
-				))}
-			</Grid>
-		</ContentCenter>
+        </LeftContentRightImage>
+        
+        {showQuotes &&
+            <ContentCenter>
+                <Grid>
+                    {content.cards.map((card, i) => (
+                        <QuoteCard content={card} key={i} />
+                    ))}
+                </Grid>
+            </ContentCenter>
+        }
 	</Care>
 );
 
 export default CareSection;
+
+CareSection.propTypes = {
+    showQuotes: PropTypes.bool,
+}
+
+CareSection.defaultProps = {
+    showQuotes: false
+}

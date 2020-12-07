@@ -80,7 +80,7 @@ export const statesArray = [
         code: "MD"
     },
     {
-        name: "Massachusett",
+        name: "Massachusetts",
         code: "MA"
     },
     {
