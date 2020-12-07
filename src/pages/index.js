@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import styled from "styled-components";
+import parse from "html-react-parser";
 import SEO from "../components/seo";
 //Sections
 import Top from "../atomic/partials/top";
@@ -34,7 +34,7 @@ const HomePageV3 = () => {
 				imageMobilePosition="-8%"
 			>
 				<h1>{top.header}</h1>
-				<p>{top.text}</p>
+				<p>{parse(top.text)}</p>
 				<Buttonsbox>
 					<Button content={top.button[0]} theme="primary56" arrow />
 				</Buttonsbox>

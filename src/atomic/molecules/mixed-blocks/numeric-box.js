@@ -31,7 +31,7 @@ const NumericBox = ({ className, id, item, noBox }) =>
       <Circle>{item?.number ?? id + 1}</Circle>
       <TextWrapper>
         {item.header && (
-          <Heading size="5" bottomMargin="36">
+          <Heading size="4" template={5} bottomMargin="36">
             {item.header}
           </Heading>
         )}

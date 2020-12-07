@@ -79,6 +79,9 @@ const IconTextColorBox = ({
 	content,
 	bottomMargin,
 	linkBottomMargin,
+	headingSize = 4,
+	headingSizeTemplate = 4,
+	left,
 	rounded,
 	curve,
 	curveColor,
@@ -103,7 +106,7 @@ const IconTextColorBox = ({
 					<Icon />
 				</div>
 				{content.header ? (
-					<Heading size="4" bottomMargin="16">
+					<Heading size={headingSize} template={headingSizeTemplate} left={left} bottomMargin="16">
 						{content.header}
 					</Heading>
 				) : null}

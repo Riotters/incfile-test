@@ -17,6 +17,10 @@ const Wrapper = styled.div`
         display: block;
     }
   }
+  
+  h2 {
+    align-self: flex-start;
+  }
 `;
 
 const Row = styled.div`
@@ -63,13 +67,13 @@ const Lists = ({ content }) => (
     <ContentCenter>
       {content.sections.map((section) => (
         <>
-          <Heading size="3" maxWidth="1170" bottomMargin="32">
+          <Heading size="2" template={3} left maxWidth="1170" bottomMargin="32">
             {section.header}
           </Heading>
           {section.rows.map((row, index) => (
             <Row key={index}>
               {row.header ? (
-                <Heading size="5" maxWidth="1170" bottomMargin="12">
+                <Heading size="3" template={5} maxWidth="1170" bottomMargin="12">
                   {row.header}
                 </Heading>
               ) : null}

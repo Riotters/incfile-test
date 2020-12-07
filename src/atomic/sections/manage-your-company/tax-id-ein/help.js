@@ -56,7 +56,7 @@ const HelpSection = ({ className, content }) => (
         <Heading size={2} bottomMargin="56" maxWidth="500">
           {content.header}
         </Heading>
-        <Heading size={4} bottomMargin="24">
+        <Heading size={3} template={4} bottomMargin="24">
           {content.header2}
         </Heading>
         <Paragraph big bottomMargin="0">

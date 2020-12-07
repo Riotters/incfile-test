@@ -302,7 +302,7 @@ const CalculatorSection = ({ content, onSelectState, state, id }) => {
 											<AssetsSVG />
 										</Circle>
 									</AbsoluteCircle>
-									<Heading size={4} bottomMargin={0}>
+									<Heading size={3} template={4} bottomMargin={0}>
 										{state.tax_rate}%
 									</Heading>
 									<Paragraph mixed>{state.long_name} state tax</Paragraph>
@@ -321,7 +321,7 @@ const CalculatorSection = ({ content, onSelectState, state, id }) => {
 											<RevenueSVG />
 										</Circle>
 									</AbsoluteCircle>
-									<Heading size={4} bottomMargin={0}>
+									<Heading size={3} template={4} bottomMargin={0}>
 										$
 										{typeof inputRevenue.current !== "undefined" &&
 											formatMoney(inputRevenue.current.value)}
@@ -329,10 +329,10 @@ const CalculatorSection = ({ content, onSelectState, state, id }) => {
 									<Paragraph>Your revenue</Paragraph>
 								</YellowBox>
 							</Boxes>
-							<Heading size={5} bottomMargin={24}>
+							<Heading size={4} template={5} bottomMargin={24}>
 								Your total tax amount
 							</Heading>
-							<Heading size={2} bottomMargin={24}>
+							<Heading size={4} template={2} bottomMargin={24}>
 								{finalCalculator}
 							</Heading>
 							<Paragraph>Additional municipality taxes may apply</Paragraph>
@@ -354,7 +354,7 @@ const CalculatorSection = ({ content, onSelectState, state, id }) => {
 							image="your-state-7282"
 							color={color.blue3}
 						>
-							<Heading size={4}>{cards[0]}</Heading>
+							<Heading size={3} template={4}>{cards[0]}</Heading>
 							<Dropdown
 								className="dropdown"
 								placeholder="Select where your business was registered"
@@ -367,7 +367,7 @@ const CalculatorSection = ({ content, onSelectState, state, id }) => {
 							image="forming-a-corporation"
 							color={color.orange3}
 						>
-							<Heading size={4}>{cards[1]}</Heading>
+							<Heading size={3} template={4}>{cards[1]}</Heading>
 							<InputField
 								className={dropDownClasses.join(" ")}
 								placeholder="Enter total revenue from sales"

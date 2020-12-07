@@ -31,7 +31,7 @@ const ContentCard = ({ className }) => {
   return (
     <Wrapper className={className}>
       <Whitebox className="card" overflow>
-        <Heading size="2">Video Library</Heading>
+        <Heading size="1" template={2} left>Video Library</Heading>
         <Heading size="3" topMargin="48" bottomMargin="48">
           How easy is forming an LLC or corporation
         </Heading>

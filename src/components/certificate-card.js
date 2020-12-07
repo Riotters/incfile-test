@@ -8,6 +8,7 @@ import Dropdown from "./form/dropdown";
 import Button from "../atomic/molecules/buttons/button-action";
 import { AnnualReportState } from "../helpers/annual-report-states";
 import { shortState } from "../helpers/utils";
+import {Heading} from "../atomic/atoms/typography/heading";
 
 const Wrapper = styled.div`
   display: flex;
@@ -160,7 +161,7 @@ const CertificateCard = ({ className, headline, content, image, dropdownOnePlace
 
   return (
     <Wrapper className={className}>
-      <h3>{headline}</h3>
+      <Heading size={3}>{headline}</Heading>
       {image && <Image filename={image} />}
       {dropdownOnePlaceholder && (
         <Label className="label">

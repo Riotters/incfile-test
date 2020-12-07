@@ -92,7 +92,7 @@ const Searchbar = ({ typeSubmit, getBusinessNames, ...rest }) => {
                 return;
             }
 
-            if (!v.length) {
+            if (!v.length && process.env.GATSBY_ENV === 'production') {
                 Swal.fire(
                     'Error!', 'You must confirm that you are not a robot', 'warning'
                 );
