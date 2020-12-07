@@ -47,7 +47,8 @@ const HelpCenter = () => {
 		<Layout>
 			<SEO
 				title="S-Corporation vs LLC: Which Is Best for Your Business?"
-				description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state."
+				description="Q & A for LLC and other forms of corporations. Learning Center for
+    Incorporating in every state."
 			/>
 			<Top
 				imageName="mrs-bulb-help-center-article"

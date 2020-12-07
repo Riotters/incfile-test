@@ -1,41 +1,42 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from '../../components/styles/colors';
-import parse from 'html-react-parser';
+import { color } from "../../components/styles/colors";
+import parse from "html-react-parser";
 import TitleWithInfoBox from "../molecules/blocks/table-title";
 
 const ComplianceRequirementBox = ({ margin, data, className, ...rest }) => {
-    const title = {
-        text: `${data?.prices ? data.prices.state : ''} Compliance Requirements`,
-        popContent: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state. Failure to file this report can lead to the company being revoked or administratively dissolved.`,
-    }
-    return (
-        <>
-            <TitleWithInfoBox
-                title={title.text}
-                style={{ marginBottom: "24px" }}
-                hasInfoBox
-                infoBoxText={title.popContent} questionMarkColor={color.blue1}
-            />
+	const title = {
+		text: `${data?.prices ? data.prices.state : ""} Compliance Requirements`,
+		popContent: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state. Failure to file this report can lead to the company being revoked or administratively dissolved.`,
+	};
+	return (
+		<>
+			<TitleWithInfoBox
+				title={title.text}
+				style={{ marginBottom: "24px" }}
+				hasInfoBox
+				infoBoxText={title.popContent}
+				questionMarkColor={color.blue1}
+			/>
 
-            <Filing margin={margin} className={className} {...rest}>
-                {parse(data?.filings ? data.filings.requirement : 'loading...')}
-            </Filing>
-        </>
-    );
-}
+			<Filing margin={margin} className={className} {...rest}>
+				{parse(data?.filings ? data.filings.requirement : "loading...")}
+			</Filing>
+		</>
+	);
+};
 
 export default ComplianceRequirementBox;
 
 const Filing = styled.div`
     width: 100%;
-    margin: ${props => props.margin ? props.margin : '52px 0 42px 0'};
+    margin: ${(props) => (props.margin ? props.margin : "52px 0 42px 0")};
 
     h3, h4{
         font-family: Avenir;
         font-weight: 900;
         font-size: 20px;
-        line-height: 1.2;
+        line-height
         margin-bottom: 15px;
         margin-top: 42px;
 
@@ -79,4 +80,4 @@ const Filing = styled.div`
             border-right: 2px solid rgb(244, 244, 244);
         }
     }
-`
+`;

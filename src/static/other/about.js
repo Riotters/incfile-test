@@ -1,6 +1,6 @@
 export const seo = {
 	title: `About Incfile | Where Business Begins`,
-	desc: `Since starting, we have assisted more than 500,000 entrepreneurs and small business owners to form and grow their businesses. Learn more.`,
+	desc: `Since starting, we have assisted more than 250,000 entrepreneurs and small business owners to form and grow their businesses. Learn more.`,
 };
 
 export const hero = {

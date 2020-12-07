@@ -8,12 +8,15 @@ import Articles from "../atomic/sections/articles";
 import { map, states } from "../static/llc-state-information";
 
 const StateInformation = () => (
-  <Layout>
-    <SEO title="LLC State Information Map - State by State | Incfile" description="LLC State Information Map - State by State | Incfile" />
-    <Map content={map} />
-    <States content={states} />
-    <Articles />
-  </Layout>
+	<Layout>
+		<SEO
+			title="LLC State Information Map - State by State | Incfile"
+			description=""
+		/>
+		<Map content={map} />
+		<States content={states} />
+		<Articles />
+	</Layout>
 );
 
 export default StateInformation;

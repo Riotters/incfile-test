@@ -95,7 +95,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 32px;
   width: 100%;
   max-width: 670px;
 }
@@ -104,7 +104,7 @@ h4 {
   font-family: Avenir;
   font-weight: 900;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 28px;
 }
 
 h5 {
@@ -186,38 +186,42 @@ a {
 `;
 
 const Layout = ({ children, isDashboardPage, header }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+	const data = useStaticQuery(graphql`
+		query SiteTitleQuery {
+			site {
+				siteMetadata {
+					title
+				}
+			}
+		}
+	`);
 
-  return (
-    <>
-      <GlobalStyle />
-      {header === "v2" && !isDashboardPage && <HeaderAlt siteTitle={data.site.siteMetadata.title} />}
-      {header == null && !isDashboardPage && <Header siteTitle={data.site.siteMetadata.title} />}
-      <main>{children}</main>
-      {!isDashboardPage && <Footer />}
+	return (
+		<>
+			<GlobalStyle />
+			{header === "v2" && !isDashboardPage && (
+				<HeaderAlt siteTitle={data.site.siteMetadata.title} />
+			)}
+			{header == null && !isDashboardPage && (
+				<Header siteTitle={data.site.siteMetadata.title} />
+			)}
+			<main>{children}</main>
+			{!isDashboardPage && <Footer />}
 
-      {/** Use this element to append the lightbox video outside of main wrapper
-       * So that it should be overlay entire of page
-       */}
-      <div id="portal-lightbox"></div>
-    </>
-  );
+			{/** Use this element to append the lightbox video outside of main wrapper
+			 * So that it should be overlay entire of page
+			 */}
+			<div id="portal-lightbox"></div>
+		</>
+	);
 };
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+	children: PropTypes.node.isRequired,
 };
 
 Layout.defaultProps = {
-  header: null,
+	header: null,
 };
 
 export default Layout;

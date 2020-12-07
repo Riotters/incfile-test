@@ -46,7 +46,7 @@ const HelpCenter = () => {
 		<Layout>
 			<SEO
 				title="How to Get a Seller’s Permit or Sales Tax Permit"
-				description="If you’re required to collect sales tax, you’ll need to get a seller’s permit from your state’s Department of Revenue. Learn more."
+				description="If you’re required to collect sales tax, you’ll need to get a seller’s permit from your state’s Department of Revenue. Learn more. "
 			/>
 			<Top
 				imageName="mrs-bulb-help-center-article"
