@@ -116,7 +116,6 @@ export const PHeading = ({
 );
 
 PHeading.propTypes = {
-    size: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired,
     template: PropTypes.number,
     children: PropTypes.any,
     bottomSpace: PropTypes.number,
