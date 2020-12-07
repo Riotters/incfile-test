@@ -14,10 +14,10 @@ const Related = styled.section`
 	background-color: ${color.orange3};
 `;
 
-const RelatedSection = ({ className, content }) => (
+const RelatedSection = ({ className, headingSize = 2, headingSizeTemplate = 2, left = true, content }) => (
 	<Related className={className}>
 		<ContentCenter contentWidth="770">
-			<Heading size={2} left bottomMargin="24" maxWidth="700">
+			<Heading size={headingSize} template={headingSizeTemplate} left={left} bottomMargin="24" maxWidth="700">
 				{content.header}
 			</Heading>
 			<Paragraph big bottomMargin={104}>
