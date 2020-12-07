@@ -92,7 +92,7 @@ const Searchbar = ({ typeSubmit, getBusinessNames, ...rest }) => {
                 return;
             }
 
-            if (!v.length && process.env.GATSBY_ENV === 'production') {
+            if (!v.length) {
                 Swal.fire(
                     'Error!', 'You must confirm that you are not a robot', 'warning'
                 );
@@ -139,7 +139,7 @@ const Searchbar = ({ typeSubmit, getBusinessNames, ...rest }) => {
                         </Icon>
                     </SearchButton>
                 </Box>
-                <div class="g-recaptcha" data-sitekey={`${process.env.CAPTCHA_KEY}`}></div>
+                <div class="g-recaptcha" data-sitekey="6LekT_0ZAAAAADSHzKFclHjTXI0tzO92tyg-7aYE"></div>
             </Wrapper>
         </>
     );
