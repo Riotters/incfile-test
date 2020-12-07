@@ -10,26 +10,43 @@ import About from "../atomic/sections/learning-center-entity/business-license-re
 import SearchTool from "../atomic/sections/learning-center-entity/business-license-req/search-tool";
 import Articles from "../atomic/sections/articles";
 //Texts
-import { top, about, searchTool, businessIndustryList } from "../static/learning-center-entity/business-license-req";
+import {
+	top,
+	about,
+	searchTool,
+	businessIndustryList,
+} from "../static/learning-center-entity/business-license-req";
 import { Helmet } from "react-helmet";
 
 const BusinessLicenseReq = () => (
-    <Layout>
-        <SEO title="Do I Need a Business License? Business License Search Tool" description="Wondering what licenses you need to start your business? Incfile's license search tool tells you what the requirements are for your industry. Try it now." />
-        <Top imageName="mrs-bulb-business-license-requirements" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="460" textWidth="480">
-            <h1>{top.header}</h1>
-            <p>{top.text}</p>
-            <RatingRow topMargin="0">
-                <CartBlock />
-                <RatingBlock />
-            </RatingRow>
-        </Top>
-        <About content={about} />
-        <SearchTool content={searchTool} businessIndustryList={businessIndustryList} />
-        <Articles categoryId={279} />
+	<Layout>
+		<SEO
+			title="Do I Need a Business License? Business License Search Tool"
+			description="Wondering what licenses you need to start your business? Incfile's license search tool tells you what the requirements are for your industry. Try it now."
+		/>
+		<Top
+			imageName="mrs-bulb-business-license-requirements"
+			imageAlt="Mrs Bulb and with checklist"
+			ovalColor="sun"
+			headlineWidth="460"
+			textWidth="480"
+		>
+			<h1>{top.header}</h1>
+			<p>{top.text}</p>
+			<RatingRow topMargin="0">
+				<CartBlock />
+				<RatingBlock />
+			</RatingRow>
+		</Top>
+		<About content={about} />
+		<SearchTool
+			content={searchTool}
+			businessIndustryList={businessIndustryList}
+		/>
+		<Articles categoryId={279} />
 
-        <Helmet>
-            <script type="application/ld+json">{`
+		<Helmet>
+			<script type="application/ld+json">{`
             {            
             "@context": "http://schema.org",
             "@type": "VideoObject",
@@ -42,9 +59,8 @@ const BusinessLicenseReq = () => (
             "interactionCount": "13"
             }
         `}</script>
-        </Helmet>
-
-    </Layout>
+		</Helmet>
+	</Layout>
 );
 
 export default BusinessLicenseReq;
