@@ -11,7 +11,7 @@ const Opinions = styled.section`
 	padding-top: 100px;
 `;
 
-const OpinionsSection = ({ className, content, quotes, stateName }) => (
+const OpinionsSection = ({ className, content, quotes, customers, stateName }) => (
 	<Opinions>
 		<Oval className="oval" height="570" width="570" top="0" left="0">
 			<TopLeftOvalSVG />
@@ -22,9 +22,14 @@ const OpinionsSection = ({ className, content, quotes, stateName }) => (
 			text={content.text}
 			textWidth="770"
 		/>
-        {/* <Customers content={content} padding="48px 0" /> */}
         
-        <PPCQuotesSection quotes={quotes} stateName={stateName} />
+        {customers && 
+            <Customers content={{customers: customers}} padding="48px 0" />
+        }
+        
+        {quotes &&
+            <PPCQuotesSection quotes={quotes} stateName={stateName} />
+        }
 	</Opinions>
 );
 

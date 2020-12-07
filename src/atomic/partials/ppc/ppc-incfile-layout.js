@@ -31,6 +31,56 @@ const PPCIncfileLayout = ({
         text: `Get Started`,
         url: `${process.env.ORDER_URL}/form-order-now.php?entityType=${entityType}&entityState=${stateCode}`,
     }
+
+    const customers = [
+        {
+            photo: `mattweik-11`,
+            name: `John F.`,
+            city: ``,
+            text: `I had an issue with a report that I had filed and received a call from
+			Andrew in a very timely manner and he cleared everything up for me and
+			got me the documents that I needed. He went above and beyond than
+			expected and I greatly appreciated it.`,
+        },
+        {
+            photo: `mattweik-12`,
+            name: `Jade B.`,
+            city: ``,
+            text: `Very easy to use, there are no questions if I'm doing things wrong or if
+			I'm forgetting anything. incfile has it covered.`,
+        },
+        {
+            photo: `mattweik-12`,
+            name: `- Charne T.`,
+            city: ``,
+            text: `The product information is clear and orders are simple and easy to complete. Incfile.com has been a great help! `,
+        },
+        {
+            photo: `mattweik-12`,
+            name: `Linda D.`,
+            city: ``,
+            text: `I am very satisfied with the services I received from Incfile. My
+			business has been using this service for 3years, keeping me updated on
+			all facets pertaining to business. Easy access to my account. Overall a
+			great asset to my business.`,
+        },
+        {
+            photo: `mattweik-12`,
+            name: `Susan H.`,
+            city: ``,
+            text: `I normally get my corp filings from another company, but after
+			purchasing a corp thru Incfile.com, and how fast I received everything,
+			this is my new go-to for legal business filings. Highly recommend!`,
+        },
+        {
+            photo: `mattweik-12`,
+            name: `David D.`,
+            city: ``,
+            text: `I have had a great experience starting and maintaining my business
+			through IncFile.com. They take care of the details / reporting documents
+			so I can tend to the success of my business!`,
+        },
+    ];
     
     return (
         <>
@@ -51,7 +101,7 @@ const PPCIncfileLayout = ({
                 {content?.heroHeadLine && <p style={{fontSize: `20px`, marginBottom:`16px`}}>{ parse(content.heroHeadLine)}</p>}
                 <h1>{parse(content?.heroTitle ? content.heroTitle : `The Fastest & Easiest Way To Set Up Your LLC`)}</h1>
                 <p style={{fontSize: `32px`, color: '#1D1D1D', fontWeight: `bold`}}>Price: $0 + State Fee</p>
-                <p>{parse(content?.heroText ? content.heroText : `Join Over <span>250,000</span> Businesses Launched With incfile Since <span>2004</span>`)}</p>
+                <p>{parse(content?.heroText ? content.heroText : `Join Over <span>500,000</span> Businesses Launched With incfile Since <span>2004</span>`)}</p>
 
                 <Buttonsbox>
                     <Button
@@ -70,7 +120,7 @@ const PPCIncfileLayout = ({
                     <RatingBlock />
                 </RatingRow>
             </Top>
-            <Opinions content={opinions} />
+            <Opinions content={opinions} customers={customers} />
             <Choose content={choose} />
             <Care content={care} />
             <Rocket

@@ -27,7 +27,7 @@ const PPCLLCLayout = ({ stateCode, videoID, vimeo, quotes }) => {
 
     const top = {
         header: `The Fastest & Easiest Way To Set Up Your ${state.name} LLC`,
-	    text: `Join Over <span>250,000</span> Businesses Launched With incfile Since <span>2004</span>`,
+	    text: `Join Over <span>500,000</span> Businesses Launched With incfile Since <span>2004</span>`,
     }
 
     const whyChooseIncfile = {
@@ -80,7 +80,7 @@ const PPCLLCLayout = ({ stateCode, videoID, vimeo, quotes }) => {
             <Rocket
                 externalLink
                 textHeading={`Easily Start Your <br>${state.name} LLC Today`}
-                text1="There's A Reason More Than 250,000 <br>Businesses Have Started With Incfile"
+                text1="There's A Reason More Than 500,000 <br>Businesses Have Started With Incfile"
                 text2=" "
                 textButton="Launch My LLC"
                 url={`?entityType=LLC&entityState=${stateCode}`}

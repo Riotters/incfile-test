@@ -26,7 +26,7 @@ const PPCCorporationLayout = ({ stateCode, videoID, vimeo }) => {
 
     const top = {
         header: `The Fastest & Easiest Way To Set Up Your ${stateName} Corporation`,
-	    text: `Join Over <span>250,000</span> Businesses Launched With incfile Since <span>2004</span>`,
+	    text: `Join Over <span>500,000</span> Businesses Launched With incfile Since <span>2004</span>`,
     }
 
     const whyChooseIncfile = {
@@ -79,7 +79,7 @@ const PPCCorporationLayout = ({ stateCode, videoID, vimeo }) => {
             <Rocket
                 externalLink
                 textHeading={`Easily Start Your ${stateName} <br>Corporation Today`}
-                text1="There's A Reason More Than <b>250,000</b> Businesses <br>Have Started With Incfile"
+                text1="There's A Reason More Than <b>500,000</b> Businesses <br>Have Started With Incfile"
                 text2=" "
                 textButton="Launch My Corporation"
                 url={`?entityType=CCorporation&entityState=${stateCode ?? ''}`}
