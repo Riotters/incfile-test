@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { color, gradient } from "../../../atoms/styles/colors";
-import HeadingCenter from "../../../partials/heading-center";
+import { gradient } from "../../../atoms/styles/colors";
 import ContentCenter from "../../../partials/content-center";
 import StatesMap from "../../../../components/states-map/states-map";
 import Oval from "../../../atoms/icons/oval";

@@ -35,7 +35,7 @@ const CaliforniaCorporation = () => {
                 <h1>{top.header}</h1>
                 <p>{top.text}</p>
                 <Buttonsbox>
-                    <Button content={top.buttons[0]} theme="primary56" arrow />
+                    <Button externalLink content={top.buttons[0]} theme="primary56" arrow />
                 </Buttonsbox>
             </Top>
             <CorporationLayout>

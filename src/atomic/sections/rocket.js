@@ -9,101 +9,108 @@ import { Paragraph } from "../atoms/typography/paragraph";
 import ExternalLink from "../molecules/buttons/external-link";
 import Searchbar from "../../components/searchbar";
 import StatesDropdown from "../molecules/mixed-blocks/states-dropdown";
+import parse from "html-react-parser";
 
 const Rocket = ({
-	search,
-	statesDropdown,
-	index,
-	url,
-	textButton,
-	text1,
-	text2,
+    search,
+    statesDropdown,
+    index,
+    url,
+    textButton,
+    text1,
+    text2,
+    textHeading
 }) => (
-	<Wrapper>
-		<Oval>
-			<OvalSVG />
-		</Oval>
-		<Curve>
-			<CurveSVG />
-		</Curve>
-		<Moon>
-			<Image filename="moon" alt="moon" />
-		</Moon>
-		<Container>
-			<RocketWrapper>
-				<Image filename="rocket-2x" alt="rocket lunch" />
-			</RocketWrapper>
-			{search && (
-				<Content>
-					<SearchBox>
-						<h2>Learn more about Nonprofits by state.</h2>
-						<Searchbar />
-					</SearchBox>
-				</Content>
-			)}
-			{statesDropdown && (
-				<Content>
-					<SearchBox>
-						<h2>Learn more about Nonprofits by state.</h2>
-						<StatesDropdown />
-					</SearchBox>
-				</Content>
-			)}
+        <Wrapper>
+            <Oval>
+                <OvalSVG />
+            </Oval>
+            <Curve>
+                <CurveSVG />
+            </Curve>
+            <Moon>
+                <Image filename="moon" alt="moon" />
+            </Moon>
+            <Container>
+                <RocketWrapper>
+                    <Image filename="rocket-2x" alt="rocket lunch" />
+                </RocketWrapper>
+                {search && (
+                    <Content>
+                        <SearchBox>
+                            <h2>Learn more about Nonprofits by state.</h2>
+                            <Searchbar />
+                        </SearchBox>
+                    </Content>
+                )}
+                {statesDropdown && (
+                    <Content>
+                        <SearchBox>
+                            <h2>Learn more about Nonprofits by state.</h2>
+                            <StatesDropdown />
+                        </SearchBox>
+                    </Content>
+                )}
 
-			{index && (
-				<Content>
-					<Heading size={2} bottomMargin="0">
-						{" "}
+                {index && (
+                    <Content>
+                        <Heading size={2} bottomMargin="0">
+                            {" "}
 						Start Your LLC, S Corp,{" "}
-					</Heading>
-					<Heading size={2}>or C Corp Today</Heading>
-					<Paragraph bottomMargin="0">
-						There's A Reason More Than 500,000
+                        </Heading>
+                        <Heading size={2}>or C Corp Today</Heading>
+                        <Paragraph bottomMargin="0">
+                            There's A Reason More Than 500,000
 					</Paragraph>
-					<Paragraph>Businesses Have Started With incfile</Paragraph>
-					<ExternalLink
-						content={{
-							text: `Launch your business`,
-							url: `${process.env.ORDER_URL}/form-order-now.php`,
-						}}
-						target="_self"
-						theme="primary48"
-						margin="0 auto 0 0"
-						arrow
-					/>
-				</Content>
-			)}
+                        <Paragraph>Businesses Have Started With incfile</Paragraph>
+                        <ExternalLink
+                            content={{
+                                text: `Launch your business`,
+                                url: `${process.env.ORDER_URL}/form-order-now.php`,
+                            }}
+                            target="_self"
+                            theme="primary48"
+                            margin="0 auto 0 0"
+                            arrow
+                        />
+                    </Content>
+                )}
 
-			{!search && !statesDropdown && !index && (
-				<Content>
-					<Heading size={2} bottomMargin="0">
-						{" "}
-						Launch{" "}
-					</Heading>
-					<Heading size={2}>your business with Incfile</Heading>
-					<Paragraph bottomMargin="0">
-						{text1 ? text1 : "No Contracts. No Surprises."}
-					</Paragraph>
-					<Paragraph>
-						{text2 ? text2 : "Only $0 + State Fee to Launch Your Business."}
-					</Paragraph>
-					<ExternalLink
-						content={{
-							text: `${textButton ? textButton : "Start Now"}`,
-							url: `${process.env.ORDER_URL}/form-order-now.php${
-								url ? url : ""
-							}`,
-						}}
-						theme="primary48"
-						margin="0 auto 0 0"
-						target="_self"
-						arrow
-					/>
-				</Content>
-			)}
-		</Container>
-	</Wrapper>
-);
+                {!search && !statesDropdown && !index && (
+                    <Content>
+                        {!textHeading
+                            ?
+                            <>
+                                <Heading size={2} bottomMargin="0">
+                                    {" "}
+                                    Launch{" "}
+                                </Heading>
+                                <Heading size={2}>your business with Incfile</Heading>
+                            </>
+                            : <Heading size={2}>{parse(textHeading)}</Heading>
+                        }
+                        <Paragraph bottomMargin="0" mixed={true}>
+                            {text1 ? parse(text1) : "No Contracts. No Surprises."}
+                        </Paragraph>
+                        <Paragraph>
+                            {text2 ? parse(text2) : "Only $0 + State Fee to Launch Your Business."}
+                        </Paragraph>
+                        <ExternalLink
+                            content={{
+                                text: `${textButton ? textButton : "Start Now"}`,
+                                url: `${process.env.ORDER_URL}/form-order-now.php${url ? url : ""
+                                    }`,
+                            }}
+                            theme="primary48"
+                            margin="0 auto 0 0"
+                            target="_self"
+                            arrow
+                        />
+                    </Content>
+                )}
+            </Container>
+        </Wrapper>
+    );
 
 const Wrapper = styled.div`
 	position: relative;

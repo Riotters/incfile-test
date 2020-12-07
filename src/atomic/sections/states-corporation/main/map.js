@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { color, gradient } from "../../../atoms/styles/colors";
-import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import StatesMap from "../../../../components/states-map/states-map";
 import Oval from "../../../atoms/icons/oval";
@@ -37,7 +36,7 @@ const MapSection = ({ className, content }) => (
 			<Heading size={1} template={2}>
 				{content.header}
 			</Heading>
-			<StatesMap />
+			<StatesMap corporations />
 		</ContentCenter>
 	</Map>
 );
