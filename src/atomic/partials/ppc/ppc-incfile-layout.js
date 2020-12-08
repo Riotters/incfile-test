@@ -34,7 +34,7 @@ const PPCIncfileLayout = ({
 
     const customers = [
         {
-            photo: `mattweik-11`,
+            star: true,
             name: `John F.`,
             city: ``,
             text: `I had an issue with a report that I had filed and received a call from
@@ -43,20 +43,20 @@ const PPCIncfileLayout = ({
 			expected and I greatly appreciated it.`,
         },
         {
-            photo: `mattweik-12`,
+            star: true,
             name: `Jade B.`,
             city: ``,
             text: `Very easy to use, there are no questions if I'm doing things wrong or if
 			I'm forgetting anything. incfile has it covered.`,
         },
         {
-            photo: `mattweik-12`,
+            star: true,
             name: `- Charne T.`,
             city: ``,
             text: `The product information is clear and orders are simple and easy to complete. Incfile.com has been a great help! `,
         },
         {
-            photo: `mattweik-12`,
+            star: true,
             name: `Linda D.`,
             city: ``,
             text: `I am very satisfied with the services I received from Incfile. My
@@ -65,7 +65,7 @@ const PPCIncfileLayout = ({
 			great asset to my business.`,
         },
         {
-            photo: `mattweik-12`,
+            star: true,
             name: `Susan H.`,
             city: ``,
             text: `I normally get my corp filings from another company, but after
@@ -73,7 +73,7 @@ const PPCIncfileLayout = ({
 			this is my new go-to for legal business filings. Highly recommend!`,
         },
         {
-            photo: `mattweik-12`,
+            star: true,
             name: `David D.`,
             city: ``,
             text: `I have had a great experience starting and maintaining my business

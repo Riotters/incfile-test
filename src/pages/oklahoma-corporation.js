@@ -40,6 +40,7 @@ import { getFullPricesAndFilings } from "../api/Api";
 import ReactTabs from "../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
 import { Helmet } from "react-helmet";
+import LightBox from "../components/LightBox";
 
 const OklahomaCorporation = () => {
 	const [dataApi, setDataApi] = React.useState({});
@@ -90,8 +91,13 @@ const OklahomaCorporation = () => {
 					<TabPanel>
 						<PanelWrapper>
 							<Heading size={3} style={{ marginBottom: "24px" }}>
-								Choosing a Corporation Name
+                                Choosing a Corporation Name
 							</Heading>
+                            <LightBox
+                                bottomMargin={42}
+                                thumbnailVideo="what-is-a-corporation-8899"
+                                videoID="oYZShvmf9eQ"
+                            />
 							<Paragraph big>
 								You’ll need to choose and register a name for your new Oklahoma
 								corporation before you can actually conduct business in the
@@ -148,8 +154,8 @@ const OklahomaCorporation = () => {
 								<Paragraph bottomMargin={0}>“Union”</Paragraph>
 							</TextBoxed>
 							<Paragraph big style={{ marginBottom: "0" }}>
-								An available corporate name may be reserved for 60 days for a
-								$10 fee.
+                                An available corporate name may be reserved for 60 days for a
+                                $10 fee.
 							</Paragraph>
 						</PanelWrapper>
 					</TabPanel>
