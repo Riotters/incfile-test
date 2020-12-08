@@ -23,7 +23,7 @@ export const service = {
 };
 
 export const fillingRequirements = {
-  mainHeader: "Annual California Filing Requirements",
+  mainHeader: "Annual South Dakota Filing Requirements",
   tableScheme: "blue3",
   header1: "Alaska Filing Time & Price",
   header1infoBox: `The state charges this amount to file a new business entity. This fee goes directly to the Secretary of State.`,
@@ -183,7 +183,7 @@ export const fillingRequirements = {
 };
 
 export const questions = {
-  header: `Commonly Asked Questions For Starting a Alaska Corporation`,
+  header: `Commonly Asked Questions For Starting a South Dakota Corporation`,
   items: [
     {
       question: `How is a Corporation Taxed?`,

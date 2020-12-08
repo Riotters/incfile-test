@@ -13,7 +13,7 @@ export const about = {
 	text: `As a business owner, you are responsible for making sure your business has the proper federal, state and local licenses and permits to operate legally. 
     A business license ensures you are legitimately doing business in a particular locale. Every new business must apply for a business license. 
     But, don't be fooled, your corporation or LLC may need more than one license, or permit, to fully operate at the state level.`,
-	text2: `At Incfile we take the guesswork out of how to obtain a business license and the necessary permits. Not only do we inform you of the necessities, we offer to do the paperwork for you.`,
+	text2: `At Incfile we take the guesswork out of how to obtain a business license and the necessary permits.`,
 	button: {
 		text: `Get the Business License Research package`,
 		url: `${process.env.ORDER_URL}/order-business-license`,
