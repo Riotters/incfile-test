@@ -40,55 +40,64 @@ export const typeBusiness = {
             circleText: 1,
             imageName: "measuring-business-success",
             headline: "Business process improvement",
-            text: "Examining how a business currently operates and making recommendations to improve efficiency and effectiveness"
+            text: "Examining how a business currently operates and making recommendations to improve efficiency and effectiveness",
+            imageAlt: "Price",
         },
         {
             circleText: 2,
             imageName: "we-doubled-the-size-of-customer-service",
             headline: "HR and culture",
-            text: "Working with HR and leadership to deliver changes in attitude, morale and culture throughout a business"
+            text: "Working with HR and leadership to deliver changes in attitude, morale and culture throughout a business",
+            imageAlt: "Price",
         },
         {
             circleText: 3,
             imageName: "organization-change-02",
             headline: "Organization change",
-            text: "Examining the operational and staffing structure of a business and optimizing it for size and business functions"
+            text: "Examining the operational and staffing structure of a business and optimizing it for size and business functions",
+            imageAlt: "Price",
         },
         {
             circleText: 4,
             imageName: "leadership-coaching",
             headline: "Leadership coaching",
-            text: "Working with C-suite and other senior managers to enhance leadership skills and approaches"
+            text: "Working with C-suite and other senior managers to enhance leadership skills and approaches",
+            imageAlt: "Price",
         },
         {
             circleText: 5,
             imageName: "business-planning-and-funding",
             headline: "Strategy planning",
-            text: "Helping to develop strategies for businesses to grow or react to changing environments, regulations and compliance"
+            text: "Helping to develop strategies for businesses to grow or react to changing environments, regulations and compliance",
+            imageAlt: "Price",
         },
         {
             circleText: 6,
             imageName: "software",
             headline: "Technology, hardware and software",
-            text: "Providing insight into the technologies and approaches best suited to delivering business outcomes"
+            text: "Providing insight into the technologies and approaches best suited to delivering business outcomes",
+            imageAlt: "Reviews",
         },
         {
             circleText: 7,
             imageName: "display-ads",
             headline: "Branding and public relations",
-            text: "Managing how a brand or individuals are perceived by customers and in the wider marketplace"
+            text: "Managing how a brand or individuals are perceived by customers and in the wider marketplace",
+            imageAlt: "Speed",
         },
         {
             circleText: 8,
             imageName: "additional-accounting-fees",
             headline: "Financial management",
-            text: "Helping a business optimize its cash flow, costs, profit margins and operations to maximize revenue and minimize expenses"
+            text: "Helping a business optimize its cash flow, costs, profit margins and operations to maximize revenue and minimize expenses",
+            imageAlt: "Reviews",
         },
         {
             circleText: 9,
             imageName: "legal-consulting",
             headline: "Legal consulting",
-            text: "Giving insight into likely legal issues, challenges and strategy for new initiatives or business changes"
+            text: "Giving insight into likely legal issues, challenges and strategy for new initiatives or business changes",
+            imageAlt: "Speed",
         }
     ]
 }

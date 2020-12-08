@@ -48,13 +48,13 @@ const Wrapper = styled.div`
     }
 `
 
-const TopImageBox = ({ className, image, color, children, noShadow }) => {
+const TopImageBox = ({ className, image, imageAlt, color, children, noShadow }) => {
 
   return (
     <Wrapper className={className} color={color} noShadow={noShadow}>
         <div className="top">
             {image && (
-                <Image filename={image} />
+                <Image filename={image} alt={imageAlt} />
             )}   
         </div>
         <div className="content">
