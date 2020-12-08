@@ -83,7 +83,8 @@ export const fillingRequirements = {
           style: { "font-weight": "bold" },
         },
         {
-          label: "Domestic (Alabaman) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
+          label:
+            "Domestic (Alabaman) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
           type: "label",
           textCenter: true,
           className: "text-left",
@@ -168,7 +169,8 @@ export const fillingRequirements = {
           style: { "font-weight": "bold" },
         },
         {
-          label: "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
+          label:
+            "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
           type: "label",
           textCenter: true,
           className: "text-left",
@@ -260,7 +262,9 @@ Documents`,
 
 export const articlesOfIncorporation = {
   box1: {
-    header: `The following information must be included in the articles of incorporation:`,
+    header: ``,
+    size: 3,
+    template: 3,
     list: [
       `Name and address of incorporator(s)`,
       `Brief statement of corporate purpose, which may be the general statement, “the transaction of any or all lawful business for which corporations may be incorporated under the Alabama Business Corporation Act.”`,
@@ -273,7 +277,7 @@ export const articlesOfIncorporation = {
     ],
   },
   box2: {
-    header: `Alabama state law also allows (but does not require) optional items to be included in the articles of incorporation for those corporations who wish to formally specify additional information, such as:`,
+    header: ``,
     list: [
       `Shareholders’ rights to adopt initial bylaws`,
       `Provisions managing the business and regulating the corporation’s affairs`,
@@ -292,31 +296,31 @@ export const tabs = {
   panels: [
     {
       icon: Tab1Icon,
-      name: `Corporation Name`
+      name: `Corporation Name`,
     },
     {
       icon: Tab2Icon,
-      name: `Articles of Incorporation`
+      name: `Articles of Incorporation`,
     },
     {
       icon: Tab3Icon,
-      name: `Registered Agent`
+      name: `Registered Agent`,
     },
     {
       icon: Tab4Icon,
-      name: `Bylaws`
+      name: `Bylaws`,
     },
     {
       icon: Tab5Icon,
-      name: `Directors`
+      name: `Directors`,
     },
     {
       icon: Tab6Icon,
-      name: `Required Reports`
+      name: `Required Reports`,
     },
     {
       icon: Tab7Icon,
-      name: `Taxes`
+      name: `Taxes`,
     },
-  ]
-}
+  ],
+};

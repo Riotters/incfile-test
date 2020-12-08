@@ -88,8 +88,8 @@ export const corporation = [
     type: "header",
     content: "Choosing the Right Type of Wyoming Corporation",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    marginBottom: 40,
   },
   {
     type: "text",
@@ -934,7 +934,7 @@ export const corporation = [
             "Create and issue stock certificates to your shareholders",
             `Apply for <a href="/business-license-research-package/">business licenses and permits</a>. You may require licenses from your state, county, township and various industry or federal bodies`,
             `Get an <a href="/manage-your-company/tax-id-ein/">Employer Identification Number (EIN)</a>`,
-            "File for taxes with Illinois Department of Revenue",
+            "File for taxes with Wyoming Department of Revenue",
             "Get all formalities in place for employees, including unemployment, disability, payroll, insurance and taxes",
             "Appoint a board of directors for the corporation",
             "Appoint officers to the corporation",
@@ -1015,8 +1015,8 @@ export const naming = [
     type: "header",
     content: "Naming Your Wyoming Corporation",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    marginBottom: 40,
   },
   {
     type: "text",
@@ -1210,8 +1210,8 @@ export const agents = [
     type: "header",
     content: "Registered Agents and Your Wyoming Corporation",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    marginBottom: 40,
   },
   {
     type: "text",
@@ -1420,8 +1420,8 @@ export const filing = [
     type: "header",
     content: "Wyoming Corporation Form, Filing and Permit Requirements",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    marginBottom: 40,
   },
   {
     type: "text",
@@ -1827,8 +1827,8 @@ export const taxes = [
     type: "header",
     content: "Taxes and Fees for Your Wyoming Corporation",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    marginBottom: 40,
   },
   {
     type: "text",
@@ -2025,13 +2025,13 @@ export const afterFormation = [
     type: "header",
     content: "Understand Your Ongoing Corporation Filing Requirements",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    marginBottom: 40,
   },
   {
     type: "text",
     content:
-      "Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a>and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/ manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
+      "Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a> and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/ manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
     marginBottom: 48,
   },
   {
@@ -2111,7 +2111,7 @@ export const afterFormation = [
   {
     type: "text",
     content:
-      "Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your Illinois Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='http://expensify.com/'>Expensify</a> to track and tag business expenses from your mobile phone.",
+      "Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your Wyoming Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='http://expensify.com/'>Expensify</a> to track and tag business expenses from your mobile phone.",
     marginBottom: 48,
   },
   {
@@ -2131,12 +2131,6 @@ export const afterFormation = [
     type: "text",
     content:
       "Here are some favorite accounting software options for Corporation business owners:",
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "Choosing the right accounting software will allow you to track your accounts receivable — the money that is flowing in and out of your Corporation. Accounting software will allow you to track bills, invoices, expenses and customers. This is also another important step in simplifying your year-end tax burden. With a clear, separate business checking account and card and an organized accounting software system, you’ll (barely) dread tax season as a business owner.",
     marginBottom: 24,
   },
   {

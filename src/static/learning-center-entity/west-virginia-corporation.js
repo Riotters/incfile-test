@@ -2,8 +2,7 @@ import Tab1Icon from "../../images/icons/icon-manage-your-company-color-business
 import Tab2Icon from "../../images/icons/light.inline.svg";
 import Tab3Icon from "../../images/icons/icon-32-multi-color-registered-agent.inline.svg";
 import Tab4Icon from "../../images/icons/icon-learning-center-color-how-to-guide.inline.svg";
-import Tab5Icon
-  from "../../images/icons/icon-learning-center-color-all-ca-corporations-must-have-elected-board-of-directors.inline.svg";
+import Tab5Icon from "../../images/icons/icon-learning-center-color-all-ca-corporations-must-have-elected-board-of-directors.inline.svg";
 import Tab6Icon from "../../images/icons/icon-start-a-business-color-maintaining-your-cleaning-business.inline.svg";
 import Tab7Icon from "../../images/icons/icon-learning-center-color-business-taxes.inline.svg";
 
@@ -84,7 +83,8 @@ export const fillingRequirements = {
           style: { "font-weight": "bold" },
         },
         {
-          label: "Domestic (West Virginian) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
+          label:
+            "Domestic (West Virginian) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
           type: "label",
           textCenter: true,
           className: "text-left",
@@ -169,7 +169,8 @@ export const fillingRequirements = {
           style: { "font-weight": "bold" },
         },
         {
-          label: "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
+          label:
+            "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
           type: "label",
           textCenter: true,
           className: "text-left",
@@ -180,7 +181,6 @@ export const fillingRequirements = {
     headerColumnsDef: "1fr 2fr",
   },
 };
-
 
 export const questions = {
   header: `Commonly Asked Questions For Starting a West Virginia Corporation`,
@@ -263,7 +263,7 @@ Documents`,
 
 export const articlesOfIncorporation = {
   box1: {
-    header: `The articles of incorporation must include:`,
+    header: ``,
     list: [
       `The general type of business the corporation will conduct (this provision can, however, end with a general statement such as “including the transaction of any or all lawful business for which corporations may be incorporated under West Virginia law.”`,
       `The number of shares the corporation is authorized to issue and the par value of each share, or a statement that all shares are without par value`,
@@ -272,7 +272,7 @@ export const articlesOfIncorporation = {
     ],
   },
   box2: {
-    header: `Some other provisions that aren’t required-but which may be included in the articles of incorporation-are:`,
+    header: ``,
     list: [
       `The names and addresses of the initial directors`,
       `Provisions for managing the business and regulating the affairs of the corporation`,
@@ -291,31 +291,31 @@ export const tabs = {
   panels: [
     {
       icon: Tab1Icon,
-      name: `Corporation Name`
+      name: `Corporation Name`,
     },
     {
       icon: Tab2Icon,
-      name: `Articles of Incorporation`
+      name: `Articles of Incorporation`,
     },
     {
       icon: Tab3Icon,
-      name: `Registered Agent`
+      name: `Registered Agent`,
     },
     {
       icon: Tab4Icon,
-      name: `Bylaws`
+      name: `Bylaws`,
     },
     {
       icon: Tab5Icon,
-      name: `Directors`
+      name: `Directors`,
     },
     {
       icon: Tab6Icon,
-      name: `Required Reports`
+      name: `Required Reports`,
     },
     {
       icon: Tab7Icon,
-      name: `Taxes`
+      name: `Taxes`,
     },
-  ]
-}
+  ],
+};

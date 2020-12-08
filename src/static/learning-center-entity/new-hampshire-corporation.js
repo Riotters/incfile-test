@@ -2,8 +2,7 @@ import Tab1Icon from "../../images/icons/icon-manage-your-company-color-business
 import Tab2Icon from "../../images/icons/light.inline.svg";
 import Tab3Icon from "../../images/icons/icon-32-multi-color-registered-agent.inline.svg";
 import Tab4Icon from "../../images/icons/icon-learning-center-color-how-to-guide.inline.svg";
-import Tab5Icon
-  from "../../images/icons/icon-learning-center-color-all-ca-corporations-must-have-elected-board-of-directors.inline.svg";
+import Tab5Icon from "../../images/icons/icon-learning-center-color-all-ca-corporations-must-have-elected-board-of-directors.inline.svg";
 import Tab6Icon from "../../images/icons/icon-start-a-business-color-maintaining-your-cleaning-business.inline.svg";
 import Tab7Icon from "../../images/icons/icon-learning-center-color-business-taxes.inline.svg";
 
@@ -84,7 +83,8 @@ export const fillingRequirements = {
           style: { "font-weight": "bold" },
         },
         {
-          label: "Domestic (New Hampshiren) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
+          label:
+            "Domestic (New Hampshiren) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
           type: "label",
           textCenter: true,
           className: "text-left",
@@ -169,7 +169,8 @@ export const fillingRequirements = {
           style: { "font-weight": "bold" },
         },
         {
-          label: "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
+          label:
+            "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
           type: "label",
           textCenter: true,
           className: "text-left",
@@ -262,15 +263,23 @@ Documents`,
 
 export const articlesOfIncorporation = {
   box1: {
-    header: `The certificate must specify:`,
-    list: [`The name and address of each incorporator`, `The principal corporate purpose (can be very brief; New Hampshire allows a corporation to be formed for any lawful business activity)`, `The number of shares that the corporation is authorized to issue`],
+    header: ``,
+    list: [
+      `The name and address of each incorporator`,
+      `The principal corporate purpose (can be very brief; New Hampshire allows a corporation to be formed for any lawful business activity)`,
+      `The number of shares that the corporation is authorized to issue`,
+    ],
   },
   box2: {
-    header: `In order to be exempt from those laws, the incorporator must certify that:`,
-    list: [`There will be 10 or fewer owners of the corporation`, `There will not be any published or circulated written advertising in order to ownership interests in the corporation`, `All sales of ownership interests will be completed within 60 days of the formation of the corporation`],
+    header: ``,
+    list: [
+      `There will be 10 or fewer owners of the corporation`,
+      `There will not be any published or circulated written advertising in order to ownership interests in the corporation`,
+      `All sales of ownership interests will be completed within 60 days of the formation of the corporation`,
+    ],
   },
   box3: {
-    header: `These can be items such as:`,
+    header: ``,
     list: [
       `Names and addresses of the initial directors`,
       `Regulations regarding the powers of the corporation, its board of directors, and shareholders`,
@@ -290,31 +299,31 @@ export const tabs = {
   panels: [
     {
       icon: Tab1Icon,
-      name: `Corporation Name`
+      name: `Corporation Name`,
     },
     {
       icon: Tab2Icon,
-      name: `Articles of Incorporation`
+      name: `Articles of Incorporation`,
     },
     {
       icon: Tab3Icon,
-      name: `Registered Agent`
+      name: `Registered Agent`,
     },
     {
       icon: Tab4Icon,
-      name: `Bylaws`
+      name: `Bylaws`,
     },
     {
       icon: Tab5Icon,
-      name: `Directors`
+      name: `Directors`,
     },
     {
       icon: Tab6Icon,
-      name: `Required Reports`
+      name: `Required Reports`,
     },
     {
       icon: Tab7Icon,
-      name: `Taxes`
+      name: `Taxes`,
     },
-  ]
-}
+  ],
+};
