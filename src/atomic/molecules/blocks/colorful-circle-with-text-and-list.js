@@ -43,6 +43,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 40px;
+  margin-bottom: 36px;
 
   ${(props) => props.withBg && "background-color:" + color.white + ";" + "box-shadow:" + shadow.white1 + ";" + "border-top-left-radius: 8px;" + "border-top-right-radius: 20px;" + "border-bottom-left-radius: 8px;" + "border-bottom-right-radius: 20px;"}
 `;

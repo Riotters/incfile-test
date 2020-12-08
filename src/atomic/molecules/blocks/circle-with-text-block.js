@@ -39,7 +39,7 @@ const Wrapper = styled.div`
     max-height: 270px;
     display: flex;
     align-items: center;
-    margin-bottom: 28px;
+    margin-bottom: 36px;
     padding: 40px 40px 40px 40px;
     
     ${props => props.withBg &&
