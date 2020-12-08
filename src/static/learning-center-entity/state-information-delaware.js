@@ -105,8 +105,8 @@ export const corporation = [
     type: "header",
     content: "Delaware Corporations",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    marginBottom: 40,
   },
   {
     type: "text",
@@ -675,8 +675,8 @@ export const startCaCorp = [
     type: "header",
     content: "How to Set up a Corporation in the State of Delaware",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    marginBottom: 40,
   },
   {
     type: "text",
@@ -931,8 +931,8 @@ export const naming = [
     type: "header",
     content: "Delaware Corporation Name Search and Registration",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    marginBottom: 40,
   },
   {
     type: "text",
@@ -1194,8 +1194,8 @@ export const agents = [
     type: "header",
     content: "Registered Agents and Your Delaware Corporation",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    marginBottom: 40,
   },
   {
     type: "text",
@@ -1465,8 +1465,8 @@ export const filing = [
     type: "header",
     content: "Delaware Corporation Form and Filing Rules",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    marginBottom: 40,
   },
   {
     type: "text",
@@ -1950,8 +1950,8 @@ export const taxes = [
     type: "header",
     content: "Delaware Corporation Taxes and Fees",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    marginBottom: 40,
   },
   {
     type: "text",
@@ -2274,13 +2274,13 @@ export const afterFormation = [
     type: "header",
     content: "Understand Your Ongoing Corporate Filing Requirements",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    marginBottom: 40,
   },
   {
     type: "text",
     content:
-      "Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a>and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/ manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
+      "Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a> and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/ manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
     marginBottom: 48,
   },
   {
@@ -2306,9 +2306,14 @@ export const afterFormation = [
     marginBottom: 41,
   },
   {
+    type: "text",
+    content:
+      "Benefits of <a href='/trademark-name-search/'>Incfile's Trademark service</a> include:",
+    marginBottom: 40,
+  },
+  {
     type: "list-dot",
     content: {
-      header: "Benefits of Incfile's Trademark service include:",
       list: [
         "Legal counsel from an experienced trademark attorney",
         "A thorough search of existing trademarks",
@@ -2355,7 +2360,7 @@ export const afterFormation = [
   {
     type: "text",
     content:
-      "Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your Illinois Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='http://expensify.com/'>Expensify</a> to track and tag business expenses from your mobile phone.",
+      "Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your Delaware Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='http://expensify.com/'>Expensify</a> to track and tag business expenses from your mobile phone.",
     marginBottom: 48,
   },
   {
@@ -2375,12 +2380,6 @@ export const afterFormation = [
     type: "text",
     content:
       "Here are some favorite accounting software options for Corporation business owners:",
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "Choosing the right accounting software will allow you to track your accounts receivable — the money that is flowing in and out of your Corporation. Accounting software will allow you to track bills, invoices, expenses and customers. This is also another important step in simplifying your year-end tax burden. With a clear, separate business checking account and card and an organized accounting software system, you’ll (barely) dread tax season as a business owner.",
     marginBottom: 24,
   },
   {

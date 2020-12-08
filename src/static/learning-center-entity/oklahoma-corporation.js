@@ -2,8 +2,7 @@ import Tab1Icon from "../../images/icons/icon-manage-your-company-color-business
 import Tab2Icon from "../../images/icons/light.inline.svg";
 import Tab3Icon from "../../images/icons/icon-32-multi-color-registered-agent.inline.svg";
 import Tab4Icon from "../../images/icons/icon-learning-center-color-how-to-guide.inline.svg";
-import Tab5Icon
-  from "../../images/icons/icon-learning-center-color-all-ca-corporations-must-have-elected-board-of-directors.inline.svg";
+import Tab5Icon from "../../images/icons/icon-learning-center-color-all-ca-corporations-must-have-elected-board-of-directors.inline.svg";
 import Tab6Icon from "../../images/icons/icon-start-a-business-color-maintaining-your-cleaning-business.inline.svg";
 import Tab7Icon from "../../images/icons/icon-learning-center-color-business-taxes.inline.svg";
 
@@ -84,7 +83,8 @@ export const fillingRequirements = {
           style: { "font-weight": "bold" },
         },
         {
-          label: "Domestic (Oklahoman) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
+          label:
+            "Domestic (Oklahoman) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
           type: "label",
           textCenter: true,
           className: "text-left",
@@ -169,7 +169,8 @@ export const fillingRequirements = {
           style: { "font-weight": "bold" },
         },
         {
-          label: "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
+          label:
+            "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
           type: "label",
           textCenter: true,
           className: "text-left",
@@ -262,7 +263,15 @@ Documents`,
 
 export const articlesOfIncorporation = {
   box1: {
-    header: `The following information must be included in the certificate of incorporation:`,
+    header: ``,
+    list: [
+      `For no-par shares (i.e., without par value), multiply the number of authorized shares by $50. This means that the minimum $50 filing fee allows you to authorize just one share without par value.`,
+      `For shares with a stated par value, multiply the par value amount of each share by the number of par value shares authorized.`,
+    ],
+  },
+
+  box2: {
+    header: ``,
     list: [
       `The name and address of each incorporator`,
       `The total number of shares authorized for issue`,
@@ -273,8 +282,8 @@ export const articlesOfIncorporation = {
       `If the powers of the incorporator(s) are to end when the certificate is filed, the names and addresses of the initial directors.`,
     ],
   },
-  box2: {
-    header: `Oklahoma law also allows (but does not require) optional items to be included in the certificate of incorporation for those corporations who wish to formally specify additional information, such as:`,
+  box3: {
+    header: ``,
     list: [
       `Provisions for managing the business and regulating its affairs`,
       `A specific provision authorizing a court to order, in certain situations, a meeting between the corporation and its shareholders or creditors`,
@@ -296,31 +305,31 @@ export const tabs = {
   panels: [
     {
       icon: Tab1Icon,
-      name: `Corporation Name`
+      name: `Corporation Name`,
     },
     {
       icon: Tab2Icon,
-      name: `Articles of Incorporation`
+      name: `Articles of Incorporation`,
     },
     {
       icon: Tab3Icon,
-      name: `Registered Agent`
+      name: `Registered Agent`,
     },
     {
       icon: Tab4Icon,
-      name: `Bylaws`
+      name: `Bylaws`,
     },
     {
       icon: Tab5Icon,
-      name: `Directors`
+      name: `Directors`,
     },
     {
       icon: Tab6Icon,
-      name: `Required Reports`
+      name: `Required Reports`,
     },
     {
       icon: Tab7Icon,
-      name: `Taxes`
+      name: `Taxes`,
     },
-  ]
-}
+  ],
+};
