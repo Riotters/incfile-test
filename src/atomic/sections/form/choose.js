@@ -81,8 +81,9 @@ const ChooseSection = ({ className, content, stateName }) => {
             />
             <ContentCenter>
                 <Grid>
-                    {content.boxes.map((box) => (
+                    {content.boxes.map((box,i) => (
                         <TopImageBox
+                            key={i}
                             content={box}
                             image={box.image}
                             color={box.color}
