@@ -102,13 +102,14 @@ export const corporation = [
   {
     type: "header",
     content: "Texas Corporations",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
     content:
-      "WIth its busy cities and enormous landscapes, Texas is a state as beautiful as it is prosperous. If you want to start a successful business, then the Lone Star State could be a great choice — and the lack of a state income tax can be a good incentive! Whether you want to be headquartered in Houston, Austin or Dallas — or you want to build a presence in a smaller city — you have plenty of choices.",
+      "With its busy cities and enormous landscapes, Texas is a state as beautiful as it is prosperous. If you want to start a successful business, then the Lone Star State could be a great choice — and the lack of a state income tax can be a good incentive! Whether you want to be headquartered in Houston, Austin or Dallas — or you want to build a presence in a smaller city — you have plenty of choices.",
     marginBottom: 24,
   },
   {
@@ -120,7 +121,8 @@ export const corporation = [
   {
     type: "header",
     content: "What Type of Texas Corporation Should You Choose?",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -139,6 +141,7 @@ export const corporation = [
     content: [
       {
         header: "Texas Sole Proprietorships and Partnerships",
+        size: 3,
         text:
           "These are the simplest type of business and will be the “default” type of TX business you have if you do not choose to form a separate business entity. These types of businesses do not provide you with any special protections or benefits and can leave your personal assets vulnerable. We do not recommend them.",
         svg: ProprietorshipSVG,
@@ -150,12 +153,13 @@ export const corporation = [
       },
       {
         header: "Texas Limited Liability Companies (LLCs)",
+        size: 3,
         text:
           "LLCs are a great option for smaller TX businesses. LLCs are quick and easy to create, inexpensive to administer, light on regulations and have simple taxation and rules.",
         svg: LockpadSVG,
         link: {
-          text: "Learn how to create an LLC in Texas",
-          url: "/",
+          text: "You can learn how to create an LLC in Texas here.",
+          url: "/texas-llc/",
         },
         backgroundColor: color.babyblue2,
         shadowColor: shadow.babyblue2,
@@ -165,12 +169,13 @@ export const corporation = [
       },
       {
         header: "Texas S Corporations",
+        size: 3,
         text:
           "You might choose to form a Texas S Corporation because it’s a good compromise between the simplicity of the LLC and the complexity of the C Corporation. Note that TX S Corporations are subject to more rules and regulations than a TX LLC, but they can mean that you pay less tax.",
         svg: ProcentSVG,
         link: {
-          text: "Learn how to create an LLC in Texas",
-          url: "/",
+          text: "Learn about forming an S Corporation.",
+          url: "/what-is-s-corporation/",
         },
         backgroundColor: color.green2,
         shadowColor: shadow.green2,
@@ -180,13 +185,10 @@ export const corporation = [
       },
       {
         header: "Texas C Corporations",
+        size: 3,
         text:
-          "If you plan to start a large business or want to trade your shares on the public stock market, a TX C Corporation is your only choice. Be aware that Texas C Corporations are subject to many rules and regulations, and they have a substantial amount of administrative overhead. Additionally, the tax rules for a Texas C Corporation are not as advantageous as for a TX S Corporation or LLC.",
+          "If you plan to start a large business or want to trade your shares on the public stock market, a TX C Corporation is your only choice. Be aware that Texas C Corporations are subject to many rules and regulations, and they have a substantial amount of administrative overhead. Additionally, the tax rules for a Texas C Corporation are not as advantageous as for a TX S Corporation or LLC.<br /><br /><a href='/what-is-c-corporation/'>Learn about forming a C Corporation.</a><br /><br />There are some other business entity structures like nonprofits, Limited Liability Partnerships (LLPs) and B Corporations, but they will not be relevant for the majority of entrepreneurs.",
         svg: BillSVG,
-        link: {
-          text: "Learn about forming a C Corporation",
-          url: "/",
-        },
         backgroundColor: color.yellow2,
         shadowColor: shadow.yellow2,
         boxShadow: false,
@@ -197,30 +199,20 @@ export const corporation = [
     marginBottom: 24,
   },
   {
-    type: "colorbox",
-    icon: FolderProcentSVG,
-    header: "Other Entity Types",
-    text:
-      "There are some other business entity structures like nonprofits, Limited Liability Partnerships (LLPs) and B Corporations, but they will not be relevant for the majority of entrepreneurs.",
-    curve: true,
-    curveColor: color.blue1,
-    color: color.blue3,
-    marginBottom: 73,
-    buttons: [
+    type: "buttons",
+    content: [
       {
         content: {
-          text: "Start Your S-Corp",
-          url: "/",
+          text: "Start Your Texas S Corporation",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=TX`,
         },
-        arrow: true,
         theme: "primary56",
       },
       {
         content: {
-          text: "Start Your C-Corp",
-          url: "/",
+          text: "Start Your Texas C Corporation",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=TX`,
         },
-        arrow: true,
         theme: "primary56",
       },
     ],
@@ -228,7 +220,8 @@ export const corporation = [
   {
     type: "header",
     content: "Advantages of Forming a Texas Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -253,7 +246,8 @@ export const corporation = [
     type: "header",
     content:
       "The Advantages of Incorporating a Texas S Corp or C Corp Over an LLC",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -277,10 +271,10 @@ export const corporation = [
   {
     type: "list-dot",
     content: {
-      header: "S Corporations and C Corporations in Texas",
+      header: "",
       list: [
-        "<strong>Similarities:</strong> Texas S Corporations and C Corporations have similar rules and regulations for liability, governance, management and ownership",
-        "<strong>Differences:</strong> Key differences are taxation and the ease of buying, selling and transferring stock",
+        "Similarities: Texas S Corporations and C Corporations have similar rules and regulations for liability, governance, management and ownership",
+        "Differences: Key differences are taxation and the ease of buying, selling and transferring stock",
       ],
     },
     color: color.green3,
@@ -290,7 +284,8 @@ export const corporation = [
   {
     type: "header",
     content: "Taxation Benefits of a Texas S Corporation Over an LLC",
-    size: 4,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -303,15 +298,15 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn about the tax benefits of S Corporations.",
-      url: "/",
+      url: "/research-topics/c-corporation-info/what-is-the-form-2553/",
     },
     marginBottom: 32,
   },
   {
     type: "button",
     content: {
-      text: "File From 2553 with the IRS",
-      url: "/",
+      text: "File Form 2553 with the IRS via Incfile",
+      url: "/s-corp-election-form/",
     },
     theme: "primary56",
     marginBottom: 64,
@@ -320,7 +315,8 @@ export const corporation = [
     type: "header",
     content:
       "If You Need to Transfer Stocks and Ownership Easily, Choose a Texas S Corporation or C Corporation",
-    size: 4,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -333,7 +329,8 @@ export const corporation = [
     type: "header",
     content:
       "Texas C Corporations Provide the Main Advantages for Buying and Selling Stock",
-    size: 4,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -360,14 +357,15 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn more about the differences between business entities",
-      url: "/",
+      url: "/start-your-company/",
     },
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Advantages of Incorporating as a C Corporation in Texas",
-    size: 4,
+    content: "Advantages of Setting up a Texas S Corporation",
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -379,7 +377,45 @@ export const corporation = [
   {
     type: "list-dot",
     content: {
-      header: "Rules for Buying, Selling and Transferring Stocks",
+      header: "",
+      list: [
+        "Texas S Corporations can have up to 100 shareholders.",
+        "Running an S Corporation in Texas is simpler than running a C Corporation.",
+        "It is easy to transfer ownership in an S Corporation by selling your stock.",
+        "In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax. Find out how this can save you money using our <a href='/s-corporation-tax-calculator/'>S Corporation Tax Calculator.</a>",
+        "LLCs can <a href='/research-topics/llc-info/can-a-limited-liability-company-llc-be-taxed-as-an-s-corporation/'>choose to be taxed as S Corporations</a> to take advantage of this.",
+      ],
+    },
+    color: color.yellow3,
+    marginBottom: 72,
+    curve: false,
+  },
+  {
+    type: "arrow-link",
+    content: {
+      text: "Learn more about the advantages of forming an S Corporation.",
+      url:
+        "/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/",
+    },
+    marginBottom: 48,
+  },
+  {
+    type: "header",
+    content: "Advantages of Incorporating as a C Corporation in Texas",
+    size: 3,
+    template: 3,
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content:
+      "In addition to the general benefits above, Texas C Corporations provide several other advantages.",
+    marginBottom: 24,
+  },
+  {
+    type: "list-dot",
+    content: {
+      header: "",
       list: [
         "Ownership in a Texas C Corporation is very fluid and determined by who owns stock in the business.",
         "Texas C Corporations can list their shares on a public stock exchange. This stock can be bought and sold by anyone.",
@@ -391,6 +427,13 @@ export const corporation = [
     color: color.blue3,
     marginBottom: 72,
     curve: false,
+  },
+  {
+    type: "header",
+    content: "What You Need to Know About Forming a Texas Corporation",
+    size: 2,
+    template: 3,
+    marginBottom: 24,
   },
   {
     type: "text",
@@ -409,14 +452,15 @@ export const corporation = [
     content: {
       text:
         "Learn what you need to do to create a Texas S Corporation or C Corporation",
-      url: "/",
+      url: "/texas-corporation/start-a-tx-corporation/",
     },
     marginBottom: 40,
   },
   {
     type: "header",
     content: "Your Texas Corporation Must Follow Certain Rules and Regulations",
-    size: 4,
+    size: 3,
+    template: 3,
     marginBottom: 32,
   },
   {
@@ -451,18 +495,17 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn about Texas corporation requirements.",
-      url: "/",
+      url: "/texas-corporation/form-filling-permit-requirements/",
     },
     marginBottom: 32,
   },
   {
-    type: "button",
+    type: "arrow-link",
     content: {
-      text: "Learn about Texas Corporation Taxes and Fees ",
-      url: "/",
+      text: "Learn about Texas corporation taxes and fees.",
+      url: "/texas-corporation/taxes-and-fees-for-your-corporation/",
     },
-    theme: "primary56",
-    marginBottom: 48,
+    marginBottom: 32,
   },
   {
     type: "text",
@@ -481,7 +524,7 @@ export const corporation = [
           header: "S Corporation",
           link: {
             text: "Incorporate now",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=TX`,
           },
         },
         noShadow: false,
@@ -494,7 +537,7 @@ export const corporation = [
           header: "C Corporation",
           link: {
             text: "Incorporate now",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=TX`,
           },
         },
         noShadow: false,
@@ -505,7 +548,8 @@ export const corporation = [
   {
     type: "header",
     content: "Detailed Information for Your Texas Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -519,11 +563,12 @@ export const corporation = [
     content: [
       {
         header: "Forming Your Texas Corporation",
+        size: 3,
         text:
           "The six steps you need to take to start a Texas S Corporation or C Corporation.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/texas-corporation/start-a-tx-corporation/",
         },
         svg: TodoSVG,
         backgroundColor: color.red2,
@@ -534,11 +579,12 @@ export const corporation = [
       },
       {
         header: "Naming Your Texas Corporation",
+        size: 3,
         text:
           "How to search the Texas business registry of the TX Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a Texas corporation name and more.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/texas-corporation/how-to-name-your-corporation/",
         },
         svg: QuestionSVG,
         backgroundColor: color.orange3,
@@ -549,11 +595,12 @@ export const corporation = [
       },
       {
         header: "Texas Registered Agents for Your Corporation",
+        size: 3,
         text:
           "How to appoint a Texas Registered Agent to your new corporation or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Texas Registered Agents.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/texas-corporation/registered-agents-texas/",
         },
         svg: IdSVG,
         backgroundColor: color.purple2,
@@ -564,11 +611,12 @@ export const corporation = [
       },
       {
         header: "Fees and Requirements for Your Texas Corporation",
+        size: 3,
         text:
           "How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Texas rules. Includes details of Employee Identification Numbers (EINs), Texas and federal business licenses, Texas Statement of Information reports and more.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/texas-corporation/form-filling-permit-requirements/",
         },
         svg: BillPadSVG,
         backgroundColor: color.orange2,
@@ -580,11 +628,12 @@ export const corporation = [
       {
         header:
           "Federal, State, Sales and Other Taxes for Your Texas Corporation",
+        size: 3,
         text:
           "How to understand the various taxes you will need to pay to the federal and Texas government. Includes details of federal taxes like income and self-employment, and Texas taxes like sales tax and income tax.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/texas-corporation/taxes-and-fees-for-your-corporation/",
         },
         svg: DollarUpSVG,
         backgroundColor: color.green2,
@@ -601,8 +650,9 @@ export const startCaCorp = [
   {
     type: "header",
     content: "Six Easy Steps to Form Your Texas Corporation",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -622,14 +672,14 @@ export const startCaCorp = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
@@ -639,7 +689,8 @@ export const startCaCorp = [
   {
     type: "header",
     content: "The Benefits of Forming a Corporation in Texas",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -672,7 +723,7 @@ export const startCaCorp = [
     type: "arrow-link",
     content: {
       text: "Learn about starting a Texas LLC",
-      url: "/",
+      url: "/texas-llc/",
     },
     marginBottom: 48,
   },
@@ -684,26 +735,27 @@ export const startCaCorp = [
   },
   {
     type: "accordion",
+    header: 3,
     content: {
       items: [
         {
           question:
-            "Search For and Choose a Unique Business Name for Your Texas Corporation",
+            "1. Search For and Choose a Unique Business Name for Your Texas Corporation",
           text:
-            "Every TX business needs a unique name, including your corporation. You can carry out a Texas business entity name search on the <a href='/'>Texas Comptroller of Public Accounts website</a> or by using <a href='/'>Texas SOSDirect</a>. The name of your Texas S Corporation or C Corporation cannot be confusable with another business that’s been formed in Texas. If you’re not forming your TX corporation right away, you can reserve the name with the secretary of state.",
+            "Every TX business needs a unique name, including your corporation. You can carry out a Texas business entity name search on the <a href='https://mycpa.cpa.state.tx.us/coa/'>Texas Comptroller of Public Accounts website</a> or by using <a href='https://www.sos.state.tx.us/corp/sosda/index.shtml'>Texas SOSDirect</a>. The name of your Texas S Corporation or C Corporation cannot be confusable with another business that’s been formed in Texas. If you’re not forming your TX corporation right away, you can reserve the name with the secretary of state.",
           arrowLink: {
             text: "Learn how to name your Texas corporation.",
-            url: "/",
+            url: "/texas-corporation/how-to-name-your-corporation/",
           },
         },
         {
           question:
-            "Establish Street and Mailing Addresses for Your Texas Corporation",
+            "2. Establish Street and Mailing Addresses for Your Texas Corporation",
           answer:
             "A Texas corporation must have a designated address. That could be your home address (if you’re running the company from your residence), where your office is located or any physical address of your preference. The address can be outside the state of Texas and can be a P.O. Box.",
         },
         {
-          question: "Assign a Registered Agent for Your Texas Corporation",
+          question: "3. Assign a Registered Agent for Your Texas Corporation",
           text:
             "When your TX corporation is formed, it must have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Texas Secretary of State.<br/><br/>" +
             "A Registered Agent position for a Texas S Corporation or C Corporation can be filled in several ways.<br/><br/>" +
@@ -715,9 +767,13 @@ export const startCaCorp = [
             "The Registered Agent address is listed in public records on the secretary of state website. If you do not want your own name and Texas address to be registered, you should use a Registered Agent service.",
             "The Registered Agent must be present or available during normal business hours (9 a.m. to 5 p.m. Monday to Friday) to receive any legal correspondence, since the type of documents delivered to the Registered Agent require a signature on delivery.",
           ],
+          arrowLink: {
+            text: "Learn more about Texas Registered Agents.",
+            url: "/texas-corporation/registered-agents-texas/",
+          },
         },
         {
-          question: "Create Your Texas Certificate of Formation",
+          question: "4. Create Your Texas Certificate of Formation",
           answer:
             "Once you've gathered all the information for your Texas corporation, you’ll need to file a formal document with the TX Secretary of State. This document is known as your “Certificate of Formation,” and filing the document creates your TX corporation. Here’s what the Certificate of Formation normally includes:",
           list: [
@@ -731,20 +787,20 @@ export const startCaCorp = [
         },
         {
           question:
-            "File Your Certificate of Formation With the Texas Secretary of State",
+            "5. File Your Certificate of Formation With the Texas Secretary of State",
           answer:
             "You can file your Texas corporation Certificate of Formation online, mail in a form or have Incfile do it on your behalf. There is a fee to file and start a corporation in Texas. You only need to file your Certificate of Formation once.",
         },
         {
           question:
-            "Complete the Legal and Compliance Requirements for Your Texas Corporation",
+            "6. Complete the Legal and Compliance Requirements for Your Texas Corporation",
           answer:
             "Once your Texas corporation has been created, you will need to get certain legal requirements in place. These include:",
           list: [
             "File IRS Small Business Tax Election form 2553 if you want your TX business to be treated as an S Corporation. Any Texas S Corporations formed through Incfile will also include a prepared Form 2553 that will be delivered with the state formation documents.",
             "Create and issue stock certificates to your shareholders.",
-            "Apply for business licenses and permits. You may require licenses from the state of Texas, your county, township and various industry or federal bodies.",
-            "Get an Employer Identification Number (EIN).",
+            "Apply for <a href='/business-license-research-package/'>business licenses and permits</a>. You may require licenses from the state of Texas, your county, township and various industry or federal bodies.",
+            "Get an <a href='/manage-your-company/tax-id-ein/'>Employer Identification Number (EIN)</a>.",
             "File for taxes with the Texas Comptroller of Taxes",
             "Get all formalities in place for employees, including unemployment, disability, payroll, insurance and taxes.",
             "Appoint a Board of Directors for the corporation.",
@@ -759,21 +815,31 @@ export const startCaCorp = [
   {
     type: "header",
     content: "Useful Corporation Information From the State of Texas",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "arrow-link",
     content: {
       text: "Texas Secretary of State website",
-      url: "/",
+      url: "https://www.sos.state.tx.us/",
+    },
+    marginBottom: 24,
+  },
+  {
+    type: "arrow-link",
+    content: {
+      text: "General information from the Texas Secretary of State",
+      url: "https://www.sos.state.tx.us/corp/index.shtml",
     },
     marginBottom: 24,
   },
   {
     type: "header",
     content: "Other Types of TX Corporations",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -785,7 +851,8 @@ export const startCaCorp = [
   {
     type: "header",
     content: "Form a Professional Texas S Corporation or C Corporation",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -879,7 +946,8 @@ export const startCaCorp = [
   {
     type: "header",
     content: "File as a Foreign Corporation to Operate in Another State",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -890,8 +958,9 @@ export const startCaCorp = [
   },
   {
     type: "header",
-    content: "Need to Form a Texas Corporation Quickly \n" + "and Easily?",
-    size: 4,
+    content: "Form a Texas Corporation Without Breaking the Bank",
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -906,14 +975,14 @@ export const startCaCorp = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
@@ -924,8 +993,9 @@ export const naming = [
   {
     type: "header",
     content: "Naming Your Texas Corporation",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -939,14 +1009,14 @@ export const naming = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
@@ -956,13 +1026,14 @@ export const naming = [
   {
     type: "header",
     content: "Texas Corporation Name Business Search",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Before you can name your TX corporation, you need to make sure there aren’t any other businesses in Texas with that name. That means searching the Texas Secretary of State or Comptroller of Public Accounts websites using their business search tools. You can easily look up TX corporations by name and other details.",
+      "Before you can <a href='/texas-entity-search/'>name your TX corporation</a>, you need to make sure there aren’t any other businesses in Texas with that name. That means searching the Texas Secretary of State or Comptroller of Public Accounts websites using their business search tools. You can easily look up TX corporations by name and other details.",
     marginBottom: 24,
   },
   {
@@ -975,7 +1046,7 @@ export const naming = [
     type: "arrow-link",
     content: {
       text: "Texas Comptroller taxable entity search tool",
-      url: "/",
+      url: "https://mycpa.cpa.state.tx.us/coa/",
     },
     marginBottom: 24,
   },
@@ -983,14 +1054,15 @@ export const naming = [
     type: "arrow-link",
     content: {
       text: "Texas SOS Direct corporation name search",
-      url: "/",
+      url: "https://www.sos.state.tx.us/corp/sosda/index.shtml",
     },
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Follow These Rules to Name Your Texas Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1002,7 +1074,8 @@ export const naming = [
   {
     type: "header",
     content: "General Rules for Naming Your S Corp or C Corp",
-    size: 4,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1014,20 +1087,22 @@ export const naming = [
   {
     type: "header",
     content: "Your Texas Corporation Name Must Be Unique",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "The name you have chosen for your S Corporation or C Corporation cannot be used by any other registered business in the state of Texas. This is why you must check business name availability on the TX Secretary of State website.",
+      "The name of your TX corporation needs to be unique and not used by another corporation or business operating in Texas.",
     marginBottom: 48,
   },
   {
     type: "header",
     content:
       "The Name of Your Corporation Cannot Be Similar to Other Businesses in Texas",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1059,25 +1134,27 @@ export const naming = [
   {
     type: "header",
     content: "Your Texas Corporation Name Must Contain Certain Words",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "The name of your business typically needs to contain the words “Corporation,” “Incorporated” or “Limited,” normally at the end of the name. These suffixes can be abbreviated.",
+      "The words “Incorporated,” “Corporation,” “Limited” or their abbreviations generally need to appear in your business name, normally at the end.",
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Your Texas Corporation Name May Have Other Restrictions",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Most states will not allow you to form S Corporations or C Corporations with names that:",
+      "The Texas Secretary of State will not typically allow you to name S Corporations or C Corporations that breach the following rules:",
     marginBottom: 24,
   },
   {
@@ -1097,27 +1174,29 @@ export const naming = [
   {
     type: "header",
     content: "Specific Rules for Naming Your Texas Corporation",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "There are additional, specific rules you will need to follow from the Texas Secretary of State for naming your TX S Corporation or C Corporation.",
+      "There are <a href='https://www.sos.state.tx.us/corp/boc_presentation/VI_names.shtml'>additional, specific rules</a> you will need to follow from the Texas Secretary of State for naming your TX S Corporation or C Corporation.",
     marginBottom: 24,
   },
   {
     type: "arrow-link",
     content: {
       text: "More on Texas Secretary of State business naming rules",
-      url: "/",
+      url: "https://www.sos.state.tx.us/corp/boc_presentation/VI_names.shtml",
     },
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Texas Corporation Assumed Names",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1130,7 +1209,7 @@ export const naming = [
     type: "button",
     content: {
       text: "Incfile’s Assumed Business Name Service ",
-      url: "/",
+      url: "/fictitious-business-or-trade-name/",
     },
     theme: "primary56",
   },
@@ -1138,7 +1217,8 @@ export const naming = [
     type: "header",
     content:
       "Rules on Infringing on Service Marks or Trademarks Inside or Outside Texas",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1156,7 +1236,8 @@ export const naming = [
   {
     type: "header",
     content: "You’ve Found the Perfect Name, What Next?",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1171,14 +1252,14 @@ export const naming = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
@@ -1189,7 +1270,8 @@ export const agents = [
   {
     type: "header",
     content: "Why Your Texas Corporation Needs a Registered Agent Service",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1224,14 +1306,14 @@ export const agents = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
       {
         content: {
-          text: "Start Your S Corp with Incfile",
-          url: "/",
+          text: "Start Your C Corp with Incfile",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
@@ -1242,7 +1324,8 @@ export const agents = [
     type: "header",
     content:
       "Information on the Texas Secretary of State and TX Registered Agent Services",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1273,7 +1356,8 @@ export const agents = [
     type: "header",
     content:
       "Services Provided by a Texas Registered Agent to Your Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1300,7 +1384,8 @@ export const agents = [
     type: "header",
     content:
       "Why You Might Not Want to Appoint Yourself as Your Own Texas Registered Agent",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1314,7 +1399,7 @@ export const agents = [
     content: {
       list: [
         "The Registered Agent must have a physical street address in Texas. Some people establish corporations outside of Texas and will need to use a Registered Agent service to provide the address.",
-        "A person must always be available to sign for legal correspondence during business hours. If you can’t always be around, consider using a third-party Registered Agent service like Incfile.",
+        "You always need to have someone on hand at your corporation to receive important documents for your business during business hours (typically 9 a.m. to 5 p.m. Monday to Friday).",
         "The Registered Agent’s name and TX address are part of the public record and available through the Texas Secretary of State website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.",
         "If you change your Texas business address or move out of state, you won’t need to file additional documentation with the secretary of state for the new address of your Registered Agent if using a service. You will need to set up a new Registered Agent service in the new state.  ",
       ],
@@ -1326,14 +1411,15 @@ export const agents = [
   {
     type: "text",
     content:
-      "There are more considerations, but this should help you with your decision to use a <a href='/'>Registered Agent service</a>.",
+      "There are more considerations, but this should help you with your decision to use a <a href='/manage-your-company/registered-agent/'>Registered Agent service</a>.",
     marginBottom: 48,
   },
   {
     type: "header",
     content:
       "The Problems Caused When You Don’t Appoint a Texas Registered Agent Service",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1359,7 +1445,8 @@ export const agents = [
     type: "header",
     content:
       "Incfile Provides a Free Texas Corporation Registered Agent Service for the First Year",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1398,7 +1485,7 @@ export const agents = [
     type: "button",
     content: {
       text: "Order Incfile’s Texas Registered Agent Service",
-      url: "/",
+      url: "/manage-your-company/registered-agent/",
     },
     theme: "primary56",
     marginBottom: 48,
@@ -1415,14 +1502,14 @@ export const agents = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
@@ -1432,7 +1519,8 @@ export const agents = [
   {
     type: "header",
     content: "Useful Resources for Texas Registered Agent \n" + "Services",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1444,7 +1532,7 @@ export const agents = [
     type: "arrow-link",
     content: {
       text: "The Main Functions of a Texas Registered Agent",
-      url: "/",
+      url: "/research-topics/general-research/registered-agent-function/",
     },
     marginBottom: 24,
   },
@@ -1452,7 +1540,7 @@ export const agents = [
     type: "arrow-link",
     content: {
       text: "Changing Your Texas Registered Agent",
-      url: "/",
+      url: "/manage-your-company/change-of-registered-agent/",
     },
     marginBottom: 24,
   },
@@ -1460,7 +1548,7 @@ export const agents = [
     type: "arrow-link",
     content: {
       text: "What a Texas Registered Agent Does",
-      url: "/",
+      url: "/research-topics/registered-agent/registered-agent-tasks/",
     },
     marginBottom: 24,
   },
@@ -1469,8 +1557,9 @@ export const filing = [
   {
     type: "header",
     content: "Texas Corporation Form and Filing Rules",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -1496,14 +1585,14 @@ export const filing = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
@@ -1513,7 +1602,8 @@ export const filing = [
   {
     type: "header",
     content: "File Your Certificate of Formation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1553,7 +1643,8 @@ export const filing = [
     type: "header",
     content:
       "Get the Right Permits and Licenses for Your Texas S Corp or C Corp",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1565,7 +1656,8 @@ export const filing = [
   {
     type: "header",
     content: "City Licenses and Permits for Your Corporation",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1577,7 +1669,8 @@ export const filing = [
   {
     type: "header",
     content: "County and State Business Permits and Licenses",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1589,7 +1682,8 @@ export const filing = [
   {
     type: "header",
     content: "Federal Licenses and Permits",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1603,14 +1697,20 @@ export const filing = [
     content:
       "Learn What Permits and Licenses Your Texas \n" +
       "Corporation Needs With Incfile",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
       "Because permits vary widely depending on the type of Texas corporation you are operating and where you are located, we provide a comprehensive Business License Research Package. It’s designed to tell you all of the licenses and permits necessary for your new corporation. It includes:",
-    marginBottom: 41,
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content: "Our service provides:",
+    marginBottom: 40,
   },
   {
     type: "list-dot",
@@ -1634,7 +1734,7 @@ export const filing = [
     type: "button",
     content: {
       text: "Get the Incfile License Research Package",
-      url: "/",
+      url: "/business-license-research-package/",
     },
     theme: "primary56",
     marginBottom: 24,
@@ -1642,7 +1742,8 @@ export const filing = [
   {
     type: "header",
     content: "Other Special Requirements for Your Texas S Corp or C Corp",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1654,7 +1755,8 @@ export const filing = [
   {
     type: "header",
     content: "Your Texas Corporation Must Have Certain Bylaws",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1685,8 +1787,9 @@ export const filing = [
   },
   {
     type: "header",
-    content: "Corporation Shareholders Must Be Issued Stock",
-    size: 5,
+    content: "Issue Stock to Corporation Shareholders",
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1697,8 +1800,9 @@ export const filing = [
   },
   {
     type: "header",
-    content: "A Board of Directors Must Be Appointed",
-    size: 5,
+    content: "Appoint a Board of Directors",
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1709,32 +1813,35 @@ export const filing = [
   },
   {
     type: "header",
-    content: "Assign Officers to the Corporation",
-    size: 5,
+    content: "Officers Must Be Assigned",
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Officers are the individuals who manage the Texas corporation on a day-to-day basis. At minimum a TX corporation should have a president, secretary and treasurer. Theoretically, one person could hold more than one position.",
+      "Officers are the individuals who manage the Texas corporation on a day-to-day basis. At minimum, a TX corporation should have a president, secretary and treasurer. Theoretically, one person could hold more than one position.",
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Get a Corporate Records Book",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Your Texas corporation will need a book to record important information about the business. This book will include details like your Articles of Incorporation, corporate bylaws, meeting minutes, AGM details, directors, officers, stock certificate information, transfer documents and more.",
+      "You should acquire a new corporate records book to capture all of the important information for your Texas corporation. This includes your Certificate of Formation, corporate bylaws, meeting minutes, AGM details, directors, officers, stock certificate information, transfer documents and more.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Get a Corporate Records Book",
-    size: 5,
+    content: "Hire Employees",
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1760,7 +1867,7 @@ export const filing = [
     type: "button",
     content: {
       text: "Get an EIN through Incfile",
-      url: "/",
+      url: "/manage-your-company/tax-id-ein/",
     },
     theme: "primary56",
     marginBottom: 48,
@@ -1768,7 +1875,8 @@ export const filing = [
   {
     type: "header",
     content: "Hold an Annual General Meeting for Your Texas Corporation",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1794,7 +1902,8 @@ export const filing = [
   {
     type: "header",
     content: "Texas Corporation Tax Registration",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1832,10 +1941,9 @@ export const filing = [
   },
   {
     type: "header",
-    content:
-      "Annual Statement of Information Report for Your \n" +
-      "Texas Corporation",
-    size: 4,
+    content: "Annual Report for Your Texas Corporation",
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1856,14 +1964,20 @@ export const filing = [
   {
     type: "text",
     content:
-      "<a href='/'>Learn about your ongoing Texas corporation filing requirements</a> and business filing deadlines with our helpful Texas ongoing filing lookup tool.",
-    marginBottom: 0,
+      "There is no fee to file a Public Information Report. The fee to file your Franchise Tax Report is based on your corporation’s revenue.",
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content:
+      "<a href='/business-filing-deadlines/'>Learn about your ongoing Texas corporation filing requirements</a> and business filing deadlines with our helpful Texas ongoing filing lookup tool.",
+    marginBottom: 32,
   },
   {
     type: "button",
     content: {
       text: "Have Incfile File Your Report for You",
-      url: "/",
+      url: "/manage-your-company/annual-report/",
     },
     theme: "primary56",
     marginBottom: 48,
@@ -1871,32 +1985,34 @@ export const filing = [
   {
     type: "header",
     content: "Franchise Tax Report for Your Texas LLC",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "You will need to file a franchise tax report with the <a href='/'>comptroller of public accounts</a>. These are due by May 15 every year.",
+      "You will need to file a franchise tax report with the <a href='https://comptroller.texas.gov/taxes/franchise/'>comptroller of public accounts</a>. These are due by May 15 every year.",
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Certificate of Good Standing for Your Texas \n" + "Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
       "You may need a Certificate of Good Standing for your Texas corporation to carry out some business-related services like opening a bank account.",
-    marginBottom: 0,
+    marginBottom: 32,
   },
   {
     type: "button",
     content: {
       text: "Get a Certificate of Good Standing Through Incfile",
-      url: "/",
+      url: "/manage-your-company/certificate-of-good-standing/",
     },
     theme: "primary56",
     marginBottom: 48,
@@ -1904,7 +2020,8 @@ export const filing = [
   {
     type: "header",
     content: "Ready to Start Your Texas Corporation?",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1925,14 +2042,14 @@ export const filing = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
@@ -1944,8 +2061,9 @@ export const taxes = [
   {
     type: "header",
     content: "Fees and Taxes for Your Texas Corporation",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -1956,7 +2074,8 @@ export const taxes = [
   {
     type: "header",
     content: "Texas Corporation Fees",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1964,15 +2083,16 @@ export const taxes = [
     content: {
       items: [
         {
-          question: "Fees for forming a corporation in Texas",
-          answer: "Learn about standard filing costs here for TX corporations.",
+          question: "1. Fees for forming a corporation in Texas",
+          answer:
+            "Learn about <a href='/state-filing-fees/'>standard filing costs here</a> for TX corporations.",
         },
         {
-          question: "Texas Statement of Information Report Fee",
+          question: "2. Texas State Annual Report Fee",
           answer: "A yearly fee when you file your Annual Report.",
         },
         {
-          question: "Texas Permits and Licenses",
+          question: "3. Texas Permits and Licenses",
           answer:
             "These are the fees for creating or renewing your licenses and permits on a regular basis. These depend on the type of Texas corporation you’re operating and where you’re located.",
         },
@@ -1983,7 +2103,8 @@ export const taxes = [
   {
     type: "header",
     content: "Taxes Payable by Your Texas Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1997,11 +2118,13 @@ export const taxes = [
     content:
       "Both S Corporations and C Corporations in Texas Need to Pay \n" +
       "These Taxes",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "accordion",
+    header: 4,
     content: {
       items: [
         {
@@ -2024,12 +2147,17 @@ export const taxes = [
           answer:
             "If your TX corporation employs workers, you will need to pay insurance and taxes to the state for each employee.",
           text:
-            "Get more requirements from the <a href='/'>Texas Department of Labor website.</a>.",
+            "Get more requirements from the <a href='https://www.dol.gov/general/maps/2019/tx'>Texas Department of Labor website.</a>.",
+        },
+        {
+          question: "Estimated Taxes for Your Texas Corporation",
+          answer:
+            "Most Texas corporations will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. The most common types of estimated tax are:<br /><br /><ul><li>Federal income tax</li><li>Federal self-employment tax</li><li>Texas state tax</li></ul><br /><br />Most Texas S Corporations and C Corporations will pay estimated taxes four times a year. Speak to your accountant for more information.",
         },
         {
           question: "Other Taxes in Texas",
           answer:
-            "You may need to pay other taxes and fees, depending on the type of Texas corporation you run. Find out more on the <a href='/'>Texas Comptroller of Public Accounts website</a>.",
+            "You may need to pay other taxes and fees, depending on the type of Texas corporation you run. Find out more on the <a href='https://comptroller.texas.gov/'>Texas Comptroller of Public Accounts website</a>.",
         },
       ],
     },
@@ -2037,63 +2165,23 @@ export const taxes = [
   },
   {
     type: "header",
-    content: "Estimated Taxes for Your Texas Corporation",
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "Most Texas corporations will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. The most common types of estimated tax are:",
-    marginBottom: 41,
-  },
-  {
-    type: "list-dot",
-    content: {
-      list: [
-        "Federal income tax",
-        "Federal self-employment tax",
-        "Texas state tax",
-      ],
-    },
-    color: color.babyblue3,
-    marginBottom: 48,
-    curve: false,
-  },
-  {
-    type: "text",
-    content:
-      "Most Texas S Corporations and C Corporations will pay estimated taxes four times a year. Speak to your accountant for more information.",
-    marginBottom: 48,
-  },
-  {
-    type: "header",
-    content: "Texas Corporation Employee Taxes and Insurance",
-    size: 5,
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "If your TX corporation employs workers, you will need to pay insurance and taxes to the state for each employee.",
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "Get more requirements from the <a href='/'>Texas Labor and Workforce Development Agency website</a>.",
-    marginBottom: 48,
-  },
-  {
-    type: "header",
     content: "Taxes Payable by All Individuals Working for Texas Corporations",
-    size: 5,
+    size: 3,
+    template: 3,
+    marginBottom: 24,
+  },
+  {
+    type: "header",
+    content:
+      "Pay Federal Income Tax on Texas Corporation Earnings, Dividends and Distributions.",
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Pay Federal Income Tax on Texas Corporation Earnings, Dividends and Distributions. You will need to pay regular federal income tax when you file your tax return every year.",
+      "You will need to pay regular federal income tax when you file your tax return every year.",
     marginBottom: 48,
   },
   {
@@ -2108,7 +2196,7 @@ export const taxes = [
       {
         header: "Self-Employment Tax",
         text:
-          "In a Texas S Corporation, your earnings “flow through” from the business to your personal tax return. This means you must pay self-employment tax on those earnings at a rate of 15.3 percent. Note that you can deduct standard tax deductions and business expenses.",
+          "Because your Texas corporation income flows through to your personal tax return, you must pay self-employment tax (also known as FICA, Social Security or Medicare tax) on your earnings. This is typically at a rate of 15.3 percent. You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.",
         svg: SelfEmployedTaxSVG,
         backgroundColor: color.orange2,
         shadowColor: shadow.orange2,
@@ -2123,7 +2211,7 @@ export const taxes = [
     type: "button",
     content: {
       text: "Get a Tax Consultation from Incfile",
-      url: "/",
+      url: "/business-accounting/",
     },
     theme: "primary56",
     marginBottom: 48,
@@ -2158,7 +2246,7 @@ export const taxes = [
     type: "button",
     content: {
       text: "File Your Texas S-Corp Tax Election with Incfile",
-      url: "/",
+      url: "/llc-s-corp-election/",
     },
     theme: "primary56",
     marginBottom: 52,
@@ -2166,7 +2254,8 @@ export const taxes = [
   {
     type: "header",
     content: "Texas C Corporations — Additional Tax Liabilities",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2200,7 +2289,8 @@ export const taxes = [
   {
     type: "header",
     content: "Ready to Start Your Texas Corporation?",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2221,14 +2311,14 @@ export const taxes = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=TX`,
         },
         theme: "primary56",
       },
@@ -2240,19 +2330,19 @@ export const afterFormation = [
   {
     type: "header",
     content: "Understand Your Ongoing Corporate Filing Requirements",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
     content:
-      "Each state requires different forms such as your business annual reports and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying by the form filing requirements keeps your business in good standing with the state. Failure to file these reports can lead to the company being revoked or administrative business dissolution. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
+      "Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a>and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/ manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
     marginBottom: 48,
   },
   {
-    type: "header",
-    content: "Texas's Ongoing Corporate File Requirements:",
-    size: 4,
+    type: "text",
+    content: "<b>Texas's Ongoing Corporate File Requirements:</b>",
     marginBottom: 24,
   },
   {
@@ -2261,20 +2351,25 @@ export const afterFormation = [
   {
     type: "header",
     content: "Protect Your Business Name with a Trademark",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
       "A trademark is an essential asset for your business because it protects the brand name and identity that you worked so hard to create. When you secure a federal trademark for your business brand, it gives you exclusive rights to use your business name, logo or slogan once the trademark is approved. Federal Trademark Protection also prevents other businesses from using your brand name and brand identity. Incfile is happy to help with conducting a trademark name search on your Corporation business name. Our partnered attorneys will do the research to make sure the mark isn't already taken, ensure the filing is properly prepared and submitted to the government office, and provide sound legal advice throughout the entire process.",
-    marginBottom: 41,
+    marginBottom: 32,
+  },
+  {
+    type: "text",
+    content: "Benefits of Incfile's Trademark service include:",
+    marginBottom: 40,
   },
   {
     type: "list-dot",
     content: {
-      header:
-        "Benefits of <a href='/'>Incfile's Trademark service</a> include:",
+      header: "",
       list: [
         "Legal counsel from an experienced trademark attorney",
         "A thorough search of existing trademarks",
@@ -2289,115 +2384,52 @@ export const afterFormation = [
   {
     type: "header",
     content: "Finances & Accounting for Your Texas Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Once you form your LLC in Delaware, there are important next steps to ensure your business finances and accounting are organized for tax season and peace of mind, and that your personal and business finances are kept separate to ensure safety of your personal assets. With the right accounting steps, your business will run smoothly and be set up for increased profits and success.",
+      "Once you form your corporation in Texas, there are important next steps to ensure your business finances and accounting are organized for tax season and peace of mind, and that your personal and business finances are kept separate to ensure safety of your personal assets. With the right accounting steps, your business will run smoothly and be set up for increased profits and success.",
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Choose a Bank for Your Texas Corporation",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content:
-      "The right business checking account for your business should have minimum fees, so that your money goes into the business or your own checking account instead of spending on hidden, tricky bank fees. According to NerdWallet — who looked at the 10 biggest banks in the U.S. and some additional online banks — these are the best four free business checking accounts for your Corporation:",
+    content: `The right business checking account for your business should have minimum fees, so that your money goes into the business or your own checking account instead of spending on hidden, tricky bank fees. According to <a href="https://www.nerdwallet.com/best/banking/free-business-checking-accounts">NerdWallet</a> — who looked at the 10 biggest banks in the U.S. and some additional online banks — these are the best four free business checking accounts for your Corporation:`,
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Best Free Business Checking Accounts",
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: "table",
-    content: {
-      headers: false,
-      rows: [
-        [
-          {
-            label: "U.S Bank Silver Business",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label:
-              "Allows 150 transactions a month for free. Has 3.000 bank branches in addition to online banking.",
-            type: "label",
-            textCenter: true,
-          },
-        ],
-        [
-          {
-            label: "Capital One Spark Business",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label: "Online banking with no monthly limit on transactions.",
-            type: "label",
-            textCenter: true,
-          },
-        ],
-        [
-          {
-            label: "Well Fargo Business Choise",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label:
-              "Make 10 debit transactions a month and the $14 monthly free is waived. Offers a total of 200 free monthly transactions and no charge for the first $7.500 in cash deposits each month.",
-            type: "label",
-            textCenter: true,
-          },
-        ],
-        [
-          {
-            label: "Bank of Internet Federal Bank Basic Business",
-            type: "label",
-            style: { "font-weight": "bold" },
-          },
-          {
-            label:
-              "Online-only bank that offers 200 free transactions a month and unlimited fee reimbursement for ATMs in the US.",
-            type: "label",
-            textCenter: true,
-          },
-        ],
-      ],
-      headerColumnsDef: "1fr 1fr",
-      rowColumnsDef: "1fr 1fr",
-    },
-    responsive: true,
-    settings: {},
-    style: {
-      "margin-bottom": "41px",
-    },
-  },
-  {
-    type: "header",
     content: "Separate Business & Personal Expenses",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your Texas Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='/'>Expensify</a> to track and tag business expenses from your mobile phone.",
+      "Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your Illinois Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='http://expensify.com/'>Expensify</a> to track and tag business expenses from your mobile phone.",
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Set Up Accounting Software",
-    size: 5,
+    size: 3,
+    template: 4,
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content:
+      "Choosing the right accounting software will allow you to track your accounts receivable — the money that is flowing in and out of your Corporation. Accounting software will allow you to track bills, invoices, expenses and customers. This is also another important step in simplifying your year-end tax burden. With a clear, separate business checking account and card and an organized accounting software system, you’ll (barely) dread tax season as a business owner.",
     marginBottom: 24,
   },
   {
@@ -2418,7 +2450,8 @@ export const afterFormation = [
       {
         link: {
           text: "QuickBooks",
-          url: "/",
+          url:
+            "https://quickbooks.intuit.com/oa/selfemployed/?utm_source=oaqbse_aff&utm_medium=aff&utm_content=priorityCode=3969702399&cid=aff_cj_7898336&cvosrc=affiliate.cj.7898336&cvo_campaign=qbo_trial&priorityCode=3969702399&aid=12170614",
         },
         text:
           "This is a top option for a lot of business owners and starts out at only $10 a month. You can automatically important banking transactions, track your customers and vendors and related bills and expenses, and integrate with a lot of other online finance tools. If you hire an accountant or tax support, they will all likely support QuickBooks. You can even use an online version in addition to a desktop version of their software. The drawback is that the learning curve for QuickBooks can sometimes be a bit steep.",
@@ -2426,7 +2459,7 @@ export const afterFormation = [
       {
         link: {
           text: "Xero",
-          url: "/",
+          url: "https://www.xero.com/",
         },
         text:
           "Xero is online accounting software that is a great option for those who find QuickBooks to be too complicated and difficult to understand. Their plans start out at $20 per month.",
@@ -2434,7 +2467,8 @@ export const afterFormation = [
       {
         link: {
           text: "FreshBooks",
-          url: "/",
+          url:
+            "https://www.freshbooks.com/?ref=10400&utm_source=sas&utm_medium=affiliate&utm_campaign=938781",
         },
         text:
           "Freshbooks is online accounting software that allows you to also track your time, expenses, collaborate on projects and view accounting reports. One drawback is that it doesn’t currently have a way to track invoices that your business needs to pay. But, accounts start out at $15 per month.",
@@ -2442,43 +2476,45 @@ export const afterFormation = [
       {
         link: {
           text: "Bench",
-          url: "/",
+          url: "https://bench.co/",
         },
         text:
           "Bench not only allows you to track your accounts receivable, but they include the help of a real-life bookkeeper to run your accounting every month. For a Bench account starting out at $125 a month, this is quite the deal instead of hiring your own bookkeeper.",
-        marginBottom: "52px",
+        marginBottom: "48px",
       },
     ],
   },
   {
     type: "header",
     content: "Determine How You’ll Accept Credit Cards",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "If you use QuickBooks or Freshbooks, you’ll be able to accept credit cards to pay for invoices. If you have a brick and mortar location for your small business, you want to look into offering payments through a service such as <a href='https://shopify.com/'>Shopify</a> or <a href='/'>Square</a>.",
+      "If you use QuickBooks or Freshbooks, you’ll be able to accept credit cards to pay for invoices. If you have a brick and mortar location for your small business, you want to look into offering payments through a service such as <a href='https://shopify.com/'>Shopify</a> or <a href='https://squareup.com/us/en'>Square</a>.",
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Look Into Business Funding Options",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content:
-      "In case your business runs out of cash flow, you want to have a backup option so your business doesn’t go under. You can raise capital from investors, ask friends or family for loans, get a business credit card, take an online business loan, or look into government financing using the <a href='/'>SBA & BusinessUSA’s financing tools</a>. Also, it’s important to remember that you can also bootstrap your business — which means, only using the funds you have in your bank account and not expanding until you get more business income.",
+    content: `In case your business runs out of cash flow, you want to have a backup option so your business doesn’t go under. You can raise capital from investors, ask friends or family for loans, get a <a href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024"target="_blank" rel="noopener noreferrer">business credit card</a>, take an online business loan, or look into government financing using the <a href='https://www.sba.gov/node/13710'target="_blank" rel="noopener noreferrer">SBA & BusinessUSA’s financing tools</a>. Also, it’s important to remember that you can also bootstrap your business — which means, only using the funds you have in your bank account and not expanding until you get more business income.`,
     marginBottom: 48,
   },
   {
     type: "header",
     content:
       "Business Operations & Marketing for Your Texas \n" + "Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2487,7 +2523,7 @@ export const afterFormation = [
       {
         header: "Build a Business Website",
         text:
-          "Having a great online presence for your business is the number one way people will find you. You need to start with buying a domain name using a service such as <a href='/'>NameCheap</a>. Then you need to choose a service to host your website such as <a href='/'>SnapWeb</a>. Finally, design your website using a tool such as Squarespace or WordPress. Make sure your website includes important business information such as how to contact you and business hours.",
+          "Having a great online presence for your business is the number one way people will find you. You need to start with buying a domain name using a service such as <a href='https://www.namecheap.com/?utm_source=SAS&utm_medium=Affiliate&utm_campaign=938781&affnetwork=sas'>NameCheap</a>. Then you need to choose a service to host your website such as <a href='http://xoopah.com/'>Xoopah.com</a>. Finally, design your website using a tool such as Squarespace or WordPress. Make sure your website includes important business information such as how to contact you and business hours.",
         svg: WebSVG,
         backgroundColor: color.purple2,
         shadowColor: shadow.purple2,
@@ -2498,7 +2534,7 @@ export const afterFormation = [
       {
         header: "Choose a Virtual Phone System",
         text:
-          "Your business needs a phone number so that your customers, employees and vendors can reach you. A great option is to look into a tool such as <a href='/'>Grasshopper</a>, which allows you to get a business phone that actually forwards to your cell phone, so you never miss an important call.",
+          "Your business needs a phone number so that your customers, employees and vendors can reach you. A great option is to look into a tool such as <a href='https://grasshopper.o9o4.net/c/1320313/503375/8652'>Grasshopper</a>, which allows you to get a business phone that actually forwards to your cell phone, so you never miss an important call.",
         svg: PhoneSVG,
         backgroundColor: color.green2,
         shadowColor: shadow.green2,
@@ -2509,7 +2545,7 @@ export const afterFormation = [
       {
         header: "Design a Business Logo",
         text:
-          "A logo will reflect your business branding everywhere your customers interact with you — on your website, on your invoices, in your email signature, on business cards and more. Instead of trying to design a logo yourself, try a logo making service such as <a href='/'>99 Designs</a> or buy some really high-quality pre-made logos you can customize on <a href='/'>CreativeMarket</a>.",
+          "A logo will reflect your business branding everywhere your customers interact with you — on your website, on your invoices, in your email signature, on business cards and more. Instead of trying to design a logo yourself, try a logo making service such as <a href='http://www.jdoqocy.com/click-7898336-11012409-1442446947000?cm_mmc=CJ-_-4607662-_-7898336-_-99designs%20-%20Text'>99 Designs</a> or buy some really high-quality pre-made logos you can customize on <a href='https://creativemarket.com/'>CreativeMarket</a>.",
         svg: LogoSVG,
         backgroundColor: color.orange2,
         shadowColor: shadow.orange2,
@@ -2520,7 +2556,7 @@ export const afterFormation = [
       {
         header: "Get Business Cards Created",
         text:
-          "Once you have a logo, create nice looking business cards that you can hand out when you’re out networking or even running errands. You never know when a conversation about your business will come up, and you want to be able to give someone a place to research your business and contact you. A great tool to create inexpensive business cards is <a href='/'>Vistaprint</a>.",
+          "Once you have a logo, create nice looking business cards that you can hand out when you’re out networking or even running errands. You never know when a conversation about your business will come up, and you want to be able to give someone a place to research your business and contact you. A great tool to create inexpensive business cards is <a href='https://www.vistaprint.com/business-cards?txi=15626&%3bxnid=TopNav_Business+Cards&%3bxnav=TopNav&%3bGP=04%2f28%2f2017+14%3a14%3a22&%3bGPS=4378726571&%3bGNF=0&rd=1'>Vistaprint</a>.",
         svg: CardSVG,
         backgroundColor: color.blue3,
         shadowColor: shadow.blue3,
@@ -2535,7 +2571,8 @@ export const afterFormation = [
     type: "header",
     content:
       "Choose the Best Business Tools to Run Your Texas \n" + "Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2616,14 +2653,15 @@ export const afterFormation = [
   },
   {
     type: "header",
-    content: "Start a Business Checklist",
-    size: 4,
+    content: "Get a “Start a Business Checklist” to Follow",
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "If you want to track your progress in getting your new business set up properly, we have a great virtual <a href='/'>Start a Business Checklist</a> that includes everything you need to do to launch your business. It even features downloadable PDFs you can access to download and print.",
+      "If you want to track your progress in getting your new business set up properly, we have a great virtual <a href='/starting-a-business-checklist/'>Start a Business Checklist</a> that includes everything you need to do to launch your business. It even features downloadable PDFs you can access to download and print.",
     marginBottom: 24,
   },
 ];
