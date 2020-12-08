@@ -29,6 +29,7 @@ const AboutSection = ({ className, content }) => (
 				Icon={IconSVG}
 				rounded
 				curve
+				paragraphHeader
 				curveColor={color.orange2}
 				bottomMargin="48"
 			/>

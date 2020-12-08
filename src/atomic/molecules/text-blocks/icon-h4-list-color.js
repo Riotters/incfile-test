@@ -90,7 +90,7 @@ const Wrapper = styled.div`
 const ChooseHeading = ({ paragraphHeader, headingSize, headingSizeTemplate, content, ...rest }) => (
     <>
       {paragraphHeader && (
-          <PHeading template={headingSizeTemplate} {...rest}>{parse(content)}</PHeading>
+          <PHeading size={headingSizeTemplate} template={headingSizeTemplate} {...rest}>{parse(content)}</PHeading>
       )}
       {!paragraphHeader && (
           <Heading size={headingSize} template={headingSizeTemplate} {...rest}>

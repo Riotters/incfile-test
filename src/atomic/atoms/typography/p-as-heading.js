@@ -85,6 +85,7 @@ const HeadingWrapper = styled.p`
 `;
 
 export const PHeading = ({
+                            size,
                             template,
                             left,
                             center,
@@ -99,7 +100,7 @@ export const PHeading = ({
                             relative,
                         }) => (
     <HeadingWrapper
-        template={template}
+        template={template ?? size}
         left={left}
         center={center}
         bottomMargin={bottomMargin}
