@@ -24,6 +24,7 @@ import {
 	hsForm,
 } from "../static/review-entity-types/nonprofit";
 import ProductSchema from "../components/product-schema";
+import { Helmet } from "react-helmet";
 
 const IndexPage = () => {
 	const [modalVisible, setModalVisible] = React.useState(false);
@@ -64,13 +65,13 @@ const IndexPage = () => {
 			/>
 
 			<ProductSchema
-				productUrl="https://orders.incfile.com/form-order-now.php?entityType=Nonprofit"
+                productUrl={`${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit`}
 				productName="Non Profit Corp"
 				productDescription="Information regarding the steps necessary to form and operate a Nonprofit Corporation in all 50 states. Start your Non Profit Corp with Incfile."
 			/>
 			<Top
 				imageName="mr-bulb-nonprofit-7282"
-				imageAlt="Mr Bulb with seedling"
+				imageAlt="Non Profit Corp"
 				ovalColor="yellow"
 			>
 				<h1>{top.header}</h1>
@@ -106,7 +107,23 @@ const IndexPage = () => {
 					{formSubmitted && <ThankYouContent modalExit={popup} />}
 				</LightBoxContent>
 			</LightBoxModal>
-		</Layout>
+                        
+            <Helmet>
+                <script type="application/ld+json">
+                    {`{
+                        "@context": "http://schema.org",
+                        "@type": "VideoObject",
+                        "name": "What is a Corporation? by Incfile",
+                        "description": "What is a corporation and how does it work? One of the most important decisions you'll make when starting a business is its legal structure. A popular option is a “corporation“—but what does this mean for business owners?   A corporation is its own legal entity separate from the owners. It has nearly all the legal rights of an individual: It can hire employees, own assets, enter into contracts, sue and be sued, loan and borrow money, and pay taxes. But since the corporation exists as a separate entity, it limits the liability of its owners. That means shareholders have the right to participate in profits, but they’re not held personally liable for the company’s debts. And since a corporation isn’t linked to a single person, it doesn’t dissolve when its owners or shareholders change or die, so liability protection is passed on to the next in line.  The Three Main Types of Corporations:  - C Corporations - S Corporations - Non-profits   Learn more about the three main types of corporations by visiting these links below:   - What is an S Corporation? https://www.incfile.com/what-is-s-corporation/ - What is a C Corporation? https://www.incfile.com/what-is-c-corporation/ - What is a Nonprofit? https://www.incfile.com/what-is-non-profit-corporation/",
+                        "thumbnailUrl": "https://i.ytimg.com/vi/oYZShvmf9eQ/default.jpg",
+                        "uploadDate": "2020-09-07T17:00:19Z",
+                        "duration": "PT1M41S",
+                        "embedUrl": "https://www.youtube.com/embed/oYZShvmf9eQ",
+                        "interactionCount": "74"
+                    }`}
+                </script>
+            </Helmet>
+        </Layout>
 	);
 };
 

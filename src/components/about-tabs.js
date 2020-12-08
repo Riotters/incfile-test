@@ -21,6 +21,7 @@ import { Heading } from "../atomic/atoms/typography/heading";
 import { Paragraph } from "../atomic/atoms/typography/paragraph";
 import { Collapse } from "react-collapse";
 import VisibilitySensor from "./VisibilitySensor";
+import LightBox from "./LightBox";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -304,7 +305,12 @@ const AboutTabs = ({ layout, columns, content, openModal }) => (
 
 				<Panel>
 					<PanelWrapper className="panel2" layout={layout}>
-						<Heading size={3}>{content.content[1].header}</Heading>
+                        <Heading size={3}>{content.content[1].header}</Heading>
+                        <LightBox
+                            bottomMargin={42}
+                            thumbnailVideo="what-is-a-corporation-8899"
+                            videoID="oYZShvmf9eQ"
+                        />
 						<Paragraph big>{content.content[1].text1}</Paragraph>
 						<Paragraph big>{content.content[1].text2}</Paragraph>
 						<Paragraph big>{content.content[1].text3}</Paragraph>

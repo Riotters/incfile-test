@@ -47,14 +47,14 @@ const Imagebox = styled.div`
   }
 `;
 
-const Certificates = ({ children, image, paddingTop, contentCenter, imageWidth, ...rest }) => {
+const Certificates = ({ children, image, alt, paddingTop, contentCenter, imageWidth, ...rest }) => {
   return (
     <Wrapper>
       <Container>
         <Flex>
           <Imagebox imageWidth={imageWidth}>
             <Sticky>
-                <Image filename={image} />
+                <Image filename={image} alt={alt} />
             </Sticky>
           </Imagebox>
           <Content paddingTop={paddingTop} contentCenter={contentCenter} {...rest}>
