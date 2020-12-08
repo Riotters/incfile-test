@@ -103,21 +103,35 @@ export const corporation = [
   {
     type: "header",
     content: "Georgia Corporations",
-    size: 4,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
+  },
+  {
+    type: "text",
+    content:
+      "Georgia is a wonderful place to start a business — access to international trade, the world’s busiest airport (Atlanta) and one of the main technical hubs in the U.S. make it an innovator’s dream. Great universities, access to talent and a rich culture combine to create the perfect backdrop for a successful business venture.",
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Georgia is a great state in which to start a business. From the metropolis of the Big Apple to the other cities and regions of the Empire State, there are plenty of opportunities for entrepreneurs. If you’re looking to form a corporation in GA, you’re in the right place — this is where we’ll guide you through every step of what you need to do to start a business in Georgia State.",
+      "Georgia is already home to the headquarters of Coca-Cola (the most famous brand in the world), and many other large businesses including Home Depot, UPS, Delta and Suntrust are proud to call the state home.",
     marginBottom: 24,
   },
   {
     type: "header",
     content:
       "Should You Form an LLC, an S Corporation or a C Corporation in Georgia?",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
+  },
+  {
+    type: "video",
+    image: "what-is-a-corporation-8899",
+    id: `oYZShvmf9eQ`,
+    marginBottom: 32,
   },
   {
     type: "text",
@@ -151,8 +165,8 @@ export const corporation = [
           "LLCs are a great option for smaller GA businesses. LLCs are quick and easy to create, inexpensive to administer, light on regulations and have simple taxation and rules.",
         svg: LockpadSVG,
         link: {
-          text: "Learn how to create an LLC in Georgia",
-          url: "/",
+          text: "You can learn how to create an LLC in Georgia here.",
+          url: "/georgia-llc/",
         },
         backgroundColor: color.babyblue2,
         shadowColor: shadow.babyblue2,
@@ -163,11 +177,11 @@ export const corporation = [
       {
         header: "Georgia S Corporations",
         text:
-          "You might choose to form a Georgia S Corporation because it’s a good compromise between the simplicity of the LLC and the complexity of the C Corporation. Note that GA S Corporations are subject to more rules and regulations than a GA LLC, but they can mean that you pay less tax.",
+          "A GA S Corporation is the middle-ground between a simple LLC and the more complex C Corporation. They have more complex regulations, taxation, compliance and legal requirements than an LLC, but they do provide tax advantages for their owners.",
         svg: ProcentSVG,
         link: {
-          text: "Learn how to create an LLC in Georgia",
-          url: "/",
+          text: "Learn about forming an S Corporation.",
+          url: "/what-is-s-corporation/",
         },
         backgroundColor: color.green2,
         shadowColor: shadow.green2,
@@ -178,12 +192,8 @@ export const corporation = [
       {
         header: "Georgia C Corporations",
         text:
-          "If you plan to start a large business or want to trade your shares on the public stock market, a GA C Corporation is your only choice. Be aware that Georgia C Corporations are subject to many rules and regulations, and they have a substantial amount of administrative overhead. Additionally, the tax rules for a Georgia C Corporation are not as advantageous as for a GA S Corporation or LLC.",
+          "If you plan to start a large business or want to trade your shares on the public stock market, a GA C Corporation is your only choice. Be aware that Georgia C Corporations are subject to many rules and regulations, and they have a substantial amount of administrative overhead. Additionally, the tax rules for a Georgia C Corporation are not as advantageous as for a GA S Corporation or LLC.<br /><br /><a href='/what-is-c-corporation/'>Learn about forming a C Corporation</a><br /><br />There are some other business entity structures like nonprofits, Limited Liability Partnerships (LLPs) and B Corporations, but they will not be relevant for the majority of entrepreneurs.",
         svg: BillSVG,
-        link: {
-          text: "Learn about forming a C Corporation",
-          url: "/",
-        },
         backgroundColor: color.yellow2,
         shadowColor: shadow.yellow2,
         boxShadow: false,
@@ -194,20 +204,11 @@ export const corporation = [
     marginBottom: 24,
   },
   {
-    type: "colorbox",
-    icon: FolderProcentSVG,
-    header: "Other Entity Types",
-    text:
-      "There are some other business entity structures like nonprofits, Limited Liability Partnerships (LLPs) and B Corporations, but they will not be relevant for the majority of entrepreneurs.",
-    curve: true,
-    curveColor: color.blue1,
-    color: color.blue3,
-    marginBottom: 73,
-    buttons: [
+    button: [
       {
         content: {
           text: "Start Your S-Corp",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
         },
         arrow: true,
         theme: "primary56",
@@ -215,17 +216,25 @@ export const corporation = [
       {
         content: {
           text: "Start Your C-Corp",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
         },
         arrow: true,
         theme: "primary56",
       },
     ],
+    marginBottom: 48,
+  },
+  {
+    type: "header",
+    content: "Advantages of Incorporating in the State of Georgia",
+    size: 2,
+    template: 3,
+    marginBottom: 24,
   },
   {
     type: "list-dot",
     content: {
-      header: "Advantages of Forming a Georgia Corporation",
+      header: "",
       text: "Georgia corporations have several benefits for business owners. ",
       list: [
         "Georgia corporations provide the strongest form of liability protection possible. They insulate your personal assets and finances from those of your business. ",
@@ -240,7 +249,8 @@ export const corporation = [
   {
     type: "header",
     content: "Choosing a Georgia S Corp or C Corp Over an LLC",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -250,21 +260,10 @@ export const corporation = [
     marginBottom: 24,
   },
   {
-    type: "text",
-    content:
-      "When you incorporate a business as a corporation, the Georgia Department of State will treat your business as a C Corporation by default. A C Corporation will become an S Corporation when all shareholders wish to change the corporation’s status to an S Corporation with the IRS. You can make this choice when you first form your Georgia corporation or at any time after you incorporate.",
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "There are some similarities and some differences between S Corps and C Corps:",
-    marginBottom: 24,
-  },
-  {
     type: "header",
     content: "Taxation Benefits of a Georgia S Corporation Over an LLC ",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -277,15 +276,15 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn about the tax benefits of S Corporations.",
-      url: "/",
+      url: "/research-topics/c-corporation-info/what-is-the-form-2553/",
     },
     marginBottom: 32,
   },
   {
     type: "button",
     content: {
-      text: "File From 2553 with the IRS",
-      url: "/",
+      text: "File From 2553 with the IRS via Incfile",
+      url: "/s-corp-election-form/",
     },
     theme: "primary56",
     marginBottom: 64,
@@ -294,22 +293,33 @@ export const corporation = [
     type: "header",
     content:
       "Georgia S Corporations and C Corporations Make It Much Easier to Transfer Stock and Ownership ",
-    size: 4,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "If you want to easily transfer ownership through buying and selling stock, you will need a GA C Corporation or an S Corporation. C Corporations have much more flexibility than S Corporations, and both are better than LLCs for stock and ownership transfers. ",
+      "Georgia S Corporations and C Corporations make it much easier to buy, sell and transfer stock. C Corporations also allow you to file an IPO and list stock on the public stock market.",
+    marginBottom: 24,
+  },
+  {
+    type: "header",
+    size: 3,
+    template: 3,
+    content:
+      "If You Want Maximum Flexibility for Buying and Selling Stock, Choose a Georgia C Corporation",
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content:
+      "C Corporations provide certain benefits when it comes to buying, selling and transferring stock. Here are the rules for both S Corps and C Corps:",
     marginBottom: 24,
   },
   {
     type: "list-dot",
     content: {
-      header:
-        "If You Want Maximum Flexibility for Buying and Selling Stock, Choose a Georgia State C Corporation",
-      text:
-        "C Corporations provide certain benefits when it comes to buying, selling and transferring stock. Here are the rules for both S Corps and C Corps: ",
       list: [
         "If you want up to 100 shareholders who are U.S. citizens or residents and want to issue one type of stock, you can be an S Corporation or a C Corporation. ",
         "If you want more than 100 shareholders, want to issue more than one type of stock or have international shareholders, you will need a C Corporation. ",
@@ -325,22 +335,32 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn more about the differences between business entities",
-      url: "/",
+      url: "/start-your-company/",
     },
     marginBottom: 48,
   },
   {
+    type: "header",
+    size: 3,
+    template: 3,
+    content: "Advantages of Setting up a Georgia S Corporation",
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content:
+      "In addition to the general benefits above, GA S Corporations provide several other advantages:",
+    marginBottom: 24,
+  },
+  {
     type: "list-dot",
     content: {
-      header: "Advantages of Opening an S Corporation in Georgia ",
-      text:
-        "In addition to the general benefits above, GA S Corporations provide several other advantages: ",
       list: [
         "Georgia S Corporations can have up to 100 shareholders.",
         "Running an S Corporation in Georgia is simpler than running a C Corporation.",
         "It is easy to transfer ownership in an S Corporation by selling your stock.",
         "In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax. Find out how this can save you money using our S Corporation Tax Calculator .",
-        "LLCs can <a href='/'>choose to be taxed as S Corporations</a> to take advantage of this.",
+        "LLCs can <a href='/research-topics/llc-info/can-a-limited-liability-company-llc-be-taxed-as-an-s-corporation/'>choose to be taxed as S Corporations</a> to take advantage of this.",
       ],
     },
     color: color.orange3,
@@ -352,20 +372,22 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn more about the advantages of forming an S Corporation. ",
-      url: "/",
+      url:
+        "/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/",
     },
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Advantages of Opening a C Corporation in Georgia ",
-    size: 4,
+    content: "Advantages of Setting up a Georgia C Corporation",
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "In addition to the general benefits above, Georgia C Corporations provide several other advantages. ",
+      "In addition to the general benefits above, Georgia C Corporations provide several other advantages.",
     marginBottom: 24,
   },
   {
@@ -385,15 +407,35 @@ export const corporation = [
     curveColor: color.orange1,
   },
   {
-    type: "text",
+    type: "header",
     content:
-      "When you incorporate a business as a corporation, the Georgia Division of Corporations will treat your business as a C Corporation by default. A C Corporation will become an S Corporation when all shareholders wish to change the corporation’s status to an S Corporation with the IRS. You can make this choice when you first form your Georgia corporation or at any time after you incorporate. ",
+      "Important Points About Forming a Corporation in the State of Georgia",
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "There are some similarities and some differences between S Corps and C Corps: ",
+      "Here are some areas to be aware of when you’re creating a corporation in Georgia.",
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content:
+      "First, GA corporations are formed on the state level by filing Articles of Incorporation with the GA Secretary of State. Incfile specializes in helping entrepreneurs form Georgia S Corporations and C Corporations and can collect the information and file this form on your behalf.",
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content:
+      "When you incorporate a business as a corporation, the Georgia Secretary of State will treat your business as a C Corporation by default. A C corporation will become an S Corporation when all shareholders wish to change the corporation’s status to an S Corporation with the IRS. You can make this choice when you first form your Georgia corporation or at any time after you incorporate.",
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content:
+      "There are some similarities and some differences between S Corps and C Corps:",
     marginBottom: 24,
   },
   {
@@ -410,37 +452,19 @@ export const corporation = [
     curveColor: color.orange1,
   },
   {
-    type: "header",
-    content: "Important Points About Forming a Corporation in Georgia ",
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "Here are some areas to be aware of when you’re creating a corporation in Georgia. ",
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "First, GA corporations are formed on the state level by filing Articles of Incorporation with the Georgia Division of Corporations. Incfile specializes in helping entrepreneurs form Georgia S Corporations and C Corporations and can collect the information and file this form on your behalf. ",
-    marginBottom: 24,
-  },
-  {
     type: "arrow-link",
     content: {
       text:
-        "Learn what you need to do to create a Georgia S Corporation or C Corporation ",
-      url: "/",
+        "Learn what you need to do to create a Georgia S Corporation or C Corporation",
+      url: "/georgia-corporation/start-a-ga-corporation/",
     },
-    marginBottom: 24,
+    marginBottom: 48,
   },
   {
     type: "header",
-    content:
-      "Your State of Georgia Corporation Must Follow Certain Rules and Regulations ",
-    size: 4,
+    content: "Rules and Regulations for Georgia Corporations",
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -475,7 +499,7 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn about Georgia corporation requirements . ",
-      url: "/",
+      url: "/georgia-corporation/form-filling-permit-requirements/",
     },
     marginBottom: 24,
   },
@@ -483,7 +507,7 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn about Georgia corporation taxes and fees . ",
-      url: "/",
+      url: "/georgia-corporation/taxes-and-fees-for-your-corporation/",
     },
     marginBottom: 24,
   },
@@ -504,7 +528,7 @@ export const corporation = [
           header: "S Corporation",
           link: {
             text: "Incorporate now",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
           },
         },
         noShadow: false,
@@ -517,13 +541,26 @@ export const corporation = [
           header: "C Corporation",
           link: {
             text: "Incorporate now",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
           },
         },
         noShadow: false,
         color: color.orange3,
       },
     ],
+  },
+  {
+    type: "header",
+    content: "Detailed Information for Your Georgia Corporation",
+    size: 2,
+    template: 3,
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content:
+      "You’ll find plenty more insight and guidance on the other pages of this guide, including:",
+    marginBottom: 24,
   },
   {
     type: "svg-color-text-box",
@@ -534,7 +571,7 @@ export const corporation = [
           "The six steps you need to take to start a Georgia S Corporation or C Corporation.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/georgia-corporation/start-a-ga-corporation/",
         },
         svg: TodoSVG,
         backgroundColor: color.red2,
@@ -546,10 +583,10 @@ export const corporation = [
       {
         header: "Naming Your Georgia Corporation",
         text:
-          "How to search the Georgia business registry of the GA Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a Georgia corporation name and more.",
+          "How to search the Georgia business registry of the GA Secretary of State and <a href='/georgia-entity-search/'>find the right name</a>. Includes information on naming rules, fictitious names, reserving a Georgia corporation name and more.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/georgia-corporation/how-to-name-your-corporation/",
         },
         svg: QuestionSVG,
         backgroundColor: color.orange3,
@@ -564,7 +601,7 @@ export const corporation = [
           "How to appoint a Georgia Registered Agent to your new corporation or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Georgia Registered Agents.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/georgia-corporation/registered-agents-georgia/",
         },
         svg: IdSVG,
         backgroundColor: color.purple2,
@@ -579,7 +616,7 @@ export const corporation = [
           "How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Georgia rules. Includes details of Employee Identification Numbers (EINs), Georgia and federal business licenses, Georgia Statement of Information reports and more.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/georgia-corporation/form-filling-permit-requirements/",
         },
         svg: BillPadSVG,
         backgroundColor: color.orange2,
@@ -595,7 +632,7 @@ export const corporation = [
           "How to understand the various taxes you will need to pay to the federal and Georgia government. Includes details of federal taxes like income and self-employment, and Georgia taxes like sales tax and income tax.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/georgia-corporation/taxes-and-fees-for-your-corporation/",
         },
         svg: DollarUpSVG,
         backgroundColor: color.green2,
@@ -613,8 +650,9 @@ export const startCaCorp = [
   {
     type: "header",
     content: "Start Your Georgia Corporation in Six Steps",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -634,14 +672,14 @@ export const startCaCorp = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
@@ -651,7 +689,8 @@ export const startCaCorp = [
   {
     type: "header",
     content: "The Benefits of Setting up a Corporation in Georgia",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -684,46 +723,50 @@ export const startCaCorp = [
     type: "arrow-link",
     content: {
       text: "Learn about starting a Georgia LLC",
-      url: "/",
+      url: "/georgia-llc/",
     },
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "The Six Steps to Setting up Your Georgia Corporation",
-    size: 4,
+    content: "The Six Steps to Starting Your Georgia Corporation",
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "accordion",
+    header: 3,
     content: {
       items: [
         {
           question:
-            "Look up and Choose a Unique Business Name for Your Georgia Corporation",
+            "1. Look up and Choose a Unique Business Name for Your Georgia Corporation",
           list: [
             "You will need to choose a unique, distinct, original name for your Georgia corporation",
             "This name cannot be used by or confused with another business in Georgia",
             "The name of your business must end with “Corporation,” “Incorporated,” “Limited” or an abbreviation of one of these",
           ],
           text:
-            "<a href='/'>See if the name is available by searching for it on the Georgia Department of State website. </a>",
+            "See if the name is available by<a href='https://ecorp.sos.ga.gov/BusinessSearch'> looking it up on the Georgia Secretary of State website.</a>",
           arrowLink: {
             text: "Learn how to name your Georgia corporation",
-            url: "/",
+            url: "/georgia-corporation/how-to-name-your-corporation/",
           },
         },
         {
-          question: "Provide an Official Address for Your GA Corporation",
+          question: "2. Provide an Official Address for Your GA Corporation",
           answer:
             "A Georgia corporation must have a designated address. That could be your home address (if you’re running the company from your residence), where your office is located or any physical address of your preference. The address can be outside the state of Georgia and can be a P.O. Box.",
         },
         {
-          question: "Appoint a Registered Agent for Your Georgia Corporation",
+          question:
+            "3. Appoint a Registered Agent for Your Georgia Corporation",
           answer:
             "Every Georgia corporation must have a “Registered Agent” who receives official legal and tax correspondence and has responsibility for filing reports with the Georgia Department of State. Your Registered Agent must have a physical street address in Georgia.<br/><br/>" +
             "A Registered Agent position for a Georgia S Corporation or C Corporation can be filled in several ways.<br><br>" +
-            "A Registered Agent could be you, a director or an officer of the corporation. The Georgia Registered Agent for your corporation must have a physical street address in Georgia. They need to be available during business hours to receive important documents for your corporation.<br><br>" +
+            "This position can be carried out by you, another accountable person in the business or a dedicated Registered Agent service. Your GA Registered Agent must have a physical street address in Georgia and must be present to receive important documents for your company during business hours.<br/><br/>" +
+            "At Incfile, all of our packages include a Georgia Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.<br/><br/>" +
             "Here at Incfile we always recommend using a proper Georgia Registered Agent service since they provide several benefits:",
           list: [
             "Some people establish companies outside of the state they live in and will use a Registered Agent service to provide an address for receiving legal documentation in the state.",
@@ -734,11 +777,11 @@ export const startCaCorp = [
             "At Incfile, all of our packages include a Georgia Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.",
           arrowLink: {
             text: "Learn more about Georgia Registered Agents.",
-            url: "/",
+            url: "/georgia-corporation/registered-agents-georgia/",
           },
         },
         {
-          question: "Create Your Georgia Articles of Incorporation",
+          question: "4. Create Your Georgia Articles of Incorporation",
           answer:
             "Once you've gathered all the information for your Georgia corporation, you’ll need to file a formal document with the GA Secretary of State. This document is known as your “Articles of Incorporation,” and filing the document creates your GA corporation. Here’s what the Articles of Incorporation normally includes:",
           list: [
@@ -751,21 +794,21 @@ export const startCaCorp = [
         },
         {
           question:
-            "Send Your Georgia Articles of Incorporation to the Secretary of State",
+            "5. Send Your Georgia Articles of Incorporation to the Secretary of State",
           text:
             "Once your Articles of Incorporation document is drafted, you can file it with the Georgia Secretary of State. Filing your Articles of Incorporation creates your Georgia corporation. You can do this online, mail in a form or have Incfile do it on your behalf.",
         },
         {
           question:
-            "Your GA Corporation Will Need to Meet Certain Legal and Compliance Requirements",
+            "6. Your GA Corporation Will Need to Meet Certain Legal and Compliance Requirements",
           answer:
             "Once your Georgia corporation has been created, you will need to get certain legal requirements in place. These include:",
           list: [
             "File IRS Small Business Tax Election Form 2553 if you want your GA business to be treated as an S Corporation.",
             "​Any Georgia S Corporations formed through Incfile will also include a prepared Form 2553 that will be delivered with the state formation documents.",
             "Create and issue stock certificates to your shareholders.",
-            "Apply for business licenses and permits. You may require licenses from the state of Georgia, your county, township and various industry or federal bodies.",
-            "Get an Employer Identification Number (EIN).",
+            "Apply for <a href='/business-license-research-package/'>business licenses and permits</a>. You may require licenses from the state of Georgia, your county, township and various industry or federal bodies.",
+            "Get an <a href='/manage-your-company/tax-id-ein/'>Employer Identification Number (EIN)</a>.",
             "File for taxes with Georgia Department of Revenue",
             "Get all formalities in place for employees, including unemployment, disability, payroll, insurance and taxes.",
             "Appoint a Board of Directors for the corporation.",
@@ -780,7 +823,8 @@ export const startCaCorp = [
   {
     type: "header",
     content: "Georgia Corporation Publication Requirement",
-    size: 4,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -792,14 +836,15 @@ export const startCaCorp = [
   {
     type: "header",
     content: "Starting Your Georgia Corporation — Useful Resources",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "arrow-link",
     content: {
       text: "Georgia Secretary of State website",
-      url: "/",
+      url: "http://sos.ga.gov/index.php/corporations",
     },
     marginBottom: 24,
   },
@@ -807,7 +852,7 @@ export const startCaCorp = [
     type: "arrow-link",
     content: {
       text: "General information from the Georgia Secretary of State",
-      url: "/",
+      url: "http://sos.ga.gov/index.php/Corporations/creating_a_new_entity",
     },
     marginBottom: 24,
   },
@@ -815,14 +860,15 @@ export const startCaCorp = [
     type: "arrow-link",
     content: {
       text: "Checking name availability for your Georgia corporation",
-      url: "/",
+      url: "https://ecorp.sos.ga.gov/BusinessSearch",
     },
     marginBottom: 52,
   },
   {
     type: "header",
     content: "Other Types of GA Corporations",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -832,33 +878,27 @@ export const startCaCorp = [
     marginBottom: 52,
   },
   {
-    type: "header",
-    content: "Form a Professional Georgia S Corporation or C Corporation",
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "Some states, including Georgia, allow certain occupations to form “Professional Corporations.” These types of corporations may need special requirements and licensing. GA State does not list the specific professions that can form professional corporations, although the name of the corporation must end with the words “Professional Corporation” or the abbreviation “P.C.”",
-    marginBottom: 24,
-  },
-  {
-    type: "header",
-    content: "Form a Foreign LLC in Georgia",
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "A “foreign” filing is when you have a regular, domestic corporation in a state (typically the one where you first formed your business) and need the company to be able to operate in another state. This is where you would file a “Foreign Qualification” to the new state for your domestic corporation to be able to operate in both states. You must have an existing domestic corporation before you can file as a foreign corporation.",
-    marginBottom: 52,
+    type: `accordion`,
+    header: 3,
+    content: {
+      items: [
+        {
+          question: `Form a Professional Georgia S Corporation or C Corporation`,
+          answer: `Some states, including Georgia, allow certain occupations to form “Professional Corporations.” These types of corporations may need special requirements and licensing. The GA Secretary of State does not provide details of specific professions that can form professional corporations. You can <a href="https://law.justia.com/codes/georgia/2010/title-14/chapter-7/14-7-3/">find more information here.</a>`,
+        },
+        {
+          question: `File as a Foreign Corporation to Operate in Another State`,
+          answer: `A “foreign” filing is when you have a regular, domestic corporation in a state (typically the one where you first formed your business) and need the company to be able to operate in another state. This is where you would file a “Foreign Qualification” to the new state for your domestic corporation to be able to operate in both states. You must have an existing domestic corporation before you can file as a foreign corporation.`,
+        },
+      ],
+    },
+    marginBottom: 32,
   },
   {
     type: "header",
-    content: "Need to Form a Georgia Corporation Quickly \n" + "and Easily?",
-    size: 4,
+    content: "Form a Georgia Corporation Without Breaking the Bank",
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -873,14 +913,14 @@ export const startCaCorp = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
@@ -891,8 +931,9 @@ export const naming = [
   {
     type: "header",
     content: "GA Name Search and Registration for Your Georgia Corporation",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -906,14 +947,14 @@ export const naming = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
@@ -923,7 +964,8 @@ export const naming = [
   {
     type: "header",
     content: "Georgia Secretary of State Corporation Business Lookup",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -942,14 +984,15 @@ export const naming = [
     type: "arrow-link",
     content: {
       text: "Georgia Secretary of State corporation name search tool",
-      url: "/",
+      url: "https://ecorp.sos.ga.gov/BusinessSearch",
     },
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Follow These Rules to Name Your Georgia Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -960,8 +1003,9 @@ export const naming = [
   },
   {
     type: "header",
-    content: "General Rules for Naming Your S Corp or C Corp",
-    size: 4,
+    content: "General Corporation Naming Rules",
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -972,8 +1016,9 @@ export const naming = [
   },
   {
     type: "header",
-    content: "Your Georgia Corporation Name Must Be Unique",
+    content: "All GA Registered Corporations Must Have a Unique Name",
     size: 4,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -987,6 +1032,7 @@ export const naming = [
     content:
       "The Name of Your Corporation Cannot Be Similar to Other Businesses in Georgia",
     size: 4,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1020,6 +1066,7 @@ export const naming = [
     content:
       "You Must Use Certain Words in the Name of Your GA S Corporation or C Corporation",
     size: 4,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1032,6 +1079,7 @@ export const naming = [
     type: "header",
     content: "Your Georgia Corporation Name May Have Other Restrictions",
     size: 4,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1058,7 +1106,8 @@ export const naming = [
   {
     type: "header",
     content: "Specific Rules for Naming Your Georgia Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1085,14 +1134,16 @@ export const naming = [
     type: "arrow-link",
     content: {
       text: "More on Georgia Secretary of State business naming rules.",
-      url: "/",
+      url:
+        "http://sos.ga.gov/index.php/corporations/name_availability_standards",
     },
     marginBottom: 24,
   },
   {
     type: "header",
     content: "Georgia Corporation Trade Names",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1105,7 +1156,7 @@ export const naming = [
     type: "button",
     content: {
       text: "Incfile’s Assumed Business Name Service ",
-      url: "/",
+      url: "/fictitious-business-or-trade-name/",
     },
     theme: "primary56",
   },
@@ -1113,7 +1164,8 @@ export const naming = [
     type: "header",
     content:
       "Why You Don’t Want to Infringe on Trademark or Service Mark Names",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1125,13 +1177,14 @@ export const naming = [
   {
     type: "text",
     content:
-      "The easiest way to see if your proposed business name infringes is to carry out a trademark search. You can do that via the United States Patent and Trademark Office, or Incfile can help you protect your business with our <a href='/'>Trademark Search and Registration</a> service. You should also bear in mind that your Georgia corporation name cannot be substantially similar to an existing trademark or service mark.",
+      "The easiest way to see if your proposed business name infringes is to carry out a trademark search. You can do that via the United States Patent and Trademark Office, or Incfile can help you protect your business with our <a href='/trademark-name-search/'>Trademark Search and Registration</a> service. You should also bear in mind that your Georgia corporation name cannot be substantially similar to an existing trademark or service mark.",
     marginBottom: 48,
   },
   {
     type: "header",
     content: "You’ve Found the Perfect Name, What Next?",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1146,14 +1199,14 @@ export const naming = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
@@ -1164,8 +1217,9 @@ export const agents = [
   {
     type: "header",
     content: "Registered Agents and Your Georgia Corporation",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -1199,14 +1253,14 @@ export const agents = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
-          text: "Start Your S Corp with Incfile",
-          url: "/",
+          text: "Start Your C Corp with Incfile",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
@@ -1217,7 +1271,8 @@ export const agents = [
     type: "header",
     content:
       "Information on the Georgia Secretary of State and GA Registered Agent Services",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1236,7 +1291,8 @@ export const agents = [
     type: "header",
     content:
       "Services Provided by a Georgia Registered Agent to Your Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1263,7 +1319,8 @@ export const agents = [
     type: "header",
     content:
       "Why You Might Not Want to Appoint Yourself as Your Own Georgia Registered Agent",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1277,7 +1334,7 @@ export const agents = [
     content: {
       list: [
         "The Registered Agent must have a physical street address in Georgia. Some people establish corporations outside of Georgia and will need to use a Registered Agent service to provide the address.",
-        "A person must always be available to sign for legal correspondence during business hours. If you can’t always be around, consider using a third-party Registered Agent service like Incfile.",
+        "You always need to have someone on hand at your corporation to receive important documents for your business during business hours (typically 9 a.m. to 5 p.m. Monday to Friday).",
         "The Registered Agent’s name and GA address are part of the public record and available through the Georgia Division of Corporations website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.",
         "If you change your Georgia business address or move out of state, you won’t need to file additional documentation with the GA Division of Corporations for the new address of your Registered Agent if using a service. You will need to set up a new Registered Agent service in the new state.",
       ],
@@ -1289,21 +1346,22 @@ export const agents = [
   {
     type: "text",
     content:
-      "There are more considerations, but this should help you with your decision to use a <a href='/'>Registered Agent service</a>.",
+      "There are more considerations, but this should help you with your decision to use a <a href='/manage-your-company/registered-agent/'>Registered Agent service</a>.",
     marginBottom: 48,
   },
   {
     type: "header",
     content:
       "The Problems Caused When You Don’t Appoint a Georgia Registered Agent Service",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
       "What are the issues with not having a GA Registered Agent or not providing that information to the Georgia Secretary of State?",
-    marginBottom: 41,
+    marginBottom: 40,
   },
   {
     type: "list-dot",
@@ -1322,7 +1380,8 @@ export const agents = [
     type: "header",
     content:
       "Incfile Provides a Free Georgia Corporation Registered Agent Service for the First Year",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1355,7 +1414,7 @@ export const agents = [
     type: "button",
     content: {
       text: "Order Incfile’s Georgia Registered Agent Service",
-      url: "/",
+      url: "/manage-your-company/registered-agent/",
     },
     theme: "primary56",
     marginBottom: 48,
@@ -1372,14 +1431,14 @@ export const agents = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
@@ -1401,7 +1460,7 @@ export const agents = [
     type: "arrow-link",
     content: {
       text: "The Main Functions of a Georgia Registered Agent",
-      url: "/",
+      url: "/research-topics/general-research/registered-agent-function/",
     },
     marginBottom: 24,
   },
@@ -1409,7 +1468,7 @@ export const agents = [
     type: "arrow-link",
     content: {
       text: "Changing Your Georgia Registered Agent",
-      url: "/",
+      url: "/manage-your-company/change-of-registered-agent/",
     },
     marginBottom: 24,
   },
@@ -1417,7 +1476,7 @@ export const agents = [
     type: "arrow-link",
     content: {
       text: "What a Georgia Registered Agent Does",
-      url: "/",
+      url: "/research-topics/registered-agent/registered-agent-tasks/",
     },
     marginBottom: 24,
   },
@@ -1426,8 +1485,9 @@ export const filing = [
   {
     type: "header",
     content: "Georgia Corporation Form and Filing Rules",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -1447,14 +1507,14 @@ export const filing = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
@@ -1464,7 +1524,8 @@ export const filing = [
   {
     type: "header",
     content: "Form Your Business With the Articles of Incorporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1503,7 +1564,8 @@ export const filing = [
     type: "header",
     content:
       "Get the Right Permits and Licenses for Your Georgia S Corp or C Corp",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1515,7 +1577,8 @@ export const filing = [
   {
     type: "header",
     content: "A Local Business Permit or License From Your City",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1527,7 +1590,8 @@ export const filing = [
   {
     type: "header",
     content: "County and State Business Permits and Licenses",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1539,7 +1603,8 @@ export const filing = [
   {
     type: "header",
     content: "Federal Licenses and Permits",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1551,7 +1616,8 @@ export const filing = [
   {
     type: "header",
     content: "Georgia Corporation Publication Requirement",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1564,7 +1630,8 @@ export const filing = [
     type: "header",
     content:
       "Incfile Business License Research Package for Your Georgia Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1595,7 +1662,7 @@ export const filing = [
     type: "button",
     content: {
       text: "Get the Incfile License Research Package",
-      url: "/",
+      url: "/business-license-research-package/",
     },
     theme: "primary56",
     marginBottom: 24,
@@ -1603,7 +1670,8 @@ export const filing = [
   {
     type: "header",
     content: "Special Georgia Corporation Requirements",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1615,7 +1683,8 @@ export const filing = [
   {
     type: "header",
     content: "Your Georgia Corporation Must Have Certain Bylaws",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1647,7 +1716,8 @@ export const filing = [
   {
     type: "header",
     content: "Corporation Shareholders Must Be Issued Stock",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1658,8 +1728,9 @@ export const filing = [
   },
   {
     type: "header",
-    content: "A Board of Directors Must Be Appointed",
-    size: 5,
+    content: "Appoint a Board of Directors",
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1671,7 +1742,8 @@ export const filing = [
   {
     type: "header",
     content: "Assign Officers to the Corporation",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1683,7 +1755,8 @@ export const filing = [
   {
     type: "header",
     content: "Get a Corporate Records Book",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1694,20 +1767,9 @@ export const filing = [
   },
   {
     type: "header",
-    content: "Get a Corporate Records Book",
-    size: 5,
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "Your Georgia corporation will need a book to record important information about the business. This book will include details like your Articles of Incorporation, corporate bylaws, meeting minutes, AGM details, directors, officers, stock certificate information, transfer documents and more.",
-    marginBottom: 24,
-  },
-  {
-    type: "header",
     content: "Hire Employees",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1733,15 +1795,16 @@ export const filing = [
     type: "button",
     content: {
       text: "Get an EIN through Incfile",
-      url: "/",
+      url: "/manage-your-company/tax-id-ein/",
     },
     theme: "primary56",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Your Georgia Corporation Must Hold an Annual General Meeting",
-    size: 5,
+    content: "Hold an Annual General Meeting for Your Georgia Corporation",
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1767,7 +1830,8 @@ export const filing = [
   {
     type: "header",
     content: "Georgia Corporation Tax Registration",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1794,13 +1858,23 @@ export const filing = [
   {
     type: "text",
     content:
-      "You can find details on the <a href='/'> Georgia Department of Revenue</a> and IRS websites.",
+      "You can find details on the <a href='https://dor.georgia.gov/'> Georgia Department of Revenue</a> and IRS websites.",
     marginBottom: 24,
+  },
+  {
+    type: "arrow-link",
+    content: {
+      text: "Learn more about taxes for your Georgia corporation.",
+      url:
+        "https://www.incfile.com/georgia-corporation/taxes-and-fees-for-your-corporation/",
+    },
+    marginBottom: 32,
   },
   {
     type: "header",
     content: "Annual Report for Your Georgia Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1812,22 +1886,23 @@ export const filing = [
   {
     type: "text",
     content:
-      "<a href='/'>Learn about your ongoing Georgia corporation filing requirements</a> and business filing deadlines with our helpful Georgia ongoing filing lookup tool.",
+      "<a href='/business-filing-deadlines/'>Learn about your ongoing Georgia corporation filing requirements</a> and business filing deadlines with our helpful Georgia ongoing filing lookup tool.",
     marginBottom: 24,
   },
   {
     type: "button",
     content: {
       text: "Have Incfile File Your Report for You",
-      url: "/",
+      url: "/manage-your-company/annual-report/",
     },
     theme: "primary56",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Certificate of Good Standing for Your Georgia \n" + "Corporation",
-    size: 4,
+    content: "Your Georgia Corporation May Need a Certificate of Good Standing",
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1840,7 +1915,7 @@ export const filing = [
     type: "button",
     content: {
       text: "Get a Certificate of Good Standing Through Incfile",
-      url: "/",
+      url: "/manage-your-company/certificate-of-good-standing/",
     },
     theme: "primary56",
     marginBottom: 48,
@@ -1848,7 +1923,8 @@ export const filing = [
   {
     type: "header",
     content: "Ready to Start Your Georgia Corporation?",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1869,14 +1945,14 @@ export const filing = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
@@ -1888,8 +1964,9 @@ export const taxes = [
   {
     type: "header",
     content: "Fees and Taxes for Your Georgia State Corporation",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -1900,7 +1977,8 @@ export const taxes = [
   {
     type: "header",
     content: "Common Fees for a Georgia Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1908,16 +1986,16 @@ export const taxes = [
     content: {
       items: [
         {
-          question: "Fees for forming a corporation in Georgia",
+          question: "1. Fees for forming a corporation in Georgia",
           answer:
-            "Learn about <a href='/'>standard filing costs here</a> for GA corporations.",
+            "Learn about <a href='h/state-filing-fees/'>standard filing costs here</a> for GA corporations.",
         },
         {
-          question: "Georgia State Annual Report Fee",
+          question: "2. Georgia State Annual Report Fee",
           answer: "A yearly fee when you file your Annual Report.",
         },
         {
-          question: "Georgia Permits and Licenses",
+          question: "3. Georgia Permits and Licenses",
           answer:
             "These are the fees for creating or renewing your licenses and permits on a regular basis. These depend on the type of Georgia corporation you’re operating and where you’re located.",
         },
@@ -1926,9 +2004,19 @@ export const taxes = [
     marginBottom: 47,
   },
   {
+    type: "button",
+    content: {
+      text: "Get the Incfile Business License Research Package",
+      url: "/business-license-research-package/",
+    },
+    theme: "primary56",
+    marginBottom: 64,
+  },
+  {
     type: "header",
     content: "Taxes You and Your Georgia Corporation Need to Pay",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1936,6 +2024,14 @@ export const taxes = [
     content:
       "Georgia S Corporations and C Corporations are taxed differently. Find the details below.",
     marginBottom: 48,
+  },
+  {
+    type: "header",
+    content:
+      "Both S Corporations and C Corporations in Georgia Need to Pay These Taxes",
+    size: 3,
+    template: 3,
+    marginBottom: 24,
   },
   {
     type: "accordion",
@@ -1949,17 +2045,17 @@ export const taxes = [
         {
           question: "Georgia State Income Tax",
           answer:
-            "Anyone who takes earnings out of your Georgia corporation will need to pay Georgia state income tax. Find out more on the <a href='/'>Georgia State Department of Revenue website</a>.",
+            "Anyone who takes earnings out of your Georgia corporation will need to pay Georgia state income tax. Find out more on the <a href='https://dor.georgia.gov/taxes/individual-taxes'>Georgia State Department of Revenue website</a>.",
         },
         {
           question: "Sales and Use Tax Payable to the State of Georgia",
           answer:
-            "If your GA corporation is selling products or services in Georgia, you may need to pay a state sales tax. Find out more on the Georgia Department of Revenue website.",
+            "If your GA corporation is selling products or services in Georgia, you may need to pay a state sales tax. Find out more on the <a href='https://dor.georgia.gov/taxes/business-taxes/sales-use-tax'>Georgia Department of Revenue website.</a>",
         },
         {
-          question: "Other Taxes in Georgia",
+          question: "Georgia Other Taxes",
           answer:
-            "You may need to pay other taxes and fees, depending on the type of Georgia corporation you run. Find out more on the Georgia Department of Revenue website.",
+            "You may need to pay other taxes and fees, depending on the type of Georgia corporation you run. Find out more on the <a href='https://dor.georgia.gov/taxes/business-taxes'>Georgia Department of Revenue website.</a>",
         },
       ],
     },
@@ -1968,7 +2064,8 @@ export const taxes = [
   {
     type: "header",
     content: "Your Georgia Corporation Will Need to Pay Estimated Taxes",
-    size: 4,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1999,7 +2096,8 @@ export const taxes = [
   {
     type: "header",
     content: "Employee Insurance and Taxes for Your Georgia Corporation",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2011,13 +2109,36 @@ export const taxes = [
   {
     type: "text",
     content:
-      "Get more requirements from the <a href='/'>Georgia Department of Labor website</a>.",
+      "Get more requirements from the <a href='https://dol.georgia.gov/'>Georgia Department of Labor website</a>.",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Taxes Payable by Georgia S Corporations",
+    content:
+      "Taxes Payable by All Individuals Working for Georgia Corporations",
+    size: 3,
+    template: 3,
+    marginBottom: 24,
+  },
+  {
+    type: "header",
     size: 4,
+    template: 5,
+    content:
+      "Pay Federal Income Tax on Georgia Corporation Earnings, Dividends and Distributions",
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content:
+      "You will need to pay regular federal income tax when you file your tax return every year.",
+    marginBottom: 48,
+  },
+  {
+    type: "header",
+    content: "Georgia S Corporations — Additional Tax Liabilities",
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2026,7 +2147,7 @@ export const taxes = [
       {
         header: "Self-Employment Tax",
         text:
-          "Because your Georgia corporation income flows through to your personal tax return, you must pay self-employment tax (also known as FICA, Social Security or Medicare tax) on your earnings. This is typically at a rate of 15.3 percent. You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.",
+          "In a Georgia S Corporation, your earnings “flow through” from the business to your personal tax return. This means you must pay self-employment tax on those earnings, at a rate of 15.3%. Note that you can deduct standard tax deductions and business expenses.",
         svg: SelfEmployedTaxSVG,
         backgroundColor: color.orange2,
         shadowColor: shadow.orange2,
@@ -2041,7 +2162,7 @@ export const taxes = [
     type: "button",
     content: {
       text: "Get a Tax Consultation from Incfile",
-      url: "/",
+      url: "/business-accounting/",
     },
     theme: "primary56",
     marginBottom: 48,
@@ -2076,7 +2197,7 @@ export const taxes = [
     type: "button",
     content: {
       text: "File Your Georgia S-Corp Tax Election with Incfile",
-      url: "/",
+      url: "/llc-s-corp-election/",
     },
     theme: "primary56",
     marginBottom: 52,
@@ -2084,7 +2205,8 @@ export const taxes = [
   {
     type: "header",
     content: "Taxes Payable by Georgia C Corporations",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2093,7 +2215,7 @@ export const taxes = [
       {
         header: "Corporation Tax",
         text:
-          "Unlike the the Limited Liability Company and the S Corporation, a Georgia C Corporation is required to file a corporate tax return and pay corporation taxes on any profits. When those taxed profits are paid to shareholders as dividends, they will also be subject to taxation on that individual’s tax return. This is known as “double taxation.”",
+          "Georgia C Corporations must file corporate tax returns with the IRS and pay corporation taxes on their profits. Shareholders must also pay tax on dividends received from a Georgia C Corporation, which does result in “double taxation.”",
         svg: CorpoTaxSVG,
         backgroundColor: color.babyblue2,
         shadowColor: shadow.babyblue2,
@@ -2117,27 +2239,9 @@ export const taxes = [
   },
   {
     type: "header",
-    content:
-      "Taxes Payable by All Individuals Working for Georgia Corporations",
-    size: 5,
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "Pay Federal Income Tax on Georgia Corporation Earnings, Dividends and Distributions",
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "You will need to pay regular federal income tax when you file your tax return every year.",
-    marginBottom: 48,
-  },
-  {
-    type: "header",
     content: "Ready to Start Your Georgia Corporation?",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2158,14 +2262,14 @@ export const taxes = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
         },
         theme: "primary56",
       },
@@ -2177,19 +2281,19 @@ export const afterFormation = [
   {
     type: "header",
     content: "Understand Your Ongoing Corporation Filing Requirements",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
     content:
-      "Each state requires different forms such as your business annual reports and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the form filing requirements keeps your business in good standing with the state. Failure to file these reports can lead to the company being revoked or administrative business dissolution. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
+      "Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a>and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/ manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
     marginBottom: 48,
   },
   {
-    type: "header",
-    content: "Georgia's Ongoing Corporate File Requirements:",
-    size: 4,
+    type: "text",
+    content: "<b>Georgia’s Ongoing Filing Requirements:</b>",
     marginBottom: 24,
   },
   {
@@ -2198,7 +2302,8 @@ export const afterFormation = [
   {
     type: "header",
     content: "Protect Your Business Name With a Trademark",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2210,8 +2315,7 @@ export const afterFormation = [
   {
     type: "list-dot",
     content: {
-      header:
-        "Benefits of <a href='/'>Incfile's Trademark service</a> include:",
+      header: "Benefits of Incfile's Trademark service include:",
       list: [
         "Legal counsel from an experienced trademark attorney",
         "A thorough search of existing trademarks",
@@ -2226,43 +2330,52 @@ export const afterFormation = [
   {
     type: "header",
     content: "Finances & Accounting for Your Georgia Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Once you form your LLC in Delaware, there are important next steps to ensure your business finances and accounting are organized for tax season and peace of mind, and that your personal and business finances are kept separate to ensure safety of your personal assets. With the right accounting steps, your business will run smoothly and be set up for increased profits and success.",
+      "Once you form your corporation in Georgia, there are important next steps to ensure your business finances and accounting are organized for tax season and peace of mind, and that your personal and business finances are kept separate to ensure safety of your personal assets. With the right accounting steps, your business will run smoothly and be set up for increased profits and success.",
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Choose a Bank for Your Georgia Corporation",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content:
-      "The right business checking account for your business should have minimum fees, so that your money goes into the business or your own checking account instead of spending on hidden, tricky bank fees. According to NerdWallet — who looked at the 10 biggest banks in the U.S. and some additional online banks — these are the best four free business checking accounts for your Corporation:",
+    content: `The right business checking account for your business should have minimum fees, so that your money goes into the business or your own checking account instead of spending on hidden, tricky bank fees. According to <a href="https://www.nerdwallet.com/best/banking/free-business-checking-accounts">NerdWallet</a> — who looked at the 10 biggest banks in the U.S. and some additional online banks — these are the best four free business checking accounts for your Corporation:`,
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Separate Business & Personal Expenses",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your Georgia Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='/'>Expensify</a> to track and tag business expenses from your mobile phone.",
+      "Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your Illinois Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='http://expensify.com/'>Expensify</a> to track and tag business expenses from your mobile phone.",
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Set Up Accounting Software",
-    size: 5,
+    size: 3,
+    template: 4,
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content:
+      "Choosing the right accounting software will allow you to track your accounts receivable — the money that is flowing in and out of your Corporation. Accounting software will allow you to track bills, invoices, expenses and customers. This is also another important step in simplifying your year-end tax burden. With a clear, separate business checking account and card and an organized accounting software system, you’ll (barely) dread tax season as a business owner.",
     marginBottom: 24,
   },
   {
@@ -2283,7 +2396,8 @@ export const afterFormation = [
       {
         link: {
           text: "QuickBooks",
-          url: "/",
+          url:
+            "https://quickbooks.intuit.com/oa/selfemployed/?utm_source=oaqbse_aff&utm_medium=aff&utm_content=priorityCode=3969702399&cid=aff_cj_7898336&cvosrc=affiliate.cj.7898336&cvo_campaign=qbo_trial&priorityCode=3969702399&aid=12170614",
         },
         text:
           "This is a top option for a lot of business owners and starts out at only $10 a month. You can automatically important banking transactions, track your customers and vendors and related bills and expenses, and integrate with a lot of other online finance tools. If you hire an accountant or tax support, they will all likely support QuickBooks. You can even use an online version in addition to a desktop version of their software. The drawback is that the learning curve for QuickBooks can sometimes be a bit steep.",
@@ -2291,7 +2405,7 @@ export const afterFormation = [
       {
         link: {
           text: "Xero",
-          url: "/",
+          url: "https://www.xero.com/",
         },
         text:
           "Xero is online accounting software that is a great option for those who find QuickBooks to be too complicated and difficult to understand. Their plans start out at $20 per month.",
@@ -2299,7 +2413,8 @@ export const afterFormation = [
       {
         link: {
           text: "FreshBooks",
-          url: "/",
+          url:
+            "https://www.freshbooks.com/?ref=10400&utm_source=sas&utm_medium=affiliate&utm_campaign=938781",
         },
         text:
           "Freshbooks is online accounting software that allows you to also track your time, expenses, collaborate on projects and view accounting reports. One drawback is that it doesn’t currently have a way to track invoices that your business needs to pay. But, accounts start out at $15 per month.",
@@ -2307,43 +2422,45 @@ export const afterFormation = [
       {
         link: {
           text: "Bench",
-          url: "/",
+          url: "https://bench.co/",
         },
         text:
           "Bench not only allows you to track your accounts receivable, but they include the help of a real-life bookkeeper to run your accounting every month. For a Bench account starting out at $125 a month, this is quite the deal instead of hiring your own bookkeeper.",
-        marginBottom: "52px",
+        marginBottom: "48px",
       },
     ],
   },
   {
     type: "header",
     content: "Determine How You’ll Accept Credit Cards",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "If you use QuickBooks or Freshbooks, you’ll be able to accept credit cards to pay for invoices. If you have a brick and mortar location for your small business, you want to look into offering payments through a service such as <a href='https://shopify.com/'>Shopify</a> or <a href='/'>Square</a>.",
+      "If you use QuickBooks or Freshbooks, you’ll be able to accept credit cards to pay for invoices. If you have a brick and mortar location for your small business, you want to look into offering payments through a service such as <a href='https://shopify.com/'>Shopify</a> or <a href='https://squareup.com/us/en'>Square</a>.",
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Look Into Business Funding Options",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content:
-      "In case your business runs out of cash flow, you want to have a backup option so your business doesn’t go under. You can raise capital from investors, ask friends or family for loans, get a business credit card, take an online business loan, or look into government financing using the <a href='/'>SBA & BusinessUSA’s financing tools</a>. Also, it’s important to remember that you can also bootstrap your business — which means, only using the funds you have in your bank account and not expanding until you get more business income.",
+    content: `In case your business runs out of cash flow, you want to have a backup option so your business doesn’t go under. You can raise capital from investors, ask friends or family for loans, get a <a href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024"target="_blank" rel="noopener noreferrer">business credit card</a>, take an online business loan, or look into government financing using the <a href='https://www.sba.gov/node/13710'target="_blank" rel="noopener noreferrer">SBA & BusinessUSA’s financing tools</a>. Also, it’s important to remember that you can also bootstrap your business — which means, only using the funds you have in your bank account and not expanding until you get more business income.`,
     marginBottom: 48,
   },
   {
     type: "header",
     content:
       "Business Operations & Marketing for Your Georgia \n" + "Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2352,7 +2469,7 @@ export const afterFormation = [
       {
         header: "Build a Business Website",
         text:
-          "Having a great online presence for your business is the number one way people will find you. You need to start with buying a domain name using a service such as <a href='/'>NameCheap</a>. Then you need to choose a service to host your website such as <a href='/'>SnapWeb</a>. Finally, design your website using a tool such as Squarespace or WordPress. Make sure your website includes important business information such as how to contact you and business hours.",
+          "Having a great online presence for your business is the number one way people will find you. You need to start with buying a domain name using a service such as <a href='https://www.namecheap.com/?utm_source=SAS&utm_medium=Affiliate&utm_campaign=938781&affnetwork=sas'>NameCheap</a>. Then you need to choose a service to host your website such as <a href='http://xoopah.com/'>Xoopah.com</a>. Finally, design your website using a tool such as Squarespace or WordPress. Make sure your website includes important business information such as how to contact you and business hours.",
         svg: WebSVG,
         backgroundColor: color.purple2,
         shadowColor: shadow.purple2,
@@ -2363,7 +2480,7 @@ export const afterFormation = [
       {
         header: "Choose a Virtual Phone System",
         text:
-          "Your business needs a phone number so that your customers, employees and vendors can reach you. A great option is to look into a tool such as <a href='/'>Grasshopper</a>, which allows you to get a business phone that actually forwards to your cell phone, so you never miss an important call.",
+          "Your business needs a phone number so that your customers, employees and vendors can reach you. A great option is to look into a tool such as <a href='https://grasshopper.o9o4.net/c/1320313/503375/8652'>Grasshopper</a>, which allows you to get a business phone that actually forwards to your cell phone, so you never miss an important call.",
         svg: PhoneSVG,
         backgroundColor: color.green2,
         shadowColor: shadow.green2,
@@ -2374,7 +2491,7 @@ export const afterFormation = [
       {
         header: "Design a Business Logo",
         text:
-          "A logo will reflect your business branding everywhere your customers interact with you — on your website, on your invoices, in your email signature, on business cards and more. Instead of trying to design a logo yourself, try a logo making service such as <a href='/'>99 Designs</a> or buy some really high-quality pre-made logos you can customize on <a href='/'>CreativeMarket</a>.",
+          "A logo will reflect your business branding everywhere your customers interact with you — on your website, on your invoices, in your email signature, on business cards and more. Instead of trying to design a logo yourself, try a logo making service such as <a href='http://www.jdoqocy.com/click-7898336-11012409-1442446947000?cm_mmc=CJ-_-4607662-_-7898336-_-99designs%20-%20Text'>99 Designs</a> or buy some really high-quality pre-made logos you can customize on <a href='https://creativemarket.com/'>CreativeMarket</a>.",
         svg: LogoSVG,
         backgroundColor: color.orange2,
         shadowColor: shadow.orange2,
@@ -2385,7 +2502,7 @@ export const afterFormation = [
       {
         header: "Get Business Cards Created",
         text:
-          "Once you have a logo, create nice looking business cards that you can hand out when you’re out networking or even running errands. You never know when a conversation about your business will come up, and you want to be able to give someone a place to research your business and contact you. A great tool to create inexpensive business cards is <a href='/'>Vistaprint</a>.",
+          "Once you have a logo, create nice looking business cards that you can hand out when you’re out networking or even running errands. You never know when a conversation about your business will come up, and you want to be able to give someone a place to research your business and contact you. A great tool to create inexpensive business cards is <a href='https://www.vistaprint.com/business-cards?txi=15626&%3bxnid=TopNav_Business+Cards&%3bxnav=TopNav&%3bGP=04%2f28%2f2017+14%3a14%3a22&%3bGPS=4378726571&%3bGNF=0&rd=1'>Vistaprint</a>.",
         svg: CardSVG,
         backgroundColor: color.blue3,
         shadowColor: shadow.blue3,
@@ -2400,7 +2517,8 @@ export const afterFormation = [
     type: "header",
     content:
       "Choose the Best Business Tools to Run Your Georgia \n" + "Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2481,14 +2599,15 @@ export const afterFormation = [
   },
   {
     type: "header",
-    content: "Start a Business Checklist",
-    size: 4,
+    content: "Get a “Start a Business Checklist” to Follow",
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "If you want to track your progress in getting your new business set up properly, we have a great virtual <a href='/'>Start a Business Checklist</a> that includes everything you need to do to launch your business. It even features downloadable PDFs you can access to download and print.",
+      "If you want to track your progress in getting your new business set up properly, we have a great virtual <a href='/starting-a-business-checklist/'>Start a Business Checklist</a> that includes everything you need to do to launch your business. It even features downloadable PDFs you can access to download and print.",
     marginBottom: 24,
   },
 ];

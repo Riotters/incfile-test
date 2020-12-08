@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168" height="168" viewBox="0 0 168 168">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-160 -7643) translate(164 7647)">
+                <circle cx="80.005" cy="80.001" r="80" stroke="#F2F6FF" stroke-width="8"/>
+                <path stroke="#5089FD" stroke-linecap="round" stroke-width="8" d="M80.005 0c16.466 0 32.53 5.081 46.001 14.549 13.471 9.467 23.692 22.86 29.27 38.353 5.577 15.492 6.239 32.327 1.894 48.209-4.345 15.881-13.484 30.036-26.171 40.531"/>
+                <path stroke="#97E0C7" stroke-linecap="round" stroke-width="8" d="M128.438 143.672c-14.816 11.271-33.1 17.022-51.701 16.262-18.6-.76-36.354-7.983-50.202-20.425"/>
+                <path stroke="#F1A0A0" stroke-linecap="round" stroke-width="8" d="M26.796 139.745c-10.7-9.529-18.643-21.755-23.003-35.403C-.566 90.694-1.18 76.126 2.015 62.16"/>
+                <path stroke="#C8A3EC" stroke-linecap="round" stroke-width="8" d="M1.548 64.344C3.687 53.627 8 43.461 14.218 34.474c6.22-8.986 14.215-16.603 23.491-22.38"/>
+                <path stroke="#F3D699" stroke-linecap="round" stroke-width="8" d="M37.654 12.128C50.534 4.092 65.434-.113 80.614.003"/>
+                <path stroke="#C8A3EC" stroke-linecap="round" stroke-width="8" d="M14.222 34.471c6.22-8.986 14.214-16.603 23.49-22.38"/>
+                <path fill="#E8E8E8" fill-rule="nonzero" d="M81.005 141L80.005 141 80.005 148 81.005 148zM81.005 12.001L80.005 12.001 80.005 19 81.005 19zM19.005 80.001L19.005 79.001 12.005 79.001 12.005 80.001zM148.005 80.001L148.005 79.001 141.005 79.001 141.005 80.001z"/>
+            </g>
+        </g>
+    </g>
+</svg>

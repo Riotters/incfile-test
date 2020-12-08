@@ -14,6 +14,7 @@ import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Path from "../../../molecules/blocks/research-topics-path";
 import parse from "html-react-parser";
 import Circle from "../../../atoms/icons/circle";
+import {PHeading} from "../../../atoms/typography/p-as-heading";
 
 const About = styled.section`
 	position: relative;
@@ -60,9 +61,9 @@ const AboutSection = ({ className, content }) => (
 					<NumberSpan>{1}</NumberSpan>
 				</Circle>
 			</AbsoluteCircle>
-			<Heading size={4} bottomMargin="24">
+			<PHeading size={4} template={4} left bottomMargin="24">
 				{content.header2}
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="16">
 				{content.text}
 			</Paragraph>
@@ -73,6 +74,7 @@ const AboutSection = ({ className, content }) => (
 				content={content.list}
 				color={color.green3}
 				rounded
+				paragraphHeader
 				bottomMargin="24"
 			/>
 			<IconListColorBox
@@ -81,6 +83,7 @@ const AboutSection = ({ className, content }) => (
 				curve
 				curveColor={color.yellow2}
 				rounded
+				paragraphHeader
 				bottomMargin="24"
 			/>
 			<Paragraph big bottomMargin="48">
@@ -97,9 +100,9 @@ const AboutSection = ({ className, content }) => (
 					<NumberSpan>{2}</NumberSpan>
 				</Circle>
 			</AbsoluteCircle>
-			<Heading size={4} bottomMargin="24">
+			<PHeading size={2} template={4} left bottomMargin="24">
 				{content.header3}
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="16">
 				{content.text4}
 			</Paragraph>
@@ -117,9 +120,9 @@ const AboutSection = ({ className, content }) => (
 					<NumberSpan>{3}</NumberSpan>
 				</Circle>
 			</AbsoluteCircle>
-			<Heading size={4} bottomMargin="24">
+			<PHeading size={2} template={4} left bottomMargin="24">
 				{content.header4}
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="16">
 				{content.text6}
 			</Paragraph>
@@ -149,9 +152,9 @@ const AboutSection = ({ className, content }) => (
 					<NumberSpan>{4}</NumberSpan>
 				</Circle>
 			</AbsoluteCircle>
-			<Heading size={4} bottomMargin="24">
+			<PHeading size={2} template={4} left bottomMargin="24">
 				{content.header5}
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="48">
 				{content.text12}
 			</Paragraph>
@@ -166,9 +169,9 @@ const AboutSection = ({ className, content }) => (
 					<NumberSpan>{5}</NumberSpan>
 				</Circle>
 			</AbsoluteCircle>
-			<Heading size={4} bottomMargin="24">
+			<PHeading size={2} template={4} left bottomMargin="24">
 				{content.header6}
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="48">
 				{content.text13}
 			</Paragraph>
@@ -183,9 +186,9 @@ const AboutSection = ({ className, content }) => (
 					<NumberSpan>{6}</NumberSpan>
 				</Circle>
 			</AbsoluteCircle>
-			<Heading size={4} bottomMargin="24">
+			<PHeading size={2} template={4} left bottomMargin="24">
 				{content.header7}
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="24">
 				{content.text14}
 			</Paragraph>
@@ -193,6 +196,7 @@ const AboutSection = ({ className, content }) => (
 				content={content.list3}
 				color={color.red2}
 				curve
+				paragraphHeader
 				curveColor={color.yellow2}
 				rounded
 				bottomMargin="48"
@@ -208,9 +212,9 @@ const AboutSection = ({ className, content }) => (
 					<NumberSpan>{7}</NumberSpan>
 				</Circle>
 			</AbsoluteCircle>
-			<Heading size={4} bottomMargin="24">
+			<PHeading size={2} template={4} left bottomMargin="24">
 				{content.header8}
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="48">
 				{content.text15}
 			</Paragraph>
@@ -225,9 +229,9 @@ const AboutSection = ({ className, content }) => (
 					<NumberSpan>{8}</NumberSpan>
 				</Circle>
 			</AbsoluteCircle>
-			<Heading size={4} bottomMargin="24">
+			<PHeading size={2} template={4} left bottomMargin="24">
 				{content.header9}
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="16">
 				{content.text16}
 			</Paragraph>

@@ -33,7 +33,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text2}
 			</Paragraph>
-			<Heading size={3} bottomMargin="24">
+			<Heading size={2} template={3} left bottomMargin="24">
 				{content.header2}
 			</Heading>
 			<Paragraph big bottomMargin="16">
@@ -48,7 +48,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text6}
 			</Paragraph>
-			<Heading size={3} bottomMargin="24">
+			<Heading size={2} template={3} left bottomMargin="24">
 				{content.header3}
 			</Heading>
 			<Paragraph big bottomMargin="16">
@@ -66,6 +66,7 @@ const AboutSection = ({ className, content }) => (
 			<IconListColorBox
 				content={content.list}
 				color={color.purple3}
+				paragraphHeader
 				curve
 				curveColor={color.green2}
 				rounded

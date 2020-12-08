@@ -37,7 +37,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text3}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header2}
 			</Heading>
 			<Paragraph big bottomMargin="24">
@@ -47,6 +47,7 @@ const AboutSection = ({ className, content }) => (
 				content={content.list}
 				color={color.orange3}
 				curve
+				paragraphHeader
 				curveColor={color.blue2}
 				rounded
 				bottomMargin="24"
@@ -55,18 +56,21 @@ const AboutSection = ({ className, content }) => (
 				content={content.list2}
 				color={color.babyblue3}
 				rounded
+				paragraphHeader
 				bottomMargin="24"
 			/>
 			<IconListColorBox
 				content={content.list3}
 				color={color.green3}
 				rounded
+				paragraphHeader
 				bottomMargin="24"
 			/>
 			<IconListColorBox
 				content={content.list4}
 				color={color.yellow3}
 				curve
+				paragraphHeader
 				curveColor={color.green2}
 				rounded
 				bottomMargin="24"
@@ -75,23 +79,26 @@ const AboutSection = ({ className, content }) => (
 				content={content.list5}
 				color={color.purple3}
 				rounded
+				paragraphHeader
 				bottomMargin="24"
 			/>
 			<IconListColorBox
 				content={content.list6}
 				color={color.blue3}
 				rounded
+				paragraphHeader
 				bottomMargin="24"
 			/>
 			<IconListColorBox
 				content={content.list7}
 				color={color.green3}
 				curve
+				paragraphHeader
 				curveColor={color.yellow2}
 				rounded
 				bottomMargin="48"
 			/>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header3}
 			</Heading>
 			<Paragraph big bottomMargin="16">
@@ -100,7 +107,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48" mixed>
 				{parse(content.text6)}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header4}
 			</Heading>
 			<Paragraph big bottomMargin="16">

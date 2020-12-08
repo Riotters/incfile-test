@@ -25,6 +25,10 @@ const Wrapper = styled.div`
         border-radius: 20px;
         position: relative;
     }
+    
+    h3 {
+      text-align: center;
+    }
 `;
 
 const Circle = styled.span`
@@ -72,7 +76,7 @@ const AdeventageLink = styled(Link)`
       }
 `;
 
-const Disdventages = ({className, content, colorStroke, circleBackgroundColor, circleBackgroundShadow, circlePosition, circleText, url, urlText, style, width, imageName}) => {
+const Disdventages = ({className, content, colorStroke, headingSize = 3, headingSizeTemplate = 4, circleBackgroundColor, circleBackgroundShadow, circlePosition, circleText, url, urlText, style, width, imageName}) => {
     return (
         <Wrapper className={className} style={style}>
             <Whitebox className="box">
@@ -94,7 +98,7 @@ const Disdventages = ({className, content, colorStroke, circleBackgroundColor, c
                     </ImageWrapper>
                 }
                 {content.header && (
-                    <Heading size="4" bottomMargin="16">{content.header}</Heading>
+                    <Heading size={headingSize} template={headingSizeTemplate} bottomMargin="16">{content.header}</Heading>
                 )}
                 {content.text && (
                     <Paragraph bottomMargin="0">{content.text}</Paragraph>

@@ -30,7 +30,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text}
 			</Paragraph>
-			<Heading size={3} bottomMargin="24">
+			<Heading size={2} template={3} left bottomMargin="24">
 				{content.header2}
 			</Heading>
 			<Paragraph big bottomMargin="24">
@@ -40,6 +40,7 @@ const AboutSection = ({ className, content }) => (
 				content={content.list}
 				color={color.green3}
 				curve
+				paragraphHeader
 				curveColor={color.orange2}
 				rounded
 				bottomMargin="24"
@@ -48,12 +49,13 @@ const AboutSection = ({ className, content }) => (
 				content={content.list2}
 				color={color.babyblue3}
 				rounded
+				paragraphHeader
 				bottomMargin="24"
 			/>
 			<Paragraph big bottomMargin="48" mixed>
 				{parse(content.text3)}
 			</Paragraph>
-			<Heading size={3} bottomMargin="24">
+			<Heading size={2} template={3} left bottomMargin="24">
 				{content.header3}
 			</Heading>
 			<Paragraph big bottomMargin="24">
@@ -68,19 +70,19 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text5}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={3} template={4} bottomMargin="24">
 				{content.header4}
 			</Heading>
 			<Paragraph big bottomMargin="48" mixed>
 				{parse(content.text6)}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={3} template={4} bottomMargin="24">
 				{content.header5}
 			</Heading>
 			<Paragraph big bottomMargin="48">
 				{content.text7}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={3} template={4} bottomMargin="24">
 				{content.header6}
 			</Heading>
 			<Paragraph big bottomMargin="16" mixed>
@@ -89,7 +91,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text9}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={3} template={4} bottomMargin="24">
 				{content.header7}
 			</Heading>
 			<Paragraph big bottomMargin="16">
@@ -98,7 +100,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48" mixed>
 				{parse(content.text11)}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={3} template={4} bottomMargin="24">
 				{content.header8}
 			</Heading>
 			<Paragraph big bottomMargin="16">
@@ -113,7 +115,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48" mixed>
 				{parse(content.text15)}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={3} template={4} bottomMargin="24">
 				{content.header9}
 			</Heading>
 			<Paragraph big bottomMargin="16">

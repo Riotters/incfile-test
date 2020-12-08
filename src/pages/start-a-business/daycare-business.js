@@ -39,6 +39,7 @@ import TabsOvalTwoSvg from "../../images/ovals/bottom-right-transparent-green3.i
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/daycare-business";
 import { TabPanel } from "react-tabs";
+import CircleSvg from "../../images/chart-daycare.inline.svg";
 
 const DaycareBusiness = () => (
 	<Layout>
@@ -163,6 +164,7 @@ const DaycareBusiness = () => (
 							symbol="%"
 							textLine="Of customers for daycare businesses come from households with incomes ranging between $40,000 and $100,000"
 							withBg={true}
+							SvgChart={CircleSvg}
 						/>
 
 						<Adventages

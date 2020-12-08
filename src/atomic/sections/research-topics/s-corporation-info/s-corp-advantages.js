@@ -35,6 +35,7 @@ const AboutSection = ({ className, content }) => (
 				content={content.list}
 				color={color.purple2}
 				rounded
+				paragraphHeader
 				bottomMargin="40"
 			/>
 			<IconListColorBox
@@ -43,18 +44,21 @@ const AboutSection = ({ className, content }) => (
 				curve
 				curveColor={color.green2}
 				rounded
+				paragraphHeader
 				bottomMargin="40"
 			/>
 			<IconListColorBox
 				content={content.list3}
 				color={color.babyblue2}
 				rounded
+				paragraphHeader
 				bottomMargin="40"
 			/>
 			<IconListColorBox
 				content={content.list4}
 				color={color.green2}
 				curve
+				paragraphHeader
 				curveColor={color.orange2}
 				rounded
 				bottomMargin="24"

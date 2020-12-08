@@ -29,7 +29,7 @@ const AboutSection = ({ className, content }) => (
             <OvalSVG />
         </Oval>
         <ImageContent image="main-header-object-amendment-name-change">
-            <Heading size={3} bottomMargin="24">{content.header}</Heading>
+            <Heading size={2} template={3} left bottomMargin="24">{content.header}</Heading>
             {console.log(content)}
             <Paragraph big mixed bottomMargin="40" >
             {parse(content.text2)}

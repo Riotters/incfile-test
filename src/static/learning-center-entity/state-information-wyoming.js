@@ -1257,7 +1257,7 @@ export const agents = [
       },
       {
         content: {
-          text: "Start Your S Corp with Incfile",
+          text: "Start Your C Corp with Incfile",
           url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
         },
         theme: "primary56",
@@ -2030,7 +2030,8 @@ export const afterFormation = [
   },
   {
     type: "text",
-    content: "Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a>and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/ manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
+    content:
+      "Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a>and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/ manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
     marginBottom: 48,
   },
   {
@@ -2348,13 +2349,14 @@ export const afterFormation = [
   {
     type: "header",
     content: "Start a Business Checklist",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "If you want to track your progress in getting your new business set up properly, we have a great virtual <a href='/'>Start a Business Checklist</a> that includes everything you need to do to launch your business. It even features downloadable PDFs you can access to download and print.",
+      "If you want to track your progress in getting your new business set up properly, we have a great virtual <a href='/starting-a-business-checklist/'>Start a Business Checklist</a> that includes everything you need to do to launch your business. It even features downloadable PDFs you can access to download and print.",
     marginBottom: 24,
   },
 ];

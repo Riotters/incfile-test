@@ -63,7 +63,7 @@ const AboutSection = ({ className, content }) => (
 					<NumberSpan>{1}</NumberSpan>
 				</Circle>
 			</AbsoluteCircle>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header2}
 			</Heading>
 			<Paragraph big bottomMargin="24">
@@ -89,7 +89,7 @@ const AboutSection = ({ className, content }) => (
 					<NumberSpan>{2}</NumberSpan>
 				</Circle>
 			</AbsoluteCircle>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header3}
 			</Heading>
 			<Paragraph big bottomMargin="16">
@@ -109,7 +109,7 @@ const AboutSection = ({ className, content }) => (
 					<NumberSpan>{3}</NumberSpan>
 				</Circle>
 			</AbsoluteCircle>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header4}
 			</Heading>
 			<Paragraph big bottomMargin="16">
@@ -132,7 +132,7 @@ const AboutSection = ({ className, content }) => (
 					<NumberSpan>{4}</NumberSpan>
 				</Circle>
 			</AbsoluteCircle>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header5}
 			</Heading>
 			<Paragraph big bottomMargin="24">
@@ -142,12 +142,14 @@ const AboutSection = ({ className, content }) => (
 				content={content.list2}
 				color={color.orange3}
 				rounded
+				paragraphHeader
 				bottomMargin="24"
 			/>
 			<IconListColorBox
 				content={content.list3}
 				color={color.green3}
 				rounded
+				paragraphHeader
 				bottomMargin="48"
 			/>
 			<AbsoluteCircle imageShadowColor={shadow.white1}>
@@ -161,7 +163,7 @@ const AboutSection = ({ className, content }) => (
 					<NumberSpan>{5}</NumberSpan>
 				</Circle>
 			</AbsoluteCircle>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header6}
 			</Heading>
 			<Paragraph big bottomMargin="16" mixed>
@@ -181,7 +183,7 @@ const AboutSection = ({ className, content }) => (
 					<NumberSpan>{6}</NumberSpan>
 				</Circle>
 			</AbsoluteCircle>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header7}
 			</Heading>
 			<Paragraph big bottomMargin="16" mixed>
@@ -201,7 +203,7 @@ const AboutSection = ({ className, content }) => (
 					<NumberSpan>{7}</NumberSpan>
 				</Circle>
 			</AbsoluteCircle>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header8}
 			</Heading>
 			<Paragraph big bottomMargin="16">
@@ -221,13 +223,13 @@ const AboutSection = ({ className, content }) => (
 					<NumberSpan>{8}</NumberSpan>
 				</Circle>
 			</AbsoluteCircle>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header9}
 			</Heading>
 			<Paragraph big bottomMargin="48" mixed>
 				{parse(content.text17)}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header10}
 			</Heading>
 			<Paragraph big bottomMargin="24" mixed>
