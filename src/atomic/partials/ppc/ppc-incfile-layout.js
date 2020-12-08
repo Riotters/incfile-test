@@ -121,8 +121,8 @@ const PPCIncfileLayout = ({
                 </RatingRow>
             </Top>
             <Opinions content={opinions} customers={customers} />
-            <Choose content={choose} />
-            <Care content={care} />
+            <Choose content={choose} stateName={state?.name ? state.name : ''} />
+            <Care content={care} showQuotes={true} />
             <Rocket
                 externalLink
                 textHeading={content.rocket.header}
@@ -160,5 +160,17 @@ PPCIncfileLayout.defaultProps = {
             text1: `Getting started is easy. Click the Get Started button below. <br>Fill out the basic form steps and just minutes from now you <br>will have your new LLC.`,
             textButton: `Get Started`
         }
-    }
+    },
+    quotes: [
+        {
+            text: `I am very satisfied with the services I received from Incfile. My business has been using this service for 3 years, keeping me updated on all facets pertaining to business.`,
+            author: `Linda`,
+            state: ``,
+        },
+        {
+            text: `Everyone at IncFile has been first class and quick to respond to my service needs. I appreciate you going above and beyond and taking the time to educate me.`,
+            author: `Tim`,
+            state: ``,
+        },
+    ]
 }

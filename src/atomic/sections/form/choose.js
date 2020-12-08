@@ -6,6 +6,7 @@ import TextCenterLayout from "../../partials/heading-center";
 import { gradient } from "../../atoms/styles/colors";
 import TopImageBox from "../../molecules/mixed-blocks/top-image-box";
 import ContentCenter from "../../partials/content-center";
+import { replace } from "lodash";
 
 const Choose = styled.section`
 	position: relative;
@@ -58,37 +59,40 @@ const Grid = styled.div`
 	}
 `;
 
-const ChooseSection = ({ className, content }) => (
-	<Choose>
-		<Oval
-			className="oval"
-			height="570"
-			width="570"
-			top="0"
-			right="0"
-			zIndex="0"
-		>
-			<OvalSVG />
-		</Oval>
-		<TextCenterLayout
-			headline={content.header}
-			headlineWidth="770"
-			text={content.text}
-			textWidth="770"
-		/>
-		<ContentCenter>
-			<Grid>
-				{content.boxes.map((box) => (
-					<TopImageBox
-						content={box}
-						image={box.image}
-						color={box.color}
-						padding="16px 16px 56px"
-					/>
-				))}
-			</Grid>
-		</ContentCenter>
-	</Choose>
-);
+const ChooseSection = ({ className, content, stateName }) => {
+    const mixText = replace(content.text, `[STATE_NAME]`, stateName);
+    return (
+        <Choose>
+            <Oval
+                className="oval"
+                height="570"
+                width="570"
+                top="0"
+                right="0"
+                zIndex="0"
+            >
+                <OvalSVG />
+            </Oval>
+            <TextCenterLayout
+                headline={content.header}
+                headlineWidth="770"
+                text={mixText}
+                textWidth="770"
+            />
+            <ContentCenter>
+                <Grid>
+                    {content.boxes.map((box) => (
+                        <TopImageBox
+                            content={box}
+                            image={box.image}
+                            color={box.color}
+                            padding="16px 16px 56px"
+                        />
+                    ))}
+                </Grid>
+            </ContentCenter>
+        </Choose>
+    );
+};
 
 export default ChooseSection;

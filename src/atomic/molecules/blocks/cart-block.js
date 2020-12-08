@@ -59,16 +59,35 @@ const RatingHeader = styled(Link)`
 const CartBlock = () => {
   const [fiveStarsNumber, setFiveStarsNumber] = React.useState(0);
 
-  React.useEffect(() => {
-    getAggregrateReviews().then((data) => {
-        setFiveStarsNumber(formatNumber(data["total_reviews"]));
+    React.useEffect(() => {
+        if (typeof window !== 'undefined') {
+            let _totalReviews = 0;
 
-        if (document.getElementById('js_dynamic_total_review')) {
-            const jsDynamicTotalReviews = document.getElementById('js_dynamic_total_review');
-            jsDynamicTotalReviews.innerHTML = formatNumber(data["total_reviews"]);
+            if (sessionStorage.getItem('__total_reviews')) {
+                _totalReviews = sessionStorage.getItem('__total_reviews');
+                setFiveStarsNumber(formatNumber(_totalReviews));
+            } else {
+                getAggregrateReviews().then((data) => {
+                    setFiveStarsNumber(formatNumber(data["total_reviews"]));
+                    _totalReviews = data['total_reviews'];
+                    sessionStorage.setItem('__total_reviews', _totalReviews);
+                });
+            }
+
+            if (document.getElementById('js_dynamic_total_review')) {
+                const jsDynamicTotalReviews = document.getElementById('js_dynamic_total_review');
+                jsDynamicTotalReviews.innerHTML = formatNumber(_totalReviews);
+            }
         }
-    });
-  }, []);
+        // getAggregrateReviews().then((data) => {
+        //     setFiveStarsNumber(formatNumber(data["total_reviews"]));
+
+        //     if (document.getElementById('js_dynamic_total_review')) {
+        //         const jsDynamicTotalReviews = document.getElementById('js_dynamic_total_review');
+        //         jsDynamicTotalReviews.innerHTML = formatNumber(data["total_reviews"]);
+        //     }
+        // });
+    }, []);
 
   return (
     <RatingBox href="https://www.shopperapproved.com/reviews/IncFile.com" target="_blank" rel="noopener noreferrer">
