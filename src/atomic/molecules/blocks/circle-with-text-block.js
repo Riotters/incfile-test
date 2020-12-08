@@ -69,7 +69,7 @@ const TextInside = styled.div`
     font-size: 48px;
     color: black;
     line-height: 56px;
-    font-family: MarkPro-Bold, sans-serif;
+    font-family: MarkPro, sans-serif;
     font-weight: bold;
     
     span {
