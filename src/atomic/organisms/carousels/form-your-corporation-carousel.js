@@ -6,7 +6,7 @@ import Whitebox from "../../atoms/boxes/white-box";
 import { color } from "../../atoms/styles/colors";
 import { shadow } from "../../atoms/styles/shadows";
 import { Paragraph } from "../../atoms/typography/paragraph";
-import { Heading } from "../../atoms/typography/heading";
+import Star from "../../../images/icons/star.inline.svg";
 import Image from "../../atoms/image/image";
 import Button from "../../molecules/buttons/additional";
 
@@ -163,6 +163,9 @@ const ImageWrapper = styled.div`
 	background-color: ${color.orange3};
 `;
 
+const WrapperStars = styled.div`
+`
+
 const responsive = {
 	all: {
 		breakpoint: { max: 9999, min: 1 },
@@ -190,11 +193,21 @@ const SlideReviews = ({ content }) => (
 				showDots
 				renderDotsOutside
 			>
-				{content.map((item) => (
-					<Whitebox className="slide__item" flex>
-						<ImageWrapper>
-							<Image filename={item.photo} />
-						</ImageWrapper>
+				{content.map((item, i) => (
+					<Whitebox className="slide__item" flex key={i}>
+                        {item.star
+                            ? <WrapperStars>
+                                <Star />
+                                <Star />
+                                <Star />
+                                <Star />
+                                <Star />
+                            </WrapperStars>
+                            : <ImageWrapper>
+                                <Image filename={item.photo} />
+                            </ImageWrapper>
+                        }
+
 						<Name>{item.name}</Name>
 						<State>{item.city}</State>
 						<Paragraph big bottomMargin="0">

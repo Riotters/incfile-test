@@ -1,4 +1,3 @@
-import { size } from "lodash";
 import { color } from "../../../atomic/atoms/styles/colors";
 
 export const top = {
