@@ -142,12 +142,14 @@ const AboutSection = ({ className, content }) => (
 				content={content.list2}
 				color={color.orange3}
 				rounded
+				paragraphHeader
 				bottomMargin="24"
 			/>
 			<IconListColorBox
 				content={content.list3}
 				color={color.green3}
 				rounded
+				paragraphHeader
 				bottomMargin="48"
 			/>
 			<AbsoluteCircle imageShadowColor={shadow.white1}>

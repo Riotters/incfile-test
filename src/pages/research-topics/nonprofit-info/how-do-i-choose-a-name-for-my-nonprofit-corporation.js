@@ -18,6 +18,8 @@ import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
 import { about } from "../../../static/research-topics/nonprofit-info/nonprofit-corp-name";
 import { related } from "../../../static/research-topics/nonprofit-info";
+import {HeadingP} from "../../../atomic/atoms/typography/heading-as-p";
+import {Heading} from "../../../atomic/atoms/typography/heading";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';
@@ -41,8 +43,8 @@ const HelpCenter = () => {
         <Layout>
             <SEO title="How do I choose a name for my Nonprofit Corporation?" description="Learn about the key differences between nonprofit and not-for-profit organizations, including legal status, purpose, tax exemption and more." />
             <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
-                <h1>{top.header}</h1>
-                <p>{top.text}</p>
+                <Heading size={2} template={1} left>{top.header}</Heading>
+                <HeadingP size={3}>{top.text}</HeadingP>
                 <Searchbar />
             </Top>
             <About content={about} />
