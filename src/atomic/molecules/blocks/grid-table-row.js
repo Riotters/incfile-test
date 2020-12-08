@@ -107,72 +107,94 @@ const ListItem = styled(Paragraph)`
 `;
 
 const GridTableRow = ({
-	className,
-	content,
-	header,
-	headerSize,
-	list,
-	columns,
-	textCenter,
-	noSeparator,
-	badge,
+    className,
+    content,
+    header,
+    headerSize,
+    headerSizeTemplate,
+    list,
+    columns,
+    textCenter,
+    noSeparator,
+    badge,
 }) => (
-	<Wrapper className={className} columns={columns}>
-		{content.map((item, index) => (
-			<Cell
-				textCenter={textCenter}
-				noSeparator={noSeparator}
-				key={index}
-				badge={badge ? badge[index] : false}
-			>
-				{header &&
-					item !== "incfile-logo" &&
-					item !== "legalzoom-logo" &&
-					item !== "zenbusiness-logo" &&
-					item !== "rocket-lawyer-logo" && (
-						<Heading size={headerSize ? headerSize : "4"} bottomMargin="0">
-							{item}
-						</Heading>
-					)}
-				{list &&
-					item !== "" &&
-					item !== "incfile-logo" &&
-					item !== "legalzoom-logo" &&
-					item !== "zenbusiness-logo" &&
-					item !== "rocket-lawyer-logo" &&
-					item !== "check-green" &&
-					item !== "check-red" && <ListItem bottomMargin="0">{item}</ListItem>}
-				{!header &&
-					!list &&
-					item !== "" &&
-					item !== "incfile-logo" &&
-					item !== "legalzoom-logo" &&
-					item !== "zenbusiness-logo" &&
-					item !== "rocket-lawyer-logo" &&
-					item !== "check-green" &&
-					item !== "check-red" && (
-						<Paragraph mixed bottomMargin="0">
-							{parse(item)}
-						</Paragraph>
-					)}
-				{item === "check-green" && <CheckSVG />}
-				{item === "check-red" && <ExSVG />}
-				{item === "incfile-logo" && (
-					<Image className="incfile-logo" filename="incfile-logo-3483" />
-				)}
-				{item === "legalzoom-logo" && (
-					<Image className="legalzoom-logo" filename="legalzoom-logo-3482" />
-				)}
-				{item === "zenbusiness-logo" && (
-					<Image className="zenbusiness-logo" filename="zenbusiness-logo" />
-				)}
-				{item === "rocket-lawyer-logo" && (
-					<Image className="rocket-lawyer-logo" filename="rocket-lawyer-logo" />
-				)}
-				{item === "" && <IconCircle theme="empty" circleColor="#E7E7E7" />}
-			</Cell>
-		))}
-	</Wrapper>
+    <Wrapper className={className} columns={columns}>
+        {content.map((item, index) => (
+            <Cell
+                textCenter={textCenter}
+                noSeparator={noSeparator}
+                key={index}
+                badge={badge ? badge[index] : false}
+            >
+                {console.log(badge && badge[index])}
+                {header &&
+                    item !== "incfile-logo" &&
+                    item !== "legalzoom-logo" &&
+                    item !== "zenbusiness-logo" &&
+                    item !== "rocket-lawyer-logo" && (
+                        <Heading
+                            size={headerSize ? headerSize : "4"}
+                            template={headerSizeTemplate}
+                            bottomMargin="0"
+                        >
+                            {item}
+                        </Heading>
+                    )}
+                {list &&
+                    item !== "" &&
+                    item !== "incfile-logo" &&
+                    item !== "legalzoom-logo" &&
+                    item !== "zenbusiness-logo" &&
+                    item !== "rocket-lawyer-logo" &&
+                    item !== "check-green" &&
+                    item !== "check-red" && (
+                        <ListItem bottomMargin="0">{item}</ListItem>
+                    )}
+                {!header &&
+                    !list &&
+                    item !== "" &&
+                    item !== "incfile-logo" &&
+                    item !== "legalzoom-logo" &&
+                    item !== "zenbusiness-logo" &&
+                    item !== "rocket-lawyer-logo" &&
+                    item !== "check-green" &&
+                    item !== "check-red" && (
+                        <Paragraph mixed bottomMargin="0">
+                            {parse(item)}
+                        </Paragraph>
+                    )}
+                {item === "check-green" && <CheckSVG />}
+                {item === "check-red" && <ExSVG />}
+                {item === "incfile-logo" && (
+                    <Image
+                        className="incfile-logo"
+                        filename="incfile-logo-3483"
+                    />
+                )}
+                {item === "legalzoom-logo" && (
+                    <Image
+                        className="legalzoom-logo"
+                        filename="legalzoom-logo-3482"
+                    />
+                )}
+                {item === "zenbusiness-logo" && (
+                    <Image
+                        className="zenbusiness-logo"
+                        filename="zenbusiness-logo"
+                    />
+                )}
+                {item === "rocket-lawyer-logo" && (
+                    <Image
+                        className="rocket-lawyer-logo"
+                        filename="rocket-lawyer-logo"
+                    />
+                )}
+                {item === "" && (
+                    <IconCircle theme="empty" circleColor="#E7E7E7" />
+                )}
+            </Cell>
+        ))}
+    </Wrapper>
 );
 
 export default GridTableRow;

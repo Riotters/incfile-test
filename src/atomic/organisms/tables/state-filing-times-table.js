@@ -56,14 +56,20 @@ const Wrapper = styled.div`
 	}
 `;
 
-const TaxReturnTable = ({ className, content }) => {
+const TaxReturnTable = ({
+	className,
+	headerSize = 2,
+	headerSizeTemplate = 5,
+	content,
+}) => {
 	return (
 		<Wrapper className={className}>
 			<GridTableRow
 				className="head"
 				content={content.headers}
 				header
-				headerSize="5"
+				headerSize={headerSize}
+				headerSizeTemplate={headerSizeTemplate}
 				columns="1fr 1fr 1fr 1fr"
 			/>
 			{content.rows.map((row, i) => (

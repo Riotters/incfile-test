@@ -34,7 +34,7 @@ const SlidersCard = styled.div`
     padding: 64px 56px;
   }
 
-  h4 {
+  h3 {
     text-align: center;
   }
 `;
@@ -200,13 +200,13 @@ const Cards = ({ className, content }) => {
       <Whitebox bottomMargin="8px">
         <SlidersCard>
           <div>
-            <Heading size="4" bottomMargin="32">
+            <Heading size="3" template={4} bottomMargin="32">
               What’s your estimated yearly net income for the business?
             </Heading>
             <AmountSlider initValue={0} maxValue={100000} step={500} description="Estimated yearly income" field="slideIncome" onChange={handleCalculator} />
           </div>
           <div>
-            <Heading size="4" bottomMargin="32">
+            <Heading size="3" template={4} bottomMargin="32">
               What is the salary you would pay yourself as S Corporation?
             </Heading>
             <AmountSlider initValue={salaryRepeated} maxValue={maxValueSlideRight} step={500} description="The salary would pay yourself" field="slideSalary" onChange={handleCalculator} />

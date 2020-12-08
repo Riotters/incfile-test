@@ -51,7 +51,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text8}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header2}
 			</Heading>
 			<Paragraph big bottomMargin="16">
@@ -60,7 +60,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text10}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header3}
 			</Heading>
 			<Paragraph big bottomMargin="16">
@@ -69,7 +69,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text12}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header4}
 			</Heading>
 			<Paragraph big bottomMargin="16">
@@ -81,7 +81,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text15}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header5}
 			</Heading>
 			<Paragraph big bottomMargin="24">
@@ -98,7 +98,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text17}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header6}
 			</Heading>
 			<Paragraph big bottomMargin="16">
@@ -107,7 +107,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text19}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header7}
 			</Heading>
 			<Paragraph big bottomMargin="16">
@@ -128,7 +128,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text25}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header8}
 			</Heading>
 			<Paragraph big bottomMargin="48">

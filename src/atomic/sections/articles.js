@@ -11,7 +11,7 @@ import Oval from "../../atomic/atoms/icons/oval";
 import OvalSVG from "../../images/ovals/top-right-transparent-purple2.inline.svg";
 import { getRelatedPosts } from "../../api/Api";
 import HTMLReactParser from "html-react-parser";
-import { Heading } from "../atoms/typography/heading";
+import {Heading} from "../atoms/typography/heading";
 
 const Wrapper = styled.div`
 	padding-top: 80px;
@@ -37,19 +37,19 @@ const PinkCurve = styled.div`
 `;
 
 const CarouselWrapper = styled.div`
-	margin: 0 -15px;
-	overflow: hidden;
-	padding: 0 10px 42px 10px;
-
-	@media (max-width: 768px) {
-		contact/new-sales .react-multi-carousel-list {
-			overflow: visible;
-
-			.react-multi-carousel-item {
-				opacity: 0;
-			}
-		}
-	}
+  margin: 0 -15px;
+  overflow: hidden;
+  padding: 0 10px 42px 10px;
+  
+  @media (max-width: 768px) {
+    .react-multi-carousel-list {
+      overflow: visible;
+  
+      .react-multi-carousel-item {
+        opacity: 0;
+      }
+    }
+  }
 
 	.react-multi-carousel-list {
 		overflow: visible;

@@ -19,7 +19,7 @@ const Benefits = ({ bgImage, page }) => {
   return (
     <Wrapper bgImage={bgImage}>
       <ContentCenter>
-        <Heading size="3" style={{ textAlign: "center" }}>
+        <Heading size="2" template={3} style={{ textAlign: "center" }}>
           Providing everything you need when you need it
         </Heading>
         <Paragraph big bottomMargin="48" maxWidth="770" style={{ textAlign: "center" }}>

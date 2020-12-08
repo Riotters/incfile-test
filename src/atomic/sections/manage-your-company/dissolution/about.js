@@ -34,7 +34,7 @@ const AboutSection = ({ className, content }) => (
         {parse(content.text6)}
       </Paragraph>
       {/* <ArrowLink bottomMargin="72" content={content.link} /> */}
-      <Heading size={3} bottomMargin="24">
+      <Heading size={2} template={3} left bottomMargin="24">
         {content.header}
       </Heading>
       <Paragraph big bottomMargin="40">

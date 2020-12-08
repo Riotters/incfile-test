@@ -27,7 +27,7 @@ const AboutSection = ({ className, content }) => (
     </Oval>
     <ImageContent image="fqualification">
         {content.header && (
-            <Heading size={3} bottomMargin="24">
+            <Heading size={2} template={3} left bottomMargin="24">
                 {parse(content.header)}
             </Heading>
         )}
@@ -43,7 +43,7 @@ const AboutSection = ({ className, content }) => (
             </Paragraph>
         )}
         {content.header2 && (
-            <Heading size={3} bottomMargin="32">
+            <Heading size={2} template={3} left bottomMargin="32">
                 {parse(content.header2)}
             </Heading>
         )}

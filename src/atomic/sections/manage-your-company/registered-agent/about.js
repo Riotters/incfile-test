@@ -31,11 +31,11 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="32">
         {content.text}
       </Paragraph>
-      <IconTextColorBox color={color.orange3} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve />
+      <IconTextColorBox color={color.orange3} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve headingSize={2} left />
       <Paragraph big bottomMargin="40">
         {content.text2}
       </Paragraph>
-      <Heading size={3} bottomMargin="24">
+      <Heading size={2} template={3} left bottomMargin="24">
         {content.header}
       </Heading>
       <Paragraph big bottomMargin="72">
