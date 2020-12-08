@@ -186,7 +186,7 @@ const PricingCard = ({
 					<span>{content.variant}</span>
 				</Box>
 			)}
-			<Heading size={3} template={4} marginBottom="16">
+			<Heading size={3} template={4} center marginBottom="16">
 				{content.header}
 			</Heading>
 			<Paragraph bottomMargin="8" className="package-description">
