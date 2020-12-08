@@ -16,6 +16,8 @@ import { top, rocket, categories, service, tools } from "../../../static/learnin
 import { about } from "../../../static/research-topics/s-corporation-info/corp-managing";
 import { related } from "../../../static/research-topics/s-corporation-info";
 import { Helmet } from "react-helmet";
+import {HeadingP} from "../../../atomic/atoms/typography/heading-as-p";
+import {Heading} from "../../../atomic/atoms/typography/heading";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';
@@ -43,8 +45,8 @@ const HelpCenter = () => {
     Incorporating in every state."
             />
             <Top imageName="mrs-bulb-help-center-article" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
-                <h1>{top.header}</h1>
-                <p>{top.text}</p>
+                <Heading size={2} template={1} left>{top.header}</Heading>
+                <HeadingP size={3}>{top.text}</HeadingP>
                 <Searchbar />
             </Top>
             <About content={about} />

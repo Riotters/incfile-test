@@ -19,6 +19,7 @@ import {
 	tools,
 } from "../../../static/learning-center-entity/help-center-article";
 import { related } from "../../../static/research-topics/general-research";
+import {HeadingP} from "../../../atomic/atoms/typography/heading-as-p";
 
 const HelpCenter = () => (
 	<Layout>
@@ -34,11 +35,11 @@ const HelpCenter = () => (
 			<Heading size={2} template={1} left>
 				{top.header}
 			</Heading>
-			<p>{top.text}</p>
+			<HeadingP size={3}>{top.text}</HeadingP>
 			<Searchbar />
 		</Top>
 		{/* <About content={about} /> */}
-		<Related content={related} />
+		<Related content={related} headingSize={1} headingSizeTemplate={2} />
 		<Categories content={categories} />
 		<Service content={service} />
 		<Tools content={tools} />

@@ -11,6 +11,7 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Path from "../../../molecules/blocks/research-topics-path";
+import {PHeading} from "../../../atoms/typography/p-as-heading";
 
 const About = styled.section`
 	position: relative;
@@ -42,9 +43,9 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text5}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<PHeading size={4} bottomMargin="24">
 				{content.header2}
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="16">
 				{content.text6}
 			</Paragraph>
@@ -52,9 +53,9 @@ const AboutSection = ({ className, content }) => (
 				{content.text7}
 			</Paragraph>
 			<NumericList content={content.list} bottomMargin="48" />
-			<Heading size={4} bottomMargin="24">
+			<PHeading size={4} bottomMargin="24">
 				{content.header3}
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="16">
 				{content.text8}
 			</Paragraph>

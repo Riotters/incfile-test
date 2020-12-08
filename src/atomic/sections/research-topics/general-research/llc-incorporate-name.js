@@ -48,7 +48,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text5}
 			</Paragraph>
-			<Heading size={2} template={4} left bottomMargin="24">
+			<Heading size={3} template={4} left bottomMargin="24">
 				{content.header4}
 			</Heading>
 			<Paragraph big bottomMargin="24">
@@ -60,7 +60,7 @@ const AboutSection = ({ className, content }) => (
 				rounded
 				bottomMargin="48"
 			/>
-			<Heading size={2} template={4} left bottomMargin="24">
+			<Heading size={3} template={4} left bottomMargin="24">
 				{content.header5}
 			</Heading>
 			<Paragraph big bottomMargin="16" mixed>
@@ -97,6 +97,7 @@ const AboutSection = ({ className, content }) => (
 				content={content.list2}
 				color={color.green3}
 				rounded
+				paragraphHeader
 				bottomMargin="48"
 			/>
 			<Heading size={2} template={4} left bottomMargin="24">
