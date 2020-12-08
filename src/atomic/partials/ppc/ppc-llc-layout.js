@@ -22,18 +22,18 @@ const PPCLLCLayout = ({ stateCode, videoID, vimeo, quotes }) => {
     const stateName = state ? state.name : '';
     const buttonInfo = {
         text: `Launch My LLC`,
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=${stateCode}`,
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=${stateCode ?? ''}`,
     }
 
     const top = {
-        header: `The Fastest & Easiest Way To Set Up Your ${state.name} LLC`,
+        header: `The Fastest & Easiest Way To Set Up Your ${stateName} LLC`,
 	    text: `Join Over <span>500,000</span> Businesses Launched With incfile Since <span>2004</span>`,
     }
 
     const whyChooseIncfile = {
-        header: `Why Choose IncFile For Your ${state.name} LLC?`,
+        header: `Why Choose IncFile For Your ${stateName} LLC?`,
         text1: "We're entrepreneurs - just like you.",
-        text2: `An ${state.name} LLC can be the fastest and easiest way to start a business in ${state.name}.`,
+        text2: `An ${stateName} LLC can be the fastest and easiest way to start a business in ${stateName}.`,
         text3: `We make registering a company as easy as possible, so you can focus on the important things. Beyond that, we have a full suite of startup services (like banking and bookkeeping), which means Incfile not only helps you get started, but supports you in your continued success as your one-stop shop.`,
         text4: `Our mission is to provide you with a superior and modern experience at an unparalleled value.`
     }
@@ -42,8 +42,8 @@ const PPCLLCLayout = ({ stateCode, videoID, vimeo, quotes }) => {
         <>
             <SEO
                 robots="noindex, follow"
-                title={`${state.name} LLC Formation`}
-                description={`Form an LLC (Limited Liability Company) in ${state.name}`}
+                title={`${stateName} LLC Formation`}
+                description={`Form an LLC (Limited Liability Company) in ${stateName}`}
             />
 
             <Top
@@ -79,11 +79,11 @@ const PPCLLCLayout = ({ stateCode, videoID, vimeo, quotes }) => {
             <Care content={care} />
             <Rocket
                 externalLink
-                textHeading={`Easily Start Your <br>${state.name} LLC Today`}
+                textHeading={`Easily Start Your <br>${stateName} LLC Today`}
                 text1="There's A Reason More Than 500,000 <br>Businesses Have Started With Incfile"
                 text2=" "
                 textButton="Launch My LLC"
-                url={`?entityType=LLC&entityState=${stateCode}`}
+                url={`?entityType=LLC&entityState=${stateCode ?? ''}`}
             />
         </>
     );

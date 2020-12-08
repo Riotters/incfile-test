@@ -65,14 +65,14 @@ const CartBlock = () => {
 
             if (sessionStorage.getItem('__total_reviews')) {
                 _totalReviews = sessionStorage.getItem('__total_reviews');
-                setFiveStarsNumber(formatNumber(_totalReviews));
             } else {
                 getAggregrateReviews().then((data) => {
-                    setFiveStarsNumber(formatNumber(data["total_reviews"]));
                     _totalReviews = data['total_reviews'];
                     sessionStorage.setItem('__total_reviews', _totalReviews);
                 });
             }
+
+            setFiveStarsNumber(formatNumber(_totalReviews));
 
             if (document.getElementById('js_dynamic_total_review')) {
                 const jsDynamicTotalReviews = document.getElementById('js_dynamic_total_review');
