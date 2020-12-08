@@ -39,7 +39,7 @@ import UsefulTools from "../../atomic/partials/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
-import RingSvg from "../../images/rings-2.inline.svg";
+import RingSvg from "../../images/chart-beauty-salon.inline.svg";
 import Adventages from "../../components/adventages";
 import ListBoxWithIcon from "../../atomic/molecules/lists/list-box-with-icon";
 import TabOvalSvg from "../../images/ovals/bottom-left-transparent-pink.inline.svg";

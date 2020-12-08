@@ -19,7 +19,7 @@ import Adventages from "../../components/adventages";
 import CkeckText from "../../components/static-check/text-only";
 import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
 import { RingText, tabs } from "../../static/type-of-business/digital-nomad";
-import RingSvg from "../../images/rings-3.inline.svg";
+import RingSvg from "../../images/chart-digital-nomad.inline.svg";
 import JobsAnywhere from "../../atomic/sections/type-of-business/digital-nomad/jobs-anywhere";
 import OvalSvg from "../../images/ovals/bottom-right-transparent-babyblue2.inline.svg";
 import OvalSvg2 from "../../images/ovals/bottom-right-transparent-green3.inline.svg";

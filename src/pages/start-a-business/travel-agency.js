@@ -34,6 +34,7 @@ import OvalSvg2 from "../../images/ovals/bottom-left-transparent-orange.inline.s
 import Top from "../../atomic/partials/top";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
+import CircleSvg from "../../images/chart-travel-agency.inline.svg";
 
 const TravelAgency = () => (
 	<Layout>
@@ -234,6 +235,7 @@ in the U.S. by 2020"
 							textInsideCircle="60"
 							symbol="%"
 							textLine="Of travel agents report an increase in sales year over year"
+							SvgChart={CircleSvg}
 						/>
 
 						<Adventages
