@@ -10,7 +10,7 @@ import styled from "styled-components";
 import PanelWrapper from "../../atomic/organisms/tabs/panel";
 import { Heading } from "../../atomic/atoms/typography/heading";
 import { Paragraph } from "../../atomic/atoms/typography/paragraph";
-import SvgChart from "../../images/rings-2.inline.svg";
+import SvgChart from "../../images/chart-real-estate.inline.svg";
 import BusinessStructure from "../../atomic/sections/type-of-business/real-estate-business/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/real-estate-business/setting-business";
 import OrderNow from "../../atomic/sections/type-of-business/real-estate-business/order-now";

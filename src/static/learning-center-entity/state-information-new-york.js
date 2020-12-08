@@ -103,8 +103,9 @@ export const corporation = [
   {
     type: "header",
     content: "Choosing the Right Type of New York Corporation",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -116,7 +117,8 @@ export const corporation = [
     type: "header",
     content:
       "Should You Form an LLC, an S Corporation or a C Corporation in New York State?",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -133,6 +135,7 @@ export const corporation = [
   },
   {
     type: "svg-color-text-box",
+    header: 3,
     content: [
       {
         header: "New York Sole Proprietorships and Partnerships",
@@ -152,7 +155,7 @@ export const corporation = [
         svg: LockpadSVG,
         link: {
           text: "Learn how to create an LLC in New York",
-          url: "/",
+          url: "/new-york-llc/",
         },
         backgroundColor: color.babyblue2,
         shadowColor: shadow.babyblue2,
@@ -163,11 +166,11 @@ export const corporation = [
       {
         header: "New York S Corporations",
         text:
-          "You might choose to form a New York S Corporation because it’s a good compromise between the simplicity of the LLC and the complexity of the C Corporation. Note that NY S Corporations are subject to more rules and regulations than a NY LLC, but they can mean that you pay less tax.",
+          "A NY S Corporation is the middle-ground between a simple LLC and the more complex C Corporation. They have more complex regulations, taxation, compliance and legal requirements than an LLC, but they do provide tax advantages for their owners.",
         svg: ProcentSVG,
         link: {
-          text: "Learn how to create an LLC in New York",
-          url: "/",
+          text: "Learn about forming an S Corporation.",
+          url: "/what-is-s-corporation/",
         },
         backgroundColor: color.green2,
         shadowColor: shadow.green2,
@@ -182,7 +185,7 @@ export const corporation = [
         svg: BillSVG,
         link: {
           text: "Learn about forming a C Corporation",
-          url: "/",
+          url: "/what-is-c-corporation/",
         },
         backgroundColor: color.yellow2,
         shadowColor: shadow.yellow2,
@@ -194,28 +197,25 @@ export const corporation = [
     marginBottom: 24,
   },
   {
-    type: "colorbox",
-    icon: FolderProcentSVG,
-    header: "Other Entity Types",
-    text:
-      "There are some other business entity structures like nonprofits, Limited Liability Partnerships (LLPs) and B Corporations, but they will not be relevant for the majority of entrepreneurs.",
-    curve: true,
-    curveColor: color.blue1,
-    color: color.blue3,
-    marginBottom: 73,
-    buttons: [
+    type: "text",
+    content:
+      "There are some other business entity structures, including nonprofits, Limited Liability Partnerships (LLPs) and B Corporations, but they will not be relevant for the majority of entrepreneurs.",
+    marginBottom: 24,
+  },
+  {
+    button: [
       {
         content: {
-          text: "Start Your S-Corp",
-          url: "/",
+          text: "Start Your New York S-Corporation",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=NY`,
         },
         arrow: true,
         theme: "primary56",
       },
       {
         content: {
-          text: "Start Your C-Corp",
-          url: "/",
+          text: "Start Your New York C-Corporation",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=NY`,
         },
         arrow: true,
         theme: "primary56",
@@ -223,9 +223,16 @@ export const corporation = [
     ],
   },
   {
+    type: "header",
+    content: "The Advantages of Forming a Corporation in New York State",
+    size: 2,
+    template: 3,
+    marginBottom: 24,
+  },
+  {
     type: "list-dot",
     content: {
-      header: "Advantages of Forming a New York Corporation",
+      header: "",
       text: "New York corporations have several benefits for business owners. ",
       list: [
         "New York corporations provide the strongest form of liability protection possible. They insulate your personal assets and finances from those of your business. ",
@@ -240,7 +247,8 @@ export const corporation = [
   {
     type: "header",
     content: "Choosing a New York S Corp or C Corp Over an LLC",
-    size: 4,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -262,9 +270,23 @@ export const corporation = [
     marginBottom: 24,
   },
   {
+    type: "list-dot",
+    content: {
+      header: "",
+      list: [
+        "Similarities: New York S Corporations and C Corporations have similar rules and regulations for liability, governance, management and ownership",
+        "Differences: Key differences are taxation and the ease of buying, selling and transferring stock",
+      ],
+    },
+    color: color.green3,
+    marginBottom: 48,
+    curve: false,
+  },
+  {
     type: "header",
     content: "Taxation Benefits of a New York S Corporation Over an LLC ",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -277,7 +299,7 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn about the tax benefits of S Corporations.",
-      url: "/",
+      url: "/research-topics/c-corporation-info/what-is-the-form-2553/",
     },
     marginBottom: 32,
   },
@@ -285,7 +307,7 @@ export const corporation = [
     type: "button",
     content: {
       text: "File From 2553 with the IRS",
-      url: "/",
+      url: "/s-corp-election-form",
     },
     theme: "primary56",
     marginBottom: 64,
@@ -293,8 +315,9 @@ export const corporation = [
   {
     type: "header",
     content:
-      "New York S Corporations and C Corporations Make It Much Easier to Transfer Stock and Ownership ",
-    size: 4,
+      "New York State S Corporations and C Corporations Make It Much Easier to Transfer Stock and Ownership",
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -304,10 +327,17 @@ export const corporation = [
     marginBottom: 24,
   },
   {
+    type: "header",
+    content:
+      "If You Want Maximum Flexibility for Buying and Selling Stock, Choose a New York State C Corporation",
+    size: 3,
+    template: 3,
+    marginBottom: 24,
+  },
+  {
     type: "list-dot",
     content: {
-      header:
-        "If You Want Maximum Flexibility for Buying and Selling Stock, Choose a New York State C Corporation",
+      header: "",
       text:
         "C Corporations provide certain benefits when it comes to buying, selling and transferring stock. Here are the rules for both S Corps and C Corps: ",
       list: [
@@ -325,22 +355,29 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn more about the differences between business entities",
-      url: "/",
+      url: "/start-your-company/",
     },
     marginBottom: 48,
   },
   {
+    type: "header",
+    content: "The Advantages of S Corporations in New York State",
+    size: 3,
+    template: 3,
+    marginBottom: 24,
+  },
+  {
     type: "list-dot",
     content: {
-      header: "Advantages of Opening an S Corporation in New York ",
+      header: "",
       text:
         "In addition to the general benefits above, NY S Corporations provide several other advantages: ",
       list: [
         "New York S Corporations can have up to 100 shareholders.",
         "Running an S Corporation in New York is simpler than running a C Corporation.",
         "It is easy to transfer ownership in an S Corporation by selling your stock.",
-        "In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax. Find out how this can save you money using our S Corporation Tax Calculator .",
-        "LLCs can <a href='/'>choose to be taxed as S Corporations</a> to take advantage of this.",
+        "In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax. Find out how this can save you money using our <a href='/s-corporation-tax-calculator/'>S Corporation Tax Calculator</a>.",
+        "LLCs can <a href='/research-topics/llc-info/can-a-limited-liability-company-llc-be-taxed-as-an-s-corporation/'>choose to be taxed as S Corporations</a> to take advantage of this.",
       ],
     },
     color: color.orange3,
@@ -352,14 +389,16 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn more about the advantages of forming an S Corporation. ",
-      url: "/",
+      url:
+        "/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/",
     },
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Advantages of Opening a C Corporation in New York ",
-    size: 4,
+    content: "The Advantages of C Corporations in New York State",
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -385,34 +424,10 @@ export const corporation = [
     curveColor: color.orange1,
   },
   {
-    type: "text",
-    content:
-      "When you incorporate a business as a corporation, the New York Division of Corporations will treat your business as a C Corporation by default. A C Corporation will become an S Corporation when all shareholders wish to change the corporation’s status to an S Corporation with the IRS. You can make this choice when you first form your New York corporation or at any time after you incorporate. ",
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "There are some similarities and some differences between S Corps and C Corps: ",
-    marginBottom: 24,
-  },
-  {
-    type: "list-dot",
-    content: {
-      list: [
-        "<strong>Similarities</strong>: New York S Corporations and C Corporations have similar rules and regulations for liability, governance, management and ownership",
-        "<strong>Differences</strong>: Key differences are taxation and the ease of buying, selling and transferring stock",
-      ],
-    },
-    color: color.orange3,
-    marginBottom: 48,
-    curve: true,
-    curveColor: color.orange1,
-  },
-  {
     type: "header",
     content: "Important Points About Forming a Corporation in New York ",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -432,15 +447,15 @@ export const corporation = [
     content: {
       text:
         "Learn what you need to do to create a New York S Corporation or C Corporation ",
-      url: "/",
+      url: "/new-york-corporation/start-a-ny-corporation/",
     },
     marginBottom: 24,
   },
   {
     type: "header",
-    content:
-      "Your State of New York Corporation Must Follow Certain Rules and Regulations ",
-    size: 4,
+    content: "Rules and Regulations for New York Corporations",
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -475,7 +490,7 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn about New York corporation requirements . ",
-      url: "/",
+      url: "/new-york-corporation/form-filling-permit-requirements/",
     },
     marginBottom: 24,
   },
@@ -483,7 +498,7 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn about New York corporation taxes and fees . ",
-      url: "/",
+      url: "/new-york-corporation/taxes-and-fees-for-your-corporation/",
     },
     marginBottom: 24,
   },
@@ -504,7 +519,7 @@ export const corporation = [
           header: "S Corporation",
           link: {
             text: "Incorporate now",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=NY`,
           },
         },
         noShadow: false,
@@ -517,7 +532,7 @@ export const corporation = [
           header: "C Corporation",
           link: {
             text: "Incorporate now",
-            url: "/",
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=NY`,
           },
         },
         noShadow: false,
@@ -526,7 +541,21 @@ export const corporation = [
     ],
   },
   {
+    type: "header",
+    content: "Detailed Information for Your New York State Corporation",
+    size: 2,
+    template: 3,
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content:
+      "You’ll find plenty more insight and guidance on the other pages of this guide, including:",
+    marginBottom: 24,
+  },
+  {
     type: "svg-color-text-box",
+    header: 3,
     content: [
       {
         header: "Forming Your New York Corporation",
@@ -534,7 +563,7 @@ export const corporation = [
           "The six steps you need to take to start a New York S Corporation or C Corporation.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/new-york-corporation/start-a-ny-corporation/",
         },
         svg: TodoSVG,
         backgroundColor: color.red2,
@@ -549,7 +578,7 @@ export const corporation = [
           "How to search the New York business registry of the NY Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a New York corporation name and more.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/new-york-corporation/how-to-name-your-corporation/",
         },
         svg: QuestionSVG,
         backgroundColor: color.orange3,
@@ -564,7 +593,7 @@ export const corporation = [
           "How to appoint a New York Registered Agent to your new corporation or change to a different Registered Agent. Includes information on Registered Agent rules and searching for New York Registered Agents.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/new-york-corporation/registered-agents-new-york/",
         },
         svg: IdSVG,
         backgroundColor: color.purple2,
@@ -579,7 +608,7 @@ export const corporation = [
           "How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and New York rules. Includes details of Employee Identification Numbers (EINs), New York and federal business licenses, New York Statement of Information reports and more.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/new-york-corporation/form-filling-permit-requirements/",
         },
         svg: BillPadSVG,
         backgroundColor: color.orange2,
@@ -595,7 +624,7 @@ export const corporation = [
           "How to understand the various taxes you will need to pay to the federal and New York government. Includes details of federal taxes like income and self-employment, and New York taxes like sales tax and income tax.",
         link: {
           text: "Learn more",
-          url: "/",
+          url: "/new-york-corporation/taxes-and-fees-for-your-corporation/",
         },
         svg: DollarUpSVG,
         backgroundColor: color.green2,
@@ -613,8 +642,9 @@ export const startCaCorp = [
   {
     type: "header",
     content: "How to Incorporate in NY",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -634,14 +664,14 @@ export const startCaCorp = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
@@ -651,13 +681,14 @@ export const startCaCorp = [
   {
     type: "header",
     content: "The Benefits of New York State Incorporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content: "Briefly, the benefits of forming a New York corporation are:",
-    marginBottom: 41,
+    marginBottom: 40,
   },
   {
     type: "list-dot",
@@ -684,42 +715,46 @@ export const startCaCorp = [
     type: "arrow-link",
     content: {
       text: "Learn about starting a New York LLC",
-      url: "/",
+      url: "/new-york-llc/",
     },
     marginBottom: 48,
   },
   {
     type: "header",
     content: "The Six Steps to Setting up Your New York Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "accordion",
+    header: 3,
     content: {
       items: [
         {
           question:
-            "Search For and Choose the Right Name for Your NY Corporation",
+            "1. Search For and Choose the Right Name for Your NY Corporation",
           list: [
             "You will need to choose a unique, distinct, original name for your New York corporation",
             "This name cannot be used by or confused with another business in New York",
             "The name of your business must end with “Corporation,” “Incorporated,” “Limited” or an abbreviation of one of these",
           ],
           text:
-            "<a href='/'>See if the name is available by searching for it on the New York Department of State website. </a>",
+            "<a href='https://appext20.dos.ny.gov/corp_public/CORPSEARCH.ENTITY_SEARCH_ENTRY'>See if the name is available by searching for it on the New York Department of State website. </a>",
           arrowLink: {
             text: "Learn how to name your New York corporation",
-            url: "/",
+            url: "/new-york-corporation/how-to-name-your-corporation/",
           },
         },
         {
-          question: "Provide an Official Address for Your NY State Corporation",
+          question:
+            "2. Provide an Official Address for Your NY State Corporation",
           answer:
             "Every New York State S Corporation or C Corporation must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address can be outside NY, but it cannot be a P.O. Box.",
         },
         {
-          question: "Assign a Registered Agent for Your New York Corporation",
+          question:
+            "3. Assign a Registered Agent for Your New York Corporation",
           answer:
             "Every New York corporation must have a “Registered Agent” who receives official legal and tax correspondence and has responsibility for filing reports with the New York Department of State. Your Registered Agent must have a physical street address in New York.<br/><br/>" +
             "A Registered Agent position for a New York S Corporation or C Corporation can be filled in several ways.<br><br>" +
@@ -734,11 +769,13 @@ export const startCaCorp = [
             "At Incfile, all of our packages include a New York Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.",
           arrowLink: {
             text: "Learn more about New York Registered Agents.",
-            url: "/",
+            url: "/new-york-corporation/registered-agents-new-york/",
           },
         },
         {
-          question: "Draft and File Certificate of Incorporation",
+          question: "4. Draft and File Certificate of Incorporation",
+          answer:
+            "The legal document required to create your new corporation is called the “Certificate of Incorporation.” You will need to gather various details for your New York filing with the department of state including:",
           list: [
             "The corporation’s name",
             "The corporation’s mailing address and street address",
@@ -748,20 +785,20 @@ export const startCaCorp = [
         },
         {
           question:
-            "File Your Certificate of Incorporation With the New York Department of State",
+            "5. File Your Certificate of Incorporation With the New York Department of State",
           text:
             "Once your Certificate of Incorporation document is drafted, you can file it with the New York Department of State. Filing your Certificate of Incorporation creates your New York corporation. You can do this online, mail in a form or have Incfile do it on your behalf.",
         },
         {
           question:
-            "Your NY Corporation Will Need to Meet Certain Legal and Compliance Requirements",
+            "6. Your NY Corporation Will Need to Meet Certain Legal and Compliance Requirements",
           answer:
             "Once your New York corporation has been created, you will need to get certain legal requirements in place. These include:",
           list: [
             "File IRS Small Business Tax Election Form 2553 if you want your NY business to be treated as an S Corporation. Any New York S Corporations formed through Incfile will also include a prepared Form 2553 that will be delivered with the state formation documents.",
             "Create and issue stock certificates to your shareholders.",
-            "Apply for business licenses and permits. You may require licenses from the state of New York, your county, township and various industry or federal bodies.",
-            "Get an Employer Identification Number (EIN).",
+            "Apply for <a href='/business-license-research-package/'>business licenses and permits</a>. You may require licenses from the state of New York, your county, township and various industry or federal bodies.",
+            "Get an <a href='/manage-your-company/tax-id-ein/'>Employer Identification Number (EIN)</a>.",
             "File for taxes with New York Department of Taxation and Finance.",
             "Get all formalities in place for employees, including unemployment, disability, payroll, insurance and taxes.",
             "Appoint a Board of Directors for the corporation.",
@@ -774,16 +811,37 @@ export const startCaCorp = [
     marginBottom: 48,
   },
   {
+    type: "buttons",
+    content: [
+      {
+        content: {
+          text: "Start Your S Corp with Incfile",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=NY`,
+        },
+        theme: "primary56",
+      },
+      {
+        content: {
+          text: "Start Your C Corp with Incfile",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=NY`,
+        },
+        theme: "primary56",
+      },
+    ],
+    marginBottom: 48,
+  },
+  {
     type: "header",
     content: "Starting a Corporation in NY — Useful Resources",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "arrow-link",
     content: {
       text: "New York Department of State website",
-      url: "/",
+      url: "https://www.dos.ny.gov/",
     },
     marginBottom: 24,
   },
@@ -791,7 +849,7 @@ export const startCaCorp = [
     type: "arrow-link",
     content: {
       text: "Corporation information from the New York Department of State",
-      url: "/",
+      url: "https://www.dos.ny.gov/corps/bus_entity_search.html",
     },
     marginBottom: 24,
   },
@@ -799,14 +857,16 @@ export const startCaCorp = [
     type: "arrow-link",
     content: {
       text: "Checking name availability for your New York corporation",
-      url: "/",
+      url:
+        "https://appext20.dos.ny.gov/corp_public/CORPSEARCH.ENTITY_SEARCH_ENTRY",
     },
     marginBottom: 52,
   },
   {
     type: "header",
     content: "Other Types of NY State Corporations",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -816,33 +876,27 @@ export const startCaCorp = [
     marginBottom: 52,
   },
   {
-    type: "header",
-    content: "Form a Professional New York S Corporation or C Corporation",
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "Some states, including New York, allow certain occupations to form “Professional Corporations.” These types of corporations may need special requirements and licensing. NY State does not list the specific professions that can form professional corporations, although the name of the corporation must end with the words “Professional Corporation” or the abbreviation “P.C.”",
-    marginBottom: 24,
-  },
-  {
-    type: "header",
-    content: "Form a Foreign LLC in New York",
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "A “foreign” filing is when you have a regular, domestic corporation in a state (typically the one where you first formed your business) and need the company to be able to operate in another state. This is where you would file a “Foreign Qualification” to the new state for your domestic corporation to be able to operate in both states. You must have an existing domestic corporation before you can file as a foreign corporation.",
-    marginBottom: 52,
+    type: `accordion`,
+    header: 3,
+    content: {
+      items: [
+        {
+          question: `Form a Professional New York S Corporation or C Corporation`,
+          answer: `Some states, including New York, allow certain occupations to form “Professional Corporations.” These types of corporations may need special requirements and licensing. NY State does not list the specific professions that can form professional corporations, although the name of the corporation must end with the words “Professional Corporation” or the abbreviation “P.C.”`,
+        },
+        {
+          question: `Form a Foreign LLC in New York`,
+          answer: `A “foreign” filing is when you have a regular, domestic corporation in a state (typically the one where you first formed your business) and need the company to be able to operate in another state. This is where you would file a “Foreign Qualification” to the new state for your domestic corporation to be able to operate in both states. You must have an existing domestic corporation before you can file as a foreign corporation.`,
+        },
+      ],
+    },
+    marginBottom: 32,
   },
   {
     type: "header",
     content: "Need to Form a New York Corporation Quickly \n" + "and Easily?",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -857,14 +911,14 @@ export const startCaCorp = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
@@ -875,8 +929,9 @@ export const naming = [
   {
     type: "header",
     content: "Find the Right Name for Your New York State Corporation",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -890,14 +945,14 @@ export const naming = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
@@ -907,7 +962,8 @@ export const naming = [
   {
     type: "header",
     content: "New York Department of State Corporation Business Search",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -926,14 +982,16 @@ export const naming = [
     type: "arrow-link",
     content: {
       text: "New York Department of State corporation name search tool",
-      url: "/",
+      url:
+        "https://appext20.dos.ny.gov/corp_public/CORPSEARCH.ENTITY_SEARCH_ENTRY",
     },
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Follow These Rules to Name Your New York Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -945,7 +1003,8 @@ export const naming = [
   {
     type: "header",
     content: "General Rules for Naming Your S Corp or C Corp",
-    size: 4,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -957,7 +1016,8 @@ export const naming = [
   {
     type: "header",
     content: "Your New York Corporation Name Must Be Unique",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -970,7 +1030,8 @@ export const naming = [
     type: "header",
     content:
       "The Name of Your Corporation Cannot Be Similar to Other Businesses in New York",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1002,7 +1063,8 @@ export const naming = [
   {
     type: "header",
     content: "Your New York Corporation Name Must Contain Certain Words",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1014,13 +1076,14 @@ export const naming = [
   {
     type: "header",
     content: "Other General Rules on Naming Your New York Corporation",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "The New York Division of Corporations will not typically allow you to name S Corporations or C Corporations that breach the following rules:",
+      "The New York Department of State will not typically allow you to name S Corporations or C Corporations that breach the following rules:",
     marginBottom: 24,
   },
   {
@@ -1040,7 +1103,8 @@ export const naming = [
   {
     type: "header",
     content: "Specific Rules for Naming Your New York Corporation",
-    size: 4,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1068,14 +1132,15 @@ export const naming = [
     type: "arrow-link",
     content: {
       text: "More on New York Department of State business naming rules.",
-      url: "/",
+      url: "https://www.dos.ny.gov/corps/restricted_words.html",
     },
     marginBottom: 24,
   },
   {
     type: "header",
     content: "New York Corporation “Doing Business As” (DBA) and Assumed Names",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1088,16 +1153,16 @@ export const naming = [
     type: "button",
     content: {
       text: "Incfile’s Assumed Business Name Service ",
-      url: "/",
+      url: "/fictitious-business-or-trade-name/",
     },
     theme: "primary56",
   },
   {
     type: "header",
     content:
-      "Rules on Infringing on Service Marks or Trademarks Inside \n" +
-      "or Outside New York",
-    size: 4,
+      "Why You Don’t Want to Infringe on Trademark or Service Mark Names",
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1109,13 +1174,14 @@ export const naming = [
   {
     type: "text",
     content:
-      "The easiest way to see if your proposed business name infringes is to carry out a trademark search. You can do that via the United States Patent and Trademark Office, or Incfile can help you protect your business with our <a href='/'>Trademark Search and Registration</a> service. You should also bear in mind that your New York corporation name cannot be substantially similar to an existing trademark or service mark.",
+      "The easiest way to see if your proposed business name infringes is to carry out a trademark search. You can do that via the United States Patent and Trademark Office, or Incfile can help you protect your business with our <a href='/trademark-name-search/'>Trademark Search and Registration</a> service. You should also bear in mind that your New York corporation name cannot be substantially similar to an existing trademark or service mark.",
     marginBottom: 48,
   },
   {
     type: "header",
     content: "You’ve Found the Perfect Name, What Next?",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1130,14 +1196,14 @@ export const naming = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
@@ -1149,8 +1215,9 @@ export const agents = [
     type: "header",
     content:
       "Registered Agent Services — What You Need for Your New York Corporation",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -1184,14 +1251,14 @@ export const agents = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
       {
         content: {
-          text: "Start Your S Corp with Incfile",
-          url: "/",
+          text: "Start Your C Corp with Incfile",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
@@ -1202,7 +1269,8 @@ export const agents = [
     type: "header",
     content:
       "Services Provided by a New York Registered Agent to Your Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1228,7 +1296,8 @@ export const agents = [
   {
     type: "header",
     content: "Acting as Your Own Registered Agent for Your NY Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1242,7 +1311,7 @@ export const agents = [
     content: {
       list: [
         "The Registered Agent must have a physical street address in New York. Some people establish corporations outside of New York and will need to use a Registered Agent service to provide the address.",
-        "A person must always be available to sign for legal correspondence during business hours. If you can’t always be around, consider using a third-party Registered Agent service like Incfile.",
+        "You always need to have someone on hand at your corporation to receive important documents for your business during business hours (typically 9 a.m. to 5 p.m. Monday to Friday).",
         "The Registered Agent’s name and NY address are part of the public record and available through the New York Division of Corporations website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.",
         "If you change your New York business address or move out of state, you won’t need to file additional documentation with the NY Division of Corporations for the new address of your Registered Agent if using a service. You will need to set up a new Registered Agent service in the new state.",
       ],
@@ -1254,7 +1323,7 @@ export const agents = [
   {
     type: "text",
     content:
-      "There are more considerations, but this should help you with your decision to use a <a href='/'>Registered Agent service</a>.",
+      "There are more considerations, but this should help you with your decision to use a <a href='/manage-your-company/registered-agent/'>Registered Agent service</a>.",
     marginBottom: 48,
   },
   {
@@ -1269,14 +1338,14 @@ export const agents = [
     type: "text",
     content:
       "What are the issues with not having a NY Registered Agent or not providing that information to the New York Department of State?",
-    marginBottom: 41,
+    marginBottom: 40,
   },
   {
     type: "list-dot",
     content: {
       list: [
         "Getting served or sued and not finding out about it: If your New York corporation is sued and you don’t know about it, you could lose to a default judgment in your absence.",
-        "Falling out of good standing with the New York Secretary of State: If you don’t respond to certain correspondence (like the request for your Annual Report), certain states may revoke your right to do business.",
+        "Falling out of good standing with the New York Department of State: If you don’t respond to certain correspondence (like the request for your Annual Report), certain states may revoke your right to do business.",
         "Losing your status as a New York corporation: A NY Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your New York corporation may be dissolved.",
       ],
     },
@@ -1288,7 +1357,8 @@ export const agents = [
     type: "header",
     content:
       "A Complete New York Corporation Registered Agent Service From Incfile",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1300,8 +1370,14 @@ export const agents = [
   {
     type: "text",
     content:
-      "We are authorized to conduct business in New York and can legally act as your Registered Agent for your NY corporation.<br /><br /> Here’s what you need to know about Incfile’s NY Registered Agent service for corporations:",
-    marginBottom: 41,
+      "We are authorized to conduct business in New York and can legally act as your Registered Agent for your NY corporation.",
+    marginBottom: 40,
+  },
+  {
+    type: "text",
+    content:
+      "Here’s what you need to know about Incfile’s NY Registered Agent service for corporations:",
+    marginBottom: 40,
   },
   {
     type: "list-dot",
@@ -1314,14 +1390,14 @@ export const agents = [
       ],
     },
     color: color.orange3,
-    marginBottom: 0,
+    marginBottom: 32,
     curve: false,
   },
   {
     type: "button",
     content: {
       text: "Order Incfile’s New York Registered Agent Service",
-      url: "/",
+      url: "/manage-your-company/registered-agent/",
     },
     theme: "primary56",
     marginBottom: 48,
@@ -1338,14 +1414,14 @@ export const agents = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
@@ -1355,7 +1431,8 @@ export const agents = [
   {
     type: "header",
     content: "Useful Resources for New York Registered Agent \n" + "Services",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1367,7 +1444,7 @@ export const agents = [
     type: "arrow-link",
     content: {
       text: "The Main Functions of a New York Registered Agent",
-      url: "/",
+      url: "/research-topics/general-research/registered-agent-function/",
     },
     marginBottom: 24,
   },
@@ -1375,7 +1452,7 @@ export const agents = [
     type: "arrow-link",
     content: {
       text: "Changing Your New York Registered Agent",
-      url: "/",
+      url: "/manage-your-company/change-of-registered-agent/",
     },
     marginBottom: 24,
   },
@@ -1383,7 +1460,7 @@ export const agents = [
     type: "arrow-link",
     content: {
       text: "What a New York Registered Agent Does",
-      url: "/",
+      url: "/research-topics/registered-agent/registered-agent-tasks/",
     },
     marginBottom: 24,
   },
@@ -1393,8 +1470,9 @@ export const filing = [
     type: "header",
     content:
       "New York Forms and Filing Requirements for Your NY State Corporation",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -1420,14 +1498,14 @@ export const filing = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
@@ -1437,7 +1515,8 @@ export const filing = [
   {
     type: "header",
     content: "File Your Certificate of Incorporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1449,8 +1528,13 @@ export const filing = [
   {
     type: "text",
     content:
-      "nce the Certificate of Incorporation document is filed with the NY Department of State, your business is legally formed as a New York corporation.",
-    marginBottom: 41,
+      "Once the Certificate of Incorporation document is filed with the NY Department of State, your business is legally formed as a New York corporation.",
+    marginBottom: 40,
+  },
+  {
+    type: "text",
+    content: "The Certificate of Incorporation typically includes:",
+    marginBottom: 40,
   },
   {
     type: "list-dot",
@@ -1476,7 +1560,8 @@ export const filing = [
     type: "header",
     content:
       "Business Licenses and Permits for Your New York State Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1488,7 +1573,8 @@ export const filing = [
   {
     type: "header",
     content: "A Local Business Permit or License From Your City",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1500,7 +1586,8 @@ export const filing = [
   {
     type: "header",
     content: "County and State Business Permits and Licenses",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1512,7 +1599,8 @@ export const filing = [
   {
     type: "header",
     content: "Federal Licenses and Permits",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
@@ -1525,7 +1613,8 @@ export const filing = [
     type: "header",
     content:
       "Incfile Business License Research Package for Your New York Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1554,14 +1643,14 @@ export const filing = [
   {
     type: "text",
     content:
-      "Your customized Business License Research Package will be emailed to you within two days of your New York Corporation being formed by the New York Secretary of State.",
+      "Your customized Business License Research Package will be emailed to you within two days of your New York Corporation being formed by the New York Department of State.",
     marginBottom: 24,
   },
   {
     type: "button",
     content: {
       text: "Get the Incfile License Research Package",
-      url: "/",
+      url: "/business-license-research-package/",
     },
     theme: "primary56",
     marginBottom: 24,
@@ -1569,7 +1658,8 @@ export const filing = [
   {
     type: "header",
     content: "Special New York Corporation Requirements",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1581,14 +1671,15 @@ export const filing = [
   {
     type: "header",
     content: "Your New York Corporation Must Have Certain Bylaws",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
       "Bylaws are the formal, internal rules that your New York corporation must follow to stay active. You will need to create and agree to bylaws in certain areas.",
-    marginBottom: 41,
+    marginBottom: 40,
   },
   {
     type: "list-dot",
@@ -1613,7 +1704,8 @@ export const filing = [
   {
     type: "header",
     content: "Corporation Shareholders Must Be Issued Stock",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1624,8 +1716,9 @@ export const filing = [
   },
   {
     type: "header",
-    content: "A Board of Directors Must Be Appointed",
-    size: 5,
+    content: "Appoint a Board of Directors",
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1637,7 +1730,8 @@ export const filing = [
   {
     type: "header",
     content: "Assign Officers to the Corporation",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1649,7 +1743,8 @@ export const filing = [
   {
     type: "header",
     content: "Get a Corporate Records Book",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1660,20 +1755,9 @@ export const filing = [
   },
   {
     type: "header",
-    content: "Get a Corporate Records Book",
-    size: 5,
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "Your New York corporation will need a book to record important information about the business. This book will include details like your Articles of Incorporation, corporate bylaws, meeting minutes, AGM details, directors, officers, stock certificate information, transfer documents and more.",
-    marginBottom: 24,
-  },
-  {
-    type: "header",
     content: "Hire Employees",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1699,15 +1783,16 @@ export const filing = [
     type: "button",
     content: {
       text: "Get an EIN through Incfile",
-      url: "/",
+      url: "/manage-your-company/tax-id-ein/",
     },
     theme: "primary56",
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "Your New York Corporation Must Hold an Annual General Meeting",
-    size: 5,
+    content: "Hold an Annual General Meeting for Your New York Corporation",
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1733,7 +1818,8 @@ export const filing = [
   {
     type: "header",
     content: "New York Corporation Tax Registration",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1760,13 +1846,22 @@ export const filing = [
   {
     type: "text",
     content:
-      "You can find details on the <a href='/'> New York Department of Revenue</a> and IRS websites.",
+      "You can find details on the New York Department of Revenue and IRS websites.",
     marginBottom: 24,
+  },
+  {
+    type: "arrow-link",
+    content: {
+      text: "Learn more about taxes for your New York corporation.",
+      url: "/new-york-corporation/taxes-and-fees-for-your-corporation/",
+    },
+    marginBottom: 32,
   },
   {
     type: "header",
     content: "Your New York Corporation Will Need to File a Biennial Report",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1778,14 +1873,14 @@ export const filing = [
   {
     type: "text",
     content:
-      "<a href='/'>Learn about your ongoing New York corporation filing requirements</a> and business filing deadlines with our helpful New York ongoing filing lookup tool.",
+      "<a href='/business-filing-deadlines/'>Learn about your ongoing New York corporation filing requirements</a> and business filing deadlines with our helpful New York ongoing filing lookup tool.",
     marginBottom: 24,
   },
   {
     type: "button",
     content: {
       text: "Have Incfile File Your Report for You",
-      url: "/",
+      url: "/manage-your-company/annual-report/",
     },
     theme: "primary56",
     marginBottom: 48,
@@ -1793,8 +1888,9 @@ export const filing = [
   {
     type: "header",
     content:
-      "Certificate of Good Standing for Your New York \n" + "Corporation",
-    size: 4,
+      "Your New York Corporation May Need a Certificate of Good Standing",
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1807,7 +1903,7 @@ export const filing = [
     type: "button",
     content: {
       text: "Get a Certificate of Good Standing Through Incfile",
-      url: "/",
+      url: "/manage-your-company/certificate-of-good-standing/",
     },
     theme: "primary56",
     marginBottom: 48,
@@ -1815,7 +1911,8 @@ export const filing = [
   {
     type: "header",
     content: "Ready to Start Your New York Corporation?",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1836,14 +1933,14 @@ export const filing = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
@@ -1855,8 +1952,9 @@ export const taxes = [
   {
     type: "header",
     content: "Fees and Taxes for Your New York State Corporation",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
@@ -1867,7 +1965,8 @@ export const taxes = [
   {
     type: "header",
     content: "Common Fees for a New York Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1875,16 +1974,16 @@ export const taxes = [
     content: {
       items: [
         {
-          question: "Fees for forming a corporation in New York",
+          question: "1. Fees for forming a corporation in New York",
           answer:
-            "Learn about <a href='/'>standard filing costs here</a> for NY corporations.",
+            "Learn about <a href='/state-filing-fees/'>standard filing costs here</a> for NY corporations.",
         },
         {
-          question: "New York State Biennial Report Fee",
+          question: "2. New York State Biennial Report Fee",
           answer: "A fee every other year when you file your biennial report.",
         },
         {
-          question: "New York Permits and Licenses",
+          question: "3. New York Permits and Licenses",
           answer:
             "These are the fees for creating or renewing your licenses and permits on a regular basis. These depend on the type of New York corporation you’re operating and where you’re located.",
         },
@@ -1893,9 +1992,19 @@ export const taxes = [
     marginBottom: 47,
   },
   {
+    type: "button",
+    content: {
+      text: "Get the Incfile Business License Research Package",
+      url: "/business-license-research-package/",
+    },
+    theme: "primary56",
+    marginBottom: 48,
+  },
+  {
     type: "header",
     content: "Taxes Payable by Your New York Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1908,11 +2017,13 @@ export const taxes = [
     type: "header",
     content:
       "Taxes Payable by Both S Corporations and C Corporations in New York",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "accordion",
+    header: 4,
     content: {
       items: [
         {
@@ -1931,9 +2042,27 @@ export const taxes = [
             "If your NY corporation is selling products or services in New York, you may need to pay a state sales tax. Find out more on the New York State Department of Taxation and Finance website.",
         },
         {
+          question: "New York State Corporation Employee Taxes and Insurance",
+          answer:
+            "You may also need to pay tax and insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.<br /><br />Get more requirements from the <a href='https://www.labor.ny.gov/home/'>New York State Department of Labor website.</a>",
+        },
+        {
+          question:
+            "Your New York Corporation Will Need to Pay Estimated Taxes",
+          answer:
+            "Most New York corporations will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. The most common types of estimated tax are:",
+          list: [
+            "Federal income tax",
+            "Federal self-employment tax",
+            "New York state tax",
+          ],
+          text:
+            "Most New York S Corporations and C Corporations will pay estimated taxes four times a year. Speak to your accountant for more information.",
+        },
+        {
           question: "Other Taxes in New York",
           answer:
-            "You may need to pay other taxes and fees, depending on the type of New York corporation you run. Find out more on the New York Department of Taxation and Finance website.",
+            "You may need to pay other taxes and fees, depending on the type of New York corporation you run. Find out more on the New York Department of Taxation and Finance website.<br /><br /><a href='https://www.tax.ny.gov/'>New York State Department of Taxation and Finance website.</a>",
         },
       ],
     },
@@ -1941,57 +2070,9 @@ export const taxes = [
   },
   {
     type: "header",
-    content: "Your New York Corporation Will Need to Pay Estimated Taxes",
-    size: 4,
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "Most New York corporations will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. The most common types of estimated tax are:",
-    marginBottom: 41,
-  },
-  {
-    type: "list-dot",
-    content: {
-      list: [
-        "Federal income tax",
-        "Federal self-employment tax",
-        "New York state tax",
-      ],
-    },
-    color: color.babyblue3,
-    marginBottom: 48,
-    curve: false,
-  },
-  {
-    type: "text",
-    content:
-      "Most New York S Corporations and C Corporations will pay estimated taxes four times a year. Speak to your accountant for more information.",
-    marginBottom: 48,
-  },
-  {
-    type: "header",
-    content: "New York Corporation Employee Taxes and Insurance",
-    size: 5,
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "You may also need to pay tax and insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.",
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "Get more requirements from the <a href='/'>New York Department of Labor website</a>.",
-    marginBottom: 48,
-  },
-  {
-    type: "header",
     content: "Taxes Payable by New York S Corporations",
-    size: 4,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2015,7 +2096,7 @@ export const taxes = [
     type: "button",
     content: {
       text: "Get a Tax Consultation from Incfile",
-      url: "/",
+      url: "/business-accounting/",
     },
     theme: "primary56",
     marginBottom: 48,
@@ -2030,10 +2111,9 @@ export const taxes = [
     type: "list-dot",
     content: {
       list: [
-        "On profits of $10,000, you would pay self-employment tax of $1,530",
-        "On profits of $40,000, you would pay self-employment tax of $6,120",
-        "On profits of $70,000, you would pay self-employment tax of $10,710",
-        "On profits of $100,000, you would pay self-employment tax of $15,300",
+        "On profits of $20,000, you would pay self-employment tax of $3,060",
+        "On profits of $50,000, you would pay self-employment tax of $7,650",
+        "On profits of $90,000, you would pay self-employment tax of $13,770",
         "On profits of $140,000, you would pay self-employment tax of $21,420",
       ],
     },
@@ -2051,7 +2131,7 @@ export const taxes = [
     type: "button",
     content: {
       text: "File Your New York S-Corp Tax Election with Incfile",
-      url: "/",
+      url: "/llc-s-corp-election/",
     },
     theme: "primary56",
     marginBottom: 52,
@@ -2059,7 +2139,8 @@ export const taxes = [
   {
     type: "header",
     content: "Taxes Payable by New York C Corporations",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2068,7 +2149,7 @@ export const taxes = [
       {
         header: "Corporation Tax",
         text:
-          "Unlike the the Limited Liability Company and the S Corporation, a New York C Corporation is required to file a corporate tax return and pay corporation taxes on any profits. When those taxed profits are paid to shareholders as dividends, they will also be subject to taxation on that individual’s tax return. This is known as “double taxation.”",
+          "New York C Corporations must file corporate tax returns with the IRS and pay corporation taxes on their profits. Shareholders must also pay tax on dividends received from a New York C Corporation, which does result in “double taxation.”",
         svg: CorpoTaxSVG,
         backgroundColor: color.babyblue2,
         shadowColor: shadow.babyblue2,
@@ -2094,11 +2175,14 @@ export const taxes = [
     type: "header",
     content:
       "Taxes Payable by All Individuals Working for New York Corporations",
-    size: 5,
+    size: 3,
+    template: 3,
     marginBottom: 24,
   },
   {
-    type: "text",
+    type: "header",
+    size: 4,
+    template: 5,
     content:
       "Pay Federal Income Tax on New York Corporation Earnings, Dividends and Distributions",
     marginBottom: 24,
@@ -2112,7 +2196,8 @@ export const taxes = [
   {
     type: "header",
     content: "Ready to Start Your New York Corporation?",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2133,14 +2218,14 @@ export const taxes = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: "/",
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=NY`,
         },
         theme: "primary56",
       },
@@ -2152,19 +2237,20 @@ export const afterFormation = [
   {
     type: "header",
     content: "Understand Your Ongoing Corporate Filing Requirements",
-    size: 4,
-    marginBottom: 24,
+    size: 2,
+    template: 2,
+    marginBottom: 48,
   },
   {
     type: "text",
-    content:
-      "Each state requires different forms such as your business annual reports and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying by the form filing requirements keeps your business in good standing with the state. Failure to file these reports can lead to the company being revoked or administrative business dissolution. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
+    content: `Each state requires different forms such as your business <a href="/manage-your-company/annual-report/">annual reports</a>and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href="/compliance-filing-requirement/">form filing requirements</a> keeps your business in <a href="/manage-your-company/certificate-of-good-standing/">good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href="/manage-your-company/dissolution/">business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.`,
     marginBottom: 48,
   },
   {
     type: "header",
     content: "New York's Ongoing Corporate File Requirements:",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2174,7 +2260,8 @@ export const afterFormation = [
   {
     type: "header",
     content: "Protect Your NY Business Name With a Trademark",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2186,8 +2273,7 @@ export const afterFormation = [
   {
     type: "list-dot",
     content: {
-      header:
-        "Benefits of <a href='/'>Incfile's Trademark service</a> include:",
+      header: "Benefits of Incfile's Trademark service include:",
       list: [
         "Legal counsel from an experienced trademark attorney",
         "A thorough search of existing trademarks",
@@ -2202,43 +2288,52 @@ export const afterFormation = [
   {
     type: "header",
     content: "Finances & Accounting for Your New York Corporation",
-    size: 4,
+    size: 2,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Once you form your LLC in Delaware, there are important next steps to ensure your business finances and accounting are organized for tax season and peace of mind, and that your personal and business finances are kept separate to ensure safety of your personal assets. With the right accounting steps, your business will run smoothly and be set up for increased profits and success.",
+      "Once you form your corporation in New York, there are important next steps to ensure your business finances and accounting are organized for tax season and peace of mind, and that your personal and business finances are kept separate to ensure safety of your personal assets. With the right accounting steps, your business will run smoothly and be set up for increased profits and success.",
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Choose a Bank for Your New York Corporation",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content:
-      "The right business checking account for your business should have minimum fees, so that your money goes into the business or your own checking account instead of spending on hidden, tricky bank fees. According to NerdWallet — who looked at the 10 biggest banks in the U.S. and some additional online banks — these are the best four free business checking accounts for your Corporation:",
+    content: `The right business checking account for your business should have minimum fees, so that your money goes into the business or your own checking account instead of spending on hidden, tricky bank fees. According to <a href="https://www.nerdwallet.com/best/banking/free-business-checking-accounts">NerdWallet</a> — who looked at the 10 biggest banks in the U.S. and some additional online banks — these are the best four free business checking accounts for your Corporation:`,
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Separate Business & Personal Expenses",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your New York Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='/'>Expensify</a> to track and tag business expenses from your mobile phone.",
+      "Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your Illinois Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='http://expensify.com/'>Expensify</a> to track and tag business expenses from your mobile phone.",
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Set Up Accounting Software",
-    size: 5,
+    size: 3,
+    template: 4,
+    marginBottom: 24,
+  },
+  {
+    type: "text",
+    content:
+      "Choosing the right accounting software will allow you to track your accounts receivable — the money that is flowing in and out of your Corporation. Accounting software will allow you to track bills, invoices, expenses and customers. This is also another important step in simplifying your year-end tax burden. With a clear, separate business checking account and card and an organized accounting software system, you’ll (barely) dread tax season as a business owner.",
     marginBottom: 24,
   },
   {
@@ -2259,7 +2354,8 @@ export const afterFormation = [
       {
         link: {
           text: "QuickBooks",
-          url: "/",
+          url:
+            "https://quickbooks.intuit.com/oa/selfemployed/?utm_source=oaqbse_aff&utm_medium=aff&utm_content=priorityCode=3969702399&cid=aff_cj_7898336&cvosrc=affiliate.cj.7898336&cvo_campaign=qbo_trial&priorityCode=3969702399&aid=12170614",
         },
         text:
           "This is a top option for a lot of business owners and starts out at only $10 a month. You can automatically important banking transactions, track your customers and vendors and related bills and expenses, and integrate with a lot of other online finance tools. If you hire an accountant or tax support, they will all likely support QuickBooks. You can even use an online version in addition to a desktop version of their software. The drawback is that the learning curve for QuickBooks can sometimes be a bit steep.",
@@ -2267,7 +2363,7 @@ export const afterFormation = [
       {
         link: {
           text: "Xero",
-          url: "/",
+          url: "https://www.xero.com/",
         },
         text:
           "Xero is online accounting software that is a great option for those who find QuickBooks to be too complicated and difficult to understand. Their plans start out at $20 per month.",
@@ -2275,7 +2371,8 @@ export const afterFormation = [
       {
         link: {
           text: "FreshBooks",
-          url: "/",
+          url:
+            "https://www.freshbooks.com/?ref=10400&utm_source=sas&utm_medium=affiliate&utm_campaign=938781",
         },
         text:
           "Freshbooks is online accounting software that allows you to also track your time, expenses, collaborate on projects and view accounting reports. One drawback is that it doesn’t currently have a way to track invoices that your business needs to pay. But, accounts start out at $15 per month.",
@@ -2283,43 +2380,45 @@ export const afterFormation = [
       {
         link: {
           text: "Bench",
-          url: "/",
+          url: "https://bench.co/",
         },
         text:
           "Bench not only allows you to track your accounts receivable, but they include the help of a real-life bookkeeper to run your accounting every month. For a Bench account starting out at $125 a month, this is quite the deal instead of hiring your own bookkeeper.",
-        marginBottom: "52px",
+        marginBottom: "48px",
       },
     ],
   },
   {
     type: "header",
     content: "Determine How You’ll Accept Credit Cards",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "If you use QuickBooks or Freshbooks, you’ll be able to accept credit cards to pay for invoices. If you have a brick and mortar location for your small business, you want to look into offering payments through a service such as <a href='https://shopify.com/'>Shopify</a> or <a href='/'>Square</a>.",
+      "If you use QuickBooks or Freshbooks, you’ll be able to accept credit cards to pay for invoices. If you have a brick and mortar location for your small business, you want to look into offering payments through a service such as <a href='https://shopify.com/'>Shopify</a> or <a href='https://squareup.com/us/en'>Square</a>.",
     marginBottom: 48,
   },
   {
     type: "header",
     content: "Look Into Business Funding Options",
-    size: 5,
+    size: 3,
+    template: 4,
     marginBottom: 24,
   },
   {
     type: "text",
-    content:
-      "In case your business runs out of cash flow, you want to have a backup option so your business doesn’t go under. You can raise capital from investors, ask friends or family for loans, get a business credit card, take an online business loan, or look into government financing using the <a href='/'>SBA & BusinessUSA’s financing tools</a>. Also, it’s important to remember that you can also bootstrap your business — which means, only using the funds you have in your bank account and not expanding until you get more business income.",
+    content: `In case your business runs out of cash flow, you want to have a backup option so your business doesn’t go under. You can raise capital from investors, ask friends or family for loans, get a <a href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024"target="_blank" rel="noopener noreferrer">business credit card</a>, take an online business loan, or look into government financing using the <a href='https://www.sba.gov/node/13710'target="_blank" rel="noopener noreferrer">SBA & BusinessUSA’s financing tools</a>. Also, it’s important to remember that you can also bootstrap your business — which means, only using the funds you have in your bank account and not expanding until you get more business income.`,
     marginBottom: 48,
   },
   {
     type: "header",
     content:
       "Business Operations & Marketing for Your New York \n" + "Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -2328,7 +2427,7 @@ export const afterFormation = [
       {
         header: "Build a Business Website",
         text:
-          "Having a great online presence for your business is the number one way people will find you. You need to start with buying a domain name using a service such as <a href='/'>NameCheap</a>. Then you need to choose a service to host your website such as <a href='/'>SnapWeb</a>. Finally, design your website using a tool such as Squarespace or WordPress. Make sure your website includes important business information such as how to contact you and business hours.",
+          "Having a great online presence for your business is the number one way people will find you. You need to start with buying a domain name using a service such as <a href='https://www.namecheap.com/?utm_source=SAS&utm_medium=Affiliate&utm_campaign=938781&affnetwork=sas'>NameCheap</a>. Then you need to choose a service to host your website such as <a href='http://xoopah.com/'>Xoopah.com</a>. Finally, design your website using a tool such as Squarespace or WordPress. Make sure your website includes important business information such as how to contact you and business hours.",
         svg: WebSVG,
         backgroundColor: color.purple2,
         shadowColor: shadow.purple2,
@@ -2339,7 +2438,7 @@ export const afterFormation = [
       {
         header: "Choose a Virtual Phone System",
         text:
-          "Your business needs a phone number so that your customers, employees and vendors can reach you. A great option is to look into a tool such as <a href='/'>Grasshopper</a>, which allows you to get a business phone that actually forwards to your cell phone, so you never miss an important call.",
+          "Your business needs a phone number so that your customers, employees and vendors can reach you. A great option is to look into a tool such as <a href='https://grasshopper.o9o4.net/c/1320313/503375/8652'>Grasshopper</a>, which allows you to get a business phone that actually forwards to your cell phone, so you never miss an important call.",
         svg: PhoneSVG,
         backgroundColor: color.green2,
         shadowColor: shadow.green2,
@@ -2350,7 +2449,7 @@ export const afterFormation = [
       {
         header: "Design a Business Logo",
         text:
-          "A logo will reflect your business branding everywhere your customers interact with you — on your website, on your invoices, in your email signature, on business cards and more. Instead of trying to design a logo yourself, try a logo making service such as <a href='/'>99 Designs</a> or buy some really high-quality pre-made logos you can customize on <a href='/'>CreativeMarket</a>.",
+          "A logo will reflect your business branding everywhere your customers interact with you — on your website, on your invoices, in your email signature, on business cards and more. Instead of trying to design a logo yourself, try a logo making service such as <a href='http://www.jdoqocy.com/click-7898336-11012409-1442446947000?cm_mmc=CJ-_-4607662-_-7898336-_-99designs%20-%20Text'>99 Designs</a> or buy some really high-quality pre-made logos you can customize on <a href='https://creativemarket.com/'>CreativeMarket</a>.",
         svg: LogoSVG,
         backgroundColor: color.orange2,
         shadowColor: shadow.orange2,
@@ -2361,7 +2460,7 @@ export const afterFormation = [
       {
         header: "Get Business Cards Created",
         text:
-          "Once you have a logo, create nice looking business cards that you can hand out when you’re out networking or even running errands. You never know when a conversation about your business will come up, and you want to be able to give someone a place to research your business and contact you. A great tool to create inexpensive business cards is <a href='/'>Vistaprint</a>.",
+          "Once you have a logo, create nice looking business cards that you can hand out when you’re out networking or even running errands. You never know when a conversation about your business will come up, and you want to be able to give someone a place to research your business and contact you. A great tool to create inexpensive business cards is <a href='https://www.vistaprint.com/business-cards?txi=15626&%3bxnid=TopNav_Business+Cards&%3bxnav=TopNav&%3bGP=04%2f28%2f2017+14%3a14%3a22&%3bGPS=4378726571&%3bGNF=0&rd=1'>Vistaprint</a>.",
         svg: CardSVG,
         backgroundColor: color.blue3,
         shadowColor: shadow.blue3,
@@ -2376,13 +2475,14 @@ export const afterFormation = [
     type: "header",
     content:
       "Choose the Best Business Tools to Run Your New York \n" + "Corporation",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "In addition to accounting software, there is a number of online business software options that will lift a number of menial tasks and burdens off your full business-owner plate. Below are important business functions for your Corporation and what we think are the best business tools for your New York Corporation.",
+      "In addition to accounting software, there is a number of online business software options that will lift a number of menial tasks and burdens off your full business-owner plate. Below are important business functions for your Corporation and what we think are the best business tools for your Georgia Corporation.",
     marginBottom: 24,
   },
   {
@@ -2457,14 +2557,15 @@ export const afterFormation = [
   },
   {
     type: "header",
-    content: "Start a Business Checklist",
-    size: 4,
+    content: "Get a “Start a NY Business Checklist” to Follow",
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "If you want to track your progress in getting your new business set up properly, we have a great virtual <a href='/'>Start a Business Checklist</a> that includes everything you need to do to launch your business. It even features downloadable PDFs you can access to download and print.",
+      "If you want to track your progress in getting your new business set up properly, we have a great virtual <a href='/starting-a-business-checklist/'>Start a Business Checklist</a> that includes everything you need to do to launch your business. It even features downloadable PDFs you can access to download and print.",
     marginBottom: 24,
   },
 ];

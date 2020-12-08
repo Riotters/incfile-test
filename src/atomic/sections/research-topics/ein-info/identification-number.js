@@ -11,6 +11,7 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Path from "../../../molecules/blocks/research-topics-path";
+import {PHeading} from "../../../atoms/typography/p-as-heading";
 
 const About = styled.section`
 	position: relative;
@@ -27,18 +28,18 @@ const AboutSection = ({ className, content }) => (
 			<Heading size={1} template={3} bottomMargin="32">
 				{content.header}
 			</Heading>
-			<Heading size={3} bottomMargin="24">
+			<PHeading template={3} size={3} bottomMargin="24">
 				{content.header2}
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="16">
 				{content.text}
 			</Paragraph>
 			<Paragraph big bottomMargin="48">
 				{content.text2}
 			</Paragraph>
-			<Heading size={3} bottomMargin="24">
+			<PHeading size={3} bottomMargin="24">
 				{content.header3}
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="24">
 				{content.text3}
 			</Paragraph>
@@ -46,6 +47,7 @@ const AboutSection = ({ className, content }) => (
 				content={content.list}
 				color={color.yellow2}
 				curve
+				paragraphHeader
 				curveColor={color.green2}
 				rounded
 				bottomMargin="32"
@@ -57,6 +59,7 @@ const AboutSection = ({ className, content }) => (
 				content={content.list2}
 				color={color.babyblue2}
 				rounded
+				paragraphHeader
 				bottomMargin="32"
 			/>
 			<Paragraph big bottomMargin="16">
@@ -69,12 +72,14 @@ const AboutSection = ({ className, content }) => (
 				content={content.list3}
 				color={color.orange3}
 				rounded
+				paragraphHeader
 				bottomMargin="40"
 			/>
 			<IconListColorBox
 				content={content.list4}
 				color={color.blue3}
 				curve
+				paragraphHeader
 				curveColor={color.red2}
 				rounded
 				bottomMargin="40"
@@ -83,14 +88,15 @@ const AboutSection = ({ className, content }) => (
 				content={content.list5}
 				color={color.green3}
 				rounded
+				paragraphHeader
 				bottomMargin="32"
 			/>
 			<Paragraph big bottomMargin="48">
 				{content.text7}
 			</Paragraph>
-			<Heading size={3} bottomMargin="24">
+			<PHeading size={3} bottomMargin="24">
 				{content.header4}
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="24">
 				{content.text8}
 			</Paragraph>
@@ -98,6 +104,7 @@ const AboutSection = ({ className, content }) => (
 				content={content.list6}
 				color={color.purple3}
 				rounded
+				paragraphHeader
 				bottomMargin="24"
 			/>
 			<ArrowLink content={content.link} bottomMargin="48" />

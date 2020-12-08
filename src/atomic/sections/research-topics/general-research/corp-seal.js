@@ -38,6 +38,7 @@ const AboutSection = ({ className, content }) => (
 				content={content.list}
 				color={color.orange3}
 				curve
+				paragraphHeader
 				curveColor={color.purple2}
 				rounded
 				bottomMargin="48"
@@ -96,6 +97,7 @@ const AboutSection = ({ className, content }) => (
 				curve
 				curveColor={color.orange2}
 				rounded
+				paragraphHeader
 				bottomMargin="24"
 			/>
 			<Button

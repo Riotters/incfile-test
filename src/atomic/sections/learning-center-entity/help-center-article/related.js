@@ -12,6 +12,10 @@ const Related = styled.section`
 	padding-top: 104px;
 	padding-bottom: 104px;
 	background-color: ${color.orange3};
+	
+	h1 {
+	text-align: center;
+	}
 `;
 
 const RelatedSection = ({ className, headingSize = 2, headingSizeTemplate = 2, left = true, content }) => (

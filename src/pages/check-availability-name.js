@@ -14,64 +14,87 @@ import OvalSVG2 from "../images/medium-571.inline.svg";
 import HeadingCenter from "../atomic/partials/heading-center";
 import SEO from "../components/seo";
 import Layout from "../components/layout";
-
 // text
 import { seo, formCheck } from "../static/other/business-name-generator";
 import BusinessNameSearchForm from "../atomic/organisms/forms/business-name-search-form";
 
 const Wrapper = styled.div`
-  position: relative;
-  padding: 120px 0 100px 0;
+	position: relative;
+	padding: 120px 0 100px 0;
 
-  .back-link {
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-    font-size: 16px;
-    color: ${color.black};
-    span {
-      transform: rotate(-90deg);
-      margin-right: 8px;
-    }
-  }
+	.back-link {
+		display: flex;
+		align-items: center;
+		margin-bottom: 50px;
+		font-size: 16px;
+		color: ${color.black};
+		span {
+			transform: rotate(-90deg);
+			margin-right: 8px;
+		}
+	}
 `;
 
 const CheckAvailabilityName = ({ location }) => {
-    const [entityName, setEntityName] = React.useState('');
-    
-    React.useEffect(() => {
-        let name = (typeof window !== `undefined` && location?.state?.businessName) ? location.state.businessName : '';    
-        setEntityName(name);
-    }, []);
-    return (
-        <Layout>
-            <SEO title={seo.title} description={seo.desc} />
+	const [entityName, setEntityName] = React.useState("");
 
-            <Wrapper>
-                <Oval className="oval" height="570" width="570" bottom="0" left="0" y="-50">
-                    <OvalSVG />
-                </Oval>
+	React.useEffect(() => {
+		let name =
+			typeof window !== `undefined` && location?.state?.businessName
+				? location.state.businessName
+				: "";
+		setEntityName(name);
+	}, []);
+	return (
+		<Layout>
+			<SEO title={seo.title} description={seo.desc} />
 
-                <Oval className="oval" height="570" width="570" top="0" right="0" y="30">
-                    <OvalSVG2 />
-                </Oval>
+			<Wrapper>
+				<Oval
+					className="oval"
+					height="570"
+					width="570"
+					bottom="0"
+					left="0"
+					y="-50"
+				>
+					<OvalSVG />
+				</Oval>
 
-                <ContentCenter>
-                    <div style={{ display: `flex`, width: `100%` }}>
-                        <Link to="/business-name-generator/" className="back-link"> <span> <ArrowLeft /> </span> Back </Link>
-                    </div>
-                    <HeadingCenter headline={formCheck.header} text={formCheck.text} />
-                    <RelativeElement maxWidth="670px" margin="60px 0 0 0">
-                        <AbsoluteShapCure rotate={90} right="70" bottom="-25">
-                            <ShapeCurve color={color.blue} />
-                        </AbsoluteShapCure>
-                        
-                        <BusinessNameSearchForm propEntityName={entityName} />
-                    </RelativeElement>
-                </ContentCenter>
-            </Wrapper>
-        </Layout>
-    );
+				<Oval
+					className="oval"
+					height="570"
+					width="570"
+					top="0"
+					right="0"
+					y="30"
+				>
+					<OvalSVG2 />
+				</Oval>
+
+				<ContentCenter>
+					<div style={{ display: `flex`, width: `100%` }}>
+						<Link to="/business-name-generator/" className="back-link">
+							{" "}
+							<span>
+								{" "}
+								<ArrowLeft />{" "}
+							</span>{" "}
+							Back{" "}
+						</Link>
+					</div>
+					<HeadingCenter headline={formCheck.header} text={formCheck.text} />
+					<RelativeElement maxWidth="670px" margin="60px 0 0 0">
+						<AbsoluteShapCure rotate={90} right="70" bottom="-25">
+							<ShapeCurve color={color.blue} />
+						</AbsoluteShapCure>
+
+						<BusinessNameSearchForm propEntityName={entityName} />
+					</RelativeElement>
+				</ContentCenter>
+			</Wrapper>
+		</Layout>
+	);
 };
 
 export default CheckAvailabilityName;

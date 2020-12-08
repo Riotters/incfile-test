@@ -7,6 +7,7 @@ import Oval from "../../atoms/icons/oval";
 import OvalSVG from "../../../images/ovals/top-left-transparent-orange3.inline.svg";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
+import {PHeading} from "../../atoms/typography/p-as-heading";
 
 const Wrapper = styled.div`
     width: 100%;
@@ -24,7 +25,7 @@ const Wrapper = styled.div`
             }
         }
 
-        h3 {
+        p.h3 {
             text-align: center;
         }
 
@@ -52,7 +53,7 @@ const BlogNewsletterCard = ({ className }) => {
                 <OvalSVG />
             </Oval>
             <Image filename="mrs-bulb-business-startap-guides-8238" />
-            <Heading size="3" topMargin="31" bottomMargin="24">Free Business Formation Free Registered Agent</Heading>
+            <PHeading size={3} className="h3" topMargin="31" bottomMargin="24">Free Business Formation Free Registered Agent</PHeading>
             <Paragraph bottomMargin="24">Making entrepreneurship easy.</Paragraph>
             <Button content={{text: "Get started", url: "/"}} theme="primary48" margin="0 auto" arrow />
         </Whitebox>

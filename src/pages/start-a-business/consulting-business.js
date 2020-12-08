@@ -19,7 +19,7 @@ import SettingBusiness from "../../atomic/sections/type-of-business/consulting-b
 import ToolsAndLinks from "../../atomic/sections/type-of-business/consulting-business/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
-import Rings from "../../images/rings.inline.svg";
+import Rings from "../../images/chart-consulting.inline.svg";
 import {
 	hsForm,
 	RingText,

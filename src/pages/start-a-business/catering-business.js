@@ -33,7 +33,7 @@ import UsefulTools from "../../atomic/partials/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
-import RingSvg from "../../images/rings.inline.svg";
+import RingSvg from "../../images/chart-catering.inline.svg";
 import Adventages from "../../components/adventages";
 import TypeOfBusiness from "../../atomic/sections/type-of-business/catering-business/type-of-business";
 import ContentCenter from "../../atomic/partials/content-center";

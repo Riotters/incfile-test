@@ -26,7 +26,7 @@ import Taxes from "../../atomic/sections/type-of-business/online-business/taxes"
 import ToolsAndLinks from "../../atomic/sections/type-of-business/online-business/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block";
-import CircleRing from "../../images/circle-graph.inline.svg";
+import CircleRing from "../../images/chart-online.inline.svg";
 import OvalSvg from "../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import LightBox from "../../components/LightBox";
 import ReactTabs from "../../atomic/partials/ReactTabs";

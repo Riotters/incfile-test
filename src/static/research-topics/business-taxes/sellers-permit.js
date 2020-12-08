@@ -9,7 +9,7 @@ export const about = {
       url: `/research-topics/business-taxes`,
     },
   ],
-  header: `How to Get a Seller’s Permit for Your Sales Tax`,
+  header: `How to Get a Seller’s Permit`,
   text: `Many states across the U.S. impose a “sales and use” tax on the sale of certain products and services. This sales tax is typically added to the price of goods and charged as an extra to customers. Sellers then collect this sales tax and pay it to their state department of revenue on a regular basis.`,
   text2: `Sales tax rates and rules vary widely between states, and regulations that apply to one state may not apply to another. Sales tax can be influenced by whether you have a “nexus” in a state, and may be applicable to your business whether you’re selling locally or online. If you’re required to collect sales tax on the goods and services you sell, you will be required to obtain a seller’s permit or sales tax permit from your state’s Department of Revenue.`,
   header2: `When to Obtain a Seller’s Permit`,
