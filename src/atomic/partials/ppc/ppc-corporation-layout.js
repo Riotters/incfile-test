@@ -16,7 +16,7 @@ import ButtonVideo from '../../molecules/buttons/button-video';
 import PPCWhyChooseIncfile from './ppc-why-choose-incfile';
 import { statesArray } from "../../../static/states-v2";
 
-const PPCCorporationLayout = ({ stateCode, videoID, vimeo }) => {
+const PPCCorporationLayout = ({ stateCode, videoID, vimeo, quotes }) => {
     const state = stateCode ? statesArray.filter(state => state.code === stateCode)[0] : false;
     const stateName = state ? state.name : '';
     const buttonInfo = {
@@ -73,7 +73,7 @@ const PPCCorporationLayout = ({ stateCode, videoID, vimeo }) => {
                     <RatingBlock />
                 </RatingRow>
             </Top>
-            <Opinions content={opinions} />
+            <Opinions content={opinions} quotes={quotes} stateName={stateName} />
             <PPCWhyChooseIncfile content={whyChooseIncfile} />
             <Care content={care} />
             <Rocket
@@ -98,4 +98,16 @@ PPCCorporationLayout.propTypes = {
 PPCCorporationLayout.defaultProps = {
     videoID: "oYZShvmf9eQ",
     vimeo: false,
+    quotes: [
+        {
+            text: `Its been an easy process with them. They practically do everything for you and the provide you with all the tools that you need to start your business running.`,
+            author: `Martin G`,
+            state: ``,
+        },
+        {
+            text: `Life and business are uncertain enough - go ahead and delegate this vital task to a team that has been perfecting their craft for 16 years strong!`,
+            author: `Tim A`,
+            state: ``,
+        },
+    ]
 }

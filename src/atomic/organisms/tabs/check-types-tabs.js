@@ -209,14 +209,14 @@ const CheckTypesTabs = ({ content }) => (
         <Panel>
           <Grid>
             {content.panels[0].buttons.map((button, i) => (
-              <BoxedButton content={button} icon={icons[i]} iconColor={colors[i]} />
+              <BoxedButton content={button} icon={icons[i]} iconColor={colors[i]} key={i} />
             ))}
           </Grid>
         </Panel>
         <Panel>
           <Grid>
             {content.panels[1].buttons.map((button, i) => (
-              <BoxedButton content={button} icon={icons2[i]} iconColor={colors2[i]} />
+              <BoxedButton content={button} icon={icons2[i]} iconColor={colors2[i]} key={i} />
             ))}
           </Grid>
         </Panel>
