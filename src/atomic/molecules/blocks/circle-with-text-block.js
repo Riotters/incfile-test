@@ -39,6 +39,7 @@ const Wrapper = styled.div`
     max-height: 270px;
     display: flex;
     align-items: center;
+    margin-bottom: 28px;
     padding: 40px 40px 40px 40px;
     
     ${props => props.withBg &&
@@ -90,7 +91,7 @@ const TextBox = styled.div`
     font-weight: 900;
     font-size: 20px;
     color: #1d1d1d;
-    padding-right: 48px;
+    padding-right: 16px;
     padding-bottom: 24px;
     padding-top: 24px;
     margin-left: 44px;
