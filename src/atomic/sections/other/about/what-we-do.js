@@ -17,75 +17,84 @@ import CountingTextBoxed from "../../../../atomic/molecules/text-blocks/counting
 import VisibilitySensor from "../../../VisibilitySensor";
 
 const Wrapper = styled.div`
-  position: relative;
-  padding: 100px 0 0 0;
+	position: relative;
+	padding: 100px 0 0 0;
 `;
 
 const Trust = styled.div`
-  position: relative;
-  padding: 100px 0 0 0;
+	position: relative;
+	padding: 100px 0 0 0;
 
-  p {
-    font-size: 26px;
-    font-weight: bold;
-    color: #1d1d1d;
-    text-align: center;
-    line-height: 35px;
+	p {
+		font-size: 26px;
+		font-weight: bold;
+		color: #1d1d1d;
+		text-align: center;
+		line-height: 35px;
 
-    @media screen and (min-width: 992px) {
-      font-size: 40px;
-      line-height: 45px;
-    }
-  }
+		@media screen and (min-width: 992px) {
+			font-size: 40px;
+			line-height: 45px;
+		}
+	}
 `;
 
 const WhatWeDoSection = ({ content }) => (
-  <Wrapper>
-    <Oval className="oval" height="720" width="720" top="5" left="0" y="-20">
-      <OvalSVG />
-    </Oval>
+	<Wrapper>
+		<Oval className="oval" height="720" width="720" top="5" left="0" y="-20">
+			<OvalSVG />
+		</Oval>
 
-    <ContentCenter contentWidth="970">
-      <VisibilitySensor partialVisibility once>
-        {({ isVisible }) => (
-          <Heading className={isVisible ? "slideUp enter" : "slideUp"} size={3} bottomMargin="80" style={{ textAlign: `center` }}>
-            {content.header}
-          </Heading>
-        )}
+		<ContentCenter contentWidth="970">
+			{/* <VisibilitySensor partialVisibility once>
+        {({ isVisible }) => ( */}
+			<Heading
+				//className={isVisible ? "slideUp enter" : "slideUp"}
+				size={3}
+				bottomMargin="80"
+				style={{ textAlign: `center` }}
+			>
+				{content.header}
+			</Heading>
+			{/* )}
       </VisibilitySensor>
       <VisibilitySensor partialVisibility once>
-        {({ isVisible }) => (
-          <RelativeElement className={isVisible ? "scaleUp enter" : "scaleUp"}>
-            <AbsoluteShapCure rotate={-90} left="-35px" top="-25px" hiddenXS>
-              <ShapeCurve color={color.red1} />
-            </AbsoluteShapCure>
+        {({ isVisible }) => ( */}
+			<RelativeElement
+			//className={isVisible ? "scaleUp enter" : "scaleUp"}
+			>
+				<AbsoluteShapCure rotate={-90} left="-35px" top="-25px" hiddenXS>
+					<ShapeCurve color={color.red1} />
+				</AbsoluteShapCure>
 
-            {content.items.map((item, i) => (
-              <CountingTextBoxed number={i + 1}>
-                <Paragraph bottomMargin={0} mixed={true}>
-                  {parse(item.text1)}
-                </Paragraph>
-              </CountingTextBoxed>
-            ))}
-          </RelativeElement>
-        )}
-      </VisibilitySensor>
-    </ContentCenter>
+				{content.items.map((item, i) => (
+					<CountingTextBoxed number={i + 1}>
+						<Paragraph bottomMargin={0} mixed={true}>
+							{parse(item.text1)}
+						</Paragraph>
+					</CountingTextBoxed>
+				))}
+			</RelativeElement>
+			{/* )}
+      </VisibilitySensor> */}
+		</ContentCenter>
 
-    <Trust>
-      <Oval className="oval" height="136" width="136" top="5" right="0" y="-20">
-        <OvalSVG2 />
-      </Oval>
-      <ContentCenter contentWidth="970">
-        <RelativeElement>
-          <AbsoluteShapCure rotate={-10} right="85px" top="-25px" hiddenXS>
-            <ShapeCurve color={color.blue} />
-          </AbsoluteShapCure>
-          <Paragraph>Trusted by over 500,000 business owners worldwide since 2004!</Paragraph>
-        </RelativeElement>
-      </ContentCenter>
-    </Trust>
-  </Wrapper>
+		<Trust>
+			<Oval className="oval" height="136" width="136" top="5" right="0" y="-20">
+				<OvalSVG2 />
+			</Oval>
+			<ContentCenter contentWidth="970">
+				<RelativeElement>
+					<AbsoluteShapCure rotate={-10} right="85px" top="-25px" hiddenXS>
+						<ShapeCurve color={color.blue} />
+					</AbsoluteShapCure>
+					<Paragraph>
+						Trusted by over 500,000 business owners worldwide since 2004!
+					</Paragraph>
+				</RelativeElement>
+			</ContentCenter>
+		</Trust>
+	</Wrapper>
 );
 
 export default WhatWeDoSection;

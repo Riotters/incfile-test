@@ -162,23 +162,23 @@ const WhyBrandNameSection = ({ content }) => {
 					))}
 				</Boxes>
 
-				<VisibilitySensor partialVisibility once>
-					{({ isVisible }) => (
-						<TextLeftLayout
-							className={isVisible ? "slideRight enter" : "slideRight"}
-						>
-							<Heading size={2}>{content.header}</Heading>
-							<Paragraph big mixed={true}>
-								{content.text1}
-							</Paragraph>
-							<Paragraph big mixed={true}>
-								{content.text2}
-							</Paragraph>
+				{/* <VisibilitySensor partialVisibility once>
+					{({ isVisible }) => ( */}
+				<TextLeftLayout
+				//className={isVisible ? "slideRight enter" : "slideRight"}
+				>
+					<Heading size={2}>{content.header}</Heading>
+					<Paragraph big mixed={true}>
+						{content.text1}
+					</Paragraph>
+					<Paragraph big mixed={true}>
+						{content.text2}
+					</Paragraph>
 
-							<Image filename="group-4583" alt="" />
-						</TextLeftLayout>
-					)}
-				</VisibilitySensor>
+					<Image filename="group-4583" alt="" />
+				</TextLeftLayout>
+				{/* )}
+				</VisibilitySensor> */}
 			</ContentCenter>
 		</Wrapper>
 	);
