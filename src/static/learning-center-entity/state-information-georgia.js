@@ -143,7 +143,7 @@ export const corporation = [
 	{
 		type: "text",
 		content:
-			"Here’s a quick overview of each type of <a href='/georgia-entity-search'>business entity</a>.",
+			"Here’s a quick overview of each type of <a href='/georgia-entity-search/'>business entity</a>.",
 		marginBottom: 24,
 	},
 	{
