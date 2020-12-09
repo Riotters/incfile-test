@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 
 import ContentCenter from "../atomic/partials/content-center";
-import Searchbar from "../atomic/sections/other/business-name-generator/search-bar";
 import ShapeCurve from "../atomic/atoms/shapes/curve";
 import { color } from "../atomic/atoms/styles/colors";
 import RelativeElement from "../atomic/elements/relative-e";
@@ -12,7 +11,6 @@ import ArrowLeft from "../images/arrow-circle.inline.svg";
 import Oval from "../atomic/atoms/icons/oval";
 import OvalSVG from "../images/ovals/top-left-transparent-babyblue1.inline.svg";
 import OvalSVG2 from "../images/medium-571.inline.svg";
-import Container from "../atomic/container";
 import HeadingCenter from "../atomic/partials/heading-center";
 import SEO from "../components/seo";
 import Layout from "../components/layout";
@@ -42,7 +40,7 @@ const CheckAvailabilityName = ({ location }) => {
     const [entityName, setEntityName] = React.useState('');
     
     React.useEffect(() => {
-        let name = typeof window !== `undefined` ? location.state.businessName : '';    
+        let name = (typeof window !== `undefined` && location?.state?.businessName) ? location.state.businessName : '';    
         setEntityName(name);
     }, []);
     return (

@@ -233,10 +233,12 @@ const TabsSection = ({layout, columns}) => (
         </OvalBottom>
         <Container>
             <Wrapper layout={layout}>
-                <VisibilitySensor partialVisibility once>
-                    {({isVisible}) => (
+                {/* <VisibilitySensor partialVisibility once>
+                    {({isVisible}) => ( */}
                         <Tabs>
-                            <TabsWrapper className={isVisible ? "slideUp enter" : "slideUp"} layout={layout}>
+                            <TabsWrapper 
+                            // className={isVisible ? "slideUp enter" : "slideUp"} 
+                            layout={layout}>
                                 <Sticky layout={layout} columns={columns}>
                                     <Tab>
                                         <Icon>
@@ -277,9 +279,10 @@ const TabsSection = ({layout, columns}) => (
                             <Collapse isOpened={true}>
                                 <Panel>
                                     <PanelWrapper
-                                        className={
-                                            isVisible ? "slideUp enter panel1" : "slideUp panel1"
-                                        }
+                                        // className={
+                                        //     isVisible ? "slideUp enter panel1" : "slideUp panel1"
+                                        // }
+                                        className={"panel1"}
                                         layout={layout}
                                     >
                                         <Heading size={3}>Starting an Etsy Business</Heading>
@@ -715,8 +718,8 @@ const TabsSection = ({layout, columns}) => (
                             </Collapse>
                             {/* </Panels> */}
                         </Tabs>
-                    )}
-                </VisibilitySensor>
+                    {/* )}
+                </VisibilitySensor> */}
             </Wrapper>
         </Container>
     </Wrapper>

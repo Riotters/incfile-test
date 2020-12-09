@@ -181,16 +181,16 @@ const ImageContainer = styled.div`
 
 const Top = ({ headline, text, imageName, imageAlt, bgColor }) => (
 	<Wrapper bgColor={bgColor}>
-		<VisibilitySensor partialVisibility once>
-			{({ isVisible }) => (
-				<Oval
-					className={isVisible ? "scaleUp enter" : "scaleUp"}
-					bgColor={bgColor}
-				>
-					<OvalSVG />
-				</Oval>
-			)}
-		</VisibilitySensor>
+		{/* <VisibilitySensor partialVisibility once>
+			{({ isVisible }) => ( */}
+		<Oval
+			//className={isVisible ? "scaleUp enter" : "scaleUp"}
+			bgColor={bgColor}
+		>
+			<OvalSVG />
+		</Oval>
+		{/* )}
+		</VisibilitySensor> */}
 		<Oval2 bgColor={bgColor}>
 			<Oval2SVG />
 		</Oval2>
@@ -199,18 +199,18 @@ const Top = ({ headline, text, imageName, imageAlt, bgColor }) => (
 		</Oval3>
 		<Container>
 			<Content>
-				<VisibilitySensor partialVisibility once>
-					{({ isVisible }) => (
-						<TextContainer
-							className={isVisible ? "slideRight enter" : "slideRight"}
-						>
-							<Heading size={2} left maxWidth="520" bottomMargin={20}>
-								{headline}
-							</Heading>
-							<p>{text}</p>
-						</TextContainer>
-					)}
-				</VisibilitySensor>
+				{/* <VisibilitySensor partialVisibility once>
+					{({ isVisible }) => ( */}
+				<TextContainer
+				//className={isVisible ? "slideRight enter" : "slideRight"}
+				>
+					<Heading size={2} left maxWidth="520" bottomMargin={20}>
+						{headline}
+					</Heading>
+					<p>{text}</p>
+				</TextContainer>
+				{/* )}
+				</VisibilitySensor> */}
 				<ImageContainer>
 					<Image filename={imageName} alt={imageAlt} />
 				</ImageContainer>
