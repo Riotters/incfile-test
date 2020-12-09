@@ -244,7 +244,7 @@ const IndexPage = () => (
 				<Link to="/florida-entity-search">
 					Florida Business Entity Search | Is Your Name Available?
 				</Link>
-				<Link to="/georgia-entity-search">Georgia Entity Search</Link>
+				<Link to="/georgia-entity-search/">Georgia Entity Search</Link>
 				<Link to="/texas-entity-search">Texas Entity Search</Link>
 
 				<h2>Other</h2>

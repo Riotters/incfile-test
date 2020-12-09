@@ -47,8 +47,8 @@ const PPCCorporationLayout = ({ stateCode, videoID, vimeo, quotes }) => {
 
             <Top
                 ovalColor="darkblue"
-                imageName="mr-bulb-get-started-2927"
-                imageAlt="Mr Bulb Get Started"
+                imageName="corp-get-started-09122020"
+                imageAlt=""
                 headlineWidth={700}
                 textWidth={400}
                 imageMobilePosition="-8%"
