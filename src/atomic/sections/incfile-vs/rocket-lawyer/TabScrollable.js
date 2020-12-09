@@ -114,7 +114,7 @@ const TabScrollable = ({ layout, columns, content }) => {
 							}}
 						>
 							<div id={ButtonList[0].tabId}>
-								<Heading size="3" bottomMargin="48">
+								<Heading size={2} template={3} left bottomMargin="48">
 									{parse(content.header)}
 								</Heading>
 								<IncfileVsCompareTableA content={content.table} />
@@ -127,7 +127,7 @@ const TabScrollable = ({ layout, columns, content }) => {
 							}}
 						>
 							<div id={ButtonList[1].tabId}>
-								<Heading size="3" bottomMargin="56">
+								<Heading size={2} template={3} left bottomMargin="56">
 									{parse(content.header2)}
 								</Heading>
 								{content.cards.map((card) => (
@@ -145,7 +145,9 @@ const TabScrollable = ({ layout, columns, content }) => {
 							}}
 						>
 							<div id={ButtonList[2].tabId}>
-								<Heading size="3">{parse(content.header3)}</Heading>
+								<Heading size={2} template={3} left>
+									{parse(content.header3)}
+								</Heading>
 								<Paragraph big mixed bottomMargin="64">
 									{parse(content.text2)}
 								</Paragraph>
@@ -164,7 +166,9 @@ const TabScrollable = ({ layout, columns, content }) => {
 							}}
 						>
 							<div id={ButtonList[3].tabId}>
-								<Heading size="3">{parse(content.header4)}</Heading>
+								<Heading size={2} template={3} left>
+									{parse(content.header4)}
+								</Heading>
 								<Paragraph big mixed bottomMargin="64">
 									{parse(content.text4)}
 								</Paragraph>

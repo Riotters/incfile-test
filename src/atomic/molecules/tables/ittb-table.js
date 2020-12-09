@@ -78,7 +78,7 @@ const ITTBTable = ({ className, content }) => (
 			className="table-head"
 			content={content.headers}
 			header
-			headerSize="5"
+			headerSize={5}
 		/>
 		{content.rows.map((row) => (
 			<GridTableRow className="table-row" content={row} />
