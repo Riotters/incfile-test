@@ -24,28 +24,28 @@ const ToolsAndLinks = () => (
     <Container>
       <LinksContainer>
         <LinkItem>
-          <PathLink to="https://www.linkedin.com/grp/home?gid=40103&trk=my_groups-tile-flipgrp" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+          <PathLink externalLink to="https://www.linkedin.com/grp/home?gid=40103&trk=my_groups-tile-flipgrp" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
           Consultants Network
           </PathLink>
           <Paragraph>The largest and most active LinkedIn group for business consultants with over 400,000 members. It also has several location based and industry specific subgroups.</Paragraph>
         </LinkItem>
 
         <LinkItem>
-          <PathLink to="https://www.linkedin.com/grp/home?gid=1968923&trk=my_groups-tile-flipgrp" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+          <PathLink externalLink to="https://www.linkedin.com/grp/home?gid=1968923&trk=my_groups-tile-flipgrp" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
             Strategy Consulting Network
           </PathLink>
           <Paragraph>The second largest network of consultants on LinkedIn with over 500,000 members. The group group is for everyone who is currently working as a Strategy Consultant or who aspires to become one.</Paragraph>
         </LinkItem>
 
         <LinkItem>
-          <PathLink to="https://www.linkedin.com/grp/home?gid=4167779&trk=my_groups-tile-flipgrp" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+          <PathLink externalLink to="https://www.linkedin.com/grp/home?gid=4167779&trk=my_groups-tile-flipgrp" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
             Proactive Business Consultants
           </PathLink>
           <Paragraph>This group brings together consultants from different niches into one community.</Paragraph>
         </LinkItem>
 
         <LinkItem>
-          <PathLink to="https://www.linkedin.com/groups/Small-Business-Independent-Consultant-Network-1894005/about" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+          <PathLink externalLink to="https://www.linkedin.com/groups/Small-Business-Independent-Consultant-Network-1894005/about" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
           Small Business and Independent Consultants Network
           </PathLink>
           <Paragraph>Perfect for consultants who are just starting out, with a membership of over 30,000 people.</Paragraph>
@@ -58,14 +58,14 @@ const ToolsAndLinks = () => (
     <Container>
       <LinksContainer>
         <LinkItem>
-          <PathLink to="https://www.wallstreetoasis.com/forum/consulting" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+          <PathLink externalLink to="https://www.wallstreetoasis.com/forum/consulting" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
             Wall Street Oasis
           </PathLink>
           <Paragraph>The largest and most active LinkedIn group for business consultants with over 400,000 members. It also has several location based and industry specific subgroups.</Paragraph>
         </LinkItem>
 
         <LinkItem>
-          <PathLink to="https://www.projectmanagement.com/discussions/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+          <PathLink externalLink to="https://www.projectmanagement.com/discussions/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
             Project Management Central
           </PathLink>
           <Paragraph>For consultants involved in project and portfolio management</Paragraph>
