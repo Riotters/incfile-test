@@ -44,7 +44,8 @@ export const top = {
   ],
 };
 export const launchBusiness = {
-  header: `Launch your business with Incfile`,
+  header: `Launch`,
+  header2: `your business with Incfile`,
   text: `No Contracts. No Surprises. Only $0 + State Fee to Launch Your Business.`,
   button: {
     text: `Launch your business!`,
@@ -104,7 +105,8 @@ export const corporation = [
     type: "header",
     content: "Choosing the Right Type of New York Corporation",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -643,7 +645,8 @@ export const startCaCorp = [
     type: "header",
     content: "How to Incorporate in NY",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -930,7 +933,8 @@ export const naming = [
     type: "header",
     content: "Find the Right Name for Your New York State Corporation",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -1216,7 +1220,8 @@ export const agents = [
     content:
       "Registered Agent Services — What You Need for Your New York Corporation",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -1471,7 +1476,8 @@ export const filing = [
     content:
       "New York Forms and Filing Requirements for Your NY State Corporation",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -1953,7 +1959,8 @@ export const taxes = [
     type: "header",
     content: "Fees and Taxes for Your New York State Corporation",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -2238,7 +2245,8 @@ export const afterFormation = [
     type: "header",
     content: "Understand Your Ongoing Corporate Filing Requirements",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {

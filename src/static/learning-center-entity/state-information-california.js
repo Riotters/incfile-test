@@ -47,7 +47,8 @@ export const top = {
   ],
 };
 export const launchBusiness = {
-  header: `Launch your business with Incfile`,
+  header: `Launch`,
+  header2: `your business with Incfile`,
   text: `No Contracts. No Surprises. Only $0 + State Fee to Launch Your Business.`,
   button: {
     text: `Launch your business!`,
@@ -107,7 +108,8 @@ export const corporation = [
     type: "header",
     content: "California Corporations",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -213,7 +215,6 @@ export const corporation = [
   {
     type: "colorbox",
     icon: FolderProcentSVG,
-    header: "",
     text:
       "There are some other business entity structures like nonprofits, Limited Liability Partnerships (LLPs) and B Corporations, but they will not be relevant for the majority of entrepreneurs.",
     curve: true,
@@ -677,7 +678,8 @@ export const startCaCorp = [
     type: "header",
     content: "Start Your California Corporation in Six Steps",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 24,
   },
   {
@@ -935,7 +937,8 @@ export const naming = [
     content:
       "CA Name Search and Registration for Your \n" + "California Corporation",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 24,
   },
   {
@@ -1222,7 +1225,8 @@ export const agents = [
     content:
       "Why Your California Corporation Needs a Registered \n" + "Agent Service",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 24,
   },
   {
@@ -1494,7 +1498,8 @@ export const filing = [
     type: "header",
     content: "California Corporation Form and Filing Rules",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 24,
   },
   {
@@ -1977,7 +1982,8 @@ export const taxes = [
     type: "header",
     content: "California Corporation Taxes and Fees",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 24,
   },
   {
@@ -2300,7 +2306,8 @@ export const afterFormation = [
     type: "header",
     content: "Understand Your Ongoing Corporate Filing Requirements",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 24,
   },
   {

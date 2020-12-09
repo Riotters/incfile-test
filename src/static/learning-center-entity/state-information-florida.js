@@ -45,7 +45,8 @@ export const top = {
   ],
 };
 export const launchBusiness = {
-  header: `Launch your business with Incfile`,
+  header: `Launch`,
+  header2: `your business with Incfile`,
   text: `No Contracts. No Surprises. Only $0 + State Fee to Launch Your Business.`,
   button: {
     text: `Launch your business!`,
@@ -669,7 +670,8 @@ export const startCaCorp = [
     type: "header",
     content: "How to Form a Corporation in Florida",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {

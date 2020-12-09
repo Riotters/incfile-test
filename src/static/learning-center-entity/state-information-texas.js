@@ -44,7 +44,8 @@ export const top = {
   ],
 };
 export const launchBusiness = {
-  header: `Launch your business with Incfile`,
+  header: `Launch`,
+  header2: `your business with Incfile`,
   text: `No Contracts. No Surprises. Only $0 + State Fee to Launch Your Business.`,
   button: {
     text: `Launch your business!`,
@@ -103,7 +104,8 @@ export const corporation = [
     type: "header",
     content: "Texas Corporations",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -652,7 +654,8 @@ export const startCaCorp = [
     type: "header",
     content: "Six Easy Steps to Form Your Texas Corporation",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -996,7 +999,8 @@ export const naming = [
     type: "header",
     content: "Naming Your Texas Corporation",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -1273,7 +1277,8 @@ export const agents = [
     type: "header",
     content: "Why Your Texas Corporation Needs a Registered Agent Service",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -1560,7 +1565,8 @@ export const filing = [
     type: "header",
     content: "Texas Corporation Form and Filing Rules",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -2064,7 +2070,8 @@ export const taxes = [
     type: "header",
     content: "Fees and Taxes for Your Texas Corporation",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -2334,7 +2341,8 @@ export const afterFormation = [
     type: "header",
     content: "Understand Your Ongoing Corporate Filing Requirements",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {

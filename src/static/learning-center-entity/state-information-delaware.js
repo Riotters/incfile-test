@@ -45,7 +45,8 @@ export const top = {
   ],
 };
 export const launchBusiness = {
-  header: `Launch your business with Incfile`,
+  header: `Launch`,
+  header2: `your business with Incfile`,
   text: `No Contracts. No Surprises. Only $0 + State Fee to Launch Your Business.`,
   button: {
     text: `Launch your business!`,
@@ -105,7 +106,8 @@ export const corporation = [
     type: "header",
     content: "Delaware Corporations",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -216,7 +218,6 @@ export const corporation = [
   {
     type: "colorbox",
     icon: FolderProcentSVG,
-    header: "",
     text:
       "There are some other business entity structures like nonprofits, Limited Liability Partnerships (LLPs) and B Corporations, but they will not be relevant for the majority of entrepreneurs.",
     curve: true,
@@ -675,7 +676,8 @@ export const startCaCorp = [
     type: "header",
     content: "How to Set up a Corporation in the State of Delaware",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -931,7 +933,8 @@ export const naming = [
     type: "header",
     content: "Delaware Corporation Name Search and Registration",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -1194,7 +1197,8 @@ export const agents = [
     type: "header",
     content: "Registered Agents and Your Delaware Corporation",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -1465,7 +1469,8 @@ export const filing = [
     type: "header",
     content: "Delaware Corporation Form and Filing Rules",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -1950,7 +1955,8 @@ export const taxes = [
     type: "header",
     content: "Delaware Corporation Taxes and Fees",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -2274,7 +2280,8 @@ export const afterFormation = [
     type: "header",
     content: "Understand Your Ongoing Corporate Filing Requirements",
     size: 2,
-    template: 3,
+    template: 2,
+    left: true,
     marginBottom: 40,
   },
   {
