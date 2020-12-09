@@ -10,6 +10,7 @@ import ColorBox from "../../../molecules/colored-blocks/color-box-with-top-icon"
 import ArrowLink from "../../../molecules/buttons/text";
 import ClockSVG from "../../../../images/icons/clock.inline.svg";
 import FilingRequirementBox from "../../../states-llc/filing-requirement-box";
+import { SpanHeading } from "../../../atoms/typography/span-as-heading";
 
 const Requirements = styled.section`
 	position: relative;
@@ -103,12 +104,24 @@ const RequirementsSection = ({ className, content, data }) => {
 			],
 		},
 		{
-			header: `Compliance  Requirements`,
-			text: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state. Failure to file this report can lead to the company being revoked or administratively dissolved.`,
-			link: {
-				text: `Other State Requirements`,
-				url: `/compliance-filing-requirement/`,
-			},
+			content: [
+				{
+					type: `heading`,
+					size: 3,
+					content: `Compliance  Requirements`,
+				},
+				{
+					type: `paragraph`,
+					content: `This report is mandatory and must be filed within the specified time frame in order for the entity to remain in good standing with the state. Failure to file this report can lead to the company being revoked or administratively dissolved.`,
+				},
+				{
+					type: `arrow-links`,
+					content: {
+						text: `Other State Requirements`,
+						url: `/compliance-filing-requirement/`,
+					},
+				},
+			],
 		},
 	];
 
@@ -137,44 +150,40 @@ const RequirementsSection = ({ className, content, data }) => {
 				contentWidth="900"
 			>
 				<Grid>
-					<TextWrapper>
-						{FirstSectionColumns[0].content.map((item, i) => (
-							<>
-								{item.type === "heading" && (
-									<Heading size={item.size} bottomMargin={item.bottomMargin}>
-										{item.content}
-									</Heading>
-								)}
+					{FirstSectionColumns.map((column) => (
+						<TextWrapper>
+							{column.content.map((item, i) => (
+								<>
+									{item.type === "heading" && (
+										<Heading
+											size={item.size}
+											template={item.template}
+											bottomMargin={item.bottomMargin}
+										>
+											{item.content}
+										</Heading>
+									)}
 
-								{item.type === "paragraph" && (
-									<Paragraph
-										mixed={true}
-										bottomMargin={item.bottomMargin}
-										style={{ fontSize: `18px` }}
-									>
-										{parse(item.content)}
-									</Paragraph>
-								)}
+									{item.type === "paragraph" && (
+										<Paragraph
+											mixed={true}
+											bottomMargin={item.bottomMargin}
+											style={{ fontSize: `18px` }}
+										>
+											{parse(item.content)}
+										</Paragraph>
+									)}
 
-								{item.type === "arrow-links" && (
-									<ArrowLink
-										content={item.content}
-										bottomMargin={item.bottomMargin}
-									/>
-								)}
-							</>
-						))}
-					</TextWrapper>
-					<TextWrapper>
-						<Heading size="3">{FirstSectionColumns[1].header}</Heading>
-						<Paragraph style={{ fontSize: `18px` }}>
-							{FirstSectionColumns[1].text}
-						</Paragraph>
-						<Paragraph bottomMargin="24" style={{ fontSize: `18px` }}>
-							{FirstSectionColumns[1].text2}
-						</Paragraph>
-						<ArrowLink content={FirstSectionColumns[1].link} bottomMargin="0" />
-					</TextWrapper>
+									{item.type === "arrow-links" && (
+										<ArrowLink
+											content={item.content}
+											bottomMargin={item.bottomMargin}
+										/>
+									)}
+								</>
+							))}
+						</TextWrapper>
+					))}
 				</Grid>
 			</ObjectContent>
 
