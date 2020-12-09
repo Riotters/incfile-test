@@ -175,7 +175,9 @@ const Content = ({ content, data }) => {
 									width={100}
 									widthUnit="%"
 								>
-									<Heading size={4}>{box.header}</Heading>
+									<Heading size={3} template={4}>
+										{box.header}
+									</Heading>
 									<Paragraph mixed={true} bottomMargin="0">
 										{parse(box.text)}
 									</Paragraph>
@@ -222,9 +224,11 @@ const Content = ({ content, data }) => {
 							Icon={item.icon}
 							bottomMargin={item.marginBottom}
 						>
-							<Heading size={4} bottomMargin={24}>
-								{item.header}
-							</Heading>
+							{item.header && (
+								<Heading size={4} bottomMargin={24}>
+									{item.header}
+								</Heading>
+							)}
 							<Paragraph mixed bottomMargin={32}>
 								{item.text}
 							</Paragraph>

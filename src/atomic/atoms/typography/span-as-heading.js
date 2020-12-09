@@ -62,6 +62,7 @@ const templateStyle = (template) => {
 };
 
 const HeadingWrapper = styled.span`
+	display: block;
 	margin-top: ${(props) => (props.topMargin ? `${props.topMargin}px` : "")};
 	margin-bottom: ${(props) =>
 		props.bottomMargin ? `${props.bottomMargin}px` : ""};
