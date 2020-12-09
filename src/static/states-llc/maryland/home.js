@@ -382,7 +382,7 @@ export const namingYourBusiness = [
 		type: `list-dot`,
 		content: {
 			list: [
-				`If you don’t want to form your Maryland LLC right now, you can reserve the business name with Maryland Business Express. You will need to contact <a href="sdat.charterhelp@maryland.gov" target="_blank" rel="noopener noreferrer"> sdat.charterhelp@maryland.gov</a>. You do not need to reserve a name if you are forming your business right away.`,
+				`If you don’t want to form your Maryland LLC right now, you can reserve the business name with Maryland Business Express. You will need to contact <a href="mailto:sdat.charterhelp@maryland.gov" target="_blank" rel="noopener noreferrer"> sdat.charterhelp@maryland.gov</a>. You do not need to reserve a name if you are forming your business right away.`,
 				`If you’re ready to start your Maryland LLC, you can formally file your Articles of Organization with Maryland Business Express, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MD">let Incfile take care of it for you</a>.`,
 			],
 		},
