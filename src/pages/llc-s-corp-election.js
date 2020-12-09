@@ -288,7 +288,7 @@ const CorpElection = () => (
 							{behalfFile.link}{" "}
 						</a>
 						{behalfFile.text3}
-						<a href="/research-topics/c-corporation-info/form-2553/">
+						<a href="/research-topics/c-corporation-info/what-is-the-form-2553/">
 							{" "}
 							{behalfFile.link2}{" "}
 						</a>

@@ -109,7 +109,7 @@ export const faq = {
 					},
 					{
 						text: `formal Registered Agent service,`,
-						url: `/research-topics/registered-agent/registered-agent-company/`,
+						url: `/research-topics/registered-agent-help/can-the-registered-agent-be-a-company/`,
 					},
 					{
 						text: `anyone associated with your business who wants to take on the responsibility can be your Registered Agent. They will need to understand the legal requirements and implications of performing the role. Note that your company cannot act as its own Registered Agent.`,
@@ -216,7 +216,7 @@ export const learnMore = {
 					},
 					{
 						text: `Read more`,
-						url: `/research-topics/registered-agent/own-registered-agent/`,
+						url: `/research-topics/registered-agent-help/can-i-act-as-my-own-registered-agent/`,
 					},
 				],
 			},
@@ -240,7 +240,7 @@ export const learnMore = {
 					},
 					{
 						text: `Read more`,
-						url: `/research-topics/registered-agent/registered-agent-company/`,
+						url: `/research-topics/registered-agent-help/can-the-registered-agent-be-a-company/`,
 					},
 				],
 			},
@@ -252,7 +252,7 @@ export const learnMore = {
 					},
 					{
 						text: `Read more`,
-						url: `/research-topics/registered-agent/registered-agent-signature/`,
+						url: `/research-topics/registered-agent-help/what-happens-if-i-require-the-signature-of-my-registered-agent/`,
 					},
 				],
 			},

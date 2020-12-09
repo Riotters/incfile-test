@@ -216,7 +216,7 @@ export const howToGuide = [
 		type: `arrow-link`,
 		content: {
 			text: `Fees and Requirements for Mississippi LLCs`,
-			url: `/mississippi-llc/form-filling-permit-requirements/`,
+			url: `/mississippi-llc/fees-filing-requirements/`,
 		},
 		marginBottom: 16,
 	},

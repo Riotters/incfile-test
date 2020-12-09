@@ -183,7 +183,7 @@ export const agentPageContent = {
           answer: [
             {
               type: `paragraph`,
-              content: `Once you’ve chosen a new New York Registered Agent, you can complete a <a href="os.ny.gov/forms/corporations/1359-f.pdf" target="_blank" rel="noopener noreferrer" >Certificate of Change</a> form that’s available on the NY Department of State website. Once you’ve filled it out, send it to the Department of State so they can update your records. The New York DOS charges $30 to change a Registered Agent.`,
+              content: `Once you’ve chosen a new New York Registered Agent, you can complete a <a href="https://www.os.ny.gov/forms/corporations/1359-f.pdf" target="_blank" rel="noopener noreferrer" >Certificate of Change</a> form that’s available on the NY Department of State website. Once you’ve filled it out, send it to the Department of State so they can update your records. The New York DOS charges $30 to change a Registered Agent.`,
             },
           ],
         },

@@ -1084,10 +1084,6 @@ export const list = {
 									text: `Publishing Company Business`,
 									url: `/start-a-business/publishing-company-business/`,
 								},
-								{
-									text: `Business Contract Templates`,
-									url: `/start-a-business/business-contract-templates/`, //file doesn't exist
-								},
 							],
 						},
 						{
@@ -1098,7 +1094,7 @@ export const list = {
 								},
 								{
 									text: `Food Truck`,
-									url: `/start-a-business/food-truck-business/`,
+									url: `/start-a-business/food-truck/`,
 								},
 								{
 									text: `Bed & Breakfast`,

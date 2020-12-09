@@ -172,8 +172,8 @@ export const howToGuide = [
 	{
 		type: `arrow-link`,
 		content: {
-			text: `Naming Your Vermont  LLC`,
-			url: `/vermont-llc/how-to-name-your-llc/`,
+			text: `Naming Your Vermont LLC`,
+			url: `/vermont-llc/how-to-your-name-llc/`,
 		},
 		marginBottom: 16,
 	},

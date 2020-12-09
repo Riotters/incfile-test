@@ -60,7 +60,7 @@ export const related = {
     },
     {
       header: `What is the Form 2553?`,
-      url: `/research-topics/c-corporation-info/form-2553/`,
+      url: `/research-topics/c-corporation-info/what-is-the-form-2553/`,
     },
     {
       header: `What are the Differences Between Officers, Directors and Shareholders?`,

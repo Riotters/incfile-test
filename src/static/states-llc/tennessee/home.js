@@ -100,7 +100,7 @@ export const howToGuide = [
           <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Tennessee and must be present to receive important documents for your company during business hours.</p></br>
           
           <p>At Incfile, all of our packages include a Tennessee Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
-          <a href="/tennessee-llc/registered-agents-Tennessee-llc/">Learn more about Tennessee Registered Agents.</a>`,
+          <a href="/tennessee-llc/registered-agents-tennessee-llc/">Learn more about Tennessee Registered Agents.</a>`,
 				},
 				{
 					question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
@@ -187,7 +187,7 @@ export const howToGuide = [
 	{
 		type: `text`,
 		content: `<p>If your business is already operating in another state and expanding to Tennessee, you’ll need to form a foreign LLC.</p></br>
-              <p><a href="/tennessee-llc/fees-filing-requirements/">More information on Tennessee filing and licensing requirements here.</a></p>`,
+              <p><a href="/tennessee-llc/form-filling-permit-requirements/">More information on Tennessee filing and licensing requirements here.</a></p>`,
 		marginBottom: 32,
 	},
 
@@ -199,7 +199,7 @@ export const howToGuide = [
 	},
 	{
 		type: `text`,
-		content: `Want to know your next steps after creating a new LLC in Tennessee? We’ve got you covered. <a href="/tennessee-llc/fees-filing-requirements/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more. `,
+		content: `Want to know your next steps after creating a new LLC in Tennessee? We’ve got you covered. <a href="/tennessee-llc/form-filling-permit-requirements/">Here’s our guide</a> to understanding your ongoing requirements, setting up new bank accounts, protecting your business name, getting accounting in place and more. `,
 		marginBottom: 32,
 	},
 	{
@@ -230,7 +230,7 @@ export const howToGuide = [
 		type: `arrow-link`,
 		content: {
 			text: `Tennessee  Registered Agents for LLCs`,
-			url: `/tennessee-llc/registered-agents-Tennessee-llc/`,
+			url: `/tennessee-llc/registered-agents-tennessee-llc/`,
 		},
 		marginBottom: 16,
 	},
@@ -467,7 +467,7 @@ export const namingYourBusiness = [
 			list: [
 				`If you’re ready to start your Tennessee LLC, you can formally file your Articles of Organization with the Tennessee SOS, or <a href="https://sos.tn.gov/products/business-services/application-reservation-name-ss-4228"> let Incfile take care of it for you.</a>"`,
 				`If you’re ready to start your LLC, you can formally file your Certificate of Formation with the Tennessee SOS, or
-             <a href="/tennessee-llc/fees-filing-requirements/"> let Incfile take care of it for you.</a>.`,
+             <a href="/tennessee-llc/form-filling-permit-requirements/"> let Incfile take care of it for you.</a>.`,
 			],
 		},
 		marginBottom: 48,
@@ -1029,7 +1029,7 @@ export const feesAndRequirments = [
 
 	{
 		type: `text`,
-		content: `<a href="/tennessee-llc/fees-filing-requirements/">Learn about your ongoing Tennessee LLC filing requirements</a>
+		content: `<a href="/tennessee-llc/form-filling-permit-requirements/">Learn about your ongoing Tennessee LLC filing requirements</a>
     and business filing deadlines with our helpful Tennessee ongoing filing lookup tool..`,
 		marginBottom: 16,
 	},

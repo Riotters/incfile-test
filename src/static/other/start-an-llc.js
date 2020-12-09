@@ -119,7 +119,7 @@ export const about = {
                 },
                 {
                   text: `steps to starting a Limited Liability Company (LLC).`,
-                  url: `/research-topics/llc-info/starting-llc-by-steps`,
+                  url: `/research-topics/llc-info/steps-to-starting-a-limited-liability-company-llc/`,
                 },
               ],
             },

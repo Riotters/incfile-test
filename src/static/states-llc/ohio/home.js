@@ -98,7 +98,7 @@ export const howToGuide = [
           <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Ohio and must be present to receive important documents for your company during business hours.</p></br>
           
           <p>At Incfile, all of our packages include a Ohio Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
-          <a href="/ohio-llc/registered-agents-Ohio-llc/">Learn more about Ohio Registered Agents.</a>`,
+          <a href="/ohio-llc/registered-agents-ohio-llc/">Learn more about Ohio Registered Agents.</a>`,
 				},
 				{
 					question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
@@ -217,7 +217,7 @@ export const howToGuide = [
 		type: `arrow-link`,
 		content: {
 			text: `Ohio  Registered Agents for LLCs`,
-			url: `/ohio-llc/registered-agents-Ohio-llc/`,
+			url: `/ohio-llc/registered-agents-ohio-llc/`,
 		},
 		marginBottom: 16,
 	},

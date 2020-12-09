@@ -26,7 +26,7 @@ export const related = {
       },
       {
           header: `Can another business entity be a member of an LLC?`,
-          url: `/research-topics/llc-info/llc-business-entity-member`,
+          url: `/research-topics/llc-info/can-another-business-entity-be-a-member-of-an-llc/`,
       },
       {
           header: `Why it’s important for the members on an LLC to have an operating agreement in place?`,
@@ -78,7 +78,7 @@ export const related = {
       },
       {
           header: `Steps to starting a Limited Liability Company (LLC)`,
-          url: `/research-topics/llc-info/starting-llc-by-steps`,
+          url: `/research-topics/llc-info/steps-to-starting-a-limited-liability-company-llc/`,
       },
       {
           header: `What is the process involved in changing the name of an LLC?`,

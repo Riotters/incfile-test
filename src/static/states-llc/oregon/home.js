@@ -153,7 +153,7 @@ export const howToGuide = [
 				{
 					question: `Form a Foreign LLC in Oregon`,
 					answer: `<p>If your business is already operating in another state and expanding to Oregon, you’ll need to form a foreign LLC.</p></br>
-            <p><a href="/Oregon-llc/fees-filing-requirements/">More information on Oregon filing and licensing requirements here.</a></p>`,
+            <p><a href="/oregon-llc/form-filling-permit-requirements/">More information on Oregon filing and licensing requirements here.</a></p>`,
 				},
 			],
 		},

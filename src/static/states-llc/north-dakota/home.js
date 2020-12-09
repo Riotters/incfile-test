@@ -198,7 +198,7 @@ export const howToGuide = [
 		type: `arrow-link`,
 		content: {
 			text: `Naming Your North Dakota LLC`,
-			url: `/north-dakota-llc/north-dakota-business-names/`,
+			url: `/north-dakota-llc/how-to-name-your-llc/`,
 		},
 		marginBottom: 16,
 	},
@@ -224,7 +224,7 @@ export const howToGuide = [
 		type: `arrow-link`,
 		content: {
 			text: `Fees and Requirements for Your North Dakota LLC`,
-			url: `/north-dakota-llc/fees-filing-requirements/`,
+			url: `/north-dakota-llc/form-filling-permit-requirements/`,
 		},
 		marginBottom: 16,
 	},

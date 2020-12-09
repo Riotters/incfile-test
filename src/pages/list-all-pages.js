@@ -409,7 +409,7 @@ const IndexPage = () => (
 				<Link to="/research-topics/llc-info/own-a-corporation-or-llc">
 					Are Non-U.S. Residents Allowed to Own a Corporation or LLC?
 				</Link>
-				<Link to="/research-topics/llc-info/llc-business-entity-member">
+				<Link to="/research-topics/llc-info/can-another-business-entity-be-a-member-of-an-llc/">
 					Can another business entity be a member of an LLC?
 				</Link>
 				<Link to="/research-topics/llc-info/forming-llc-with-one-member">
@@ -438,7 +438,7 @@ const IndexPage = () => (
 				<Link to="/research-topics/llc-info/llcs-vs-c-corporation">
 					LLCs vs C-Corporation: Which Is Best for Your Business?
 				</Link>
-				<Link to="/research-topics/llc-info/starting-llc-by-steps">
+				<Link to="/research-topics/llc-info/steps-to-starting-a-limited-liability-company-llc/">
 					Steps to starting a Limited Liability Company (LLC)
 				</Link>
 				<Link to="/research-topics/llc-info/forming-llc-benefits">
@@ -675,7 +675,7 @@ const IndexPage = () => (
 					Publishing Company Business
 				</Link>
 				<Link to="/start-a-business/tshirt-business">T-Shirt Business</Link>
-				<Link to="/start-a-business/food-truck-business">
+				<Link to="/start-a-business/food-truck/">
 					Food Truck Business
 				</Link>
 				<Link to="/start-a-business/gym-personal-training">

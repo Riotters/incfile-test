@@ -6,7 +6,7 @@ export const tabPages = {
     },
     {
       name: `Name Your Business`,
-      path: `/vermont-llc/how-to-name-your-llc/`,
+      path: `/vermont-llc/how-to-your-name-llc/`,
     },
     {
       name: `Registered Agent`,
