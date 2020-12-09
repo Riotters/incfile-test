@@ -102,7 +102,7 @@ const IncfileVsCompareTableA = ({ className, content }) => (
 			className="table-head"
 			content={content.headers}
 			header
-			headerSize="5"
+			headerSize={5}
 			badge={content.badge}
 		/>
 		{content.rows.map((row) => (
