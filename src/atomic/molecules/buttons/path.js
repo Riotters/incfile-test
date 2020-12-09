@@ -73,7 +73,7 @@ const Arrow = styled.div`
   }
 `;
 
-const PathLink = ({ children, className, to, textColor, arrowColor, hoverColor, externalLink }) => (
+const PathLink = ({ children, className, to, textColor, arrowColor, hoverColor, externalLink, rel }) => (
   <>
     {!externalLink ? (
       <Wrapper to={to} className={className} textColor={textColor} hoverColor={hoverColor}>
@@ -83,7 +83,7 @@ const PathLink = ({ children, className, to, textColor, arrowColor, hoverColor, 
         </Arrow>
       </Wrapper>
     ) : (
-      <WrapperExternal href={to} className={className} textColor={textColor} hoverColor={hoverColor} rel="noopener noreferrer nofollow" target="_blank">
+      <WrapperExternal href={to} className={className} textColor={textColor} hoverColor={hoverColor} rel={rel} target="_blank">
         <span>{children}</span>
         <Arrow arrowColor={arrowColor}>
           <ArrowSVG />
@@ -94,18 +94,19 @@ const PathLink = ({ children, className, to, textColor, arrowColor, hoverColor, 
 );
 
 PathLink.propTypes = {
-  children: PropTypes.any,
-  className: PropTypes.string,
-  to: PropTypes.string.isRequired,
-  textColor: PropTypes.string,
-  arrowColor: PropTypes.string,
-  hoverColor: PropTypes.string,
+    children: PropTypes.any,
+    className: PropTypes.string,
+    to: PropTypes.string.isRequired,
+    textColor: PropTypes.string,
+    arrowColor: PropTypes.string,
+    hoverColor: PropTypes.string,
 };
 
 PathLink.defaultProps = {
-  textColor: color.orange1,
-  arrowColor: color.black,
-  hoverColor: color.blue1,
+    textColor: color.orange1,
+    arrowColor: color.black,
+    hoverColor: color.blue1,
+    rel: "noopener noreferrer nofollow"
 };
 
 export default PathLink;

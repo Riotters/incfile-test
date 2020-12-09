@@ -236,14 +236,18 @@ const CorpElection = () => (
 			<ContentCenter>
 				<OverheadBoxes>
 					<TopImageBox image="envelope-dollar" color={color.yellow3}>
-						<h4>Setting up monthly payroll</h4>
+						<Heading size={3} template={4} bottomMargin={0}>
+							Setting up monthly payroll
+						</Heading>
 						<p>
 							You will need to set up a monthly payroll where you pay yourself
 							and submit your payroll taxes
 						</p>
 					</TopImageBox>
 					<TopImageBox image="calculator-coin" color={color.red3}>
-						<h4>Additional accounting fees</h4>
+						<Heading size={3} template={4} bottomMargin={0}>
+							Additional accounting fees
+						</Heading>
 						<p>
 							Your accountant will need to file your taxes in a slightly
 							different way, which may increase your accounting fees

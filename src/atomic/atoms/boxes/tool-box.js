@@ -13,11 +13,11 @@ const ToolBox = ({ content }) => {
     }
 
     return (
-        <ToolBoxWrapper to={content.url}>{content.text}</ToolBoxWrapper>
+        <ToolBoxWrapper href={content.url} target="_blank">{content.text}</ToolBoxWrapper>
     )
 };
 
-const ToolBoxWrapper = styled(Link)`
+const ToolBoxWrapper = styled.a`
   display: inline-block;
   background-color: ${color.blue3};
   padding: 8px 24px;

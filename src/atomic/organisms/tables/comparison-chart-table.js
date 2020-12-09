@@ -307,7 +307,7 @@ const Accordion = ({
 				className="head"
 				content={content.headers}
 				header
-				headerSize="5"
+				headerSize={5}
 				columns="minmax(368px, 1fr) 160px 160px 160px 160px"
 			/>
 			<Tabs>
