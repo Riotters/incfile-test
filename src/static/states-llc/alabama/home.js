@@ -16,7 +16,7 @@ export const howToGuide = [
     type: `header`,
     content: `Starting an Alabama LLC`,
     size: 1,
-    template: 2,
+    template: 3,
     marginBottom: 40,
   },
   {
@@ -62,6 +62,7 @@ export const howToGuide = [
     content: `Six Quick Steps to Setting Up an Alabama LLC`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 32,
   },
   {
@@ -72,6 +73,7 @@ export const howToGuide = [
   },
   {
     type: `accordion`,
+    header: 3,
     content: {
       items: [
         {
@@ -124,6 +126,7 @@ export const howToGuide = [
     content: `Review Information from the Alabama Secretary of State`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 32,
   },
   {
@@ -148,6 +151,7 @@ export const howToGuide = [
     content: `Special Types of Alabama LLCs`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 32,
   },
   {
@@ -157,6 +161,7 @@ export const howToGuide = [
   },
   {
     type: `accordion`,
+    header: 3,
     content: {
       items: [
         {
@@ -180,6 +185,7 @@ export const howToGuide = [
     content: `What to Do After Filing Your Alabama LLC`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 32,
   },
   {
@@ -194,34 +200,30 @@ export const howToGuide = [
     content: `Detailed Information for Your Alabama LLC`,
     size: 2,
     template: 3,
-    marginBottom: 32,
-  },
-  {
-    type: `text`,
-    content: `You’ll find plenty more insight and guidance on the other pages of this guide, including:`,
-    marginBottom: 16,
-  },
-  {
-    type: `arrow-link`,
-    content: {
-      text: `Naming Your Alabama LLC`,
-      url: `/alabama-llc/how-to-name-your-llc/`,
-    },
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
     type: `text`,
-    content: `How to search the Alabama business registry of the AL Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving an Alabama LLC name and more.
-    `,
+    content: `You’ll find plenty more insight and guidance on the other pages of this guide, including:`,
     marginBottom: 32,
   },
   {
-    type: `arrow-link`,
-    content: {
-      text: `Alabama Registered Agents for Your LLC`,
-      url: `/alabama-llc/registered-agents-alabama-llc/`,
-    },
-    marginBottom: 8,
+    type: `header`,
+    size: 3,
+    content: `<a href="/alabama-llc/how-to-name-your-llc/">Naming Your Alabama LLC</a>`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `How to search the Alabama business registry of the AL Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving an Alabama LLC name and more.`,
+    marginBottom: 32,
+  },
+  {
+    type: `header`,
+    size: 3,
+    content: `<a href="/alabama-llc/registered-agents-alabama-llc/">Alabama Registered Agents for Your LLC</a>`,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -229,12 +231,10 @@ export const howToGuide = [
     marginBottom: 32,
   },
   {
-    type: `arrow-link`,
-    content: {
-      text: `Fees and Requirements for Your Alabama LLC`,
-      url: `/alabama-llc/form-filling-permit-requirements/`,
-    },
-    marginBottom: 8,
+    type: `header`,
+    size: 3,
+    content: `<a href="/alabama-llc/form-filling-permit-requirements/">Fees and Requirements for Your Alabama LLC</a>`,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -242,12 +242,10 @@ export const howToGuide = [
     marginBottom: 32,
   },
   {
-    type: `arrow-link`,
-    content: {
-      text: `Federal, State, Sales and Other Taxes for Your Alabama LLC`,
-      url: `/alabama-llc/business-taxes/`,
-    },
-    marginBottom: 8,
+    type: `header`,
+    size: 3,
+    content: `<a href="/alabama-llc/business-taxes/">Federal, State, Sales and Other Taxes for Your Alabama LLC</a>`,
+    marginBottom: 16,
   },
   {
     type: `text`,
@@ -261,7 +259,7 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Registering Your LLC Name in Alabama`,
     size: 1,
-    template: 2,
+    template: 3,
     marginBottom: 40,
   },
   {
@@ -274,6 +272,7 @@ export const namingYourBusiness = [
     content: `Alabama Secretary of State Business Search`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 32,
   },
   {
@@ -283,22 +282,20 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `Unfortunately, if your chosen name isn’t available, you won’t be able to register it. Try searching for a different business name instead.`,
+    content: `Unfortunately, if your chosen name isn’t available, you won’t be able to register it. Try searching for a different business name instead.</br>`,
     marginBottom: 8,
   },
   {
-    type: `arrow-link`,
-    content: {
-      text: `Alabama SOS business search tool`,
-      url: `http://arc-sos.state.al.us/CGI/CORPNAME.MBR/INPUT`,
-    },
-    marginBottom: 72,
+    type: `text`,
+    content: `<a href="http://arc-sos.state.al.us/CGI/CORPNAME.MBR/INPUT" target="_blank" rel="noopener noreferrer">Alabama SOS business search tool</a>`,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `Alabama Secretary of State Rules for Naming Your LLC`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 32,
   },
   {
@@ -310,7 +307,6 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name Must Be Unique`,
     size: 3,
-    template: 4,
     marginBottom: 32,
   },
   {
@@ -322,7 +318,6 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name Must Not Be Confusable with Another Business Name`,
     size: 3,
-    template: 4,
     marginBottom: 32,
   },
   {
@@ -347,7 +342,6 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name Must Contain Certain Words`,
     size: 3,
-    template: 4,
     marginBottom: 32,
   },
   {
@@ -359,7 +353,6 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Your LLC Business Name May Have Other General Restrictions`,
     size: 3,
-    template: 4,
     marginBottom: 32,
   },
   {
@@ -385,6 +378,7 @@ export const namingYourBusiness = [
     content: `Alabama LLC DBA or Trade Names`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 32,
   },
   {
@@ -411,6 +405,7 @@ export const namingYourBusiness = [
     content: `Register Your Alabama LLC Business Name`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 16,
   },
   {
@@ -436,6 +431,7 @@ export const namingYourBusiness = [
     content: `FAQs on Naming Your Alabama LLC`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 40,
   },
   {
@@ -447,7 +443,6 @@ export const namingYourBusiness = [
     type: `header`,
     content: `How Do I Search for My Alabama LLC Business Name?`,
     size: 3,
-    template: 4,
     marginBottom: 16,
   },
   {
@@ -461,7 +456,6 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Are There Any Rules on Naming My Alabama LLC?`,
     size: 3,
-    template: 4,
     marginBottom: 16,
   },
   {
@@ -473,7 +467,6 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Can I Do Business Under a Different Name Than My LLC Name in Alabama?`,
     size: 3,
-    template: 4,
     marginBottom: 16,
   },
   {
@@ -485,7 +478,6 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Can I Reserve a Name for My Alabama LLC?`,
     size: 3,
-    template: 4,
     marginBottom: 16,
   },
   {
@@ -498,6 +490,7 @@ export const namingYourBusiness = [
     content: `Useful Resources for Naming Your Alabama LLC`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 32,
   },
   {
@@ -509,7 +502,6 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Trademarks and Service Marks`,
     size: 3,
-    template: 4,
     marginBottom: 16,
   },
   {
@@ -530,7 +522,6 @@ export const namingYourBusiness = [
     type: `header`,
     content: `Find the Perfect Name for Your Alabama LLC`,
     size: 3,
-    template: 4,
     marginBottom: 32,
   },
   {
@@ -552,12 +543,9 @@ export const namingYourBusiness = [
     color: color.green3,
   },
   {
-    type: `arrow-link`,
-    content: {
-      text: `Incfile guide to choosing a business name`,
-      url: `/llc-name-search-50-states`,
-    },
-    marginBottom: 80,
+    type: `text`,
+    content: `<a href="/blog/post/llc-name-search-50-states/">Incfile guide to choosing a business name</a>`,
+    marginBottom: 24,
   },
 ];
 
@@ -566,7 +554,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Learn About Alabama Registered Agents`,
     size: 1,
-    template: 2,
+    template: 3,
     marginBottom: 40,
   },
   {
@@ -584,6 +572,7 @@ export const registeredAgent = [
     content: `Rules for Alabama Registered Agents`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 32,
   },
   {
@@ -614,6 +603,7 @@ export const registeredAgent = [
     content: `What to Expect from an Alabama Registered Agent Service`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 32,
   },
   {
@@ -639,6 +629,7 @@ export const registeredAgent = [
     content: `The Incfile Registered Agent Service for Alabama LLCs`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 16,
   },
   {
@@ -668,7 +659,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `More about registered agents`,
-      url: `pages/manage-your-company/registered-agent`,
+      url: `/manage-your-company/registered-agent`,
     },
     theme: `primary48`,
     marginBottom: 32,
@@ -678,6 +669,7 @@ export const registeredAgent = [
     content: `Your Options for Appointing an Alabama Registered Agent`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 32,
   },
   {
@@ -689,7 +681,6 @@ export const registeredAgent = [
     type: `header`,
     content: `Assign Your Alabama Registered Agent When You Form Your AL LLC`,
     size: 3,
-    template: 4,
     marginBottom: 8,
   },
   {
@@ -701,7 +692,6 @@ export const registeredAgent = [
     type: `header`,
     content: `File Certificate of Formation with the Alabama Secretary of State`,
     size: 4,
-    template: 5,
     marginBottom: 32,
   },
   {
@@ -713,7 +703,6 @@ export const registeredAgent = [
     type: `header`,
     content: `Incorporate Through Incfile and Get a Free Alabama Registered Agent`,
     size: 4,
-    template: 5,
     marginBottom: 16,
   },
   {
@@ -734,7 +723,6 @@ export const registeredAgent = [
     type: `header`,
     content: `Assign a Different Alabama Registered Agent Service After Incorporation`,
     size: 3,
-    template: 4,
     marginBottom: 32,
   },
   {
@@ -746,9 +734,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Choose a Registered Agent Service and File Form “Change of Registered Agent or Registered Office by Entity” with the Alabama Secretary of State`,
     size: 4,
-    template: 5,
     marginBottom: 32,
-    style: { fontSize: `20px`, lineHeight: `28px` },
   },
   {
     type: `text`,
@@ -759,9 +745,7 @@ export const registeredAgent = [
     type: `header`,
     content: `Sign Up for Incfile’s Alabama Registered Agent Service and We’ll File the Change on Your Behalf`,
     size: 4,
-    template: 5,
     marginBottom: 32,
-    style: { fontSize: `20px`, lineHeight: `28px` },
   },
   {
     type: `text`,
@@ -782,6 +766,7 @@ export const registeredAgent = [
     content: `Alabama Registered Agent Search`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 16,
   },
   {
@@ -799,6 +784,7 @@ export const registeredAgent = [
     content: `Possible Outcomes of Not Assigning a Registered Agent for Your Alabama LLC`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 32,
   },
   {
@@ -823,6 +809,7 @@ export const registeredAgent = [
     content: `Assigning Yourself as the Alabama Registered Agent for Your LLC`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 32,
   },
   {
@@ -848,10 +835,12 @@ export const registeredAgent = [
     content: `FAQs About Alabama Registered Agents`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 16,
   },
   {
     type: `accordion`,
+    header: 3,
     content: {
       items: [
         {
@@ -879,6 +868,7 @@ export const registeredAgent = [
     content: `Useful Resources for Alabama Registered Agent Services`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 16,
   },
   {
@@ -904,7 +894,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Required Licenses, Fees and Filing for Your Alabama LLC`,
-    size: 2,
+    size: 1,
+    template: 3,
     marginBottom: 40,
   },
   {
@@ -920,7 +911,9 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Initial Filing and Fees for Forming an LLC in Alabama`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -969,7 +962,9 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Getting an Employer Identification Number for Your AL LLC`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -989,7 +984,9 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Foreign Qualification to Operate in a State Outside Alabama`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -1009,7 +1006,9 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Annual Reporting and Fees for Your Alabama LLC`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -1038,18 +1037,19 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Alabama Business Licenses and Permits`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
     type: `text`,
-    content: `Your Alabama LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Alabama, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. `,
+    content: `Your Alabama LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Alabama, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. Permits and licenses vary based on:`,
     marginBottom: 16,
   },
   {
     type: `list-dot`,
     content: {
-      header: `Permits and licenses vary based on:`,
       list: [
         `The industry your Alabama LLC operates in (e.g., restaurants will need health permits)`,
         `The location of your Alabama LLC (state, county or city) (e.g., a license to conduct business from the city of Anchorage)`,
@@ -1069,7 +1069,6 @@ export const feesAndRequirments = [
   {
     type: `list-dot`,
     content: {
-      header: ``,
       list: [
         `A complete report on all the licenses, permits and tax registrations your Alabama LLC will need`,
         `The application forms you will need to file with the Alabama, regional and federal licensing authorities`,
@@ -1095,7 +1094,9 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `An Operating Agreement for Your Alaba LLC`,
-    size: 4,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 16,
   },
   {
@@ -1111,7 +1112,9 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Ad Hoc Alabama Fees or Requirements for Your Alabama LLC`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -1122,7 +1125,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Obtain a Trade Name for Your Alabama LLC`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1142,7 +1145,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Change the Alabama Registered Agent`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1162,7 +1165,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Reserve a Name for Your Alabama LLC`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1173,7 +1176,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Amend Certain Facts About Your Alabama LLC`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1205,7 +1208,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Get a Certificate of Good Standing for Your Alabama LLC`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1235,11 +1238,14 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `FAQs About Alabama LLC Requirements`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
     type: `accordion`,
+    header: 3,
     content: {
       items: [
         {
@@ -1271,7 +1277,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Alabama Business Taxes for LLCs`,
-    size: 2,
+    size: 1,
+    template: 3,
     marginBottom: 40,
   },
   {
@@ -1287,7 +1294,9 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `How Your Alabama LLC Will Be Taxed`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -1324,7 +1333,9 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Alabama Taxes Payable to the Department of Revenue`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -1335,7 +1346,9 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Alabama State Income Tax Payable on LLC Earnings`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -1354,17 +1367,16 @@ export const businessTaxes = [
     marginBottom: 8,
   },
   {
-    type: `arrow-link`,
-    content: {
-      text: `Get details on the Alabama state tax here.`,
-      url: `https://revenue.alabama.gov`,
-    },
+    type: `text`,
+    content: `<a href="https://revenue.alabama.gov" target="_blank" rel="noopener noreferrer">Get details on the Alabama state tax here.</a>`,
     bottomMargin: 16,
   },
   {
     type: `header`,
     content: `Alabama Sales Taxes on LLC Sales`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
 
@@ -1411,7 +1423,9 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Federal Taxes for Your Alabama LLC`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -1422,7 +1436,7 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Alabama LLC Federal Self-Employment Tax`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1453,7 +1467,7 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your Alabama LLC as an S Corporation`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1482,8 +1496,26 @@ export const businessTaxes = [
   },
   {
     type: `header`,
-    content: `Employee and Employer Taxes for Your Alabama LLC`,
+    content: `Alabama LLC Federal Income Tax`,
     size: 3,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `You must also pay regular federal income tax on any earnings you take out of your Alabama LLC. The amount of income tax you pay depends on your earnings, current income tax brackets, deductions and how you file.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `You only pay federal income tax on your Alabama LLC profits that you take out of the business, less certain deductions and allowances. This includes your tax-free amount, plus LLC business expenses and other deductions for areas such as healthcare and some retirement plans. Speak to your accountant for more information.`,
+    marginBottom: 16,
+  },
+  {
+    type: `header`,
+    content: `Employee and Employer Taxes for Your Alabama LLC`,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -1493,6 +1525,7 @@ export const businessTaxes = [
   },
   {
     type: `accordion`,
+    header: 3,
     content: {
       items: [
         {
@@ -1512,17 +1545,8 @@ export const businessTaxes = [
           answer2: [
             {
               type: `paragraph`,
-              content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
-            },
-            {
-              type: `arrow-links`,
-              content: [
-                {
-                  styles: { marginTop: `24px` },
-                  text: `Get more requirements from the Alabama Department of Labor and Workforce Development website.`,
-                  url: `https://www.labor.alabama.gov/`,
-                },
-              ],
+              content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.</br>
+              Get more requirements from the <a href="https://www.labor.alabama.gov/" target="_blank" rel="noopener noreferrer">Alabama Department of Labor and Workforce Development website.</a>`,
             },
           ],
         },
@@ -1559,11 +1583,14 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `FAQs on Alabama LLC Business Taxes`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 32,
   },
   {
     type: `accordion`,
+    header: 3,
     content: {
       items: [
         {
