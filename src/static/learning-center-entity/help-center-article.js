@@ -118,7 +118,7 @@ export const categories = {
     },
     {
       header: `Individual State Information`,
-      url: `/research-topics/state-info/`,
+      url: `/research-topics/individual-state-info/`,
     },
     {
       header: `Video Library`,

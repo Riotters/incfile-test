@@ -76,7 +76,7 @@ export const howToGuide = [
 					question: `STEP 2: Search for and Choose a Unique Business Name for Your New Mexico LLC`,
 					answer: `<p>You will need a distinctive and original name for your Montana LLC that's not used by any other business in MS. To find out if another company is using your chosen business name, carry out a Montana business entity name search on the MT Secretary of State website.</p></br>
                    <p>There are a few rules you'll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your New Mexico LLC.</p></br>
-                   <a href="/New-mexico-llc/how-to-name-your-llc/"> Learn about New Mexico LLC business naming rules.</a>`,
+                   <a href="/new-mexico-llc/how-to-name-your-llc/"> Learn about New Mexico LLC business naming rules.</a>`,
 				},
 				{
 					question: `STEP 3: Provide an Official Address for Your MS LLC`,

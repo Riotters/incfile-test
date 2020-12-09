@@ -53,7 +53,7 @@ const SettingBusiness = () => (
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
           <Heading size={3} template={4}>Finances and taxes</Heading>
           <p>
-            What kind of bank account will you get? Do you need a <Link to="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">business credit card</Link>? How will you pay your business taxes? These are important questions to consider so your
+            What kind of bank account will you get? Do you need a <a href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">business credit card</a>? How will you pay your business taxes? These are important questions to consider so your
             beauty salon business stays in the green. Here at Incfile, we can even <Link to="/business-accounting/">help you file your taxes</Link>.
           </p>
         </TopImageBox>
