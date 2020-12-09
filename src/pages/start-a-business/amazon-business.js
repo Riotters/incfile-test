@@ -3,6 +3,7 @@ import Layout from "../../components/layout";
 import Top from "../../atomic/partials/top";
 import ButtonsBox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
+import ButtonAction from "../../atomic/molecules/buttons/button-action";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -375,7 +376,7 @@ const AmazonBusiness = () => {
                                 />
                             </div>
 
-                            <Button
+                            <ButtonAction
                                 theme="primary56"
                                 marginMD="0 170px 0 0"
                                 onClick={popup}

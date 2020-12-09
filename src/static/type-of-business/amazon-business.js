@@ -112,7 +112,7 @@ export const RingText = {
 export const hsForm = {
     header: `Download our "Guide to Starting an Amazon Business".`,
     text: `Not sure how to start your Amazon business? This guide has everything you'll need to know!`,
-    hs_form_id: `f8b25ab5-7a9a-4f21-b7db-425ede0e6750`,
+    hs_form_id: `6b612f34-bef3-4de5-a0ac-f82999d0dde8`,
     button: {
         text: "Download now",
         url: "/",
