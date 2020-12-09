@@ -12,11 +12,6 @@ import WebSVG from "../../images/icons/icon-web-browser.inline.svg";
 import PhoneSVG from "../../images/icons/icon-virtual-phone.inline.svg";
 import LogoSVG from "../../images/icons/icon-design-business-logo.inline.svg";
 import CardSVG from "../../images/icons/icon-business-card.inline.svg";
-import ProprietorshipSVG from "../../images/icons/icon-sole-proprietorship.inline.svg";
-import LockpadSVG from "../../images/icons/icon-user-lockpad.inline.svg";
-import ProcentSVG from "../../images/icons/icon-user-percentge.inline.svg";
-import BillSVG from "../../images/icons/icon-person-bill.inline.svg";
-import FolderProcentSVG from "../../images/icons/icon-folder-procent.inline.svg";
 import { color } from "../../atomic/atoms/styles/colors";
 import { shadow } from "../../atomic/atoms/styles/shadows";
 
@@ -26,7 +21,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `${process.env.ORDER_URL}/form-order-now.php`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=IL`,
     },
   ],
 };
@@ -55,27 +50,27 @@ export const tabPages = {
     },
     {
       name: `Entity Search & Name`,
-      path: `/illinois-corporation/how-to-name-your-corporation`,
+      path: `/illinois-corporation/how-to-name-your-corporation/`,
       icon: PenSVG,
     },
     {
       name: `Registered Agents`,
-      path: `/illinois-corporation/registered-agents-illinois`,
+      path: `/illinois-corporation/registered-agents-illinois/`,
       icon: RegisteredAgentSVG,
     },
     {
       name: `Corporation Requirements`,
-      path: `/illinois-corporation/form-filling-permit-requirements`,
+      path: `/illinois-corporation/form-filling-permit-requirements/`,
       icon: PrinterSVG,
     },
     {
       name: `Taxes & Fees`,
-      path: `/illinois-corporation/taxes-and-fees-for-your-corporation`,
+      path: `/illinois-corporation/taxes-and-fees-for-your-corporation/`,
       icon: PriceTagSVG,
     },
     {
       name: `What To Do After?`,
-      path: `/illinois-corporation/know-your-ongoing-filing-requirements`,
+      path: `/illinois-corporation/know-your-ongoing-filing-requirements/`,
       icon: CoffeeSVG,
     },
   ],
@@ -691,7 +686,7 @@ export const corporation = [
         "It is easy to transfer ownership in an S Corporation by selling your stock.",
         `In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax. Find out how this can save you money using our <a href="/s-corporation-tax-calculator/">S Corporation tax calculator.</a>`,
         `LLCs can <a href="/research-topics/llc-info/can-a-limited-liability-company-llc-be-taxed-as-an-s-corporation/">choose to be taxed as S Corporations</a> to take advantage of this.`,
-        `You can find more <a href="/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/">advantages of forming an S Corporation</a> in Illinois.`,
+        `You can find more <a href="https://www.incfile.com/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/">advantages of forming an S Corporation</a> in Illinois.`,
       ],
     },
     color: color.green3,
@@ -761,7 +756,7 @@ export const corporation = [
   },
   {
     type: "text",
-    content: `Are you ready to start your Illinois corporation? If so, we can help. We provide comprehensive corporation formation services for both <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=IL">S Corporations</a> and <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=IL">C Corporations</a> in Illinois.`,
+    content: `Are you ready to start your Illinois corporation? If so, we can help. We provide comprehensive corporation formation services for both <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=IL">S Corporations</a> and <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=IL">C Corporations</a> in Illinois.`,
     marginBottom: 48,
   },
   {
@@ -832,7 +827,7 @@ export const corporation = [
         },
         {
           question: "Step Four — Draft Your Articles of Incorporation",
-          answer: `The legal document required to create your new corporation is called the <a href="/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile/">Articles of Incorporation</a>. You will need to gather various details for your Illinois filing including:`,
+          answer: `The legal document required to create your new corporation is called the <a href="https://www.incfile.com/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile/">Articles of Incorporation</a>. You will need to gather various details for your Illinois filing including:`,
           list: [
             "The corporation’s name",
             "The corporation’s purpose",
@@ -846,7 +841,7 @@ export const corporation = [
         {
           question:
             "Step Five — File Your Articles of Incorporation With the Illinois Secretary of State",
-          answer: `Once your articles are drafted, you can file them with the Illinois Secretary of State. Filing your Articles of Incorporation creates your Illinois corporation. You can do this online, mail in a form or have <a href="${process.env.ORDER_URL}/form-order-now.php?">Incfile do it on your behalf. </a>`,
+          answer: `Once your articles are drafted, you can file them with the Illinois Secretary of State. Filing your Articles of Incorporation creates your Illinois corporation. You can do this online, mail in a form or have <a href="${process.env.ORDER_URL}/form-order-now.php">Incfile do it on your behalf. </a>`,
         },
         {
           question:
@@ -1045,7 +1040,7 @@ export const naming = [
         "By registering a corporation, the name will automatically be held for your business. You would normally only reserve a name if you are not planning on forming the new company anytime soon.",
         "A name can be used to form any type of business entity, not just a corporation.",
         "Just filing a name registration doesn’t guarantee you will be granted the name. You should wait until your corporation is legally formed before using the name for anything else.",
-        `You might also want to use a “<a href="/blog/post/understanding-dba-doing-business-as/">Doing Business As (DBA)</a>” or “Assumed Name” if you are trading under a different name than your official company name.`,
+        `You might also want to use a “<a href="https://www.incfile.com/blog/post/understanding-dba-doing-business-as/">Doing Business As (DBA)</a>” or “Assumed Name” if you are trading under a different name than your official company name.`,
       ],
     },
     color: color.green3,
@@ -1097,7 +1092,7 @@ export const naming = [
   },
   {
     type: "text",
-    content: `Fortunately, we have some good advice on seeking out the perfect business name for your Illinois corporation. <a href="/blog/post/llc-name-search-50-states/">Check out our guidance on naming your business</a> and get inspired.`,
+    content: `Fortunately, we have some good advice on seeking out the perfect business name for your Illinois corporation. <a href="https://www.incfile.com/blog/post/llc-name-search-50-states/">Check out our guidance on naming your business</a> and get inspired.`,
     marginBottom: 48,
   },
   {
@@ -1378,7 +1373,7 @@ export const filing = [
   },
   {
     type: "text",
-    content: `<a href="/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile/">The Articles of Incorporation</a> are the formal documents filed with the Illinois Secretary of State to create your corporation. They provide certain information about your business. Once the documents are filed with the Secretary of State, they legally create your business as a corporation in Illinois. Here’s what’s typically included:`,
+    content: `<a href="https://www.incfile.com/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile/">The Articles of Incorporation</a> are the formal documents filed with the Illinois Secretary of State to create your corporation. They provide certain information about your business. Once the documents are filed with the Secretary of State, they legally create your business as a corporation in Illinois. Here’s what’s typically included:`,
     marginBottom: 24,
   },
   {

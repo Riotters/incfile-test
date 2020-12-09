@@ -128,7 +128,7 @@ export const faq = {
         },
         {
           text: `complete guide to choosing the right VA business name`,
-          url: `/blog/post/llc-name-search-50-states/`,
+          url: `https://www.incfile.com/blog/post/llc-name-search-50-states/`,
         },
         {
           text: `— you'll want to choose a name that will:`,

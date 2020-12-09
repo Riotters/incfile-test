@@ -61,7 +61,7 @@ export const about = {
                 },
                 {
                   text: `How to Search & Choose Your Business Entity Name in all 50 States.`,
-                  url: `/blog/post/llc-name-search-50-states/`,
+                  url: `https://www.incfile.com/blog/post/llc-name-search-50-states/`,
                 },
               ],
             },

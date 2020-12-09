@@ -73,7 +73,7 @@ export const related = {
       },
       {
           header: `LLCs vs C-Corporation: Which Is Best for Your Business?`,
-          url: `/research-topics/c-corporation-info/llcs-vs-c-corporation/`,
+          url: `/research-topics/c-corporation-info/llcs-vs-c-corporation-which-is-best-for-your-business/`,
       },
       {
           header: `How is a Corporation Managed?`,

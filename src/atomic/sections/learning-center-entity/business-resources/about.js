@@ -31,9 +31,6 @@ const AboutSection = ({ className, content }) => (
 			<OvalSVG />
 		</Oval>
 		<ImageContent image="business-downloads-tools-about-7291">
-			{/* <Heading size={3} bottomMargin="24">
-				{content.header}
-			</Heading> */}
 			<Paragraph big bottomMargin="32">
 				{content.text}
 			</Paragraph>

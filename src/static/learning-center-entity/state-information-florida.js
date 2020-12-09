@@ -40,7 +40,7 @@ export const top = {
   buttons: [
     {
       text: `See detailed pricing`,
-      url: `${process.env.ORDER_URL}/form-order-now.php`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=FL`,
     },
   ],
 };
@@ -140,8 +140,7 @@ export const corporation = [
   },
   {
     type: "text",
-    content:
-      "Here’s a quick overview of each type of <a href='/florida-entity-search'>business entity</a>.",
+    content: "Here’s a quick overview of each type of <a href='/florida-entity-search/'>business entity</a>.",
     marginBottom: 24,
   },
   {
@@ -298,7 +297,7 @@ export const corporation = [
     type: "button",
     content: {
       text: "File From 2553 with the IRS",
-      url: "/s-corp-election-form",
+      url: `${process.env.ORDER_URL}/s-corp-election-form`,
     },
     theme: "primary56",
     marginBottom: 64,
@@ -376,7 +375,7 @@ export const corporation = [
         "Running an S Corporation in Florida is simpler than running a C Corporation.",
         "It is easy to transfer ownership in an S Corporation by selling your stock.",
         `In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax. Find out how this can save you money using our <a href="/s-corporation-tax-calculator/">S Corporation Tax Calculator</a> .`,
-        "LLCs can <a href='/research-topics/llc-info/llc-taxed-as-an-s-corp/'>choose to be taxed as S Corporations</a> to take advantage of this.",
+        "LLCs can <a href='/research-topics/llc-info/can-a-limited-liability-company-llc-be-taxed-as-an-s-corporation/'>choose to be taxed as S Corporations</a> to take advantage of this.",
       ],
     },
     color: color.orange3,
@@ -388,8 +387,7 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Learn more about the advantages of forming an S Corporation. ",
-      url:
-        "/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/",
+      url: "https://www.incfile.com/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/",
     },
     marginBottom: 48,
   },
@@ -1411,7 +1409,7 @@ export const agents = [
     type: "arrow-link",
     content: {
       text: "What a Florida Registered Agent Does",
-      url: "/research-topics/registered-agent/registered-agent-tasks/",
+      url: "/research-topics/registered-agent-help/what-does-a-registered-agent-do/",
     },
     marginBottom: 24,
   },

@@ -29,7 +29,6 @@ import Checkbox from "../components/form/checkbox";
 import Dropdown from "../components/form/dropdown";
 import CheckText from "../components/static-check/text-only";
 import CheckBox from "../components/static-check/text-boxed";
-import Checklist from "../components/checklist/checklist";
 import TopImageBox from "../atomic/molecules/mixed-blocks/top-image-box";
 import { articles } from "../static/blog";
 import BlogArticleCard from "../atomic/organisms/cards/blog-article-card";
@@ -42,15 +41,12 @@ import Adventages from "../components/adventages";
 import InfoCardsSection from "../atomic/partials/info-cards-section";
 import { InfoCards } from "../static/type-of-business/airbnb";
 import CircleWithText from "../atomic/molecules/blocks/circle-with-text-block";
-import CompareTable from "../components/compare-table/compare-table";
-import { CompareStateFilingTimes } from "../static/compare-state-filing-times";
 import StatesTable from "../components/states-table/states-table";
 import { WhichStatesAreFast } from "../static/which-states-are-fast";
 import StatesMap from "../components/states-map/states-map";
 import Reviews from "../components/reviews/reviews";
 import { ReviewsData } from "../static/reviews-data";
 import AmountSlider from "../components/amount-slider/amount-slider";
-import ChecklistIcon from "../images/icons/wrench-and-pen.inline.svg";
 
 const topimagebox = {
   header: `How Long does it take to file an Annual Report?`,

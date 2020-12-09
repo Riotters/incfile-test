@@ -322,7 +322,7 @@ export const agentPageContent = {
         },
         {
           text: `What a New York Registered Agent Does`,
-          url: `/research-topics/registered-agent/registered-agent-tasks/`,
+          url: `/research-topics/registered-agent-help/what-does-a-registered-agent-do/`,
         },
       ],
     },

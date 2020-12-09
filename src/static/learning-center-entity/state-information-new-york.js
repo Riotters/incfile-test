@@ -307,7 +307,7 @@ export const corporation = [
     type: "button",
     content: {
       text: "File From 2553 with the IRS",
-      url: "/s-corp-election-form",
+      url: `${process.env.ORDER_URL}/s-corp-election-form?action=new&type=24`,
     },
     theme: "primary56",
     marginBottom: 64,
@@ -390,7 +390,7 @@ export const corporation = [
     content: {
       text: "Learn more about the advantages of forming an S Corporation. ",
       url:
-        "/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/",
+        "https://www.incfile.com/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/",
     },
     marginBottom: 48,
   },
@@ -1460,7 +1460,7 @@ export const agents = [
     type: "arrow-link",
     content: {
       text: "What a New York Registered Agent Does",
-      url: "/research-topics/registered-agent/registered-agent-tasks/",
+      url: "/research-topics/registered-agent-help/what-does-a-registered-agent-do/",
     },
     marginBottom: 24,
   },

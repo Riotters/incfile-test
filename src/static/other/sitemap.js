@@ -525,15 +525,15 @@ export const list = {
 							links: [
 								{
 									text: `Amazon Business`,
-									url: `/blog/tag/start-a-business/business-types/amazon-business/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/amazon-business/`,
 								},
 								{
 									text: `Branding`,
-									url: `/blog/tag/start-a-business/business-logistics/branding/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-logistics/branding/`,
 								},
 								{
 									text: `Business Credit and Loans`,
-									url: `/blog/tag/grow-a-business/financial-management/business-credit-and-loans/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/financial-management/business-credit-and-loans/`,
 								},
 							],
 						},
@@ -541,15 +541,15 @@ export const list = {
 							links: [
 								{
 									text: `Business Ideas`,
-									url: `/blog/tag/start-a-business/business-logistics/business-ideas/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-logistics/business-ideas/`,
 								},
 								{
 									text: `Business License and Permits`,
-									url: `/blog/tag/form-a-business/entity-requirements/business-license-and-permits/`,
+									url: `https://www.incfile.com/blog/tag/form-a-business/entity-requirements/business-license-and-permits/`,
 								},
 								{
 									text: `Business Names`,
-									url: `/blog/tag/start-a-business/business-logistics/business-names/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-logistics/business-names/`,
 								},
 							],
 						},
@@ -557,15 +557,15 @@ export const list = {
 							links: [
 								{
 									text: `Business Surveys and Data`,
-									url: `/blog/tag/start-a-business/business-logistics/business-surveys-and-data/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-logistics/business-surveys-and-data/`,
 								},
 								{
 									text: `Business Trademark`,
-									url: `/blog/tag/form-a-business/entity-requirements/business-trademark/`,
+									url: `https://www.incfile.com/blog/tag/form-a-business/entity-requirements/business-trademark/`,
 								},
 								{
 									text: `Certificate of Good Standing`,
-									url: `/blog/tag/grow-a-business/state-irs-filing/certificate-of-good-standing/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/state-irs-filing/certificate-of-good-standing/`,
 								},
 							],
 						},
@@ -573,15 +573,15 @@ export const list = {
 							links: [
 								{
 									text: `Cryptocurrency`,
-									url: `/blog/tag/start-a-business/business-types/cryptocurrency/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/cryptocurrency/`,
 								},
 								{
 									text: `Dissolution`,
-									url: `/blog/tag/grow-a-business/state-irs-filing/dissolution/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/state-irs-filing/dissolution/`,
 								},
 								{
 									text: `Entity Requirements`,
-									url: `/blog/tag/form-a-business/entity-requirements/`,
+									url: `https://www.incfile.com/blog/tag/form-a-business/entity-requirements/`,
 								},
 							],
 						},
@@ -589,15 +589,15 @@ export const list = {
 							links: [
 								{
 									text: `Food Trucks`,
-									url: `/blog/tag/start-a-business/business-types/food-trucks/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/food-trucks/`,
 								},
 								{
 									text: `Founders & Entrepreneurs`,
-									url: `/blog/tag/start-a-business/business-logistics/founders-entrepreneurs/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-logistics/founders-entrepreneurs/`,
 								},
 								{
 									text: `Growth Management`,
-									url: `/blog/tag/grow-a-business/growth-management/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/growth-management/`,
 								},
 							],
 						},
@@ -605,15 +605,15 @@ export const list = {
 							links: [
 								{
 									text: `Incfile Info`,
-									url: `/blog/tag/incfile-info/`,
+									url: `https://www.incfile.com/blog/tag/incfile-info/`,
 								},
 								{
 									text: `Leadership`,
-									url: `/blog/tag/grow-a-business/growth-management/leadership/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/growth-management/leadership/`,
 								},
 								{
 									text: `New Business Finances`,
-									url: `/blog/tag/form-a-business/new-business-finances/`,
+									url: `https://www.incfile.com/blog/tag/form-a-business/new-business-finances/`,
 								},
 							],
 						},
@@ -621,15 +621,15 @@ export const list = {
 							links: [
 								{
 									text: `Order Info`,
-									url: `/blog/tag/incfile-info/order-info/`,
+									url: `https://www.incfile.com/blog/tag/incfile-info/order-info/`,
 								},
 								{
 									text: `Registered Agent`,
-									url: `/blog/tag/form-a-business/entity-requirements/registered-agent/`,
+									url: `https://www.incfile.com/blog/tag/form-a-business/entity-requirements/registered-agent/`,
 								},
 								{
 									text: `Retirement`,
-									url: `/blog/tag/grow-a-business/financial-management/retirement/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/financial-management/retirement/`,
 								},
 							],
 						},
@@ -637,15 +637,15 @@ export const list = {
 							links: [
 								{
 									text: `Solopreneurs & Freelancers`,
-									url: `/blog/tag/start-a-business/business-types/solopreneurs-freelancers/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/solopreneurs-freelancers/`,
 								},
 								{
 									text: `State & IRS Filing`,
-									url: `/blog/tag/grow-a-business/state-irs-filing/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/state-irs-filing/`,
 								},
 								{
 									text: `Veterans`,
-									url: `/blog/tag/start-a-business/business-types/veterans/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/veterans/`,
 								},
 							],
 						},
@@ -653,15 +653,15 @@ export const list = {
 							links: [
 								{
 									text: `Annual Report`,
-									url: `/blog/tag/grow-a-business/state-irs-filing/annual-report/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/state-irs-filing/annual-report/`,
 								},
 								{
 									text: `Business Accounting`,
-									url: `/blog/tag/form-a-business/new-business-finances/business-accounting/`,
+									url: `https://www.incfile.com/blog/tag/form-a-business/new-business-finances/business-accounting/`,
 								},
 								{
 									text: `Business Entities`,
-									url: `/blog/tag/form-a-business/business-entities/`,
+									url: `https://www.incfile.com/blog/tag/form-a-business/business-entities/`,
 								},
 							],
 						},
@@ -669,15 +669,15 @@ export const list = {
 							links: [
 								{
 									text: `Business Insurance`,
-									url: `/blog/tag/grow-a-business/business-protection/business-insurance/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/business-protection/business-insurance/`,
 								},
 								{
 									text: `Business Logistics`,
-									url: `/blog/tag/start-a-business/business-logistics/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-logistics/`,
 								},
 								{
 									text: `Business Protection`,
-									url: `/blog/tag/grow-a-business/business-protection/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/business-protection/`,
 								},
 							],
 						},
@@ -685,15 +685,15 @@ export const list = {
 							links: [
 								{
 									text: `Business Tax`,
-									url: `/blog/tag/form-a-business/new-business-finances/business-tax/`,
+									url: `https://www.incfile.com/blog/tag/form-a-business/new-business-finances/business-tax/`,
 								},
 								{
 									text: `Business Types`,
-									url: `/blog/tag/start-a-business/business-types/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/`,
 								},
 								{
 									text: `Consultants`,
-									url: `/blog/tag/start-a-business/business-types/consultants/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/consultants/`,
 								},
 							],
 						},
@@ -701,15 +701,15 @@ export const list = {
 							links: [
 								{
 									text: `DBA`,
-									url: `/blog/tag/start-a-business/business-logistics/dba/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-logistics/dba/`,
 								},
 								{
 									text: `DIYers`,
-									url: `/blog/tag/start-a-business/business-types/diy-llc/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/diy-llc/`,
 								},
 								{
 									text: `Etsy Store`,
-									url: `/blog/tag/start-a-business/business-types/etsy-store/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/etsy-store/`,
 								},
 							],
 						},
@@ -717,15 +717,15 @@ export const list = {
 							links: [
 								{
 									text: `Foreign Qualification`,
-									url: `/blog/tag/grow-a-business/state-irs-filing/foreign-qualification/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/state-irs-filing/foreign-qualification/`,
 								},
 								{
 									text: `Franchise`,
-									url: `/blog/tag/start-a-business/business-types/franchise/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/franchise/`,
 								},
 								{
 									text: `Hiring & People`,
-									url: `/blog/tag/grow-a-business/growth-management/hiring-people/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/growth-management/hiring-people/`,
 								},
 							],
 						},
@@ -733,15 +733,15 @@ export const list = {
 							links: [
 								{
 									text: `Incfile News`,
-									url: `/blog/tag/incfile-info/incfile-news/`,
+									url: `https://www.incfile.com/blog/tag/incfile-info/incfile-news/`,
 								},
 								{
 									text: `Legal Contracts`,
-									url: `/blog/tag/grow-a-business/business-protection/legal-contracts/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/business-protection/legal-contracts/`,
 								},
 								{
 									text: `Nonprofits`,
-									url: `/blog/tag/form-a-business/business-entities/nonprofits/`,
+									url: `https://www.incfile.com/blog/tag/form-a-business/business-entities/nonprofits/`,
 								},
 							],
 						},
@@ -749,15 +749,15 @@ export const list = {
 							links: [
 								{
 									text: `Product Updates`,
-									url: `/blog/tag/incfile-info/product-updates/`,
+									url: `https://www.incfile.com/blog/tag/incfile-info/product-updates/`,
 								},
 								{
 									text: `Remote Work`,
-									url: `/blog/tag/start-a-business/business-types/remote-work/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/remote-work/`,
 								},
 								{
 									text: `Series LLC`,
-									url: `/blog/tag/form-a-business/business-entities/series-llc/`,
+									url: `https://www.incfile.com/blog/tag/form-a-business/business-entities/series-llc/`,
 								},
 							],
 						},
@@ -765,15 +765,15 @@ export const list = {
 							links: [
 								{
 									text: `Spotlight of the Month`,
-									url: `/blog/tag/start-a-business/business-types/spotlight-of-the-month/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/spotlight-of-the-month/`,
 								},
 								{
 									text: `State Information`,
-									url: `/blog/tag/start-a-business/business-logistics/state-information/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-logistics/state-information/`,
 								},
 								{
 									text: `Virtual Business Address`,
-									url: `/blog/tag/form-a-business/entity-requirements/virtual-business-address/`,
+									url: `https://www.incfile.com/blog/tag/form-a-business/entity-requirements/virtual-business-address/`,
 								},
 							],
 						},
@@ -781,15 +781,15 @@ export const list = {
 							links: [
 								{
 									text: `Article of Amendment`,
-									url: `/blog/tag/grow-a-business/state-irs-filing/article-of-amendment/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/state-irs-filing/article-of-amendment/`,
 								},
 								{
 									text: `Business Banking`,
-									url: `/blog/tag/form-a-business/new-business-finances/business-banking/`,
+									url: `https://www.incfile.com/blog/tag/form-a-business/new-business-finances/business-banking/`,
 								},
 								{
 									text: `Business Forms`,
-									url: `/blog/tag/grow-a-business/state-irs-filing/business-forms/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/state-irs-filing/business-forms/`,
 								},
 							],
 						},
@@ -797,15 +797,15 @@ export const list = {
 							links: [
 								{
 									text: `Business Legislation`,
-									url: `/blog/tag/start-a-business/business-logistics/business-legislation/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-logistics/business-legislation/`,
 								},
 								{
 									text: `Business Marketing`,
-									url: `/blog/tag/grow-a-business/growth-management/business-marketing/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/growth-management/business-marketing/`,
 								},
 								{
 									text: `Business Sales`,
-									url: `/blog/tag/grow-a-business/growth-management/business-sales/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/growth-management/business-sales/`,
 								},
 							],
 						},
@@ -813,15 +813,15 @@ export const list = {
 							links: [
 								{
 									text: `Business Technology`,
-									url: `/blog/tag/start-a-business/business-logistics/business-technology/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-logistics/business-technology/`,
 								},
 								{
 									text: `Cannabis`,
-									url: `/blog/tag/start-a-business/business-types/cannabis/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/cannabis/`,
 								},
 								{
 									text: `Corporations`,
-									url: `/blog/tag/form-a-business/business-entities/corporations/`,
+									url: `https://www.incfile.com/blog/tag/form-a-business/business-entities/corporations/`,
 								},
 							],
 						},
@@ -829,15 +829,15 @@ export const list = {
 							links: [
 								{
 									text: `Digital Nomads`,
-									url: `/blog/tag/start-a-business/business-types/digital-nomads/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/digital-nomads/`,
 								},
 								{
 									text: `EIN`,
-									url: `/blog/tag/form-a-business/entity-requirements/ein/`,
+									url: `https://www.incfile.com/blog/tag/form-a-business/entity-requirements/ein/`,
 								},
 								{
 									text: `Financial Management`,
-									url: `/blog/tag/grow-a-business/financial-management/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/financial-management/`,
 								},
 							],
 						},
@@ -845,15 +845,15 @@ export const list = {
 							links: [
 								{
 									text: `Form a Business Today`,
-									url: `/blog/tag/form-a-business/`,
+									url: `https://www.incfile.com/blog/tag/form-a-business/`,
 								},
 								{
 									text: `Grow Your Business`,
-									url: `/blog/tag/grow-a-business/`,
+									url: `https://www.incfile.com/blog/tag/grow-a-business/`,
 								},
 								{
 									text: `Home Business`,
-									url: `/blog/tag/start-a-business/business-types/home-business/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/home-business/`,
 								},
 							],
 						},
@@ -861,15 +861,15 @@ export const list = {
 							links: [
 								{
 									text: `Kid/Teen`,
-									url: `/blog/tag/start-a-business/business-types/kidteen/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/kidteen/`,
 								},
 								{
 									text: `LLCs`,
-									url: `/blog/tag/form-a-business/business-entities/llcs/`,
+									url: `https://www.incfile.com/blog/tag/form-a-business/business-entities/llcs/`,
 								},
 								{
 									text: `Operating Agreement`,
-									url: `/blog/tag/form-a-business/entity-requirements/operating-agreement/`,
+									url: `https://www.incfile.com/blog/tag/form-a-business/entity-requirements/operating-agreement/`,
 								},
 							],
 						},
@@ -877,15 +877,15 @@ export const list = {
 							links: [
 								{
 									text: `Real Estate Investors`,
-									url: `/blog/tag/start-a-business/business-types/real-estate-investors/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/real-estate-investors/`,
 								},
 								{
 									text: `Retail`,
-									url: `/blog/tag/start-a-business/business-types/retail/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/retail/`,
 								},
 								{
 									text: `Small Business`,
-									url: `/blog/tag/start-a-business/business-types/small-business/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/small-business/`,
 								},
 							],
 						},
@@ -893,15 +893,15 @@ export const list = {
 							links: [
 								{
 									text: `Start a Business Soon`,
-									url: `/blog/tag/start-a-business/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/`,
 								},
 								{
 									text: `Uncategorized`,
-									url: `/blog/tag/uncategorized/`,
+									url: `https://www.incfile.com/blog/tag/uncategorized/`,
 								},
 								{
 									text: `Women in Business`,
-									url: `/blog/tag/start-a-business/business-types/women-in-business/`,
+									url: `https://www.incfile.com/blog/tag/start-a-business/business-types/women-in-business/`,
 								},
 							],
 						},
@@ -950,7 +950,7 @@ export const list = {
 							links: [
 								{
 									text: `Laundromat Business`,
-									url: `/start-a-business/laundromat/`,
+									url: `/start-a-business/laundromat-business/`,
 								},
 								{
 									text: `T-shirt Business`,
@@ -990,7 +990,7 @@ export const list = {
 								},
 								{
 									text: `Dog Walking Business`,
-									url: `/start-a-business/dog-walking/`,
+									url: `/start-a-business/dog-walking-business/`,
 								},
 							],
 						},

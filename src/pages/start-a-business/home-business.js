@@ -48,7 +48,7 @@ const HomeBusiness = () => (
 			<p>
 				Starting a new business can be a major undertaking, so for entrepreneurs
 				wanting to start off small,{" "}
-				<Link to="/blog/post/how-start-home-business/">
+				<Link to="https://www.incfile.com/post/how-start-home-business/">
 					a home-based business is a great idea
 				</Link>
 				. You’ll learn a great deal about running a business successfully, while

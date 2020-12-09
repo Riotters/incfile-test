@@ -88,11 +88,11 @@ export const related = {
   buttons: [
     {
       header: `How to Meet New York LLC Publication Requirements?`,
-      url: `/research-topics/state-info/ny-publication-requirement/`,
+      url: `/research-topics/individual-state-info/meeting-the-new-york-publication-requirement/`,
     },
     {
       header: `How To Publish Your Notice Of Incorporation In Georgia?`,
-      url: `/research-topics/state-info/publish-inc-notice-georgia/`,
+      url: `/research-topics/individual-state-info/how-to-publish-your-notice-of-incorporation-in-georgia/`,
     },
   ],
 };

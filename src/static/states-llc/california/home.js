@@ -134,14 +134,14 @@ export const HomePageContent = {
         ],
         text3: `Note: If you drop off your Articles of Organization in person, you’re required to pay a separate, non-refundable $15 drop off fee. This gives your paperwork priority over mail-in documents.`,
         text4: `You only need to file your Articles of Organization with the State of California once, but you will need to file a Statement of Information biennially for your LLC, which has its own fees. Your first 
-                  <a href="/blog/post/form-llc-12-california-llc/" target="_blank" rel="noopener noreferrer">Statement of Information (Form LLC-12)</a>
+                  <a href="https://www.incfile.com/blog/post/form-llc-12-california-llc/" target="_blank" rel="noopener noreferrer">Statement of Information (Form LLC-12)</a>
                    is due within 90 days of your entity formation date. This is also something Incfile can remind you to do or do for you if you choose to have us handle the paperwork.`,
         cta: {
           title: `Have Incfile Handle all the Paperwork <br>`,
           subtitle: `for You for $0 + the California State fee`,
           button: {
             text: `Form Your LLC Now For Free`,
-            url: `form-order-now.php?entityType=LLC&entityState=CA`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CA`,
           },
         },
       },
@@ -155,7 +155,7 @@ export const HomePageContent = {
         text2: `California requires that LLCs have an operating agreement in place. This does not need to be filed with the Secretary of State but should be kept on hand.`,
         button1: {
           text: `Learn More About Operating Agreements Here`,
-          url: `/blog/post/operating-agreement-llc/`,
+          url: `https://www.incfile.com/blog/post/operating-agreement-llc/`,
         },
         cta: {
           title: `Receive a personalized <br>operating agreement`,
@@ -257,7 +257,7 @@ export const HomePageContent = {
               marginBottom: `24px`,
             },
             text: `Naming Your California LLC`,
-            url: `/California-llc/California-business-names/`,
+            url: `/california-llc/california-business-names/`,
           },
         ],
       },
@@ -278,7 +278,7 @@ export const HomePageContent = {
               marginBottom: `24px`,
             },
             text: `California Registered Agents`,
-            url: `/California-llc/registered-agents-California-llc/`,
+            url: `/california-llc/registered-agents-california-llc/`,
           },
         ],
       },
@@ -294,7 +294,7 @@ export const HomePageContent = {
               marginBottom: `24px`,
             },
             text: `Fees and Requirements for Your California LLC`,
-            url: `/California-llc/fees-filing-requirements/`,
+            url: `/california-llc/fees-filing-requirements/`,
           },
         ],
       },
@@ -310,7 +310,7 @@ export const HomePageContent = {
               marginBottom: `24px`,
             },
             text: `Business Taxes for Your California LLC`,
-            url: `/California-llc/business-taxes/`,
+            url: `/california-llc/business-taxes/`,
           },
         ],
       },

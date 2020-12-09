@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../../../atoms/styles/colors";
 import HeadingCenter from "../../../partials/heading-center";
-import Button from "../../../molecules/buttons/button";
 import ContentCenter from "../../../partials/content-center";
 import Tabs from "../../../organisms/tabs/business-resources-tabs";
 import Cards from "../../../organisms/cards/table-of-content-cards";

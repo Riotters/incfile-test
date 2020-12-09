@@ -34,7 +34,7 @@ export const related = {
     },
     {
       header: `Can a Limited Liability Company (LLC) be taxed as an S Corporation?`,
-      url: `/research-topics/llc-info/llc-taxed-as-an-s-corp`,
+      url: `/research-topics/llc-info/can-a-limited-liability-company-llc-be-taxed-as-an-s-corporation/`,
     },
     {
       header: `Which entity offers the best tax advantages?`,

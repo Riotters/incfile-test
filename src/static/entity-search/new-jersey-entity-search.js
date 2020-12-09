@@ -82,11 +82,11 @@ export const startBusiness = {
 	text: `Ready to start your business? Incfile will take care of the paperwork for you and file it with the New Jersey Division of Revenue and Enterprise Services - all for as little as $0 + state fee.`,
 	button: {
 		text: `NJ LLC`,
-		url: `/new-jersey-llc`,
+		url: `/new-jersey-llc/`,
 	},
 	button2: {
 		text: `NJ Corporation`,
-		url: `/new-jersey-corporation`,
+		url: `/new-jersey-corporation/`,
 	},
 };
 
@@ -101,14 +101,14 @@ export const faq = {
 				},
 				{
 					text: `NJ LLC`,
-					url: `/new-jersey-llc`,
+					url: `/new-jersey-llc/`,
 				},
 				{
 					text: `or`,
 				},
 				{
 					text: `NJ Corporation`,
-					url: `/new-jersey-corporation`,
+					url: `/new-jersey-corporation/`,
 				},
 				{
 					text: `guides for more information.`,
@@ -146,7 +146,7 @@ export const faq = {
 				},
 				{
 					text: `file an amendment on your behalf,`,
-					url: `/manage-your-compaNJ/amendment`,
+					url: `/manage-your-company/amendment`,
 				},
 				{
 					text: `including changing the name of your New Jersey corporation or LLC.`,
@@ -161,7 +161,7 @@ export const faq = {
 				},
 				{
 					text: `complete guide to choosing the right NJ business name`,
-					url: `/blog/post/llc-name-search-50-states/`,
+					url: `https://www.incfile.com/blog/post/llc-name-search-50-states/`,
 				},
 				{
 					text: `— you'll want to choose a name that will:`,

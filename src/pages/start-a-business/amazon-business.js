@@ -639,7 +639,7 @@ const AmazonBusiness = () => {
 
                             <Paragraph big mixed={true}>
                                 Check out our{" "}
-                                <a href="/blog/post/fulfillment-by-amazon/">
+                                <a href="https://www.incfile.com/blog/post/fulfillment-by-amazon/">
                                     additional guidance in understanding if an Amazon business is
                                     the right choice for you.
                                 </a>{" "}
