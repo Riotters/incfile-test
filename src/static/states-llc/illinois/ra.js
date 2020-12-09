@@ -337,7 +337,7 @@ export const agentPageContent = {
       content: [
         {
           text: `The Main Functions of a Illinois Registered Agent`,
-          url: `/research-topics/registered-agent/registered-agent-function/`,
+          url: `/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
         },
         {
           text: `Changing Your Illinois Registered Agent`,
@@ -345,7 +345,7 @@ export const agentPageContent = {
         },
         {
           text: `What a Illinois Registered Agent Does`,
-          url: `/research-topics/registered-agent/registered-agent-tasks/`,
+          url: `/research-topics/registered-agent-help/what-does-a-registered-agent-do/`,
         },
       ],
     },

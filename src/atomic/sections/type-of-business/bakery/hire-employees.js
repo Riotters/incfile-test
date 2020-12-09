@@ -21,7 +21,7 @@ const HireEmployees = () => (
     <ContentCenter contentWidth={770}>
       <TextCenterLayout headlineWidth={770} headline="Hire Laundromat Employees" />
       <Paragraph big mixed={true}>
-        If you’re just running your laundromat business solo, you don’t need to worry about employees. If you are hiring people to work for you, you will need to know what to do. See our <Link to="/blog/post/avoid-confusion-when-hiring/">10 tips on hiring employees</Link>.
+        If you’re just running your laundromat business solo, you don’t need to worry about employees. If you are hiring people to work for you, you will need to know what to do. See our <Link to="https://www.incfile.com/blog/post/avoid-confusion-when-hiring/">10 tips on hiring employees</Link>.
       </Paragraph>
 
       <AccordionWithCounting content={AccordionCounting} />

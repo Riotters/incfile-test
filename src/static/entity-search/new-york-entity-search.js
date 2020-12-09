@@ -154,7 +154,7 @@ export const faq = {
         },
         {
           text: `We have a complete guide to choosing the right NY business name`,
-          url: `/blog/post/llc-name-search-50-states/`,
+          url: `https://www.incfile.com/blog/post/llc-name-search-50-states/`,
         },
         {
           text: `— you'll want to choose a name that will:`,

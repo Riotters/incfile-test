@@ -127,7 +127,7 @@ const JobsAnywhere = () => (
       </Paragraph>
       <Paragraph big>Finally, becoming a digital nomad comes with its own set of challenges. You must be extremely focused and very flexible, roll with internet delays and be comfortable with living and working in an isolating environment.</Paragraph>
       <Paragraph mixed big>
-        You can also find <Link to="/blog/post/is-becoming-a-digital-nomad-right-for-you/">additional guidance in understanding if a digital nomad business is right for you</Link>. If this blog post, we'll help you analyze if your digital nomad business iead is a good one, conduct market research
+        You can also find <Link to="https://www.incfile.com/blog/post/is-becoming-a-digital-nomad-right-for-you/">additional guidance in understanding if a digital nomad business is right for you</Link>. If this blog post, we'll help you analyze if your digital nomad business iead is a good one, conduct market research
         and build a business plan.
       </Paragraph>
     </Container>

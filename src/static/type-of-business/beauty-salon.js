@@ -10,7 +10,7 @@ export const BusinessInsuranceAccordionContent = {
       answer: [
         {
           text: `Workers’ compensation insurance`,
-          url: `/blog/post/forming-an-llc-with-employees-means-purchasing-workers-compensation/`,
+          url: `https://www.incfile.com/blog/post/forming-an-llc-with-employees-means-purchasing-workers-compensation/`,
         },
         {
           text: `provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining.`,

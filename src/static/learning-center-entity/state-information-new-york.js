@@ -23,7 +23,6 @@ import ArrowLeftSVG from "../../images/icons/icon-user-arrow-left.inline.svg";
 import ChatSVG from "../../images/icons/icon-chat.inline.svg";
 import BoardSVG from "../../images/icons/icon-board-of-directors.inline.svg";
 import UserCheckmarkSVG from "../../images/icons/icon-user-checkmark.inline.svg";
-import FolderProcentSVG from "../../images/icons/icon-folder-procent.inline.svg";
 import TodoSVG from "../../images/icons/icon-todo-list.inline.svg";
 import QuestionSVG from "../../images/icons/icon-chat-question-mark.inline.svg";
 import IdSVG from "../../images/icons/icon-registered-id.inline.svg";
@@ -309,7 +308,7 @@ export const corporation = [
 		type: "button",
 		content: {
 			text: "File From 2553 with the IRS",
-			url: "/s-corp-election-form",
+			url: `${process.env.ORDER_URL}/s-corp-election-form`,
 		},
 		theme: "primary56",
 		marginBottom: 64,
@@ -392,7 +391,7 @@ export const corporation = [
 		content: {
 			text: "Learn more about the advantages of forming an S Corporation. ",
 			url:
-				"/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/",
+				"https://www.incfile.com/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/",
 		},
 		marginBottom: 48,
 	},
@@ -1449,7 +1448,7 @@ export const agents = [
 		type: "arrow-link",
 		content: {
 			text: "The Main Functions of a New York Registered Agent",
-			url: "/research-topics/general-research/registered-agent-function/",
+			url: "/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/",
 		},
 		marginBottom: 24,
 	},
@@ -1465,7 +1464,7 @@ export const agents = [
 		type: "arrow-link",
 		content: {
 			text: "What a New York Registered Agent Does",
-			url: "/research-topics/registered-agent/registered-agent-tasks/",
+			url: "/research-topics/registered-agent-help/what-does-a-registered-agent-do/",
 		},
 		marginBottom: 24,
 	},

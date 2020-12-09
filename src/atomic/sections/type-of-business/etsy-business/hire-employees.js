@@ -23,7 +23,7 @@ const HireEmployees = () => (
         <TextCenterLayout headline="Hire Employees for Your Etsy Business" headlineWidth={770} />
 
         <Paragraph big mixed={true}>
-          If you’re just running your Etsy business solo, you don’t need to worry about employees. If you are hiring people to work for you, you will need to know what to do. See <Link to="/blog/post/avoid-confusion-when-hiring/">our 10 tips on hiring employees.</Link>
+          If you’re just running your Etsy business solo, you don’t need to worry about employees. If you are hiring people to work for you, you will need to know what to do. See <Link to="https://www.incfile.com/post/avoid-confusion-when-hiring/">our 10 tips on hiring employees.</Link>
         </Paragraph>
       </div>
       <AccordionWithCounting content={AccordionCounting} />

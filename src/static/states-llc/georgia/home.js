@@ -141,7 +141,7 @@ export const HomePageContent = {
         text2: `Georgia does not require that LLCs have an operating agreement in place, but it’s a good idea to create one, nonetheless.`,
         button1: {
           text: `Learn More About Operating Agreements Here`,
-          url: `/blog/post/operating-agreement-llc/`,
+          url: `https://www.incfile.com/blog/post/operating-agreement-llc/`,
         },
         cta: {
           title: `Receive a personalized <br>operating agreement`,

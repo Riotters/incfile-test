@@ -113,7 +113,7 @@ export const footer = {
         },
         {
           text: `Blog`,
-          url: `/blog/`,
+          url: `https://www.incfile.com/blog/`,
         },
         {
           text: `About`,

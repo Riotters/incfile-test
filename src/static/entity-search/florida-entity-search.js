@@ -73,11 +73,11 @@ export const startBusiness = {
   text: `We have a full guide to starting a new business in Florida. Learn about how to start a FL LLC or a FL corporation.`,
   button: {
     text: `FL LLC`,
-    url: `/florida-llc`,
+    url: `/florida-llc/`,
   },
   button2: {
     text: `FL Corporation`,
-    url: `/florida-corporation`,
+    url: `/florida-corporation/`,
   },
 };
 
@@ -94,7 +94,7 @@ export const faq = {
     },
     {
       question: `Can I Do Business Under a Different Name Than My Legal Name in Florida?`,
-      answer: `You can normally choose to conduct business under a different name in Florida. This can be known as an “assumed name”, “fictitious name”, “doing business as name” or “trade name.” We can file your <a href="/manage-your-company/fictitious-business/">FL Fictitious Business Name</a> with the Florida Division of Corporations on your behalf.`,
+      answer: `You can normally choose to conduct business under a different name in Florida. This can be known as an “assumed name”, “fictitious name”, “doing business as name” or “trade name.” We can file your <a href="/fictitious-business-or-trade-name/">FL Fictitious Business Name</a> with the Florida Division of Corporations on your behalf.`,
     },
     {
       question: `I Need to Change the Name of My Florida Business Entity — Can You Help?`,
@@ -102,14 +102,14 @@ export const faq = {
     },
     {
       question: `What Do I Need to Think About When Deciding on a Florida Business Name?`,
-      answer: `The perfect Florida business name can be elusive. We have a <a href="/blog/post/llc-name-search-50-states/">complete guide to choosing the right FL business name</a> —
+      answer: `The perfect Florida business name can be elusive. We have a <a href="https://www.incfile.com/blog/post/llc-name-search-50-states/">complete guide to choosing the right FL business name</a> —
         you'll want to choose a name that will:`,
       list: [`Matter to business customers`, `Be memorable enough to stand out`, `Tell people what your business does`, `Not be used by another business in Florida`],
     },
     {
       question: `How Do I Protect My Florida Business Name?`,
       answer: `The easiest way to protect your Florida business name is to incorporate your business in Florida, generally as a Limited Liability Company (LLC) or a corporation. We can help you do that — just choose “Incorporate Now” above to get started.`,
-      text: `If you want extra protection, you could consider <a href="/manage-your-company/trademark-name-search/">registering your Florida business name as a trademark</a>. Note that filing a fictitious or “doing business as" (DBA) name in Florida will not be sufficient to protect it.`,
+      text: `If you want extra protection, you could consider <a href="/trademark-name-search/">registering your Florida business name as a trademark</a>. Note that filing a fictitious or “doing business as" (DBA) name in Florida will not be sufficient to protect it.`,
     },
     {
       question: `What Organization Registers and Manages Business Names in Florida?`,

@@ -54,7 +54,7 @@ export const about = {
 					},
 					{
 						text: `trademark`,
-						url: `/trademark.php`,
+						url: `${process.env.ORDER_URL}/trademark.php`,
 					},
 					{
 						text: `is an essential asset for your business because it protects the brand name and identity that you worked so hard to create. When you secure a federal trademark for your business brand, it gives you exclusive rights to use your business name, logo or slogan once the trademark is approved. Federal Trademark Protection also prevents other businesses from using your brand name and brand identity. Incfile is happy to help with conducting a trademark name search on your business name. Our partnered attorneys will do the research to make sure the mark isn't already taken, ensure the filing is properly prepared and submitted to the government office, and provide sound legal advice throughout the entire process.Benefits of Incfile's Trademark service include:`,

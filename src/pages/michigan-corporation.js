@@ -100,7 +100,7 @@ const MichiganCorporation = () => {
 							</Heading>
 							<Paragraph big mixed>
 								{parse(`Selecting the name of your new Michigan corporation is one of the first official steps toward actually conducting business in the Wolverine State. The
-<a href="michigan-entity-search/">business name</a> you choose must be distinguishable from other business entities registered or reserved in Michigan (with some exceptions).`)}
+<a href="/michigan-entity-search/">business name</a> you choose must be distinguishable from other business entities registered or reserved in Michigan (with some exceptions).`)}
 							</Paragraph>
 							<Paragraph big mixed>
 								{parse(`Your new <a href="/michigan-entity-search/">business’ name</a> may not state or imply that it is organized for any other purpose that what’s permitted by state law and laid out in its articles

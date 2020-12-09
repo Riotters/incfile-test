@@ -1,7 +1,6 @@
 import React from "react";
 import AccordionWithCounting from "../../../../atomic/organisms/accordion/accordion-with-counting";
 import { AccordionCounting } from "../../../../static/type-of-business/cleaning-business";
-import Container from "../../../../atomic/container";
 import ContentCenter from "../../../../atomic/partials/content-center";
 import TextCenterLayout from "../../../../atomic/partials/heading-left";
 import styled from "styled-components";
@@ -23,7 +22,7 @@ const HireEmployees = () => (
       <TextCenterLayout headlineWidth={770} headline="Hire Employees" />
 
       <Paragraph big mixed>
-        If you’re just running your cleaning business solo, you don’t need to worry about employees. If you are hiring people to work for you, you will need to know what to do. See <Link to="/blog/post/avoid-confusion-when-hiring/">10 tips on hiring employees</Link>.
+        If you’re just running your cleaning business solo, you don’t need to worry about employees. If you are hiring people to work for you, you will need to know what to do. See <Link to="https://www.incfile.com/blog/post/avoid-confusion-when-hiring/">10 tips on hiring employees</Link>.
       </Paragraph>
     </ContentCenter>
 

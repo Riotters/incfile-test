@@ -6,7 +6,7 @@ export const tabPages = {
     },
     {
       name: `Name Your Business`,
-      path: `/delaware-llc/how-to-name-your-llc/`,
+      path: `/delaware-llc/delaware-business-names/`,
     },
     {
       name: `Registered Agent`,
@@ -14,7 +14,7 @@ export const tabPages = {
     },
     {
       name: `Filing Fee & Requirements`,
-      path: `/delaware-llc/form-filling-permit-requirements/`,
+      path: `/delaware-llc/fees-filing-requirements/`,
     },
     {
       name: `Business Taxes`,

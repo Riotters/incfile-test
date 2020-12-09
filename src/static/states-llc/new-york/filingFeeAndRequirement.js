@@ -179,7 +179,7 @@ export const filingFeeAndRequirementContent = {
     },
     {
       type: `paragraph`,
-      content: `You can see step-by-step instructions for this process in our <a href="/research-topics/state-info/ny-publication-requirement/"> “How to Meet New York LLC Publication Requirements”</a> guide. Note that Incfile does not assist in the filing of the Publication Requirement.`,
+      content: `You can see step-by-step instructions for this process in our <a href="/research-topics/individual-state-info/meeting-the-new-york-publication-requirement/"> “How to Meet New York LLC Publication Requirements”</a> guide. Note that Incfile does not assist in the filing of the Publication Requirement.`,
     },
 
     //////////////////
@@ -253,7 +253,7 @@ export const filingFeeAndRequirementContent = {
         subtitle: `You can choose to make changes to the template based on your unique requirements.`,
         button: {
           text: `Lear About Operating Agreemets`,
-          url: `/research-topics/llc-info/llc-operating-agreement/`,
+          url: `/research-topics/llc-info/the-llc-operating-agreement/`,
         },
       },
     },

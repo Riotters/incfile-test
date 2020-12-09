@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Link from "gatsby";
 import HeadingCenter from "../../partials/heading-center";
 import ContentCenter from "../../partials/content-center";
 import Image from "../../atoms/image/image_nobase64";
 import Oval from "../../atoms/icons/oval";
-import { color, gradient } from "../../../components/styles/colors";
+import { color} from "../../../components/styles/colors";
 import OvalSVG from "../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import PopularSVG from "../../../images/icons/popular-articles-to-help-you-get-started.inline.svg";
 import ShapeCurve from "../../atoms/shapes/curve";
@@ -81,13 +80,6 @@ const IconWrapper = styled.div`
 	}
 `;
 
-const AlignCenter = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 48px 0;
-`;
-
 const Article = styled(Whitebox)`
 	flex-direction: column;
 	align-items: flex-start;
@@ -154,8 +146,8 @@ const ClientDashboardSection = ({ className, content, isNewSale }) => (
 							Popular articles to help you get started
 						</Heading>
 					</IconWrapper>
-					{content.articles.map((item) => (
-						<a href={item.url} style={{ width: `100%`, display: `block` }}>
+					{content.articles.map((item, i) => (
+						<a href={item.url} style={{ width: `100%`, display: `block` }} key={i}>
 							<Article className="article" flex bottomMargin="8px">
 								<Image filename={item.icon} alt="" />
 								<Content>
@@ -190,9 +182,8 @@ const ClientDashboardSection = ({ className, content, isNewSale }) => (
 					<Curve color={color.blue2} top={-40} left={-115} width={115} height={101}>
 						<CurveSVG />
 					</Curve>
-					{content.cards.map((card) => (
-						<Card content={card.content}
-							  color={card.color} image={card.image} />
+					{content.cards.map((card, i) => (
+						<Card content={card.content} color={card.color} image={card.image} key={i} />
 					))}
 				</Grid>
 			)}

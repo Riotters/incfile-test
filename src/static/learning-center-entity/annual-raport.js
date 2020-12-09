@@ -13,7 +13,7 @@ export const about = {
 	box: {
 		text: `<span>In most state, businesses must file an annual or biennial report.</span>You'll need to prepare and send this report to the state government entity that manages business administration, which is normally the secretary of state. You must file a report to remain in good standing; if you don't file one, your business could be dissolved.`,
 	},
-	text: `Requirements, filing dates and fees <a href="/blog/post/llc-and-corporation-ongoing-compliance-requirements/">do vary significantly from state to state</a>, so we've created a helpful tool that tells you exactly when your business need to file.`,
+	text: `Requirements, filing dates and fees <a href="https://www.incfile.com/blog/post/llc-and-corporation-ongoing-compliance-requirements/">do vary significantly from state to state</a>, so we've created a helpful tool that tells you exactly when your business need to file.`,
 	text2: `Just enter your details in the link below, and we'll let you know what need to do`,
 	link: {
 		text: `Learn more about compilance requirements`,
@@ -38,7 +38,7 @@ export const nextStateDue = {
 		},
 		link: {
 			text: `Not sure?`,
-			url: `/`,
+			url: `/business-entity-comparison/`,
 		},
 		field4: {
 			label: `Date of Formation`,
@@ -156,14 +156,14 @@ export const faq = {
 					},
 					{
 						text: `operating agreement`,
-						url: `/research-topics/llc-info/llc-operating-agreement/`,
+						url: `/research-topics/llc-info/the-llc-operating-agreement/`,
 					},
 					{
 						text: ` or other `,
 					},
 					{
 						text: `corporate bylaws`,
-						url: `/research-topics/c-corporation-info/what-are-bylaws/`,
+						url: `/research-topics/c-corporation-info/what-is-the-form-2553/`,
 					},
 				],
 			},
