@@ -27,11 +27,9 @@ import { Heading } from "../atomic/atoms/typography/heading";
 import { Paragraph } from "../atomic/atoms/typography/paragraph";
 import TextBlockWithImage from "../atomic/molecules/mixed-blocks/text-block-with-absolute-image";
 import ContentCenter from "../atomic/partials/content-center";
-
 import CurveSVG from "../images/curves/top-right-babyblue1.inline.svg";
 import { color } from "../atomic/atoms/styles/colors";
 import Curve from "../atomic/atoms/icons/curve";
-
 import OvalSVG from "../images/ovals/top-left-transparent-reverse-big-red3.inline.svg";
 import OvalSVG2 from "../images/ovals/bottom-right-transparent-babyblue1-small.inline.svg";
 

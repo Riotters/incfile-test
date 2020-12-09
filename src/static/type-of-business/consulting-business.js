@@ -177,6 +177,7 @@ export const hsForm = {
     header: `Download: Start a Consulting Business Guide.`,
     text: `If you have valuable insight and expertise you want to share, then starting a consulting business is a great way to monetize your strategic approach, skills and experience.`,
     hs_form_id: `e804a274-9886-4db0-b70c-73ff0f6e1242`,
+    fileDownload: `https://cdn2.hubspot.net/hubfs/3787982/Content%20Repurpose%20PDFs/Nov-19/Incfile%20-%20How%20to%20Start%20a%20Consulting%20Business%20(1).pdf`,
     button: {
         text: "Download now",
         url: "/",

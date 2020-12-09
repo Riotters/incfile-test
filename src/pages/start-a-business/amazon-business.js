@@ -705,7 +705,7 @@ const AmazonBusiness = () => {
                             postDownloadAction={postDownload}
                         />
                     )}
-                    {formSubmitted && <ThankYouContent modalExit={popup}/>}
+                    {formSubmitted && <ThankYouContent modalExit={popup} fileDownload={hsForm?.fileDownload ? hsForm.fileDownload : false} />}
                 </LightBoxContent>
             </LightBoxModal>
         </Layout>
@@ -803,8 +803,7 @@ const LightBoxContent = styled.div`
   width: 100%;
   max-width: 750px;
   position: relative;
-  //margin: 0 30px;
-  max-height: 100vh;
+    max-height: 100vh;
   overflow-y: auto;
 
   &.form-submitted {
@@ -815,7 +814,7 @@ const LightBoxContent = styled.div`
   @media screen and (min-width: 769px) {
     padding-top: 0;
     max-width: 600px;
-    max-height: 80vh;
+    max-height: 90vh;
   }
 
   form {
