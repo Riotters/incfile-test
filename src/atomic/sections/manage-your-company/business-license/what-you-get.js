@@ -11,6 +11,7 @@ import LicenseSVG from "../../../../images/icons/license.inline.svg";
 import PermitSVG from "../../../../images/icons/permit.inline.svg";
 import TaxRegistrationSVG from "../../../../images/icons/tax-registration.inline.svg";
 import ApplicationFormSVG from "../../../../images/icons/application-form.inline.svg";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const WhatYouGet = styled.section`
   position: relative;
@@ -77,23 +78,23 @@ const WhatYouGetSection = ({ className, content }) => (
         <HeadingCenter className="headline" headline={content.header} headlineWidth="770" />
         <ImageContent image="registered-agents-2">
             <Paragraph big bottomMargin="48">{content.text}</Paragraph>
-            <Heading size="3" bottomMargin="32">{content.header2}</Heading>
+            <PHeading size={3} bottomMargin="32">{content.header2}</PHeading>
             <div className="grid">
                 <div className="box">
                 <LicenseSVG />
-                <h4>Licenses</h4>
+                <PHeading size={4} bottomMargin={0}>Licenses</PHeading>
                 </div>
                 <div className="box">
                 <PermitSVG />
-                <h4>Permits</h4>
+                <PHeading size={4} bottomMargin={0}>Permits</PHeading>
                 </div>
                 <div className="box">
                 <TaxRegistrationSVG />
-                <h4>Tax Registrations</h4>
+                <PHeading size={4} bottomMargin={0}>Tax Registrations</PHeading>
                 </div>
                 <div className="box">
                 <ApplicationFormSVG />
-                <h4>Application Forms</h4>
+                <PHeading size={4} bottomMargin={0}>Application Forms</PHeading>
                 </div>
             </div>
             <Paragraph big bottomMargin="0">{content.text2}</Paragraph>

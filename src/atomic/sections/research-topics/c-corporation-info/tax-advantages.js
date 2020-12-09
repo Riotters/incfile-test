@@ -11,7 +11,7 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Path from "../../../molecules/blocks/research-topics-path";
-import {PHeading} from "../../../atoms/typography/p-as-heading";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const About = styled.section`
 	position: relative;

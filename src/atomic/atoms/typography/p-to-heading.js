@@ -96,6 +96,7 @@ export const PHeading = ({
                             bottomPadding,
                             maxWidth,
                             className,
+                            color,
                             style,
                             relative,
                         }) => (
@@ -107,9 +108,10 @@ export const PHeading = ({
         bottomMarginMD={bottomMarginMD}
         topMargin={topMargin}
         bottomPadding={bottomPadding}
+        color={color}
         maxWidth={maxWidth}
         relative={relative}
-        className={className}
+        className={`i-believe-i-can-be-a-h${template ?? size}` + (className ? ` ${className}` : "")}
         style={style}
     >
         {children}

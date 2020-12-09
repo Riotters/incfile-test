@@ -3,10 +3,11 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import {color} from "../styles/colors";
 const HeadingWrapper = styled.div`
-font-family: Avenir, sans-serif;
+        font-family: Avenir, sans-serif;
         font-size: ${(props) => (props.big ? "20" : "16")}px;
         line-height: ${(props) => (props.big ? "32" : "24")}px;
         font-weight: 400;
+        color: ${props => props.color ? props.color : color.black};
         
         padding-bottom: ${(props) => (props.bottomPadding ? `${props.bottomPadding}px` : "")};
         margin-bottom: ${(props) => props.bottomMargin}px;
@@ -15,6 +16,7 @@ font-family: Avenir, sans-serif;
         ${(props) => props.flex && "display: flex;"}
         ${(props) => props.flexAlign && "align-items: " + props.flexAlignValue + ";"}
         ${(props) => props.flexJustify && "justify-content: " + props.flexJustifyValue + ";"}
+        ${props => props.left ? "text-align: left;" : "text-align: initial;"}
         
         span.big {
             font-family: Avenir, sans-serif;
@@ -39,7 +41,7 @@ font-family: Avenir, sans-serif;
           }
         }
         
-        &.text-left{
+        &.text-left {
           text-align: left !important;
         }
 `;
@@ -53,6 +55,7 @@ export const HeadingP = ({
                             bottomPadding,
                             maxWidth,
                             className,
+                            left,
                             style,
                             relative,
                             big
@@ -65,8 +68,9 @@ export const HeadingP = ({
         bottomPadding={bottomPadding}
         maxWidth={maxWidth}
         relative={relative}
-        className={className + " p"}
+        className={className ? `${className} p` : "p"}
         style={style}
+        left={left}
         big={big}
     >
         {children}

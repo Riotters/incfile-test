@@ -7,7 +7,7 @@ import Oval from "../../atoms/icons/oval";
 import OvalSVG from "../../../images/ovals/top-left-transparent-orange3.inline.svg";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
-import {PHeading} from "../../atoms/typography/p-as-heading";
+import {PHeading} from "../../atoms/typography/p-to-heading";
 
 const Wrapper = styled.div`
     width: 100%;

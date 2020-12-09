@@ -20,7 +20,7 @@ import { about } from "../../../static/research-topics/nonprofit-info/nonprofit-
 import { related } from "../../../static/research-topics/nonprofit-info";
 import { Helmet } from "react-helmet";
 import {Heading} from "../../../atomic/atoms/typography/heading";
-import {HeadingP} from "../../../atomic/atoms/typography/heading-as-p";
+import {HeadingP} from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';

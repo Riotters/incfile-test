@@ -32,7 +32,7 @@ const Wrapper = styled.ul`
   }
 `;
 
-const NumericBoxedList = ({ className, content, noBox, curve, bottomMargin, ...rest }) => {
+const NumericBoxedList = ({ className, content, noBox, curve, bottomMargin, paragraphHeaders = false, ...rest }) => {
   return (
     <Wrapper className={className} bottomMargin={bottomMargin} noBox={noBox} {...rest}>
       {curve && (
@@ -41,7 +41,7 @@ const NumericBoxedList = ({ className, content, noBox, curve, bottomMargin, ...r
         </Curve>
       )}
       {content.map((item, id) => (
-        <NumericBox key={id} item={item} id={id} noBox={noBox} />
+        <NumericBox key={id} item={item} id={id} noBox={noBox} paragraphHeader={paragraphHeaders} />
       ))}
     </Wrapper>
   );
