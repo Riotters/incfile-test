@@ -4,8 +4,6 @@ import styled from "styled-components";
 import SEO from "../components/seo";
 //Sections
 import Top from "../atomic/partials/top";
-import Button from "../atomic/molecules/buttons/button";
-import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
 import VirtualMailbox from "../atomic/sections/learning-center-entity/virtual-mailboxes/welcome-incfile-virtual-address";
 import AdvantagesSection from "../atomic/sections/learning-center-entity/virtual-mailboxes/advantages-virtual-addresses";
 
@@ -29,15 +27,14 @@ import { Heading } from "../atomic/atoms/typography/heading";
 import { Paragraph } from "../atomic/atoms/typography/paragraph";
 import TextBlockWithImage from "../atomic/molecules/mixed-blocks/text-block-with-absolute-image";
 import ContentCenter from "../atomic/partials/content-center";
-
 import CurveSVG from "../images/curves/top-right-babyblue1.inline.svg";
 import { color } from "../atomic/atoms/styles/colors";
 import Curve from "../atomic/atoms/icons/curve";
-
 import OvalSVG from "../images/ovals/top-left-transparent-reverse-big-red3.inline.svg";
 import OvalSVG2 from "../images/ovals/bottom-right-transparent-babyblue1-small.inline.svg";
 
 import Oval from "../atomic/atoms/icons/oval";
+import { Helmet } from "react-helmet";
 
 const VirtualMailBoxes = () => (
 	<Layout>
@@ -47,7 +44,7 @@ const VirtualMailBoxes = () => (
 		/>
 		<Top
 			imageName="mr-contact-new-sales-9845"
-			imageAlt="Mrs Bulb New Sales"
+			imageAlt="incfile virtual address service"
 			ovalColor="blue"
 			headlineWidth="500"
 			textWidth="800"
@@ -149,7 +146,23 @@ const VirtualMailBoxes = () => (
 				<OvalSVG2 />
 			</Oval>
 		</InnerSection>
-	</Layout>
+
+        <Helmet>
+            <script type="application/ld+json">
+                {`{
+                    "@context": "http://schema.org",
+                    "@type": "VideoObject",
+                    "name": "Using a Virtual Address for Your Business by Incfile",
+                    "description": "Your business keeps you on the go, but you may want to have a physical presence in another city or state. With a virtual address, you’ll get the professional look of a physical office with none of the overhead costs.    How a Virtual Mailbox Works:   - A virtual mailbox gives you a permanent street address for receiving mail. - When someone sends you mail, an image of the envelope is uploaded into your digital mailbox. - If you choose to open it, the contents are scanned and saved in one centralized location that you can read whenever you fancy. - You can also have important physical documents, such as credit cards and driver’s licenses, forwarded to any address you want.  The Benefits of a Virtual Address & Mailbox:  If you choose to move, your mailing address won’t change. With a virtual business address, you can read and manage your mail online from anywhere in the world.  If you think a virtual office is right for you, Incfile can help you set one up. Learn more at https://www.incfile.com/virtual-mailbox/  Other Helpful Content: - Do You Need a Virtual Business Address?https://www.incfile.com/blog/post/need-virtual-business-address/ - Do’s and Don’ts of Getting a Virtual Address for a Non-U.S. Resident Business  https://www.incfile.com/blog/post/virtual-address-non-us-resident/ - How to Set Up a Virtual Office https://www.incfile.com/blog/post/how-to-set-up-virtual-office/",
+                    "thumbnailUrl": "https://i.ytimg.com/vi/-LK9F9jQE6Q/default.jpg",
+                    "uploadDate": "2020-11-11T16:14:03Z",
+                    "duration": "PT1M",
+                    "embedUrl": "https://www.youtube.com/embed/-LK9F9jQE6Q",
+                    "interactionCount": "0"
+                }`}
+            </script>
+        </Helmet>
+    </Layout>
 );
 
 const StepsGridContainer = styled.div`

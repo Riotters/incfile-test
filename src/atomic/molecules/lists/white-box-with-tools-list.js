@@ -9,8 +9,8 @@ const WhiteBoxWithToolsList = ({ title, list }) => (
   <BoxWrapper>
     <TitleBox>{title}</TitleBox>
     <ToolsBox>
-      {list.map((item) => (
-        <ToolBox content={item} />
+      {list.map((item, i) => (
+        <ToolBox content={item} key={i} />
       ))}
     </ToolsBox>
   </BoxWrapper>

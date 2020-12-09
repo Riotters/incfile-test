@@ -58,7 +58,7 @@ const TopImageBox = ({
 	color,
 	content,
 	noShadow,
-	padding,
+    padding
 }) => {
 	return (
 		<Wrapper
@@ -67,7 +67,7 @@ const TopImageBox = ({
 			noShadow={noShadow}
 			padding={padding}
 		>
-			<div className="top">{image && <Image filename={image} />}</div>
+			<div className="top">{image && <Image filename={image} alt={content?.imgAlt ? content.imgAlt : ''} />}</div>
 			<div className="content">
 				<div>
 					<Heading size={3} template={4} bottomMargin="16">

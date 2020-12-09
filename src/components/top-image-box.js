@@ -50,13 +50,14 @@ const Wrapper = styled.div`
 	}
 `;
 
-const TopImageBox = ({ className, image, color, children, noShadow }) => {
-	return (
-		<Wrapper className={className} color={color} noShadow={noShadow}>
-			<div className="top">{image && <Image filename={image} />}</div>
-			<div className="content">{children}</div>
-		</Wrapper>
-	);
-};
+const TopImageBox = ({ className, image, imageAlt, color, children, noShadow }) => {
 
-export default TopImageBox;
+    return (
+        <Wrapper className={className} color={color} noShadow={noShadow}>
+            <div className="top"> {image && (<Image filename={image} alt={imageAlt} />)} </div>
+            <div className="content"> {children} </div>
+        </Wrapper>
+    );
+}
+
+export default TopImageBox
