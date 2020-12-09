@@ -57,20 +57,23 @@ export const advantages = {
 			header: "Keep your real address private",
 			text:
 				"There’s no need to publicize your home address for business purposes.",
-			image: "keep-your-real-adress-private",
+            image: "keep-your-real-adress-private",
+            imgAlt: "keep your real address private",
 			background: color.purple3,
 		},
 		{
 			header: "Relocating your business",
 			text: "Don’t let anything get lost in the mail if you’re moving offices.",
-			image: "relocating-your-business-0592",
+            image: "relocating-your-business-0592",
+            imgAlt: "relocating your business",
 			background: color.orange3,
 		},
 		{
 			header: `Digital nomads and remote work`,
 			text:
 				"Traveling and working from other countries is an amazing experience. Now you never worry about missing important mail on the go.",
-			image: "digital-nomad-5392",
+            image: "digital-nomad-5392",
+            imgAlt: "digital nomad",
 			background: color.purple3,
 			link: {
 				text: "Digital nomads",

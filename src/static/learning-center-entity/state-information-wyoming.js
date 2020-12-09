@@ -33,7 +33,8 @@ export const top = {
   ],
 };
 export const launchBusiness = {
-  header: `Launch your business with Incfile`,
+  header: `Launch`,
+  header2: `your business with Incfile`,
   text: `No Contracts. No Surprises. Only $0 + State Fee to Launch Your Business.`,
   button: {
     text: `Launch your business!`,
@@ -89,6 +90,7 @@ export const corporation = [
     content: "Choosing the Right Type of Wyoming Corporation",
     size: 2,
     template: 3,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -149,7 +151,6 @@ export const corporation = [
     type: "svg-color-text-box",
     content: [
       {
-        header: "",
         text:
           "Sole proprietorships and partnerships are the simplest type of business. They do not provide any special protections or benefits to entrepreneurs and can make your personal assets vulnerable. We do not recommend them.",
         svg: ProprietorshipSVG,
@@ -160,7 +161,6 @@ export const corporation = [
         marginTop: "91px",
       },
       {
-        header: "",
         text: `Limited Liability Companies (LLCs) are a great option for smaller businesses. They are quick and easy to create, inexpensive to administer, light on regulation and have simple taxation and rules. You can <a href="/wyoming-llc/">learn how to create an LLC in Wyoming here.</a>`,
         svg: LockpadSVG,
         backgroundColor: color.babyblue2,
@@ -170,7 +170,6 @@ export const corporation = [
         marginTop: "91px",
       },
       {
-        header: "",
         text:
           "S Corporations are the simplest type of corporation an entrepreneur can create and are good for many types of businesses. The regulations, taxation, compliance and legalities are more complex than for an LLC, but they do provide tax advantages for their owners. <a href='/what-is-s-corporation/'>You can find more information on S Corporations here.</a>",
         svg: ProcentSVG,
@@ -181,7 +180,6 @@ export const corporation = [
         marginTop: "91px",
       },
       {
-        header: "",
         text:
           "C Corporations are the most complex type of corporation. They are best for large businesses and are a necessity if the business will be traded on public stock markets. C Corporations have much more significant regulation, compliance and legalities; they are not as tax efficient as S Corporations or LLCs. You can <a href='/what-is-c-corporation/'>find more information on C Corporations here.</a>",
         svg: BillSVG,
@@ -197,7 +195,6 @@ export const corporation = [
   {
     type: "colorbox",
     icon: FolderProcentSVG,
-    header: "",
     text:
       "Other business entity structures include nonprofits, Limited Liability Partnerships (LLPs) and B Corporations, but they will not be relevant for the majority of entrepreneurs.",
     curve: true,
@@ -1016,6 +1013,7 @@ export const naming = [
     content: "Naming Your Wyoming Corporation",
     size: 2,
     template: 3,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -1211,6 +1209,7 @@ export const agents = [
     content: "Registered Agents and Your Wyoming Corporation",
     size: 2,
     template: 3,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -1421,6 +1420,7 @@ export const filing = [
     content: "Wyoming Corporation Form, Filing and Permit Requirements",
     size: 2,
     template: 3,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -1828,6 +1828,7 @@ export const taxes = [
     content: "Taxes and Fees for Your Wyoming Corporation",
     size: 2,
     template: 3,
+    left: true,
     marginBottom: 40,
   },
   {
@@ -2026,6 +2027,7 @@ export const afterFormation = [
     content: "Understand Your Ongoing Corporation Filing Requirements",
     size: 2,
     template: 3,
+    left: true,
     marginBottom: 40,
   },
   {

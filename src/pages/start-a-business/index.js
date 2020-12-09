@@ -1,20 +1,20 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
-import Button from "../atomic/molecules/buttons/button";
-import RatingRow from "../atomic/atoms/boxes/rating-row";
-import CartBlock from "../atomic/molecules/blocks/cart-block";
-import RatingBlock from "../atomic/molecules/blocks/rating-block";
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
+import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
+import Button from "../../atomic/molecules/buttons/button";
+import RatingRow from "../../atomic/atoms/boxes/rating-row";
+import CartBlock from "../../atomic/molecules/blocks/cart-block";
+import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 //Sections
-import Top from "../atomic/partials/top";
-import About from "../atomic/sections/learning-center-entity/start-a-business/about";
-import CheckType from "../atomic/sections/learning-center-entity/start-a-business/check-type";
-import BusinessStructure from "../atomic/sections/learning-center-entity/start-a-business/business-structure";
-import Rocket from "../atomic/sections/review-entity-types/c-corporation/rocket";
+import Top from "../../atomic/partials/top";
+import About from "../../atomic/sections/learning-center-entity/start-a-business/about";
+import CheckType from "../../atomic/sections/learning-center-entity/start-a-business/check-type";
+import BusinessStructure from "../../atomic/sections/learning-center-entity/start-a-business/business-structure";
+import Rocket from "../../atomic/sections/review-entity-types/c-corporation/rocket";
 //Texts
-import { top, about, checkType, businessStructure, launchBusiness } from "../static/learning-center-entity/start-a-business";
-import Articles from "../atomic/sections/articles";
+import { top, about, checkType, businessStructure, launchBusiness } from "../../static/learning-center-entity/start-a-business";
+import Articles from "../../atomic/sections/articles";
 import { Helmet } from "react-helmet";
 
 const HelpCenter = () => (
@@ -22,7 +22,7 @@ const HelpCenter = () => (
         <SEO
             title="Business Ideas & Tips - Guides to Starting Your Own Business"
             description='From running an Amazon business to opening your own restaurant, our "Start a Business" guides have ideas, industry tips, and more. Start your business now!' />
-        <Top imageName="mr-bulb-business-startup-guides" imageAlt="Mrs Bulb and with checklist" ovalColor="sun">
+        <Top imageName="mr-bulb-business-startup-guides" imageAlt="Business Startup Guides" ovalColor="sun">
             <h1>{top.header}</h1>
             <p>{top.text}</p>
             <Buttonsbox>

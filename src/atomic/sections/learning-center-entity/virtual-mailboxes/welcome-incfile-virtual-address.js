@@ -8,6 +8,7 @@ import OvalSVG from "../../../../images/ovals/top-left-bottom-transparent-purple
 import IconSVG from "../../../../images/icons/megafon.inline.svg";
 import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
 import { Heading } from "../../../atoms/typography/heading";
+import LightBox from "../../../../components/LightBox";
 
 const Section = styled.section`
 	position: relative;
@@ -32,7 +33,12 @@ const VirtualAddressSection = ({ className, content }) => (
 		<Oval className="oval" height="420" width="420" y="15">
 			<OvalSVG />
 		</Oval>
-		<ImageContent image="virtual-mailbox-service-5488">
+        <ImageContent image="virtual-mailbox-service-5488">
+            <LightBox
+                bottomMargin={42}
+                thumbnailVideo="thumb-video-virtual-mailbox"
+                videoID="-LK9F9jQE6Q"
+            />
 			<Paragraph big>{content.text}</Paragraph>
 			<Paragraph big style={{ fontWeight: "bold", color: color.black }}>
 				{content.text2}
