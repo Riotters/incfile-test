@@ -21,14 +21,14 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="display-ads" color={color.purple3}>
+        <TopImageBox image="display-ads" imageAlt="marketing" color={color.purple3}>
           <Heading size={3} template={4}>Marketing Your Construction Business</Heading>
           <p>
             Marketing will be a huge part of your construction business. Naturally, you will need an awesome website, but you'll also need specialized marketing so you can find the best channels to your clients. In many cases this may be areas like trade magazines, conferences and networking events.
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side-4" color={color.green3}>
+        <TopImageBox image="side-4" imageAlt="Equipment" color={color.green3}>
           <Heading size={3} template={4}>Construction Equipment</Heading>
           <p>
             In addition to a computer or laptop, you will need many specialized tools for your construction business. As well as hand tools, you may also require cranes, diggers and other heavy machinery. In almost all cases, you should be able to lease or rent any equipment, especially if you only
@@ -36,22 +36,22 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
+        <TopImageBox image="we-doubled-the-size-of-customer-service" imageAlt="employees" color={color.orange3}>
           <Heading size={3} template={4}>Employees</Heading>
           <p>To begin with, you may want to hire independent contractors and other tradesmen for your fledgling construction company. Once you get a good idea of demand for your construction services, you can branch out into hiring permanent employees.</p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software and processes" color={color.blue3}>
           <Heading size={3} template={4}>Software and Processes</Heading>
           <p>Construction entrepreneurs make extensive use of software; see our great list of the top apps at the end of this guide. There’s also plenty of specialized software you can use to make planning and managing any construction project a little bit easier.</p>
         </TopImageBox>
 
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="location your business" color={color.red3}>
           <Heading size={3} template={4}>Location</Heading>
           <p>Although you can likely do your planning from home, you’ll probably be spending most of your time on a building site. In some cases, you might even want a small office space so you can conduct meetings with other tradesmen, suppliers, architects or engineers.</p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finances & taxes" color={color.yellow3}>
           <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             You will need a separate business bank account for your construction business. You might also want to consider a business credit card. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile{" "}

@@ -106,7 +106,7 @@ const BoxedButton = ({
 				<TextWrapper textColor={textColor} icon={icon} ellipsis={ellipsis}>
 					{icon && (
 						<ImageWrapper iconColor={iconColor} iconPadding={iconPadding}>
-							<Image filename={icon} />
+							<Image filename={icon} alt={content.imageAlt ?? ''} />
 						</ImageWrapper>
 					)}
 					{content.header && (

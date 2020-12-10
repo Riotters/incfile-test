@@ -40,7 +40,7 @@ const RecordLabel = () => (
             description="If you want to get into the music business, then starting your own record company could be a great idea. Whether you’re a band or artist that wants to control your own destiny, or you want to sign and promote the talents of others, owning a record label gives you options."
         />
 
-        <Top ovalColor="sun" imageName="mr-bulb-record-label-7165.png" imageAlt="Mr Bulb with seedling"
+        <Top ovalColor="sun" imageName="mr-bulb-record-label-7165.png" imageAlt="starting a record label business"
              headlineWidth={700}>
             <h1>How to Start a Record Label</h1>
             <p>If you want to get into the music business, then starting your own record company could be a great idea.

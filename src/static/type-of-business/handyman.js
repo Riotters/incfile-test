@@ -277,7 +277,7 @@ export const adventages2 = {
 }
 
 export const InfoCards = {
-    title: `Insurance for Your Gym, Fitness or Personal Training Business`,
+    title: `Insurance for Your Handyman Business`,
     description: `Most fitness businesses should have comprehensive business insurance. There are various types.`,
     items: [
         {

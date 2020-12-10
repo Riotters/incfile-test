@@ -121,7 +121,8 @@ const ClientDashboardSection = ({ className, content, isNewSale }) => (
 			text={content.text}
 		/>
 		<ContentCenter>
-			<Button
+            <Button
+                externalLink
 				content={content.button}
 				theme="primary56"
 				arrow
@@ -132,7 +133,7 @@ const ClientDashboardSection = ({ className, content, isNewSale }) => (
 					<AbsoluteShapCure left="170px" top="73%" rotate={180}>
 						<ShapeCurve color={color.blue1} />
 					</AbsoluteShapCure>
-					<Image filename="contact-01.inline" />
+					<Image filename="contact-01.inline" alt="login dashboard" />
 				</RelativeElement>
 			)}
 
@@ -149,7 +150,7 @@ const ClientDashboardSection = ({ className, content, isNewSale }) => (
 					{content.articles.map((item, i) => (
 						<a href={item.url} style={{ width: `100%`, display: `block` }} key={i}>
 							<Article className="article" flex bottomMargin="8px">
-								<Image filename={item.icon} alt="" />
+								<Image filename={item.icon} alt={item.imageAlt ?? ''} />
 								<Content>
 									<Paragraph
 										style={{ fontWeight: `bold`, marginBottom: `8px` }}
