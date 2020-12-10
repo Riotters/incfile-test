@@ -49,6 +49,7 @@ const templateStyle = (template) => {
                 font-family: MarkPro;
                 font-size: 16px;
                 line-height: 24px;
+                font-weight: 900;
             `;
         }
         case 6: {

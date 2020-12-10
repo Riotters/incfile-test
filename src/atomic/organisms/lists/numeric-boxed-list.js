@@ -22,12 +22,18 @@ const Wrapper = styled.ul`
       margin-right: 24px;
     }
 
-    p {
+    p:not(.i-believe-i-can-be-a-h5) {
       min-height: 32px;
       font-size: 16px;
       line-height: 24px;
       color: ${(props) => (!props.noBox ? color.black : "")};
       padding: 0;
+    }
+    
+    p.i-believe-i-can-be-a-h5 {
+      color: ${(props) => (!props.noBox ? color.black : "")};
+      padding-top: 4px;
+      margin-bottom: 16px;
     }
   }
 `;

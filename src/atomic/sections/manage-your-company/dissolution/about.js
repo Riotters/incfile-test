@@ -50,7 +50,7 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="40">
         {content.text4}
       </Paragraph>
-      <NumericList content={content.list} bottomMargin="48" />
+      <NumericList content={content.list} bottomMargin="48" paragraphHeaders={true} />
       <Paragraph big bottomMargin="0">
         {content.text5}
       </Paragraph>

@@ -121,7 +121,7 @@ const IconTextColorBox = ({
 					<Icon />
 				</div>
 				{content.header ? (
-					<ChooseHeading headingSizeTemplate={headingSizeTemplate} headingSize={headingSize} paragraphHeader={paragraphHeader} content={content.header}/>
+					<ChooseHeading headingSizeTemplate={headingSizeTemplate} headingSize={headingSize} paragraphHeader={paragraphHeader} content={content.header} left />
 				) : null}
 				{content.text && (
 					<Paragraph mixed bottomMargin="0">

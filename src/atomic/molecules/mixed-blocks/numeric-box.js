@@ -45,7 +45,7 @@ const NumericBox = ({ className, id, item, noBox, paragraphHeader = false }) =>
       <Circle>{item?.number ?? id + 1}</Circle>
       <TextWrapper>
         {item.header && (
-            <ChooseHeadingType headerSize={4} headerTemplateSize={5} bottomMargin={36} content={item.header} />
+            <ChooseHeadingType paragraphHeader={paragraphHeader} headerSize={4} headerTemplateSize={5} bottomMargin={36} content={item.header} />
         )}
         {item.text && (
           <Paragraph bottomMargin="0" mixed>

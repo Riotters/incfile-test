@@ -32,7 +32,7 @@ const ContentWrapper = styled.article`
 const LegalSection = ({ className, content, contentWidth }) => (
     <Wrapper>
         <ContentCenter contentWidth={contentWidth}>
-            {content.header && (<Heading size={2} bottomMargin={32}>{content.header}</Heading>)}
+            {content.header && (<Heading size={3} template={2} left bottomMargin={32}>{content.header}</Heading>)}
             {content.bold1 && (<Heading size={4} bottomMargin={42}>{content.bold1}</Heading>)}
             {content.text && (<Paragraph big mixed bottomMargin={42}>{parse(content.text)}</Paragraph>)}
             {content.bold2 && (<Heading size={4} bottomMargin={42}>{content.bold2}</Heading>)}
