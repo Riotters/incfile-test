@@ -18,6 +18,7 @@ import HSFormModal from "../components/hubspot/standard-post-form-modal";
 //Texts
 
 import { top, about, tableOfContent, needMore, hsForm } from "../static/learning-center-entity/guide-to-start";
+import { Helmet } from "react-helmet";
 
 const GuideToStart = () => {
   const [modalVisible, setModalVisible] = React.useState(false);
@@ -67,7 +68,23 @@ const GuideToStart = () => {
 
           {formSubmitted && <ThankYouContent modalExit={popup} />}
         </LightBoxContent>
-      </LightBoxModal>
+          </LightBoxModal>
+          
+          <Helmet>
+              <script type="application/ld+json">
+                  {`{
+                      "@context": "http://schema.org",
+                      "@type": "VideoObject",
+                      "name": "How to Start a Business: 4 Simple Steps to Starting Your Own Company by Incfile",
+                      "description": "Want to know how to start a business? As an entrepreneur, you can likely relate to the excitement and fear that comes with starting a business. But these four simple steps will help anyone dreaming of starting their own business take it to becoming a reality.",
+                      "thumbnailUrl": "https://i.ytimg.com/vi/M-SlUnCHmXU/default.jpg",
+                      "uploadDate": "2020-03-22T14:49:18Z",
+                      "duration": "PT1M51S",
+                      "embedUrl": "https://www.youtube.com/embed/M-SlUnCHmXU",
+                      "interactionCount": "1776"
+                  }`}
+              </script>
+          </Helmet>
     </Layout>
   );
 };
@@ -105,8 +122,9 @@ const LightBoxContent = styled.div`
 
   @media screen and (min-width: 769px) {
     padding-top: 0;
-    overflow-y: visible;
-  }
+    max-width: 600px;
+    max-height: 90vh;
+}
 `;
 
 export default GuideToStart;

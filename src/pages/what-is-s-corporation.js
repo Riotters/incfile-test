@@ -132,7 +132,7 @@ const LightBoxContent = styled.div`
   @media screen and (min-width: 769px) {
     padding-top: 0;
     max-width: 600px;
-    max-height: 80vh;
+    max-height: 90vh;
   }
 `;
 

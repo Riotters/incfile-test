@@ -81,7 +81,7 @@ const AfterForming = () => {
 							postDownloadAction={postDownload}
 						/>
 					)}
-					{formSubmitted && <ThankYouContent modalExit={popup} />}
+					{formSubmitted && <ThankYouContent modalExit={popup} fileDownload={hsForm.fileDownload} />}
 				</LightBoxContent>
 			</LightBoxModal>
 		</Layout>
