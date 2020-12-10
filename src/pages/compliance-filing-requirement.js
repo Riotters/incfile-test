@@ -16,8 +16,7 @@ import ContentCenter from "../atomic/partials/content-center";
 import {
 	top,
 	about,
-	entityTypeAndState,
-	rocket,
+	entityTypeAndState
 } from "../static/learning-center-entity/ongoing-filing-requirements";
 
 const OngoingFilingRequirements = () => {
@@ -37,7 +36,7 @@ const OngoingFilingRequirements = () => {
 			/>
 			<Top
 				imageName="mrs-bulb-ongoing-filing-requirements-7487"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt=""
 				ovalColor="green"
 			>
 				<h1>{top.header}</h1>

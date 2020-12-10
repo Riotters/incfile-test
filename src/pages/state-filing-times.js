@@ -40,7 +40,7 @@ const StateFilingTimes = () => {
 			/>
 			<Top
 				imageName="mr-bulb-state-filing-times-3289"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt=""
 				ovalColor="purple-2"
 				textWidth="530"
 			>

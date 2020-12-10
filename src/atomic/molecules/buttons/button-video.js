@@ -46,7 +46,7 @@ class ButtonVideo extends Component {
 						<LightBoxContent>
 							{vimeo
 								? parse(`<iframe 
-                                src="https://player.vimeo.com/video/${videoID}"  
+                                src="https://player.vimeo.com/video/${videoID}/?autoplay=1"  
                                 frameborder="0" 
                                 allow="autoplay; fullscreen" 
                                 allowfullscreen></iframe>`)

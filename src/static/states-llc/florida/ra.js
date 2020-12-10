@@ -1,5 +1,7 @@
 import { color } from "../../../components/styles/colors";
 
+const ORDER_URL = `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=FL`;
+
 export const agentPageContent = {
   header: {
     title: `Florida Registered Agents for LLCs`,
@@ -10,7 +12,7 @@ export const agentPageContent = {
         desc: `<span style="color:#FD8550">Start your LLC today for $0 + State fee.</span>`,
         button: {
           text: `Form Your LLC Now`,
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=FL`,
+          url: ORDER_URL,
         },
       },
     ],
@@ -161,7 +163,7 @@ export const agentPageContent = {
       width: `380px`,
       content: {
         text: `Incorporate Your business Through Incfile`,
-        url: `/`,
+        url: ORDER_URL,
       },
     },
 
@@ -208,7 +210,7 @@ export const agentPageContent = {
       width: `450px`,
       content: {
         text: `Order Incfile’s Florida registered Agent Service`,
-        url: `/`,
+        url: `/manage-your-company/registered-agent/`,
       },
     },
 
@@ -317,7 +319,7 @@ export const agentPageContent = {
       content: [
         {
           text: `The Main Functions of a Florida Registered Agent`,
-          url: `/research-topics/general-research/registered-agent-function/`,
+          url: `/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
         },
         {
           text: `Changing Your Florida Registered Agent`,

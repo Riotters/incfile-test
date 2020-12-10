@@ -13,6 +13,7 @@ export const hsForm = {
   header: "Download Our Start a Nonprofit Guide.",
   text: "Starting a nonprofit can truly help make the world a better place.",
   hs_form_id: `cea693a7-b69e-4969-8d8e-c3b570335061`,
+  fileDownload: `https://cdn2.hubspot.net/hubfs/3787982/Content%20Repurpose%20PDFs/Dec19%20-%20Start%20a%20Non-Profit/Incfile%20-%20How%20To%20Start%20a%20Non%20Profit.pdf`,
   button: {
     text: "Download now",
     url: "/",

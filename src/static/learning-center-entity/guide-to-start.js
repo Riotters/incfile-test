@@ -83,6 +83,7 @@ export const hsForm = {
     header: "DOWNLOAD: The Complete Guide to Starting a Business.",
     text: "From developing your business idea to measuring success, our free guide has all the info you need to get your business off the ground.",
     hs_form_id: `7d5d3157-09f4-40f0-bfee-eff448ed0e24`,
+    fileDownload: `https://cdn2.hubspot.net/hubfs/3787982/the-complete-guide-to-starting-a-business.pdf`,
     button: {
         text: "Download now",
         url: "/",

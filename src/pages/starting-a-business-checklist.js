@@ -66,7 +66,7 @@ const BusinessChecklist = () => {
 			/>
 			<Top
 				imageName="mrs-bulb-business-checklist"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt="How to Start a Business"
 				ovalColor="green"
 				contentWidth={700}
 			>
@@ -153,8 +153,9 @@ const LightBoxContent = styled.div`
 
 	@media screen and (min-width: 769px) {
 		padding-top: 0;
-		overflow-y: visible;
-	}
+        max-width: 600px;
+        max-height: 90vh;
+    }
 `;
 
 export default BusinessChecklist;

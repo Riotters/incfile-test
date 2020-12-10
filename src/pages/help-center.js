@@ -25,7 +25,7 @@ const HelpCenter = () => (
 		/>
 		<Top
 			imageName="mrs-bulb-question-7726"
-			imageAlt="Mrs Bulb and with checklist"
+			imageAlt=""
 			ovalColor="darkblue"
 		>
 			<h1>{top.header}</h1>

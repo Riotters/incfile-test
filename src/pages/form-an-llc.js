@@ -27,7 +27,7 @@ const StartAnLLC = () => {
     return (
         <Layout>
             <SEO title="How to Start an LLC | Starting an LLC with Incfile" description="Forming a limited liability company is simple and comes with lots of advantages for your small business or startup. Learn how to create your LLC today." />
-            <Top imageName="mrs-bulb-start-an-llc-4300" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" headlineWidth="550" textWidth="430">
+            <Top imageName="mrs-bulb-start-an-llc-4300" imageAlt="" ovalColor="sun" headlineWidth="550" textWidth="430">
                 <h1>{top.header}</h1>
                 <p>{top.text}</p>
                 <Buttonsbox>

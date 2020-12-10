@@ -38,7 +38,7 @@ const TrademarkNameSearch = () => (
         />
 		<Top
 			imageName="mrs-bulb-trademark"
-			imageAlt="Mr Bulb holding a certificate and tossing an orginal and a trademark sign"
+			imageAlt=""
 			ovalColor="darkblue"
 		>
 			<h1 style={{ maxWidth: "100%" }}>{top.header}</h1>

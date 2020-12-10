@@ -166,7 +166,7 @@ export const businessNamesContent = {
         title: `Find out if your preferred business name is available in New York with Incfile’s free tool.`,
         button: {
           text: `Check Your New York LLC Name`,
-          url: `/new-york-entity-search/?open=true/`,
+          url: `/new-york-entity-search/`,
         },
       },
     },

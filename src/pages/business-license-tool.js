@@ -26,7 +26,7 @@ const BusinessLicenseReq = () => (
 		/>
 		<Top
 			imageName="mrs-bulb-business-license-requirements"
-			imageAlt="Mrs Bulb and with checklist"
+			imageAlt=""
 			ovalColor="sun"
 			headlineWidth="460"
 			textWidth="480"

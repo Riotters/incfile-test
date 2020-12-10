@@ -14,11 +14,11 @@ import FaqSection from "../atomic/sections/learning-center-entity/arizona-virtua
 const VirtualMailBoxes = () => (
     <Layout>
         <SEO title="South Dakota Virtual Mailbox & Mail Scanning Service" description="Need a business address in SD? Our virtual mailbox service gives you a real street address and lets you get your mail no matter where you are. Learn more." />
-        <Top imageName="mr-contact-new-sales-9845" imageAlt="Mrs Bulb New Sales" ovalColor="green" headlineWidth="500" textWidth="800">
+        <Top imageName="mr-contact-new-sales-9845" imageAlt="" ovalColor="green" headlineWidth="500" textWidth="800">
             <h1>{top.header}</h1>
             <p>{top.text}</p>
             <Buttonsbox>
-                <Button content={top.button[0]} theme="primary56" arrow />
+                <Button externalLink content={top.button[0]} theme="primary56" arrow />
             </Buttonsbox>
         </Top>
         <ArizonaStreetAddrVirtualMXAdvantages content={advantages} />
