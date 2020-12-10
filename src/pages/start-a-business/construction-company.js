@@ -37,7 +37,7 @@ const ConstructionCompany = () => (
 	<Layout>
 		<SEO
 			title="How to Start a Construction Company | Stats, Tips & Trends"
-			description="The need for residential, commercial or industrial property is constantly growing as the population increases."
+			description="Whether you're a residential, commercial or industrial builder, get your construction business off the ground with our simple startup guide. Read more."
 		/>
 
 		<Top

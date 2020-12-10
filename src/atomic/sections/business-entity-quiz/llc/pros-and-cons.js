@@ -1,0 +1,81 @@
+import React from "react";
+import styled from "styled-components";
+import TextCenterLayout from "../../../partials/heading-center";
+import Container from "../../../../components/container";
+import Adventages from "../../../../components/adventages";
+import ContentCenter from "../../../partials/content-center";
+import { Heading } from "../../../atoms/typography/heading";
+import { Paragraph } from "../../../atoms/typography/paragraph";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import { color, gradient } from "../../../atoms/styles/colors";
+
+const IsItForYou = ({ content }) => (
+	<Wrapper>
+		<TextCenterLayout
+			headline={content.header}
+			text={content.text}
+			headlineWidth={770}
+			textWidth={770}
+		/>
+
+		<Container>
+			<AdventagesWrapper>
+				{content.boxes.map((box) => (
+					<Adventages
+						disadventage={box.disadventage}
+						circleBackgroundColor={box.circleBackgroundColor}
+						text={box.text}
+					/>
+				))}
+			</AdventagesWrapper>
+		</Container>
+	</Wrapper>
+);
+
+const Wrapper = styled.section`
+	padding-top: 120px;
+	padding-bottom: 100px;
+	position: relative;
+
+	&::before {
+		content: "";
+		height: 2008px;
+		width: 100%;
+		background-image: ${gradient.blue3};
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+`;
+
+const AdventagesWrapper = styled.div`
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 100%;
+	justify-content: center;
+	column-gap: 30px;
+	row-gap: 0px;
+	margin-top: 76px;
+	margin-bottom: 76px;
+
+	@media (min-width: 490px) {
+		grid-template-columns: 470px;
+	}
+
+	@media (min-width: 992px) {
+		grid-template-columns: 470px 470px;
+	}
+`;
+
+const Oval = styled.div`
+	position: absolute;
+	top: 447px;
+	left: 0;
+	width: 100%;
+
+	@media (min-width: 520px) {
+		width: 520px;
+	}
+`;
+
+export default IsItForYou;

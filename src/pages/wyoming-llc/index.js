@@ -25,7 +25,7 @@ function LLCIndex() {
 		<Layout>
 			<SEO
 				title="Wyoming LLC Formation in Six Easy Steps | Wyoming LLCs"
-				description="Ready to form your Wyoming LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+				description="Learn all the requirements for forming and filing an LLC in Wyoming. Find out about business names and searches, Registered Agents, licenses, taxes, forms and fees."
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} nonDIY />

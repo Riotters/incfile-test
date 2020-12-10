@@ -38,7 +38,7 @@ const OnlineBusiness = () => (
 	<Layout>
 		<SEO
 			title="How to Start an Online Business | Starting an Online Business"
-			description="The internet has revolutionized business — it has broadened marketplaces, made products and services available to every one and lowered the barriers to starting a successful company. With the right approach and understanding, anyone can become a successful online entrepreneur."
+			description="Online businesses come in many forms and some require zero startup cost while others may be costly. Find easy INCFILE tips here for online start-ups."
 		/>
 
 		<Top

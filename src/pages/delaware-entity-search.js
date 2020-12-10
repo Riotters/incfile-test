@@ -23,7 +23,7 @@ const GeneralResearchTopics = () => {
 		<Layout>
 			<SEO
 				title="Delaware Corporation & Business Entity Search | Incfile"
-				description="Starting a new business in DA? Check to see if your preferred business name is available with Incfile’s easy name search tool. Try it now."
+				description="Starting a business in Delaware? Use our tool to search Delaware companies to see if your business name is available."
 			/>
 			<Top
 				imageName="mrs-bulb-state-ilustrations-3893"

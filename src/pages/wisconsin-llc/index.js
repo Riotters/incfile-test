@@ -25,7 +25,7 @@ function LLCIndex() {
 		<Layout>
 			<SEO
 				title="Wisconsin LLCs | How to Start an LLC in Wisconsin"
-				description="Ready to form your Wisconsin LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+				description="Learn all the requirements for forming and filing an LLC in Wisconsin, including business names searches, Registered Agents, licenses, taxes and more."
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} nonDIY />

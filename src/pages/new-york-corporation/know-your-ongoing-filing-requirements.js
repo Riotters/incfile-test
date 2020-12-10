@@ -39,7 +39,7 @@ const NewYorkCorporation = () => {
 		<Layout>
 			<SEO
 				title="Managing Your New York S Corp or C Corp After Formation"
-				description="From annual reports to business licenses and permits, learn about the forms and filing requirements for your New York corporation."
+				description="You've formed your New York corporation, now what? We'll walk you through what you need to think about to get your business on the path to success."
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"

@@ -37,7 +37,7 @@ const RealEstateBusiness = () => (
 	<Layout>
 		<SEO
 			title="Real Estate Investing | How to Start a Real Estate Business"
-			description="Whether you want to buy, sell, develop, or rent out real estate, there are plenty of opportunities in the residential and commercial sectors."
+			description="Whether you want to buy, sell, develop, or rent out real estate, there are plenty of opportunities in the residential and commercial sectors. Learn more."
 		/>
 
 		<Top

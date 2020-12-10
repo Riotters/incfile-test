@@ -11,25 +11,32 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-green3.inline
 import { Heading } from "../../../atoms/typography/heading";
 
 const About = styled.section`
-  position: relative;
-  padding-bottom: 30px;
-  
-  @media (min-width: 992px) {
-    padding-bottom: 120px;
-  }
+	position: relative;
+	padding-bottom: 30px;
+
+	@media (min-width: 992px) {
+		padding-bottom: 120px;
+	}
 `;
 
 const AboutSection = ({ className, content }) => (
-  <About className={className}>
-    <Oval className="oval" height="420" width="420" y="15">
-      <OvalSVG />
-    </Oval>
-    <ImageContent image="state-entity-search-9829">
-      <Heading size="3">{content.header}</Heading>
-      <Paragraph big>{content.text}</Paragraph>
-      <IconTextColorBox color={color.green3} Icon={IconSVG} content={content.box} rounded curve curveColor={color.blue1} />
-    </ImageContent>
-  </About>
+	<About className={className}>
+		<Oval className="oval" height="420" width="420" y="15">
+			<OvalSVG />
+		</Oval>
+		<ImageContent image="state-entity-search-9829">
+			<Heading size="3">{content.header}</Heading>
+			<Paragraph big>{content.text}</Paragraph>
+			<IconTextColorBox
+				color={color.green3}
+				Icon={IconSVG}
+				content={content.box}
+				rounded
+				curve
+				curveColor={color.blue1}
+			/>
+		</ImageContent>
+	</About>
 );
 
 export default AboutSection;
