@@ -96,7 +96,7 @@ const ValidatingBusinessIdea = () => (
 
             <GridSection>
                 <TitleBox>
-                    <Heading size={2 } template={3} left>Validating Your Construction Business Idea</Heading>
+                    <Heading size={2 } template={3} style={{lineHeight: `48px`}} left>Validating Your Construction Business Idea</Heading>
                     <Paragraph big>
                         The construction areas above are just starting points — there are many different types of
                         construction businesses. Once you’ve identified the areas you’d like

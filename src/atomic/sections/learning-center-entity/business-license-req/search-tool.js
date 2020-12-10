@@ -110,6 +110,9 @@ const LicenseItemWrapper = styled.ul`
 	margin-bottom: 32px;
 `;
 
+const Icon = styled.div`
+`
+
 const LicenseItem = styled.li`
 	display: flex;
 	align-items: center;
