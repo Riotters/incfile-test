@@ -22,7 +22,7 @@ import {
 import { about } from "../../../static/research-topics/registered-agent/service-process-notify";
 
 import { related } from "../../../static/research-topics/registered-agent";
-import { HeadingP } from "../../../atomic/atoms/typography/heading-to-p";
+import {HeadingP} from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => {
 	const currentUri =

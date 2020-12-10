@@ -12,8 +12,8 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.
 import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Path from "../../../molecules/blocks/research-topics-path";
 import Button from "../../../molecules/buttons/button";
-import { HeadingP } from "../../../atoms/typography/heading-to-p";
-import { PHeading } from "../../../atoms/typography/p-as-heading";
+import {HeadingP} from "../../../atoms/typography/heading-to-p";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const About = styled.section`
 	position: relative;

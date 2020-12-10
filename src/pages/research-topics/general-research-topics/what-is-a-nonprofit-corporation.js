@@ -23,7 +23,7 @@ import { about } from "../../../static/research-topics/general-research/what-is-
 
 import { related } from "../../../static/research-topics/general-research";
 import { Helmet } from "react-helmet";
-import { HeadingP } from "../../../atomic/atoms/typography/heading-to-p";
+import {HeadingP} from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => {
 	const currentUri =

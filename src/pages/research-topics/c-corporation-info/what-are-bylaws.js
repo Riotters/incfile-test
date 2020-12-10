@@ -22,7 +22,7 @@ import {
 import { about } from "../../../static/research-topics/c-corporation-info/what-are-bylaws";
 
 import { related } from "../../../static/research-topics/c-corporation-info";
-import { HeadingP } from "../../../atomic/atoms/typography/heading-to-p";
+import {HeadingP} from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => {
 	const currentUri =

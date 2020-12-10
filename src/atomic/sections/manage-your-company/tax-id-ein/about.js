@@ -16,7 +16,7 @@ const About = styled.section`
   position: relative;
   padding-bottom: 64px;
 
-  p {
+  p:not(.i-believe-i-can-be-a-h4):not(.i-believe-i-can-be-a-h5) {
     color: ${color.grey2};
   }
 `;
@@ -38,14 +38,14 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="40">
         {content.text2}
       </Paragraph>
-      <IconListColorBox color={color.orange3} content={content.box2} bottomMargin="56" rounded />
-      <Heading size={3} bottomMargin="24">
+      <IconListColorBox color={color.orange3} content={content.box2} bottomMargin="56" rounded paragraphHeader />
+      <Heading size={2} template={3} left bottomMargin="24">
         {content.header2}
       </Heading>
       <Paragraph big bottomMargin="48">
         {content.text3}
       </Paragraph>
-      <Heading size={3} bottomMargin="24">
+      <Heading size={2} template={3} left bottomMargin="24">
         {content.header3}
       </Heading>
       <Paragraph big bottomMargin="40">

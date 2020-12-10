@@ -22,6 +22,7 @@ import {
 	faq,
 } from "../../static/manage-your-company/registered-agent";
 import { servicePrice } from "../../helpers/global-variables";
+import {HeadingP} from "../../atomic/atoms/typography/heading-to-p";
 
 const RegisteredAgent = () => (
 	<Layout>
@@ -41,7 +42,7 @@ const RegisteredAgent = () => (
 			ovalColor="purple"
 		>
 			<h1>{top.header}</h1>
-			<p>{top.text}</p>
+			<HeadingP size={2} big>{top.text}</HeadingP>
 			<Buttonsbox>
 				<Button content={top.button[0]} theme="primary56" width="200px" arrow />
 			</Buttonsbox>
