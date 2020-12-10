@@ -244,7 +244,7 @@ const IndexPage = () => (
 				<Link to="/florida-entity-search">
 					Florida Business Entity Search | Is Your Name Available?
 				</Link>
-				<Link to="/georgia-entity-search">Georgia Entity Search</Link>
+				<Link to="/georgia-entity-search/">Georgia Entity Search</Link>
 				<Link to="/texas-entity-search">Texas Entity Search</Link>
 
 				<h2>Other</h2>
@@ -409,7 +409,7 @@ const IndexPage = () => (
 				<Link to="/research-topics/llc-info/own-a-corporation-or-llc">
 					Are Non-U.S. Residents Allowed to Own a Corporation or LLC?
 				</Link>
-				<Link to="/research-topics/llc-info/llc-business-entity-member">
+				<Link to="/research-topics/llc-info/can-another-business-entity-be-a-member-of-an-llc/">
 					Can another business entity be a member of an LLC?
 				</Link>
 				<Link to="/research-topics/llc-info/forming-llc-with-one-member">
@@ -419,7 +419,7 @@ const IndexPage = () => (
 					Does Forming an LLC (Limited Liability Company) or Corporation Require
 					an Attorney?
 				</Link>
-				<Link to="/research-topics/llc-info/llc-taxed-as-an-s-corp">
+				<Link to="/research-topics/llc-info/can-a-limited-liability-company-llc-be-taxed-as-an-s-corporation/">
 					Can a Limited Liability Company (LLC) be taxed as an S Corporation?
 				</Link>
 				<Link to="/research-topics/llc-info/llc-without-listing-members">
@@ -438,7 +438,7 @@ const IndexPage = () => (
 				<Link to="/research-topics/llc-info/llcs-vs-c-corporation">
 					LLCs vs C-Corporation: Which Is Best for Your Business?
 				</Link>
-				<Link to="/research-topics/llc-info/starting-llc-by-steps">
+				<Link to="/research-topics/llc-info/steps-to-starting-a-limited-liability-company-llc/">
 					Steps to starting a Limited Liability Company (LLC)
 				</Link>
 				<Link to="/research-topics/llc-info/forming-llc-benefits">
@@ -576,7 +576,7 @@ const IndexPage = () => (
 				<Link to="/research-topics/general-research/registered-agent-function">
 					What is the main function of the Registered Agent?
 				</Link>
-				<Link to="/research-topics/general-research/required-business-account-paperwork">
+				<Link to="/research-topics/general-research-topics/what-paperwork-is-required-in-order-to-open-a-business-checking-account/">
 					What Do I Need to Open a Business Bank Account?
 				</Link>
 				<Link to="/research-topics/general-research/entity-remains-compliant">
@@ -675,7 +675,7 @@ const IndexPage = () => (
 					Publishing Company Business
 				</Link>
 				<Link to="/start-a-business/tshirt-business">T-Shirt Business</Link>
-				<Link to="/start-a-business/food-truck-business">
+				<Link to="/start-a-business/food-truck/">
 					Food Truck Business
 				</Link>
 				<Link to="/start-a-business/gym-personal-training">
@@ -714,12 +714,12 @@ const IndexPage = () => (
 					Restaurant Business
 				</Link>
 				<Link to="/start-a-business/summer-business">Summer Business</Link>
-				<Link to="/start-a-business/dog-walking">Dog Walking</Link>
+				<Link to="/start-a-business/dog-walking-business/">Dog Walking</Link>
 				<Link to="/start-a-business/brewery-business">Brewery Business</Link>
 				<Link to="/start-a-business/blockchain">Blockchain</Link>
 				<Link to="/start-a-business/bookstore">Bookstore</Link>
 				<Link to="/start-a-business/bed-and-breakfast">Bed and Breakfast</Link>
-				<Link to="/start-a-business/laundromat">Laundromat</Link>
+				<Link to="/start-a-business/laundromat-business/">Laundromat</Link>
 				<Link to="/start-a-business/landscaping-business">
 					Landscaping Business
 				</Link>

@@ -14,7 +14,7 @@ const FormIncfile = () => {
 
     return (
         <Layout>
-            <PPCIncfileLayout content={content} />
+            <PPCIncfileLayout content={content} entityType="LLC" />
         </Layout>
     );
 };

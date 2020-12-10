@@ -377,7 +377,7 @@ export const furtherResources = {
 			text: `The Incfile blog with detailed articles on every aspect of forming and running a business.`,
 			link: {
 				text: `Learn more`,
-				url: `/blog/`,
+				url: `https://www.incfile.com/blog/`,
 			},
 		},
 		{

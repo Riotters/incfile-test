@@ -1,14 +1,13 @@
-import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import { color } from "../../../../components/styles/colors";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
 import LLCSVG from "../../../../images/icons/limited-liability-company-or-llc.inline.svg";
-import ArrowSVG from "../../../../images/arrow.inline.svg";
 import LimitedIcon from "../../../../images/icons/limited-liability-company.inline.svg";
-import IconCircle from "../../../../components/icons/circle";
+import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import PlaneIcon from "../../../../images/icons/plane.inline.svg";
 import RockerIcon from "../../../../images/icons/rocket.inline.svg";
 import HandsIcon from "../../../../images/icons/hands.inline.svg";
@@ -17,7 +16,6 @@ import OvalSvg from "../../../../images/ovals/top-left-transparent-orange2.inlin
 import { shadow } from "../../../atoms/styles/shadows";
 import { gradient } from "../../../atoms/styles/colors";
 import Colorbox from "../../../../components/color-box";
-import { Link } from "gatsby";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -185,7 +183,7 @@ const BusinessStructure = () => (
         </Colorbox>
 
         <Paragraph big mixed={true} style={{ marginTop: "48px", marginBottom: "72px" }}>
-          If you’re in one of these states, <Link to="/blog/post/series-llc-why-need-one/">see if a series LLC could be right for you.</Link>
+          If you’re in one of these states, <Link to="https://www.incfile.com/blog/post/series-llc-why-need-one/">see if a series LLC could be right for you.</Link>
         </Paragraph>
 
         <Heading size={3} style={{ maxWidth: "100%" }} bottomMargin={0}>

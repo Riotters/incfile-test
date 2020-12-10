@@ -1,4 +1,3 @@
-import { size } from "lodash";
 import { color } from "../../../atomic/atoms/styles/colors";
 
 export const top = {
@@ -164,7 +163,7 @@ export const howToGuide = [
           question: `Form an Alabama Series LLC`,
           answer: `In Alabama, you also have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master umbrella LLC. These can be very useful if you don’t want to set up a separate Alabama LLC for every individual business you run. 
           <br><br>
-          <a href="/blog/post/series-llc-why-need-one/">Decide if an Alabama Series LLC is right for your new business.</a>`,
+          <a href="https://www.incfile.com/blog/post/series-llc-why-need-one/">Decide if an Alabama Series LLC is right for your new business.</a>`,
         },
         {
           question: `Form a Foreign LLC in Alabama`,
@@ -522,7 +521,7 @@ export const namingYourBusiness = [
     type: `button`,
     content: {
       text: `Incfile trademark search and registration service`,
-      url: `/trademark-name-search`,
+      url: `/trademark-name-search/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -556,7 +555,7 @@ export const namingYourBusiness = [
     type: `arrow-link`,
     content: {
       text: `Incfile guide to choosing a business name`,
-      url: `/llc-name-search-50-states`,
+      url: `https://www.incfile.com/blog/post/llc-name-search-50-states`,
     },
     marginBottom: 80,
   },
@@ -669,7 +668,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `More about registered agents`,
-      url: `pages/manage-your-company/registered-agent`,
+      url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
     marginBottom: 32,
@@ -726,7 +725,7 @@ export const registeredAgent = [
     type: `button`,
     content: {
       text: `Incorporate your businness through Incfile`,
-      url: `form-order-now.php?entityType=LLC&entityState=AL`,
+      url: `${process.env.ORDER_URL}form-order-now.php?entityType=LLC&entityState=AL`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -891,9 +890,9 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function/" target="_blank">The Main Functions of an Alabama Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/" target="_blank">The Main Functions of an Alabama Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank">Changing Your Alabama Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent/registered-agent-tasks/" target="_blank">What an Alabama Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank">What an Alabama Registered Agent Does</a>`,
       ],
     },
     marginBottom: 32,
@@ -1106,7 +1105,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `An Operating Agreement is extremely useful for several reasons(<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a>) If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Alabama business. You can choose to make changes to the template based on your unique requirements.`,
+    content: `An Operating Agreement is extremely useful for several reasons(<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>) If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Alabama business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 16,
   },
   {
@@ -1135,7 +1134,7 @@ export const feesAndRequirments = [
     type: `button`,
     content: {
       text: `INCFILE'S ALABAMA FICTITIOUS NAME SERVICE`,
-      url: `pages/fictitious-business-or-trade-name/`,
+      url: `/fictitious-business-or-trade-name/`,
     },
     theme: `primary48`,
     marginBottom: 32,

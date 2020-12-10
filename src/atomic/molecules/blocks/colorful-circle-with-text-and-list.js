@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
 import { shadow } from "../../atoms/styles/shadows";
-import CircleSvg from "../../../images/circle-percentage.inline.svg";
-import { Paragraph } from "../../atoms/typography/paragraph";
 
 const ColorFulCircleWithTextAndList = ({ CircleSVG, title, list, withBg, titleWidth, ...rest }) => (
   <Wrapper withBg={withBg} {...rest}>
@@ -15,8 +13,8 @@ const ColorFulCircleWithTextAndList = ({ CircleSVG, title, list, withBg, titleWi
       </Circle>
 
       <TextBox>
-        {list.map((item) => (
-          <ListStyle>
+        {list.map((item, i) => (
+          <ListStyle key={i}>
             <ColorSquare color={item.color} />
             {item.boldText && <TextBold>{item.boldText}</TextBold>}
             <Text>{item.text}</Text>
@@ -43,6 +41,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 40px;
+  margin-bottom: 36px;
 
   ${(props) => props.withBg && "background-color:" + color.white + ";" + "box-shadow:" + shadow.white1 + ";" + "border-top-left-radius: 8px;" + "border-top-right-radius: 20px;" + "border-bottom-left-radius: 8px;" + "border-bottom-right-radius: 20px;"}
 `;
@@ -52,26 +51,6 @@ const Circle = styled.div`
   max-width: 170px;
   max-height: 170px;
   margin-top: 26px;
-`;
-
-const TextInside = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
-  color: black;
-  line-height: 56px;
-  font-family: MarkPro-Bold, sans-serif;
-  font-weight: bold;
-
-  span {
-    position: relative;
-  }
 `;
 
 const TextBox = styled.div`

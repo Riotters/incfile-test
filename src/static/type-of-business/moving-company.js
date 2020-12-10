@@ -1,3 +1,4 @@
+import React from "react";
 import {color} from "../../components/styles/colors";
 import Tab1Icon from "../../images/icons/moving-company.inline.svg";
 import Tab2Icon from "../../images/icons/light.inline.svg";
@@ -181,3 +182,5 @@ export const tabs = {
         }
     ]
 }
+
+export const CircleText = <p style={{fontFamily: "Avenir", fontWeight: "bold", fontSize: "18px", color: "#1d1d1d"}}>The main customers of moving companies are individuals at <span style={{color: "#5089fd"}}>44 percent</span>, followed by corporations at <span style={{color: "#f6be49"}}>38 percent</span>; military and other moves make up the remainder</p>

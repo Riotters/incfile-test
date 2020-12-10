@@ -56,14 +56,14 @@ export const checks = {
           isCompleted: false,
           id: 1,
           name: "Choose a business name",
-          description: `<p>The perfect business name can be elusive! We have a <a href="/blog/post/llc-name-search-50-states/" target="_blank">complete guide to choosing the right business name.</a> You will want to choose something that best represents your product or services while appealing to your customers and being memorable enough to stand out. You should also check that the business name isn’t used by anyone else in the state(s) where you want to conduct business. If you’re not ready to start your business yet but have the perfect name, you can normally reserve it with the business formation authority in your state.</p>`,
+          description: `<p>The perfect business name can be elusive! We have a <a href="https://www.incfile.com/blog/post/llc-name-search-50-states/" target="_blank">complete guide to choosing the right business name.</a> You will want to choose something that best represents your product or services while appealing to your customers and being memorable enough to stand out. You should also check that the business name isn’t used by anyone else in the state(s) where you want to conduct business. If you’re not ready to start your business yet but have the perfect name, you can normally reserve it with the business formation authority in your state.</p>`,
           height: 80,
         },
         {
           isCompleted: false,
           id: 2,
           name: "Make sure no other business in your state has your name",
-          description: `<p>States do require that every incorporated business has a unique name that’s not used by any other formal business in the state. You will need to check if your business name is available by searching the company name database for your state. We’ve got links to <a href="/blog/post/llc-name-search-50-states/" target="_blank">all the information you need,</a> and we’ve also got a specialized tool for searching your business name in the popular incorporation state of Delaware.</p>`,
+          description: `<p>States do require that every incorporated business has a unique name that’s not used by any other formal business in the state. You will need to check if your business name is available by searching the company name database for your state. We’ve got links to <a href="https://www.incfile.com/blog/post/llc-name-search-50-states/" target="_blank">all the information you need,</a> and we’ve also got a specialized tool for searching your business name in the popular incorporation state of Delaware.</p>`,
           height: 80,
         },
         {
@@ -123,7 +123,7 @@ export const checks = {
           isCompleted: false,
           id: 4,
           name: "Create an Operating Agreement or Corporate Bylaws",
-          description: `<p>Most businesses have internal rules that state how they are run. This helps avoid confusion and makes sure that all the members, managers or directors understand how decisions are made. LLCs typically use a document called an “Operating Agreement” to define how the business should run, while corporations use “Corporate Bylaws.”</p><p>Although this might sound complicated, it’s not. We can provide you with <a href="/research-topics/llc-info/llc-operating-agreement/" target="_blank">Operating Agreements</a>or corporate bylaws that you can tweak to your exact needs. For corporations, after the corporation has been filed with the state, the directors of the corporation are required to have a meeting to take care of things such as issuing shares of stock, adopting bylaws, appointing officers, etc. You should also keep minutes of directors' meetings and corporate resolutions so you stay compliant with state rules.</p>`,
+          description: `<p>Most businesses have internal rules that state how they are run. This helps avoid confusion and makes sure that all the members, managers or directors understand how decisions are made. LLCs typically use a document called an “Operating Agreement” to define how the business should run, while corporations use “Corporate Bylaws.”</p><p>Although this might sound complicated, it’s not. We can provide you with <a href="/research-topics/llc-info/the-llc-operating-agreement/" target="_blank">Operating Agreements</a>or corporate bylaws that you can tweak to your exact needs. For corporations, after the corporation has been filed with the state, the directors of the corporation are required to have a meeting to take care of things such as issuing shares of stock, adopting bylaws, appointing officers, etc. You should also keep minutes of directors' meetings and corporate resolutions so you stay compliant with state rules.</p>`,
           height: 80,
         },
         {
@@ -137,14 +137,14 @@ export const checks = {
           isCompleted: false,
           id: 6,
           name: "Get Business Insurance, If Needed",
-          description: `<p>Most businesses should carry insurance to cover them in any unforeseen circumstances. Common types of business insurance include general liability, professional liability, business property, business vehicles, business interruption, product liability and various profession-based insurance types. If you have employees, you will also need to carry workers compensation insurance.</p><p>The <a href="www.sba.gov/business-guide/launch-your-business/get-business-insurance" rel="noopener noreferrer nofollow" target="_blank">U.S. Small Business Administration’s insurance resource</a> an help you understand the different types of business insurance and whether or not insurance is necessary for you. For comprehensive business insurance needs, you won’t go wrong with <a href="land.coverwallet.com/incfile" rel="noopener noreferrer nofollow" target="_blank">Cover Wallet.</a></p><p>For more information on how to form your business, see our specialized <a href="/starting-a-business-checklist/" target="_blank">Business Formation Checklist.</a></p>`,
+          description: `<p>Most businesses should carry insurance to cover them in any unforeseen circumstances. Common types of business insurance include general liability, professional liability, business property, business vehicles, business interruption, product liability and various profession-based insurance types. If you have employees, you will also need to carry workers compensation insurance.</p><p>The <a href="www.sba.gov/business-guide/launch-your-business/get-business-insurance" rel="noopener noreferrer nofollow" target="_blank">U.S. Small Business Administration’s insurance resource</a> an help you understand the different types of business insurance and whether or not insurance is necessary for you. For comprehensive business insurance needs, you won’t go wrong with <a href="https://land.coverwallet.com/incfile" rel="noopener noreferrer nofollow" target="_blank">Cover Wallet.</a></p><p>For more information on how to form your business, see our specialized <a href="/starting-a-business-checklist/" target="_blank">Business Formation Checklist.</a></p>`,
           height: 80,
         },
         {
           isCompleted: false,
           id: 7,
           name: "Choose the Right State to Form Your Business",
-          description: `<p>Before you form your business, you’ll need to choose what state you want to incorporate in. For most business owners, incorporating in your home state is the best idea. Although Delaware and Nevada are both popular states for incorporation due to legal and other benefits, many of those advantages won’t apply to most small businesses.</p><p>Typically, you will register in your own state as a “Domestic” business, and in other states where you want to operate as a “Foreign” business. We’ve got helpful, state-by-state information that guides you through <a href="/llc-state-information/" target="_blank">starting an LLC</a> or <a href="/corporation-state-information/" target="_blank">corporation in every state.</a></p>`,
+          description: `<p>Before you form your business, you’ll need to choose what state you want to incorporate in. For most business owners, incorporating in your home state is the best idea. Although Delaware and Nevada are both popular states for incorporation due to legal and other benefits, many of those advantages won’t apply to most small businesses.</p><p>Typically, you will register in your own state as a “Domestic” business, and in other states where you want to operate as a “Foreign” business. We’ve got helpful, state-by-state information that guides you through <a href="/llc-state-information/">starting an LLC</a> or <a href="/corporation-state-information/">corporation in every state.</a></p>`,
           height: 80,
         },
       ],
@@ -161,7 +161,7 @@ export const checks = {
           isCompleted: false,
           id: 0,
           name: "Open a Business Bank Account",
-          description: `<p>If you’re an LLC or corporation, you must have a separate business bank account. Even if you’re not a legally-incorporated business, a separate business bank account is always a good idea. Managing your business finances in a different account will make it much easier to manage financial transactions, see when invoices have been paid, track expenses and reconcile against your accounting records.</p><p>Setting up a business bank account is easy. Every bank has its own requirements, but most will need the incorporation paperwork from your state (like your Articles of Organization) and your EIN. We can get all the information you need and send it to you.</p><p>When it comes to banks, choose one that works for you — whether it’s a large chain like <a href="utility.bankofamerica.com/alliance/?formid=IF1" rel="noopener noreferrer nofollow" target="_blank">Bank of America,</a> Wells Fargo or Chase, or a smaller local bank. Get in touch with your bank to see what their specific requirements are for opening up a business bank account. Most banks will provide checkbooks and business debit cards that are linked to your account.</p>`,
+          description: `<p>If you’re an LLC or corporation, you must have a separate business bank account. Even if you’re not a legally-incorporated business, a separate business bank account is always a good idea. Managing your business finances in a different account will make it much easier to manage financial transactions, see when invoices have been paid, track expenses and reconcile against your accounting records.</p><p>Setting up a business bank account is easy. Every bank has its own requirements, but most will need the incorporation paperwork from your state (like your Articles of Organization) and your EIN. We can get all the information you need and send it to you.</p><p>When it comes to banks, choose one that works for you — whether it’s a large chain like <a href="https://utility.bankofamerica.com/alliance/?formid=IF1" rel="noopener noreferrer nofollow" target="_blank">Bank of America,</a> Wells Fargo or Chase, or a smaller local bank. Get in touch with your bank to see what their specific requirements are for opening up a business bank account. Most banks will provide checkbooks and business debit cards that are linked to your account.</p>`,
           height: 80,
         },
         {
@@ -177,8 +177,8 @@ export const checks = {
               <li>Borrowing from people you know</li>
               <li>Applying for an SBA loan</li>
           </ul>
-          <p>The <a href="www.sba.gov/node/13710" rel="noopener noreferrer nofollow" target="_blank">SBA Access Financing tool</a> will help you find out what government financing programs may be available to help you start or expand your business.</p>
-          <p>If you’re after a great business loan from a specialized business loan provider, <a href="www.kabbage.com/?refid=krpecbf088e" rel="noopener noreferrer nofollow" target="_blank">we recommend Kabbage</a> for competitive rates and terms.</p>`,
+          <p>The <a href="https://www.sba.gov/node/13710" rel="noopener noreferrer nofollow" target="_blank">SBA Access Financing tool</a> will help you find out what government financing programs may be available to help you start or expand your business.</p>
+          <p>If you’re after a great business loan from a specialized business loan provider, <a href="https://www.kabbage.com/?refid=krpecbf088e" rel="noopener noreferrer nofollow" target="_blank">we recommend Kabbage</a> for competitive rates and terms.</p>`,
           height: 80,
         },
         {
@@ -200,14 +200,14 @@ export const checks = {
           id: 4,
           name:
             "Decide If You Want Your LLC Treated as an S Corporation for Tax Purposes",
-          description: `<p>If you’re forming an LLC and want to reduce the amount of tax you pay, you might want to complete an <a href="www.incfile.com/llc-s-corp-election/" rel="noopener noreferrer nofollow" target="_blank">S Corporation Tax Election.</a> This tells the Internal Revenue Service to treat your business like an S Corporation, which could reduce the amount of income on which you need to pay self-employment tax (Social Security, Medicare and FICA). This can substantially reduce your tax bill, with only a slight increase in administrative overhead for you and your accountant. We can file the S Corporation Tax Election on your behalf.</p>`,
+          description: `<p>If you’re forming an LLC and want to reduce the amount of tax you pay, you might want to complete an <a href="/llc-s-corp-election/">S Corporation Tax Election.</a> This tells the Internal Revenue Service to treat your business like an S Corporation, which could reduce the amount of income on which you need to pay self-employment tax (Social Security, Medicare and FICA). This can substantially reduce your tax bill, with only a slight increase in administrative overhead for you and your accountant. We can file the S Corporation Tax Election on your behalf.</p>`,
           height: 80,
         },
         {
           isCompleted: false,
           id: 5,
           name: "Decide on Accounting and Invoicing Software",
-          description: `<p>It will make your job (and your accountant’s job) much easier if you use accounting software to keep track of your finances on an ongoing basis. There are plenty of great online options for managing your invoices, expenses, transactions and reports. We recommend <a href="www.freshbooks.com/invoice?ref=10400&utm_source=sas&utm_medium=affiliate&utm_campaign=938781&sscid=b1k4_82jjj" rel="noopener noreferrer nofollow" target="_blank">Freshbooks,</a> Quickbooks, Zipbooks and Xero. You can also use an invoicing tool like Bonsai, And.co or Invoicely.</p>`,
+          description: `<p>It will make your job (and your accountant’s job) much easier if you use accounting software to keep track of your finances on an ongoing basis. There are plenty of great online options for managing your invoices, expenses, transactions and reports. We recommend <a href="https://www.freshbooks.com/invoice?ref=10400&utm_source=sas&utm_medium=affiliate&utm_campaign=938781&sscid=b1k4_82jjj" rel="noopener noreferrer nofollow" target="_blank">Freshbooks,</a> Quickbooks, Zipbooks and Xero. You can also use an invoicing tool like Bonsai, And.co or Invoicely.</p>`,
           height: 80,
         },
         {
@@ -322,7 +322,7 @@ export const checks = {
           id: 5,
           name:
             "Look Into Business Documents, Agreements and Contracts You Might Need",
-          description: `<p>If there’s one truth of business, it’s that there’s always plenty of paperwork! With all of the effort you're putting into your new venture, you will want to have all the right agreements and contracts in place from the start. We offer a <a href="/blog/post/25-lawyer-approved-legal-documents-incfiles-contract-library/" target="_blank">comprehensive range of agreements, contracts and documents</a> including:</p>
+          description: `<p>If there’s one truth of business, it’s that there’s always plenty of paperwork! With all of the effort you're putting into your new venture, you will want to have all the right agreements and contracts in place from the start. We offer a <a href="https://www.incfile.com/blog/post/25-lawyer-approved-legal-documents-incfiles-contract-library/" target="_blank">comprehensive range of agreements, contracts and documents</a> including:</p>
             <ul>
                 <li>Operating Agreement</li>
                 <li>Independent Agreement</li>
@@ -431,7 +431,7 @@ export const checks = {
           isCompleted: false,
           id: 2,
           name: "Build a Company Website",
-          description: `<p>If you’re an online-only business, your website is your window to the world. Even if you have a physical presence, your website is still a crucial destination for people who want to learn more about your products and services.</p><p>You will need a business website that’s tailored to your exact business needs. A website for a restaurant will be very different from a website for a freelance writer or accountant. You can find designers to create websites for you on marketplaces like Toptal, Fiverr Pro or Upwork.</p><p>Alternatively, if you don’t mind rolling your sleeves up and putting in some effort, you can use an online web builder to do it yourself. There are plenty of services available, but sites like <a href="xoopah.com/website-voucher-discount/?ref=INCFILE" rel="noopener noreferrer nofollow" target="_blank">Xoopah.com,</a> Squarespace, Wix or Weebly are all good options.</p><p>If you’re selling online, <a href="www.wix.com/mystunningwebsites/ecom-onlinestore?utm_medium=paid_referral&experiment_id=cake_73680325%5E88" rel="noopener noreferrer nofollow" target="_blank">Volusion provides powerful, easy-to-use ecommerce software.</a></p>`,
+          description: `<p>If you’re an online-only business, your website is your window to the world. Even if you have a physical presence, your website is still a crucial destination for people who want to learn more about your products and services.</p><p>You will need a business website that’s tailored to your exact business needs. A website for a restaurant will be very different from a website for a freelance writer or accountant. You can find designers to create websites for you on marketplaces like Toptal, Fiverr Pro or Upwork.</p><p>Alternatively, if you don’t mind rolling your sleeves up and putting in some effort, you can use an online web builder to do it yourself. There are plenty of services available, but sites like <a href="https://xoopah.com/website-voucher-discount/?ref=INCFILE" rel="noopener noreferrer nofollow" target="_blank">Xoopah.com,</a> Squarespace, Wix or Weebly are all good options.</p><p>If you’re selling online, <a href="https://www.wix.com/mystunningwebsites/ecom-onlinestore?utm_medium=paid_referral&experiment_id=cake_73680325%5E88" rel="noopener noreferrer nofollow" target="_blank">Volusion provides powerful, easy-to-use ecommerce software.</a></p>`,
           height: 80,
         },
         {
@@ -544,7 +544,7 @@ export const rocket = {
   text2: `Only $0 + State Fee to Launch Your Business.`,
   button: {
     text: `Launch your business`,
-    url: `{process.env.ORDER_URL}/form-order-now.php`,
+    url: `${process.env.ORDER_URL}/form-order-now.php`,
   },
 };
 

@@ -20,8 +20,7 @@ import {
 	about,
 	resources,
 	furtherResources,
-	form,
-	thanks_form,
+	form
 } from "../static/learning-center-entity/business-resources";
 import ArrowLink from "../atomic/molecules/buttons/text";
 
@@ -90,8 +89,7 @@ const BusinessResources = () => {
 			<About content={about} />
 			<Resources content={resources} openModal={popup} />
 			<FurtherResources id="js-further-resource" content={furtherResources} />
-			<Articles />
-
+			
 			<LightBoxModal visible={modalVisible} className="modal-overlay">
 				<LightBoxContent
 					style={{ pointerEvents: "all" }}

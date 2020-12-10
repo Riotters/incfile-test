@@ -12,7 +12,6 @@ import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxe
 import CkeckText from "../../../../components/static-check/text-only";
 import TextBoxed from "../../../molecules/static-check/circle-checkmark-text-boxed";
 import { Link } from "gatsby";
-import VisibilitySensor from "../../../../components/VisibilitySensor";
 import { InView } from "react-intersection-observer";
 
 const ButtonList = [
@@ -183,9 +182,9 @@ const TabScrollable = ({ layout, columns }) => {
 										</Paragraph>
 										<Paragraph bottomMargin={0} mixed>
 											The Small Business Administration provides{" "}
-											<Link to="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits">
+											<a href="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits">
 												details of any national or federal licenses and permits
-											</Link>{" "}
+											</a>{" "}
 											you might need.
 										</Paragraph>
 									</div>
@@ -285,7 +284,7 @@ const TabScrollable = ({ layout, columns }) => {
 											Workers compensation insurance
 										</Paragraph>
 										<Paragraph bottomMargin={0} mixed>
-											<Link to="/blog/post/forming-an-llc-with-employees-means-purchasing-workers-compensation/">
+											<Link to="https://www.incfile.com/blog/post/forming-an-llc-with-employees-means-purchasing-workers-compensation/">
 												This insurance
 											</Link>{" "}
 											provides coverage for job-related illnesses, disabilities

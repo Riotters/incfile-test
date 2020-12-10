@@ -100,7 +100,7 @@ export const about = {
         text2: `Some businesses are prevented from forming an LLC, however. Typically financial companies such as banks, financial trust companies and insurance
         agencies can't file as an LLC. LLCs are sometimes limited for industries in certain states, too. For example, if you live in California, you
         can't form an LLC if you're an architect, accountant or licensed health care provider. Check out our <a href="/llc-state-information/" title="LLC information by state">LLC
-        information by state</a> for more details on your state, or learn more about <a href="/blog/tag/llcs/">LLCs on the
+        information by state</a> for more details on your state, or learn more about <a href="https://www.incfile.com/blog/tag/llcs/">LLCs on the
         blog.</a>`,
         button: {
           text: `Download our complete LLC guide`,

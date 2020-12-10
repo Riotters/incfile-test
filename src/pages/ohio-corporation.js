@@ -86,7 +86,12 @@ const OhioCorporation = () => {
 				<ReactTabs content={tabs}>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Choosing a Corporation Name
 							</Heading>
 							<Paragraph big>
@@ -119,7 +124,12 @@ const OhioCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Articles of Incorporation
 							</Heading>
 							<Paragraph big>
@@ -153,7 +163,12 @@ const OhioCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
@@ -185,7 +200,12 @@ const OhioCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Bylaws
 							</Heading>
 							<Paragraph big>
@@ -245,7 +265,12 @@ const OhioCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Directors
 							</Heading>
 							<Paragraph big>
@@ -275,7 +300,12 @@ const OhioCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Requirement Reports
 							</Heading>
 							<Paragraph big style={{ marginBottom: "48px" }}>
@@ -328,7 +358,12 @@ const OhioCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Taxes
 							</Heading>
 							<Paragraph big>

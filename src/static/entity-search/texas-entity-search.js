@@ -107,7 +107,7 @@ export const faq = {
             question: `Can You Help Me Choose the Right Texas Business Name?`,
             answer: [
                 {
-                    text: `The perfect Texas business name can be elusive. We have a <a href="/blog/post/llc-name-search-50-states/">complete guide to choosing the right TX business name</a> — you'll want to choose a name that will:`
+                    text: `The perfect Texas business name can be elusive. We have a <a href="https://www.incfile.com/blog/post/llc-name-search-50-states/">complete guide to choosing the right TX business name</a> — you'll want to choose a name that will:`
                 }
             ],
             list: [

@@ -5,8 +5,6 @@ import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import { color } from "../../../../components/styles/colors";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import ArrowSVG from "../../../../images/arrow.inline.svg";
-import IconCircle from "../../../../components/icons/circle";
 import PlaneIcon from "../../../../images/icons/plane.inline.svg";
 import RockerIcon from "../../../../images/icons/rocket.inline.svg";
 import UmbrellaIcon from "../../../../images/icons/umbrella.inline.svg";
@@ -139,7 +137,7 @@ const AirBnB1BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=S-Corporation"}>S Corporation</Link>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=SCorporation"}>S Corporation</Link>
             </Paragraph>
 
           <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organizations, like an Airbnb business.</Paragraph>
@@ -160,7 +158,7 @@ const AirBnB1BusinessStructure = () => (
           widthUnit="%"
         >
           <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=C-Corporation"}>C Corporation</Link>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=CCorporation"}>C Corporation</Link>
             </Paragraph>
 
           <Paragraph big>These are the largest and most complex types of businesses and are typically far more than the average entrepreneur or Airbnb business owner will need.</Paragraph>

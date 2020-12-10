@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import { color } from "../../../atoms/styles/colors";
@@ -16,7 +16,6 @@ import OvalSVG from "../../../../images/medium-571.inline.svg";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import AbsoluteShapCure from "../../../elements/absolute-shape-curve-e";
 import Whitebox from "../../../atoms/boxes/white-box";
-import VisibilitySensor from "../../../../components/VisibilitySensor";
 
 const Wrapper = styled.div`
 	position: relative;
@@ -265,14 +264,14 @@ const UniqueSection = ({ content }) => {
 					<Paragraph big mixed={true}>
 						Your business identity, or brand, shapes how customers see you and
 						influences their decision to buy.
-						<a href="/blog/post/golden-rules-business-naming/" target="_blank">
+						<a href="https://www.incfile.com/blog/post/golden-rules-business-naming/" target="_blank">
 							{" "}
 							A short, distinctive name{" "}
 						</a>
 						shows confidence and creates excitement around your products and
 						services. Our Business Name Generator will help you
 						<a
-							href="/blog/post/come-catchy-creative-business-name/"
+							href="https://www.incfile.com/blog/post/come-catchy-creative-business-name/"
 							target="_blank"
 						>
 							{" "}

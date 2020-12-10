@@ -33,7 +33,7 @@ export const about = {
               `Create a more professional impression with clients`,
           ],
       },
-    text3: `For more information on the process of opening a business bank account, <a href="/blog/post/open-business-bank-account-for-llc/" target="_blank">read our guide.</a>`,
+    text3: `For more information on the process of opening a business bank account, <a href="https://www.incfile.com/post/open-business-bank-account-for-llc/" target="_blank">read our guide.</a>`,
     header3: `Paperwork Needed to Open a Business Account`,
     text4: `It’s important to get all your documents in order. That will minimize the time it takes to get your business bank account up and running. Most banks will typically ask for the following information when you’re opening a business account:`,
     list3: {
@@ -61,7 +61,7 @@ export const about = {
     header8: `Operating Agreement or Corporate Bylaws`,
     text12: `Every formal business, such as an LLC or corporation, should have rules in place that govern how the business is run. In an LLC this is known as the “Operating Agreement,” and a corporation calls it “bylaws”.`,
     text13: `LLC Operating Agreements cover areas like how the business is divided among owners, who the decision-makers are, how profits will be divided and what happens if a member or manager joins or leaves the business. Corporate bylaws serve a similar function.`,
-    text14: `Banks will want to see these documents as they demonstrate that you have proper governance in place to run the business. We’ve got <a href="/blog/tag/form-a-business/entity-requirements/operating-agreement/" target="_blank">plenty of information</a> on <a href="/research-topics/llc-info/llc-operating-agreement/" target="_blank" >Operating Agreements</a> and corporate bylaws.`,
+    text14: `Banks will want to see these documents as they demonstrate that you have proper governance in place to run the business. We’ve got <a href="https://www.incfile.com/blog/tag/form-a-business/entity-requirements/operating-agreement/" target="_blank">plenty of information</a> on <a href="/research-topics/llc-info/the-llc-operating-agreement/" target="_blank" >Operating Agreements</a> and corporate bylaws.`,
     text15: `Incfile can help you create an Operating Agreement tailored to your business, and this service is included with our <a href="${process.env.ORDER_URL}/form-order-now.php" target="_blank">Gold and Platinum business formation packages.</a>`,
     header9: `Articles of Organization or Incorporation`,
     text16: `Finally, you will need the official documents that you’ll receive after you form your business. As part of creating your business, you will provide information to your Secretary of State or other formation body. Once the application is processed, they will send you your Articles of Organization (LLC) or Articles of Incorporation (corporation). This document proves to the bank that your business has been formally and legally recognized by your state.`,

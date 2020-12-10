@@ -39,7 +39,7 @@ export const faqContent = {
     },
     {
       type: `paragraph`,
-      content: `Single-member Florida LLCs don’t strictly need an Employer Identification Number (EIN) unless you’re going to hire employees, but we recommend obtaining one anyway. Multi-member Florida LLCs must have an EIN. You can get an EIN directly from the IRS or have <a href="/Florida-llc/">guide you through every step of the process</a> by getting details from you and <a href="/manage-your-company/tax-id-ein/">Incfile obtain one for your Florida LLC.</a>`,
+      content: `Single-member Florida LLCs don’t strictly need an Employer Identification Number (EIN) unless you’re going to hire employees, but we recommend obtaining one anyway. Multi-member Florida LLCs must have an EIN. You can get an EIN directly from the IRS or have <a href="/florida-llc/">guide you through every step of the process</a> by getting details from you and <a href="/manage-your-company/tax-id-ein/">Incfile obtain one for your Florida LLC.</a>`,
     },
     {
       type: `heading`,
@@ -70,9 +70,9 @@ export const faqContent = {
     {
       type: `paragraph`,
       content: `Florida LLCs themselves don’t pay income or self-employment taxes. Those taxes “pass-through” to the members’ 1040 individual income tax forms where
-                <a href="/blog/post/2020-tax-brackets/">federal income tax</a>
+                <a href="https://www.incfile.com/blog/post/2020-tax-brackets/">federal income tax</a>
                 (rates start at 10 percent) and
-                <a href="/blog/post/freelance-self-employed-taxes-budget/">self-employment tax</a>
+                <a href="https://www.incfile.com/blog/post/freelance-self-employed-taxes-budget/">self-employment tax</a>
                 (rate of 15.3 percent) will both be payable.`,
     },
     {
@@ -198,7 +198,7 @@ export const faqContent = {
     {
       type: `paragraph`,
       content: `You are not required to have an Operating Agreement for a Florida LLC. We do recommend
-                <a href="/research-topics/llc-info/llc-operating-agreement/">creating an Operating Agreement anyway,</a>
+                <a href="/research-topics/llc-info/the-llc-operating-agreement/">creating an Operating Agreement anyway,</a>
                 as this agreement will specify how the business is run, how profits will be split, the ways that members will interact and other important factors.`,
     },
     {
@@ -213,7 +213,7 @@ export const faqContent = {
     {
       type: `heading`,
       size: 2,
-      content: `<p>We hope you’ve found this Florida LLC FAQ useful. If you’ve used our services and have a question that isn’t answered here, <a href="/contact/">let us know and we’d be happy to help.</a></p>`,
+      content: `<p>We hope you’ve found this Florida LLC FAQ useful. If you’ve used our services and have a question that isn’t answered here, <a href="/contact/existing-clients/">let us know and we’d be happy to help.</a></p>`,
     },
   ],
 };

@@ -148,7 +148,7 @@ export const HomePageContent = {
         text2: `Many states require that a company have an Operating Agreement in place — it isn’t legally required in Florida, but it’s a good idea to have one nonetheless.`,
         button1: {
           text: `Learn More About Operating Agreements Here`,
-          url: `/blog/post/operating-agreement-llc/`,
+          url: `https://www.incfile.com/blog/post/operating-agreement-llc/`,
         },
         cta: {
           title: `Receive a personalized <br>operating agreement`,

@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../../components/layout";
-import PPCIncfileLayout from "../../atomic/partials/ppc/ppc-incfile-layout";
+import PPCCorporationLayout from "../../atomic/partials/ppc/ppc-corporation-layout";
 
 const FormTexasLLC = () => {
     return (
         <Layout>
-            <PPCIncfileLayout />
+            <PPCCorporationLayout />
         </Layout>
     );
 };

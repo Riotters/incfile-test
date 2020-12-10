@@ -16,7 +16,7 @@ import ButtonVideo from '../../molecules/buttons/button-video';
 import PPCWhyChooseIncfile from './ppc-why-choose-incfile';
 import { statesArray } from "../../../static/states-v2";
 
-const PPCCorporationLayout = ({ stateCode, videoID, vimeo }) => {
+const PPCCorporationLayout = ({ stateCode, videoID, vimeo, quotes }) => {
     const state = stateCode ? statesArray.filter(state => state.code === stateCode)[0] : false;
     const stateName = state ? state.name : '';
     const buttonInfo = {
@@ -26,7 +26,7 @@ const PPCCorporationLayout = ({ stateCode, videoID, vimeo }) => {
 
     const top = {
         header: `The Fastest & Easiest Way To Set Up Your ${stateName} Corporation`,
-	    text: `Join Over <span>250,000</span> Businesses Launched With incfile Since <span>2004</span>`,
+	    text: `Join Over <span>500,000</span> Businesses Launched With incfile Since <span>2004</span>`,
     }
 
     const whyChooseIncfile = {
@@ -47,8 +47,8 @@ const PPCCorporationLayout = ({ stateCode, videoID, vimeo }) => {
 
             <Top
                 ovalColor="darkblue"
-                imageName="mr-bulb-get-started-2927"
-                imageAlt="Mr Bulb Get Started"
+                imageName="corp-get-started-09122020"
+                imageAlt=""
                 headlineWidth={700}
                 textWidth={400}
                 imageMobilePosition="-8%"
@@ -73,13 +73,13 @@ const PPCCorporationLayout = ({ stateCode, videoID, vimeo }) => {
                     <RatingBlock />
                 </RatingRow>
             </Top>
-            <Opinions content={opinions} />
+            <Opinions content={opinions} quotes={quotes} stateName={stateName} />
             <PPCWhyChooseIncfile content={whyChooseIncfile} />
             <Care content={care} />
             <Rocket
                 externalLink
                 textHeading={`Easily Start Your ${stateName} <br>Corporation Today`}
-                text1="There's A Reason More Than <b>250,000</b> Businesses <br>Have Started With Incfile"
+                text1="There's A Reason More Than <b>500,000</b> Businesses <br>Have Started With Incfile"
                 text2=" "
                 textButton="Launch My Corporation"
                 url={`?entityType=CCorporation&entityState=${stateCode ?? ''}`}
@@ -98,4 +98,16 @@ PPCCorporationLayout.propTypes = {
 PPCCorporationLayout.defaultProps = {
     videoID: "oYZShvmf9eQ",
     vimeo: false,
+    quotes: [
+        {
+            text: `Its been an easy process with them. They practically do everything for you and the provide you with all the tools that you need to start your business running.`,
+            author: `Martin G`,
+            state: ``,
+        },
+        {
+            text: `Life and business are uncertain enough - go ahead and delegate this vital task to a team that has been perfecting their craft for 16 years strong!`,
+            author: `Tim A`,
+            state: ``,
+        },
+    ]
 }

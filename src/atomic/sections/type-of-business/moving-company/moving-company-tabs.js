@@ -15,6 +15,9 @@ import ReactTabs from "../../../partials/ReactTabs";
 import {tabs} from "../../../../static/type-of-business/moving-company";
 import {TabPanel} from "react-tabs";
 import PanelWrapper from "../../../organisms/tabs/panel";
+import CircleWithText from "../../../molecules/blocks/circle-with-text-block";
+import RingsIcon from "../../../../images/rings.inline.svg";
+import {CircleText} from "../../../../static/type-of-business/moving-company";
 
 const WrapperMain = styled.div`
   margin-top: 120px;
@@ -203,6 +206,12 @@ const MovingCompanyTabs = () => (
                                              text="Number of moves a professional movers assist a year, the remainder are carried out by families themselves"/>
                     <BlueBoxWithAbsoluteText absoluteText="35M"
                                              text="Americans move each year (around 15 million households)"/>
+
+                    <CircleWithText
+                        withBg
+                        SvgChart={RingsIcon}
+                        textLine={CircleText}
+                    />
 
                     <div style={{marginBottom: "30px"}}>
                         <Adventages

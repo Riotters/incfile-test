@@ -114,11 +114,6 @@ const QuoteCard = ({
 	);
 };
 
-const ImageWrapper = styled.div`
-	width: 150px;
-	margin: 0 auto 30px;
-`;
-
 QuoteCard.defaultProps = {
 	colorStroke: color.white,
 	circleBackgroundColor: color.green1,

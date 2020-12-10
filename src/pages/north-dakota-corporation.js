@@ -39,6 +39,7 @@ import ComplianceRequirementBox from "../atomic/state-corporation/compliance-req
 import { getFullPricesAndFilings } from "../api/Api";
 import ReactTabs from "../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
+import { Helmet } from "react-helmet";
 
 const NorthDakotaCorporation = () => {
 	const [dataApi, setDataApi] = React.useState({});
@@ -88,7 +89,12 @@ const NorthDakotaCorporation = () => {
 				<ReactTabs content={tabs}>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Choosing a Corporation Name
 							</Heading>
 							<Paragraph big>
@@ -118,7 +124,12 @@ const NorthDakotaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Articles of Incorporation
 							</Heading>
 							<Paragraph big>
@@ -130,6 +141,9 @@ const NorthDakotaCorporation = () => {
 								articles to the Corporations Division. The incorporator must be
 								a natural person at least 18 years old, but does not need to be
 								a director, officer, or shareholder of the corporation.
+							</Paragraph>
+							<Paragraph big>
+								The articles must include the following information:
 							</Paragraph>
 
 							<Colorbox
@@ -173,6 +187,11 @@ const NorthDakotaCorporation = () => {
 								that authorize the issuance of stocks or bonds that are in
 								violation of the state constitution.
 							</Paragraph>
+							<Paragraph big>
+								It’s also permissible to include other, optional provisions into
+								the articles of incorporation for those who want to formalize
+								additional criteria, such as:
+							</Paragraph>
 
 							<Colorbox
 								color={color.orange3}
@@ -199,7 +218,12 @@ const NorthDakotaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
@@ -216,7 +240,12 @@ const NorthDakotaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Bylaws
 							</Heading>
 							<Paragraph big>
@@ -263,7 +292,7 @@ const NorthDakotaCorporation = () => {
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>How stock is issued</Paragraph>
 							</TextBoxed>
-							<TextBoxed style={{ marginBottom: "8px" }}>
+							<TextBoxed style={{ marginBottom: "24px" }}>
 								<Paragraph bottomMargin={0}>
 									How and when annual financial information is provided to
 									shareholders
@@ -283,7 +312,12 @@ const NorthDakotaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Directors
 							</Heading>
 							<Paragraph big>
@@ -309,7 +343,12 @@ const NorthDakotaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Requirement Reports
 							</Heading>
 							<Paragraph big style={{ marginBottom: "48px" }}>
@@ -375,7 +414,7 @@ const NorthDakotaCorporation = () => {
 									places of business inside North Dakota
 								</Paragraph>
 							</TextBoxed>
-							<TextBoxed style={{ marginBottom: "8px" }}>
+							<TextBoxed style={{ marginBottom: "24px" }}>
 								<Paragraph bottomMargin={0}>
 									A brief description of the character of the business
 								</Paragraph>
@@ -392,7 +431,12 @@ const NorthDakotaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Taxes
 							</Heading>
 							<Paragraph big>
@@ -436,7 +480,8 @@ const NorthDakotaCorporation = () => {
 					</Curve>
 					<LightBoxVideo
 						thumbnailVideo="comparison-chart-video-3611"
-						videoID="oYZShvmf9eQ"
+						videoID="372490609"
+						vimeo
 					/>
 				</ContentCenter>
 
@@ -480,26 +525,26 @@ const NorthDakotaCorporation = () => {
 				</ContentCenter>
 			</QuestionSection>
 
-			{/*<InfoSection>*/}
-			{/*<HeadingCenter headline={info.header} textWidth="770" />*/}
+			<Rocket urlParams="?entityType=CCorporation&entityState=ND" />
 
-			{/*<Container>*/}
-			{/*<AdventagesBox>*/}
-			{/*{info.items.map((item) => (*/}
-			{/*<Adventages headline={item.headline} text={item.text} />*/}
-			{/*))}*/}
-			{/*</AdventagesBox>*/}
-			{/*</Container>*/}
-			{/*</InfoSection>*/}
-
-			<Rocket />
+			<Helmet>
+				<script type="application/ld+json">
+					{`{
+                        "@context": "http://schema.org",
+                        "@type": "VideoObject",
+                        "name": "What is a Corporation? by Incfile",
+                        "description": "What is a corporation and how does it work? One of the most important decisions you'll make when starting a business is its legal structure. A popular option is a “corporation“—but what does this mean for business owners?   A corporation is its own legal entity separate from the owners. It has nearly all the legal rights of an individual: It can hire employees, own assets, enter into contracts, sue and be sued, loan and borrow money, and pay taxes. But since the corporation exists as a separate entity, it limits the liability of its owners. That means shareholders have the right to participate in profits, but they’re not held personally liable for the company’s debts. And since a corporation isn’t linked to a single person, it doesn’t dissolve when its owners or shareholders change or die, so liability protection is passed on to the next in line.  The Three Main Types of Corporations:  - C Corporations - S Corporations - Non-profits   Learn more about the three main types of corporations by visiting these links below:   - What is an S Corporation? https://www.incfile.com/what-is-s-corporation/ - What is a C Corporation? https://www.incfile.com/what-is-c-corporation/ - What is a Nonprofit? https://www.incfile.com/what-is-non-profit-corporation/",
+                        "thumbnailUrl": "https://i.ytimg.com/vi/oYZShvmf9eQ/default.jpg",
+                        "uploadDate": "2020-09-07T17:00:19Z",
+                        "duration": "PT1M41S",
+                        "embedUrl": "https://www.youtube.com/embed/oYZShvmf9eQ",
+                        "interactionCount": "74"
+                    }`}
+				</script>
+			</Helmet>
 		</Layout>
 	);
 };
-
-const InfoSection = styled.section`
-	margin-bottom: 148px;
-`;
 
 const QuestionSection = styled.section`
 	background-image: ${gradient.orange3};
@@ -508,8 +553,6 @@ const QuestionSection = styled.section`
 	margin-top: 52px;
 	margin-bottom: 148px;
 `;
-
-const PackageSection = styled.section``;
 
 const ServiceSection = styled.section`
 	background-image: ${gradient.blue3};
@@ -526,25 +569,6 @@ const TabsWrapper = styled.section`
 	@media (min-width: 992px) {
 		margin-top: 21px;
 	}
-`;
-
-const AdventagesBox = styled.div`
-  display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 100%;
-    justify-content: center;
-    column-gap: 30px;
-    row-gap: 20px;
-    margin-top: 76px;
-    margin-bottom 76px; 
-    
-    @media (min-width: 490px){
-        grid-template-columns: 470px;
-    }
-    
-    @media (min-width: 992px){
-        grid-template-columns: 470px 470px;
-    }
 `;
 
 export default NorthDakotaCorporation;

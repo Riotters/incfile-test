@@ -11,9 +11,6 @@ import Searchbar from "../atomic/molecules/form/help-center-searchbar";
 //Texts
 import {
 	top,
-	about,
-	help,
-	faq,
 	rocket,
 	categories,
 	service,

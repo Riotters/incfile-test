@@ -172,8 +172,8 @@ export const howToGuide = [
 	{
 		type: `arrow-link`,
 		content: {
-			text: `Naming Your Vermont  LLC`,
-			url: `/vermont-llc/how-to-name-your-llc/`,
+			text: `Naming Your Vermont LLC`,
+			url: `/vermont-llc/how-to-your-name-llc/`,
 		},
 		marginBottom: 16,
 	},
@@ -485,7 +485,7 @@ export const namingYourBusiness = [
 		type: `arrow-link`,
 		content: {
 			text: `Incfile guide to choosing a business name`,
-			url: `/blog/post/llc-name-search-50-states/`,
+			url: `https://www.incfile.com/blog/post/llc-name-search-50-states/`,
 		},
 		marginBottom: 32,
 	},
@@ -818,9 +818,9 @@ export const registeredAgent = [
 		type: `list-dot`,
 		content: {
 			list: [
-				`<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Vermont Registered Agent</a>`,
+				`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Vermont Registered Agent</a>`,
 				`<a href="/manage-your-company/change-of-registered-agent/">Changing Your Vermont Registered Agent</a>`,
-				`<a href="/research-topics/registered-agent/registered-agent-tasks/">What a Vermont Registered Agent Does</a>`,
+				`<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Vermont Registered Agent Does</a>`,
 			],
 		},
 		marginBottom: 48,
@@ -1042,7 +1042,7 @@ export const feesAndRequirments = [
 	},
 	{
 		type: `text`,
-		content: `Vermont LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a>).  If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Vermont business. You can choose to make changes to the template based on your unique requirements.`,
+		content: `Vermont LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>).  If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Vermont business. You can choose to make changes to the template based on your unique requirements.`,
 		marginBottom: 48,
 	},
 	{

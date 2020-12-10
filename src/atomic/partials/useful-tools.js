@@ -7,8 +7,10 @@ import Container from "../container";
 
 const UsefulTools = ({toolsList, headlineText, description, ...rest}) => (
     <Wrapper {...rest}>
-        <TextCenterLayout headline={headlineText}
-                          text={description}/>
+        <TextCenterLayout
+            headline={headlineText}
+            text={description}
+        />
 
         <Container>
             <ToolsList tools={toolsList}/>
