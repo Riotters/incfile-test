@@ -292,7 +292,7 @@ export const agentPageContent = {
       content: [
         {
           text: `The Main Functions of a California Registered Agent`,
-          url: `/research-topics/general-research/registered-agent-function/`,
+          url: `/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
         },
         {
           text: `Changing Your California Registered Agent`,

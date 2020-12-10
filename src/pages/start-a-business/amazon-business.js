@@ -79,7 +79,7 @@ const AmazonBusiness = () => {
             <Top
                 ovalColor="sun"
                 imageName="amazon-business-main"
-                imageAlt="Mr Bulb with seedling"
+                imageAlt="How to Start an Amazon Business"
                 headlineWidth={700}
             >
                 <h1>How to Start an Amazon Business</h1>
