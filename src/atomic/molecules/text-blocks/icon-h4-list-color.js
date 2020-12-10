@@ -8,7 +8,7 @@ import { color } from "../../atoms/styles/colors";
 import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/top-left-bottom-right.inline.svg";
 import { Link } from "gatsby";
-import {PHeading} from "../../atoms/typography/p-as-heading";
+import {PHeading} from "../../atoms/typography/p-to-heading";
 
 const dotColor = (circleColor) => {
   switch (circleColor) {
@@ -100,7 +100,7 @@ const ChooseHeading = ({ paragraphHeader, headingSize, headingSizeTemplate, cont
     </>
 );
 
-const IconTextColorBox = ({ className, color, headingSize = 3, headingTemplateSize = 4, paragraphHeader, content, bottomMargin, rounded, curve, curveColor, ...rest }) => {
+const IconTextColorBox = ({ className, color, headingSize = 3, headingTemplateSize = 4, left = false, paragraphHeader, content, bottomMargin, rounded, curve, curveColor, ...rest }) => {
     return (
         <Wrapper className={className} rounded={rounded} bottomMargin={bottomMargin} color={color} {...rest}>
             {curve && (
@@ -110,7 +110,7 @@ const IconTextColorBox = ({ className, color, headingSize = 3, headingTemplateSi
             )}
             <Colorbox className="box" color={color}>
                 {content?.header && (
-                    <ChooseHeading content={content.header} headingSize={headingSize} headingSizeTemplate={headingTemplateSize} paragraphHeader={paragraphHeader} />
+                    <ChooseHeading content={content.header} headingSize={headingSize} left={left} headingSizeTemplate={headingTemplateSize} paragraphHeader={paragraphHeader} />
                 )}
 
                 <ul>{content.list.map((item) => (typeof item === "string" ? <li>{parse(item)}</li> : <li>{item.map((el) => (el.url ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text))}</li>))}</ul>

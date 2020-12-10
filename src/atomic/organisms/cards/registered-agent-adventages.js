@@ -20,14 +20,14 @@ const Wrapper = styled.div`
     }
 `
 
-const RegisteredAgentsCards = ({ className, content }) => {
+const RegisteredAgentsCards = ({ className, content, paragraphHeader = false }) => {
   return (
     <Wrapper className={className}>
         <Curve top="-10" right="80">
             <CurveSVG />
         </Curve>
         {content.map((card) => (
-            <Card content={card} />
+            <Card content={card} paragraphHeader={paragraphHeader} />
         ))}
     </Wrapper>
   )

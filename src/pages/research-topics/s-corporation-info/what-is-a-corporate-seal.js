@@ -18,7 +18,7 @@ import { Helmet } from "react-helmet";
 
 import { related } from "../../../static/research-topics/s-corporation-info";
 import {Heading} from "../../../atomic/atoms/typography/heading";
-import {HeadingP} from "../../../atomic/atoms/typography/heading-as-p";
+import {HeadingP} from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => {
     const currentUri = typeof window !== 'undefined' ? window.location.pathname : '';

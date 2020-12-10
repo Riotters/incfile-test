@@ -14,7 +14,7 @@ import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Path from "../../../molecules/blocks/research-topics-path";
 import parse from "html-react-parser";
 import Circle from "../../../atoms/icons/circle";
-import {PHeading} from "../../../atoms/typography/p-as-heading";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const About = styled.section`
 	position: relative;

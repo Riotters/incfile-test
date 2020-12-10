@@ -16,7 +16,7 @@ import { top, rocket, categories, service, tools } from "../../../static/learnin
 import { about } from "../../../static/research-topics/s-corporation-info/corp-managing";
 import { related } from "../../../static/research-topics/s-corporation-info";
 import { Helmet } from "react-helmet";
-import {HeadingP} from "../../../atomic/atoms/typography/heading-as-p";
+import {HeadingP} from "../../../atomic/atoms/typography/heading-to-p";
 import {Heading} from "../../../atomic/atoms/typography/heading";
 
 const HelpCenter = () => {

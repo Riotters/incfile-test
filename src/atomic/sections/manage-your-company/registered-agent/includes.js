@@ -28,7 +28,7 @@ const OfferingSection = ({ className, content }) => (
     </Oval>
     <HeadingCenter headline={content.header} headlineWidth="770" />
     <ContentCenter>
-      <Adventages content={content.cards} />
+      <Adventages content={content.cards} paragraphHeader />
     </ContentCenter>
     <HeadingCenter headline={content.header2} headlineWidth="640" text={content.text} textWidth="770" linkText={content.button.text} linkUrl={content.button.url} useButton={true} />
   </Offering>

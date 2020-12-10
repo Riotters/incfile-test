@@ -12,6 +12,7 @@ import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.
 import Oval2SVG from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
 import CheckBlueSVG from "../../../../images/circle-status-check-blue.inline.svg";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const Help = styled.section`
   position: relative;
@@ -115,7 +116,7 @@ const HelpSection = ({ className, content }) => (
         <Heading size="2" bottomMargin="48">
           {content.header}
         </Heading>
-        <Heading size="3" template={4}>{content.header2}</Heading>
+        <PHeading size={3} template={4}>{content.header2}</PHeading>
         <Paragraph big bottomMargin="0" maxWidth="500">
           {content.text}
         </Paragraph>

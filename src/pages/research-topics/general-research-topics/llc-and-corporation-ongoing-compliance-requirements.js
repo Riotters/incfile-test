@@ -21,7 +21,7 @@ import {
 } from "../../../static/learning-center-entity/help-center-article";
 import { about } from "../../../static/research-topics/general-research/llc-and-corporation-requirements";
 import { related } from "../../../static/research-topics/general-research";
-import {HeadingP} from "../../../atomic/atoms/typography/heading-as-p";
+import {HeadingP} from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => {
 	const currentUri =
