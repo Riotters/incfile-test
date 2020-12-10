@@ -31,7 +31,7 @@ const FictitiousBusiness = () => (
             productUrl="https://orders.incfile.com/fictitious-business-name"
         />
 
-        <Top imageName="mrs-bulb-dba" imageAlt="Mr. Bulb choosing his fictitious business name" ovalColor="purple">
+        <Top imageName="mrs-bulb-dba" imageAlt="fictitious business name" ovalColor="purple">
             <h1>{top.header}</h1>
             <p>{top.text}</p>
             <Buttonsbox>

@@ -91,7 +91,7 @@ const SCorporation = () => {
             <LightBoxModal visible={modalVisible}>
                 <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")} className="modal-overlay">
                     {!formSubmitted && <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />}
-                    {formSubmitted && <ThankYouContent modalExit={popup} />}
+                    {formSubmitted && <ThankYouContent modalExit={popup} fileDownload={hsForm.fileDownload} />}
                 </LightBoxContent>
             </LightBoxModal>
         </Layout>

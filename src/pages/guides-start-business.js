@@ -66,7 +66,7 @@ const GuideToStart = () => {
         <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
           {!formSubmitted && <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />}
 
-          {formSubmitted && <ThankYouContent modalExit={popup} />}
+          {formSubmitted && <ThankYouContent modalExit={popup} fileDownload={hsForm.fileDownload} />}
         </LightBoxContent>
           </LightBoxModal>
           
