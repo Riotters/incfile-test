@@ -23,7 +23,7 @@ import {
 	about,
 	related,
 } from "../../../static/research-topics/video-library/save-with-incfile";
-import {HeadingP} from "../../../atomic/atoms/typography/heading-as-p";
+import { HeadingP } from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => (
 	<Layout>

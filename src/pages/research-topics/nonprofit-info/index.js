@@ -19,7 +19,7 @@ import {
 	tools,
 } from "../../../static/learning-center-entity/help-center-article";
 import { related } from "../../../static/research-topics/nonprofit-info";
-import {HeadingP} from "../../../atomic/atoms/typography/heading-as-p";
+import { HeadingP } from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => (
 	<Layout>

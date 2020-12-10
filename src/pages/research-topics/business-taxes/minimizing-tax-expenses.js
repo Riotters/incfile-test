@@ -21,7 +21,7 @@ import {
 } from "../../../static/learning-center-entity/help-center-article";
 import { about } from "../../../static/research-topics/business-taxes/minimizing-tax-expenses";
 import { related } from "../../../static/research-topics/business-taxes";
-import {HeadingP} from "../../../atomic/atoms/typography/heading-as-p";
+import { HeadingP } from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => {
 	const currentUri =
@@ -56,7 +56,9 @@ const HelpCenter = () => {
 				<Heading size={2} template={1} left>
 					{top.header}
 				</Heading>
-				<HeadingP size={3} big>{top.text}</HeadingP>
+				<HeadingP size={3} big>
+					{top.text}
+				</HeadingP>
 				<Searchbar />
 			</Top>
 			<About content={about} />
