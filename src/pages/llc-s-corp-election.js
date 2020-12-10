@@ -169,13 +169,13 @@ const CorpElection = () => (
 		/>
 		<Top
 			imageName="mrs-bulb-business-taxes"
-			imageAlt="Mrs Bulb checking forms on notebook"
+			imageAlt=""
 			ovalColor="sun"
 		>
 			<h1>{top.header}</h1>
 			<p>{top.text}</p>
 			<Buttonsbox>
-				<Button content={top.button[0]} theme="primary56" arrow />
+				<Button extends content={top.button[0]} theme="primary56" arrow />
 			</Buttonsbox>
 		</Top>
 		<About content={about} />
@@ -222,7 +222,7 @@ const CorpElection = () => (
 			</ObjectContent>
 		</Example>
 		<FairlSalary>
-			<LeftContentRightImage image="weight">
+			<LeftContentRightImage image="weight" imageAlt="Fair Salary">
 				<Heading size="2" bottomMargin="64">
 					{fairSalary.header}
 				</Heading>
@@ -235,7 +235,7 @@ const CorpElection = () => (
 			<TextCenterLayout headline={overhead.header} text={overhead.text} />
 			<ContentCenter>
 				<OverheadBoxes>
-					<TopImageBox image="envelope-dollar" color={color.yellow3}>
+					<TopImageBox image="envelope-dollar" imageAlt="S Corporation Election" color={color.yellow3}>
 						<Heading size={3} template={4} bottomMargin={0}>
 							Setting up monthly payroll
 						</Heading>
@@ -244,7 +244,7 @@ const CorpElection = () => (
 							and submit your payroll taxes
 						</p>
 					</TopImageBox>
-					<TopImageBox image="calculator-coin" color={color.red3}>
+					<TopImageBox image="calculator-coin" imageAlt="Additional accounting fees" color={color.red3}>
 						<Heading size={3} template={4} bottomMargin={0}>
 							Additional accounting fees
 						</Heading>
@@ -295,7 +295,8 @@ const CorpElection = () => (
 						{behalfFile.text4}
 					</p>
 				</TopImageBox>
-				<Button
+                <Button
+                    extends
 					theme="secondary56"
 					content={behalfFile.button}
 					arrow
@@ -307,7 +308,8 @@ const CorpElection = () => (
 			<TextCenterLayout className="header-1" headline={help.header} />
 			<ContentCenter contentWidth="770">
 				<H3Text content={help.saveYourTime} />
-				<Button
+                <Button
+                    extends
 					theme="primary56"
 					content={help.button}
 					margin="48px auto 0 auto"

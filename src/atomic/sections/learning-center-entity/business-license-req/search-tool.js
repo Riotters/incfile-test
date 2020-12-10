@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import parser from "html-react-parser";
 import { color, gradient } from "../../../../components/styles/colors";
 import { states } from "../../../../components/states";
 import Dropdown from "../../../molecules/form/dropdown";
@@ -14,7 +13,6 @@ import LicenseIcon from "../../../../images/icons/license.inline.svg";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Whitebox from "../../../atoms/boxes/white-box";
-import { Link } from "gatsby";
 import ArrowLink from "../../../molecules/buttons/text";
 import TopButtonsBox from "../../../atoms/boxes/top-buttons-box";
 
@@ -159,11 +157,6 @@ const LicenseItem = styled.li`
 	}
 `;
 
-const Icon = styled.div`
-	svg {
-	}
-`;
-
 const StyledParagraph = styled(Paragraph)`
 	display: flex;
 	flex-direction: column;
@@ -247,7 +240,8 @@ const SearchToolSection = ({ content, businessIndustryList }) => {
 						<ImageBoxes>
 							<TopImageBox
 								className="box box--left"
-								image="your-state-7282"
+                                image="your-state-7282"
+                                imageAlt="business license search tool"
 								color={color.blue3}
 							>
 								<Heading size={3} template={4} center>

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
 import Tabs from "../../../organisms/tabs/business-resources-tabs";
-import Cards from "../../../organisms/cards/table-of-content-cards";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
 

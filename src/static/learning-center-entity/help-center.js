@@ -327,31 +327,38 @@ export const tools = {
 	buttons: [
 		{
 			header: `Corporation State Information`,
-			url: `/corporation-state-information/`,
+            url: `/corporation-state-information/`,
+            imageAlt: `corporation state information`
+        },
+        {
+			header: "LLC State Information",
+            url: "/llc-state-information/",
+            imageAlt: `LLC state information`
 		},
 		{
 			header: `S Corporation Tax Calculator`,
-			url: `/s-corporation-tax-calculator/`,
+            url: `/s-corporation-tax-calculator/`,
+            imageAlt: `S-Corp Tax Calculator`
 		},
 		{
 			header: `Entity Comparison Chart`,
-			url: `/business-entity-comparison/`,
+            url: `/business-entity-comparison/`,
+            imageAlt: `Entity Comparison Chart`
 		},
 		{
 			header: `State Filing Fees`,
-			url: `/state-filing-fees/`,
+            url: `/state-filing-fees/`,
+            imageAlt: `State Filing Fees`
+        },
+        {
+			header: `State Filing Times`,
+            url: `/state-filing-times/`,
+            imageAlt: `state filing times`
 		},
 		{
 			header: `Ongoing Filing Requirements`,
-			url: `/compliance-filing-requirement/`,
-		},
-		{
-			header: `State Filing Times`,
-			url: `/state-filing-times/`,
-		},
-		{
-			header: "LLC State Information",
-			url: "/llc-state-information/",
-		},
+            url: `/compliance-filing-requirement/`,
+            imageAlt: `Ongoing Filing Requirements`
+		}
 	],
 };

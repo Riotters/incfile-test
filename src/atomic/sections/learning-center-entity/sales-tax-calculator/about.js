@@ -10,7 +10,7 @@ const About = styled.section`
 
 const AboutSection = ({ className, content }) => (
   <About className={className}>
-    <ImageContent image="sales-tax-calculator-about-1192" contentCenter>
+    <ImageContent image="sales-tax-calculator-about-1192" alt="sale tax calculator" contentCenter>
       <Heading size="2" template={3} left>{content.header}</Heading>
       <Paragraph big>{content.text}</Paragraph>
     </ImageContent>

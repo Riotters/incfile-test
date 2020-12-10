@@ -107,7 +107,7 @@ const FeaturesSection = ({ className, content }) => (
       object={
         <CardWrapper className="card-wrapper">
           <IconWrapper color={color.blue2}>
-            <Image filename="business-registry-8199" />
+            <Image filename="business-registry-8199" alt="Search the business registry of the given U.S. state" />
           </IconWrapper>
           <BusinessRegistrySVG />
         </CardWrapper>
@@ -123,7 +123,7 @@ const FeaturesSection = ({ className, content }) => (
       object={
         <CardWrapper className="card-wrapper">
           <IconWrapper color={color.purple2}>
-            <Image filename="proposed-name-4338" />
+            <Image filename="proposed-name-4338" alt="See if your proposed business name is already in use" />
           </IconWrapper>
           <ProposedNameSVG />
         </CardWrapper>
@@ -139,7 +139,7 @@ const FeaturesSection = ({ className, content }) => (
       object={
         <CardWrapper className="card-wrapper">
           <IconWrapper color={color.yellow2}>
-            <Image filename="upadated-informations-5921" />
+            <Image filename="upadated-informations-5921" alt="Query the most up-to-date information available" />
           </IconWrapper>
           <UpToDateSVG />
         </CardWrapper>
@@ -155,7 +155,7 @@ const FeaturesSection = ({ className, content }) => (
       object={
         <CardWrapper className="card-wrapper">
           <IconWrapper color={color.green2}>
-            <Image filename="search-for-name-7559" />
+            <Image filename="search-for-name-7559" alt="Search for both corporation and LLC names" />
           </IconWrapper>
           <SearchSVG />
         </CardWrapper>
@@ -171,7 +171,7 @@ const FeaturesSection = ({ className, content }) => (
       object={
         <CardWrapper className="card-wrapper">
           <IconWrapper color={color.babyblue2}>
-            <Image filename="choose-to-form-8375" />
+            <Image filename="choose-to-form-8375" alt="Choose to form your business immediately if the name you want is available" />
           </IconWrapper>
           <FormSVG />
         </CardWrapper>
