@@ -27,7 +27,7 @@ const IncfileVsLegalzoom = () => {
       <Top
         ovalColor="orange"
         imageName="mr-bulb-incfile-vs-rocket-lawyer-2"
-        imageAlt="Mr Bulb Incfile vs Rocket Lawyer"
+        imageAlt="Incfile vs Rocket Lawyer"
         headlineWidth={700}
         imageMobilePosition="-8%"
       >

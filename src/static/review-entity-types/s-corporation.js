@@ -11,9 +11,9 @@ export const top = {
 
 export const hsForm = {
 	header: "Download our Complete Guide to S Corporation",
-	text:
-		"Not sure what an S-Corp is? This guide has everything you'll need to know!",
-	hs_form_id: `3ff93dce-f089-4dd8-9cbb-2cdea60f2aa6`,
+	text: "Not sure what an S-Corp is? This guide has everything you'll need to know!",
+    hs_form_id: `3ff93dce-f089-4dd8-9cbb-2cdea60f2aa6`,
+    fileDownload: `https://cdn2.hubspot.net/hubfs/3787982/Content%20Repurpose%20PDFs/Sept-19_S-Corp/Incfile%20-%20What%20is%20S%20Corp.pdf`,
 	button: {
 		text: "Download now",
 		url: "/",

@@ -198,11 +198,12 @@ export const forming = {
 };
 
 export const hsForm = {
-  header: "Download our Complete Guide to C Corporation",
-  text: "Not sure if a C-Corp is right for your business? This guide has everything you'll need to know!",
-  hs_form_id: `9814bd64-2da0-4ccc-84ea-736519d2a373`,
-  button: {
-    text: "Download now",
-    url: "/",
-  },
+    header: "Download our Complete Guide to C Corporation",
+    text: "Not sure if a C-Corp is right for your business? This guide has everything you'll need to know!",
+    hs_form_id: `9814bd64-2da0-4ccc-84ea-736519d2a373`,
+    fileDownload: `https://cdn2.hubspot.net/hubfs/3787982/Content%20Repurpose%20PDFs/October-19/Incfile%20-%20What%20is%20C%20Corp.pdf`,
+    button: {
+        text: "Download now",
+        url: "/",
+    },
 };

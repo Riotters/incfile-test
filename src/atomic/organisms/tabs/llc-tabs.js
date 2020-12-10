@@ -382,7 +382,7 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => {
 						<Sticky layout={layout} columns={columns}>
 							<TabList>
 								{content.panels.map((panel, i) => (
-									<Tab>
+									<Tab key={i}>
 										<Button
 											onClick={() => {
 												scrollTop("tabs-wrapper");

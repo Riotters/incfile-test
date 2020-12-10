@@ -1,11 +1,16 @@
 import React from "react";
 import Layout from "../../components/layout";
-import PPCCorporationLayout from "../../atomic/partials/ppc/ppc-corporation-layout";
+import PPCCorporationLayoutV2 from "../../atomic/partials/ppc/ppc-corporation-layout-v2";
 
 const FormTexasLLC = () => {
     return (
         <Layout>
-            <PPCCorporationLayout />
+            <PPCCorporationLayoutV2
+                stateCode="TX"
+                content={{
+                    topHeader: `The Fastest And Cheapest WayTo Setup A Texas Corporation`
+                }}
+            />
         </Layout>
     );
 };
