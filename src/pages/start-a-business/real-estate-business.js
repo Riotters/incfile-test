@@ -548,9 +548,9 @@ const RealEstateBusiness = () => (
 
 						<Paragraph big mixed={true} style={{ marginTop: "48px" }}>
 							Check out our additional guidance in{" "}
-							<Link to="https://www.incfile.com/post/is-starting-a-real-estate-business-right-for-you/">
+							<a href="https://www.incfile.com/blog/post/is-starting-a-real-estate-business-right-for-you/">
 								understanding if a real estate business is right for you
-							</Link>
+							</a>
 							. In this blog post, we'll help you analyze your real estate
 							business idea, conduct market research and build a business plan.
 						</Paragraph>

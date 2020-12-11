@@ -327,7 +327,7 @@ export const agentPageContent = {
             type: `arrow-links`,
             content: [{
                     text: `The Main Functions of a Texas Registered Agent`,
-                    url: `/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
+                    url: `/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
                 },
                 {
                     text: `Changing Your Texas Registered Agent`,

@@ -130,16 +130,16 @@ export const pages = [{
     {
         header: `Video Library`,
         text: `How easy is forming an LLC or Corporation`,
-        url: `/research-topics/business-taxes/sellers-permit/#answers`,
+        url: `/research-topics/business-taxes/sellers-permit/`,
     },
     {
         header: `Video Library`,
         text: `Protect your personal assets`,
-        url: `/research-topics/business-taxes/minimizing-tax-expenses/#answers`,
+        url: `/research-topics/business-taxes/minimizing-tax-expenses/`,
     },
     {
         header: `Video Library`,
         text: `Learn how to save money with Incfile`,
-        url: `/research-topics/business-taxes/tax-advantages/#answers`,
+        url: `/research-topics/business-taxes/which-entity-offers-the-best-tax-advantages/`,
     },
 ];

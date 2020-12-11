@@ -97,7 +97,7 @@ export const howToGuide = [
 					question: `STEP 2: Search for and Choose a Unique Business Name for Your Delaware LLC`,
 					answer: `<p>You will need a distinctive and original name for your Delaware LLC that’s not used by any other business in DE. This means searching the business registry of the Delaware Division of Corporations. Fortunately, we’ve made that easy with our business search tool. Just enter your proposed business name and we’ll look it up on the registry and let you know if it’s already in use by an LLC or corporation.</p></br>
                    <p>Alternatively, you can visit the Delaware Division of Corporations website and carry out a search. There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Delaware LLC.</p></br>
-                   <a href="/delaware-llc/how-to-name-your-llc/"> Learn about Delaware LLC business naming rules. </a>`,
+                   <a href="/delaware-llc/delaware-business-names/"> Learn about Delaware LLC business naming rules. </a>`,
 				},
 				{
 					question: `STEP 3: Provide an Official Address for your DE LLC`,
