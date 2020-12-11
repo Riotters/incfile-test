@@ -10,7 +10,12 @@ import ArrowLink from "../../molecules/buttons/text";
 
 const Comparison = () => (
   <Wrapper>
-    <HeadingCenter headline="What's the difference between an LLC and a Corporation?" textWidth="590" text="Not sure if a Corporation or an LLC is right for you? Read the comparison below to review the fundamental differences." bottomMargin="48" bottomMarginLG="80" />
+    <HeadingCenter headline="What's the difference between an LLC and a Corporation?"
+                   textWidth="590"
+                   headlineSize={3}
+                   text="Not sure if a Corporation or an LLC is right for you? Read the comparison below to review the fundamental differences."
+                   bottomMargin="48"
+                   bottomMarginLG="80" />
 
     <ContentCenter contentWidth={970}>
       <ComparisonWrapper>

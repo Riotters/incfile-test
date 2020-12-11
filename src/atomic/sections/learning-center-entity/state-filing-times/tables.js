@@ -22,6 +22,7 @@ const Tables = ({ content, stateFilingTimes }) => {
 					headline={content.header}
 					linkText={content.link.text}
 					linkUrl={content.link.url}
+					paragraphHeading
 				/>
 			</Container>
 		</Wrapper>

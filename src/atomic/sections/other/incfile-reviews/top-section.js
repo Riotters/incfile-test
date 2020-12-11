@@ -14,6 +14,7 @@ import RelativeElement from '../../../elements/relative-e';
 import AbsoluteShapCure from '../../../elements/absolute-shape-curve-e';
 import Button from '../../../../components/button';
 import ArrowLink from "../../../molecules/buttons/text";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 
 const Wrapper = styled.div`
@@ -51,7 +52,7 @@ const TopSection = ({ content }) => (
                 <Paragraph big mixed={true}>
                     {parse(content.text3)}
                 </Paragraph>
-                <Heading size={4}>{parse(content.header2)}</Heading>
+                <PHeading size={4}>{parse(content.header2)}</PHeading>
                 <ArrowLink content={content.link1} bottomMargin={8} />
                 <ArrowLink content={content.link2} bottomMargin={8} />
                 <ArrowLink content={content.link3} bottomMargin={24} />

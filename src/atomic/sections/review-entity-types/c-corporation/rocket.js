@@ -24,10 +24,7 @@ const Rocket = ({ content }) => (
         <Image filename="rocket-2x" alt="rocket lunch" />
       </RocketWrapper>
       <Content>
-        <Heading size={2} bottomMargin="0">
-          {content.header}
-        </Heading>
-        <Heading size={2}>{content.header2}</Heading>
+        <Heading size={2}>{content.header}{" "}<br />{content.header2}</Heading>
         <Paragraph bottomMargin="0">{content.text}</Paragraph>
         <Paragraph>{content.text2}</Paragraph>
         <Button content={content.button} theme="primary48" margin="0 auto 0 0" arrow />

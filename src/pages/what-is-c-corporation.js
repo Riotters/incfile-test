@@ -23,6 +23,7 @@ import { ThankYouContent } from "../components/hubspot/thank-you-modal";
 import HSFormModal from "../components/hubspot/standard-post-form-modal";
 import { Helmet } from "react-helmet";
 import ProductSchema from "../components/product-schema";
+import {HeadingP} from "../atomic/atoms/typography/heading-to-p";
 
 const CCorporation = () => {
   const [modalVisible, setModalVisible] = React.useState(false);
@@ -59,7 +60,7 @@ const CCorporation = () => {
             />
             <Top imageName="review-entity-type-c-corp" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
                 <h1>{top.header}</h1>
-                <p>{top.text}</p>
+                <HeadingP size={2} big>{top.text}</HeadingP>
                 <Buttonsbox>
                     <Button content={top.button[0]} theme="primary56" arrow />
                 </Buttonsbox>

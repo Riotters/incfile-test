@@ -37,15 +37,19 @@ const TextWrapper = styled.div`
   align-items: center;
   margin-right: 32px;
 
-  h3 {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: ${(props) => (props.ellipsis ? "1" : "")};
-    text-overflow: ${(props) => (props.ellipsis ? "ellipsis" : "")};
-    overflow: hidden;
-    color: ${(props) =>
-      props.icon ? color.blue1 : props.textColor ? props.textColor : ""};
-  }
+	h3, [class*="i-believe-i-can-be-a-h"] {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: ${(props) => (props.ellipsis ? "1" : "")};
+		text-overflow: ${(props) => (props.ellipsis ? "ellipsis" : "")};
+		overflow: hidden;
+		color: ${(props) =>
+			props.icon ? color.blue1 : props.textColor ? props.textColor : ""};
+	}
+	
+	[class*="i-believe-i-can-be-a-h"] {
+		font-weight: bold;
+	}
 
   ${(props) =>
     props.icon &&
@@ -96,6 +100,7 @@ const BoxedButton = ({
   iconPadding,
   ellipsis,
 }) => {
+
   return (
     <Wrapper
       to={content.url}

@@ -31,7 +31,7 @@ const TableOfContentSection = ({ className, content }) => (
     </Oval>
     <HeadingCenter headline={content.header} headlineWidth="770" text={content.text} textWidth="770" />
     <ContentCenter>
-      <Cards content={content.cards} />
+      <Cards content={content.cards} headlineSize={2} />
     </ContentCenter>
   </TableOfContent>
 );

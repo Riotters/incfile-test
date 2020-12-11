@@ -23,6 +23,7 @@ import {
 	cta,
 } from "../static/manage-your-company/trademark-name-search";
 import { servicePrice } from "../helpers/global-variables";
+import {HeadingP} from "../atomic/atoms/typography/heading-to-p";
 
 const TrademarkNameSearch = () => (
 	<Layout>
@@ -38,7 +39,7 @@ const TrademarkNameSearch = () => (
 		/>
 		<Top imageName="mrs-bulb-trademark" imageAlt="" ovalColor="darkblue">
 			<h1 style={{ maxWidth: "100%" }}>{top.header}</h1>
-			<p>{top.text}</p>
+			<HeadingP size={2} big>{top.text}</HeadingP>
 			<Buttonsbox>
 				<Button extends content={top.button[0]} theme="primary56" width="200px" arrow />
 			</Buttonsbox>

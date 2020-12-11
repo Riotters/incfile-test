@@ -84,7 +84,7 @@ const PanelWrapper = styled.article`
 	margin-left: auto;
 	padding-top: 24px;
 
-	p {
+	p:not([class*="i-believe-i-can-be-a-h"]) {
 		margin-bottom: 35px;
 
 		&:nth-child(3) {
@@ -92,7 +92,7 @@ const PanelWrapper = styled.article`
 		}
 	}
 
-	h3 {
+	h2 {
 		margin-bottom: 48px;
 	}
 `;
@@ -292,7 +292,7 @@ const AboutTabs = ({ layout, columns, content, openModal }) => (
 						<Paragraph big>{content.content[0].text1}</Paragraph>
 						<Paragraph big>{content.content[0].text2}</Paragraph>
 						<Paragraph big>{content.content[0].text3}</Paragraph>
-						<Heading size={3}>
+						<Heading size={2} template={3} left>
 							Save Time and Money. We'll Handle The Paperwork.
 						</Heading>
 						<ArrowLink
@@ -305,7 +305,7 @@ const AboutTabs = ({ layout, columns, content, openModal }) => (
 
 				<Panel>
 					<PanelWrapper className="panel2" layout={layout}>
-                        <Heading size={3}>{content.content[1].header}</Heading>
+                        <Heading size={2} template={3} left>{content.content[1].header}</Heading>
                         <LightBox
                             bottomMargin={42}
                             thumbnailVideo="what-is-a-corporation-8899"
@@ -319,13 +319,14 @@ const AboutTabs = ({ layout, columns, content, openModal }) => (
 
 				<Panel>
 					<PanelWrapper className="panel2" layout={layout}>
-						<Heading size={3}>{content.content[2].header}</Heading>
+						<Heading size={2} template={3} left>{content.content[2].header}</Heading>
 						<Paragraph big>{content.content[2].text}</Paragraph>
 						<IconListColorBox
 							color={color.blue3}
 							content={content.content[2].box}
 							rounded
 							curve
+							paragraphHeader
 							curveColor={color.blue1}
 						/>
 					</PanelWrapper>
@@ -333,7 +334,7 @@ const AboutTabs = ({ layout, columns, content, openModal }) => (
 
 				<Panel>
 					<PanelWrapper className="panel2" layout={layout}>
-						<Heading size={3}>{content.content[3].header}</Heading>
+						<Heading size={2} template={3} left>{content.content[3].header}</Heading>
 						<Paragraph big>{content.content[3].text1}</Paragraph>
 						<Paragraph big>{content.content[3].text2}</Paragraph>
 						<Paragraph big>{content.content[3].text3}</Paragraph>
@@ -350,7 +351,7 @@ const AboutTabs = ({ layout, columns, content, openModal }) => (
 
 				<Panel>
 					<PanelWrapper className="panel2" layout={layout}>
-						<Heading size={3}>{content.content[4].header}</Heading>
+						<Heading size={2} template={3} left>{content.content[4].header}</Heading>
 						<Paragraph big>{content.content[4].text}</Paragraph>
 						<AcccordionCounting content={content.content[4]} tab />
 						<Paragraph big topMargin={24}>
@@ -370,7 +371,7 @@ const AboutTabs = ({ layout, columns, content, openModal }) => (
 
 				<Panel>
 					<PanelWrapper className="panel2" layout={layout}>
-						<Heading size={3}>{content.content[5].header}</Heading>
+						<Heading size={2} template={3} left>{content.content[5].header}</Heading>
 						<Paragraph big>{content.content[5].text}</Paragraph>
 						<NumericBoxedList content={content.content[5].items} />
 						<Paragraph big topMargin={24} mixed={true}>
@@ -386,7 +387,7 @@ const AboutTabs = ({ layout, columns, content, openModal }) => (
 
 				<Panel>
 					<PanelWrapper className="panel2" layout={layout}>
-						<h3>{content.content[6].header}</h3>
+						<Heading size={2} template={3} left>{content.content[6].header}</Heading>
 						<AcccordionCounting
 							content={content.content[6]}
 							listColor={{ item: `grey2`, dot: `orange1` }}
