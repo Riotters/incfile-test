@@ -20,6 +20,7 @@ import { shadow } from "../../../atoms/styles/shadows";
 import AssetsSVG from "../../../../images/icons/assets-flag.inline.svg";
 import RevenueSVG from "../../../../images/icons/revenue.inline.svg";
 import { Link } from "gatsby";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const Calculator = styled.div`
 	background-color: ${color.blue3};
@@ -60,7 +61,7 @@ const ImageBoxes = styled.div`
 	.box {
 		padding: 16px 16px 56px;
 
-		h4 {
+		.i-believe-i-can-be-a-h4 {
 			text-align: center;
 			padding: 24px 0 0;
 		}
@@ -286,6 +287,7 @@ const CalculatorSection = ({ content, onSelectState, state, id }) => {
 					headline={content.header}
 					headlineWidth="700"
 					text={content.text}
+					paragraphHeading
 				/>
 				{showResult && !error && (
 					<>
@@ -354,7 +356,7 @@ const CalculatorSection = ({ content, onSelectState, state, id }) => {
 							image="your-state-7282"
 							color={color.blue3}
 						>
-							<Heading size={3} template={4}>{cards[0]}</Heading>
+							<PHeading template={4}>{cards[0]}</PHeading>
 							<Dropdown
 								className="dropdown"
 								placeholder="Select where your business was registered"
@@ -367,7 +369,7 @@ const CalculatorSection = ({ content, onSelectState, state, id }) => {
 							image="forming-a-corporation"
 							color={color.orange3}
 						>
-							<Heading size={3} template={4}>{cards[1]}</Heading>
+							<PHeading template={4}>{cards[1]}</PHeading>
 							<InputField
 								className={dropDownClasses.join(" ")}
 								placeholder="Enter total revenue from sales"

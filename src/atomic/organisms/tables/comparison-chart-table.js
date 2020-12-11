@@ -10,6 +10,7 @@ import CurveSVG from "../../../images/orange-curve.inline.svg";
 import VisibilitySensor from "../../../components/VisibilitySensor";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
+import {PHeading} from "../../atoms/typography/p-to-heading";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -340,7 +341,7 @@ const Accordion = ({
 										<Grid>
 											{item.answer.map((el, i) => (
 												<Column key={i}>
-													<Heading size="5">{el.header}</Heading>
+													<PHeading size={5}>{el.header}</PHeading>
 													<Paragraph bottomMargin="0">{el.text}</Paragraph>
 												</Column>
 											))}

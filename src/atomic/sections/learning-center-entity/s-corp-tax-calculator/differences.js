@@ -9,6 +9,7 @@ import { Paragraph } from "../../../atoms/typography/paragraph";
 import Card from "../../../molecules/mixed-blocks/s-corp-tax-box";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const Differences = styled.section`
   position: relative;
@@ -41,7 +42,7 @@ const Grid = styled.div`
 const images = [`cert-llc-232`, `cert-s-433`];
 const colors = [color.babyblue3, color.green3];
 
-const DifferencesSection = ({ className, content }) => (
+const DifferencesSection = ({ className, content, paragraphHeader = false }) => (
   <Differences className={className}>
     <Oval className="oval" height="570" width="570" top="0" right="0">
       <OvalSVG />
@@ -50,12 +51,12 @@ const DifferencesSection = ({ className, content }) => (
     <ContentCenter contentWidth="970">
       <Grid>
         {content.cards.map((card, i) => (
-          <Card content={card} image={images[i]} color={colors[i]} curve={i === 0 ? true : false} />
+          <Card content={card} image={images[i]} color={colors[i]} curve={i === 0 ? true : false} paragraphHeading={paragraphHeader} />
         ))}
       </Grid>
     </ContentCenter>
     <ContentLeft contentWidth="770">
-      <Heading size="3">{content.header2}</Heading>
+      <PHeading size={3}>{content.header2}</PHeading>
       <Paragraph big>{content.text}</Paragraph>
     </ContentLeft>
   </Differences>

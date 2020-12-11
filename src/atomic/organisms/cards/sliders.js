@@ -216,7 +216,7 @@ const Cards = ({ className, content }) => {
       <Whitebox bottomMargin="8px">
         <TableCard>
           <div>
-            <Heading size="4" bottomMargin="8">
+            <Heading size={5} template={4} bottomMargin="8">
               As a sole proprietor
             </Heading>
             <Paragraph mixed bottomMargin="0">
@@ -232,7 +232,7 @@ const Cards = ({ className, content }) => {
       <Whitebox bottomMargin="8px">
         <TableCard>
           <div>
-            <Heading size="4" bottomMargin="8">
+            <Heading size={5} template={4} bottomMargin="8">
               As a Corporation
             </Heading>
             <Paragraph mixed bottomMargin="0">
@@ -248,7 +248,7 @@ const Cards = ({ className, content }) => {
       <Whitebox bottomMargin="8px">
         <TableCard>
           <div>
-            <Heading size="3" bottomMargin="0">
+            <Heading size={4} template={3} bottomMargin="0">
               Total Savings
             </Heading>
           </div>
