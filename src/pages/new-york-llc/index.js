@@ -54,7 +54,10 @@ function NewYorkLLCIndex() {
 
   return (
     <Layout>
-      <SEO title="Forming a New York LLC | A How-to Guide to LLCs in NY" description="Ready to form your New York LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more." />
+      <SEO
+        title="Forming a New York LLC | A How-to Guide to LLCs in NY"
+        description="Ready to form your New York LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+      />
 
       <LinearBgHeader imageMapName="tx-map-2x">
         <HomeHeader content={HomePageContent.header} data={dataApi} />
@@ -69,10 +72,10 @@ function NewYorkLLCIndex() {
         </Wrapper>
       </WrapperContent>
 
-          <Rocket url="?entityType=LLC&entityState=NY" />
-          
-          <Helmet>
-              <script type="application/ld+json">{`
+      <Rocket url="?entityType=LLC&entityState=NY" />
+
+      <Helmet>
+        <script type="application/ld+json">{`
             {
                 "@context": "http://schema.org",
                 "@type": "VideoObject",
@@ -85,7 +88,7 @@ function NewYorkLLCIndex() {
                 "interactionCount": "25"
             }
           `}</script>
-          </Helmet>
+      </Helmet>
     </Layout>
   );
 }

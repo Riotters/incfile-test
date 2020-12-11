@@ -26,8 +26,11 @@ export const filingFeeAndRequirementContent = {
   content: [
     {
       type: `heading`,
-      styles: { marginTop: `0` },
+      bottomMargin: 0,
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `How Much Does it Cost to Start an LLC in Texas?`,
     },
     {
@@ -44,6 +47,9 @@ export const filingFeeAndRequirementContent = {
       type: `heading`,
       styles: { marginTop: `0` },
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `Initial Filing and Fees for Forming a Texas LLC`,
     },
     {
@@ -97,6 +103,9 @@ export const filingFeeAndRequirementContent = {
     {
       type: `heading`,
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `Costs for an Employer Identification Number`,
     },
     {
@@ -117,6 +126,9 @@ export const filingFeeAndRequirementContent = {
     {
       type: `heading`,
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `Foreign Qualification to Operate in a State Outside Texas`,
     },
     {
@@ -137,6 +149,9 @@ export const filingFeeAndRequirementContent = {
     {
       type: `heading`,
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `Annual Report Requirements for Texas`,
     },
     {
@@ -173,6 +188,9 @@ export const filingFeeAndRequirementContent = {
     {
       type: `heading`,
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `Texas Business Licenses and Permits`,
     },
     {
@@ -220,6 +238,9 @@ export const filingFeeAndRequirementContent = {
     {
       type: `heading`,
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `Operating Agreements for Texas LLCs`,
     },
     {
@@ -249,6 +270,9 @@ export const filingFeeAndRequirementContent = {
     {
       type: `heading`,
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `Other Potential LLC Fees or Requirements in Texas`,
     },
     {
@@ -384,10 +408,14 @@ export const filingFeeAndRequirementContent = {
     {
       type: `heading`,
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `FAQs About Texas LLC Fees`,
     },
     {
       type: `accordion`,
+      header: 3,
       content: {
         items: [
           {

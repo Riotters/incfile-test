@@ -20,8 +20,11 @@ export const businessTaxesPageContent = {
   content: [
     {
       type: `heading`,
-      styles: { marginTop: `0` },
+      topMargin: 0,
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `How Your New York LLC Will Be Taxed`,
     },
     {
@@ -61,6 +64,9 @@ export const businessTaxesPageContent = {
     {
       type: `heading`,
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `New York State Business Taxes`,
     },
     {
@@ -136,7 +142,7 @@ export const businessTaxesPageContent = {
     /////////////
     {
       type: `heading`,
-      styles: { marginTop: `56px` },
+      topMargin: 56,
       size: 3,
       content: `New York Sales Tax Rates`,
     },
@@ -166,6 +172,9 @@ export const businessTaxesPageContent = {
     {
       type: `heading`,
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `Federal Taxes for New York LLCs`,
     },
     {
@@ -226,7 +235,7 @@ export const businessTaxesPageContent = {
 
     {
       type: `heading`,
-      styles: { marginTop: `48px` },
+      topMargin: 48,
       size: 3,
       content: `Federal Income Tax`,
     },
@@ -243,6 +252,9 @@ export const businessTaxesPageContent = {
     {
       type: `heading`,
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `Employee and Employer Taxes for Your New York LLC`,
     },
     {
@@ -251,6 +263,7 @@ export const businessTaxesPageContent = {
     },
     {
       type: `accordion`,
+      header: 3,
       content: {
         items: [
           {
@@ -318,10 +331,14 @@ export const businessTaxesPageContent = {
     {
       type: `heading`,
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `FAQs on New York LLC Business Taxes`,
     },
     {
       type: `accordion`,
+      header: 3,
       content: {
         items: [
           {

@@ -98,7 +98,9 @@ const HowToGuide = ({ content, data }) => {
   return (
     <Wrapper>
       {/* Why choose section */}
-      <Heading size={3}>{parse(content.whyChoose.heading)}</Heading>
+      <Heading size={2} template={3} left={true}>
+        {parse(content.whyChoose.heading)}
+      </Heading>
       <Paragraph big mixed>
         {parse(content.whyChoose.text1)}
       </Paragraph>
@@ -122,8 +124,14 @@ const HowToGuide = ({ content, data }) => {
       <Paragraph big>{content.whyChoose.text4}</Paragraph>
 
       {/* Main Steps */}
-      <Heading size={3} bottomMargin="40" style={{ marginTop: `48px` }}>
-        {content.mainSteps.heading3}
+      <Heading
+        size={2}
+        template={3}
+        left={true}
+        bottomMargin="40"
+        style={{ marginTop: `48px` }}
+      >
+        {content.mainSteps.heading1}
       </Heading>
 
       <div id="video">
