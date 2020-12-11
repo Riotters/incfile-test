@@ -34,17 +34,18 @@ const Wrapper = styled.div`
 	}
 
 	h3,
-	h4 {
+	h4,
+	[class*="i-believe-i-can-be-a-h"] {
 		padding: 24px 24px 16px;
 	}
 
-	p,
+	p:not([class*="i-believe-i-can-be-a-h"]),
 	a {
 		font-size: 16px;
 		line-height: 24px;
 	}
 
-	p {
+	p:not([class*="i-believe-i-can-be-a-h"]) {
 		color: ${color.grey1};
 		padding: 0 24px;
 	}

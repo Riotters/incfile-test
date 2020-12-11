@@ -19,6 +19,7 @@ import Button from "../../molecules/buttons/button";
 import Card from "../../../atomic/molecules/mixed-blocks/top-image-box";
 import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/top-left-right-orange2-big.inline.svg"
+import {HeadingP} from "../../atoms/typography/heading-to-p";
 
 const Wrapper = styled.section`
 	position: relative;
@@ -51,6 +52,7 @@ const Wrapper = styled.section`
 		}
 
 		p {
+		
 		}
 	}
 `;
@@ -152,11 +154,11 @@ const ClientDashboardSection = ({ className, content, isNewSale }) => (
 							<Article className="article" flex bottomMargin="8px">
 								<Image filename={item.icon} alt={item.imageAlt ?? ''} />
 								<Content>
-									<Paragraph
-										style={{ fontWeight: `bold`, marginBottom: `8px` }}
+									<HeadingP size={3}
+										style={{ fontWeight: `bold`, marginBottom: `8px`, color: color.grey2 }}
 									>
 										{item.title}
-									</Paragraph>
+									</HeadingP>
 									<Paragraph mixed={true}>{item.desc}</Paragraph>
 								</Content>
 								<Circle

@@ -20,7 +20,7 @@ const NextSection = ({ className, content }) => (
     </Oval>
     <HeadingCenter headline={content.header} headlineWidth="640" />
     <ContentCenter>
-      <Accordion content={content.faq} curve curveLeftBottom curveColor={color.blue1} />
+      <Accordion content={content.faq} curve curveLeftBottom curveColor={color.blue1} paragraphHeaders={false} />
     </ContentCenter>
   </Next>
 );

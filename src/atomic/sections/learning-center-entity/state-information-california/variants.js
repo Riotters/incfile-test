@@ -13,7 +13,7 @@ const Variants = styled.section`
   position: relative;
 `;
 
-const VariantsSection = ({ data, entityType }) => {
+const VariantsSection = ({ data, entityType, paragraphHeading = false }) => {
   let stateFee = data?.prices ? data.prices.statefee : 0;
   let entityState = data?.prices ? data.prices.state : "";
   const headerSection = {
@@ -100,7 +100,7 @@ const VariantsSection = ({ data, entityType }) => {
 
   return (
     <Variants>
-      <HeadingCenter headline={headerSection.header} headlineWidth="640" linkText={headerSection.link.text} linkUrl={headerSection.link.url} />
+      <HeadingCenter headline={headerSection.header} headlineWidth="640" linkText={headerSection.link.text} linkUrl={headerSection.link.url} paragraphHeading={paragraphHeading} />
       <ContentCenter>
         <VariantsCards content={cards} />
       </ContentCenter>

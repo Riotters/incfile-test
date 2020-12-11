@@ -8,6 +8,7 @@ import { Heading } from "../../atoms/typography/heading";
 import { color } from "../../atoms/styles/colors";
 import ArrowSVG from "../../../images/arrow.inline.svg";
 import { shadow } from "../../atoms/styles/shadows";
+import {PHeading} from "../../atoms/typography/p-to-heading";
 
 const Wrapper = styled(Link)`
 	.box {
@@ -36,7 +37,7 @@ const TextWrapper = styled.div`
 	align-items: center;
 	margin-right: 32px;
 
-	h3 {
+	h3, [class*="i-believe-i-can-be-a-h"] {
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
 		-webkit-line-clamp: ${(props) => (props.ellipsis ? "1" : "")};
@@ -44,6 +45,10 @@ const TextWrapper = styled.div`
 		overflow: hidden;
 		color: ${(props) =>
 			props.icon ? color.blue1 : props.textColor ? props.textColor : ""};
+	}
+	
+	[class*="i-believe-i-can-be-a-h"] {
+		font-weight: bold;
 	}
 
 	${(props) =>
@@ -110,9 +115,9 @@ const BoxedButton = ({
 						</ImageWrapper>
 					)}
 					{content.header && (
-						<Heading size={3} template={icon ? "4" : "5"} bottomMargin="0">
+						<PHeading size={3} template={icon ? "4" : "5"} bottomMargin="0">
 							{content.header}
-						</Heading>
+						</PHeading>
 					)}
 				</TextWrapper>
 				<Circle circleColor={color.orange3} iconColor={color.orange1}>

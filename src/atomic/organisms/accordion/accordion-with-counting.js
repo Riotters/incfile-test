@@ -9,6 +9,7 @@ import parse from "html-react-parser";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../../images/orange-curve.inline.svg";
 import VisibilitySensor from "../../../components/VisibilitySensor";
+import {HeadingP} from "../../atoms/typography/heading-to-p";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -160,6 +161,10 @@ const Button = styled.button`
 	&.active {
 		border-radius: 5px 5px 0 0;
 		font-weight: 600;
+		
+		h3 {
+		font-weight: 600;
+		}
 
 		svg {
 			transform: rotate(0deg);
@@ -180,7 +185,7 @@ const Content = styled.div`
 		min-height: unset;
 	}
 
-	span {
+	span, h3 {
 		color: #4e4e4e;
 		font-family: Avenir;
 		font-size: 16px;
@@ -265,6 +270,7 @@ const AccordionWithCounting = ({
 	content,
 	curve,
 	curveRight,
+	paragraphHeaders = true,
 	curveRightBottom,
 	tab,
 	listColor,
@@ -290,7 +296,7 @@ const AccordionWithCounting = ({
 							<Tab>
 								<Content>
 									<Counting>{item.count}</Counting>
-									<span>{item.question}</span>
+									{paragraphHeaders ? <span>{item.question}</span> : <HeadingP size={3} bottomMargin={0}>{item.question}</HeadingP>}
 									<Icon>
 										<ArrowSVG />
 									</Icon>

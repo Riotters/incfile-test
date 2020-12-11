@@ -26,6 +26,7 @@ import ContentButton from "../../molecules/buttons/button";
 import Accordion from "../../organisms/accordion/accordion";
 import PlusSVG from "../../../images/icons/plus.inline.svg";
 import Advantages from "../../organisms/accordion/accordion-with-checkmark";
+import {PHeading} from "../../atoms/typography/p-to-heading";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -414,10 +415,11 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => {
 									Icon={IconSVG}
 									content={content.content[0].box}
 									bottomMargin="48"
+									headingSize={2}
 									rounded
 									curve
 								/>
-								<Heading size="3">{content.content[0].header}</Heading>
+								<Heading size={2} template={3} left>{content.content[0].header}</Heading>
 								<LightBoxVideo
 									thumbnailVideo="what-is-an-llc-7280"
 									videoID="ZuadTwgek5U"
@@ -427,9 +429,9 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => {
 								</Paragraph>
 								<Boxes>
 									<BlueBox>
-										<Heading size="4" bottomMargin="8">
+										<PHeading size={4} bottomMargin="8">
 											Pass-Through Taxation
-										</Heading>
+										</PHeading>
 										<Paragraph bottomMargin="0">
 											of a sole proprietorship
 										</Paragraph>
@@ -438,9 +440,9 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => {
 										<PlusSVG />
 									</CircleWhite>
 									<YellowBox>
-										<Heading size="4" bottomMargin="8">
+										<PHeading size={4} bottomMargin="8">
 											Limited Liability
-										</Heading>
+										</PHeading>
 										<Paragraph bottomMargin="0">of a corporation</Paragraph>
 									</YellowBox>
 								</Boxes>
@@ -449,7 +451,7 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel2" layout={layout}>
-								<Heading size="3">{content.content[1].header}</Heading>
+								<Heading size={2} template={3} left>{content.content[1].header}</Heading>
 								<Paragraph big>{content.content[1].text}</Paragraph>
 								<Paragraph big mixed>
 									{parse(content.content[1].text2)}
@@ -465,7 +467,7 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel2" layout={layout}>
-								<Heading size="3">{content.content[2].header}</Heading>
+								<Heading size={2} template={3} left>{content.content[2].header}</Heading>
 								<Paragraph big>{content.content[2].text}</Paragraph>
 								<Heading size="3">{content.content[2].header2}</Heading>
 								<Advantages content={content.content[2].advantages} tab />
@@ -481,13 +483,14 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel2" layout={layout}>
-								<Heading size="3">{content.content[3].header}</Heading>
+								<Heading size={2} template={3} left>{content.content[3].header}</Heading>
 								<Paragraph big>{content.content[3].text}</Paragraph>
 								<IconTextColorBox
 									color={color.yellow3}
 									Icon={Icon2SVG}
 									content={content.content[3].box}
 									bottomMargin="48"
+									headingSize={3}
 									rounded
 								/>
 								<Paragraph big>{content.content[3].text2}</Paragraph>
@@ -496,6 +499,7 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => {
 									Icon={Icon3SVG}
 									content={content.content[3].box2}
 									bottomMargin="48"
+									headingSize={3}
 									rounded
 									curve
 								/>

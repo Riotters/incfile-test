@@ -108,7 +108,7 @@ export const Heading = ({
 		bottomPadding={bottomPadding}
 		maxWidth={maxWidth}
 		relative={relative}
-		className={className}
+		className={(template ? `${className} h${template}` : className)}
 		style={style}
 	>
 		{children}

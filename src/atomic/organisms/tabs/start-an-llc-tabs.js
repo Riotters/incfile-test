@@ -403,11 +403,11 @@ const CCorpTabs = ({ layout, columns, content }) => {
 								//className={isVisible ? "slideUp enter panel1" : "slideUp panel1"}
 								layout={layout}
 							>
-								<Heading size="3">{content.content[0].header}</Heading>
+								<Heading size={2} template={3} left>{content.content[0].header}</Heading>
 								<Paragraph big bottomMargin="48">
 									{content.content[0].text}
 								</Paragraph>
-								<Heading size="3">{content.content[0].header2}</Heading>
+								<Heading size={2} template={3} left>{content.content[0].header2}</Heading>
 								<Paragraph big bottomMargin="48">
 									{content.content[0].text2}
 								</Paragraph>
@@ -416,7 +416,7 @@ const CCorpTabs = ({ layout, columns, content }) => {
 									tab
 									bottomMargin="40"
 								/>
-								<Heading size="3">{content.content[0].header3}</Heading>
+								<Heading size={2} template={3} left>{content.content[0].header3}</Heading>
 								<LightBoxVideo
 									thumbnailVideo="how-to-start-an-llc-2379"
 									videoID="R_oIgzYh7NU"
@@ -427,10 +427,11 @@ const CCorpTabs = ({ layout, columns, content }) => {
 								</Paragraph>
 								<AccordionWithCounting
 									content={content.content[0].list2}
+									paragraphHeaders={false}
 									tab
 									bottomMargin="40"
 								/>
-								<Heading size="3">{content.content[0].header4}</Heading>
+								{content.content[0].header4 && <Heading size="3">{content.content[0].header4}</Heading>}
 								<Paragraph big bottomMargin="0">
 									{content.content[0].text4}
 								</Paragraph>
@@ -438,7 +439,7 @@ const CCorpTabs = ({ layout, columns, content }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel2" layout={layout}>
-								<Heading size="3">{content.content[1].header}</Heading>
+								<Heading size={2} template={3} left>{content.content[1].header}</Heading>
 								<Paragraph big>{content.content[1].text}</Paragraph>
 								<Paragraph big bottomMargin="24">
 									{content.content[1].text2}
@@ -448,7 +449,7 @@ const CCorpTabs = ({ layout, columns, content }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel3" layout={layout}>
-								<Heading size="3">{content.content[2].header}</Heading>
+								<Heading size={2} template={3} left>{content.content[2].header}</Heading>
 								<Paragraph big bottomMargin="56">
 									{content.content[2].text}
 								</Paragraph>
@@ -468,18 +469,19 @@ const CCorpTabs = ({ layout, columns, content }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel4" layout={layout}>
-								<Heading size="3">{content.content[3].header}</Heading>
+								<Heading size={2} template={3} left>{content.content[3].header}</Heading>
 								<Paragraph big>{content.content[3].text}</Paragraph>
 							</PanelWrapper>
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel4" layout={layout}>
-								<Heading size="3">{content.content[4].header}</Heading>
+								<Heading size={2} template={3} left>{content.content[4].header}</Heading>
 								<Paragraph big>{content.content[4].text}</Paragraph>
 								<IconListColorBox
 									color={color.blue3}
 									content={content.content[4].box}
 									rounded
+									paragraphHeader
 									bottomMargin="48"
 								/>
 								<Paragraph big>{content.content[4].text2}</Paragraph>
@@ -487,7 +489,7 @@ const CCorpTabs = ({ layout, columns, content }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel6" layout={layout}>
-								<Heading size="3">{content.content[5].header}</Heading>
+								<Heading size={2} template={3} left>{content.content[5].header}</Heading>
 								<Paragraph big>{content.content[5].text}</Paragraph>
 							</PanelWrapper>
 						</TabPanel>

@@ -8,6 +8,7 @@ import WhiteBox from "../../atoms/boxes/white-box";
 import { Paragraph } from "../../atoms/typography/paragraph";
 //import AmountSlider from "../../../components/amount-slider/amount-slider";
 import SelectorSVG from "../../../images/slider-selector.svg";
+import {PHeading} from "../../atoms/typography/p-to-heading";
 
 const Box = styled(WhiteBox)`
   display: flex;
@@ -48,7 +49,7 @@ const BoxColumn = styled(WhiteBox)`
     width: 54%;
     border-right: 1px solid ${color.grey5};
 
-    p {
+    p:not([class*="i-believe-i-can-be-a-h"]) {
       font-size: 14px;
       line-height: 20px;
       margin-bottom: 16px;
@@ -79,7 +80,7 @@ const SpaceBetween = styled.div`
   align-items: flex-start;
   padding-top: 16px;
 
-  h5 {
+  h5, [class*="i-believe-i-can-be-a-h5"] {
     padding-bottom: 8px;
   }
 
@@ -99,7 +100,8 @@ const StaticRange = styled(WhiteBox)`
   }
 
   h4,
-  p {
+  p,
+  [class*="i-believe-i-can-be-a-h4"] {
     text-align: center;
   }
 
@@ -252,41 +254,41 @@ class TotalSavings extends React.Component {
         <BoxColumn>
           <SpaceBetween>
             <div className="savings-text">
-              <Heading size="5" bottomMargin="0">
+              <PHeading size={5} bottomMargin="0">
                 As a Sole Propreitor
-              </Heading>
+              </PHeading>
               <p>
                 Slef Employment Taxes paid <span>{formatter.format(63000)}</span> as a Sole Propreitor
               </p>
             </div>
             <div className="savings-amount">
-              <Heading size="5" bottomMargin="0">
+              <PHeading size={5} bottomMargin="0">
                 Taxes Paid
-              </Heading>
+              </PHeading>
               <span>{formatter.format(9639)}</span>
             </div>
           </SpaceBetween>
           <SpaceBetween>
             <div className="savings-text">
-              <Heading size="5" bottomMargin="0">
+              <PHeading size={5} bottomMargin="0">
                 As a S Corporation
-              </Heading>
+              </PHeading>
               <p>
                 With a salary of <span>{formatter.format(26000)}</span> and a dividend of <span>{formatter.format(37000)}</span>
               </p>
             </div>
             <div className="savings-amount">
-              <Heading size="5" bottomMargin="0">
+              <PHeading size={5} bottomMargin="0">
                 Taxes Paid
-              </Heading>
+              </PHeading>
               <span>{formatter.format(3978)}</span>
             </div>
           </SpaceBetween>
           <SpaceBetween>
             <div className="savings-text">
-              <Heading size="4" bottomMargin="0">
+              <PHeading size={4} bottomMargin="0">
                 Total Savings
-              </Heading>
+              </PHeading>
             </div>
             <div className="savings-amount">
               <span>
