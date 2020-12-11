@@ -166,8 +166,6 @@ export default function HTML(props) {
                                     window.open(url, '_blank');
                                 })
                             });
-
-                            console.log('Track lib was loaded');
                         `
                     }}
                 />
