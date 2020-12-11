@@ -12,6 +12,7 @@ import { Paragraph } from "../atoms/typography/paragraph";
 import ArrowSVG from "../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../images/orange-curve.inline.svg";
 import VisibilitySensor from "../../components/VisibilitySensor";
+import { Heading } from "../atoms/typography/heading";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -313,9 +314,26 @@ const AccordionWithCounting = ({
 									<Counting>{item.count}</Counting>
 								</CountingWrapper>
 								{!header && <Text>{item.question}</Text>}
-								{header === 3 && <h3>{item.question}</h3>}
-								{header === 4 && <h4>{item.question}</h4>}
-								{header === 5 && <h5>{item.question}</h5>}
+								{header === 2 && (
+									<Heading size={2} template={3} left>
+										{item.question}
+									</Heading>
+								)}
+								{header === 3 && (
+									<Heading size={3} left>
+										{item.question}
+									</Heading>
+								)}
+								{header === 4 && (
+									<Heading size={4} template={3} left>
+										{item.question}
+									</Heading>
+								)}
+								{header === 5 && (
+									<Heading size={5} template={3} left>
+										{item.question}
+									</Heading>
+								)}
 								{/* </Content> */}
 								<Icon>
 									<ArrowSVG />
