@@ -31,7 +31,7 @@ const RestaurantBusiness = () => (
 	<Layout>
 		<SEO
 			title="How to Start a Restaurant Business | Opening Your Restaurant Business"
-			description="There are very few businesses that customers love more than a great restaurant -a place that brings together friends and family to share delicious food andconversation has a special place in the heart of many patrons."
+			description="Love to cook and are thinking of opening a restaurant business? Restaurant business are one of the more complicated businesses to structure and run."
 		/>
 
 		<Top

@@ -51,13 +51,13 @@ const Handyman = () => (
 	<Layout>
 		<SEO
 			title="How to Start a Handyman Business | Be a Home Handyman"
-			description="If you have some skill with home improvement, DIY or fixing things, then running a home handyman business could be right for you."
+			description="We want to help you get your handyman business off the ground. Read our guide for ideas, tips, and important things to know before you get started."
 		/>
 
 		<Top
 			ovalColor="sun-2"
 			imageName="handyman-main"
-			imageAlt="Mr Bulb with seedling"
+			imageAlt="set up a handyman business"
 			headlineWidth={700}
 		>
 			<h1>How to Start a Home Handyman Business</h1>
@@ -66,7 +66,8 @@ const Handyman = () => (
 				running a home handyman business could be right for you.
 			</p>
 			<ButtonsBox>
-				<Button
+                <Button
+                    extends
 					theme="primary56"
 					marginMD="0 24px 0 0"
 					arrow
@@ -570,7 +571,7 @@ const Handyman = () => (
 
 					<Paragraph big mixed={true} style={{ marginTop: "50px" }}>
 						We’ve got the perfect{" "}
-						<Link to="/blog/post/keys-successful-business-plan/">
+						<Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">
 							guide to writing your business plan.
 						</Link>
 					</Paragraph>

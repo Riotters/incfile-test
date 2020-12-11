@@ -12,11 +12,6 @@ import WebSVG from "../../images/icons/icon-web-browser.inline.svg";
 import PhoneSVG from "../../images/icons/icon-virtual-phone.inline.svg";
 import LogoSVG from "../../images/icons/icon-design-business-logo.inline.svg";
 import CardSVG from "../../images/icons/icon-business-card.inline.svg";
-import ProprietorshipSVG from "../../images/icons/icon-sole-proprietorship.inline.svg";
-import LockpadSVG from "../../images/icons/icon-user-lockpad.inline.svg";
-import ProcentSVG from "../../images/icons/icon-user-percentge.inline.svg";
-import BillSVG from "../../images/icons/icon-person-bill.inline.svg";
-import FolderProcentSVG from "../../images/icons/icon-folder-procent.inline.svg";
 import { color } from "../../atomic/atoms/styles/colors";
 import { shadow } from "../../atomic/atoms/styles/shadows";
 
@@ -56,27 +51,27 @@ export const tabPages = {
 		},
 		{
 			name: `Entity Search & Name`,
-			path: `/illinois-corporation/how-to-name-your-corporation`,
+			path: `/illinois-corporation/how-to-name-your-corporation/`,
 			icon: PenSVG,
 		},
 		{
 			name: `Registered Agents`,
-			path: `/illinois-corporation/registered-agents-illinois`,
+			path: `/illinois-corporation/registered-agents-illinois/`,
 			icon: RegisteredAgentSVG,
 		},
 		{
 			name: `Corporation Requirements`,
-			path: `/illinois-corporation/form-filling-permit-requirements`,
+			path: `/illinois-corporation/form-filling-permit-requirements/`,
 			icon: PrinterSVG,
 		},
 		{
 			name: `Taxes & Fees`,
-			path: `/illinois-corporation/taxes-and-fees-for-your-corporation`,
+			path: `/illinois-corporation/taxes-and-fees-for-your-corporation/`,
 			icon: PriceTagSVG,
 		},
 		{
 			name: `What To Do After?`,
-			path: `/illinois-corporation/know-your-ongoing-filing-requirements`,
+			path: `/illinois-corporation/know-your-ongoing-filing-requirements/`,
 			icon: CoffeeSVG,
 		},
 	],
@@ -133,7 +128,7 @@ export const corporation = [
 			list: [
 				"Sole proprietorships and partnerships are the simplest type of business. They do not provide any special protections or benefits to entrepreneurs and can make your personal assets vulnerable. We do not recommend them.",
 				`Limited Liability Companies (LLCs) are a great option for smaller businesses. They are quick and easy to create, inexpensive to administer, light on regulation and have simple taxation and rules. You can <a href="/illinois-llc/">learn how to create an LLC in Illinois here.</a>`,
-				`S Corporations are the simplest type of corporation an entrepreneur can create and are good for many types of businesses. The regulations, taxation, compliance and legalities are more complex than for an LLC, but they do provide tax advantages for their owners. You can <a href="what-is-s-corporation/">find more information on S Corporations here.</a>`,
+				`S Corporations are the simplest type of corporation an entrepreneur can create and are good for many types of businesses. The regulations, taxation, compliance and legalities are more complex than for an LLC, but they do provide tax advantages for their owners. You can <a href="/what-is-s-corporation/">find more information on S Corporations here.</a>`,
 				`C Corporations are the most complex type of corporation. They are best for large businesses and are a necessity if the business will be traded on public stock markets. C Corporations have much more significant regulation, compliance and legalities; they are not as tax efficient as S Corporations or LLCs. You can <a href="/what-is-c-corporation/">find more information on C Corporations here.</a>`,
 				`Other business entity structures include nonprofits, Limited Liability Partnerships (LLPs) and B Corporations, but they will not be relevant for the majority of entrepreneurs.`,
 			],
@@ -693,7 +688,7 @@ export const corporation = [
 				"It is easy to transfer ownership in an S Corporation by selling your stock.",
 				`In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax. Find out how this can save you money using our <a href="/s-corporation-tax-calculator/">S Corporation tax calculator.</a>`,
 				`LLCs can <a href="/research-topics/llc-info/can-a-limited-liability-company-llc-be-taxed-as-an-s-corporation/">choose to be taxed as S Corporations</a> to take advantage of this.`,
-				`You can find more <a href="/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/">advantages of forming an S Corporation</a> in Illinois.`,
+				`You can find more <a href="https://www.incfile.com/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/">advantages of forming an S Corporation</a> in Illinois.`,
 			],
 		},
 		color: color.green3,
@@ -834,7 +829,7 @@ export const corporation = [
 				},
 				{
 					question: "Step Four — Draft Your Articles of Incorporation",
-					answer: `The legal document required to create your new corporation is called the <a href="/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile/">Articles of Incorporation</a>. You will need to gather various details for your Illinois filing including:`,
+					answer: `The legal document required to create your new corporation is called the <a href="https://www.incfile.com/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile/">Articles of Incorporation</a>. You will need to gather various details for your Illinois filing including:`,
 					list: [
 						"The corporation’s name",
 						"The corporation’s purpose",
@@ -1026,7 +1021,7 @@ export const naming = [
         <li>A corporate fiduciary, unless otherwise allowed by the Corporate Fiduciary Act</li>
         </ul>`,
 				"The Illinois corporation name can’t suggest affiliation with any federal or state government entity or agency.",
-				`You can also be an Illinois corporation with a different “doing business as” name. In Illinois these are known as “assumed names” and need to be registered with the Secretary of State. Learn about <a href="/blog/post/understanding-dba-doing-business-as/">DBA names</a> in your state.`,
+				`You can also be an Illinois corporation with a different “doing business as” name. In Illinois these are known as “assumed names” and need to be registered with the Secretary of State. Learn about <a href="https://www.incfile.com/blog/post/understanding-dba-doing-business-as/">DBA names</a> in your state.`,
 			],
 		},
 		color: color.orange3,
@@ -1048,7 +1043,7 @@ export const naming = [
 				"By registering a corporation, the name will automatically be held for your business. You would normally only reserve a name if you are not planning on forming the new company anytime soon.",
 				"A name can be used to form any type of business entity, not just a corporation.",
 				"Just filing a name registration doesn’t guarantee you will be granted the name. You should wait until your corporation is legally formed before using the name for anything else.",
-				`You might also want to use a “<a href="/blog/post/understanding-dba-doing-business-as/">Doing Business As (DBA)</a>” or “Assumed Name” if you are trading under a different name than your official company name.`,
+				`You might also want to use a “<a href="https://www.incfile.com/blog/post/understanding-dba-doing-business-as/">Doing Business As (DBA)</a>” or “Assumed Name” if you are trading under a different name than your official company name.`,
 			],
 		},
 		color: color.green3,
@@ -1100,7 +1095,7 @@ export const naming = [
 	},
 	{
 		type: "text",
-		content: `Fortunately, we have some good advice on seeking out the perfect business name for your Illinois corporation. <a href="/blog/post/llc-name-search-50-states/">Check out our guidance on naming your business</a> and get inspired.`,
+		content: `Fortunately, we have some good advice on seeking out the perfect business name for your Illinois corporation. <a href="https://www.incfile.com/blog/post/llc-name-search-50-states/">Check out our guidance on naming your business</a> and get inspired.`,
 		marginBottom: 48,
 	},
 	{
@@ -1383,7 +1378,7 @@ export const filing = [
 	},
 	{
 		type: "text",
-		content: `<a href="/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile/">The Articles of Incorporation</a> are the formal documents filed with the Illinois Secretary of State to create your corporation. They provide certain information about your business. Once the documents are filed with the Secretary of State, they legally create your business as a corporation in Illinois. Here’s what’s typically included:`,
+		content: `<a href="https://www.incfile.com/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile/">The Articles of Incorporation</a> are the formal documents filed with the Illinois Secretary of State to create your corporation. They provide certain information about your business. Once the documents are filed with the Secretary of State, they legally create your business as a corporation in Illinois. Here’s what’s typically included:`,
 		marginBottom: 24,
 	},
 	{

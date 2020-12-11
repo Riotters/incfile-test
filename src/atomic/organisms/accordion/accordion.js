@@ -319,8 +319,8 @@ const AccordionFaq = ({
 			)}
 			<TabsWrapper maxWidth={maxWidth}>
 				<Accordion allowZeroExpanded={true}>
-					{content.items.map((item) => (
-						<TabBox>
+					{content.items.map((item, i) => (
+						<TabBox key={i}>
 							<AccordionItem>
 								<TabHeading>
 									<AccordionItemButton>
@@ -358,8 +358,8 @@ const AccordionFaq = ({
 
 										{item.list && (
 											<ul>
-												{item.list.map((listitem) => (
-													<li>{parse(listitem)}</li>
+												{item.list.map((listitem, i) => (
+													<li key={i}>{parse(listitem)}</li>
 												))}
 											</ul>
 										)}
@@ -383,7 +383,7 @@ const AccordionFaq = ({
 
 										{item.answer2 &&
 											item.answer2.map((e, i) => (
-												<div>
+												<div key={i}>
 													{e.type === "paragraph" && (
 														<Paragraph
 															mixed={true}

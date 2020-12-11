@@ -29,12 +29,12 @@ const AboutSection = ({ className, content }) => (
     <Oval className="oval" height="420" width="420" top="62" right="0">
       <Oval2SVG />
     </Oval>
-    <ImageContent image="cash-register">
+    <ImageContent image="cash-register" alt="Prepare and File an S Corporation Tax Election">
       <Heading size="3">{content.header}</Heading>
       <Paragraph big mixed bottomMargin="72">
         {parse(content.text)}
       </Paragraph>
-      <Button content={content.button[0]} theme="secondary56" arrow margin="0 auto 0 0" className="small" />
+      <Button extends content={content.button[0]} theme="secondary56" arrow margin="0 auto 0 0" className="small" />
     </ImageContent>
   </About>
 );

@@ -11,9 +11,6 @@ import Searchbar from "../atomic/molecules/form/help-center-searchbar";
 //Texts
 import {
 	top,
-	about,
-	help,
-	faq,
 	rocket,
 	categories,
 	service,
@@ -28,7 +25,7 @@ const HelpCenter = () => (
 		/>
 		<Top
 			imageName="mrs-bulb-question-7726"
-			imageAlt="Mrs Bulb and with checklist"
+			imageAlt=""
 			ovalColor="darkblue"
 		>
 			<h1>{top.header}</h1>

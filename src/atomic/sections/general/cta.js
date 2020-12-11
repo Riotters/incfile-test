@@ -130,40 +130,19 @@ const Cta = ({ cta, storageKey = false, onViewportEntry = false }) => {
 								<Map>
 									<MapSVG />
 								</Map>
-								{/* <VisibilitySensor partialVisibility once>
-                                    {({isVisible}) =>  */}
-								<h2
-								//className={isVisible ? "slideUp enter" : "slideUp"}
-								>
-									{cta
-										? cta.header
-										: "Choose the right and\u00A0start your business"}
+								<h2>
+									{cta ? cta.header : "Choose the right and\u00A0start your business"}
 								</h2>
-								{/* }
-                                </VisibilitySensor>
-                                <VisibilitySensor partialVisibility once>
-                                    {({isVisible}) =>  */}
-								<p
-								//className={isVisible ? "slideUp enter" : "slideUp"}
-								>
-									$0 + State Fee & FREE Registered Agent for 1st year.
-								</p>
-								{/* }
-                                </VisibilitySensor>
-                                <VisibilitySensor partialVisibility once>
-                                    {({isVisible}) =>  */}
+								<p> $0 + State Fee & FREE Registered Agent for 1st year.</p>
 								<Button
-									//className={isVisible ? "slideUp enter" : "slideUp"}
 									content={{
-										text: cta?.button.text ?? `Start Now`,
+										text: cta?.button?.text ?? `Start Now`,
 										url: `${process.env.ORDER_URL}/form-order-now.php`,
 									}}
 									theme="primary56"
 									arrow
 									marginSM="0 auto"
 								/>
-								{/* }
-                                </VisibilitySensor> */}
 							</Content>
 						</Container>
 					</>
@@ -179,40 +158,19 @@ const Cta = ({ cta, storageKey = false, onViewportEntry = false }) => {
 							<Map>
 								<MapSVG />
 							</Map>
-							{/* <VisibilitySensor partialVisibility once>
-								{({ isVisible }) => ( */}
-							<h2
-							//className={isVisible ? "slideUp enter" : "slideUp"}
-							>
-								{cta
-									? cta.header
-									: "Choose the right and\u00A0start your business"}
-							</h2>
-							{/* )}
-							</VisibilitySensor> */}
-							{/* <VisibilitySensor partialVisibility once>
-								{({ isVisible }) => ( */}
-							<p
-							//className={isVisible ? "slideUp enter" : "slideUp"}
-							>
-								$0 + State Fee & FREE Registered Agent for 1st year.
+							<h2> {cta ? cta.header : "Choose the right and\u00A0start your business"}</h2>
+							<p>
+								{cta?.text ?? `$0 + State Fee & FREE Registered Agent for 1st year.`}
 							</p>
-							{/* )}
-							</VisibilitySensor>
-							<VisibilitySensor partialVisibility once>
-								{({ isVisible }) => ( */}
 							<Button
-								//className={isVisible ? "slideUp enter" : "slideUp"}
 								content={{
-									text: cta?.button.text ?? `Start Now`,
-									url: `${process.env.ORDER_URL}/form-order-now.php`,
+									text: cta?.button?.text ?? `Start Now`,
+									url: cta?.button?.url ?? `${process.env.ORDER_URL}/form-order-now.php`,
 								}}
 								theme="primary56"
 								arrow
 								marginSM="0 auto"
 							/>
-							{/* )}
-							</VisibilitySensor> */}
 						</Content>
 					</Container>
 				</>

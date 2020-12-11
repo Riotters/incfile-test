@@ -32,7 +32,7 @@ const ComparisonChart = () => {
 			/>
 			<Top
 				imageName="mr-bulb-business-entity-comparison-9338"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt=""
 				ovalColor="sun"
 				tabletVariantClass="tablet--shopper"
 				tabletImgPosX={35}

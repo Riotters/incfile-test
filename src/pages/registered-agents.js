@@ -78,13 +78,13 @@ const RegisteredAgents = () => {
 
 			<Top
 				imageName="mr-bulb-registered-agents"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt="registered agent"
 				ovalColor="sun"
 				headlineWidth="585"
 			>
 				<h1>{top.header}</h1>
 				<Buttonsbox>
-					<Button content={top.buttons[0]} theme="primary56" arrow />
+					<Button externalLink content={top.buttons[0]} theme="primary56" arrow />
 				</Buttonsbox>
 				<RatingRow>
 					<CartBlock />
@@ -114,7 +114,7 @@ const RegisteredAgents = () => {
 							postDownloadAction={postDownload}
 						/>
 					)}
-					{formSubmitted && <ThankYouContent modalExit={popup} />}
+					{formSubmitted && <ThankYouContent modalExit={popup} fileDownload={hsForm.fileDownload} />}
 				</LightBoxContent>
 			</LightBoxModal>
 		</Layout>
@@ -155,7 +155,7 @@ const LightBoxContent = styled.div`
 	@media screen and (min-width: 769px) {
 		padding-top: 0;
 		max-width: 600px;
-		max-height: 80vh;
+		max-height: 90vh;
 	}
 
 	form {

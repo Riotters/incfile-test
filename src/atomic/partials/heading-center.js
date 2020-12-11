@@ -6,6 +6,7 @@ import VisibilitySensor from "../../components/VisibilitySensor";
 import ContentCenter from "./content-center";
 import Button from "../molecules/buttons/button";
 import { Heading } from "../atoms/typography/heading";
+import ChooseHeadingType from "../atoms/typography/ConditionalHeading";
 
 const Wrapper = styled.div`
 	position: relative;
@@ -44,6 +45,7 @@ const TextCenterLayout = ({
 	headline,
 	headlineSize = 2,
 	headlineSizeTemplate = 2,
+	paragraphHeading = false,
 	headlineWidth,
 	text,
 	textWidth,
@@ -70,19 +72,6 @@ const TextCenterLayout = ({
 			bottomMarginLG={bottomMarginLG}
 		>
 			<ContentCenter>
-				{headline && (
-					//   <VisibilitySensor partialVisibility once>
-					//     {({ isVisible }) =>
-					<Heading
-						size={headlineSize}
-						template={headlineSizeTemplate}
-						//className={isVisible ? "slideUp enter" : "slideUp"}
-					>
-						{parse(headline)}
-					</Heading>
-					// }
-					//   </VisibilitySensor>
-				)}
 				{text && (
 					//   <VisibilitySensor partialVisibility once>
 					//     {({ isVisible }) =>
@@ -94,6 +83,16 @@ const TextCenterLayout = ({
 					//     }
 					//   </VisibilitySensor>
 				)}
+				{headline && (
+					//   <VisibilitySensor partialVisibility once>
+					//     {({ isVisible }) =>
+					<ChooseHeadingType content={headline}
+									   paragraphHeader={paragraphHeading}
+									   headerSize={headlineSize}
+									   headerTemplateSize={headlineSizeTemplate} />
+					// }
+					//   </VisibilitySensor>
+					)}
 				{linkText && !useButton && (
 					//   <VisibilitySensor partialVisibility once>
 					//     {({ isVisible }) =>

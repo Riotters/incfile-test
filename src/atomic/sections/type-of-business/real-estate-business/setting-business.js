@@ -27,7 +27,7 @@ const SettingBusiness = () => (
           <Heading size={3} template={4}>Permits & Licenses</Heading>
           <p>
             Running a real estate business comes with certain rules, regulations and legalities you need to be aware of. Incfile can conduct a <Link to="/business-license-research-package/">Business License Research</Link> package for you, or you can take the time to do the research yourself. Check
-            out our <Link to="/blog/post/how-to-maintain-your-real-estate-business-with-proper-permits-licenses-insurance-other-legalities/">blog post on real estate business legalities to follow for more information</Link>.
+            out our <Link to="https://www.incfile.com/blog/post/how-to-maintain-your-real-estate-business-with-proper-permits-licenses-insurance-other-legalities/">blog post on real estate business legalities to follow for more information</Link>.
           </p>
         </TopImageBox>
 
@@ -67,7 +67,7 @@ const SettingBusiness = () => (
         <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
           <Heading size={3} template={4}>Employees</Heading>
           <p>
-            Do you need to hire employees to help you out? <Link to="/blog/post/avoid-confusion-when-hiring/">Read our 10 must-know tips for hiring for your business</Link>.
+            Do you need to hire employees to help you out? <Link to="https://www.incfile.com/blog/post/avoid-confusion-when-hiring/">Read our 10 must-know tips for hiring for your business</Link>.
           </p>
         </TopImageBox>
       </ImageBoxes>

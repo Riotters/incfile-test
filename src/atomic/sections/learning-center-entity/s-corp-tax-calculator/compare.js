@@ -23,7 +23,7 @@ const About = styled.section`
     padding-bottom: 120px;
   }
 
-  p {
+  p:not(.i-believe-i-can-be-a-h3):not(.i-believe-i-can-be-a-h4) {
     color: ${color.grey2};
   }
 
@@ -48,7 +48,7 @@ const AboutSection = ({ className, content }) => (
       <OvalSVG />
     </Oval>
     <ImageContent image="llc-as-tax-crop-about-6724">
-      <Heading size="3" bottomMargin="32">
+      <Heading size={2} template={3} left bottomMargin="32">
         {content.header}
       </Heading>
       <Paragraph big bottomMargin="16">
@@ -57,8 +57,8 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="16">
         {content.text2}
       </Paragraph>
-      <IconListColorBox color={color.orange3} content={content.box} bottomMargin="48" rounded />
-      <Heading size="3" bottomMargin="24">
+      <IconListColorBox color={color.orange3} content={content.box} bottomMargin="48" rounded paragraphHeader />
+      <Heading size={2} template={3} left bottomMargin="24">
         {content.header2}
       </Heading>
       <Paragraph big bottomMargin="32">
@@ -67,7 +67,7 @@ const AboutSection = ({ className, content }) => (
       {/* <Circle height="80" width="80" circleColor={color.green2} bottomMargin="32">
         <ResonableSalarySVG />
       </Circle> */}
-      <Heading size="3" bottomMargin="16">
+      <Heading size={2} template={3} left bottomMargin="16">
         {content.header3}
       </Heading>
       <Paragraph big bottomMargin="32">
@@ -76,7 +76,7 @@ const AboutSection = ({ className, content }) => (
       {/* <Circle height="80" width="80" circleColor={color.purple2} bottomMargin="32">
         <LLCDeclaringSVG />
       </Circle> */}
-      <Heading size="3" bottomMargin="16">
+      <Heading size={2} template={3} left bottomMargin="16">
         {content.header4}
       </Heading>
       <Paragraph big bottomMargin="0">

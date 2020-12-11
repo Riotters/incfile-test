@@ -45,7 +45,7 @@ const IsItForYou = () => (
         </Container>
 
         <ContentCenter contentWidth={770}>
-            <Heading size={3} style={{fontSize: "40px"}} maxWidth={770}>
+            <Heading size={3} style={{fontSize: "40px", lineHeight: `45px`}} maxWidth={770}>
                 What Are the Main Skills, Expertise and Experience Needed to Be a Successful Franchise Entrepreneur?
             </Heading>
             <Paragraph big>

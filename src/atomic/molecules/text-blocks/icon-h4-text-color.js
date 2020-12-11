@@ -8,7 +8,7 @@ import { color } from "../../atoms/styles/colors";
 import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/top-left-bottom-right.inline.svg";
 import ArrowLink from "../buttons/text";
-import {PHeading} from "../../atoms/typography/p-as-heading";
+import {PHeading} from "../../atoms/typography/p-to-heading";
 
 const dotColor = (circleColor) => {
 	switch (circleColor) {
@@ -121,7 +121,7 @@ const IconTextColorBox = ({
 					<Icon />
 				</div>
 				{content.header ? (
-					<ChooseHeading headingSizeTemplate={headingSizeTemplate} headingSize={headingSize} paragraphHeader={paragraphHeader} content={content.header}/>
+					<ChooseHeading headingSizeTemplate={headingSizeTemplate} headingSize={headingSize} paragraphHeader={paragraphHeader} content={content.header} left />
 				) : null}
 				{content.text && (
 					<Paragraph mixed bottomMargin="0">

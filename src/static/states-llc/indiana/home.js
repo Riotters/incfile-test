@@ -515,7 +515,7 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `<a href="/blog/post/llc-name-search-50-states/" target="_blank">Incfile guide to choosing a business name.</a>`,
+    content: `<a href="https://www.incfile.com/blog/post/llc-name-search-50-states/" target="_blank">Incfile guide to choosing a business name.</a>`,
     marginBottom: 48,
   },
 ];
@@ -867,9 +867,9 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function/" target="_blank">The Main Functions of an Indiana Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/" target="_blank">The Main Functions of an Indiana Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Indiana Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent/registered-agent-tasks/" target="_blank" >What an Indiana Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What an Indiana Registered Agent Does</a>`,
       ],
     },
     marginBottom: 0,

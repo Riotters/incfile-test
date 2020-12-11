@@ -3,7 +3,7 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
-import { HeadingP } from "../../atomic/atoms/typography/heading-as-p";
+import { HeadingP } from "../../atomic/atoms/typography/heading-to-p";
 import { color } from "../../atomic/atoms/styles/colors";
 //Sections
 import Top from "../../atomic/partials/top";
@@ -44,7 +44,7 @@ const FloridaCorporation = () => {
 		<Layout>
 			<SEO
 				title="Managing Your Florida S Corp or C Corp After Formation"
-				description="Learn about the taxes and fees you'll be required to pay for your Florida corporation, plus find out the tax differences between FL S Corps and C Corps"
+				description="You've formed your Florida corporation, now what? We'll walk you through what you need to think about to get your business on the path to success."
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"

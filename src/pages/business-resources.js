@@ -10,7 +10,6 @@ import Top from "../atomic/partials/top";
 import About from "../atomic/sections/learning-center-entity/business-resources/about";
 import Resources from "../atomic/sections/learning-center-entity/business-resources/resources";
 import FurtherResources from "../atomic/sections/learning-center-entity/business-resources/further-resources";
-import Articles from "../components/partials/sections/articles";
 import { ThankYouContent } from "../components/hubspot/thank-you-modal";
 import HSFormModal from "../components/hubspot/standard-post-form-modal";
 
@@ -20,8 +19,7 @@ import {
 	about,
 	resources,
 	furtherResources,
-	form,
-	thanks_form,
+	form
 } from "../static/learning-center-entity/business-resources";
 import ArrowLink from "../atomic/molecules/buttons/text";
 
@@ -76,7 +74,7 @@ const BusinessResources = () => {
 			/>
 			<Top
 				imageName="mr-bulb-business-downloads-tools-7829"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt=""
 				ovalColor="purple-2"
 				headlineWidth="585"
 			>
@@ -90,8 +88,7 @@ const BusinessResources = () => {
 			<About content={about} />
 			<Resources content={resources} openModal={popup} />
 			<FurtherResources id="js-further-resource" content={furtherResources} />
-			<Articles />
-
+			
 			<LightBoxModal visible={modalVisible} className="modal-overlay">
 				<LightBoxContent
 					style={{ pointerEvents: "all" }}

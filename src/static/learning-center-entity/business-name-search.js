@@ -114,7 +114,7 @@ export const faq = {
       },
       {
         question: `How Do I Find the Right Business Name?`,
-        answer: `We can help. We have a<a href="/blog/post/llc-name-search-50-states/"> complete guide to choosing the
+        answer: `We can help. We have a<a href="https://www.incfile.com/blog/post/llc-name-search-50-states/"> complete guide to choosing the
         right [state abbr] business name</a> — you'll want to choose a name that will mean something to your customers, explain what you do,
         help people remember who you are, strengthen your brand and be unique to your vision.`,
       },

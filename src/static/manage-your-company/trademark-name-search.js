@@ -1,6 +1,6 @@
 export const top = {
   header: `Register a Trademark`,
-  text: `Only $199 + Federal fee`,
+  text: `Only $199 + Federal filing fee`,
   button: [
     {
       text: "Get started",
@@ -43,22 +43,19 @@ export const faq = {
     items: [
       {
         question: `How broad is my trademark protection?`,
-        answer: `In oculis quidem faciunt, ut labore et via procedat oratio quaerimus igitur, quid bonum esse ratione intellegi posse et molestiae non recusandae itaque negat opus esse appetendum, 
-                    alterum aspernandum sentiamus alii autem, quibus ego assentior, cum a philosophis compluribus permulta dicantur, cur verear, ne ferae.`,
+        answer: `This includes filing the trademark in one series and one class. Additional legal fees and filing fees will apply if you decide to file a trademark in more than one class.`,
       },
       {
         question: `Can I cancel my order?`,
-        answer: `The trademark will be filed within 3 business days upon receiving the desired trademark and performing a search. 
-                    If it's determined after the search that the name has a low likelihood for approval, you can request a refund before the application is filed.`,
+        answer: `The trademark will be filed within 3 business days upon receiving the desired trademark and performing a search. If it's determined after the search that the name has a low likelihood for approval, you can request a refund before the application is filed.`,
       },
       {
         question: `How long will it take for my trademark to be filed?`,
-        answer: `Trademark approval times can vary based on demand but generally fall in the window of 3-4 months. Despite the delayed approval time, you will be able to monitor the status of the trademark online as it's going through the approval process.`,
+        answer: `The preparing and filing a Tradmark application takes anywhere from 3 - 7 days based on the time to complete the search and the application. In some instances the process may take longer given the complexity of the mark.`,
       },
       {
         question: `What level of support can I expect through this process?`,
-        answer: `Once you have submitted your business name or <a href='https://www.squadhelp.com/LogoDesignContests' rel="nofollow">logo</a>, an attorney will conduct the initial search and discuss the results via email or phone. 
-                    The attorney will then prepare the filing application and submit to the United States Patent and Trademark Office. You will be able to track the approval status and contact us with any questions you may have while awaiting for the approval.`,
+        answer: `Once you have submitted your business name or logo, an attorney will conduct the initial search and discuss the results via email or phone. The attorney will then prepare the filing application and submit to the United States Patent and Trademark Office. You will be able to track the approval status and contact us with any questions you may have while awaiting for the approval.`,
       },
       {
         question: `How long will the Trademark process take?`,

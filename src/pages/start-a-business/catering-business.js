@@ -52,7 +52,7 @@ const CateringBusiness = () => (
 	<Layout>
 		<SEO
 			title="How to Start a Catering Business | Food Service Provider Business"
-			description="Producing delicious food and experiences for your customers is a great way to make a living. "
+			description="Do you enjoy being a chief but not working in a hot kitchen for the day? Try opening a catering and food service provider where you can enjoy different venues."
 		/>
 
 		<Top
@@ -546,7 +546,7 @@ const CateringBusiness = () => (
 
 					<Paragraph big mixed={true} style={{ marginTop: "50px" }}>
 						We’ve got the perfect{" "}
-						<Link to="/blog/post/keys-successful-business-plan/">
+						<Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">
 							guide to writing your business plan.
 						</Link>
 					</Paragraph>

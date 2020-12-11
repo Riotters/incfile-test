@@ -6,7 +6,7 @@ export const about = {
     },
     {
       text: `Individual State Information`,
-      url: `/research-topics/state-info`,
+      url: `/research-topics/individual-state-info/`,
     },
   ],
   header: `How To Publish Your Notice Of Incorporation In Georgia`,
@@ -49,19 +49,4 @@ export const about = {
   text6: `There is no penalty in Georgia for failure to publish a notice of intent to incorporate.`,
   header10: `Does Georgia Secretary of State want proof that you published your annual statement?`,
   text7: `Do not file your proof of publication with the Secretary of State of Georgia.  Keep your affidavit with your corporate records.`,
-};
-
-export const related = {
-  header: `Related Articles`,
-  text: `Other users were also interested in knowing about…`,
-  buttons: [
-    {
-      header: `How to Meet New York LLC Publication Requirements?`,
-      url: `/research-topics/state-info/ny-publication-requirement/`,
-    },
-    {
-      header: `How To Publish Your Notice Of Incorporation In Georgia?`,
-      url: `/research-topics/state-info/publish-inc-notice-georgia/`,
-    },
-  ],
 };

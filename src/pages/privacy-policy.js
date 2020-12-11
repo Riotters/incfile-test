@@ -13,7 +13,7 @@ const CompareStateTimes = () => (
 			title="IncFile.com LLCC Privacy Policy"
 			description="Incfile.com Privacy Policy Incformation"
 		/>
-		<Top content={top} />
+		<Top content={top} headingParagraph />
 		<LegalSections content={legal_sections} contentWidth={1170} />
 	</Layout>
 );

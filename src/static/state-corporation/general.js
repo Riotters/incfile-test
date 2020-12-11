@@ -13,7 +13,7 @@ export const quickLinks = {
             text: `Learn everything you need to launch your home business.`,
             link: {
                 text: `Learn more`,
-                url: `/blog/post/shocking-us-home-based-business-statistics/`,
+                url: `https://www.incfile.com/blog/post/shocking-us-home-based-business-statistics/`,
             },
         },
         {
@@ -37,7 +37,7 @@ export const quickLinks = {
             text: `Read our guide to the 10 things your business plan needs.`,
             link: {
                 text: `Learn more`,
-                url: `/blog/post/keys-successful-business-plan/`,
+                url: `https://www.incfile.com/blog/post/keys-successful-business-plan/`,
             },
         },
         {
@@ -45,7 +45,7 @@ export const quickLinks = {
             text: `Check out our list of free entrepreneur workshops, seminars, business training and webinars.`,
             link: {
                 text: `Learn more`,
-                url: `/blog/post/free-online-event-for-entrepreneurs/`,
+                url: `https://www.incfile.com/blog/post/free-online-event-for-entrepreneurs/`,
             },
         },
         {
@@ -93,7 +93,7 @@ export const learnMore = {
       },
       {
         header: `Operating Agreement`,
-        url: `/research-topics/llc-info/llc-operating-agreement/`,
+        url: `/research-topics/llc-info/the-llc-operating-agreement/`,
       },
       {
         header: `Members`,

@@ -28,6 +28,7 @@ const BusinessOwnerResponsibilities = styled.section`
   h2.title {
     font-size: 40px;
     padding-bottom: 24px;
+    line-height: 48px;
   }
 
   .box {
@@ -74,7 +75,7 @@ const BusinessPlan = () => (
     <Container>
       <BusinessOwnerResponsibilities>
         <Heading size={2} template={4} left className="title">
-          Common Questions About Delaware Company Searches
+        Your Construction Company Needs a Plan
         </Heading>
         <Paragraph big>
           A business plan is critical for a construction business. All businesses need a business model, which is how you will generate sales, provide services and make money. Think about your construction business model now, because it’s better to have that in place so you can start acquiring
@@ -146,7 +147,7 @@ const BusinessPlan = () => (
         </CountingTextBoxed>
 
         <Paragraph big style={{ marginTop: "50px" }} mixed={true}>
-          We’ve got the perfect <Link to="/blog/post/keys-successful-business-plan/">guide to writing your business plan.</Link>
+          We’ve got the perfect <Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">guide to writing your business plan.</Link>
         </Paragraph>
       </BusinessOwnerResponsibilities>
     </Container>

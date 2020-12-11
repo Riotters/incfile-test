@@ -167,7 +167,7 @@ export const faq = {
         },
         {
           text: `This article`,
-          url: "/research-topics/c-corporation-info/form-2553/",
+          url: "/research-topics/c-corporation-info/what-is-the-form-2553/",
         },
         {
           text: `gives you all the details you need.`,

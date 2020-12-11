@@ -11,6 +11,7 @@ import Curve from "../../../atoms/icons/curve";
 import Oval2SVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import CurveSVG from "../../../../images/curves/bottom-left-top-right-big.inline.svg";
 import TextCheck from "../../../molecules/static-check/circle-checkmark-text";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const Requirements = styled.section`
   position: relative;
@@ -84,7 +85,7 @@ const RequirementsSection = ({ className, content }) => (
                     <CurveSVG />
                 </Curve>
                 <Heading size="2" bottomMargin="56" maxWidth="500">{content.header}</Heading>
-                <Heading size="3" template={4}>{content.header2}</Heading>
+                <PHeading size="3" template={4}>{content.header2}</PHeading>
                 <Paragraph big bottomMargin="0">{content.text}</Paragraph>
                 <List>
                     {content.list.map(i => (

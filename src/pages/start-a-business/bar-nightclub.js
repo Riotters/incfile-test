@@ -50,7 +50,7 @@ const BarNightclub = () => (
 	<Layout>
 		<SEO
 			title="How to Start a Bar or Nightclub | A Guide to Bar Businesses"
-			description="Opening a bar, nightclub or pub business is a great way to give your customers the perfect place to meet, drink and socialize. The combination of a good location, friendly staff, great selection and the right ambiance can really help set you apart and make your bar successful."
+			description="Our business guide explores everything you need to do to set up your bar or club business and maximize your chances for success. Learn more."
 		/>
 
 		<Top
@@ -674,7 +674,7 @@ const BarNightclub = () => (
 
 					<Paragraph big mixed={true} style={{ marginTop: "50px" }}>
 						We’ve got the perfect{" "}
-						<Link to="/blog/post/keys-successful-business-plan/">
+						<Link to="https://www.incfile.com/post/keys-successful-business-plan/">
 							guide to writing your business plan.
 						</Link>
 					</Paragraph>

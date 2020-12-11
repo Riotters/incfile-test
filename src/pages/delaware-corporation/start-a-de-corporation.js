@@ -3,7 +3,7 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
-import { HeadingP } from "../../atomic/atoms/typography/heading-as-p";
+import { HeadingP } from "../../atomic/atoms/typography/heading-to-p";
 import { color } from "../../atomic/atoms/styles/colors";
 //Sections
 import Top from "../../atomic/partials/top";
@@ -39,7 +39,7 @@ const DelawareCorporation = () => {
 		<Layout>
 			<SEO
 				title="How to Start a Corporation in Delaware - 6 Easy Steps "
-				description="Thinking of starting an S Corp, C Corp, or LLC in Delaware? Learn about corporations in Delaware and decide which business type is right for you."
+				description="Thinking of starting an S Corp, C Corp, or LLC in Delaware? Learn about corporations in FL and decide which business type is right for you."
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"

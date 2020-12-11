@@ -60,7 +60,7 @@ const Bakery = () => (
 	<Layout>
 		<SEO
 			title="How to Start a Bakery | Opening a Baking Business"
-			description="Bakeries are a growing industry in the US. It’s easy to see why, as people shop for their daily bread or seek out cakes and other sweet treats. Specialty baking is on the rise too, with products designed for people who have particular dietary choices or digestive issues."
+			description="Bakeries are a growing industry in the US. Read our guide to starting a successful bakery business and get your company off the ground today."
 		/>
 
 		<Top
@@ -608,7 +608,7 @@ const Bakery = () => (
 
 					<Paragraph big mixed={true} style={{ marginTop: "50px" }}>
 						We’ve got the perfect{" "}
-						<Link to="/blog/post/keys-successful-business-plan/">
+						<Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">
 							guide to writing your business plan.
 						</Link>
 					</Paragraph>

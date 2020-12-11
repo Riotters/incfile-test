@@ -371,7 +371,7 @@ const Footer = () => (
               <Link to={`${process.env.ORDER_URL}/form-order-now.php`}>Pricing</Link>
             </li>
             <li>
-              <Link to="/blog/">Blog</Link>
+              <Link to="https://www.incfile.com/blog/">Blog</Link>
             </li>
             <li>
               <Link to="/about/">About</Link>

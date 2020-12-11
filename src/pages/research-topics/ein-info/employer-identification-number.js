@@ -18,7 +18,7 @@ import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 import { top, rocket, categories, service, tools } from "../../../static/learning-center-entity/help-center-article";
 import { about, related } from "../../../static/research-topics/ein-info/identification-number";
 import {Heading} from "../../../atomic/atoms/typography/heading";
-import {HeadingP} from "../../../atomic/atoms/typography/heading-as-p";
+import {HeadingP} from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => (
   <Layout>

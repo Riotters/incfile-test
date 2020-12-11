@@ -558,10 +558,9 @@ export const namingYourBusiness = [
     marginBottom: 40,
     color: color.blue3,
   },
-
   {
     type: `text`,
-    content: `<a href="/blog/post/llc-name-search-50-states/" target="_blank" rel="noopener noreferrer">Incfile guide to choosing a business name</a>`,
+    content: `<a href="https://www.incfile.com/blog/post/llc-name-search-50-states/" target="_blank" rel="noopener noreferrer">Incfile guide to choosing a business name</a>`,
     marginBottom: 32,
   },
 ];
@@ -1066,7 +1065,6 @@ export const feesAndRequirments = [
   {
     type: `dynamic_filing_requirement`,
   },
-
   {
     type: `text`,
     content: `<a href="/business-filing-deadlines/">Learn about your ongoing Alaska LLC filing requirements</a> and business filing deadlines with our helpful Alaska ongoing filing lookup tool.`,
@@ -1687,7 +1685,7 @@ export const requirements = {
                 type: `arrow-links`,
                 content: {
                   text: `State Filing Times`,
-                  url: `/`,
+                  url: `/state-filing-times/`,
                 },
                 bottomMargin: 16,
               },
@@ -1695,7 +1693,7 @@ export const requirements = {
                 type: `arrow-links`,
                 content: {
                   text: `State Filing Prices`,
-                  url: `/`,
+                  url: `/state-filing-fees/`,
                 },
               },
             ],

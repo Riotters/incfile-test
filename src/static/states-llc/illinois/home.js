@@ -90,7 +90,7 @@ export const HomePageContent = {
         groupBtn1: [
           {
             header: `Learn More About Illinois Registered Agents`,
-            url: `/illinois-llc/registered-agents-Illinois-llc/`,
+            url: `/illinois-llc/registered-agents-illinois-llc/`,
           },
           {
             header: `Get A Free Registered Agent When You Incorporate With Incfile`,
@@ -134,7 +134,7 @@ export const HomePageContent = {
           subtitle: `for You for $0 + the Illinois State fee`,
           button: {
             text: `Form Your LLC Now For Free`,
-            url: `form-order-now.php?entityType=LLC&entityState=IL`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IL`,
           },
         },
       },
@@ -148,7 +148,7 @@ export const HomePageContent = {
         text2: `Many states require that a company have an Operating Agreement in place — it isn’t legally required in Illinois, but it’s a good idea to have one nonetheless.`,
         button1: {
           text: `Learn More About Operating Agreements Here`,
-          url: `/blog/post/operating-agreement-llc/`,
+          url: `https://www.incfile.com/blog/post/operating-agreement-llc/`,
         },
         cta: {
           title: `Receive a personalized <br>operating agreement`,
@@ -289,7 +289,7 @@ export const HomePageContent = {
               marginBottom: `24px`,
             },
             text: `Illinois Registered Agents`,
-            url: `/illinois-llc/registered-agents-Illinois-llc/`,
+            url: `/illinois-llc/registered-agents-illinois-llc/`,
           },
         ],
       },

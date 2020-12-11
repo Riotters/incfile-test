@@ -10,8 +10,7 @@ export const top = {
 };
 
 export const about = {
-	header: `New Jersey is the most densely populated state in the U.S., with major cities of its own plus easy access to New York to the north and Philadelphia to the south.`,
-	text: `New Jersey is a wealthy state and a leader across several industries including telecommunications, investment, finance, pharmaceuticals, manufacturing, chemical production and food processing.`,
+	text: `<span>New Jersey is the most densely populated state in the U.S., with major cities of its own plus easy access to New York to the north and Philadelphia to the south.</span> New Jersey is a wealthy state and a leader across several industries including telecommunications, investment, finance, pharmaceuticals, manufacturing, chemical production and food processing.`,
 	box: {
 		header: `If you're thinking of forming a new New Jersey corporation or LLC, you can start by finding the perfect name.`,
 		text: `Look up your proposed business name in New Jersey and see if it's available for you form a corporation or LLC. We'll check your proposed business name against the registry of businesses held by the New Jersey Division of Revenue and Enterprise Services.`,
@@ -82,11 +81,11 @@ export const startBusiness = {
 	text: `Ready to start your business? Incfile will take care of the paperwork for you and file it with the New Jersey Division of Revenue and Enterprise Services - all for as little as $0 + state fee.`,
 	button: {
 		text: `NJ LLC`,
-		url: `/new-jersey-llc`,
+		url: `/new-jersey-llc/`,
 	},
 	button2: {
 		text: `NJ Corporation`,
-		url: `/new-jersey-corporation`,
+		url: `/new-jersey-corporation/`,
 	},
 };
 
@@ -101,14 +100,14 @@ export const faq = {
 				},
 				{
 					text: `NJ LLC`,
-					url: `/new-jersey-llc`,
+					url: `/new-jersey-llc/`,
 				},
 				{
 					text: `or`,
 				},
 				{
 					text: `NJ Corporation`,
-					url: `/new-jersey-corporation`,
+					url: `/new-jersey-corporation/`,
 				},
 				{
 					text: `guides for more information.`,
@@ -146,7 +145,7 @@ export const faq = {
 				},
 				{
 					text: `file an amendment on your behalf,`,
-					url: `/manage-your-compaNJ/amendment`,
+					url: `/manage-your-company/amendment`,
 				},
 				{
 					text: `including changing the name of your New Jersey corporation or LLC.`,
@@ -161,7 +160,7 @@ export const faq = {
 				},
 				{
 					text: `complete guide to choosing the right NJ business name`,
-					url: `/blog/post/llc-name-search-50-states/`,
+					url: `https://www.incfile.com/blog/post/llc-name-search-50-states/`,
 				},
 				{
 					text: `— you'll want to choose a name that will:`,

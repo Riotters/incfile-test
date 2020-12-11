@@ -16,7 +16,7 @@ import { top, steps, next, essentials, info } from "../static/other/how-it-works
 const GeneralResearchTopics = () => (
   <Layout>
     <SEO title="How Incfile Works | Using a Business Formation Service" description="LLC formation, registered agent, compliance, and startup services — all in one place.  Learn how to make forming a business easy." />
-    <Top imageName="mr-bulb-how-it-works-2002" imageAlt="Mrs Bulb and with checklist" ovalColor="purple-2" headlineWidth="500" textWidth="800">
+    <Top imageName="mr-bulb-how-it-works-2002" imageAlt="how it works" ovalColor="purple-2" headlineWidth="500" textWidth="800">
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <RatingRow topMargin="0">

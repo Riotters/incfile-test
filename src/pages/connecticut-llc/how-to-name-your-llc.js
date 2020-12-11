@@ -29,7 +29,7 @@ const BusinessNamesPage = () => {
 		<Layout>
 			<SEO
 				title="Connecticut Business Entity Search | Register a Company Name in CT"
-				description="Learn what you need to know about naming an LLC in Connecticut with Incfile's helpful resources. Pick your perfect business name today!"
+				description="Learn what you need to know about naming an LLC in CT with Incfile’s helpful resources. Pick your perfect business name today!"
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} />

@@ -59,7 +59,7 @@ const CleaningBusiness = () => (
 	<Layout>
 		<SEO
 			title="How to Start a Cleaning Business | Why Start a Janitorial Company"
-			description="Starting a cleaning business can be an ideal way to begin your journey as an entrepreneur. Although they may seem simple, cleaning businesses have a lot going for them."
+			description="Starting a Janitorial company requires very little start-up cost but can reward you well with hard work. See INCFILES cleaning company tips for start-ups."
 		/>
 
 		<Top
@@ -591,7 +591,9 @@ const CleaningBusiness = () => (
 
 			<Container>
 				<CenterBox>
-					<Heading>Write a Business Plan for Your Cleaning Business</Heading>
+					<Heading size={2} left>
+						Write a Business Plan for Your Cleaning Business
+					</Heading>
 
 					<Paragraph big>
 						Finally, you should put your business plan together. Business plans
@@ -658,7 +660,7 @@ const CleaningBusiness = () => (
 
 					<Paragraph big mixed={true} style={{ marginTop: "50px" }}>
 						We’ve got the perfect{" "}
-						<Link to="/blog/post/keys-successful-business-plan/">
+						<Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">
 							guide to writing your business plan.
 						</Link>
 					</Paragraph>

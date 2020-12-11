@@ -100,7 +100,7 @@ export const howToGuide = [
           question: `STEP 2: Search for and Choose a Unique Business Name for Your Delaware LLC`,
           answer: `<p>You will need a distinctive and original name for your Delaware LLC that’s not used by any other business in DE. This means searching the business registry of the Delaware Division of Corporations. Fortunately, we’ve made that easy with our business search tool. Just enter your proposed business name and we’ll look it up on the registry and let you know if it’s already in use by an LLC or corporation.</p></br>
                    <p>Alternatively, you can visit the Delaware Division of Corporations website and carry out a search. There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Delaware LLC.</p></br>
-                   <a href="/delaware-llc/how-to-name-your-llc/"> Learn about Delaware LLC business naming rules. </a>`,
+                   <a href="/delaware-llc/delaware-business-names/"> Learn about Delaware LLC business naming rules. </a>`,
         },
         {
           question: `STEP 3: Provide an Official Address for your DE LLC`,
@@ -180,12 +180,12 @@ export const howToGuide = [
         {
           question: `Form a Delaware Series LLC`,
           answer: `<p>In Delaware, you also have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master, umbrella LLC. These can be very useful if you don’t want to set up a separate Delaware LLC for every individual business you run.</p></br>
-          <a href="/blog/post/series-llc-why-need-one/">Decide if a Delaware Series LLC is right for your new business.</a>`,
+          <a href="https://www.incfile.com/blog/post/series-llc-why-need-one/">Decide if a Delaware Series LLC is right for your new business.</a>`,
         },
         {
           question: `Form a Foreign LLC in Delaware`,
           answer: `<p>If your business is already operating in another state and expanding to Delaware, you’ll need to form a foreign LLC.</p></br>
-                   <a href="/delaware-llc/form-filling-permit-requirements/">Find more information on Delaware filing and licensing requirements here</a>`,
+                   <a href="/delaware-llc/fees-filing-requirements/">Find more information on Delaware filing and licensing requirements here</a>`,
         },
       ],
     },
@@ -206,7 +206,7 @@ export const howToGuide = [
   {
     type: `header`,
     size: 3,
-    content: `<a href="/delaware-llc/how-to-name-your-llc/">Naming Your Delaware LLC</a>`,
+    content: `<a href="/delaware-llc/delaware-business-names/">Naming Your Delaware LLC</a>`,
     marginBottom: 16,
   },
   {
@@ -228,7 +228,7 @@ export const howToGuide = [
   {
     type: `header`,
     size: 3,
-    content: `<a href="/delaware-llc/form-filling-permit-requirements/">Fees and Requirements for Your Delaware LLC</a>`,
+    content: `<a href="/delaware-llc/fees-filing-requirements/">Fees and Requirements for Your Delaware LLC</a>`,
     marginBottom: 16,
   },
   {
@@ -479,7 +479,7 @@ export const namingYourBusiness = [
         {
           question: `How Do I Search for My Delaware LLC Business Name?`,
           answer: `Just use our <a href="/business-name-search/">business name search tool</a> and enter your proposed business name. We’ll search the register of the Delaware Division of Corporations and let you know if there are any DE corporations or LLCs with that name.</br></br>
-                   <a href="/blog/post/llc-name-search-50-states/">Incfile guide to choosing a business name</a>`,
+                   <a href="https://www.incfile.com/blog/post/llc-name-search-50-states/">Incfile guide to choosing a business name</a>`,
         },
         {
           question: `Get a Street Address for Your Delaware LLC`,
@@ -565,10 +565,9 @@ export const namingYourBusiness = [
     marginBottom: 40,
     color: color.blue3,
   },
-
   {
     type: `text`,
-    content: `<a href="/blog/post/llc-name-search-50-states/">Incfile guide to choosing a business name</a>`,
+    content: `<a href="https://www.incfile.com/blog/post/llc-name-search-50-states/">Incfile guide to choosing a business name</a>`,
     marginBottom: 32,
   },
 ];
@@ -933,9 +932,9 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Delaware Registered Agentt</a>`,
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Delaware Registered Agentt</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Delaware Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent/registered-agent-tasks/">What a Delaware Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Delaware Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1166,7 +1165,6 @@ export const feesAndRequirments = [
     size: 2,
     template: 3,
     style: { fontSize: `28px`, lineHeight: `36px` },
-
     marginBottom: 32,
   },
   {

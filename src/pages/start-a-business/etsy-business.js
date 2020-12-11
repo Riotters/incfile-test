@@ -57,7 +57,7 @@ const EtsyBusiness = () => (
 	<Layout>
 		<SEO
 			title="How to Start an Etsy Business | Guide to Starting an Etsy Shop | Guide to Starting an Etsy Shop"
-			description="Etsy has opened up the world of creativity and ecommerce to a whole new generation of entrepreneurs."
+			description="Want to turn your crafting into an online business? Our Etsy business guide has all the information you need to get started. Learn more."
 		/>
 
 		<Top
@@ -636,7 +636,7 @@ const EtsyBusiness = () => (
 
 					<Paragraph big mixed={true} style={{ marginTop: "50px" }}>
 						We’ve got the perfect{" "}
-						<Link to="/blog/post/keys-successful-business-plan/">
+						<Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">
 							guide to writing your business plan.
 						</Link>
 					</Paragraph>

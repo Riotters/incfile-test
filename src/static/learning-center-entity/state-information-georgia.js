@@ -23,7 +23,6 @@ import ArrowLeftSVG from "../../images/icons/icon-user-arrow-left.inline.svg";
 import ChatSVG from "../../images/icons/icon-chat.inline.svg";
 import BoardSVG from "../../images/icons/icon-board-of-directors.inline.svg";
 import UserCheckmarkSVG from "../../images/icons/icon-user-checkmark.inline.svg";
-import FolderProcentSVG from "../../images/icons/icon-folder-procent.inline.svg";
 import TodoSVG from "../../images/icons/icon-todo-list.inline.svg";
 import QuestionSVG from "../../images/icons/icon-chat-question-mark.inline.svg";
 import IdSVG from "../../images/icons/icon-registered-id.inline.svg";
@@ -39,7 +38,7 @@ export const top = {
 	buttons: [
 		{
 			text: `See detailed pricing`,
-			url: `${process.env.ORDER_URL}/form-order-now.php`,
+			url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=GA`,
 		},
 	],
 };
@@ -69,32 +68,32 @@ export const tabPages = {
 		},
 		{
 			name: `How To Guide`,
-			path: `/georgia-corporation/start-a-ga-corporation`,
+			path: `/georgia-corporation/start-a-ga-corporation/`,
 			icon: EntitySVG,
 		},
 		{
 			name: `Naming Your Corporation`,
-			path: `/georgia-corporation/how-to-name-your-corporation`,
+			path: `/georgia-corporation/how-to-name-your-corporation/`,
 			icon: PenSVG,
 		},
 		{
 			name: `Registered Agents`,
-			path: `/georgia-corporation/registered-agents-georgia`,
+			path: `/georgia-corporation/registered-agents-georgia/`,
 			icon: RegisteredAgentSVG,
 		},
 		{
 			name: `Filing Requirements`,
-			path: `/georgia-corporation/form-filling-permit-requirements`,
+			path: `/georgia-corporation/form-filling-permit-requirements/`,
 			icon: PrinterSVG,
 		},
 		{
 			name: `Taxes & Fees`,
-			path: `/georgia-corporation/taxes-and-fees-for-your-corporation`,
+			path: `/georgia-corporation/taxes-and-fees-for-your-corporation/`,
 			icon: PriceTagSVG,
 		},
 		{
 			name: `After Formation`,
-			path: `/georgia-corporation/know-your-ongoing-filing-requirements`,
+			path: `/georgia-corporation/know-your-ongoing-filing-requirements/`,
 			icon: CoffeeSVG,
 		},
 	],
@@ -144,7 +143,7 @@ export const corporation = [
 	{
 		type: "text",
 		content:
-			"Here’s a quick overview of each type of <a href='/georgia-entity-search'>business entity</a>.",
+			"Here’s a quick overview of each type of <a href='/georgia-entity-search/'>business entity</a>.",
 		marginBottom: 24,
 	},
 	{
@@ -286,7 +285,7 @@ export const corporation = [
 		type: "button",
 		content: {
 			text: "File From 2553 with the IRS via Incfile",
-			url: "/s-corp-election-form/",
+			url: `${process.env.ORDER_URL}/s-corp-election-form`,
 		},
 		theme: "primary56",
 		marginBottom: 64,
@@ -375,7 +374,7 @@ export const corporation = [
 		content: {
 			text: "Learn more about the advantages of forming an S Corporation. ",
 			url:
-				"/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/",
+				"https://www.incfile.com/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/",
 		},
 		marginBottom: 48,
 	},
@@ -1465,7 +1464,7 @@ export const agents = [
 		type: "arrow-link",
 		content: {
 			text: "The Main Functions of a Georgia Registered Agent",
-			url: "/research-topics/general-research/registered-agent-function/",
+			url: "/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/",
 		},
 		marginBottom: 24,
 	},
@@ -1481,7 +1480,7 @@ export const agents = [
 		type: "arrow-link",
 		content: {
 			text: "What a Georgia Registered Agent Does",
-			url: "/research-topics/registered-agent/registered-agent-tasks/",
+			url: "/research-topics/registered-agent-help/what-does-a-registered-agent-do/",
 		},
 		marginBottom: 24,
 	},
@@ -1995,7 +1994,7 @@ export const taxes = [
 				{
 					question: "1. Fees for forming a corporation in Georgia",
 					answer:
-						"Learn about <a href='h/state-filing-fees/'>standard filing costs here</a> for GA corporations.",
+						"Learn about <a href='/state-filing-fees/'>standard filing costs here</a> for GA corporations.",
 				},
 				{
 					question: "2. Georgia State Annual Report Fee",
@@ -2296,7 +2295,7 @@ export const afterFormation = [
 	{
 		type: "text",
 		content:
-			"Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a> and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/ manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
+			"Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a> and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
 		marginBottom: 48,
 	},
 	{

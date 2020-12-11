@@ -60,11 +60,11 @@ class LLC extends React.Component {
                     productDescription="Learn about the benefits of forming an LLC, the legal protections it offers you, and if an LLC is the right choice for your business."                
                 />
 
-                <Top imageName="mr-bulb-llc" imageAlt="Mrs Bulb and with checklist" ovalColor="darkblue">
+                <Top imageName="mr-bulb-llc" imageAlt="what is an LLC" ovalColor="darkblue">
                     <h1>{top.header}</h1>
                     <p>{top.text}</p>
                     <Buttonsbox>
-                        <Button content={top.button[0]} theme="primary56" arrow />
+                        <Button externalLink content={top.button[0]} theme="primary56" arrow />
                     </Buttonsbox>
                 </Top>
                 <About content={about} clickOpenModal={this.popup.bind(this)} />
@@ -74,7 +74,7 @@ class LLC extends React.Component {
                 <LightBoxModal visible={this.state.modalVisible} className="modal-overlay">
                     <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
                         {!this.state.formSubmitted && <HSFormModal hs_form_id="993baef6-066e-4d18-a813-c12bc3b3fff9" content={form} modalExit={this.popup.bind(this)} postDownloadAction={this.postDownload.bind(this)} />}
-                        {this.state.formSubmitted && <ThankYouContent content={thanks_form} modalExit={this.popup.bind(this)} />}
+                        {this.state.formSubmitted && <ThankYouContent content={thanks_form} modalExit={this.popup.bind(this)} fileDownload="https://cdn2.hubspot.net/hubfs/3787982/Content%20Repurpose%20PDFs/Apr19%20-%20LLC%20Page/Apr19%20-%20Why%20Form%20A%20LLC%20(1).pdf" />}
                     </LightBoxContent>
                 </LightBoxModal>
 

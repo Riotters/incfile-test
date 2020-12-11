@@ -113,12 +113,6 @@ const ResultCheckDueDate = ({ content, toggleForm }) => {
                         <Paragraph style={{ color: color.grey2 }} bottomMargin={0}>{content.dueDate}</Paragraph>
                     </FlexRowSpaceBetween>
                 </Whitebox>
-                {/*<Heading size={3} style={{ textAlign: `center`, marginTop: `42px` }}>*/}
-                {/*State Requirement: {content.itemType}*/}
-                {/*</Heading>*/}
-                {/*<Paragraph big mixed={true} style={{ maxWidth: `670px` }}>*/}
-                {/*The {content.itemType} required by the State of {content.state} for <strong>{content.compName}</strong> is due on <strong>{content.dueDate}</strong>*/}
-                {/*</Paragraph>*/}
             </ContentCenter>
             <ContentLeft contentWidth={770} headlineWidth={770}>
 
@@ -134,8 +128,14 @@ const ResultCheckDueDate = ({ content, toggleForm }) => {
 
                 <Buttonsbox style={{ justifyContent: `center` }}>
                     <ButtonLink
-                        content={{ text: `File your annual or biennial report`, url: `${process.env.ORDER_URL}/annual-report.php` }}
-                        theme="primary56" margin="0 0 15px" marginMD="15px"
+                        content={{
+                            text: `File your annual or biennial report`,
+                            url: `${process.env.ORDER_URL}/annual-report.php`
+                        }}
+                        externalLink
+                        theme="primary56"
+                        margin="0 0 15px"
+                        marginMD="15px"
                         arrow
                     />
                     <ButtonAction

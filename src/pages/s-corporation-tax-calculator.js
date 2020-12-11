@@ -16,7 +16,7 @@ import { top, about, differences, calculator, compare } from "../static/learning
 const SCorpTaxCalculator = () => (
   <Layout>
     <SEO title="S-Corporation Tax Calculator" description="Use the S-Corporaton Tax Calculator to compare self employment tax savings over a sole proprietorship" />
-    <Top imageName="mr-bulb-s-corp-tax-0214" imageAlt="Mrs Bulb and with checklist" ovalColor="darkblue" contentWidth="55" headlineWidth="700" imageMobilePosition="0">
+    <Top imageName="mr-bulb-s-corp-tax-0214" imageAlt="" ovalColor="darkblue" contentWidth="55" headlineWidth="700" imageMobilePosition="0">
       <h1>{top.header}</h1>
       <RatingRow topMargin="48">
         <CartBlock />
@@ -24,7 +24,7 @@ const SCorpTaxCalculator = () => (
       </RatingRow>
     </Top>
     <About content={about} />
-    <Differences content={differences} />
+    <Differences content={differences} paragraphHeader />
     <Calculator content={calculator} />
     <Compare content={compare} />
   </Layout>

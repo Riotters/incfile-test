@@ -18,6 +18,7 @@ const HeadingWrapper = styled.div`
 			props.flexAlign && "align-items: " + props.flexAlignValue + ";"}
     ${(props) =>
 			props.flexJustify && "justify-content: " + props.flexJustifyValue + ";"}
+    ${props => props.left ? "text-align: left;" : "text-align: initial;"}
     
     span.big {
         font-family: Avenir, sans-serif;
@@ -56,6 +57,7 @@ export const HeadingP = ({
 	topMargin,
 	bottomPadding,
 	maxWidth,
+    left,
 	color,
 	className,
 	style,
@@ -71,8 +73,9 @@ export const HeadingP = ({
 		maxWidth={maxWidth}
 		color={color}
 		relative={relative}
-		className={className + " p"}
+        className={className ? `${className} p` : "p"}
 		style={style}
+        left={left}
 		big={big}
 	>
 		{children}

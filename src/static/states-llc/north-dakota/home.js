@@ -206,7 +206,7 @@ export const howToGuide = [
   {
     type: `header`,
     size: 3,
-    content: `<a href="/north-dakota-llc/north-dakota-business-names/">Naming Your North Dakota LLC</a>`,
+    content: `<a href="/north-dakota-llc/how-to-name-your-llc/">Naming Your North Dakota LLC</a>`,
     marginBottom: 16,
   },
   {
@@ -518,7 +518,7 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `<a href="/blog/post/llc-name-search-50-states/" target="_blank" rel="noopener noreferrer">Incfile guide to choosing a business name.</a>`,
+    content: `<a href="https://www.incfile.com/blog/post/llc-name-search-50-states/" target="_blank" rel="noopener noreferrer">Incfile guide to choosing a business name.</a>`,
     marginBottom: 48,
   },
 ];
@@ -911,9 +911,9 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function/" target="_blank">The Main Functions of a North Dakota Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/" target="_blank">The Main Functions of a North Dakota Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your North Dakota Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent/registered-agent-tasks/" target="_blank" >What a North Dakota Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What a North Dakota Registered Agent Does</a>`,
       ],
     },
     marginBottom: 0,

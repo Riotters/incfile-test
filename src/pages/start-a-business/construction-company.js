@@ -37,13 +37,13 @@ const ConstructionCompany = () => (
 	<Layout>
 		<SEO
 			title="How to Start a Construction Company | Stats, Tips & Trends"
-			description="The need for residential, commercial or industrial property is constantly growing as the population increases."
+			description="Whether you're a residential, commercial or industrial builder, get your construction business off the ground with our simple startup guide. Read more."
 		/>
 
 		<Top
 			ovalColor="sun"
 			imageName="construction-company-main"
-			imageAlt="Mr Bulb with seedling"
+			imageAlt="set up a construction business"
 			headlineWidth={700}
 		>
 			<h1>How to Start a Construction Company</h1>
@@ -52,7 +52,8 @@ const ConstructionCompany = () => (
 				constantly growing as the population increases.
 			</p>
 			<ButtonsBox>
-				<Button
+                <Button
+                    extends
 					theme="primary56"
 					marginMD="0 24px 0 0"
 					arrow

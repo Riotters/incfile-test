@@ -3,7 +3,7 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
-import { HeadingP } from "../../atomic/atoms/typography/heading-as-p";
+import { HeadingP } from "../../atomic/atoms/typography/heading-to-p";
 import { color } from "../../atomic/atoms/styles/colors";
 //Sections
 import Top from "../../atomic/partials/top";
@@ -40,7 +40,7 @@ const CaliforniaCorporation = () => {
 		<Layout>
 			<SEO
 				title="Managing Your California S Corp or C Corp"
-				description="From annual reports to business licenses and permits, learn about the forms and filing requirements for your California corporation."
+				description="You've formed your California corporation, now what? We'll walk you through what you need to think about to get your business on the path to success."
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"

@@ -166,7 +166,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `<a href="/blog/post/series-llc-why-need-one/" target="_blank">Decide if an Arkansas Series LLC is right for your new business</a>`,
+    content: `<a href="https://www.incfile.com/blog/post/series-llc-why-need-one/" target="_blank">Decide if an Arkansas Series LLC is right for your new business</a>`,
     marginBottom: 24,
   },
   {
@@ -535,10 +535,9 @@ export const namingYourBusiness = [
     marginBottom: 40,
     color: color.blue3,
   },
-
   {
     type: `text`,
-    content: `<a href="/blog/post/llc-name-search-50-states/" target="_blank" rel="noopener noreferrer">Incfile guide to choosing a business name</a>`,
+    content: `<a href="https://www.incfile.com/blog/post/llc-name-search-50-states/" target="_blank" rel="noopener noreferrer">Incfile guide to choosing a business name</a>`,
     marginBottom: 32,
   },
 ];

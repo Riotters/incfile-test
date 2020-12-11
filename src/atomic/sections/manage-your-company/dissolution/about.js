@@ -44,13 +44,13 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="72">
         {content.text3}
       </Paragraph>
-      <Heading size={3} bottomMargin="24">
+      <Heading size={2} template={3} left bottomMargin="24">
         {content.header2}
       </Heading>
       <Paragraph big bottomMargin="40">
         {content.text4}
       </Paragraph>
-      <NumericList content={content.list} bottomMargin="48" />
+      <NumericList content={content.list} bottomMargin="48" paragraphHeaders={true} />
       <Paragraph big bottomMargin="0">
         {content.text5}
       </Paragraph>

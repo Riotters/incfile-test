@@ -37,7 +37,7 @@ const RealEstateBusiness = () => (
 	<Layout>
 		<SEO
 			title="Real Estate Investing | How to Start a Real Estate Business"
-			description="Whether you want to buy, sell, develop, or rent out real estate, there are plenty of opportunities in the residential and commercial sectors."
+			description="Whether you want to buy, sell, develop, or rent out real estate, there are plenty of opportunities in the residential and commercial sectors. Learn more."
 		/>
 
 		<Top
@@ -548,9 +548,9 @@ const RealEstateBusiness = () => (
 
 						<Paragraph big mixed={true} style={{ marginTop: "48px" }}>
 							Check out our additional guidance in{" "}
-							<Link to="/blog/post/is-starting-a-real-estate-business-right-for-you/">
+							<a href="https://www.incfile.com/blog/post/is-starting-a-real-estate-business-right-for-you/">
 								understanding if a real estate business is right for you
-							</Link>
+							</a>
 							. In this blog post, we'll help you analyze your real estate
 							business idea, conduct market research and build a business plan.
 						</Paragraph>

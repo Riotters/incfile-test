@@ -7,6 +7,7 @@ import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/bottom-left-top-right.inline.svg";
+import ChooseHeadingType from "../../atoms/typography/ConditionalHeading";
 
 const Wrapper = styled.div`
     display: flex;
@@ -45,7 +46,7 @@ const ColorBox = styled.div`
 
 const colorBlue = color.blue1;
 
-const SCorpTaxBox = ({ className, image, headingSize = 3, headingSizeTemplate = 4, color, content, curve }) => {
+const SCorpTaxBox = ({ className, image, headingSize = 3, headingSizeTemplate = 4, paragraphHeading = false, color, content, curve }) => {
   return (
     <Wrapper className={className}>
         {curve && (
@@ -56,15 +57,28 @@ const SCorpTaxBox = ({ className, image, headingSize = 3, headingSizeTemplate = 
         <ImageWrapper>
             <Image filename={image} />
         </ImageWrapper>
-        <Heading size={headingSize} template={headingSizeTemplate} bottomMargin="16">
-          {content.header}
-        </Heading>
+        <ChooseHeadingType
+            headerSize={headingSize}
+            headerTemplateSize={headingSizeTemplate}
+            paragraphHeader={paragraphHeading}
+            content={content.header}
+            bottomMargin={16} />
+
+        {/*<Heading size={headingSize} template={headingSizeTemplate} bottomMargin="16">*/}
+          {/*{content.header}*/}
+        {/*</Heading>*/}
         <Paragraph maxWidth="358">{content.text}</Paragraph>
         {content.boxes.map(box => (
             <ColorBox color={color}>
-                <Heading size="4" bottomMargin="16">
-                    {box.header}
-                </Heading>
+                <ChooseHeadingType
+                    headerSize={4}
+                    paragraphHeader={paragraphHeading}
+                    bottomMargin={16}
+                    content={box.header}
+                />
+                {/*<Heading size="4" bottomMargin="16">*/}
+                    {/*{box.header}*/}
+                {/*</Heading>*/}
                 <Paragraph bottomMargin="0">{box.text}</Paragraph>
             </ColorBox>
         ))}

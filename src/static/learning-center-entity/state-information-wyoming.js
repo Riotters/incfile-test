@@ -763,7 +763,7 @@ export const corporation = [
         "It is easy to transfer ownership in an S Corporation by selling your stock.",
         "In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax. Find out how this can save you money using our <a href='/s-corporation-tax-calculator/'>S Corporation tax calculator</a>.",
         "LLCs can <a href='/research-topics/llc-info/can-a-limited-liability-company-llc-be-taxed-as-an-s-corporation/'>choose to be taxed as S Corporations</a> to take advantage of this.",
-        "You can find more <a href='/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/'>advantages of forming an S Corporation</a> in Wyoming.",
+        "You can find more <a href='https://www.incfile.com/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/'>advantages of forming an S Corporation</a> in Wyoming.",
       ],
     },
     color: color.green3,
@@ -906,7 +906,7 @@ export const corporation = [
         {
           question: "Step Four — Draft Your Articles of Incorporation",
           answer:
-            "The legal document required to create your new corporation is called the <a href='/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile/'>Articles of Incorporation</a>. You will need to gather various details for your Wyoming filing including:",
+            "The legal document required to create your new corporation is called the <a href='https://www.incfile.com/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile/'>Articles of Incorporation</a>. You will need to gather various details for your Wyoming filing including:",
           list: [
             "The corporation’s name",
             "The corporation’s mailing address and street address",
@@ -1087,7 +1087,7 @@ export const naming = [
         "The Wyoming corporation name can’t suggest affiliation with any federal or state government entity or agency.",
         "The Wyoming corporation name may not imply a purpose that it would be unlawful for the business to conduct.",
         "The following words require special permission to use in a corporation name:",
-        "You can also be a Wyoming corporation with a different “doing business as” name. In Wyoming these are known as “trade names” and need to be registered with the Secretary of State. Learn about <a href='/blog/post/understanding-dba-doing-business-as/'>fictitious names</a> in your state.",
+        "You can also be a Wyoming corporation with a different “doing business as” name. In Wyoming these are known as “trade names” and need to be registered with the Secretary of State. Learn about <a href='https://www.incfile.com/blog/post/understanding-dba-doing-business-as/'>fictitious names</a> in your state.",
       ],
     },
     color: color.orange3,
@@ -1109,7 +1109,7 @@ export const naming = [
         "By registering a corporation, the name will automatically be held for your business. You would normally only reserve a name if you are not planning on forming the new company anytime soon.",
         "A name can be used to form any type of business entity, not just a corporation.",
         "Just filing a name registration doesn’t guarantee you will be granted the name. You should wait until your corporation is legally formed before using the name for anything else.",
-        "You might also want to use a <a href='/blog/post/understanding-dba-doing-business-as/'>“Doing Business As (DBA)”</a> or “Trade Name” if you are trading under a different name than your official company name.",
+        "You might also want to use a <a href='https://www.incfile.com/blog/post/understanding-dba-doing-business-as/'>“Doing Business As (DBA)”</a> or “Trade Name” if you are trading under a different name than your official company name.",
       ],
     },
     color: color.green3,
@@ -1167,7 +1167,7 @@ export const naming = [
   {
     type: "text",
     content:
-      "Fortunately, we have some good advice on seeking out the perfect business name for your Wyoming corporation. <a href='/blog/post/llc-name-search-50-states/'>Check out our guidance on naming your business and get inspired.</a>",
+      "Fortunately, we have some good advice on seeking out the perfect business name for your Wyoming corporation. <a href='https://www.incfile.com/post/llc-name-search-50-states/'>Check out our guidance on naming your business and get inspired.</a>",
     marginBottom: 48,
   },
   {
@@ -1451,7 +1451,7 @@ export const filing = [
   {
     type: "text",
     content:
-      "The <a href='/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile/'>Articles of Incorporation</a> are the formal documents filed with the Wyoming Secretary of State to create your corporation. They provide certain information about your business. Once the documents are filed with the Secretary of State, they legally create your business as a corporation in Wyoming. Here’s what’s typically included:",
+      "The <a href='https://www.incfile.com/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile/'>Articles of Incorporation</a> are the formal documents filed with the Wyoming Secretary of State to create your corporation. They provide certain information about your business. Once the documents are filed with the Secretary of State, they legally create your business as a corporation in Wyoming. Here’s what’s typically included:",
     marginBottom: 24,
   },
   {
@@ -2033,7 +2033,7 @@ export const afterFormation = [
   {
     type: "text",
     content:
-      "Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a> and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/ manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
+      "Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a> and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
     marginBottom: 48,
   },
   {

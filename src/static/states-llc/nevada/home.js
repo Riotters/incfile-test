@@ -169,7 +169,7 @@ export const howToGuide = [
         {
           question: `Professional LLCs`,
           answer: `<p>In Nevada, you also have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master, umbrella LLC. These can be very useful if you don’t want to set up a separate Nevada LLC for every individual business you run.</p></br>
-            <p><a href="/blog/post/series-llc-why-need-one/">Decide if a Nevada Series LLC is right for your new business.</a></p>`,
+            <p><a href="https://www.incfile.com/blog/post/llc-name-search-50-states/">Decide if a Nevada Series LLC is right for your new business.</a></p>`,
         },
         {
           question: `Form a Professional Nevada LLC`,
@@ -922,9 +922,9 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function/" target="_blank">The Main Functions of a Nevada Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/" target="_blank">The Main Functions of a Nevada Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Nevada Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent/registered-agent-tasks/" target="_blank" >What a Nevada Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What a Nevada Registered Agent Does</a>`,
       ],
     },
     marginBottom: 0,

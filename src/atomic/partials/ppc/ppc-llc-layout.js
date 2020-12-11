@@ -20,6 +20,9 @@ import { statesArray } from "../../../static/states-v2";
 const PPCLLCLayout = ({ stateCode, videoID, vimeo, quotes }) => {
     const state = statesArray.filter(state => state.code === stateCode)[0];
     const stateName = state ? state.name : '';
+    const firstCharacterState = state ? state.name.slice(0, 1) : '';
+    const addLetter = (state && ['A', 'E', 'I', 'O', 'U', 'H'].includes(firstCharacterState)) ? 'An' : 'A';
+
     const buttonInfo = {
         text: `Launch My LLC`,
         url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=${stateCode ?? ''}`,
@@ -33,7 +36,7 @@ const PPCLLCLayout = ({ stateCode, videoID, vimeo, quotes }) => {
     const whyChooseIncfile = {
         header: `Why Choose IncFile For Your ${stateName} LLC?`,
         text1: "We're entrepreneurs - just like you.",
-        text2: `An ${stateName} LLC can be the fastest and easiest way to start a business in ${stateName}.`,
+        text2: `${addLetter} ${stateName} LLC can be the fastest and easiest way to start a business in ${stateName}.`,
         text3: `We make registering a company as easy as possible, so you can focus on the important things. Beyond that, we have a full suite of startup services (like banking and bookkeeping), which means Incfile not only helps you get started, but supports you in your continued success as your one-stop shop.`,
         text4: `Our mission is to provide you with a superior and modern experience at an unparalleled value.`
     }

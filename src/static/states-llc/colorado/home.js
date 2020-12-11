@@ -541,7 +541,7 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `<a href="/blog/post/llc-name-search-50-states/" target="_blank" rel="noopener noreferrer">Incfile guide to choosing a business name</a>`,
+    content: `<a href="https://www.incfile.com/blog/post/llc-name-search-50-states/" target="_blank" rel="noopener noreferrer">Incfile guide to choosing a business name</a>`,
     marginBottom: 0,
   },
 ];

@@ -11,7 +11,7 @@ import About from "../atomic/sections/learning-center-entity/sales-tax-calculato
 import Calculator from "../atomic/sections/learning-center-entity/sales-tax-calculator/calculator";
 import TaxRates from "../atomic/sections/learning-center-entity/sales-tax-calculator/tax-rates";
 import Explore from "../atomic/sections/learning-center-entity/sales-tax-calculator/explore";
-import Articles from "../atomic/sections/articles";
+
 //Texts
 import {
 	top,
@@ -74,7 +74,7 @@ const SalesTaxCalculator = () => {
 			/>
 			<Top
 				imageName="mr-bulb-sales-tax-calculator-8937"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt=""
 				ovalColor="purple-2"
 			>
 				<h1>{top.header}</h1>
@@ -102,8 +102,6 @@ const SalesTaxCalculator = () => {
 					<Explore content={explore} />
 				</>
 			)}
-
-			<Articles />
 		</Layout>
 	);
 };

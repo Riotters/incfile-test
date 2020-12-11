@@ -11,12 +11,13 @@ import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color"
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-orange3.inline.svg";
 import parse from "html-react-parser";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const About = styled.section`
   position: relative;
   padding-bottom: 120px;
 
-  p {
+  p:not(.i-believe-i-can-be-a-h3) {
     color: ${color.grey2};
   }
 
@@ -41,7 +42,7 @@ const AboutSection = ({ className, content }) => (
       <OvalSVG />
     </Oval>
     <ImageContent image="s-corporation-tax-calculator-about-3829">
-      <Heading size={2} template={3} left>{content.header}</Heading>
+      <PHeading size={2} template={3} left>{content.header}</PHeading>
       <Paragraph big>{content.text}</Paragraph>
       <Paragraph big>{content.text2}</Paragraph>
       {/* <BoxedButton className="boxed-button boxed-button--1" content={content.button} textColor={color.grey1} />
@@ -55,12 +56,12 @@ const AboutSection = ({ className, content }) => (
         {parse(content.text7)}
       </Paragraph>
       <IconTextColorBox color={color.green3} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve headingSize={3} />
-      <Heading size="3">{content.header2}</Heading>
+      <Heading size={2} template={3} left>{content.header2}</Heading>
       <Paragraph big>{content.text3}</Paragraph>
       <Paragraph big bottomMargin="96">
         {content.text4}
       </Paragraph>
-      <Heading size="3">{content.header3}</Heading>
+      <Heading size={2} template={3} left>{content.header3}</Heading>
       <Paragraph big bottomMargin="0">
         {content.text5}
       </Paragraph>

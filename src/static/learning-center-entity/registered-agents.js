@@ -109,7 +109,7 @@ export const faq = {
 					},
 					{
 						text: `formal Registered Agent service,`,
-						url: `/research-topics/registered-agent/registered-agent-company/`,
+						url: `/research-topics/registered-agent-help/can-the-registered-agent-be-a-company/`,
 					},
 					{
 						text: `anyone associated with your business who wants to take on the responsibility can be your Registered Agent. They will need to understand the legal requirements and implications of performing the role. Note that your company cannot act as its own Registered Agent.`,
@@ -216,7 +216,7 @@ export const learnMore = {
 					},
 					{
 						text: `Read more`,
-						url: `/research-topics/registered-agent/own-registered-agent/`,
+						url: `/research-topics/registered-agent-help/can-i-act-as-my-own-registered-agent/`,
 					},
 				],
 			},
@@ -240,7 +240,7 @@ export const learnMore = {
 					},
 					{
 						text: `Read more`,
-						url: `/research-topics/registered-agent/registered-agent-company/`,
+						url: `/research-topics/registered-agent-help/can-the-registered-agent-be-a-company/`,
 					},
 				],
 			},
@@ -252,7 +252,7 @@ export const learnMore = {
 					},
 					{
 						text: `Read more`,
-						url: `/research-topics/registered-agent/registered-agent-signature/`,
+						url: `/research-topics/registered-agent-help/what-happens-if-i-require-the-signature-of-my-registered-agent/`,
 					},
 				],
 			},
@@ -263,7 +263,8 @@ export const learnMore = {
 export const hsForm = {
 	header: `Download our "Complete Guide to Registered Agents".`,
 	text: `Whether you’re thinking about starting your own business or already running one, it’s important to know the rules and requirements regarding Registered Agents.`,
-	hs_form_id: `f8b25ab5-7a9a-4f21-b7db-425ede0e6750`,
+    hs_form_id: `f92f5280-f918-4e98-8535-a85a1110caad`,
+    fileDownload: `https://cdn2.hubspot.net/hubfs/3787982/Content%20Repurpose%20PDFs/June-19%20(Registered%20Agent)/Incfile%20-%20Find%20Your%20Next%20Registered%20Agent.pdf`,
 	button: {
 		text: "Download now",
 		url: "/",

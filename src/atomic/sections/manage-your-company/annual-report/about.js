@@ -7,6 +7,7 @@ import ImageContent from "../../../partials/left-image-right-content";
 import IconListColorBox from "../../../molecules/text-blocks/icon-h4-list-color";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-green3.inline.svg";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const About = styled.section`
   position: relative;
@@ -23,9 +24,9 @@ const AboutSection = ({ className, content }) => (
       <OvalSVG />
     </Oval>
     <ImageContent image="annual-reports-4383">
-      <Heading size={2} template={3} left bottomMargin="24">
+      <PHeading size={2} template={3} left bottomMargin="24">
         {content.header}
-      </Heading>
+      </PHeading>
       <Paragraph big bottomMargin="40">
         {content.text}
       </Paragraph>
@@ -35,13 +36,13 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="72">
         {content.text3}
       </Paragraph>
-      <Heading size={3} bottomMargin="24">
+      <Heading size={2} template={3} left bottomMargin="24">
         {content.header2}
       </Heading>
       <Paragraph big bottomMargin="72">
         {content.text4}
       </Paragraph>
-      <Heading size={3} bottomMargin="40">
+      <Heading size={2} template={3} left bottomMargin="40">
         {content.header3}
       </Heading>
       <Paragraph big bottomMargin="40">
@@ -51,33 +52,33 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="72">
         {content.text6}
       </Paragraph>
-      <Heading size={3} bottomMargin="24">
+      <Heading size={2} template={3} left bottomMargin="24">
         {content.header4}
       </Heading>
       <Paragraph big bottomMargin="48">
         {content.text7}
       </Paragraph>
-      <Heading size={3} bottomMargin="24">
+      <Heading size={2} template={3} left bottomMargin="24">
         {content.header5}
       </Heading>
       <Paragraph big bottomMargin="40">
         {content.text8}
       </Paragraph>
-      <IconListColorBox color={color.orange3} content={content.box3} bottomMargin="56" rounded />
-      <Heading size={3} bottomMargin="24">
+      <IconListColorBox color={color.orange3} content={content.box3} bottomMargin="56" headingSize={2} headingTemplateSize={4} left rounded />
+      <Heading size={2} template={3} left bottomMargin="24">
         {content.header6}
       </Heading>
       <Paragraph big bottomMargin="48">
         {content.text9}
       </Paragraph>
-      <Heading size={3} bottomMargin="24">
+      <Heading size={2} template={3} left bottomMargin="24">
         {content.header7}
       </Heading>
       <Paragraph big bottomMargin="40">
         {content.text10}
       </Paragraph>
       <IconListColorBox color={color.green3} content={content.box4} bottomMargin="72" rounded />
-      <Heading size={3} bottomMargin="24">
+      <Heading size={2} template={3} left bottomMargin="24">
         {content.header8}
       </Heading>
       <Paragraph big bottomMargin="40">

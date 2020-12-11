@@ -38,7 +38,7 @@ const FaqSection = ({ content }) => {
             {content.map((item, i) => (
                 <div>
                     {item.type === 'heading' && 
-                        <Heading size={item.size} style={item.styles}>{item.content}</Heading>
+                        <Heading size={item.size} style={item.styles}>{parse(item.content)}</Heading>
                     }
                                         
                     {item.type === 'paragraph' && 

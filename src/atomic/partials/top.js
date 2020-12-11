@@ -278,6 +278,10 @@ const TextContainer = styled.div`
 			color: ${color.grey1};
 		}
 	}
+	
+	.p {
+		color: ${color.grey2};
+	}
 `;
 
 const ImageContainer = styled.div`

@@ -28,7 +28,7 @@ const GeorgiaEntitySearch = () => (
 	<Layout>
 		<SEO
 			title="Georgia Business Entity Search | Is Your Name Available?"
-			description="aaa"
+			description="Starting a new business in GA? Check to see if your preferred business name is available with Incfile’s easy name search tool. Try it now."
 		/>
 		<Top
 			imageName="mr-bulb-corporation-california-8302"

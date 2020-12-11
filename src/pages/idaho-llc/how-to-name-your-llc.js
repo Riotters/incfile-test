@@ -25,7 +25,7 @@ const BusinessNamesPage = () => {
 		<Layout>
 			<SEO
 				title="Idaho Business Entity Search & Naming Your LLC"
-				description="Learn what you need to know about naming an LLC in Idaho with Incfile's helpful resources. Pick your perfect business name today!"
+				description="Learn what you need to know about naming an ID LLC with Incfile’s helpful resources. Pick your perfect business name today!"
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} />

@@ -20,6 +20,7 @@ import {
 import ProductSchema from "../../components/product-schema";
 import { Helmet } from "react-helmet";
 import { servicePrice } from "../../helpers/global-variables";
+import {HeadingP} from "../../atomic/atoms/typography/heading-to-p";
 
 const TaxIdEin = () => (
 	<Layout>
@@ -39,7 +40,7 @@ const TaxIdEin = () => (
 			ovalColor="blackpink"
 		>
 			<h1 style={{ maxWidth: "520px" }}>{top.header}</h1>
-			<p>{top.text}</p>
+			<HeadingP size={2} big>{top.text}</HeadingP>
 			<Buttonsbox>
 				<Button content={top.button[0]} theme="primary56" width="200px" arrow />
 			</Buttonsbox>

@@ -32,7 +32,7 @@ const AboutSection = ({ className, content }) => (
 		<Oval className="oval" height="570" width="570" y="-40">
 			<OvalSVG />
 		</Oval>
-		<ImageContent image="annual-report-due-date-tool-3234">
+		<ImageContent image="annual-report-due-date-tool-3234" alt="do vary significantly from state to state">
 			<IconTextColorBox
 				color={color.babyblue3}
 				Icon={IconSVG}

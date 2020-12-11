@@ -25,7 +25,7 @@ const BlogFollowUs = ({ className, content }) => {
         <Whitebox className="follow-us" overflow>
             <Texts />
               {content.map((item, i) => (
-                <Button Icon={icons[i]} text={item.text} url={item.url} />
+                <Button key={i} Icon={icons[i]} text={item.text} url={item.url} />
               ))}
         </Whitebox>
     </Wrapper>

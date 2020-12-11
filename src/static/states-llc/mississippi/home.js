@@ -182,7 +182,7 @@ export const howToGuide = [
         {
           question: `Form a Foreign LLC in Mississippi`,
           answer: `<p>If your business is already operating in another state and expanding to Mississippi, you'll need to form a foreign LLC.</p></br>
-          <p><a href="/Mississippi-llc/form-filling-permit-requirements/">More information on Mississippi filing and licensing requirements here.</a></p>`,
+          <p><a href="/mississippi-llc/fees-filling-requirements/">More information on Mississippi filing and licensing requirements here.</a></p>`,
         },
       ],
     },
@@ -227,7 +227,7 @@ export const howToGuide = [
   {
     type: `header`,
     size: 3,
-    content: `<a href="/mississippi-llc/form-filling-permit-requirements/">Fees and Requirements for Mississippi LLCs</a>`,
+    content: `<a href="/mississippi-llc/fees-filing-requirements/">Fees and Requirements for Mississippi LLCs</a>`,
     marginBottom: 16,
   },
   {
@@ -573,7 +573,7 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `<a href="/blog/post/llc-name-search-50-states/" target="_blank">Incfile guide to choosing a business name</a>`,
+    content: `<a href="https://www.incfile.com/blog/post/llc-name-search-50-states/" target="_blank">Incfile guide to choosing a business name</a>`,
     marginBottom: 48,
   },
 ];
@@ -943,9 +943,9 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Mississippi Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Mississippi Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Mississippi Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent/registered-agent-tasks/">What a Mississippi Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Mississippi Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1171,7 +1171,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `<a href="/research-topics/llc-info/llc-operating-agreement/"> Operating agreement</a>
+    content: `<a href="/research-topics/llc-info/the-llc-operating-agreement/"> Operating agreement</a>
      is a business document that covers how the business will be run, how managers and members are chosen, rights and duties of members and several other key areas.`,
     marginBottom: 16,
   },

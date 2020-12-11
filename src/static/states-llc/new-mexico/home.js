@@ -79,7 +79,7 @@ export const howToGuide = [
           question: `STEP 2: Search for and Choose a Unique Business Name for Your New Mexico LLC`,
           answer: `<p>You will need a distinctive and original name for your Montana LLC that's not used by any other business in MS. To find out if another company is using your chosen business name, carry out a Montana business entity name search on the MT Secretary of State website.</p></br>
                    <p>There are a few rules you'll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your New Mexico LLC.</p></br>
-                   <a href="/New-mexico-llc/how-to-name-your-llc/"> Learn about New Mexico LLC business naming rules.</a>`,
+                   <a href="/new-mexico-llc/how-to-name-your-llc/"> Learn about New Mexico LLC business naming rules.</a>`,
         },
         {
           question: `STEP 3: Provide an Official Address for Your MS LLC`,
@@ -499,7 +499,7 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `<a href="/blog/post/llc-name-search-50-states/" target="_blank">Incfile guide to choosing a business name</a>`,
+    content: `<a href="https://www.incfile.com/blog/post/llc-name-search-50-states/" target="_blank">Incfile guide to choosing a business name</a>`,
     marginBottom: 48,
   },
 ];
@@ -836,9 +836,9 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a New Mexico Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a New Mexico Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your New Mexico Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent/registered-agent-tasks/">What a New Mexico Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a New Mexico Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1068,7 +1068,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `New Mexico LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a> ). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your New Mexico business. You can choose to make changes to the template based on your unique requirements.`,
+    content: `New Mexico LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a> ). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your New Mexico business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 48,
   },
   {

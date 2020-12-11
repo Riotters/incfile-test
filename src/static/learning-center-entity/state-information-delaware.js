@@ -70,32 +70,32 @@ export const tabPages = {
 		},
 		{
 			name: `How To Guide`,
-			path: `/delaware-corporation/start-a-de-corporation`,
+			path: `/delaware-corporation/start-a-de-corporation/`,
 			icon: EntitySVG,
 		},
 		{
 			name: `Naming Your Corporation`,
-			path: `/delaware-corporation/how-to-name-your-corporation`,
+			path: `/delaware-corporation/how-to-name-your-corporation/`,
 			icon: PenSVG,
 		},
 		{
 			name: `Registered Agents`,
-			path: `/delaware-corporation/registered-agents-delaware`,
+			path: `/delaware-corporation/registered-agents-delaware/`,
 			icon: RegisteredAgentSVG,
 		},
 		{
 			name: `Filing Requirements`,
-			path: `/delaware-corporation/form-filling-permit-requirements`,
+			path: `/delaware-corporation/form-filling-permit-requirements/`,
 			icon: PrinterSVG,
 		},
 		{
 			name: `Taxes & Fees`,
-			path: `/delaware-corporation/taxes-and-fees-for-your-corporation`,
+			path: `/delaware-corporation/taxes-and-fees-for-your-corporation/`,
 			icon: PriceTagSVG,
 		},
 		{
 			name: `After Formation`,
-			path: `/delaware-corporation/know-your-ongoing-filing-requirements`,
+			path: `/delaware-corporation/know-your-ongoing-filing-requirements/`,
 			icon: CoffeeSVG,
 		},
 	],
@@ -309,7 +309,7 @@ export const corporation = [
 		type: "button",
 		content: {
 			text: "File From 2553 with the IRS via Incfile",
-			url: "/s-corp-election-form",
+			url: `${process.env.ORDER_URL}/s-corp-election-form`,
 		},
 		theme: "primary56",
 		marginBottom: 64,
@@ -398,7 +398,7 @@ export const corporation = [
 		content: {
 			text: "Learn more about the advantages of forming an S Corporation. ",
 			url:
-				"/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/",
+				"https://www.incfile.com/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/",
 		},
 		marginBottom: 48,
 	},
@@ -1443,7 +1443,7 @@ export const agents = [
 		type: "arrow-link",
 		content: {
 			text: "The Main Functions of a Delaware Registered Agent",
-			url: "/research-topics/general-research/registered-agent-function/",
+			url: "/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/",
 		},
 		marginBottom: 24,
 	},
@@ -1459,7 +1459,7 @@ export const agents = [
 		type: "arrow-link",
 		content: {
 			text: "What a Delaware Registered Agent Does",
-			url: "/research-topics/registered-agent/registered-agent-tasks/",
+			url: "/research-topics/registered-agent-help/what-does-a-registered-agent-do/",
 		},
 		marginBottom: 24,
 	},
@@ -2287,7 +2287,7 @@ export const afterFormation = [
 	{
 		type: "text",
 		content:
-			"Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a> and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/ manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
+			"Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a> and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
 		marginBottom: 48,
 	},
 	{

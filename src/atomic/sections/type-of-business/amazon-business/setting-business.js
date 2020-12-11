@@ -39,9 +39,9 @@ const SettingBusiness = () => (
         <TopImageBox image="state-filling-fees" color={color.yellow3}>
           <Heading size={3} template={4}>Finances & Taxes</Heading>
           <p>
-            What kind of <Link to="https://utility.bankofamerica.com/alliance/?formid=IF1">bank account</Link> will you get? And how will you pay your business taxes? How do you find the{" "}
-            <Link to="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">best business credit card</Link>? These are all important things to consider, so your Amazon business stays in the green.{" "}
-            <Link to="/blog/post/amazon-sellers-finances-taxes/">Check out our quick guide to finances and taxes for Amazon sellers</Link>.
+            What kind of <a href="https://utility.bankofamerica.com/alliance/?formid=IF1">bank account</a> will you get? And how will you pay your business taxes? How do you find the{" "}
+            <a href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">best business credit card</a>? These are all important things to consider, so your Amazon business stays in the green.{" "}
+            <Link to="https://www.incfile.com/blog/post/amazon-sellers-finances-taxes/">Check out our quick guide to finances and taxes for Amazon sellers</Link>.
           </p>
         </TopImageBox>
 
@@ -74,7 +74,7 @@ const SettingBusiness = () => (
           <Heading size={3} template={4}>Software</Heading>
           <p>
             Is there software that can help you manage and market your business? There are dozens of software applications designed specifically to help Amazon sellers.{" "}
-            <Link to="https://www.avalara.com/us/en/blog/2015/07/6-must-have-tools-for-successful-amazon-sellers.html">Here aresome great starting points</Link>.
+            <a href="https://www.avalara.com/us/en/blog/2015/07/6-must-have-tools-for-successful-amazon-sellers.html">Here aresome great starting points</a>.
           </p>
         </TopImageBox>
       </ImageBoxes>

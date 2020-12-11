@@ -145,7 +145,7 @@ export const businessNamesContent = {
       width: `450px`,
       content: {
         text: `Incfile Guide To Choosing A Business Name`,
-        url: `/blog/post/llc-name-search-50-states/`,
+        url: `https://www.incfile.com/blog/post/llc-name-search-50-states/`,
       },
     },
     {
