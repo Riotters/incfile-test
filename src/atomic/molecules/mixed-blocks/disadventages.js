@@ -10,6 +10,7 @@ import ArrowSVG from "../../../images/arrow.inline.svg";
 import Image from "../../atoms/image/image";
 import Whitebox from "../../atoms/boxes/white-box";
 import CloseSVG from "../../../images/icons/x.inline.svg"
+import ChooseHeadingType from "../../atoms/typography/ConditionalHeading";
 
 const Wrapper = styled.div`
     width: 100%;
@@ -26,7 +27,7 @@ const Wrapper = styled.div`
         position: relative;
     }
     
-    h3 {
+    h3, [class*="i-believe-i-can-be-a-h"] {
       text-align: center;
     }
 `;
@@ -76,7 +77,7 @@ const AdeventageLink = styled(Link)`
       }
 `;
 
-const Disdventages = ({className, content, colorStroke, headingSize = 3, headingSizeTemplate = 4, circleBackgroundColor, circleBackgroundShadow, circlePosition, circleText, url, urlText, style, width, imageName}) => {
+const Disdventages = ({className, content, colorStroke, headingSize = 3, headingSizeTemplate = 4, paragraphHeading = false, circleBackgroundColor, circleBackgroundShadow, circlePosition, circleText, url, urlText, style, width, imageName}) => {
     return (
         <Wrapper className={className} style={style}>
             <Whitebox className="box">
@@ -98,7 +99,7 @@ const Disdventages = ({className, content, colorStroke, headingSize = 3, heading
                     </ImageWrapper>
                 }
                 {content.header && (
-                    <Heading size={headingSize} template={headingSizeTemplate} bottomMargin="16">{content.header}</Heading>
+                    <ChooseHeadingType content={content.header} headerSize={headingSize} headerTemplateSize={headingSizeTemplate} paragraphHeader={paragraphHeading} />
                 )}
                 {content.text && (
                     <Paragraph bottomMargin="0">{content.text}</Paragraph>

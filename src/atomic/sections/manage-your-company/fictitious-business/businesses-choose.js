@@ -41,7 +41,7 @@ const BusinessesChooseSection = ({ className, content }) => (
         <Oval height="545" width="720" bottom="0" left="0">
             <OvalSVG2 />
         </Oval>
-        <LeftContentRightObject contentWidth="500" object={<Cards content={content.cards} />}>
+        <LeftContentRightObject contentWidth="500" object={<Cards content={content.cards} paragraphHeaders />}>
             <TextWrapper>
                 <Curve top="50" right="65" color={color.orange1}>
                     <CurveSVG />

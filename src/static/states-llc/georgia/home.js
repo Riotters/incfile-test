@@ -1,11 +1,15 @@
 export const HomePageContent = {
   header: {
     title: `How to Start an LLC in Georgia`,
+    size: 1,
+    template: 1,
     subline: ``,
     boxes: [
       {
-        title: `Learn how to form a </br> Georgia LLC yourself`,
-        desc: `RRead our DIY guide to Georgia LLC formation, with information on Registered Agents, naming rules, business licenses, and more.`,
+        title: `Learn how to form a <br> Georgia LLC yourself`,
+        size: 2,
+        template: 3,
+        desc: `Read our DIY guide to Georgia LLC formation, with information on Registered Agents, naming rules, business licenses, and more.`,
         button: {
           text: `Read The Guide`,
           url: "#video",
@@ -13,6 +17,8 @@ export const HomePageContent = {
       },
       {
         title: `Have Incfile do the work for you <br><span style="color:#FD8550">$0 + State fee</span>`,
+        size: 2,
+        template: 3,
         desc: `Incfile can take care of all your LLC formation paperwork—and we’ll do it for free. Just pay the required Georgia state fee ($[STATE_FEE]).`,
         button: {
           text: `Form Your LLC Now`,
@@ -66,7 +72,7 @@ export const HomePageContent = {
         },
       ],
       step1: {
-        heading1: `Pick a Unique Business Name and Run a Georgia Entity Search`,
+        heading1: `STEP 1 : Pick a Unique Business Name and Run a Georgia Entity Search`,
         text1: `You will need a distinctive and original name for your Georgia LLC that’s not used by any other business in GA. Incfile’s <a href="/business-name-generator/">Business Name Generator</a> is a great way to brainstorm company names — the tool also allows you to easily check the Georgia Secretary of State (SOS) Corporations Division business registry to verify your name isn’t already being used by another company.</a>`,
         text2: `If you’ve already chosen a name, you can make sure it’s available by using the Georgia business search on the <a href="https://ecorp.sos.ga.gov/"target="_blank" rel="noopener noreferrer">GA Secretary of State website</a> or Incfile’s <a href="/business-name-search/"> free Business Name Search tool. </a>`,
         text3: `There are several rules you’ll need to follow with your LLC name, which you can learn about in the <a href="/georgia-llc/georgia-business-names/"> Georgia business names section</a> of this guide. One rule, for example, is that your business name cannot use any of the following terms without approval from the Office of Insurance and Safety Fire Commissioner: “insurance,” “assurance,” “surety,” “fidelity,” “reinsurance,” “reassurance” or “indemnity.”`,
@@ -80,11 +86,11 @@ export const HomePageContent = {
         },
       },
       step2: {
-        heading1: `Provide an Official Business Address for Your GA LLC`,
+        heading1: `STEP 2 : Provide an Official Business Address for Your GA LLC`,
         text1: `Every Georgia LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address can be outside the state of Georgia and can be a P.O. Box.`,
       },
       step3: {
-        heading1: `Assign a Registered Agent for Your Georgia LLC`,
+        heading1: `STEP 3 : Assign a Registered Agent for Your Georgia LLC`,
         text1: `Every GA LLC must have a “Registered Agent” when it is formed. This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Georgia Secretary of State.`,
         text2: `This position can be filled by you, another manager in the business or a dedicated Registered Agent service. If your Registered Agent is a person, they must reside in and have a physical street address in Georgia and must be present to receive important documents for your company during business hours. In Georgia, you designate your Registered Agent when you file your Articles of Organization and formally create your business.`,
         text3: `At Incfile, all of our packages include an Georgia Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.`,
@@ -100,7 +106,7 @@ export const HomePageContent = {
         ],
       },
       step4: {
-        heading1: `File Articles of Organization with the Georgia Secretary of State`,
+        heading1: `STEP 4 : File Articles of Organization with the Georgia Secretary of State`,
         text1: `Once you've gathered all the information for your Georgia LLC, you’ll need to file both your Articles of Organization (Form CD 030) and Transmittal Information Form 231 with the GA Secretary of State Corporations Division. These documents formally create your Georgia LLC.`,
         link: {
           text: `Download Georgia's Form CD 030 Here`,
@@ -132,11 +138,11 @@ export const HomePageContent = {
         },
       },
       step5: {
-        heading1: `Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
+        heading1: `STEP 5 : Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
         text1: `You will need an EIN to identify your business to the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Georgia LLC business formation process.`,
       },
       step6: {
-        heading1: `Create an LLC Operating Agreement`,
+        heading1: `STEP 6 : Create an LLC Operating Agreement`,
         text1: `An Operating Agreement is a kind of “instruction manual” that outlines how you will run your business. It includes how decisions are made, how the business is divided amongst members and what happens if a member leaves the company.`,
         text2: `Georgia does not require that LLCs have an operating agreement in place, but it’s a good idea to create one, nonetheless.`,
         button1: {
@@ -156,21 +162,27 @@ export const HomePageContent = {
     otherInfo: [
       {
         type: `heading`,
-        size: 3,
         content: `Other Important Georgia LLC Info`,
+        size: 2,
+        template: 3,
+        left: true,
+        bottomMargin: 48,
       },
       {
         type: `heading`,
-        size: 4,
+        size: 3,
+        template: 4,
         content: `Special Types of LLCs in Georgia`,
       },
       {
         type: `paragraph`,
         content: `A regular LLC is suitable for most business needs, but you also have a few other options in Georgia.`,
+        bottomMargin: 40,
       },
       {
         type: `heading`,
         size: 4,
+        template: 4,
         content: `Professional LLCs`,
       },
       {
@@ -180,6 +192,7 @@ export const HomePageContent = {
       {
         type: `heading`,
         size: 4,
+        template: 4,
         content: `Foreign LLCs`,
       },
       {
@@ -190,6 +203,9 @@ export const HomePageContent = {
         type: "arrow-links",
         content: [
           {
+            style: {
+              marginBottom: `40px`,
+            },
             text: `More information on Georgia filing and licensing requirements can be found here.`,
             url: `/georgia-llc/fees-filing-requirements/`,
           },
@@ -198,7 +214,8 @@ export const HomePageContent = {
       // Helpful resource
       {
         type: `heading`,
-        size: 4,
+        size: 3,
+        template: 3,
         content: `Read More Information from the Georgia Secretary of State`,
       },
       {
@@ -217,6 +234,9 @@ export const HomePageContent = {
             url: `https://dol.georgia.gov/employers`,
           },
           {
+            style: {
+              marginBottom: `32px`,
+            },
             text: `Georgia Department of Revenue for taxes`,
             url: `https://dor.georgia.gov/taxes/business-taxes/`,
           },
@@ -227,6 +247,7 @@ export const HomePageContent = {
       {
         type: `heading`,
         size: 3,
+        template: 3,
         content: `More Information in This Guide`,
       },
       {
@@ -238,7 +259,7 @@ export const HomePageContent = {
         content: [
           {
             style: {
-              marginBottom: `24px`,
+              marginBottom: `32px`,
             },
             text: `Naming Your Georgia LLC`,
             url: `/georgia-llc/georgia-business-names/`,
@@ -248,13 +269,14 @@ export const HomePageContent = {
       {
         type: `paragraph`,
         content: `Learn about Georgia naming rules, fictitious names, how to reserve a name and how to check business name availability using Incfile’s <a href="/business-name-search/" >dedicated Business Name Search tool.</a>`,
+        marginBottom: 40,
       },
       {
         type: "arrow-links",
         content: [
           {
             style: {
-              marginBottom: `24px`,
+              marginBottom: `32px`,
             },
             text: `Georgia Registered Agents`,
             url: `/georgia-llc/registered-agents-georgia-llc/`,
@@ -264,13 +286,14 @@ export const HomePageContent = {
       {
         type: `paragraph`,
         content: `Learn how to appoint a Georgia Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Georgia Registered Agents.`,
+        marginBottom: 40,
       },
       {
         type: "arrow-links",
         content: [
           {
             style: {
-              marginBottom: `24px`,
+              marginBottom: `32px`,
             },
             text: `Fees and Requirements for Your Georgia LLC`,
             url: `/georgia-llc/fees-filing-requirements/`,
@@ -280,13 +303,14 @@ export const HomePageContent = {
       {
         type: `paragraph`,
         content: `Learn about the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Georgia rules. Includes information on Employer Identification Numbers (EINs), Georgia and federal business licenses, annual reports and more.`,
+        marginBottom: 40,
       },
       {
         type: "arrow-links",
         content: [
           {
             style: {
-              marginBottom: `24px`,
+              marginBottom: `32px`,
             },
             text: `Business Taxes for Your Georgia LLC`,
             url: `/georgia-llc/business-taxes/`,
@@ -296,6 +320,7 @@ export const HomePageContent = {
       {
         type: `paragraph`,
         content: `How to understand the various taxes you will need to pay to the federal and Georgia government. Includes details of federal taxes like income and self-employment and Georgia taxes like sales tax and income tax.`,
+        marginBottom: 40,
       },
     ],
   },

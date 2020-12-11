@@ -51,14 +51,14 @@ const Filing = styled.div`
 			flex-direction: row;
 		}
 
-		span {
-			display: flex;
-			flex-direction: column;
+		// span {
+		// 	display: flex;
+		// 	flex-direction: column;
 
-			@media (min-width: 576px) {
-				flex-direction: row;
-			}
-		}
+		// 	@media (min-width: 576px) {
+		// 		flex-direction: row;
+		// 	}
+		// }
 
 		strong {
 			display: flex;

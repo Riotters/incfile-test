@@ -21,7 +21,7 @@ import {
 } from "../../../static/learning-center-entity/help-center-article";
 import { about } from "../../../static/research-topics/nonprofit-info/what-are-bylaws";
 import { related } from "../../../static/research-topics/nonprofit-info";
-import {HeadingP} from "../../../atomic/atoms/typography/heading-to-p";
+import { HeadingP } from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => {
 	const currentUri =
@@ -46,7 +46,7 @@ const HelpCenter = () => {
 		<Layout>
 			<SEO
 				title="What are Bylaws? | Archive articles"
-				description="Learn about the key differences between nonprofit and not-for-profit organizations, including legal status, purpose, tax exemption and more."
+				description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state."
 			/>
 			<Top
 				imageName="mrs-bulb-help-center-article"

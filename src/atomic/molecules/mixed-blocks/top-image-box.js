@@ -7,6 +7,7 @@ import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import ArrowLink from "../buttons/text";
 import parse from "html-react-parser";
+import ChooseHeadingType from "../../atoms/typography/ConditionalHeading";
 
 const Wrapper = styled.div`
 	width: 100%;
@@ -41,14 +42,18 @@ const Wrapper = styled.div`
 		padding: 24px 24px 0;
 	}
 
-	p,
+	p:not([class*="i-believe-i-can-be-a-h"]),
 	a {
 		font-size: 16px;
 		line-height: 24px;
 	}
 
-	p {
+	p:not([class*="i-believe-i-can-be-a-h"]) {
 		color: ${color.grey1};
+	}
+	
+	h2 {
+		text-align: left;
 	}
 `;
 
@@ -56,6 +61,9 @@ const TopImageBox = ({
 	className,
 	image,
 	color,
+	headlineSize = 3,
+	headlineTemplateSize = 4,
+	paragraphHeader = false,
 	content,
 	noShadow,
     padding
@@ -70,9 +78,15 @@ const TopImageBox = ({
 			<div className="top">{image && <Image filename={image} alt={content?.imgAlt ? content.imgAlt : ''} />}</div>
 			<div className="content">
 				<div>
-					<Heading size={3} template={4} bottomMargin="16">
-						{parse(content.header)}
-					</Heading>
+					<ChooseHeadingType
+						headerSize={headlineSize}
+						headerTemplateSize={headlineTemplateSize}
+						content={content.header}
+						paragraphHeader={paragraphHeader}
+						bottomMargin={16} />
+					{/*<Heading size={3} template={4} bottomMargin="16">*/}
+						{/*{parse(content.header)}*/}
+					{/*</Heading>*/}
 					<Paragraph bottomMargin="0" mixed>
 						{parse(content.text)}
 					</Paragraph>

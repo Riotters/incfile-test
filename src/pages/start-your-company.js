@@ -33,6 +33,7 @@ import { postHSForm } from "../api/Api";
 import ExternalLink from "../atomic/molecules/buttons/external-link";
 import { Helmet } from "react-helmet";
 import ProductSchema from "../components/product-schema";
+import {HeadingP} from "../atomic/atoms/typography/heading-to-p";
 
 const LightBoxModal = styled.div`
 	transition: all 0.8s;
@@ -219,7 +220,7 @@ const ReviewEntityType = () => {
 				tabletImgPosX={45}
 			>
 				<h1>{top.header}</h1>
-				<p>{top.text}</p>
+				<HeadingP size={2} big>{top.text}</HeadingP>
 			</Top>
 			<About content={about} />
 			<Rocket content={rocket} />

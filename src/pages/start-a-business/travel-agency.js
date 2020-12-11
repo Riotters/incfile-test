@@ -40,7 +40,7 @@ const TravelAgency = () => (
 	<Layout>
 		<SEO
 			title="Become a Travel Agent | Start Your Own Travel Agency"
-			description="Everyone likes traveling — new horizons, beautiful destinations and unique experiences mean we love packing our bags and spending time away from work and home."
+			description="If you love travel and matching the right people with the ideal vacation, then opening a travel agency could be a great business move. Learn more."
 		/>
 
 		<Top

@@ -99,7 +99,9 @@ const HowToGuide = ({ content, data }) => {
   return (
     <Wrapper>
       {/* Why choose section */}
-      <Heading size={3}>{content.whyChoose.heading}</Heading>
+      <Heading size={2} template={3} left={true}>
+        {content.whyChoose.heading}
+      </Heading>
       <Paragraph big>{content.whyChoose.text1}</Paragraph>
       <Paragraph big>{content.whyChoose.text2}</Paragraph>
       <Paragraph big>{content.whyChoose.text3}</Paragraph>
@@ -116,7 +118,7 @@ const HowToGuide = ({ content, data }) => {
       <Paragraph big>{content.whyChoose.text4}</Paragraph>
 
       {/* Main Steps */}
-      <Heading size={3} bottomMargin="40" style={{ marginTop: `48px` }}>
+      <Heading size={2} template={3} left={true}>
         {content.mainSteps.heading3}
       </Heading>
 
@@ -228,12 +230,20 @@ const HowToGuide = ({ content, data }) => {
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step3.text3)}
         </Paragraph>
-
-        <BoxButtonLinks>
-          {content.mainSteps.step3.groupBtn1.map((button) => (
-            <BoxedButton className="article-link" content={button} ellipsis />
-          ))}
-        </BoxButtonLinks>
+        <Button
+          content={content.mainSteps.step3.button1}
+          theme="secondary56"
+          arrow
+          margin="16px 0 0 0"
+          marginMD="16px 0 16px 0"
+        />
+        <Button
+          content={content.mainSteps.step3.button2}
+          theme="secondary56"
+          arrow
+          margin="16px 0 0 0"
+          marginMD="16px 0 40px 0"
+        />
       </TextBlockWithNumberCounting>
 
       <TextBlockWithNumberCounting

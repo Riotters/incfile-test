@@ -61,7 +61,7 @@ const GuideToStart = () => {
       </Top>
       <About content={about} hsOpenForm={popup} />
       <TableOfContent content={tableOfContent} />
-      <NeedMore content={needMore} onClick={popup} />
+      <NeedMore content={needMore} onClick={popup} paragraphHeading />
       <LightBoxModal visible={modalVisible} className="modal-overlay">
         <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
           {!formSubmitted && <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />}

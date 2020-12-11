@@ -5,6 +5,7 @@ import { Paragraph } from "../../atoms/typography/paragraph";
 import styled from "styled-components";
 import WhiteBox from "../../atoms/boxes/white-box";
 import CircleSVG from "../../../images/circle-graph.inline.svg";
+import {PHeading} from "../../atoms/typography/p-to-heading";
 
 const Wrapper = styled(WhiteBox)`
 	display: flex;
@@ -82,7 +83,7 @@ const Money = styled.div`
 		margin-right: 16px;
 	}
 
-	h4 {
+	[class*="i-believe-i-can-be-a-h"] {
 		margin-right: 8px;
 	}
 `;
@@ -91,25 +92,25 @@ const BusinessRevenue = () => (
 	<Wrapper>
 		<Circle>
 			<CircleSVG />
-			<Heading size="3" bottomMargin="0">
+			<PHeading size={3} bottomMargin="0">
 				120,000<span>$</span>
-			</Heading>
+			</PHeading>
 		</Circle>
-		<Heading size="4">Your business revenue a year</Heading>
+		<PHeading size={4}>Your business revenue a year</PHeading>
 		<Money bottomMargin="16">
 			<span className="color-box" style={{ background: color.blue1 }} />
-			<Heading size="4" bottomMargin="0">
+			<PHeading size={4} bottomMargin="0">
 				$90,000
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="0">
 				profits a year
 			</Paragraph>
 		</Money>
 		<Money>
 			<span className="color-box" style={{ background: color.orange1 }} />
-			<Heading size="4" bottomMargin="0">
+			<PHeading size={4} bottomMargin="0">
 				$30,000
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="0">
 				expenses a year
 			</Paragraph>

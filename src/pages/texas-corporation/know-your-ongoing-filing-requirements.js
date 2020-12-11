@@ -39,7 +39,7 @@ const TexasCorporation = () => {
 		<Layout>
 			<SEO
 				title="Managing Your Texas S Corp or C Corp"
-				description="From annual reports to business licenses and permits, learn about the forms and filing requirements for your Texas corporation."
+				description="You've formed your Texas corporation, now what? We'll walk you through what you need to think about to get your business on the path to success."
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"

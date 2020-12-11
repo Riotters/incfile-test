@@ -27,7 +27,7 @@ function ConnecticutIndexPage() {
 		<Layout>
 			<SEO
 				title="LLCs in CT | Starting a Connecticut LLC"
-				description="Ready to form your Connecticut LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+				description="Ready to file your CT LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} nonDIY />

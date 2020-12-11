@@ -26,7 +26,7 @@ function LLCIndex() {
 		<Layout>
 			<SEO
 				title="LLCs in Massachusetts | Forming an LLC in MA"
-				description="Ready to form your Massachusetts LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+				description="Ready to register your MA LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} nonDIY />

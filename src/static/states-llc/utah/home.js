@@ -16,7 +16,7 @@ export const howToGuide = [
     type: `header`,
     content: `Setting Up an LLC in Utah`,
     size: 1,
-		template: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -59,17 +59,16 @@ export const howToGuide = [
     curveColor: color.red1,
   },
   {
-    type: `arrow-link`,
-    content: {
-      text: `Learn more about the benefits of the LLC business structure here.`,
-      url: `/limited-liability-company/`,
-    },
+    type: `text`,
+    content: `<a href="/limited-liability-company/" target="_blank" rel="noopener noreferrer">Learn more about the benefits of the LLC business structure here.</a>`,
     marginBottom: 48,
   },
   {
     type: `header`,
     content: `Six Quick Steps to Forming Your Utah LLC`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -79,6 +78,7 @@ export const howToGuide = [
   },
   {
     type: `accordion`,
+    header: 3,
     content: {
       items: [
         {
@@ -126,7 +126,9 @@ export const howToGuide = [
   {
     type: `header`,
     content: `Additional Information from the Utah Division of Corporations`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -149,7 +151,9 @@ export const howToGuide = [
   {
     type: `header`,
     content: `Special Types of Utah LLCs`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -159,6 +163,7 @@ export const howToGuide = [
   },
   {
     type: `accordion`,
+    header: 3,
     content: {
       items: [
         {
@@ -203,7 +208,9 @@ export const howToGuide = [
   {
     type: `header`,
     content: `Other Information in This Guide`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -212,11 +219,9 @@ export const howToGuide = [
     marginBottom: 32,
   },
   {
-    type: `arrow-link`,
-    content: {
-      text: `Naming Your Utah LLC`,
-      url: `/utah-llc/how-to-name-your-llc/`,
-    },
+    type: `header`,
+    size: 3,
+    content: `<a href="/utah-llc/how-to-name-your-llc/">Naming Your Utah LLC</a>`,
     marginBottom: 16,
   },
   {
@@ -225,11 +230,9 @@ export const howToGuide = [
     marginBottom: 48,
   },
   {
-    type: `arrow-link`,
-    content: {
-      text: `Utah Registered Agents for LLCs`,
-      url: `/utah-llc/registered-agents-utah-llc/`,
-    },
+    type: `header`,
+    size: 3,
+    content: `<a href="/utah-llc/registered-agents-utah-llc/">Utah Registered Agents for LLCs</a>`,
     marginBottom: 16,
   },
   {
@@ -238,11 +241,9 @@ export const howToGuide = [
     marginBottom: 48,
   },
   {
-    type: `arrow-link`,
-    content: {
-      text: `Fees and Requirements for Utah LLCs`,
-      url: `/utah-llc/form-filling-permit-requirements/`,
-    },
+    type: `header`,
+    size: 3,
+    content: `<a href="/utah-llc/form-filling-permit-requirements/">Fees and Requirements for Utah LLCs</a>`,
     marginBottom: 16,
   },
   {
@@ -251,11 +252,9 @@ export const howToGuide = [
     marginBottom: 48,
   },
   {
-    type: `arrow-link`,
-    content: {
-      text: `Federal, State, Sales and Other Taxes for Your Utah LLC`,
-      url: `/utah-llc/business-taxes/`,
-    },
+    type: `header`,
+    size: 3,
+    content: `<a href="/utah-llc/business-taxes/">Federal, State, Sales and Other Taxes for Your Utah LLC</a>`,
     marginBottom: 16,
   },
   {
@@ -269,7 +268,8 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Naming Your Utah LLC`,
-    size: 2,
+    size: 1,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -280,7 +280,9 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Utah Business Entity Search`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -294,17 +296,16 @@ export const namingYourBusiness = [
     marginBottom: 16,
   },
   {
-    type: `arrow-link`,
-    content: {
-      text: `Utah Division of Corporations business name search tool.`,
-      url: `https://secure.utah.gov/bes/`,
-    },
+    type: `text`,
+    content: `<a href="https://secure.utah.gov/bes/" target="_blank" rel="noopener noreferrer">Utah Division of Corporations business name search tool.</a>`,
     marginBottom: 48,
   },
   {
     type: `header`,
     content: `Utah LLC Naming Rules`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 16,
   },
   {
@@ -315,7 +316,7 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Your LLC Business Name Must Be Unique`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -326,7 +327,7 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Your LLC Business Name Must Not Be Confusable with Another Business Name`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -361,7 +362,7 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Your LLC Business Name May Have Other General Restrictions`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -385,7 +386,9 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Utah LLC Trade and “Doing Business As” (DBA) Names`,
-    size: 4,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 16,
   },
   {
@@ -410,7 +413,9 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Name Registration with the Utah Division of Corporations`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -435,7 +440,9 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `FAQs on Naming Your LLC`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -445,6 +452,7 @@ export const namingYourBusiness = [
   },
   {
     type: `accordion`,
+    header: 3,
     content: {
       items: [
         {
@@ -470,7 +478,9 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Other Incfile Resources for Naming an LLC`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -481,7 +491,7 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Trademarks and Service Marks`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -501,7 +511,7 @@ export const namingYourBusiness = [
   {
     type: `header`,
     content: `Find the Perfect Name for Your Utah LLC`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -523,11 +533,8 @@ export const namingYourBusiness = [
     color: color.orange3,
   },
   {
-    type: `arrow-link`,
-    content: {
-      text: `Incfile guide to choosing a business name.`,
-      url: `https://www.incfile.com/blog/post/llc-name-search-50-states/`,
-    },
+    type: `text`,
+    content: `<a href="https://www.incfile.com/blog/post/llc-name-search-50-states/" target="_blank">Incfile guide to choosing a business name.</a>`,
     marginBottom: 48,
   },
 ];
@@ -536,7 +543,8 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `Registered Agents and Your Utah LLC`,
-    size: 2,
+    size: 1,
+    template: 3,
     marginBottom: 32,
   },
   {
@@ -552,7 +560,9 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `What the Utah Division of Corporations Says About Registered Agents`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -568,7 +578,9 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `Rules for Utah Registered Agents`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -597,7 +609,9 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `The Purpose of a Utah Registered Agent`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -620,7 +634,9 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `Incfile Provides a Free Utah Registered Agent Service for the First Year`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -630,7 +646,12 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Incfile is authorized to conduct business in Utah and can legally act as your Registered Agent. Here’s what the Incfile Utah Registered Agent service provides for your LLC:`,
+    content: `Incfile is authorized to conduct business in Utah and can legally act as your Registered Agent.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `Here’s what the Incfile Utah Registered Agent service provides for your LLC:`,
     marginBottom: 16,
   },
   {
@@ -658,7 +679,9 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `How to Appoint a Utah Registered Agent for Your LLC`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 16,
   },
   {
@@ -668,19 +691,8 @@ export const registeredAgent = [
   },
   {
     type: `header`,
-    content: `Assign Your Registered Agent When You Form Your SD LLC`,
-    size: 4,
-    marginBottom: 16,
-  },
-  {
-    type: `text`,
-    content: `Your business needs to have a Utah Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
-    marginBottom: 32,
-  },
-  {
-    type: `header`,
     content: `Appoint a Registered Agent Service When You Create Your LLC`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -722,7 +734,7 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `Change Your Registered Agent After Your LLC Is Formed`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -764,7 +776,9 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `UT Registered Agent Search`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -780,7 +794,9 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `What Happens When You Don’t Have a Utah Registered Agent`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -792,9 +808,9 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       list: [
-        `Getting served or sued and not finding out about it: If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
-        `Falling out of good standing with the Utah Division of Corporations: If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
-        `Losing your status as a Utah LLC: A UT Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Utah LLC may be dissolved.`,
+        `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
+        `<b>Falling out of good standing with the Utah Division of Corporations:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
+        `<b>Losing your status as a Utah LLC:</b> A UT Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Utah LLC may be dissolved.`,
       ],
     },
     marginBottom: 48,
@@ -803,7 +819,9 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `Appointing Yourself as Your Own Registered Agent`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -826,16 +844,19 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `FAQs About Utah Registered Agents`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
     type: `accordion`,
+    header: 3,
     content: {
       items: [
         {
           question: `Do I Need to Appoint a Utah Registered Agent?`,
-          answer: `Yes. All LLCs are required to have a Registered Agent. This is mandated by the West Virginia Secretary of State.`,
+          answer: `Yes. All LLCs are required to have a Registered Agent. This is mandated by the Utah Secretary of State.`,
         },
         {
           question: `When Can I Assign a Utah Registered Agent Service?`,
@@ -856,7 +877,9 @@ export const registeredAgent = [
   {
     type: `header`,
     content: `Useful Resources for Utah Registered Agent Services`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 16,
   },
   {
@@ -882,7 +905,8 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Utah Fees and Requirements for Your LLC`,
-    size: 2,
+    size: 1,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -898,7 +922,9 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Initial Filing and Fees for Forming an LLC in Utah`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -947,7 +973,9 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Getting an EIN/Tax ID for Your Utah LLC`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -967,7 +995,9 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Foreign Qualification to Operate in a State Outside Utah`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -987,7 +1017,9 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Annual Reporting and Fees for Your Utah LLC`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -1015,7 +1047,9 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Business Permits and Licenses in Utah`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -1043,7 +1077,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `The Incfile Business License Research Package for Your Utah LLC`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1095,7 +1129,9 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `Ad Hoc Utah Fees or Requirements for Your Utah LLC`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -1106,7 +1142,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Obtain a Fictitious/DBA Name`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1126,7 +1162,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Change the Utah Registered Agent`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1146,7 +1182,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Reserve a Name`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1157,7 +1193,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Amend Certain Facts About Your Utah LLC`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1189,7 +1225,7 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `To Get a Certificate of Good Standing`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1219,11 +1255,14 @@ export const feesAndRequirments = [
   {
     type: `header`,
     content: `FAQs About Utah LLC Requirements`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
     type: `accordion`,
+    header: 3,
     content: {
       items: [
         {
@@ -1256,7 +1295,8 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Business Taxes Payable by Your Utah LLC`,
-    size: 2,
+    size: 1,
+    template: 3,
     marginBottom: 24,
   },
   {
@@ -1272,7 +1312,9 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `How Your Utah LLC Will Be Taxed`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -1312,7 +1354,9 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Utah State Tax on Your LLC Earnings`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -1331,17 +1375,16 @@ export const businessTaxes = [
     marginBottom: 16,
   },
   {
-    type: `arrow-link`,
-    content: {
-      text: `Get details on the Utah state tax here.`,
-      url: `https://incometax.utah.gov/filing/online-filing`,
-    },
-    bottomMargin: 48,
+    type: `text`,
+    content: `<a href="https://incometax.utah.gov/filing/online-filing" target="_blank" rel="noopener noreferrer">Get details on the Utah state tax here.</a>`,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `Utah Sales Taxes for LLCs`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -1363,17 +1406,16 @@ export const businessTaxes = [
     curveColor: color.red1,
   },
   {
-    type: `arrow-link`,
-    content: {
-      text: `Get details on the Utah sales tax here.`,
-      url: `https://tax.utah.gov/sales`,
-    },
-    bottomMargin: 48,
+    type: `text`,
+    content: `<a href="https://tax.utah.gov/sales" target="_blank" rel="noopener noreferrer">Get details on the Utah sales tax here.</a>`,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `Federal Taxes`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -1384,7 +1426,7 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Federal Self-Employment Tax`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1413,7 +1455,7 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Pay Less Self-Employment Tax by Treating Your Utah LLC as an S Corporation`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1443,7 +1485,7 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Federal Income Tax`,
-    size: 4,
+    size: 3,
     marginBottom: 16,
   },
   {
@@ -1459,7 +1501,9 @@ export const businessTaxes = [
   {
     type: `header`,
     content: `Employer and Employee Taxes`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
@@ -1469,6 +1513,7 @@ export const businessTaxes = [
   },
   {
     type: `accordion`,
+    header: 3,
     content: {
       items: [
         {
@@ -1491,59 +1536,74 @@ export const businessTaxes = [
               content: `You may also need to pay insurance for any employees, like employee compensation insurance or unemployment tax. There will also be other requirements you have for employees.`,
             },
             {
-              type: `arrow-links`,
-              content: [
-                {
-                  styles: { marginTop: `24px` },
-                  text: `Get more requirements from the Utah Commission of Labor website.`,
-                  url: `https://laborcommission.utah.gov/`,
-                },
-              ],
-            },
-          ],
-        },
-        {
-          question: `Other Taxes and Duties for Your Utah LLC`,
-          answer: `Depending on the industry you are in, your Utah LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
-        },
-        {
-          question: `Estimated Taxes for Your Utah LLC`,
-          answer2: [
-            {
               type: `paragraph`,
-              content: `Most Utah LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
-            },
-            {
-              type: `paragraph`,
-              content: `The most common types of estimated taxes are:`,
-            },
-            {
-              type: `list-dot-without-bg`,
-              color: color.orange3,
-              content: [
-                `Federal income tax`,
-                `Federal self-employment tax`,
-                `Utah state tax`,
-              ],
-            },
-            {
-              type: `paragraph`,
-              content: `Most Utah LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
+              content: `<a href="https://laborcommission.utah.gov/" target="_blank" rel="noopener noreferrer">Get more requirements from the Utah Commission of Labor website.</a>`,
             },
           ],
         },
       ],
     },
-    marginBottom: 32,
+    marginBottom: 48,
+  },
+  {
+    type: `header`,
+    content: `Other Taxes and Duties for Your Utah LLC`,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
+    marginBottom: 24,
+  },
+  {
+    type: `text`,
+    content: `Depending on the industry you are in, your Utah LLC may be liable for certain other taxes and duties. For example, if you sell gasoline you may need to pay a tax on any fuel you sell. Likewise, if you import or export goods you may need to pay certain duties. Speak to your accountant about any other taxes you may need to withhold or pay.`,
+    marginBottom: 48,
+  },
+  {
+    type: `header`,
+    content: `Estimated Taxes for Your Utah LLC`,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
+    marginBottom: 24,
+  },
+  {
+    type: `text`,
+    content: `Most Utah LLCs will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `The most common types of estimated taxes are:`,
+    marginBottom: 16,
+  },
+  {
+    type: `list-dot`,
+    content: {
+      list: [
+        `Federal income tax`,
+        `Federal self-employment tax`,
+        `Utah state tax`,
+      ],
+    },
+    marginBottom: 16,
+    color: color.orange3,
+  },
+  {
+    type: `text`,
+    content: `Most Utah LLCs will pay estimated taxes four times a year. Speak to your accountant for more information.`,
+    marginBottom: 48,
   },
   {
     type: `header`,
     content: `FAQs on Utah LLC Business Taxes`,
-    size: 3,
+    size: 2,
+    template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 24,
   },
   {
     type: `accordion`,
+    header: 3,
     content: {
       items: [
         {

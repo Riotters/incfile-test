@@ -20,6 +20,7 @@ import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import Button from "../../../components/button";
 import AccordionWithCounting from '../../states-llc/tab-acccordion-with-counting';
+import {PHeading} from "../../atoms/typography/p-to-heading";
 
 const Wrapper = styled.div`
     position: relative;
@@ -37,7 +38,7 @@ const ChooseLists = ({ content }) => (
         </Oval>
 
         <ContentCenter contentWidth="970">
-            <Heading size={3} bottomMargin="80" style={{ marginTop: `50px` }}>{content.header}</Heading>
+            <PHeading size={3} maxWidth={670} bottomMargin="80" style={{ marginTop: `50px` }}>{content.header}</PHeading>
             
             <RelativeElement>
                 <AbsoluteShapCure rotate={-90} left="-25px" top="-25px">

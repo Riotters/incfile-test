@@ -10,6 +10,7 @@ import Container from "../container";
 import { color } from "../atoms/styles/colors";
 import Button from "../molecules/buttons/button";
 import { Heading } from "../atoms/typography/heading";
+import { PHeading } from "../atoms/typography/p-to-heading";
 import { Paragraph } from "../atoms/typography/paragraph";
 import ShapeCurve from "../atoms/shapes/curve";
 import Colorbox from "../atoms/boxes/color-box";
@@ -87,7 +88,7 @@ const TaxesHeader = ({ content }) => (
 						<AbsoluteShapeCurveElement left="-27px" top="-16px" rotate={-90}>
 							<ShapeCurve color={color.purple1} />
 						</AbsoluteShapeCurveElement>
-						<Heading size={4}>{parse(box.title)}</Heading>
+						<PHeading size={4}>{parse(box.title)}</PHeading>
 						<Paragraph flex mixed={true}>
 							{parse(box.desc)}
 						</Paragraph>

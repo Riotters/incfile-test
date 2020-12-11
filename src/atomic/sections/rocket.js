@@ -10,6 +10,7 @@ import ExternalLink from "../molecules/buttons/external-link";
 import Searchbar from "../../components/searchbar";
 import StatesDropdown from "../molecules/mixed-blocks/states-dropdown";
 import parse from "html-react-parser";
+import {PHeading} from "../atoms/typography/p-to-heading";
 
 const Rocket = ({
     search,
@@ -81,11 +82,9 @@ const Rocket = ({
                         {!textHeading
                             ?
                             <>
-                                <Heading size={2} bottomMargin="0">
-                                    {" "}
-                                    Launch{" "}
-                                </Heading>
-                                <Heading size={2}>your business with Incfile</Heading>
+                                <Heading size={2}>{" "}
+                                    Launch{" "}<br />
+                                    your business with Incfile</Heading>
                             </>
                             : <Heading size={2}>{parse(textHeading)}</Heading>
                         }

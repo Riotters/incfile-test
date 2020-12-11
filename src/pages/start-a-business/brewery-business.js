@@ -39,7 +39,7 @@ const GymPersonalTraining = () => (
 	<Layout>
 		<SEO
 			title="How to Start a Brewery | Brewery Startup Costs & Stats"
-			description="Breweries are one of the most exciting types of businesses to be involved with. You get to create delicious drinks, host a community of people, indulge in the craft of brewing and provide all sorts of additional benefits like a bar, food, music and more."
+			description="Thinking of starting a microbrewery? Read our brewery startup guide to learn about equipment costs, writing a business plan, and more."
 		/>
 
 		<Top

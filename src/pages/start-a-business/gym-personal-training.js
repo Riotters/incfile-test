@@ -38,7 +38,7 @@ const GymPersonalTraining = () => (
 	<Layout>
 		<SEO
 			title="Start a Gym, Fitness Center or Personal Training Business"
-			description="Starting a food truck can be an excellent introduction to the world of running your own business."
+			description="If you’ve got an interest in exercise or personal training, then opening up a fitness-based business could be right for you. Learn more."
 		/>
 
 		<Top

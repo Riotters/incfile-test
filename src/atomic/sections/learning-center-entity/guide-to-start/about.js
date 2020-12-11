@@ -12,6 +12,7 @@ import { Heading } from "../../../atoms/typography/heading";
 import LightBox from "../../../../components/LightBox";
 import TopButtonsBox from "../../../atoms/boxes/top-buttons-box";
 import Button from "../../../molecules/buttons/button-action";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const About = styled.section`
   position: relative;
@@ -21,7 +22,7 @@ const About = styled.section`
     padding-bottom: 120px;
   }
 
-  p {
+  p:not([class*="i-believe-i-can-be-a-h"]) {
     color: ${color.grey2};
   }
 
@@ -36,11 +37,11 @@ const AboutSection = ({ className, content, hsOpenForm }) => (
       <OvalSVG />
     </Oval>
     <ImageContent image="guide-to-start-a-business-about">
-      <Heading size="3">{content.header}</Heading>
+      <PHeading size={3}>{content.header}</PHeading>
       <Paragraph big bottomMargin="32">
         {content.text}
       </Paragraph>
-      <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve />
+      <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve paragraphHeader />
       <LightBox thumbnailVideo="comparison-chart-video-3611" videoID="M-SlUnCHmXU" />
       <Paragraph big bottomMargin="32" topMargin={32}>
         {content.text2}

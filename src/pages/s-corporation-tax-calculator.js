@@ -24,7 +24,7 @@ const SCorpTaxCalculator = () => (
       </RatingRow>
     </Top>
     <About content={about} />
-    <Differences content={differences} />
+    <Differences content={differences} paragraphHeader />
     <Calculator content={calculator} />
     <Compare content={compare} />
   </Layout>

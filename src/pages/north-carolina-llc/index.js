@@ -25,7 +25,7 @@ function LLCIndex() {
 		<Layout>
 			<SEO
 				title="Forming an LLC in NC | North Carolina LLCs"
-				description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+				description="Ready to start your North Carolina LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more"
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} nonDIY />

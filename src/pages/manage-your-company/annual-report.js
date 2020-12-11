@@ -22,14 +22,14 @@ import {
 } from "../../static/manage-your-company/annual-report";
 import ProductSchema from "../../components/product-schema";
 import { servicePrice } from "../../helpers/global-variables";
-import {Heading} from "../../atomic/atoms/typography/heading";
-import {HeadingP} from "../../atomic/atoms/typography/heading-to-p";
+import { Heading } from "../../atomic/atoms/typography/heading";
+import { HeadingP } from "../../atomic/atoms/typography/heading-to-p";
 
 const AnnualReport = () => (
 	<Layout>
 		<SEO
 			title="Prepare and File an Annual LLC or Corporate Report"
-			description="File LLC and Corporation Annual Reports using Incfile for all your document needs."
+			description=""
 		/>
 		<ProductSchema
 			productUrl={`${process.env.ORDER_URL}/annual-report.php`}
@@ -43,7 +43,9 @@ const AnnualReport = () => (
 			ovalColor="green"
 		>
 			<Heading size={1}>{top.header}</Heading>
-			<HeadingP size={2} big left>{top.text}</HeadingP>
+			<HeadingP size={2} big left>
+				{top.text}
+			</HeadingP>
 			<Buttonsbox>
 				<Button content={top.button[0]} theme="primary56" width="200px" arrow />
 			</Buttonsbox>

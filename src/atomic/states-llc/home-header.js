@@ -26,6 +26,10 @@ const Content = styled.div`
     @media screen and (min-width: 769px) {
       font-size: 40px;
     }
+    
+    @media (max-width: 576px) {
+      margin-bottom: 22px;
+    }
   }
 `;
 
@@ -54,36 +58,58 @@ const WrappBox = styled.div`
     &:first-child {
       border-radius: 50px 5px 5px 50px;
     }
-
-    h4 {
-      line-height: normal;
-    }
   }
 `;
 
 const HomeHeader = ({ content, data }) => (
-    <Container>
-        <Curve left="40" top="130">
-            <CurveSVG />
-        </Curve>
-        <Content>
-            <Heading size={1} bottomMargin="80">
-                {content.title}
+  <Container>
+    <Curve left="40" top="130">
+      <CurveSVG />
+    </Curve>
+    <Content>
+      <Heading
+        size={content.size}
+        template={content.template}
+        bottomMargin={80}
+        left={content.left}
+      >
+        {content.title}
+      </Heading>
+      <WrappBox>
+        {content.boxes.map((box, i) => (
+          <Colorbox color={color.white} className="box" key={i}>
+            <Heading
+              size={2}
+              template={4}
+              bottomMargin={box.bottomMargin}
+              left={box.left}
+            >
+              {parse(box.title)}
             </Heading>
-            <WrappBox>
-                {content.boxes.map((box, i) => (
-                    <Colorbox color={color.white} className="box" key={i}>
-                        <Heading size={4}>{parse(box.title)}</Heading>
-                        <Paragraph>{replace(box.desc, `[STATE_FEE]`, data.prices?.statefee)}</Paragraph>
-                        {box.externalLink
-                            ? <Button arrow content={box.button} theme="primary56" width="240" externalLink />
-                            : <Button arrow content={box.button} theme="primary56" width="240" />
-                        }
-                    </Colorbox>
-                ))}
-            </WrappBox>
-        </Content>
-    </Container>
+            <Paragraph>
+              {replace(box.desc, `[STATE_FEE]`, data.prices?.statefee)}
+            </Paragraph>
+            {box.externalLink ? (
+              <Button
+                arrow
+                content={box.button}
+                theme="primary56"
+                width="240"
+                externalLink
+              />
+            ) : (
+              <Button
+                arrow
+                content={box.button}
+                theme="primary56"
+                width="240"
+              />
+            )}
+          </Colorbox>
+        ))}
+      </WrappBox>
+    </Content>
+  </Container>
 );
 
 export default HomeHeader;

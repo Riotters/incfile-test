@@ -51,7 +51,7 @@ const Handyman = () => (
 	<Layout>
 		<SEO
 			title="How to Start a Handyman Business | Be a Home Handyman"
-			description="If you have some skill with home improvement, DIY or fixing things, then running a home handyman business could be right for you."
+			description="We want to help you get your handyman business off the ground. Read our guide for ideas, tips, and important things to know before you get started."
 		/>
 
 		<Top

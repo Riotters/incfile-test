@@ -45,7 +45,7 @@ const DaycareBusiness = () => (
 	<Layout>
 		<SEO
 			title="How to Start a Daycare | Opening a Childcare Business"
-			description="Parents are increasingly having to work more jobs or longer hours to make ends meet — that means there’s never been a greater need for reliable daycare organizations that can take care of the little ones."
+			description="Thinking of starting your own daycare business? We've put together some statistics and even a checklist of things to do to help you get started."
 		/>
 
 		<Top

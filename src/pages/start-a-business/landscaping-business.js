@@ -62,7 +62,7 @@ const LandscapingBusiness = () => (
 	<Layout>
 		<SEO
 			title="How to Start a Landscaping Business | Landscape Business"
-			description="There can be few things more thrilling than seeing someone wearing a piece of art that you have created. One way to achieve this is to go into the T-shirt business, create amazing designs and then sell them to people online."
+			description="Do you like to work outdoors and have a passion for lush green lawns? Starting a landscape business could be your way to do what you really enjoy."
 		/>
 
 		<Top

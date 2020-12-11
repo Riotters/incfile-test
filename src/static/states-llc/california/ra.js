@@ -29,7 +29,9 @@ export const agentPageContent = {
     // Rules for agents
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Rules for California Registered Agents`,
     },
     {
@@ -57,7 +59,9 @@ export const agentPageContent = {
     // What a CA Registered Agent Does
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `What a CA Registered Agent Does`,
     },
     {
@@ -79,7 +83,9 @@ export const agentPageContent = {
     //Incfile Provides a Free California Registered Agent Service for the First Year
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Incfile Provides a Free California Registered Agent Service for the First Year`,
     },
     {
@@ -116,7 +122,9 @@ export const agentPageContent = {
     //Appointing a CA Registered Agent Service for Your California LLC
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Appointing a Registered Agent in California`,
     },
     {
@@ -125,7 +133,8 @@ export const agentPageContent = {
     },
     {
       type: `heading`,
-      size: 4,
+      size: 3,
+      template: 4,
       content: `Appoint an Agent When You Create Your California LLC`,
     },
     {
@@ -170,7 +179,8 @@ export const agentPageContent = {
     // Assign a Different California Registered Agent Service After Incorporation
     {
       type: `heading`,
-      size: 4,
+      size: 3,
+      template: 4,
       content: `Assign a Different California Registered Agent Service After Incorporation`,
     },
     {
@@ -215,7 +225,9 @@ export const agentPageContent = {
     // California Registered Agent Search
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left:true,
       content: `California Registered Agent Search`,
     },
     {
@@ -230,7 +242,9 @@ export const agentPageContent = {
     // What Happens if You Don’t Have a Registered Agent?
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left:true,
       content: `What Happens If You Don’t Appoint a Registered Agent in California?`,
     },
     {
@@ -250,7 +264,9 @@ export const agentPageContent = {
     },
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left:true,
       content: `FAQs About California Registered Agents`,
     },
     {
@@ -280,7 +296,9 @@ export const agentPageContent = {
     // Other resources
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template:3,
+      left: true,
       content: `Other Useful Resources`,
     },
     {

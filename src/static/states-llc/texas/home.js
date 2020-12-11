@@ -88,16 +88,14 @@ export const HomePageContent = {
         text1: `Every Texas LLC is required to have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Texas Secretary of State.`,
         text2: `This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your TX Registered Agent must have a physical street address in Texas and must be present to receive important documents for your company during business hours. In Texas, your Registered Agent must consent to this appointment using the Acceptance of Consent Form 401-A.`,
         text3: `At Incfile, all of our packages include a Texas Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.`,
-        groupBtn1: [
-          {
-            header: `Learn More About Texas Registered Agents`,
-            url: `/texas-llc/registered-agents-texas-llc/`,
-          },
-          {
-            header: `Get A Free Registered Agent When You Incorporate With Incfile`,
-            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`,
-          },
-        ],
+        button1: {
+          text: `Learn More About Texas Registered Agents`,
+          url: `/texas-llc/registered-agents-texas-llc/`,
+        },
+        button2: {
+          text: `Get A Free Registered Agent When You Incorporate With Incfile`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`,
+        },
       },
       step4: {
         heading1: `File Your Certificate of Formation (Form 205) With the Texas Secretary of State`,
@@ -168,12 +166,15 @@ export const HomePageContent = {
     otherInfo: [
       {
         type: `heading`,
-        size: 3,
+        size: 2,
+        template: 3,
+        marginBottom: 24,
+        left: true,
         content: `Other Important Texas LLC Info`,
       },
       {
         type: `heading`,
-        size: 4,
+        size: 3,
         content: `Special Types of LLCs in Texas`,
       },
       {
@@ -252,7 +253,7 @@ export const HomePageContent = {
       // Helpful resource
       {
         type: `heading`,
-        size: 4,
+        size: 3,
         content: `Helpful Resources from the Texas Secretary of State`,
       },
       {

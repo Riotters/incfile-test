@@ -36,7 +36,7 @@ const FranchiseBusiness = () => (
 	<Layout>
 		<SEO
 			title="How to Start a Franchise Business | Starting a Franchise Business"
-			description="What do household names like Subway, Cinnabon, Jiffy Lube, Ace Hardware, Hertz, Marriott, Dunkin’ Donuts, 7-Eleven, Jimmy Johns and H&R Block all have in common? They’re all franchises — businesses that license out their name, backing, branding and processes to entrepreneurs who want to own a piece of the pie and grow a business without worrying about things like branding and marketing."
+			description="If you have the start-up capital starting a franchise business may be the right way to go. Franchise businesses have all the tools to help you succeed."
 		/>
 
 		<Top

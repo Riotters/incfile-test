@@ -10,13 +10,13 @@ import Articles from "../atomic/sections/articles";
 import Help from "../components/partials/sections/help";
 //Texts
 import { top, help, certificates } from "../static/manage-your-company";
-import {HeadingP} from "../atomic/atoms/typography/heading-to-p";
+import { HeadingP } from "../atomic/atoms/typography/heading-to-p";
 
 const ManageYourCompany = () => (
 	<Layout>
 		<SEO
 			title="Documents Needed to Manage your LLC or Corporation"
-			description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing."
+			description=""
 		/>
 		<Top
 			imageName="mrs-bulb-final-paper-stock"
@@ -27,7 +27,9 @@ const ManageYourCompany = () => (
 			tabletImgPosX={40}
 		>
 			<h1>{top.header}</h1>
-			<HeadingP size={2} left big>{top.text}</HeadingP>
+			<HeadingP size={2} left big>
+				{top.text}
+			</HeadingP>
 		</Top>
 		<Benefits />
 		<Certificates content={certificates} />
