@@ -298,7 +298,7 @@ const AccordionWithCounting = ({
 							<Tab>
 								<Content>
 									<Counting>{item.count}</Counting>
-									{!header && !paragraphHeaders && <span>{item.question}</span>}
+									{(!header || !paragraphHeaders) && <span>{item.question}</span>}
 									{header === 2 && (
 										<Heading size={2} template={3} left>
 											{item.question}
