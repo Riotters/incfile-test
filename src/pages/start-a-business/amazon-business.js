@@ -105,6 +105,7 @@ const AmazonBusiness = () => {
                 </p>
                 <ButtonsBox>
                     <Button
+                        externalLink
                         theme="primary56"
                         marginMD="0 24px 0 0"
                         arrow
@@ -286,7 +287,7 @@ const AmazonBusiness = () => {
                                 color={color.blue3}
                             >
                                 <Heading size={3} template={4}>
-                                    Key Amazon Business and Background Data and Statistics
+                                    Key Statistics and Trends for Amazon Businesses
                                 </Heading>
                                 <Paragraph bottomPadding={0} bottomMargin={0}>
                                     Why would you choose to sell through Amazon? Here are some of
