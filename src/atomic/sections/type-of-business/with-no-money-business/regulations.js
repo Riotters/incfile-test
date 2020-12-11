@@ -8,7 +8,7 @@ import { Link } from "gatsby";
 const Regulations = () => (
   <Wrapper>
     <Container style={{ paddingTop: "100px", paddingBottom: "100px" }} width={750}>
-      <Heading size={2} template={4} left style={{ fontSize: "40px" }}>
+      <Heading size={2} template={4} left style={{ fontSize: "40px", lineHeight: `45px` }}>
         Rules, Regulations and Taxes for Your Business
       </Heading>
       <Paragraph big mixed={true}>
@@ -26,9 +26,4 @@ const Wrapper = styled.div`
   position: relative;
 `;
 
-const Oval = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-`;
 export default Regulations;
