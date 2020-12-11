@@ -21,7 +21,7 @@ import Faq from "../../atomic/sections/business-entity-quiz/llc/faq";
 import ChooseEntitySection from "../../atomic/sections/learning-center-entity/business-entity-quiz/choose-entity";
 // temp //
 
-const BusinessEntityQuizLLC = () => (
+const BusinessEntityQuizCCorp = () => (
 	<Layout>
 		<SEO
 			title="Quiz Result: You Should Form an LLC"
@@ -59,4 +59,4 @@ const BusinessEntityQuizLLC = () => (
 	</Layout>
 );
 
-export default BusinessEntityQuizLLC;
+export default BusinessEntityQuizCCorp;

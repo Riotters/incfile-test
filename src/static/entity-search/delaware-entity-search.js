@@ -10,8 +10,7 @@ export const top = {
 };
 
 export const about = {
-	header: `Delaware is one of the most popular states to start a business due to its favorable laws and pro-business institutions.`,
-	text: `If you want to start a new business entity in Delaware, you need the right name. Our helpful Delaware corporation search tool lets you easily check for existing business names on the company register with the Delaware Division of Corporations.`,
+	text: `<span>Delaware is one of the most popular states to start a business due to its favorable laws and pro-business institutions.</span> If you want to start a new business entity in Delaware, you need the right name. Our helpful Delaware corporation search tool lets you easily check for existing business names on the company register with the Delaware Division of Corporations.`,
 	box: {
 		header: `Once you’ve decided on the perfect name, you can quickly register your Delaware LLC or corporation through us for one low fee.`,
 		text: `To search for Delaware business entities, just enter your details in the box below, and we’ll take care of everything else.`,

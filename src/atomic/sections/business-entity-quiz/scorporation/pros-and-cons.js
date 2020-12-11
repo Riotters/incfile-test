@@ -31,6 +31,14 @@ const IsItForYou = ({ content }) => (
 				))}
 			</AdventagesWrapper>
 		</Container>
+		<ContentCenter contentWidth={770}>
+			<Heading size={3} center maxWidth={770} bottomMargin={32}>
+				{content.header2}
+			</Heading>
+			<Paragraph big center>
+				{content.text2}
+			</Paragraph>
+		</ContentCenter>
 	</Wrapper>
 );
 
@@ -38,16 +46,7 @@ const Wrapper = styled.section`
 	padding-top: 120px;
 	padding-bottom: 100px;
 	position: relative;
-
-	&::before {
-		content: "";
-		height: 2008px;
-		width: 100%;
-		background-image: ${gradient.blue3};
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
+	background-image: ${gradient.orange3reverse};
 `;
 
 const AdventagesWrapper = styled.div`

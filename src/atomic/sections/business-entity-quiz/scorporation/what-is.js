@@ -12,7 +12,7 @@ import Image from "../../../atoms/image/image";
 import { color } from "../../../atoms/styles/colors";
 import { shadow } from "../../../atoms/styles/shadows";
 
-const ContainerWrapper = styled.div`
+const ContainerWrapper = styled.section`
 	background: rgb(255, 255, 255);
 	background-image: ${gradient.orange3};
 	padding-bottom: 100px;
@@ -136,7 +136,7 @@ const Boxes = styled.div`
 	}
 `;
 
-const ValidatingBusinessIdea = () => (
+const WhatIsSCorp = () => (
 	<ContainerWrapper>
 		<OvalCenter>
 			<OvalSvg />
@@ -144,63 +144,17 @@ const ValidatingBusinessIdea = () => (
 
 		<ContentCenter>
 			<TitleBox>
-				<Heading size={2}>What is an LLC?</Heading>
+				<Heading size={2}>What is an S Corp?</Heading>
 				<Paragraph big>
-					In the United States, a limited liability company is a business entity
-					type that combines the pass-through taxation of a partnership or sole
-					proprietorship with the limited liability of a corporation, creating
-					the best of both worlds for business owners. LLCs have rapidly become
-					one of the most popular business structures for new and small
-					businesses, largely because they are considered to be simpler and more
-					flexible than a corporation.
+					An S Corp, also known as the subchapter or small business corporation,
+					is a tax code that was enacted into law by Congress in 1958. The S
+					Corp was created to encourage and support the creation of small and
+					family businesses, while eliminating the double taxation that
+					conventional corporations were subjected to.
 				</Paragraph>
-				<Paragraph big bottomMargin={80}>
-					When you form an LLC, your business becomes its own legal entity, with
-					separate debts and legal matters. However, LLCs are still tied to your
-					personal taxes.
-				</Paragraph>
-				<LightBoxVideo
-					thumbnailVideo="what-is-an-llc-7280"
-					videoID="ZuadTwgek5U"
-				/>
 			</TitleBox>
-			<Boxes>
-				<div className="box">
-					<Heading size={3} template={4}>
-						Limited Libility
-					</Heading>
-					<p>of a corporation</p>
-				</div>
-				<div className="circle">
-					<span>
-						<PlusCircleOrangeSVG />
-					</span>
-				</div>
-				<div className="box">
-					<Heading size={3} template={4}>
-						Pass - Through Taxation
-					</Heading>
-					<p>of a sole proprietorship</p>
-				</div>
-				<div className="circle">
-					<span>
-						<EqualCircleOrangeSVG />
-					</span>
-				</div>
-				<div className="box">
-					<div className="icon">
-						<Image
-							filename="llc-cert-4502"
-							imageAlt="a papersheet with a trademark icon"
-						/>
-					</div>
-					<Heading size={3} template={4}>
-						LLC
-					</Heading>
-				</div>
-			</Boxes>
 		</ContentCenter>
 	</ContainerWrapper>
 );
 
-export default ValidatingBusinessIdea;
+export default WhatIsSCorp;

@@ -3,12 +3,11 @@ import styled from "styled-components";
 import parse from "html-react-parser";
 import { color } from "../../../atoms/styles/colors";
 import { Paragraph } from "../../../atoms/typography/paragraph";
-import ArrowLink from "../../../molecules/buttons/text";
 import ImageContent from "../../../partials/left-image-right-content";
 import IconSVG from "../../../../images/icons/megafon.inline.svg";
 import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
 import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
+import OvalSVG from "../../../../images/ovals/top-left-transparent-green3.inline.svg";
 import { Heading } from "../../../atoms/typography/heading";
 
 const About = styled.section`
@@ -22,13 +21,9 @@ const About = styled.section`
 	p {
 		span {
 			display: block;
-			width: 100%;
-			max-width: 670px;
-			font-family: MarkPro;
-			font-size: 24px;
-			line-height: 32px;
 			color: ${color.black};
-			margin-bottom: 24px;
+			font-weight: bold;
+			margin-top: 24px;
 		}
 	}
 `;
@@ -38,21 +33,18 @@ const AboutSection = ({ className, content }) => (
 		<Oval className="oval" height="420" width="420" y="15">
 			<OvalSVG />
 		</Oval>
-		<ImageContent image="state-entity-search-9829">
-			<Paragraph big mixed>
+		<ImageContent image="weight">
+			<Paragraph big mixed bottomMargin={64}>
 				{parse(content.text)}
 			</Paragraph>
 			<IconTextColorBox
-				color={color.babyblue3}
+				color={color.blue3}
 				Icon={IconSVG}
 				content={content.box}
-				bottomMargin="48"
 				rounded
 				curve
-				curveColor={color.green1}
-				paragraphHeader
+				curveColor={color.blue1}
 			/>
-			<Paragraph big>{content.text2}</Paragraph>
 		</ImageContent>
 	</About>
 );

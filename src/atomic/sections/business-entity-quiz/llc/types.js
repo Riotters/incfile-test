@@ -7,7 +7,7 @@ import ImageContent from "../../../partials/left-image-right-content";
 import IconSVG from "../../../../images/icons/megafon.inline.svg";
 import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
 import { Heading } from "../../../atoms/typography/heading";
-import Button from "../../../molecules/buttons/button-action";
+import Button from "../../../molecules/buttons/button";
 
 const About = styled.section`
 	position: relative;

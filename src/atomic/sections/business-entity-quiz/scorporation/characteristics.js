@@ -11,12 +11,7 @@ import { color, gradient } from "../../../atoms/styles/colors";
 
 const IsItForYou = ({ content }) => (
 	<Wrapper>
-		<TextCenterLayout
-			headline={content.header}
-			text={content.text}
-			headlineWidth={770}
-			textWidth={770}
-		/>
+		<TextCenterLayout headline={content.header} headlineWidth={770} />
 
 		<Container>
 			<AdventagesWrapper>
@@ -24,7 +19,6 @@ const IsItForYou = ({ content }) => (
 					<Adventages
 						disadventage={box.disadventage}
 						circleBackgroundColor={box.circleBackgroundColor}
-						circleBackgroundShadow={box.circleBackgroundShadow}
 						text={box.text}
 						width="100%"
 					/>
@@ -38,16 +32,6 @@ const Wrapper = styled.section`
 	padding-top: 120px;
 	padding-bottom: 100px;
 	position: relative;
-
-	&::before {
-		content: "";
-		height: 2008px;
-		width: 100%;
-		background-image: ${gradient.blue3};
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
 `;
 
 const AdventagesWrapper = styled.div`
@@ -65,7 +49,7 @@ const AdventagesWrapper = styled.div`
 	}
 
 	@media (min-width: 992px) {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 
 	ul {

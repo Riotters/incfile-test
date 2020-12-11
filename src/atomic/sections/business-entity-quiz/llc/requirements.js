@@ -23,10 +23,7 @@ const SettingBusiness = () => (
 
 		<Container>
 			<ImageBoxes>
-				<TopImageBox
-					image="we-doubled-the-size-of-customer-service"
-					color={color.orange3}
-				>
+				<TopImageBox image="permits-licences" color={color.orange3}>
 					<Heading size={3} template={4}>
 						LLC Operating Agreements
 					</Heading>
@@ -42,7 +39,7 @@ const SettingBusiness = () => (
 					</p>
 				</TopImageBox>
 
-				<TopImageBox image="display-ads" color={color.purple3}>
+				<TopImageBox image="sign-932" color={color.purple3}>
 					<Heading size={3} template={4}>
 						LLC Annual Reports
 					</Heading>
