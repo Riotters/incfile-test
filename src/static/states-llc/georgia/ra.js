@@ -33,7 +33,9 @@ export const agentPageContent = {
     },
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      topMargin: 40,
       content: `What the Georgia Secretary of State Says About Registered Agents`,
     },
     {
@@ -52,7 +54,8 @@ export const agentPageContent = {
     // Rules for agents
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
       content: `Rules for Georgia Registered Agents`,
     },
     {
@@ -81,6 +84,7 @@ export const agentPageContent = {
     {
       type: `heading`,
       size: 2,
+      template: 3,
       content: `The Purpose of a Georgia Registered Agent`,
     },
     {
@@ -104,6 +108,8 @@ export const agentPageContent = {
     {
       type: `heading`,
       size: 3,
+      template: 3,
+      topMargin: 40,
       content: `Incfile Provides a Free Georgia Registered Agent Service for the First Year`,
     },
     {
@@ -136,7 +142,8 @@ export const agentPageContent = {
     //Appointing a TX Registered Agent Service for Your Texas LLC
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
       content: `Appointing a Registered Agent in Georgia`,
     },
     {
@@ -145,7 +152,8 @@ export const agentPageContent = {
     },
     {
       type: `heading`,
-      size: 4,
+      size: 3,
+      template: 3,
       content: `Appoint a Registered Agent When You Create Your Georgia LLC`,
     },
     {
@@ -154,6 +162,7 @@ export const agentPageContent = {
     },
     {
       type: `accordionWithCounting`,
+      header: 3,
       content: [
         {
           count: 1,
@@ -190,7 +199,8 @@ export const agentPageContent = {
     // Assign a Different Texas Registered Agent Service After Incorporation
     {
       type: `heading`,
-      size: 4,
+      size: 3,
+      template: 3,
       content: `Assign a Different Georgia Registered Agent After Incorporation`,
     },
     {
@@ -199,6 +209,7 @@ export const agentPageContent = {
     },
     {
       type: `accordionWithCounting`,
+      header: 3,
       content: [
         {
           count: 1,
@@ -235,7 +246,8 @@ export const agentPageContent = {
     // Texas Registered Agent Search
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
       content: `Georgia Registered Agent Search`,
     },
     {
@@ -250,7 +262,8 @@ export const agentPageContent = {
     // What Happens if You Don’t Have a Registered Agent?
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
       content: `What Happens if You Don’t Have a Registered Agent?`,
     },
     {
@@ -272,7 +285,9 @@ export const agentPageContent = {
     // Acting as Your Own Registered Agent for Your TX LLC
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      topMargin: 32,
       content: `Acting as Your Own Registered Agent for Your GA LLC`,
     },
     {
@@ -295,11 +310,14 @@ export const agentPageContent = {
     // Faqs section
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      topMargin: 32,
       content: `FAQs About Georgia Registered Agents`,
     },
     {
       type: `accordion`,
+      header: 3,
       content: {
         items: [
           {
@@ -325,7 +343,9 @@ export const agentPageContent = {
     // Other resources
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      topMargin: 32,
       content: `Other Useful Resources`,
     },
     {

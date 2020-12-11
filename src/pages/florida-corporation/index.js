@@ -16,11 +16,11 @@ import Subscription from "../../atomic/sections/learning-center-entity/state-inf
 import Articles from "../../atomic/sections/articles";
 //Texts
 import {
-	top,
-	tabPages,
-	corporation,
-	launchBusiness,
-	subscription,
+  top,
+  tabPages,
+  corporation,
+  launchBusiness,
+  subscription,
 } from "../../static/learning-center-entity/state-information-florida";
 import LeftTabPages from "../../atomic/sections/choose-your-business/left-tab-pages";
 import MainPageContent from "../../atomic/states-llc/page-content";
@@ -29,52 +29,52 @@ import CorporationLayout from "../../atomic/partials/corporation-layout";
 import { getFullPricesAndFilings } from "../../api/Api";
 
 const FloridaCorporation = () => {
-	const [dataApi, setDataApi] = React.useState({});
-	React.useEffect(() => {
-		getFullPricesAndFilings("Florida", "Corporation").then((data) => {
-			setDataApi(data);
-		});
-	}, []);
-	return (
-		<Layout>
-			<SEO
-				title="Florida Corporations & Other Business Entities "
-				description="Thinking of starting an S Corp, C Corp, or LLC in Florida? Learn about corporations in FL and decide which business type is right for you."
-			/>
-			<Top
-				imageName="mr-bulb-corporation-california-8302"
-				imageAlt="Mrs Bulb and with checklist"
-				ovalColor="purple-2"
-				textWidth="530"
-			>
-				<h1>{top.header}</h1>
-				<HeadingP size={2} big color={color.grey2}>
-					{top.text}
-				</HeadingP>
-				<Buttonsbox>
-					<Button
-						externalLink
-						content={top.buttons[0]}
-						theme="primary56"
-						arrow
-					/>
-				</Buttonsbox>
-			</Top>
-			<CorporationLayout>
-				<LeftTabPages content={tabPages} nonDIY />
-				<MainPageContent>
-					<ContentMap content={corporation} />
-				</MainPageContent>
-			</CorporationLayout>
-			<Rocket content={launchBusiness} />
-			<Requirements data={dataApi} />
-			<LearnMore data={dataApi} />
-			<QuickLinks />
-			<Variants data={dataApi} />
-			<Subscription content={subscription} />
-			<Articles />
-		</Layout>
-	);
+  const [dataApi, setDataApi] = React.useState({});
+  React.useEffect(() => {
+    getFullPricesAndFilings("Florida", "Corporation").then((data) => {
+      setDataApi(data);
+    });
+  }, []);
+  return (
+    <Layout>
+      <SEO
+        title="Florida Corporations & Other Business Entities "
+        description="Thinking of starting an S Corp, C Corp, or LLC in Florida? Learn about corporations in FL and decide which business type is right for you."
+      />
+      <Top
+        imageName="mr-bulb-corporation-california-8302"
+        imageAlt="Mrs Bulb and with checklist"
+        ovalColor="purple-2"
+        textWidth="530"
+      >
+        <h1>{top.header}</h1>
+        <HeadingP size={2} big color={color.grey2}>
+          {top.text}
+        </HeadingP>
+        <Buttonsbox>
+          <Button
+            externalLink
+            content={top.buttons[0]}
+            theme="primary56"
+            arrow
+          />
+        </Buttonsbox>
+      </Top>
+      <CorporationLayout>
+        <LeftTabPages content={tabPages} nonDIY />
+        <MainPageContent>
+          <ContentMap content={corporation} />
+        </MainPageContent>
+      </CorporationLayout>
+      <Rocket content={launchBusiness} />
+      <Requirements data={dataApi} />
+      <LearnMore data={dataApi} />
+      <QuickLinks />
+      <Variants data={dataApi} />
+      <Subscription content={subscription} />
+      <Articles />
+    </Layout>
+  );
 };
 
 export default FloridaCorporation;
