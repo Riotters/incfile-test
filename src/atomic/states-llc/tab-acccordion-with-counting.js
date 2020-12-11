@@ -289,6 +289,7 @@ const AccordionWithCounting = ({
 	curveRightBottom,
 	tab,
 	listColor,
+	header,
 }) => {
 	return (
 		// <VisibilitySensor partialVisibility once>
@@ -311,7 +312,10 @@ const AccordionWithCounting = ({
 								<CountingWrapper>
 									<Counting>{item.count}</Counting>
 								</CountingWrapper>
-								<Text>{item.question}</Text>
+								{!header && <Text>{item.question}</Text>}
+								{header === 3 && <h3>{item.question}</h3>}
+								{header === 4 && <h4>{item.question}</h4>}
+								{header === 5 && <h5>{item.question}</h5>}
 								{/* </Content> */}
 								<Icon>
 									<ArrowSVG />
