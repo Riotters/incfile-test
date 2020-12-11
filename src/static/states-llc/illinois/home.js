@@ -163,12 +163,15 @@ export const HomePageContent = {
     otherInfo: [
       {
         type: `heading`,
-        size: 3,
+        size: 2,
+        template: 3,
+        left: true,
         content: `Other Important Illinois LLC Info`,
       },
       {
         type: `heading`,
-        size: 4,
+        size: 3,
+        template: 4,
         content: `Special Types of LLCs in Illinois`,
       },
       {
@@ -176,9 +179,9 @@ export const HomePageContent = {
         content: `A regular Illinois LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
       },
       {
-        type: `Series LLCs`,
+        type: `heading`,
         size: 4,
-        content: `Professional LLCs`,
+        content: `Series LLCs`,
       },
       {
         type: `paragraph`,
@@ -222,7 +225,8 @@ export const HomePageContent = {
       // Helpful resource
       {
         type: `heading`,
-        size: 4,
+        size: 3,
+        template: 4,
         content: `Helpful Resources from the Illinois Secretary of State`,
       },
       {

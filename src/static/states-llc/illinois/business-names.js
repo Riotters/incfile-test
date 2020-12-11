@@ -28,7 +28,9 @@ export const businessNamesContent = {
     },
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `General Rules for LLC Names`,
     },
     {
@@ -97,10 +99,13 @@ export const businessNamesContent = {
           ],
         },
       ],
+      header: 3,
     },
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Specific Illinois Rules for Business Names`,
     },
     {
@@ -122,7 +127,8 @@ export const businessNamesContent = {
     },
     {
       type: `heading`,
-      size: 4,
+      size: 3,
+      template: 4,
       content: `Coming up with a Great Business Name`,
     },
     {
@@ -163,7 +169,9 @@ export const businessNamesContent = {
     // Business name search
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Illinois Business Entity Searches`,
     },
     {
@@ -202,7 +210,9 @@ export const businessNamesContent = {
     // Assumed Name
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `DBA / Assumed Names for Illinois LLCs`,
     },
     {
@@ -229,7 +239,9 @@ export const businessNamesContent = {
     // Register Your Business Name With the Illinois Secretary of State
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Register Your Business Name With the Illinois Secretary of State`,
     },
     {
@@ -243,6 +255,7 @@ export const businessNamesContent = {
           LLC-1.15 “Application to Reserve a Name” form and file it with the IL SOS. You do not need to reserve a name if you are forming your business right away.`,
         `If you’re ready to start your Illinois LLC, you can formally file your Articles of Organization with the Illinois Secretary of State, or have Incfile do it for you.`,
       ],
+      header: 3,
     },
     {
       type: `box-cta`,

@@ -25,7 +25,7 @@ const RegisteredAgentSection = ({ content }) => {
             {content.map((item, i) => (
                 <div>
                     {item.type === 'heading' && 
-                        <Heading size={item.size} style={{ marginTop: `42px`, textAlign: `left` }}>{item.content}</Heading>
+                        <Heading size={item.size} style={{ marginTop: `42px`, textAlign: `left` }} template={item.template} center={item.center} left={item.left}>{item.content}</Heading>
                     }
                                         
                     {item.type === 'paragraph' && 
@@ -45,7 +45,7 @@ const RegisteredAgentSection = ({ content }) => {
                     }
 
                     {item.type === 'accordingTabWithCountingLeft' && 
-                        <AcccordionCounting content={item.content} tab/>
+                        <AcccordionCounting content={item.content} tab header={item.header}/>
                     }
 
                     {item.type === 'numberBoxList' && 
@@ -73,7 +73,7 @@ const RegisteredAgentSection = ({ content }) => {
                     )}
 
                     {item.type === 'accordionWithCounting' && (
-                        <AcccordionCounting content={item.content} tab/>
+                        <AcccordionCounting content={item.content} tab header={item.header}/>
                     )}
 
                     {item.type === "video" && (

@@ -82,7 +82,7 @@ const HowToGuide = ({ content, data }) => {
   return (
     <Wrapper>
       {/* Why choose section */}
-      <Heading size={3}>{parse(content.whyChoose.heading)}</Heading>
+      <Heading size={2} template={3} left>{parse(content.whyChoose.heading)}</Heading>
       <Paragraph big mixed>
         {parse(content.whyChoose.text1)}
       </Paragraph>
@@ -105,7 +105,7 @@ const HowToGuide = ({ content, data }) => {
       <Paragraph big>{content.whyChoose.text4}</Paragraph>
 
       {/* Main Steps */}
-      <Heading size={3} bottomMargin="40" style={{ marginTop: `48px` }}>
+      <Heading size={2} template={3} left bottomMargin="40" style={{ marginTop: `48px` }}>
         {content.mainSteps.heading3}
       </Heading>
 
@@ -250,6 +250,7 @@ const HowToGuide = ({ content, data }) => {
           color={color.blue3}
           content={content.mainSteps.step4.lists}
           rounded
+          paragraphHeader
         />
         <Button
           content={content.mainSteps.step4.dowload_205_button}
@@ -351,7 +352,7 @@ const HowToGuide = ({ content, data }) => {
       {content.otherInfo.map((item, i) => (
         <div>
           {item.type === "heading" && (
-            <Heading size={item.size} style={{ marginTop: `42px` }}>
+            <Heading size={item.size} style={{ marginTop: `42px` }} template={item.template} center={item.center} left={item.left}>
               {item.content}
             </Heading>
           )}
@@ -378,6 +379,7 @@ const HowToGuide = ({ content, data }) => {
               color={color.blue3}
               content={item.content}
               rounded
+              paragraphHeader={item.paragraphHeader}
             />
           )}
 
