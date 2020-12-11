@@ -4,7 +4,7 @@ export const HomePageContent = {
     subline: `aaa`,
     boxes: [
       {
-        title: `Learn how to form a Florida <br>LLC yourself`,
+        title: `Learn how to form a <br> Florida LLC yourself`,
         desc: `Read our DIY guide to Florida LLC formation, with information on Registered Agents, naming rules, business licenses, and more.`,
         button: {
           text: `Read The Guide`,
