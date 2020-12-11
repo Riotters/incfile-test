@@ -12,7 +12,7 @@ const LackOfMoney = () => (
             <OvalSvg/>
         </Oval>
         <Container style={{paddingTop: "100px", paddingBottom: "100px"}} width={750}>
-            <Heading size={2} template={4} left style={{fontSize: "40px"}}>
+            <Heading size={2} template={4} left style={{fontSize: "40px", lineHeight: `45px`}}>
             Why a Lack of Money Shouldn’t Stop You From Starting a New Business
             </Heading>
             <Paragraph big style={{marginBottom: "48px"}}>
