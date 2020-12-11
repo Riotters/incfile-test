@@ -66,14 +66,14 @@ const OklahomaCorporation = () => {
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt="corporation in oklahoma"
 				ovalColor="purple-2"
 				headlineWidth="560"
 			>
 				<h1>{top.header}</h1>
 				<p>{top.text}</p>
-				<Buttonsbox>
-					<Button content={top.buttons[0]} theme="primary56" arrow />
+                <Buttonsbox>
+					<Button externalLink content={top.buttons[0]} theme="primary56" arrow />
 				</Buttonsbox>
 
 				<RatingRow>
@@ -96,8 +96,13 @@ const OklahomaCorporation = () => {
 								left
 								style={{ marginBottom: "24px" }}
 							>
-								Choosing a Corporation Name
+                                Choosing a Corporation Name
 							</Heading>
+                            <LightBox
+								bottomMargin={42}
+								thumbnailVideo="what-is-a-corporation-8899"
+								videoID="oYZShvmf9eQ"
+							/>
 							<Paragraph big>
 								You’ll need to choose and register a name for your new Oklahoma
 								corporation before you can actually conduct business in the
@@ -157,11 +162,7 @@ const OklahomaCorporation = () => {
 								An available corporate name may be reserved for 60 days for a
 								$10 fee.
 							</Paragraph>
-							<LightBox
-								bottomMargin={42}
-								thumbnailVideo="what-is-a-corporation-8899"
-								videoID="oYZShvmf9eQ"
-							/>
+							
 						</PanelWrapper>
 					</TabPanel>
 					<TabPanel>
@@ -541,10 +542,6 @@ const OklahomaCorporation = () => {
 	);
 };
 
-const InfoSection = styled.section`
-	margin-bottom: 148px;
-`;
-
 const QuestionSection = styled.section`
 	background-image: ${gradient.orange3};
 	position: relative;
@@ -552,8 +549,6 @@ const QuestionSection = styled.section`
 	margin-top: 52px;
 	margin-bottom: 148px;
 `;
-
-const PackageSection = styled.section``;
 
 const ServiceSection = styled.section`
 	background-image: ${gradient.blue3};
@@ -570,25 +565,6 @@ const TabsWrapper = styled.section`
 	@media (min-width: 992px) {
 		margin-top: 21px;
 	}
-`;
-
-const AdventagesBox = styled.div`
-  display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 100%;
-    justify-content: center;
-    column-gap: 30px;
-    row-gap: 20px;
-    margin-top: 76px;
-    margin-bottom 76px; 
-    
-    @media (min-width: 490px){
-        grid-template-columns: 470px;
-    }
-    
-    @media (min-width: 992px){
-        grid-template-columns: 470px 470px;
-    }
 `;
 
 export default OklahomaCorporation;

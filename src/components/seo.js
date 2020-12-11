@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title, canonicalURL, robots }) {
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -27,7 +28,7 @@ function SEO({ description, lang, meta, title, canonicalURL, robots }) {
 
     const metaDescription = description || site.siteMetadata.description;
     const pathName = typeof window !== 'undefined' ? window.location.pathname : '';
-    const canURL = canonicalURL || pathName;
+    const canURL = `${site.siteMetadata.siteUrl}${canonicalURL || pathName}`;
     
     return (
         <Helmet

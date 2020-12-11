@@ -1165,7 +1165,7 @@ export const entityType = [
 		type: "button",
 		content: {
 			text: "Business Type Quiz Info",
-			url: "/",
+			url: "/business-entity-quiz/explain/",
 		},
 		theme: "primary56",
 	},
