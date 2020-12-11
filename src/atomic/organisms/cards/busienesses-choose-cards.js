@@ -17,11 +17,11 @@ const Wrapper = styled.div`
 `
 
 
-const PricingCards = ({ className, content }) => {
+const PricingCards = ({ className, content, paragraphHeaders = false }) => {
   return (
     <Wrapper className={className}>
         {content.map(card => (
-            <Adventages content={card}/>
+            <Adventages content={card} paragraphHeader={paragraphHeaders} />
         ))}
     </Wrapper>
   )

@@ -9,6 +9,7 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import Oval2SVG from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import CheckBlueSVG from "../../../../images/circle-status-check-blue.inline.svg";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const Help = styled.section`
 	position: relative;
@@ -95,7 +96,7 @@ const HelpSection = ({ className, content }) => (
 				<Heading size="2" bottomMargin="56" maxWidth="460">
 					{content.header}
 				</Heading>
-				<Heading size="3" template={4}>{content.header2}</Heading>
+				<PHeading size={3} template={4}>{content.header2}</PHeading>
 				<Paragraph big bottomMargin="0">
 					{content.text}
 				</Paragraph>

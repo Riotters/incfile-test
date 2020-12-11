@@ -6,6 +6,7 @@ import ShowUncompleted from "./show-uncompleted";
 import { color } from "../styles/colors";
 import { shadow } from "../styles/shadows";
 import parse from "html-react-parser";
+import {Heading} from "../../atomic/atoms/typography/heading";
 
 const description =
   "In oculis quidem faciunt, ut labore et via procedat oratio quaerimus igitur, quid bonum esse ratione intellegi posse et molestiae non recusandae itaque negat opus esse appetendum, alterum aspernandum sentiamus alii autem, quibus ego assentior, cum a philosophis compluribus permulta dicantur, cur verear, ne ferae.";
@@ -239,7 +240,7 @@ class Checklist extends React.Component {
             <this.props.icon />
           </HeaderIcon>
           <HeaderContent>
-            <p className="title">{this.props.title}</p>
+            <Heading size={2} left className="title">{this.props.title}</Heading>
             <p className="numeration">
               {completed.length} of {this.state.items.length} completed
             </p>

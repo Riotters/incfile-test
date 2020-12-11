@@ -83,7 +83,9 @@ const HowToGuide = ({ content, data }) => {
   return (
     <Wrapper>
       {/* Why choose section */}
-      <Heading size={3}>{parse(content.whyChoose.heading)}</Heading>
+      <Heading size={2} template={2} left={true} bottomMargin={48}>
+        {parse(content.whyChoose.heading)}
+      </Heading>
       <Paragraph big mixed>
         {parse(content.whyChoose.text1)}
       </Paragraph>
@@ -103,10 +105,12 @@ const HowToGuide = ({ content, data }) => {
       <Paragraph big mixed={true}>
         {parse(content.whyChoose.learnmore)}
       </Paragraph>
-      <Paragraph big>{content.whyChoose.text4}</Paragraph>
+      <Paragraph big bottomMargin={56}>
+        {content.whyChoose.text4}
+      </Paragraph>
 
       {/* Main Steps */}
-      <Heading size={3} bottomMargin="40" style={{ marginTop: `48px` }}>
+      <Heading size={2} template={3} left={true} bottomMargin={40}>
         {content.mainSteps.heading3}
       </Heading>
 
@@ -154,7 +158,9 @@ const HowToGuide = ({ content, data }) => {
         width={100}
         widthUnit="%"
       >
-        <Heading size={3}>{content.mainSteps.step1.heading1}</Heading>
+        <Heading size={3} template={3} left={true}>
+          {content.mainSteps.step1.heading1}
+        </Heading>
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step1.text1)}
         </Paragraph>
@@ -185,7 +191,9 @@ const HowToGuide = ({ content, data }) => {
         width={100}
         widthUnit="%"
       >
-        <Heading size={3}>{content.mainSteps.step2.heading1}</Heading>
+        <Heading size={3} template={3} left={true}>
+          {content.mainSteps.step2.heading1}
+        </Heading>
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step2.text1)}
         </Paragraph>
@@ -208,7 +216,9 @@ const HowToGuide = ({ content, data }) => {
         width={100}
         widthUnit="%"
       >
-        <Heading size={3}>{content.mainSteps.step3.heading1}</Heading>
+        <Heading size={3} template={3} left={true}>
+          {content.mainSteps.step3.heading1}
+        </Heading>
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step3.text1)}
         </Paragraph>
@@ -243,7 +253,9 @@ const HowToGuide = ({ content, data }) => {
         width={100}
         widthUnit="%"
       >
-        <Heading size={3}>{content.mainSteps.step4.heading1}</Heading>
+        <Heading size={3} template={3} left={true}>
+          {content.mainSteps.step4.heading1}
+        </Heading>
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step4.text1)}
         </Paragraph>
@@ -308,7 +320,9 @@ const HowToGuide = ({ content, data }) => {
         width={100}
         widthUnit="%"
       >
-        <Heading size={3}>{content.mainSteps.step5.heading1}</Heading>
+        <Heading size={3} template={3} left={true}>
+          {content.mainSteps.step5.heading1}
+        </Heading>
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step5.text1)}
         </Paragraph>
@@ -331,7 +345,9 @@ const HowToGuide = ({ content, data }) => {
         width={100}
         widthUnit="%"
       >
-        <Heading size={3}>{content.mainSteps.step6.heading1}</Heading>
+        <Heading size={3} template={3} left={true}>
+          {content.mainSteps.step6.heading1}
+        </Heading>
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step6.text1)}
         </Paragraph>
@@ -356,13 +372,18 @@ const HowToGuide = ({ content, data }) => {
       {content.otherInfo.map((item, i) => (
         <div>
           {item.type === "heading" && (
-            <Heading size={item.size} style={{ marginTop: `42px` }}>
+            <Heading
+              size={item.size}
+              template={item.template}
+              bottomMargin={item.bottomMargin}
+              left={item.left}
+            >
               {item.content}
             </Heading>
           )}
 
           {item.type === "paragraph" && (
-            <Paragraph big mixed={true}>
+            <Paragraph big mixed={true} bottomMargin={item.bottomMargin}>
               {parse(item.content)}
             </Paragraph>
           )}

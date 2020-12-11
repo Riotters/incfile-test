@@ -15,7 +15,7 @@ const About = styled.section`
     padding-bottom: 64px;
   }
 
-  p {
+  p:not([class*="i-believe-i-can-be-a-h"]) {
     color: ${color.grey2};
   }
 `;

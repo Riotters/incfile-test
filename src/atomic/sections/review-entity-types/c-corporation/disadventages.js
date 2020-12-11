@@ -22,7 +22,7 @@ const DisadventagesSection = ({ className, content }) => (
       <Paragraph big>{content.text}</Paragraph>
     </Container>
     <ContentCenter>
-      <Cards content={content.cards} />
+      <Cards content={content.cards} paragraphHeading />
     </ContentCenter>
   </Disadventages>
 );

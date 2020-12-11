@@ -92,5 +92,5 @@ HeadingP.propTypes = {
 
 HeadingP.defaultProps = {
 	size: 1,
-	bottomMargin: `24`,
+	bottomMargin: `32`,
 };

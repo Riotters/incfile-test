@@ -15,7 +15,7 @@ const BehalfSection = ({ className, content }) => (
     <Behalf className={className}>
         <HeadingCenter headline={content.header} headlineWidth="770" text={content.text} textWidth="770" />
         <ContentCenter>
-            <BehalfCards content={content.cards} />
+            <BehalfCards content={content.cards} paragraphHeaders />
             <Button content={content.button} theme="primary56" arrow />
         </ContentCenter>
     </Behalf>

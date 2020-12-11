@@ -25,6 +25,7 @@ import {
 } from "../static/review-entity-types/nonprofit";
 import ProductSchema from "../components/product-schema";
 import { Helmet } from "react-helmet";
+import {HeadingP} from "../atomic/atoms/typography/heading-to-p";
 
 const IndexPage = () => {
 	const [modalVisible, setModalVisible] = React.useState(false);
@@ -75,7 +76,7 @@ const IndexPage = () => {
 				ovalColor="yellow"
 			>
 				<h1>{top.header}</h1>
-				<p>{top.text}</p>
+				<HeadingP size={2} big>{top.text}</HeadingP>
 				<Buttonsbox>
 					<ExternalLink
 						content={top.button[0]}

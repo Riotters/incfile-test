@@ -20,9 +20,11 @@ export const businessTaxesPageContent = {
   content: [
     {
       type: `heading`,
-      styles: { marginTop: `0` },
       size: 2,
+      template: 2,
       content: `How Your Georgia LLC Will Be Taxed`,
+      marginBottom: 48,
+      left: true,
     },
     {
       type: `paragraph`,
@@ -80,6 +82,7 @@ export const businessTaxesPageContent = {
       type: `arrow-links`,
       content: [
         {
+          style: { marginBottom: `40px` },
           text: `Get details on Georgia state tax here`,
           url: `https://dor.georgia.gov/`,
         },
@@ -87,7 +90,6 @@ export const businessTaxesPageContent = {
     },
     {
       type: `heading`,
-      styles: { marginTop: `48px` },
       size: 3,
       content: `Georgia Sales Taxes on LLC Sales`,
     },
@@ -114,6 +116,7 @@ export const businessTaxesPageContent = {
       type: `arrow-links`,
       content: [
         {
+          style: { marginBottom: `40px` },
           text: `Get details on Georgia state tax here`,
           url: `https://dor.georgia.gov/`,
         },
@@ -123,7 +126,6 @@ export const businessTaxesPageContent = {
     /////////////
     {
       type: `heading`,
-      styles: { marginTop: `56px` },
       size: 3,
       content: `Georgia Sales Tax Rates`,
     },

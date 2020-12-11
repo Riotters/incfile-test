@@ -9,6 +9,7 @@ import Diagram from "../../../organisms/diagrams/fictitious-diagram";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
 import LightBoxVideo from "../../../../components/LightBox";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const About = styled.section`
   position: relative;
@@ -40,15 +41,15 @@ const AboutSection = ({ className, content }) => (
         <Oval className="oval" height="570" width="570" y="-40">
             <OvalSVG />
         </Oval>
-        <HeadingCenter className="heading" headline={content.header} headlineWidth="770" />
+        <HeadingCenter className="heading" headline={content.header} headlineWidth="770" paragraphHeading />
         <ContentCenter>
             <Diagram content={content.diagram} />
             <Paragraph maxWidth="970" style={{ textAlign: "center" }}>
                 {content.text}
             </Paragraph>
-            <Heading size="4" bottomMargin="48" style={{ textAlign: "center" }}>
+            <PHeading size={4} bottomMargin="48" style={{ textAlign: "center" }}>
                 {content.header2}
-            </Heading>
+            </PHeading>
             <LightBoxVideo thumbnailVideo="what-does-dba-mean-7388" videoID="jPE31BJPUeY" bottomMargin="48" />
             <Button theme="secondary56" content={content.button} arrow />
         </ContentCenter>

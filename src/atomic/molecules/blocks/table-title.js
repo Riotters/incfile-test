@@ -5,10 +5,12 @@ import { Heading } from "../../atoms/typography/heading";
 import Icon from "../../../images/icons/question-orange.inline.svg";
 import { shadow } from "../../atoms/styles/shadows";
 import { color } from "../../atoms/styles/colors";
+import ChooseHeadingType from "../../atoms/typography/ConditionalHeading";
 
-const TitleWithInfoBox = ({ title, hasInfoBox, infoBoxText, questionMarkColor, ...rest }) => (
+const TitleWithInfoBox = ({ title, hasInfoBox, infoBoxText, questionMarkColor, paragraphHeading = false, ...rest }) => (
   <Header {...rest}>
-    <Heading size={2} style={{ fontSize: "24px", lineHeight: "29px", textAlign: "left", marginBottom: 0 }}>
+      {/*<ChooseHeadingType headerSize={2} content={title} paragraphHeader={paragraphHeading} />*/}
+    <Heading size={2}>
       {title}
     </Heading>
     {hasInfoBox && (
@@ -30,6 +32,13 @@ const Header = styled.header`
   margin-bottom: 48px;
   position: relative;
   z-index: 999;
+  
+  h2, [class*="i-believe-i-can-be-a-h"] {
+      font-size: 24px;
+      line-height: 29px;
+      text-align: left;
+      margin-bottom: 0;
+  }
 `;
 
 const InfoBox = styled.div`

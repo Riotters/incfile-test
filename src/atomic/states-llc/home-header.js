@@ -62,28 +62,54 @@ const WrappBox = styled.div`
 `;
 
 const HomeHeader = ({ content, data }) => (
-    <Container>
-        <Curve left="40" top="130">
-            <CurveSVG />
-        </Curve>
-        <Content>
-            <Heading size={1} bottomMargin="80">
-                {content.title}
+  <Container>
+    <Curve left="40" top="130">
+      <CurveSVG />
+    </Curve>
+    <Content>
+      <Heading
+        size={content.size}
+        template={content.template}
+        bottomMargin={content.bottomMargin}
+        left={content.left}
+      >
+        {content.title}
+      </Heading>
+      <WrappBox>
+        {content.boxes.map((box, i) => (
+          <Colorbox color={color.white} className="box" key={i}>
+            <Heading
+              size={box.size}
+              template={box.template}
+              bottomMargin={box.bottomMargin}
+              left={box.left}
+            >
+              {parse(box.title)}
             </Heading>
-            <WrappBox>
-                {content.boxes.map((box, i) => (
-                    <Colorbox color={color.white} className="box" key={i}>
-                        <Heading size={4}>{parse(box.title)}</Heading>
-                        <Paragraph>{replace(box.desc, `[STATE_FEE]`, data.prices?.statefee)}</Paragraph>
-                        {box.externalLink
-                            ? <Button arrow content={box.button} theme="primary56" width="240" externalLink />
-                            : <Button arrow content={box.button} theme="primary56" width="240" />
-                        }
-                    </Colorbox>
-                ))}
-            </WrappBox>
-        </Content>
-    </Container>
+            <Paragraph>
+              {replace(box.desc, `[STATE_FEE]`, data.prices?.statefee)}
+            </Paragraph>
+            {box.externalLink ? (
+              <Button
+                arrow
+                content={box.button}
+                theme="primary56"
+                width="240"
+                externalLink
+              />
+            ) : (
+              <Button
+                arrow
+                content={box.button}
+                theme="primary56"
+                width="240"
+              />
+            )}
+          </Colorbox>
+        ))}
+      </WrappBox>
+    </Content>
+  </Container>
 );
 
 export default HomeHeader;

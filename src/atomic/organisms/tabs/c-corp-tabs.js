@@ -18,6 +18,7 @@ import { Paragraph } from "../../atoms/typography/paragraph";
 import CheckText from "../../../components/static-check/text-boxed";
 //import CheckText from "../../molecules/text-blocks/text-check";
 import LightBoxVideo from "../../../components/LightBox";
+import {PHeading} from "../../atoms/typography/p-to-heading";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -351,6 +352,7 @@ const CCorpTabs = ({ layout, columns, content }) => {
 									rounded
 									curve
 									curveColor={color.yellow1}
+									paragraphHeader
 								/>
 								<Paragraph big>{content.content[0].text2}</Paragraph>
 							</PanelWrapper>
@@ -376,8 +378,8 @@ const CCorpTabs = ({ layout, columns, content }) => {
 									structure, there are other options for forming businesses in
 									the US.
 								</Paragraph>
-								<Heading size="4">Chosing a C Corp</Heading>
-								<Heading size="5">Pros</Heading>
+								<PHeading size={4}>Chosing a C Corp</PHeading>
+								<PHeading size={5}>Pros</PHeading>
 								<CheckText bottomMargin="8">
 									<p>Limited Liability</p>
 								</CheckText>
@@ -393,7 +395,7 @@ const CCorpTabs = ({ layout, columns, content }) => {
 								<CheckText bottomMargin="40">
 									<p>Enhanced Corporate Credibility</p>
 								</CheckText>
-								<Heading size="5">Cons</Heading>
+								<PHeading size={5}>Cons</PHeading>
 								<CheckText isRed bottomMargin="8">
 									<p>Different Tax Structure</p>
 								</CheckText>
