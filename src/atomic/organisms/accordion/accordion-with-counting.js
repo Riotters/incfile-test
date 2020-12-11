@@ -269,6 +269,7 @@ const AccordionWithCounting = ({
 	tab,
 	listColor,
 	bottomMargin,
+	header,
 }) => {
 	return (
 		// <VisibilitySensor partialVisibility once>
