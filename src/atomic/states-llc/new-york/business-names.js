@@ -13,6 +13,7 @@ import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
 import AcccordionCounting from "../tab-acccordion-with-counting";
 import Accordion from "../../organisms/accordion/accordion";
 import TextBoxed from "../../molecules/static-check/circle-checkmark-text-boxed";
+import { PHeading } from "../../atoms/typography/p-to-heading";
 
 const Wrapper = styled.div``;
 
@@ -22,9 +23,27 @@ const BusinessNames = ({ content }) => {
       {content.map((item, i) => (
         <div key={i}>
           {item.type === "heading" && (
-            <Heading size={item.size} style={{ marginTop: `42px` }}>
+            <Heading
+              size={item.size}
+              template={item.template}
+              bottomMargin={item.bottomMargin}
+              topMargin={item.topMargin}
+              left={true}
+            >
               {item.content}
             </Heading>
+          )}
+
+          {item.type === "p-to-heading" && (
+            <PHeading
+              size={item.size}
+              template={item.template}
+              bottomMargin={item.bottomMargin}
+              topMargin={item.topMargin}
+              left={item.left}
+            >
+              {item.content}
+            </PHeading>
           )}
 
           {item.type === "paragraph" && (
@@ -40,25 +59,56 @@ const BusinessNames = ({ content }) => {
               </ArrowLink>
             ))}
 
+          {item.type === "button" && (
+            <Button
+              content={item.content}
+              theme={item.theme}
+              arrow
+              width={item.width ?? `350px`}
+              margin="16px 0 0 0"
+              marginMD="42px 0 42px 0"
+            />
+          )}
 
-          {item.type === "button" && <Button content={item.content} theme={item.theme} arrow width={item.width ?? `350px`} margin="16px 0 0 0" marginMD="42px 0 42px 0" />}
+          {item.type === "accordingTabWithCountingLeft" && (
+            <AcccordionCounting
+              content={item.content}
+              header={item.header}
+              tab
+            />
+          )}
 
-          {item.type === "accordingTabWithCountingLeft" && <AcccordionCounting content={item.content} tab />}
+          {item.type === "numberBoxList" && (
+            <NumericBoxedList content={item.content} style={item.styles} />
+          )}
 
-          {item.type === "numberBoxList" && <NumericBoxedList content={item.content} style={item.styles} />}
-
-          {item.type === "iconListColorBox" && <IconListColorBox color={item.boxColor} content={item.content} rounded />}
+          {item.type === "iconListColorBox" && (
+            <IconListColorBox
+              color={item.boxColor}
+              content={item.content}
+              rounded
+            />
+          )}
 
           {item.type === "textBoxWithCheckIcon" &&
-            item.content.map((i,j) => (
+            item.content.map((i, j) => (
               <TextBoxed style={{ marginBottom: "8px" }} key={j}>
                 <Paragraph bottomMargin={0}>{i}</Paragraph>
               </TextBoxed>
             ))}
 
-          {item.type === "box-cta" && <BoxCTA bgColor={item.color} bgImage={item.bgImage[0]} style={item.styles} content={item.content} />}
+          {item.type === "box-cta" && (
+            <BoxCTA
+              bgColor={item.color}
+              bgImage={item.bgImage[0]}
+              style={item.styles}
+              content={item.content}
+            />
+          )}
 
-          {item.type === "accordion" && <Accordion content={item.content} tab />}
+          {item.type === "accordion" && (
+            <Accordion content={item.content} header={item.header} tab />
+          )}
         </div>
       ))}
     </Wrapper>

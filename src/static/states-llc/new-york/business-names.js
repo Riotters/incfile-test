@@ -28,11 +28,15 @@ export const businessNamesContent = {
     },
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      bottomMargin: 24,
+      left: true,
       content: `Business Name Rules for New York LLCs`,
     },
     {
       type: `accordingTabWithCountingLeft`,
+      header: 3,
       content: [
         {
           count: 1,
@@ -108,9 +112,11 @@ export const businessNamesContent = {
       ],
     },
     {
-      type: `heading`,
-      size: 4,
+      type: `p-to-heading`,
       content: `Coming up with a Great Business Name`,
+      size: 2,
+      template: 3,
+      topMargin: 48,
     },
     {
       type: `paragraph`,
@@ -118,7 +124,12 @@ export const businessNamesContent = {
     },
     {
       type: `textBoxWithCheckIcon`,
-      content: [`Appeal to your customers`, `Be memorable enough to stand out`, `Best represent your product or services`, `Not be used by another business`],
+      content: [
+        `Appeal to your customers`,
+        `Be memorable enough to stand out`,
+        `Best represent your product or services`,
+        `Not be used by another business`,
+      ],
     },
     {
       type: `button`,
@@ -145,7 +156,10 @@ export const businessNamesContent = {
     // Business name search
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      bottomMargin: 24,
+      left: true,
       content: `New York Business Entity Searches`,
     },
     {
@@ -173,7 +187,10 @@ export const businessNamesContent = {
     // Assumed Name
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      bottomMargin: 24,
+      left: true,
       content: `DBAs/Assumed Names for New York LLCs`,
     },
     {
@@ -200,7 +217,10 @@ export const businessNamesContent = {
     // Register Your Business Name With the Texas Secretary of State
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      bottomMargin: 24,
+      left: true,
       content: `Register Your Business Name`,
     },
     {
@@ -229,10 +249,40 @@ export const businessNamesContent = {
         },
       },
     },
+    // Trademark section
+    {
+      type: `heading`,
+      size: 2,
+      template: 3,
+      bottomMargin: 24,
+      left: true,
+      content: `Trademarks and Service Marks`,
+    },
+    {
+      type: `paragraph`,
+      content: `You must be careful that your New York LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
+    },
+    {
+      type: `box-cta`,
+      color: color.blue3,
+      styles: { fontSize: `clamp(1rem, 5vw, 1.5rem)` },
+      bgImage: [BgBoxTrademark],
+      content: {
+        title: `Make sure your business is starting off on the right foot when it comes to intellectual property.`,
+        subtitle: `Have Incfile run a trademark search for you.`,
+        button: {
+          text: `Incfile’s Trademark & Registration Service`,
+          url: `/trademark-name-search/`,
+        },
+      },
+    },
     // Faqs section
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      bottomMargin: 24,
+      left: true,
       content: `FAQs About Naming Your New York LLC`,
     },
     {
@@ -241,6 +291,7 @@ export const businessNamesContent = {
     },
     {
       type: `accordion`,
+      header: 3,
       content: {
         items: [
           {
@@ -260,30 +311,6 @@ export const businessNamesContent = {
             answer: `Yes. The New York Department of State allows you to reserve a name if you don’t want to start your business immediately. Details are above. If you are ready to start your business now, you do not need to reserve a name.`,
           },
         ],
-      },
-    },
-    // Trademark section
-    {
-      type: `heading`,
-      size: 3,
-      content: `Trademarks and Service Marks`,
-    },
-    {
-      type: `paragraph`,
-      content: `You must be careful that your New York LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
-    },
-    {
-      type: `box-cta`,
-      color: color.blue3,
-      styles: { fontSize: `clamp(1rem, 5vw, 1.5rem)` },
-      bgImage: [BgBoxTrademark],
-      content: {
-        title: `Make sure your business is starting off on the right foot when it comes to intellectual property.`,
-        subtitle: `Have Incfile run a trademark search for you.`,
-        button: {
-          text: `Incfile’s Trademark & Registration Service`,
-          url: `/trademark-name-search/`,
-        },
       },
     },
   ],
