@@ -60,7 +60,7 @@ const Wrapper = styled.div`
 		}
 	}
 
-	p {
+	p:not([class*="i-believe-i-can-be-a-h"]) {
 		color: ${color.grey1} !important;
 
 		span {

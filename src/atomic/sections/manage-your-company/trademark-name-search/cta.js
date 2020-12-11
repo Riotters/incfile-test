@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { Heading } from "../../../atoms/typography/heading"
 import ContentCenter from "../../../partials/content-center"
 import ArrowLink from "../../../molecules/buttons/text"
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const Cta = styled.section`
   position: relative;
@@ -18,7 +19,7 @@ const Cta = styled.section`
 const CtaSection = ({ className, content }) => (
     <Cta className={className}>
         <ContentCenter>
-            <Heading size="2" maxWidth="770">{content.header}</Heading>
+            <PHeading size={2} maxWidth="770" center>{content.header}</PHeading>
             <ArrowLink content={content.link} />
         </ContentCenter>
     </Cta>

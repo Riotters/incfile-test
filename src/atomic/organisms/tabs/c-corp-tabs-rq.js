@@ -322,7 +322,7 @@ const CCorpTabs = ({ layout, columns, content }) => {
 								//className={isVisible ? "slideUp enter panel1" : "slideUp panel1"}
 								layout={layout}
 							>
-								<Heading size="3">
+								<Heading size="2" template={3} left>
 									How Are Profits And Taxes Handled With A C Corp?
 								</Heading>
 								<Paragraph big>
@@ -387,10 +387,10 @@ const CCorpTabs = ({ layout, columns, content }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel2" layout={layout}>
-								<Heading size="3">
+								<Heading size="2" template={3} left>
 									A C Corporation must meet certain requirements:
 								</Heading>
-								<Heading size="4">
+								<Heading size="3" template={4}>
 									Hold an Annual General Meeting (AGM) for the shareholders and
 									the board of directors
 								</Heading>
@@ -399,7 +399,7 @@ const CCorpTabs = ({ layout, columns, content }) => {
 									information, strategic decisions, opportunities, risks and
 									issues that the corporation will need to deal with.
 								</Paragraph>
-								<Heading size="4">
+								<Heading size="3" template={4}>
 									Issue shares to investors as ownership of the business
 								</Heading>
 								<Paragraph big>
@@ -407,14 +407,14 @@ const CCorpTabs = ({ layout, columns, content }) => {
 									of shares. The management of the corporation is governed by a
 									board of directors who are elected by the shareholders.
 								</Paragraph>
-								<Heading size="4">Appoint a board of directors</Heading>
+								<Heading size="3" template={4}>Appoint a board of directors</Heading>
 								<Paragraph big>
 									The board of directors select officers who manage the day to
 									day activities of the corporation. The board of directors also
 									drafts bylaws for the corporation. These are written protocols
 									that state the way that the corporation will be governed.
 								</Paragraph>
-								<Heading size="4">
+								<Heading size="3" template={4}>
 									Assign Certain Positions in the Corporation
 								</Heading>
 								<Paragraph big>

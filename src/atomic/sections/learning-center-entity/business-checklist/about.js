@@ -10,12 +10,13 @@ import ArrowLink from "../../../molecules/buttons/text";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/business-checklist-about-top-left.inline.svg";
 import parse from "html-react-parser";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const About = styled.section`
   position: relative;
   padding-bottom: 64px;
 
-  p {
+  p:not([class*="i-believe-i-can-be-a-h"]) {
     color: ${color.grey2};
   }
 `;
@@ -26,9 +27,9 @@ const AboutSection = ({ className, content }) => (
             <OvalSVG />
         </Oval>
         <ImageContent image="business-checklist-rocket-lunch">
-            <Heading size={2} template={3} left bottomMargin="24">{content.header}</Heading>
+            <PHeading size={2} template={3} left bottomMargin="24">{content.header}</PHeading>
             <Paragraph big bottomMargin="40">{content.text}</Paragraph>
-            <IconTextColorBox color={color.green3} Icon={IconSVG} content={content.box} bottomMargin="40" rounded curve headingSize={3} />
+            <IconTextColorBox color={color.green3} Icon={IconSVG} content={content.box} bottomMargin="40" rounded curve headingSize={3} paragraphHeader />
             <Paragraph big bottomMargin="40">{content.text2}</Paragraph>
             <Paragraph big bottomMargin="40" mixed>{parse(content.text3)}</Paragraph>
             <Paragraph big bottomMargin="72" mixed>{parse(content.text4)}</Paragraph>
