@@ -49,13 +49,13 @@ const Content = ({ content, data }) => {
               left={item.left}
               style={item.style}
             >
-              {parse(item.content)}
+              {item?.content ? parse(item.content) : ''}
             </Heading>
           )}
 
           {item.type === "text" && (
             <Paragraph big mixed bottomMargin={item.marginBottom}>
-              {parse(item.content)}
+              {item?.content ? parse(item.content) : ''}
             </Paragraph>
           )}
 
