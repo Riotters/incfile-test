@@ -2,8 +2,7 @@ import Tab1Icon from "../../images/icons/icon-manage-your-company-color-business
 import Tab2Icon from "../../images/icons/light.inline.svg";
 import Tab3Icon from "../../images/icons/icon-32-multi-color-registered-agent.inline.svg";
 import Tab4Icon from "../../images/icons/icon-learning-center-color-how-to-guide.inline.svg";
-import Tab5Icon
-  from "../../images/icons/icon-learning-center-color-all-ca-corporations-must-have-elected-board-of-directors.inline.svg";
+import Tab5Icon from "../../images/icons/icon-learning-center-color-all-ca-corporations-must-have-elected-board-of-directors.inline.svg";
 import Tab6Icon from "../../images/icons/icon-start-a-business-color-maintaining-your-cleaning-business.inline.svg";
 import Tab7Icon from "../../images/icons/icon-learning-center-color-business-taxes.inline.svg";
 
@@ -264,7 +263,7 @@ Documents`,
 
 export const articlesOfIncorporation = {
   box1: {
-    header: `Including the following information:`,
+    header: ``,
     list: [
       `The name and address of each incorporator`,
       `The corporate purpose(s) (this may be a general statement of “any lawful activity”)`,
@@ -275,7 +274,7 @@ export const articlesOfIncorporation = {
     ],
   },
   box2: {
-    header: `Some other items that aren’t required-but which are allowed to be included in the articles of incorporation if desired-are:`,
+    header: ``,
     list: [
       `Any shareholder preemptive rights`,
       `Regulations governing the powers of the corporation, its board of directors, and its shareholders`,
@@ -294,31 +293,31 @@ export const tabs = {
   panels: [
     {
       icon: Tab1Icon,
-      name: `Corporation Name`
+      name: `Corporation Name`,
     },
     {
       icon: Tab2Icon,
-      name: `Articles of Incorporation`
+      name: `Articles of Incorporation`,
     },
     {
       icon: Tab3Icon,
-      name: `Registered Agent`
+      name: `Registered Agent`,
     },
     {
       icon: Tab4Icon,
-      name: `Bylaws`
+      name: `Bylaws`,
     },
     {
       icon: Tab5Icon,
-      name: `Directors`
+      name: `Directors`,
     },
     {
       icon: Tab6Icon,
-      name: `Required Reports`
+      name: `Required Reports`,
     },
     {
       icon: Tab7Icon,
-      name: `Taxes`
+      name: `Taxes`,
     },
-  ]
-}
+  ],
+};

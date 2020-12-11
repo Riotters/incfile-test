@@ -1,5 +1,7 @@
 import { color } from "../../../components/styles/colors";
 
+const ORDER_URL = `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=GA`;
+
 export const agentPageContent = {
   header: {
     title: `Georgia Registered Agents for LLCs`,
@@ -10,7 +12,7 @@ export const agentPageContent = {
         desc: `Get your first year of Registered Agent Service for free <br>when you incorporate with Incfile.`,
         button: {
           text: `Form Your LLC Now`,
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=GA`,
+          url: ORDER_URL,
         },
       },
     ],
@@ -181,7 +183,7 @@ export const agentPageContent = {
       width: `380px`,
       content: {
         text: `Incorporate Your business Through Incfile`,
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=GA`,
+        url: ORDER_URL,
       },
     },
 
@@ -226,7 +228,7 @@ export const agentPageContent = {
       width: `450px`,
       content: {
         text: `Order Incfile’s Georgia registered Agent Service`,
-        url: `/`,
+        url: `/manage-your-company/registered-agent/`,
       },
     },
 
@@ -335,7 +337,7 @@ export const agentPageContent = {
       content: [
         {
           text: `The Main Functions of a Georgia Registered Agent`,
-          url: `/research-topics/registered-agent/registered-agent-function`,
+          url: `/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/`,
         },
         {
           text: `Changing Your Georgia Registered Agent`,
@@ -343,7 +345,7 @@ export const agentPageContent = {
         },
         {
           text: `What a Georgia Registered Agent Does`,
-          url: `/research-topics/registered-agent/registered-agent-tasks/`,
+          url: `/research-topics/registered-agent-help/what-does-a-registered-agent-do/`,
         },
       ],
     },

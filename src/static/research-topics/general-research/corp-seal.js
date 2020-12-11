@@ -37,7 +37,7 @@ export const about = {
     },
     {
       text: `business formation kit.`,
-      url: `/blog/post/how-to-use-incfile-corporate-kit/`,
+      url: `https://www.incfile.com/blog/post/how-to-use-incfile-corporate-kit/`,
     },
   ],
   list2: {

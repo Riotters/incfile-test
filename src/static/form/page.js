@@ -23,7 +23,7 @@ export const top = {
 
 export const opinions = {
 	header: `Why Do Our Customers Love Us?`,
-	text: `4.8 Overall Satisfaction Rating based on 13,797 reviews`,
+	text: `4.8 Overall Satisfaction Rating based on <span id="js_dynamic_total_review">0</span> reviews`,
 	customers: [
 		{
 			photo: `mattweik-11`,
@@ -42,7 +42,7 @@ export const opinions = {
 
 export const choose = {
 	header: `Why choose Incfile?`,
-	text: `We Make Starting Your LLC Easy`,
+	text: `We Make Starting Your [STATE_NAME] LLC Easy`,
 	boxes: [
 		{
 			color: color.red3,
@@ -82,14 +82,14 @@ export const care = {
 		{
 			text: `I am very satisfied with the services I received from Incfile. My business has been using this service for 3 years, keeping me updated on all facets pertaining 
             to business.`,
-			author: `Martin G`,
-			state: `Los Angeles, CA`,
+			author: `Linda`,
+			state: ``,
 		},
 		{
 			text: `Everyone at IncFile has been first class and quick to respond to my service needs. 
             I appreciate you going above and beyond and taking the time to educate me.`,
 			author: `Tim A`,
-			state: `Florida, FL`,
+			state: ``,
 		},
 	],
 };

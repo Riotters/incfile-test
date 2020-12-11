@@ -45,7 +45,8 @@ export const top = {
 	],
 };
 export const launchBusiness = {
-	header: `Launch your business with Incfile`,
+	header: `Launch`,
+	header2: `your business with Incfile`,
 	text: `No Contracts. No Surprises. Only $0 + State Fee to Launch Your Business.`,
 	button: {
 		text: `Launch your business!`,
@@ -69,32 +70,32 @@ export const tabPages = {
 		},
 		{
 			name: `How To Guide`,
-			path: `/delaware-corporation/start-a-de-corporation`,
+			path: `/delaware-corporation/start-a-de-corporation/`,
 			icon: EntitySVG,
 		},
 		{
 			name: `Naming Your Corporation`,
-			path: `/delaware-corporation/how-to-name-your-corporation`,
+			path: `/delaware-corporation/how-to-name-your-corporation/`,
 			icon: PenSVG,
 		},
 		{
 			name: `Registered Agents`,
-			path: `/delaware-corporation/registered-agents-delaware`,
+			path: `/delaware-corporation/registered-agents-delaware/`,
 			icon: RegisteredAgentSVG,
 		},
 		{
 			name: `Filing Requirements`,
-			path: `/delaware-corporation/form-filling-permit-requirements`,
+			path: `/delaware-corporation/form-filling-permit-requirements/`,
 			icon: PrinterSVG,
 		},
 		{
 			name: `Taxes & Fees`,
-			path: `/delaware-corporation/taxes-and-fees-for-your-corporation`,
+			path: `/delaware-corporation/taxes-and-fees-for-your-corporation/`,
 			icon: PriceTagSVG,
 		},
 		{
 			name: `After Formation`,
-			path: `/delaware-corporation/know-your-ongoing-filing-requirements`,
+			path: `/delaware-corporation/know-your-ongoing-filing-requirements/`,
 			icon: CoffeeSVG,
 		},
 	],
@@ -104,8 +105,10 @@ export const corporation = [
 	{
 		type: "header",
 		content: "Delaware Corporations",
-		size: 4,
-		marginBottom: 24,
+		size: 2,
+		template: 3,
+		left: true,
+		marginBottom: 40,
 	},
 	{
 		type: "text",
@@ -128,8 +131,15 @@ export const corporation = [
 	{
 		type: "header",
 		content: "What Type of Delaware Corporation Should You Choose? ",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
+	},
+	{
+		type: "video",
+		image: "what-is-a-corporation-8899",
+		id: `oYZShvmf9eQ`,
+		marginBottom: 32,
 	},
 	{
 		type: "text",
@@ -164,7 +174,7 @@ export const corporation = [
 				svg: LockpadSVG,
 				link: {
 					text: "Learn how to create an LLC in Delaware",
-					url: "/",
+					url: "/delaware-llc/",
 				},
 				backgroundColor: color.babyblue2,
 				shadowColor: shadow.babyblue2,
@@ -178,8 +188,8 @@ export const corporation = [
 					"You might choose to form a Delaware S Corporation because it’s a good compromise between the simplicity of the LLC and the complexity of the C Corporation. Note that DE S Corporations are subject to more rules and regulations than a DE LLC, but they can mean that you pay less tax.",
 				svg: ProcentSVG,
 				link: {
-					text: "Learn how to create an LLC in Delaware",
-					url: "/",
+					text: "Learn about forming an S Corporation.",
+					url: "/what-is-s-corporation/",
 				},
 				backgroundColor: color.green2,
 				shadowColor: shadow.green2,
@@ -194,7 +204,7 @@ export const corporation = [
 				svg: BillSVG,
 				link: {
 					text: "Learn about forming a C Corporation",
-					url: "/",
+					url: "/what-is-c-corporation/",
 				},
 				backgroundColor: color.yellow2,
 				shadowColor: shadow.yellow2,
@@ -208,7 +218,6 @@ export const corporation = [
 	{
 		type: "colorbox",
 		icon: FolderProcentSVG,
-		header: "Other Entity Types",
 		text:
 			"There are some other business entity structures like nonprofits, Limited Liability Partnerships (LLPs) and B Corporations, but they will not be relevant for the majority of entrepreneurs.",
 		curve: true,
@@ -218,16 +227,16 @@ export const corporation = [
 		buttons: [
 			{
 				content: {
-					text: "Start Your S-Corp",
-					url: "/",
+					text: "Start Your S-Corp with Incfile",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=DE`,
 				},
 				arrow: true,
 				theme: "primary56",
 			},
 			{
 				content: {
-					text: "Start Your C-Corp",
-					url: "/",
+					text: "Start Your C-Corp with Incfile",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=DE`,
 				},
 				arrow: true,
 				theme: "primary56",
@@ -235,9 +244,21 @@ export const corporation = [
 		],
 	},
 	{
+		type: "header",
+		content: "Benefits of Forming a Corporation in the State of Delaware",
+		size: 2,
+		template: 3,
+		marginBottom: 48,
+	},
+	{
+		type: "text",
+		content: "Delaware corporations have several benefits for business owners.",
+		marginBottom: 24,
+	},
+	{
 		type: "list-dot",
 		content: {
-			header: "Benefits of Forming a Corporation in the State of Delaware",
+			header: "",
 			text: "Delaware corporations have several benefits for business owners. ",
 			list: [
 				"Delaware corporations provide the strongest form of liability protection possible. They insulate your personal assets and finances from those of your business. ",
@@ -251,8 +272,9 @@ export const corporation = [
 	},
 	{
 		type: "header",
-		content: "The Advantages of a Delaware Corporation Versus an LLC ",
-		size: 4,
+		content: "The Advantages of a Delaware Corporation Over an LLC",
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -265,7 +287,8 @@ export const corporation = [
 		type: "header",
 		content:
 			"You Might Pay Less Tax as a Delaware S Corporation Than as an LLC ",
-		size: 5,
+		size: 3,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -278,15 +301,15 @@ export const corporation = [
 		type: "arrow-link",
 		content: {
 			text: "Learn about the tax benefits of S Corporations.",
-			url: "/",
+			url: "/research-topics/c-corporation-info/what-is-the-form-2553/",
 		},
 		marginBottom: 32,
 	},
 	{
 		type: "button",
 		content: {
-			text: "File From 2553 with the IRS",
-			url: "/",
+			text: "File From 2553 with the IRS via Incfile",
+			url: `${process.env.ORDER_URL}/s-corp-election-form`,
 		},
 		theme: "primary56",
 		marginBottom: 64,
@@ -295,22 +318,33 @@ export const corporation = [
 		type: "header",
 		content:
 			"Delaware S Corporations and C Corporations Make It Much Easier to Transfer Stock and Ownership ",
-		size: 4,
+		size: 3,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
 		type: "text",
 		content:
-			"If you want to easily transfer ownership through buying and selling stock, you will need a DE C Corporation or an S Corporation. C Corporations have much more flexibility than S Corporations, and both are better than LLCs for stock and ownership transfers. ",
+			"Delaware S Corporations and C Corporations make it much easier to buy, sell and transfer stock. C Corporations also allow you to file an IPO and list stock on the public stock market.",
+		marginBottom: 24,
+	},
+	{
+		type: "header",
+		content:
+			"Delaware C Corporations Provide the Main Advantages for Buying and Selling Stock",
+		size: 3,
+		template: 3,
+		marginBottom: 24,
+	},
+	{
+		type: "text",
+		content:
+			"C Corporations provide certain benefits when it comes to buying, selling and transferring stock. Here are the rules for both S Corps and C Corps:",
 		marginBottom: 24,
 	},
 	{
 		type: "list-dot",
 		content: {
-			header:
-				"Delaware C Corporations Provide the Main Advantages for Buying and Selling Stock",
-			text:
-				"C Corporations provide certain benefits when it comes to buying, selling and transferring stock. Here are the rules for both S Corps and C Corps: ",
 			list: [
 				"If you want up to 100 shareholders who are U.S. citizens or residents and want to issue one type of stock, you can be an S Corporation or a C Corporation. ",
 				"If you want more than 100 shareholders, want to issue more than one type of stock or have international shareholders, you will need a C Corporation. ",
@@ -326,22 +360,32 @@ export const corporation = [
 		type: "arrow-link",
 		content: {
 			text: "Learn more about the differences between business entities",
-			url: "/",
+			url: "/start-your-company/",
 		},
 		marginBottom: 48,
 	},
 	{
+		type: "header",
+		content: "Advantages of Forming an S Corporation in Delaware",
+		size: 3,
+		template: 3,
+		marginBottom: 24,
+	},
+	{
+		type: "text",
+		content:
+			"In addition to the general benefits above, DE S Corporations provide several other advantages:",
+		marginBottom: 24,
+	},
+	{
 		type: "list-dot",
 		content: {
-			header: "Advantages of Opening an S Corporation in Delaware ",
-			text:
-				"In addition to the general benefits above, DE S Corporations provide several other advantages: ",
 			list: [
 				"Delaware S Corporations can have up to 100 shareholders.",
 				"Running an S Corporation in Delaware is simpler than running a C Corporation.",
 				"It is easy to transfer ownership in an S Corporation by selling your stock.",
-				"In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax. Find out how this can save you money using our S Corporation Tax Calculator .",
-				"LLCs can <a href='/'>choose to be taxed as S Corporations</a> to take advantage of this.",
+				"In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax. Find out how this can save you money using our <a href='/s-corporation-tax-calculator/'>S Corporation Tax Calculator</a>.",
+				"LLCs can <a href='/research-topics/llc-info/can-a-limited-liability-company-llc-be-taxed-as-an-s-corporation/'>choose to be taxed as S Corporations</a> to take advantage of this.",
 			],
 		},
 		color: color.orange3,
@@ -353,14 +397,16 @@ export const corporation = [
 		type: "arrow-link",
 		content: {
 			text: "Learn more about the advantages of forming an S Corporation. ",
-			url: "/",
+			url:
+				"https://www.incfile.com/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/",
 		},
 		marginBottom: 48,
 	},
 	{
 		type: "header",
 		content: "Advantages of Setting Up a Delaware C Corporation  ",
-		size: 4,
+		size: 3,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -388,7 +434,8 @@ export const corporation = [
 	{
 		type: "header",
 		content: "What You Need to Know About Setting up a Delaware Corporation",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -408,7 +455,7 @@ export const corporation = [
 		content: {
 			text:
 				"Learn what you need to do to create a Delaware S Corporation or C Corporation ",
-			url: "/",
+			url: "/delaware-corporation/start-a-de-corporation/",
 		},
 		marginBottom: 24,
 	},
@@ -438,19 +485,11 @@ export const corporation = [
 		curveColor: color.orange1,
 	},
 	{
-		type: "arrow-link",
-		content: {
-			text:
-				"Learn what you need to do to create a Delaware S Corporation or C Corporation ",
-			url: "/",
-		},
-		marginBottom: 24,
-	},
-	{
 		type: "header",
 		content:
 			"Your Delaware Corporation Must Follow Certain Rules and Regulations ",
-		size: 4,
+		size: 3,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -485,7 +524,7 @@ export const corporation = [
 		type: "arrow-link",
 		content: {
 			text: "Learn about Delaware corporation requirements . ",
-			url: "/",
+			url: "/delaware-corporation/form-filling-permit-requirements/",
 		},
 		marginBottom: 24,
 	},
@@ -493,7 +532,7 @@ export const corporation = [
 		type: "arrow-link",
 		content: {
 			text: "Learn about Delaware corporation taxes and fees . ",
-			url: "/",
+			url: "/delaware-corporation/taxes-and-fees-for-your-corporation/",
 		},
 		marginBottom: 24,
 	},
@@ -514,7 +553,7 @@ export const corporation = [
 					header: "S Corporation",
 					link: {
 						text: "Incorporate now",
-						url: "/",
+						url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=DE`,
 					},
 				},
 				noShadow: false,
@@ -527,13 +566,26 @@ export const corporation = [
 					header: "C Corporation",
 					link: {
 						text: "Incorporate now",
-						url: "/",
+						url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=DE`,
 					},
 				},
 				noShadow: false,
 				color: color.orange3,
 			},
 		],
+	},
+	{
+		type: "header",
+		content: "Detailed Information for Your Delaware Corporation",
+		size: 2,
+		template: 3,
+		marginBottom: 24,
+	},
+	{
+		type: "text",
+		content:
+			"You’ll find plenty more insight and guidance on the other pages of this guide, including:",
+		marginBottom: 24,
 	},
 	{
 		type: "svg-color-text-box",
@@ -544,7 +596,7 @@ export const corporation = [
 					"The six steps you need to take to start a Delaware S Corporation or C Corporation.",
 				link: {
 					text: "Learn more",
-					url: "/",
+					url: "/delaware-corporation/start-a-de-corporation/",
 				},
 				svg: TodoSVG,
 				backgroundColor: color.red2,
@@ -559,7 +611,7 @@ export const corporation = [
 					"How to search the Delaware business registry of the DE Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a Delaware corporation name and more.",
 				link: {
 					text: "Learn more",
-					url: "/",
+					url: "/delaware-corporation/how-to-name-your-corporation/",
 				},
 				svg: QuestionSVG,
 				backgroundColor: color.orange3,
@@ -574,7 +626,7 @@ export const corporation = [
 					"How to appoint a Delaware Registered Agent to your new corporation or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Delaware Registered Agents.",
 				link: {
 					text: "Learn more",
-					url: "/",
+					url: "/delaware-corporation/registered-agents-delaware/",
 				},
 				svg: IdSVG,
 				backgroundColor: color.purple2,
@@ -589,7 +641,7 @@ export const corporation = [
 					"How to understand the various fees you’ll need to pay and the requirements you’ll need to meet for both federal and Delaware rules. Includes details of Employee Identification Numbers (EINs), Delaware and federal business licenses, Delaware Statement of Information reports and more.",
 				link: {
 					text: "Learn more",
-					url: "/",
+					url: "/delaware-corporation/form-filling-permit-requirements/",
 				},
 				svg: BillPadSVG,
 				backgroundColor: color.orange2,
@@ -605,7 +657,7 @@ export const corporation = [
 					"How to understand the various taxes you will need to pay to the federal and Delaware government. Includes details of federal taxes like income and self-employment, and Delaware taxes like sales tax and income tax.",
 				link: {
 					text: "Learn more",
-					url: "/",
+					url: "/delaware-corporation/taxes-and-fees-for-your-corporation/",
 				},
 				svg: DollarUpSVG,
 				backgroundColor: color.green2,
@@ -623,8 +675,10 @@ export const startCaCorp = [
 	{
 		type: "header",
 		content: "How to Set up a Corporation in the State of Delaware",
-		size: 4,
-		marginBottom: 24,
+		size: 2,
+		template: 3,
+		left: true,
+		marginBottom: 40,
 	},
 	{
 		type: "text",
@@ -644,14 +698,14 @@ export const startCaCorp = [
 			{
 				content: {
 					text: "Start Your S Corp with Incfile",
-					url: "/",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: "/",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
@@ -661,13 +715,14 @@ export const startCaCorp = [
 	{
 		type: "header",
 		content: "The Benefits of Forming a Corporation in Delaware",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
 		type: "text",
 		content: "Briefly, the benefits of forming a Delaware corporation are:",
-		marginBottom: 41,
+		marginBottom: 40,
 	},
 	{
 		type: "list-dot",
@@ -694,36 +749,40 @@ export const startCaCorp = [
 		type: "arrow-link",
 		content: {
 			text: "Learn about starting a Delaware LLC",
-			url: "/",
+			url: "/delaware-llc/",
 		},
 		marginBottom: 48,
 	},
 	{
 		type: "header",
-		content: "The Six Steps to Setting up Your Delaware Corporation",
-		size: 4,
+		content:
+			"How to Create a Corporation in the State of Delaware in Six Steps",
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
 		type: "accordion",
+		header: 3,
 		content: {
 			items: [
 				{
 					question:
-						"Look up the Name of Your Proposed Delaware Corporation and Choose a Unique Business Name",
+						"1. Look up the Name of Your Proposed Delaware Corporation and Choose a Unique Business Name",
 					answer:
-						"Every DE business needs a unique name, including your corporation. You can carry out a Delaware business entity name search on the DE Division of Corporations website. The name of your Delaware S Corporation or C Corporation cannot be confusable with another business that’s been formed in Delaware. If you’re not forming your corporation right away, you can reserve the name with the DE Division of Corporations. <br/><br />See if the name is available by <a href='/'>searching for it on the Delaware Division of Corporations website</a>.<br /><br /><a href='/'>Learn how to name your Delaware corporation.</a>",
+						"Every DE business needs a unique name, including your corporation. You can carry out a Delaware business entity name search on the DE Division of Corporations website. The name of your Delaware S Corporation or C Corporation cannot be confusable with another business that’s been formed in Delaware. If you’re not forming your corporation right away, you can reserve the name with the DE Division of Corporations. <br/><br />See if the name is available by <a href='https://icis.corp.delaware.gov/ecorp/entitysearch/namesearch.aspx'>searching for it on the Delaware Division of Corporations website</a>.<br /><br /><a href='/delaware-corporation/how-to-name-your-corporation/'>Learn how to name your Delaware corporation.</a>",
 				},
 				{
 					question:
-						"Establish Street and Mailing Addresses for Your Delaware Corporation",
+						"2. Establish Street and Mailing Addresses for Your Delaware Corporation",
 					answer:
-						"Every Delaware S Corporation or C Corporation must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address can be outside DE, but it cannot be a P.O. Box.",
+						"A Delaware corporation must have a designated address. That could be your home address (if you’re running the company from your residence), where your office is located or any physical address of your preference. The address can be outside the state of Delaware and can be a P.O. Box.",
 				},
 				{
-					question: "Appoint a Registered Agent for Your Delaware Corporation",
+					question:
+						"3. Appoint a Registered Agent for Your Delaware Corporation",
 					text:
-						"Every Delaware corporation must have a “Registered Agent” who receives official legal and tax correspondence and has responsibility for filing reports with the Delaware Division of Corporations. Your Registered Agent must have a physical street address in Delaware.<br/><br />A Registered Agent position for a Delaware S Corporation or C Corporation can be filled in several ways.<br /><br />A Registered Agent could be you, a director or an officer of the corporation. The Delaware Registered Agent for your corporation must have a physical street address in Delaware. They need to be available during business hours to receive important documents for your corporation.<br/><br/>At Incfile, all of our packages include a Delaware Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.<br/><br/>Here at Incfile we always recommend using a proper Delaware Registered Agent service since they provide several benefits:",
+						"Every Delaware corporation must have a “Registered Agent” who receives official legal and tax correspondence and has responsibility for filing reports with the Delaware Division of Corporations. Your Registered Agent must have a physical street address in Delaware.<br/><br />A Registered Agent position for a Delaware S Corporation or C Corporation can be filled in several ways.<br /><br />This position can be carried out by you, another accountable person in the business or a dedicated Registered Agent service. Your DE Registered Agent must have a physical street address in Delaware and must be present to receive important documents for your company during business hours.<br/><br/>At Incfile, all of our packages include a Delaware Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.<br/><br/>Here at Incfile we always recommend using a proper Delaware Registered Agent service since they provide several benefits:",
 					list: [
 						"Some people establish companies outside of the state they live in and will use a Registered Agent service to provide an address for receiving legal documentation in the state.",
 						"The Registered Agent address is listed in public records on the DE Division of Corporations website. If you do not want your own name and Delaware address to be registered, you should use a Registered Agent service.",
@@ -731,11 +790,13 @@ export const startCaCorp = [
 					],
 					arrowLink: {
 						text: "Learn more about Delaware Registered Agents.",
-						url: "/",
+						url: "/delaware-corporation/registered-agents-delaware/",
 					},
 				},
 				{
-					question: "Create Your Delaware Articles of Incorporation",
+					question: "4. Create Your Delaware Articles of Incorporation",
+					answer:
+						"Once you've gathered all the information for your Delaware corporation, you’ll need to file a formal document with the DE Division of Corporations. This document is known as your “Certificate of Incorporation,” and filing the document creates your DE corporation. <br /><br />Here’s what the Certificate of Incorporation normally includes:",
 					list: [
 						"The corporation’s name",
 						"The corporation’s mailing address and street address",
@@ -746,21 +807,21 @@ export const startCaCorp = [
 				},
 				{
 					question:
-						"File Your Certificate of Incorporation With the Delaware Division of Corporations",
+						"5. File Your Certificate of Incorporation With the Delaware Division of Corporations",
 					text:
 						"Once your Articles of Incorporation document is drafted, you can file it with the Delaware Division of Corporations. Filing your Articles of Incorporation creates your Delaware corporation. You can do this online, mail in a form or have Incfile do it on your behalf.",
 				},
 				{
 					question:
-						"Your DE Corporation Will Need to Meet Certain Legal and Compliance Requirements",
+						"6. Your DE Corporation Will Need to Meet Certain Legal and Compliance Requirements",
 					answer:
 						"Once your Delaware corporation has been created, you will need to get certain legal requirements in place. These include:",
 					list: [
 						"File IRS Small Business Tax Election Form 2553 if you want your DE business to be treated as an S Corporation.",
 						"​Any Delaware S Corporations formed through Incfile will also include a prepared Form 2553 that will be delivered with the state formation documents.",
 						"Create and issue stock certificates to your shareholders.",
-						"Apply for business licenses and permits. You may require licenses from the state of Delaware, your county, township and various industry or federal bodies.",
-						"Get an Employer Identification Number (EIN).",
+						"Apply for <a href='/business-license-research-package/'>business licenses and permits</a>. You may require licenses from the state of Delaware, your county, township and various industry or federal bodies.",
+						"Get an <a href='/manage-your-company/tax-id-ein/'>Employer Identification Number (EIN)</a>.",
 						"File for taxes with Delaware Department of Revenue.",
 						"Get all formalities in place for employees, including unemployment, disability, payroll, insurance and taxes.",
 						"Appoint a Board of Directors for the corporation.",
@@ -775,22 +836,23 @@ export const startCaCorp = [
 	{
 		type: "header",
 		content: "Useful Corporation Information From the State \n" + "of Delaware",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
 		type: "arrow-link",
 		content: {
-			text: "Delaware Secretary of State website",
-			url: "/",
+			text: "Delaware Division of Corporations website",
+			url: "https://corp.delaware.gov/",
 		},
 		marginBottom: 24,
 	},
 	{
 		type: "arrow-link",
 		content: {
-			text: "General information from the Delaware Secretary of State",
-			url: "/",
+			text: "General information from the Delaware Division of Corporations",
+			url: "https://corp.delaware.gov/howtoform/",
 		},
 		marginBottom: 24,
 	},
@@ -798,14 +860,15 @@ export const startCaCorp = [
 		type: "arrow-link",
 		content: {
 			text: "Checking name availability for your Delaware corporation",
-			url: "/",
+			url: "https://icis.corp.delaware.gov/ecorp/entitysearch/namesearch.aspx",
 		},
 		marginBottom: 52,
 	},
 	{
 		type: "header",
 		content: "Special Types of Delaware Corporations  ",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -815,48 +878,28 @@ export const startCaCorp = [
 		marginBottom: 52,
 	},
 	{
-		type: "header",
-		content: "Form a Professional Delaware S Corporation or C Corporation",
-		size: 4,
-		marginBottom: 24,
-	},
-	{
-		type: "text",
-		content:
-			"Some states, including Delaware, allow certain occupations to form “Professional Corporations.” These types of corporations may need special requirements and licensing. The DE Division of Corporations does not specify which professions can form professional corporations, but they do provide some examples:",
-		marginBottom: 24,
-	},
-	{
-		type: "text",
-		content:
-			"“In addition, and by way of example without limiting the generality thereof, the personal services which come within this chapter are the personal services rendered by architects, certified or other public accountants, chiropodists, chiropractors, doctors of dentistry, doctors of medicine, optometrists, doctors of osteopathy, doctors of podiatric medicine, professional engineers, veterinarians, and, subject to the Rules of the Supreme Court, attorneys-at-law.”",
-		marginBottom: 24,
-	},
-	{
-		type: "arrow-link",
+		type: `accordion`,
+		header: 3,
 		content: {
-			text:
-				"You can find more information on professional corporations in Delaware here.",
-			url: "/",
+			items: [
+				{
+					question: `Form a Professional Delaware S Corporation or C Corporation
+          Some Occupations Can Form a Professional DE Corporation`,
+					answer: `Some states, including Delaware, allow certain occupations to form “Professional Corporations.” These types of corporations may need special requirements and licensing. The DE Division of Corporations does not specify which professions can form professional corporations, but they do provide some examples:<br /><br />“In addition, and by way of example without limiting the generality thereof, the personal services which come within this chapter are the personal services rendered by architects, certified or other public accountants, chiropodists, chiropractors, doctors of dentistry, doctors of medicine, optometrists, doctors of osteopathy, doctors of podiatric medicine, professional engineers, veterinarians, and, subject to the Rules of the Supreme Court, attorneys-at-law.”<br /><br />You can <a href="https://delcode.delaware.gov/title8/c006/index.shtml">find more information on professional corporations in Delaware here.</a> `,
+				},
+				{
+					question: `File as a Foreign Corporation to Operate in Another State`,
+					answer: `A “foreign” filing is when you have a regular, domestic corporation in a state (typically the one where you first formed your business) and need the company to be able to operate in another state. This is where you would file a “Foreign Qualification” to the new state for your domestic corporation to be able to operate in both states. You must have an existing domestic corporation before you can file as a foreign corporation.`,
+				},
+			],
 		},
-		marginBottom: 52,
+		marginBottom: 32,
 	},
 	{
 		type: "header",
-		content: "File as a Foreign Corporation to Operate in Another State",
-		size: 4,
-		marginBottom: 24,
-	},
-	{
-		type: "text",
-		content:
-			"A “foreign” filing is when you have a regular, domestic corporation in a state (typically the one where you first formed your business) and need the company to be able to operate in another state. This is where you would file a “Foreign Qualification” to the new state for your domestic corporation to be able to operate in both states. You must have an existing domestic corporation before you can file as a foreign corporation.",
-		marginBottom: 52,
-	},
-	{
-		type: "header",
-		content: "Need to Form a Delaware Corporation Quickly \n" + "and Easily?",
-		size: 4,
+		content: "Need to Set up a Delaware Corporation Quickly \n" + "and Easily?",
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -871,14 +914,14 @@ export const startCaCorp = [
 			{
 				content: {
 					text: "Start Your S Corp with Incfile",
-					url: "/",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: "/",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
@@ -889,8 +932,10 @@ export const naming = [
 	{
 		type: "header",
 		content: "Delaware Corporation Name Search and Registration",
-		size: 4,
-		marginBottom: 24,
+		size: 2,
+		template: 3,
+		left: true,
+		marginBottom: 40,
 	},
 	{
 		type: "text",
@@ -904,14 +949,14 @@ export const naming = [
 			{
 				content: {
 					text: "Start Your S Corp with Incfile",
-					url: "/",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: "/",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
@@ -921,7 +966,8 @@ export const naming = [
 	{
 		type: "header",
 		content: "Delaware Division of Corporations Business Entity Search",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -940,14 +986,15 @@ export const naming = [
 		type: "arrow-link",
 		content: {
 			text: "Delaware Division of Corporations corporation name search tool",
-			url: "/",
+			url: "https://icis.corp.delaware.gov/ecorp/entitysearch/namesearch.aspx",
 		},
 		marginBottom: 48,
 	},
 	{
 		type: "header",
 		content: "Delaware Naming Rules Before You Register Your S Corp or C Corp",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -959,7 +1006,8 @@ export const naming = [
 	{
 		type: "header",
 		content: "General Rules for Naming Your S Corp or C Corp",
-		size: 4,
+		size: 3,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -972,6 +1020,7 @@ export const naming = [
 		type: "header",
 		content: "All DE Registered Corporations Must Have a Unique Name",
 		size: 4,
+		template: 4,
 		marginBottom: 24,
 	},
 	{
@@ -985,6 +1034,7 @@ export const naming = [
 		content:
 			"The Name of Your Corporation Cannot Be Similar to Other Businesses in Delaware",
 		size: 4,
+		template: 4,
 		marginBottom: 24,
 	},
 	{
@@ -1017,6 +1067,7 @@ export const naming = [
 		type: "header",
 		content: "Your Delaware Corporation Name May Have Other Restrictions",
 		size: 4,
+		template: 4,
 		marginBottom: 24,
 	},
 	{
@@ -1042,12 +1093,14 @@ export const naming = [
 	{
 		type: "header",
 		content: "Specific Rules for Naming Your Delaware Corporation",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
 		type: "text",
-		content: "",
+		content:
+			"The general rules above are a good starting point for naming your DE S Corporation or C Corporation, but they are not the only ones. The Delaware Division of Corporations has some specific business naming rules for corporations. You will need to follow these rules if you want to name your DE business appropriately.",
 		marginBottom: 24,
 	},
 	{
@@ -1067,7 +1120,8 @@ export const naming = [
 		type: "header",
 		content:
 			"Delaware Corporation Fictitious and “Doing Business As” (DBA) Names",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1080,7 +1134,7 @@ export const naming = [
 		type: "button",
 		content: {
 			text: "Incfile’s Assumed Business Name Service ",
-			url: "/",
+			url: "/fictitious-business-or-trade-name/",
 		},
 		theme: "primary56",
 	},
@@ -1089,7 +1143,8 @@ export const naming = [
 		content:
 			"Rules on Infringing on Service Marks or Trademarks Inside \n" +
 			"or Outside Delaware",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1101,13 +1156,14 @@ export const naming = [
 	{
 		type: "text",
 		content:
-			"The easiest way to see if your proposed business name infringes is to carry out a trademark search. You can do that via the United States Patent and Trademark Office, or Incfile can help you protect your business with our <a href=''/'>Trademark Search and Registration service</a>. You should also bear in mind that your Delaware corporation name cannot be substantially similar to an existing trademark or service mark.",
+			"The easiest way to see if your proposed business name infringes is to carry out a trademark search. You can do that via the United States Patent and Trademark Office, or Incfile can help you protect your business with our <a href='/trademark-name-search/'>Trademark Search and Registration service</a>. You should also bear in mind that your Delaware corporation name cannot be substantially similar to an existing trademark or service mark.",
 		marginBottom: 48,
 	},
 	{
 		type: "header",
 		content: "You’ve Found the Perfect Name, What Next?",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1122,14 +1178,14 @@ export const naming = [
 			{
 				content: {
 					text: "Start Your S Corp with Incfile",
-					url: "/",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: "/",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
@@ -1140,8 +1196,10 @@ export const agents = [
 	{
 		type: "header",
 		content: "Registered Agents and Your Delaware Corporation",
-		size: 4,
-		marginBottom: 24,
+		size: 2,
+		template: 3,
+		left: true,
+		marginBottom: 40,
 	},
 	{
 		type: "text",
@@ -1175,14 +1233,14 @@ export const agents = [
 			{
 				content: {
 					text: "Start Your S Corp with Incfile",
-					url: "/",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
 			{
 				content: {
-					text: "Start Your S Corp with Incfile",
-					url: "/",
+					text: "Start Your C Corp with Incfile",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
@@ -1193,7 +1251,8 @@ export const agents = [
 		type: "header",
 		content:
 			"Information on the Delaware Division of Corporations and DE Registered Agent Services",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1205,14 +1264,15 @@ export const agents = [
 	{
 		type: "text",
 		content:
-			"Registered Agents are not regulated by the State of Delaware. The legal requirements to be a Registered Agent in Delaware are to maintain a street address and office located in Delaware and be open during normal business hours for the purpose of accepting service of process according to 8 Del. C. § 132. Consumers are encouraged to exercise due diligence in researching the Registered Agent prior to selecting them for representation. It is incumbent upon the consumer to contact the Registered Agent prior to filing.”",
+			"“Registered Agents are not regulated by the State of Delaware. The legal requirements to be a Registered Agent in Delaware are to maintain a street address and office located in Delaware and be open during normal business hours for the purpose of accepting service of process according to 8 Del. C. § 132. Consumers are encouraged to exercise due diligence in researching the Registered Agent prior to selecting them for representation. It is incumbent upon the consumer to contact the Registered Agent prior to filing.”",
 		marginBottom: 48,
 	},
 	{
 		type: "header",
 		content:
 			"Services Provided by a Delaware Registered Agent to Your Corporation",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1240,7 +1300,8 @@ export const agents = [
 		type: "header",
 		content:
 			"You May Not Want to Act as Your Own Registered Agent for Your DE Corporation",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1254,7 +1315,7 @@ export const agents = [
 		content: {
 			list: [
 				"The Registered Agent must have a physical street address in Delaware. Some people establish corporations outside of Delaware and will need to use a Registered Agent service to provide the address.",
-				"A person must always be available to sign for legal correspondence during business hours. If you can’t always be around, consider using a third-party Registered Agent service like Incfile.",
+				"You always need to have someone on hand at your corporation to receive important documents for your business during business hours (typically 9 a.m. to 5 p.m. Monday to Friday).",
 				"The Registered Agent’s name and DE address are part of the public record and available through the Delaware Division of Corporations website. If you would prefer your name and address aren’t published, you might choose a Registered Agent service.",
 				"If you change your Delaware business address or move out of state, you won’t need to file additional documentation with the DE Division of Corporations for the new address of your Registered Agent if using a service. You will need to set up a new Registered Agent service in the new state.",
 			],
@@ -1266,28 +1327,29 @@ export const agents = [
 	{
 		type: "text",
 		content:
-			"There are more considerations, but this should help you with your decision to use a <a href='/'>Registered Agent service</a>.",
+			"There are more considerations, but this should help you with your decision to use a <a href='/manage-your-company/registered-agent/'>Registered Agent service</a>.",
 		marginBottom: 48,
 	},
 	{
 		type: "header",
 		content:
 			"Issues With Not Having a Delaware Registered Agent for Your Corporation",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
 		type: "text",
 		content:
 			"What are the issues with not having a DE Registered Agent or not providing that information to the Delaware Division of Corporations?",
-		marginBottom: 41,
+		marginBottom: 40,
 	},
 	{
 		type: "list-dot",
 		content: {
 			list: [
 				"Getting served or sued and not finding out about it: If your Delaware corporation is sued and you don’t know about it, you could lose to a default judgment in your absence.",
-				"Falling out of good standing with the Delaware Secretary of State: If you don’t respond to certain correspondence (like the request for your Annual Report), certain states may revoke your right to do business.",
+				"Falling out of good standing with the Delaware Division of Corporations: If you don’t respond to certain correspondence (like the request for your Franchise Tax report), certain states may revoke your right to do business.",
 				"Losing your status as a Delaware corporation: A DE Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your Delaware corporation may be dissolved.",
 			],
 		},
@@ -1299,7 +1361,8 @@ export const agents = [
 		type: "header",
 		content:
 			"A Complete Delaware Corporation Registered Agent Service From Incfile",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1338,7 +1401,7 @@ export const agents = [
 		type: "button",
 		content: {
 			text: "Order Incfile’s Delaware Registered Agent Service",
-			url: "/",
+			url: "/manage-your-company/registered-agent/",
 		},
 		theme: "primary56",
 		marginBottom: 48,
@@ -1355,14 +1418,14 @@ export const agents = [
 			{
 				content: {
 					text: "Start Your S Corp with Incfile",
-					url: "/",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: "/",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
@@ -1372,19 +1435,15 @@ export const agents = [
 	{
 		type: "header",
 		content: "Useful Resources for Delaware Registered Agent \n" + "Services",
-		size: 4,
-		marginBottom: 24,
-	},
-	{
-		type: "text",
-		content: "You might find these resources helpful:",
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
 		type: "arrow-link",
 		content: {
 			text: "The Main Functions of a Delaware Registered Agent",
-			url: "/",
+			url: "/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/",
 		},
 		marginBottom: 24,
 	},
@@ -1392,7 +1451,7 @@ export const agents = [
 		type: "arrow-link",
 		content: {
 			text: "Changing Your Delaware Registered Agent",
-			url: "/",
+			url: "/manage-your-company/change-of-registered-agent/",
 		},
 		marginBottom: 24,
 	},
@@ -1400,7 +1459,7 @@ export const agents = [
 		type: "arrow-link",
 		content: {
 			text: "What a Delaware Registered Agent Does",
-			url: "/",
+			url: "/research-topics/registered-agent-help/what-does-a-registered-agent-do/",
 		},
 		marginBottom: 24,
 	},
@@ -1409,8 +1468,10 @@ export const filing = [
 	{
 		type: "header",
 		content: "Delaware Corporation Form and Filing Rules",
-		size: 4,
-		marginBottom: 24,
+		size: 2,
+		template: 3,
+		left: true,
+		marginBottom: 40,
 	},
 	{
 		type: "text",
@@ -1436,14 +1497,14 @@ export const filing = [
 			{
 				content: {
 					text: "Start Your S Corp with Incfile",
-					url: "/",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: "/",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
@@ -1453,7 +1514,8 @@ export const filing = [
 	{
 		type: "header",
 		content: "File Your Delaware Certificate of Incorporation",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1498,7 +1560,8 @@ export const filing = [
 		type: "header",
 		content:
 			"Get the Right Permits and Licenses for Your Delaware S Corp or C Corp",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1510,7 +1573,8 @@ export const filing = [
 	{
 		type: "header",
 		content: "A Local Business Permit or License From Your City",
-		size: 5,
+		size: 3,
+		template: 4,
 		marginBottom: 24,
 	},
 	{
@@ -1522,7 +1586,8 @@ export const filing = [
 	{
 		type: "header",
 		content: "County and State Licenses and Permits for Your Corporation",
-		size: 5,
+		size: 3,
+		template: 4,
 		marginBottom: 24,
 	},
 	{
@@ -1534,7 +1599,8 @@ export const filing = [
 	{
 		type: "header",
 		content: "Federal Licenses and Permits",
-		size: 5,
+		size: 3,
+		template: 4,
 		marginBottom: 24,
 	},
 	{
@@ -1547,7 +1613,8 @@ export const filing = [
 		type: "header",
 		content:
 			"Learn What Permits and Licenses Your Delaware Corporation Needs With Incfile",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1583,7 +1650,7 @@ export const filing = [
 		type: "button",
 		content: {
 			text: "Get the Incfile License Research Package",
-			url: "/",
+			url: "/business-license-research-package/",
 		},
 		theme: "primary56",
 		marginBottom: 24,
@@ -1592,7 +1659,8 @@ export const filing = [
 		type: "header",
 		content:
 			"Other Special Requirements for Your Delaware \n" + "S Corp or C Corp",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1604,7 +1672,8 @@ export const filing = [
 	{
 		type: "header",
 		content: "Create Bylaws for Your Delaware Corporation",
-		size: 5,
+		size: 3,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1635,8 +1704,9 @@ export const filing = [
 	},
 	{
 		type: "header",
-		content: "Corporation Shareholders Must Be Issued Stock",
-		size: 5,
+		content: "Issue Stock to Corporation Shareholders",
+		size: 3,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1648,7 +1718,8 @@ export const filing = [
 	{
 		type: "header",
 		content: "A Board of Directors Must Be Appointed",
-		size: 5,
+		size: 3,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1660,7 +1731,8 @@ export const filing = [
 	{
 		type: "header",
 		content: "Assign Officers to the Corporation",
-		size: 5,
+		size: 3,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1672,7 +1744,8 @@ export const filing = [
 	{
 		type: "header",
 		content: "Get a Corporate Records Book",
-		size: 5,
+		size: 3,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1683,20 +1756,9 @@ export const filing = [
 	},
 	{
 		type: "header",
-		content: "Get a Corporate Records Book",
-		size: 5,
-		marginBottom: 24,
-	},
-	{
-		type: "text",
-		content:
-			"Your Delaware corporation will need a book to record important information about the business. This book will include details like your Articles of Incorporation, corporate bylaws, meeting minutes, AGM details, directors, officers, stock certificate information, transfer documents and more.",
-		marginBottom: 24,
-	},
-	{
-		type: "header",
-		content: "Hire Employees",
-		size: 5,
+		content: "Recruit Employees",
+		size: 4,
+		template: 4,
 		marginBottom: 24,
 	},
 	{
@@ -1722,7 +1784,7 @@ export const filing = [
 		type: "button",
 		content: {
 			text: "Get an EIN through Incfile",
-			url: "/",
+			url: "/manage-your-company/tax-id-ein/",
 		},
 		theme: "primary56",
 		marginBottom: 48,
@@ -1730,7 +1792,8 @@ export const filing = [
 	{
 		type: "header",
 		content: "Your Delaware Corporation Must Hold an Annual General Meeting",
-		size: 5,
+		size: 3,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1756,7 +1819,8 @@ export const filing = [
 	{
 		type: "header",
 		content: "Delaware Corporation Tax Registration",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1769,11 +1833,11 @@ export const filing = [
 		type: "list-dot",
 		content: {
 			list: [
-				"The corporation’s name",
-				"The corporation’s mailing address and street address",
-				"The corporation's Registered Agent and their address",
-				"The corporation’s capital structure (number of shares to be issued, who owns them, pricing, etc.)",
-				"The name and address of the incorporator",
+				"Federal income tax",
+				"Corporation tax (only for C Corporations)",
+				"Delaware state tax",
+				"Sales and Use Tax (there is no sales tax imposed by the Delaware for goods and services sold in the state)",
+				"Employment taxes",
 			],
 		},
 		color: color.green3,
@@ -1783,14 +1847,23 @@ export const filing = [
 	{
 		type: "text",
 		content:
-			"You can find details on the <a href='/'> Delaware Department of Revenue</a> and IRS websites.",
+			"You can find details on the Delaware Department of Revenue and IRS websites.",
 		marginBottom: 24,
+	},
+	{
+		type: "arrow-link",
+		content: {
+			text: "Learn more about taxes for your Delaware corporation.",
+			url: "/delaware-corporation/taxes-and-fees-for-your-corporation/",
+		},
+		marginBottom: 32,
 	},
 	{
 		type: "header",
 		content:
 			"Your Delaware Corporation Will Need to File an Annual Franchise Tax  Report",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1802,14 +1875,14 @@ export const filing = [
 	{
 		type: "text",
 		content:
-			"<a href='/'>Learn about your ongoing Delaware corporation filing requirements</a> and business filing deadlines with our helpful Delaware ongoing filing lookup tool.",
+			"<a href='/business-filing-deadlines/'>Learn about your ongoing Delaware corporation filing requirements</a> and business filing deadlines with our helpful Delaware ongoing filing lookup tool.",
 		marginBottom: 24,
 	},
 	{
 		type: "button",
 		content: {
 			text: "Have Incfile File Your Report for You",
-			url: "/",
+			url: "/manage-your-company/annual-report/",
 		},
 		theme: "primary56",
 		marginBottom: 48,
@@ -1818,7 +1891,8 @@ export const filing = [
 		type: "header",
 		content:
 			"Certificate of Good Standing for Your Delaware \n" + "Corporation",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1831,7 +1905,7 @@ export const filing = [
 		type: "button",
 		content: {
 			text: "Get a Certificate of Good Standing Through Incfile",
-			url: "/",
+			url: "/manage-your-company/certificate-of-good-standing/",
 		},
 		theme: "primary56",
 		marginBottom: 48,
@@ -1839,7 +1913,8 @@ export const filing = [
 	{
 		type: "header",
 		content: "Ready to Start Your Delaware Corporation?",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1860,14 +1935,14 @@ export const filing = [
 			{
 				content: {
 					text: "Start Your S Corp with Incfile",
-					url: "/",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: "/",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
@@ -1879,8 +1954,10 @@ export const taxes = [
 	{
 		type: "header",
 		content: "Delaware Corporation Taxes and Fees",
-		size: 4,
-		marginBottom: 24,
+		size: 2,
+		template: 3,
+		left: true,
+		marginBottom: 40,
 	},
 	{
 		type: "text",
@@ -1891,7 +1968,8 @@ export const taxes = [
 	{
 		type: "header",
 		content: "Delaware Corporation Fees",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1899,16 +1977,16 @@ export const taxes = [
 		content: {
 			items: [
 				{
-					question: "Fees for forming a corporation in Delaware",
+					question: "1. Fees for forming a corporation in Delaware",
 					answer:
-						"Learn about <a href='/'>standard filing costs here</a> for DE corporations.",
+						"Learn about <a href='/state-filing-fees/'>standard filing costs here</a> for DE corporations.",
 				},
 				{
-					question: "Delaware Statement of Information Report Fee",
+					question: "2. Delaware State Franchise Tax Report Fee",
 					answer: "A yearly fee when you file your Franchise Tax report.",
 				},
 				{
-					question: "Delaware Permits and Licenses",
+					question: "3. Delaware Permits and Licenses",
 					answer:
 						"These are the fees for creating or renewing your licenses and permits on a regular basis. These depend on the type of Delaware corporation you’re operating and where you’re located.",
 				},
@@ -1917,9 +1995,19 @@ export const taxes = [
 		marginBottom: 47,
 	},
 	{
+		type: "button",
+		content: {
+			text: "Get the Incfile License Research Package",
+			url: "/business-license-research-package/",
+		},
+		theme: "primary56",
+		marginBottom: 48,
+	},
+	{
 		type: "header",
 		content: "Taxes Payable by Your Delaware Corporation",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -1933,11 +2021,13 @@ export const taxes = [
 		content:
 			"Both S Corporations and C Corporations in Delaware Need to Pay \n" +
 			"These Taxes",
-		size: 5,
+		size: 3,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
 		type: "accordion",
+		header: 4,
 		content: {
 			items: [
 				{
@@ -1948,12 +2038,7 @@ export const taxes = [
 				{
 					question: "Income Tax for the State of Delaware",
 					answer:
-						"Anyone who takes earnings out of your Delaware corporation will need to pay Delaware state income tax. Find out more on the <a href='/'>Delaware Division of Revenue website</a>.",
-				},
-				{
-					question: "Sales and Use Tax Payable to the State of Delaware",
-					answer:
-						"If your DE corporation is selling products or services in Delaware, you may need to pay a state sales tax. Find out more on the <a href='/'>Delaware Department of Revenue website</a>.",
+						"Anyone who takes earnings out of your Delaware corporation will need to pay Delaware state income tax. Find out more on the <a href='https://revenue.delaware.gov/'>Delaware Division of Revenue website</a>.",
 				},
 				{
 					question: "Delaware State Sales and Use Tax",
@@ -1961,9 +2046,9 @@ export const taxes = [
 						"The state of Delaware does not charge sales and use tax, but if you sell products or services in a state other than Delaware, you may be liable. Check with your accountant or tax attorney.",
 				},
 				{
-					question: "Other Taxes in Delaware",
+					question: "Delaware Other Taxes",
 					answer:
-						"You may need to pay other taxes and fees, depending on the type of Delaware corporation you run. Find out more on the <a href='/'>Delaware Division of Revenue website</a>. One type of fee that you will need to pay is when you file your annual Franchise Tax report, with fees due as follows:<br />" +
+						"You may need to pay other taxes and fees, depending on the type of Delaware corporation you run. Find out more on the <a href='https://revenue.delaware.gov/'>Delaware Division of Revenue website</a>. One type of fee that you will need to pay is when you file your annual Franchise Tax report, with fees due as follows:<br />" +
 						"“All corporations incorporated in the State of Delaware are required to file an Annual Report and to pay a franchise tax. Exempt domestic corporations do not pay a tax but must file an Annual Report. The Annual Report filing fee for all other domestic corporations is $50.00 plus taxes due upon filing of the Annual Report.<br/><br/>" +
 						"Taxes and Annual Reports are to be received no later than March 1st of each year. The minimum tax is $175.00 for corporations using the Authorized Shares method and a minimum tax of $400.00 for corporations using the Assumed Par Value Capital Method.<br /><br/>" +
 						"All corporations using either method will have a maximum tax of $200,000.00 unless it has been identified as a Large Corporate Filer, then their tax will be $250,000.00. Taxpayers owing $5,000.00 or more pay estimated taxes in quarterly installments with 40% due June 1, 20% due by September 1, 20% due by December 1, and the remainder due March 1. The penalty for not filing a completed Annual Report on or before March 1st is $200.00 Interest at 1.5% per month is applied to any unpaid tax balance. <br/><br/>" +
@@ -1976,14 +2061,15 @@ export const taxes = [
 	{
 		type: "header",
 		content: "Your Delaware Corporation Will Need to Pay Estimated Taxes",
-		size: 4,
+		size: 3,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
 		type: "text",
 		content:
 			"Most Delaware corporations will need to pay estimated taxes throughout the year, depending on the amount of income and profit you expect to make. The most common types of estimated tax are:",
-		marginBottom: 41,
+		marginBottom: 40,
 	},
 	{
 		type: "list-dot",
@@ -2008,7 +2094,8 @@ export const taxes = [
 	{
 		type: "header",
 		content: "Employee Insurance and Taxes for Your Delaware Corporation",
-		size: 5,
+		size: 3,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -2020,18 +2107,21 @@ export const taxes = [
 	{
 		type: "text",
 		content:
-			"Get more requirements from the <a href='/'>Delaware Department of Labor website</a>.",
+			"Get more requirements from the <a href='https://dol.delaware.gov/'>Delaware Department of Labor website</a>.",
 		marginBottom: 48,
 	},
 	{
 		type: "header",
 		content:
 			"Taxes Payable by All Individuals Working for Delaware Corporations",
-		size: 5,
+		size: 3,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
-		type: "text",
+		type: "header",
+		size: 4,
+		template: 4,
 		content:
 			"Delaware Corporation Earnings, Dividends and Distributions Are Subject to Federal Income Tax",
 		marginBottom: 24,
@@ -2045,7 +2135,8 @@ export const taxes = [
 	{
 		type: "header",
 		content: "Delaware S Corporations — Additional Tax Liabilities",
-		size: 5,
+		size: 3,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -2054,7 +2145,7 @@ export const taxes = [
 			{
 				header: "Self-Employment Tax",
 				text:
-					"In a Delaware S Corporation, your earnings “flow through” from the business to your personal tax return. This means you must pay self-employment tax on those earnings at a rate of 15.3 percent. Note that you can deduct standard tax deductions and business expenses.",
+					"Because your Delaware corporation income flows through to your personal tax return, you must pay self-employment tax (also known as FICA, Social Security or Medicare tax) on your earnings. This is typically at a rate of 15.3 percent. You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe.",
 				svg: SelfEmployedTaxSVG,
 				backgroundColor: color.orange2,
 				shadowColor: shadow.orange2,
@@ -2069,7 +2160,7 @@ export const taxes = [
 		type: "button",
 		content: {
 			text: "Get a Tax Consultation from Incfile",
-			url: "/",
+			url: "/business-accounting/",
 		},
 		theme: "primary56",
 		marginBottom: 48,
@@ -2104,7 +2195,7 @@ export const taxes = [
 		type: "button",
 		content: {
 			text: "File Your Delaware S-Corp Tax Election with Incfile",
-			url: "/",
+			url: "/llc-s-corp-election/",
 		},
 		theme: "primary56",
 		marginBottom: 52,
@@ -2112,7 +2203,8 @@ export const taxes = [
 	{
 		type: "header",
 		content: "Taxes Payable by Delaware C Corporations",
-		size: 5,
+		size: 3,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -2146,7 +2238,8 @@ export const taxes = [
 	{
 		type: "header",
 		content: "Ready to Start Your Delaware Corporation?",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -2167,14 +2260,14 @@ export const taxes = [
 			{
 				content: {
 					text: "Start Your S Corp with Incfile",
-					url: "/",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: "/",
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=DE`,
 				},
 				theme: "primary56",
 			},
@@ -2186,19 +2279,20 @@ export const afterFormation = [
 	{
 		type: "header",
 		content: "Understand Your Ongoing Corporate Filing Requirements",
-		size: 4,
-		marginBottom: 24,
+		size: 2,
+		template: 3,
+		left: true,
+		marginBottom: 40,
 	},
 	{
 		type: "text",
 		content:
-			"Each state requires different forms such as your business annual reports and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the form filing requirements keeps your business in good standing with the state. Failure to file these reports can lead to the company being revoked or administrative business dissolution. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
+			"Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a> and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
 		marginBottom: 48,
 	},
 	{
-		type: "header",
-		content: "Delaware’s Ongoing Filing Requirements:",
-		size: 4,
+		type: "text",
+		content: "<b>Delaware’s Ongoing Filing Requirements:</b>",
 		marginBottom: 24,
 	},
 	{
@@ -2208,7 +2302,8 @@ export const afterFormation = [
 	{
 		type: "header",
 		content: "Protect Your Business Name with a Trademark",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -2218,10 +2313,14 @@ export const afterFormation = [
 		marginBottom: 41,
 	},
 	{
+		type: "text",
+		content:
+			"Benefits of <a href='/trademark-name-search/'>Incfile's Trademark service</a> include:",
+		marginBottom: 40,
+	},
+	{
 		type: "list-dot",
 		content: {
-			header:
-				"Benefits of <a href='/'>Incfile's Trademark service</a> include:",
 			list: [
 				"Legal counsel from an experienced trademark attorney",
 				"A thorough search of existing trademarks",
@@ -2236,7 +2335,8 @@ export const afterFormation = [
 	{
 		type: "header",
 		content: "Finances & Accounting for Your Delaware Corporation",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -2248,37 +2348,33 @@ export const afterFormation = [
 	{
 		type: "header",
 		content: "Choose a Bank for Your Delaware Corporation",
-		size: 5,
+		size: 3,
+		template: 4,
 		marginBottom: 24,
 	},
 	{
 		type: "text",
-		content:
-			"The right business checking account for your business should have minimum fees, so that your money goes into the business or your own checking account instead of spending on hidden, tricky bank fees. According to NerdWallet — who looked at the 10 biggest banks in the U.S. and some additional online banks — these are the best four free business checking accounts for your Corporation:",
+		content: `The right business checking account for your business should have minimum fees, so that your money goes into the business or your own checking account instead of spending on hidden, tricky bank fees. According to <a href="https://www.nerdwallet.com/best/banking/free-business-checking-accounts">NerdWallet</a> — who looked at the 10 biggest banks in the U.S. and some additional online banks — these are the best four free business checking accounts for your Corporation:`,
 		marginBottom: 48,
 	},
 	{
 		type: "header",
 		content: "Separate Business & Personal Expenses",
-		size: 5,
+		size: 3,
+		template: 4,
 		marginBottom: 24,
 	},
 	{
 		type: "text",
 		content:
-			"Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your Delaware Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='/'>Expensify</a> to track and tag business expenses from your mobile phone.",
+			"Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your Delaware Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='http://expensify.com/'>Expensify</a> to track and tag business expenses from your mobile phone.",
 		marginBottom: 48,
 	},
 	{
 		type: "header",
 		content: "Set Up Accounting Software",
-		size: 5,
-		marginBottom: 24,
-	},
-	{
-		type: "text",
-		content:
-			"Here are some favorite accounting software options for Corporation business owners:",
+		size: 3,
+		template: 4,
 		marginBottom: 24,
 	},
 	{
@@ -2288,12 +2384,19 @@ export const afterFormation = [
 		marginBottom: 24,
 	},
 	{
+		type: "text",
+		content:
+			"Here are some favorite accounting software options for Corporation business owners:",
+		marginBottom: 24,
+	},
+	{
 		type: "whiteboxes",
 		content: [
 			{
 				link: {
 					text: "QuickBooks",
-					url: "/",
+					url:
+						"https://quickbooks.intuit.com/oa/selfemployed/?utm_source=oaqbse_aff&utm_medium=aff&utm_content=priorityCode=3969702399&cid=aff_cj_7898336&cvosrc=affiliate.cj.7898336&cvo_campaign=qbo_trial&priorityCode=3969702399&aid=12170614",
 				},
 				text:
 					"This is a top option for a lot of business owners and starts out at only $10 a month. You can automatically important banking transactions, track your customers and vendors and related bills and expenses, and integrate with a lot of other online finance tools. If you hire an accountant or tax support, they will all likely support QuickBooks. You can even use an online version in addition to a desktop version of their software. The drawback is that the learning curve for QuickBooks can sometimes be a bit steep.",
@@ -2301,7 +2404,7 @@ export const afterFormation = [
 			{
 				link: {
 					text: "Xero",
-					url: "/",
+					url: "https://www.xero.com/",
 				},
 				text:
 					"Xero is online accounting software that is a great option for those who find QuickBooks to be too complicated and difficult to understand. Their plans start out at $20 per month.",
@@ -2309,7 +2412,8 @@ export const afterFormation = [
 			{
 				link: {
 					text: "FreshBooks",
-					url: "/",
+					url:
+						"https://www.freshbooks.com/?ref=10400&utm_source=sas&utm_medium=affiliate&utm_campaign=938781",
 				},
 				text:
 					"Freshbooks is online accounting software that allows you to also track your time, expenses, collaborate on projects and view accounting reports. One drawback is that it doesn’t currently have a way to track invoices that your business needs to pay. But, accounts start out at $15 per month.",
@@ -2317,43 +2421,45 @@ export const afterFormation = [
 			{
 				link: {
 					text: "Bench",
-					url: "/",
+					url: "https://bench.co/",
 				},
 				text:
 					"Bench not only allows you to track your accounts receivable, but they include the help of a real-life bookkeeper to run your accounting every month. For a Bench account starting out at $125 a month, this is quite the deal instead of hiring your own bookkeeper.",
-				marginBottom: "52px",
+				marginBottom: "48px",
 			},
 		],
 	},
 	{
 		type: "header",
 		content: "Determine How You’ll Accept Credit Cards",
-		size: 5,
+		size: 3,
+		template: 4,
 		marginBottom: 24,
 	},
 	{
 		type: "text",
 		content:
-			"If you use QuickBooks or Freshbooks, you’ll be able to accept credit cards to pay for invoices. If you have a brick and mortar location for your small business, you want to look into offering payments through a service such as <a href='https://shopify.com/'>Shopify</a> or <a href='/'>Square</a>.",
+			"If you use QuickBooks or Freshbooks, you’ll be able to accept credit cards to pay for invoices. If you have a brick and mortar location for your small business, you want to look into offering payments through a service such as <a href='https://shopify.com/'>Shopify</a> or <a href='https://squareup.com/us/en'>Square</a>.",
 		marginBottom: 48,
 	},
 	{
 		type: "header",
 		content: "Look Into Business Funding Options",
-		size: 5,
+		size: 3,
+		template: 4,
 		marginBottom: 24,
 	},
 	{
 		type: "text",
-		content:
-			"In case your business runs out of cash flow, you want to have a backup option so your business doesn’t go under. You can raise capital from investors, ask friends or family for loans, get a business credit card, take an online business loan, or look into government financing using the <a href='/'>SBA & BusinessUSA’s financing tools</a>. Also, it’s important to remember that you can also bootstrap your business — which means, only using the funds you have in your bank account and not expanding until you get more business income.",
+		content: `In case your business runs out of cash flow, you want to have a backup option so your business doesn’t go under. You can raise capital from investors, ask friends or family for loans, get a <a href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024"target="_blank" rel="noopener noreferrer">business credit card</a>, take an online business loan, or look into government financing using the <a href='https://www.sba.gov/node/13710'target="_blank" rel="noopener noreferrer">SBA & BusinessUSA’s financing tools</a>. Also, it’s important to remember that you can also bootstrap your business — which means, only using the funds you have in your bank account and not expanding until you get more business income.`,
 		marginBottom: 48,
 	},
 	{
 		type: "header",
 		content:
 			"Business Operations & Marketing for Your Delaware \n" + "Corporation",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -2362,7 +2468,7 @@ export const afterFormation = [
 			{
 				header: "Build a Business Website",
 				text:
-					"Having a great online presence for your business is the number one way people will find you. You need to start with buying a domain name using a service such as <a href='/'>NameCheap</a>. Then you need to choose a service to host your website such as <a href='/'>SnapWeb</a>. Finally, design your website using a tool such as Squarespace or WordPress. Make sure your website includes important business information such as how to contact you and business hours.",
+					"Having a great online presence for your business is the number one way people will find you. You need to start with buying a domain name using a service such as <a href='https://www.namecheap.com/?utm_source=SAS&utm_medium=Affiliate&utm_campaign=938781&affnetwork=sas'>NameCheap</a>. Then you need to choose a service to host your website such as <a href='http://xoopah.com/'>Xoopah.com</a>. Finally, design your website using a tool such as Squarespace or WordPress. Make sure your website includes important business information such as how to contact you and business hours.",
 				svg: WebSVG,
 				backgroundColor: color.purple2,
 				shadowColor: shadow.purple2,
@@ -2373,7 +2479,7 @@ export const afterFormation = [
 			{
 				header: "Choose a Virtual Phone System",
 				text:
-					"Your business needs a phone number so that your customers, employees and vendors can reach you. A great option is to look into a tool such as <a href='/'>Grasshopper</a>, which allows you to get a business phone that actually forwards to your cell phone, so you never miss an important call.",
+					"Your business needs a phone number so that your customers, employees and vendors can reach you. A great option is to look into a tool such as <a href='https://grasshopper.o9o4.net/c/1320313/503375/8652'>Grasshopper</a>, which allows you to get a business phone that actually forwards to your cell phone, so you never miss an important call.",
 				svg: PhoneSVG,
 				backgroundColor: color.green2,
 				shadowColor: shadow.green2,
@@ -2384,7 +2490,7 @@ export const afterFormation = [
 			{
 				header: "Design a Business Logo",
 				text:
-					"A logo will reflect your business branding everywhere your customers interact with you — on your website, on your invoices, in your email signature, on business cards and more. Instead of trying to design a logo yourself, try a logo making service such as <a href='/'>99 Designs</a> or buy some really high-quality pre-made logos you can customize on <a href='/'>CreativeMarket</a>.",
+					"A logo will reflect your business branding everywhere your customers interact with you — on your website, on your invoices, in your email signature, on business cards and more. Instead of trying to design a logo yourself, try a logo making service such as <a href='http://www.jdoqocy.com/click-7898336-11012409-1442446947000?cm_mmc=CJ-_-4607662-_-7898336-_-99designs%20-%20Text'>99 Designs</a> or buy some really high-quality pre-made logos you can customize on <a href='https://creativemarket.com/'>CreativeMarket</a>.",
 				svg: LogoSVG,
 				backgroundColor: color.orange2,
 				shadowColor: shadow.orange2,
@@ -2395,7 +2501,7 @@ export const afterFormation = [
 			{
 				header: "Get Business Cards Created",
 				text:
-					"Once you have a logo, create nice looking business cards that you can hand out when you’re out networking or even running errands. You never know when a conversation about your business will come up, and you want to be able to give someone a place to research your business and contact you. A great tool to create inexpensive business cards is <a href='/'>Vistaprint</a>.",
+					"Once you have a logo, create nice looking business cards that you can hand out when you’re out networking or even running errands. You never know when a conversation about your business will come up, and you want to be able to give someone a place to research your business and contact you. A great tool to create inexpensive business cards is <a href='https://www.vistaprint.com/business-cards?txi=15626&%3bxnid=TopNav_Business+Cards&%3bxnav=TopNav&%3bGP=04%2f28%2f2017+14%3a14%3a22&%3bGPS=4378726571&%3bGNF=0&rd=1'>Vistaprint</a>.",
 				svg: CardSVG,
 				backgroundColor: color.blue3,
 				shadowColor: shadow.blue3,
@@ -2410,7 +2516,8 @@ export const afterFormation = [
 		type: "header",
 		content:
 			"Choose the Best Business Tools to Run Your Delaware \n" + "Corporation",
-		size: 4,
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
@@ -2491,14 +2598,15 @@ export const afterFormation = [
 	},
 	{
 		type: "header",
-		content: "Start a Business Checklist",
-		size: 4,
+		content: "Get a “Start a Business Checklist” to Follow",
+		size: 2,
+		template: 3,
 		marginBottom: 24,
 	},
 	{
 		type: "text",
 		content:
-			"If you want to track your progress in getting your new business set up properly, we have a great virtual <a href='/'>Start a Business Checklist</a> that includes everything you need to do to launch your business. It even features downloadable PDFs you can access to download and print.",
+			"If you want to track your progress in getting your new business set up properly, we have a great virtual <a href='/starting-a-business-checklist/'>Start a Business Checklist</a> that includes everything you need to do to launch your business. It even features downloadable PDFs you can access to download and print.",
 		marginBottom: 24,
 	},
 ];

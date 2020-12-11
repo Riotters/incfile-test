@@ -6,6 +6,8 @@ import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import OvalSVG from "../../../../images/ovals/compare-state-filling-time-top-top-right.inline.svg";
 import Oval from "../../../atoms/icons/oval";
+import {HeadingP} from "../../../atoms/typography/heading-to-p";
+import {color} from "../../../atoms/styles/colors";
 
 const Wrapper = styled.section`
   position: relative;
@@ -16,9 +18,26 @@ const Wrapper = styled.section`
   p {
     text-align: center;
   }
+  
+  h2 {
+    color: ${color.grey2};
+  }
 `;
 
-const Top = ({ className, content, ovalTop }) => (
+const ChooseParagraphType = ({ headingParagraph, left, content }) => (
+    <>
+        {headingParagraph && (
+            <HeadingP size={2} big left={left} maxWidth={620}>{content}</HeadingP>
+        )}
+        {!headingParagraph && (
+            <Paragraph big maxWidth={620}>
+                {content}
+            </Paragraph>
+        )}
+    </>
+)
+
+const Top = ({ className, content, ovalTop, headingParagraph = false, left = false }) => (
   <Wrapper>
     <Oval top={ovalTop ?? "13"} right="0" width={341} height={192}>
       <OvalSVG />
@@ -30,9 +49,7 @@ const Top = ({ className, content, ovalTop }) => (
         </Heading>
       )}
       {content.text && (
-        <Paragraph big maxWidth={620}>
-          {content.text}
-        </Paragraph>
+          <ChooseParagraphType headingParagraph={headingParagraph} content={content.text} left={left} />
       )}
     </ContentCenter>
   </Wrapper>

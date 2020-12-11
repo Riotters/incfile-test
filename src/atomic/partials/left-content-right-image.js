@@ -60,7 +60,7 @@ const Imagebox = styled.div`
   }
 `;
 
-const LeftContentRightImage = ({ className, children, image, contentWidth, contentPadding }) => {
+const LeftContentRightImage = ({ className, children, image, imageAlt, contentWidth, contentPadding }) => {
   return (
     <Container>
       <Wrapper className={className}>
@@ -68,7 +68,7 @@ const LeftContentRightImage = ({ className, children, image, contentWidth, conte
           {children}
         </Content>
         <Imagebox className="imagebox">
-          <Image filename={image} />
+          <Image filename={image} alt={imageAlt} />
         </Imagebox>
       </Wrapper>
     </Container>

@@ -36,7 +36,7 @@ const BusinessNameSearch = () => {
 			/>
 			<Top
 				imageName="mr-bulb-business-name-search-5927"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt=""
 				ovalColor="blue"
 				headlineWidth="500"
 			>

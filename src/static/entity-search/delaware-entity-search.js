@@ -77,7 +77,7 @@ export const faq = {
 				},
 				{
 					text: `complete guide to choosing the right business name,`,
-					url: `/blog/llc-name-search-50-states/`,
+					url: `https://www.incfile.com/blog/llc-name-search-50-states/`,
 				},
 				{
 					text: `but put briefly, you'll want to choose a name that will:`,

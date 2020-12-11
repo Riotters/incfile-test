@@ -12,6 +12,7 @@ import Curve from "../../../atoms/icons/curve";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import Oval2SVG from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const Requirements = styled.section`
   position: relative;
@@ -72,7 +73,7 @@ const RequirementsSection = ({ className, content }) => (
         <Heading size="2" bottomMargin="56" maxWidth="460">
           {content.header}
         </Heading>
-        <Heading size="4">{content.header2}</Heading>
+        <PHeading size={3} template={4}>{content.header2}</PHeading>
         <Paragraph big bottomMargin="0" mixed={true}>
           {parser(content.text)}
         </Paragraph>

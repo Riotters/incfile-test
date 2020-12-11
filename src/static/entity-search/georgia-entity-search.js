@@ -30,7 +30,7 @@ export const search = {
       label: `Entity Type`,
       link: {
         text: `Not sure?`,
-        url: `/`,
+        url: `/business-entity-comparison/`,
       },
       options: [`LLC`, `Corporation`],
     },
@@ -86,11 +86,11 @@ export const startBusiness = {
   text: `We have a full guide to starting a new business in Georgia. Learn about how to start a GA LLC or a GA corporation.`,
   button: {
     text: `GA LLC`,
-    url: `/georgia-llc`,
+    url: `/georgia-llc/`,
   },
   button2: {
     text: `GA Corporation`,
-    url: `/georgia-corporation`,
+    url: `/georgia-corporation/`,
   },
 };
 
@@ -120,7 +120,7 @@ export const faq = {
     },
     {
       question: `What Do I Need to Think About When Deciding on a Georgia Business Name?`,
-      answer: `The perfect Georgia business name can be elusive. We have a <a href="/blog/post/llc-name-search-50-states/">complete guide to choosing the right GA business name</a> — you'll want to choose a name that will: 
+      answer: `The perfect Georgia business name can be elusive. We have a <a href="https://www.incfile.com/blog/post/llc-name-search-50-states/">complete guide to choosing the right GA business name</a> — you'll want to choose a name that will: 
         <ul>
             <li>Appeal to your customers</li>
             <li>Help people remember your company</li>

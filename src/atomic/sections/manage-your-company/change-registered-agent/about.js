@@ -29,12 +29,12 @@ const AboutSection = ({ className, content }) => (
         </Oval>
         <ImageContent image="calendar-832">
             <Paragraph big bottomMargin="48">{content.text}</Paragraph>
-            <IconTextColorBox color={color.purple3} Icon={IconSVG} content={content.box} bottomMargin="56" rounded curve curveColor={color.babyblue1}/>
-            <Heading size={3} bottomMargin="24">{content.header}</Heading>
+            <IconTextColorBox color={color.purple3} Icon={IconSVG} content={content.box} bottomMargin="56" rounded curve curveColor={color.babyblue1} headingSize={2} paragraphHeader left/>
+            <Heading size={2} template={3} left bottomMargin="24">{content.header}</Heading>
             <Paragraph big bottomMargin="52">{content.text2}</Paragraph>
-            <Heading size={3} bottomMargin="24">{content.header2}</Heading>
+            <Heading size={2} template={3} left bottomMargin="24">{content.header2}</Heading>
             <Paragraph big bottomMargin="48">{content.text3}</Paragraph>
-            <Heading size={3} bottomMargin="24">{content.header3}</Heading>
+            <Heading size={2} template={3} left bottomMargin="24">{content.header3}</Heading>
             <Paragraph big bottomMargin="0">{content.text4}</Paragraph>
         </ImageContent>
     </About>

@@ -80,8 +80,8 @@ export const startBusiness = {
     url: `/michigan-llc`,
   },
   button2: {
-    text: `MI Corporation`,
-    url: `/michigan-corporation`,
+    text: `MI Corporation/`,
+    url: `/michigan-corporation/`,
   },
 };
 
@@ -99,7 +99,7 @@ export const faq = {
     {
       question: `Can I Do Business Under a Different Name Than My Legal Name in Michigan?`,
       answer: `You can normally choose to conduct business under a different name in Michigan. This can be known as an “assumed name”,
-        “fictitious name”, “doing business as name” or “trade name.” We can file your <a href="/manage-your-company/fictitious-business">MI Fictitious Business Name</a> with the Michigan
+        “fictitious name”, “doing business as name” or “trade name.” We can file your <a href="/fictitious-business-or-trade-name/">MI Fictitious Business Name</a> with the Michigan
         Department of Licensing and Regulatory Affairs on your behalf.`,
     },
     {
@@ -110,7 +110,7 @@ export const faq = {
     },
     {
       question: `Can You Help Me Choose the Right Michigan Business Name?`,
-      answer: `The perfect Michigan business name can be elusive. We have a <a href="/blog/post/llc-name-search-50-states/">complete guide to choosing the right MI business name</a> —
+      answer: `The perfect Michigan business name can be elusive. We have a <a href="https://www.incfile.com/blog/post/llc-name-search-50-states/">complete guide to choosing the right MI business name</a> —
         you'll want to choose a name that will:`,
       list: [`Matter to business customers`, `Help people remember your company`, `Be unique among Michigan business entities`],
     },

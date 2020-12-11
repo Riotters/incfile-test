@@ -23,7 +23,7 @@ export const about = {
       `<b>Business name registration —</b> Protects the name of your business in the state you form the business, assuming you’re creating an LLC or corporation. For example, you set up an LLC called “Blue Widget Manufacturing LLC” in Delaware.`,
     ],
   },
-  text4: `<p>Learn more about <a href="/blog/post/intellectual-property-protection/" target="_blank" >intellectual property protection via patents, copyrights</a> and <a href="/blog/post/find-out-business-name-already-registered/" target="_blank" >business name registrations.</a></p>`,
+  text4: `<p>Learn more about <a href="https://www.incfile.com/blog/post/intellectual-property-protection/" target="_blank" >intellectual property protection via patents, copyrights</a> and <a href="https://www.incfile.com/blog/post/find-out-business-name-already-registered/" target="_blank" >business name registrations.</a></p>`,
   header3: `Understand What a Trademark Protects`,
   text5: `Getting a registered trademark means you have the exclusive right to use specific words, phrases and logos to identify your business, products and services. If another business or individual copies something you have trademarked, you can take legal action against them to prevent their usage.`,
   text6: `Trademarks only apply to text or logos that are used for commercial purposes. For example, you can trademark the name of a product or business, but not something that doesn’t generate commercial value or income.`,

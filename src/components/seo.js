@@ -27,7 +27,16 @@ function SEO({ description, lang, meta, title, canonicalURL, robots }) {
 
     const metaDescription = description || site.siteMetadata.description;
     const pathName = typeof window !== 'undefined' ? window.location.pathname : '';
-    const canURL = `${process.env.SITE_URL}${canonicalURL || pathName}`;
+
+    var siteHostname = "";
+    if( typeof window !== "undefined" ) {
+        siteHostname = window.location.hostname.split(".")[0] === "www" ? process.env.SITE_URL : process.env.ALT_SITE_URL;
+    }
+    else {
+        siteHostname = process.env.ALT_SITE_URL;
+    }
+
+    const canURL = `${siteHostname}${canonicalURL || pathName}`;
     
     return (
         <Helmet

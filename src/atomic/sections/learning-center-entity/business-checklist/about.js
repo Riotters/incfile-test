@@ -26,9 +26,9 @@ const AboutSection = ({ className, content }) => (
             <OvalSVG />
         </Oval>
         <ImageContent image="business-checklist-rocket-lunch">
-            <Heading size={3} bottomMargin="24">{content.header}</Heading>
+            <Heading size={2} template={3} left bottomMargin="24">{content.header}</Heading>
             <Paragraph big bottomMargin="40">{content.text}</Paragraph>
-            <IconTextColorBox color={color.green3} Icon={IconSVG} content={content.box} bottomMargin="40" rounded curve />
+            <IconTextColorBox color={color.green3} Icon={IconSVG} content={content.box} bottomMargin="40" rounded curve headingSize={3} />
             <Paragraph big bottomMargin="40">{content.text2}</Paragraph>
             <Paragraph big bottomMargin="40" mixed>{parse(content.text3)}</Paragraph>
             <Paragraph big bottomMargin="72" mixed>{parse(content.text4)}</Paragraph>

@@ -12,12 +12,16 @@ const Related = styled.section`
 	padding-top: 104px;
 	padding-bottom: 104px;
 	background-color: ${color.orange3};
+	
+	h1 {
+	text-align: center;
+	}
 `;
 
-const RelatedSection = ({ className, content }) => (
+const RelatedSection = ({ className, headingSize = 2, headingSizeTemplate = 2, left = true, content }) => (
 	<Related className={className}>
 		<ContentCenter contentWidth="770">
-			<Heading size={1} template={2} bottomMargin="24" maxWidth="700">
+			<Heading size={headingSize} template={headingSizeTemplate} left={left} bottomMargin="24" maxWidth="700">
 				{content.header}
 			</Heading>
 			<Paragraph big bottomMargin={104}>

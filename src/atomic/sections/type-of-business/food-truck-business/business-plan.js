@@ -137,7 +137,7 @@ const BusinessPlan = () => (
         </CountingTextBoxed>
 
         <Paragraph big style={{ marginTop: "50px" }} mixed={true}>
-          We’ve got the perfect <Link to="/blog/post/keys-successful-business-plan/">guide to writing your business plan.</Link>
+          We’ve got the perfect <Link to="https://www.incfile.com/post/keys-successful-business-plan/">guide to writing your business plan.</Link>
         </Paragraph>
       </BusinessOwnerResponsibilities>
     </Container>

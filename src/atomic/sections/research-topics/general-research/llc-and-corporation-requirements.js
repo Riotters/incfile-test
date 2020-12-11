@@ -11,6 +11,7 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import Path from "../../../molecules/blocks/research-topics-path";
 import parse from "html-react-parser";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const About = styled.section`
 	position: relative;
@@ -36,9 +37,9 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text3}
 			</Paragraph>
-			<Heading size={3} bottomMargin="24">
+			<PHeading size={3} bottomMargin="24">
 				{content.header2}
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="16">
 				{content.text4}
 			</Paragraph>
@@ -66,9 +67,9 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text12}
 			</Paragraph>
-			<Heading size={3} bottomMargin="24">
+			<PHeading size={3} bottomMargin="24">
 				{content.header3}
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="16">
 				{content.text13}
 			</Paragraph>
@@ -82,6 +83,7 @@ const AboutSection = ({ className, content }) => (
 				content={content.list}
 				color={color.green2}
 				rounded
+				paragraphHeader
 				bottomMargin="48"
 			/>
 		</ImageContent>

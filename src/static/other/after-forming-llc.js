@@ -54,7 +54,7 @@ export const about = {
 					},
 					{
 						text: `trademark`,
-						url: `/trademark.php`,
+						url: `${process.env.ORDER_URL}/trademark.php`,
 					},
 					{
 						text: `is an essential asset for your business because it protects the brand name and identity that you worked so hard to create. When you secure a federal trademark for your business brand, it gives you exclusive rights to use your business name, logo or slogan once the trademark is approved. Federal Trademark Protection also prevents other businesses from using your brand name and brand identity. Incfile is happy to help with conducting a trademark name search on your business name. Our partnered attorneys will do the research to make sure the mark isn't already taken, ensure the filing is properly prepared and submitted to the government office, and provide sound legal advice throughout the entire process.Benefits of Incfile's Trademark service include:`,
@@ -377,7 +377,8 @@ export const guide = {
 export const hsForm = {
 	header: `Download our "What to Do After Formation" Guide.`,
 	text: `You filed your Articles of Organization and started your LLC—now what? Here are the most important next steps to ensuring your business is successful.`,
-	hs_form_id: `f8b25ab5-7a9a-4f21-b7db-425ede0e6750`,
+    hs_form_id: `f8b25ab5-7a9a-4f21-b7db-425ede0e6750`,
+    fileDownload: `https://cdn2.hubspot.net/hubfs/3787982/Content%20Repurpose%20PDFs/July19%20-%20After%20Formation/July19%20-%20What%20to%20Do%20After%20Forming%20Your%20LLC%20PDF.pdf`,
 	button: {
 		text: "Download now",
 		url: "/",

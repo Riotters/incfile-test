@@ -140,7 +140,8 @@ const Adventages = ({
 	urlText,
 	style,
 	width,
-	imageName,
+    imageName,
+    imageAlt,
 	disadventage,
 }) => {
 	return (
@@ -178,7 +179,7 @@ const Adventages = ({
 
 				{imageName && (
 					<ImageWrapper>
-						<Image filename={imageName} />
+						<Image filename={imageName} alt={imageAlt} />
 					</ImageWrapper>
 				)}
 				{headline && (

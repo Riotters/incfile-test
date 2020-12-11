@@ -23,6 +23,7 @@ import {
 	about,
 	related,
 } from "../../../static/research-topics/video-library/forming-llc-or-corp";
+import {HeadingP} from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => (
 	<Layout>
@@ -39,7 +40,7 @@ const HelpCenter = () => (
 			<Heading size={2} template={1} left>
 				{top.header}
 			</Heading>
-			<p>{top.text}</p>
+			<HeadingP size={3}>{top.text}</HeadingP>
 			<Searchbar />
 		</Top>
 		<About content={about} />

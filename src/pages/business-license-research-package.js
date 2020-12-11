@@ -39,7 +39,7 @@ const BusinessLicence = () => (
 		/>
 		<Top
 			imageName="mrs-bulb-business-license-882"
-			imageAlt="Mr Bulb with business license"
+			imageAlt=""
 			ovalColor="darkblue"
 		>
 			<h1>{top.header}</h1>
@@ -52,7 +52,7 @@ const BusinessLicence = () => (
 				{top.text}
 			</Heading>
 			<Buttonsbox>
-				<Button content={top.button[0]} theme="primary56" width="200px" arrow />
+				<Button externalLink content={top.button[0]} theme="primary56" width="200px" arrow />
 			</Buttonsbox>
 		</Top>
 		<About content={about} />

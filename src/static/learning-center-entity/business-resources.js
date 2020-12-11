@@ -334,7 +334,8 @@ export const furtherResources = {
 	cards: [
 		{
 			header: `State Filing Times`,
-			text: `State-by-state filing times and prices`,
+            text: `State-by-state filing times and prices`,
+            imgAlt: `filing time and price`,
 			link: {
 				text: `Learn more`,
 				url: `/state-filing-times/`,
@@ -342,7 +343,8 @@ export const furtherResources = {
 		},
 		{
 			header: `Filing and compliance requirements`,
-			text: `Ongoing filing and compliance requirements`,
+            text: `Ongoing filing and compliance requirements`,
+            imgAlt: `Filing and compliance requirements`,
 			link: {
 				text: `Learn more`,
 				url: `/compliance-filing-requirement/`,
@@ -350,7 +352,8 @@ export const furtherResources = {
 		},
 		{
 			header: `Starting a Business`,
-			text: `How to start different types of business, including online, franchise, unique and side businesses.`,
+            text: `How to start different types of business, including online, franchise, unique and side businesses.`,
+            imgAlt: `starting a business`,
 			link: {
 				text: `Learn more`,
 				url: `/start-a-business/`,
@@ -358,7 +361,8 @@ export const furtherResources = {
 		},
 		{
 			header: `Specific Industries`,
-			text: `How to start businesses in specific industries like landscaping, real estate, salons, publishing, life coaching and more.`,
+            text: `How to start businesses in specific industries like landscaping, real estate, salons, publishing, life coaching and more.`,
+            imgAlt: `specific industries`,
 			link: {
 				text: `Learn more`,
 				url: `/start-a-business/`,
@@ -366,7 +370,8 @@ export const furtherResources = {
 		},
 		{
 			header: `Registered Agents`,
-			text: `Complete details on registered agents and their function.`,
+            text: `Complete details on registered agents and their function.`,
+            imgAlt: `registered agent`,
 			link: {
 				text: `Learn more`,
 				url: `/registered-agents/`,
@@ -374,15 +379,17 @@ export const furtherResources = {
 		},
 		{
 			header: `Incfile Blog`,
-			text: `The Incfile blog with detailed articles on every aspect of forming and running a business.`,
+            text: `The Incfile blog with detailed articles on every aspect of forming and running a business.`,
+            imgAlt: `incfile blog`,
 			link: {
 				text: `Learn more`,
-				url: `/blog/`,
+				url: `https://www.incfile.com/blog/`,
 			},
 		},
 		{
 			header: `Forming an LLC in Your State`,
-			text: `State-by-state filing times and prices`,
+            text: `State-by-state filing times and prices`,
+            imgAlt: `forming an llc in your state`,
 			link: {
 				text: `Learn more`,
 				url: `/llc-state-information/`,
@@ -390,7 +397,8 @@ export const furtherResources = {
 		},
 		{
 			header: `Forming a Corporation`,
-			text: `State-by-state filing times and prices`,
+            text: `State-by-state filing times and prices`,
+            imgAlt: `forming a corporation`,
 			link: {
 				text: `Learn more`,
 				url: `/corporation-state-information/`,
@@ -398,7 +406,8 @@ export const furtherResources = {
 		},
 		{
 			header: `Business Name Search`,
-			text: `Sytate-by-state filing times and prices`,
+            text: `Sytate-by-state filing times and prices`,
+            imgAlt: `business name search`,
 			link: {
 				text: `Learn more`,
 				url: `/business-name-search/`,
@@ -406,7 +415,8 @@ export const furtherResources = {
 		},
 		{
 			header: `Business Reports`,
-			text: `Understand when your business report is due and filing deadlines.`,
+            text: `Understand when your business report is due and filing deadlines.`,
+            imgAlt: `business report`,
 			link: {
 				text: `Learn more`,
 				url: `/business-filing-deadlines/`,

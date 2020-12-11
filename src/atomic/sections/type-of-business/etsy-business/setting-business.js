@@ -79,7 +79,7 @@ const SettingBusiness = () => (
                 <TopImageBox image="state-filling-fees" color={color.yellow3}>
                     <Heading size={3} template={4}>Finances and Taxes</Heading>
                     <p>
-                        What kind of <Link to="https://utility.bankofamerica.com/alliance/?formid=IF1">bank account</Link> will you get? Do you need a <Link to="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">business credit card</Link>? How will you pay
+                        What kind of <a href="https://utility.bankofamerica.com/alliance/?formid=IF1">bank account</a> will you get? Do you need a <a href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">business credit card</a>? How will you pay
                         your business taxes? These are important questions to consider so your Etsy business stays in
                         the green. Here at Incfile, we can even <Link to="/business-accounting/">help you file your taxes</Link>.
                     </p>

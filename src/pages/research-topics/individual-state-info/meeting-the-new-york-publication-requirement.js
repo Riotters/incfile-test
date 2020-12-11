@@ -23,6 +23,7 @@ import { about } from "../../../static/research-topics/state-info/ny-publication
 
 import { related } from "../../../static/research-topics/state-info";
 import { Helmet } from "react-helmet";
+import {HeadingP} from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => {
 	const currentUri =
@@ -57,7 +58,7 @@ const HelpCenter = () => {
 				<Heading size={2} template={1} left>
 					{top.header}
 				</Heading>
-				<p>{top.text}</p>
+				<HeadingP size={3}>{top.text}</HeadingP>
 				<Searchbar />
 			</Top>
 			<About content={about} />

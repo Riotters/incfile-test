@@ -43,8 +43,6 @@ const NextStateSection = ({ className, content, id }) => {
 
 	const handleForm = (data) => {
 		getAnnualReportDueDate(data).then((res) => {
-			console.log("RES", data.get("companyName"));
-
 			if (res.response.status === 1) {
 				setFormSubmitted(!formSubmitted);
 				setContentResult((prevState) => ({

@@ -40,7 +40,7 @@ import UsefulTools from "../../atomic/partials/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
-import ColorfulRing2 from "../../images/rings-7.inline.svg";
+import ColorfulRing2 from "../../images/chart-etsy.inline.svg";
 import Adventages from "../../components/adventages";
 import AdventagesWithLongText from "../../atomic/molecules/mixed-blocks/adventages-with-long-text";
 import TabOvalSvg from "../../images/ovals/bottom-right-transparent-green3.inline.svg";
@@ -636,7 +636,7 @@ const EtsyBusiness = () => (
 
 					<Paragraph big mixed={true} style={{ marginTop: "50px" }}>
 						We’ve got the perfect{" "}
-						<Link to="/blog/post/keys-successful-business-plan/">
+						<Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">
 							guide to writing your business plan.
 						</Link>
 					</Paragraph>

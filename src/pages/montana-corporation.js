@@ -39,6 +39,7 @@ import ComplianceRequirementBox from "../atomic/state-corporation/compliance-req
 import { getFullPricesAndFilings } from "../api/Api";
 import ReactTabs from "../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
+import { Helmet } from "react-helmet";
 
 const MontanaCorporation = () => {
 	const [dataApi, setDataApi] = React.useState({});
@@ -88,7 +89,12 @@ const MontanaCorporation = () => {
 				<ReactTabs content={tabs}>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Choosing a Corporation Name
 							</Heading>
 							<Paragraph big>
@@ -118,7 +124,12 @@ const MontanaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Articles of Incorporation
 							</Heading>
 							<Paragraph big>
@@ -127,7 +138,8 @@ const MontanaCorporation = () => {
 								with the Corporation Bureau of the Montana Secretary of State’s
 								office, along with a $70 filing fee. The articles must be
 								delivered to the state by one or more incorporators, who may be
-								either any natural person of legal age or a business entity.
+								either any natural person of legal age or a business entity. The
+								articles must include:
 							</Paragraph>
 
 							<Colorbox
@@ -136,6 +148,10 @@ const MontanaCorporation = () => {
 								dotsColor={color.blue1}
 								style={{ marginBottom: "65px" }}
 							/>
+							<Paragraph big>
+								Some other items that aren’t required-but which may be included
+								in the articles of incorporation-are:
+							</Paragraph>
 
 							<Colorbox
 								color={color.orange3}
@@ -147,7 +163,12 @@ const MontanaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
@@ -166,7 +187,12 @@ const MontanaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Bylaws
 							</Heading>
 							<Paragraph big>
@@ -230,7 +256,12 @@ const MontanaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Directors
 							</Heading>
 							<Paragraph big>
@@ -248,7 +279,12 @@ const MontanaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Requirement Reports
 							</Heading>
 							<Paragraph big style={{ marginBottom: "48px" }}>
@@ -320,7 +356,12 @@ const MontanaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Taxes
 							</Heading>
 							<Paragraph big>
@@ -361,7 +402,8 @@ const MontanaCorporation = () => {
 					</Curve>
 					<LightBoxVideo
 						thumbnailVideo="comparison-chart-video-3611"
-						videoID="oYZShvmf9eQ"
+						videoID="372490609"
+						vimeo
 					/>
 				</ContentCenter>
 
@@ -405,19 +447,23 @@ const MontanaCorporation = () => {
 				</ContentCenter>
 			</QuestionSection>
 
-			{/*<InfoSection>*/}
-			{/*<HeadingCenter headline={info.header} textWidth="770" />*/}
+			<Rocket urlParams="?entityType=CCorporation&entityState=MT" />
 
-			{/*<Container>*/}
-			{/*<AdventagesBox>*/}
-			{/*{info.items.map((item) => (*/}
-			{/*<Adventages headline={item.headline} text={item.text} />*/}
-			{/*))}*/}
-			{/*</AdventagesBox>*/}
-			{/*</Container>*/}
-			{/*</InfoSection>*/}
-
-			<Rocket />
+			<Helmet>
+				<script type="application/ld+json">
+					{`{
+                        "@context": "http://schema.org",
+                        "@type": "VideoObject",
+                        "name": "What is a Corporation? by Incfile",
+                        "description": "What is a corporation and how does it work? One of the most important decisions you'll make when starting a business is its legal structure. A popular option is a “corporation“—but what does this mean for business owners?   A corporation is its own legal entity separate from the owners. It has nearly all the legal rights of an individual: It can hire employees, own assets, enter into contracts, sue and be sued, loan and borrow money, and pay taxes. But since the corporation exists as a separate entity, it limits the liability of its owners. That means shareholders have the right to participate in profits, but they’re not held personally liable for the company’s debts. And since a corporation isn’t linked to a single person, it doesn’t dissolve when its owners or shareholders change or die, so liability protection is passed on to the next in line.  The Three Main Types of Corporations:  - C Corporations - S Corporations - Non-profits   Learn more about the three main types of corporations by visiting these links below:   - What is an S Corporation? https://www.incfile.com/what-is-s-corporation/ - What is a C Corporation? https://www.incfile.com/what-is-c-corporation/ - What is a Nonprofit? https://www.incfile.com/what-is-non-profit-corporation/",
+                        "thumbnailUrl": "https://i.ytimg.com/vi/oYZShvmf9eQ/default.jpg",
+                        "uploadDate": "2020-09-07T17:00:19Z",
+                        "duration": "PT1M41S",
+                        "embedUrl": "https://www.youtube.com/embed/oYZShvmf9eQ",
+                        "interactionCount": "74"
+                    }`}
+				</script>
+			</Helmet>
 		</Layout>
 	);
 };

@@ -18,6 +18,8 @@ import {
 	tools,
 } from "../../static/learning-center-entity/help-center-article";
 import { related } from "../../static/research-topics/registered-agent";
+import {Heading} from "../../atomic/atoms/typography/heading";
+import {HeadingP} from "../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => (
 	<Layout>
@@ -30,12 +32,12 @@ const HelpCenter = () => (
 			imageAlt="Mrs Bulb and with checklist"
 			ovalColor="green"
 		>
-			<h1>{top.header}</h1>
-			<p>{top.text}</p>
+			<Heading size={2} template={1} left>{top.header}</Heading>
+			<HeadingP size={3}>{top.text}</HeadingP>
 			<Searchbar />
 		</Top>
 		{/* <About content={about} /> */}
-		<Related content={related} />
+		<Related content={related} headingSize={1} headingSizeTemplate={2} />
 		<Categories content={categories} />
 		<Service content={service} />
 		<Tools content={tools} />

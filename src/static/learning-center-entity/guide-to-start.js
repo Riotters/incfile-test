@@ -11,7 +11,7 @@ export const about = {
     text: `Starting a business is one of the most important decisions you’ll ever make. It lets you turn your ideas and dreams into products and services that will delight your customers and add value to their lives. Entrepreneurship can seem daunting—a seemingly endless to-do list, combined with administration, funding, marketing, operations, taxes and more can scare some people off—but don’t worry, we’ve got you covered.`,
     box: {
         header: `Relax, we’ve got you covered.`,
-        text: `Here at Incfile, we believe that owning and running a business can be one of the most rewarding and fulfilling things you can do. That’s why we’ve put together a complete guide to starting your business, sharing or experience and entrepreneurial best practice to help you make the most of your time. `,
+        text: `Here at Incfile, we believe that owning and running a business can be one of the most rewarding and fulfilling things you can do. That’s why we’ve put together a complete guide to starting your business, sharing our experience and entrepreneurial best practice to help you make the most of your time. `,
     },
     text2: `Whether you’re a new entrepreneur or a business veteran, use our start a business checklist to bring your ideas to life.`,
     button: {
@@ -25,30 +25,37 @@ export const tableOfContent = {
     cards: [{
             header: `How Ready Are You to Start a Business?`,
             text: `Understanding your current skills and expertise, how to find out if your family is ready, deciding on the lifestyle you want and balancing running a business against having a day job.`,
+            imgAlt: `How Ready Are You to Start a Business?`
         },
         {
             header: `The Legalities of Starting a Business`,
             text: `Deciding on the right business structure and entity for your needs, searching for and finding the right business name and how to go about filing and registering your new business.`,
+            imgAlt: `The Legalities of Starting a Business`
         },
         {
             header: `Developing Your Business Idea`,
             text: `Creating a business idea, doing your research and a guide to getting actionable, high-quality feedback.`,
+            imgAlt: `Developing Your Business Idea`
         },
         {
             header: `Business Taxes, Licenses and Forms`,
             text: `Filing your business taxes, getting the right permits and licenses in place for your business and ongoing filing requirements so you stay compliant.`,
+            imgAlt: `Business Taxes, Licenses and Forms`
         },
         {
             header: `Business Planning and Funding`,
             text: `Writing your business plan and what you should include in the document, business funding including bootstrapping, crowdfunding, loans, grants and lines of credit.`,
+            imgAlt: `Business Planning and Funding`
         },
         {
             header: `Business Identity and Marketing`,
             text: `Branding your business including your vision, mission statement, logos, marketing assets, physical and digital marketing channels and your small business website.`,
+            imgAlt: `Business Identity and Marketing`
         },
         {
             header: `Measuring Business Success`,
             text: `Getting the right measurements in place to understand your return on investment, working with an accountant and understanding important financial reports.`,
+            imgAlt: `Measuring Business SuccessIdea`
         },
     ],
 };
@@ -76,6 +83,7 @@ export const hsForm = {
     header: "DOWNLOAD: The Complete Guide to Starting a Business.",
     text: "From developing your business idea to measuring success, our free guide has all the info you need to get your business off the ground.",
     hs_form_id: `7d5d3157-09f4-40f0-bfee-eff448ed0e24`,
+    fileDownload: `https://cdn2.hubspot.net/hubfs/3787982/the-complete-guide-to-starting-a-business.pdf`,
     button: {
         text: "Download now",
         url: "/",

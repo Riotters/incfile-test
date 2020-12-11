@@ -39,6 +39,8 @@ import ComplianceRequirementBox from "../atomic/state-corporation/compliance-req
 import { getFullPricesAndFilings } from "../api/Api";
 import ReactTabs from "../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
+import { Helmet } from "react-helmet";
+import LightBox from "../components/LightBox";
 
 const OklahomaCorporation = () => {
 	const [dataApi, setDataApi] = React.useState({});
@@ -88,7 +90,12 @@ const OklahomaCorporation = () => {
 				<ReactTabs content={tabs}>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Choosing a Corporation Name
 							</Heading>
 							<Paragraph big>
@@ -150,11 +157,21 @@ const OklahomaCorporation = () => {
 								An available corporate name may be reserved for 60 days for a
 								$10 fee.
 							</Paragraph>
+							<LightBox
+								bottomMargin={42}
+								thumbnailVideo="what-is-a-corporation-8899"
+								videoID="oYZShvmf9eQ"
+							/>
 						</PanelWrapper>
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Articles of Incorporation
 							</Heading>
 							<Paragraph big>
@@ -169,20 +186,14 @@ const OklahomaCorporation = () => {
 								The certificate must be accompanied by a $50 minimum fee based
 								on the authorized capital specified in your certificate,
 								calculated as follows:
-								<ol>
-									{" "}
-									<li>
-										For no-par shares (i.e., without par value), multiply the
-										number of authorized shares by $50. This means that the
-										minimum $50 filing fee allows you to authorize just one
-										share without par value.{" "}
-									</li>{" "}
-									<li>
-										For shares with a stated par value, multiply the par value
-										amount of each share by the number of par value shares
-										authorized.{" "}
-									</li>{" "}
-								</ol>
+							</Paragraph>
+							<Colorbox
+								color={color.blue3}
+								content={articlesOfIncorporation.box1}
+								dotsColor={color.blue1}
+								style={{ marginBottom: "65px" }}
+							/>
+							<Paragraph big>
 								The filing fee for par value shares is $1 for each $1,000 of
 								capital or fraction thereof. The minimum $50 filing fee allows
 								you to authorize $50,000 of capital (for example, 50,000 shares
@@ -191,17 +202,27 @@ const OklahomaCorporation = () => {
 								with a total par value of $50,000 in order to authorize an
 								adequate number of shares for the minimum filing fee.
 							</Paragraph>
+							<Paragraph big>
+								The following information must be included in the certificate of
+								incorporation:
+							</Paragraph>
 
 							<Colorbox
 								color={color.blue3}
-								content={articlesOfIncorporation.box1}
+								content={articlesOfIncorporation.box2}
 								dotsColor={color.blue1}
 								style={{ marginBottom: "65px" }}
 							/>
+							<Paragraph big>
+								Oklahoma law also allows (but does not require) optional items
+								to be included in the certificate of incorporation for those
+								corporations who wish to formally specify additional
+								information, such as:
+							</Paragraph>
 
 							<Colorbox
 								color={color.orange3}
-								content={articlesOfIncorporation.box2}
+								content={articlesOfIncorporation.box3}
 								dotsColor={color.orange1}
 								style={{ marginBottom: "48px" }}
 							/>
@@ -209,7 +230,12 @@ const OklahomaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
@@ -228,7 +254,12 @@ const OklahomaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Bylaws
 							</Heading>
 							<Paragraph big>
@@ -285,7 +316,12 @@ const OklahomaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Directors
 							</Heading>
 							<Paragraph big>
@@ -304,7 +340,12 @@ const OklahomaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Requirement Reports
 							</Heading>
 							<Paragraph big style={{ marginBottom: "48px" }}>
@@ -383,7 +424,12 @@ const OklahomaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Taxes
 							</Heading>
 							<Paragraph big>
@@ -429,7 +475,8 @@ const OklahomaCorporation = () => {
 					</Curve>
 					<LightBoxVideo
 						thumbnailVideo="comparison-chart-video-3611"
-						videoID="oYZShvmf9eQ"
+						videoID="372490609"
+						vimeo
 					/>
 				</ContentCenter>
 
@@ -473,19 +520,23 @@ const OklahomaCorporation = () => {
 				</ContentCenter>
 			</QuestionSection>
 
-			{/*<InfoSection>*/}
-			{/*<HeadingCenter headline={info.header} textWidth="770" />*/}
+			<Rocket urlParams="?entityType=CCorporation&entityState=OK" />
 
-			{/*<Container>*/}
-			{/*<AdventagesBox>*/}
-			{/*{info.items.map((item) => (*/}
-			{/*<Adventages headline={item.headline} text={item.text} />*/}
-			{/*))}*/}
-			{/*</AdventagesBox>*/}
-			{/*</Container>*/}
-			{/*</InfoSection>*/}
-
-			<Rocket />
+			<Helmet>
+				<script type="application/ld+json">
+					{`{
+                        "@context": "http://schema.org",
+                        "@type": "VideoObject",
+                        "name": "What is a Corporation? by Incfile",
+                        "description": "What is a corporation and how does it work? One of the most important decisions you'll make when starting a business is its legal structure. A popular option is a “corporation“—but what does this mean for business owners?   A corporation is its own legal entity separate from the owners. It has nearly all the legal rights of an individual: It can hire employees, own assets, enter into contracts, sue and be sued, loan and borrow money, and pay taxes. But since the corporation exists as a separate entity, it limits the liability of its owners. That means shareholders have the right to participate in profits, but they’re not held personally liable for the company’s debts. And since a corporation isn’t linked to a single person, it doesn’t dissolve when its owners or shareholders change or die, so liability protection is passed on to the next in line.  The Three Main Types of Corporations:  - C Corporations - S Corporations - Non-profits   Learn more about the three main types of corporations by visiting these links below:   - What is an S Corporation? https://www.incfile.com/what-is-s-corporation/ - What is a C Corporation? https://www.incfile.com/what-is-c-corporation/ - What is a Nonprofit? https://www.incfile.com/what-is-non-profit-corporation/",
+                        "thumbnailUrl": "https://i.ytimg.com/vi/oYZShvmf9eQ/default.jpg",
+                        "uploadDate": "2020-09-07T17:00:19Z",
+                        "duration": "PT1M41S",
+                        "embedUrl": "https://www.youtube.com/embed/oYZShvmf9eQ",
+                        "interactionCount": "74"
+                    }`}
+				</script>
+			</Helmet>
 		</Layout>
 	);
 };

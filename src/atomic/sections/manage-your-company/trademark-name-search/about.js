@@ -27,8 +27,8 @@ const AboutSection = ({ className, content }) => (
     <Oval className="oval" height="570" width="570" y="-40">
       <OvalSVG />
     </Oval>
-    <ImageContent image="shieldo">
-      <Heading size={3} bottomMargin="40">
+    <ImageContent image="shieldo" alt="trademark name search">
+      <Heading size={2} template={3} left bottomMargin="40">
         {content.header}
       </Heading>
       <Paragraph big bottomMargin="40">

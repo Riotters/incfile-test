@@ -126,7 +126,7 @@ export const businessNamesContent = {
       width: `450px`,
       content: {
         text: `Incfile Guide To Choosing A Business Name`,
-        url: `/blog/post/llc-name-search-50-states/`,
+        url: `https://www.incfile.com/blog/post/llc-name-search-50-states/`,
       },
     },
     {
@@ -166,7 +166,7 @@ export const businessNamesContent = {
         title: `Find out if your preferred business name is available in New York with Incfile’s free tool.`,
         button: {
           text: `Check Your New York LLC Name`,
-          url: `/new-york-entity-search/?open=true/`,
+          url: `/new-york-entity-search/`,
         },
       },
     },

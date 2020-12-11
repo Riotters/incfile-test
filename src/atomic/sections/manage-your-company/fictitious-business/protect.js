@@ -31,7 +31,7 @@ const ProtectSection = ({ className, content }) => (
     <Oval height="570" width="570" bottom="0" right="0">
       <OvalSVG2 />
     </Oval>
-    <ContentImage image="protecting-your-business-name" contentWidth="770" contentPadding="200">
+    <ContentImage image="protecting-your-business-name" imageAlt="protect your business name" contentWidth="770" contentPadding="200">
       <TextWrapper>
         <Curve top="-5" right="155" color={color.orange1}>
           <CurveSVG />

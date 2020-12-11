@@ -8,24 +8,28 @@ export const adventages = {
         {
             circleText: 1,
             imageName: "environmental-home-construction",
+            imageAlt: `Strong research abilities`,
             headline: "Environmental Home Construction",
             text: "The need for ecologically-friendly, low-waste, environmental homes is growing constantly. This is a lucrative market for construction entrepreneurs with green credentials."
         },
         {
             circleText: 2,
             imageName: "special-comission-constructtion",
+            imageAlt: `Good math skills`,
             headline: "Special Commission Construction",
             text: "The desire for one-off, specially-commissioned homes is also growing as homeowners are moving away from cookie-cutter house plans. This type of construction requires good relationships with architects and designers."
         },
         {
             circleText: 3,
             imageName: "starting-a-home-business",
+            imageAlt: `Excellent forecasting abilities`,
             headline: "Tiny Home Construction",
             text: "Tiny homes are also on the rise as a low-cost way for people to get into home ownership. They are especially popular in certain communities."
         },
         {
             circleText: 4,
             imageName: "retail-construction",
+            imageAlt: `Great flexibility`,
             headline: "Retail Construction",
             text: "The retail space is becoming more challenging as traditional stores try to compete with ecommerce websites. A construction business with retail and commercial expertise can create spaces where shoppers love to spend money."
         }
@@ -66,9 +70,7 @@ export const adventages2 = {
         {
             circleText: 1,
             headline: "File an Annual Report",
-            text: `Most states require all businesses to file a report once a year. This report has details of any major changes to who owns a business and other major impacts on a business’ legal status. <a href="/manage-your-company/annual-report/">We can file your Annual Report on your behalf.</a>`,
-            url: "/manage-your-company/annual-report",
-            urlText: "Annual Report"
+            text: `Most states require all businesses to file a report once a year. This report has details of any major changes to who owns a business and other major impacts on a business’ legal status. <a href="/manage-your-company/annual-report/">We can file your Annual Report on your behalf.</a>`
         },
         {
             circleText: 2,

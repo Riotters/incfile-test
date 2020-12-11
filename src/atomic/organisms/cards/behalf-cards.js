@@ -25,7 +25,7 @@ const BehalfCards = ({ className, content }) => {
   return (
     <Wrapper className={className}>
         {content.map((card, i) => (
-            <Card content={card} color={colors[i]} image={icons[i]} />
+            <Card content={card} color={colors[i]} image={icons[i]} key={i} />
         ))}
     </Wrapper>
   )

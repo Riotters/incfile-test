@@ -22,6 +22,8 @@ import {
 } from "../../static/manage-your-company/annual-report";
 import ProductSchema from "../../components/product-schema";
 import { servicePrice } from "../../helpers/global-variables";
+import {Heading} from "../../atomic/atoms/typography/heading";
+import {HeadingP} from "../../atomic/atoms/typography/heading-to-p";
 
 const AnnualReport = () => (
 	<Layout>
@@ -40,8 +42,8 @@ const AnnualReport = () => (
 			imageAlt="Mrs Bulb and with checklist"
 			ovalColor="green"
 		>
-			<h1>{top.header}</h1>
-			<p>{top.text}</p>
+			<Heading size={1}>{top.header}</Heading>
+			<HeadingP size={2} big left>{top.text}</HeadingP>
 			<Buttonsbox>
 				<Button content={top.button[0]} theme="primary56" width="200px" arrow />
 			</Buttonsbox>

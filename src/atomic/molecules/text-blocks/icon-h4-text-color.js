@@ -8,6 +8,7 @@ import { color } from "../../atoms/styles/colors";
 import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/top-left-bottom-right.inline.svg";
 import ArrowLink from "../buttons/text";
+import {PHeading} from "../../atoms/typography/p-to-heading";
 
 const dotColor = (circleColor) => {
 	switch (circleColor) {
@@ -72,6 +73,19 @@ const Wrapper = styled.div`
 	}
 `;
 
+const ChooseHeading = ({ paragraphHeader, headingSize, headingSizeTemplate, content, ...rest }) => (
+	<>
+		{paragraphHeader && (
+			<PHeading size={headingSizeTemplate} template={headingSizeTemplate} {...rest}>{parse(content)}</PHeading>
+		)}
+		{!paragraphHeader && (
+			<Heading size={headingSize} template={headingSizeTemplate} {...rest}>
+				{parse(content)}
+			</Heading>
+		)}
+	</>
+);
+
 const IconTextColorBox = ({
 	className,
 	Icon,
@@ -79,6 +93,10 @@ const IconTextColorBox = ({
 	content,
 	bottomMargin,
 	linkBottomMargin,
+	headingSize = 4,
+	headingSizeTemplate = 4,
+	paragraphHeader = false,
+	left,
 	rounded,
 	curve,
 	curveColor,
@@ -103,9 +121,7 @@ const IconTextColorBox = ({
 					<Icon />
 				</div>
 				{content.header ? (
-					<Heading size="4" bottomMargin="16">
-						{content.header}
-					</Heading>
+					<ChooseHeading headingSizeTemplate={headingSizeTemplate} headingSize={headingSize} paragraphHeader={paragraphHeader} content={content.header} left />
 				) : null}
 				{content.text && (
 					<Paragraph mixed bottomMargin="0">

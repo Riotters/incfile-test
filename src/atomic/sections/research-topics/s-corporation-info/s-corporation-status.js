@@ -31,6 +31,7 @@ const AboutSection = ({ className, content }) => (
 				content={content.list}
 				color={color.orange3}
 				curve
+				paragraphHeader
 				curveColor={color.green2}
 				rounded
 				bottomMargin="48"

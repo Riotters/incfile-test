@@ -33,7 +33,7 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text2}
 			</Paragraph>
-			<Heading size={3} bottomMargin="24">
+			<Heading size={2} template={3} bottomMargin="24">
 				{content.header2}
 			</Heading>
 			<Paragraph big bottomMargin="16">
@@ -42,13 +42,14 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text4}
 			</Paragraph>
-			<Heading size={3} bottomMargin="24">
+			<Heading size={2} template={3} bottomMargin="24">
 				{content.header3}
 			</Heading>
 			<IconListColorBox
 				content={content.list}
 				color={color.orange3}
 				curve
+				paragraphHeader
 				curveColor={color.green2}
 				rounded
 				bottomMargin="24"
@@ -57,13 +58,13 @@ const AboutSection = ({ className, content }) => (
 				{content.text5}
 			</Paragraph>
 			<ArrowLink content={content.link} bottomMargin="48" />
-			<Heading size={3} bottomMargin="24">
+			<Heading size={2} template={3} bottomMargin="24">
 				{content.header4}
 			</Heading>
 			<Paragraph big bottomMargin="48">
 				{content.text6}
 			</Paragraph>
-			<Heading size={3} bottomMargin="24">
+			<Heading size={2} template={3} bottomMargin="24">
 				{content.header5}
 			</Heading>
 			<Paragraph big bottomMargin="16">
@@ -73,35 +74,36 @@ const AboutSection = ({ className, content }) => (
 			<IconListColorBox
 				content={content.list3}
 				color={color.green3}
+				paragraphHeader
 				rounded
 				bottomMargin="48"
 			/>
-			<Heading size={3} bottomMargin="24">
+			<Heading size={2} template={3} bottomMargin="24">
 				{content.header6}
 			</Heading>
 			<Paragraph big bottomMargin="16">
 				{content.text8}
 			</Paragraph>
 			<ArrowLink content={content.link2} bottomMargin="48" />
-			<Heading size={3} bottomMargin="24">
+			<Heading size={2} template={3} bottomMargin="24">
 				{content.header7}
 			</Heading>
 			<Paragraph big bottomMargin="48">
 				{content.text9}
 			</Paragraph>
-			<Heading size={3} bottomMargin="24">
+			<Heading size={2} template={3} bottomMargin="24">
 				{content.header8}
 			</Heading>
 			<Paragraph big bottomMargin="48">
 				{content.text10}
 			</Paragraph>
-			<Heading size={3} bottomMargin="24">
+			<Heading size={2} template={3} bottomMargin="24">
 				{content.header9}
 			</Heading>
 			<Paragraph big bottomMargin="48">
 				{content.text11}
 			</Paragraph>
-			<Heading size={3} bottomMargin="24">
+			<Heading size={2} template={3} bottomMargin="24">
 				{content.header10}
 			</Heading>
 			<Paragraph big bottomMargin="24">
@@ -110,6 +112,7 @@ const AboutSection = ({ className, content }) => (
 			<IconListColorBox
 				content={content.list4}
 				color={color.purple3}
+				paragraphHeader
 				curve
 				curveColor={color.orange2}
 				rounded

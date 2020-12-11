@@ -153,7 +153,7 @@ export const HomePageContent = {
         text2: `Many states require that a company have an operating agreement in place—it isn’t legally required in Texas, but it’s a good idea to have one nonetheless.`,
         button1: {
           text: `Learn More About Operating Agreements Here`,
-          url: `/blog/post/operating-agreement-llc/`,
+          url: `https://www.incfile.com/blog/post/operating-agreement-llc/`,
         },
         cta: {
           title: `Receive a personalized <br>operating agreement`,
@@ -194,11 +194,11 @@ export const HomePageContent = {
         content: [
           {
             text: `Decide if a Texas Series LLC is right for your new business.`,
-            url: `/blog/post/series-llc-why-need-one/`,
+            url: `https://www.incfile.com/blog/post/series-llc-why-need-one/`,
           },
           {
             text: `What Is a Series LLC in Texas and Why Might You Need One?`,
-            url: `/blog/post/series-llc-in-texas/`,
+            url: `https://www.incfile.com/blog/post/series-llc-in-texas/`,
           },
         ],
       },

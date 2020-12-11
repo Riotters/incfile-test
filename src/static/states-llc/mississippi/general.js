@@ -14,7 +14,7 @@ export const tabPages = {
     },
     {
       name: `Filing Fee & Requirements`,
-      path: `/mississippi-llc/form-filling-permit-requirements/`,
+      path: `/mississippi-llc/fees-filing-requirements/`,
     },
     {
       name: `Business Taxes`,

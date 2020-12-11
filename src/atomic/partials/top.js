@@ -278,6 +278,10 @@ const TextContainer = styled.div`
 			color: ${color.grey1};
 		}
 	}
+	
+	.p {
+		color: ${color.grey2};
+	}
 `;
 
 const ImageContainer = styled.div`
@@ -341,16 +345,17 @@ const Top = ({
 		tabletImgScale={tabletImgScale}
 		{...rest}
 	>
-		<VisibilitySensor partialVisibility once>
-			{({ isVisible }) => (
-				<Oval
-					className={(isVisible ? "scaleUp enter" : "scaleUp") + " oval"}
-					ovalColor={ovalColor}
-				>
-					<OvalSVG />
-				</Oval>
-			)}
-		</VisibilitySensor>
+		{/* <VisibilitySensor partialVisibility once>
+			{({ isVisible }) => ( */}
+		<Oval
+			//className={(isVisible ? "scaleUp enter" : "scaleUp") + " oval"}
+			className={"oval"}
+			ovalColor={ovalColor}
+		>
+			<OvalSVG />
+		</Oval>
+		{/* )}
+		</VisibilitySensor> */}
 		<ImageContainer
 			className="top-image-container"
 			imageWidth={imageWidth}
@@ -362,19 +367,19 @@ const Top = ({
 		</ImageContainer>
 		<Container className="top-content">
 			<Content>
-				<VisibilitySensor partialVisibility once>
-					{({ isVisible }) => (
-						<TextContainer
-							className={isVisible ? "slideRight enter" : "slideRight"}
-							contentWidth={contentWidth}
-							headlineWidth={headlineWidth}
-							textWidth={textWidth}
-							{...rest}
-						>
-							{children}
-						</TextContainer>
-					)}
-				</VisibilitySensor>
+				{/* <VisibilitySensor partialVisibility once>
+					{({ isVisible }) => ( */}
+				<TextContainer
+					//className={isVisible ? "slideRight enter" : "slideRight"}
+					contentWidth={contentWidth}
+					headlineWidth={headlineWidth}
+					textWidth={textWidth}
+					{...rest}
+				>
+					{children}
+				</TextContainer>
+				{/* )}
+				</VisibilitySensor> */}
 			</Content>
 		</Container>
 	</Wrapper>

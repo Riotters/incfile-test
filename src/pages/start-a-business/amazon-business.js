@@ -3,6 +3,7 @@ import Layout from "../../components/layout";
 import Top from "../../atomic/partials/top";
 import ButtonsBox from "../../atomic/atoms/boxes/top-buttons-box";
 import Button from "../../atomic/molecules/buttons/button";
+import ButtonAction from "../../atomic/molecules/buttons/button-action";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -78,7 +79,7 @@ const AmazonBusiness = () => {
             <Top
                 ovalColor="sun"
                 imageName="amazon-business-main"
-                imageAlt="Mr Bulb with seedling"
+                imageAlt="How to Start an Amazon Business"
                 headlineWidth={700}
             >
                 <h1>How to Start an Amazon Business</h1>
@@ -375,7 +376,7 @@ const AmazonBusiness = () => {
                                 />
                             </div>
 
-                            <Button
+                            <ButtonAction
                                 theme="primary56"
                                 marginMD="0 170px 0 0"
                                 onClick={popup}
@@ -638,7 +639,7 @@ const AmazonBusiness = () => {
 
                             <Paragraph big mixed={true}>
                                 Check out our{" "}
-                                <a href="/blog/post/fulfillment-by-amazon/">
+                                <a href="https://www.incfile.com/blog/post/fulfillment-by-amazon/">
                                     additional guidance in understanding if an Amazon business is
                                     the right choice for you.
                                 </a>{" "}
@@ -704,7 +705,7 @@ const AmazonBusiness = () => {
                             postDownloadAction={postDownload}
                         />
                     )}
-                    {formSubmitted && <ThankYouContent modalExit={popup}/>}
+                    {formSubmitted && <ThankYouContent modalExit={popup} fileDownload={hsForm?.fileDownload ? hsForm.fileDownload : false} />}
                 </LightBoxContent>
             </LightBoxModal>
         </Layout>
@@ -802,8 +803,7 @@ const LightBoxContent = styled.div`
   width: 100%;
   max-width: 750px;
   position: relative;
-  //margin: 0 30px;
-  max-height: 100vh;
+    max-height: 100vh;
   overflow-y: auto;
 
   &.form-submitted {
@@ -814,7 +814,7 @@ const LightBoxContent = styled.div`
   @media screen and (min-width: 769px) {
     padding-top: 0;
     max-width: 600px;
-    max-height: 80vh;
+    max-height: 90vh;
   }
 
   form {

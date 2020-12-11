@@ -14,6 +14,8 @@ import Articles from "../../atomic/sections/articles";
 import { top, about, help, faq } from "../../static/manage-your-company/change-registered-agent";
 import ProductSchema from "../../components/product-schema";
 import { servicePrice } from "../../helpers/global-variables";
+import {Heading} from "../../atomic/atoms/typography/heading";
+import {HeadingP} from "../../atomic/atoms/typography/heading-to-p";
 
 const ChangeOfRegisteredAgent = () => (
   <Layout>
@@ -26,7 +28,7 @@ const ChangeOfRegisteredAgent = () => (
         />
     <Top imageName="mrs-bulb-change-agent" imageAlt="Mrs Bulb is changing her agent" ovalColor="lightpurple">
       <h1>{top.header}</h1>
-      <p>{top.text}</p>
+      <HeadingP size={2} big left>{top.text}</HeadingP>
       <Buttonsbox>
         <Button content={top.button[0]} theme="primary56" width="200px" arrow />
       </Buttonsbox>

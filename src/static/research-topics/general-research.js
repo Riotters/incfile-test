@@ -75,7 +75,7 @@ export const related = {
         },
         {
             header: `What is the Customized Corporate/LLC Kit?`,
-            url: `/research-topics/general-research-topics/customized-corp-llc-kit/`,
+            url: `/research-topics/general-research-topics/what-is-the-customized-corporatellc-kit/`,
         },
     ],
 }

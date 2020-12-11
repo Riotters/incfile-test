@@ -15,7 +15,7 @@ import FaqSection from "../../atomic/states-llc/texas/faq";
 import Rocket from "../../atomic/sections/rocket";
 
 // Content
-import { tabPages, rocket } from "../../static/states-llc/texas/general";
+import { tabPages } from "../../static/states-llc/texas/general";
 import { faqContent } from "../../static/states-llc/texas/faq";
 import FAQSchemaTX from "../../atomic/states-llc/texas/faq-schema";
 

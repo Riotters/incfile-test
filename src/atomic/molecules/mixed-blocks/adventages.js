@@ -10,6 +10,7 @@ import ArrowSVG from "../../../images/arrow.inline.svg";
 import Image from "../../atoms/image/image";
 import Whitebox from "../../atoms/boxes/white-box";
 import parse from "html-react-parser";
+import {PHeading} from "../../atoms/typography/p-to-heading";
 
 const Wrapper = styled.div`
 	width: 100%;
@@ -80,6 +81,17 @@ const AdeventageLink = styled(Link)`
 	}
 `;
 
+const ChooseHeadingType = ({ paragraphHeader, headerSize, headerSizeTemplate, left, content, ...rest }) => (
+	<>
+		{paragraphHeader && (
+			<PHeading size={headerSize} template={headerSizeTemplate} left={left} {...rest}>{parse(content)}</PHeading>
+		)}
+		{!paragraphHeader && (
+			<Heading size={headerSize} template={headerSizeTemplate} left={left} {...rest}>{parse(content)}</Heading>
+		)}
+	</>
+);
+
 const Adventages = ({
 	className,
 	content,
@@ -87,6 +99,7 @@ const Adventages = ({
 	circleBackgroundColor,
 	circleBackgroundShadow,
 	circlePosition,
+	paragraphHeader = false,
 	circleText,
 	url,
 	urlText,
@@ -118,9 +131,7 @@ const Adventages = ({
 					</ImageWrapper>
 				)}
 				{content.header && (
-					<Heading size={3} template={4} bottomMargin="16">
-						{content.header}
-					</Heading>
+					<ChooseHeadingType headerSize={3} headerSizeTemplate={4} content={content.header} marginBottom={16} paragraphHeader={paragraphHeader} />
 				)}
 				{content.text && (
 					<Paragraph mixed bottomMargin="0">

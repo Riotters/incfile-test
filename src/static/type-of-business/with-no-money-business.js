@@ -177,7 +177,7 @@ export const adventages2 = {
       circleText: 1,
       headline: "File an Annual Report",
       text:
-        "Depending on the state you’re located in, you will probably have to file a report every year. This report tells the state about any major changes to your daycare business, and we can file your Annual Report on your behalf.",
+        "Most states require businesses to file a report once a year. This report has details of any major changes to who owns a business and other major impacts on a business’s legal status.",
       url: "/manage-your-company/annual-report",
       urlText: "Annual Report",
     },

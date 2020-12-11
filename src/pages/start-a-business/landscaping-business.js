@@ -42,8 +42,8 @@ import Conclusion from "../../atomic/sections/general/conclusion";
 import Adventages from "../../components/adventages";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
-import ColorfulRing from "../../images/rings-5.inline.svg";
-import ColorfulRing2 from "../../images/rings.inline.svg";
+import ColorfulRing from "../../images/chart-landscaping.inline.svg";
+import ColorfulRing2 from "../../images/chart-landscaping-2.inline.svg";
 import { shadow } from "../../atomic/atoms/styles/shadows";
 import TaxesIcon from "../../images/icons/taxes-icon.inline.svg";
 import AgentIcon from "../../images/icons/registered-agent-case.inline.svg";
@@ -725,7 +725,7 @@ const LandscapingBusiness = () => (
 
 					<Paragraph big mixed={true} style={{ marginTop: "50px" }}>
 						We’ve got the perfect{" "}
-						<Link to="/blog/post/keys-successful-business-plan/">
+						<Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">
 							guide to writing your business plan.
 						</Link>
 					</Paragraph>

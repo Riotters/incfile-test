@@ -286,79 +286,82 @@ const Accordion = ({
 	tab,
 }) => {
 	return (
-		<VisibilitySensor partialVisibility once>
-			{({ isVisible }) => (
-				<Wrapper className={isVisible ? "slideUp enter" : "slideUp"} tab={tab}>
-					{curve && (
-						<Curve
-							curveRight={curveRight}
-							curveRightBottom={curveRightBottom}
-							curveLeft={curveLeft}
-							curveLeftBottom={curveLeftBottom}
-							curveColor={curveColor}
-						>
-							<CurveSVG />
-						</Curve>
-					)}
-					<GridTableRow
-						className="head"
-						content={content.headers}
-						header
-						headerSize="5"
-						columns="minmax(368px, 1fr) 160px 160px 160px 160px"
-					/>
-					<Tabs>
-						<TabsWrapper>
-							{content.items.map((item, index) => (
-								<TabBox key={index}>
-									{item.separator && (
-										<Separator>
-											<span>{item.separator}</span>
-										</Separator>
-									)}
-									<Tab>
-										<Icon>
-											<ArrowSVG />
-										</Icon>
-										<Content>
-											<GridTableRow
-												className="row"
-												content={item.row}
-												columns="minmax(288px, 1fr) 160px 160px 160px 160px"
-											/>
-										</Content>
-									</Tab>
-									<Panel>
-										<PanelWrapper>
-											{typeof item.answer === "string" ? (
-												<p>{item.answer}</p>
-											) : null}
-											{typeof item.answer === "object" ? (
-												<Grid>
-													{item.answer.map((el, i) => (
-														<Column key={i}>
-															<Heading size="5">{el.header}</Heading>
-															<Paragraph bottomMargin="0">{el.text}</Paragraph>
-														</Column>
-													))}
-												</Grid>
-											) : null}
-											{item.list && (
-												<ul>
-													{item.list.map((listitem, i) => (
-														<li key={i}>{listitem}</li>
-													))}
-												</ul>
-											)}
-										</PanelWrapper>
-									</Panel>
-								</TabBox>
-							))}
-						</TabsWrapper>
-					</Tabs>
-				</Wrapper>
+		// <VisibilitySensor partialVisibility once>
+		// 	{({ isVisible }) => (
+		<Wrapper
+			//className={isVisible ? "slideUp enter" : "slideUp"}
+			tab={tab}
+		>
+			{curve && (
+				<Curve
+					curveRight={curveRight}
+					curveRightBottom={curveRightBottom}
+					curveLeft={curveLeft}
+					curveLeftBottom={curveLeftBottom}
+					curveColor={curveColor}
+				>
+					<CurveSVG />
+				</Curve>
 			)}
-		</VisibilitySensor>
+			<GridTableRow
+				className="head"
+				content={content.headers}
+				header
+				headerSize={5}
+				columns="minmax(368px, 1fr) 160px 160px 160px 160px"
+			/>
+			<Tabs>
+				<TabsWrapper>
+					{content.items.map((item, index) => (
+						<TabBox key={index}>
+							{item.separator && (
+								<Separator>
+									<span>{item.separator}</span>
+								</Separator>
+							)}
+							<Tab>
+								<Icon>
+									<ArrowSVG />
+								</Icon>
+								<Content>
+									<GridTableRow
+										className="row"
+										content={item.row}
+										columns="minmax(288px, 1fr) 160px 160px 160px 160px"
+									/>
+								</Content>
+							</Tab>
+							<Panel>
+								<PanelWrapper>
+									{typeof item.answer === "string" ? (
+										<p>{item.answer}</p>
+									) : null}
+									{typeof item.answer === "object" ? (
+										<Grid>
+											{item.answer.map((el, i) => (
+												<Column key={i}>
+													<Heading size="5">{el.header}</Heading>
+													<Paragraph bottomMargin="0">{el.text}</Paragraph>
+												</Column>
+											))}
+										</Grid>
+									) : null}
+									{item.list && (
+										<ul>
+											{item.list.map((listitem, i) => (
+												<li key={i}>{listitem}</li>
+											))}
+										</ul>
+									)}
+								</PanelWrapper>
+							</Panel>
+						</TabBox>
+					))}
+				</TabsWrapper>
+			</Tabs>
+		</Wrapper>
+		// 	)}
+		// </VisibilitySensor>
 	);
 };
 export default Accordion;

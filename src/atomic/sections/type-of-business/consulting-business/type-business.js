@@ -34,8 +34,9 @@ const TypeBusiness = () => (
                     <CurveWrapper>
                         <Curve color={color.orange1}/>
                     </CurveWrapper>
-                    {typeBusiness.items.map(item => (
+                    {typeBusiness.items.map((item, i) => (
                         <Adventages
+                            key={i}
                             style={{textAlign: "center"}}
                             url={item.url}
                             urlText={item.urlText}
@@ -46,6 +47,7 @@ const TypeBusiness = () => (
                             circleBackgroundColor={color.blue1}
                             circleBackgroundShadow={shadow.blue1}
                             imageName={item.imageName}
+                            imageAlt={item?.imageAlt ? item.imageAlt : ''}
                             width="100%"
                         />
                     ))}

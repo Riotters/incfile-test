@@ -18,6 +18,7 @@ import HSFormModal from "../components/hubspot/standard-post-form-modal";
 //Texts
 
 import { top, about, tableOfContent, needMore, hsForm } from "../static/learning-center-entity/guide-to-start";
+import { Helmet } from "react-helmet";
 
 const GuideToStart = () => {
   const [modalVisible, setModalVisible] = React.useState(false);
@@ -47,7 +48,7 @@ const GuideToStart = () => {
   return (
     <Layout>
       <SEO title="How to Start a Business: A Complete Guide" description="From developing your business idea to measuring success, our free guide has all the info you need to get your business off the ground. Download now." />
-      <Top imageName="mrs-bulb-complete-guide-to-starting-a-business" imageAlt="Mrs Bulb and with checklist" ovalColor="darkblue">
+      <Top imageName="mrs-bulb-complete-guide-to-starting-a-business" imageAlt="" ovalColor="darkblue">
         <h1>{top.header}</h1>
         <p>{top.text}</p>
         <Buttonsbox>
@@ -65,9 +66,25 @@ const GuideToStart = () => {
         <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
           {!formSubmitted && <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />}
 
-          {formSubmitted && <ThankYouContent modalExit={popup} />}
+          {formSubmitted && <ThankYouContent modalExit={popup} fileDownload={hsForm.fileDownload} />}
         </LightBoxContent>
-      </LightBoxModal>
+          </LightBoxModal>
+          
+          <Helmet>
+              <script type="application/ld+json">
+                  {`{
+                      "@context": "http://schema.org",
+                      "@type": "VideoObject",
+                      "name": "How to Start a Business: 4 Simple Steps to Starting Your Own Company by Incfile",
+                      "description": "Want to know how to start a business? As an entrepreneur, you can likely relate to the excitement and fear that comes with starting a business. But these four simple steps will help anyone dreaming of starting their own business take it to becoming a reality.",
+                      "thumbnailUrl": "https://i.ytimg.com/vi/M-SlUnCHmXU/default.jpg",
+                      "uploadDate": "2020-03-22T14:49:18Z",
+                      "duration": "PT1M51S",
+                      "embedUrl": "https://www.youtube.com/embed/M-SlUnCHmXU",
+                      "interactionCount": "1776"
+                  }`}
+              </script>
+          </Helmet>
     </Layout>
   );
 };
@@ -105,8 +122,9 @@ const LightBoxContent = styled.div`
 
   @media screen and (min-width: 769px) {
     padding-top: 0;
-    overflow-y: visible;
-  }
+    max-width: 600px;
+    max-height: 90vh;
+}
 `;
 
 export default GuideToStart;

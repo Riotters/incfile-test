@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Button from "../../atomic/molecules/buttons/button-action";
+import LinkButton from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -19,7 +20,7 @@ import SettingBusiness from "../../atomic/sections/type-of-business/consulting-b
 import ToolsAndLinks from "../../atomic/sections/type-of-business/consulting-business/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
-import Rings from "../../images/rings.inline.svg";
+import Rings from "../../images/chart-consulting.inline.svg";
 import {
 	hsForm,
 	RingText,
@@ -32,6 +33,7 @@ import HSFormModal from "../../components/hubspot/standard-post-form-modal";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
 import { Helmet } from "react-helmet";
+import LightBoxVideo from "../../components/LightBox";
 
 const ConsultingBusiness = () => {
 	const [modalVisible, setModalVisible] = React.useState(false);
@@ -73,7 +75,7 @@ const ConsultingBusiness = () => {
 			<Top
 				ovalColor="yellow"
 				imageName="consulting-business-main"
-				imageAlt="Mr Bulb with seedling"
+				imageAlt="guide to set up the consulting business"
 				headlineWidth={700}
 			>
 				<h1>How to Start a Consulting Business</h1>
@@ -85,7 +87,8 @@ const ConsultingBusiness = () => {
 					of varied skills and techniques.
 				</p>
 				<ButtonsBox>
-					<Button
+                    <LinkButton
+                        externalLink
 						theme="primary56"
 						marginMD="0 24px 0 0"
 						arrow
@@ -197,6 +200,12 @@ const ConsultingBusiness = () => {
 								guide, you will have all the information you need to set up and
 								manage a thriving consulting business. Let’s get into it.
 							</Paragraph>
+                            
+                            <LightBoxVideo
+                                bottomMargin={42}
+                                thumbnailVideo="how-to-start-a-consulting-business-9829"
+                                videoID="xAihjHQWaZk"
+                            />
 
 							<Button
 								arrow
@@ -416,7 +425,7 @@ const ConsultingBusiness = () => {
 			<ToolsAndLinks />
 
 			<Conclusion
-				to="/"
+				to={`${process.env.ORDER_URL}/form-order-now.php`}
 				buttonTitle="Start your Consulting Business with us, today"
 			>
 				<Heading size={3} style={{ fontSize: "48px" }}>
@@ -444,7 +453,7 @@ const ConsultingBusiness = () => {
 							postDownloadAction={postDownload}
 						/>
 					)}
-					{formSubmitted && <ThankYouContent modalExit={popup} />}
+					{formSubmitted && <ThankYouContent modalExit={popup} fileDownload={hsForm.fileDownload} />}
 				</LightBoxContent>
 			</LightBoxModal>
 

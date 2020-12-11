@@ -4,6 +4,8 @@ import Container from "../../../atomic/container";
 import Image from "../../image_nobase64";
 import TextCheck from "../../static-check/text-only";
 import Button from "../../../atomic/molecules/buttons/button";
+import {HeadingP} from "../../../atomic/atoms/typography/heading-to-p";
+import {Heading} from "../../../atomic/atoms/typography/heading";
 
 const Wrapper = styled.div`
   padding-top: 75px;
@@ -95,8 +97,9 @@ const Certificates = ({ content }) => {
             <Image filename="standard-kit-5602" />
           </Icon>
           <Content>
-            <h2>{content.header}</h2>
+            <Heading size={3} template={2} left>{content.header}</Heading>
             <p>{content.text}</p>
+            <Heading size={4}>{content.header2}</Heading>
             <Checks>
               <div>
                 <TextCheck>

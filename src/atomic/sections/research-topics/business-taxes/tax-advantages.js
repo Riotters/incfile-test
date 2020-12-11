@@ -11,6 +11,7 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Path from "../../../molecules/blocks/research-topics-path";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const About = styled.section`
 	position: relative;
@@ -27,9 +28,9 @@ const AboutSection = ({ className, content }) => (
 			<Heading size={1} template={3} bottomMargin="32">
 				{content.header}
 			</Heading>
-			<Heading size={3} bottomMargin="24">
+			<PHeading size={3} bottomMargin="24">
 				{content.header2}
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="16">
 				{content.text}
 			</Paragraph>
@@ -45,6 +46,7 @@ const AboutSection = ({ className, content }) => (
 			<IconListColorBox
 				content={content.list}
 				color={color.purple3}
+				paragraphHeader
 				rounded
 				bottomMargin="24"
 			/>
@@ -55,6 +57,7 @@ const AboutSection = ({ className, content }) => (
 				content={content.list2}
 				color={color.orange3}
 				curve
+				paragraphHeader
 				curveColor={color.babyblue2}
 				rounded
 				bottomMargin="24"
@@ -62,9 +65,9 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text6}
 			</Paragraph>
-			<Heading size={3} bottomMargin="24">
+			<PHeading size={3} bottomMargin="24">
 				{content.header3}
-			</Heading>
+			</PHeading>
 			<Paragraph big bottomMargin="24">
 				{content.text7}
 			</Paragraph>
@@ -72,6 +75,7 @@ const AboutSection = ({ className, content }) => (
 				content={content.list3}
 				color={color.babyblue3}
 				rounded
+				paragraphHeader
 				bottomMargin="24"
 			/>
 			<Paragraph big bottomMargin="48">

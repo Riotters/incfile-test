@@ -248,7 +248,7 @@ export const filingFeeAndRequirementContent = {
         subtitle: `You can choose to make changes to the template based on your unique requirements.`,
         button: {
           text: `Lear About Operating Agreemets`,
-          url: `/research-topics/llc-info/llc-operating-agreement/`,
+          url: `/research-topics/llc-info/the-llc-operating-agreement/`,
         },
       },
     },

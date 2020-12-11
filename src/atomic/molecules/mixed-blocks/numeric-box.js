@@ -7,6 +7,7 @@ import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import ArrowLink from "../../molecules/buttons/text";
 import Button from "../../molecules/buttons/button";
+import {PHeading} from "../../atoms/typography/p-to-heading";
 
 const TextWrapper = styled.div`
   display: flex;
@@ -25,15 +26,26 @@ const Flex = styled.li`
   display: flex;
 `;
 
-const NumericBox = ({ className, id, item, noBox }) =>
+const ChooseHeadingType = ({ paragraphHeader, headerSize, headerTemplateSize, content, ...rest }) => {
+    return (
+        <>
+            {paragraphHeader && (
+                <PHeading size={headerSize} template={headerTemplateSize} {...rest}>{parse(content)}</PHeading>
+            )}
+            {!paragraphHeader && (
+                <Heading size={headerSize} template={headerTemplateSize} {...rest}>{parse(content)}</Heading>
+            )}
+        </>
+    );
+};
+
+const NumericBox = ({ className, id, item, noBox, paragraphHeader = false }) =>
   !noBox ? (
     <Whitebox className={className}>
       <Circle>{item?.number ?? id + 1}</Circle>
       <TextWrapper>
         {item.header && (
-          <Heading size="5" bottomMargin="36">
-            {item.header}
-          </Heading>
+            <ChooseHeadingType paragraphHeader={paragraphHeader} headerSize={4} headerTemplateSize={5} bottomMargin={36} content={item.header} />
         )}
         {item.text && (
           <Paragraph bottomMargin="0" mixed>

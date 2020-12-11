@@ -156,7 +156,7 @@ export const howToGuide = [
 	},
 	{
 		type: `text`,
-		content: `<a href="/blog/post/series-llc-why-need-one/">Decide if a Kansas Series LLC is right for your new business.</a>`,
+		content: `<a href="https://www.incfile.com/blog/post/series-llc-why-need-one/">Decide if a Kansas Series LLC is right for your new business.</a>`,
 		marginBottom: 32,
 	},
 	{
@@ -234,7 +234,7 @@ export const howToGuide = [
 		type: `arrow-link`,
 		content: {
 			text: `Fees and Requirements for Kansas LLCs`,
-			url: `/Kansas-llc/form-filling-permit-requirements/`,
+			url: `/kansas-llc/form-filling-permit-requirements/`,
 		},
 		marginBottom: 16,
 	},
@@ -247,7 +247,7 @@ export const howToGuide = [
 		type: `arrow-link`,
 		content: {
 			text: `Federal, State, Sales and Other Taxes for Your Kansas LLC`,
-			url: `/Kansas-llc/business-taxes/`,
+			url: `/kansas-llc/business-taxes/`,
 		},
 		marginBottom: 16,
 	},
@@ -586,7 +586,7 @@ export const namingYourBusiness = [
 		type: `arrow-link`,
 		content: {
 			text: `Incfile guide to choosing a business name`,
-			url: `/blog/post/llc-name-search-50-states/`,
+			url: `https://www.incfile.com/blog/post/llc-name-search-50-states/`,
 		},
 		marginBottom: 32,
 	},
@@ -931,9 +931,9 @@ export const registeredAgent = [
 		type: `list-dot`,
 		content: {
 			list: [
-				`<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Kansas Registered Agent</a>`,
+				`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Kansas Registered Agent</a>`,
 				`<a href="/manage-your-company/change-of-registered-agent/">Changing Your Kansas Registered Agent</a>`,
-				`<a href="/research-topics/registered-agent/registered-agent-tasks/">What a Kansas Registered Agent Does</a>`,
+				`<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Kansas Registered Agent Does</a>`,
 			],
 		},
 		marginBottom: 48,
@@ -1139,7 +1139,7 @@ export const feesAndRequirments = [
 	},
 	{
 		type: `text`,
-		content: `An <a href="/research-topics/llc-info/llc-operating-agreement/"> Operating agreement</a>
+		content: `An <a href="/research-topics/llc-info/the-llc-operating-agreement/"> Operating agreement</a>
             is a business document that covers how the business will be run, how managers and members are chosen, rights and duties of members and several other key areas.`,
 		marginBottom: 16,
 	},

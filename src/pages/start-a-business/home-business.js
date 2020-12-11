@@ -26,7 +26,6 @@ import Regulations from "../../atomic/sections/type-of-business/home-business/re
 import Taxes from "../../atomic/sections/type-of-business/home-business/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/home-business/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
-import { Link } from "@reach/router";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/home-business";
 import { TabPanel } from "react-tabs";
@@ -48,9 +47,9 @@ const HomeBusiness = () => (
 			<p>
 				Starting a new business can be a major undertaking, so for entrepreneurs
 				wanting to start off small,{" "}
-				<Link to="/blog/post/how-start-home-business/">
+				<a href="https://www.incfile.com/blog/post/how-start-home-business/">
 					a home-based business is a great idea
-				</Link>
+				</a>
 				. You’ll learn a great deal about running a business successfully, while
 				avoiding many of the costs associated with larger businesses, like
 				office rental, utilities or hiring employees.

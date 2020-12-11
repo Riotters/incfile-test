@@ -211,7 +211,7 @@ const ReviewEntityType = () => {
 			/>
 			<Top
 				imageName="mr-bulb-main-header-illustration-7201"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt=""
 				ovalColor="purple-2"
 				headlineWidth="560"
 				textWidth="450"

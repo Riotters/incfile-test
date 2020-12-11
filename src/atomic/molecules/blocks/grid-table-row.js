@@ -9,6 +9,7 @@ import IconCircle from "../../atoms/icons/circle";
 import CheckSVG from "../../../images/circle-status-check.inline.svg";
 import ExSVG from "../../../images/circle-status-x.inline.svg";
 import Image from "../../atoms/image/image_nobase64";
+import { SpanHeading } from "../../atoms/typography/span-as-heading";
 
 const Wrapper = styled(Whitebox)`
 	display: grid;
@@ -111,6 +112,7 @@ const GridTableRow = ({
 	content,
 	header,
 	headerSize,
+	headerSizeTemplate,
 	list,
 	columns,
 	textCenter,
@@ -125,14 +127,19 @@ const GridTableRow = ({
 				key={index}
 				badge={badge ? badge[index] : false}
 			>
+				{console.log(badge && badge[index])}
 				{header &&
 					item !== "incfile-logo" &&
 					item !== "legalzoom-logo" &&
 					item !== "zenbusiness-logo" &&
 					item !== "rocket-lawyer-logo" && (
-						<Heading size={headerSize ? headerSize : "4"} bottomMargin="0">
+						<SpanHeading
+							size={headerSize ? headerSize : 4}
+							template={headerSizeTemplate}
+							bottomMargin="0"
+						>
 							{item}
-						</Heading>
+						</SpanHeading>
 					)}
 				{list &&
 					item !== "" &&

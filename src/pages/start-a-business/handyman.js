@@ -45,6 +45,7 @@ import { Link } from "gatsby";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/handyman";
 import { TabPanel } from "react-tabs";
+import CircleRing from "../../images/chart-handyman.inline.svg";
 
 const Handyman = () => (
 	<Layout>
@@ -56,7 +57,7 @@ const Handyman = () => (
 		<Top
 			ovalColor="sun-2"
 			imageName="handyman-main"
-			imageAlt="Mr Bulb with seedling"
+			imageAlt="set up a handyman business"
 			headlineWidth={700}
 		>
 			<h1>How to Start a Home Handyman Business</h1>
@@ -65,7 +66,8 @@ const Handyman = () => (
 				running a home handyman business could be right for you.
 			</p>
 			<ButtonsBox>
-				<Button
+                <Button
+                    extends
 					theme="primary56"
 					marginMD="0 24px 0 0"
 					arrow
@@ -282,6 +284,7 @@ const Handyman = () => (
 							textInsideCircle="6"
 							textLine="Annual growth in the franchise part of a handyman business a year"
 							withBg={true}
+							SvgChart={CircleRing}
 						/>
 
 						<div style={{ marginBottom: "30px", marginTop: "48px" }}>
@@ -568,7 +571,7 @@ const Handyman = () => (
 
 					<Paragraph big mixed={true} style={{ marginTop: "50px" }}>
 						We’ve got the perfect{" "}
-						<Link to="/blog/post/keys-successful-business-plan/">
+						<Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">
 							guide to writing your business plan.
 						</Link>
 					</Paragraph>

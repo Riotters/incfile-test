@@ -43,7 +43,7 @@ const ConstructionCompany = () => (
 		<Top
 			ovalColor="sun"
 			imageName="construction-company-main"
-			imageAlt="Mr Bulb with seedling"
+			imageAlt="set up a construction business"
 			headlineWidth={700}
 		>
 			<h1>How to Start a Construction Company</h1>
@@ -52,7 +52,8 @@ const ConstructionCompany = () => (
 				constantly growing as the population increases.
 			</p>
 			<ButtonsBox>
-				<Button
+                <Button
+                    extends
 					theme="primary56"
 					marginMD="0 24px 0 0"
 					arrow

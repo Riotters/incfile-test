@@ -33,7 +33,8 @@ export const top = {
   ],
 };
 export const launchBusiness = {
-  header: `Launch your business with Incfile`,
+  header: `Launch`,
+  header2: `your business with Incfile`,
   text: `No Contracts. No Surprises. Only $0 + State Fee to Launch Your Business.`,
   button: {
     text: `Launch your business!`,
@@ -88,8 +89,9 @@ export const corporation = [
     type: "header",
     content: "Choosing the Right Type of Wyoming Corporation",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    left: true,
+    marginBottom: 40,
   },
   {
     type: "text",
@@ -149,7 +151,6 @@ export const corporation = [
     type: "svg-color-text-box",
     content: [
       {
-        header: "",
         text:
           "Sole proprietorships and partnerships are the simplest type of business. They do not provide any special protections or benefits to entrepreneurs and can make your personal assets vulnerable. We do not recommend them.",
         svg: ProprietorshipSVG,
@@ -160,7 +161,6 @@ export const corporation = [
         marginTop: "91px",
       },
       {
-        header: "",
         text: `Limited Liability Companies (LLCs) are a great option for smaller businesses. They are quick and easy to create, inexpensive to administer, light on regulation and have simple taxation and rules. You can <a href="/wyoming-llc/">learn how to create an LLC in Wyoming here.</a>`,
         svg: LockpadSVG,
         backgroundColor: color.babyblue2,
@@ -170,7 +170,6 @@ export const corporation = [
         marginTop: "91px",
       },
       {
-        header: "",
         text:
           "S Corporations are the simplest type of corporation an entrepreneur can create and are good for many types of businesses. The regulations, taxation, compliance and legalities are more complex than for an LLC, but they do provide tax advantages for their owners. <a href='/what-is-s-corporation/'>You can find more information on S Corporations here.</a>",
         svg: ProcentSVG,
@@ -181,7 +180,6 @@ export const corporation = [
         marginTop: "91px",
       },
       {
-        header: "",
         text:
           "C Corporations are the most complex type of corporation. They are best for large businesses and are a necessity if the business will be traded on public stock markets. C Corporations have much more significant regulation, compliance and legalities; they are not as tax efficient as S Corporations or LLCs. You can <a href='/what-is-c-corporation/'>find more information on C Corporations here.</a>",
         svg: BillSVG,
@@ -197,7 +195,6 @@ export const corporation = [
   {
     type: "colorbox",
     icon: FolderProcentSVG,
-    header: "",
     text:
       "Other business entity structures include nonprofits, Limited Liability Partnerships (LLPs) and B Corporations, but they will not be relevant for the majority of entrepreneurs.",
     curve: true,
@@ -766,7 +763,7 @@ export const corporation = [
         "It is easy to transfer ownership in an S Corporation by selling your stock.",
         "In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax. Find out how this can save you money using our <a href='/s-corporation-tax-calculator/'>S Corporation tax calculator</a>.",
         "LLCs can <a href='/research-topics/llc-info/can-a-limited-liability-company-llc-be-taxed-as-an-s-corporation/'>choose to be taxed as S Corporations</a> to take advantage of this.",
-        "You can find more <a href='/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/'>advantages of forming an S Corporation</a> in Wyoming.",
+        "You can find more <a href='https://www.incfile.com/blog/post/why-an-s-corporation-might-secure-success-for-your-small-business/'>advantages of forming an S Corporation</a> in Wyoming.",
       ],
     },
     color: color.green3,
@@ -909,7 +906,7 @@ export const corporation = [
         {
           question: "Step Four — Draft Your Articles of Incorporation",
           answer:
-            "The legal document required to create your new corporation is called the <a href='/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile/'>Articles of Incorporation</a>. You will need to gather various details for your Wyoming filing including:",
+            "The legal document required to create your new corporation is called the <a href='https://www.incfile.com/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile/'>Articles of Incorporation</a>. You will need to gather various details for your Wyoming filing including:",
           list: [
             "The corporation’s name",
             "The corporation’s mailing address and street address",
@@ -934,7 +931,7 @@ export const corporation = [
             "Create and issue stock certificates to your shareholders",
             `Apply for <a href="/business-license-research-package/">business licenses and permits</a>. You may require licenses from your state, county, township and various industry or federal bodies`,
             `Get an <a href="/manage-your-company/tax-id-ein/">Employer Identification Number (EIN)</a>`,
-            "File for taxes with Illinois Department of Revenue",
+            "File for taxes with Wyoming Department of Revenue",
             "Get all formalities in place for employees, including unemployment, disability, payroll, insurance and taxes",
             "Appoint a board of directors for the corporation",
             "Appoint officers to the corporation",
@@ -1015,8 +1012,9 @@ export const naming = [
     type: "header",
     content: "Naming Your Wyoming Corporation",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    left: true,
+    marginBottom: 40,
   },
   {
     type: "text",
@@ -1089,7 +1087,7 @@ export const naming = [
         "The Wyoming corporation name can’t suggest affiliation with any federal or state government entity or agency.",
         "The Wyoming corporation name may not imply a purpose that it would be unlawful for the business to conduct.",
         "The following words require special permission to use in a corporation name:",
-        "You can also be a Wyoming corporation with a different “doing business as” name. In Wyoming these are known as “trade names” and need to be registered with the Secretary of State. Learn about <a href='/blog/post/understanding-dba-doing-business-as/'>fictitious names</a> in your state.",
+        "You can also be a Wyoming corporation with a different “doing business as” name. In Wyoming these are known as “trade names” and need to be registered with the Secretary of State. Learn about <a href='https://www.incfile.com/blog/post/understanding-dba-doing-business-as/'>fictitious names</a> in your state.",
       ],
     },
     color: color.orange3,
@@ -1111,7 +1109,7 @@ export const naming = [
         "By registering a corporation, the name will automatically be held for your business. You would normally only reserve a name if you are not planning on forming the new company anytime soon.",
         "A name can be used to form any type of business entity, not just a corporation.",
         "Just filing a name registration doesn’t guarantee you will be granted the name. You should wait until your corporation is legally formed before using the name for anything else.",
-        "You might also want to use a <a href='/blog/post/understanding-dba-doing-business-as/'>“Doing Business As (DBA)”</a> or “Trade Name” if you are trading under a different name than your official company name.",
+        "You might also want to use a <a href='https://www.incfile.com/blog/post/understanding-dba-doing-business-as/'>“Doing Business As (DBA)”</a> or “Trade Name” if you are trading under a different name than your official company name.",
       ],
     },
     color: color.green3,
@@ -1169,7 +1167,7 @@ export const naming = [
   {
     type: "text",
     content:
-      "Fortunately, we have some good advice on seeking out the perfect business name for your Wyoming corporation. <a href='/blog/post/llc-name-search-50-states/'>Check out our guidance on naming your business and get inspired.</a>",
+      "Fortunately, we have some good advice on seeking out the perfect business name for your Wyoming corporation. <a href='https://www.incfile.com/post/llc-name-search-50-states/'>Check out our guidance on naming your business and get inspired.</a>",
     marginBottom: 48,
   },
   {
@@ -1210,8 +1208,9 @@ export const agents = [
     type: "header",
     content: "Registered Agents and Your Wyoming Corporation",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    left: true,
+    marginBottom: 40,
   },
   {
     type: "text",
@@ -1257,7 +1256,7 @@ export const agents = [
       },
       {
         content: {
-          text: "Start Your S Corp with Incfile",
+          text: "Start Your C Corp with Incfile",
           url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
         },
         theme: "primary56",
@@ -1420,8 +1419,9 @@ export const filing = [
     type: "header",
     content: "Wyoming Corporation Form, Filing and Permit Requirements",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    left: true,
+    marginBottom: 40,
   },
   {
     type: "text",
@@ -1451,7 +1451,7 @@ export const filing = [
   {
     type: "text",
     content:
-      "The <a href='/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile/'>Articles of Incorporation</a> are the formal documents filed with the Wyoming Secretary of State to create your corporation. They provide certain information about your business. Once the documents are filed with the Secretary of State, they legally create your business as a corporation in Wyoming. Here’s what’s typically included:",
+      "The <a href='https://www.incfile.com/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile/'>Articles of Incorporation</a> are the formal documents filed with the Wyoming Secretary of State to create your corporation. They provide certain information about your business. Once the documents are filed with the Secretary of State, they legally create your business as a corporation in Wyoming. Here’s what’s typically included:",
     marginBottom: 24,
   },
   {
@@ -1827,8 +1827,9 @@ export const taxes = [
     type: "header",
     content: "Taxes and Fees for Your Wyoming Corporation",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    left: true,
+    marginBottom: 40,
   },
   {
     type: "text",
@@ -2025,12 +2026,14 @@ export const afterFormation = [
     type: "header",
     content: "Understand Your Ongoing Corporation Filing Requirements",
     size: 2,
-    template: 2,
-    marginBottom: 48,
+    template: 3,
+    left: true,
+    marginBottom: 40,
   },
   {
     type: "text",
-    content: "Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a>and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/ manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
+    content:
+      "Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a> and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
     marginBottom: 48,
   },
   {
@@ -2110,7 +2113,7 @@ export const afterFormation = [
   {
     type: "text",
     content:
-      "Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your Illinois Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='http://expensify.com/'>Expensify</a> to track and tag business expenses from your mobile phone.",
+      "Once your form your Corporation, it’s important to keep your business and personal assets separate to protect your personal assets from liability. It also makes tax season a whole lot easier when you have one clear account with all your business expenses, instead of all expenses mixed up within two accounts that need to be sorted. Once you choose a business checking account for your Wyoming Corporation, make sure you receive a business checking card or apply for a business credit card that you can use for all business expenses. You can also use a tool like <a href='http://expensify.com/'>Expensify</a> to track and tag business expenses from your mobile phone.",
     marginBottom: 48,
   },
   {
@@ -2130,12 +2133,6 @@ export const afterFormation = [
     type: "text",
     content:
       "Here are some favorite accounting software options for Corporation business owners:",
-    marginBottom: 24,
-  },
-  {
-    type: "text",
-    content:
-      "Choosing the right accounting software will allow you to track your accounts receivable — the money that is flowing in and out of your Corporation. Accounting software will allow you to track bills, invoices, expenses and customers. This is also another important step in simplifying your year-end tax burden. With a clear, separate business checking account and card and an organized accounting software system, you’ll (barely) dread tax season as a business owner.",
     marginBottom: 24,
   },
   {
@@ -2348,13 +2345,14 @@ export const afterFormation = [
   {
     type: "header",
     content: "Start a Business Checklist",
-    size: 4,
+    size: 2,
+    template: 3,
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "If you want to track your progress in getting your new business set up properly, we have a great virtual <a href='/'>Start a Business Checklist</a> that includes everything you need to do to launch your business. It even features downloadable PDFs you can access to download and print.",
+      "If you want to track your progress in getting your new business set up properly, we have a great virtual <a href='/starting-a-business-checklist/'>Start a Business Checklist</a> that includes everything you need to do to launch your business. It even features downloadable PDFs you can access to download and print.",
     marginBottom: 24,
   },
 ];

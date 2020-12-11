@@ -198,10 +198,10 @@ const BusinessResourcesTabs = ({ content, openModal }) => (
 			</TabsWrapper>
 			<PanelsWrapper>
 				{content.panels.map((panel, i) => (
-					<Panel>
+					<Panel key={i}>
 						<Grid>
 							{panel.cards.map((card, j) => (
-								<Card content={card} image={pdfs[i][j]} openModal={openModal} />
+								<Card key={j} content={card} image={pdfs[i][j]} openModal={openModal} />
 							))}
 						</Grid>
 					</Panel>

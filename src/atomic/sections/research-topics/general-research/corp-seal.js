@@ -31,60 +31,61 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="48">
 				{content.text}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header2}
 			</Heading>
 			<IconListColorBox
 				content={content.list}
 				color={color.orange3}
 				curve
+				paragraphHeader
 				curveColor={color.purple2}
 				rounded
 				bottomMargin="48"
 			/>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header3}
 			</Heading>
 			<Paragraph big bottomMargin="48">
 				{content.text2}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header4}
 			</Heading>
 			<Paragraph big bottomMargin="48">
 				{content.text3}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header5}
 			</Heading>
 			<Paragraph big bottomMargin="48">
 				{content.text4}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header6}
 			</Heading>
 			<Paragraph big bottomMargin="48">
 				{content.text5}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header7}
 			</Heading>
 			<Paragraph big bottomMargin="48">
 				{content.text6}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header8}
 			</Heading>
 			<Paragraph big bottomMargin="48">
 				{content.text7}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header9}
 			</Heading>
 			<Paragraph big bottomMargin="48">
 				{content.text8}
 			</Paragraph>
-			<Heading size={4} bottomMargin="24">
+			<Heading size={2} template={4} left bottomMargin="24">
 				{content.header10}
 			</Heading>
 			<Paragraph big bottomMargin="24">
@@ -96,6 +97,7 @@ const AboutSection = ({ className, content }) => (
 				curve
 				curveColor={color.orange2}
 				rounded
+				paragraphHeader
 				bottomMargin="24"
 			/>
 			<Button

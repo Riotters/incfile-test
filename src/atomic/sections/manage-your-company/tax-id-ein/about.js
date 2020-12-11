@@ -16,7 +16,7 @@ const About = styled.section`
   position: relative;
   padding-bottom: 64px;
 
-  p {
+  p:not(.i-believe-i-can-be-a-h4):not(.i-believe-i-can-be-a-h5) {
     color: ${color.grey2};
   }
 `;
@@ -31,21 +31,21 @@ const AboutSection = ({ className, content }) => (
         {content.text}
       </Paragraph>
       <LightBoxVideo thumbnailVideo="how-to-get-tax-id-3437.png" videoID="8AuLOTqFHQ4" bottomMargin="64" />
-      <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve />
-      <Heading size={3} bottomMargin="24">
+      <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve headingSize={2} left />
+      <Heading size={2} template={3} left bottomMargin="24">
         {content.header}
       </Heading>
       <Paragraph big bottomMargin="40">
         {content.text2}
       </Paragraph>
-      <IconListColorBox color={color.orange3} content={content.box2} bottomMargin="56" rounded />
-      <Heading size={3} bottomMargin="24">
+      <IconListColorBox color={color.orange3} content={content.box2} bottomMargin="56" rounded paragraphHeader />
+      <Heading size={2} template={3} left bottomMargin="24">
         {content.header2}
       </Heading>
       <Paragraph big bottomMargin="48">
         {content.text3}
       </Paragraph>
-      <Heading size={3} bottomMargin="24">
+      <Heading size={2} template={3} left bottomMargin="24">
         {content.header3}
       </Heading>
       <Paragraph big bottomMargin="40">

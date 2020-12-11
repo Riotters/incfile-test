@@ -18,7 +18,7 @@ const DifferencesSection = ({ className, content }) => (
   <Differences className={className}>
     <HeadingCenter className="heading" headline={content.header} headlineWidth="770" text={content.text} />
     <ImageContent image="business-license-requirements" contentCenter>
-      <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} rounded curve />
+      <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} rounded curve headingSize={3} />
     </ImageContent>
     <ContentCenter>
       <Table content={content.table} />

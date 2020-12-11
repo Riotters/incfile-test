@@ -33,7 +33,7 @@ import UsefulTools from "../../atomic/partials/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
-import RingSvg from "../../images/rings.inline.svg";
+import RingSvg from "../../images/chart-catering.inline.svg";
 import Adventages from "../../components/adventages";
 import TypeOfBusiness from "../../atomic/sections/type-of-business/catering-business/type-of-business";
 import ContentCenter from "../../atomic/partials/content-center";
@@ -546,7 +546,7 @@ const CateringBusiness = () => (
 
 					<Paragraph big mixed={true} style={{ marginTop: "50px" }}>
 						We’ve got the perfect{" "}
-						<Link to="/blog/post/keys-successful-business-plan/">
+						<Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">
 							guide to writing your business plan.
 						</Link>
 					</Paragraph>

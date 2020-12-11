@@ -528,7 +528,7 @@ export const namingYourBusiness = [
 		type: `arrow-link`,
 		content: {
 			text: `Incfile guide to choosing a business name`,
-			url: `/blog/post/llc-name-search-50-states/`,
+			url: `https://www.incfile.com/blog/post/llc-name-search-50-states/`,
 		},
 		marginBottom: 0,
 	},
@@ -861,9 +861,9 @@ export const registeredAgent = [
 		type: `list-dot`,
 		content: {
 			list: [
-				`<a href="/research-topics/registered-agent/registered-agent-function/" target="_blank">The Main Functions of a Colorado Registered Agent</a>`,
+				`<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/" target="_blank">The Main Functions of a Colorado Registered Agent</a>`,
 				`<a href="/manage-your-company/change-of-registered-agent/" target="_blank" >Changing Your Colorado Registered Agent</a>`,
-				`<a href="/research-topics/registered-agent/registered-agent-tasks/" target="_blank" >What a Colorado Registered Agent Does</a>`,
+				`<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/" target="_blank" >What a Colorado Registered Agent Does</a>`,
 			],
 		}, //rel="noopener noreferrer"
 		marginBottom: 0,
@@ -1086,7 +1086,7 @@ export const feesAndRequirments = [
 	},
 	{
 		type: `text`,
-		content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Colorado business. You can choose to make changes to the template based on your unique requirements.`,
+		content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Colorado business. You can choose to make changes to the template based on your unique requirements.`,
 		marginBottom: 48,
 	},
 	{

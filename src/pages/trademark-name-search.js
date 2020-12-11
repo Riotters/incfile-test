@@ -38,13 +38,13 @@ const TrademarkNameSearch = () => (
         />
 		<Top
 			imageName="mrs-bulb-trademark"
-			imageAlt="Mr Bulb holding a certificate and tossing an orginal and a trademark sign"
+			imageAlt=""
 			ovalColor="darkblue"
 		>
 			<h1 style={{ maxWidth: "100%" }}>{top.header}</h1>
 			<p>{top.text}</p>
 			<Buttonsbox>
-				<Button content={top.button[0]} theme="primary56" width="200px" arrow />
+				<Button extends content={top.button[0]} theme="primary56" width="200px" arrow />
 			</Buttonsbox>
 		</Top>
 		<About content={about} />

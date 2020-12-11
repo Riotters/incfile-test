@@ -336,7 +336,7 @@ const CCorpTabs = ({ layout, columns, content }) => {
 								//className={isVisible ? "slideUp enter panel1" : "slideUp panel1"}
 								layout={layout}
 							>
-								<Heading size="3">{content.content[0].header}</Heading>
+								<Heading size="2" template={3} left>{content.content[0].header}</Heading>
 								<LightBoxVideo
 									thumbnailVideo="what-is-a-c-corporation-2737"
 									videoID="BmZ7zyLd710"

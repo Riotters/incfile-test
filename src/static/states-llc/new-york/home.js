@@ -164,7 +164,7 @@ export const HomePageContent = {
         text2: `New York requires that LLCs have an Operating Agreement in place. This does not need to be filed with the Division of Corporations but should be kept on hand.`,
         button1: {
           text: `Learn More About Operating Agreements Here`,
-          url: `/blog/post/operating-agreement-llc/`,
+          url: `https://www.incfile.com/blog/post/operating-agreement-llc/`,
         },
         cta: {
           title: `Receive a personalized <br>operating agreement`,

@@ -39,6 +39,7 @@ import ComplianceRequirementBox from "../atomic/state-corporation/compliance-req
 import { getFullPricesAndFilings } from "../api/Api";
 import ReactTabs from "../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
+import { Helmet } from "react-helmet";
 
 const PennsylvaniaCorporation = () => {
 	const [dataApi, setDataApi] = React.useState({});
@@ -88,7 +89,12 @@ const PennsylvaniaCorporation = () => {
 				<ReactTabs content={tabs}>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Choosing a Corporation Name
 							</Heading>
 							<Paragraph big>
@@ -129,7 +135,12 @@ const PennsylvaniaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Articles of Incorporation
 							</Heading>
 							<Paragraph big>
@@ -145,10 +156,8 @@ const PennsylvaniaCorporation = () => {
 								shareholder of the corporation.
 							</Paragraph>
 							<Paragraph big>
-								Your new LLC’s articles of incorporation must be signed by at
-								least one person, called an incorporator, who must be at least
-								18 years old and a natural person (not a business entity). They
-								must sign the articles and deliver them to the DCCED.
+								The following information must be included in the articles of
+								incorporation:
 							</Paragraph>
 
 							<Colorbox
@@ -173,6 +182,12 @@ const PennsylvaniaCorporation = () => {
 								primary business activity must be included in the docketing
 								statement that is attached to the articles when they are filed
 								with the state.
+							</Paragraph>
+							<Paragraph big>
+								Pennsylvania law also allows (but does not require) optional
+								items to be included in the articles of incorporation for those
+								corporations who wish to formally specify additional
+								information, such as:
 							</Paragraph>
 							<Colorbox
 								color={color.orange3}
@@ -209,7 +224,12 @@ const PennsylvaniaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
@@ -225,7 +245,12 @@ const PennsylvaniaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Bylaws
 							</Heading>
 							<Paragraph big>
@@ -241,6 +266,13 @@ const PennsylvaniaCorporation = () => {
 								business and regulating the affairs of the corporation that’s
 								not in conflict with law or the articles of incorporation.
 							</Paragraph>
+							<Paragraph big>
+								The board of directors of a corporation may adopt, amend, or
+								repeal bylaws, unless the articles reserve this right to the
+								shareholders. At its initial meeting, the board of directors
+								should adopt corporate bylaws, and then keep them updated as
+								time goes on.
+							</Paragraph>
 							<Paragraph
 								big
 								style={{
@@ -249,11 +281,7 @@ const PennsylvaniaCorporation = () => {
 									color: "#1e1e1e",
 								}}
 							>
-								The board of directors of a corporation may adopt, amend, or
-								repeal bylaws, unless the articles reserve this right to the
-								shareholders. At its initial meeting, the board of directors
-								should adopt corporate bylaws, and then keep them updated as
-								time goes on. Bylaws normally address:
+								Bylaws normally address:
 							</Paragraph>
 
 							<TextBoxed style={{ marginBottom: "8px" }}>
@@ -287,7 +315,12 @@ const PennsylvaniaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Directors
 							</Heading>
 							<Paragraph big>
@@ -316,7 +349,12 @@ const PennsylvaniaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Requirement Reports
 							</Heading>
 							<Paragraph big style={{ marginBottom: "48px" }}>
@@ -330,7 +368,12 @@ const PennsylvaniaCorporation = () => {
 					</TabPanel>
 					<TabPanel>
 						<PanelWrapper>
-							<Heading size={3} style={{ marginBottom: "24px" }}>
+							<Heading
+								size={2}
+								template={3}
+								left
+								style={{ marginBottom: "24px" }}
+							>
 								Taxes
 							</Heading>
 							<Paragraph big>
@@ -366,7 +409,8 @@ const PennsylvaniaCorporation = () => {
 					</Curve>
 					<LightBoxVideo
 						thumbnailVideo="comparison-chart-video-3611"
-						videoID="oYZShvmf9eQ"
+						videoID="372490609"
+						vimeo
 					/>
 				</ContentCenter>
 
@@ -410,19 +454,23 @@ const PennsylvaniaCorporation = () => {
 				</ContentCenter>
 			</QuestionSection>
 
-			{/*<InfoSection>*/}
-			{/*<HeadingCenter headline={info.header} textWidth="770" />*/}
+			<Rocket urlParams="?entityType=CCorporation&entityState=PA" />
 
-			{/*<Container>*/}
-			{/*<AdventagesBox>*/}
-			{/*{info.items.map((item) => (*/}
-			{/*<Adventages headline={item.headline} text={item.text} />*/}
-			{/*))}*/}
-			{/*</AdventagesBox>*/}
-			{/*</Container>*/}
-			{/*</InfoSection>*/}
-
-			<Rocket />
+			<Helmet>
+				<script type="application/ld+json">
+					{`{
+                        "@context": "http://schema.org",
+                        "@type": "VideoObject",
+                        "name": "What is a Corporation? by Incfile",
+                        "description": "What is a corporation and how does it work? One of the most important decisions you'll make when starting a business is its legal structure. A popular option is a “corporation“—but what does this mean for business owners?   A corporation is its own legal entity separate from the owners. It has nearly all the legal rights of an individual: It can hire employees, own assets, enter into contracts, sue and be sued, loan and borrow money, and pay taxes. But since the corporation exists as a separate entity, it limits the liability of its owners. That means shareholders have the right to participate in profits, but they’re not held personally liable for the company’s debts. And since a corporation isn’t linked to a single person, it doesn’t dissolve when its owners or shareholders change or die, so liability protection is passed on to the next in line.  The Three Main Types of Corporations:  - C Corporations - S Corporations - Non-profits   Learn more about the three main types of corporations by visiting these links below:   - What is an S Corporation? https://www.incfile.com/what-is-s-corporation/ - What is a C Corporation? https://www.incfile.com/what-is-c-corporation/ - What is a Nonprofit? https://www.incfile.com/what-is-non-profit-corporation/",
+                        "thumbnailUrl": "https://i.ytimg.com/vi/oYZShvmf9eQ/default.jpg",
+                        "uploadDate": "2020-09-07T17:00:19Z",
+                        "duration": "PT1M41S",
+                        "embedUrl": "https://www.youtube.com/embed/oYZShvmf9eQ",
+                        "interactionCount": "74"
+                    }`}
+				</script>
+			</Helmet>
 		</Layout>
 	);
 };

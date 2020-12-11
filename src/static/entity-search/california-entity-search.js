@@ -102,11 +102,11 @@ export const startBusiness = {
   text: `We have a full guide to starting a new business in California. Learn about how to start a CA LLC or a CA corporation.`,
   button: {
     text: `CA LLC`,
-    url: `/california-llc`,
+    url: `/california-llc/`,
   },
   button2: {
     text: `CA Corporation`,
-    url: `/california-corporation`,
+    url: `/california-corporation/`,
   },
 };
 
@@ -136,7 +136,7 @@ export const faq = {
     },
     {
       question: `What Do I Need to Think About When Deciding on a California Business Name?`,
-      answer: `The perfect California business name can be elusive. We have a <a href="/blog/post/llc-name-search-50-states/">complete guide to choosing the right CA business name</a> —
+      answer: `The perfect California business name can be elusive. We have a <a href="https://www.incfile.com/blog/post/llc-name-search-50-states/">complete guide to choosing the right CA business name</a> —
         you'll want to choose a name that will:
         <ul>
         <li>Matter to business customers</li>
