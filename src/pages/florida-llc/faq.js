@@ -46,7 +46,7 @@ const FloridaFaq = () => (
 	<Layout>
 		<SEO
 			title="Frequently Asked Questions About Starting a Florida LLC"
-			description="Getting ready to start an LLC in the Lone Star state? Here are the most frequently asked questions to help your business get up and running. Read more."
+			description="Getting ready to start an LLC in the Sunshine State? Here are the most frequently asked questions to help your business get up and running. Read more."
 		/>
 
 		<FAQSchemaFL />

@@ -4,7 +4,7 @@ export const HomePageContent = {
     subline: `aaa`,
     boxes: [
       {
-        title: `Learn how to form a California <br>LLC yourself`,
+        title: `Learn how to form a <br>California LLC yourself`,
         desc: `Read our DIY guide to California LLC formation, with information on Registered Agents, naming rules, business licenses, and more.`,
         button: {
           text: `Read The Guide`,

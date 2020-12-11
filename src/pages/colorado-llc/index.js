@@ -26,7 +26,7 @@ function ColoradoIndexPage() {
 		<Layout>
 			<SEO
 				title="Colorado LLCs | How to Start an LLC in Colorado"
-				description="Ready to form your Colorado LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+				description="Ready to form your CO LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} nonDIY />

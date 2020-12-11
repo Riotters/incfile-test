@@ -39,7 +39,7 @@ const TexasCorporation = () => {
 		<Layout>
 			<SEO
 				title="How to Start a Corporation in Texas - 6 Easy Steps"
-				description="Thinking of starting an S Corp, C Corp, or LLC in Texas? Learn about corporations in TX and decide which business type is right for you."
+				description="Forming a legal corporation in Texas doesn't have to be complicated. Learn the steps you need to take to start your business today."
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"

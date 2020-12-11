@@ -25,7 +25,7 @@ function LLCIndex() {
 		<Layout>
 			<SEO
 				title="Forming an LLC in New Hampshire | NH LLCs"
-				description="Ready to form your New Hampshire LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+				description="Ready to register your NH LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} nonDIY />

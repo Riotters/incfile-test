@@ -8,6 +8,7 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
 import Oval2SVG from "../../../../images/ovals/top-right-transparent-babyblue2.inline.svg";
 import parse from "html-react-parser";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const About = styled.section`
   position: relative;
@@ -30,7 +31,7 @@ const AboutSection = ({ className, content }) => (
       <Oval2SVG />
     </Oval>
     <ImageContent image="cash-register" alt="Prepare and File an S Corporation Tax Election">
-      <Heading size="3">{content.header}</Heading>
+      <PHeading size={3}>{content.header}</PHeading>
       <Paragraph big mixed bottomMargin="72">
         {parse(content.text)}
       </Paragraph>

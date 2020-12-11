@@ -26,7 +26,7 @@ const GeneralResearchTopics = () => (
 	<Layout>
 		<SEO
 			title="Florida Business Entity Search | Is Your Name Available?"
-			description="aaa"
+			description="Starting a new business in FL? Check to see if your preferred business name is available with Incfile’s easy name search tool. Try it now."
 		/>
 		<Top
 			imageName="mrs-bulb-state-ilustrations-9948"

@@ -40,7 +40,7 @@ const WyomingCorporation = () => {
 		<Layout>
 			<SEO
 				title="Wyoming Ongoing Corporation Filing Requirements | Incfile.com"
-				description="Incorporating a business in Wyoming? Learn about the forms, requirements, and legalities of forming a corporation in Wyoming."
+				description="You've incorporated your business—now what? Learn next steps, find resources, and see Wyoming's requirements for annual business reports and more."
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"

@@ -17,6 +17,7 @@ import CurveSVG from "../../../../images/curves/top-left-bottom-right-big.inline
 import { color } from "../../../atoms/styles/colors";
 import { entities } from "../../../../static/entities";
 import parse from "html-react-parser";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const Fee = styled.div`
 	padding-bottom: 100px;
@@ -46,7 +47,7 @@ const ImageBoxes = styled.div`
   .box {
       padding: 16px 16px 56px;
 
-    h4 {
+    h4, [class*="i-believe-i-can-be-a-h"] {
         text-align: center;
         padding: 24px 0 0;
     }
@@ -130,7 +131,7 @@ const FeeSection = ({ content }) => {
 						image="lcsn-4343"
 						color={color.green3}
 					>
-						<Heading size="4">{cards[0]}</Heading>
+						<PHeading size={4}>{cards[0]}</PHeading>
 						<Dropdown
 							className="dropdown"
 							placeholder="Select"
@@ -143,7 +144,7 @@ const FeeSection = ({ content }) => {
 						image="your-state-7282"
 						color={color.blue3}
 					>
-						<Heading size="4">{cards[1]}</Heading>
+						<PHeading size={4}>{cards[1]}</PHeading>
 						<Dropdown
 							className="dropdown"
 							placeholder="Select"

@@ -39,7 +39,7 @@ const IllinoisCorporation = () => {
 		<Layout>
 			<SEO
 				title="Ongoing Corporation Filing Requirements in Illinois | Incfile.com"
-				description="Incorporating a business in Illinois? Learn about the forms, requirements, and legalities of forming a corporation in Illinois."
+				description="You've incorporated your business—now what? Learn next steps, find resources, and see Illinois's requirements for annual business reports and more."
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"

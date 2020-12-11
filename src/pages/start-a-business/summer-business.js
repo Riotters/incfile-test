@@ -25,7 +25,7 @@ const SummerBusiness = () => (
 	<Layout>
 		<SEO
 			title="Summer Business Ideas | Starting a Summer Business"
-			description="If you’re not ready to jump into running your own business full time, a summer business could be ideal. These types of ventures are seasonal and designed around the warmer times of the year,when tourists travel and everyone wants to enjoy the sunshine."
+			description="We want to help you get your summer business off the ground! Read our guide for ideas, tips, and important things to know before starting a business."
 		/>
 
 		<Top

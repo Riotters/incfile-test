@@ -40,7 +40,7 @@ const FloridaCorporation = () => {
 		<Layout>
 			<SEO
 				title="How to Start a Corporation in Florida - 6 Easy Steps "
-				description="Thinking of starting an S Corp, C Corp, or LLC in Florida? Learn about corporations in CA and decide which business type is right for you."
+				description="Forming a legal corporation in Florida doesn't have to be complicated. Learn the steps you need to take to start your business today."
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"

@@ -25,7 +25,7 @@ function LLCIndex() {
 		<Layout>
 			<SEO
 				title="Rhode Island LLCs | Forming an LLC in Rhode Island"
-				description="Ready to form your Rhode Island LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+				description="Ready to register your RI LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} nonDIY />

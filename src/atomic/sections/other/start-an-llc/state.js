@@ -14,6 +14,7 @@ import { Heading } from "../../../atoms/typography/heading";
 import FilingTimeAndPriceBox from "../../../state-corporation/filing-time-and-price-box";
 import ComplianceRequirementBox from "../../../state-corporation/compliance-requirement-box";
 import { getFullPricesAndFilings } from "../../../../api/Api";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const State = styled.div`
 	background-color: ${color.green3};
@@ -50,7 +51,7 @@ const ImageBoxes = styled.div`
 			}
 		}
 
-		h4 {
+		h4, [class*="i-believe-i-can-be-a-h"] {
 			text-align: center;
 			padding: 24px 0 0;
 		}
@@ -99,7 +100,7 @@ const StateSection = ({ content, getDataForVariants }) => {
 						image="your-state-7282"
 						color={color.blue3}
 					>
-						<Heading size="4">{content.card.header}</Heading>
+						<PHeading size={4}>{content.card.header}</PHeading>
 						<Dropdown
 							className="dropdown"
 							placeholder="Alabama"

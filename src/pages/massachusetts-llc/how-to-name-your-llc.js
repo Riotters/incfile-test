@@ -29,7 +29,7 @@ const BusinessNamesPage = () => {
 		<Layout>
 			<SEO
 				title="Massachusetts Business Search & Naming Your LLC"
-				description="Learn what you need to know about naming an LLC in Massachusetts with Incfile's helpful resources. Pick your perfect business name today!"
+				description="Learn what you need to know about naming an LLC in MA with Incfile’s helpful resources. Pick your perfect business name today!"
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} />

@@ -25,7 +25,7 @@ function LLCIndex() {
 		<Layout>
 			<SEO
 				title="Vermont LLCs | Starting an LLC in Vermont"
-				description="Ready to form your Vermont LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+				description="Ready to register your VT LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} nonDIY />

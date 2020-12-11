@@ -10,9 +10,10 @@ import Oval from "../../../atoms/icons/oval";
 import OvalTopLeftSVG from "../../../../images/ovals/business-entity-quiz-top-left.inline.svg";
 import OvalTopRightSVG from "../../../../images/ovals/business-quiz-top-section-right.inline.svg";
 import Image from "../../../atoms/image/image";
+import ArrowLink from "../../../molecules/buttons/text";
 
 const Wrapper = styled.section`
-	padding: 180px 0 168px;
+	padding: ${(props) => (props.padding ? props.padding : "180px 0 168px")};
 	position: relative;
 	overflow-x: hidden;
 	overflow-y: visible;
@@ -44,8 +45,8 @@ const RelativeWrapper = styled.div`
 	position: relative;
 `;
 
-const TopSection = ({ className, content }) => (
-	<Wrapper>
+const TopSection = ({ className, content, padding }) => (
+	<Wrapper padding={padding}>
 		<Oval className="oval" height="420" width="420" top="35" left="0">
 			<OvalTopLeftSVG />
 		</Oval>
@@ -78,6 +79,7 @@ const TopSection = ({ className, content }) => (
 				</RelativeWrapper>
 
 				<Button content={content.button} theme="primary56" arrow />
+				{content.link && <ArrowLink content={content.link} topMargin={40} />}
 			</ContentCenter>
 		</Container>
 	</Wrapper>

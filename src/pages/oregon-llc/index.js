@@ -25,7 +25,7 @@ function LLCIndex() {
 		<Layout>
 			<SEO
 				title="Oregon LLCs | Forming an LLC in Oregon"
-				description="Ready to form your Oregon LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+				description="Learn all the requirements for forming and filing an LLC in Oregon. Find out about business names and searches, Registered Agents, licenses, taxes, forms and fees."
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} nonDIY />

@@ -19,13 +19,13 @@ import {
 	tools,
 } from "../../../static/learning-center-entity/help-center-article";
 import { related } from "../../../static/research-topics/business-taxes";
-import {HeadingP} from "../../../atomic/atoms/typography/heading-to-p";
+import { HeadingP } from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => (
 	<Layout>
 		<SEO
 			title="Business Taxes: Articles & Information for Entrepreneurs"
-			description="Learn about the required federal, state and sales taxes you might need to pay."
+			description="Looking for info on how business taxes work for your specific business structure? Learn all about federal and state taxes for different entities here."
 		/>
 		<Top
 			imageName="mrs-bulb-help-center-article"
@@ -35,7 +35,9 @@ const HelpCenter = () => (
 			<Heading size={2} template={1} left>
 				{top.header}
 			</Heading>
-			<HeadingP size={3} big>{top.text}</HeadingP>
+			<HeadingP size={3} big>
+				{top.text}
+			</HeadingP>
 			<Searchbar />
 		</Top>
 		{/* <About content={about} /> */}

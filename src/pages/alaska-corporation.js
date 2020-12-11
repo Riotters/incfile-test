@@ -62,7 +62,7 @@ const AlaskaCorporation = () => {
 		<Layout>
 			<SEO
 				title="Form a Corporation or LLC in Alaska Today | Incfile"
-				description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing."
+				description="Incorporating a business in Alaska doesn't have to be hard. Get info on everything from operating agreements to state filing times, taxes and fees."
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"

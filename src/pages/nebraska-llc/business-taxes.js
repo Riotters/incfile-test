@@ -14,24 +14,27 @@ import { tabPages } from "../../static/states-llc/nebraska/general";
 import { getFullPricesAndFilings } from "../../api/Api";
 
 const BusinessTaxesPage = () => {
-  const [dataApi, setDataApi] = React.useState({});
+	const [dataApi, setDataApi] = React.useState({});
 
-  React.useEffect(() => {
-    getFullPricesAndFilings("Nebraska").then((data) => {
-      setDataApi(data);
-    });
-  }, []);
-  return (
-    <Layout>
-      <SEO title="Nebraska Sales & Business Tax Registration for LLCs" description="Do you have a NE LLC? Learn about the required federal, state and sales taxes you might need to pay. Read more. " />
-      <LLCLayout data={dataApi} top={top}>
-        <LeftTabPages content={tabPages} />
-        <MainPageContent>
-          <ContentMap content={businessTaxes} />
-        </MainPageContent>
-      </LLCLayout>
-    </Layout>
-  );
+	React.useEffect(() => {
+		getFullPricesAndFilings("Nebraska").then((data) => {
+			setDataApi(data);
+		});
+	}, []);
+	return (
+		<Layout>
+			<SEO
+				title="Nebraska Sales & Business Tax Registration for LLCs"
+				description="Do you have a NE LLC? Learn about the required federal, state and sales taxes you might need to pay. Read more."
+			/>
+			<LLCLayout data={dataApi} top={top}>
+				<LeftTabPages content={tabPages} />
+				<MainPageContent>
+					<ContentMap content={businessTaxes} />
+				</MainPageContent>
+			</LLCLayout>
+		</Layout>
+	);
 };
 
 export default BusinessTaxesPage;

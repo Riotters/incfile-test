@@ -61,7 +61,7 @@ const ArkansasCorporation = () => {
 		<Layout>
 			<SEO
 				title="Arkansas Corporation | How to Incorporate in Arkansas | Learn About Incorporating in Arkansas"
-				description="Manage LLC and Corporate Ongoing Filng Requirements. Infile has the needed documents to help you file and stay in good standing."
+				description="Incorporating a business in Arkansas doesn't have to be hard. Get info on everything from operating agreements to state filing times, taxes and fees."
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"

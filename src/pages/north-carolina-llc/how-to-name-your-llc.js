@@ -28,7 +28,7 @@ const BusinessNamesPage = () => {
 		<Layout>
 			<SEO
 				title="NC Corporation Search | Register a Business Name in NC"
-				description="Learn what you need to know about naming an LLC in NC with Incfile's helpful resources. Pick your perfect business name today!"
+				description="Learn what you need to know about naming an LLC in North Carolina with Incfile’s helpful resources. Pick your perfect business name today!"
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} />

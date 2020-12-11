@@ -11,6 +11,10 @@ const OtherTerms = styled.section`
   position: relative;
   padding-top: 75px;
   padding-bottom: 64px;
+  
+  h3.h2 {
+    text-align: center;
+  }
 `;
 
 const OtherTermsSection = ({ className, content }) => (
@@ -18,7 +22,7 @@ const OtherTermsSection = ({ className, content }) => (
         <Oval className="oval" height="420" width="420" top="0" left="0">
             <OvalSVG />
         </Oval>
-        <HeadingCenter className="heading" headline={content.header} headlineWidth="570" />
+        <HeadingCenter className="heading" headline={content.header} headlineWidth="570" headlineSize={3} headlineSizeTemplate={2} />
         <ContentCenter>
             <Circles content={content.circles} />
             <Paragraph big bottomMargin="0" maxWidth="770">{content.text}</Paragraph>

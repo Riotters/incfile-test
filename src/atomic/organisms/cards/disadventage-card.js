@@ -20,7 +20,7 @@ const Wrapper = styled.div`
     }
 `
 
-const DisadventageCard = ({ className, content, curve }) => {
+const DisadventageCard = ({ className, content, curve, paragraphHeading = false }) => {
   return (
     <Wrapper className={className}>
         {curve && (
@@ -29,7 +29,7 @@ const DisadventageCard = ({ className, content, curve }) => {
           </Curve>
         )}
         {content.map((card) => (
-            <Card content={card} />
+            <Card content={card} paragraphHeading={paragraphHeading} />
         ))}
     </Wrapper>
   )

@@ -34,7 +34,7 @@ const HomeBusiness = () => (
 	<Layout>
 		<SEO
 			title="Home Business Ideas | Starting a Business From Home"
-			description="Starting a new business can be a major undertaking, so for entrepreneurs wanting to start off small, a home-based business is a great idea. You’ll learn a great deal about running a business successfully, while avoiding many of the costs associated with larger businesses, like office rental, utilities or hiring employees."
+			description="We want to help you get your home-based business off the ground. Read our guide for ideas, tips, and important things to know before you get started."
 		/>
 
 		<Top

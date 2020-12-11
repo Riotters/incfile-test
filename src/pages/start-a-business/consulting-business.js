@@ -69,7 +69,7 @@ const ConsultingBusiness = () => {
 		<Layout>
 			<SEO
 				title="How to Start a Consulting Business | Online Consulting in Your Spare Time | Online Consulting in Your Spare Time"
-				description="If you have valuable insight and expertise you want to share, then starting a consulting business is a great way to monetize your strategic approach, skills and experience. Consultants come in many different types with specialists in hundreds of niches using thousands of varied skills and techniques."
+				description="Few businesses offer the flexibility and ability to gain clientele quite as effective as an online consulting business. Find out some INCFILE quick tips here."
 			/>
 
 			<Top
@@ -87,8 +87,8 @@ const ConsultingBusiness = () => {
 					of varied skills and techniques.
 				</p>
 				<ButtonsBox>
-                    <LinkButton
-                        externalLink
+					<LinkButton
+						externalLink
 						theme="primary56"
 						marginMD="0 24px 0 0"
 						arrow
@@ -200,12 +200,12 @@ const ConsultingBusiness = () => {
 								guide, you will have all the information you need to set up and
 								manage a thriving consulting business. Let’s get into it.
 							</Paragraph>
-                            
-                            <LightBoxVideo
-                                bottomMargin={42}
-                                thumbnailVideo="how-to-start-a-consulting-business-9829"
-                                videoID="xAihjHQWaZk"
-                            />
+
+							<LightBoxVideo
+								bottomMargin={42}
+								thumbnailVideo="how-to-start-a-consulting-business-9829"
+								videoID="xAihjHQWaZk"
+							/>
 
 							<Button
 								arrow
@@ -453,7 +453,12 @@ const ConsultingBusiness = () => {
 							postDownloadAction={postDownload}
 						/>
 					)}
-					{formSubmitted && <ThankYouContent modalExit={popup} fileDownload={hsForm.fileDownload} />}
+					{formSubmitted && (
+						<ThankYouContent
+							modalExit={popup}
+							fileDownload={hsForm.fileDownload}
+						/>
+					)}
 				</LightBoxContent>
 			</LightBoxModal>
 

@@ -9,6 +9,8 @@ import parse from "html-react-parser";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../../images/orange-curve.inline.svg";
 import VisibilitySensor from "../../../components/VisibilitySensor";
+import {HeadingP} from "../../atoms/typography/heading-to-p";
+import { Heading } from "../../atoms/typography/heading";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -160,6 +162,10 @@ const Button = styled.button`
 	&.active {
 		border-radius: 5px 5px 0 0;
 		font-weight: 600;
+		
+		h3 {
+		font-weight: 600;
+		}
 
 		svg {
 			transform: rotate(0deg);
@@ -180,7 +186,7 @@ const Content = styled.div`
 		min-height: unset;
 	}
 
-	span {
+	span, h3 {
 		color: #4e4e4e;
 		font-family: Avenir;
 		font-size: 16px;
@@ -265,10 +271,12 @@ const AccordionWithCounting = ({
 	content,
 	curve,
 	curveRight,
+	paragraphHeaders = true,
 	curveRightBottom,
 	tab,
 	listColor,
 	bottomMargin,
+	header,
 }) => {
 	return (
 		// <VisibilitySensor partialVisibility once>
@@ -290,7 +298,27 @@ const AccordionWithCounting = ({
 							<Tab>
 								<Content>
 									<Counting>{item.count}</Counting>
-									<span>{item.question}</span>
+									{(!header || !paragraphHeaders) && <span>{item.question}</span>}
+									{header === 2 && (
+										<Heading size={2} template={3} left>
+											{item.question}
+										</Heading>
+									)}
+									{(header === 3 || paragraphHeaders) && (
+										<Heading size={3} left bottomMargin={0}>
+											{item.question}
+										</Heading>
+									)}
+									{header === 4 && (
+										<Heading size={4} template={3} left>
+											{item.question}
+										</Heading>
+									)}
+									{header === 5 && (
+										<Heading size={5} template={3} left>
+											{item.question}
+										</Heading>
+									)}
 									<Icon>
 										<ArrowSVG />
 									</Icon>

@@ -29,7 +29,7 @@ const UniqueBusiness = () => (
 	<Layout>
 		<SEO
 			title="Unique Business Ideas | Starting a Unique Business"
-			description="Some of us like to do things a little differently, and that’s also true of business owners and entrepreneurs. If you’ve looked at some standard business ideas and thought “that’s not for me,” perhaps you need something a more unique."
+			description="Looking to start a business that really stands out? Read our guide for ideas, tips, and important things to know before you get started."
 		/>
 
 		<Top

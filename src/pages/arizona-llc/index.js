@@ -25,7 +25,7 @@ function ArizonaIndexPage() {
 		<Layout>
 			<SEO
 				title="Starting an LLC in Arizona | AZ LLCs"
-				description="Ready to form your Arizona LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+				description="Ready to register your Arizona LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} nonDIY />

@@ -106,7 +106,13 @@ const BusinessTaxesSection = ({ content }) => {
       {content.map((item, i) => (
         <div>
           {item.type === "heading" && (
-            <Heading size={item.size} style={item.styles}>
+            <Heading
+              size={item.size}
+              template={item.template}
+              bottomMargin={item.bottomMargin}
+              topMargin={item.topMargin}
+              left={true}
+            >
               {item.content}
             </Heading>
           )}
@@ -124,15 +130,45 @@ const BusinessTaxesSection = ({ content }) => {
               </ArrowLink>
             ))}
 
-          {item.type === "list-dot" && <IconListColorBox color={color.blue3} content={item.content} rounded />}
+          {item.type === "list-dot" && (
+            <IconListColorBox
+              color={color.blue3}
+              content={item.content}
+              rounded
+            />
+          )}
 
-          {item.type === "button" && <Button content={item.content} theme={item.theme} arrow width={item.width ?? `350px`} margin="16px 0 0 0" marginMD="42px 0 42px 0" />}
+          {item.type === "button" && (
+            <Button
+              content={item.content}
+              theme={item.theme}
+              arrow
+              width={item.width ?? `350px`}
+              margin="16px 0 0 0"
+              marginMD="42px 0 42px 0"
+            />
+          )}
 
-          {item.type === "accordingTabWithCountingLeft" && <AcccordionCounting content={item.content} tab />}
+          {item.type === "accordingTabWithCountingLeft" && (
+            <AcccordionCounting
+              content={item.content}
+              header={item.header}
+              tab
+            />
+          )}
 
-          {item.type === "numberBoxList" && <NumericBoxedList content={item.content} style={item.styles} />}
+          {item.type === "numberBoxList" && (
+            <NumericBoxedList content={item.content} style={item.styles} />
+          )}
 
-          {item.type === "iconListColorBox" && <IconListColorBox color={item.boxColor} style={item.styles} content={item.content} rounded />}
+          {item.type === "iconListColorBox" && (
+            <IconListColorBox
+              color={item.boxColor}
+              style={item.styles}
+              content={item.content}
+              rounded
+            />
+          )}
 
           {item.type === "textBoxWithCheckIcon" &&
             item.content.map((i) => (
@@ -141,11 +177,26 @@ const BusinessTaxesSection = ({ content }) => {
               </TextBoxed>
             ))}
 
-          {item.type === "box-cta" && <BoxCTA bgColor={item.color} bgImage={item.bgImage[0]} style={item.styles} content={item.content} />}
+          {item.type === "box-cta" && (
+            <BoxCTA
+              bgColor={item.color}
+              bgImage={item.bgImage[0]}
+              style={item.styles}
+              content={item.content}
+            />
+          )}
 
-          {item.type === "accordion" && <Accordion content={item.content} tab />}
+          {item.type === "accordion" && (
+            <Accordion content={item.content} header={item.header} tab />
+          )}
 
-          {item.type === "accordionWithCounting" && <AcccordionCounting content={item.content} tab />}
+          {item.type === "accordionWithCounting" && (
+            <AcccordionCounting
+              content={item.content}
+              header={item.header}
+              tab
+            />
+          )}
         </div>
       ))}
     </Wrapper>

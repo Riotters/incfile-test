@@ -17,8 +17,8 @@ const _chunkArray = (items, size = 3) => {
 		return arrayLinks.push({
 			links: chunk,
 		});
-    });
-    
+	});
+
 	return arrayLinks;
 };
 
@@ -57,7 +57,7 @@ const BusinessTaxArticlesSitemap = _chunkArray(BusinessTaxArticles.buttons);
 
 export const seo = {
 	title: `Incfile Sitemap | Incfile Directory`,
-	desc: `Incfile Customer Reviews & Testimonials`,
+	desc: `Easy to find important pages for Incfile, in the directory Sitemap`,
 };
 
 export const top = {

@@ -41,7 +41,7 @@ const WyomingCorporation = () => {
 		<Layout>
 			<SEO
 				title="Registered Agents for your Wyoming Corporation | Incfile.com "
-				description="Thinking of starting an S Corp, C Corp, or LLC in California? Learn about corporations in CA and decide which business type is right for you."
+				description="Does your corporation need a registered agent? Learn more about finding a qualified registered agent in Wyoming here."
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"

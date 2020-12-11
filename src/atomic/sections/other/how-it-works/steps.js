@@ -109,7 +109,7 @@ const StepsSection = ({ className, content }) => {
           </Paragraph>
         </Box>
 
-        <Variants data={dataApi} />
+        <Variants data={dataApi} paragraphHeading />
 
         <Box>
           <Circle height="64" width="64" circleColor={color.blue1} iconColor={color.white} bottomMargin="32">

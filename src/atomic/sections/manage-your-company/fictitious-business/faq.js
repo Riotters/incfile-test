@@ -20,7 +20,7 @@ const FaqSection = ({ className, content }) => (
     <Oval className="oval" height="720" width="720" top="0" left="0">
       <OvalSVG />
     </Oval>
-    <HeadingCenter className="headline" headline={content.header} headlineWidth="640" />
+    <HeadingCenter className="headline" headline={content.header} headlineWidth="640" headlineSize={3} headlineSizeTemplate={2} />
     <ContentCenter>
       <Accordion content={content.faq} />
     </ContentCenter>
