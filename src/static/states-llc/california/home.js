@@ -5,6 +5,8 @@ export const HomePageContent = {
     boxes: [
       {
         title: `Learn how to form a <br>California LLC yourself`,
+        size: 2,
+        template: 1,
         desc: `Read our DIY guide to California LLC formation, with information on Registered Agents, naming rules, business licenses, and more.`,
         button: {
           text: `Read The Guide`,
@@ -13,6 +15,8 @@ export const HomePageContent = {
       },
       {
         title: `Have Incfile do the work for you <br><span style="color:#FD8550">$0 + State fee</span>`,
+        size: 2,
+        template: 1,
         desc: `Incfile can take care of all your LLC formation paperwork—and we’ll do it for free. Just pay the required California state fee ($[STATE_FEE]).`,
         button: {
           text: `Form Your LLC Now`,
@@ -170,12 +174,15 @@ export const HomePageContent = {
     otherInfo: [
       {
         type: `heading`,
-        size: 3,
+        size: 2,
+        template: 3,
+        left: true,
         content: `Other Important California LLC Info`,
       },
       {
         type: `heading`,
-        size: 4,
+        size: 3,
+        template: 4,
         content: `Special Types of LLCs in California`,
       },
       {
@@ -184,7 +191,8 @@ export const HomePageContent = {
       },
       {
         type: `heading`,
-        size: 4,
+        size: 3,
+        template: 4,
         content: `Professional LLCs`,
       },
       {
@@ -195,7 +203,8 @@ export const HomePageContent = {
 
       {
         type: `heading`,
-        size: 4,
+        size: 3,
+        template: 4,
         content: `Out-of-State / Foreign LLCs`,
       },
       {
@@ -214,7 +223,8 @@ export const HomePageContent = {
       // Helpful resource
       {
         type: `heading`,
-        size: 4,
+        size: 3,
+        template: 4,
         content: `Read More Information from the California Secretary of State`,
       },
       {

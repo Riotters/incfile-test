@@ -13,6 +13,7 @@ import ArrowSVG from "../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../images/orange-curve.inline.svg";
 import VisibilitySensor from "../../components/VisibilitySensor";
 import { Heading } from "../atoms/typography/heading";
+import {HeadingP} from "../atoms/typography/heading-to-p";
 
 const Wrapper = styled.div`
   display: flex;
@@ -170,6 +171,10 @@ const Button = styled.button`
   &.active {
     border-radius: 5px 5px 0 0;
     font-weight: 600;
+    
+    h2, h3, h4, h5 {
+      font-weight: 600;
+    }
 
     svg {
       transform: rotate(0deg);
@@ -315,24 +320,24 @@ const AccordionWithCounting = ({
                 </CountingWrapper>
                 {!header && <Text>{item.question}</Text>}
                 {header === 2 && (
-                  <Heading size={2} template={5} bottomMargin="0" left>
+                  <HeadingP size={2} template={5} bottomMargin="0" left>
                     {item.question}
-                  </Heading>
+                  </HeadingP>
                 )}
                 {header === 3 && (
-                  <Heading size={3} template={5} bottomMargin="0" left>
+                  <HeadingP size={3} template={5} bottomMargin="0" left>
                     {item.question}
-                  </Heading>
+                  </HeadingP>
                 )}
                 {header === 4 && (
-                  <Heading size={4} template={5} bottomMargin="0" left>
+                  <HeadingP size={4} template={5} bottomMargin="0" left>
                     {item.question}
-                  </Heading>
+                  </HeadingP>
                 )}
                 {header === 5 && (
-                  <Heading size={5} template={5} bottomMargin="0" left>
+                  <HeadingP size={5} template={5} bottomMargin="0" left>
                     {item.question}
-                  </Heading>
+                  </HeadingP>
                 )}
                 {/* </Content> */}
                 <Icon>
