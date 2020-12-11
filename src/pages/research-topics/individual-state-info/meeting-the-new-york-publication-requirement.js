@@ -52,7 +52,7 @@ const HelpCenter = () => {
 			/>
 			<Top
 				imageName="mrs-bulb-help-center-article"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt="new york publication requirement"
 				ovalColor="green"
 			>
 				<Heading size={2} template={1} left>
