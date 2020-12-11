@@ -290,7 +290,10 @@ const AccordionWithCounting = ({
 							<Tab>
 								<Content>
 									<Counting>{item.count}</Counting>
-									<span>{item.question}</span>
+									{!header && <span>{item.question}</span>}
+									{header === 3 && <h3>{item.question}</h3>}
+									{header === 4 && <h4>{item.question}</h4>}
+									{header === 5 && <h5>{item.question}</h5>}
 									<Icon>
 										<ArrowSVG />
 									</Icon>
