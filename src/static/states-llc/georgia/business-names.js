@@ -9,6 +9,7 @@ import BgBoxBusinessNameSearchTool from "../../../images/icons/states/business-n
 export const businessNamesContent = {
   header: {
     title: `Georgia Business Searches and Naming Your LLC`,
+
     subline: `Learn how to conduct a business entity search with the Georgia Secretary of State and register your LLC name.`,
     boxes: [
       {
@@ -28,7 +29,9 @@ export const businessNamesContent = {
     },
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Georgia LLC Business Name Rules`,
     },
     {
@@ -114,8 +117,9 @@ export const businessNamesContent = {
       content: `<a href="https://sos.ga.gov/index.php/corporations/name_availability_standards" target="_blank" rel="noopener noreferrer">Read More About Georgia Business Naming Rules</a>`,
     },
     {
-      type: `heading`,
+      type: `p-to-heading`,
       size: 4,
+      template: 3,
       content: `Coming up with a Great Business Name`,
     },
     {
@@ -156,7 +160,9 @@ export const businessNamesContent = {
     // Business name search
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Georgia Business Entity Searches`,
     },
     {
@@ -184,7 +190,9 @@ export const businessNamesContent = {
     // Assumed Name
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `DBA/Assumed Names for Georgia LLCs`,
     },
     {
@@ -211,7 +219,9 @@ export const businessNamesContent = {
     // Register Your Business Name With the Georgia Secretary of State
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Registering Your Business Name`,
     },
     {
@@ -238,7 +248,34 @@ export const businessNamesContent = {
         subtitle: `Incorporate in Georgia for $0 + State Fee ($100)`,
         button: {
           text: `Start Your LLC Now`,
-          url: `/`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=GA`,
+        },
+      },
+    },
+
+    // Trademark section
+    {
+      type: `heading`,
+      size: 3,
+      template: 3,
+      left: true,
+      content: `Trademarks and Service Marks`,
+    },
+    {
+      type: `paragraph`,
+      content: `You must be careful that your Georgia LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
+    },
+    {
+      type: `box-cta`,
+      color: color.blue3,
+      styles: { fontSize: `clamp(1rem, 5vw, 1.5rem)` },
+      bgImage: [BgBoxTrademark],
+      content: {
+        title: `Make sure your business is starting off on the right foot when it comes to intellectual property.`,
+        subtitle: `Have Incfile run a trademark search for you.`,
+        button: {
+          text: `Incfile’s Trademark & Registration Service`,
+          url: `/trademark-name-search/`,
         },
       },
     },
@@ -273,30 +310,6 @@ export const businessNamesContent = {
             answer: `Yes. The Georgia Secretary of State allows you to reserve a name if you don’t want to start your business immediately. Details are above. If you are ready to start your business now, you do not need to reserve a name.`,
           },
         ],
-      },
-    },
-    // Trademark section
-    {
-      type: `heading`,
-      size: 3,
-      content: `Trademarks and Service Marks`,
-    },
-    {
-      type: `paragraph`,
-      content: `You must be careful that your Georgia LLC name does not infringe on the trademark or service mark of another business. The easiest way to make sure your proposed business name does not infringe is to carry out a trademark search through Incfile. If it doesn’t infringe, you can even register it as a trademark yourself.`,
-    },
-    {
-      type: `box-cta`,
-      color: color.blue3,
-      styles: { fontSize: `clamp(1rem, 5vw, 1.5rem)` },
-      bgImage: [BgBoxTrademark],
-      content: {
-        title: `Make sure your business is starting off on the right foot when it comes to intellectual property.`,
-        subtitle: `Have Incfile run a trademark search for you.`,
-        button: {
-          text: `Incfile’s Trademark & Registration Service`,
-          url: `/trademark-name-search/`,
-        },
       },
     },
   ],
