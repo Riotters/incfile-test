@@ -28,7 +28,7 @@ export const related = {
     },
     {
       header: `Learn How To Save Money With Incfile`,
-      url: `/research-topics/business-taxes/tax-advantages`,
+      url: `/research-topics/business-taxes/which-entity-offers-the-best-tax-advantages/`,
     },
   ],
 };

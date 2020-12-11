@@ -164,7 +164,7 @@ export const howToGuide = [
 	{
 		type: `text`,
 		content: `In Tennessee, you also have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master, umbrella LLC. These can be very useful if you don’t want to set up a separate Tennessee LLC for every individual business you run.  
-    <a href="post/series-llc-why-need-one/">Decide if a Tennessee Series LLC is right for your new business.</a>`,
+    <a href="https://www.incfile.com/blog/post/series-llc-why-need-one/">Decide if a Tennessee Series LLC is right for your new business.</a>`,
 		marginBottom: 32,
 	},
 	{

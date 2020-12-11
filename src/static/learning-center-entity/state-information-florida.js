@@ -811,7 +811,7 @@ export const startCaCorp = [
 						"File IRS Small Business Tax Election Form 2553 if you want your FL business to be treated as an S Corporation.",
 						"​Any Florida S Corporations formed through Incfile will also include a prepared Form 2553 that will be delivered with the state formation documents.",
 						"Create and issue stock certificates to your shareholders.",
-						`Apply for <a href="business-license-research-package/">business licenses and permits</a>. You may require licenses from the state of Florida, your county, township and various industry or federal bodies.`,
+						`Apply for <a href="/business-license-research-package/">business licenses and permits</a>. You may require licenses from the state of Florida, your county, township and various industry or federal bodies.`,
 						`Get an <a href="/manage-your-company/tax-id-ein/">Employer Identification Number (EIN).</a>`,
 						"File for taxes with Florida Department of Revenue.",
 						"Get all formalities in place for employees, including unemployment, disability, payroll, insurance and taxes.",
