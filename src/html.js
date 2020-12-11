@@ -145,6 +145,32 @@ export default function HTML(props) {
                         }}
                     />
                 )}
+
+                <script
+                    key="gtm_track_clicking_partner_links"
+                    defer
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            const linkPartners = document.querySelectorAll('a.partner_link');
+
+                            linkPartners.forEach((link) => {
+                                link.addEventListener('click', (e) => {
+                                    e.preventDefault();
+                                    let partnerName = link.getAttribute('data-name');
+                                    let url = link.getAttribute('href');
+                            
+                                    dataLayer.push({
+                                        partnerName: partnerName,
+                                        event: 'partnerLinkClick'
+                                    });
+                                    window.open(url, '_blank');
+                                })
+                            });
+
+                            console.log('Track lib was loaded');
+                        `
+                    }}
+                />
             </body>
         </html>
     );

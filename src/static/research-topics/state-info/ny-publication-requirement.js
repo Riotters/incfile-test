@@ -14,7 +14,7 @@ export const about = {
   header2: `Here’s how to get a certificate of publication in NY:`,
   list: [
     `Start an LLC in the state of New York
-          <a href="${process.env.ORDER_URL}?entityType=LLC&entityState=NY" target="_blank">(we can help with that).</a>`,
+          <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NY" target="_blank">(we can help with that).</a>`,
     `The
           <a href="https://www.dos.ny.gov/index.html" rel="noopener noreferrer nofollow" target="_blank">New York Department of State</a>
           will provide you with a filing receipt.`,

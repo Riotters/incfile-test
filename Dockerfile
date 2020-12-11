@@ -1,3 +1,5 @@
+ARG GATSBY_ACTIVE_ENV
+
 FROM node
 
 RUN yarn global add gatsby-cli
