@@ -80,7 +80,7 @@ const BusinessNames = ({ content }) => {
       {content.map((item, i) => (
         <div>
           {item.type === "heading" && (
-            <Heading size={item.size} style={{ marginTop: `42px` }}>
+            <Heading size={item.size} style={{ marginTop: `42px` }} template={item.template} center={item.center} left={item.left}>
               {item.content}
             </Heading>
           )}
@@ -102,7 +102,7 @@ const BusinessNames = ({ content }) => {
 
           {item.type === "button" && <Button content={item.content} theme={item.theme} arrow width={item.width ?? `350px`} margin="16px 0 0 0" marginMD="42px 0 42px 0" />}
 
-          {item.type === "accordingTabWithCountingLeft" && <AcccordionCounting content={item.content} tab />}
+          {item.type === "accordingTabWithCountingLeft" && <AcccordionCounting content={item.content} tab header={item.header} />}
 
           {item.type === "numberBoxList" && <NumericBoxedList content={item.content} style={item.styles} />}
 

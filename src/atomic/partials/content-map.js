@@ -49,7 +49,7 @@ const Content = ({ content, data }) => {
               left={item.left}
               style={item.style}
             >
-              {(item?.content && item?.content.length > 0) ? parse(item.content) : ''}
+              {item._no_parse ? item.content : parse(item.content)}
             </Heading>
           )}
 

@@ -27,7 +27,9 @@ export const businessNamesContent = {
 		},
 		{
 			type: `heading`,
-			size: 3,
+			size: 2,
+			template: 3,
+			left: true,
 			content: `Florida Department of State (DOS) Rules for Naming LLCs`,
 		},
 		{
@@ -92,6 +94,7 @@ export const businessNamesContent = {
 					],
 				},
 			],
+			header: 3,
 		},
 		{
 			type: `heading`,
@@ -136,7 +139,9 @@ export const businessNamesContent = {
 		// Business name search
 		{
 			type: `heading`,
-			size: 3,
+			size: 2,
+			template: 3,
+			left: true,
 			content: `Florida Business Entity Searches`,
 		},
 		{
@@ -200,7 +205,9 @@ export const businessNamesContent = {
 		// Assumed Name
 		{
 			type: `heading`,
-			size: 3,
+			size: 2,
+			template: 3,
+			left: true,
 			content: `Fictitious Names or DBAs in Florida`,
 		},
 		{
@@ -231,7 +238,9 @@ export const businessNamesContent = {
 		// Register Your Business Name With the Florida Secretary of State
 		{
 			type: `heading`,
-			size: 3,
+			size: 2,
+			template: 3,
+			left: true,
 			content: `Ready to Register Your Business Name?`,
 		},
 		{

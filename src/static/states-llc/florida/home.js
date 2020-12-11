@@ -163,12 +163,15 @@ export const HomePageContent = {
     otherInfo: [
       {
         type: `heading`,
-        size: 3,
+        size: 2,
+        template: 3,
+        left: true,
         content: `Other Important Florida LLC Info`,
       },
       {
         type: `heading`,
-        size: 4,
+        size: 3,
+        template: 4,
         content: `Special Types of LLCs in Florida`,
       },
       {
@@ -226,7 +229,8 @@ export const HomePageContent = {
       // Helpful resource
       {
         type: `heading`,
-        size: 4,
+        size: 3,
+        template: 4,
         content: `Read More Information from the Florida Department of State`,
       },
       {

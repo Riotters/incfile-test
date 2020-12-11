@@ -99,7 +99,7 @@ const HowToGuide = ({ content, data }) => {
   return (
     <Wrapper>
       {/* Why choose section */}
-      <Heading size={3}>{parse(content.whyChoose.heading)}</Heading>
+      <Heading size={2} template={3} left>{parse(content.whyChoose.heading)}</Heading>
       <Paragraph big mixed>
         {parse(content.whyChoose.text1)}
       </Paragraph>
@@ -122,7 +122,7 @@ const HowToGuide = ({ content, data }) => {
       <Paragraph big>{content.whyChoose.text4}</Paragraph>
 
       {/* Main Steps */}
-      <Heading size={3} bottomMargin="40" style={{ marginTop: `48px` }}>
+      <Heading size={2} template={3} left bottomMargin="40" style={{ marginTop: `48px` }}>
         {content.mainSteps.heading3}
       </Heading>
 
@@ -307,7 +307,7 @@ const HowToGuide = ({ content, data }) => {
           content={content.mainSteps.step4.cta}
         />
 
-        <Heading size={3}>{content.mainSteps.step4.heading2}</Heading>
+        <Heading size={4} template={3}>{content.mainSteps.step4.heading2}</Heading>
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step4.text4)}
         </Paragraph>
@@ -380,7 +380,7 @@ const HowToGuide = ({ content, data }) => {
       {content.otherInfo.map((item, i) => (
         <div>
           {item.type === "heading" && (
-            <Heading size={item.size} style={{ marginTop: `42px` }}>
+            <Heading size={item.size} style={{ marginTop: `42px` }} template={item.template} center={item.center} left={item.left}>
               {item.content}
             </Heading>
           )}
