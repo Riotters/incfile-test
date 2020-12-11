@@ -29,13 +29,13 @@ const WithNoMoneyBusiness = () => (
 	<Layout>
 		<SEO
 			title="Low Cost Startups | Business Ideas with Low Investment"
-			description="There’s something very powerful about the idea of starting a business, but what can you do if money is a major obstacle? Many businesses require significant capital expenditure, and if you don’t have the funds to begin your venture, that will be an issue. All is not lost though - with some creative thinking and a slightly different approach, you can “bootstrap” your business with very little cash."
+			description="Want to start a business but don't have a lot of capital? Learn how to bootstrap your business and read about low cost startup business ideas."
 		/>
 
 		<Top
 			ovalColor="babyblue"
 			imageName="with-no-money-business-main"
-			imageAlt="Mr Bulb with seedling"
+			imageAlt="set up a no money business"
 			headlineWidth={700}
 		>
 			<h1>How to Start a Business with Little or No Money</h1>
@@ -48,7 +48,8 @@ const WithNoMoneyBusiness = () => (
 				“bootstrap” your business with very little cash.
 			</p>
 			<ButtonsBox>
-				<Button
+                <Button
+                    externalLink
 					theme="primary56"
 					marginMD="0 24px 0 0"
 					arrow

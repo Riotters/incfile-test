@@ -14,7 +14,7 @@ const VirtualMailBoxes = () => (
 	<Layout>
 		<SEO
 			title="IncFile Affiliate Program"
-			description="Sign up form for the Incfile.com affiliate program"
+			description="Sign up form for the IncFile.com affiliate program"
 		/>
 		<Top
 			imageName="affilitates-top-8164"

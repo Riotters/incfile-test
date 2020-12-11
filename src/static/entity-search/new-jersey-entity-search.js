@@ -10,8 +10,7 @@ export const top = {
 };
 
 export const about = {
-	header: `New Jersey is the most densely populated state in the U.S., with major cities of its own plus easy access to New York to the north and Philadelphia to the south.`,
-	text: `New Jersey is a wealthy state and a leader across several industries including telecommunications, investment, finance, pharmaceuticals, manufacturing, chemical production and food processing.`,
+	text: `<span>New Jersey is the most densely populated state in the U.S., with major cities of its own plus easy access to New York to the north and Philadelphia to the south.</span> New Jersey is a wealthy state and a leader across several industries including telecommunications, investment, finance, pharmaceuticals, manufacturing, chemical production and food processing.`,
 	box: {
 		header: `If you're thinking of forming a new New Jersey corporation or LLC, you can start by finding the perfect name.`,
 		text: `Look up your proposed business name in New Jersey and see if it's available for you form a corporation or LLC. We'll check your proposed business name against the registry of businesses held by the New Jersey Division of Revenue and Enterprise Services.`,

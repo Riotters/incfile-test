@@ -40,7 +40,7 @@ const BedAndBreakfast = () => (
 	<Layout>
 		<SEO
 			title="How to Start a Bed & Breakfast or Open a Boutique Hotel"
-			description="A bookstore is one of the most enduring and traditional types of business you could open. Despite this, there have been plenty of challenges to the bookstore model over the last few years, with the increase in ecommerce, the rise of Amazon and the move toward ebooks."
+			description="We want to help you get your hotel or B&B off the ground. Read our guide for ideas, tips, and important things to know before you get started."
 		/>
 
 		<Top

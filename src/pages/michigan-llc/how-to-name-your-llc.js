@@ -25,7 +25,7 @@ const BusinessNamesPage = () => {
 		<Layout>
 			<SEO
 				title="MI Entity State Search | Register a Business Name in MI"
-				description="Learn what you need to know about naming an LLC in Michigan with Incfile's helpful resources. Pick your perfect business name today!"
+				description="earn what you need to know about naming an LLC in Michigan with Incfile’s helpful resources. Pick your perfect business name today!"
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} />

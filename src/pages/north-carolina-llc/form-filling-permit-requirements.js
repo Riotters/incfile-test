@@ -28,7 +28,7 @@ const FillingRequirementsPage = () => {
 		<Layout>
 			<SEO
 				title="North Carolina LLC Forms, Costs, & Filing Requirements"
-				description="Learn what you need to know about naming an LLC in North Carolina with Incfile's helpful resources. Pick your perfect business name today!"
+				description="Make sense of the required forms, fees, and filing procedures for your NC LLC with Incfile’s easy-to-use guide. Read more."
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} />

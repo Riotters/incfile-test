@@ -28,44 +28,43 @@ import FilingRequirementBox from "../states-llc/filing-requirement-box";
 import LightBoxVideo from "../../components/LightBox";
 
 const Wrapper = styled.div`
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	h2 {
-		text-align: left;
-	}
+  h2 {
+    text-align: left;
+  }
 `;
 
 const Content = ({ content, data }) => {
-	return (
-		<Wrapper>
-			{content.map((item, i) => (
-				<>
-					{item.type === "header" && (
-						<Heading
-							size={item.size}
-							bottomMargin={item.marginBottom}
-							template={item.template}
-							left={item.left}
-							style={item.style}
-						>
-							{item.content}
-						</Heading>
-					)}
+  return (
+    <Wrapper>
+      {content.map((item, i) => (
+        <>
+          {item.type === "header" && (
+            <Heading
+              size={item.size}
+              bottomMargin={item.marginBottom}
+              template={item.template}
+              left={item.left}
+              style={item.style}
+            >
+              {parse(item.content)}
+            </Heading>
+          )}
 
-					{item.type === "text" && (
-						<Paragraph big mixed bottomMargin={item.marginBottom}>
-							{parse(item.content)}
-						</Paragraph>
-					)}
+          {item.type === "text" && (
+            <Paragraph big mixed bottomMargin={item.marginBottom}>
+              {parse(item.content)}
+            </Paragraph>
+          )}
 
-					{item.type === "arrow-link" && (
-						<ArrowLink
-							content={item.content}
-							bottomMargin={item.marginBottom}
-						/>
-					)}
-
+          {item.type === "arrow-link" && (
+            <ArrowLink
+              content={item.content}
+              bottomMargin={item.marginBottom}
+            />
+          )}
 					{item.type === "list-dot" && (
 						<IconListColorBox
 							color={item.color}
@@ -262,33 +261,33 @@ const Content = ({ content, data }) => {
 						</Grid>
 					)}
 
-					{item.type === "dynamic_ar_box" && (
-						<AnnualReportBoxOnly data={data} />
-					)}
+          {item.type === "dynamic_ar_box" && (
+            <AnnualReportBoxOnly data={data} />
+          )}
 
-					{item.type === "dynamic_filing_requirement" && (
-						<FilingRequirementBox data={data} margin="0 0 42px 0" />
-					)}
+          {item.type === "dynamic_filing_requirement" && (
+            <FilingRequirementBox data={data} margin="0 0 42px 0" />
+          )}
 
-					{item.type === "video" && (
-						<LightBoxVideo
-							thumbnailVideo={item.image}
-							videoID={item.id}
-							bottomMargin={item.marginBottom}
-						/>
-					)}
-				</>
-			))}
-		</Wrapper>
-	);
+          {item.type === "video" && (
+            <LightBoxVideo
+              thumbnailVideo={item.image}
+              videoID={item.id}
+              bottomMargin={item.marginBottom}
+            />
+          )}
+        </>
+      ))}
+    </Wrapper>
+  );
 };
 
 const Grid = styled.div`
-	display: grid;
-	grid-template-columns: auto auto;
-	margin-bottom: ${(props) => props.marginBottom}px;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: ${(props) => props.marginBottom}px;
 
-	grid-gap: 30px;
+  grid-gap: 30px;
 `;
 
 export default Content;

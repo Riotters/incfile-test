@@ -25,7 +25,7 @@ function ArkansasIndexPage() {
 		<Layout>
 			<SEO
 				title="Arkansas LLCs | How to Get an LLC in Arkansas"
-				description="Ready to form your Arkansas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+				description="Ready to register your AR LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} nonDIY />

@@ -25,7 +25,7 @@ const BusinessNamesPage = () => {
 		<Layout>
 			<SEO
 				title="Missouri Business Searches | Register an LLC Name in MO"
-				description="Learn what you need to know about naming an LLC in Missouri with Incfile's helpful resources. Pick your perfect business name today!"
+				description="Learn what you need to know about naming an LLC in Missouri with Incfile’s helpful resources. Pick your perfect business name today!"
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} />

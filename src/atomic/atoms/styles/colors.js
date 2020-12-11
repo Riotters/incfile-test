@@ -35,6 +35,8 @@ export const gradient = {
 	blue2: "linear-gradient(0deg, rgba(255,255,255,0.00) 4%, #D2E0FE 99%)",
 	green2: "linear-gradient(0deg, rgba(255,255,255,0.00) 4%, #D5F3E8 99%)",
 	orange2: "linear-gradient(0deg, rgba(255,255,255,0.00) 4%, #FCE7D0 99%)",
+	orange2reverse:
+		"linear-gradient(0deg, #FCE7D0 4%, rgba(255,255,255,0.00) 99%)",
 	purple2: "linear-gradient(0deg, rgba(255,255,255,0.00) 4%, #EDE0FA 99%)",
 	red2: "linear-gradient(0deg, rgba(255,255,255,0.00) 4%, #F5CDCD 99%)",
 	yellow2: "linear-gradient(0deg, rgba(255,255,255,0.00) 4%, #FAEFC8 99%)",
@@ -43,6 +45,8 @@ export const gradient = {
 	blue3reverse: "linear-gradient(0deg, #F2F6FF 4%, rgba(255,255,255,0) 99%)",
 	green3: "linear-gradient(0deg, rgba(255,255,255,0.00) 4%, #F2F8F3 99%)",
 	orange3: "linear-gradient(0deg, rgba(255,255,255,0.00) 4%, #FEF6ED 99%)",
+	orange3reverse:
+		"linear-gradient(0deg, #FEF6ED 4%, rgba(255,255,255,0.00) 99%)",
 	purple3: "linear-gradient(0deg, rgba(255,255,255,0.00) 4%, #FAF2F8 99%)",
 	red3: "linear-gradient(0deg, rgba(255,255,255,0.00) 4%, #FCEFEF 99%)",
 	yellow3: "linear-gradient(0deg, rgba(255,255,255,0.00) 4%, #FEF7E0 99%)",

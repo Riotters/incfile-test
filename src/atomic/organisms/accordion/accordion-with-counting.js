@@ -10,6 +10,7 @@ import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../../images/orange-curve.inline.svg";
 import VisibilitySensor from "../../../components/VisibilitySensor";
 import {HeadingP} from "../../atoms/typography/heading-to-p";
+import { Heading } from "../../atoms/typography/heading";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -275,6 +276,7 @@ const AccordionWithCounting = ({
 	tab,
 	listColor,
 	bottomMargin,
+	header,
 }) => {
 	return (
 		// <VisibilitySensor partialVisibility once>
@@ -296,7 +298,27 @@ const AccordionWithCounting = ({
 							<Tab>
 								<Content>
 									<Counting>{item.count}</Counting>
-									{paragraphHeaders ? <span>{item.question}</span> : <HeadingP size={3} bottomMargin={0}>{item.question}</HeadingP>}
+									{!header && !paragraphHeaders && <span>{item.question}</span>}
+									{header === 2 && (
+										<Heading size={2} template={3} left>
+											{item.question}
+										</Heading>
+									)}
+									{(header === 3 || paragraphHeaders) && (
+										<Heading size={3} left bottomMargin={0}>
+											{item.question}
+										</Heading>
+									)}
+									{header === 4 && (
+										<Heading size={4} template={3} left>
+											{item.question}
+										</Heading>
+									)}
+									{header === 5 && (
+										<Heading size={5} template={3} left>
+											{item.question}
+										</Heading>
+									)}
 									<Icon>
 										<ArrowSVG />
 									</Icon>

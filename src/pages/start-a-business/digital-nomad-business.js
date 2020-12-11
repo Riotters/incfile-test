@@ -31,7 +31,7 @@ const DigitalNomadBusiness = () => (
 	<Layout>
 		<SEO
 			title="Become a Digital Nomad | How to Work from Anywhere"
-			description="There's a great appeal to being able to work from anywhere in the world, and those who take advantage of this remote-working lifestyle are called digital nomads."
+			description="Work remotely, be your own boss, and travel the world while doing it. Learn how to start your own digital nomad business today."
 		/>
 
 		<Top

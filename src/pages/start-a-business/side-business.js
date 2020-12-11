@@ -46,7 +46,7 @@ const SideBusiness = () => (
 	<Layout>
 		<SEO
 			title="Side Business Ideas | How to Start a Side Business"
-			description="Starting a side business is a great way to dip your toe into the waters of entrepreneurship. You can create and manage a side business alongside your normal job, so you’re reducing your risk and have a fallback position if the side business doesn’t work out."
+			description="Looking to start a side business while working your normal job? Our guide has ideas, tips, and important questions to ask before you get started."
 		/>
 
 		<Top

@@ -36,7 +36,7 @@ const WomenBusiness = () => (
 	<Layout>
 		<SEO
 			title="Business Ideas for Women & Moms | Starting a Woman-Owned Business"
-			description="There are constant demands on your time as a woman - whether you have kids or not, the mix of a job, household chores and all the other responsibilities that creep into your day could lead you to think you don’t have time to run a business."
+			description="We want to help you get your business off the ground. Read our guide for ideas, tips, and important things to know before you get started."
 		/>
 
 		<Top

@@ -8,6 +8,7 @@ import Oval2SVG from "../../images/icons/oval-blue-small.inline.svg";
 import Oval3SVG from "../../images/icons/oval-blue-medium.inline.svg";
 import VisibilitySensor from "../../components/VisibilitySensor";
 import { Heading } from "../atoms/typography/heading";
+import { HeadingP } from "../atoms/typography/heading-to-p";
 
 const switch1 = (bgColor) => {
 	{
@@ -207,7 +208,9 @@ const Top = ({ headline, text, imageName, imageAlt, bgColor }) => (
 					<Heading size={2} left maxWidth="520" bottomMargin={20}>
 						{headline}
 					</Heading>
-					<p>{text}</p>
+					<HeadingP size={3} big>
+						{text}
+					</HeadingP>
 				</TextContainer>
 				{/* )}
 				</VisibilitySensor> */}

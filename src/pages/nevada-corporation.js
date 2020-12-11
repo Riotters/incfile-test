@@ -61,7 +61,7 @@ const NevadaCorporation = () => {
 		<Layout>
 			<SEO
 				title="Form a Corporation or LLC in Nevada Today | Incfile"
-				description="Incorporating in Nevada? Get your business off the ground by learning how to choose a name, structure management, submit required documents  and more."
+				description="Incorporating in Nevada? Get your business off the ground by learning how to choose a name, structure management, submit required documents and more."
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"

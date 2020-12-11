@@ -58,7 +58,7 @@ const BeautySalon = () => (
 	<Layout>
 		<SEO
 			title="How to Start a Beauty Salon Business | Starting Salon and Spa Business"
-			description="Personal care and pampering is something we all need. If you’re an entrepreneur, the world of the beauty salon has some surprising advantages. "
+			description="A beauty salon and spa business is a great way to help clients look and feel beautiful. If you're looking for a rewarding business making beautiful people is it."
 		/>
 
 		<Top

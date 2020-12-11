@@ -140,8 +140,8 @@ const Adventages = ({
 	urlText,
 	style,
 	width,
-    imageName,
-    imageAlt,
+	imageName,
+	imageAlt,
 	disadventage,
 }) => {
 	return (

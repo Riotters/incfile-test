@@ -63,7 +63,7 @@ const ArizonaCorporation = () => {
 		<Layout>
 			<SEO
 				title="Form a Corporation or LLC in Arizona Today | Incfile"
-				description="Thinking of starting an S Corp, C Corp, or LLC in California? Learn about corporations in Arizona and decide which business type is right for you."
+				description="There's more to incorporating in Arizona than choosing a name. Read requirements for articles of incorporation, registrating an agent, and much more."
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"

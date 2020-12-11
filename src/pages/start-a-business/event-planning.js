@@ -37,7 +37,7 @@ const EventPlanning = () => (
 	<Layout>
 		<SEO
 			title="Starting an Event or Party Planning Business"
-			description="We’re social creatures - and whether we’re getting together to celebrate an occasion, accomplish a shared goal or indulge our interests, there’s a strong need for gathering with like-minded people. If you’re a great organizer, administrator and project manager, you can turn this desire into a party or event planning business."
+			description="We want to help you get your event planning business off the ground. Read our guide for ideas, tips, and important things to know before you get started."
 		/>
 
 		<Top

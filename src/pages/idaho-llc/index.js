@@ -25,7 +25,7 @@ function IdahoIndexPage() {
 		<Layout>
 			<SEO
 				title="Idaho LLCs | Forming an LLC in Idaho"
-				description="Ready to form your Idaho LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+				description="Ready to register your ID LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
 			/>
 			<LLCLayout data={dataApi} top={top}>
 				<LeftTabPages content={tabPages} nonDIY />

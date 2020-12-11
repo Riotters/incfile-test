@@ -12,6 +12,7 @@ import { Paragraph } from "../atoms/typography/paragraph";
 import ArrowSVG from "../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../images/orange-curve.inline.svg";
 import VisibilitySensor from "../../components/VisibilitySensor";
+import { Heading } from "../atoms/typography/heading";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -289,6 +290,7 @@ const AccordionWithCounting = ({
 	curveRightBottom,
 	tab,
 	listColor,
+	header,
 }) => {
 	return (
 		// <VisibilitySensor partialVisibility once>
@@ -311,7 +313,27 @@ const AccordionWithCounting = ({
 								<CountingWrapper>
 									<Counting>{item.count}</Counting>
 								</CountingWrapper>
-								<Text>{item.question}</Text>
+								{!header && <Text>{item.question}</Text>}
+								{header === 2 && (
+									<Heading size={2} template={3} left>
+										{item.question}
+									</Heading>
+								)}
+								{header === 3 && (
+									<Heading size={3} left>
+										{item.question}
+									</Heading>
+								)}
+								{header === 4 && (
+									<Heading size={4} template={3} left>
+										{item.question}
+									</Heading>
+								)}
+								{header === 5 && (
+									<Heading size={5} template={3} left>
+										{item.question}
+									</Heading>
+								)}
 								{/* </Content> */}
 								<Icon>
 									<ArrowSVG />
