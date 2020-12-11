@@ -22,6 +22,7 @@ const templateStyle = (template) => {
                 font-family: MarkPro;
                 font-size: 32px;
                 line-height: 40px;
+                font-weight: 700;
 
                 @media (min-width: 769px) {
                     font-size: 40px;
@@ -34,6 +35,7 @@ const templateStyle = (template) => {
                 font-family: MarkPro;
                 font-size: 24px;
                 line-height: 32px;
+                font-weight: 700;
             `;
 		}
 		case 4: {
