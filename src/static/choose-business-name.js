@@ -272,6 +272,7 @@ export const nameAvailability = [
 	},
 	{
 		type: "header",
+		_no_parse: true,
 		content: (
 			<span>
 				<span>We’ve made this process as simple as possible with the </span>
