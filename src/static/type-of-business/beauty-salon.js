@@ -118,7 +118,7 @@ export const FinancesAccordionContent = {
         },
         {
           text: `setting up a business account`,
-          url: `research-topics/general-research/required-business-account-paperwork/`,
+          url: `/research-topics/general-research-topics/what-paperwork-is-required-in-order-to-open-a-business-checking-account/`,
         },
         {
           text: `for your beauty salon company.`,

@@ -35,7 +35,7 @@ const WithNoMoneyBusiness = () => (
 		<Top
 			ovalColor="babyblue"
 			imageName="with-no-money-business-main"
-			imageAlt="Mr Bulb with seedling"
+			imageAlt="set up a no money business"
 			headlineWidth={700}
 		>
 			<h1>How to Start a Business with Little or No Money</h1>
@@ -48,7 +48,8 @@ const WithNoMoneyBusiness = () => (
 				“bootstrap” your business with very little cash.
 			</p>
 			<ButtonsBox>
-				<Button
+                <Button
+                    externalLink
 					theme="primary56"
 					marginMD="0 24px 0 0"
 					arrow

@@ -5,8 +5,9 @@ import InfoCardWithImage from "../organisms/cards/info-card-with-image";
 
 const InfoCardsSection = ({cards}) => (
     <SectionWrapper>
-        {cards.map(item => (
+        {cards.map((item, i) => (
             <InfoCardWithImage
+                key={i}
                 roundTopLeft={item.roundTopLeft}
                 roundBottomLeft={item.roundBottomLeft}
                 roundBottomRight={item.roundBottomRight}

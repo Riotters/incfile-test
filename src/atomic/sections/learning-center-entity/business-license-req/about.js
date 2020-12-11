@@ -17,7 +17,7 @@ const About = styled.section`
 
 const AboutSection = ({ className, content }) => (
 	<About className={className}>
-		<ImageContent image="business-license-requirements-about" imageWidth="350">
+		<ImageContent image="business-license-requirements-about" alt="business license" imageWidth="350">
 			<Heading size={2} template={3} left bottomMargin="48">
 				{content.header}
 			</Heading>

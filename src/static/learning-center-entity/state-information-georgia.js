@@ -1994,7 +1994,7 @@ export const taxes = [
 				{
 					question: "1. Fees for forming a corporation in Georgia",
 					answer:
-						"Learn about <a href='h/state-filing-fees/'>standard filing costs here</a> for GA corporations.",
+						"Learn about <a href='/state-filing-fees/'>standard filing costs here</a> for GA corporations.",
 				},
 				{
 					question: "2. Georgia State Annual Report Fee",
@@ -2295,7 +2295,7 @@ export const afterFormation = [
 	{
 		type: "text",
 		content:
-			"Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a> and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/ manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
+			"Each state requires different forms such as your business <a href='/manage-your-company/annual-report/'>annual reports</a> and state franchise tax reports to be filed at different times. It’s important to understand when each form needs to be filed and when you need to refile the form. Complying with the <a href='/compliance-filing-requirement/'>form filing requirements</a> keeps your business in <a href='/manage-your-company/certificate-of-good-standing/'>good standing</a> with the state. Failure to file these reports can lead to the company being revoked or administrative <a href='/manage-your-company/dissolution/'>business dissolution</a>. Incfile includes lifetime company alerts with courtesy email reminders to inform clients of an upcoming filing requirement with all of our state filing packages.",
 		marginBottom: 48,
 	},
 	{

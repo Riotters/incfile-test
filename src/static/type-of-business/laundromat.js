@@ -253,7 +253,7 @@ export const AccordionCounting = {
                 },
                 {
                     text: `guide to getting your EIN.`,
-                    url: `/manange-your-company/tax-id-ein/`
+                    url: `/manage-your-company/tax-id-ein/`
                 }
             ]
         },
@@ -291,7 +291,7 @@ export const BusinessInsuranceAccordionContent = {
             answer: [
                 {
                     text: `Workers’ compensation insurance`,
-                    url: `/`
+                    url: `https://www.incfile.com/blog/post/forming-an-llc-with-employees-means-purchasing-workers-compensation/`
                 },
                 {
                     text: `provides coverage for job-related illnesses, disabilities or injuries that affect employees. Regulations for this insurance vary from state to state. It typically covers areas like medical costs, loss of earnings, compensation and retraining.`
@@ -393,7 +393,7 @@ export const FinancesAccordionContent = {
                 },
                 {
                     text: `setting up a business account`,
-                    url: `/`
+                    url: `/research-topics/general-research-topics/what-paperwork-is-required-in-order-to-open-a-business-checking-account/`
                 },
                 {
                     text: `for your T-shirt company.`
@@ -416,7 +416,7 @@ export const FinancesAccordionContent = {
                 },
                 {
                     text: `Small Business Administration also lists financing`,
-                    url: `/`
+                    url: `https://www.sba.gov/node/13710`
                 },
                 {
                     text: `you may be eligible for.`
@@ -435,7 +435,7 @@ export const FinancesAccordionContent = {
                 },
                 {
                     text: `Learn more today.`,
-                    url: `/`
+                    url: `https://www.capitalone.com/small-business/credit-cards/spark-cash/?external_id=INCFILE1&utm_medium=lp&utm_campaign=capitalone&utm_source=incfile&utm_content=vertical`
                 }
             ]
         },

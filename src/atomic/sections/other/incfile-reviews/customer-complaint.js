@@ -82,7 +82,7 @@ const CustomerComplaint = ({ content }) => (
 				</AbsoluteShapCure>
 
 				<MrsStar>
-					<Image filename="mrs-stars-01" alt="" />
+					<Image filename="mrs-stars-01" alt="incfile customer complaints" />
 				</MrsStar>
 
 				<Heading size={2}>
@@ -126,7 +126,8 @@ const CustomerComplaint = ({ content }) => (
 								content={{
 									header: item.title,
 									text: item.desc,
-									link: { url: item.link, text: `Learn more` },
+                                    link: { url: item.link, text: `Learn more` },
+                                    imgAlt: item?.imgAlt ?? ''
 								}}
 								color={item.color}
 								image={item.image}
@@ -141,7 +142,8 @@ const CustomerComplaint = ({ content }) => (
 									content={{
 										header: item.title,
 										text: item.desc,
-										link: { url: item.link, text: `Learn more` },
+                                        link: { url: item.link, text: `Learn more` },
+                                        imgAlt: item?.imgAlt ?? ''
 									}}
 									color={item.color}
 									image={item.image}

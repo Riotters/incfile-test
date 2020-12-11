@@ -234,7 +234,7 @@ export const howToGuide = [
 		type: `arrow-link`,
 		content: {
 			text: `Fees and Requirements for Kansas LLCs`,
-			url: `/Kansas-llc/form-filling-permit-requirements/`,
+			url: `/kansas-llc/form-filling-permit-requirements/`,
 		},
 		marginBottom: 16,
 	},
@@ -247,7 +247,7 @@ export const howToGuide = [
 		type: `arrow-link`,
 		content: {
 			text: `Federal, State, Sales and Other Taxes for Your Kansas LLC`,
-			url: `/Kansas-llc/business-taxes/`,
+			url: `/kansas-llc/business-taxes/`,
 		},
 		marginBottom: 16,
 	},

@@ -45,7 +45,7 @@ const CaliforniaCorporation = () => {
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt="corporation information in California"
 				ovalColor="purple-2"
 				textWidth="530"
 			>

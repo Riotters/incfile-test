@@ -6,7 +6,7 @@ export const about = {
     },
     {
       text: `Individual State Information`,
-      url: `/research-topics/state-info`,
+      url: `/research-topics/individual-state-info/`,
     },
   ],
   header: `How to Meet New York LLC Publication Requirements`,

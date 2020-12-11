@@ -10,7 +10,6 @@ import Top from "../atomic/partials/top";
 import About from "../atomic/sections/learning-center-entity/business-resources/about";
 import Resources from "../atomic/sections/learning-center-entity/business-resources/resources";
 import FurtherResources from "../atomic/sections/learning-center-entity/business-resources/further-resources";
-import Articles from "../components/partials/sections/articles";
 import { ThankYouContent } from "../components/hubspot/thank-you-modal";
 import HSFormModal from "../components/hubspot/standard-post-form-modal";
 

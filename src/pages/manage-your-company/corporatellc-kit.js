@@ -23,17 +23,25 @@ const CorporateLlcKit = () => (
             productPrice={servicePrice.kit}
             productDescription="Your official state documents will be delivered in a high quality and professional kit with your company name stamped along the spine of the book."
         />
-        <Top imageName="mrs-bulb-llc-corporate-kit" imageAlt="Mr. Bulb getting LLC or corporate kit" ovalColor="blue">
+        <Top imageName="mrs-bulb-llc-corporate-kit" imageAlt="LLC or corporate kit" ovalColor="blue">
             <h1>{top.header}</h1>
             <p>{top.text}</p>
             <Buttonsbox>
-                <Button content={top.button[0]} theme="primary56" arrow />
+                <Button externalLink content={top.button[0]} theme="primary56" arrow />
             </Buttonsbox>
         </Top>
         <Unboxnig content={unboxing} />
         <GetFormationKit content={getFormationKit} />
-        <Cta />
-        {/* <Articles /> */}
+        <Cta
+            cta={{
+                header: `Get Your Business Formation Kit`,
+                text: ``,
+                button: {
+                    text: `Order Now`,
+                    url: `${process.env.ORDER_URL}/kit-info.php`
+                }
+            }}
+        />
     </Layout>
 );
 

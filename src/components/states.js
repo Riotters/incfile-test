@@ -107,7 +107,7 @@ export const states = {
 		{
 			name: "Massachusett",
 			url: "https://www.mass.gov/topics/business-licenses-permits",
-			corporation: "/massachusett-corporation/",
+			corporation: "/massachusetts-corporation/",
 		},
 		{
 			name: "Michigan",

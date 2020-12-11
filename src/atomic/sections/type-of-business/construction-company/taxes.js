@@ -7,7 +7,7 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import OvalSvgBottom from "../../../../images/ovals/top-right-transparent-yellow.inline.svg";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
-import {adventages2} from "../../../../static/type-of-business/daycare-business";
+import {adventages2} from "../../../../static/type-of-business/construction-company";
 
 const Taxes = () => (
     <Wrapper>

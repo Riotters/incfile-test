@@ -72,7 +72,7 @@ const TypeBusiness = () => (
                                 <li style={{paddingBottom: "15px"}}>Starting an independent ecommerce store</li>
 
                                 <li style={{paddingBottom: "15px"}}>Selling through third-party marketplaces like
-                                    Amazon &lt;link to Amazon page&gt; and eBay
+                                    Amazon and eBay
                                 </li>
 
                                 <li style={{paddingBottom: "15px"}}>Starting as a traditional retailer and adding

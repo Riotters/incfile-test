@@ -42,7 +42,7 @@ const FranchiseBusiness = () => (
 		<Top
 			ovalColor="sun-2"
 			imageName="franchise-business-main"
-			imageAlt="Mr Bulb with seedling"
+			imageAlt="franchise business"
 			headlineWidth={700}
 		>
 			<h1>How to Start a Franchise Business</h1>
@@ -55,7 +55,8 @@ const FranchiseBusiness = () => (
 				like branding and marketing.
 			</p>
 			<ButtonsBox>
-				<Button
+                <Button
+                    externalLink
 					theme="primary56"
 					marginMD="0 24px 0 0"
 					arrow

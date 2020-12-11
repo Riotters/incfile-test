@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import {InfoCards} from "../../../../static/type-of-business/construction-company";
-import {gradient} from "../../../atoms/styles/colors";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 import InsuranceBusiness from "../../general/insurance-business";
 

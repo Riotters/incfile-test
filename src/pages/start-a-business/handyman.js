@@ -57,7 +57,7 @@ const Handyman = () => (
 		<Top
 			ovalColor="sun-2"
 			imageName="handyman-main"
-			imageAlt="Mr Bulb with seedling"
+			imageAlt="set up a handyman business"
 			headlineWidth={700}
 		>
 			<h1>How to Start a Home Handyman Business</h1>
@@ -66,7 +66,8 @@ const Handyman = () => (
 				running a home handyman business could be right for you.
 			</p>
 			<ButtonsBox>
-				<Button
+                <Button
+                    extends
 					theme="primary56"
 					marginMD="0 24px 0 0"
 					arrow

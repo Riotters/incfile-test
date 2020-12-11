@@ -40,7 +40,7 @@ const TrademarkNameSearch = () => (
 			<h1 style={{ maxWidth: "100%" }}>{top.header}</h1>
 			<p>{top.text}</p>
 			<Buttonsbox>
-				<Button content={top.button[0]} theme="primary56" width="200px" arrow />
+				<Button extends content={top.button[0]} theme="primary56" width="200px" arrow />
 			</Buttonsbox>
 		</Top>
 		<About content={about} />

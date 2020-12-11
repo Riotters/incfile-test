@@ -81,7 +81,7 @@ const SettingBusiness = () => (
                         Running a restaurant business comes with certain rules, regulations and legalities you need to
                         be aware of, especially around staff health and safety and food hygiene and preparation. Incfile
                         can conduct
-                        a <Link to="business-license-research-package/">Business License Research</Link> package for you, or you can take the time to do the research
+                        a <Link to="/business-license-research-package/">Business License Research</Link> package for you, or you can take the time to do the research
                         yourself.
                     </p>
                 </TopImageBox>
