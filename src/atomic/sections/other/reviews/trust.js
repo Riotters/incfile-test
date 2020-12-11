@@ -67,7 +67,7 @@ const TrustSection = ({ content }) => {
             <MapSVG />
             </Map>
             <ContentCenter contentWidth="770">
-                <TextCenterLayout headline={content.header} headlineWidth="770"/>
+                <TextCenterLayout headline={content.header} headlineWidth="770" paragraphHeading />
 
                 <Buttonsbox>
                     <Button externalLink={true} content={content.button1} theme="primary56" arrow />
