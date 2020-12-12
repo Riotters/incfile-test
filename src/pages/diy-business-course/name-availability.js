@@ -26,7 +26,7 @@ function LLCIndex() {
 			<ChapterLayout top={top.business_name_available}>
 				<LeftTabPages content={tabPages} nonDIY pointerEventsTab="none" />
 				<MainPageContent>
-					{/* <ContentMap content={nameAvailability} /> */}
+					<ContentMap content={nameAvailability} />
 				</MainPageContent>
 			</ChapterLayout>
 		</Layout>
