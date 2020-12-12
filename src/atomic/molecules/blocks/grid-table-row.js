@@ -127,7 +127,6 @@ const GridTableRow = ({
 				key={index}
 				badge={badge ? badge[index] : false}
 			>
-				{console.log(badge && badge[index])}
 				{header &&
 					item !== "incfile-logo" &&
 					item !== "legalzoom-logo" &&
