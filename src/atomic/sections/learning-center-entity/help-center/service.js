@@ -41,7 +41,7 @@ const ServiceSection = ({ className, content }) => (
           </span>
         </PlayButton>
       </Video> */}
-      <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="R_oIgzYh7NU" />
+      <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="_u4u3-PQ8a0" />
     </ContentCenter>
   </Service>
 );
