@@ -339,7 +339,6 @@ const CCorpTabs = ({ layout, columns, content }) => {
                                     bottomMargin={42}
                                     thumbnailVideo="what-is-an-s-corp-7321"
                                     videoID="fAlXeIWEoT0"
-                                    vimeo
                                 />
 								<Paragraph big>{content.content[0].text}</Paragraph>
 								<IconTextColorBox
