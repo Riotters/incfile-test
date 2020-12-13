@@ -130,8 +130,8 @@ export const corporation = [
 	},
 	{
 		type: "text",
-		content:
-			"Here’s a quick overview of each type of <a href='/new-york-entity-search'>business entity</a>.",
+		content: "Here’s a quick overview of each type of <a href='/new-york-entity-search'>business entity</a>.",
+		// content: "Here’s a quick overview of each type of business entity.",
 		marginBottom: 24,
 	},
 	{

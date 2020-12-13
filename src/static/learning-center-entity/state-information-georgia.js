@@ -142,8 +142,8 @@ export const corporation = [
 	},
 	{
 		type: "text",
-		content:
-			"Here’s a quick overview of each type of <a href='/georgia-entity-search/'>business entity</a>.",
+		content: "Here’s a quick overview of each type of <a href='/georgia-entity-search/'>business entity</a>.",
+		// content: "Here’s a quick overview of each type of business entity.",
 		marginBottom: 24,
 	},
 	{
@@ -360,7 +360,7 @@ export const corporation = [
 				"Georgia S Corporations can have up to 100 shareholders.",
 				"Running an S Corporation in Georgia is simpler than running a C Corporation.",
 				"It is easy to transfer ownership in an S Corporation by selling your stock.",
-				"In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax. Find out how this can save you money using our S Corporation Tax Calculator .",
+				"In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary,” so it would not be subject to self-employment tax. Find out how this can save you money using our <a href='/s-corporation-tax-calculator'>S Corporation Tax Calculator</a>.",
 				"LLCs can <a href='/research-topics/llc-info/can-a-limited-liability-company-llc-be-taxed-as-an-s-corporation/'>choose to be taxed as S Corporations</a> to take advantage of this.",
 			],
 		},

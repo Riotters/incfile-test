@@ -279,6 +279,15 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `If the business name is already used, that means it’s not available and you won’t be able to register it. Try searching for a different business name instead. Alternatively, you can use the <a href="https://icis.corp.delaware.gov/ecorp/entitysearch/namesearch.aspx" target="_blank" rel="noopener noreferrer">Delaware Secretary of State Entity Search tool</a>. All you need to do is enter the DE business name in the “Entity Name” field and click “Search.`,
+    marginBottom: 16,
+  },
+  {
+    type: "modal-trigger",
+    content: {
+      text: "SEARCH FOR YOUR DELAWARE LLC NAME",
+      url: "/",
+    },
+    theme: "primary48",
     marginBottom: 32,
   },
   {
@@ -442,7 +451,7 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `Once you’ve searched for your Delaware business name and checked availability through our business search tool, it’s time for next steps. You will need to follow naming rules and decide whether or not you need a fictitious name. Once you’ve done that, you can register your DE LLC name. There are a couple of ways to do this.`,
+    content: `Once you’ve searched for your Delaware business name and checked availability through <a href='/business-name-search/'>our business search tool</a>, it’s time for next steps. You will need to follow naming rules and decide whether or not you need a fictitious name. Once you’ve done that, you can register your DE LLC name. There are a couple of ways to do this.`,
     marginBottom: 24,
   },
   {
@@ -454,8 +463,17 @@ export const namingYourBusiness = [
         `If you’re ready to start your Delaware LLC, you can file your Certificate of Formation With the Delaware Division of Corporations, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DE">let Incfile take care of it for you</a>.`,
       ],
     },
-    marginBottom: 32,
+    marginBottom: 16,
     color: color.purple3,
+  },
+  {
+    type: "modal-trigger",
+    content: {
+      text: "SEARCH FOR YOUR DELAWARE LLC NAME",
+      url: "/",
+    },
+    theme: "primary48",
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -478,8 +496,32 @@ export const namingYourBusiness = [
       items: [
         {
           question: `How Do I Search for My Delaware LLC Business Name?`,
-          answer: `Just use our <a href="/business-name-search/">business name search tool</a> and enter your proposed business name. We’ll search the register of the Delaware Division of Corporations and let you know if there are any DE corporations or LLCs with that name.</br></br>
-                   <a href="https://www.incfile.com/blog/post/llc-name-search-50-states/">Incfile guide to choosing a business name</a>`,
+          answer2: [
+            {
+              type: "paragraph",
+              content: `Just use our <a href="/business-name-search/">business name search tool</a> and enter your proposed business name. We’ll search the register of the Delaware Division of Corporations and let you know if there are any DE corporations or LLCs with that name.</br></br>`,
+              marginBottom: 0,
+            },
+            {
+              type: "action",
+              content: {
+                text: "SEARCH FOR YOUR DELAWARE LLC NAME",
+                url: "/",
+              },
+              theme: "primary48",
+              margin: "0 0 16px 0",
+              width: "450px",
+            },
+            {
+              type: "arrow-links",
+              content: [
+                {
+                  text: "Incfile guide to choosing a business name",
+                  url: "/blog/post/llc-name-search-50-states/",
+                }
+              ]
+            }
+          ]
         },
         {
           question: `Get a Street Address for Your Delaware LLC`,
@@ -1738,4 +1780,15 @@ export const requirements = {
       },
     },
   ],
+};
+
+export const hsForm = {
+  header: "Please enter the business name information",
+  header2: "Let us know where we can let you know if your business name is available",
+  hs_form_id: `7d5d3157-09f4-40f0-bfee-eff448ed0e24`,
+  fileDownload: ``, // TODO: Add the correct file for download
+  button: {
+    text: "Download now",
+    url: "/",
+  },
 };

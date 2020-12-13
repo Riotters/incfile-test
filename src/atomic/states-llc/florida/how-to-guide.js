@@ -29,6 +29,7 @@ import BgBoxHandlePaperWorks from "../../../images/icons/states/handle-paperwork
 import BgBoxBusinessNameSearchTool from "../../../images/icons/states/business-name-search-tool.inline.png";
 
 import AnnualReportFilingBox from "../annual-report-and-filing-box";
+import ActionButton from "../../molecules/buttons/button-action";
 
 const Wrapper = styled.div``;
 
@@ -95,7 +96,7 @@ const WhiteBoxLink = styled(Whitebox)`
   }
 `;
 
-const HowToGuide = ({ content, data }) => {
+const HowToGuide = ({ content, data, modalAction }) => {
   return (
     <Wrapper>
       {/* Why choose section */}
@@ -416,6 +417,20 @@ const HowToGuide = ({ content, data }) => {
               marginMD="42px 0 42px 0"
             />
           )}
+
+            {item.type === "modal-trigger" && (typeof modalAction === "function") && (
+                <ActionButton
+                    content={item.content}
+                    theme={item.theme}
+                    arrow={item.arrow ?? true}
+                    onClick={modalAction}
+                    margin={
+                        item.marginBottom ? `0 auto ${item.marginBottom}px 0` : false
+                    }
+                    marginSM={item.marginBottom ? false : "24px auto 24px 0"}
+                    marginMD={item.marginBottom ? false : "42px auto 56px 0"}
+                />
+            )}
         </div>
       ))}
     </Wrapper>

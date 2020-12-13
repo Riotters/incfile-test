@@ -467,7 +467,7 @@ export const security = [
 		type: "arrow-link",
 		content: {
 			text: "Click here to snag the promotional offer ",
-			url: "/",
+			url: "https://xoopah.com/landing-page/?ref=INCFILE",
 		},
 		marginBottom: 32,
 	},
@@ -724,7 +724,7 @@ export const security = [
 			{
 				number: "1",
 				text:
-					"First, visit Twitter. Tap or click <strong>Sign Up</strong> and you’ll be prompted to input your information.",
+					"First, visit <a href='https://twitter.com/' rel='nofollow'>Twitter</a>. Tap or click <strong>Sign Up</strong> and you’ll be prompted to input your information.",
 			},
 		],
 	},
@@ -1043,6 +1043,7 @@ export const entityType = [
 	},
 	{
 		type: "taxes",
+		useListType: true,
 		content: [
 			{
 				text1: "Up to $50,000",
@@ -1401,7 +1402,7 @@ export const afterFilling = [
 	},
 	{
 		type: "header",
-		content: "Obtain Your Permits and Licenses",
+		content: "<a href='/business-license-tool/'>Obtain Your Permits and Licenses</a>",
 		size: 3,
 		template: 4,
 		marginBottom: 24,
@@ -1409,7 +1410,7 @@ export const afterFilling = [
 	{
 		type: "text",
 		content:
-			"Depending on the nature of your business, you may be required to apply for and obtain permits that are specific to your business operation. Permits for liquor or other controlled products may be an obviously necessary step for some, but most municipalities also require business licenses for all companies that wish to operate within city limits. If you’re planning to run everything from your home and host clients on your own property, you may be required to obtain a permit for a home-based business and make alterations to your home to meet bylaw requirements for public access.",
+			"Depending on the nature of your business, you may be required to apply for and obtain permits that are specific to your business operation. Permits for liquor or other controlled products may be an obviously necessary step for some, but most municipalities also require business licenses for all companies that wish to operate within city limits. If you’re planning to run everything from your home and host clients on your own property, you may be required to obtain a permit for a <a href='/blog/post/how-start-home-business/'>home-based business</a> and make alterations to your home to meet bylaw requirements for public access.",
 		marginBottom: 24,
 	},
 	{
@@ -1434,7 +1435,7 @@ export const afterFilling = [
 	{
 		type: "text",
 		content:
-			"A business bank account will allow your LLC to issue and cash checks and also simplify the accounting process since business expenses can be paid for by the business via a business credit or debit card. Once your LLC is approved, it will create a lot more work if you are constantly spending from your personal account to purchase supplies and assets for your business — remember, a big reason for the LLC is to separate you from your company!",
+			"A business bank account will allow your LLC to issue and cash checks and also simplify the accounting process since business expenses can be paid for by the business via a <a href='http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024'>business credit or debit card</a>. Once your LLC is approved, it will create a lot more work if you are constantly spending from your personal account to purchase supplies and assets for your business — remember, a big reason for the LLC is to separate you from your company!",
 		marginBottom: 24,
 	},
 	{

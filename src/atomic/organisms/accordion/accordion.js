@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import parse from "html-react-parser";
 import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
+import ActionButton from "../../molecules/buttons/button-action";
 import Heading from "../../atoms/typography/heading";
 import ListWithDot from "../../states-llc/list-with-dot";
 import { color } from "../../atoms/styles/colors";
@@ -295,6 +296,7 @@ const AccordionFaq = ({
 	topMargin,
 	bottomMargin,
 	header,
+	action,
 }) => {
 	return (
 		// <VisibilitySensor partialVisibility once>
@@ -416,6 +418,17 @@ const AccordionFaq = ({
 															width="350px"
 															margin="16px 0 0 0"
 															marginMD="42px 0 42px 0"
+														/>
+													)}
+													{e.type === "action" && (
+														<ActionButton
+															content={e.content}
+															theme={e.theme}
+															onClick={action}
+															arrow
+															width={e?.width ?? "450px"}
+															margin={e.margin}
+															marginMD={e.marginMD}
 														/>
 													)}
 												</div>

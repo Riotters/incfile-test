@@ -92,8 +92,18 @@ export const howToGuide = [
             <p>effortlessly searches the business registry of the MI Department of Licensing and Regulatory Affairs.</p></br>
             <p>We’ll check if your business name is available or if it’s already in use by an LLC or corporation in Michigan. If it is, you can search for another name in Michigan or elsewhere. If not, congratulations, you’re on your way to starting a business.</p></br>
             <p>There are a few rules you’ll need to follow when choosing an LLC name. You can find out more in our guide to searching for and naming your Michigan LLC.</p></br>
-            <p><a href="/michigan-llc/how-to-name-your-llc/" target="_blank">Learn about Michigan LLC business naming rules.</a></p></br>
-            <p><a href="/" target="_blank">Search for your Michigan LLC name</a></p>`, //button i wyskakujące okno wprowadzenia danych
+            <p><a href="/michigan-llc/how-to-name-your-llc/" target="_blank">Learn about Michigan LLC business naming rules.</a></p></br>`,
+          answer2: [
+            {
+              type: "action",
+              content: {
+                text: "Search for your Michigan LLC name",
+                url: "/",
+              },
+              theme: "primary48",
+              margin: "0 0 16px 0",
+            }
+          ]
         },
         {
           question: `STEP 3: Provide an Official Address for Your MI LLC`,
@@ -194,10 +204,10 @@ export const howToGuide = [
     marginBottom: 16,
   },
   {
-    type: `button`,
+    type: `modal-trigger`,
     content: {
       text: `Search for your Michigan LLC name`,
-      url: `/`, //okienko
+      url: `/`,
     },
     theme: `primary48`,
     marginBottom: 48,
@@ -299,7 +309,7 @@ export const namingYourBusiness = [
     marginBottom: 16,
   },
   {
-    type: `button`,
+    type: `modal-trigger`,
     content: {
       text: `Search for your Michigan LLC name`,
       url: `/`, //okienko
@@ -487,7 +497,7 @@ export const namingYourBusiness = [
     marginBottom: 16,
   },
   {
-    type: `button`,
+    type: `modal-trigger`,
     content: {
       text: `Search for your Michigan LLC name`,
       url: `/`, //okienko
@@ -515,8 +525,18 @@ export const namingYourBusiness = [
       items: [
         {
           question: `How Do I Search for My Michigan LLC Business Name?`,
-          answer: `<p>Just go to the <a href="/business-name-search/" target="_blank">business name search tool</a> and enter your proposed business name. We’ll search the register of the Michigan Department of Licensing and Regulatory Affairs, and let you know if there are any MI corporations or LLCs with that name.</p></br>
-            <p><a href="/business-name-search/" target="_blank">Search for your Michigan LLC name.</a></p>`,
+          answer: `<p>Just go to the <a href="/business-name-search/" target="_blank">business name search tool</a> and enter your proposed business name. We’ll search the register of the Michigan Department of Licensing and Regulatory Affairs, and let you know if there are any MI corporations or LLCs with that name.</p></br>`,
+          answer2: [
+            {
+              type: "action",
+              content: {
+                text: "Search for your Michigan LLC name",
+                url: "/",
+              },
+              theme: "primary48",
+              margin: "0 0 16px 0",
+            }
+          ]
         },
         {
           question: `Are There Any Rules on Naming My Michigan LLC?`,
@@ -1864,4 +1884,15 @@ export const requirements = {
       },
     },
   ],
+};
+
+export const hsForm = {
+  header: "Please enter the business name information",
+  header2: "Let us know where we can let you know if your business name is available",
+  hs_form_id: `7d5d3157-09f4-40f0-bfee-eff448ed0e24`,
+  fileDownload: ``, // TODO: Add the correct file for download
+  button: {
+    text: "Download now",
+    url: "/",
+  },
 };

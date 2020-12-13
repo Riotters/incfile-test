@@ -93,15 +93,12 @@ export const info = {
   boxes: [
     {
       header: `Text and email notifications`,
-      url: `/`,
     },
     {
       header: `Order updates`,
-      url: `/`,
     },
     {
       header: `Compliance alerts`,
-      url: `/`,
     },
   ],
   button: {
