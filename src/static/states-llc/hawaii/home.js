@@ -1040,9 +1040,14 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Some HI LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis. Permits and licenses vary based on:`,
-    marginBottom: 24,
+    content: `Some HI LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you should pay on a one-off or regular basis.`,
+    marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "Permits and licenses vary based on:",
+        marginBottom: 24
+    },
   {
     type: `list-dot`,
     content: {
@@ -1380,9 +1385,14 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the HI Department of Taxation. Hawaii sales tax is collected at the point of purchase. Hawaii sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect  Hawaii sales tax on:`,
-    marginBottom: 24,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the HI Department of Taxation. Hawaii sales tax is collected at the point of purchase. Hawaii sales tax rates do vary depending on the region, county or city where you are located. `,
+    marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "You will typically need to collect  Hawaii sales tax on:",
+        marginBottom: 24
+    },
   {
     type: `list-dot`,
     content: {

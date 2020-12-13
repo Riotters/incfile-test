@@ -95,8 +95,12 @@ export const businessTaxesPageContent = {
     },
     {
       type: `paragraph`,
-      content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the GA Department of Revenue (through the <a href="https://gtc.dor.ga.gov/_/" target="_blank" rel="noopener noreferrer">Georgia Tax Center</a>). Georgia sales tax is collected at the point of purchase. Georgia sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Georgia sales tax on:`,
+      content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the GA Department of Revenue (through the <a href="https://gtc.dor.ga.gov/_/" target="_blank" rel="noopener noreferrer">Georgia Tax Center</a>). Georgia sales tax is collected at the point of purchase. Georgia sales tax rates do vary depending on the region, county or city where you are located. `,
     },
+      {
+          type: "paragraph",
+          content: "You will typically need to collect Georgia sales tax on:",
+      },
     {
       type: `iconListColorBox`,
       boxColor: color.green3,

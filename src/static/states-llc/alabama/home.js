@@ -1044,9 +1044,14 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your Alabama LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Alabama, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. Permits and licenses vary based on:`,
+    content: `Your Alabama LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Alabama, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. `,
     marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "Permits and licenses vary based on:",
+        marginBottom: 16
+    },
   {
     type: `list-dot`,
     content: {
@@ -1181,9 +1186,14 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your Alabama business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Alabama Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file Alabama Articles of Amendment for include:`,
+    content: `Your business formation documents state certain facts about your Alabama business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Alabama Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
     marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "Areas you might want to file Alabama Articles of Amendment for include:",
+        marginBottom: 16
+    },
   {
     type: `list-dot`,
     content: {
@@ -1382,10 +1392,14 @@ export const businessTaxes = [
 
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the AL Department of Revenue. Alabama sales tax is collected at the point of purchase. Alabama sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Alabama sales tax on:`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the AL Department of Revenue. Alabama sales tax is collected at the point of purchase. Alabama sales tax rates do vary depending on the region, county or city where you are located. `,
     marginBottom: 16,
   },
-
+{
+    type: "text",
+    content: "You will typically need to collect Alabama sales tax on:",
+    marginBottom: 16
+},
   {
     type: `list-dot`,
     content: {

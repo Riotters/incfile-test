@@ -153,6 +153,7 @@ export const businessTaxesPageContent = {
     {
       type: `paragraph`,
       content: `Here are the sales tax rates for the major cities in New York:`,
+      bottomMargin: -24,
     },
     {
       type: `iconListColorBox`,

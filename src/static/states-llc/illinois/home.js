@@ -100,9 +100,8 @@ export const HomePageContent = {
       },
       step4: {
         heading1: `File Articles of Organization with the Illinois Secretary of State`,
-        text1: `Once you've gathered all the information for your Illinois LLC, you’ll need to file a formal document (Form LLC-1) with the IL Secretary of State. This document is known as your “Articles of Organization,” and filing the document creates your Illinois LLC.`,
+        text1: `Once you've gathered all the information for your Illinois LLC, you’ll need to file a formal document (Form LLC-1) with the IL Secretary of State. This document is known as your “Articles of Organization,” and filing the document creates your Illinois LLC. Here’s what is typically included:`,
         lists: {
-          header: `Here’s what is typically included:`,
           list: [
             `Your business name and address`,
             `Details of your Registered Agent`,

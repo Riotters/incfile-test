@@ -82,7 +82,7 @@ export const rocket = {
 };
 
 export const categories = {
-  header: `Browse by Category`,
+  header: `More answers to your questions`,
   buttons: [
     {
       header: `General`,

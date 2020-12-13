@@ -633,9 +633,14 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `We are authorized to conduct business in Arkansas and can legally act as your Registered Agent. Here’s what you need to know about Incfile’s Registered Agent service:`,
-    marginBottom: 24,
+    content: `We are authorized to conduct business in Arkansas and can legally act as your Registered Agent.`,
+    marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "Here’s what you need to know about Incfile’s Registered Agent service:",
+        marginBottom: 24
+    },
   {
     type: `list-dot`,
     content: {
@@ -1189,9 +1194,14 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your Arkansas business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file Arkansas Articles of Amendment for include:`,
-    marginBottom: 24,
+    content: `Your business formation documents state certain facts about your Arkansas business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf. `,
+    marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "Areas you might want to file Arkansas Articles of Amendment for include:",
+        marginBottom: 24
+    },
   {
     type: `list-dot`,
     content: {
@@ -1389,9 +1399,14 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the AR Tax Commission. Arkansas sales tax is collected at the point of purchase. Arkansas sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Arkansas sales tax on:`,
-    marginBottom: 24,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the AR Tax Commission. Arkansas sales tax is collected at the point of purchase. Arkansas sales tax rates do vary depending on the region, county or city where you are located. `,
+    marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "You will typically need to collect Arkansas sales tax on:",
+        marginBottom: 24
+    },
   {
     type: `list-dot`,
     content: {

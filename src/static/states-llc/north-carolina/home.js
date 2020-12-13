@@ -413,18 +413,8 @@ export const namingYourBusiness = [
   },
   {
     type: `text`,
-    content: `Once you’ve searched for your North Carolina business name, checked availability, followed the naming rules and decided whether you need an Assumed Business Name, you can register your NC LLC name.`,
-    marginBottom: 16,
-  },
-  {
-    type: `list-dot`,
-    content: {
-      list: [
-        `If you’re ready to start your North Carolina LLC, you can formally file your Articles of Organization with the North Carolina SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NC">let Incfile take care of it for you</a>.`,
-      ],
-    },
-    marginBottom: 40,
-    color: color.purple3,
+    content: `Once you’ve searched for your North Carolina business name, checked availability, followed the naming rules and decided whether you need an Assumed Business Name, you can register your NC LLC name. If you’re ready to start your North Carolina LLC, you can formally file your Articles of Organization with the North Carolina SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NC">let Incfile take care of it for you</a>.`,
+    marginBottom: 32,
   },
   {
     type: `header`,
@@ -1189,9 +1179,14 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your North Carolina business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the North Carolina Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file North Carolina Articles of Amendment for include:`,
-    marginBottom: 24,
+    content: `Your business formation documents state certain facts about your North Carolina business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the North Carolina Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
+    marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "Areas you might want to file North Carolina Articles of Amendment for include:",
+        marginBottom: 24
+    },
   {
     type: `list-dot`,
     content: {

@@ -1414,9 +1414,14 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the ID Tax Commission. Idaho sales tax is collected at the point of purchase. Idaho sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect sales tax on:`,
-    marginBottom: 24,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the ID Tax Commission. Idaho sales tax is collected at the point of purchase. Idaho sales tax rates do vary depending on the region, county or city where you are located. `,
+    marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "You will typically need to collect sales tax on:",
+        marginBottom: 24
+    },
   {
     type: `list-dot`,
     content: {
