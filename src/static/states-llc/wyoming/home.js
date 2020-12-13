@@ -797,7 +797,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `In some situations, you might want to know the name of the Registered Agent that represents another Wyoming LLC. If you do, you can <a href="https://ecorp.azcc.gov/EntitySearch/Index" target="_blank" rel="noopener noreferrer">search the business database of the Wyoming Secretary of State</a>, which will often provide details of a specific business’ Registered Agent.`,
+    content: `In some situations, you might want to know the name of the Registered Agent that represents another Wyoming LLC. If you do, you can search the business database of the Wyoming Secretary of State, which will often provide details of a specific business’ Registered Agent.`,
     marginBottom: 16,
   },
   {

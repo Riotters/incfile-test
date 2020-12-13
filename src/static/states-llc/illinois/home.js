@@ -278,7 +278,7 @@ export const HomePageContent = {
       },
 
       {
-        type: "button",
+        type: "modal-trigger",
         theme: `secondary56`,
         content: {
           text: `Search For Your Illinois LLC Name`,
@@ -334,5 +334,16 @@ export const HomePageContent = {
         content: `How to understand the various taxes you will need to pay to the federal and Illinois government. Includes details of federal taxes like income and self-employment and Illinois taxes like sales tax and income tax.`,
       },
     ],
+  },
+};
+
+export const hsForm = {
+  header: "Please enter the business name information",
+  header2: "Let us know where we can let you know if your business name is available",
+  hs_form_id: `7d5d3157-09f4-40f0-bfee-eff448ed0e24`,
+  fileDownload: ``, // TODO: Add the correct file for download
+  button: {
+    text: "Download now",
+    url: "/",
   },
 };

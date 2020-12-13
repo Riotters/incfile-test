@@ -1235,7 +1235,7 @@ export const naming = [
 	{
 		type: "text",
 		content:
-			"The easiest way to see if your proposed business name infringes is to carry out a trademark search. You can do that via the United States Patent and Trademark Office, or Incfile can help you protect your business with our <a href='/'>Trademark Search and Registration</a> service. You should also bear in mind that your Texas corporation name cannot be substantially similar to an existing trademark or service mark.",
+			"The easiest way to see if your proposed business name infringes is to carry out a trademark search. You can do that via the United States Patent and Trademark Office, or Incfile can help you protect your business with our <a href='/trademark-name-search/'>Trademark Search and Registration</a> service. You should also bear in mind that your Texas corporation name cannot be substantially similar to an existing trademark or service mark.",
 		marginBottom: 48,
 	},
 	{
@@ -1937,13 +1937,13 @@ export const filing = [
 	{
 		type: "text",
 		content:
-			"You can find details on the <a href='/'>Texas Comptroller of Public Accounts</a> and IRS websites.",
+			"You can find details on the <a href='https://comptroller.texas.gov/'>Texas Comptroller of Public Accounts</a> and IRS websites.",
 		marginBottom: 24,
 	},
 	{
 		type: "text",
 		content:
-			"<a href='/'>Learn more about taxes for your Texas corporation</a>",
+			"<a href='/texas-corporation/taxes-and-fees-for-your-corporation/'>Learn more about taxes for your Texas corporation</a>",
 		marginBottom: 48,
 	},
 	{

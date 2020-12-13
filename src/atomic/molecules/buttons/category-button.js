@@ -5,18 +5,35 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 const TabTitle = ({ content, arrow, icon }) => (
-  <ButtonBox to={content.url}>
-    <Icon>{icon}</Icon>
-    <Content>
-      <span>{content.header}</span>
+    <>
+        {content.url ? (
+            <ButtonBox to={content.url}>
+                <Icon>{icon}</Icon>
+                <Content>
+                    <span>{content.header}</span>
 
-      {/*{arrow &&*/}
-      {/*<Arrow className="tabArrow">*/}
-      {/*<ArrowSVG/>*/}
-      {/*</Arrow>*/}
-      {/*}*/}
-    </Content>
-  </ButtonBox>
+                    {/*{arrow &&*/}
+                    {/*<Arrow className="tabArrow">*/}
+                    {/*<ArrowSVG/>*/}
+                    {/*</Arrow>*/}
+                    {/*}*/}
+                </Content>
+            </ButtonBox>
+        ) : (
+            <ButtonBoxStatic>
+                <Icon>{icon}</Icon>
+                <Content>
+                    <span>{content.header}</span>
+
+                    {/*{arrow &&*/}
+                    {/*<Arrow className="tabArrow">*/}
+                    {/*<ArrowSVG/>*/}
+                    {/*</Arrow>*/}
+                    {/*}*/}
+                </Content>
+            </ButtonBoxStatic>
+        )}
+    </>
 );
 
 export default TabTitle;
@@ -101,6 +118,23 @@ const Arrow = styled.div`
       fill: #5088fd;
     }
   }
+`;
+
+const ButtonBoxStatic = styled.div`
+  height: 78px;
+  line-height: 78px;
+  color: #4e4e4e;
+  background: #fff;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 20px 30px 0 #e6e6e6;
+  display: flex;
+  // cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 7px;
+  border: none;
+  z-index: 0;
 `;
 
 const ButtonBox = styled(Link)`

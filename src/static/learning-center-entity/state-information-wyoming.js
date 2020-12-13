@@ -1189,7 +1189,7 @@ export const naming = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=WY`,
         },
         theme: "primary56",
       },
@@ -2100,7 +2100,7 @@ export const afterFormation = [
   },
   {
     type: "text",
-    content: `The right business checking account for your business should have minimum fees, so that your money goes into the business or your own checking account instead of spending on hidden, tricky bank fees. According to <a href="https://www.nerdwallet.com/best/banking/free-business-checking-accounts">NerdWallet</a> — who looked at the 10 biggest banks in the U.S. and some additional online banks — these are the best four free business checking accounts for your Corporation:`,
+    content: `The right business checking account for your business should have minimum fees, so that your money goes into the business or your own checking account instead of spending on hidden, tricky bank fees. <a href="https://www.nerdwallet.com/best/banking/free-business-checking-accounts">According to NerdWallet</a> — who looked at the 10 biggest banks in the U.S. and some additional online banks — these are the best four free business checking accounts for your Corporation:`,
     marginBottom: 48,
   },
   {
