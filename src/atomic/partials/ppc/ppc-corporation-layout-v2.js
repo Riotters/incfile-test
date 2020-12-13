@@ -123,7 +123,7 @@ const PPCCorporationLayoutV2 = ({ stateCode, videoID, content }) => {
 				</ContentCenter>
 			</ServiceSection>
 
-			<PacketsSection data={dataApi} />
+			<PacketsSection data={dataApi} compacted={true} />
 
 			<QuestionSection>
 				<Oval className="oval" height={570} width={570} top="20" right="0">

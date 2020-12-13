@@ -112,7 +112,7 @@ const ValidatingBusinessIdea = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={2} template={3} left>Validating Your Woman-Owned Business Idea</Heading>
+                    <Heading size={2} left>Validating Your Woman-Owned Business Idea</Heading>
                     <Paragraph big>
                         These areas are just starting points — there are infinite business ideas you can start
                         as a female owner. Once you’ve identified the area you’d like to go into, you need

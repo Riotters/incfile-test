@@ -74,7 +74,7 @@ const BusinessPlan = () => (
     </OvalCenter>
     <Container>
       <BusinessOwnerResponsibilities>
-        <Heading size={2} template={4} left className="title">
+        <Heading size={2} left>
         Your Construction Company Needs a Plan
         </Heading>
         <Paragraph big>

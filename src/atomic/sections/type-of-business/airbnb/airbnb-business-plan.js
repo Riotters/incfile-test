@@ -66,7 +66,7 @@ const AirbnbBusinessPlan = () => (
     </OvalCenter>
     <Container>
       <BusinessOwnerResponsibilities>
-        <Heading size={4} className="title">
+        <Heading size={2} left className="title">
           Your Airbnb Business Plan
         </Heading>
         <Paragraph big>You might not think you need a business plan for your Airbnb business—after all, if you’re getting guests through Airbnb, and they’re paying, you don’t need a business plan, right? Wrong.</Paragraph>

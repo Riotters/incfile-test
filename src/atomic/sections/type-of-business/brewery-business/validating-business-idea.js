@@ -110,7 +110,7 @@ const ValidatingBusinessIdea = () => (
           <AbsoluteCurve>
             <Curve color={color.blue1} />
           </AbsoluteCurve>
-          <Heading size={2} template={3} left>Validating Your Brewery Business Idea</Heading>
+          <Heading size={2} left>Validating Your Brewery Business Idea</Heading>
           <Paragraph big>These areas are just starting points — there are many different types of brewery businesses. Once you’ve identified the areas you’d like to go into, you need to validate your brewery business idea.</Paragraph>
         </TitleBox>
 

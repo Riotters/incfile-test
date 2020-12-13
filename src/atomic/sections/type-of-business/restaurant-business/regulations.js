@@ -11,7 +11,7 @@ const Regulations = () => (
             <OvalSvg/>
         </Oval>
         <Container style={{paddingTop: "100px", paddingBottom: "100px"}} width={750}>
-            <Heading size={4} style={{fontSize: "40px"}}>
+            <Heading size={2}>
                 Rules, Regulations and Taxes for Your Teen Business
             </Heading>
             <Paragraph big>

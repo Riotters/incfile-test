@@ -40,7 +40,7 @@ const StartAnLLC = () => {
             </Top>
             <About content={about} />
             <State content={state} getDataForVariants={renderPackge} />
-            <PacketsSection data={dataApi} />
+            <PacketsSection data={dataApi} compacted={true} />
             <Service content={service} />
             <Faq content={faq} />
             <Rocket content={rocket} />

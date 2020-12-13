@@ -419,7 +419,7 @@ const GymPersonalTraining = () => (
 							</Paragraph>
 						</TextBoxed>
 
-						<Heading size={3} style={{ marginTio: "48px" }}>
+						<Heading size={3} style={{ marginTop: "48px" }}>
 							What Your Gym Members Are Looking For
 						</Heading>
 						<Paragraph big>

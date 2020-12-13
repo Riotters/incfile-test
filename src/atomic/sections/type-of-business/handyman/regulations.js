@@ -8,7 +8,7 @@ import { Link } from "gatsby";
 const Regulations = () => (
   <Wrapper>
     <Container style={{ paddingTop: "100px", paddingBottom: "100px" }} width={750}>
-      <Heading size={2} template={4} left style={{ fontSize: "40px", lineHeight: `56px` }}>
+      <Heading size={2} left>
         Rules, Regulations and Taxes for Your Handyman Business
       </Heading>
       <Paragraph big mixed={true}>

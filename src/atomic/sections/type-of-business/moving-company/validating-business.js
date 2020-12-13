@@ -93,7 +93,7 @@ const ValidatingBusinessIdea = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={2} template={3} left>Validating Your Moving Business Idea</Heading>
+                    <Heading size={2} left>Validating Your Moving Business Idea</Heading>
                     <Paragraph>
                         These are all great starting points, but you will need to build on them to make your relocation business your own. You have unique skills and insight that you can use to create a moving business that will really stand out.
                     </Paragraph>

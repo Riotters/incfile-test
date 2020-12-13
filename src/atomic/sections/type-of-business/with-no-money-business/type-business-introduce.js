@@ -34,7 +34,7 @@ const TypeBusinessIntroduce = () => (
         <Container>
             <BusinessOwnerResponsibilities>
                 <ImageContent image="with-no-money-business-2" paddingTop="60">
-                    <Heading size={2} template={4} left style={{fontSize: "24px"}}>
+                    <Heading size={2} template={3} left>
                         Choosing a Type of Business to Start with Little
                         or No Money
                     </Heading>

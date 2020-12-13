@@ -572,8 +572,7 @@ const CateringBusiness = () => (
 					<Heading
 						size={2}
 						left
-						template={4}
-						style={{ fontSize: "24px", "max-width": "unset" }}
+						template={3}
 					>
 						Choose the Right Business Structure and Register Your Catering
 						Business
