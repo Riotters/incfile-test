@@ -68,7 +68,7 @@ const ConsultingBusiness = () => {
 	return (
 		<Layout>
 			<SEO
-				title="How to Start a Consulting Business | Online Consulting in Your Spare Time | Online Consulting in Your Spare Time"
+				title="How to Start a Consulting Business | Online Consulting in Your Spare Time"
 				description="Few businesses offer the flexibility and ability to gain clientele quite as effective as an online consulting business. Find out some INCFILE quick tips here."
 			/>
 
