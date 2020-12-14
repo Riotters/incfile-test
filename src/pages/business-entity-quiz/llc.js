@@ -3,12 +3,13 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import { Helmet } from "react-helmet";
 import {
-	choose,
-	top,
-	about,
-	types,
-	prosAndCons,
-	faq,
+  choose,
+  top,
+  about,
+  types,
+  prosAndCons,
+  faq,
+  rocket,
 } from "../../static/business-entity-quiz/llc";
 import TopSection from "../../atomic/sections/learning-center-entity/business-entity-quiz/top-section";
 import About from "../../atomic/sections/business-entity-quiz/llc/about";
@@ -19,30 +20,32 @@ import Checklist from "../../atomic/sections/business-entity-quiz/llc/checklist"
 import Requirements from "../../atomic/sections/business-entity-quiz/llc/requirements";
 import Faq from "../../atomic/sections/business-entity-quiz/llc/faq";
 import ChooseEntitySection from "../../atomic/sections/learning-center-entity/business-entity-quiz/choose-entity";
+import Rocket from "../../atomic/sections/rocket";
 // temp //
 
 const BusinessEntityQuizLLC = () => (
-	<Layout>
-		<SEO
-			title="Quiz Result: You Should Form an LLC"
-			description="Your answers suggest an LLC is the right business entity for your new business. Learn more about LLCs here."
-		/>
-		<TopSection content={top} padding="220px 0" />
-		<About content={about} />
-		<WhatIs
-		//content={whatIs}
-		/>
-		{/* <ChooseEntitySection content={choose} /> */}
-		<Types content={types} />
-		<ProsAndCons content={prosAndCons} />
-		<Requirements
-		//content={requirements}
-		/>
-		<Faq content={faq} />
-		<Checklist />
+  <Layout>
+    <SEO
+      title="Quiz Result: You Should Form an LLC"
+      description="Your answers suggest an LLC is the right business entity for your new business. Learn more about LLCs here."
+    />
+    <TopSection content={top} padding="220px 0" />
+    <About content={about} />
+    <WhatIs
+    //content={whatIs}
+    />
+    {/* <ChooseEntitySection content={choose} /> */}
+    <Types content={types} />
+    <ProsAndCons content={prosAndCons} />
+    <Requirements
+    //content={requirements}
+    />
+    <Faq content={faq} />
+    <Checklist />
+    <Rocket content={rocket} />
 
-		<Helmet>
-			<script type="application/ld+json">{`
+    <Helmet>
+      <script type="application/ld+json">{`
                 {
                     "@context": "http://schema.org",
                     "@type": "VideoObject",
@@ -55,8 +58,8 @@ const BusinessEntityQuizLLC = () => (
                     "interactionCount": "8"
                 }
             `}</script>
-		</Helmet>
-	</Layout>
+    </Helmet>
+  </Layout>
 );
 
 export default BusinessEntityQuizLLC;
