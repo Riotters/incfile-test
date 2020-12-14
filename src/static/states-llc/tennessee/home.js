@@ -3,14 +3,14 @@ import { color } from "../../../atomic/atoms/styles/colors";
 const ORDER_URL = `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TN`;
 
 export const top = {
-	header: `Why Form a Limited Liability Company (LLC)?`,
-	text: `$0 + State Fee & 1st Year FREE Registered Agent`,
-	buttons: [
-		{
-			text: `See detailed pricing`,
-			url: ORDER_URL,
-		},
-	],
+  header: `Why Form a Limited Liability Company (LLC)?`,
+  text: `$0 + State Fee & 1st Year FREE Registered Agent`,
+  buttons: [
+    {
+      text: `See detailed pricing`,
+      url: ORDER_URL,
+    },
+  ],
 };
 
 export const howToGuide = [
@@ -443,7 +443,7 @@ export const namingYourBusiness = [
   {
     type: `text`,
     content: `More on <a href="https://sharetngov.tnsosfiles.com/sos/forms/busname.pdf">Tennessee Secretary of State business naming rules</a>  `,
-    marginBottom: 32,
+    marginBottom: 48,
   },
   {
     type: `header`,
@@ -1672,17 +1672,17 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-    header: `How We Compare. <br>Get more for less.`,
-    table: {
-        headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
-        rows: [
-            [`Business incorporation service`, `$49`, `$149`, `$149`],
-            [
-                `Registered Agent included in the price`,
-                `check-green`,
-                `check-red`,
-                `check-red`,
-            ],
-        ],
-    },
+  header: `How We Compare. <br>Get more for less.`,
+  table: {
+    headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
+    rows: [
+      [`Business incorporation service`, `$49`, `$149`, `$149`],
+      [
+        `Registered Agent included in the price`,
+        `check-green`,
+        `check-red`,
+        `check-red`,
+      ],
+    ],
+  },
 };

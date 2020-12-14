@@ -16,30 +16,30 @@ import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import LightBoxVideo from "../../../../components/LightBox";
 
 const About = styled.section`
-	position: relative;
-	padding-bottom: 104px;
+  position: relative;
+  padding-bottom: 104px;
 `;
 
 const AboutSection = ({ className, content }) => (
-	<About className={className} id="answers">
-		<Oval className="oval" height="570" width="570" y="-40">
-			<OvalSVG />
-		</Oval>
-		<ImageContent image="web-address-search">
-			<Path content={content.links} />
-			<Heading size={1} template={3} bottomMargin="32">
-				{content.header}
-			</Heading>
-			<Paragraph big bottomMargin="24">
-				{content.text}
-			</Paragraph>
-			<LightBoxVideo
-				thumbnailVideo="comparison-chart-video-3611"
-				videoID="R_oIgzYh7NU"
-				bottomMargin="48"
-			/>
-		</ImageContent>
-	</About>
+  <About className={className} id="answers">
+    <Oval className="oval" height="570" width="570" y="-40">
+      <OvalSVG />
+    </Oval>
+    <ImageContent image="web-address-search">
+      <Path content={content.links} />
+      <Heading size={1} template={3} bottomMargin="32">
+        {content.header}
+      </Heading>
+      <Paragraph big bottomMargin="24">
+        {content.text}
+      </Paragraph>
+      <LightBoxVideo
+        thumbnailVideo="comparison-chart-video-3611"
+        videoID="R_oIgzYh7NU"
+        bottomMargin="48"
+      />
+    </ImageContent>
+  </About>
 );
 
 export default AboutSection;

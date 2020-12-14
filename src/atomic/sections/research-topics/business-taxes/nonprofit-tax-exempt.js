@@ -12,30 +12,29 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.
 import Path from "../../../molecules/blocks/research-topics-path";
 
 const About = styled.section`
-	position: relative;
-	padding-bottom: 104px;
+  position: relative;
+  padding-bottom: 104px;
 `;
 
 const AboutSection = ({ className, content }) => (
-	<About className={className} id="answers">
-		<Oval className="oval" height="570" width="570" y="-40">
-			<OvalSVG />
-		</Oval>
-		<ImageContent image="web-address-search">
-			<Path content={content.links} />
-			<Heading size={1} template={3} bottomMargin="32">
-				{content.header}
-			</Heading>
-			<IconTextColorBox
-				content={content.box}
-				Icon={IconSVG}
-				rounded
-				curve
-				curveColor={color.orange2}
-				bottomMargin="48"
-			/>
-		</ImageContent>
-	</About>
+  <About className={className} id="answers">
+    <Oval className="oval" height="570" width="570" y="-40">
+      <OvalSVG />
+    </Oval>
+    <ImageContent image="web-address-search">
+      <Path content={content.links} />
+      <Heading size={1} template={3} bottomMargin="32">
+        {content.header}
+      </Heading>
+      <IconTextColorBox
+        content={content.box}
+        Icon={IconSVG}
+        rounded
+        curve
+        curveColor={color.orange2}
+      />
+    </ImageContent>
+  </About>
 );
 
 export default AboutSection;
