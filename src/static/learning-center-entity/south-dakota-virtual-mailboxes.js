@@ -45,8 +45,7 @@ export const faqs = {
       {
         question:
           "Can I use a SD virtual address as my Registered Agent address?",
-        answer:
-          "No, we do not recommend it. Generally speaking, your South Dakota Registered Agent should have a real SD street address where they can receive official, legal correspondence. If you need a Registered Agent in South Dakota, Incfile provides a Registered Agent service that will meet your needs. ",
+        answer: `No, we do not recommend it. Generally speaking, your South Dakota Registered Agent should have a real SD street address where they can receive official, legal correspondence. If you need a Registered Agent in South Dakota, Incfile provides a <a href="/manage-your-company/registered-agent/" target="_blank">Registered Agent service</a> that will meet your needs.`,
       },
       {
         question: "In what states do you provide a Virtual Mailbox service?",
