@@ -34,7 +34,7 @@ const dotColor = (circleColor) => {
       return color.red1;
     }
     default:
-      return "";
+      return color.grey2;
   }
 };
 

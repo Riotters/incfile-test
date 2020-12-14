@@ -52,7 +52,7 @@ const IndianaCorporation = () => {
 		getFullPricesAndFilings("Indiana", "Corporation").then((data) => {
 			setDataApi(data);
 			setFilingTimeAndRequirementHeader(
-				`Annual ${data.prices.state} Filing Requirements`
+				`Learn more about incorporating in ${data.prices.state}`
 			);
 		});
 	}, []);

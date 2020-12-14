@@ -375,11 +375,13 @@ function handleHeaderClick(e) {
 }
 
 const NavigationMobileScrollHidden = styled.div`
-  position: relative;
-  right: -17px;
-  max-height: 100%;
-  overflow: hidden auto;
-  width: 100%;
+  @media (max-width: 992px) {
+    position: relative;
+    right: -17px;
+    max-height: 100%;
+    overflow: hidden auto;
+    width: 100%;
+  }
 `;
 
 const Header = ({ siteTitle }) => {

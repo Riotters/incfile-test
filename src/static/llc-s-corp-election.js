@@ -10,7 +10,7 @@ export const top = {
 };
 
 export const about = {
-  header: `Reducing Your Income Tax`,
+  // header: `Reducing Your Income Tax`,
   text: `<p>If you want to reduce the amount of tax you pay on your LLC earnings, an</br>
   <a href="/llc-s-corp-election/" target="_blank">S Corporation Tax Election</a>
   (<a href="/research-topics/c-corporation-info/what-is-the-form-2553/" target="_blank">form 2553</a>)

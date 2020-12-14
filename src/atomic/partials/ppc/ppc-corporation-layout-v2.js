@@ -47,7 +47,7 @@ const PPCCorporationLayoutV2 = ({ stateCode, videoID, content }) => {
 		getFullPricesAndFilings(state.name, "Corporation").then((data) => {
 			setDataApi(data);
 			setFilingTimeAndRequirementHeader(
-				`Annual ${data.prices.state} Filing Requirements`
+				`Learn more about incorporating in ${data.prices.state}`
 			);
 		});
 	}, [state.name]);

@@ -204,6 +204,7 @@ const Icon = styled.div`
 	position: absolute;
 	top: 55px;
 	z-index: 1;
+	left: 28px;
 
 	@media (min-width: 576px) {
 		position: static;
