@@ -23,16 +23,18 @@ const Wrapper = styled.div`
 			props.bottomMarginLG ? `${props.bottomMarginLG}px` : ""};
 	}
 
-	h2, h3, [class*="i-believe-i-can-be-a-h"] {
+	h2,
+	h3,
+	[class*="i-believe-i-can-be-a-h"] {
 		max-width: ${(props) =>
 			props.headlineWidth ? props.headlineWidth : "610"}px;
 		margin: 0 auto 24px;
 	}
-	
+
 	h3 {
 		text-align: center;
 	}
-	
+
 	p {
 		max-width: ${(props) => (props.textWidth ? props.textWidth : "750")}px;
 		text-align: center;
@@ -76,6 +78,18 @@ const TextCenterLayout = ({
 			bottomMarginLG={bottomMarginLG}
 		>
 			<ContentCenter>
+				{headline && (
+					//   <VisibilitySensor partialVisibility once>
+					//     {({ isVisible }) =>
+					<ChooseHeadingType
+						content={headline}
+						paragraphHeader={paragraphHeading}
+						headerSize={headlineSize}
+						headerTemplateSize={headlineSizeTemplate}
+					/>
+					// }
+					//   </VisibilitySensor>
+				)}
 				{text && (
 					//   <VisibilitySensor partialVisibility once>
 					//     {({ isVisible }) =>
@@ -87,16 +101,6 @@ const TextCenterLayout = ({
 					//     }
 					//   </VisibilitySensor>
 				)}
-				{headline && (
-					//   <VisibilitySensor partialVisibility once>
-					//     {({ isVisible }) =>
-					<ChooseHeadingType content={headline}
-									   paragraphHeader={paragraphHeading}
-									   headerSize={headlineSize}
-									   headerTemplateSize={headlineSizeTemplate} />
-					// }
-					//   </VisibilitySensor>
-					)}
 				{linkText && !useButton && (
 					//   <VisibilitySensor partialVisibility once>
 					//     {({ isVisible }) =>
