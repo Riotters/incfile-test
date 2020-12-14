@@ -7,6 +7,9 @@ require("dotenv").config({
 console.log(`Using environment config: '${activeEnv}'`)
 
 module.exports = {
+  flags: {
+    PRESERVE_WEBPACK_CACHE: true,
+  },
   pathPrefix: `/incfile-test`,
   siteMetadata: {
     title: `What is a Nonprofit Organization? How to Start a Nonprofit`,
