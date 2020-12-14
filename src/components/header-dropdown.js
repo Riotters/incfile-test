@@ -218,7 +218,7 @@ const DropdownMenu = styled.div`
 	transition: max-height 0.8s;
 	top: calc(100% + 1px);
 	display: none;
-	grid-template-columns: 100%;
+	grid-template-columns: auto auto;
 	max-height: 0;
 	padding: 0;
 	z-index: 999;
