@@ -36,7 +36,7 @@ const Box = styled.div`
 	height: 100%;
 	width: 100%;
 	max-width: 100%;
-	padding: 56px 40px 40px;
+	padding: ${(props) => (props.padding ? props.padding : "56px 40px 40px")};
 	position: relative;
 	background-color: ${color.white};
 	box-shadow: ${shadow.white1};
@@ -143,6 +143,7 @@ const Adventages = ({
 	imageName,
 	imageAlt,
 	disadventage,
+	padding,
 }) => {
 	return (
 		<Wrapper
@@ -151,6 +152,7 @@ const Adventages = ({
 			text={text}
 			style={style}
 			width={width}
+			padding={padding}
 		>
 			<Box width={width}>
 				<Circle
