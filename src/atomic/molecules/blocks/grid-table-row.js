@@ -28,6 +28,7 @@ const Wrapper = styled(Whitebox)`
 const Cell = styled.div`
 	display: flex;
 	align-items: center;
+	flex-direction: column;
 	padding: 24px;
 	min-width: 160px;
 	${(props) => (props.textCenter ? "justify-content: center" : "")};
@@ -87,6 +88,10 @@ const Cell = styled.div`
 		top: -20px;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+	
+	.nobox {
+		margin-top: 8px;
 	}
 `;
 
@@ -157,9 +162,19 @@ const GridTableRow = ({
 					item !== "rocket-lawyer-logo" &&
 					item !== "check-green" &&
 					item !== "check-red" && (
-						<Paragraph mixed bottomMargin="0">
-							{parse(item)}
-						</Paragraph>
+						<>
+						{Array.isArray(item) ? (
+							item.map((subitem) => (
+								<Paragraph mixed bottomMargin="0" center className={subitem?.className ?? ""}>
+									{parse(subitem?.content ?? subitem)}
+								</Paragraph>
+							))
+							) : (
+							<Paragraph mixed bottomMargin="0" center>
+								{parse(item)}
+							</Paragraph>
+						)}
+						</>
 					)}
 				{item === "check-green" && <CheckSVG />}
 				{item === "check-red" && <ExSVG />}

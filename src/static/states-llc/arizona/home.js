@@ -1059,9 +1059,14 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your Arizona LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Arizona, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. Permits and licenses vary based on:`,
+    content: `Your Arizona LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Arizona, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
     marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "Permits and licenses vary based on:",
+        marginBottom: 24
+    },
   {
     type: `list-dot`,
     content: {
@@ -1192,9 +1197,14 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your Arizona business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Arizona Corporation Commission. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file Arizona Articles of Amendment for include:`,
+    content: `Your business formation documents state certain facts about your Arizona business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Arizona Corporation Commission. You can do this yourself or have Incfile complete the filing on your behalf. `,
     marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "Areas you might want to file Arizona Articles of Amendment for include:",
+        marginBottom: 16
+    },
   {
     type: `list-dot`,
     content: {
@@ -1391,9 +1401,14 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (known in Arizona as a Transaction Privilege Tax) and then pay it to the AZ Department of Revenue. Arizona sales tax is collected at the point of purchase. Arizona sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Arizona sales tax on:`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (known in Arizona as a Transaction Privilege Tax) and then pay it to the AZ Department of Revenue. Arizona sales tax is collected at the point of purchase. Arizona sales tax rates do vary depending on the region, county or city where you are located. `,
     marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "You will typically need to collect Arizona sales tax on:",
+        marginBottom: 16
+    },
   {
     type: `list-dot`,
     content: {
@@ -1635,7 +1650,7 @@ export const compare = {
         `Initial Filing Price`,
         `$0 +\u00a0State\u00a0Fee`,
         `$79 +\u00a0State\u00a0Fee`,
-        `$49 +\u00a0State\u00a0Fee`,
+        [ `$49 +\u00a0State\u00a0Fee`, { content: "<strong>Billed\u00a0Annually</strong>", className: "nobox" } ],
       ],
       [`File Articles`, `check-green`, `check-green`, `check-green`],
       [`Name Search`, `check-green`, `check-green`, `check-green`],
@@ -1653,9 +1668,9 @@ export const compare = {
       ],
       [`First Year Registered Agent`, `FREE`, `$249`, `check-green`],
       [`Operating Agreement`, `$40`, `$99`, `check-green`],
-      [`EIN`, `$70`, `$159`, `$70`],
-      [`Business Contract Templates`, `$150`, `$40`, `check-red`],
-      [`Expedited Order`, `(+$50)`, `$350`, `$50`],
+      [`EIN`, `$70`, [ `$159`, { className: "nobox", content: "Has to be purchased as a package with Operating\u00a0Agreement" } ], `$70`],
+      [`Business Contract Templates`, [ `$150`, { className: "nobox", content: "One-time fee or FREE\u00a0with\u00a0Platinum package." } ], [ `$40`, { className: "nobox", content: "Monthly\u00a0subscription *part\u00a0of\u00a0Smart\u00a0Employer Package" } ], `check-red`],
+      [`Expedited Order`, `(+$50)`, [ `$350`, { className: "nobox", content: "*must\u00a0purchase Express\u00a0Gold\u00a0package" } ], [ `$50`, { content: "*rush order $100\u00a0+\u00a0state\u00a0fee", className: "nobox" } ]],
     ],
   },
 };

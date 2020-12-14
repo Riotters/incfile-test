@@ -58,7 +58,7 @@ const BoutiqueBusinessPlan = () => (
     </OvalCenter>
     <Container>
       <BusinessOwnerResponsibilities>
-        <Heading size={2} template={4} left className="title">
+        <Heading size={2} left bottomMargin={56}>
           Boutique Business Plans
         </Heading>
         <Paragraph big>

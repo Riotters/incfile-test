@@ -31,14 +31,14 @@ const Wrapper = styled.div`
 		& > div {
 			min-width: 122px;
 
-			p {
+			p:not(.nobox) {
 				color: ${color.black};
 			}
 
 			&:not(:first-child) {
 				justify-content: center;
 
-				p {
+				p:not(.nobox) {
 					font-weight: 400;
 					background-color: ${color.green3};
 					border-radius: 50px;

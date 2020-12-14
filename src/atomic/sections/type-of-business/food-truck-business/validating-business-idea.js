@@ -112,7 +112,7 @@ const ValidatingBusinessIdea = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={2} template={3} left>Validating Your Food Truck Business Idea</Heading>
+                    <Heading size={2} left>Validating Your Food Truck Business Idea</Heading>
                     <Paragraph big>
                         These ideas are just starting points — you’ll need to do plenty of research to understand your customers and create a food truck experience they’re going to love.
                     </Paragraph>

@@ -27,6 +27,7 @@ const HelpCenter = () => (
 			imageName="mrs-bulb-question-7726"
 			imageAlt=""
 			ovalColor="darkblue"
+			overflowMD
 		>
 			<h1>{top.header}</h1>
 			<p>{top.text}</p>

@@ -53,7 +53,7 @@ const BoutiqueBusinessStructure = () => (
 
     <BusinessOwnerResponsibilities>
       <ImageContent image="unique-business-2" paddingTop="60">
-        <Heading size={2} template={4} left style={{ fontSize: "24px", "max-width": "unset" }}>
+        <Heading size={2} template={3} left>
           Choose the Right Business Structure for Your Boutique Business
         </Heading>
         <Paragraph big>There are five main business structures you can have in the U.S., and it’s important to choose the right one. We’ve shared your options below. They are:</Paragraph>

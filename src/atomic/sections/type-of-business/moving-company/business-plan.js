@@ -63,7 +63,7 @@ const MovingBusinessPlan = () => (
     </OvalCenter>
     <Container>
       <BusinessOwnerResponsibilities>
-        <Heading size={2} template={4} left className="title">
+        <Heading size={2} left bottomMargin={56}>
           Your Moving Business Needs a Plan
         </Heading>
         <Paragraph big>

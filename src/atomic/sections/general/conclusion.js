@@ -56,12 +56,13 @@ const TextBox = styled.div`
 `
 
 const ImageBox = styled.div`
-    position absolute;
+    position: absolute;
     left: -15%;
     top: calc(50% - 313px);
     width: 720px;
     height: 626px;
     display: none;
+    z-index: -1;
     
     @media (min-width: 1130px) {
         display: block;

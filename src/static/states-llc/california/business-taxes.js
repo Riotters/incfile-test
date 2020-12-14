@@ -94,9 +94,12 @@ export const businessTaxesPageContent = {
     },
     {
       type: `paragraph`,
-      content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the TX Comptroller. California sales tax is collected at the point of purchase. California sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect California sales tax on:`,
+      content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the TX Comptroller. California sales tax is collected at the point of purchase. California sales tax rates do vary depending on the region, county or city where you are located. `,
     },
-
+    {
+        type: "paragraph",
+        content: "You will typically need to collect California sales tax on:",
+    },
     {
       type: `iconListColorBox`,
       boxColor: color.green3,

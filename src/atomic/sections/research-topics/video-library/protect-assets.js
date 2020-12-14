@@ -33,11 +33,11 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="24">
 				{content.text}
 			</Paragraph>
-			<LightBoxVideo
-				thumbnailVideo="comparison-chart-video-3611"
-				videoID="R_oIgzYh7NU"
-				bottomMargin="48"
-			/>
+			{/*<LightBoxVideo*/}
+				{/*thumbnailVideo="comparison-chart-video-3611"*/}
+				{/*videoID="R_oIgzYh7NU"*/}
+				{/*bottomMargin="48"*/}
+			{/*/>*/}
 		</ImageContent>
 	</About>
 );

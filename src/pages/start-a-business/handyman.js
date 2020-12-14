@@ -586,7 +586,7 @@ const Handyman = () => (
 
 			<BusinessOwnerResponsibilities>
 				<ImageContent image="unique-business-green" paddingTop="60">
-					<Heading size={2} template={4} left style={{ fontSize: "24px" }}>
+					<Heading size={2} template={3} left>
 						Choose the Right Business Structure and Register Your Handyman
 						Business
 					</Heading>

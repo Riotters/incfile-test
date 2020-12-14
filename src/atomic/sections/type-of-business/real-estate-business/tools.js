@@ -23,13 +23,13 @@ const ToolsAndLinks = () => (
                 <OvalSvg/>
             </Oval2>
 
-            <TextCenterLayout headlineWidth={770} textWidth={770}
+            <TextCenterLayout headlineWidth={770} textWidth={770} bottomMargin={50}
                               headline="Social Media Groups for Real Estate Agents & Investors"
                               text="Connecting with other business owners in your industry can be incredibly helpful. Here are some of the best social media groups for real estate businesses:"/>
 
             <Container>
+                <Heading size={3} style={{margin: "0 auto 50px", textAlign: "center"}}>Facebook</Heading>
                 <LinksContainer>
-                    <Heading size={3} style={{margin: "0 auto 50px", textAlign: "center"}}>Facebook</Heading>
                     <LinkItem>
                         <PathLink to="https://www.facebook.com/realestateforums/" textColor={color.blue1}
                                   hoverColor={color.orange1} arrowColor={color.blue1}>
@@ -67,8 +67,8 @@ const ToolsAndLinks = () => (
 
                 </LinksContainer>
 
+                <Heading size={3} style={{margin: "0 auto 50px", textAlign: "center"}}>Linkedin</Heading>
                 <LinksContainer>
-                    <Heading size={3} style={{margin: "0 auto 50px", textAlign: "center"}}>Linkedin</Heading>
                     <LinkItem>
                         <PathLink to="https://www.linkedin.com/groups/1812050/profile" textColor={color.blue1}
                                   hoverColor={color.orange1} arrowColor={color.blue1}>

@@ -618,7 +618,7 @@ const TshirtBusiness = () => (
 
             <BusinessOwnerResponsibilities>
                 <ImageContent image="unique-business-2" paddingTop="60">
-                    <Heading size={2} template={4} left style={{fontSize: "24px"}}>
+                    <Heading size={2} template={3} left>
                         Choose the Right Business Structure and Register Your T-Shirt
                         Business
                     </Heading>

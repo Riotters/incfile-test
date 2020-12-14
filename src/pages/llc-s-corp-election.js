@@ -327,7 +327,7 @@ const CorpElection = () => (
 				<Accordion content={faq} />
 			</ContentCenter>
 		</Help>
-		<Benefits />
+		{/*<Benefits />*/}
 		<Articles categoryId={293} />
 	</Layout>
 );

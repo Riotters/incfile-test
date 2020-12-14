@@ -185,8 +185,12 @@ export const filingFeeAndRequirementContent = {
     },
     {
       type: `paragraph`,
-      content: `Your Florida LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Florida , regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. Permits and licenses vary based on:`,
+      content: `Your Florida LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Florida , regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. `,
     },
+      {
+          type: "paragraph",
+          content: "Permits and licenses vary based on:",
+      },
     {
       type: `iconListColorBox`,
       styles: { marginBottom: `55px` },
@@ -244,7 +248,7 @@ export const filingFeeAndRequirementContent = {
       styles: { fontSize: `25px` },
       bgImage: [BgBoxLLCOA],
       content: {
-        title: `f you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Florida business.`,
+        title: `If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Florida business.`,
         subtitle: `You can choose to make changes to the template based on your unique requirements.`,
         button: {
           text: `Lear About Operating Agreemets`,
@@ -321,13 +325,14 @@ export const filingFeeAndRequirementContent = {
     },
     {
       type: `paragraph`,
-      content: `Your business formation documents state certain facts about your Florida business when it was originally formed. Over time, these facts might change — if they do, you need to file a “Certificate of Amendment” with the Florida Department of State. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file a Florida Certificate of Amendment for include:`,
+      content: `Your business formation documents state certain facts about your Florida business when it was originally formed. Over time, these facts might change — if they do, you need to file a “Certificate of Amendment” with the Florida Department of State. You can do this yourself or have Incfile complete the filing on your behalf.`,
     },
     {
       type: `iconListColorBox`,
       styles: { marginBottom: `55px` },
       boxColor: color.blue3,
       content: {
+        text: "Areas you might want to file a Florida Certificate of Amendment for include:",
         list: [
           `Adding, removing or changing a Florida LLC member or manager`,
           `Changing the business address of your LLC`,

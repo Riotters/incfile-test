@@ -99,7 +99,7 @@ const ValidatingBusinessIdea = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={2} template={3} left>Validating Your Bed and Breakfast Business Idea</Heading>
+                    <Heading size={2} left>Validating Your Bed and Breakfast Business Idea</Heading>
                     <Paragraph big>
                         These are all great starting points, but you will need to build on them to make the business your own. You have unique skills and insight that you can use to create a bed and breakfast business that will really stand out.
                     </Paragraph>

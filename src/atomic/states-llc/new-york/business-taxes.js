@@ -118,7 +118,7 @@ const BusinessTaxesSection = ({ content }) => {
           )}
 
           {item.type === "paragraph" && (
-            <Paragraph big mixed={true} style={item.styles}>
+            <Paragraph big mixed={true} style={item.styles} bottomMargin={item.bottomMargin}>
               {parse(item.content)}
             </Paragraph>
           )}
