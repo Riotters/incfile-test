@@ -9,6 +9,7 @@ import {
 	types,
 	prosAndCons,
 	faq,
+	rocket,
 } from "../../static/business-entity-quiz/llc";
 import TopSection from "../../atomic/sections/learning-center-entity/business-entity-quiz/top-section";
 import About from "../../atomic/sections/business-entity-quiz/llc/about";
@@ -19,6 +20,7 @@ import Checklist from "../../atomic/sections/business-entity-quiz/llc/checklist"
 import Requirements from "../../atomic/sections/business-entity-quiz/llc/requirements";
 import Faq from "../../atomic/sections/business-entity-quiz/llc/faq";
 import ChooseEntitySection from "../../atomic/sections/learning-center-entity/business-entity-quiz/choose-entity";
+import Rocket from "../../atomic/sections/rocket";
 // temp //
 
 const BusinessEntityQuizLLC = () => (
