@@ -24,6 +24,7 @@ import ChooseEntitySection from "../../atomic/sections/learning-center-entity/bu
 const BusinessEntityQuizLLC = () => (
 	<Layout>
 		<SEO
+			robots="none"
 			title="Quiz Result: You Should Form an LLC"
 			description="Your answers suggest an LLC is the right business entity for your new business. Learn more about LLCs here."
 		/>

@@ -49,16 +49,58 @@ const Wrapper = styled.div`
 		color: ${color.grey1};
 		padding: 0 24px;
 	}
+
+	ul {
+		list-style: none;
+		padding: 0 24px;
+		color: #63666e;
+		padding-top: 37px;
+
+		li {
+			padding-left: 20px;
+			position: relative;
+
+			&::before {
+				content: "";
+				height: 4px;
+				width: 4px;
+				border-radius: 50%;
+				background-color: ${color.blue1};
+				position: absolute;
+				top: 12px;
+				left: 0;
+			}
+
+			&:not(:last-child) {
+				margin-bottom: 24px;
+			}
+		}
+	}
 `;
 
-const TopImageBox = ({ className, image, imageAlt, color, children, noShadow }) => {
+const TopImageBox = ({
+	className,
+	image,
+	imageAlt,
+	color,
+	children,
+	noShadow,
+	style,
+}) => {
+	return (
+		<Wrapper
+			className={className}
+			color={color}
+			noShadow={noShadow}
+			style={style}
+		>
+			<div className="top">
+				{" "}
+				{image && <Image filename={image} alt={imageAlt} />}{" "}
+			</div>
+			<div className="content"> {children} </div>
+		</Wrapper>
+	);
+};
 
-    return (
-        <Wrapper className={className} color={color} noShadow={noShadow}>
-            <div className="top"> {image && (<Image filename={image} alt={imageAlt} />)} </div>
-            <div className="content"> {children} </div>
-        </Wrapper>
-    );
-}
-
-export default TopImageBox
+export default TopImageBox;
