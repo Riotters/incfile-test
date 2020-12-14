@@ -68,7 +68,7 @@ const Navigation = styled.nav`
 		flex-grow: 1;
 	}
 
-	@media (max-width: 992px) {
+	@media (max-width: 991px) {
 		overflow: hidden;
 		align-items: flex-start;
 		position: relative;
@@ -89,7 +89,7 @@ const Menu = styled.ul`
 		width: initial;
 	}
 
-	@media (max-width: 992px) {
+	@media (max-width: 991px) {
 		height: auto;
 	}
 `;
@@ -113,7 +113,7 @@ const MenuItem = styled.li`
 		}
 	}
 
-	@media (max-width: 992px) {
+	@media (max-width: 991px) {
 		margin-right: 0;
 
 		&.active {
@@ -187,7 +187,7 @@ const LoginWrapper = styled.div`
 		}
 	}
 
-	@media (max-width: 992px) {
+	@media (max-width: 991px) {
 		width: 100%;
 	}
 
@@ -209,7 +209,7 @@ const FlexRow = styled.div`
 	align-items: center;
 	padding-right: 17px;
 
-	@media screen and (max-width: 992px) {
+	@media screen and (max-width: 991px) {
 		justify-content: space-between;
 	}
 `;
@@ -226,17 +226,17 @@ const DropdownMenu = styled.div`
 	background: ${color.white};
 	position: absolute;
 
-	@media screen and (max-width: 992px) {
+	@media screen and (max-width: 991px) {
 		position: relative;
 		grid-template-columns: 100%;
 		overflow: hidden;
 	}
 
-	@media (min-width: 556px) and (max-width: 992px) {
+	@media (min-width: 556px) and (max-width: 991px) {
 		grid-template-columns: auto auto;
 	}
 
-	@media screen and (max-width: 992px) {
+	@media screen and (max-width: 991px) {
 		position: static;
 		top: unset;
 		background: unset;
@@ -288,7 +288,7 @@ const Login = styled.a`
 		line-height: 19px;
 	}
 
-	@media (max-width: 992px) {
+	@media (max-width: 991px) {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -377,7 +377,7 @@ function handleHeaderClick(e) {
 }
 
 const NavigationMobileScrollHidden = styled.div`
-	@media (max-width: 992px) {
+	@media (max-width: 991px) {
 		position: relative;
 		right: -17px;
 		max-height: 100%;
