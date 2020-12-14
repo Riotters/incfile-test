@@ -8,6 +8,7 @@ import DropdownSVG from "../images/dropdown.inline.svg";
 import { color } from "../atomic/atoms/styles/colors";
 import { shadow } from "../atomic/atoms/styles/shadows";
 import { Heading } from "../atomic/atoms/typography/heading";
+import ArrowLink from "../atomic/molecules/buttons/text";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -217,7 +218,7 @@ const DropdownMenu = styled.div`
 	transition: max-height 0.8s;
 	top: calc(100% + 1px);
 	display: none;
-	grid-template-columns: auto auto;
+	grid-template-columns: 100%;
 	max-height: 0;
 	padding: 0;
 	z-index: 999;
@@ -385,6 +386,26 @@ const NavigationMobileScrollHidden = styled.div`
 	}
 `;
 
+const BottomLink = styled.div`
+	height: 30px;
+	width: 100%;
+	margin-top: 30px;
+	
+	@media (max-width: 991px) {
+		a {
+			font-size: 16px;
+		}
+	}
+	
+	@media (min-width: 992px) {
+		border-top: 1px solid ${color.grey4};
+		padding: 20px 30px;
+		width: calc(100% + 64px);
+		margin: 30px 0 0 -32px;
+		grid-column: 1 / span 2;
+	}
+`;
+
 const Header = ({ siteTitle }) => {
 	const [menu, showMenu, active] = useState(false);
 
@@ -503,7 +524,6 @@ const Header = ({ siteTitle }) => {
 											</MenuLink>
 										</MenuItem>
 									</SubmenuColumn>
-
 									<SubmenuColumn>
 										<Heading size={5} bottomMargin={10}>
 											IRS Filings
@@ -538,6 +558,9 @@ const Header = ({ siteTitle }) => {
 											</MenuLink>
 										</MenuItem>
 									</SubmenuColumn>
+									<BottomLink>
+										<ArrowLink content={{ url: `${process.env.SITE_URL}/dashboard`, text: "View Your Dashboard" }} />
+									</BottomLink>
 								</DropdownMenu>
 							</MenuItem>
 							<MenuItem className="menu-item-l1">
@@ -665,6 +688,9 @@ const Header = ({ siteTitle }) => {
 											<MenuLink to="/help-center/">Help Center</MenuLink>
 										</MenuItem>
 									</SubmenuColumn>
+									<BottomLink>
+										<ArrowLink content={{url: `${process.env.SITE_URL}/blog`, text: "Read The Infile Blog"}} />
+									</BottomLink>
 								</DropdownMenu>
 							</MenuItem>
 							<MenuItem className="menu-item-l1">
