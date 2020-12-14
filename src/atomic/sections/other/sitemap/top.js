@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { color } from "../../../../components/styles/colors";
-import HeadingCenter from "../../../partials/heading-center";
 import Curve from "../../../atoms/icons/curve";
 import CurveSVG from "../../../../images/curves/bottom-left-top-right-big.inline.svg";
 import ContentCenter from "../../../partials/content-center";
