@@ -17,6 +17,8 @@ import Layout from "../components/layout";
 // text
 import { seo, formCheck } from "../static/other/business-name-generator";
 import BusinessNameSearchForm from "../atomic/organisms/forms/business-name-search-form";
+import { Heading } from "../atomic/atoms/typography/heading";
+import { Paragraph } from "../atomic/atoms/typography/paragraph";
 
 const Wrapper = styled.div`
 	position: relative;
@@ -83,7 +85,12 @@ const CheckAvailabilityName = ({ location }) => {
 							Back{" "}
 						</Link>
 					</div>
-					<HeadingCenter headline={formCheck.header} text={formCheck.text} />
+					<Heading size={1} template={2} center maxWidth="610">
+						{formCheck.header}
+					</Heading>
+					<Paragraph big maxWidth="750" center>
+						{formCheck.text}
+					</Paragraph>
 					<RelativeElement maxWidth="670px" margin="60px 0 0 0">
 						<AbsoluteShapCure rotate={90} right="70" bottom="-25">
 							<ShapeCurve color={color.blue} />
