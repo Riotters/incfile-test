@@ -1038,11 +1038,11 @@ export const feesAndRequirments = [
     content: `Your Indiana LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Indiana, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. `,
     marginBottom: 16,
   },
-    {
-        type: "text",
-        content: "Permits and licenses vary based on:",
-        marginBottom: 16
-    },
+  {
+    type: "text",
+    content: "Permits and licenses vary based on:",
+    marginBottom: 16,
+  },
   {
     type: `list-dot`,
     content: {
@@ -1248,7 +1248,7 @@ export const feesAndRequirments = [
         },
         {
           question: `Do I Need to Pay an Annual Report Fee Every Year?`,
-          answer: `Yes. Indiana requires you to file a report for your LLC every year.`,
+          answer: `No, reports in Indiana are due every other year. You can find out more on the <a href="/compliance-filing-requirement/" target="_blank">compliance page for your state.</a>`,
         },
         {
           question: `Who Will I Get Business Licenses and Permits from for My Indiana LLC?`,
@@ -1380,11 +1380,11 @@ export const businessTaxes = [
     content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the IN Department of Revenue. Indiana sales tax is collected at the point of purchase. Indiana sales tax rates do vary depending on the region, county or city where you are located. `,
     marginBottom: 16,
   },
-    {
-        type: "text",
-        content: "You will typically need to collect Indiana sales tax on:",
-        marginBottom: 16
-    },
+  {
+    type: "text",
+    content: "You will typically need to collect Indiana sales tax on:",
+    marginBottom: 16,
+  },
   {
     type: `list-dot`,
     content: {

@@ -1073,7 +1073,12 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Some CO LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you’ll pay on a one-off or regular basis. Permits and licenses vary based on:`,
+    content: `Some CO LLCs will need certain business licenses and permits from federal, state and regional organizations. These permits and licenses will have associated fees that you’ll pay on a one-off or regular basis.`,
+    marginBottom: 16,
+  },
+  {
+    type: `text`,
+    content: `Permits and licenses vary based on:`,
     marginBottom: 24,
   },
   {
@@ -1427,11 +1432,11 @@ export const businessTaxes = [
     content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the CO Department of Revenue. Colorado sales tax is collected at the point of purchase. Colorado sales tax rates do vary depending on the region, county or city where you are located. `,
     marginBottom: 16,
   },
-    {
-        type: "text",
-        content: "You will typically need to collect Colorado sales tax on:",
-        marginBottom: 24
-    },
+  {
+    type: "text",
+    content: "You will typically need to collect Colorado sales tax on:",
+    marginBottom: 24,
+  },
   {
     type: `list-dot`,
     content: {

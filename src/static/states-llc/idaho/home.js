@@ -1286,7 +1286,7 @@ export const feesAndRequirments = [
         },
         {
           question: `Do I Need to Pay an Annual Report Fee Every Year?`,
-          answer: `Yes. Idaho requires you to file a report for your LLC every year.`,
+          answer: `Yes. Most states, including ID, require you to file a report for your LLC every year. You can find out more on the <a href="/compliance-filing-requirement/" target="_blank">compliance page for your state.</a>`,
         },
         {
           question: `Who Will I Need to Get Business Licenses and Permits From for My Idaho LLC?`,
@@ -1417,11 +1417,11 @@ export const businessTaxes = [
     content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the ID Tax Commission. Idaho sales tax is collected at the point of purchase. Idaho sales tax rates do vary depending on the region, county or city where you are located. `,
     marginBottom: 16,
   },
-    {
-        type: "text",
-        content: "You will typically need to collect sales tax on:",
-        marginBottom: 24
-    },
+  {
+    type: "text",
+    content: "You will typically need to collect sales tax on:",
+    marginBottom: 24,
+  },
   {
     type: `list-dot`,
     content: {
