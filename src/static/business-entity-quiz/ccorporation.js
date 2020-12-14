@@ -15,36 +15,33 @@ export const top = {
 	},
 };
 
-export const about = {
-	text: `Now that your small business is growing, it’s important to protect both your company and your own assets. Forming an LLC can help do that — but is it the best business entity choice for you?.
-    <span>We've written a complete guide to forming an LLC to help with your decision.</span>`,
-	box: {
-		header: `What Does “LLC” Stand For?`,
-		text: `The abbreviation "LLC" stands for limited liability company. 
-        The name refers to one of the primary benefits of this business
-        entity type—LLCs allow business owners to keep their personal assets separate from those of the company. This effectively limits their own liability when it comes to company debts and responsibilities.`,
-	},
-};
-
 export const types = {
-	header: `What Types of Businesses Should Choose an LLC?`,
-	text: `If you don't plan on raising investment money for your business, think you might need asset protection and need flexible business management and taxes, then an LLC is likely the best choice for your business. Whether you are a sole proprietor, have a partner, or a multi-member corporation, the LLC is a great choice for small business owners, as it can provide the same limited liability protection as a corporation, without many of the complexities and formalities associated with them. At Incfile we see all sizes and verticals of businesses forming an LLC — from LLCs for real estate agents or financial advisors to solopreneurs such as personal trainers or even marijuana businesses. A number of entrepreneurs decide that an LLC is the business structure that fits their needs.`,
+	header: `How Is a C Corporation Formed?`,
+	text: `A C Corp, also known as a corporation, is a type of business entity that 
+    is formed and regulated on a state level. The corporation is formed 
+    by filing “Articles of Incorporation” with the Secretary of State in the state of incorporation. The policies, articles, cost and regulations for forming 
+    a C Corp vary from state-to-state. Details on exactly how to form 
+    a C Corporation can be found at the end of this article.`,
 	box: {
-		header: "Some businesses are prevented from forming an LLC, however.",
-		text: `Typically financial companies such as banks, financial trust companies and insurance agencies can't file as an LLC. LLCs are sometimes limited for industries in certain states, too. For example, if you live 
-        in California, you can't form an LLC if you're an architect, accountant or licensed health care provider.`,
+		header: "The corporation is the oldest form of business entity.",
+		text: `It has long been a successful way to do business and allows groups 
+        of individuals to pool their resources and capital to pursue a common purpose, with their risk limited solely to the amount of stock they own. Although a C Corp is a popular business structure, there are other options for forming businesses in the US.`,
 	},
 	text2: `Check out our <a href="/llc-state-information/">LLC information by state</a> for more details on your state.`,
+	header2: `Consider a C corp if you..`,
+	list: [
+		`Plan on having a larger business`,
+		`Intend to publicly trade shares`,
+		`Want to be attractive to potential investors`,
+	],
 	button: {
-		text: `Form Your LLC Today For $0 + State Fee`,
-		url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&utm_campaign=Lead%20Gen%20-%20Business%20Entity%20Quiz&utm_source=On_Page_Click&utm_medium=LLC%20Results%20Page&utm_term=Order%20Form`,
+		text: `Form Your C Corp Today`,
+		url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&utm_campaign=Lead%20Gen%20-%20Business%20Entity%20Quiz&utm_source=On_Page_Click&utm_medium=CCorp%20Results%20Page&utm_term=Order%20Form`,
 	},
 };
 
 export const prosAndCons = {
-	header: `The Advantages & Disadvantages of LLCs`,
-	text: `The LLC structure has many benefits that make it perfect for a wide variety 
-    of companies. However, there are also some disadvantages to creating an LLC. Here are some of the biggest pros and cons to keep in mind.`,
+	header: `The Advantages & Disadvantages of C Corporations`,
 	boxes: [
 		{
 			disadventage: false,
@@ -53,24 +50,21 @@ export const prosAndCons = {
 			text: `
             <ul>
                 <li>
-                    <span>Limited Liability Protection</span> By forming an LLC, only the LLC is liable for the debts and liabilities incurred by the business — not the members. The members liability is limited to the personal interest they have invested in the company thus protecting the personal assets of the individual member that are separate from the LLC.
+                    <span>A C Corporation has Limited Liability</span> Because a C Corp is a separate legal entity, the liabilities of the business are separate from the liabilities of the directors, investors and shareholders. Generally, the owners of a C Corporation are protected from being liable for the business’s obligations. This does not apply in all cases, for example if corporate funds are misused, there is wilful fraud, or if certain rules and regulations are not followed.
                 </li>
                 <li>
-                    <span>Pass Through Taxation</span> The LLC typically does not pay taxes for itself. Instead, the net income/loss is "passed through" to the personal income of the owner(s)
-                    /member(s), and is simply taxed as personal income. Federally, LLC taxation is handled very much the same as a partnership or sole proprietorship, in the case of a single member LLC.
+                    <span>A C Corporation Exists Independently of its Owners</span> A C Corporation can have “Perpetual Existence” — this is in contrast to sole proprietorships or partnerships where a business only exists for as long as the proprietors or owners are alive and in the business.
                 </li>
                 <li>
-                    <span>No Ownership Restrictions</span> The LLC does not have any residency or citizenship restrictions, which allows foreign nationals to have ownership in an LLC, if desired. In addition, other corporate entities may be LLC members which means that other corporations or LLCs (or other entities) may be a member of the LLC, or may be the sole member (although an LLC with a sole member that is a corporation or LLC is treated for tax purposes as a partnership or multi-member LLC).
+                    <span>Ownership of C Corporations Can Be Fluid and Transferred</span> Ownership in a C Corporation is decided by who holds the stocks 
+                    it issues. These stocks can be bought and sold between investors, and if the company’s shares are publicly traded on a stock exchange, institutions and members of the public can own stock 
+                    in the company.
                 </li>
                 <li>
-                    <span>Versatile Tax Status One</span> of the most advantageous aspects of the LLC is that it has the ability to choose how it is treated as a taxable entity. According to the IRS an LLC is, by default, federally taxed as a partnership (in the case of a multi-member LLC) or as a sole proprietor (in the case of a single member LLC). The LLC, however, may elect to be taxed as a C- or S-corporation at any time the members so choose.
+                    <span>Ease of Access to Funding Through Issuing Stock</span> If a C Corporation want to raise money, it can hold an “Initial Public Offering (IPO)” where it “goes public” and offers shares for sale on a stock exchange. This can bring significant money into a business. They can also choose to issue shares periodically to raise further funding, although this can dilute the value of existing shares.
                 </li>
                 <li>
-                    <span>Flexible Profit Distribution</span> For an LLC, if the members choose, the net income/profits of the LLC may be allocated to the members in different proportions to their
-                    ownership percentage in the LLC. This is different from a corporation, as corporations are required to distribute profits exactly accordance with the proportion/percentage of ownership of each shareholder.
-                </li>
-                <li>
-                    <span>Minimal Compliance Requirements</span> LLCs are subject to limited state mandated annual filing requirements and ongoing formalities. While corporations are typically required to have at least an annual meeting of directors and shareholders (and initial meeting of the same), adopt bylaws, and keep minutes of all meetings and all formal corporate resolutions, an LLC is not required to do any of those things (see the explanation of an operating agreement, above). The LLC members may have whatever meetings they wish and may document any such things as they wish, however they are not required to do so.
+                    <span>Enhanced Business or Corporate Credibility</span> Most of the businesses that are household names are C Corporations. Incorporating as a C Corp demonstrates to others that you expect to see significant growth and can enhance the business’s credibility and authority.
                 </li>
             </ul>
             `,
@@ -82,16 +76,13 @@ export const prosAndCons = {
 			text: `
             <ul>
                 <li>
-                    <span>Self Employment Taxes</span> Although we listed Pass Through Taxation as an LLC benefit, it can also be a disadvantage. Oftentimes the taxes that are passed through and reported as personal income of LLC members will be higher than the taxes at a corporate level. You will also still pay for federal inclusions such as Medicare and Social Security. If you're confused if this business structure will be the right tax choice for you, it's a good idea to speak to your accountant or financial advisor.
+                    <span>A different tax structure to other types of businesses.</span>
                 </li>
                 <li>
-                    <span>Careful Personal Records</span> As the owner of an LLC, you need to keep careful records of your business expenses — separate from your personal finances. This is the only way to ensure limited liability. Therefore, you should have separate bank accounts and cards to track business expenses.
+                    <span>Double taxation for investors when dividends are paid to them.</span>
                 </li>
                 <li>
-                    <span>LLC Termination</span> Usually, if a member departs an LLC, then the LLC is terminated and ceases to exist. This is unlike a corporation where it still exists regardless of what shareholders come and go.
-                </li>
-                <li>
-                    <span>Banking</span> Since it's required to keep your business finances separate from your personal finances, you'll need a business checking account. Banks usually charge a number of different fees and monthly expenses for these types of accounts. Also, If a check is made out to your LLC, then it is required to be deposited into a business bank account and cannot just be cashed. And some banks might charge extra for this type of deposit.
+                    <span>Legal rules, regulations, formalities, and compliance they have to meet.</span>
                 </li>
             </ul>
             `,
@@ -99,82 +90,74 @@ export const prosAndCons = {
 	],
 };
 
-export const faq = {
-	header: `Other Frequently Asked Questions about LLCs`,
-	items: [
-		{
-			question: `How does business asset protection work with LLCs?`,
-			answer: `The limited liability company structure, much like a corporation, provides LLC owners with limited liability asset protection. This means that the company assets are typically owned by the LLC and are separate from the personal assets from that of the LLC owner(s). Should there be a lawsuit aimed at the company, whether with or without merit, the LLC is the legal entity that would be sued. The assets of the LLC could be attacked, however that would be separate from the personal assets of the LLC owner(s), which would be protected.
-            <br><br>
-            The potential liability of an LLC owner is limited only to whatever that owner has invested in the LLC, such as an initial, investment or any retained earnings. This is very much the same as if you had purchased shares of stock in a corporation. In most cases, the most you can lose is what you paid for the stock, but you typically will not lose more than that, no matter how much the company might potentially lose or for however much the company might be sued.`,
-		},
-		{
-			question: `What is an LLC member?`,
-			answer: `If you are the owner of an LLC, you are referred to as a member, and LLCs can have a single member or multiple members — it's up to you.`,
-		},
-		{
-			question: `How do I file an amendment for an LLC?`,
-			answer: `If you need to make a change to your LLC, you need to <a href="/manage-your-company/amendment/">
-            file an amendment</a> with your secretary of state. Not all changes need to be amended, but generally anything within your
-            LLC's Articles of Incorporation or Articles of Organization that is being changed needs to be filed.`,
-		},
-		{
-			question: `Can you start an LLC by yourself?`,
-			answer: `Yes! In fact, LLCs are often the perfect structure for sole proprietors because they provide protection for your personal assets without the complexity and rigid regulations of a corporation.`,
-		},
-		{
-			question: `How do LLC owners pay themselves?`,
-			answer: `As the owner of your LLC, you do not receive a paycheck. Instead LLC members take "draws" or "distributions," which do not have any federal or state income taxes withheld. You are responsible for reporting your share of profits on your personal income tax returns.`,
-		},
-		{
-			question: `How do LLC taxes work?`,
-			answer: `LLCs can be taxed differently depending on whether they are sole proprietorships or have multiple members, and whether or not you elect to be taxes as a corporation. For more information, talk to your accountant.`,
-		},
+export const advancesAndDisadvances = {
+	header: `The Advantages & Disadvantages of C Corporations`,
+	text: ` A C Corporation is taxed as a separate business entity. Unlike individuals, C Corporations have to file a designated tax form with the IRS, which is called IRS Form 1120. Additionally, C Corporations have their own tax rates.`,
+	text2: `Corporations can retain some of their profits and earnings as part of their operating capital, this can shelter some of the profits from taxation.`,
+	header2: `C Corporation Tax Rates`,
+	text3: `The tax rates levied on C Corporations are as follows.`,
+	table: {
+		headers: [`Profit`],
+		rows: [
+			[
+				`<span>Up to $50,000</span><strong>15%</strong>`,
+				`<span>$335,000 - $10,000,000</span><strong>34%</strong>`,
+			],
+			[
+				`<span>$50,000 - $75,000</span><strong>21%</strong>`,
+				`<span>$10,000,000 - $15,000,000</span><strong>35%</strong>`,
+			],
+			[
+				`<span>$75,000 - $100,000</span><strong>34%</strong>`,
+				`<span>$15,000,000 - $18,333,333</span><strong>38%</strong>`,
+			],
+			[
+				`<span>$100,000 - $335,000</span><strong>39%</strong>`,
+				`<span>More than $18,333,333</span><strong>35%</strong>`,
+			],
+		],
+		bottomMargin: `72`,
+	},
+	header3: `Stock Dividends from C Corporations`,
+	text4: `A C Corporation may choose to distribute some of the profits of the company as dividends, which are distributed to shareholders. The percentage of dividends that each shareholder is entitled to depends on how many shares they own.`,
+	text5: `Dividends that are distributed to shareholders are taxed twice (double-taxed). They are taxed first at the corporate level as profit (on the corporation’s form 1120), and again at the individual level as stock dividends (on the shareholder's form 1040).`,
+};
+
+export const differences = {
+	header: `What Are the Differences Between an S Corp, C Corp and LLC?`,
+	text: `Two other popular business entity structures in the US are the S Corp and the LLC. They provide many of the same protections offered by a C Corp but have less formal rules on taxation, governance and compliance. This can mean more flexibility in how an LLC or S Corp is owned and funded.`,
+	header2: `One of the main differences between C Corps and S Corps / LLCs are how income from the different types of businesses are taxed.`,
+	list: [
+		`For LLCs and S Corps, any income earned by the business “flows through” to the business owners’ / shareholders’ / members’ tax returns, where it is taxed as part of1 their overall income. The company does not have to file a separate tax return.`,
+		`S Corps and C Corps can pass on some of their profits to shareholders as dividends.`,
+		`S Corps are limited to having a maximum of 100 shareholders.`,
+		`A C Corp is taxed at the corporate level — That means it has to file a separate tax return as a business entity and will need to pay corporation tax on any profits earned.`,
 	],
 };
 
-export const choose = {
-	header: "Some businesses are prevented from forming an LLC, however.",
-	text: `Typically financial companies such as banks, financial trust companies and insurance agencies can't file as an LLC. LLCs are sometimes limited for industries in certain states, too. For example, if you live 
-        in California, you can't form an LLC if you're an architect, accountant or licensed health care provider.`,
-	types: [
-		{
-			header: "Limited Liability Company (LLC)",
-			text:
-				"Should You Form a Limited Liability Company (LLC)? For over 80% of small businesses, the right choice of business structure is a simple one: the LLC.",
-			color: color.blue3,
-			image: "llc-cert-4502",
-		},
-		{
-			header: "S - Corporation",
-			text:
-				"Want to keep more of your tax money? See \n" +
-				"if an S Corporation could be the right choice to help your business save money on taxes each year.",
-			color: color.purple3,
-			image: "s-corp-cert-7631",
-		},
-		{
-			header: "C - Corporation",
-			text:
-				"A C Corporation structure is generally better for larger businesses. Is it right for your business?",
-			color: color.orange3,
-			image: "c-corp-cert-5502",
-		},
-		{
-			header: "Non-Profit",
-			text:
-				"Starting a nonprofit can truly help make the world a better place. Is a Nonprofit best for your business?",
-			color: color.green3,
-			image: "n-cert-6592",
-		},
+export const howForm = {
+	header: `How to Form a C Corporation`,
+	text: `If a C Corporation is right for you, here’s how to form one:`,
+	list: [
+		`Choose a legal name for your new business.`,
+		`If the Secretary of State in your state reserves business names, reserve the name.`,
+		`Draft and file your Articles of Incorporation — These should be sent to your Secretary 
+        of State.`,
+		`Establish who your initial investors and shareholders are.`,
+		`Create and issue stock certificates to your shareholders.`,
+		`Apply for a business license — You may require licenses from your state, county, and township.`,
+		`Apply for any other certificates you need to conduct business — These can vary from industry to industry.`,
+		`Get an “Employer Identification Number (EIN): from the IRS — You can file online, 
+        or complete form SS-4.`,
+		`Apply for any other ID numbers and complete other formalities required by your state and local government agencies.`,
+		`Requirements do vary from one jurisdiction to another, but you will generally need to get ID numbers for the unemployment, disability and other payroll taxes.`,
+		`Appoint a board of directors.`,
+		`Assign other positions in the business as required by law.`,
 	],
-	header2: "The Four Main Types of Legal Business Structures",
-	text2:
-		"There are four main types of “business entities” \n" +
-		"that you can create",
-	image: "after-formation-9568",
+	text2: `Forming a C Corporation can be tricky, so let us do the hard work for you. Here at Incfile, we’ve helped to form thousands of businesses, and our experts are on hand 
+    to help you, right now. Incorporate your business with Incfile for as little as $0 plus the state fee.`,
 	button: {
-		text: "Take the quiz",
-		url: "/business-entity-quiz/explain/",
+		text: `From Your C Corp Today`,
+		url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&utm_campaign=Lead%20Gen%20-%20Business%20Entity%20Quiz&utm_source=On_Page_Click&utm_medium=CCorp%20Results%20Page&utm_term=Order%20Form`,
 	},
 };

@@ -8,38 +8,38 @@ import {
 	about,
 	types,
 	prosAndCons,
-	faq,
-} from "../../static/business-entity-quiz/llc";
+	differences,
+	advancesAndDisadvances,
+	howForm,
+} from "../../static/business-entity-quiz/ccorporation";
 import TopSection from "../../atomic/sections/learning-center-entity/business-entity-quiz/top-section";
-import About from "../../atomic/sections/business-entity-quiz/llc/about";
-import WhatIs from "../../atomic/sections/business-entity-quiz/llc/what-is";
+import WhatIs from "../../atomic/sections/business-entity-quiz/ccorporation/what-is";
+import HowFormed from "../../atomic/sections/business-entity-quiz/ccorporation/how-formed";
 import Types from "../../atomic/sections/business-entity-quiz/llc/types";
 import ProsAndCons from "../../atomic/sections/business-entity-quiz/llc/pros-and-cons";
-import Checklist from "../../atomic/sections/business-entity-quiz/llc/checklist";
-import Requirements from "../../atomic/sections/business-entity-quiz/llc/requirements";
-import Faq from "../../atomic/sections/business-entity-quiz/llc/faq";
-import ChooseEntitySection from "../../atomic/sections/learning-center-entity/business-entity-quiz/choose-entity";
-// temp //
+import AdvancesAndDisadvances from "../../atomic/sections/business-entity-quiz/ccorporation/advances-and-disadvances";
+import Requirements from "../../atomic/sections/business-entity-quiz/ccorporation/requirements";
+import HowForm from "../../atomic/sections/business-entity-quiz/ccorporation/how-form";
+import Rocket from "../../atomic/sections/rocket";
 
 const BusinessEntityQuizCCorp = () => (
 	<Layout>
 		<SEO
+			robots="none"
 			title="Quiz Result: You Should Form an LLC"
 			description="Your answers suggest an LLC is the right business entity for your new business. Learn more about LLCs here."
 		/>
 		<TopSection content={top} padding="220px 0" />
-		<About content={about} />
-		<WhatIs
-		//content={whatIs}
-		/>
-		{/* <ChooseEntitySection content={choose} /> */}
+		<WhatIs />
 		<Types content={types} />
 		<ProsAndCons content={prosAndCons} />
+		<HowFormed content={differences} />
+		<AdvancesAndDisadvances content={advancesAndDisadvances} />
 		<Requirements
 		//content={requirements}
 		/>
-		<Faq content={faq} />
-		<Checklist />
+		<HowForm content={howForm} />
+		<Rocket />
 
 		<Helmet>
 			<script type="application/ld+json">{`

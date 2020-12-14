@@ -16,6 +16,7 @@ import Button from "../../../molecules/buttons/button";
 import OvalSvg from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
 import { shadow } from "../../../atoms/styles/shadows";
 import { Link } from "gatsby";
+import { HeadingP } from "../../../atoms/typography/heading-to-p";
 
 const BusinessOwnerResponsibilities = styled.section`
 	position: relative;
@@ -112,7 +113,8 @@ const BusinessStructure = () => (
 					width={100}
 					widthUnit="%"
 				>
-					<Paragraph
+					<HeadingP
+						size={3}
 						big
 						style={{ color: color.blue1, fontWeight: "bold" }}
 						mixed={true}
@@ -122,7 +124,7 @@ const BusinessStructure = () => (
 						>
 							Limited Liability Company or LLC
 						</Link>
-					</Paragraph>
+					</HeadingP>
 
 					<Paragraph big>
 						The most common type of business entity. An LLC is fast, simple and
@@ -179,7 +181,8 @@ const BusinessStructure = () => (
 					width={100}
 					widthUnit="%"
 				>
-					<Paragraph
+					<HeadingP
+						size={3}
 						big
 						style={{ color: color.blue1, fontWeight: "bold" }}
 						mixed={true}
@@ -187,12 +190,12 @@ const BusinessStructure = () => (
 						<Link
 							to={
 								process.env.ORDER_URL +
-								"/form-order-now.php?entityType=S-Corporation"
+								"/form-order-now.php?entityType=SCorporation"
 							}
 						>
 							S Corporation
 						</Link>
-					</Paragraph>
+					</HeadingP>
 
 					<Paragraph big>
 						This is a more complex type of business and isn't generally
@@ -214,7 +217,8 @@ const BusinessStructure = () => (
 					width={100}
 					widthUnit="%"
 				>
-					<Paragraph
+					<HeadingP
+						size={3}
 						big
 						style={{ color: color.blue1, fontWeight: "bold" }}
 						mixed={true}
@@ -222,12 +226,12 @@ const BusinessStructure = () => (
 						<Link
 							to={
 								process.env.ORDER_URL +
-								"/form-order-now.php?entityType=C-Corporation"
+								"/form-order-now.php?entityType=CCorporation"
 							}
 						>
 							C Corporation
 						</Link>
-					</Paragraph>
+					</HeadingP>
 
 					<Paragraph big>
 						These are the largest and most complex types of businesses and are

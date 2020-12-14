@@ -66,8 +66,8 @@ const Handyman = () => (
 				running a home handyman business could be right for you.
 			</p>
 			<ButtonsBox>
-                <Button
-                    extends
+				<Button
+					extends
 					theme="primary56"
 					marginMD="0 24px 0 0"
 					arrow
@@ -487,9 +487,9 @@ const Handyman = () => (
 						theme="icon"
 						Icon={DominoIcon}
 					>
-						<Paragraph big style={{ fontWeight: "bold" }}>
+						<Heading size={3} template={4}>
 							Why You Need a Business Plan?
-						</Paragraph>
+						</Heading>
 						<Paragraph bottomMargin={0}>
 							You need to define how you’re going to run your handyman business,
 							market yourself, get sales, make a profit and grow. This can only

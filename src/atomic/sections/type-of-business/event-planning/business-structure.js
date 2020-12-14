@@ -17,171 +17,277 @@ import OvalGreen3 from "../../../../images/ovals/top-left-transparent-orange2.in
 import { shadow } from "../../../atoms/styles/shadows";
 import { gradient } from "../../../atoms/styles/colors";
 import { Link } from "gatsby";
+import { HeadingP } from "../../../atoms/typography/heading-to-p";
 
 const BusinessOwnerResponsibilities = styled.section`
-  position: relative;
-  padding-top: 75px;
-  padding-bottom: 64px;
+	position: relative;
+	padding-top: 75px;
+	padding-bottom: 64px;
 
-  .colorbox {
-    margin-bottom: 48px;
-  }
+	.colorbox {
+		margin-bottom: 48px;
+	}
 `;
 
 const OrangeContainer = styled.div`
-  background: rgb(255, 255, 255);
-  background-image: ${gradient.orange3};
-  padding-bottom: 100px;
-  position: relative;
+	background: rgb(255, 255, 255);
+	background-image: ${gradient.orange3};
+	padding-bottom: 100px;
+	position: relative;
 `;
 
 const Oval = styled.div`
-  position: absolute;
-  left: 0;
-  top: 100px;
-  width: 100%;
+	position: absolute;
+	left: 0;
+	top: 100px;
+	width: 100%;
 
-  @media (min-width: 570px) {
-    width: 570px;
-  }
+	@media (min-width: 570px) {
+		width: 570px;
+	}
 `;
 
 const BusinessStructure = () => (
-  <OrangeContainer>
-    <Oval>
-      <OvalGreen3 />
-    </Oval>
+	<OrangeContainer>
+		<Oval>
+			<OvalGreen3 />
+		</Oval>
 
-    <BusinessOwnerResponsibilities>
-      <ImageContent image="unique-business-2" paddingTop="60">
-        <Heading size={2} template={3} left>
-          Choose the Right Business Structure for Your Party Planning Business
-        </Heading>
-        <Paragraph big>
-          Now that you have all the background information for your party or event planning business, it’s time to make it into a reality. That starts by choosing the right structure or “legal entity” for your business. In the U.S., there are five main business structures. They are:
-        </Paragraph>
+		<BusinessOwnerResponsibilities>
+			<ImageContent image="unique-business-2" paddingTop="60">
+				<Heading size={2} template={3} left>
+					Choose the Right Business Structure for Your Party Planning Business
+				</Heading>
+				<Paragraph big>
+					Now that you have all the background information for your party or
+					event planning business, it’s time to make it into a reality. That
+					starts by choosing the right structure or “legal entity” for your
+					business. In the U.S., there are five main business structures. They
+					are:
+				</Paragraph>
 
-        <TextBlockWithImage
-          SvgImage={HandsIcon}
-          textBackgroundColor="transparent"
-          imageBackgroundColor={color.white}
-          imageShadowColor={shadow.white2}
-          imageShadowOpacity={0.5}
-          boxShadow={false}
-          paddingLeft={0}
-          style={{ marginTop: "40px" }}
-          circleShadowY={40}
-          circleShadowBlure={80}
-          width={100}
-          widthUnit="%"
-        >
-          <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-            Sole Proprietorship
-          </Paragraph>
+				<TextBlockWithImage
+					SvgImage={HandsIcon}
+					textBackgroundColor="transparent"
+					imageBackgroundColor={color.white}
+					imageShadowColor={shadow.white2}
+					imageShadowOpacity={0.5}
+					boxShadow={false}
+					paddingLeft={0}
+					style={{ marginTop: "40px" }}
+					circleShadowY={40}
+					circleShadowBlure={80}
+					width={100}
+					widthUnit="%"
+				>
+					<HeadingP
+						size={3}
+						big
+						style={{ color: color.blue1, fontWeight: "bold" }}
+						mixed={true}
+					>
+						Sole Proprietorship
+					</HeadingP>
 
-          <Paragraph big>This is the "default" business structure and is what your planning business will be if you decide not to create a more formal structure. We don't recommend this type of business as it doesn't give you the legal protections you need.</Paragraph>
-        </TextBlockWithImage>
+					<Paragraph big>
+						This is the "default" business structure and is what your planning
+						business will be if you decide not to create a more formal
+						structure. We don't recommend this type of business as it doesn't
+						give you the legal protections you need.
+					</Paragraph>
+				</TextBlockWithImage>
 
-        <TextBlockWithImage
-          SvgImage={UmbrellaIcon}
-          textBackgroundColor="transparent"
-          imageBackgroundColor={color.white}
-          imageShadowColor={shadow.white2}
-          imageShadowOpacity={0.5}
-          boxShadow={false}
-          paddingLeft={0}
-          style={{ marginTop: "40px" }}
-          circleShadowY={40}
-          circleShadowBlure={80}
-          width={100}
-          widthUnit="%"
-        >
-          <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Partnership</Link>
-            </Paragraph>
+				<TextBlockWithImage
+					SvgImage={UmbrellaIcon}
+					textBackgroundColor="transparent"
+					imageBackgroundColor={color.white}
+					imageShadowColor={shadow.white2}
+					imageShadowOpacity={0.5}
+					boxShadow={false}
+					paddingLeft={0}
+					style={{ marginTop: "40px" }}
+					circleShadowY={40}
+					circleShadowBlure={80}
+					width={100}
+					widthUnit="%"
+				>
+					<HeadingP
+						size={3}
+						big
+						style={{ color: color.blue1, fontWeight: "bold" }}
+						mixed={true}
+					>
+						<Link
+							to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
+						>
+							Partnership Company or LLC
+						</Link>
+					</HeadingP>
 
-          <Paragraph big>This is a type of business that is formed when two or more people work together without creating a more formal business entity. Like a sole proprietorship, it may not give you all the protections your event planning business may need.</Paragraph>
-        </TextBlockWithImage>
+					<Paragraph big>
+						This is a type of business that is formed when two or more people
+						work together without creating a more formal business entity. Like a
+						sole proprietorship, it may not give you all the protections your
+						event planning business may need.
+					</Paragraph>
+				</TextBlockWithImage>
 
-        <TextBlockWithImage
-          SvgImage={ArrowsIcon}
-          textBackgroundColor="transparent"
-          imageBackgroundColor={color.white}
-          imageShadowColor={shadow.white2}
-          imageShadowOpacity={0.5}
-          boxShadow={false}
-          paddingLeft={0}
-          style={{ marginTop: "40px" }}
-          circleShadowY={40}
-          circleShadowBlure={80}
-          width={100}
-          widthUnit="%"
-        >
-          <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Limited Liability Company or LLC</Link>
-            </Paragraph>
+				<TextBlockWithImage
+					SvgImage={ArrowsIcon}
+					textBackgroundColor="transparent"
+					imageBackgroundColor={color.white}
+					imageShadowColor={shadow.white2}
+					imageShadowOpacity={0.5}
+					boxShadow={false}
+					paddingLeft={0}
+					style={{ marginTop: "40px" }}
+					circleShadowY={40}
+					circleShadowBlure={80}
+					width={100}
+					widthUnit="%"
+				>
+					<HeadingP
+						size={3}
+						big
+						style={{ color: color.blue1, fontWeight: "bold" }}
+						mixed={true}
+					>
+						<Link
+							to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
+						>
+							Limited Liability Company or LLC
+						</Link>
+					</HeadingP>
 
-          <Paragraph big>The Limited Liability Company (LLC) is ideal for most party or event planning businesses. An LLC is easy and inexpensive to set up, and it has the fewest administrative requirements of any formal business entity.</Paragraph>
-        </TextBlockWithImage>
+					<Paragraph big>
+						The Limited Liability Company (LLC) is ideal for most party or event
+						planning businesses. An LLC is easy and inexpensive to set up, and
+						it has the fewest administrative requirements of any formal business
+						entity.
+					</Paragraph>
+				</TextBlockWithImage>
 
-        <TextBlockWithImage
-          SvgImage={PlaneIcon}
-          textBackgroundColor="transparent"
-          imageBackgroundColor={color.white}
-          imageShadowColor={shadow.white2}
-          imageShadowOpacity={0.5}
-          boxShadow={false}
-          paddingLeft={0}
-          style={{ marginTop: "40px" }}
-          circleShadowY={40}
-          circleShadowBlure={80}
-          width={100}
-          widthUnit="%"
-        >
-          <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=S-Corporation"}>S Corporation</Link>
-            </Paragraph>
+				<TextBlockWithImage
+					SvgImage={PlaneIcon}
+					textBackgroundColor="transparent"
+					imageBackgroundColor={color.white}
+					imageShadowColor={shadow.white2}
+					imageShadowOpacity={0.5}
+					boxShadow={false}
+					paddingLeft={0}
+					style={{ marginTop: "40px" }}
+					circleShadowY={40}
+					circleShadowBlure={80}
+					width={100}
+					widthUnit="%"
+				>
+					<HeadingP
+						size={3}
+						big
+						style={{ color: color.blue1, fontWeight: "bold" }}
+						mixed={true}
+					>
+						<Link
+							to={
+								process.env.ORDER_URL +
+								"/form-order-now.php?entityType=SCorporation"
+							}
+						>
+							S Corporation
+						</Link>
+					</HeadingP>
 
-          <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organizations.</Paragraph>
-        </TextBlockWithImage>
+					<Paragraph big>
+						This is a more complex type of business and isn't generally
+						recommended for smaller organizations.
+					</Paragraph>
+				</TextBlockWithImage>
 
-        <TextBlockWithImage
-          SvgImage={RockerIcon}
-          textBackgroundColor="transparent"
-          imageBackgroundColor={color.white}
-          imageShadowColor={shadow.white2}
-          imageShadowOpacity={0.5}
-          boxShadow={false}
-          paddingLeft={0}
-          style={{ marginTop: "40px" }}
-          circleShadowY={40}
-          circleShadowBlure={80}
-          width={100}
-          widthUnit="%"
-        >
-          <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=C-Corporation"}>C Corporation</Link>
-            </Paragraph>
+				<TextBlockWithImage
+					SvgImage={RockerIcon}
+					textBackgroundColor="transparent"
+					imageBackgroundColor={color.white}
+					imageShadowColor={shadow.white2}
+					imageShadowOpacity={0.5}
+					boxShadow={false}
+					paddingLeft={0}
+					style={{ marginTop: "40px" }}
+					circleShadowY={40}
+					circleShadowBlure={80}
+					width={100}
+					widthUnit="%"
+				>
+					<HeadingP
+						size={3}
+						big
+						style={{ color: color.blue1, fontWeight: "bold" }}
+						mixed={true}
+					>
+						<Link
+							to={
+								process.env.ORDER_URL +
+								"/form-order-now.php?entityType=CCorporation"
+							}
+						>
+							C Corporation
+						</Link>
+					</HeadingP>
 
-          <Paragraph big>These are the largest and most complex types of businesses and are typically far more than the average event planner will ever need.</Paragraph>
-        </TextBlockWithImage>
+					<Paragraph big>
+						These are the largest and most complex types of businesses and are
+						typically far more than the average event planner will ever need.
+					</Paragraph>
+				</TextBlockWithImage>
 
-        <Paragraph big style={{ paddingTop: "48px", paddingBottom: 0 }} mixed={true}>
-          For more information on the advantages and disadvantages of different types of businesses, <Link to="/business-entity-comparison/">please see our in-depth guide</Link>. If you’ve still got questions,{" "}
-          <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
-            we’ve answered them to help you choose the right business structure
-          </a>{" "}
-          for your event planning business.
-        </Paragraph>
-        <Paragraph big mixed={true} style={{ marginBottom: "48px", paddingBottom: 0 }}>
-          In most cases, our recommendation for your party planning business would be to create an LLC. We’ve got a <Link to="/form-an-llc/">complete guide to everything you need to do</Link>. <Link to="/llc-state-information/">LLC formation does vary from state to state</Link>, but we’ve got you
-          covered, wherever you are.
-        </Paragraph>
+				<Paragraph
+					big
+					style={{ paddingTop: "48px", paddingBottom: 0 }}
+					mixed={true}
+				>
+					For more information on the advantages and disadvantages of different
+					types of businesses,{" "}
+					<Link to="/business-entity-comparison/">
+						please see our in-depth guide
+					</Link>
+					. If you’ve still got questions,{" "}
+					<a
+						href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						we’ve answered them to help you choose the right business structure
+					</a>{" "}
+					for your event planning business.
+				</Paragraph>
+				<Paragraph
+					big
+					mixed={true}
+					style={{ marginBottom: "48px", paddingBottom: 0 }}
+				>
+					In most cases, our recommendation for your party planning business
+					would be to create an LLC. We’ve got a{" "}
+					<Link to="/form-an-llc/">
+						complete guide to everything you need to do
+					</Link>
+					.{" "}
+					<Link to="/llc-state-information/">
+						LLC formation does vary from state to state
+					</Link>
+					, but we’ve got you covered, wherever you are.
+				</Paragraph>
 
-        <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />
-      </ImageContent>
-    </BusinessOwnerResponsibilities>
-  </OrangeContainer>
+				<Button
+					theme="primary48"
+					width="365px"
+					arrow
+					content={{
+						url: `${process.env.ORDER_URL}/form-order-now.php`,
+						text: `Start your business with us, today!`,
+					}}
+				/>
+			</ImageContent>
+		</BusinessOwnerResponsibilities>
+	</OrangeContainer>
 );
 
 export default BusinessStructure;

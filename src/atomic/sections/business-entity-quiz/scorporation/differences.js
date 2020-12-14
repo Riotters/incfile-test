@@ -8,6 +8,8 @@ import IconSVG from "../../../../images/icons/megafon.inline.svg";
 import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-list-color";
 import { Heading } from "../../../atoms/typography/heading";
 import Button from "../../../molecules/buttons/button";
+import Whitebox from "../../../atoms/boxes/white-box-li";
+import CheckSVG from "../../../../images/circle-status-check.inline.svg";
 
 const Differences = styled.section`
 	position: relative;
@@ -34,6 +36,25 @@ const Differences = styled.section`
 			font-weight: bold;
 			margin-top: 24px;
 		}
+	}
+`;
+
+const ListContainer = styled.ul`
+	list-style: none;
+	margin-bottom: 72px;
+
+	li {
+		padding: 24px;
+		vertical-align: middle;
+		margin-bottom: 8px;
+		display: flex;
+		color: ${color.black};
+	}
+
+	svg {
+		margin-right: 24px;
+		z-index: 1;
+		min-width: 32px;
 	}
 `;
 
@@ -75,6 +96,16 @@ const DifferencesSection = ({ className, content }) => (
 			<Paragraph big mixed bottomMargin={56}>
 				{parse(content.text8)}
 			</Paragraph>
+			<ListContainer>
+				{content.list.map((item) => (
+					<Whitebox>
+						<CheckSVG />
+						<Paragraph mixed bottomMargin={0}>
+							{parse(item)}
+						</Paragraph>
+					</Whitebox>
+				))}
+			</ListContainer>
 			<Paragraph big mixed bottomMargin={56}>
 				{parse(content.text9)}
 			</Paragraph>

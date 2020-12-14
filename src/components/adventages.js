@@ -152,9 +152,8 @@ const Adventages = ({
 			text={text}
 			style={style}
 			width={width}
-			padding={padding}
 		>
-			<Box width={width}>
+			<Box width={width} padding={padding}>
 				<Circle
 					position={circlePosition}
 					circleBackgroundColor={circleBackgroundColor}

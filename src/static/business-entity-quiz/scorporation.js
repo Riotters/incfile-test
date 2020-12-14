@@ -84,6 +84,14 @@ export const differences = {
 	text7: `Depending on your long-term business goals – for example, if you want your company to be publicly traded, or if you want to have international shareholders, a C Corporation might be a better choice of business entity, because C Corporations have no limitations on ownership and can offer multiple classes of stock. But if you are a U.S.-based business and are satisfied to work and grow within these limitations, the S Corporation can save you a lot of money and avoid a lot of hassles as your company expands.`,
 	header2: `How to Qualify for S Corporation Status`,
 	text8: `According to the IRS, to qualify for S Corporation status, a business must meet these requirements:`,
+	list: [
+		`Be a domestic corporation`,
+		`Have only allowable shareholders – which may include individuals, certain trusts, and estates, but not partnerships, corporations`,
+		`or nonresident alien shareholders`,
+		`Have no more than 100 shareholders`,
+		`Have only one class of stock`,
+		`Not be an ineligible corporation (i.e. certain financial institutions, insurance companies, and domestic international sales corporations)`,
+	],
 	text9: `The corporation must also submit Form 2553 to elect S Corporation status for tax purposes.`,
 };
 
@@ -138,6 +146,46 @@ export const prosAndCons = {
 	],
 	header2: `Would you like to set up your business as an S Corporation, or set up your LLC to file as an S Corporation?`,
 	text2: `If so, you can choose S Corporation status for tax purposes by filing IRS Form 2553 within 75 days of the filing date of the company or by filing IRS Form 2553 by March 15 of the tax year the election is to take effect, or any time during the tax year prior to the tax year it is to take effect.`,
+};
+
+export const sCorpVsCCorp = {
+	header: `S Corp vs. C Corporation`,
+	text: `What do these two types of corporate structures have in common?`,
+	table: {
+		headers: [null, `S Corp`, `C Corp`],
+		rows: [
+			[
+				`Limited Liability (shareholders are not personally responsible for business debts and liabilities)`,
+				`check-green`,
+				`check-green`,
+			],
+			[
+				`Have shareholders, directors and officers`,
+				`check-green`,
+				`check-green`,
+			],
+			[
+				`Must file annual reports, adopt bylaws, and conduct other corporate formalities.`,
+				`check-green`,
+				`check-green`,
+			],
+			[
+				`Separately taxable entity (must pay corporate income tax)`,
+				``,
+				`check-green`,
+			],
+			[
+				`Pass-through tax entity (business’s profits/losses are reported on owners’ personal tax returns)`,
+				`check-green`,
+				``,
+			],
+			[`Has restrictions on ownership`, `check-green`, ``],
+			[`Can have more than 100 shareholders`, ``, `check-green`],
+			[`All shareholders must be U.S. citizens/residents`, `check-green`, ``],
+			[`Can offer multiple classes of stock`, ``, `check-green`],
+		],
+		bottomMargin: `72`,
+	},
 };
 
 export const faq = {
