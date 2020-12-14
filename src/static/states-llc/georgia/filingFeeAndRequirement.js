@@ -189,8 +189,12 @@ export const filingFeeAndRequirementContent = {
     },
     {
       type: `paragraph`,
-      content: `Your Georgia LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Georgia , regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. Permits and licenses vary based on:`,
+      content: `Your Georgia LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Georgia , regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges.`,
     },
+      {
+          type: "paragraph",
+          content: "Permits and licenses vary based on:",
+      },
     {
       type: `iconListColorBox`,
       styles: {

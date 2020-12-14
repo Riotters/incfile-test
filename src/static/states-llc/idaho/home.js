@@ -1138,7 +1138,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Idaho LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/" target="_blank">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Idaho business. You can choose to make changes to the template based on your unique requirements.`,
+    content: `Idaho LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/" target="_blank">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Idaho business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 48,
   },
   {
@@ -1414,9 +1414,14 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the ID Tax Commission. Idaho sales tax is collected at the point of purchase. Idaho sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect sales tax on:`,
-    marginBottom: 24,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the ID Tax Commission. Idaho sales tax is collected at the point of purchase. Idaho sales tax rates do vary depending on the region, county or city where you are located. `,
+    marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "You will typically need to collect sales tax on:",
+        marginBottom: 24
+    },
   {
     type: `list-dot`,
     content: {

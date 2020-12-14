@@ -21,11 +21,11 @@ const Wrapper = styled.div`
 const colors = [color.orange3, color.purple3];
 const icons = ["24-hours", "complete-name"]
 
-const BehalfCards = ({ className, content }) => {
+const BehalfCards = ({ className, content, paragraphHeaders = false }) => {
   return (
     <Wrapper className={className}>
         {content.map((card, i) => (
-            <Card content={card} color={colors[i]} image={icons[i]} key={i} />
+            <Card content={card} color={colors[i]} image={icons[i]} key={i} paragraphHeader={paragraphHeaders} />
         ))}
     </Wrapper>
   )

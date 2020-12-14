@@ -13,9 +13,7 @@ const Regulations = () => (
         </Oval>
 
         <Container style={{ paddingTop: "100px", paddingBottom: "100px" }} width={750}>
-            <Heading size={2} template={4} left style={{ fontSize: "40px", lineHeight: `48px` }}>
-                Rules, Regulations and Taxes for Your Record Label Business
-      </Heading>
+            <Heading size={2} left>Rules, Regulations and Taxes for Your Record Label Business</Heading>
             <Paragraph big mixed>
                 You can’t escape real-world licenses, permits and regulations. You will need to explore local, state and federal licenses and permits, and we can also help with <Link to="/business-license-research-package/">researching your business licensing needs</Link>.
       </Paragraph>

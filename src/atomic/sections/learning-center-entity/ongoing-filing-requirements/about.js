@@ -27,7 +27,7 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="56">
         {content.text}
       </Paragraph>
-      <IconTextColorBox color={color.yellow3} Icon={IconSVG} content={content.box} bottomMargin="56" rounded curve />
+      <IconTextColorBox color={color.yellow3} Icon={IconSVG} content={content.box} bottomMargin="56" rounded curve paragraphHeader />
       <Paragraph big bottomMargin="0">
         {content.text2}
       </Paragraph>

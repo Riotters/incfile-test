@@ -36,7 +36,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const PacketsSection = ({ className, fullInfo, data }) => {
+const PacketsSection = ({ className, fullInfo, data, compacted = false }) => {
   let stateFee = data?.prices ? data.prices.statefee : 0;
   let entityState = data?.prices ? data.prices.state : "";
   let header = `Select the package that works best for you`;
@@ -131,7 +131,7 @@ const PacketsSection = ({ className, fullInfo, data }) => {
             <Curve top="53" left="-35" color={color.purple1} className="curve-left">
               <CurveSVG />
             </Curve>
-            <Cards content={priceOptions} fullInfo={fullInfo} compacted={true} />
+            <Cards content={priceOptions} fullInfo={fullInfo} compacted={compacted} />
           </div>
         </ContentCenter>
       </Wrapper>

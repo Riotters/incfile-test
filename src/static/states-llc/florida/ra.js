@@ -30,7 +30,9 @@ export const agentPageContent = {
     // Rules for agents
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Rules for Florida Registered Agents`,
     },
     {
@@ -58,7 +60,9 @@ export const agentPageContent = {
     // What a TX Registered Agent Does
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `What a FL Registered Agent Does`,
     },
     {
@@ -116,7 +120,9 @@ export const agentPageContent = {
     //Appointing a TX Registered Agent Service for Your Texas LLC
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Appointing a FL Registered Agent Service for Your Florida LLC`,
     },
     {
@@ -125,7 +131,8 @@ export const agentPageContent = {
     },
     {
       type: `heading`,
-      size: 4,
+      size: 3,
+      template: 4,
       content: `Appoint a Registered Agent When You Create Your Florida LLC`,
     },
     {
@@ -134,6 +141,7 @@ export const agentPageContent = {
     },
     {
       type: `accordionWithCounting`,
+      header: 4,
       content: [
         {
           count: 1,
@@ -170,7 +178,8 @@ export const agentPageContent = {
     // Assign a Different Texas Registered Agent Service After Incorporation
     {
       type: `heading`,
-      size: 4,
+      size: 3,
+      template: 4,
       content: `Assign a Different Florida Registered Agent Service After Incorporation`,
     },
     {
@@ -179,6 +188,7 @@ export const agentPageContent = {
     },
     {
       type: `accordionWithCounting`,
+      header: 4,
       content: [
         {
           count: 1,
@@ -217,7 +227,9 @@ export const agentPageContent = {
     // Texas Registered Agent Search
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Florida Registered Agent Search`,
     },
     {
@@ -232,7 +244,9 @@ export const agentPageContent = {
     // What Happens if You Don’t Have a Registered Agent?
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `What Happens if You Don’t Have a Registered Agent?`,
     },
     {
@@ -254,7 +268,9 @@ export const agentPageContent = {
     // Acting as Your Own Registered Agent for Your TX LLC
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Acting as Your Own Registered Agent for Your FL LLC`,
     },
     {
@@ -277,7 +293,9 @@ export const agentPageContent = {
     // Faqs section
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `FAQs About Florida Registered Agents`,
     },
     {
@@ -307,7 +325,9 @@ export const agentPageContent = {
     // Other resources
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Other Useful Resources`,
     },
     {

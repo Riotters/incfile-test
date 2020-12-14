@@ -120,7 +120,7 @@ const ValidatingBusinessIdea = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={2} template={3} left>
+                    <Heading size={2} left>
                         Validating Your Side Business Idea
                     </Heading>
                     <Paragraph big>

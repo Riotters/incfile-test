@@ -1,6 +1,6 @@
 export const top = {
   header: "Illinois Virtual Office Address",
-  text: "Incfile now provides a complete California virtual address service for your business. We offer street addresses in CA where you can easily receive correspondence. Build credibility while accessing your mail through our Virtual Mailbox and mail scanning services.",
+  text: "First impressions are everything. If you want to do business in Illinois, it makes sense to have a real Illinois street address. We provide a complete, low-cost Virtual Mailbox receipt and scanning service with genuine Illinois street addresses. You can provide this IL address and start getting business correspondence there. ",
   button: [
     {
       text: "Start now",

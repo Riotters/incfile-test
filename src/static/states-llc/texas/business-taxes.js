@@ -20,8 +20,10 @@ export const businessTaxesPageContent = {
   content: [
     {
       type: `heading`,
-      styles: { marginTop: `0` },
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `How Your Texas LLC Will Be Taxed`,
     },
     {
@@ -65,6 +67,9 @@ export const businessTaxesPageContent = {
     {
       type: `heading`,
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `Taxes Payable to the Texas Comptroller`,
     },
     {
@@ -135,6 +140,9 @@ export const businessTaxesPageContent = {
     {
       type: `heading`,
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `Federal Taxes for Texas LLCs`,
     },
     {
@@ -212,6 +220,9 @@ export const businessTaxesPageContent = {
     {
       type: `heading`,
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `Employee and Employer Taxes for Your Texas LLC`,
     },
     {
@@ -220,6 +231,7 @@ export const businessTaxesPageContent = {
     },
     {
       type: `accordion`,
+      header: 3,
       content: {
         items: [
           {
@@ -279,10 +291,14 @@ export const businessTaxesPageContent = {
     {
       type: `heading`,
       size: 2,
+      template: 3,
+      marginBottom: 24,
+      left: true,
       content: `FAQs on Texas LLC Business Taxes`,
     },
     {
       type: `accordion`,
+      header: 3,
       content: {
         items: [
           {

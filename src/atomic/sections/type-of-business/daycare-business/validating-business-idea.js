@@ -100,7 +100,7 @@ const ValidatingBusinessIdea = () => (
 
             <GridSection>
                 <TitleBox>
-                    <Heading size={2} template={3} left>Validating Your Daycare Business Idea</Heading>
+                    <Heading size={2} left>Validating Your Daycare Business Idea</Heading>
                     <Paragraph big style={{marginBottom: "40px"}}>
                     The areas we’ve listed above are just starting points — there are many different types of daycare businesses. Once you’ve identified specific daycare areas you might like to go into, you need to validate your daycare business idea.
                     </Paragraph>

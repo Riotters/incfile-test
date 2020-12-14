@@ -109,7 +109,7 @@ const ValidatingBusinessIdea = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={2} template={3} left>Validating Your Fitness Business Idea</Heading>
+                    <Heading size={2} left>Validating Your Fitness Business Idea</Heading>
                     <Paragraph big>
                         Remember, the ideas above are just a starting point. You can define and tweak exactly what type
                         of gym, fitness or personal training business you want to run through conducting your own

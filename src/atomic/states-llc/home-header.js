@@ -26,6 +26,10 @@ const Content = styled.div`
     @media screen and (min-width: 769px) {
       font-size: 40px;
     }
+    
+    @media (max-width: 576px) {
+      margin-bottom: 22px;
+    }
   }
 `;
 
@@ -54,10 +58,6 @@ const WrappBox = styled.div`
     &:first-child {
       border-radius: 50px 5px 5px 50px;
     }
-
-    h4 {
-      line-height: normal;
-    }
   }
 `;
 
@@ -70,7 +70,7 @@ const HomeHeader = ({ content, data }) => (
       <Heading
         size={content.size}
         template={content.template}
-        bottomMargin={content.bottomMargin}
+        bottomMargin={80}
         left={content.left}
       >
         {content.title}
@@ -79,8 +79,8 @@ const HomeHeader = ({ content, data }) => (
         {content.boxes.map((box, i) => (
           <Colorbox color={color.white} className="box" key={i}>
             <Heading
-              size={box.size}
-              template={box.template}
+              size={2}
+              template={4}
               bottomMargin={box.bottomMargin}
               left={box.left}
             >

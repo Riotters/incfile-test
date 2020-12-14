@@ -27,7 +27,9 @@ export const businessNamesContent = {
 		},
 		{
 			type: `heading`,
-			size: 3,
+			size: 2,
+			template: 3,
+			left: true,
 			content: `Florida Department of State (DOS) Rules for Naming LLCs`,
 		},
 		{
@@ -92,6 +94,7 @@ export const businessNamesContent = {
 					],
 				},
 			],
+			header: 3,
 		},
 		{
 			type: `heading`,
@@ -136,7 +139,9 @@ export const businessNamesContent = {
 		// Business name search
 		{
 			type: `heading`,
-			size: 3,
+			size: 2,
+			template: 3,
+			left: true,
 			content: `Florida Business Entity Searches`,
 		},
 		{
@@ -153,7 +158,7 @@ export const businessNamesContent = {
 			content: `The Incfile Business Name Search tool lets you effortlessly search for your business name in Florida and any other state. Our tool integrates with Sunbiz business searches to query the FL Department of State register and let you know about name availability.`,
 		},
 		{
-			type: `button`,
+			type: `modal-trigger`,
 			theme: `secondary56`,
 			width: `450px`,
 			content: {
@@ -200,7 +205,9 @@ export const businessNamesContent = {
 		// Assumed Name
 		{
 			type: `heading`,
-			size: 3,
+			size: 2,
+			template: 3,
+			left: true,
 			content: `Fictitious Names or DBAs in Florida`,
 		},
 		{
@@ -231,7 +238,9 @@ export const businessNamesContent = {
 		// Register Your Business Name With the Florida Secretary of State
 		{
 			type: `heading`,
-			size: 3,
+			size: 2,
+			template: 3,
+			left: true,
 			content: `Ready to Register Your Business Name?`,
 		},
 		{
@@ -333,4 +342,15 @@ export const businessNamesContent = {
 			},
 		},
 	],
+};
+
+export const hsForm = {
+	header: "Please enter the business name information",
+	header2: "Let us know where we can let you know if your business name is available",
+	hs_form_id: `7d5d3157-09f4-40f0-bfee-eff448ed0e24`,
+	fileDownload: ``, // TODO: Add the correct file for download
+	button: {
+		text: "Download now",
+		url: "/",
+	},
 };

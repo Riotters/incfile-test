@@ -28,7 +28,9 @@ export const businessNamesContent = {
 		},
 		{
 			type: `heading`,
-			size: 3,
+			size: 2,
+			template: 3,
+			left: true,
 			content: `Business Name Rules for California LLCs`,
 		},
 		{
@@ -183,7 +185,9 @@ export const businessNamesContent = {
 		// Assumed Name
 		{
 			type: `heading`,
-			size: 3,
+			size: 2,
+			left: true,
+			template: 3,
 			content: `DBA / Assumed Names for California LLCs`,
 		},
 		{
@@ -210,7 +214,9 @@ export const businessNamesContent = {
 		// Register Your Business Name?
 		{
 			type: `heading`,
-			size: 3,
+			size: 2,
+			left: true,
+			template: 3,
 			content: `Register Your Business Name?`,
 		},
 		{
@@ -250,7 +256,9 @@ export const businessNamesContent = {
 		// Faqs section
 		{
 			type: `heading`,
-			size: 3,
+			size: 2,
+			left: true,
+			template: 3,
 			content: `FAQs About Naming Your California LLC`,
 		},
 		{
@@ -283,7 +291,9 @@ export const businessNamesContent = {
 		// Trademark section
 		{
 			type: `heading`,
-			size: 3,
+			size: 2,
+			left: true,
+			template: 3,
 			content: `Trademarks and Service Marks`,
 		},
 		{

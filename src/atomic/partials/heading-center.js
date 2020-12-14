@@ -23,12 +23,16 @@ const Wrapper = styled.div`
 			props.bottomMarginLG ? `${props.bottomMarginLG}px` : ""};
 	}
 
-	h2 {
+	h2, h3, [class*="i-believe-i-can-be-a-h"] {
 		max-width: ${(props) =>
 			props.headlineWidth ? props.headlineWidth : "610"}px;
 		margin: 0 auto 24px;
 	}
-
+	
+	h3 {
+		text-align: center;
+	}
+	
 	p {
 		max-width: ${(props) => (props.textWidth ? props.textWidth : "750")}px;
 		text-align: center;

@@ -588,7 +588,7 @@ const BarNightclub = () => (
 			</OvalGreen2>
 			<Container>
 				<CenterBox>
-					<Heading size={2} template={3} left style={{ fontSize: "40px" }}>
+					<Heading size={2} left>
 						Understand Your Bar or Club Business Model and Financial Projections
 					</Heading>
 					<Paragraph big>
@@ -607,7 +607,7 @@ const BarNightclub = () => (
 					</Paragraph>
 				</CenterBox>
 				<CenterBox>
-					<Heading size={2} template={3} left style={{ fontSize: "40px" }}>
+					<Heading size={2} left>
 						Write a Business Plan for Your Bar or Club Business
 					</Heading>
 
@@ -691,9 +691,8 @@ const BarNightclub = () => (
 				<ImageContent image="unique-business-2" paddingTop="60">
 					<Heading
 						size={2}
-						template={4}
+						template={3}
 						left
-						style={{ fontSize: "24px", "max-width": "unset" }}
 					>
 						Choose the Right Business Structure and Register Your Bar or Club
 						Business
@@ -991,7 +990,7 @@ const ListBox = styled.div`
 const CenterBox = styled.div`
 	width: 100%;
 	padding-bottom: 100px;
-	max-width: 670px;
+	max-width: 770px;
 
 	@media (min-width: 670px) {
 		margin: 0 auto;

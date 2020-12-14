@@ -11,7 +11,7 @@ const NeedMore = styled.section`
   padding-top: 104px;
   padding-bottom: 80px;
 
-  p {
+  p:not([class*="i-believe-i-can-be-a-h"]) {
     color: ${color.grey2};
   }
 
@@ -20,7 +20,7 @@ const NeedMore = styled.section`
   }
 `;
 
-const NeedMoreSection = ({ className, content, onClick }) => (
+const NeedMoreSection = ({ className, content, onClick, paragraphHeading = false }) => (
     <NeedMore className={className}>
         <Oval width="420" height="420" top="0" left="0">
             <OvalSVG />
@@ -31,6 +31,7 @@ const NeedMoreSection = ({ className, content, onClick }) => (
         <HeadingCenter
             headline={content.header}
             headlineWidth="770"
+            paragraphHeading={paragraphHeading}
             text={content.text}
             textWidth="770"
             linkText={content.link.text}

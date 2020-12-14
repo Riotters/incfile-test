@@ -1035,9 +1035,14 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your Indiana LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Indiana, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. Permits and licenses vary based on:`,
+    content: `Your Indiana LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Indiana, regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. `,
     marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "Permits and licenses vary based on:",
+        marginBottom: 16
+    },
   {
     type: `list-dot`,
     content: {
@@ -1095,7 +1100,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Indiana business. You can choose to make changes to the template based on your unique requirements.`,
+    content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Indiana business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 48,
   },
   {
@@ -1372,9 +1377,14 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the IN Department of Revenue. Indiana sales tax is collected at the point of purchase. Indiana sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Indiana sales tax on:`,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the IN Department of Revenue. Indiana sales tax is collected at the point of purchase. Indiana sales tax rates do vary depending on the region, county or city where you are located. `,
     marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "You will typically need to collect Indiana sales tax on:",
+        marginBottom: 16
+    },
   {
     type: `list-dot`,
     content: {

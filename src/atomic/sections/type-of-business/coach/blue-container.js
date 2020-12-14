@@ -93,7 +93,7 @@ const BlueContainer = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={2} template={3} left>Validating Your Professional Coaching Business Idea</Heading>
+                    <Heading size={2} left>Validating Your Professional Coaching Business Idea</Heading>
                     <Paragraph>
                         Getting started in an Airbnb business is easy, but becoming a success is harder. Before
                         committing too much time, energy and money into your new Airbnb business, it’s important to test

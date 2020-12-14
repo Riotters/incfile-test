@@ -31,7 +31,9 @@ export const agentPageContent = {
     },
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `What the Illinois Secretary of State Says About Registered Agents`,
     },
     {
@@ -53,7 +55,9 @@ export const agentPageContent = {
     // Rules for agents
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Rules for Illinois Registered Agents`,
     },
     {
@@ -81,7 +85,9 @@ export const agentPageContent = {
     // What a IL Registered Agent Does
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `What a IL Registered Agent Does`,
     },
     {
@@ -136,7 +142,9 @@ export const agentPageContent = {
     //Appointing a IL Registered Agent Service for Your Illinois LLC
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Appointing a IL Registered Agent Service for Your Illinois LLC`,
     },
     {
@@ -145,7 +153,8 @@ export const agentPageContent = {
     },
     {
       type: `heading`,
-      size: 4,
+      size: 3,
+      template: 4,
       content: `Appoint a Registered Agent When You Create Your Illinois LLC`,
     },
     {
@@ -176,6 +185,7 @@ export const agentPageContent = {
           ],
         },
       ],
+      header: 4
     },
     {
       type: `button`,
@@ -190,7 +200,8 @@ export const agentPageContent = {
     // Assign a Different Illinois Registered Agent Service After Incorporation
     {
       type: `heading`,
-      size: 4,
+      size: 3,
+      template: 4,
       content: `Assign a Different Illinois Registered Agent Service After Incorporation`,
     },
     {
@@ -221,6 +232,7 @@ export const agentPageContent = {
           ],
         },
       ],
+      header: 4
     },
     {
       type: `button`,
@@ -235,7 +247,9 @@ export const agentPageContent = {
     // Illinois Registered Agent Search
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Illinois Registered Agent Search`,
     },
     {
@@ -250,7 +264,9 @@ export const agentPageContent = {
     // What Happens if You Don’t Have a Registered Agent?
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `What Happens if You Don’t Have a Registered Agent?`,
     },
     {
@@ -272,7 +288,9 @@ export const agentPageContent = {
     // Acting as Your Own Registered Agent for Your IL LLC
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Acting as Your Own Registered Agent for Your IL LLC`,
     },
     {
@@ -295,7 +313,9 @@ export const agentPageContent = {
     // Faqs section
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `FAQs About Illinois Registered Agents`,
     },
     {
@@ -325,7 +345,9 @@ export const agentPageContent = {
     // Other resources
     {
       type: `heading`,
-      size: 3,
+      size: 2,
+      template: 3,
+      left: true,
       content: `Other Useful Resources`,
     },
     {

@@ -108,7 +108,7 @@ const ValidatingBusinessIdea = () => (
                     <AbsoluteCurve>
                         <Curve color={color.orange1}/>
                     </AbsoluteCurve>
-                    <Heading size={2} template={3} left>Validating Your Online Business Idea</Heading>
+                    <Heading size={2} left>Validating Your Online Business Idea</Heading>
                     <Paragraph big>
                         These areas are just starting points — there are hundreds of different types of online
                         businesses. Once you’ve identified the areas you’d like to go into, you need to validate your

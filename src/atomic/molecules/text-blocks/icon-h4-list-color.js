@@ -34,7 +34,7 @@ const dotColor = (circleColor) => {
       return color.red1;
     }
     default:
-      return "";
+      return color.grey2;
   }
 };
 
@@ -111,6 +111,10 @@ const IconTextColorBox = ({ className, color, headingSize = 3, headingTemplateSi
             <Colorbox className="box" color={color}>
                 {content?.header && (
                     <ChooseHeading content={content.header} headingSize={headingSize} left={left} headingSizeTemplate={headingTemplateSize} paragraphHeader={paragraphHeader} />
+                )}
+
+                {content?.text && (
+                    <Paragraph mixed big>{parse(content.text)}</Paragraph>
                 )}
 
                 <ul>{content.list.map((item) => (typeof item === "string" ? <li>{parse(item)}</li> : <li>{item.map((el) => (el.url ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text))}</li>))}</ul>

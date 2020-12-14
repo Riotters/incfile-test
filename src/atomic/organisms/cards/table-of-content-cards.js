@@ -24,14 +24,14 @@ const Wrapper = styled.div`
 const colors = [color.blue3, color.purple3, color.orange3, color.yellow3, color.yellow4, color.purple3, color.babyblue3];
 const icons = ["rocket-939", "certificate-305", "business-taxes-8954", "bulb-gear-7881", "game-plan", "display-ads", "measuring-business-success"];
 
-const Cards = ({ className, content }) => {
+const Cards = ({ className, content, headlineSize = 3, headlineTemplateSize = 4, paragraphHeader = false }) => {
   return (
     <Wrapper className={className}>
       <Curve top="-16" left="-96" color={color.green1}>
         <CurveSVG />
       </Curve>
       {content.map((card, i) => (
-        <Card content={card} color={colors[i]} image={icons[i]} />
+        <Card content={card} color={colors[i]} image={icons[i]} headlineSize={headlineSize} headlineTemplateSize={headlineTemplateSize} paragraphHeader={paragraphHeader} />
       ))}
     </Wrapper>
   );

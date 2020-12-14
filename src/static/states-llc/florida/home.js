@@ -163,12 +163,15 @@ export const HomePageContent = {
     otherInfo: [
       {
         type: `heading`,
-        size: 3,
+        size: 2,
+        template: 3,
+        left: true,
         content: `Other Important Florida LLC Info`,
       },
       {
         type: `heading`,
-        size: 4,
+        size: 3,
+        template: 4,
         content: `Special Types of LLCs in Florida`,
       },
       {
@@ -226,7 +229,8 @@ export const HomePageContent = {
       // Helpful resource
       {
         type: `heading`,
-        size: 4,
+        size: 3,
+        template: 4,
         content: `Read More Information from the Florida Department of State`,
       },
       {
@@ -278,7 +282,7 @@ export const HomePageContent = {
         content: `How to search the Florida business registry of the FL Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a Florida LLC name and more.`,
       },
       {
-        type: "button",
+        type: "modal-trigger",
         theme: `secondary56`,
         content: {
           text: `Search For Your Florida LLC Name`,
@@ -334,5 +338,16 @@ export const HomePageContent = {
         content: `How to understand the various taxes you will need to pay to the federal and Florida government. Includes details of federal taxes like income and self-employment and Florida taxes like sales tax and income tax.`,
       },
     ],
+  },
+};
+
+export const hsForm = {
+  header: "Please enter the business name information",
+  header2: "Let us know where we can let you know if your business name is available",
+  hs_form_id: `7d5d3157-09f4-40f0-bfee-eff448ed0e24`,
+  fileDownload: ``, // TODO: Add the correct file for download
+  button: {
+    text: "Download now",
+    url: "/",
   },
 };

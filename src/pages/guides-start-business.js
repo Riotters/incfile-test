@@ -61,9 +61,9 @@ const GuideToStart = () => {
       </Top>
       <About content={about} hsOpenForm={popup} />
       <TableOfContent content={tableOfContent} />
-      <NeedMore content={needMore} onClick={popup} />
+      <NeedMore content={needMore} onClick={popup} paragraphHeading />
       <LightBoxModal visible={modalVisible} className="modal-overlay">
-        <LightBoxContent style={{ pointerEvents: "all" }} class={modalClases.join(" ")}>
+        <LightBoxContent className={modalClases.join(" ")}>
           {!formSubmitted && <HSFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />}
 
           {formSubmitted && <ThankYouContent modalExit={popup} fileDownload={hsForm.fileDownload} />}
@@ -109,11 +109,12 @@ const LightBoxContent = styled.div`
 
   background-color: #fff;
   width: 100%;
-  max-width: 750px;
+  max-width: 600px;
   position: relative;
   //margin: 0 30px;
   max-height: 100vh;
   overflow-y: auto;
+  pointer-events: all;
 
   &.form-submitted {
     height: 40vh;
@@ -122,7 +123,6 @@ const LightBoxContent = styled.div`
 
   @media screen and (min-width: 769px) {
     padding-top: 0;
-    max-width: 600px;
     max-height: 90vh;
 }
 `;

@@ -4,6 +4,7 @@ import parse from "html-react-parser";
 
 // Components
 import Button from "../molecules/buttons/button";
+import ActionButton from "../molecules/buttons/button-action";
 import ArrowLink from "../molecules/buttons/text";
 import { Heading } from "../atoms/typography/heading";
 import { Paragraph } from "../atoms/typography/paragraph";
@@ -36,7 +37,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const Content = ({ content, data }) => {
+const Content = ({ content, data, modalAction }) => {
   return (
     <Wrapper>
       {content.map((item, i) => (
@@ -49,13 +50,13 @@ const Content = ({ content, data }) => {
               left={item.left}
               style={item.style}
             >
-              {parse(item.content)}
+              {item._no_parse ? item.content : parse(item.content)}
             </Heading>
           )}
 
           {item.type === "text" && (
             <Paragraph big mixed bottomMargin={item.marginBottom}>
-              {parse(item.content)}
+              {(item?.content && item?.content.length > 0) ? parse(item.content) : ''}
             </Paragraph>
           )}
 
@@ -83,11 +84,11 @@ const Content = ({ content, data }) => {
 						</div>
 					)}
 					{item.type === "taxes" && (
-						<div style={{ "margin-bottom": item.marginBottom + "px" }}>
+						<ul style={{ "margin-bottom": item.marginBottom + "px" }}>
 							{item.content.map((box) => (
-								<TextSpacedBox content={box} />
+								<TextSpacedBox content={box} useListType={item.useListType} />
 							))}
-						</div>
+						</ul>
 					)}
 					{item.type === "button" && (
 						<Button
@@ -101,6 +102,19 @@ const Content = ({ content, data }) => {
 							marginMD={item.marginBottom ? false : "42px auto 56px 0"}
 						/>
 					)}
+                    {item.type === "modal-trigger" && (typeof modalAction === "function") && (
+                        <ActionButton
+                            content={item.content}
+                            theme={item.theme}
+                            arrow={item.arrow ?? true}
+                            onClick={modalAction}
+                            margin={
+                              item.marginBottom ? `0 auto ${item.marginBottom}px 0` : false
+                            }
+                            marginSM={item.marginBottom ? false : "24px auto 24px 0"}
+                            marginMD={item.marginBottom ? false : "42px auto 56px 0"}
+                        />
+                    )}
 					{item.type === "buttons" && (
 						<div style={{ "margin-bottom": item.marginBottom + "px" }}>
 							<Buttonsbox>
@@ -136,6 +150,7 @@ const Content = ({ content, data }) => {
 							content={item.content}
 							bottomMargin={item.marginBottom}
 							header={item.header}
+                            action={modalAction}
 						/>
 					)}
 					{item.type === "numeric-list" && (

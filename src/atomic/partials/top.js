@@ -108,7 +108,7 @@ const Wrapper = styled.div`
 
 	@media (min-width: 768px) and (max-width: 991px) {
 		align-items: flex-start;
-		overflow: hidden;
+		overflow: ${(props) => (props.overflowMD ? "visible" : "hidden")};
 	}
 
 	@media (min-width: 992px) {
@@ -336,6 +336,7 @@ const Top = ({
 	tabletImgPosX,
 	tabletImgPosY,
 	tabletImgScale,
+	overflowMD,
 	...rest
 }) => (
 	<Wrapper
@@ -343,6 +344,7 @@ const Top = ({
 		tabletImgPosX={tabletImgPosX}
 		tabletImgPosY={tabletImgPosY}
 		tabletImgScale={tabletImgScale}
+		overflowMD={overflowMD}
 		{...rest}
 	>
 		{/* <VisibilitySensor partialVisibility once>
@@ -389,4 +391,5 @@ export default Top;
 
 Top.defaultProps = {
 	OvalSVGFile: OvalSVG,
+	overflowMD: false,
 };

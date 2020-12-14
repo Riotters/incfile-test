@@ -12,7 +12,7 @@ const Regulations = () => (
       <OvalSvg />
     </Oval>
     <Container width={770}>
-      <Heading size={2} template={4} left style={{ fontSize: "40px" }}>
+      <Heading size={2} left>
         Rules, Regulations and Taxes for Your Dog Walking or Pet Sitting Business
       </Heading>
       <Paragraph big mixed>

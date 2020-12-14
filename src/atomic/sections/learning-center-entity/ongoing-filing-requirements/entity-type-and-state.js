@@ -10,6 +10,7 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 import { Heading } from "../../../atoms/typography/heading";
 import { getFullPricesAndFilings } from "../../../../api/Api";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const SearchTool = styled.div`
 	padding-bottom: 100px;
@@ -47,7 +48,7 @@ const ImageBoxes = styled.div`
   .box {
       padding: 16px 16px 56px;
 
-    h4 {
+    h4, [class*="i-believe-i-can-be-a-h"] {
         text-align: center;
         padding: 24px 0 0;
     }
@@ -129,7 +130,7 @@ const SearchToolSection = ({ content, getDataApi }) => {
 						image="lcsn-4343"
 						color={color.green3}
 					>
-						<Heading size="4">{cards[0]}</Heading>
+						<PHeading size={4}>{cards[0]}</PHeading>
 						<Dropdown
 							className="dropdown"
 							placeholder="Select"
@@ -142,7 +143,7 @@ const SearchToolSection = ({ content, getDataApi }) => {
 						image="your-state-7282"
 						color={color.blue3}
 					>
-						<Heading size="4">{cards[1]}</Heading>
+						<PHeading size={4}>{cards[1]}</PHeading>
 						<Dropdown
 							className="dropdown"
 							placeholder="Select"

@@ -52,7 +52,7 @@ const BusinessStructure = () => (
 
     <BusinessOwnerResponsibilities>
       <ImageContent image="unique-business-2" imageAlt="" paddingTop="60">
-        <Heading size={2} template={4} left style={{ fontSize: "24px", "max-width": "unset" }}>
+        <Heading size={2} template={3} left>
           Choose the Right Business Structure and Register Your Consulting Business
         </Heading>
         <Paragraph big>Now that you have all the background information for your consulting business, it’s time to make it into a reality. That starts by choosing the right structure or “legal entity” for your business. In the U.S., there are four main business structures. They are:</Paragraph>

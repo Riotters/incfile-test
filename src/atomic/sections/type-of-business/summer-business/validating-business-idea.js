@@ -106,7 +106,7 @@ const ValidatingBusinessIdea = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={2} template={3} left>Validating Your Summer Business Idea</Heading>
+                    <Heading size={2} left>Validating Your Summer Business Idea</Heading>
                     <Paragraph big>
                         You will need to think about the type of summer business you want to run, then research, refine
                         and validate your ideas. Start by making sure you have the right skillset. For example, if

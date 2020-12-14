@@ -39,8 +39,8 @@ export const about = {
   text5: `If you missed the deadline for filing Form 2553, don’t worry — it might not be too late. According to the
         <a href="https://www.irs.gov/instructions/i2553" rel="noopener noreferrer nofollow" target="_blank">IRS instructions for Form 2553,</a>
         if you meet certain conditions, you can file Form 2553 past the due date and still get IRS approval to make your S Corporation election apply retroactively to the beginning of your company’s tax year.`,
+  header5: `In order to get approved for a late filing of Form 2553 your corporation must adhere to these conditions:`,
   list2: {
-    header: `In order to get approved for a late filing of Form 2553 your corporation must adhere to these conditions:`,
     list: [
       `The corporation must meet the eligibility criteria to be considered an S Corporation`,
       `The corporation intended to be classified as an S Corporation as of the date entered on line E of Form 2553, but failed to qualify as an S Corporation solely because it did not file Form 2553 in a timely manner`,
@@ -49,7 +49,7 @@ export const about = {
     ],
   },
   text6: `When filing Form 2553 for a late S Corporation election, the corporation (entity) must write in the top margin of the first page of Form 2553 “FILED PURSUANT TO REV. PROC. 2013-30.”`,
-  header5: `What is IRS Form 8832 and Why Would I Need It?`,
+  header6: `What is IRS Form 8832 and Why Would I Need It?`,
   text7: `<a href="https://www.irs.gov/pub/irs-pdf/f8832.pdf" rel="noopener noreferrer nofollow" target="_blank">IRS Form 8832</a>
         is necessary for situations where your business is an entity other than a corporation and you and you want to choose to be classified for federal tax purposes as an S Corporation, but you have not filed the usual paperwork within the specified timeframes. This situation is especially common for single-member
         <a href="/limited-liability-company/" target="_blank">LLCs (Limited Liability Companies) </a>
@@ -63,7 +63,7 @@ export const about = {
   ],
   text10: `Get more details and instructions for
         <a href="https://www.irs.gov/pub/irs-pdf/f8832.pdf" rel="noopener noreferrer nofollow" target="_blank">Form 8832 here.</a>`,
-  header6: `What is the IRS Definition of “Reasonable Cause?”`,
+  header7: `What is the IRS Definition of “Reasonable Cause?”`,
   text11: `The IRS knows that people cannot always pay their taxes on time or file relevant forms on time; people make mistakes, forget about deadlines, and make understandable human errors. But if you need to file Form 2553 (or Form 8832) later than the expected deadline, you need to be prepared to offer a “reasonable cause” for why your forms were not done on time. Each case is judged individually, but the IRS can often accommodate your situation and provide relief from penalties if you can prove that your circumstances fall within the accepted IRS standards of “reasonable cause.”`,
   text12: `According to the
         <a href="https://www.irs.gov/irm/part20/irm_20-001-001r" rel="noopener noreferrer nofollow" target="_blank">IRS,</a>
@@ -78,9 +78,9 @@ export const about = {
   ],
   text14: `Check out the IRS website for more details on
         <a href="https://www.irs.gov/businesses/small-businesses-self-employed/penalty-relief-due-to-reasonable-cause" rel="noopener noreferrer nofollow" target="_blank">Penalty Relief due to Reasonable Cause.</a>`,
-  header7: `How Long Does it Take for Form 2553 to Get Approved?`,
+  header8: `How Long Does it Take for Form 2553 to Get Approved?`,
   text15: `Generally, the IRS will approve your Form 2553 filing (if you qualify for S Corporation status) within 60 days of your filing the form.`,
-  header8: `Are there Separate State Rules for Form 2553?`,
+  header9: `Are there Separate State Rules for Form 2553?`,
   text16: `Yes. Not all states recognize Form 2553 for state income tax purposes, so you might need to file a separate form with your state tax authorities. Check with your state’s Department of Revenue or other relevant authorities, or ask your accountant for advice.`,
   text17: `For more information on Form 2553,
         <a href="https://www.irs.gov/forms-pubs/about-form-2553" rel="noopener noreferrer nofollow" target="_blank">Penalty Relief due to Reasonable Cause.</a>`,

@@ -10,6 +10,7 @@ import Button from "../buttons/button";
 import HelpMarkSVG from "../../../images/icons/help-mark.inline.svg";
 import Image from "../../atoms/image/image_nobase64";
 import ReactTooltip from "react-tooltip";
+import {PHeading} from "../../atoms/typography/p-to-heading";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -28,13 +29,18 @@ const Wrapper = styled.div`
 	}
 
 	& > h4,
-	& > p {
+	& > p, 
+	& > [class*="i-believe-i-can-be-a-h"] {
 		text-align: center;
 	}
 
-	& > p {
+	& > p:not([class*="i-believe-i-can-be-a-h"]) {
 		max-width: 210px;
 		color: ${color.grey1};
+	}
+	
+	& > [class*="i-believe-i-can-be-a-h"] {
+		max-width: 210px;
 	}
 
 	ul {
@@ -186,9 +192,9 @@ const PricingCard = ({
 					<span>{content.variant}</span>
 				</Box>
 			)}
-			<Heading size={3} template={4} center marginBottom="16">
+			<PHeading size={3} template={4} center marginBottom="16">
 				{content.header}
-			</Heading>
+			</PHeading>
 			<Paragraph bottomMargin="8" className="package-description">
 				{content.text}
 			</Paragraph>

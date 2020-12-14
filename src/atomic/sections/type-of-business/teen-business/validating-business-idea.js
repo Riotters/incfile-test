@@ -93,7 +93,7 @@ const ValidatingBusinessIdea = () => (
                     <AbsoluteCurve>
                         <Curve color={color.blue1}/>
                     </AbsoluteCurve>
-                    <Heading size={2} template={3} left>Validating Your Teen Business Idea</Heading>
+                    <Heading size={2} left>Validating Your Teen Business Idea</Heading>
                     <Paragraph big>
                         Remember, the ideas above are just a starting point. You can define and tweak exactly what type
                         of teen business you want to run by conducting your own research.

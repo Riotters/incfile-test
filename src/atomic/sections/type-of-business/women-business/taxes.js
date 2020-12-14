@@ -74,9 +74,9 @@ const AdventagesBox = styled.div`
 const Oval = styled.div`
     position: absolute;
     left: 0;
-    top: 367;
+    top: 367px;
     width: 100%;
-    z-index: 1;
+    z-index: 0;
     
     @media (min-width: 570px){
         width: 570px;

@@ -38,7 +38,7 @@ export const HomePageContent = {
       text4: `In this guide you’ll find information on searching for and naming your NY LLC, getting a New York Registered Agent, the fees you’ll need to pay, NY business taxes and much more. `,
     },
     mainSteps: {
-      heading3: `File Your New York LLC Yourself: 7 Main Steps`,
+      heading1: `File Your New York LLC Yourself: 7 Main Steps`,
       navSteps: [
         {
           text: `<b>Step 1</b> - Complete a New York LLC Search and Choose a Unique Business Name`,
@@ -179,26 +179,18 @@ export const HomePageContent = {
     otherInfo: [
       {
         type: `heading`,
-        size: 3,
+        size: 2,
+        template: 3,
         content: `Other Important New York LLC Info`,
       },
       {
         type: `heading`,
-        size: 4,
+        size: 3,
         content: `Special Types of LLCs in New York`,
       },
       {
         type: `paragraph`,
         content: `A regular LLC is suitable for most business needs, but you also have a few other options in New York State.`,
-      },
-      {
-        type: `heading`,
-        size: 4,
-        content: `Series LLCs`,
-      },
-      {
-        type: `paragraph`,
-        content: `In Texas, you also have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master, umbrella LLC. These can be very useful if you don’t want to set up a separate Texas LLC for every individual business you run.`,
       },
       {
         type: `heading`,
@@ -234,7 +226,7 @@ export const HomePageContent = {
       // Helpful resource
       {
         type: `heading`,
-        size: 4,
+        size: 3,
         content: `Read More Information from the New York Department of State`,
       },
       {
@@ -286,7 +278,7 @@ export const HomePageContent = {
         content: `How to search the New York business registry of the NY Department of State and find the right name. Includes information on naming rules, fictitious names, reserving a New York LLC name and more.`,
       },
       {
-        type: "button",
+        type: "modal-trigger",
         theme: `secondary56`,
         content: {
           text: `Search For Your New York LLC Name`,
@@ -342,5 +334,16 @@ export const HomePageContent = {
         content: `How to understand the various taxes you will need to pay to the federal and New York government. Includes details of federal taxes like income and self-employment and New York taxes like sales tax and income tax.`,
       },
     ],
+  },
+};
+
+export const hsForm = {
+  header: "Please enter the business name information",
+  header2: "Let us know where we can let you know if your business name is available",
+  hs_form_id: `7d5d3157-09f4-40f0-bfee-eff448ed0e24`,
+  fileDownload: ``, // TODO: Add the correct file for download
+  button: {
+    text: "Download now",
+    url: "/",
   },
 };

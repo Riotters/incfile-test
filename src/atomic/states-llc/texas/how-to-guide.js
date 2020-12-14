@@ -22,6 +22,7 @@ import TextCheck from "../../../components/static-check/text-only";
 import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
 import TextBlockWithNumberCounting from "../../molecules/mixed-blocks/text-block-with-absolute-number";
 import AbsoluteShapeCurveElement from "../../elements/absolute-shape-curve-e";
+import ActionButton from "../../molecules/buttons/button-action";
 
 // Bg box CTA
 import BgBoxPersonalOA from "../../../images/icons/states/personal-oa.inline.png";
@@ -95,11 +96,13 @@ const WhiteBoxLink = styled(Whitebox)`
   }
 `;
 
-const HowToGuide = ({ content, data }) => {
+const HowToGuide = ({ content, data, modalAction }) => {
   return (
     <Wrapper>
       {/* Why choose section */}
-      <Heading size={3}>{content.whyChoose.heading}</Heading>
+      <Heading size={2} template={3} left={true}>
+        {content.whyChoose.heading}
+      </Heading>
       <Paragraph big>{content.whyChoose.text1}</Paragraph>
       <Paragraph big>{content.whyChoose.text2}</Paragraph>
       <Paragraph big>{content.whyChoose.text3}</Paragraph>
@@ -116,7 +119,7 @@ const HowToGuide = ({ content, data }) => {
       <Paragraph big>{content.whyChoose.text4}</Paragraph>
 
       {/* Main Steps */}
-      <Heading size={3} bottomMargin="40" style={{ marginTop: `48px` }}>
+      <Heading size={2} template={3} left={true}>
         {content.mainSteps.heading3}
       </Heading>
 
@@ -228,12 +231,20 @@ const HowToGuide = ({ content, data }) => {
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step3.text3)}
         </Paragraph>
-
-        <BoxButtonLinks>
-          {content.mainSteps.step3.groupBtn1.map((button) => (
-            <BoxedButton className="article-link" content={button} ellipsis />
-          ))}
-        </BoxButtonLinks>
+        <Button
+          content={content.mainSteps.step3.button1}
+          theme="secondary56"
+          arrow
+          margin="16px 0 0 0"
+          marginMD="16px 0 16px 0"
+        />
+        <Button
+          content={content.mainSteps.step3.button2}
+          theme="secondary56"
+          arrow
+          margin="16px 0 0 0"
+          marginMD="16px 0 40px 0"
+        />
       </TextBlockWithNumberCounting>
 
       <TextBlockWithNumberCounting
@@ -405,6 +416,21 @@ const HowToGuide = ({ content, data }) => {
               marginMD="42px 0 42px 0"
             />
           )}
+
+            {item.type === "modal-trigger" && (typeof modalAction === "function") && (
+                <ActionButton
+                    content={item.content}
+                    theme={item.theme}
+                    arrow={item.arrow ?? true}
+                    onClick={modalAction}
+                    margin={
+                        item.marginBottom ? `0 auto ${item.marginBottom}px 0` : false
+                    }
+                    marginSM={item.marginBottom ? false : "24px auto 24px 0"}
+                    marginMD={item.marginBottom ? false : "42px auto 56px 0"}
+                />
+            )}
+
         </div>
       ))}
     </Wrapper>

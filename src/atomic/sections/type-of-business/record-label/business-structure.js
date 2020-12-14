@@ -54,7 +54,7 @@ const BusinessStructure = () => (
 
     <BusinessOwnerResponsibilities>
       <ImageContent image="unique-business-2" paddingTop="60">
-        <Heading size={4} style={{ fontSize: "24px" }}>
+        <Heading size={3} template={3}>
           Choose the Right Business Structure and Register Your Record Label Business
         </Heading>
         <Paragraph big>Now that you have all the background information for your record label business, it’s time to make it into a reality. That starts by choosing the right structure or “legal entity” for your business. In the U.S., there are five main business structures. They are:</Paragraph>

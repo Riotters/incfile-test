@@ -768,9 +768,9 @@ export const registeredAgent = [
         `The Registered Agent’s name and address are part of the public record and available through the Washington DC Department of Consumer and Regulatory Affairs's website. If you prefer your name and address aren’t published, you should choose a Registered Agent service.`,
         `If you change your Washington DC business address or move out of the area, you would need to file additional documentation with the DC Department of Consumer and Regulatory Affairs for the new address if you act as your own Registered Agent. This would not be the case if you use a Registered Agent service, making a move or address change much simpler.`,
       ],
-      marginBottom: 48,
-      color: color.purple3,
     },
+    marginBottom: 48,
+    color: color.blue3,
   },
   {
     type: `header`,
@@ -1027,7 +1027,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Washington DC business. You can choose to make changes to the template based on your unique requirements. `,
+    content: `An Operating Agreement is extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Washington DC business. You can choose to make changes to the template based on your unique requirements. `,
     marginBottom: 48,
   },
   {

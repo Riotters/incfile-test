@@ -633,9 +633,14 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `We are authorized to conduct business in Arkansas and can legally act as your Registered Agent. Here’s what you need to know about Incfile’s Registered Agent service:`,
-    marginBottom: 24,
+    content: `We are authorized to conduct business in Arkansas and can legally act as your Registered Agent.`,
+    marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "Here’s what you need to know about Incfile’s Registered Agent service:",
+        marginBottom: 24
+    },
   {
     type: `list-dot`,
     content: {
@@ -875,9 +880,9 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       list: [
-        `<a href="/research-topics/registered-agent/registered-agent-function/">The Main Functions of a Arkansas Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Arkansas Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Arkansas Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent/registered-agent-tasks/">What a Arkansas Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Arkansas Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1114,7 +1119,7 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Arkansas LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Arkansas business. You can choose to make changes to the template based on your unique requirements.`,
+    content: `Arkansas LLCs aren’t required to have an Operating Agreement, but they are extremely useful for several reasons (<a href="/research-topics/llc-info/the-llc-operating-agreement/">learn about them here</a>). If you’re interested in having your Operating Agreement created for you, Incfile can draft a general Operating Agreement template when you choose to form your Arkansas business. You can choose to make changes to the template based on your unique requirements.`,
     marginBottom: 23,
   },
   {
@@ -1189,9 +1194,14 @@ export const feesAndRequirments = [
   },
   {
     type: `text`,
-    content: `Your business formation documents state certain facts about your Arkansas business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf. Areas you might want to file Arkansas Articles of Amendment for include:`,
-    marginBottom: 24,
+    content: `Your business formation documents state certain facts about your Arkansas business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Secretary of State. You can do this yourself or have Incfile complete the filing on your behalf. `,
+    marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "Areas you might want to file Arkansas Articles of Amendment for include:",
+        marginBottom: 24
+    },
   {
     type: `list-dot`,
     content: {
@@ -1389,9 +1399,14 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the AR Tax Commission. Arkansas sales tax is collected at the point of purchase. Arkansas sales tax rates do vary depending on the region, county or city where you are located. You will typically need to collect Arkansas sales tax on:`,
-    marginBottom: 24,
+    content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the AR Tax Commission. Arkansas sales tax is collected at the point of purchase. Arkansas sales tax rates do vary depending on the region, county or city where you are located. `,
+    marginBottom: 16,
   },
+    {
+        type: "text",
+        content: "You will typically need to collect Arkansas sales tax on:",
+        marginBottom: 24
+    },
   {
     type: `list-dot`,
     content: {

@@ -13,6 +13,7 @@ import {
 	consultation,
 	form,
 } from "../../static/diy-business-course";
+import {Heading} from "../../atomic/atoms/typography/heading";
 
 const StartAnLLC = () => {
 	return (
@@ -29,9 +30,9 @@ const StartAnLLC = () => {
 				textWidth="770"
 			>
 				<h1>{top.header}</h1>
-				<h2 style={{ marginBottom: "32px", textAlign: "left" }}>
+				<Heading size={2} template={3} style={{ marginBottom: "32px", textAlign: "left" }}>
 					{top.header2}
-				</h2>
+				</Heading>
 				<p>{top.text}</p>
 			</Top>
 			<About content={about} />

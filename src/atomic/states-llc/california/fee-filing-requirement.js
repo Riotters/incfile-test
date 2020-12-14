@@ -57,7 +57,7 @@ const FeeFilingRequirementSection = ({ content, data }) => {
             {content.map((item, i) => (
                 <div>
                     {item.type === 'heading' &&
-                        <Heading size={item.size} style={item.styles}>{item.content}</Heading>
+                        <Heading size={item.size} style={item.styles} template={item.template} center={item.center} left={item.left}>{item.content}</Heading>
                     }
                                         
                     {item.type === 'paragraph' &&
@@ -77,7 +77,7 @@ const FeeFilingRequirementSection = ({ content, data }) => {
                     }
 
                     {item.type === 'accordingTabWithCountingLeft' &&
-                        <AcccordionCounting content={item.content} tab />
+                        <AcccordionCounting content={item.content} tab header={item.header} />
                     }
 
                     {item.type === 'numberBoxList' &&
@@ -105,7 +105,7 @@ const FeeFilingRequirementSection = ({ content, data }) => {
                     )}
 
                     {item.type === 'accordionWithCounting' && (
-                        <AcccordionCounting content={item.content} tab />
+                        <AcccordionCounting content={item.content} tab header={item.header} />
                     )}
 
                     {item.type === 'dynamic_ar_box' && (

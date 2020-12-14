@@ -68,7 +68,7 @@ export const about = {
       `<strong>Risks:</strong> Any potential threats or issues to the business and how they’re being addressed.`,
     ],
   },
-  text12: `The purpose of an annual report is to keep your state informed on any changes to the details or ownership of your business — For example if the business has changed locations or has new directors or managers.`,
+  text12: `Whether you’re filing a formal corporate annual report for your LLC, S-Corp or C-Corp, or you’re creating other business and financial reports, ensure you understand exactly what’s required from you. Here at IncFile, we’re experts at making sure your annual reports are perfect. Save yourself the time and effort of preparing and filing your annual report, and let us take care of things.`,
 };
 
 export const help = {

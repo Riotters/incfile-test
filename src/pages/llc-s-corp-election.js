@@ -40,6 +40,7 @@ import BusinessRevenue from "../atomic/molecules/blocks/business-revenue";
 import parse from "html-react-parser";
 import Articles from "../atomic/sections/articles";
 import ProductSchema from "../components/product-schema";
+import {PHeading} from "../atomic/atoms/typography/p-to-heading";
 
 const LLCsTax = styled.section`
 	position: relative;
@@ -215,15 +216,15 @@ const CorpElection = () => (
 					{taxCalculator.header}
 				</Heading>
 				<Paragraph big>{taxCalculator.text}</Paragraph>
-				<Heading size="3" bottomMargin="32">
+				<PHeading size={3} bottomMargin="32">
 					{taxCalculator.header2}
-				</Heading>
+				</PHeading>
 				<ArrowLink content={taxCalculator.link} bottomMargin="0" />
 			</ObjectContent>
 		</Example>
 		<FairlSalary>
 			<LeftContentRightImage image="weight" imageAlt="Fair Salary">
-				<Heading size="2" bottomMargin="64">
+				<Heading size={3} template={2} bottomMargin="64">
 					{fairSalary.header}
 				</Heading>
 				<Paragraph big bottomMargin="0">
@@ -236,18 +237,18 @@ const CorpElection = () => (
 			<ContentCenter>
 				<OverheadBoxes>
 					<TopImageBox image="envelope-dollar" imageAlt="S Corporation Election" color={color.yellow3}>
-						<Heading size={3} template={4} bottomMargin={0}>
+						<PHeading size={3} template={4} bottomMargin={0}>
 							Setting up monthly payroll
-						</Heading>
+						</PHeading>
 						<p>
 							You will need to set up a monthly payroll where you pay yourself
 							and submit your payroll taxes
 						</p>
 					</TopImageBox>
 					<TopImageBox image="calculator-coin" imageAlt="Additional accounting fees" color={color.red3}>
-						<Heading size={3} template={4} bottomMargin={0}>
+						<PHeading size={3} template={4} bottomMargin={0}>
 							Additional accounting fees
-						</Heading>
+						</PHeading>
 						<p>
 							Your accountant will need to file your taxes in a slightly
 							different way, which may increase your accounting fees
@@ -267,7 +268,7 @@ const CorpElection = () => (
 				bottomMargin="64"
 			/>
 			<ContentCenter contentWidth="770">
-				<Heading size="4" bottomMargin="8">
+				<Heading size="3" template={4} bottomMargin="8" center>
 					{fileForm.header2}
 				</Heading>
 				<Paragraph big mixed style={{ textAlign: `center` }}>
@@ -280,7 +281,7 @@ const CorpElection = () => (
 			<TextCenterLayout headline={behalfFile.header} text={behalfFile.text} />
 			<ContentCenter contentWidth="470">
 				<TopImageBox className="card" image="24-hours" color={color.orange3}>
-					<h4>{behalfFile.header2}</h4>
+					<Heading bottomMargin={0} size={3} template={4}>{behalfFile.header2}</Heading>
 					<p>
 						{behalfFile.text2}
 						<a href={`${process.env.ORDER_URL}/form-order-now.php`}>
@@ -326,7 +327,7 @@ const CorpElection = () => (
 				<Accordion content={faq} />
 			</ContentCenter>
 		</Help>
-		<Benefits />
+		{/*<Benefits />*/}
 		<Articles categoryId={293} />
 	</Layout>
 );

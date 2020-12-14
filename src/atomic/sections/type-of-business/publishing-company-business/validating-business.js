@@ -91,7 +91,7 @@ const ValidatingBusinessIdea = () => (
 
             <GridSection>
                 <TitleBox>
-                    <Heading size={2} template={3} left>Validating Your Publishing Business Idea</Heading>
+                    <Heading size={2} left>Validating Your Publishing Business Idea</Heading>
                     <Paragraph big>
                         These areas are just starting points — there are many different types of publishing businesses. Once you’ve identified the areas you’d like to go into, you need
                         to validate your publishing business idea.
