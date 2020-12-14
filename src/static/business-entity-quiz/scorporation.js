@@ -24,7 +24,7 @@ export const about = {
 };
 
 export const characteristics = {
-	header: `The Advantages & Disadvantages of LLCs`,
+	header: `Characteristics of an S Corp`,
 	boxes: [
 		{
 			disadventage: false,
