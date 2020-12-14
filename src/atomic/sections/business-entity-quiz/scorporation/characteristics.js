@@ -21,6 +21,7 @@ const IsItForYou = ({ content }) => (
 						circleBackgroundColor={box.circleBackgroundColor}
 						text={box.text}
 						width="100%"
+						padding="48px 40px 40px"
 					/>
 				))}
 			</AdventagesWrapper>
