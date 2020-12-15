@@ -1167,7 +1167,7 @@ export const naming = [
   {
     type: "text",
     content:
-      "Fortunately, we have some good advice on seeking out the perfect business name for your Wyoming corporation. <a href='https://www.incfile.com/post/llc-name-search-50-states/'>Check out our guidance on naming your business and get inspired.</a>",
+      "Fortunately, we have some good advice on seeking out the perfect business name for your Wyoming corporation. <a href='https://www.incfile.com/blog/post/llc-name-search-50-states/'>Check out our guidance on naming your business and get inspired.</a>",
     marginBottom: 48,
   },
   {

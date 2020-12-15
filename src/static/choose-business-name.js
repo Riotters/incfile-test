@@ -1254,7 +1254,7 @@ export const diyLLC = [
   {
     type: "text",
     content:
-      "You’ll need to have all of your information handy to complete the required forms. <a href='/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile'>Articles of Organization</a> ask for specific details, such as:",
+      "You’ll need to have all of your information handy to complete the required forms. <a href='https://www.incfile.com/blog/post/what-are-articles-of-incorporation-and-do-i-need-to-purchase-them-from-incfile'>Articles of Organization</a> ask for specific details, such as:",
     marginBottom: 24,
   },
   {
@@ -1267,7 +1267,7 @@ export const diyLLC = [
         "Purpose of the LLC",
         "Supplemental provisions",
         "Name of the organizer",
-        "Whether your LLC will be <a href='/blog/post/manager-managed-llc-vs-member-managed-llc/'>member-managed or manager-managed</a>",
+        "Whether your LLC will be <a href='https://www.incfile.com/blog/post/manager-managed-llc-vs-member-managed-llc/'>member-managed or manager-managed</a>",
       ],
     },
     color: color.orange3,
@@ -1320,7 +1320,7 @@ export const diyLLC = [
   {
     type: "text",
     content:
-      "For many businesses, their <a href='/blog/post/draft-standard-operating-agreement/'>Operating Agreement</a> is one of the most important documents to have in their arsenal. Your Operating Agreement outlines the roles and responsibilities of each owner and member of your LLC and acts as the final word when there are any discrepancies within your business. Operating Agreements aren’t required by the state, but any LLC with two or more members is highly encouraged to draft one to avoid complications down the road.",
+      "For many businesses, their <a href='https://www.incfile.com/blog/post/draft-standard-operating-agreement/'>Operating Agreement</a> is one of the most important documents to have in their arsenal. Your Operating Agreement outlines the roles and responsibilities of each owner and member of your LLC and acts as the final word when there are any discrepancies within your business. Operating Agreements aren’t required by the state, but any LLC with two or more members is highly encouraged to draft one to avoid complications down the road.",
     marginBottom: 24,
   },
   {
@@ -1338,7 +1338,7 @@ export const diyLLC = [
   {
     type: "text",
     content:
-      "If you’re a solopreneur, you may not think that an EIN is required for your business. Perhaps you don’t plan to be an employer or have employees. But an Employer Identification Number provides more benefits than just the ability to hire subordinates. Your EIN enables you to <a href='/blog/post/opening-business-bank-accounts/'>open company bank accounts</a>, build business credit and apply for corporate loans. If your LLC will have more than one member or is set up as a partnership, you’ll be required to have an EIN for filing business taxes.",
+      "If you’re a solopreneur, you may not think that an EIN is required for your business. Perhaps you don’t plan to be an employer or have employees. But an Employer Identification Number provides more benefits than just the ability to hire subordinates. Your EIN enables you to <a href='https://www.incfile.com/blog/post/opening-business-bank-accounts/'>open company bank accounts</a>, build business credit and apply for corporate loans. If your LLC will have more than one member or is set up as a partnership, you’ll be required to have an EIN for filing business taxes.",
     marginBottom: 24,
   },
   {
@@ -1413,7 +1413,7 @@ export const afterFilling = [
   {
     type: "text",
     content:
-      "Depending on the nature of your business, you may be required to apply for and obtain permits that are specific to your business operation. Permits for liquor or other controlled products may be an obviously necessary step for some, but most municipalities also require business licenses for all companies that wish to operate within city limits. If you’re planning to run everything from your home and host clients on your own property, you may be required to obtain a permit for a <a href='/blog/post/how-start-home-business/'>home-based business</a> and make alterations to your home to meet bylaw requirements for public access.",
+      "Depending on the nature of your business, you may be required to apply for and obtain permits that are specific to your business operation. Permits for liquor or other controlled products may be an obviously necessary step for some, but most municipalities also require business licenses for all companies that wish to operate within city limits. If you’re planning to run everything from your home and host clients on your own property, you may be required to obtain a permit for a <a href='https://www.incfile.com/blog/post/how-start-home-business/'>home-based business</a> and make alterations to your home to meet bylaw requirements for public access.",
     marginBottom: 24,
   },
   {

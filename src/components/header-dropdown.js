@@ -689,7 +689,7 @@ const Header = ({ siteTitle }) => {
 										</MenuItem>
 									</SubmenuColumn>
 									<BottomLink>
-										<ArrowLink content={{url: `${process.env.SITE_URL}/blog`, text: "Read The Infile Blog"}} />
+										<ArrowLink content={{url: `${process.env.SITE_URL}/blog/`, text: "Read The Infile Blog"}} />
 									</BottomLink>
 								</DropdownMenu>
 							</MenuItem>
