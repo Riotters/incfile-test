@@ -1204,7 +1204,7 @@ export const feesAndRequirments = [
 	{
 		type: `button`,
 		content: {
-			text: `Infile's Ohio business licence research package.`,
+			text: `Incfile's Ohio business licence research package.`,
 			url: `/business-license-research-package/`,
 		},
 		theme: `primary48`,

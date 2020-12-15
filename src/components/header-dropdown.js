@@ -390,13 +390,13 @@ const BottomLink = styled.div`
 	height: 30px;
 	width: 100%;
 	margin-top: 30px;
-	
+
 	@media (max-width: 991px) {
 		a {
 			font-size: 16px;
 		}
 	}
-	
+
 	@media (min-width: 992px) {
 		border-top: 1px solid ${color.grey4};
 		padding: 20px 30px;
@@ -559,7 +559,12 @@ const Header = ({ siteTitle }) => {
 										</MenuItem>
 									</SubmenuColumn>
 									<BottomLink>
-										<ArrowLink content={{ url: `${process.env.SITE_URL}/dashboard`, text: "View Your Dashboard" }} />
+										<ArrowLink
+											content={{
+												url: `${process.env.SITE_URL}/dashboard`,
+												text: "View Your Dashboard",
+											}}
+										/>
 									</BottomLink>
 								</DropdownMenu>
 							</MenuItem>
@@ -689,7 +694,12 @@ const Header = ({ siteTitle }) => {
 										</MenuItem>
 									</SubmenuColumn>
 									<BottomLink>
-										<ArrowLink content={{url: `${process.env.SITE_URL}/blog/`, text: "Read The Infile Blog"}} />
+										<ArrowLink
+											content={{
+												url: `${process.env.SITE_URL}/blog/`,
+												text: "Read The Incfile Blog",
+											}}
+										/>
 									</BottomLink>
 								</DropdownMenu>
 							</MenuItem>
