@@ -23,89 +23,89 @@ import { Heading } from "../../atomic/atoms/typography/heading";
 import { Paragraph } from "../../atomic/atoms/typography/paragraph";
 
 const BoutiqueClothingBusiness = () => (
-	<Layout>
-		<SEO
-			title="How to Start a Traditional or Online Boutique Clothing Business"
-			description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground."
-		/>
+  <Layout>
+    <SEO
+      title="How to Start a Traditional or Online Boutique Clothing Business"
+      description="Learn all about nonprofit corporations, including the benefits & disadvantages, getting 501c3 status, and what's needed to get your company off the ground."
+    />
 
-		<Top
-			ovalColor="purple"
-			imageName="bouthique-clothing-main"
-			imageAlt="Mr Bulb with seedling"
-			headlineWidth={700}
-		>
-			<h1>How to Start a Traditional or Online Boutique Clothing Business</h1>
-			<p>
-				Fashion and beautiful clothing have always been in demand, and if you
-				have an eye for style, a boutique clothing business could be ideal for
-				you.
-			</p>
-			<ButtonsBox>
-				<Button
-					theme="primary56"
-					marginMD="0 24px 0 0"
-					arrow
-					content={{
-						url: `${process.env.ORDER_URL}/form-order-now.php`,
-						text: "Start Now",
-					}}
-				/>
-			</ButtonsBox>
+    <Top
+      ovalColor="purple"
+      imageName="bouthique-clothing-main"
+      imageAlt="Mr Bulb with seedling"
+      headlineWidth={700}
+    >
+      <h1>How to Start a Traditional or Online Boutique Clothing Business</h1>
+      <p>
+        Fashion and beautiful clothing have always been in demand, and if you
+        have an eye for style, a boutique clothing business could be ideal for
+        you.
+      </p>
+      <ButtonsBox>
+        <Button
+          theme="primary56"
+          marginMD="0 24px 0 0"
+          arrow
+          content={{
+            url: `${process.env.ORDER_URL}/form-order-now.php`,
+            text: "Start Now",
+          }}
+        />
+      </ButtonsBox>
 
-			<RatingRow>
-				<CartBlock />
-				<RatingBlock />
-			</RatingRow>
-		</Top>
+      <RatingRow>
+        <CartBlock />
+        <RatingBlock />
+      </RatingRow>
+    </Top>
 
-		<BoutiqueClothingTabs />
+    <BoutiqueClothingTabs />
 
-		<TypeOfBusiness />
+    <TypeOfBusiness />
 
-		<BlueContainer />
+    <BlueContainer />
 
-		<BoutiqueBusinessPlan />
+    <BoutiqueBusinessPlan />
 
-		<BoutiqueBusinessStructure />
+    <BoutiqueBusinessStructure />
 
-		<SettingBusiness />
+    <SettingBusiness />
 
-		<OrderNow />
+    <OrderNow />
 
-		<Regulations />
+    <Regulations />
 
-		<BoutiqueTaxes />
+    <BoutiqueTaxes />
 
-		<InsuranceBusinessSection />
+    <InsuranceBusinessSection />
 
-		<UseFulTools />
+    <UseFulTools />
 
-		<Conclusion
-			to={`${process.env.ORDER_URL}/form-order-now.php`}
-			buttonTitle="Start your Boutique Clothing Business with us, today"
-			width="490px"
-		>
-			<Heading size={3} style={{ fontSize: "48px" }}>
-				Conclusion
-			</Heading>
-			<Paragraph big>
-				With a strong eye for style and good business acumen, you can start a
-				successful retail clothing company. If you can find a great niche,
-				understand your competitors and put together a solid business plan, you
-				will have every chance for success.
-			</Paragraph>
-		</Conclusion>
-	</Layout>
+    <Conclusion
+      to={`${process.env.ORDER_URL}/form-order-now.php`}
+      buttonTitle="Start your Boutique Clothing Business with us, today"
+      width="490px"
+    >
+      <Heading size={3} style={{ fontSize: "40px" }}>
+        Conclusion
+      </Heading>
+      <Paragraph big>
+        With a strong eye for style and good business acumen, you can start a
+        successful retail clothing company. If you can find a great niche,
+        understand your competitors and put together a solid business plan, you
+        will have every chance for success.
+      </Paragraph>
+    </Conclusion>
+  </Layout>
 );
 
 const ButtonsBox = styled.div`
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	@media (min-width: 769px) {
-		flex-direction: row;
-	}
+  @media (min-width: 769px) {
+    flex-direction: row;
+  }
 `;
 
 export default BoutiqueClothingBusiness;
