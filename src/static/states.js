@@ -80,7 +80,7 @@ export const states = [
         url: "https://marylandtaxes.gov/business/types-of-business-licenses.php"
     },
     {
-        name: "Massachusett",
+        name: "Massachusetts",
         url: "https://www.mass.gov/topics/business-licenses-permits"
     },
     {

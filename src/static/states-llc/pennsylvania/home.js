@@ -50,11 +50,6 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `<a href="aaa" target="_blank" rel="noopener noreferrer">aaa</a>`,
-    marginBottom: 48,
-  },
-  {
-    type: `text`,
     content: `<a href="/limited-liability-company/" target="_blank" rel="noopener noreferrer">Learn more about the benefits of the LLC business structure here.</a>`,
     marginBottom: 48,
   },

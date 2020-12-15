@@ -46,13 +46,13 @@ const HelpCenter = () => {
 	return (
 		<Layout>
 			<SEO
-				title="Who Will Typically Elect the S Corporation Status?"
+				title="What is Stock Par Value? | Archive articles"
 				description="Q & A for LLC and other forms of corporations. Learning Center for
-    Incorporating in every state."
+                Incorporating in every state."
 			/>
 			<Top
 				imageName="mrs-bulb-help-center-article"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt=""
 				ovalColor="green"
 			>
 				<Heading size={2} template={1} left>
