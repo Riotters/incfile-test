@@ -132,7 +132,7 @@ export const howToGuide = [
       list: [
         `<a href="https://sos.wv.gov/business/Pages/StartWVBus.aspx" target="_blank" rel="noopener noreferrer">West Virginia Secretary of State for forming and running your LLC</a>`,
         `<a href="https://labor.wv.gov/Pages/default.aspx" target="_blank" rel="noopener noreferrer">West Virginia Division of Labor for employers and hiring </a>`,
-        `<a href="href="https://tax.wv.gov/Pages/default.aspx" target="_blank" rel="noopener noreferrer">West Virginia Department of Revenue for WV taxes</a>`,
+        `<a href="https://tax.wv.gov/Pages/default.aspx" target="_blank" rel="noopener noreferrer">West Virginia Department of Revenue for WV taxes</a>`,
       ],
     },
     marginBottom: 32,

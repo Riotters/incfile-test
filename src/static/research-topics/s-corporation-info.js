@@ -74,7 +74,7 @@ export const related = {
     },
     {
       header: `What is Stock Par Value?`,
-      url: `/research-topics/s-corporation-info/stock-par-value/`,
+      url: `/research-topics/s-corporation-info/what-is-stock-par-value/`,
     },
     {
       header: `What is the Form 2553?`,
