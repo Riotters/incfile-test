@@ -26,8 +26,8 @@ const BusinessEntityQuizCCorp = () => (
 	<Layout>
 		<SEO
 			robots="none"
-			title="Quiz Result: You Should Form an LLC"
-			description="Your answers suggest an LLC is the right business entity for your new business. Learn more about LLCs here."
+			title="Quiz Results: You Should Form a C Corp!"
+			description="Your answers suggest a C corporation is the right business entity for your new business. Learn more about C Corps here."
 		/>
 		<TopSection content={top} padding="220px 0" />
 		<WhatIs />
@@ -40,22 +40,6 @@ const BusinessEntityQuizCCorp = () => (
 		/>
 		<HowForm content={howForm} />
 		<Rocket />
-
-		<Helmet>
-			<script type="application/ld+json">{`
-                {
-                    "@context": "http://schema.org",
-                    "@type": "VideoObject",
-                    "name": "What Does LLC Mean by Incfile",
-                    "description": "LLC stands for Limited Liability Company and it means exactly what it says. Forming an LLC limits the liability or risk your personal assets have related to your business. Learn more",
-                    "thumbnailUrl": "https://i.ytimg.com/vi/ZuadTwgek5U/default.jpg",
-                    "uploadDate": "2020-04-26T19:50:16.000Z",
-                    "duration": "PT1M25S",
-                    "embedUrl": "https://www.youtube.com/embed/ZuadTwgek5U",
-                    "interactionCount": "8"
-                }
-            `}</script>
-		</Helmet>
 	</Layout>
 );
 

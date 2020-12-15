@@ -2,12 +2,12 @@ import { color } from "../../atomic/atoms/styles/colors";
 import { shadow } from "../../atomic/atoms/styles/shadows";
 
 export const top = {
-	header: "You Should Consider Forming an LLC!",
+	header: "You Should Consider Forming a C Corp!",
 	text:
-		"For over 80% of small businesses, the right choice of business structure is a simple one: the LLC",
+		"Everything you need to know about forming a C Corporation",
 	button: {
-		text: "Form Your LLC Today For $0 + State Fee",
-		url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&utm_campaign=Lead%20Gen%20-%20Business%20Entity%20Quiz&utm_source=On_Page_Click&utm_medium=LLC%20Results%20Page&utm_term=Order%20Form`,
+		text: "Form Your C Corp Today",
+		url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&utm_campaign=Lead%20Gen%20-%20Business%20Entity%20Quiz&utm_source=On_Page_Click&utm_medium=CCorp%20Results%20Page&utm_term=Order%20Form`,
 	},
 	link: {
 		text: "Retake Quiz",
