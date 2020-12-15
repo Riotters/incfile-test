@@ -9,7 +9,7 @@ import parse from "html-react-parser";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../../images/orange-curve.inline.svg";
 import VisibilitySensor from "../../../components/VisibilitySensor";
-import {HeadingP} from "../../atoms/typography/heading-to-p";
+import { HeadingP } from "../../atoms/typography/heading-to-p";
 import { Heading } from "../../atoms/typography/heading";
 
 const Wrapper = styled.div`
@@ -162,9 +162,9 @@ const Button = styled.button`
 	&.active {
 		border-radius: 5px 5px 0 0;
 		font-weight: 600;
-		
+
 		h3 {
-		font-weight: 600;
+			font-weight: 600;
 		}
 
 		svg {
@@ -186,7 +186,8 @@ const Content = styled.div`
 		min-height: unset;
 	}
 
-	span, h3 {
+	span,
+	h3 {
 		color: #4e4e4e;
 		font-family: Avenir;
 		font-size: 16px;
@@ -299,7 +300,9 @@ const AccordionWithCounting = ({
 							<Tab>
 								<Content>
 									<Counting>{item.count}</Counting>
-									{(!header || !paragraphHeaders) && <span>{item.question}</span>}
+									{(!header || !paragraphHeaders) && (
+										<span>{item.question}</span>
+									)}
 									{header === 2 && (
 										<Heading size={2} template={3} left>
 											{item.question}
