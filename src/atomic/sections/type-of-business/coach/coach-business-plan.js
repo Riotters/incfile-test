@@ -63,21 +63,33 @@ const CoachBusinessPlan = () => (
     </OvalCenter>
     <Container>
       <BusinessOwnerResponsibilities>
-        <Heading size={2} template={4} left className="title">
+        <Heading size={2} left bottomMargin={56}>
           Your Life or Business Coaching Business Needs a Plan
         </Heading>
         <Paragraph big>
-          You need to define how you’re going to run your coaching business, market yourself, get sales, make a profit and grow. This can only come about through creating a watertight business plan. It will help you get your thinking in order and show your commitment to your life or business
-          coaching company.
+          You need to define how you’re going to run your coaching business,
+          market yourself, get sales, make a profit and grow. This can only come
+          about through creating a watertight business plan. It will help you
+          get your thinking in order and show your commitment to your life or
+          business coaching company.
         </Paragraph>
 
-        <Paragraph big>You will need to look at financial projections for your coaching business. What are your expected sales and revenues? What is your profitability? How much money will you keep in the business to grow it? How much will you pay yourself and others?</Paragraph>
+        <Paragraph big>
+          You will need to look at financial projections for your coaching
+          business. What are your expected sales and revenues? What is your
+          profitability? How much money will you keep in the business to grow
+          it? How much will you pay yourself and others?
+        </Paragraph>
 
-        <Paragraph big>Business plans do vary slightly, but they should all cover the following areas:</Paragraph>
+        <Paragraph big>
+          Business plans do vary slightly, but they should all cover the
+          following areas:
+        </Paragraph>
 
         <CountingTextBoxed number={1}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            An executive summary with the most important points from your business plan
+            An executive summary with the most important points from your
+            business plan
           </Paragraph>
         </CountingTextBoxed>
 
@@ -89,7 +101,8 @@ const CoachBusinessPlan = () => (
 
         <CountingTextBoxed number={3}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            A description of your life or business coaching niche, background information and context
+            A description of your life or business coaching niche, background
+            information and context
           </Paragraph>
         </CountingTextBoxed>
 
@@ -101,7 +114,8 @@ const CoachBusinessPlan = () => (
 
         <CountingTextBoxed number={5}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            An overview of how your life or business coaching organization is structured
+            An overview of how your life or business coaching organization is
+            structured
           </Paragraph>
         </CountingTextBoxed>
 
@@ -130,7 +144,10 @@ const CoachBusinessPlan = () => (
         </CountingTextBoxed>
 
         <Paragraph big style={{ marginTop: "50px" }} mixed>
-          We’ve got the perfect <Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">guide to writing your business plan.</Link>
+          We’ve got the perfect{" "}
+          <Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">
+            guide to writing your business plan.
+          </Link>
         </Paragraph>
       </BusinessOwnerResponsibilities>
     </Container>

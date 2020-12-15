@@ -67,46 +67,59 @@ const MovingBusinessPlan = () => (
           Your Moving Business Needs a Plan
         </Heading>
         <Paragraph big>
-          You need to define how you’re going to run your moving business, market yourself, get sales, make a profit and grow. This can only come about by creating a watertight business plan. It will help you get your thinking in order and show your commitment to your moving business.
+          You need to define how you’re going to run your moving business,
+          market yourself, get sales, make a profit and grow. This can only come
+          about by creating a watertight business plan. It will help you get
+          your thinking in order and show your commitment to your moving
+          business.
         </Paragraph>
         <Paragraph big>
-          Your relocation company needs a business model, which is how you will generate sales, provide services and make money. Think about your business model now, because it’s better to have that in place so you can start acquiring customers and generating revenue from day one.
+          Your relocation company needs a business model, which is how you will
+          generate sales, provide services and make money. Think about your
+          business model now, because it’s better to have that in place so you
+          can start acquiring customers and generating revenue from day one.
         </Paragraph>
-        <Paragraph big>Business plans do vary slightly, but they should all cover the following areas:</Paragraph>
+        <Paragraph big>
+          Business plans do vary slightly, but they should all cover the
+          following areas:
+        </Paragraph>
 
         <CountingTextBoxed number={1}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            An executive summary with the most important points from your business plan
+            An executive summary with the most important points from your
+            business plan
           </Paragraph>
         </CountingTextBoxed>
 
         <CountingTextBoxed number={2}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            Your goals and what you hope to achieve with your coaching business
+            Your goals and what you hope to achieve with your moving business
           </Paragraph>
         </CountingTextBoxed>
 
         <CountingTextBoxed number={3}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            A description of your life or business coaching niche, background information and context
+            A description of your moving business, background information and
+            context
           </Paragraph>
         </CountingTextBoxed>
 
         <CountingTextBoxed number={4}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            A market analysis and likely demand
+            A market analysis and likely demand based on the relocation niche
+            that you’re serving
           </Paragraph>
         </CountingTextBoxed>
 
         <CountingTextBoxed number={5}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            An overview of how your life or business coaching organization is structured
+            An overview of how your moving business is structured
           </Paragraph>
         </CountingTextBoxed>
 
         <CountingTextBoxed number={6}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            Your business model
+            Your business model and how you’ll operate
           </Paragraph>
         </CountingTextBoxed>
 
@@ -129,7 +142,10 @@ const MovingBusinessPlan = () => (
         </CountingTextBoxed>
 
         <Paragraph big style={{ marginTop: "50px" }}>
-          We’ve got the perfect <Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">guide to writing your business plan.</Link>
+          We’ve got the perfect{" "}
+          <Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">
+            guide to writing your business plan.
+          </Link>
         </Paragraph>
       </BusinessOwnerResponsibilities>
     </Container>

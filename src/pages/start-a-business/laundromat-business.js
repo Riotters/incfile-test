@@ -654,15 +654,14 @@ const LandscapingBusiness = () => (
 
           <CountingTextBoxed number={2}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              Your goals and what you hope to achieve with your coaching
+              Your goals and what you hope to achieve with your laundromat
               business
             </Paragraph>
           </CountingTextBoxed>
 
           <CountingTextBoxed number={3}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              A description of your life or business coaching niche, background
-              information and context
+              A description of your business, background information and context
             </Paragraph>
           </CountingTextBoxed>
 
@@ -674,8 +673,7 @@ const LandscapingBusiness = () => (
 
           <CountingTextBoxed number={5}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              An overview of how your life or business coaching organization is
-              structured
+              An overview of how your business is structured
             </Paragraph>
           </CountingTextBoxed>
 

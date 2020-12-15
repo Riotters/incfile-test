@@ -349,7 +349,7 @@ const TabScrollable = ({ layout, columns }) => {
 											Registered Agent
 										</Link>
 										. These are individuals or other businesses that can accept
-										legal documents on behalf of your landscaping company.
+										legal documents on behalf of your Etsy company.
 									</Paragraph>
 									<Paragraph big>
 										Although you can act as your own registered agent, we
