@@ -22,88 +22,88 @@ import MainChallenges from "../../atomic/sections/type-of-business/photography-b
 import ToolsAndLinks from "../../atomic/sections/type-of-business/photography-business/tools";
 
 const WithNoMoneyBusiness = () => (
-  <Layout>
-    <SEO
-      title="How to Start a Photography Business | Guide to Starting a Photo Business"
-      description="Got a passion for taking pictures? Well then maybe it's time to think about starting a photography business and work your passion by reading our tips."
-    />
+	<Layout>
+		<SEO
+			title="How to Start a Photography Business | Guide to Starting a Photo Business"
+			description="Got a passion for taking pictures? Well then maybe it's time to think about starting a photography business and work your passion by reading our tips."
+		/>
 
-    <Top
-      ovalColor="love"
-      imageName="photography-business-main"
-      imageAlt="Mr Bulb with seedling"
-      headlineWidth={700}
-    >
-      <h1>How to Start a Photography Business</h1>
-      <p>
-        For those with a creative eye, a flair for framing and the ability to
-        capture memories, photography can be a great career choice. Whether
-        you’re taking photos yourself, editing photos after they’ve been taken
-        or you’re involved in post production, there are plenty of ways to use
-        your skills.
-      </p>
-      <ButtonsBox>
-        <Button
-          theme="primary56"
-          marginMD="0 24px 0 0"
-          arrow
-          content={{
-            url: `${process.env.ORDER_URL}/form-order-now.php`,
-            text: "Start Now",
-          }}
-        />
-      </ButtonsBox>
+		<Top
+			ovalColor="love"
+			imageName="photography-business-main"
+			imageAlt="Mr Bulb with seedling"
+			headlineWidth={700}
+		>
+			<h1>How to Start a Photography Business</h1>
+			<p>
+				For those with a creative eye, a flair for framing and the ability to
+				capture memories, photography can be a great career choice. Whether
+				you’re taking photos yourself, editing photos after they’ve been taken
+				or you’re involved in post production, there are plenty of ways to use
+				your skills.
+			</p>
+			<ButtonsBox>
+				<Button
+					theme="primary56"
+					marginMD="0 24px 0 0"
+					arrow
+					content={{
+						url: `${process.env.ORDER_URL}/form-order-now.php`,
+						text: "Start Now",
+					}}
+				/>
+			</ButtonsBox>
 
-      <RatingRow>
-        <CartBlock />
-        <RatingBlock />
-      </RatingRow>
-    </Top>
+			<RatingRow>
+				<CartBlock />
+				<RatingBlock />
+			</RatingRow>
+		</Top>
 
-    <PhotographyIntroduce />
+		<PhotographyIntroduce />
 
-    <WorldOfPhotography />
+		<WorldOfPhotography />
 
-    <Statistics />
+		<Statistics />
 
-    <QuestionToAsk />
+		<QuestionToAsk />
 
-    <MainSkils />
+		<MainSkils />
 
-    <MainChallenges />
+		<MainChallenges />
 
-    <BusinessStructure />
+		<BusinessStructure />
 
-    <SettingBusiness />
+		<SettingBusiness />
 
-    <OrderNow />
+		<OrderNow />
 
-    <ToolsAndLinks />
+		<ToolsAndLinks />
 
-    <Conclusion
-      to="/"
-      buttonTitle="Start your Photography Business with us, today"
-    >
-      <Heading size={3} style={{ fontSize: "40px" }}>
-        Conclusion
-      </Heading>
-      <Paragraph big>
-        Running a photography business is a way to bring together art and
-        commerce. You can combine your creative flair with your excellent
-        business sense to create images your clients will love. Start now, and
-        build something beautiful.
-      </Paragraph>
-    </Conclusion>
-  </Layout>
+		<Conclusion
+			to="/"
+			buttonTitle="Start your Photography Business with us, today"
+		>
+			<Heading size={3} style={{ fontSize: "48px" }}>
+				Conclusion
+			</Heading>
+			<Paragraph big>
+				Running a photography business is a way to bring together art and
+				commerce. You can combine your creative flair with your excellent
+				business sense to create images your clients will love. Start now, and
+				build something beautiful.
+			</Paragraph>
+		</Conclusion>
+	</Layout>
 );
 
 const ButtonsBox = styled.div`
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  @media (min-width: 769px) {
-    flex-direction: row;
-  }
+	@media (min-width: 769px) {
+		flex-direction: row;
+	}
 `;
 
 export default WithNoMoneyBusiness;

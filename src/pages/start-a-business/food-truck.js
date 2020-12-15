@@ -494,7 +494,7 @@ const FoodTruck = () => (
       to={process.env.ORDER_URL + "/form-order-now.php"}
       buttonTitle="Start your Foodtrack Business with us, today"
     >
-      <Heading size={3} style={{ fontSize: "40px" }}>
+      <Heading size={3} style={{ fontSize: "48px" }}>
         Conclusion
       </Heading>
       <Paragraph big>

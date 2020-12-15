@@ -965,7 +965,7 @@ const LandscapingBusiness = () => (
         <OvalSvg7 />
       </Oval7>
       <UsefulTools
-        style={{ paddingBottom: "16px" }}
+        style={{ paddingBottom: "200px" }}
         toolsList={toolsList.tools}
         headlineText={toolsList.headlineText}
         description={toolsList.description}

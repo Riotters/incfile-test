@@ -11,7 +11,6 @@ import OvalSvg from "../../../../images/oval-babyblue-1.inline.svg";
 import OvalSvgBottom from "../../../../images/oval-babyblue-2.inline.svg";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 import { adventages2 } from "../../../../static/type-of-business/coach";
-import { Link } from "gatsby";
 
 const MovingTaxes = () => (
   <BabyBlueContainer>
@@ -27,53 +26,25 @@ const MovingTaxes = () => (
 
       <TextWrapper>
         <Paragraph big>
-          <Curve
-            color={color.babyblue1}
-            style={{
-              position: "absolute",
-              left: "-29px",
-              top: "-25px",
-              transform: "rotate(-90deg)",
-            }}
-          />
-          Taxes are a fact of life if you’re in business, and there are various
-          ways you will need to file and pay them. This can include
-          self-employment tax, state income tax and federal income tax.
-          Depending on where and how you’re selling products and services, you
-          may also be liable for sales and use tax.
+          <Curve color={color.babyblue1} style={{ position: "absolute", left: "-29px", top: "-25px", transform: "rotate(-90deg)" }} />
+          Taxes are a fact of life if you’re in business, and there are various ways you will need to file and pay them. This can include self-employment tax, state income tax and federal income tax. Depending on where and how you’re selling products and services, you may also be liable for sales
+          and use tax.
         </Paragraph>
-        <Paragraph big mixed>
-          As a rule of thumb, we recommend holding back around a third of your
-          earnings to pay your taxes. We can also{" "}
-          <Link to="/business-accounting/">
-            prepare and file your tax returns for you.
-          </Link>
+        <Paragraph big>
+          As a rule of thumb, we recommend holding back around a third of your earnings to pay your taxes. We can also <Link to="/business-accounting/">prepare and file your tax returns for you.</Link>
         </Paragraph>
       </TextWrapper>
     </Container>
 
     <Service>
       <Container>
-        <TextCenterLayout
-          headline="Maintaining Your Moving Business"
-          text="There are certain forms and legalities you need to follow to keep your moving business in good standing."
-        />
+        <TextCenterLayout headline="Maintaining Your Moving Business" text="There are certain forms and legalities you need to follow to keep your moving business in good standing." />
         <AdventagesBox>
           <CurveWrapper>
             <CurveSvg />
           </CurveWrapper>
           {adventages2.items.map((item) => (
-            <Adventages
-              style={{ textAlign: "center" }}
-              url={item.url}
-              urlText={item.urlText}
-              circleText={item.circleText}
-              headline={item.headline}
-              text={item.text}
-              circlePosition="center"
-              circleBackgroundColor={color.blue1}
-              circleBackgroundShadow={shadow.blue1}
-            />
+            <Adventages style={{ textAlign: "center" }} url={item.url} urlText={item.urlText} circleText={item.circleText} headline={item.headline} text={item.text} circlePosition="center" circleBackgroundColor={color.blue1} circleBackgroundShadow={shadow.blue1} />
           ))}
         </AdventagesBox>
       </Container>
@@ -83,11 +54,7 @@ const MovingTaxes = () => (
 
 const BabyBlueContainer = styled.div`
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(240, 248, 255, 1) 100%
-  );
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(240, 248, 255, 1) 100%);
   padding-bottom: 100px;
   padding-top: 100px;
   position: relative;
