@@ -833,7 +833,7 @@ export const corporation = [
   },
   {
     type: "text",
-    content: `Are you ready to start your Wyoming corporation? If so, we can help. We provide comprehensive corporation formation services for both <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=WY">S Corporations</a> and <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=WY">C Corporations</a> in Wyoming.`,
+    content: `Are you ready to start your Wyoming corporation? If so, we can help. We provide comprehensive corporation formation services for both <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=WY">S Corporations</a> and <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY">C Corporations</a> in Wyoming.`,
     marginBottom: 48,
   },
   {
@@ -853,7 +853,7 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Start your Wyoming S Corporation now ",
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=WY`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=WY`,
     },
     marginBottom: 24,
   },
@@ -861,7 +861,7 @@ export const corporation = [
     type: "arrow-link",
     content: {
       text: "Start your Wyoming C Corporation now ",
-      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=WY`,
+      url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
     },
     marginBottom: 32,
   },
@@ -918,7 +918,7 @@ export const corporation = [
         {
           question:
             "Step Five — File Your Articles of Incorporation With the Wyoming Secretary of State",
-          answer: `Once your articles are drafted, you can file them with the Wyoming Secretary of State. Filing your Articles of Incorporation creates your Wyoming corporation. You can do this online, mail in a form or have <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=WY">Incfile do it on your behalf.</a>`,
+          answer: `Once your articles are drafted, you can file them with the Wyoming Secretary of State. Filing your Articles of Incorporation creates your Wyoming corporation. You can do this online, mail in a form or have <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY">Incfile do it on your behalf.</a>`,
         },
         {
           question:
@@ -1036,7 +1036,7 @@ export const naming = [
       list: [
         "The name of your corporation needs to be unique and not used by another corporation or business operating in Wyoming",
         "The name cannot be confused with any other business operating in Wyoming",
-        `<a href="${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=WY">You can search for other businesses in Wyoming here</a>`,
+        `<a href="${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY">You can search for other businesses in Wyoming here</a>`,
         "The name of your business must end with “Corporation,” “Incorporated” or “Limited”",
         "These suffixes can be abbreviated",
         "If you’re not forming the business right away, you can reserve the name.",
@@ -1167,7 +1167,7 @@ export const naming = [
   {
     type: "text",
     content:
-      "Fortunately, we have some good advice on seeking out the perfect business name for your Wyoming corporation. <a href='https://www.incfile.com/post/llc-name-search-50-states/'>Check out our guidance on naming your business and get inspired.</a>",
+      "Fortunately, we have some good advice on seeking out the perfect business name for your Wyoming corporation. <a href='https://www.incfile.com/blog/post/llc-name-search-50-states/'>Check out our guidance on naming your business and get inspired.</a>",
     marginBottom: 48,
   },
   {
@@ -1471,7 +1471,7 @@ export const filing = [
   },
   {
     type: "text",
-    content: `Here at Incfile, we automatically create and file your Certificate of Formation/Articles of Incorporation on your behalf when you start your <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=WY">S Corporation</a> or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=WY">C Corporation</a> with us. You only need to file your certificate once. There is a fee levied by the Secretary of State of Wyoming to cover your filing.`,
+    content: `Here at Incfile, we automatically create and file your Certificate of Formation/Articles of Incorporation on your behalf when you start your <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=WY">S Corporation</a> or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY">C Corporation</a> with us. You only need to file your certificate once. There is a fee levied by the Secretary of State of Wyoming to cover your filing.`,
     marginBottom: 48,
   },
   {
@@ -2006,14 +2006,14 @@ export const taxes = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=WY`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=WY`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=WY`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
         },
         theme: "primary56",
       },

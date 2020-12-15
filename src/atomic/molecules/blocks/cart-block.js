@@ -61,7 +61,7 @@ const CartBlock = () => {
 
     React.useEffect(() => {
         if (typeof window !== 'undefined') {
-            let _totalReviews = 0;
+            let _totalReviews = 18927;
 
             if (sessionStorage.getItem('__total_reviews')) {
                 _totalReviews = sessionStorage.getItem('__total_reviews');

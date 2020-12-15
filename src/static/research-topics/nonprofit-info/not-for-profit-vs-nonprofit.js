@@ -48,7 +48,7 @@ export const about = {
   text5: `A nonprofit organization can exist to support a wide variety of causes, and there is considerable scope in the types of ways they can help. Not-for-profits tend to be more narrowly focused. Nonprofit organizations are typically larger than not-for-profits.`,
   link3: {
     text: `The formation process for a nonprofit organization.`,
-    url: `https://www.incfile.com/blog/post/forming-nonprofit-corp/`,
+    url: `https://www.incfile.com/blog/`,
   },
   header6: `The Tax-Exempt Status of These Organizations Does Differ `,
   text6: `Nonprofits can apply for tax-exempt status under the 501(c)(3) requirements of the IRS. There are strict guidelines that must be followed for Nonprofits that apply for a 501(c)(3) tax exemption do not need to pay tax on their funding and donations. If they pay employees, then they must pay standard payroll and other salary expenses, and their employees will also be subject to tax. A nonprofit can both employ people and maintain a volunteer program. Volunteers offer their time and services for free.`,

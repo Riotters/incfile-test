@@ -105,7 +105,7 @@ export const brainstorm = {
     image: "your-name-signboard-5502",
     text2: "For more inspiration, <a href='https://www.thesaurus.com/' rel='nofollow'>use a thesaurus</a> to find and include similar words.",
     header2: "The Characteristics of a Great Business or Brand Name",
-    text3: "<a href='http://faculty.baruch.cuny.edu/dluna/consling/brandart.pdf' rel='nofollow'>Research tells us</a> that the most successful <a href='/blog/post/what-best-brand-names-have-common/'>ways to name a business</a> are to use some combination of the following principles:",
+    text3: "<a href='http://faculty.baruch.cuny.edu/dluna/consling/brandart.pdf' rel='nofollow'>Research tells us</a> that the most successful <a href='https://www.incfile.com/blog/post/what-best-brand-names-have-common/'>ways to name a business</a> are to use some combination of the following principles:",
     list: [
         "Use simple and distinctive words",
         "Use meaningful and emotional words",
@@ -120,7 +120,7 @@ export const brainstorm = {
         "Names that are dull or boring",
         "Names that are hard to pronounce or remember",
         "Names that are already in use by another business in your state",
-        "Names that are <a href='/blog/post/trademark-business-name/'>trademarked</a> or otherwise protected",
+        "Names that are <a href='https://www.incfile.com/blog/post/trademark-business-name/'>trademarked</a> or otherwise protected",
         "Names that may be offensive in a different language",
         "Names where you can’t get naming rights on various social media platforms",
         "Names where the website domain isn’t available",
@@ -136,7 +136,7 @@ export const brainstorm = {
             {
                 count: "2",
                 question: "See If You Can Get the Domain Name and Social Media Accounts",
-                answer: " Almost every business will need an online presence and that means the <a href='/blog/post/business-domain-name-email/'>right website</a>, email and social media. To start, <a href='https://incfile.web.com/business-email/?trkID=PTNd237b3W'>check to see if the domain name is available</a>. If it is, you should quickly acquire the domain name to ensure it’s not taken by someone else. If you can get the domain, the associated email domain should be available as well.<br /><br />You will also want to use a business name that’s available on social media platforms like Facebook, Twitter, Instagram and YouTube. We recommend services like <a href='https://www.namecheckr.com/' rel='nofollow'>Namecheckr</a> and <a href='https://namechk.com/' rel='nofollow'>Namechk</a> to see what’s available. ",
+                answer: " Almost every business will need an online presence and that means the <a href='https://www.incfile.com/post/business-domain-name-email/'>right website</a>, email and social media. To start, <a href='https://incfile.web.com/business-email/?trkID=PTNd237b3W'>check to see if the domain name is available</a>. If it is, you should quickly acquire the domain name to ensure it’s not taken by someone else. If you can get the domain, the associated email domain should be available as well.<br /><br />You will also want to use a business name that’s available on social media platforms like Facebook, Twitter, Instagram and YouTube. We recommend services like <a href='https://www.namecheckr.com/' rel='nofollow'>Namecheckr</a> and <a href='https://namechk.com/' rel='nofollow'>Namechk</a> to see what’s available. ",
             },
             {
                 count: "3",

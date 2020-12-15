@@ -1,13 +1,13 @@
 import React from "react";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
 //Sections
-import Top from "../atomic/partials/top";
-import About from "../atomic/sections/review-entity-types/home/about";
-import Rocket from "../atomic/sections/review-entity-types/home/rocket";
-import BusinessStructure from "../atomic/sections/learning-center-entity/comparison-chart/business-structure";
-import Articles from "../atomic/sections/articles";
-import Cta from "../atomic/sections/general/cta";
+import Top from "../../atomic/partials/top";
+import About from "../../atomic/sections/review-entity-types/home/about";
+import Rocket from "../../atomic/sections/review-entity-types/home/rocket";
+import BusinessStructure from "../../atomic/sections/learning-center-entity/comparison-chart/business-structure";
+import Articles from "../../atomic/sections/articles";
+import Cta from "../../atomic/sections/general/cta";
 //Texts
 import {
 	top,
@@ -15,25 +15,25 @@ import {
 	businessStructure,
 	rocket,
 	cta,
-} from "../static/review-entity-types";
+} from "../../static/review-entity-types";
 import styled from "styled-components";
-import Image from "../atomic/atoms/image/image";
-import { Heading } from "../atomic/atoms/typography/heading";
-import { Paragraph } from "../atomic/atoms/typography/paragraph";
-import Button from "../atomic/molecules/buttons/button-action";
-import { color } from "../atomic/atoms/styles/colors";
-import Circle from "../atomic/atoms/icons/circle";
-import ExSVG from "../images/icons/icon-status-x.inline.svg";
+import Image from "../../atomic/atoms/image/image";
+import { Heading } from "../../atomic/atoms/typography/heading";
+import { Paragraph } from "../../atomic/atoms/typography/paragraph";
+import Button from "../../atomic/molecules/buttons/button-action";
+import { color } from "../../atomic/atoms/styles/colors";
+import Circle from "../../atomic/atoms/icons/circle";
+import ExSVG from "../../images/icons/icon-status-x.inline.svg";
 
-import Label from "../atomic/molecules/form/label-field-with-child";
-import Input from "../atomic/atoms/inputs/input";
+import Label from "../../atomic/molecules/form/label-field-with-child";
+import Input from "../../atomic/atoms/inputs/input";
 import { useForm } from "react-hook-form";
-import { validEmail } from "../helpers/form-validate";
-import { postHSForm } from "../api/Api";
-import ExternalLink from "../atomic/molecules/buttons/external-link";
+import { validEmail } from "../../helpers/form-validate";
+import { postHSForm } from "../../api/Api";
+import ExternalLink from "../../atomic/molecules/buttons/external-link";
 import { Helmet } from "react-helmet";
-import ProductSchema from "../components/product-schema";
-import {HeadingP} from "../atomic/atoms/typography/heading-to-p";
+import ProductSchema from "../../components/product-schema";
+import {HeadingP} from "../../atomic/atoms/typography/heading-to-p";
 
 const LightBoxModal = styled.div`
 	transition: all 0.8s;
@@ -228,7 +228,7 @@ const ReviewEntityType = () => {
 			<Cta
 				cta={cta}
 				storageKey="start-your-company-modal-1"
-				onViewportEntry={() => setModalVisible(true)}
+				//onViewportEntry={() => setModalVisible(true)}
 			/>
 			<Articles categoryId={277} />
 			<LightBoxModal visible={modalVisible} className="modal-overlay">

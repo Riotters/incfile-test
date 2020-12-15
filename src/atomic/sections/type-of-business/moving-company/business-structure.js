@@ -138,7 +138,7 @@ const MovingBusinessStructure = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=S-Corporation"}>S Corporation</Link>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=SCorporation"}>S Corporation</Link>
             </Paragraph>
 
             <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organizations.</Paragraph>
@@ -159,7 +159,7 @@ const MovingBusinessStructure = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=C-Corporation"}>C Corporation</Link>
+              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=CCorporation"}>C Corporation</Link>
             </Paragraph>
 
             <Paragraph big>These are the largest and most complex types of businesses, and they are typically far more than the average entrepreneur or moving business owner will need.</Paragraph>

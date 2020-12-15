@@ -182,7 +182,7 @@ export const howToGuide = [
         {
           question: `Form a Foreign LLC in Mississippi`,
           answer: `<p>If your business is already operating in another state and expanding to Mississippi, you'll need to form a foreign LLC.</p></br>
-          <p><a href="/mississippi-llc/fees-filling-requirements/">More information on Mississippi filing and licensing requirements here.</a></p>`,
+          <p><a href="/mississippi-llc/fees-filing-requirements/">More information on Mississippi filing and licensing requirements here.</a></p>`,
         },
       ],
     },

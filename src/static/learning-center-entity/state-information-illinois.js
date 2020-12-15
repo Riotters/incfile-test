@@ -15,13 +15,15 @@ import CardSVG from "../../images/icons/icon-business-card.inline.svg";
 import { color } from "../../atomic/atoms/styles/colors";
 import { shadow } from "../../atomic/atoms/styles/shadows";
 
+const ORDER_URL = `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=IL`;
+
 export const top = {
 	header: `Why Form a Corporation in Illinois.`,
 	text: `$0 + State Fee & 1st Year FREE Registered Agent`,
 	buttons: [
 		{
 			text: `See detailed pricing`,
-			url: `${process.env.ORDER_URL}/form-order-now.php`,
+			url: ORDER_URL,
 		},
 	],
 };
@@ -31,7 +33,7 @@ export const launchBusiness = {
 	text: `No Contracts. No Surprises. Only $0 + State Fee to Launch Your Business.`,
 	button: {
 		text: `Launch your business!`,
-		url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=IL`,
+		url: ORDER_URL,
 	},
 };
 
@@ -758,7 +760,7 @@ export const corporation = [
 	},
 	{
 		type: "text",
-		content: `Are you ready to start your Illinois corporation? If so, we can help. We provide comprehensive corporation formation services for both <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=IL">S Corporations</a> and <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=IL">C Corporations</a> in Illinois.`,
+		content: `Are you ready to start your Illinois corporation? If so, we can help. We provide comprehensive corporation formation services for both <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=IL">S Corporations</a> and <a href="${ORDER_URL}">C Corporations</a> in Illinois.`,
 		marginBottom: 48,
 	},
 	{
@@ -778,7 +780,7 @@ export const corporation = [
 		type: "arrow-link",
 		content: {
 			text: "Start your Illinois S Corporation now ",
-			url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=IL`,
+			url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=IL`,
 		},
 		marginBottom: 24,
 	},
@@ -786,7 +788,7 @@ export const corporation = [
 		type: "arrow-link",
 		content: {
 			text: "Start your Illinois C Corporation now ",
-			url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=IL`,
+			url: ORDER_URL,
 		},
 		marginBottom: 56,
 	},
@@ -843,7 +845,7 @@ export const corporation = [
 				{
 					question:
 						"Step Five — File Your Articles of Incorporation With the Illinois Secretary of State",
-					answer: `Once your articles are drafted, you can file them with the Illinois Secretary of State. Filing your Articles of Incorporation creates your Illinois corporation. You can do this online, mail in a form or have <a href="${process.env.ORDER_URL}/form-order-now.php?">Incfile do it on your behalf. </a>`,
+					answer: `Once your articles are drafted, you can file them with the Illinois Secretary of State. Filing your Articles of Incorporation creates your Illinois corporation. You can do this online, mail in a form or have <a href="${ORDER_URL}">Incfile do it on your behalf. </a>`,
 				},
 				{
 					question:
@@ -918,14 +920,14 @@ export const corporation = [
 			{
 				content: {
 					text: "Start Your S Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=IL`,
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=IL`,
 				},
 				theme: "primary56",
 			},
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=IL`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1117,14 +1119,14 @@ export const naming = [
 			{
 				content: {
 					text: "Start Your S Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=IL`,
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=IL`,
 				},
 				theme: "primary56",
 			},
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=IL`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1177,14 +1179,14 @@ export const agents = [
 			{
 				content: {
 					text: "Start Your S Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=IL`,
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=IL`,
 				},
 				theme: "primary56",
 			},
 			{
 				content: {
 					text: "Start Your S Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=IL`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1327,14 +1329,14 @@ export const agents = [
 			{
 				content: {
 					text: "Start Your S Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=IL`,
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=IL`,
 				},
 				theme: "primary56",
 			},
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=IL`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1400,7 +1402,7 @@ export const filing = [
 	},
 	{
 		type: "text",
-		content: `Here at Incfile, we automatically create and file your Certificate of Formation/Articles of Incorporation on your behalf when you start your <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=IL">S Corporation</a> or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=IL">C Corporation</a> with us. You only need to file your certificate once. There is a fee levied by the Secretary of State of Illinois to cover your filing.`,
+		content: `Here at Incfile, we automatically create and file your Certificate of Formation/Articles of Incorporation on your behalf when you start your <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=IL">S Corporation</a> or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=IL">C Corporation</a> with us. You only need to file your certificate once. There is a fee levied by the Secretary of State of Illinois to cover your filing.`,
 		marginBottom: 48,
 	},
 	{
@@ -1715,14 +1717,14 @@ export const filing = [
 			{
 				content: {
 					text: "Start Your S Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=IL`,
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=IL`,
 				},
 				theme: "primary56",
 			},
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=IL`,
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=IL`,
 				},
 				theme: "primary56",
 			},
@@ -1867,7 +1869,7 @@ export const taxes = [
 		content: [
 			{
 				header: "Self-Employment Tax",
-				text: `Because your Illinois corporation income flows through to your personal tax return, you must pay self-employment tax (also known as FICA, Social Security or Medicare tax) on your earnings. This is typically at a rate of 15.3 percent. You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary” so it would not be subject to self-employment tax. <a href="s-corporation-tax-calculator/">Find out how this can save you money.</a>`,
+				text: `Because your Illinois corporation income flows through to your personal tax return, you must pay self-employment tax (also known as FICA, Social Security or Medicare tax) on your earnings. This is typically at a rate of 15.3 percent. You will be able to deduct your business expenses from your income when working out how much self-employment tax you owe. In some cases, part of the income from an S Corporation can be paid as a “distribution” rather than “salary” so it would not be subject to self-employment tax. <a href="/s-corporation-tax-calculator/">Find out how this can save you money.</a>`,
 				svg: SelfEmployedTaxSVG,
 				backgroundColor: color.orange2,
 				shadowColor: shadow.orange2,
@@ -1943,14 +1945,14 @@ export const taxes = [
 			{
 				content: {
 					text: "Start Your S Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=IL`,
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=IL`,
 				},
 				theme: "primary56",
 			},
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=IL`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},

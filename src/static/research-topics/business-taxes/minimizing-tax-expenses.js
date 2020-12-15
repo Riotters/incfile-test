@@ -24,7 +24,7 @@ export const about = {
   },
   link: {
     text: `Your Tax Preparation Checklist`,
-    url: `https://www.incfile.com/post/2019-tax-preparation-checklist/`,
+    url: `https://www.incfile.com/blog/post/2019-tax-preparation-checklist/`,
   },
   header4: `Include Other Work-from-Home Expenses`,
   list4: {

@@ -517,7 +517,7 @@ export const namingYourBusiness = [
               content: [
                 {
                   text: "Incfile guide to choosing a business name",
-                  url: "/blog/post/llc-name-search-50-states/",
+                  url: "https://www.incfile.com/blog/post/llc-name-search-50-states/",
                 }
               ]
             }

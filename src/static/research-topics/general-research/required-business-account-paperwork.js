@@ -33,7 +33,7 @@ export const about = {
               `Create a more professional impression with clients`,
           ],
       },
-    text3: `For more information on the process of opening a business bank account, <a href="https://www.incfile.com/post/open-business-bank-account-for-llc/" target="_blank">read our guide.</a>`,
+    text3: `For more information on the process of opening a business bank account, <a href="https://www.incfile.com/blog/post/open-business-bank-account-for-llc/" target="_blank">read our guide.</a>`,
     header3: `Paperwork Needed to Open a Business Account`,
     text4: `It’s important to get all your documents in order. That will minimize the time it takes to get your business bank account up and running. Most banks will typically ask for the following information when you’re opening a business account:`,
     list3: {

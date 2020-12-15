@@ -93,7 +93,7 @@ const PPCIncfileLayout = ({
             <Top
                 ovalColor="darkblue"
                 imageName="mr-bulb-get-started-2927"
-                imageAlt="Mr Bulb Get Started"
+                imageAlt=""
                 headlineWidth={700}
                 textWidth={400}
                 imageMobilePosition="-8%"
@@ -101,7 +101,7 @@ const PPCIncfileLayout = ({
                 {content?.heroHeadLine && <p style={{fontSize: `20px`, marginBottom:`16px`}}>{ parse(content.heroHeadLine)}</p>}
                 <h1>{parse(content?.heroTitle ? content.heroTitle : `The Fastest & Easiest Way To Set Up Your LLC`)}</h1>
                 <p style={{fontSize: `32px`, color: '#1D1D1D', fontWeight: `bold`}}>Price: $0 + State Fee</p>
-                <p>{parse(content?.heroText ? content.heroText : `Join Over <span>500,000</span> Businesses Launched With incfile Since <span>2004</span>`)}</p>
+                <p>{parse(content?.heroText ? content.heroText : `Join Over <span>500,000</span> Businesses Launched With Incfile Since <span>2004</span>`)}</p>
 
                 <Buttonsbox>
                     <Button

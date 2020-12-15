@@ -674,7 +674,7 @@ const BarNightclub = () => (
 
 					<Paragraph big mixed={true} style={{ marginTop: "50px" }}>
 						We’ve got the perfect{" "}
-						<Link to="https://www.incfile.com/post/keys-successful-business-plan/">
+						<Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">
 							guide to writing your business plan.
 						</Link>
 					</Paragraph>
@@ -828,7 +828,7 @@ const BarNightclub = () => (
 							<Link
 								to={
 									process.env.ORDER_URL +
-									"/form-order-now.php?entityType=S-Corporation"
+									"/form-order-now.php?entityType=SCorporation"
 								}
 							>
 								S Corporation
@@ -863,7 +863,7 @@ const BarNightclub = () => (
 							<Link
 								to={
 									process.env.ORDER_URL +
-									"/form-order-now.php?entityType=C-Corporation"
+									"/form-order-now.php?entityType=CCorporation"
 								}
 							>
 								C Corporation
