@@ -31,206 +31,206 @@ import { tabs } from "../../static/type-of-business/home-business";
 import { TabPanel } from "react-tabs";
 
 const HomeBusiness = () => (
-	<Layout>
-		<SEO
-			title="Home Business Ideas | Starting a Business From Home"
-			description="We want to help you get your home-based business off the ground. Read our guide for ideas, tips, and important things to know before you get started."
-		/>
+  <Layout>
+    <SEO
+      title="Home Business Ideas | Starting a Business From Home"
+      description="We want to help you get your home-based business off the ground. Read our guide for ideas, tips, and important things to know before you get started."
+    />
 
-		<Top
-			ovalColor="green"
-			imageName="home-business-main"
-			imageAlt="Mr Bulb with seedling"
-			headlineWidth={700}
-		>
-			<h1>How to Start a Home-Based Business</h1>
-			<p>
-				Starting a new business can be a major undertaking, so for entrepreneurs
-				wanting to start off small,{" "}
-				<a href="https://www.incfile.com/blog/post/how-start-home-business/">
-					a home-based business is a great idea
-				</a>
-				. You’ll learn a great deal about running a business successfully, while
-				avoiding many of the costs associated with larger businesses, like
-				office rental, utilities or hiring employees.
-			</p>
-			<ButtonsBox>
-				<Button
-					theme="primary56"
-					marginMD="0 24px 0 0"
-					arrow
-					content={{
-						url: `${process.env.ORDER_URL}/form-order-now.php`,
-						text: "Start Now",
-					}}
-				/>
-			</ButtonsBox>
+    <Top
+      ovalColor="green"
+      imageName="home-business-main"
+      imageAlt="Mr Bulb with seedling"
+      headlineWidth={700}
+    >
+      <h1>How to Start a Home-Based Business</h1>
+      <p>
+        Starting a new business can be a major undertaking, so for entrepreneurs
+        wanting to start off small,{" "}
+        <a href="https://www.incfile.com/blog/post/how-start-home-business/">
+          a home-based business is a great idea
+        </a>
+        . You’ll learn a great deal about running a business successfully, while
+        avoiding many of the costs associated with larger businesses, like
+        office rental, utilities or hiring employees.
+      </p>
+      <ButtonsBox>
+        <Button
+          theme="primary56"
+          marginMD="0 24px 0 0"
+          arrow
+          content={{
+            url: `${process.env.ORDER_URL}/form-order-now.php`,
+            text: "Start Now",
+          }}
+        />
+      </ButtonsBox>
 
-			<RatingRow>
-				<CartBlock />
-				<RatingBlock />
-			</RatingRow>
-		</Top>
+      <RatingRow>
+        <CartBlock />
+        <RatingBlock />
+      </RatingRow>
+    </Top>
 
-		<TabsWrapper>
-			<Oval>
-				<OvalSvg />
-			</Oval>
-			<ReactTabs content={tabs}>
-				<TabPanel>
-					<PanelWrapper>
-						<Paragraph big style={{ marginBottom: "40px" }}>
-							If you find a good niche for your home-based business, it can even
-							grow to provide a full-time income for you and your family. These
-							types of “lifestyle” businesses are becoming increasingly popular,
-							and provide the freedom and satisfaction of running your own
-							business while avoiding much of the risk that a larger-scale
-							venture would create.
-						</Paragraph>
+    <TabsWrapper>
+      <Oval>
+        <OvalSvg />
+      </Oval>
+      <ReactTabs content={tabs}>
+        <TabPanel>
+          <PanelWrapper>
+            <Paragraph big style={{ marginBottom: "40px" }}>
+              If you find a good niche for your home-based business, it can even
+              grow to provide a full-time income for you and your family. These
+              types of “lifestyle” businesses are becoming increasingly popular,
+              and provide the freedom and satisfaction of running your own
+              business while avoiding much of the risk that a larger-scale
+              venture would create.
+            </Paragraph>
 
-						<Colorbox
-							className="box"
-							theme="icon"
-							Icon={MegafonIcon}
-							color={color.purple3}
-							curve
-							curveColor={color.purple1}
-						>
-							<Heading size={4}>
-								We want to help you get your home-based business off the ground.
-							</Heading>
+            <Colorbox
+              className="box"
+              theme="icon"
+              Icon={MegafonIcon}
+              color={color.purple3}
+              curve
+              curveColor={color.purple1}
+            >
+              <Heading size={4}>
+                We want to help you get your home-based business off the ground.
+              </Heading>
 
-							<Paragraph bottomMargin={0}>
-								Since 2004, we’ve helped over 500,000 people to become
-								entrepreneurs, starting exciting businesses and bringing their
-								ideas to life. We’ll give you the support, guidance and advice
-								you need to start a business from home and make it into a
-								success.
-							</Paragraph>
-						</Colorbox>
+              <Paragraph bottomMargin={0}>
+                Since 2004, we’ve helped over 500,000 people to become
+                entrepreneurs, starting exciting businesses and bringing their
+                ideas to life. We’ll give you the support, guidance and advice
+                you need to start a business from home and make it into a
+                success.
+              </Paragraph>
+            </Colorbox>
 
-						<Paragraph big style={{ marginTop: "40px" }}>
-							From validating your ideas and doing the research to filing your
-							paperwork and running your business, this guide will help you out.
-							We’ll talk you through the main things you need to do to get your
-							home-based business off of the ground.
-						</Paragraph>
+            <Paragraph big style={{ marginTop: "40px" }}>
+              From validating your ideas and doing the research to filing your
+              paperwork and running your business, this guide will help you out.
+              We’ll talk you through the main things you need to do to get your
+              home-based business off of the ground.
+            </Paragraph>
 
-						<Paragraph big>
-							Read on for some insight into starting a business from home and
-							becoming an entrepreneur.
-						</Paragraph>
-					</PanelWrapper>
-				</TabPanel>
-				<TabPanel>
-					<PanelWrapper>
-						<Heading size={2} template={3} left>
-							Why You Should Start a Business from Home
-						</Heading>
+            <Paragraph big>
+              Read on for some insight into starting a business from home and
+              becoming an entrepreneur.
+            </Paragraph>
+          </PanelWrapper>
+        </TabPanel>
+        <TabPanel>
+          <PanelWrapper>
+            <Heading size={2} template={3} left>
+              Why You Should Start a Business from Home
+            </Heading>
 
-						<Paragraph big style={{ marginBottom: "52px" }}>
-							You’re probably wondering whether a home-based business is for
-							you. If so, we’ve got some surprising statistics that suggest it’s
-							a growing and lucrative type of business to run:
-						</Paragraph>
+            <Paragraph big style={{ marginBottom: "52px" }}>
+              You’re probably wondering whether a home-based business is for
+              you. If so, we’ve got some surprising statistics that suggest it’s
+              a growing and lucrative type of business to run:
+            </Paragraph>
 
-						<BlueBoxWithAbsoluteText
-							absoluteText="400M"
-							text="Businesses in the U.S. that were started from home"
-						/>
-						<BlueBoxWithAbsoluteText
-							absoluteText="$400B"
-							text="Total revenue of the 40M businesses per year"
-						/>
-						<BlueBoxWithAbsoluteText
-							absoluteText="100K"
-							text="A fifth of home-based businesses make over a year"
-						/>
+            <BlueBoxWithAbsoluteText
+              absoluteText="400M"
+              text="Businesses in the U.S. that were started from home"
+            />
+            <BlueBoxWithAbsoluteText
+              absoluteText="$400B"
+              text="Total revenue of the 40M businesses per year"
+            />
+            <BlueBoxWithAbsoluteText
+              absoluteText="100K"
+              text="A fifth of home-based businesses make over a year"
+            />
 
-						<div style={{ marginTop: "28px" }}>
-							<Adventages
-								headline="Nearly three-quarters of home-based businesses are still operating after three years, compared with only a third of traditional businesses"
-								width="100%"
-							/>
-						</div>
+            <div style={{ marginTop: "28px" }}>
+              <Adventages
+                headline="Nearly three-quarters of home-based businesses are still operating after three years, compared with only a third of traditional businesses"
+                width="100%"
+              />
+            </div>
 
-						<Adventages
-							headline="Almost half of home-based businesses are started for less than $5,000"
-							width="100%"
-						/>
+            <Adventages
+              headline="Almost half of home-based businesses are started for less than $5,000"
+              width="100%"
+            />
 
-						<Adventages
-							headline="Women start more home-based businesses than men"
-							width="100%"
-						/>
-					</PanelWrapper>
-				</TabPanel>
-			</ReactTabs>
-		</TabsWrapper>
+            <Adventages
+              headline="Women start more home-based businesses than men"
+              width="100%"
+            />
+          </PanelWrapper>
+        </TabPanel>
+      </ReactTabs>
+    </TabsWrapper>
 
-		<TypeOfBusiness />
+    <TypeOfBusiness />
 
-		<ValidatingBusinessIdea />
+    <ValidatingBusinessIdea />
 
-		<BusinessPlan />
+    <BusinessPlan />
 
-		<BusinessStructure />
+    <BusinessStructure />
 
-		<SettingBusiness />
+    <SettingBusiness />
 
-		<OrderNow />
+    <OrderNow />
 
-		<Regulations />
+    <Regulations />
 
-		<Taxes />
+    <Taxes />
 
-		<ToolsAndLinks />
+    <ToolsAndLinks />
 
-		<Conclusion
-			to={process.env.ORDER_URL + "/form-order-now.php"}
-			buttonTitle="Start your business with us, today"
-		>
-			<Heading size={3} style={{ fontSize: "40px", marginTop: "300px" }}>
-				Conclusion
-			</Heading>
+    <Conclusion
+      to={process.env.ORDER_URL + "/form-order-now.php"}
+      buttonTitle="Start your business with us, today"
+    >
+      <Heading size={3} style={{ fontSize: "40px" }}>
+        Conclusion
+      </Heading>
 
-			<Paragraph big>
-				The world of home-based businesses is extremely diverse. With the right
-				intent and purpose, you can start a home-based business and turn it into
-				something that could earn you more than $100,000 a year. Use this guide
-				to start your search, form your business and the sky's the limit!
-			</Paragraph>
-		</Conclusion>
-	</Layout>
+      <Paragraph big>
+        The world of home-based businesses is extremely diverse. With the right
+        intent and purpose, you can start a home-based business and turn it into
+        something that could earn you more than $100,000 a year. Use this guide
+        to start your search, form your business and the sky's the limit!
+      </Paragraph>
+    </Conclusion>
+  </Layout>
 );
 
 const ButtonsBox = styled.div`
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	@media (min-width: 769px) {
-		flex-direction: row;
-	}
+  @media (min-width: 769px) {
+    flex-direction: row;
+  }
 `;
 
 const TabsWrapper = styled.div`
-	margin-top: 120px;
-	position: relative;
-	@media (min-width: 992px) {
-		margin-top: 21px;
-	}
+  margin-top: 120px;
+  position: relative;
+  @media (min-width: 992px) {
+    margin-top: 21px;
+  }
 `;
 
 const Oval = styled.div`
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 
-	@media (min-width: 420px) {
-		width: 420px;
-	}
+  @media (min-width: 420px) {
+    width: 420px;
+  }
 `;
 
 export default HomeBusiness;
