@@ -11,24 +11,36 @@ import Top from "../../atomic/partials/top";
 import Creating from "../../atomic/sections/other/form-your-corporation/creating";
 import Opinions from "../../atomic/sections/other/form-your-corporation/opinions";
 //Texts
-import { top, creating, opinions } from "../../static/other/form-your-corporation";
+import {
+	top,
+	creating,
+	opinions,
+} from "../../static/other/form-your-corporation";
 
 const FormAnLLC = () => (
-  <Layout>
-    <SEO title="Start a Company | Learn about Business Entity Types" description="Want to start a business? Learn about different types of business structures—from LLC to S Corp to non profit—and find the entity that suits your needs." />
-    <Top imageName="mr-bulb-form-your-corporation-4492" imageAlt="aaa" ovalColor="sun" headlineWidth="450">
-      <h1>{top.header}</h1>
-      <Buttonsbox>
-        <Button content={top.button[0]} theme="primary56" width="200px" arrow />
-      </Buttonsbox>
-      <RatingRow>
-        <CartBlock />
-        <RatingBlock />
-      </RatingRow>
-    </Top>
-    <Creating content={creating} />
-    <Opinions content={opinions} />
-  </Layout>
+	<Layout>
+		<SEO
+			title="Start a Company | Learn about Business Entity Types"
+			description="Want to start a business? Learn about different types of business structures—from LLC to S Corp to non profit—and find the entity that suits your needs."
+		/>
+		<Top
+			imageName="mr-bulb-form-your-corporation-4492"
+			imageAlt=""
+			ovalColor="sun"
+			headlineWidth="450"
+		>
+			<h1>{top.header}</h1>
+			<Buttonsbox>
+				<Button content={top.button[0]} theme="primary56" width="200px" arrow />
+			</Buttonsbox>
+			<RatingRow>
+				<CartBlock />
+				<RatingBlock />
+			</RatingRow>
+		</Top>
+		<Creating content={creating} />
+		<Opinions content={opinions} />
+	</Layout>
 );
 
 export default FormAnLLC;
