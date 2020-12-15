@@ -17,7 +17,7 @@ import PPCWhyChooseIncfile from "./ppc-why-choose-incfile";
 
 import { statesArray } from "../../../static/states-v2";
 
-const PPCLLCLayout = ({ stateCode, videoID, vimeo, quotes }) => {
+const PPCLLCLayout = ({ stateCode, videoID, vimeo, quotes, content }) => {
     const state = statesArray.filter(state => state.code === stateCode)[0];
     const stateName = state ? state.name : '';
     const firstCharacterState = state ? state.name.slice(0, 1) : '';
@@ -29,8 +29,8 @@ const PPCLLCLayout = ({ stateCode, videoID, vimeo, quotes }) => {
     }
 
     const top = {
-        header: `The Fastest & Easiest Way To Set Up Your ${stateName} LLC`,
-	    text: `Join Over <span>500,000</span> Businesses Launched With incfile Since <span>2004</span>`,
+        header: content?.top?.header ?? `The Fastest & Easiest Way To Set Up Your ${stateName} LLC`,
+	    text: content?.top?.text ?? `Join Over <span>500,000</span> Businesses Launched With Incfile Since <span>2004</span>`,
     }
 
     const whyChooseIncfile = {

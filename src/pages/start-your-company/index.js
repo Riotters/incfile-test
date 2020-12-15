@@ -228,7 +228,7 @@ const ReviewEntityType = () => {
 			<Cta
 				cta={cta}
 				storageKey="start-your-company-modal-1"
-				onViewportEntry={() => setModalVisible(true)}
+				//onViewportEntry={() => setModalVisible(true)}
 			/>
 			<Articles categoryId={277} />
 			<LightBoxModal visible={modalVisible} className="modal-overlay">

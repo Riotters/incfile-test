@@ -29,7 +29,7 @@ const PPCCorporationLayout = ({ stateCode, videoID, vimeo, quotes }) => {
 
     const top = {
         header: `The Fastest & Easiest Way To Set Up Your ${stateName} Corporation`,
-	    text: `Join Over <span>500,000</span> Businesses Launched With incfile Since <span>2004</span>`,
+	    text: `Join Over <span>500,000</span> Businesses Launched With Incfile Since <span>2004</span>`,
     }
 
     const whyChooseIncfile = {

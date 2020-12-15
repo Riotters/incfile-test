@@ -210,7 +210,7 @@ export const corporation = [
       {
         content: {
           text: "Start Your S-Corp",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=GA`,
         },
         arrow: true,
         theme: "primary56",
@@ -218,7 +218,7 @@ export const corporation = [
       {
         content: {
           text: "Start Your C-Corp",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=GA`,
         },
         arrow: true,
         theme: "primary56",
@@ -530,7 +530,7 @@ export const corporation = [
           header: "S Corporation",
           link: {
             text: "Incorporate now",
-            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=GA`,
           },
         },
         noShadow: false,
@@ -543,7 +543,7 @@ export const corporation = [
           header: "C Corporation",
           link: {
             text: "Incorporate now",
-            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
+            url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=GA`,
           },
         },
         noShadow: false,
@@ -675,14 +675,14 @@ export const startCaCorp = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=GA`,
         },
         theme: "primary56",
       },
@@ -916,14 +916,14 @@ export const startCaCorp = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=GA`,
         },
         theme: "primary56",
       },
@@ -951,14 +951,14 @@ export const naming = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=GA`,
         },
         theme: "primary56",
       },
@@ -1203,14 +1203,14 @@ export const naming = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=GA`,
         },
         theme: "primary56",
       },
@@ -1258,14 +1258,14 @@ export const agents = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=GA`,
         },
         theme: "primary56",
       },
@@ -1436,14 +1436,14 @@ export const agents = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=GA`,
         },
         theme: "primary56",
       },
@@ -1515,14 +1515,14 @@ export const filing = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=GA`,
         },
         theme: "primary56",
       },
@@ -1953,14 +1953,14 @@ export const filing = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=GA`,
         },
         theme: "primary56",
       },
@@ -2271,14 +2271,14 @@ export const taxes = [
       {
         content: {
           text: "Start Your S Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=GA`,
         },
         theme: "primary56",
       },
       {
         content: {
           text: "Start Your C Corp with Incfile",
-          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=GA`,
+          url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=GA`,
         },
         theme: "primary56",
       },

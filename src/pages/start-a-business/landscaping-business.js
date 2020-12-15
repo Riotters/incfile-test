@@ -874,7 +874,7 @@ const LandscapingBusiness = () => (
 							<Link
 								to={
 									process.env.ORDER_URL +
-									"/form-order-now.php?entityType=S-Corporation"
+									"/form-order-now.php?entityType=SCorporation"
 								}
 							>
 								S Corporation
@@ -909,7 +909,7 @@ const LandscapingBusiness = () => (
 							<Link
 								to={
 									process.env.ORDER_URL +
-									"/form-order-now.php?entityType=C-Corporation"
+									"/form-order-now.php?entityType=CCorporation"
 								}
 							>
 								C Corporation

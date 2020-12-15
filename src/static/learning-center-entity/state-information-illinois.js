@@ -1402,7 +1402,7 @@ export const filing = [
 	},
 	{
 		type: "text",
-		content: `Here at Incfile, we automatically create and file your Certificate of Formation/Articles of Incorporation on your behalf when you start your <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=IL">S Corporation</a> or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=IL">C Corporation</a> with us. You only need to file your certificate once. There is a fee levied by the Secretary of State of Illinois to cover your filing.`,
+		content: `Here at Incfile, we automatically create and file your Certificate of Formation/Articles of Incorporation on your behalf when you start your <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=IL">S Corporation</a> or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=IL">C Corporation</a> with us. You only need to file your certificate once. There is a fee levied by the Secretary of State of Illinois to cover your filing.`,
 		marginBottom: 48,
 	},
 	{
@@ -1717,14 +1717,14 @@ export const filing = [
 			{
 				content: {
 					text: "Start Your S Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=S-Corporation&entityState=IL`,
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=IL`,
 				},
 				theme: "primary56",
 			},
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=C-Corporation&entityState=IL`,
+					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=IL`,
 				},
 				theme: "primary56",
 			},
