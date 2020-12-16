@@ -4,6 +4,8 @@ import SEO from "../../components/seo";
 import {
 	top,
 	about,
+	whatIs,
+	forWho,
 	types,
 	prosAndCons,
 	requirements,
@@ -12,6 +14,7 @@ import {
 import TopSection from "../../atomic/sections/learning-center-entity/business-entity-quiz/top-section";
 import About from "../../atomic/sections/business-entity-quiz/nonprofit/about";
 import WhatIs from "../../atomic/sections/business-entity-quiz/nonprofit/what-is";
+import ForWho from "../../atomic/sections/business-entity-quiz/nonprofit/for-who";
 import ProsAndCons from "../../atomic/sections/business-entity-quiz/nonprofit/pros-and-cons";
 import Types from "../../atomic/sections/business-entity-quiz/nonprofit/types";
 import Requirements from "../../atomic/sections/business-entity-quiz/nonprofit/requirements";
@@ -28,10 +31,8 @@ const BusinessEntityQuizNonprofit = () => (
 		/>
 		<TopSection content={top} padding="220px 0" />
 		<About content={about} />
-		<WhatIs
-		//content={whatIs}
-		/>
-		{/* <ChooseEntitySection content={choose} /> */}
+		<WhatIs content={whatIs} />
+		<ForWho content={forWho} />
 		<ProsAndCons content={prosAndCons} />
 		<Types content={types} />
 		<Requirements content={requirements} />

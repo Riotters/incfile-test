@@ -6,9 +6,7 @@ import { Paragraph } from "../../../atoms/typography/paragraph";
 import ImageContent from "../../../partials/left-image-right-content";
 import IconSVG from "../../../../images/icons/megafon.inline.svg";
 import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
-import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-left-transparent-green3.inline.svg";
-import { Heading } from "../../../atoms/typography/heading";
+import Adventages from "../../../../components/adventages";
 
 const About = styled.section`
 	position: relative;
@@ -26,14 +24,24 @@ const About = styled.section`
 			margin-top: 24px;
 		}
 	}
+
+	.adventage {
+		& > div {
+			align-items: flex-start;
+		}
+
+		p {
+			max-width: 400px;
+			font-weight: bold;
+			color: ${color.black};
+			margin-top: 0;
+		}
+	}
 `;
 
 const AboutSection = ({ className, content }) => (
 	<About className={className}>
-		<Oval className="oval" height="420" width="420" y="15">
-			<OvalSVG />
-		</Oval>
-		<ImageContent image="clipboard-9010">
+		<ImageContent image="nonprofit-about-2728">
 			<IconTextColorBox
 				color={color.blue3}
 				Icon={IconSVG}
@@ -41,13 +49,22 @@ const AboutSection = ({ className, content }) => (
 				rounded
 				curve
 				curveColor={color.blue1}
+				bottomMargin={48}
 			/>
-			<Paragraph big mixed bottomMargin={64}>
+			<Paragraph big mixed>
 				{parse(content.text)}
 			</Paragraph>
-			<Paragraph big mixed bottomMargin={64}>
+			<Paragraph big mixed bottomMargin={72}>
 				{parse(content.text2)}
 			</Paragraph>
+			<Adventages
+				className="adventage"
+				disadventage={content.box2.disadventage}
+				circleBackgroundColor={content.box2.circleBackgroundColor}
+				circleBackgroundShadow={content.box2.circleBackgroundShadow}
+				text={content.box2.text}
+				width="100%"
+			/>
 		</ImageContent>
 	</About>
 );
