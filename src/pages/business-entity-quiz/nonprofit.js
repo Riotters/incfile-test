@@ -7,6 +7,7 @@ import {
 	whatIs,
 	forWho,
 	types,
+	howTo,
 	prosAndCons,
 	requirements,
 	faq,
@@ -17,6 +18,7 @@ import WhatIs from "../../atomic/sections/business-entity-quiz/nonprofit/what-is
 import ForWho from "../../atomic/sections/business-entity-quiz/nonprofit/for-who";
 import ProsAndCons from "../../atomic/sections/business-entity-quiz/nonprofit/pros-and-cons";
 import Types from "../../atomic/sections/business-entity-quiz/nonprofit/types";
+import HowTo from "../../atomic/sections/business-entity-quiz/nonprofit/how-to";
 import Requirements from "../../atomic/sections/business-entity-quiz/nonprofit/requirements";
 import Faq from "../../atomic/sections/business-entity-quiz/nonprofit/faq";
 import Rocket from "../../atomic/sections/rocket";
@@ -35,6 +37,7 @@ const BusinessEntityQuizNonprofit = () => (
 		<ForWho content={forWho} />
 		<ProsAndCons content={prosAndCons} />
 		<Types content={types} />
+		<HowTo content={howTo} />
 		<Requirements content={requirements} />
 		<Faq content={faq} />
 		<Rocket />

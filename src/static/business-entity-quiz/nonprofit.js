@@ -100,6 +100,34 @@ export const prosAndCons = {
 };
 
 export const types = {
+	header: `Types of Nonprofit Companies`,
+	text: `There are four main types of non-profits common in the United States. Each contains the ability to achieve tax exempt status despite their slightly different goals and corporate structure. They include:`,
+	boxes: [
+		{
+			header: `Social Advocacy Organizations`,
+			text: `This type of group is member-based and sets out to achieve specific goals without achieving a profit. The organization uses donations and member dues to send out information that promotes a particular social agenda.`,
+		},
+		{
+			header: `Foundations`,
+			text: `This type of organization often works to better the community, whether contributing financially to local charities, or holding events that benefit residents. They are funded by and contribute on behalf of another for-profit corporation.`,
+		},
+		{
+			header: `Public Charities`,
+			text: `aaTypically, a charity provides low cost or free services to the public using funds received from the public, known as a donation. This can be obtained through private donations or fundraising events specifically designed to solicit members or advocates of the organization.a`,
+		},
+		{
+			header: `Trade and Professional Organizations`,
+			text: `People in the same organization can benefit from the activities of this type of non-profit. They are funded primarily through membership dues.`,
+		},
+	],
+	text2: `Political parties are also eligible for tax exempt status, but do not fall under the standard nonprofit category.`,
+	button: {
+		text: `Form Your Nonprofit Today`,
+		url: `${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit&utm_campaign=Lead%20Gen%20-%20Business%20Entity%20Quiz&utm_source=On_Page_Click&utm_medium=Nonprofit%20Results%20Page&utm_term=Order%20Form`,
+	},
+};
+
+export const howTo = {
 	header: `How to Achieve 501c3 Status`,
 	text: `Corporations may file for federal tax exempt status, also known as 501c3 by the IRS, if they are incorporated as a nonprofit corporation or trust. They must meet and maintain certain stringent criteria to be considered free from paying taxes. These include:`,
 	list: [
@@ -108,11 +136,7 @@ export const types = {
 		`When incorporating, the assets of your nonprofit must be dedicated to other charities, especially should the corporation dissolve. This would be written 
         as a dissolution statement in your Articles of Incorporation.`,
 	],
-	text2: `All other steps associated with Incorporation apply to the creation of a nonprofit organization, such as paying fees, registering for business locally and applying for your EIN.`,
-	button: {
-		text: `Form Your Nonprofit Today`,
-		url: `${process.env.ORDER_URL}/form-order-now.php?entityType=Nonprofit&utm_campaign=Lead%20Gen%20-%20Business%20Entity%20Quiz&utm_source=On_Page_Click&utm_medium=Nonprofit%20Results%20Page&utm_term=Order%20Form`,
-	},
+	text2: `All other steps associated with Incorporation apply to the creation of a nonprofit organization, such as paying fees, registering for business locally and <a href="/manage-your-company/tax-id-ein/">applying for your EIN</a>.`,
 };
 
 export const requirements = {
