@@ -43,7 +43,7 @@ export const adventages2 = {
       circleText: 1,
       headline: "File an Annual Report",
       text:
-        "Depending on the state you’re located in, you will probably have to file a report every year. This report tells the state about any major changes to your daycare business, and we can file your Annual Report on your behalf.",
+        "Most states require all businesses to file a report once a year. This report has details of any major changes to who owns a business and other major impacts on a business’ legal status. We can file your Annual Report on your behalf.",
       url: "/manage-your-company/annual-report",
       urlText: "Annual Report",
     },
@@ -57,7 +57,7 @@ export const adventages2 = {
       circleText: 3,
       headline: "Renew Business Permits and Licenses",
       text:
-        "Your federal, state, regional and city licenses and permits may need to be renewed on a regular basis, typically once a year.",
+        "Your business will probably have several licenses, permits and other regulations. These typically need to be renewed every year.",
     },
     {
       circleText: 4,

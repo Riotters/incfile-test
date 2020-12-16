@@ -183,15 +183,6 @@ const GymPersonalTraining = () => (
               <ListBox>
                 <CkeckText>
                   <Paragraph big>
-                    Setting up your canine business, including location,
-                    equipment, employees, taxes, finances, licenses and more
-                  </Paragraph>
-                </CkeckText>
-              </ListBox>
-
-              <ListBox>
-                <CkeckText>
-                  <Paragraph big>
                     Setting up your brewery business, including location,
                     equipment, employees, taxes, finances, licenses and more
                   </Paragraph>

@@ -23,7 +23,7 @@ const BoutiqueTaxes = () => (
     </OvalBottom>
 
     <TextCenterLayout
-      headline="Taxes for a Moving Business"
+      headline="Taxes for a Boutique Clothing Business"
       headlineWidth={770}
     />
 

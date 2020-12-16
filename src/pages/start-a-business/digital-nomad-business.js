@@ -40,7 +40,7 @@ const DigitalNomadBusiness = () => (
       imageAlt="Mr Bulb with seedling"
       headlineWidth={700}
     >
-      <h1>Become a Digital Nomad | How to Work from Anywhere</h1>
+      <h1>Travel & Work from Anywhere as a Digital Nomad</h1>
       <p>
         There's a great appeal to being able to work from anywhere in the world,
         and those who take advantage of this remote-working lifestyle are called

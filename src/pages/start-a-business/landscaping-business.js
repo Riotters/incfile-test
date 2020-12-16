@@ -674,15 +674,14 @@ const LandscapingBusiness = () => (
 
           <CountingTextBoxed number={2}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              Your goals and what you hope to achieve with your coaching
+              Your goals and what you hope to achieve with your landscaping
               business
             </Paragraph>
           </CountingTextBoxed>
 
           <CountingTextBoxed number={3}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              A description of your life or business coaching niche, background
-              information and context
+              A description of your business, background information and context
             </Paragraph>
           </CountingTextBoxed>
 
@@ -694,8 +693,7 @@ const LandscapingBusiness = () => (
 
           <CountingTextBoxed number={5}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              An overview of how your life or business coaching organization is
-              structured
+              An overview of how your business is structured
             </Paragraph>
           </CountingTextBoxed>
 
@@ -949,8 +947,8 @@ const LandscapingBusiness = () => (
             style={{ paddingTop: "48px", paddingBottom: 0 }}
             mixed={true}
           >
-            In most cases, our recommendation for a boutique business would be
-            to create an LLC. We’ve
+            In most cases, our recommendation for a landscaping business would
+            be to create an LLC. We’ve
             <Link to="/form-an-llc/">got a complete guide</Link> to everything
             you need to do.{" "}
             <Link to="/llc-state-information/">

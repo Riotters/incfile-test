@@ -135,8 +135,7 @@ const GymPersonalTraining = () => (
               <ListBox>
                 <CkeckText>
                   <Paragraph big>
-                    How to find out if a boutique hotel business is right for
-                    you
+                    How to find out if a bookstore business is right for you
                   </Paragraph>
                 </CkeckText>
               </ListBox>

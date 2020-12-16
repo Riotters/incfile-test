@@ -200,9 +200,9 @@ const CateringBusiness = () => (
             </ListWrapper>
 
             <Paragraph big>
-              By the time you've read through our complete digital nomad
-              business guide, you will have all the information you need to set
-              up and manage a thriving venture. Let's get into it.
+              By the time you've read through our complete catering business
+              guide, you will have all the information you need to set up and
+              manage a catering. Let's get into it.
             </Paragraph>
           </PanelWrapper>
         </TabPanel>
@@ -495,15 +495,14 @@ const CateringBusiness = () => (
 
           <CountingTextBoxed number={2}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              Your goals and what you hope to achieve with your coaching
+              Your goals and what you hope to achieve with your catering
               business
             </Paragraph>
           </CountingTextBoxed>
 
           <CountingTextBoxed number={3}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              A description of your life or business coaching niche, background
-              information and context
+              A description of your business, background information and context
             </Paragraph>
           </CountingTextBoxed>
 
@@ -515,8 +514,7 @@ const CateringBusiness = () => (
 
           <CountingTextBoxed number={5}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              An overview of how your life or business coaching organization is
-              structured
+              An overview of how your business is structured
             </Paragraph>
           </CountingTextBoxed>
 

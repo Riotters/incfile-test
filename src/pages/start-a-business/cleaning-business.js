@@ -140,14 +140,6 @@ const CleaningBusiness = () => (
             <ListWrapper>
               <ListBox>
                 <CkeckText>
-                  <Paragraph big>
-                    Understanding the world of a beauty salon
-                  </Paragraph>
-                </CkeckText>
-              </ListBox>
-
-              <ListBox>
-                <CkeckText>
                   <Paragraph big>Understanding the world of cleaning</Paragraph>
                 </CkeckText>
               </ListBox>
@@ -216,9 +208,9 @@ const CleaningBusiness = () => (
             </ListWrapper>
 
             <Paragraph big>
-              By the time you’ve read through our complete beauty salon business
+              By the time you’ve read through our complete cleaning business
               guide, you will have all the information you need to set up and
-              manage a thriving beauty salon business. Let’s get into it.
+              manage a thriving cleaning business. Let’s get into it.
             </Paragraph>
           </PanelWrapper>
         </TabPanel>
@@ -609,15 +601,14 @@ const CleaningBusiness = () => (
 
           <CountingTextBoxed number={2}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              Your goals and what you hope to achieve with your coaching
+              Your goals and what you hope to achieve with your cleaning
               business
             </Paragraph>
           </CountingTextBoxed>
 
           <CountingTextBoxed number={3}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              A description of your life or business coaching niche, background
-              information and context
+              A description of your business, background information and context
             </Paragraph>
           </CountingTextBoxed>
 
@@ -629,8 +620,7 @@ const CleaningBusiness = () => (
 
           <CountingTextBoxed number={5}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              An overview of how your life or business coaching organization is
-              structured
+              An overview of how your business is structured
             </Paragraph>
           </CountingTextBoxed>
 

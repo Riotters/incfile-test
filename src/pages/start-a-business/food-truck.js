@@ -208,7 +208,7 @@ const FoodTruck = () => (
 
             <BlueBoxWithAbsoluteText
               absoluteText="4,000"
-              text="Approximate number of?food truck businesses in the U.S."
+              text="Approximate number of food truck businesses in the U.S."
             />
             <BlueBoxWithAbsoluteText
               absoluteText="$2B"

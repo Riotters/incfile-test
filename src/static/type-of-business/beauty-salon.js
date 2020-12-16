@@ -352,15 +352,15 @@ export const tabs = {
   panels: [
     {
       icon: Tab1Icon,
-      name: `Bar or Club`
+      name: `Beauty Salon Business`,
     },
     {
       icon: Tab2Icon,
-      name: `Why This Industry`
+      name: `Why This Industry`,
     },
     {
       icon: Tab3Icon,
-      name: `Is This Business For You?`
+      name: `Is This Business For You?`,
     },
-  ]
-}
+  ],
+};

@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
-import Button from "../../components/button";
+import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
@@ -62,7 +62,6 @@ const DaycareBusiness = () => (
       </p>
       <ButtonsBox>
         <Button
-          extends
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
