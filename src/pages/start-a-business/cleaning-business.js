@@ -924,7 +924,7 @@ const CleaningBusiness = () => (
         <OvalSvg6 />
       </Oval6>
       <UsefulTools
-        style={{ paddingBottom: "200px" }}
+        style={{ paddingBottom: "16px" }}
         toolsList={toolsList.tools}
         headlineText={toolsList.headlineText}
         description={toolsList.description}

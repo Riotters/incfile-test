@@ -408,8 +408,11 @@ const TabScrollable = ({ layout, columns }) => {
 
                   <Paragraph big mixed={true} style={{ marginTop: "48px" }}>
                     As a rule of thumb, we recommend keeping back around a third
-                    of your earnings to pay your taxes. We can even prepare and
-                    file your tax returns for you.
+                    of your earnings to pay your taxes. We can even{" "}
+                    <Link to="/business-accounting/">
+                      prepare and file your tax returns for you
+                    </Link>
+                    .
                   </Paragraph>
                 </TextBlockWithImage>
               </div>
@@ -451,15 +454,6 @@ const TabScrollable = ({ layout, columns }) => {
                   </Paragraph>
 
                   <Accordion tab content={MaintainingAccordionContent} />
-
-                  <Paragraph big mixed={true} style={{ marginTop: "48px" }}>
-                    As a rule of thumb, we recommend keeping back around a third
-                    of your earnings to pay your taxes. We can even{" "}
-                    <Link to="/business-accounting/">
-                      prepare and file your tax returns for you
-                    </Link>
-                    .
-                  </Paragraph>
                 </TextBlockWithImage>
               </div>
             </InView>

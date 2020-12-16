@@ -84,7 +84,7 @@ const CoachBusiness = () => (
       to={process.env.ORDER_URL + "/form-order-now.php"}
       buttonTitle="Start your Coach Business with us, today"
     >
-      <Heading size={3} style={{ fontSize: "48px" }}>
+      <Heading size={3} style={{ fontSize: "40px" }}>
         Conclusion
       </Heading>
       <Paragraph big>
