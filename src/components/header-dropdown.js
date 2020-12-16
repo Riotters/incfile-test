@@ -3,8 +3,9 @@ import React, { useState } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import LogoSVG from "../images/logo.inline.svg";
-import Button from "./button";
+import Button from "../atomic/molecules/buttons/button";
 import DropdownSVG from "../images/dropdown.inline.svg";
+import PhoneIconSVG from "../images/icons/phone-orange.inline.svg";
 import { color } from "../atomic/atoms/styles/colors";
 import { shadow } from "../atomic/atoms/styles/shadows";
 import { Heading } from "../atomic/atoms/typography/heading";
@@ -29,7 +30,7 @@ const Logo = styled.div`
 	padding-right: 25px;
 
 	@media (min-width: 1200px) {
-		width: 200px;
+		width: 160px;
 	}
 `;
 
@@ -196,7 +197,7 @@ const LoginWrapper = styled.div`
 			padding: 4px 24px;
 
 			@media (min-width: 1200px) {
-				padding: 6px 38px;
+				padding: 6px 20px;
 			}
 		}
 	}
@@ -365,6 +366,19 @@ const SubmenuColumn = styled.ul`
 		margin-top: 20px;
 	}
 `;
+
+const Phone = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    a{
+        padding: 0 !important;
+        font-size: 16px;
+        font-weight: bold;
+        color: #FD8550;
+    }
+`
 
 function handleHeaderClick(e) {
 	let menuItem = e.target.closest(".menu-item-l1");
@@ -752,15 +766,15 @@ const Header = ({ siteTitle }) => {
 						</Menu>
 					</NavigationMobileScrollHidden>
 				</Navigation>
-				<LoginWrapper>
+                <LoginWrapper>
+                    <Phone><PhoneIconSVG /> <a href="tel:1888.462.3453">1888.462.3453</a></Phone>
 					<Login href={`${process.env.ORDER_URL}/dashboard`}>Login</Login>
-					<Button
-						theme="secondary40"
-						to={`${process.env.ORDER_URL}/form-order-now.php`}
+                    <Button
+                        externalLink
+                        theme="secondary40"
+                        content={{text: `Incorporate now`, url: `${process.env.ORDER_URL}/form-order-now.php`}}
 						width="100%"
-					>
-						Incorporate now
-					</Button>
+					/>
 				</LoginWrapper>
 			</MobileWrapper>
 			<Hamburger hamburger={menu} onClick={() => showMenu(!menu)}>
