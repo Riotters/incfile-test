@@ -63,7 +63,7 @@ const ContentCard = ({ className }) => {
 					vimeo
 				/>
 				<Heading size={2} template={3} left topMargin="48" bottomMargin="48">
-					Learn how to save money with incfile
+					Learn how to save money with Incfile
 				</Heading>
 				<Paragraph big bottomMargin="24">
 					There are a multitude of companies on the web that perform the

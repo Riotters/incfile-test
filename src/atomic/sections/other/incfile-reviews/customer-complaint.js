@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
-
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import ContentCenter from "../../../partials/content-center";
@@ -82,7 +81,7 @@ const CustomerComplaint = ({ content }) => (
 				</AbsoluteShapCure>
 
 				<MrsStar>
-					<Image filename="mrs-stars-01" alt="incfile customer complaints" />
+					<Image filename="mrs-stars-01" alt="Incfile customer complaints" />
 				</MrsStar>
 
 				<Heading size={2}>
@@ -126,8 +125,8 @@ const CustomerComplaint = ({ content }) => (
 								content={{
 									header: item.title,
 									text: item.desc,
-                                    link: { url: item.link, text: `Learn more` },
-                                    imgAlt: item?.imgAlt ?? ''
+									link: { url: item.link, text: `Learn more` },
+									imgAlt: item?.imgAlt ?? "",
 								}}
 								color={item.color}
 								image={item.image}
@@ -142,8 +141,8 @@ const CustomerComplaint = ({ content }) => (
 									content={{
 										header: item.title,
 										text: item.desc,
-                                        link: { url: item.link, text: `Learn more` },
-                                        imgAlt: item?.imgAlt ?? ''
+										link: { url: item.link, text: `Learn more` },
+										imgAlt: item?.imgAlt ?? "",
 									}}
 									color={item.color}
 									image={item.image}

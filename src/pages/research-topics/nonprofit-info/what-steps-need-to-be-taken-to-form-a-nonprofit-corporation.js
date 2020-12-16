@@ -22,7 +22,7 @@ import {
 import { about } from "../../../static/research-topics/nonprofit-info/non-profit-by-steps";
 import { related } from "../../../static/research-topics/nonprofit-info";
 import { Helmet } from "react-helmet";
-import {HeadingP} from "../../../atomic/atoms/typography/heading-to-p";
+import { HeadingP } from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => {
 	const currentUri =
@@ -81,7 +81,7 @@ const HelpCenter = () => {
                         your organizing documents contain the required language and specific clauses, such as a
                         detailed exempt purpose statement, to ensure that your nonprofit will meet the requirements to
                         qualify for Federal 501(c)(3) tax-exempt status. If you choose to incorporate your nonprofit
-                        through IncFile, you only need to complete the online order form. IncFile will prepare and file
+                        through Incfile, you only need to complete the online order form. Incfile will prepare and file
                         your organizing documents."
                         }}
                     }`}
