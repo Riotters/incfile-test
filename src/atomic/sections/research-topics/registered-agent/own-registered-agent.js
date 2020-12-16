@@ -16,7 +16,11 @@ import NumericList from "../../../organisms/lists/numeric-boxed-list";
 
 const About = styled.section`
   position: relative;
-  padding-bottom: 104px;
+  padding-bottom: 32px;
+
+  @media (min-width: 992px) {
+    padding-bottom: 104px;
+  }
 `;
 
 const AboutSection = ({ className, content }) => (

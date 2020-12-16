@@ -12,41 +12,41 @@ import Rocket from "../../../atomic/sections/review-entity-types/c-corporation/r
 import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 //Texts
 import {
-	top,
-	rocket,
-	categories,
-	service,
-	tools,
+  top,
+  rocket,
+  categories,
+  service,
+  tools,
 } from "../../../static/learning-center-entity/help-center-article";
 import { related } from "../../../static/research-topics/business-taxes";
 import { HeadingP } from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => (
-	<Layout>
-		<SEO
-			title="Business Taxes: Articles & Information for Entrepreneurs"
-			description="Looking for info on how business taxes work for your specific business structure? Learn all about federal and state taxes for different entities here."
-		/>
-		<Top
-			imageName="mrs-bulb-help-center-article"
-			imageAlt="Mrs Bulb and with checklist"
-			ovalColor="green"
-		>
-			<Heading size={2} template={1} left>
-				{top.header}
-			</Heading>
-			<HeadingP size={3} big>
-				{top.text}
-			</HeadingP>
-			<Searchbar />
-		</Top>
-		{/* <About content={about} /> */}
-		<Related content={related} headingSize={1} />
-		<Categories content={categories} />
-		<Service content={service} />
-		<Tools content={tools} />
-		<Rocket content={rocket} />
-	</Layout>
+  <Layout>
+    <SEO
+      title="Business Taxes: Articles & Information for Entrepreneurs"
+      description="Looking for info on how business taxes work for your specific business structure? Learn all about federal and state taxes for different entities here."
+    />
+    <Top
+      imageName="mrs-bulb-help-center-article"
+      imageAlt="Mrs Bulb and with checklist"
+      ovalColor="green"
+    >
+      <Heading size={2} template={1} left>
+        {top.header}
+      </Heading>
+      <HeadingP size={3} big>
+        {top.text}
+      </HeadingP>
+      <Searchbar />
+    </Top>
+    {/* <About content={about} /> */}
+    <Related content={related} headingSize={1} />
+    <Categories content={categories} />
+    <Service content={service} />
+    <Tools content={tools} />
+    <Rocket content={rocket} />
+  </Layout>
 );
 
 export default HelpCenter;

@@ -21,18 +21,39 @@ import CategoryButton from "../../../molecules/buttons/category-button";
 
 const Categories = styled.section`
   position: relative;
-  padding-top: 104px;
-  padding-bottom: 80px;
+  padding-top: 48px;
+  padding-bottom: 64px;
+
+  @media (min-width: 992px) {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
 `;
 
-const icons = [<PaperPlaneSVG />, <SpaceShipSVG />, <PlaneSVG />, <RocketSVG />, <FlowerSVG />, <BadgeSVG />, <TaxesSVG />, <EmployerIdSVG />, <MagniferSVG />, <CameraSVG />];
+const icons = [
+  <PaperPlaneSVG />,
+  <SpaceShipSVG />,
+  <PlaneSVG />,
+  <RocketSVG />,
+  <FlowerSVG />,
+  <BadgeSVG />,
+  <TaxesSVG />,
+  <EmployerIdSVG />,
+  <MagniferSVG />,
+  <CameraSVG />,
+];
 
 const CategoriesSection = ({ className, content }) => (
   <Categories className={className}>
     <Oval className="oval" height="420" width="420" bottom="0" right="0">
       <OvalSVG />
     </Oval>
-    <HeadingCenter headline={content.header} headlineWidth="700" bottomMargin="80" />
+    <HeadingCenter
+      headline={content.header}
+      headlineWidth="700"
+      bottomMargin="32"
+      bottomMarginMD="80"
+    />
     <CenterGrid columnsLG="3">
       <Curve top="-25" left="-29" color={color.blue1}>
         <CurveSVG />

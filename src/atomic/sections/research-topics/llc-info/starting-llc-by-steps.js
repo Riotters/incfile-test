@@ -18,7 +18,11 @@ import { PHeading } from "../../../atoms/typography/p-to-heading";
 
 const About = styled.section`
   position: relative;
-  padding-bottom: 104px;
+  padding-bottom: 32px;
+
+  @media (min-width: 992px) {
+    padding-bottom: 104px;
+  }
 `;
 
 const AbsoluteCircle = styled.div`
