@@ -1,46 +1,109 @@
 import React from "react";
 import styled from "styled-components";
 import parse from "html-react-parser";
-import { color } from "../../../atoms/styles/colors";
-import { Paragraph } from "../../../atoms/typography/paragraph";
-import ImageContent from "../../../partials/left-image-right-content";
-import IconSVG from "../../../../images/icons/megafon.inline.svg";
-import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color";
+import TextCenterLayout from "../../../partials/heading-center";
+import Container from "../../../../components/container";
+import Adventages from "../../../../components/adventages";
+import ContentCenter from "../../../partials/content-center";
+import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
+import IdentifyIcon from "../../../../images/icons/identify-your-unique-selling-point.inline.svg";
 import { Heading } from "../../../atoms/typography/heading";
-import Button from "../../../molecules/buttons/button";
-import NumericBoxedList from "../../../organisms/lists/numeric-boxed-list";
+import { Paragraph } from "../../../atoms/typography/paragraph";
+import { PHeading } from "../../../atoms/typography/p-to-heading";
+import OvalSvg from "../../../../images/ovals/bottom-right-transparent-blue3.inline.svg";
+import { color, gradient } from "../../../atoms/styles/colors";
+import Oval from "../../../atoms/icons/oval";
 
-const About = styled.section`
+const IsItForYou = ({ content }) => (
+	<Wrapper>
+		<Oval height="570" width="570" top="40" right="0" zIndex="0">
+			<OvalSvg />
+		</Oval>
+		<TextCenterLayout
+			headline={content.header}
+			text={content.text}
+			headlineWidth={770}
+			textWidth={770}
+		/>
+
+		<Container>
+			<TypesWrapper>
+				{content.boxes.map((box) => (
+					// <Adventages
+					// 	disadventage={box.disadventage}
+					// 	circleBackgroundColor={box.circleBackgroundColor}
+					// 	circleBackgroundShadow={box.circleBackgroundShadow}
+					// 	text={box.text}
+					// 	width="100%"
+					// />
+					<TextBlockWithImage
+						width={100}
+						widthUnit="%"
+						className="containerMargin"
+						SvgImage={IdentifyIcon}
+						imageBackgroundColor={color.white}
+						imageShadowColor={color.white1}
+					>
+						<Heading size={3} template={4}>
+							{box.header}
+						</Heading>
+						<Paragraph bottomPadding={0} bottomMargin={0}>
+							{box.text}
+						</Paragraph>
+					</TextBlockWithImage>
+				))}
+			</TypesWrapper>
+		</Container>
+		<ContentCenter contentWidth={630}>
+			<Paragraph big mixed center>
+				{parse(content.text2)}
+			</Paragraph>
+		</ContentCenter>
+	</Wrapper>
+);
+
+const Wrapper = styled.section`
+	padding-top: 120px;
+	padding-bottom: 100px;
 	position: relative;
-	padding-bottom: 30px;
+	background-image: ${gradient.blue3};
+`;
 
-	@media (min-width: 992px) {
-		padding-bottom: 120px;
+const TypesWrapper = styled.div`
+	display: grid;
+	grid-gap: 70px 30px;
+	grid-template-columns: 100%;
+	justify-content: center;
+	width: 100%;
+	max-width: 970px;
+	margin: 76px auto;
+
+	@media (min-width: 490px) {
+		grid-template-columns: 1fr;
 	}
 
-	p {
-		span {
-			display: block;
-			color: ${color.black};
-			font-weight: bold;
-			margin-top: 24px;
+	@media (min-width: 992px) {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	ul {
+		list-style: none;
+
+		li {
+			span {
+				display: block;
+				margin-bottom: 8px;
+				font-size: 20px;
+				line-height: 28px;
+				color: ${color.black};
+				font-weight: bold;
+			}
+
+			&:not(:last-child) {
+				margin-bottom: 32px;
+			}
 		}
 	}
 `;
 
-const AboutSection = ({ className, content }) => (
-	<About className={className}>
-		<ImageContent image="mrs-bulb-question-3266">
-			<Heading size={3}>{parse(content.header)}</Heading>
-			<Paragraph big mixed bottomMargin={64}>
-				{parse(content.text)}
-			</Paragraph>
-			<NumericBoxedList content={content.list} bottomMargin={40} />
-			<Paragraph big mixed bottomMargin={56}>
-				{parse(content.text2)}
-			</Paragraph>
-		</ImageContent>
-	</About>
-);
-
-export default AboutSection;
+export default IsItForYou;

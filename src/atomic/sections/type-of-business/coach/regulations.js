@@ -11,12 +11,19 @@ const Regulations = () => (
     <Oval>
       <OvalSvg />
     </Oval>
-    <Container style={{ paddingTop: "100px", paddingBottom: "100px" }} width={750}>
-      <Heading size={2} left>
+    <Container
+      style={{ paddingTop: "100px", paddingBottom: "100px" }}
+      width={750}
+    >
+      <Heading size={2} left bottomMargin={56}>
         Rules, Regulations and Taxes for Your Coaching Business
       </Heading>
       <Paragraph big mixed>
-        You will need to explore local, state and federal licenses and permits, and <Link to="/business-license-research-package/">we can also help out with researching your business licensing needs.</Link>
+        You will need to explore local, state and federal licenses and permits,
+        and{" "}
+        <Link to="/business-license-research-package/">
+          we can also help out with researching your business licensing needs.
+        </Link>
       </Paragraph>
     </Container>
   </Wrapper>
@@ -27,13 +34,13 @@ const Wrapper = styled.div`
 `;
 
 const Oval = styled.div`
-    position: absolute; 
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    
-    @media (min-width: 136px){
-        width: 136px;
-    }
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  @media (min-width: 136px) {
+    width: 136px;
+  }
 `;
 export default Regulations;

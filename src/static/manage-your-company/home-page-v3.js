@@ -23,7 +23,7 @@ export const business_formation = {
 		},
 	],
 	choose: {
-		header: "Why Choose incfile for Company Formation?",
+		header: "Why Choose Incfile for Company Formation?",
 		text: "LLC Filing & More Made Easy",
 		text2: "We're entrepreneurs - just like you.",
 		text3:
@@ -117,7 +117,7 @@ export const rocket = {
 	header: "Start Your LLC, S Corp,",
 	header2: "or C Corp Today",
 	text: "There's A Reason More Than 500,000",
-	text2: "Businesses Have Started With incfile",
+	text2: "Businesses Have Started With Incfile",
 	button: {
 		text: "Launch your business",
 		url: `${process.env.ORDER_URL}/form-order-now.php`,

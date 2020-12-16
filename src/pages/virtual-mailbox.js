@@ -44,7 +44,7 @@ const VirtualMailBoxes = () => (
 		/>
 		<Top
 			imageName="mr-contact-new-sales-9845"
-			imageAlt="incfile virtual address service"
+			imageAlt="Incfile virtual address service"
 			ovalColor="blue"
 			headlineWidth="500"
 			textWidth="800"
@@ -147,9 +147,9 @@ const VirtualMailBoxes = () => (
 			</Oval>
 		</InnerSection>
 
-        <Helmet>
-            <script type="application/ld+json">
-                {`{
+		<Helmet>
+			<script type="application/ld+json">
+				{`{
                     "@context": "http://schema.org",
                     "@type": "VideoObject",
                     "name": "Using a Virtual Address for Your Business by Incfile",
@@ -160,9 +160,9 @@ const VirtualMailBoxes = () => (
                     "embedUrl": "https://www.youtube.com/embed/-LK9F9jQE6Q",
                     "interactionCount": "0"
                 }`}
-            </script>
-        </Helmet>
-    </Layout>
+			</script>
+		</Helmet>
+	</Layout>
 );
 
 const StepsGridContainer = styled.div`

@@ -24,13 +24,32 @@ import { Paragraph } from "../../atomic/atoms/typography/paragraph";
 
 const CoachBusiness = () => (
   <Layout>
-    <SEO title="How to Become a Life or Business Coach" description="Becoming a professional coach can be a great way to turn your insight and understanding into practical advice. Learn how with our comprehensive guide." />
+    <SEO
+      title="How to Become a Life or Business Coach"
+      description="Becoming a professional coach can be a great way to turn your insight and understanding into practical advice. Learn how with our comprehensive guide."
+    />
 
-    <Top ovalColor="darkblue" imageName="coach-2" imageAlt="Mr Bulb with seedling" headlineWidth={700}>
+    <Top
+      ovalColor="darkblue"
+      imageName="coach-2"
+      imageAlt="Mr Bulb with seedling"
+      headlineWidth={700}
+    >
       <h1>How to Become a Life or Business Coach</h1>
-      <p>Many of us are seeking out independent advice on how we can improve our lives or our businesses.</p>
+      <p>
+        Many of us are seeking out independent advice on how we can improve our
+        lives or our businesses.
+      </p>
       <ButtonsBox>
-        <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start Now" }} />
+        <Button
+          theme="primary56"
+          marginMD="0 24px 0 0"
+          arrow
+          content={{
+            url: `${process.env.ORDER_URL}/form-order-now.php`,
+            text: "Start Now",
+          }}
+        />
       </ButtonsBox>
 
       <RatingRow>
@@ -61,11 +80,19 @@ const CoachBusiness = () => (
 
     <UseFulTools />
 
-    <Conclusion to={process.env.ORDER_URL + "/form-order-now.php"} buttonTitle="Start your Coach Business with us, today">
-      <Heading size={3} style={{ fontSize: "48px" }}>
+    <Conclusion
+      to={process.env.ORDER_URL + "/form-order-now.php"}
+      buttonTitle="Start your Coach Business with us, today"
+    >
+      <Heading size={3} style={{ fontSize: "40px" }}>
         Conclusion
       </Heading>
-      <Paragraph big>Helping other people make positive changes in their life or business is an amazing service. If you can find a great niche, understand your competitors and put together a solid business plan, you will have every chance for success.</Paragraph>
+      <Paragraph big>
+        Helping other people make positive changes in their life or business is
+        an amazing service. If you can find a great niche, understand your
+        competitors and put together a solid business plan, you will have every
+        chance for success.
+      </Paragraph>
     </Conclusion>
   </Layout>
 );

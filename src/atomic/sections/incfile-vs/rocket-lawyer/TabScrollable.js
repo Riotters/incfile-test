@@ -1,42 +1,18 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Link } from "gatsby";
 import parse from "html-react-parser";
 import { color } from "../../../atoms/styles/colors";
-import { shadow } from "../../../atoms/styles/shadows";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
-
-import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-
-import Accordion from "../../../organisms/accordion/accordion";
-
 import Container from "../../../container";
-
-import BusinessLicenseIcon from "../../../../images/icons/business-licenses-and-permits.inline.svg";
 import ArrowSVG from "../../../../images/arrow.inline.svg";
-import TaxesIcon from "../../../../images/icons/other-taxes.inline.svg";
-import BusinessInsuranceIcon from "../../../../images/icons/business-insurance.inline.svg";
-import AgentIcon from "../../../../images/icons/registered-agent.inline.svg";
-import MaintainingIcon from "../../../../images/icons/maintaining-your-cleaning-business.inline.svg";
 //tab icons
 import BusinessLicensesColoredIcon from "../../../../images/icons/icons-incfile-vs/icon-4.inline.svg";
 import BusinessInsuranceColoredIcon from "../../../../images/icons/icons-incfile-vs/icon-5.inline.svg";
-import AgentColoredIcon from "../../../../images/icons/icons-incfile-vs/icon-3.inline.svg";
 import TaxesColoredIcon from "../../../../images/icons/icons-incfile-vs/icon-2.inline.svg";
 import MaintainingColoredIcon from "../../../../images/icons/icons-incfile-vs/icon-1.inline.svg";
-
-import {
-	BusinessInsuranceAccordionContent,
-	LicensesAccordionContent,
-	MaintainingAccordionContent,
-	TaxesAccordionContent,
-} from "../../../../static/type-of-business/cleaning-business";
-import VisibilitySensor from "../../../VisibilitySensor";
 import IncfileVsCompareTableA from "../../../organisms/tables/incfile-vs-compare-table-a";
-import NumericBoxedList from "../../../organisms/lists/numeric-boxed-list";
 import { InView } from "react-intersection-observer";
-import ImageInColoredBox from "../../../molecules/image-blocks/image-in-colored-block";
 import ImageTextTableBlock from "../../../organisms/blocks/image-text-table-block";
 import IncfileVsCard from "../../../organisms/cards/incfile-vs-card";
 

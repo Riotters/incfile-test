@@ -10,8 +10,8 @@ import LegalSections from "../atomic/sections/legal-disclaimer/legal-sections";
 const CompareStateTimes = () => (
 	<Layout>
 		<SEO
-			title="IncFile.com LLCC Privacy Policy"
-			description="Incfile.com Privacy Policy Incformation"
+			title="incfile.com LLCC Privacy Policy"
+			description="incfile.com Privacy Policy Incformation"
 		/>
 		<Top content={top} headingParagraph />
 		<LegalSections content={legal_sections} contentWidth={1170} />

@@ -283,7 +283,7 @@ export const adventages = {
 		},
 		{
 			circleText: 6,
-			imageName: "municipal",
+			imageName: "municipal-8990",
 			headline: "Municipal",
 			text: "Government, education and other publicly-funded facilities",
 		},
@@ -301,7 +301,7 @@ export const adventages2 = {
 	items: [
 		{
 			circleText: 1,
-			imageName: "real-estate-3284",
+			imageName: "real-estate-1528",
 			headline: "Real estate",
 			text:
 				"Cleaning premises that are being put up for sale or rent, or cleaning homes or apartments in preparation for move in/out.",

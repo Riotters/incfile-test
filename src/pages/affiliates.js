@@ -13,8 +13,8 @@ import EnjoyHighestPayouts from "../atomic/sections/other/affiliates/enjoy-highe
 const VirtualMailBoxes = () => (
 	<Layout>
 		<SEO
-			title="IncFile Affiliate Program"
-			description="Sign up form for the IncFile.com affiliate program"
+			title="Incfile Affiliate Program"
+			description="Sign up form for the incfile.com affiliate program"
 		/>
 		<Top
 			imageName="affilitates-top-8164"

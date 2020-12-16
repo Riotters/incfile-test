@@ -223,7 +223,7 @@ export const adventages = {
 		},
 		{
 			circleText: 5,
-			imageName: "real-estate-3284",
+			imageName: "real-estate-1528",
 			headline: "Rent Property",
 			text:
 				"Whether you rent a spare room via Airbnb or have apartments that you lease to renters, property management can be a lucrative side business. There can be a lot of work involved in managing a rental property, and it can be capital intensive, so it's not for everyone.",

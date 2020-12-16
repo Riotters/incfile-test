@@ -4,7 +4,7 @@ export const top = {
 	header: `The Easiest Way 
     To Setup Your LLC`,
 	text: `Join Over <span>500,000</span> Businesses Launched 
-    With incfile Since <span>2004</span>`,
+    With Incfile Since <span>2004</span>`,
 	buttons: [
 		{
 			text: "Get Started",
@@ -86,7 +86,7 @@ export const care = {
 			state: ``,
 		},
 		{
-			text: `Everyone at IncFile has been first class and quick to respond to my service needs. 
+			text: `Everyone at Incfile has been first class and quick to respond to my service needs. 
             I appreciate you going above and beyond and taking the time to educate me.`,
 			author: `Tim A`,
 			state: ``,

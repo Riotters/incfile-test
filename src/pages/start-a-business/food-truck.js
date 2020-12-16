@@ -208,7 +208,7 @@ const FoodTruck = () => (
 
             <BlueBoxWithAbsoluteText
               absoluteText="4,000"
-              text="Approximate number of?food truck businesses in the U.S."
+              text="Approximate number of food truck businesses in the U.S."
             />
             <BlueBoxWithAbsoluteText
               absoluteText="$2B"
@@ -494,7 +494,7 @@ const FoodTruck = () => (
       to={process.env.ORDER_URL + "/form-order-now.php"}
       buttonTitle="Start your Foodtrack Business with us, today"
     >
-      <Heading size={3} style={{ fontSize: "48px" }}>
+      <Heading size={3} style={{ fontSize: "40px" }}>
         Conclusion
       </Heading>
       <Paragraph big>
