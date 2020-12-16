@@ -221,7 +221,7 @@ const DropdownMenu = styled.div`
 	grid-template-columns: auto auto;
 	max-height: 0;
 	padding: 0;
-	z-index: 999;
+	z-index: -1;
 	box-shadow: ${shadow.white2};
 	background: ${color.white};
 	position: absolute;
