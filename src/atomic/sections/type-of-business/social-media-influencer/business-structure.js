@@ -59,7 +59,8 @@ const BusinessStructure = () => (
     <BusinessOwnerResponsibilities>
       <ImageContent image="unique-business-2" paddingTop="60">
         <Heading size={2} template={3} left>
-          Choose the Right Business Structure for Your Boutique Business
+          Choose the Right Business Structure and Register Your Influencer
+          Marketing Business
         </Heading>
         <Paragraph big>
           There are five main business structures you can have in the U.S., and
@@ -128,7 +129,7 @@ const BusinessStructure = () => (
           <Paragraph big>
             Similar to a sole proprietorship, if you go into business with
             someone else without forming a legal business entity, you will be
-            treated as a partnership. This doesn\’t give you limited liability
+            treated as a partnership. This doesn’t give you limited liability
             protections, so we don't recommend it for your social media
             business.
           </Paragraph>

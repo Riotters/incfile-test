@@ -218,11 +218,6 @@ const ConstructionCompany = () => (
               Why You Should Start a New Travel Agency
             </Heading>
 
-            <Paragraph big>
-              This is why publishing businesses are so exciting — how can you be
-              part of that success? We're here to help you figure that out.
-            </Paragraph>
-
             <Paragraph big bottomMargin={52}>
               Because publishing is changing so rapidly, we thought it would be
               interesting to share some facts and figures on the current state
@@ -239,7 +234,7 @@ const ConstructionCompany = () => (
             />
             <BlueBoxWithAbsoluteText
               absoluteText="$2.7B"
-              text="Approximate numbers of?books sold every year"
+              text="Approximate numbers of books sold every year"
             />
 
             <ColorFulCircleWithTextAndList
@@ -264,6 +259,10 @@ const ConstructionCompany = () => (
               headline="Downloaded audio content is the fastest growing of publisher products"
               width="100%"
             />
+            <Paragraph big style={{ marginBottom: "40px" }}>
+              This is why publishing businesses are so exciting — how can you be
+              part of that success? We're here to help you figure that out.
+            </Paragraph>
           </PanelWrapper>
         </TabPanel>
 
@@ -388,29 +387,30 @@ const ConstructionCompany = () => (
             </Paragraph>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>
-                Inform: Tell your audience something they didn’t know about
-                before
+              <Paragraph mixed bottomMargin={0}>
+                <b>Inform: </b> Tell your audience something they didn’t know
+                about before
               </Paragraph>
             </TextBoxed>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>
-                Educate: Share skills and instructions to achieve a specific
-                outcome
+              <Paragraph mixed bottomMargin={0}>
+                <b>Educate:</b> Share skills and instructions to achieve a
+                specific outcome
               </Paragraph>
             </TextBoxed>
 
             <TextBoxed style={{ marginBottom: "8px" }}>
-              <Paragraph bottomMargin={0}>
-                Entertain: Amuse or otherwise engage with your media consumers
+              <Paragraph mixed bottomMargin={0}>
+                <b>Entertain: </b> Amuse or otherwise engage with your media
+                consumers
               </Paragraph>
             </TextBoxed>
 
             <TextBoxed style={{ marginBottom: "48px" }}>
-              <Paragraph bottomMargin={0}>
-                Inspire: Share stories and anecdotes to involve and move your
-                consumers
+              <Paragraph mixed bottomMargin={0}>
+                <b>Inspire: </b> Share stories and anecdotes to involve and move
+                your consumers
               </Paragraph>
             </TextBoxed>
           </PanelWrapper>

@@ -15,13 +15,15 @@ const Regulations = () => (
       style={{ paddingTop: "100px", paddingBottom: "100px" }}
       width={750}
     >
-      <Heading size={2} template={4} left style={{ fontSize: "40px" }}>
+      <Heading size={2} left style={{ fontSize: "40px" }}>
         Rules, Regulations and Taxes for Your Side Business
       </Heading>
-      <Paragraph big>
+      <Paragraph big mixed>
         Some side businesses will also have local, state and federal licenses
-        and permits, and we can help out with researching your business
-        licensing needs.
+        and permits, and{" "}
+        <Link to="/business-license-research-package/">
+          we can help out with researching your business licensing needs.
+        </Link>
       </Paragraph>
       <Paragraph big>
         Taxes are a fact of life if you’re in business, and there are various

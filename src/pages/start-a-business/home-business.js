@@ -128,10 +128,13 @@ const HomeBusiness = () => (
               Why You Should Start a Business from Home
             </Heading>
 
-            <Paragraph big style={{ marginBottom: "52px" }}>
+            <Paragraph big mixed style={{ marginBottom: "52px" }}>
               You’re probably wondering whether a home-based business is for
-              you. If so, we’ve got some surprising statistics that suggest it’s
-              a growing and lucrative type of business to run:
+              you. If so, we’ve got some{" "}
+              <a href="/blog/post/shocking-us-home-based-business-statistics/">
+                surprising statistics
+              </a>{" "}
+              that suggest it’s a growing and lucrative type of business to run:
             </Paragraph>
 
             <BlueBoxWithAbsoluteText

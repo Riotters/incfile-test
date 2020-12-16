@@ -247,7 +247,7 @@ const GymPersonalTraining = () => (
 
             <div style={{ marginBottom: "48px" }}>
               <Adventages
-                headline="Boutique studios providing specialized fitness and well-being services are becoming increasingly popular"
+                headline="Budget-friendly gyms are becoming more popular for those who do not want to pay an expensive monthly membership"
                 width="100%"
               />
             </div>

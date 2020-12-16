@@ -76,7 +76,8 @@ const LandscapingBusiness = () => (
         We all want to live in a beautiful environment, and part of that is
         ensuring our yards and gardens are properly designed, maintained and
         looked after. This provides landscape business entrepreneurs with a
-        great opportunity
+        great opportunity — if you can provide excellent yard and garden
+        services, you can build a thriving local landscaping business.
       </p>
       <ButtonsBox>
         <Button
@@ -106,14 +107,6 @@ const LandscapingBusiness = () => (
             <Heading size={2} template={3} left>
               Starting a Landscaping Business
             </Heading>
-            <Paragraph big>
-              We all want to live in a beautiful environment, and part of that
-              is ensuring our yards and gardens are properly designed,
-              maintained and looked after. This provides landscape business
-              entrepreneurs with a great opportunity — if you can provide
-              excellent yard and garden services, you can build a thriving local
-              landscaping business.
-            </Paragraph>
             <Paragraph big>
               Whether you want to get involved in wholesale design and yard
               makeovers or you want to provide maintenance and beautification
@@ -528,12 +521,64 @@ const LandscapingBusiness = () => (
             Services
           </Paragraph>
           <Paragraph big>
-            Here’s a selection of advice on building and making money from an
-            Instagram business.
+            Before you launch your landscaping business, you need to understand
+            if there’s a demand for what you’re selling. That means carrying out
+            market research and “validating” your products and services. Here’s
+            how to go about it:
           </Paragraph>
         </CenterBox>
 
         <GridSectionList>
+          <TextBlockWithImage
+            width={100}
+            widthUnit="%"
+            SvgImage={MarketIcon}
+            imageBackgroundColor={color.orange2}
+            imageShadowColor={color.orange2}
+          >
+            <Heading size={2} template={4} left>
+              See if there are any market research reports for landscaping
+              businesses
+            </Heading>
+            <Paragraph bottomPadding={0} bottomMargin={0}>
+              Search locally, nationally or internationally.
+            </Paragraph>
+          </TextBlockWithImage>
+
+          <TextBlockWithImage
+            width={100}
+            widthUnit="%"
+            SvgImage={LookIcon}
+            imageBackgroundColor={color.green2}
+            imageShadowColor={color.green2}
+          >
+            <Heading size={2} template={4} left>
+              Look at who your competitors are in the space
+            </Heading>
+            <Paragraph bottomPadding={0} bottomMargin={0}>
+              Having competitors is a good thing as it shows there’s a market.
+              You will want to find out what local competitors offer the same
+              services you do.
+            </Paragraph>
+          </TextBlockWithImage>
+
+          <TextBlockWithImage
+            width={100}
+            widthUnit="%"
+            SvgImage={TalkIcon}
+            imageBackgroundColor={color.purple2}
+            imageShadowColor={color.purple2}
+          >
+            <Heading size={2} template={4} left>
+              Talk to clients
+            </Heading>
+            <Paragraph bottomPadding={0} bottomMargin={0}>
+              Speak with potential customers to understand what they want from
+              your landscaping products and services. Narrow down the types of
+              clientele you want to serve and talk to them about landscaping
+              needs.
+            </Paragraph>
+          </TextBlockWithImage>
           <TextBlockWithImage
             width={100}
             widthUnit="%"
@@ -550,55 +595,6 @@ const LandscapingBusiness = () => (
               a higher-quality service, faster delivery or some other special
               feature. Early on, think about offering work at a better price so
               you can start to build up a portfolio.
-            </Paragraph>
-          </TextBlockWithImage>
-
-          <TextBlockWithImage
-            width={100}
-            widthUnit="%"
-            SvgImage={LookIcon}
-            imageBackgroundColor={color.green2}
-            imageShadowColor={color.green2}
-          >
-            <Heading size={2} template={4} left>
-              Look at who your competitors are in the space
-            </Heading>
-            <Paragraph bottomPadding={0} bottomMargin={0}>
-              Look at who your competitors are in the space: Having competitors
-              is a good thing as it shows there’s a market. You will want to
-              find out what local competitors offer the same services you do.
-            </Paragraph>
-          </TextBlockWithImage>
-
-          <TextBlockWithImage
-            width={100}
-            widthUnit="%"
-            SvgImage={MarketIcon}
-            imageBackgroundColor={color.orange2}
-            imageShadowColor={color.orange2}
-          >
-            <Heading size={2} template={4} left>
-              Do market research
-            </Heading>
-            <Paragraph bottomPadding={0} bottomMargin={0}>
-              Test whether people will commit to spending real money on what
-              you’re offering.
-            </Paragraph>
-          </TextBlockWithImage>
-
-          <TextBlockWithImage
-            width={100}
-            widthUnit="%"
-            SvgImage={TalkIcon}
-            imageBackgroundColor={color.purple2}
-            imageShadowColor={color.purple2}
-          >
-            <Heading size={2} template={4} left>
-              Talk to clients
-            </Heading>
-            <Paragraph bottomPadding={0} bottomMargin={0}>
-              See if there are any market research reports for landscaping
-              businesses: Search locally, nationally or internationally.
             </Paragraph>
           </TextBlockWithImage>
 
@@ -772,10 +768,10 @@ const LandscapingBusiness = () => (
             </Paragraph>
 
             <Paragraph big>
-              This is the "default" business structure and is what your
-              influencer business will be if you decide not to create a more
-              formal structure. We don't recommend this type of business as it
-              doesn't give you the legal protections you need.
+              This is the "default" business structure and is what your business
+              will be if you decide not to create a more formal structure. We
+              don't recommend this type of business as it doesn't give you the
+              legal protections you need.
             </Paragraph>
           </TextBlockWithImage>
 
@@ -810,7 +806,8 @@ const LandscapingBusiness = () => (
             <Paragraph big>
               The most common type of business entity. An LLC is fast, simple
               and inexpensive to setup and maintain. It protects your personal
-              finances and assets and is a great way to start your real estate
+              finances and assets and is a great way to start your landscaping
+              business.
             </Paragraph>
           </TextBlockWithImage>
 
@@ -920,12 +917,20 @@ const LandscapingBusiness = () => (
               need.
             </Paragraph>
           </TextBlockWithImage>
-
           <Paragraph
             big
-            style={{ paddingTop: "48px", paddingBottom: 0 }}
-            mixed={true}
+            style={{
+              fontFamily: "Avenir",
+              fontWeight: "900",
+              marginTop: "48px",
+              color: color.black,
+              paddingBottom: 0,
+            }}
           >
+            Special Considerations for Setting up a Landscaping Business Entity
+          </Paragraph>
+
+          <Paragraph big style={{ paddingBottom: 0 }} mixed={true}>
             For more information on the advantages and disadvantages of
             different types of businesses,{" "}
             <Link to="/business-entity-comparison/">
@@ -941,43 +946,6 @@ const LandscapingBusiness = () => (
               structure
             </a>{" "}
             for your landscaping business.
-          </Paragraph>
-          <Paragraph
-            big
-            style={{ paddingTop: "48px", paddingBottom: 0 }}
-            mixed={true}
-          >
-            In most cases, our recommendation for a landscaping business would
-            be to create an LLC. We’ve
-            <Link to="/form-an-llc/">got a complete guide</Link> to everything
-            you need to do.{" "}
-            <Link to="/llc-state-information/">
-              LLC formation does vary from state to state
-            </Link>
-            , but we’ve got you covered, wherever you are.
-          </Paragraph>
-
-          <Paragraph
-            big
-            style={{
-              fontFamily: "Avenir",
-              fontWeight: "900",
-              marginTop: "48px",
-              color: color.black,
-              paddingBottom: 0,
-            }}
-          >
-            Special Considerations for Setting up a Landscaping Business Entity
-          </Paragraph>
-          <Paragraph big>
-            For more information on the advantages and disadvantages of
-            different types of businesses, please see our in-depth guide on
-            business entities. If you still have questions,{" "}
-            <Link to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/">
-              we’ve answered them to help you choose the right business
-              structure
-            </Link>
-            .
           </Paragraph>
           <Paragraph big mixed>
             In most cases our recommendation would be to create an LLC. We have{" "}
