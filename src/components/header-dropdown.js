@@ -780,7 +780,7 @@ const Header = ({ siteTitle }) => {
 				</Navigation>
                 <LoginWrapper>
                     {showPhone &&
-                        <Phone href="tel:1888.462.3453"><PhoneIconSVG /><span>1888.462.3453</span></Phone>
+                        <Phone href="tel:1(888)462-3453"><PhoneIconSVG /><span>1 (888) 462-3453</span></Phone>
                     }
 					<Login href={`${process.env.ORDER_URL}/dashboard`}>Login</Login>
                     <Button
