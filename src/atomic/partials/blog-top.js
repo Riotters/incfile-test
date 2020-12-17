@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Image from "../../components/image_nobase64";
+import Image from "../atoms/image/image_nobase64";
 import Container from "../../atomic/container";
 import { color } from "../../atomic/atoms/styles/colors";
 import OvalSVG from "../../images/icons/oval-blue-mini.inline.svg";

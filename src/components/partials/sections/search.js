@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Container from "../../container";
 //import Searchbar from "../../searchbar"
-import Image from "../../image_nobase64";
+import Image from "../../../atomic/atoms/image/image_nobase64";
 import OvalSVG from "../../../images/oval-yellow-3.inline.svg";
 import CurveSVG from "../../../images/yellow-curve.inline.svg";
 import VisibilitySensor from "../../VisibilitySensor";
