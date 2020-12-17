@@ -17,12 +17,7 @@ const IsItForYou = ({ content }) => (
 		<Oval height="570" width="570" top="40" right="0" zIndex="0">
 			<OvalSvg />
 		</Oval>
-		<TextCenterLayout
-			headline={content.header}
-			text={content.text}
-			headlineWidth={770}
-			textWidth={770}
-		/>
+		<TextCenterLayout headline={content.header} headlineWidth={770} />
 
 		<Container>
 			<AdventagesWrapper>

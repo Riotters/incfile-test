@@ -1,12 +1,12 @@
 import React from 'react';
-import { navigate} from "gatsby";
+import { Helmet } from 'react-helmet';
 
 const NonprofitCorporation = () => {
-    if (typeof window !== 'undefined') {
-        navigate('/what-is-non-profit-corporation/');
-    }
-    
-    return null;
+    return (
+        <Helmet>
+            <meta http-equiv="refresh" content="0;url=/what-is-non-profit-corporation/" />
+        </Helmet>
+    );
 }
 
 export default NonprofitCorporation;

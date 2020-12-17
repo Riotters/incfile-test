@@ -1,14 +1,16 @@
 import PropTypes from "prop-types";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import LogoSVG from "../images/logo.inline.svg";
-import Button from "./button";
+import Button from "../atomic/molecules/buttons/button";
 import DropdownSVG from "../images/dropdown.inline.svg";
+import PhoneIconSVG from "../images/icons/phone-orange.inline.svg";
 import { color } from "../atomic/atoms/styles/colors";
 import { shadow } from "../atomic/atoms/styles/shadows";
 import { Heading } from "../atomic/atoms/typography/heading";
 import ArrowLink from "../atomic/molecules/buttons/text";
+import { getPhoneStatus } from "../api/Api";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -29,7 +31,7 @@ const Logo = styled.div`
 	padding-right: 25px;
 
 	@media (min-width: 1200px) {
-		width: 200px;
+		width: 160px;
 	}
 `;
 
@@ -196,7 +198,7 @@ const LoginWrapper = styled.div`
 			padding: 4px 24px;
 
 			@media (min-width: 1200px) {
-				padding: 6px 38px;
+				padding: 6px 20px;
 			}
 		}
 	}
@@ -366,6 +368,22 @@ const SubmenuColumn = styled.ul`
 	}
 `;
 
+const Phone = styled.a`
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 !important;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FD8550;
+
+    @media screen and (min-width: 991px) and (max-width: 1350px) {
+        span{
+            display: none;
+        }
+    }
+`
+
 function handleHeaderClick(e) {
 	let menuItem = e.target.closest(".menu-item-l1");
 
@@ -408,6 +426,14 @@ const BottomLink = styled.div`
 
 const Header = ({ siteTitle }) => {
 	const [menu, showMenu, active] = useState(false);
+
+    const [showPhone, setShowPhone] = useState(false);
+
+    useEffect(() => {
+        getPhoneStatus().then(res => {
+            setShowPhone(res.status === 'show' ? true : false);
+        });
+    }, []);
 
 	return (
 		<Wrapper>
@@ -752,15 +778,17 @@ const Header = ({ siteTitle }) => {
 						</Menu>
 					</NavigationMobileScrollHidden>
 				</Navigation>
-				<LoginWrapper>
+                <LoginWrapper>
+                    {showPhone &&
+                        <Phone href="tel:1888.462.3453"><PhoneIconSVG /><span>1888.462.3453</span></Phone>
+                    }
 					<Login href={`${process.env.ORDER_URL}/dashboard`}>Login</Login>
-					<Button
-						theme="secondary40"
-						to={`${process.env.ORDER_URL}/form-order-now.php`}
+                    <Button
+                        externalLink
+                        theme="secondary40"
+                        content={{text: `Incorporate now`, url: `${process.env.ORDER_URL}/form-order-now.php`}}
 						width="100%"
-					>
-						Incorporate now
-					</Button>
+					/>
 				</LoginWrapper>
 			</MobileWrapper>
 			<Hamburger hamburger={menu} onClick={() => showMenu(!menu)}>
