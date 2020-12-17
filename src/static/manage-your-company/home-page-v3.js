@@ -1,9 +1,7 @@
-import React from "react";
-
 export const top = {
 	header: "The Fastest & Easiest Way\n" + " To Start Your Business",
 	text:
-		"Join Over <span>500,000</span> Businesses Launched With incfile Since <span>2004</span>",
+		"Join Over <span>500,000</span> Businesses Launched With Incfile Since <span>2004</span>",
 
 	button: [
 		{

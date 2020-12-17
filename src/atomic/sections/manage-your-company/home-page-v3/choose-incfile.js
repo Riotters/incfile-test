@@ -61,7 +61,7 @@ const ChooseIncfile = ({ className, content }) => (
 				<Anchor>
 					<Heading size={2}>{content.header}</Heading>
 					<ImageWrapper width={330} height={223} top={-50} right={-220}>
-						<Image filename="bronze-stevie-winner-0419" />
+						<Image filename="bronze-stevie-winner-0419" alt="stevie winner 2019" />
 					</ImageWrapper>
 				</Anchor>
 				<Heading size={3} template={5}>
@@ -72,7 +72,7 @@ const ChooseIncfile = ({ className, content }) => (
 				<Anchor>
 					<Paragraph big>{content.text3}</Paragraph>
 					<ImageWrapper width={335} height={211} top={0} right={-387}>
-						<Image filename="enterpreneur-360-5900" />
+						<Image filename="enterpreneur-360-5900" alt="best company 2019" />
 					</ImageWrapper>
 				</Anchor>
 				<Paragraph big>{content.text4}</Paragraph>

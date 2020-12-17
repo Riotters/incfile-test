@@ -3,7 +3,6 @@ import styled from "styled-components";
 import parse from 'html-react-parser';
 import HeadingCenter from "../../partials/heading-center";
 import ContentCenter from "../../partials/content-center";
-import Image from '../../atoms/image/image_nobase64';
 import Oval from "../../atoms/icons/oval";
 import { color } from '../../../components/styles/colors';
 import OvalSVG from "../../../images/ovals/top-right-transparent-orange.inline.svg";
@@ -11,10 +10,6 @@ import OvalSVG2 from "../../../images/ovals/top-left-transparent-orange2.inline.
 import ShapeCurve from "../../atoms/shapes/curve";
 import RelativeElement from '../../elements/relative-e';
 import AbsoluteShapCure from '../../elements/absolute-shape-curve-e';
-import FormControl from "../../molecules/form/form-control";
-import Row from "../../molecules/helpers/row";
-import InputField from "../../molecules/form/input-field";
-import Button from "../../../components/button";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import Whitebox from "../../atoms/boxes/white-box";

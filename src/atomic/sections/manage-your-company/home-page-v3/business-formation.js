@@ -41,7 +41,7 @@ const BusinessFormation = ({ className, content }) => (
     <Oval className="oval" height="420" width="420" top="26" right="0">
       <BottomRightOvalSVG />
     </Oval>
-    <ImageContent image="mrs-review-stars-5481" contentCenter={true}>
+    <ImageContent image="mrs-review-stars-5481" alt="business formation" contentCenter={true}>
       <Anchor maxWidth={520}>
         <Heading size={2} maxWidth={520} bottomMargin="24">
           {content.header}

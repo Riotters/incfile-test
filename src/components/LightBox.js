@@ -35,7 +35,7 @@ class LightBox extends Component {
     return (
       <Fragment>
         <WrapperVideo bottomMargin={bottomMargin}>
-          <Image filename={thumbnailVideo} alt="" />
+          <Image filename={thumbnailVideo} alt={this.props.alt} />
           <PlayButton onClick={(e) => this.openModal(e)}>
             <span>
               <PlayerSVG />
@@ -196,3 +196,7 @@ LightBox.propTypes = {
   thumbnailVideo: PropTypes.string.isRequired,
   videoID: PropTypes.string.isRequired,
 };
+
+LightBox.defaultProps = {
+    alt: `how to start a business`
+}
