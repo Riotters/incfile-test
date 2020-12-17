@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import LogoSVG from "../images/logo.inline.svg";
@@ -10,6 +10,7 @@ import { color } from "../atomic/atoms/styles/colors";
 import { shadow } from "../atomic/atoms/styles/shadows";
 import { Heading } from "../atomic/atoms/typography/heading";
 import ArrowLink from "../atomic/molecules/buttons/text";
+import { getPhoneStatus } from "../api/Api";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -367,16 +368,19 @@ const SubmenuColumn = styled.ul`
 	}
 `;
 
-const Phone = styled.div`
+const Phone = styled.a`
     display: flex;
     align-items: center;
     gap: 8px;
+    padding: 0 !important;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FD8550;
 
-    a{
-        padding: 0 !important;
-        font-size: 16px;
-        font-weight: bold;
-        color: #FD8550;
+    @media screen and (min-width: 991px) and (max-width: 1350px) {
+        span{
+            display: none;
+        }
     }
 `
 
@@ -422,6 +426,14 @@ const BottomLink = styled.div`
 
 const Header = ({ siteTitle }) => {
 	const [menu, showMenu, active] = useState(false);
+
+    const [showPhone, setShowPhone] = useState(false);
+
+    useEffect(() => {
+        getPhoneStatus().then(res => {
+            setShowPhone(res.status === 'show' ? true : false);
+        });
+    }, []);
 
 	return (
 		<Wrapper>
@@ -767,7 +779,9 @@ const Header = ({ siteTitle }) => {
 					</NavigationMobileScrollHidden>
 				</Navigation>
                 <LoginWrapper>
-                    <Phone><PhoneIconSVG /> <a href="tel:1888.462.3453">1888.462.3453</a></Phone>
+                    {showPhone &&
+                        <Phone href="tel:1888.462.3453"><PhoneIconSVG /><span>1888.462.3453</span></Phone>
+                    }
 					<Login href={`${process.env.ORDER_URL}/dashboard`}>Login</Login>
                     <Button
                         externalLink

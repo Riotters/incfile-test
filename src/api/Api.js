@@ -61,3 +61,10 @@ export const getRelatedPosts = async (categoryId, limit = 9) => {
     
     return data;
 }
+
+export const getPhoneStatus = async () => {
+    const data = await fetch(`${process.env.INCFILE_API_URL}/util/check-phone-show-status`)
+        .then(response => response.json());
+    
+    return data;
+}
