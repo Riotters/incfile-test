@@ -61,13 +61,13 @@ const CartBlock = () => {
 
     React.useEffect(() => {
         if (typeof window !== 'undefined') {
-            let _totalReviews = 18927;
+            let _totalReviews = 15858;
 
             if (sessionStorage.getItem('__total_reviews')) {
                 _totalReviews = sessionStorage.getItem('__total_reviews');
             } else {
                 getAggregrateReviews().then((data) => {
-                    _totalReviews = data['total_reviews'];
+                    _totalReviews = data['5_star'];
                     sessionStorage.setItem('__total_reviews', _totalReviews);
                 });
             }
@@ -79,14 +79,6 @@ const CartBlock = () => {
                 jsDynamicTotalReviews.innerHTML = formatNumber(_totalReviews);
             }
         }
-        // getAggregrateReviews().then((data) => {
-        //     setFiveStarsNumber(formatNumber(data["total_reviews"]));
-
-        //     if (document.getElementById('js_dynamic_total_review')) {
-        //         const jsDynamicTotalReviews = document.getElementById('js_dynamic_total_review');
-        //         jsDynamicTotalReviews.innerHTML = formatNumber(data["total_reviews"]);
-        //     }
-        // });
     }, []);
 
   return (

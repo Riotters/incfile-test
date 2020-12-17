@@ -45,7 +45,8 @@ const MobileWrapper = styled.nav`
 	height: calc(100vh - 80px);
 	min-height: -webkit-fill-available;
 	width: 100%;
-	padding: 40px;
+    padding: 40px 30px;
+    zIndex: 999;
 
 	@media (min-width: 992px) {
 		display: flex;
@@ -127,7 +128,7 @@ const MenuItem = styled.li`
 
 			&:last-child {
 				display: grid;
-				padding: 24px 32px;
+				padding: 24px 0px 24px 15px;
 			}
 		}
 
@@ -167,8 +168,12 @@ const LoginWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	width: 200px;
-	margin-top: 25px;
+	//width: 200px;
+    margin-top: 25px;
+    
+    @media screen and (min-width: 1400px) {
+        width: 200px;
+    }
 
 	@media (min-width: 992px) {
 		flex-direction: row;
@@ -376,6 +381,8 @@ const Phone = styled.a`
     font-size: 16px;
     font-weight: bold;
     color: #FD8550;
+    width: 100%;
+    justify-content: center;    
 
     @media screen and (min-width: 991px) and (max-width: 1390px) {
         span{
@@ -387,10 +394,11 @@ const Phone = styled.a`
 const NavigationMobileScrollHidden = styled.div`
 	@media (max-width: 991px) {
 		position: relative;
-		right: -17px;
+		right: -15px;
 		max-height: 100%;
 		overflow: hidden auto;
-		width: 100%;
+        width: 100%;
+        z-index: 999;
 	}
 `;
 
