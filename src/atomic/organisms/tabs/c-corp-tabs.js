@@ -338,7 +338,8 @@ const CCorpTabs = ({ layout, columns, content }) => {
 								layout={layout}
 							>
 								<Heading size="2" template={3} left>{content.content[0].header}</Heading>
-								<LightBoxVideo
+                                <LightBoxVideo
+                                    alt="what is a c corporation"
 									thumbnailVideo="what-is-a-c-corporation-2737"
 									videoID="BmZ7zyLd710"
 									bottomMargin="32"

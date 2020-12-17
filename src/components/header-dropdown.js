@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import LogoSVG from "../images/logo.inline.svg";
@@ -10,6 +10,7 @@ import { color } from "../atomic/atoms/styles/colors";
 import { shadow } from "../atomic/atoms/styles/shadows";
 import { Heading } from "../atomic/atoms/typography/heading";
 import ArrowLink from "../atomic/molecules/buttons/text";
+import { getPhoneStatus } from "../api/Api";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -44,7 +45,8 @@ const MobileWrapper = styled.nav`
 	height: calc(100vh - 80px);
 	min-height: -webkit-fill-available;
 	width: 100%;
-	padding: 40px;
+    padding: 40px 30px;
+    zIndex: 999;
 
 	@media (min-width: 992px) {
 		display: flex;
@@ -126,7 +128,7 @@ const MenuItem = styled.li`
 
 			&:last-child {
 				display: grid;
-				padding: 24px 32px;
+				padding: 24px 0px 24px 15px;
 			}
 		}
 
@@ -166,8 +168,12 @@ const LoginWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	width: 200px;
-	margin-top: 25px;
+	//width: 200px;
+    margin-top: 25px;
+    
+    @media screen and (min-width: 1400px) {
+        width: 200px;
+    }
 
 	@media (min-width: 992px) {
 		flex-direction: row;
@@ -367,36 +373,32 @@ const SubmenuColumn = styled.ul`
 	}
 `;
 
-const Phone = styled.div`
+const Phone = styled.a`
     display: flex;
     align-items: center;
     gap: 8px;
+    padding: 0 !important;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FD8550;
+    width: 100%;
+    justify-content: center;    
 
-    a{
-        padding: 0 !important;
-        font-size: 16px;
-        font-weight: bold;
-        color: #FD8550;
+    @media screen and (min-width: 991px) and (max-width: 1390px) {
+        span{
+            display: none;
+        }
     }
 `
-
-function handleHeaderClick(e) {
-	let menuItem = e.target.closest(".menu-item-l1");
-
-	if (menuItem.className.indexOf("active") > -1) {
-		menuItem.className = menuItem.className.replace(" active", "");
-	} else {
-		menuItem.className += " active";
-	}
-}
 
 const NavigationMobileScrollHidden = styled.div`
 	@media (max-width: 991px) {
 		position: relative;
-		right: -17px;
+		right: -15px;
 		max-height: 100%;
 		overflow: hidden auto;
-		width: 100%;
+        width: 100%;
+        z-index: 999;
 	}
 `;
 
@@ -420,8 +422,27 @@ const BottomLink = styled.div`
 	}
 `;
 
+function handleHeaderClick(e) {
+	let menuItem = e.target.closest(".menu-item-l1");
+
+	if (menuItem.className.indexOf("active") > -1) {
+		menuItem.className = menuItem.className.replace(" active", "");
+	} else {
+		menuItem.className += " active";
+	}
+}
+
+
 const Header = ({ siteTitle }) => {
 	const [menu, showMenu, active] = useState(false);
+
+    const [showPhone, setShowPhone] = useState(false);
+
+    useEffect(() => {
+        getPhoneStatus().then(res => {
+            setShowPhone(res.status === 'show' ? true : false);
+        });
+    }, []);
 
 	return (
 		<Wrapper>
@@ -575,7 +596,7 @@ const Header = ({ siteTitle }) => {
 									<BottomLink>
 										<ArrowLink
 											content={{
-												url: `${process.env.SITE_URL}/dashboard`,
+												url: `${process.env.ORDER_URL}/dashboard`,
 												text: "View Your Dashboard",
 											}}
 										/>
@@ -767,7 +788,9 @@ const Header = ({ siteTitle }) => {
 					</NavigationMobileScrollHidden>
 				</Navigation>
                 <LoginWrapper>
-                    <Phone><PhoneIconSVG /> <a href="tel:1888.462.3453">1888.462.3453</a></Phone>
+                    {showPhone &&
+                        <Phone href="tel:1(888)462-3453"><PhoneIconSVG /><span>1(888).462.3453</span></Phone>
+                    }
 					<Login href={`${process.env.ORDER_URL}/dashboard`}>Login</Login>
                     <Button
                         externalLink

@@ -58,11 +58,11 @@ const CCorporation = () => {
                 productName="C Corporation Right For Your Business"
                 productDescription="Information regarding the steps necessary to form and operate an C Corporation in all 50 states"
             />
-            <Top imageName="review-entity-type-c-corp" imageAlt="Mrs Bulb and with checklist" ovalColor="green">
+            <Top imageName="review-entity-type-c-corp" imageAlt="what is a C Corporation" ovalColor="green">
                 <h1>{top.header}</h1>
                 <HeadingP size={2} big>{top.text}</HeadingP>
                 <Buttonsbox>
-                    <Button content={top.button[0]} theme="primary56" arrow />
+                    <Button externalLink content={top.button[0]} theme="primary56" arrow />
                 </Buttonsbox>
             </Top>
             <About content={about} />
