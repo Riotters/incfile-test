@@ -377,22 +377,12 @@ const Phone = styled.a`
     font-weight: bold;
     color: #FD8550;
 
-    @media screen and (min-width: 991px) and (max-width: 1350px) {
+    @media screen and (min-width: 991px) and (max-width: 1390px) {
         span{
             display: none;
         }
     }
 `
-
-function handleHeaderClick(e) {
-	let menuItem = e.target.closest(".menu-item-l1");
-
-	if (menuItem.className.indexOf("active") > -1) {
-		menuItem.className = menuItem.className.replace(" active", "");
-	} else {
-		menuItem.className += " active";
-	}
-}
 
 const NavigationMobileScrollHidden = styled.div`
 	@media (max-width: 991px) {
@@ -423,6 +413,17 @@ const BottomLink = styled.div`
 		grid-column: 1 / span 2;
 	}
 `;
+
+function handleHeaderClick(e) {
+	let menuItem = e.target.closest(".menu-item-l1");
+
+	if (menuItem.className.indexOf("active") > -1) {
+		menuItem.className = menuItem.className.replace(" active", "");
+	} else {
+		menuItem.className += " active";
+	}
+}
+
 
 const Header = ({ siteTitle }) => {
 	const [menu, showMenu, active] = useState(false);
@@ -780,7 +781,7 @@ const Header = ({ siteTitle }) => {
 				</Navigation>
                 <LoginWrapper>
                     {showPhone &&
-                        <Phone href="tel:1(888)462-3453"><PhoneIconSVG /><span>1 (888) 462-3453</span></Phone>
+                        <Phone href="tel:1(888)462-3453"><PhoneIconSVG /><span>1(888).462.3453</span></Phone>
                     }
 					<Login href={`${process.env.ORDER_URL}/dashboard`}>Login</Login>
                     <Button
