@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import parser from "html-react-parser";
-import { color, gradient } from "../../../atoms/styles/colors";
+import { color } from "../../../atoms/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Card from "../../../molecules/mixed-blocks/top-image-box";

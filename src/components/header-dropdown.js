@@ -588,7 +588,7 @@ const Header = ({ siteTitle }) => {
 									<BottomLink>
 										<ArrowLink
 											content={{
-												url: `${process.env.SITE_URL}/dashboard`,
+												url: `${process.env.ORDER_URL}/dashboard`,
 												text: "View Your Dashboard",
 											}}
 										/>

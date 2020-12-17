@@ -35,7 +35,7 @@ const FictitiousBusiness = () => (
             <h1>{top.header}</h1>
             <p>{top.text}</p>
             <Buttonsbox>
-                <Button extends content={top.button[0]} theme="primary56" arrow />
+                <Button externalLink content={top.button[0]} theme="primary56" arrow />
             </Buttonsbox>
         </Top>
         <About content={about} />

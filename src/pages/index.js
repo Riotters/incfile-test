@@ -27,7 +27,7 @@ const HomePageV3 = () => {
 			/>
 			<Top
 				imageName="home-page-v3-top-9458"
-				imageAlt="Start your own company"
+				imageAlt="llc filing & business formation"
 				ovalColor="green"
 				headlineWidth="700"
 				textWidth="700"

@@ -50,8 +50,8 @@ const AboutSection = ({ className, content }) => (
             <PHeading size={4} bottomMargin="48" style={{ textAlign: "center" }}>
                 {content.header2}
             </PHeading>
-            <LightBoxVideo thumbnailVideo="what-does-dba-mean-7388" videoID="jPE31BJPUeY" bottomMargin="48" />
-            <Button theme="secondary56" content={content.button} arrow />
+            <LightBoxVideo alt="what does dba mean" thumbnailVideo="what-does-dba-mean-7388" videoID="jPE31BJPUeY" bottomMargin="48" />
+            <Button externalLink theme="secondary56" content={content.button} arrow />
         </ContentCenter>
     </About>
 );

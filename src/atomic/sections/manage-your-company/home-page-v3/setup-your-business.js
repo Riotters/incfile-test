@@ -52,7 +52,7 @@ const SetupYourBusiness = ({ className, content }) => (
         <Curve top="-115" left="-115" color={color.purple2}>
           <CurveSVG />
         </Curve>
-        <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="R_oIgzYh7NU" />
+        <LightBoxVideo thumbnailVideo="comparison-chart-video-3611" videoID="R_oIgzYh7NU" alt="how to start an LLC" />
       </Video>
     </ContentCenter>
 

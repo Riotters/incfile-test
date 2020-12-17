@@ -17,7 +17,7 @@ const Differences = styled.section`
 const DifferencesSection = ({ className, content }) => (
   <Differences className={className}>
     <HeadingCenter className="heading" headline={content.header} headlineWidth="770" text={content.text} />
-    <ImageContent image="business-license-requirements" contentCenter>
+    <ImageContent image="business-license-requirements" alt="different between s corp, c corp and llc" contentCenter>
       <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} rounded curve headingSize={3} paragraphHeader />
     </ImageContent>
     <ContentCenter>
