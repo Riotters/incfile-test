@@ -25,11 +25,29 @@ const Grants = () => (
     </ContentCenter>
 
     <AdventagesWrapper>
-      <Adventages text="Nearly two-thirds of female entrepreneurs say their business is their main source of income" width="470px" circleBackgroundColor={color.blue1} circleBackgroundShadow={shadow.blue1} circleText={1} />
+      <Adventages
+        text="Follow the application process to the letter, otherwise your application will be rejected"
+        width="470px"
+        circleBackgroundColor={color.blue1}
+        circleBackgroundShadow={shadow.blue1}
+        circleText={1}
+      />
 
-      <Adventages text="Show the real benefits of your business in terms of local improvement, social good, generating revenue, employing others." width="470px" circleBackgroundColor={color.blue1} circleBackgroundShadow={shadow.blue1} circleText={2} />
+      <Adventages
+        text="Show the real benefits of your business in terms of local improvement, social good, generating revenue, employing others."
+        width="470px"
+        circleBackgroundColor={color.blue1}
+        circleBackgroundShadow={shadow.blue1}
+        circleText={2}
+      />
 
-      <Adventages text="Show that you have a strong business plan, you’ve completed your research and you know your market" width="470px" circleBackgroundColor={color.blue1} circleBackgroundShadow={shadow.blue1} circleText={3} />
+      <Adventages
+        text="Show that you have a strong business plan, you’ve completed your research and you know your market"
+        width="470px"
+        circleBackgroundColor={color.blue1}
+        circleBackgroundShadow={shadow.blue1}
+        circleText={3}
+      />
     </AdventagesWrapper>
 
     <TextCenterLayout
@@ -41,7 +59,11 @@ const Grants = () => (
 
     <Container>
       <BoxWrapper>
-        <Franchise href="https://www.girlboss.com/foundation" target="_blank" rel="noopener noreferrer">
+        <Franchise
+          href="https://www.girlboss.com/foundation"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <TopContent width={129} height={33} className="topContent">
             <div>
               <Image filename="girlboss-logo" />
@@ -58,7 +80,11 @@ const Grants = () => (
           </BottomContent>
         </Franchise>
 
-        <Franchise to="https://www.sba.gov/local-assistance/find/?type=Women%27s%20Business%20Center&pageNumber=1" target="_blank" rel="noopener noreferrer">
+        <Franchise
+          to="https://www.sba.gov/local-assistance/find/?type=Women%27s%20Business%20Center&pageNumber=1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <TopContent width={84} height={48} className="topContent">
             <div>
               <Image filename="sba-logo" />
@@ -75,7 +101,11 @@ const Grants = () => (
           </BottomContent>
         </Franchise>
 
-        <Franchise to="https://ambergrantsforwomen.com/get-an-amber-grant/" target="_blank" rel="noopener noreferrer">
+        <Franchise
+          to="https://ambergrantsforwomen.com/get-an-amber-grant/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <TopContent width={102} height={68} className="topContent">
             <div>
               <Image filename="womensnet-logo" />
@@ -92,7 +122,11 @@ const Grants = () => (
           </BottomContent>
         </Franchise>
 
-        <Franchise to="https://www.eileenfisher.com/social-consciousness/grants-overview" target="_blank" rel="noopener noreferrer">
+        <Franchise
+          to="https://www.eileenfisher.com/social-consciousness/grants-overview"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <TopContent width={83} height={41} className="topContent">
             <div>
               <Image filename="eileen-fisher-2-logo" />
@@ -109,7 +143,11 @@ const Grants = () => (
           </BottomContent>
         </Franchise>
 
-        <Franchise to="https://sites.google.com/site/openmeadowsfoundation/" target="_blank" rel="noopener noreferrer">
+        <Franchise
+          to="https://sites.google.com/site/openmeadowsfoundation/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <TopContent width={80} height={80} className="topContent">
             <div>
               <Image filename="open-logo" />
@@ -126,7 +164,11 @@ const Grants = () => (
           </BottomContent>
         </Franchise>
 
-        <Franchise to="http://www.grantsforwomen.org/" target="_blank" rel="noopener noreferrer">
+        <Franchise
+          to="http://www.grantsforwomen.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <TopContent width={102} height={50} className="topContent">
             <div>
               <Image filename="grants-for-women-logo" />
@@ -143,7 +185,11 @@ const Grants = () => (
           </BottomContent>
         </Franchise>
 
-        <Franchise to="https://grant.halsteadbead.com/" target="_blank" rel="noopener noreferrer">
+        <Franchise
+          to="https://grant.halsteadbead.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <TopContent width={60} height={60} className="topContent">
             <div>
               <Image filename="eileen-fisher-logo" />
@@ -170,26 +216,26 @@ const Wrapper = styled.section`
 `;
 
 const BoxWrapper = styled.div`
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 100%;
-    justify-content: center;
-    column-gap: 30px;
-    row-gap: 72px;
-    margin-top: 76px;
-    margin-bottom: 76px;; 
-    
-    @media (min-width: 390px){
-        grid-template-columns: 370px;
-    }
-    
-    @media (min-width: 768px){
-        grid-template-columns: 370px 370px;
-    }
-    
-    @media (min-width: 1200px){
-        grid-template-columns: 370px 370px 370px;
-    }
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 100%;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 72px;
+  margin-top: 76px;
+  margin-bottom: 76px;
+
+  @media (min-width: 390px) {
+    grid-template-columns: 370px;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: 370px 370px;
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: 370px 370px 370px;
+  }
 `;
 
 const Franchise = styled(Link)`
@@ -259,21 +305,21 @@ const Icon = styled.div`
 `;
 
 const AdventagesWrapper = styled.div`
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 100%;
-    justify-content: center;
-    column-gap: 30px;
-    row-gap: 20px;
-    margin-top: 76px;
-    margin-bottom: 76px;; 
-    
-    @media (min-width: 490px){
-        grid-template-columns: 470px;
-    }
-    
-    @media (min-width: 992px){
-        grid-template-columns: 470px 470px;
-    }
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 100%;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 20px;
+  margin-top: 76px;
+  margin-bottom: 76px;
+
+  @media (min-width: 490px) {
+    grid-template-columns: 470px;
+  }
+
+  @media (min-width: 992px) {
+    grid-template-columns: 470px 470px;
+  }
 `;
 export default Grants;

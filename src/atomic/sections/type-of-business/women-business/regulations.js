@@ -11,7 +11,7 @@ const Regulations = () => (
       style={{ paddingTop: "100px", paddingBottom: "100px" }}
       width={750}
     >
-      <Heading size={2}>
+      <Heading size={2} left>
         Rules, Regulations and Taxes for Your Woman-Owned Business
       </Heading>
       <Paragraph big mixed={true}>

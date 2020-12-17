@@ -319,7 +319,7 @@ export const TaxesAccordionContent = {
     {
       question: "Federal income tax",
       answer:
-        "You will need to pay income tax on any profits or earnings you take from your Etsy business. In most cases, profits from the business will “flow through” to your individual tax return and you will be taxed there.",
+        "You will need to pay income tax on any profits or earnings you take from your landscaping business. In most cases, profits from the business will “flow through” to your individual tax return and you will be taxed there.",
     },
     {
       question: "Self-employment tax",

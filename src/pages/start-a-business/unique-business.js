@@ -69,12 +69,7 @@ const UniqueBusiness = () => (
       </Oval>
 
       <ImageContent image="business-startup-guides" paddingTop="60">
-        <Heading
-          size={2}
-          template={3}
-          left
-          style={{ marginBottom: 0, maxWidth: "100%" }}
-        >
+        <Heading size={2} template={3} left>
           Starting a niche business could be a great idea
         </Heading>
         <Paragraph big bottomMargin={0}>
