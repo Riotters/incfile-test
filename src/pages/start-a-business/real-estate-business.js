@@ -617,10 +617,12 @@ const ListBox = styled.div`
 `;
 
 const TabsWrapper = styled.section`
-  margin-top: 120px;
+  margin-top: 104px;
+  margin-bottom: 32px;
   position: relative;
   @media (min-width: 992px) {
-    margin-top: 21px;
+    margin-top: 24px;
+    margin-bottom: 104px;
   }
 `;
 

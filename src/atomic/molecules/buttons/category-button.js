@@ -5,35 +5,35 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 const TabTitle = ({ content, arrow, icon }) => (
-    <>
-        {content.url ? (
-            <ButtonBox to={content.url}>
-                <Icon>{icon}</Icon>
-                <Content>
-                    <span>{content.header}</span>
+  <>
+    {content.url ? (
+      <ButtonBox to={content.url}>
+        <Icon>{icon}</Icon>
+        <Content>
+          <span>{content.header}</span>
 
-                    {/*{arrow &&*/}
-                    {/*<Arrow className="tabArrow">*/}
-                    {/*<ArrowSVG/>*/}
-                    {/*</Arrow>*/}
-                    {/*}*/}
-                </Content>
-            </ButtonBox>
-        ) : (
-            <ButtonBoxStatic>
-                <Icon>{icon}</Icon>
-                <Content>
-                    <span>{content.header}</span>
+          {/*{arrow &&*/}
+          {/*<Arrow className="tabArrow">*/}
+          {/*<ArrowSVG/>*/}
+          {/*</Arrow>*/}
+          {/*}*/}
+        </Content>
+      </ButtonBox>
+    ) : (
+      <ButtonBoxStatic>
+        <Icon>{icon}</Icon>
+        <Content>
+          <span>{content.header}</span>
 
-                    {/*{arrow &&*/}
-                    {/*<Arrow className="tabArrow">*/}
-                    {/*<ArrowSVG/>*/}
-                    {/*</Arrow>*/}
-                    {/*}*/}
-                </Content>
-            </ButtonBoxStatic>
-        )}
-    </>
+          {/*{arrow &&*/}
+          {/*<Arrow className="tabArrow">*/}
+          {/*<ArrowSVG/>*/}
+          {/*</Arrow>*/}
+          {/*}*/}
+        </Content>
+      </ButtonBoxStatic>
+    )}
+  </>
 );
 
 export default TabTitle;
@@ -156,8 +156,8 @@ const ButtonBox = styled(Link)`
   &.active,
   &:hover {
     box-shadow: 0 40px 80px 0 #e6e6e6;
-    font-weight: 600;
     z-index: 1;
+    background-color: #e0f4fd;
 
     // .tabArrow {
     //   opacity: 1;

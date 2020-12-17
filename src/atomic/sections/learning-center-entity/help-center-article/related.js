@@ -9,9 +9,14 @@ import { Paragraph } from "../../../atoms/typography/paragraph";
 
 const Related = styled.section`
   position: relative;
-  padding-top: 104px;
-  padding-bottom: 104px;
+  padding-top: 48px;
+  padding-bottom: 32px;
   background-color: ${color.orange3};
+
+  @media (min-width: 992px) {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
 
   h1 {
     text-align: center;
@@ -36,7 +41,7 @@ const RelatedSection = ({
       >
         {content.header}
       </Heading>
-      <Paragraph big bottomMargin={68}>
+      <Paragraph big bottomMargin={32} bottomMarginLG={56}>
         {content.text}
       </Paragraph>
       <List content={content} />

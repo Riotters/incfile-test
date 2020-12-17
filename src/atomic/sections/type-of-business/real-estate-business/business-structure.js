@@ -20,8 +20,13 @@ import { HeadingP } from "../../../atoms/typography/heading-to-p";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
-  padding-top: 75px;
-  padding-bottom: 64px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @media (min-width: 992px) {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
 
   .colorbox {
     margin-bottom: 48px;
@@ -30,8 +35,12 @@ const BusinessOwnerResponsibilities = styled.section`
 
 const OrangeContainer = styled.div`
   background: ${gradient.orange3};
-  padding-bottom: 100px;
+  padding-bottom: 32px;
   position: relative;
+
+  @media (min-width: 992px) {
+    padding-bottom: 104px;
+  }
 `;
 
 const Oval = styled.div`
@@ -125,6 +134,7 @@ const BusinessStructure = () => (
             The most common type of business entity. An LLC is fast, simple and
             inexpensive to setup and maintain. It protects your personal
             finances and assets and is a great way to start your real estate.
+
           </Paragraph>
         </TextBlockWithImage>
 
@@ -274,7 +284,7 @@ const BusinessStructure = () => (
           </Link>
         </Paragraph>
 
-        <Heading size={3} style={{ maxWidth: "100%" }}>
+        <Heading size={3} style={{ maxWidth: "100%" }} bottomMargin={0}>
           Special Considerations for Setting up a Real Estate Business Entity
         </Heading>
 

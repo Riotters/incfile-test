@@ -138,7 +138,15 @@ const Arrow = styled.div`
 const getSuggestions = (value) => {
   const inputValue = value.trim().toLowerCase();
   const inputLength = inputValue.length;
-  return inputLength === 0 ? [] : pages.filter((el) => el.text.split(" ").some((term) => term.toLowerCase().slice(0, inputLength) === inputValue));
+  return inputLength === 0
+    ? []
+    : pages.filter((el) =>
+        el.text
+          .split(" ")
+          .some(
+            (term) => term.toLowerCase().slice(0, inputLength) === inputValue
+          )
+      );
 };
 
 const getSuggestionValue = (suggestion) => suggestion.text;
@@ -200,7 +208,14 @@ class Searchbar extends React.Component {
           <Icon>
             <SearchSVG />
           </Icon>
-          <Autosuggest suggestions={suggestions} onSuggestionsFetchRequested={this.onSuggestionsFetchRequested} onSuggestionsClearRequested={this.onSuggestionsClearRequested} getSuggestionValue={getSuggestionValue} renderSuggestion={renderSuggestion} inputProps={inputProps} />
+          <Autosuggest
+            suggestions={suggestions}
+            onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+            onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+            getSuggestionValue={getSuggestionValue}
+            renderSuggestion={renderSuggestion}
+            inputProps={inputProps}
+          />
         </Box>
       </Wrapper>
     );

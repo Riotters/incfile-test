@@ -295,8 +295,8 @@ const AccordionWithCounting = ({
 			)}
 			<Tabs>
 				<TabsWrapper>
-					{content.items.map((item) => (
-						<TabBox>
+					{content.items.map((item, i) => (
+						<TabBox key={i}>
 							<Tab>
 								<Content>
 									<Counting>{item.count}</Counting>

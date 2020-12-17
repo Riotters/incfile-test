@@ -45,7 +45,8 @@ const MobileWrapper = styled.nav`
 	height: calc(100vh - 80px);
 	min-height: -webkit-fill-available;
 	width: 100%;
-	padding: 40px;
+    padding: 40px 30px;
+    zIndex: 999;
 
 	@media (min-width: 992px) {
 		display: flex;
@@ -127,7 +128,7 @@ const MenuItem = styled.li`
 
 			&:last-child {
 				display: grid;
-				padding: 24px 32px;
+				padding: 24px 0px 24px 15px;
 			}
 		}
 
@@ -167,8 +168,12 @@ const LoginWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	width: 200px;
-	margin-top: 25px;
+	//width: 200px;
+    margin-top: 25px;
+    
+    @media screen and (min-width: 1400px) {
+        width: 200px;
+    }
 
 	@media (min-width: 992px) {
 		flex-direction: row;
@@ -376,31 +381,24 @@ const Phone = styled.a`
     font-size: 16px;
     font-weight: bold;
     color: #FD8550;
+    width: 100%;
+    justify-content: center;    
 
-    @media screen and (min-width: 991px) and (max-width: 1350px) {
+    @media screen and (min-width: 991px) and (max-width: 1390px) {
         span{
             display: none;
         }
     }
 `
 
-function handleHeaderClick(e) {
-	let menuItem = e.target.closest(".menu-item-l1");
-
-	if (menuItem.className.indexOf("active") > -1) {
-		menuItem.className = menuItem.className.replace(" active", "");
-	} else {
-		menuItem.className += " active";
-	}
-}
-
 const NavigationMobileScrollHidden = styled.div`
 	@media (max-width: 991px) {
 		position: relative;
-		right: -17px;
+		right: -15px;
 		max-height: 100%;
 		overflow: hidden auto;
-		width: 100%;
+        width: 100%;
+        z-index: 999;
 	}
 `;
 
@@ -423,6 +421,17 @@ const BottomLink = styled.div`
 		grid-column: 1 / span 2;
 	}
 `;
+
+function handleHeaderClick(e) {
+	let menuItem = e.target.closest(".menu-item-l1");
+
+	if (menuItem.className.indexOf("active") > -1) {
+		menuItem.className = menuItem.className.replace(" active", "");
+	} else {
+		menuItem.className += " active";
+	}
+}
+
 
 const Header = ({ siteTitle }) => {
 	const [menu, showMenu, active] = useState(false);
@@ -587,7 +596,7 @@ const Header = ({ siteTitle }) => {
 									<BottomLink>
 										<ArrowLink
 											content={{
-												url: `${process.env.SITE_URL}/dashboard`,
+												url: `${process.env.ORDER_URL}/dashboard`,
 												text: "View Your Dashboard",
 											}}
 										/>
@@ -780,7 +789,7 @@ const Header = ({ siteTitle }) => {
 				</Navigation>
                 <LoginWrapper>
                     {showPhone &&
-                        <Phone href="tel:1888.462.3453"><PhoneIconSVG /><span>1888.462.3453</span></Phone>
+                        <Phone href="tel:1(888)462-3453"><PhoneIconSVG /><span>1(888).462.3453</span></Phone>
                     }
 					<Login href={`${process.env.ORDER_URL}/dashboard`}>Login</Login>
                     <Button

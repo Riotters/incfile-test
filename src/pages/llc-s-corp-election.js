@@ -11,7 +11,6 @@ import ContentObject from "../atomic/partials/left-content-right-object";
 import ObjectContent from "../atomic/partials/left-object-right-content";
 import { color, gradient } from "../components/styles/colors";
 import Accordion from "../atomic/organisms/accordion/accordion";
-import Benefits from "../atomic/sections/manage-your-company/manage-your-company/benefits";
 import ArrowLink from "../atomic/molecules/buttons/text";
 import H2Text from "../atomic/molecules/text-blocks/h2-text";
 import H3Text from "../atomic/molecules/text-blocks/h3-text";
@@ -170,13 +169,13 @@ const CorpElection = () => (
 		/>
 		<Top
 			imageName="mrs-bulb-business-taxes"
-			imageAlt=""
+			imageAlt="s corp form 2553"
 			ovalColor="sun"
 		>
 			<h1>{top.header}</h1>
 			<p>{top.text}</p>
 			<Buttonsbox>
-				<Button extends content={top.button[0]} theme="primary56" arrow />
+				<Button externalLink content={top.button[0]} theme="primary56" arrow />
 			</Buttonsbox>
 		</Top>
 		<About content={about} />
@@ -280,7 +279,7 @@ const CorpElection = () => (
 		<BehalfFile>
 			<TextCenterLayout headline={behalfFile.header} text={behalfFile.text} />
 			<ContentCenter contentWidth="470">
-				<TopImageBox className="card" image="24-hours" color={color.orange3}>
+				<TopImageBox className="card" image="24-hours" imageAlt="use anytime" color={color.orange3}>
 					<Heading bottomMargin={0} size={3} template={4}>{behalfFile.header2}</Heading>
 					<p>
 						{behalfFile.text2}
@@ -310,7 +309,7 @@ const CorpElection = () => (
 			<ContentCenter contentWidth="770">
 				<H3Text content={help.saveYourTime} />
                 <Button
-                    extends
+                    externalLink
 					theme="primary56"
 					content={help.button}
 					margin="48px auto 0 auto"
