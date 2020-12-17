@@ -207,14 +207,15 @@ const WomenBusiness = () => (
       <Heading size={3} style={{ fontSize: "40px" }}>
         Conclusion
       </Heading>
-      <Paragraph big>
+      <Paragraph big mixed>
         When you’re ready to embark on your new entrepreneurial career, be sure
-        to take a look at our Start a Business Checklist to get your business
-        going in the best possible way. We’re confident you can find the perfect
-        business to fit in with your lifestyle. The speed of growth for
-        woman-owned businesses is necessary and inspiring. We hope you’ve found
-        this guide useful, and that it sets you on the path to building the next
-        great business as a female entrepreneur!
+        to take a look at our{" "}
+        <a href="/starting-a-business-checklist/">Start a Business Checklist</a>{" "}
+        to get your business going in the best possible way. We’re confident you
+        can find the perfect business to fit in with your lifestyle. The speed
+        of growth for woman-owned businesses is necessary and inspiring. We hope
+        you’ve found this guide useful, and that it sets you on the path to
+        building the next great business as a female entrepreneur!
       </Paragraph>
     </Conclusion>
   </Layout>

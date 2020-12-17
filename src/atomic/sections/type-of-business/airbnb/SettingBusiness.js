@@ -37,7 +37,7 @@ const SettingBusiness = () => (
             >
               business bank account
             </a>{" "}
-            for your airbnb business. You might also want to consider a business
+            for your Airbnb business. You might also want to consider a business
             credit card. Additionally, you will also need to keep careful
             bookkeeping records and file business and personal taxes. Here at
             Incfile{" "}

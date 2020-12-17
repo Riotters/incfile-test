@@ -67,38 +67,56 @@ const BusinessPlan = () => (
     </OvalCenter>
     <Container>
       <BusinessOwnerResponsibilities>
-        <Heading size={2} template={3} left>
+        <Heading size={2} left>
           Your Travel Agency Needs a Business Plan
         </Heading>
-        <Paragraph big>Profit margins in travel agency businesses can be tight (between 6 and 12 percent), so you need to stay on top of your finances and business planning.</Paragraph>
+        <Paragraph big>
+          Profit margins in travel agency businesses can be tight (between 6 and
+          12 percent), so you need to stay on top of your finances and business
+          planning.
+        </Paragraph>
 
         <Paragraph big>
-          A business plan will help you decide and define how you’re going to run your travel agency business, where you will get money, how you will market your tourism services, how you will create your sales plan and what you envision for your profitability and future growth.
+          A business plan will help you decide and define how you’re going to
+          run your travel agency business, where you will get money, how you
+          will market your tourism services, how you will create your sales plan
+          and what you envision for your profitability and future growth.
         </Paragraph>
 
         <Paragraph big style={{ fontWeight: "bold" }}>
-          All travel agencies need a solid business model, which is how you will generate sales, provide services and make money.
+          All travel agencies need a solid business model, which is how you will
+          generate sales, provide services and make money.
         </Paragraph>
 
-        <Paragraph big>Think about your travel and tourism business model now, because it’s better to have that in place so you can start acquiring customers and generating revenue from day one.</Paragraph>
+        <Paragraph big>
+          Think about your travel and tourism business model now, because it’s
+          better to have that in place so you can start acquiring customers and
+          generating revenue from day one.
+        </Paragraph>
 
-        <Paragraph big>Business plans do vary slightly, but they should all cover the following areas:</Paragraph>
+        <Paragraph big>
+          Business plans do vary slightly, but they should all cover the
+          following areas:
+        </Paragraph>
 
         <CountingTextBoxed number={1}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            An executive summary with the most important points from your business plan
+            An executive summary with the most important points from your
+            business plan
           </Paragraph>
         </CountingTextBoxed>
 
         <CountingTextBoxed number={2}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            Your goals and what you hope to achieve with your travel agency business
+            Your goals and what you hope to achieve with your travel agency
+            business
           </Paragraph>
         </CountingTextBoxed>
 
         <CountingTextBoxed number={3}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            A description of your travel agency business, including background information, your chosen niche and context
+            A description of your travel agency business, including background
+            information, your chosen niche and context
           </Paragraph>
         </CountingTextBoxed>
 
@@ -139,7 +157,10 @@ const BusinessPlan = () => (
         </CountingTextBoxed>
 
         <Paragraph big style={{ marginTop: "50px" }} mixed={true}>
-          We’ve got the perfect <Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">guide to writing your business plan.</Link>
+          We’ve got the perfect{" "}
+          <Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">
+            guide to writing your business plan.
+          </Link>
         </Paragraph>
       </BusinessOwnerResponsibilities>
     </Container>

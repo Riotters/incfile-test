@@ -103,7 +103,7 @@ const Bakery = () => (
           <PanelWrapper>
             <Paragraph big>
               We want to help you get your bakery business off the ground. Since
-              2004, we’ve helped over 100,000 people to become entrepreneurs,
+              2004, we’ve helped over 500,000 people to become entrepreneurs,
               starting exciting businesses and bringing their ideas to life.
               We’ll give you the support, guidance and advice you need to create
               a business and make it into a success.

@@ -32,7 +32,11 @@ const BusinessOwnerResponsibilities = styled.section`
 const Wrapper = styled.section`
   position: relative;
   background: white;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, #f2f6ff);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 40%,
+    #f2f6ff
+  );
 `;
 
 const Oval = styled.div`
@@ -75,19 +79,21 @@ const BusinessPlan = () => (
 
         <CountingTextBoxed number={1}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            An executive summary with the most important points from your business plan
+            An executive summary with the most important points from your
+            business plan
           </Paragraph>
         </CountingTextBoxed>
 
         <CountingTextBoxed number={2}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            An executive summary with the most important points from your business plan
+            Your goals and what you hope to achieve with your business
           </Paragraph>
         </CountingTextBoxed>
 
         <CountingTextBoxed number={3}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            A description of your woman-owned business, background information and context
+            A description of your woman-owned business, background information
+            and context
           </Paragraph>
         </CountingTextBoxed>
 
@@ -128,7 +134,10 @@ const BusinessPlan = () => (
         </CountingTextBoxed>
 
         <Paragraph big style={{ marginTop: "50px" }} mixed={true}>
-          We’ve got the perfect <Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">guide to writing your business plan.</Link>
+          We’ve got the perfect{" "}
+          <Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">
+            guide to writing your business plan.
+          </Link>
         </Paragraph>
       </BusinessOwnerResponsibilities>
     </Container>

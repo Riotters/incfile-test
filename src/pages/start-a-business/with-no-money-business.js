@@ -23,7 +23,6 @@ import OrderNow from "../../atomic/sections/type-of-business/with-no-money-busin
 import Regulations from "../../atomic/sections/type-of-business/with-no-money-business/regulations";
 import Taxes from "../../atomic/sections/type-of-business/with-no-money-business/taxes";
 import TaxesIntroduce from "../../atomic/sections/type-of-business/with-no-money-business/taxes-introduce";
-import ToolsAndLinks from "../../atomic/sections/type-of-business/with-no-money-business/tools";
 
 const WithNoMoneyBusiness = () => (
   <Layout>
@@ -92,11 +91,9 @@ const WithNoMoneyBusiness = () => (
 
     <Taxes />
 
-    <ToolsAndLinks />
-
     <Conclusion
       to={process.env.ORDER_URL + "/form-order-now.php"}
-      buttonTitle="Start your No Money Business with us, today"
+      buttonTitle="The time to start your new business is now."
     >
       <Heading size={3} style={{ fontSize: "40px" }}>
         Conclusion

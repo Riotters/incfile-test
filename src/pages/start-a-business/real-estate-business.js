@@ -32,6 +32,7 @@ import { Link } from "@reach/router";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
 import { Helmet } from "react-helmet";
+import LightBoxVideo from "../../components/LightBox";
 
 const RealEstateBusiness = () => (
   <Layout>
@@ -173,6 +174,12 @@ const RealEstateBusiness = () => (
                 </CkeckText>
               </ListBox>
             </ListWrapper>
+
+            <LightBoxVideo
+              thumbnailVideo="how-to-start-a-real-estate-business-9988"
+              videoID="Eef5Zuas2dQ"
+              bottomMargin={48}
+            />
 
             <Paragraph big>
               By the time you’ve read through our complete real estate investing

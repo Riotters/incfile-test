@@ -71,23 +71,40 @@ const BusinessPlan = () => (
           Your Publishing Business Needs a Plan
         </Heading>
         <Paragraph big>
-          You need to define how you’re going to run your publishing business, market yourself, generate revenue, make a profit and grow. This can only come about through creating a watertight business plan. It will help you get your thinking in order and show your commitment to your publishing
-          business.
+          You need to define how you’re going to run your publishing business,
+          market yourself, generate revenue, make a profit and grow. This can
+          only come about through creating a watertight business plan. It will
+          help you get your thinking in order and show your commitment to your
+          publishing business.
         </Paragraph>
 
         <Paragraph big style={{ fontWeight: "bold" }}>
-          You will also need to look at financial projections for your publishing business.
+          You will also need to look at financial projections for your
+          publishing business.
         </Paragraph>
 
-        <Paragraph big>What are your expected sales and revenues? What is your profitability? How much money will you keep in the business to grow it? How much will you pay yourself and others?</Paragraph>
+        <Paragraph big>
+          What are your expected sales and revenues? What is your profitability?
+          How much money will you keep in the business to grow it? How much will
+          you pay yourself and others?
+        </Paragraph>
 
-        <Paragraph big>If you can, try to plan your revenue for the next month, three months, year and two years. It’s vital to take into account the cost of setting up a publishing business in the first place, also factoring in utility, staff and other costs.</Paragraph>
+        <Paragraph big>
+          If you can, try to plan your revenue for the next month, three months,
+          year and two years. It’s vital to take into account the cost of
+          setting up a publishing business in the first place, also factoring in
+          utility, staff and other costs.
+        </Paragraph>
 
-        <Paragraph big>Business plans do vary slightly, but they should all cover the following areas:</Paragraph>
+        <Paragraph big>
+          Business plans do vary slightly, but they should all cover the
+          following areas:
+        </Paragraph>
 
         <CountingTextBoxed number={1}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            An executive summary with the most important points from your business plan
+            An executive summary with the most important points from your
+            business plan
           </Paragraph>
         </CountingTextBoxed>
 
@@ -99,7 +116,8 @@ const BusinessPlan = () => (
 
         <CountingTextBoxed number={3}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            A description of your publishing business, including background information and context
+            A description of your publishing business, including background
+            information and context
           </Paragraph>
         </CountingTextBoxed>
 
@@ -135,12 +153,15 @@ const BusinessPlan = () => (
 
         <CountingTextBoxed number={9}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            Appendices
+            Appendice
           </Paragraph>
         </CountingTextBoxed>
 
         <Paragraph big style={{ marginTop: "50px" }} mixed={true}>
-          We’ve got the perfect <Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">guide to writing your business plan.</Link>
+          We’ve got the perfect{" "}
+          <Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">
+            guide to writing your business plan.
+          </Link>
         </Paragraph>
       </BusinessOwnerResponsibilities>
     </Container>

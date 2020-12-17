@@ -289,7 +289,7 @@ const TabScrollable = ({ layout, columns }) => {
                   </Paragraph>
 
                   <Paragraph big>
-                    Most landscaping businesses should have comprehensive
+                    Most laundromat businesses should have comprehensive
                     business insurance. There are various types.
                   </Paragraph>
 

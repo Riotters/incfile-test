@@ -194,12 +194,6 @@ const RecordLabel = () => (
                 </CkeckText>
               </ListBox>
             </ListWrapper>
-
-            <Paragraph big>
-              By the time you’ve read through our complete real estate investing
-              business guide, you'll have all the information you need to set up
-              and manage a thriving real estate business. Let’s get into it.
-            </Paragraph>
           </PanelWrapper>
         </TabPanel>
 

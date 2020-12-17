@@ -103,13 +103,7 @@ const TeenBusiness = () => (
               </Paragraph>
             </Colorbox>
 
-            <Paragraph big style={{ marginTop: "48px" }}>
-              We know it can be daunting to start a teen business, and we’re
-              here to help. We’ve helped over 500,000 people form their business
-              and provided answers, guidance and support to transform them into
-              entrepreneurs.
-            </Paragraph>
-            <Paragraph big style={{ marginTop: "0" }}>
+            <Paragraph big style={{ marginTop: "40px" }}>
               Here is our simple guide to starting up a successful teen
               business. We’ll share some business ideas that are suitable for
               kids, teens and students, and let you know how to get your
@@ -141,7 +135,9 @@ const TeenBusiness = () => (
             />
 
             <Adventages
-              headline="Around a quarter of teenagers work in some capacity"
+              headline="Between half and three-quarters of teenagers
+              who work have some sort of side business
+              to earn extra money"
               width="100%"
             />
 
@@ -166,6 +162,42 @@ const TeenBusiness = () => (
                   <Image filename="mrs-bulb-final-comp-thumb-up-color" />
                 </BubbleImage>
                 <BubbleImage>
+                  <Image filename="mrs-bulb-final-comp-thumb-up-color" />
+                </BubbleImage>
+                <BubbleImage>
+                  <Image filename="mrs-bulb-final-comp-thumb-up-color" />
+                </BubbleImage>
+                <BubbleImage>
+                  <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
+                </BubbleImage>
+                <BubbleImage>
+                  <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
+                </BubbleImage>
+              </Bubbles>
+              <Text>8 out of 10 teens want to work for themselves</Text>
+            </BubblesWrapper>
+
+            <BubblesWrapper>
+              <Bubbles>
+                <BubbleImage>
+                  <Image filename="mrs-bulb-final-comp-thumb-up-color" />
+                </BubbleImage>
+                <BubbleImage>
+                  <Image filename="mrs-bulb-final-comp-thumb-up-color" />
+                </BubbleImage>
+                <BubbleImage>
+                  <Image filename="mrs-bulb-final-comp-thumb-up-color" />
+                </BubbleImage>
+                <BubbleImage>
+                  <Image filename="mrs-bulb-final-comp-thumb-up-color" />
+                </BubbleImage>
+                <BubbleImage>
+                  <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
+                </BubbleImage>
+                <BubbleImage>
+                  <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
+                </BubbleImage>
+                <BubbleImage>
                   <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
                 </BubbleImage>
                 <BubbleImage>
@@ -178,7 +210,7 @@ const TeenBusiness = () => (
                   <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
                 </BubbleImage>
               </Bubbles>
-              <Text>8 out of 10 teens want to work for themselves</Text>
+              <Text>4 out of 10 teens want their own business</Text>
             </BubblesWrapper>
 
             <Paragraph big>
