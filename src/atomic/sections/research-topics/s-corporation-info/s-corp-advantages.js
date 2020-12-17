@@ -14,7 +14,11 @@ import Path from "../../../molecules/blocks/research-topics-path";
 
 const About = styled.section`
   position: relative;
-  padding-bottom: 104px;
+  padding-bottom: 32px;
+
+  @media (min-width: 992px) {
+    padding-bottom: 104px;
+  }
 
   ul {
     margin-left: -24px;

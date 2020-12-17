@@ -24,10 +24,18 @@ const Rocket = ({ content }) => (
         <Image filename="rocket-2x" alt="rocket lunch" />
       </RocketWrapper>
       <Content>
-        <Heading size={2}>{content.header}{" "}<br />{content.header2}</Heading>
+        <Heading size={2}>
+          {content.header} <br />
+          {content.header2}
+        </Heading>
         <Paragraph bottomMargin="0">{content.text}</Paragraph>
         <Paragraph>{content.text2}</Paragraph>
-        <Button content={content.button} theme="primary48" margin="0 auto 0 0" arrow />
+        <Button
+          content={content.button}
+          theme="primary48"
+          margin="0 auto 0 0"
+          arrow
+        />
       </Content>
     </Container>
   </Wrapper>
@@ -37,11 +45,11 @@ const Wrapper = styled.div`
   position: relative;
   min-height: 775px;
   margin-bottom: -120px;
-  
+
   @media (min-width: 576px) {
     margin-bottom: 50px;
   }
-  
+
   display: flex;
   align-items: center;
 `;
@@ -53,7 +61,7 @@ const RocketWrapper = styled.div`
   top: 20%;
   left: 90%;
   position: absolute;
-  
+
   transform: translate(-100%, -50%);
   z-index: 0;
 
@@ -62,7 +70,7 @@ const RocketWrapper = styled.div`
     top: 50%;
     left: 40%;
   }
-  
+
   &::after {
     content: "";
     display: block;
@@ -99,9 +107,13 @@ const Oval = styled.div`
     right: 0;
     bottom: 0;
     background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 20%);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 20%
+    );
   }
-  
+
   @media (max-width: 768px) {
     bottom: unset;
     top: 20%;
@@ -130,7 +142,6 @@ const Moon = styled.div`
     right: 190px;
     left: unset;
   }
-  
 `;
 
 const Content = styled.div`

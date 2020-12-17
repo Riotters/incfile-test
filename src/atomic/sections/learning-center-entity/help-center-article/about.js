@@ -12,7 +12,11 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.
 
 const About = styled.section`
   position: relative;
-  padding-bottom: 104px;
+  padding-bottom: 32px;
+
+  @media (min-width: 992px) {
+    padding-bottom: 104px;
+  }
 `;
 
 const LinksBox = styled.div`
@@ -39,7 +43,14 @@ const AboutSection = ({ className, content }) => (
       <Heading size={3} bottomMargin="48">
         {content.header}
       </Heading>
-      <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve />
+      <IconTextColorBox
+        color={color.babyblue3}
+        Icon={IconSVG}
+        content={content.box}
+        bottomMargin="48"
+        rounded
+        curve
+      />
       <Paragraph big bottomMargin="40">
         {content.text}
       </Paragraph>

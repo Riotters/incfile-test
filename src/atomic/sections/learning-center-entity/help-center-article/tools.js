@@ -9,20 +9,45 @@ import BoxedButton from "../../../molecules/buttons/boxed";
 
 const Tools = styled.section`
   position: relative;
-  padding-top: 104px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 32px;
   background-color: ${color.blue3};
+
+  @media (min-width: 992px) {
+    padding-top: 104px;
+    padding-bottom: 104px;
+  }
 `;
 
-const colors = [color.green3, color.red3, color.red3, color.yellow3, color.babyblue3, color.orange3];
-const icons = ["corporation-state-information", "s-corp-tax-calculator-01", "entity-comparison-chart", "state-filling-fees", "ongoing-filling-requirements-02", "clock-691"];
+const colors = [
+  color.green3,
+  color.red3,
+  color.red3,
+  color.yellow3,
+  color.babyblue3,
+  color.orange3,
+];
+const icons = [
+  "corporation-state-information",
+  "s-corp-tax-calculator-01",
+  "entity-comparison-chart",
+  "state-filling-fees",
+  "ongoing-filling-requirements-02",
+  "clock-691",
+];
 
 const ToolsSection = ({ className, content }) => (
   <Tools className={className}>
     <Oval className="oval" height="720" width="720" top="0" right="0">
       <OvalSVG />
     </Oval>
-    <HeadingCenter headline={content.header} headlineWidth="700" text={content.text} bottomMargin="80" />
+    <HeadingCenter
+      headline={content.header}
+      headlineWidth="700"
+      text={content.text}
+      bottomMargin="32"
+      bottomMarginLG="80"
+    />
     <CenterGrid columnsSM="1" columnsMD="2">
       {content.buttons.map((button, i) => (
         <BoxedButton content={button} icon={icons[i]} iconColor={colors[i]} />
