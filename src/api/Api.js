@@ -63,7 +63,7 @@ export const getRelatedPosts = async (categoryId, limit = 9) => {
 }
 
 export const getPhoneStatus = async () => {
-    const data = await fetch(`https://api.cool/api/v1/util/check-phone-show-status`)
+    const data = await fetch(`${process.env.INCFILE_API_URL}/util/check-phone-show-status`)
         .then(response => response.json());
     
     return data;
