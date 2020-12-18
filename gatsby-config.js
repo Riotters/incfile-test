@@ -33,6 +33,12 @@ module.exports = {
         path: `${__dirname}/src/fonts/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `${process.env.SITE_URL}`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-lodash`,

@@ -27,8 +27,8 @@ function SEO({ description, lang, meta, title, canonicalURL, robots }) {
     );
 
     const metaDescription = description || site.siteMetadata.description;
-    const pathName = typeof window !== 'undefined' ? window.location.pathname : '';
-    const canURL = `${site.siteMetadata.siteUrl}${canonicalURL || pathName}`;
+    // const pathName = typeof window !== 'undefined' ? window.location.pathname : '';
+    // const canURL = `${site.siteMetadata.siteUrl}${canonicalURL || pathName}`;
     
     return (
         <Helmet
@@ -37,12 +37,6 @@ function SEO({ description, lang, meta, title, canonicalURL, robots }) {
             }}
             title={title}
             titleTemplate={`%s`}
-            link={[
-                {
-                    rel: 'canonical',
-                    href: canURL
-                }
-            ]}
             meta={[
                 {
                     name: `robots`,
