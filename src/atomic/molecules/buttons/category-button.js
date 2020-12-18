@@ -3,6 +3,10 @@ import { Link } from "gatsby";
 import OverviewSVG from "../../../images/icons/coaching-business.inline.svg";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import ArrowSVG from "../../../images/arrow.inline.svg";
+import Circle from "../../atoms/icons/circle";
+import { color } from "../../atoms/styles/colors";
+import { shadow } from "../../atoms/styles/shadows";
 
 const TabTitle = ({ content, arrow, icon }) => (
   <>
@@ -12,12 +16,19 @@ const TabTitle = ({ content, arrow, icon }) => (
         <Content>
           <span>{content.header}</span>
 
-          {/*{arrow &&*/}
-          {/*<Arrow className="tabArrow">*/}
-          {/*<ArrowSVG/>*/}
-          {/*</Arrow>*/}
-          {/*}*/}
+          {/* {arrow && (
+            <Arrow className="tabArrow">
+              <ArrowSVG />
+            </Arrow>
+          )} */}
         </Content>
+        <Circle
+          circleColor={color.orange3}
+          iconColor={color.orange1}
+          className="arrow-link"
+        >
+          <ArrowSVG />
+        </Circle>
       </ButtonBox>
     ) : (
       <ButtonBoxStatic>
@@ -25,12 +36,19 @@ const TabTitle = ({ content, arrow, icon }) => (
         <Content>
           <span>{content.header}</span>
 
-          {/*{arrow &&*/}
-          {/*<Arrow className="tabArrow">*/}
-          {/*<ArrowSVG/>*/}
-          {/*</Arrow>*/}
-          {/*}*/}
+          {/* {arrow && (
+            <Arrow className="tabArrow">
+              <ArrowSVG />
+            </Arrow>
+          )} */}
         </Content>
+        <Circle
+          circleColor={color.orange3}
+          iconColor={color.orange1}
+          className="arrow-link"
+        >
+          <ArrowSVG />
+        </Circle>
       </ButtonBoxStatic>
     )}
   </>
@@ -139,25 +157,51 @@ const ButtonBoxStatic = styled.div`
 
 const ButtonBox = styled(Link)`
   height: 78px;
+  position: relative;
   line-height: 78px;
   color: #4e4e4e;
   background: #fff;
-  transition: box-shadow 0.3s ease;
-  box-shadow: 0 20px 30px 0 #e6e6e6;
+  transition: all 0.3s ease;
+  box-shadow: ${shadow.white1};
   display: flex;
   // cursor: pointer;
   position: relative;
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 7px;
+  padding: 0 32px 0 0;
   border: none;
   z-index: 0;
 
+  .arrow-link {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    transition: all 0.5s;
+    pointer-events: none;
+    transform: translateX(-24px);
+    opacity: 0;
+  }
+
+  svg {
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+  }
+
   &.active,
   &:hover {
-    box-shadow: 0 40px 80px 0 #e6e6e6;
-    z-index: 1;
-    background-color: #e0f4fd;
+    font-family: Avenir;
+    font-weight: 900;
+    box-shadow: ${shadow.white2};
+
+    .arrow-link {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    svg {
+      opacity: 1;
+    }
 
     // .tabArrow {
     //   opacity: 1;
