@@ -2,12 +2,12 @@ import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import {
-	top,
-	about,
-	characteristics,
-	differences,
-	prosAndCons,
-	sCorpVsCCorp,
+  top,
+  about,
+  characteristics,
+  differences,
+  prosAndCons,
+  sCorpVsCCorp,
 } from "../../static/business-entity-quiz/scorporation";
 import TopSection from "../../atomic/sections/learning-center-entity/business-entity-quiz/top-section";
 import About from "../../atomic/sections/business-entity-quiz/scorporation/about";
@@ -19,22 +19,22 @@ import SCorpVsCCorp from "../../atomic/sections/business-entity-quiz/scorporatio
 import Rocket from "../../atomic/sections/rocket";
 
 const BusinessEntityQuizSCorp = () => (
-	<Layout>
-		<SEO
-			robots="none"
-			title="Quiz Result: You Should Form an S Corp!"
-			description="Your answers suggest a S corporation is the right business entity for your new business. Learn more about S Corps here."
-		/>
-		<TopSection content={top} padding="220px 0" />
-		<About content={about} />
-		<WhatIs />
-		<Characteristics content={characteristics} />
-		<Differences content={differences} />
-		<ProsAndCons content={prosAndCons} />
-		<SCorpVsCCorp content={sCorpVsCCorp} />
-		{/* content={sCorpVsCCorp} */}
-		<Rocket />
-	</Layout>
+  <Layout>
+    <SEO
+      robots="none"
+      title="Quiz Result: You Should Form an S Corp!"
+      description="Your answers suggest a S corporation is the right business entity for your new business. Learn more about S Corps here."
+    />
+    <TopSection content={top} padding="220px 0" />
+    <About content={about} />
+    <WhatIs />
+    <Characteristics content={characteristics} />
+    <Differences content={differences} />
+    <ProsAndCons content={prosAndCons} />
+    <SCorpVsCCorp content={sCorpVsCCorp} />
+    {/* content={sCorpVsCCorp} */}
+    <Rocket />
+  </Layout>
 );
 
 export default BusinessEntityQuizSCorp;

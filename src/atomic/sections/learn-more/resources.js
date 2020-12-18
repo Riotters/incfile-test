@@ -12,7 +12,7 @@ import { shadow } from "../../atoms/styles/shadows";
 import { Heading } from "../../atoms/typography/heading";
 import Circle from "../../atoms/icons/circle";
 import ArrowSVG from "../../../images/arrow.inline.svg";
-import {color} from "../../atoms/styles/colors";
+import { color } from "../../atoms/styles/colors";
 
 const Resources = () => (
   <Container>
@@ -25,7 +25,11 @@ const Resources = () => (
           <SearchIcon />
         </Icon>
         General
-        <Circle circleColor={color.orange3} iconColor={color.orange1} className="arrow-link">
+        <Circle
+          circleColor={color.orange3}
+          iconColor={color.orange1}
+          className="arrow-link"
+        >
           <ArrowSVG />
         </Circle>
       </Item>
@@ -34,7 +38,11 @@ const Resources = () => (
           <LLCIcon />
         </Icon>
         LLC
-        <Circle circleColor={color.orange3} iconColor={color.orange1} className="arrow-link">
+        <Circle
+          circleColor={color.orange3}
+          iconColor={color.orange1}
+          className="arrow-link"
+        >
           <ArrowSVG />
         </Circle>
       </Item>
@@ -43,7 +51,11 @@ const Resources = () => (
           <SCIcon />
         </Icon>
         S-Corporation
-        <Circle circleColor={color.orange3} iconColor={color.orange1} className="arrow-link">
+        <Circle
+          circleColor={color.orange3}
+          iconColor={color.orange1}
+          className="arrow-link"
+        >
           <ArrowSVG />
         </Circle>
       </Item>
@@ -52,7 +64,11 @@ const Resources = () => (
           <CCIcon />
         </Icon>
         C-Corporation
-        <Circle circleColor={color.orange3} iconColor={color.orange1} className="arrow-link">
+        <Circle
+          circleColor={color.orange3}
+          iconColor={color.orange1}
+          className="arrow-link"
+        >
           <ArrowSVG />
         </Circle>
       </Item>
@@ -61,7 +77,11 @@ const Resources = () => (
           <NPIcon />
         </Icon>
         Nonprofit
-        <Circle circleColor={color.orange3} iconColor={color.orange1} className="arrow-link">
+        <Circle
+          circleColor={color.orange3}
+          iconColor={color.orange1}
+          className="arrow-link"
+        >
           <ArrowSVG />
         </Circle>
       </Item>
@@ -70,7 +90,11 @@ const Resources = () => (
           <RegisteredAgent />
         </Icon>
         Registered Agent
-        <Circle circleColor={color.orange3} iconColor={color.orange1} className="arrow-link">
+        <Circle
+          circleColor={color.orange3}
+          iconColor={color.orange1}
+          className="arrow-link"
+        >
           <ArrowSVG />
         </Circle>
       </Item>
@@ -106,9 +130,9 @@ const Item = styled(Link)`
   align-items: center;
   justify-content: flex-start;
   transition: all 0.3s ease;
-  
+
   .arrow-link {
-    transition: all .5s;
+    transition: all 0.5s;
     pointer-events: none;
     margin: 0 48px 0 auto;
     opacity: 0;
@@ -123,7 +147,7 @@ const Item = styled(Link)`
     font-family: Avenir;
     font-weight: 900;
     box-shadow: ${shadow.white2};
-    
+
     .arrow-link {
       opacity: 1;
       margin: 0 16px 0 auto;

@@ -8,94 +8,91 @@ import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import { color, gradient } from "../../../atoms/styles/colors";
+import parse from "html-react-parser";
 
 const IsItForYou = ({ content }) => (
-	<Wrapper>
-		<TextCenterLayout
-			headline={content.header}
-			text={content.text}
-			headlineWidth={770}
-			textWidth={770}
-		/>
+  <Wrapper>
+    <TextCenterLayout
+      headline={content.header}
+      headlineWidth={770}
+      textWidth={770}
+    />
 
-		<Container>
-			<AdventagesWrapper>
-				{content.boxes.map((box) => (
-					<Adventages
-						disadventage={box.disadventage}
-						circleBackgroundColor={box.circleBackgroundColor}
-						circleBackgroundShadow={box.circleBackgroundShadow}
-						text={box.text}
-						width="100%"
-					/>
-				))}
-			</AdventagesWrapper>
-		</Container>
-		<ContentCenter contentWidth={770}>
-			<Heading size={3} center maxWidth={770} bottomMargin={32}>
-				{content.header2}
-			</Heading>
-			<Paragraph big center>
-				{content.text2}
-			</Paragraph>
-		</ContentCenter>
-	</Wrapper>
+    <Container>
+      <AdventagesWrapper>
+        {content.boxes.map((box) => (
+          <Adventages
+            disadventage={box.disadventage}
+            circleBackgroundColor={box.circleBackgroundColor}
+            circleBackgroundShadow={box.circleBackgroundShadow}
+            text={box.text}
+            width="100%"
+          />
+        ))}
+      </AdventagesWrapper>
+    </Container>
+    <ContentCenter contentWidth={770}>
+      <Paragraph big center mixed>
+        {parse(content.text)}
+      </Paragraph>
+    </ContentCenter>
+  </Wrapper>
 );
 
 const Wrapper = styled.section`
-	padding-top: 120px;
-	padding-bottom: 100px;
-	position: relative;
-	background-image: ${gradient.orange3reverse};
+  padding-top: 120px;
+  padding-bottom: 100px;
+  position: relative;
+  background-image: ${gradient.orange3reverse};
 `;
 
 const AdventagesWrapper = styled.div`
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: 100%;
-	justify-content: center;
-	column-gap: 30px;
-	row-gap: 0px;
-	margin-top: 76px;
-	margin-bottom: 76px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 100%;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 0px;
+  margin-top: 76px;
+  margin-bottom: 76px;
 
-	@media (min-width: 490px) {
-		grid-template-columns: 1fr;
-	}
+  @media (min-width: 490px) {
+    grid-template-columns: 1fr;
+  }
 
-	@media (min-width: 992px) {
-		grid-template-columns: 1fr 1fr;
-	}
+  @media (min-width: 992px) {
+    grid-template-columns: 1fr 1fr;
+  }
 
-	ul {
-		list-style: none;
+  ul {
+    list-style: none;
 
-		li {
-			span {
-				display: block;
-				margin-bottom: 8px;
-				font-size: 20px;
-				line-height: 28px;
-				color: ${color.black};
-				font-weight: bold;
-			}
+    li {
+      span {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 20px;
+        line-height: 28px;
+        color: ${color.black};
+        font-weight: bold;
+      }
 
-			&:not(:last-child) {
-				margin-bottom: 32px;
-			}
-		}
-	}
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+  }
 `;
 
 const Oval = styled.div`
-	position: absolute;
-	top: 447px;
-	left: 0;
-	width: 100%;
+  position: absolute;
+  top: 447px;
+  left: 0;
+  width: 100%;
 
-	@media (min-width: 520px) {
-		width: 520px;
-	}
+  @media (min-width: 520px) {
+    width: 520px;
+  }
 `;
 
 export default IsItForYou;
