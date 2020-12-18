@@ -103,7 +103,7 @@ const GymPersonalTraining = () => (
                 we’re here to help.
               </Heading>
               <Paragraph>
-                We’ve supported over 100,000 people to form their business and
+                We’ve supported over 500,000 people to form their business and
                 provided answers, guidance and support to transform them into
                 entrepreneurs. We’ll guide you through what you need to know to
                 start your brewery business.
@@ -346,7 +346,9 @@ const GymPersonalTraining = () => (
               </TextBoxed>
             </div>
 
-            <Heading size={3}>Skills Needed by a Brewery Entrepreneur</Heading>
+            <Heading size={3} style={{ marginTop: "32px" }}>
+              Skills Needed by a Brewery Entrepreneur
+            </Heading>
             <Paragraph big>
               The following skills will be very useful in your role as a brewery
               small business owner:

@@ -84,7 +84,7 @@ const ConstructionCompany = () => (
               business could be a great way to build a solid future.
             </Paragraph>
 
-            <Heading size={2} template={3} left>
+            <Heading size={2} template={4} left>
               There’s plenty of room for specialty construction businesses too,
               so finding the right building niche will help you get a reputation
               for specific expertise.
@@ -260,6 +260,10 @@ const ConstructionCompany = () => (
               headline="Public sector construction saw the slowest growth"
               width="100%"
             />
+            <Paragraph big>
+              This is why construction businesses are so exciting — how can you
+              be part of that success? We're here to help you figure that out.
+            </Paragraph>
           </PanelWrapper>
         </TabPanel>
 
@@ -364,6 +368,20 @@ const ConstructionCompany = () => (
                 Analysis and problem-solving expertise
               </Paragraph>
             </TextBoxed>
+            <Heading size={3} style={{ marginTop: "40px" }}>
+              What Your Construction Customers Are Looking For
+            </Heading>
+
+            <Paragraph big bottomMargin={52}>
+              Construction customers vary, from property developers wanting to
+              flip a house to commercial organizations looking for new
+              locations. The two things everyone is looking for is quality and
+              reassurance. They need any construction to be of a high quality —
+              up to code, meeting the needs of the client and delivered to
+              scope. They also want reassurance that you will deliver on time
+              and on budget, and that you’re able to solve any problems that
+              come up during construction.
+            </Paragraph>
           </PanelWrapper>
         </TabPanel>
       </ReactTabs>

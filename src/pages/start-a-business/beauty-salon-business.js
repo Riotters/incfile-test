@@ -605,7 +605,6 @@ const BeautySalon = () => (
           <CountingTextBoxed number={3}>
             <Paragraph bottomPadding={0} bottomMargin={0}>
               A description of your business, background information and context
-              4A market analysis and likely demand
             </Paragraph>
           </CountingTextBoxed>
 

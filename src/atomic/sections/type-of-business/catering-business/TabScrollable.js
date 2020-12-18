@@ -450,7 +450,7 @@ const TabScrollable = ({ layout, columns }) => {
 
                   <Paragraph big>
                     There are certain forms and legalities you need to follow to
-                    keep your cleaning business in good standing.
+                    keep your catering business in good standing.
                   </Paragraph>
 
                   <Accordion tab content={MaintainingAccordionContent} />

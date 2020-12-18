@@ -304,12 +304,6 @@ const CateringBusiness = () => (
             />
 
             <Adventages
-              headline="Marketing"
-              text="Promoting a catering business against a competitive field. Local marketing expertise is essential."
-              width="100%"
-            />
-
-            <Adventages
               headline="Value for money"
               text="Catering is a competitive business, and profit margins can be slim. You will need a rock-solid understanding of all your costs so you can price your services correctly."
               width="100%"
@@ -477,7 +471,7 @@ const CateringBusiness = () => (
       </Oval3>
       <Container>
         <CenterBox>
-          <Heading size={2} template={1} left>
+          <Heading size={2} left>
             Write a Business Plan for Your Catering Business
           </Heading>
 
@@ -601,10 +595,10 @@ const CateringBusiness = () => (
             </Paragraph>
 
             <Paragraph big>
-              This is the "default" business structure and is what your
-              influencer business will be if you decide not to create a more
-              formal structure. We don't recommend this type of business as it
-              doesn't give you the legal protections you need.
+              This is the "default" business structure and is what your business
+              will be if you decide not to create a more formal structure. We
+              don't recommend this type of business as it doesn't give you the
+              legal protections you need.
             </Paragraph>
           </TextBlockWithImage>
 
@@ -755,10 +749,7 @@ const CateringBusiness = () => (
 
       <ContentCenter contentWidth={770}>
         <div>
-          <Heading
-            size={3}
-            style={{ fontSize: "40px", marginTop: "100px", textAlign: "left" }}
-          >
+          <Heading size={3} left>
             Special Considerations for Setting up a Catering Business Entity
           </Heading>
 

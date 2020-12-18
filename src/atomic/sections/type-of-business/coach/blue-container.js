@@ -99,10 +99,9 @@ const BlueContainer = () => (
             Validating Your Professional Coaching Business Idea
           </Heading>
           <Paragraph big bottomPadding={0} bottomMargin={0}>
-            Getting started in an coaching business is easy, but becoming a
-            success is harder. Before committing too much time, energy and money
-            into your new coaching business, it’s important to test the
-            marketplace.
+            Remember, the ideas above are just a starting point. You can define
+            and tweak exactly what type of life or business coach you want to be
+            through conducting your own research.
           </Paragraph>
         </TitleBox>
 

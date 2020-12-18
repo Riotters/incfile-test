@@ -24,14 +24,26 @@ const Rocket = () => (
         <Image filename="rocket-2x" alt="rocket lunch" />
       </RocketWrapper>
       <Content>
-        <Heading size={2} template={4} left style={{ fontFamily: "MarkPro, sans-serif", fontSize: "40px" }}>
+        <Heading
+          size={2}
+          left
+          style={{ fontFamily: "MarkPro, sans-serif", fontSize: "40px" }}
+        >
           Launch your business with Incfile
         </Heading>
         <Paragraph big mixed>
           No Contracts. No Surprises. <br />
           Only $0 + State Fee to Launch Your Business.
         </Paragraph>
-        <Button theme="primary48" arrow width="max-content" content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start your Blockchain Business with us, today!" }} />
+        <Button
+          theme="primary48"
+          arrow
+          width="max-content"
+          content={{
+            url: `${process.env.ORDER_URL}/form-order-now.php`,
+            text: "Start your Blockchain Business with us, today!",
+          }}
+        />
       </Content>
     </Container>
   </Wrapper>
@@ -50,15 +62,15 @@ const Wrapper = styled.div`
 
 const RocketWrapper = styled.div`
   position: absolute;
-    left: -15%;
-    top: calc(50% - 313px);
-    width: 720px;
-    height: 626px;
-    display: none;
-    
-    @media (min-width: 1130px) {
-        display: block;
-    }
+  left: -15%;
+  top: calc(50% - 313px);
+  width: 720px;
+  height: 626px;
+  display: none;
+
+  @media (min-width: 1130px) {
+    display: block;
+  }
 `;
 
 const Oval = styled.div`
@@ -82,7 +94,11 @@ const Oval = styled.div`
     right: 0;
     bottom: 0;
     background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 20%);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 20%
+    );
   }
 `;
 

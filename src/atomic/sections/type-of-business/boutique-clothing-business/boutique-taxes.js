@@ -22,39 +22,6 @@ const BoutiqueTaxes = () => (
       <OvalSvgBottom />
     </OvalBottom>
 
-    <TextCenterLayout
-      headline="Taxes for a Boutique Clothing Business"
-      headlineWidth={770}
-    />
-
-    <Container>
-      <TextWrapper>
-        <Paragraph big mixed={true}>
-          <Curve
-            color={color.babyblue1}
-            style={{
-              position: "absolute",
-              left: "-29px",
-              top: "-25px",
-              transform: "rotate(-90deg)",
-            }}
-          />
-          Taxes are a fact of life if you’re in business, and there are various
-          ways you will need to file and pay them. This can include
-          self-employment tax, state income tax and federal income tax. You will
-          also probably be liable for sales and use tax.
-        </Paragraph>
-        <Paragraph big mixed={true}>
-          As a rule of thumb, we recommend holding back around a third of your
-          earnings to pay your taxes. We can also{" "}
-          <Link to="/business-accounting/">
-            prepare and file your tax returns for you
-          </Link>
-          .
-        </Paragraph>
-      </TextWrapper>
-    </Container>
-
     <Service>
       <TextCenterLayout
         textWidth={770}

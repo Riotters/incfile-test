@@ -235,8 +235,8 @@ const CoachBusinessStructure = () => (
           </Paragraph>
 
           <Paragraph big>
-            and most complex types of businesses and are typically far more than
-            the average entrepreneur will need.
+            These are the largest and most complex types of businesses and are
+            typically far more than the average entrepreneur will need.
           </Paragraph>
         </TextBlockWithImage>
 

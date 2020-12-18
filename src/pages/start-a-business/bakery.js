@@ -123,7 +123,7 @@ const Bakery = () => (
 
             <Heading size={2} template={3} left>
               Read on for some insight into creating your own bakery business
-              and becoming an entrepreneur.In this guide we will cover:
+              and becoming an entrepreneur. In this guide we will cover:
             </Heading>
 
             <Paragraph big>
@@ -253,20 +253,6 @@ const Bakery = () => (
               style={{ marginTop: "48px" }}
             />
 
-            <Paragraph
-              big
-              style={{
-                fontFamily: "Avenir",
-                fontWeight: "900",
-                color: "#1d1d1d",
-                marginTop: "48px",
-                marginBottom: "88px",
-              }}
-            >
-              The time to take advantage is now — we’ll help you be a part of
-              that success!
-            </Paragraph>
-
             <Adventages
               headline="Sales from retail bakeries are expected to increase by over five percent a year"
               width="100%"
@@ -281,6 +267,19 @@ const Bakery = () => (
               headline="Gluten-free baking is rapidly increasing in popularity, with almost 30 percent of people purchasing these products"
               width="100%"
             />
+            <Paragraph
+              big
+              style={{
+                fontFamily: "Avenir",
+                fontWeight: "900",
+                color: "#1d1d1d",
+                marginTop: "48px",
+                marginBottom: "88px",
+              }}
+            >
+              The time to take advantage is now — we’ll help you be a part of
+              that success!
+            </Paragraph>
           </PanelWrapper>
         </TabPanel>
         <TabPanel>
@@ -398,6 +397,69 @@ const Bakery = () => (
               headline="Drink options like tea and coffee"
               width="100%"
             />
+            <Heading size={2} template={3} left style={{ marginTop: "32px" }}>
+              What Type of Bakery Business Should You Start?
+            </Heading>
+            <Paragraph big style={{ marginBottom: "48px" }}>
+              If you want to start a successful bakery business, it’s important
+              to know what your options are. Here are some of the more popular
+              business ideas:
+            </Paragraph>
+            <ListWrapper>
+              <ListBox>
+                <CkeckText>
+                  <Paragraph big>
+                    A specialized bakery that makes top-of-the-range products
+                    like bread or cakes
+                  </Paragraph>
+                </CkeckText>
+              </ListBox>
+
+              <ListBox>
+                <CkeckText>
+                  <Paragraph big>
+                    Bakeries where consumers can personalize products like cakes
+                    for special occasions like weddings
+                  </Paragraph>
+                </CkeckText>
+              </ListBox>
+
+              <ListBox>
+                <CkeckText>
+                  <Paragraph big>
+                    Gluten-free bakeries that serve people with gluten
+                    intolerances
+                  </Paragraph>
+                </CkeckText>
+              </ListBox>
+
+              <ListBox>
+                <CkeckText>
+                  <Paragraph big>
+                    Vegan bakeries that produce goods without using eggs, milk
+                    or other animal products
+                  </Paragraph>
+                </CkeckText>
+              </ListBox>
+
+              <ListBox>
+                <CkeckText>
+                  <Paragraph big>
+                    A bakery food truck that makes sandwiches and other to-go
+                    food
+                  </Paragraph>
+                </CkeckText>
+              </ListBox>
+
+              <ListBox>
+                <CkeckText>
+                  <Paragraph big>
+                    Bakeries that cater to a specific audience, like bagel
+                    bakeries for people who want to grab breakfast
+                  </Paragraph>
+                </CkeckText>
+              </ListBox>
+            </ListWrapper>
           </PanelWrapper>
         </TabPanel>
       </ReactTabs>
@@ -695,7 +757,7 @@ const Bakery = () => (
               This is a type of business that is formed when two or more people
               work together without creating a more formal business entity. Like
               a sole proprietorship, it may not give you all the protections
-              your bakery business may need.’
+              your bakery business may need.
             </Paragraph>
           </TextBlockWithImage>
 

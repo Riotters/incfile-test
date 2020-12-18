@@ -168,7 +168,7 @@ export const FinancesAccordionContent = {
       question: "Get Accounting Software",
       answer: [
         {
-          text: `Bookkeeping and accounting software is essential for keeping track of your T-shirt business finances. Good financial management is vital to your peace of mind and online accounting software will give you the insight you need. There are plenty of options to choose from, with some popular ones being:`,
+          text: `Bookkeeping and accounting software is essential for keeping track of your beauty salon business finances. Good financial management is vital to your peace of mind and online accounting software will give you the insight you need. There are plenty of options to choose from, with some popular ones being:`,
         },
         {
           text: `QuickBooks,`,

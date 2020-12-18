@@ -4,7 +4,7 @@ import Tab2Icon from "../../images/icons/light.inline.svg";
 import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
 
 export const InfoCards = {
-  title: `Insurance for Your Bakery Business`,
+  title: `Insurance for Bakeries and Other Baking Businesses`,
   description: `Most bakery businesses should have comprehensive business insurance. There are various types.`,
   items: [
     {
@@ -40,8 +40,7 @@ export const adventages2 = {
     {
       circleText: 1,
       headline: "File an Annual Report",
-      text:
-        "Depending on the state you’re located in, you will probably have to file a report every year. This report tells the state about any major changes to your business, and we can file your Annual Report on your behalf.",
+      text: `Most states require all businesses to file a report once a year. This report has details of any major changes to who owns a business and other major impacts on a business’ legal status. <a href="/manage-your-company/annual-report/">We can file your Annual Report on your behalf.</a>`,
       url: "/manage-your-company/annual-report",
       urlText: "Annual Report",
     },
@@ -479,7 +478,7 @@ export const FinancesAccordionContent = {
       question: "Get Accounting Software",
       answer: [
         {
-          text: `Bookkeeping and accounting software is essential for keeping track of your T-shirt business finances. Good financial management is vital to your peace of mind and online accounting software will give you the insight you need. There are plenty of options to choose from, with some popular ones being:`,
+          text: `Bookkeeping and accounting software is essential for keeping track of your bakery business finances. Good financial management is vital to your peace of mind and online accounting software will give you the insight you need. There are plenty of options to choose from, with some popular ones being:`,
         },
         {
           text: `QuickBooks,`,
