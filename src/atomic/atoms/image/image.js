@@ -2,6 +2,8 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
+//...GatsbyImageSharpFluid
+
 const Image = (props) => (
 	<StaticQuery
 		query={graphql`
@@ -13,7 +15,7 @@ const Image = (props) => (
 							name
 							childImageSharp {
 								fluid(maxWidth: 720) {
-									...GatsbyImageSharpFluid
+                                    ...GatsbyImageSharpFluid_withWebp
 								}
 							}
 						}
