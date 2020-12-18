@@ -102,7 +102,7 @@ const GymPersonalTraining = () => (
                 we’re here to help.
               </Heading>
               <Paragraph bottomPadding={0} bottomMargin={0}>
-                We’ve supported over 100,000 people to form their business and
+                We’ve supported over 500,000 people to form their business and
                 provided answers, guidance and support to transform them into
                 entrepreneurs. We’ll guide you through what you need to know to
                 start your bookstore business and get it off the ground.
@@ -203,7 +203,7 @@ const GymPersonalTraining = () => (
             />
             <BlueBoxWithAbsoluteText
               absoluteText="2,3000"
-              text="Number of independent"
+              text="Number of independent bookstores"
             />
 
             <div style={{ marginBottom: "30px", marginTop: "80px" }}>

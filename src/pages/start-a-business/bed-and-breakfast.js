@@ -106,7 +106,7 @@ const BedAndBreakfast = () => (
               </Heading>
               <Paragraph bottomPadding={0} bottomMargin={0}>
                 Here at Incfile, we know the answer, and we’ve shared it with
-                more than 100,000 people who we've helped to form their
+                more than 500,000 people who we've helped to form their
                 businesses. Since 2004, we’ve supported hospitality
                 entrepreneurs just like you, and we’re proud to have been a part
                 of the bed and breakfast business revolution.

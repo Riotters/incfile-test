@@ -11,16 +11,37 @@ const Regulations = () => (
     <Oval>
       <OvalSvg />
     </Oval>
-    <Container style={{ paddingTop: "100px", paddingBottom: "100px" }} width={750}>
+    <Container
+      style={{ paddingTop: "100px", paddingBottom: "100px" }}
+      width={750}
+    >
       <Heading size={2} left>
         Rules, Regulations and Taxes for Your Bookstore
       </Heading>
       <Paragraph big mixed>
-        Your bookstore business will need to be compliant with licenses, permits and regulations. You will need to explore local, state and federal licenses and permits, and <Link to="/business-license-research-package/">we can also help out with researching your business licensing needs</Link>.
+        Your bookstore business will need to be compliant with licenses, permits
+        and regulations. You will need to explore local, state and federal
+        licenses and permits, and{" "}
+        <Link to="/business-license-research-package/">
+          we can also help out with researching your business licensing needs
+        </Link>
       </Paragraph>
-      <Paragraph big>Taxes are a fact of life if you’re in business, and there are various ways you will need to file and pay them. This can include self-employment tax, state income tax and federal income tax. It’s also likely that your book sales will be subject to sales and use tax.</Paragraph>
+      <Heading size={3} left>
+        Taxes
+      </Heading>
+      <Paragraph big>
+        Taxes are a fact of life if you’re in business, and there are various
+        ways you will need to file and pay them. This can include
+        self-employment tax, state income tax and federal income tax. It’s also
+        likely that your book sales will be subject to sales and use tax.
+      </Paragraph>
       <Paragraph big mixed>
-        As a rule of thumb, we recommend holding back around a third of your earnings to pay your taxes. We can also <Link to="/business-accounting/">prepare and file your tax returns for you</Link>.
+        As a rule of thumb, we recommend holding back around a third of your
+        earnings to pay your taxes. We can also{" "}
+        <Link to="/business-accounting/">
+          prepare and file your tax returns for you
+        </Link>
+        .
       </Paragraph>
     </Container>
   </Wrapper>

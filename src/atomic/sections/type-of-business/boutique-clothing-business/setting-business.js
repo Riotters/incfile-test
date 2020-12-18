@@ -18,7 +18,7 @@ const SettingBusiness = () => (
       headline="Setting up Your Boutique Clothing Business Operations"
       headlineWidth={770}
       textWidth={770}
-      text="Once you've legally created your coaching business, you’ll need to get some other things in place."
+      text="Once you've legally created your boutique clothing business, you’ll need to get some other things in place."
     />
 
     <Container>

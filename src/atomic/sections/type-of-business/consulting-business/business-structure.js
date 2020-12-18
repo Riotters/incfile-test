@@ -123,7 +123,7 @@ const BusinessStructure = () => (
             The most common type of business entity. An LLC is fast, simple and
             inexpensive to setup and maintain. It protects your personal
             finances and assets and is a great way to start your consulting
-            business
+            business.
           </Paragraph>
         </TextBlockWithImage>
 

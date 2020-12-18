@@ -759,10 +759,10 @@ const BarNightclub = () => (
             </Paragraph>
 
             <Paragraph big>
-              The Limited Liability Company (LLC) is ideal for most handyman
-              businesses. An LLC is easy and inexpensive to set up, and it has
-              the least administrative requirements of any formal business
-              entity.
+              The most common type of business entity. An LLC is fast, simple
+              and inexpensive to setup and maintain. It protects your personal
+              finances and assets and is a great way to start your bar or club
+              business.
             </Paragraph>
           </TextBlockWithImage>
 

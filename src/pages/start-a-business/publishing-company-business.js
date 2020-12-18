@@ -116,7 +116,7 @@ const ConstructionCompany = () => (
               </Heading>
 
               <Paragraph bottomMargin={0}>
-                We’ve supported over 100,000 people to form their business and
+                We’ve supported over 500,000 people to form their business and
                 provided answers, guidance and support to transform them into
                 entrepreneurs.
               </Paragraph>

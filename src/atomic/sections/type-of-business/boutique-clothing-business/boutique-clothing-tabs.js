@@ -80,7 +80,7 @@ const BoutiqueClothingTabs = () => (
           </Paragraph>
           <Paragraph big style={{ marginBottom: "48px" }}>
             The question is, just where do you start? Here at Incfile, we know
-            the answer, and we’ve shared it with more than 100,000 people who
+            the answer, and we’ve shared it with more than 500,000 people who
             we've helped to form their businesses. Since 2004, we’ve supported
             retail entrepreneurs just like you, and we’re proud to have been a
             part of the business revolution.
@@ -225,12 +225,6 @@ const BoutiqueClothingTabs = () => (
             headline="Online boutique revenue is expected to grow by around 9 percent a year in the U.S."
             width="100%"
           />
-
-          <Paragraph big style={{ marginTop: "76px" }}>
-            This is why boutique clothing businesses are so exciting — how can
-            you be a part of that success? We're here to help you figure that
-            out.
-          </Paragraph>
         </PanelWrapper>
       </TabPanel>
 

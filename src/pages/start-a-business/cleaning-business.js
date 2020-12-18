@@ -68,7 +68,7 @@ const CleaningBusiness = () => (
       imageAlt="Mr Bulb with seedling"
       headlineWidth={700}
     >
-      <h1>How to Start a Cleaning Business | Why Start a Janitorial Company</h1>
+      <h1>How to Start a Cleaning Business</h1>
       <p>
         Starting a cleaning business can be an ideal way to begin your journey
         as an entrepreneur. Although they may seem simple, cleaning businesses
@@ -105,11 +105,6 @@ const CleaningBusiness = () => (
             <Heading size={2} template={3} left>
               Starting a Cleaning Business
             </Heading>
-            <Paragraph big>
-              Starting a cleaning business can be an ideal way to begin your
-              journey as an entrepreneur. Although they may seem simple,
-              cleaning businesses have a lot going for them.
-            </Paragraph>
             <Paragraph big>
               Cleaning is a service that will always be in demand, and you don't
               need an enormous amount of capital or any special training to get
