@@ -8,7 +8,6 @@ import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
-import { Heading } from "../../../atoms/typography/heading";
 import { getFullPricesAndFilings } from "../../../../api/Api";
 import {PHeading} from "../../../atoms/typography/p-to-heading";
 
