@@ -269,7 +269,7 @@ const AboutTabs = ({ layout, columns, content, openModal }) => (
 			>
 				<Sticky layout={layout} columns={columns}>
 					{content.panels.map((panel, i) => (
-						<Tab>
+						<Tab key={i}>
 							<Icon>{icons[i]}</Icon>
 							<Content>
 								<span>{panel}</span>
@@ -353,7 +353,7 @@ const AboutTabs = ({ layout, columns, content, openModal }) => (
 					<PanelWrapper className="panel2" layout={layout}>
 						<Heading size={2} template={3} left>{content.content[4].header}</Heading>
 						<Paragraph big>{content.content[4].text}</Paragraph>
-						<AcccordionCounting content={content.content[4]} tab />
+						<AcccordionCounting content={content.content[4]} tab header />
 						<Paragraph big topMargin={24}>
 							{content.content[4].text2}
 						</Paragraph>
@@ -391,7 +391,8 @@ const AboutTabs = ({ layout, columns, content, openModal }) => (
 						<AcccordionCounting
 							content={content.content[6]}
 							listColor={{ item: `grey2`, dot: `orange1` }}
-							tab
+                            tab
+                            header
 						/>
 					</PanelWrapper>
 				</Panel>

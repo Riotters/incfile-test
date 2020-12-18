@@ -38,7 +38,7 @@ const SummerBusiness = () => (
       <p>
         If you’re not ready to jump into running your own business full time, a
         summer business could be ideal. These types of ventures are seasonal and
-        designed around the warmer times of the year,when tourists travel and
+        designed around the warmer times of the year, when tourists travel and
         everyone wants to enjoy the sunshine.
       </p>
       <ButtonsBox>

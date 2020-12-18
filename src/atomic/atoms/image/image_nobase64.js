@@ -8,7 +8,7 @@ const Image = (props) => (
 	<StaticQuery
 		query={graphql`
 			query {
-				images: allFile {
+				images: allFile(filter: { extension: { in: ["png", "jpg"] } }) {
 					edges {
 						node {
 							relativePath

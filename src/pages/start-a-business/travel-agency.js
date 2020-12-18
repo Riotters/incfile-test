@@ -86,11 +86,11 @@ const TravelAgency = () => (
               forever.
             </Paragraph>
 
-            <Heading size={2} template={3} left>
+            <Paragraph big style={{ marginBottom: "40px" }}>
               Even with the rise of online travel booking, many vacationers want
               the reassurance of a travel expert to talk them through countries,
               destinations, hotels, flights, tours and more.
-            </Heading>
+            </Paragraph>
 
             <Paragraph big style={{ marginBottom: "40px" }}>
               If you have the expertise to understand travel itineraries and
@@ -111,7 +111,7 @@ const TravelAgency = () => (
               </Heading>
 
               <Paragraph bottomMargin={0}>
-                We’ve helped over 100,000 people form their business and
+                We’ve helped over 500,000 people form their business and
                 provided answers, guidance and support to transform them into
                 entrepreneurs. We’ll guide you through what you need to know to
                 start your travel agency business and get it off the ground.
@@ -211,8 +211,7 @@ const TravelAgency = () => (
             </Heading>
 
             <Paragraph big bottomMargin={52}>
-              The time to take advantage is now — we’ll help you be a part of
-              that success!
+              The demand for travel and expert travel agents is growing.
             </Paragraph>
 
             <BlueBoxWithAbsoluteText
@@ -352,6 +351,19 @@ in the U.S. by 2020"
                 destination websites finalizing details
               </Paragraph>
             </TextBoxed>
+
+            <Heading size={3} style={{ marginTop: "32px" }}>
+              What Your Travel Agency Customers Are Looking For
+            </Heading>
+
+            <Paragraph big bottomMargin={52}>
+              Customers come to a travel agent because they want a really great
+              experience, and they want a travel agent to help them achieve
+              that. Some customers simply don’t want to deal with all the
+              administration themselves and use a travel agent to take away that
+              burden. Other customers have specialized needs that a dedicated
+              travel agent can help them to meet.
+            </Paragraph>
           </PanelWrapper>
         </TabPanel>
       </ReactTabs>

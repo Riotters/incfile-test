@@ -183,19 +183,23 @@ export const service = {
 	cards: [
 		{
 			header: `Always available registered agent`,
-			text: `An always-available Registered Agent who will receive correspondence, documents and legal proceedings on your LLC’s or corporation’s behalf.`,
+            text: `An always-available Registered Agent who will receive correspondence, documents and legal proceedings on your LLC’s or corporation’s behalf.`,
+            imgAlt: `registered agent`
 		},
 		{
 			header: `Digital dashboard`,
-			text: `A digital dashboard where you can access, store and retrieve any information we’ve received for your business.`,
+            text: `A digital dashboard where you can access, store and retrieve any information we’ve received for your business.`,
+            imgAlt: `digital dashboard`
 		},
 		{
 			header: `Email notifications`,
-			text: `Email notification whenever we receive documents for your business.`,
+            text: `Email notification whenever we receive documents for your business.`,
+            imgAlt: `email notification`
 		},
 		{
 			header: `Automatic forwarding`,
-			text: `Automatic forwarding of all legal correspondence, documentation and information directly to you.`,
+            text: `Automatic forwarding of all legal correspondence, documentation and information directly to you.`,
+            imgAlt: `automatic forwarding`
 		},
 	],
 	button: {

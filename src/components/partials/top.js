@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Image from "../image_nobase64";
+import Image from "../../atomic/atoms/image/image_nobase64";
 import Container from "../container";
 import OvalSVG from "../../images/oval.inline.svg";
 import Button from "../button";

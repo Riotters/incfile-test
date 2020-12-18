@@ -469,7 +469,7 @@ const LandscapingBusiness = () => (
     </TabsWrapper>
 
     <BlueContainer>
-      <Oval3>
+      <Oval3 className="oval" height={720} width={720} top="60" left="0">
         <OvalSvg3 />
       </Oval3>
 
@@ -514,18 +514,20 @@ const LandscapingBusiness = () => (
           <TextBlockWithImage
             width={100}
             widthUnit="%"
-            SvgImage={IdentifyIcon}
-            imageBackgroundColor={color.babyblue2}
-            imageShadowColor={color.babyblue2}
+            SvgImage={MarketIcon}
+            imageBackgroundColor={color.yellow2}
+            imageShadowColor={color.yellow2}
           >
             <Heading size={3} template={4}>
-              Identify your business’s unique selling points (USPs)
+              See if there are any market research reports for laundromat
+              businesses
             </Heading>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              These are the areas that will set you apart from competitors and
-              encourage customers to come to you. You might have better pricing,
-              a higher-quality service, a loyalty plan or some other special
-              feature.
+              Search locally, nationally or internationally. There are several
+              in-depth market research reports available for the laundromat
+              business in the U.S. You will also want to research demographics
+              in your proposed area — you’re looking for densely-populated areas
+              with lots of renters or students.
             </Paragraph>
           </TextBlockWithImage>
 
@@ -550,6 +552,41 @@ const LandscapingBusiness = () => (
           <TextBlockWithImage
             width={100}
             widthUnit="%"
+            SvgImage={TalkIcon}
+            imageBackgroundColor={color.purple2}
+            imageShadowColor={color.purple2}
+          >
+            <Heading size={3} template={4}>
+              Talk to clients
+            </Heading>
+            <Paragraph bottomPadding={0} bottomMargin={0}>
+              Speak with potential customers to understand what they want from
+              your laundromat. You can use this to tailor what your location
+              offers.
+            </Paragraph>
+          </TextBlockWithImage>
+
+          <TextBlockWithImage
+            width={100}
+            widthUnit="%"
+            SvgImage={IdentifyIcon}
+            imageBackgroundColor={color.babyblue2}
+            imageShadowColor={color.babyblue2}
+          >
+            <Heading size={3} template={4}>
+              Identify your business’s unique selling points (USPs)
+            </Heading>
+            <Paragraph bottomPadding={0} bottomMargin={0}>
+              These are the areas that will set you apart from competitors and
+              encourage customers to come to you. You might have better pricing,
+              a higher-quality service, a loyalty plan or some other special
+              feature.
+            </Paragraph>
+          </TextBlockWithImage>
+
+          <TextBlockWithImage
+            width={100}
+            widthUnit="%"
             SvgImage={InvolvedIcon}
             imageBackgroundColor={color.red2}
             imageShadowColor={color.red2}
@@ -560,42 +597,6 @@ const LandscapingBusiness = () => (
             <Paragraph bottomPadding={0} bottomMargin={0}>
               Ask questions about laundromat businesses. You can find links to
               some excellent discussion groups later in the article.
-            </Paragraph>
-          </TextBlockWithImage>
-
-          <TextBlockWithImage
-            width={100}
-            widthUnit="%"
-            SvgImage={MarketIcon}
-            imageBackgroundColor={color.yellow2}
-            imageShadowColor={color.yellow2}
-          >
-            <Heading size={3} template={4}>
-              See if there are any market research reports for laundromat
-              businesses
-            </Heading>
-            <Paragraph bottomPadding={0} bottomMargin={0}>
-              Search locally, nationally or internationally. There are several
-              in-depth market research reports available for the laundromat
-              business in the U.S. You will also want to research demographics
-              in your proposed area — you’re looking for densely-populated areas
-              with lots of renters or students.
-            </Paragraph>
-          </TextBlockWithImage>
-
-          <TextBlockWithImage
-            width={100}
-            widthUnit="%"
-            SvgImage={TalkIcon}
-            imageBackgroundColor={color.purple2}
-            imageShadowColor={color.purple2}
-          >
-            <Heading size={3} template={4}>
-              Talk to clients
-            </Heading>
-            <Paragraph bottomPadding={0} bottomMargin={0}>
-              See if there are any market research reports for landscaping
-              businesses: Search locally, nationally or internationally.
             </Paragraph>
           </TextBlockWithImage>
         </GridSectionList>
@@ -790,7 +791,8 @@ const LandscapingBusiness = () => (
             <Paragraph big>
               The most common type of business entity. An LLC is fast, simple
               and inexpensive to setup and maintain. It protects your personal
-              finances and assets and is a great way to start your real estate
+              finances and assets and is a great way to start your laundromat
+              business.
             </Paragraph>
           </TextBlockWithImage>
 

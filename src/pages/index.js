@@ -27,7 +27,7 @@ const HomePageV3 = () => {
 			/>
 			<Top
 				imageName="home-page-v3-top-9458"
-				imageAlt="Start your own company"
+				imageAlt="llc filing & business formation"
 				ovalColor="green"
 				headlineWidth="700"
 				textWidth="700"
@@ -36,7 +36,7 @@ const HomePageV3 = () => {
 				<h1>{top.header}</h1>
 				<p>{parse(top.text)}</p>
 				<Buttonsbox>
-					<Button content={top.button[0]} theme="primary56" arrow />
+					<Button externalLink content={top.button[0]} theme="primary56" arrow />
 				</Buttonsbox>
 				<RatingRow>
 					<CartBlock />

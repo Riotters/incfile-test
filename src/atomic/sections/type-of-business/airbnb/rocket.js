@@ -8,7 +8,7 @@ import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Button from "../../../molecules/buttons/button";
 
-const Rocket = ({ headingSize = 2, headingSeizeTemplate = 4, left=true }) => (
+const Rocket = ({ headingSize = 2, headingSeizeTemplate = 4, left = true }) => (
   <Wrapper>
     <Oval>
       <OvalSVG />
@@ -24,11 +24,24 @@ const Rocket = ({ headingSize = 2, headingSeizeTemplate = 4, left=true }) => (
         <Image filename="rocket-2x" alt="rocket lunch" />
       </RocketWrapper>
       <Content>
-        <Heading size={headingSize} template={headingSeizeTemplate} left={left} style={{ fontFamily: "MarkPro, sans-serif", fontSize: "40px" }}>
+        <Heading size={2} left={true}>
           Are You Ready to Start an Airbnb?
         </Heading>
-        <Paragraph big>If you have an extra room, or a whole property you want to rent out, Airbnb makes it easy. If you can create great listings, build positive reviews, understand your competitors and put together a solid business plan, you will have every chance for success</Paragraph>
-        <Button theme="primary48" arrow width="410px" content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: "Start your Airbnb Business with us, today!" }} />
+        <Paragraph big>
+          If you have an extra room, or a whole property you want to rent out,
+          Airbnb makes it easy. If you can create great listings, build positive
+          reviews, understand your competitors and put together a solid business
+          plan, you will have every chance for success
+        </Paragraph>
+        <Button
+          theme="primary48"
+          arrow
+          width="410px"
+          content={{
+            url: `${process.env.ORDER_URL}/form-order-now.php`,
+            text: "Start your Airbnb Business with us, today!",
+          }}
+        />
       </Content>
     </Container>
   </Wrapper>
@@ -47,15 +60,15 @@ const Wrapper = styled.div`
 
 const RocketWrapper = styled.div`
   position: absolute;
-    left: -15%;
-    top: calc(50% - 313px);
-    width: 720px;
-    height: 626px;
-    display: none;
-    
-    @media (min-width: 1130px) {
-        display: block;
-    }
+  left: -15%;
+  top: calc(50% - 313px);
+  width: 720px;
+  height: 626px;
+  display: none;
+
+  @media (min-width: 1130px) {
+    display: block;
+  }
 `;
 
 const Oval = styled.div`
@@ -79,7 +92,11 @@ const Oval = styled.div`
     right: 0;
     bottom: 0;
     background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 20%);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 20%
+    );
   }
 `;
 

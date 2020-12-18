@@ -27,19 +27,38 @@ const AirbnbTaxes = () => (
     <Container>
       <TextWrapper>
         <Paragraph big mixed={true}>
-          <Curve color={color.babyblue1} style={{ position: "absolute", left: "-29px", top: "-25px", transform: "rotate(-90deg)" }} />
-          Even though you’re running an Airbnb business, you can’t escape real-world licenses, permits and regulations. You will need to explore local, state and federal licenses and permits, and{" "}
-          <Link to="/business-accounting/">we can also help out with researching your business licensing needs.</Link>
+          <Curve
+            color={color.babyblue1}
+            style={{
+              position: "absolute",
+              left: "-29px",
+              top: "-25px",
+              transform: "rotate(-90deg)",
+            }}
+          />
+          Taxes are a fact of life if you’re in business, and there are various
+          ways you will need to file and pay them. This can include
+          self-employment tax, state income tax and federal income tax.
+          Depending on where and how you’re selling products and services, you
+          may also be liable for sales and use tax.
         </Paragraph>
-        <Paragraph big>
-          It’s also very important to consider local zoning laws, ordinances and permits. Some municipalities don’t allow just anyone to set themselves up as an Airbnb host, and if you do, you could be fined. Check with your local and regional authorities what their requirements are for Airbnb
-          hosts.
+        <Paragraph big mixed={true} style={{ marginTop: "48px" }}>
+          As a rule of thumb, we recommend keeping back around a third of your
+          earnings to pay your taxes. We can even{" "}
+          <Link to="/business-accounting/">
+            prepare and file your tax returns for you
+          </Link>
         </Paragraph>
       </TextWrapper>
     </Container>
 
     <Service>
-      <TextCenterLayout headlineWidth={770} textWidth={770} headline="Maintaining Your Airbnb Business" text="There are certain forms and legalities you need to follow to keep your Airbnb business in good standing." />
+      <TextCenterLayout
+        headlineWidth={770}
+        textWidth={770}
+        headline="Maintaining Your Airbnb Business"
+        text="There are certain forms and legalities you need to follow to keep your Airbnb business in good standing."
+      />
 
       <Container>
         <AdventagesBox>
@@ -47,7 +66,20 @@ const AirbnbTaxes = () => (
             <CurveSvg />
           </CurveWrapper>
           {adventages.items.map((item) => (
-            <Adventages className="containerMargin" headlineSize={3} headlineTemplateSize={4} style={{ textAlign: "center" }} url={item.url} urlText={item.urlText} circleText={item.circleText} headline={item.headline} text={item.text} circlePosition="center" circleBackgroundColor={color.blue1} circleBackgroundShadow={shadow.blue1} />
+            <Adventages
+              className="containerMargin"
+              headlineSize={3}
+              headlineTemplateSize={4}
+              style={{ textAlign: "center" }}
+              url={item.url}
+              urlText={item.urlText}
+              circleText={item.circleText}
+              headline={item.headline}
+              text={item.text}
+              circlePosition="center"
+              circleBackgroundColor={color.blue1}
+              circleBackgroundShadow={shadow.blue1}
+            />
           ))}
         </AdventagesBox>
       </Container>
@@ -57,7 +89,11 @@ const AirbnbTaxes = () => (
 
 const BabyBlueContainer = styled.div`
   background: rgb(255, 255, 255);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(240, 248, 255, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(240, 248, 255, 1) 100%
+  );
   padding-bottom: 0px;
   padding-top: 100px;
   position: relative;
@@ -84,22 +120,22 @@ const Service = styled.div`
 `;
 
 const AdventagesBox = styled.div`
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 100%;
-    justify-content: center;
-    column-gap: 30px;
-    row-gap: 20px;
-    margin-top: 76px;
-    margin-bottom: 76px;; 
-    
-    @media (min-width: 490px){
-        grid-template-columns: 470px;
-    }
-    
-    @media (min-width: 992px){
-        grid-template-columns: 470px 470px;
-    }
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 100%;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 20px;
+  margin-top: 76px;
+  margin-bottom: 76px;
+
+  @media (min-width: 490px) {
+    grid-template-columns: 470px;
+  }
+
+  @media (min-width: 992px) {
+    grid-template-columns: 470px 470px;
+  }
 `;
 
 const Oval = styled.div`

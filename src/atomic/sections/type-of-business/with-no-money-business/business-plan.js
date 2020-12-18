@@ -32,7 +32,11 @@ const BusinessOwnerResponsibilities = styled.section`
 const Wrapper = styled.section`
   position: relative;
   background: white;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, #fef6ed);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 40%,
+    #fef6ed
+  );
 `;
 
 const Oval = styled.div`
@@ -72,34 +76,56 @@ const BusinessPlan = () => (
           text="All businesses need a business model, which represents the way you will generate sales, provide services and make money. Think about your business model now, because it’s better to have that in place so you can start acquiring customers and generating revenue from day one. This is particularly important when you’re bootstrapping; creating revenue almost immediately is critical."
         />
 
-        <Paragraph big style={{ fontWeight: "bold", marginTop: "48px", marginBottom: "24px", color: color.black }}>
+        <Paragraph
+          big
+          style={{
+            fontWeight: "bold",
+            marginTop: "48px",
+            marginBottom: "24px",
+            color: color.black,
+          }}
+        >
           You will also need to look at financial projections for your business.
         </Paragraph>
         <Paragraph big style={{ marginBottom: "48px" }}>
-          What are your expected sales and revenues? What is your profitability? How much money will you keep in the business to grow it? How much will you pay yourself and others? If you can, try to plan your revenue out for the next month, three months, year and two years. Work hard to minimize
-          expenses and maximize profits.
+          What are your expected sales and revenues? What is your profitability?
+          How much money will you keep in the business to grow it? How much will
+          you pay yourself and others? If you can, try to plan your revenue out
+          for the next month, three months, year and two years. Work hard to
+          minimize expenses and maximize profits.
         </Paragraph>
 
-        <Paragraph big style={{ fontWeight: "bold", marginBottom: "24px", color: color.black }}>
+        <Paragraph
+          big
+          style={{
+            fontWeight: "bold",
+            marginBottom: "24px",
+            color: color.black,
+          }}
+        >
           Write a Business Plan for Your Business
         </Paragraph>
-        <Paragraph big>Business plans do vary slightly, but they should cover the following areas:</Paragraph>
+        <Paragraph big>
+          Business plans do vary slightly, but they should cover the following
+          areas:
+        </Paragraph>
 
         <CountingTextBoxed number={1}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            An executive summary with the most important points from your business plan
+            An executive summary with the most important points from your
+            business plan
           </Paragraph>
         </CountingTextBoxed>
 
         <CountingTextBoxed number={2}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            A description of your business, background information and context
+            Your goals and what you hope to achieve with your business
           </Paragraph>
         </CountingTextBoxed>
 
         <CountingTextBoxed number={3}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            A description of your online business, background information and context
+            A description of your business, background information and context
           </Paragraph>
         </CountingTextBoxed>
 
@@ -140,7 +166,10 @@ const BusinessPlan = () => (
         </CountingTextBoxed>
 
         <Paragraph big style={{ marginTop: "50px" }} mixed={true}>
-          We’ve got the perfect <Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">guide to writing your business plan.</Link>
+          We’ve got the perfect{" "}
+          <Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">
+            guide to writing your business plan.
+          </Link>
         </Paragraph>
       </BusinessOwnerResponsibilities>
     </Container>

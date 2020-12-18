@@ -59,32 +59,38 @@ const BusinessPlan = () => (
     </OvalCenter>
     <Container>
       <BusinessOwnerResponsibilities>
-        <Heading size={2} template={3} left className="title">
+        <Heading size={2} left bottomMargin={48}>
           Your Social Media Influencer Business Needs a Plan
         </Heading>
         <Paragraph big mixed={true}>
-          You need to define how you’re going to run your influencer business, market yourself, get sales, make a profit and grow. This can only come about through creating a watertight business plan. It will help you get your thinking in order and show your commitment to your influencer marketing
-          business.
+          You need to define how you’re going to run your influencer business,
+          market yourself, get sales, make a profit and grow. This can only come
+          about through creating a watertight business plan. It will help you
+          get your thinking in order and show your commitment to your influencer
+          marketing business.
           <br />
           <br />
-          Business plans do vary slightly, but they should cover the following areas:
+          Business plans do vary slightly, but they should cover the following
+          areas:
         </Paragraph>
 
         <CountingTextBoxed number={1}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            An executive summary with the most important points from your business plan
+            An executive summary with the most important points from your
+            business plan
           </Paragraph>
         </CountingTextBoxed>
 
         <CountingTextBoxed number={2}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            Your goals and what you hope to achieve with your coaching business
+            Your goals and what you hope to achieve with your online business
           </Paragraph>
         </CountingTextBoxed>
 
         <CountingTextBoxed number={3}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            A description of your life or business coaching niche, background information and context
+            A description of your online business, background information and
+            context
           </Paragraph>
         </CountingTextBoxed>
 
@@ -96,7 +102,7 @@ const BusinessPlan = () => (
 
         <CountingTextBoxed number={5}>
           <Paragraph bottomPadding={0} bottomMargin={0}>
-            An overview of how your life or business coaching organization is structured
+            An overview of how your online business is structured
           </Paragraph>
         </CountingTextBoxed>
 
@@ -125,7 +131,10 @@ const BusinessPlan = () => (
         </CountingTextBoxed>
 
         <Paragraph big style={{ marginTop: "50px" }} mixed={true}>
-          We’ve got the perfect <Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">guide to writing your business plan.</Link>
+          We’ve got the perfect{" "}
+          <Link to="https://www.incfile.com/blog/post/keys-successful-business-plan/">
+            guide to writing your business plan.
+          </Link>
         </Paragraph>
       </BusinessOwnerResponsibilities>
     </Container>

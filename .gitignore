@@ -6,3 +6,4 @@ src/images/.DS_Store
 /.idea
 .idea/deployment.xml
 .idea/vcs.xml
+.vscode/extensions.json
