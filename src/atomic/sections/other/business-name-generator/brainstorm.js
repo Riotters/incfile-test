@@ -7,6 +7,7 @@ import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import parse from "html-react-parser";
 import Adventages from "../../../molecules/mixed-blocks/adventages";
+import LightBox from "../../../../components/LightBox";
 
 const Wrapper = styled.section`
   background: ${gradient.orange3};
@@ -36,12 +37,22 @@ const Brainstorm = ({ className, content }) => (
     <Wrapper>
         <ContentCenter textWidth={770} headlineWidth={700}>
             <Heading size={2} center maxWidth={770}>{content.header}</Heading>
+            <LightBox
+                        alt="how to name a business"
+                        bottomMargin={42}
+                        thumbnailVideo="how-to-name-business-video-thumb-09122020"
+                        videoID="ZskqgrXViUA"
+                    />
             <Paragraph big mixed bottomMargin={80} maxWidth={770} center>{parse(content.text)}</Paragraph>
 
             <AdvantagesWrapper>
-                {content.advantages.map(item => (
-                    <Adventages circleBackgroundColor={color.blue1}
-                                circleBackgroundShadow={shadow.blue2} content={item.content} />
+                {content.advantages.map((item, i) => (
+                    <Adventages
+                        key={i}
+                        circleBackgroundColor={color.blue1}
+                        circleBackgroundShadow={shadow.blue2}
+                        content={item.content}
+                    />
                 ))}
             </AdvantagesWrapper>
 

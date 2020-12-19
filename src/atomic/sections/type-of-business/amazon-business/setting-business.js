@@ -25,7 +25,7 @@ const SettingBusiness = () => (
         text="Once you've legally created your Amazon business you’ll need to get some other things in place."
       />
       <ImageBoxes>
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="business location" color={color.red3}>
           <Heading size={3} template={4}>
             Business Location
           </Heading>
@@ -37,7 +37,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="permits-licences" color={color.blue3}>
+        <TopImageBox image="permits-licences" imageAlt="permit & license" color={color.blue3}>
           <Heading size={3} template={4}>
             Permits & Licenses
           </Heading>
@@ -56,18 +56,18 @@ const SettingBusiness = () => (
           </AbsoluteCurve>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finace & taxes" color={color.yellow3}>
           <Heading size={3} template={4}>
             Finances & Taxes
           </Heading>
           <p>
             What kind of{" "}
-            <a href="https://utility.bankofamerica.com/alliance/?formid=IF1">
+            <a class="partner_link" data-name="Bank of America" href="https://utility.bankofamerica.com/alliance/?formid=IF1">
               bank account
             </a>{" "}
             will you get? And how will you pay your business taxes? How do you
             find the{" "}
-            <a href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">
+            <a class="partner_link" data-name="CardRatings" href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">
               best business credit card
             </a>
             ? These are all important things to consider, so your Amazon
@@ -79,7 +79,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="organization-change-02" color={color.green3}>
+        <TopImageBox image="organization-change-02" imageAlt="process" color={color.green3}>
           <Heading size={3} template={4}>
             Processes
           </Heading>
@@ -91,7 +91,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side-4" color={color.purple3}>
+        <TopImageBox image="side-4" imageAlt="equiment" color={color.purple3}>
           <Heading size={3} template={4}>
             Equipment
           </Heading>
@@ -104,7 +104,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="measuring-business-success" color={color.babyblue3}>
+        <TopImageBox image="measuring-business-success" imageAlt="business maintenace" color={color.babyblue3}>
           <Heading size={3} template={4}>
             Business Maintenance
           </Heading>
@@ -122,7 +122,8 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox
-          image="we-doubled-the-size-of-customer-service"
+                    image="we-doubled-the-size-of-customer-service"
+                    imageAlt="employment"
           color={color.orange3}
         >
           <Heading size={3} template={4}>
@@ -135,7 +136,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software" color={color.blue3}>
           <Heading size={3} template={4}>
             Software
           </Heading>
@@ -152,7 +153,8 @@ const SettingBusiness = () => (
       </ImageBoxes>
 
       <ContentCenter>
-        <Button
+                <Button
+                    externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow

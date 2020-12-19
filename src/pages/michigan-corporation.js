@@ -66,14 +66,14 @@ const MichiganCorporation = () => {
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt="corporation in michigan"
 				ovalColor="purple-2"
 				headlineWidth="560"
 			>
 				<h1>{top.header}</h1>
 				<p>{top.text}</p>
 				<Buttonsbox>
-					<Button content={top.buttons[0]} theme="primary56" arrow />
+					<Button externalLink content={top.buttons[0]} theme="primary56" arrow />
 				</Buttonsbox>
 
 				<RatingRow>

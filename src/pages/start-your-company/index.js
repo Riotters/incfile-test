@@ -206,13 +206,14 @@ const ReviewEntityType = () => {
 				title="Start a Company | Learn about Business Entity Types"
 				description="Want to start a business? Learn about different types of business structures—from LLC to S Corp to non profit—and find the entity that suits your needs."
 			/>
-			<ProductSchema
+            <ProductSchema
+                productUrl="https://www.incfile.com/start-your-company/"
 				productName="Form a Business Entity"
 				productDescription="Forming an official business entity helps provide liability protection for your company. Start an LLC, S-Corporation, C-Corporation or Non-Profit by having Incfile file and manage the correct paperwork for you."
 			/>
 			<Top
 				imageName="mr-bulb-main-header-illustration-7201"
-				imageAlt=""
+				imageAlt="learn about business entity types"
 				ovalColor="purple-2"
 				headlineWidth="560"
 				textWidth="450"
