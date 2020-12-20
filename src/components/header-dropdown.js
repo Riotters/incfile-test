@@ -74,7 +74,8 @@ const Navigation = styled.nav`
 	@media (max-width: 991px) {
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
-        height: calc(100vh - 150px);
+        max-height: calc(100vh - 150px);
+        height: auto;
 		align-items: flex-start;
 		position: relative;
 	}
