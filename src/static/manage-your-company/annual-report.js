@@ -90,19 +90,23 @@ export const faq = {
 	cards: [
 		{
 			header: `How Long does it take to file an Annual Report?`,
-			text: `The filing time is dependent on the governing state agency. Filing times vary by state it is therefore important that the report is filed well in advance of the due date in order to avoid any potential late filing fees.`,
+            text: `The filing time is dependent on the governing state agency. Filing times vary by state it is therefore important that the report is filed well in advance of the due date in order to avoid any potential late filing fees.`,
+            imgAlt: `annual repot`,
 		},
 		{
 			header: `What happens if the Annual Report cannot be filed?`,
-			text: `In the event that the entity has been administratively revoked or otherwise dissolved or the report is not due within a close proximity to the order being placed our policy is to contact and inform the client and issue a full refund.`,
+            text: `In the event that the entity has been administratively revoked or otherwise dissolved or the report is not due within a close proximity to the order being placed our policy is to contact and inform the client and issue a full refund.`,
+            imgAlt: `annual repot`,
 		},
 		{
 			header: `How much does it cost to file an Annual Report?`,
-			text: `The state fee varies by state our service fee to file the report is $88. To review the fee in your state click on the “order now” button and select the state and entity type.`,
+            text: `The state fee varies by state our service fee to file the report is $88. To review the fee in your state click on the “order now” button and select the state and entity type.`,
+            imgAlt: `annual repot`,
 		},
 		{
 			header: `What will I receive when the Annual Report is filed?`,
-			text: `The governing state agency will typically return a filed copy of the Annual Report which is then mailed to the client.`,
+            text: `The governing state agency will typically return a filed copy of the Annual Report which is then mailed to the client.`,
+            imgAlt: `annual repot`,
 		},
 	],
 };

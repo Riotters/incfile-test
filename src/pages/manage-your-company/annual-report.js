@@ -39,7 +39,7 @@ const AnnualReport = () => (
 		/>
 		<Top
 			imageName="mrs-bulb-annual-report"
-			imageAlt="Mrs Bulb and with checklist"
+			imageAlt="filing an annual report"
 			ovalColor="green"
 		>
 			<Heading size={1}>{top.header}</Heading>
@@ -47,7 +47,7 @@ const AnnualReport = () => (
 				{top.text}
 			</HeadingP>
 			<Buttonsbox>
-				<Button content={top.button[0]} theme="primary56" width="200px" arrow />
+				<Button externalLink content={top.button[0]} theme="primary56" width="200px" arrow />
 			</Buttonsbox>
 			<RatingRow>
 				<CartBlock />

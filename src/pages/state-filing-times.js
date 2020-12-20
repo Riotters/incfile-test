@@ -8,7 +8,7 @@ import RatingBlock from "../atomic/molecules/blocks/rating-block";
 import Top from "../atomic/partials/top";
 import Tables from "../atomic/sections/learning-center-entity/state-filing-times/tables";
 import Cta from "../atomic/sections/general/cta";
-import Articles from "../atomic/sections/articles";
+
 //Texts
 import {
 	top,
@@ -40,7 +40,7 @@ const StateFilingTimes = () => {
 			/>
 			<Top
 				imageName="mr-bulb-state-filing-times-3289"
-				imageAlt=""
+				imageAlt="state filing times"
 				ovalColor="purple-2"
 				textWidth="530"
 			>
@@ -53,7 +53,6 @@ const StateFilingTimes = () => {
 			</Top>
 			<Tables content={tables} stateFilingTimes={stateFilingTimes} />
 			<Cta content={cta} />
-			<Articles />
 		</Layout>
 	);
 };

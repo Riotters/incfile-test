@@ -74,7 +74,7 @@ const SalesTaxCalculator = () => {
 			/>
 			<Top
 				imageName="mr-bulb-sales-tax-calculator-8937"
-				imageAlt=""
+				imageAlt="sale tax calculator"
 				ovalColor="purple-2"
 			>
 				<h1>{top.header}</h1>

@@ -12,7 +12,6 @@ import Requirements from "../../sections/learning-center-entity/state-informatio
 import Compare from "../../sections/learning-center-entity/state-information-california/compare";
 import Variants from "../../sections/learning-center-entity/state-information-california/variants";
 import Subscription from "../../sections/learning-center-entity/state-information-california/subscription";
-import Articles from "../../sections/articles";
 // Content
 import { compare, requirements } from "../../../static/states-llc/arizona/home";
 import { subscription } from "../../../static/learning-center-entity/state-information-california";
@@ -57,7 +56,7 @@ const LLCLayout = ({ children, data, top }) => {
 		<>
 			<Top
 				imageName="mr-bulb-state-information-llc-7342"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt={`llc in ${data?.prices?.state}`}
 				ovalColor="purple-2"
 				textWidth="530"
 			>
@@ -66,7 +65,7 @@ const LLCLayout = ({ children, data, top }) => {
 				</Heading>
 				<p>{top.text}</p>
 				<Buttonsbox>
-					<Button content={top.buttons[0]} theme="primary56" arrow />
+					<Button externalLink content={top.buttons[0]} theme="primary56" arrow />
 				</Buttonsbox>
 			</Top>
 			<WrapperContent>
@@ -77,7 +76,6 @@ const LLCLayout = ({ children, data, top }) => {
 			<Variants data={data} />
 			<Compare content={compare} data={data} />
 			<Subscription content={subscription} />
-			<Articles />
 		</>
 	);
 };

@@ -69,7 +69,12 @@ module.exports = {
     },
     `gatsby-plugin-svgr-svgo`,
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-sitemap`,
+    {
+        resolve: "gatsby-plugin-sitemap",
+        options: {
+            exclude: [`/form/*`, `/business-entity-quiz/*`]
+        }
+    },
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {

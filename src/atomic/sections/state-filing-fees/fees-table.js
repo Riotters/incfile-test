@@ -136,23 +136,4 @@ const TableCell = styled.div`
     }
 `;
 
-const Price = styled.span`
-    padding: 8px 26px;
-    border-radius: 20px;
-    background-color: #f2f8f3;
-`;
-
-const Button = styled.button`
-    width: 32px;
-    height: 32px;
-    margin-right: 24px;
-    border: 0;
-    background: none;
-`;
-
-const IconWrapper = styled.div`
-    margin-right: 15px;
-    cursor: pointer;
-`;
-
 export default FeesTable;

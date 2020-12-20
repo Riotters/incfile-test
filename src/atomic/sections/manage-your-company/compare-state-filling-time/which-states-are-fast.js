@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import ContentCenter from "../../../partials/content-center";
-import Container from "../../../container";
 import { Tabs, Panel, useTabState } from "@bumaga/tabs";
 import StatesTable from "../../../../components/states-table/states-table";
 import { shadow } from "../../../atoms/styles/shadows";
@@ -127,14 +126,14 @@ const WhichStatesAreFast = ({ className, content, stateListCompare }) => {
     let states3 = [];
 
     entries
-      .filter((entry) => entry.normalProcessingTime === "5 Business Days")
+      .filter((entry) => entry.normalProcessingTime === "3 Weeks")
       .map((entry) => {
         states.push(entry.state);
 
         setFilingTimesSlow((prevState) => {
           let newFilingTimeSlow = [...prevState];
           newFilingTimeSlow[0] = {
-            title: `5 Business Days`,
+            title: `3 Weeks`,
             states: states,
             percent: Math.ceil((states.length / 51) * 100),
           };
@@ -144,14 +143,14 @@ const WhichStatesAreFast = ({ className, content, stateListCompare }) => {
       });
 
     entries
-      .filter((entry) => entry.normalProcessingTime === "1 Week")
+      .filter((entry) => entry.normalProcessingTime === "5 Weeks")
       .map((entry) => {
         states2.push(entry.state);
 
         setFilingTimesSlow((prevState) => {
           let newFilingTimeSlow = [...prevState];
           newFilingTimeSlow[1] = {
-            title: `1 Week`,
+            title: `5 Weeks`,
             states: states2,
             percent: Math.ceil((states2.length / 51) * 100),
           };
@@ -161,14 +160,14 @@ const WhichStatesAreFast = ({ className, content, stateListCompare }) => {
       });
 
     entries
-      .filter((entry) => entry.normalProcessingTime === "7 Business Days")
+      .filter((entry) => entry.normalProcessingTime === "6 Weeks")
       .map((entry) => {
         states3.push(entry.state);
 
         setFilingTimesSlow((prevState) => {
           let newFilingTimeSlow = [...prevState];
           newFilingTimeSlow[2] = {
-            title: `7 Business Days`,
+            title: `6 Weeks`,
             states: states3,
             percent: Math.ceil((states3.length / 51) * 100),
           };
@@ -309,8 +308,8 @@ const WhichStatesAreFast = ({ className, content, stateListCompare }) => {
             <Flex>
               <TabsWrapper>
                 <Scroller>
-                  {content.tabs.headers.map((header) => (
-                    <Tab>{header}</Tab>
+                  {content.tabs.headers.map((header, i) => (
+                    <Tab key={i}>{header}</Tab>
                   ))}
                 </Scroller>
               </TabsWrapper>

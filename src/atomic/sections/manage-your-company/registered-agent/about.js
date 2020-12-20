@@ -27,7 +27,7 @@ const AboutSection = ({ className, content }) => (
     <Oval className="oval" height="420" width="420" right="0" top="56">
       <Oval2SVG />
     </Oval>
-    <ImageContent image="chart-2377">
+    <ImageContent image="chart-2377" alt="registered agent for your business">
       <Paragraph big bottomMargin="32">
         {content.text}
       </Paragraph>
