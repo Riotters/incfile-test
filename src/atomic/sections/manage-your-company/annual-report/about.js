@@ -23,7 +23,7 @@ const AboutSection = ({ className, content }) => (
     <Oval className="oval" height="570" width="570" y="-40">
       <OvalSVG />
     </Oval>
-    <ImageContent image="annual-reports-4383">
+    <ImageContent image="annual-reports-4383" alt="what is an annual report">
       <PHeading size={2} template={3} left bottomMargin="24">
         {content.header}
       </PHeading>

@@ -46,7 +46,7 @@ const ColorBox = styled.div`
 
 const colorBlue = color.blue1;
 
-const SCorpTaxBox = ({ className, image, headingSize = 3, headingSizeTemplate = 4, paragraphHeading = false, color, content, curve }) => {
+const SCorpTaxBox = ({ className, image, imageAlt, headingSize = 3, headingSizeTemplate = 4, paragraphHeading = false, color, content, curve }) => {
   return (
     <Wrapper className={className}>
         {curve && (
@@ -55,7 +55,7 @@ const SCorpTaxBox = ({ className, image, headingSize = 3, headingSizeTemplate = 
             </Curve>
         )}
         <ImageWrapper>
-            <Image filename={image} />
+            <Image filename={image} alt={imageAlt ?? ''} />
         </ImageWrapper>
         <ChooseHeadingType
             headerSize={headingSize}

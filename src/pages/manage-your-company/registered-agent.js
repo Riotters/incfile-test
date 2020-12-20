@@ -38,13 +38,13 @@ const RegisteredAgent = () => (
 		/>
 		<Top
 			imageName="mrs-bulb-registered-agent"
-			imageAlt="Mrs Bulb register agent service holding a phone"
+			imageAlt="registed agent service"
 			ovalColor="purple"
 		>
 			<h1>{top.header}</h1>
 			<HeadingP size={2} big>{top.text}</HeadingP>
 			<Buttonsbox>
-				<Button content={top.button[0]} theme="primary56" width="200px" arrow />
+				<Button externalLink content={top.button[0]} theme="primary56" width="200px" arrow />
 			</Buttonsbox>
 		</Top>
 		<About content={about} />

@@ -41,7 +41,7 @@ const AboutSection = ({ className, content }) => (
     <Oval className="oval" height="570" width="570" y="-25">
       <OvalSVG />
     </Oval>
-    <ImageContent image="s-corporation-tax-calculator-about-3829">
+    <ImageContent image="s-corporation-tax-calculator-about-3829" alt="s corporation tax calculator">
       <PHeading size={2} template={3} left>{content.header}</PHeading>
       <Paragraph big>{content.text}</Paragraph>
       <Paragraph big>{content.text2}</Paragraph>

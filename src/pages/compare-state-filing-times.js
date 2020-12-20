@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 //Sections
 import { rocket, top, compare, states } from "../static/manage-your-company/compare-state-filing-time";
 import Rocket from "../atomic/sections/review-entity-types/c-corporation/rocket";
-import { color, gradient } from "../atomic/atoms/styles/colors";
+import { gradient } from "../atomic/atoms/styles/colors";
 import Top from "../atomic/sections/manage-your-company/compare-state-filling-time/top";
 import WhichStatesAreFast from "../atomic/sections/manage-your-company/compare-state-filling-time/which-states-are-fast";
 import ComparisonStateFillingTime from "../atomic/sections/manage-your-company/compare-state-filling-time/comparison-chart";

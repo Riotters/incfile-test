@@ -11,7 +11,7 @@ import Rocket from "../atomic/sections/rocket";
 const StateFilingFees = () => (
   <Layout>
     <SEO title="LLC Filing Fees By State | How Much Does an LLC Cost?" description="Want to know the cost for filing an LLC or Corporation in any state? Easily research and compare fees state-by-state with this tool." />
-    <Top imageName="state-filling-fees-main-image" imageAlt="Mrs Bulb and with checklist" ovalColor="sun" textWidth="530">
+    <Top imageName="state-filling-fees-main-image" imageAlt="state filing fees" ovalColor="sun" textWidth="530">
       <h1>Review State Filing Fees & LLC Costs</h1>
       <p>Filing costs for forming an LLC or corporation can vary from state to state. Use this filing fees tool to easily research and compare state fees before you start your business.</p>
       <RatingRow topMargin="0">

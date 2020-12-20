@@ -44,6 +44,7 @@ const Amendment = () => (
             <h1>{top.header}</h1>
             <Buttonsbox>
                 <Button
+                    externalLink
                     content={{ text: `Order Now`, url: `${process.env.ORDER_URL}/amendment.php` }}
                     theme="primary56"
                     width="200px"

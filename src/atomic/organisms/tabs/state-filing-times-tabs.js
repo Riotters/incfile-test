@@ -38,21 +38,6 @@ const PanelsWrapper = styled.div`
 	display: block;
 `;
 
-const Grid = styled.div`
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-gap: 30px;
-	width: 100%;
-
-	@media (min-width: 769px) {
-		grid-template-columns: 1fr 1fr;
-	}
-
-	@media (min-width: 992px) {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-`;
-
 const Scroller = styled.div`
 	display: flex;
 	justify-content: flex-start;
