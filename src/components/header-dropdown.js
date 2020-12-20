@@ -42,7 +42,7 @@ const MobileWrapper = styled.nav`
 	background-color: #fff;
 	top: 80px;
 	left: 0;
-	height: calc(100vh - 80px);
+	height: calc(100vh - 150px);
 	min-height: -webkit-fill-available;
 	width: 100%;
     padding: 40px 30px;
@@ -74,7 +74,8 @@ const Navigation = styled.nav`
 	@media (max-width: 991px) {
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
-        height: calc(100vh - 150px);
+        max-height: calc(100vh - 150px);
+        height: auto;
 		align-items: flex-start;
 		position: relative;
 	}
