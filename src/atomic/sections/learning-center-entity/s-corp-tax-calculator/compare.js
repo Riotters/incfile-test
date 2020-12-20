@@ -3,14 +3,8 @@ import styled from "styled-components";
 import { color } from "../../../atoms/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
-import ArrowLink from "../../../molecules/buttons/text";
 import ImageContent from "../../../partials/left-image-right-content";
-import IconSVG from "../../../../images/icons/reduce-arrow.inline.svg";
-import BoxedButton from "../../../molecules/buttons/boxed";
 import IconListColorBox from "../../../molecules/text-blocks/icon-h4-list-color";
-import Circle from "../../../atoms/icons/circle";
-import ResonableSalarySVG from "../../../../images/icons/resonable-salary-and-compensation.inline.svg";
-import LLCDeclaringSVG from "../../../../images/icons/declaring-an-llc-should-be-taxed-as-an-s-corp.inline.svg";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-babyblue1.inline.svg";
 import ContentCenter from "../../../partials/content-center";
@@ -47,7 +41,7 @@ const AboutSection = ({ className, content }) => (
     <Oval className="oval" height="720" width="720" y="-35">
       <OvalSVG />
     </Oval>
-    <ImageContent image="llc-as-tax-crop-about-6724">
+    <ImageContent image="llc-as-tax-crop-about-6724" alt="llc tax vs s corp tax">
       <Heading size={2} template={3} left bottomMargin="32">
         {content.header}
       </Heading>
@@ -84,7 +78,7 @@ const AboutSection = ({ className, content }) => (
       </Paragraph>
     </ImageContent>
     <ContentCenter>
-      <Button theme="primary56" content={{ text: `Get Started`, url: `${process.env.ORDER_URL}/form-order-now.php` }} margin="48px 0 0" arrow />
+      <Button externalLink theme="primary56" content={{ text: `Get Started`, url: `${process.env.ORDER_URL}/form-order-now.php` }} margin="48px 0 0" arrow />
     </ContentCenter>
   </About>
 );

@@ -72,7 +72,9 @@ const Navigation = styled.nav`
 	}
 
 	@media (max-width: 991px) {
-		overflow: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        height: calc(100vh - 150px);
 		align-items: flex-start;
 		position: relative;
 	}
@@ -394,10 +396,10 @@ const Phone = styled.a`
 const NavigationMobileScrollHidden = styled.div`
 	@media (max-width: 991px) {
 		position: relative;
-		right: -15px;
+		//right: -15px;
 		max-height: 100%;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
+        //overflow-y: scroll;
+        //-webkit-overflow-scrolling: touch;
         width: 100%;
         z-index: 999;
 	}
