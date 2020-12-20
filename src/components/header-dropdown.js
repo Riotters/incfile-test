@@ -396,7 +396,8 @@ const NavigationMobileScrollHidden = styled.div`
 		position: relative;
 		right: -15px;
 		max-height: 100%;
-		overflow-y: auto;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
         width: 100%;
         z-index: 999;
 	}
