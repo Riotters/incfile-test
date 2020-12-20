@@ -42,7 +42,7 @@ const MobileWrapper = styled.nav`
 	background-color: #fff;
 	top: 80px;
 	left: 0;
-	height: calc(100vh - 80px);
+	height: calc(100vh - 150px);
 	min-height: -webkit-fill-available;
 	width: 100%;
     padding: 40px 30px;
