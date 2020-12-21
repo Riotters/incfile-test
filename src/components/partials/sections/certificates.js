@@ -94,7 +94,7 @@ const Certificates = ({ content }) => {
 			<Container>
 				<Flex>
 					<Icon>
-						<Image filename="standard-kit-5602" />
+						<Image filename="standard-kit-5602" alt="business formation kit" />
 					</Icon>
 					<Content>
 						<Heading size={3} template={2} left>

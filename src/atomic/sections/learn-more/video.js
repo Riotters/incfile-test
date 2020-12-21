@@ -22,7 +22,7 @@ const Video = () => (
       <Curve bottom="150" left="-160" color="#ede0fa">
         <Curve2SVG />
       </Curve>
-      <LightBoxVideo thumbnailVideo="business-for-you-3432" videoID="_u4u3-PQ8a0" />
+      <LightBoxVideo alt="business entity structure" thumbnailVideo="business-for-you-3432" videoID="_u4u3-PQ8a0" />
     </ContentCenter>
   </Wrapper>
 );

@@ -97,14 +97,14 @@ const EssentialsSection = ({ className, content }) => (
         <HeadingCenter className="heading" headline={content.header} headlineWidth="770" text={content.text} bottomMargin="88" />
         <ContentCenter>
             <ImageWrapper>
-                <Image filename="ui-6001" />
+                <Image filename="ui-6001" alt="your dashboard" />
             </ImageWrapper>
         </ContentCenter>
         <HeadingCenter className="heading" headline={content.header2} headlineWidth="770" text={content.text2} bottomMargin="40" />
         <ContentCenter>
             <Grid>
                 {content.boxes.map((box, i) => (
-                    <ColorBox>
+                    <ColorBox key={i}>
                         <Icon>
                             {icons[i]}
                         </Icon>

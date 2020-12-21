@@ -27,7 +27,7 @@ const CertificateOfGoodStanding = () => (
             productPrice={servicePrice.cgs}
             productDescription="Also known as a Certificate of Existence, Certificate of Authorization, or a Certificate of Status, the Good Standing Certificate is a one-page document provided by the secretary of state and provides conclusive evidence of the status of your business entity."
         />
-        <Top imageName="mrs-bulb-buildings" imageAlt="Mr Bulb in front of registration office" ovalColor="blue">
+        <Top imageName="mrs-bulb-buildings" imageAlt="File a Certificate of Good Standing" ovalColor="blue">
             <h1>{top.header}</h1>
             <p>{top.text}</p>
             <Buttonsbox>

@@ -40,7 +40,7 @@ const InfoSection = ({ className, content }) => (
         <ContentCenter>
             <Grid>
                 {content.boxes.map((box, i) => (
-                    <CategoryButton content={box} icon={icons[i]} />
+                    <CategoryButton key={i} content={box} icon={icons[i]} />
                 ))}
             </Grid>
             <Button theme="primary56" content={content.button} arrow margin="48px 0 0" />

@@ -348,9 +348,9 @@ const AccordionFaq = ({
 										) : null}
 										{typeof item.answer === "object" ? (
 											<Paragraph bottomMargin="0" mixed>
-												{item.answer.map((el) =>
+												{item.answer.map((el, i) =>
 													el.url ? (
-														<Link to={el.url}>{` ${parse(el.text)} `}</Link>
+														<Link to={el.url} key={i}>{` ${parse(el.text)} `}</Link>
 													) : (
 														parse(el.text)
 													)
@@ -373,9 +373,9 @@ const AccordionFaq = ({
 										) : null}
 										{typeof item.text === "object" ? (
 											<Paragraph topMargin="32" bottomMargin="0" mixed>
-												{item.text.map((el) =>
+												{item.text.map((el, i) =>
 													el.url ? (
-														<Link to={el.url}>{` ${parse(el.text)} `}</Link>
+														<Link to={el.url} key={i}>{` ${parse(el.text)} `}</Link>
 													) : (
 														el.text
 													)
@@ -396,8 +396,9 @@ const AccordionFaq = ({
 													)}
 
 													{e.type === "arrow-links" &&
-														e.content.map((link) => (
-															<ArrowLink
+														e.content.map((link, i) => (
+                                                            <ArrowLink
+                                                                key={i}
 																url={link.url}
 																style={link.style}
 																externalLink={link.externalLink}

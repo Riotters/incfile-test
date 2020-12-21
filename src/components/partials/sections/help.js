@@ -104,7 +104,8 @@ const Help = ({ content }) => {
 						<h2>{content.header}</h2>
 						<p>{content.text}</p>
 						<Buttonsbox>
-							<Button
+                            <Button
+                                externalLink
 								content={content.buttons[0]}
 								theme="primary56"
 								marginSM="24px 24px 0 0"
@@ -119,7 +120,7 @@ const Help = ({ content }) => {
 						</Buttonsbox>
 					</Content>
 					<Imagebox>
-						<Image filename="lifebuoy" />
+						<Image filename="lifebuoy" alt="here to help" />
 					</Imagebox>
 				</Flex>
 			</Container>

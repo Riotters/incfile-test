@@ -36,13 +36,13 @@ const AboutSection = ({ className, content, hsOpenForm }) => (
     <Oval className="oval" height="570" width="570" y="-40">
       <OvalSVG />
     </Oval>
-    <ImageContent image="guide-to-start-a-business-about">
+    <ImageContent image="guide-to-start-a-business-about" alt="start a business">
       <PHeading size={3}>{content.header}</PHeading>
       <Paragraph big bottomMargin="32">
         {content.text}
       </Paragraph>
       <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve paragraphHeader />
-      <LightBox thumbnailVideo="comparison-chart-video-3611" videoID="M-SlUnCHmXU" />
+      <LightBox thumbnailVideo="comparison-chart-video-3611" videoID="M-SlUnCHmXU" alt="how to start a business" />
       <Paragraph big bottomMargin="32" topMargin={32}>
         {content.text2}
       </Paragraph>

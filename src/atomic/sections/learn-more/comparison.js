@@ -22,7 +22,7 @@ const Comparison = () => (
         <ComparisonItem>
           <BoxWithImage bgColor={color.blue3}>
             <ImageBox>
-              <Image filename="learn-more-comparision-llc" />
+              <Image filename="learn-more-comparision-llc" alt="learn more about an llc" />
             </ImageBox>
           </BoxWithImage>
 
@@ -51,7 +51,7 @@ const Comparison = () => (
         <ComparisonItem>
           <BoxWithImage bgColor={color.orange2}>
             <ImageBox>
-              <Image filename="learn-more-comparision-cc" />
+              <Image filename="learn-more-comparision-cc" alt="learn more about c corporation" />
             </ImageBox>
           </BoxWithImage>
 

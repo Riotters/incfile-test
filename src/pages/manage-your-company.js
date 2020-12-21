@@ -1,8 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
-import Button from "../atomic/molecules/buttons/button";
 import Top from "../atomic/partials/top";
 import Benefits from "../atomic/sections/manage-your-company/manage-your-company/benefits";
 import Certificates from "../components/partials/sections/certificates";
@@ -20,7 +18,7 @@ const ManageYourCompany = () => (
 		/>
 		<Top
 			imageName="mrs-bulb-final-paper-stock"
-			imageAlt="Mr Bulb with a briefcase holding a sign pointing foward"
+			imageAlt="manage your company"
 			ovalColor="purple"
 			tabletVariantClass="tablet--shopper"
 			tabletImgScale={0.8}
