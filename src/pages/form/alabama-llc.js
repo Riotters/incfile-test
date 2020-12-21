@@ -5,10 +5,9 @@ import PPCLLCLayout from "../../atomic/partials/ppc/ppc-llc-layout";
 const FormALLLC = () => {
   return (
     <Layout>
-        <PPCLLCLayout stateCode="AL" />
+      <PPCLLCLayout stateCode="AL" />
     </Layout>
   );
 };
-
 
 export default FormALLLC;
