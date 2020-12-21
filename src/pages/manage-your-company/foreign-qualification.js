@@ -41,14 +41,14 @@ const ForeignQualification = () => (
 
 		<Top
 			imageName="mrs-bulb-foreign-qualification"
-			imageAlt="Mrs Bulb choosing a destination of his next business on a map of USA"
+			imageAlt="Filing a Foreign Qualification"
 			headlineWidth="515"
 			ovalColor="green"
 		>
 			<h1>{top.header}</h1>
 			<p>{top.text}</p>
 			<Buttonsbox>
-				<Button content={top.button[0]} theme="primary56" width="200px" arrow />
+				<Button externalLink content={top.button[0]} theme="primary56" width="200px" arrow />
 			</Buttonsbox>
 			<RatingRow>
 				<CartBlock />

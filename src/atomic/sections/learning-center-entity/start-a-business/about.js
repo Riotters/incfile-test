@@ -28,7 +28,7 @@ const AboutSection = ({ className, content }) => (
     <Oval className="oval" height="570" width="570" y="-40">
       <OvalSVG />
     </Oval>
-    <ImageContent image="business-startup-guides-about-321">
+    <ImageContent image="business-startup-guides-about-321" alt="start a business guide">
       <Heading size="3" bottomMargin="32">
         {content.header}
       </Heading>
@@ -39,7 +39,7 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="48">
         {content.text2}
       </Paragraph>
-        <LightBox thumbnailVideo="how-to-come-up-with-a-business-idea-9920" videoID="6ItzICKbe_0" />
+        <LightBox alt="business idea" thumbnailVideo="how-to-come-up-with-a-business-idea-9920" videoID="6ItzICKbe_0" />
     </ImageContent>
   </About>
 );

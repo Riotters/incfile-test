@@ -1,14 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Card from "../../molecules/mixed-blocks/top-image-box";
-import { color } from "../../atoms/styles/colors";
-import { shadow } from "../../atoms/styles/shadows";
-import Frame from "../../molecules/mixed-blocks/unboxing-frame";
 import Image from "../../atoms/image/image_nobase64";
-import IconCircle from "../../../components/icons/circle";
-import ArrowSVG from "../../../images/arrow.inline.svg";
 import AccordionSingle from "../accordion/accordion-single";
-import Whitebox from "../../atoms/boxes/white-box";
 import Line1SVG from "../../../images/icons/line1.inline.svg";
 import Line2SVG from "../../../images/icons/line2.inline.svg";
 import Line3SVG from "../../../images/icons/line3.inline.svg";
@@ -111,53 +104,6 @@ const FramesBoxBottom = styled.div`
   }
 `;
 
-const New = styled(Whitebox)`
-  width: 100%;
-  position: relative;
-
-  button,
-  .text {
-    padding: 16px 16px 16px 64px;
-  }
-
-  button {
-    width: 100%;
-    text-align: left;
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-  }
-
-  .arrow {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-  }
-
-  span {
-    font-family: Avenir, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: left;
-  }
-
-  .text {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: ${color.white};
-    transform: translateY(100%);
-    box-shadow: ${shadow.white1};
-
-    p {
-      color: ${color.grey1};
-      font-size: 16px;
-      line-height: 24px;
-    }
-  }
-`;
-
 const Icons = [Line1SVG, Line2SVG, Line3SVG, Line4SVG, Line5SVG, Line6SVG, Line7SVG];
 
 const UnboxingFormationKit = ({ className, content }) => {
@@ -165,13 +111,13 @@ const UnboxingFormationKit = ({ className, content }) => {
     <Wrapper className={className}>
       <FramesBoxTop>
         {content.top.map((box, i) => (
-          <AccordionSingle content={box} />
+            <AccordionSingle content={box} key={i}  />
         ))}
       </FramesBoxTop>
-      <Image filename="testing" />
+      <Image filename="testing" alt="business formation kit" />
       <FramesBoxBottom>
         {content.bottom.map((box, i) => (
-          <AccordionSingle content={box} />
+          <AccordionSingle content={box} key={i} />
         ))}
       </FramesBoxBottom>
     </Wrapper>

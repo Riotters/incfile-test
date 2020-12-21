@@ -30,7 +30,8 @@ const EntityTypeSection = ({ className, content }) => (
 		/>
 		<CenterGrid contentWidth="970" columnsSM="1" columnsMD="2" curve>
 			{content.buttons.map((button, i) => (
-				<BoxedButton
+                <BoxedButton
+                    key={i}
 					content={button}
 					icon={icons[i]}
 					iconColor={colors[i]}
@@ -39,7 +40,8 @@ const EntityTypeSection = ({ className, content }) => (
 			))}
 		</CenterGrid>
 		<ContentCenter>
-			<Button
+            <Button
+                externalLink
 				content={content.button}
 				theme="primary56"
 				margin="48px 0 0"

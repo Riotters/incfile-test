@@ -25,7 +25,7 @@ const AboutSection = ({ className, content }) => (
     <Oval className="oval" height="570" width="570" y="-40">
       <OvalSVG />
     </Oval>
-    <ImageContent image="fqualification">
+    <ImageContent image="fqualification" alt="Filing a Foreign Qualification">
         {content.header && (
             <Heading size={2} template={3} left bottomMargin="24">
                 {parse(content.header)}

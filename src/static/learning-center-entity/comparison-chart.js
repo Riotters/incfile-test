@@ -441,19 +441,23 @@ export const entityType = {
 	buttons: [
 		{
 			header: `LLC`,
-			url: `/limited-liability-company/`,
+            url: `/limited-liability-company/`,
+            imageAlt: `what is an llc`,
 		},
 		{
 			header: `S Corporation`,
-			url: `/what-is-s-corporation/`,
+            url: `/what-is-s-corporation/`,
+            imageAlt: `what is a s corporation`
 		},
 		{
 			header: `Nonprofit`,
-			url: `/what-is-non-profit-corporation/`,
+            url: `/what-is-non-profit-corporation/`,
+            imageAlt: `what is a nonprofit corporation`
 		},
 		{
 			header: `C Corporation`,
-			url: `/what-is-c-corporation/`,
+            url: `/what-is-c-corporation/`,
+            imageAlt: `what is a c corporation`
 		},
 	],
 	button: {

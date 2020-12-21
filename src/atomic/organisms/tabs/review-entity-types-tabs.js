@@ -311,7 +311,7 @@ const CCorpTabs = ({ layout, columns, content }) => {
 						<Sticky layout={layout} columns={columns}>
 							<TabList>
 								{content.panels.map((panel, i) => (
-									<Tab>
+									<Tab key={i}>
 										<Button
 											onClick={() => {
 												scrollTop("tabs-wrapper");
@@ -341,7 +341,8 @@ const CCorpTabs = ({ layout, columns, content }) => {
 								<Paragraph big bottomMargin="48">
 									{content.content[0].text}
 								</Paragraph>
-								<LightBoxVideo
+                                <LightBoxVideo
+                                    alt="business entity structure"
 									thumbnailVideo="business-for-you-3432"
 									videoID="_u4u3-PQ8a0"
 								/>
