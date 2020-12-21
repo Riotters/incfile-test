@@ -30,8 +30,8 @@ const Wrapper = styled.span`
 
 const ResearchTopicPath = ({ content }) => (
   <Wrapper>
-    {content.map((link) => (
-      <ArrowLink content={link} />
+    {content.map((link, i) => (
+      <ArrowLink content={link} key={i} />
     ))}
   </Wrapper>
 );

@@ -34,8 +34,9 @@ const AllPackagesInclude = ({ content }) => (
 	<Wrapper>
 		<ContentCenter contentWidth={970}>
 			<GridWrapper>
-				{content.map((card) => (
-					<Adventages
+				{content.map((card, i) => (
+                    <Adventages
+                        key={i}
 						style={{ marginLeft: "15px" }}
 						headline={card.header}
 						circleText={card.circleText}

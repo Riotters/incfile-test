@@ -353,7 +353,8 @@ const CalculatorSection = ({ content, onSelectState, state, id }) => {
 					<ImageBoxes>
 						<TopImageBox
 							className="box box--left"
-							image="your-state-7282"
+                            image="your-state-7282"
+                            imageAlt="state of formation"
 							color={color.blue3}
 						>
 							<PHeading template={4}>{cards[0]}</PHeading>
@@ -366,7 +367,8 @@ const CalculatorSection = ({ content, onSelectState, state, id }) => {
 						</TopImageBox>
 						<TopImageBox
 							className="box box--right"
-							image="forming-a-corporation"
+                            image="forming-a-corporation"
+                            imageAlt="revenue from sales"
 							color={color.orange3}
 						>
 							<PHeading template={4}>{cards[1]}</PHeading>

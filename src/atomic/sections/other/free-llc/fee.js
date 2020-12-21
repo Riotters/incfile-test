@@ -129,7 +129,8 @@ const FeeSection = ({ content }) => {
 					<TopImageBox
 						className="box box--left"
 						image="lcsn-4343"
-						color={color.green3}
+                        color={color.green3}
+                        imageAlt="entity type"
 					>
 						<PHeading size={4}>{cards[0]}</PHeading>
 						<Dropdown
@@ -142,7 +143,8 @@ const FeeSection = ({ content }) => {
 					<TopImageBox
 						className="box box--right"
 						image="your-state-7282"
-						color={color.blue3}
+                        color={color.blue3}
+                        imageAlt="state of formation"
 					>
 						<PHeading size={4}>{cards[1]}</PHeading>
 						<Dropdown

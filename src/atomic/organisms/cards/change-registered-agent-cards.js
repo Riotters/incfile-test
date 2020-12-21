@@ -33,7 +33,7 @@ const ChangeRegisteredAgentCards = ({ className, content, paddingTop, paddingBot
               <CurveSVG />
           </Curve>
           {content.map((card, i) => (
-              <Card content={card} color={colors[i]} image={icons[i]} />
+              <Card key={i} content={card} color={colors[i]} image={icons[i]} />
           ))}
       </Wrapper>
     </Container>

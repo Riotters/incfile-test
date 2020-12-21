@@ -15,7 +15,7 @@ const ArticleContent= ({ className, content }) => {
   return (
     <Wrapper className={className}>
         <p>{content.paragraph1}</p>
-        <Image filename={content.image1} />
+        <Image filename={content.image1} alt={content.subtitle1} />
         <p>{content.subtitle1}</p>
         <p>{content.paragraph2}</p>
     </Wrapper>

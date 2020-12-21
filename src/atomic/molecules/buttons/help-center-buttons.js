@@ -4,7 +4,6 @@ import { Link } from "gatsby";
 import Whitebox from "../../atoms/boxes/white-box";
 import Circle from "../../atoms/icons/circle";
 import Image from "../../atoms/image/image";
-import { Heading } from "../../atoms/typography/heading";
 import { color } from "../../atoms/styles/colors";
 import ArrowSVG from "../../../images/arrow.inline.svg";
 import { shadow } from "../../atoms/styles/shadows";
@@ -93,7 +92,7 @@ const BoxedButton = ({
 				<TextWrapper textColor={textColor} icon={icon} ellipsis={ellipsis}>
 					{icon && (
 						<ImageWrapper iconColor={iconColor} iconPadding={iconPadding}>
-							<Image filename={icon} />
+							<Image filename={icon} alt={content.header ?? ''} />
 						</ImageWrapper>
 					)}
 					{content.header && <span bottomMargin="0">{content.header}</span>}

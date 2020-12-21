@@ -127,7 +127,7 @@ const Adventages = ({
 
 				{imageName && (
 					<ImageWrapper>
-						<Image filename={imageName} />
+						<Image filename={imageName} alt={content.header ?? ''} />
 					</ImageWrapper>
 				)}
 				{content.header && (

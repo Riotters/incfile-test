@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { color, gradient } from "../../../atoms/styles/colors";
+import { gradient } from "../../../atoms/styles/colors";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
@@ -8,7 +8,6 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-green.inline.svg";
 import Oval2SVG from "../../../../images/ovals/top-right-transparent-green2.inline.svg";
 import Button from "../../../molecules/buttons/button";
-import Table from "../../../organisms/tables/coupon-promo-code-table";
 
 const Catch = styled.section`
   position: relative;
@@ -46,7 +45,7 @@ const CatchSection = ({ className, content }) => (
       <Paragraph big maxWidth="770" topMargin="64">
         {content.text3}
       </Paragraph>
-      <Button content={content.button} theme="primary56" arrow />
+      <Button externalLink content={content.button} theme="primary56" arrow />
     </ContentCenter>
   </Catch>
 );

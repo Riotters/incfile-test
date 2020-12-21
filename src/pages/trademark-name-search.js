@@ -37,11 +37,11 @@ const TrademarkNameSearch = () => (
 			productPrice={servicePrice.trademark}
 			productDescription="Protect your business name with a trademark. Our partnered attorneys will do the research to make sure the mark isn't already taken, ensure the filing gets accepted by the government office, and provide sound legal advice throughout the entire process."
 		/>
-		<Top imageName="mrs-bulb-trademark" imageAlt="" ovalColor="darkblue">
+		<Top imageName="mrs-bulb-trademark" imageAlt="file a trademark" ovalColor="darkblue">
 			<h1 style={{ maxWidth: "100%" }}>{top.header}</h1>
 			<HeadingP size={2} big>{top.text}</HeadingP>
 			<Buttonsbox>
-				<Button extends content={top.button[0]} theme="primary56" width="200px" arrow />
+				<Button externalLink extends content={top.button[0]} theme="primary56" width="200px" arrow />
 			</Buttonsbox>
 		</Top>
 		<About content={about} />

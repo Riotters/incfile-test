@@ -158,7 +158,8 @@ const Articles = ({ oval, categoryId }) => {
 							>
 								{posts.map((post, index) => (
 									<Article
-										img={post.featured_image}
+                                        img={post.featured_image}
+                                        imageAlt={post.title.rendered}
 										top="0"
 										topLG="-50px"
 										scale="1.1"

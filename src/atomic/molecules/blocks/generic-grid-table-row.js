@@ -6,7 +6,7 @@ import { Paragraph } from "../../atoms/typography/paragraph";
 import Whitebox from "../../atoms/boxes/white-box";
 import Checkbox from "../../atoms/controls/checkbox-with-events";
 import Image from "../../atoms/image/image";
-import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
+import { useTabState, usePanelState } from "@bumaga/tabs";
 import { motion } from "framer-motion";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import CheckSVG from "../../../images/circle-status-check.inline.svg";
@@ -102,11 +102,6 @@ const FlexRowCell = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-`;
-
-const RightParagraph = styled(Paragraph)`
-  align-self: flex-end;
-  color: ${(props) => props?.color ?? "#000"};
 `;
 
 const Checkmark = styled.p`
@@ -292,7 +287,7 @@ const GenericGridTableRow = ({ className, content, settings, columns }) => (
               <VariantWrapper>
                 {item.variant.icon && (
                   <ImageWrapper>
-                    <Image filename={item.variant.icon} />
+                    <Image filename={item.variant.icon} alt={item.variant.label} />
                   </ImageWrapper>
                 )}
                 <Paragraph bottomMargin={0} style={item.variant.style}>

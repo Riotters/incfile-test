@@ -8,8 +8,6 @@ import { color } from "../../atoms/styles/colors";
 import parse from "html-react-parser";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../../images/orange-curve.inline.svg";
-import VisibilitySensor from "../../../components/VisibilitySensor";
-import { HeadingP } from "../../atoms/typography/heading-to-p";
 import { Heading } from "../../atoms/typography/heading";
 
 const Wrapper = styled.div`
@@ -337,9 +335,9 @@ const AccordionWithCounting = ({
 									) : null}
 									{typeof item.answer === "object" ? (
 										<Paragraph mixed bottomMargin="0">
-											{item.answer.map((el) =>
+											{item.answer.map((el, i) =>
 												el.url ? (
-													<Link to={el.url}>{` ${parse(el.text)} `}</Link>
+													<Link to={el.url} key={i}>{` ${parse(el.text)} `}</Link>
 												) : (
 													el.text
 												)
@@ -349,8 +347,8 @@ const AccordionWithCounting = ({
 									{/* <p>{item.answer}</p> */}
 									{item.list && (
 										<ListItems listColor={listColor}>
-											{item.list.map((listitem) => (
-												<li>{listitem}</li>
+											{item.list.map((listitem, i) => (
+												<li key={i}>{listitem}</li>
 											))}
 										</ListItems>
 									)}
@@ -362,9 +360,9 @@ const AccordionWithCounting = ({
 									) : null}
 									{typeof item.text === "object" ? (
 										<Paragraph topMargin="32" bottomMargin="0" mixed>
-											{item.text.map((el) =>
+											{item.text.map((el, i) =>
 												el.url ? (
-													<Link to={el.url}>{` ${parse(el.text)} `}</Link>
+													<Link to={el.url} key={i}>{` ${parse(el.text)} `}</Link>
 												) : (
 													el.text
 												)
@@ -379,9 +377,9 @@ const AccordionWithCounting = ({
 									) : null}
 									{typeof item.text2 === "object" ? (
 										<Paragraph topMargin="32" bottomMargin="0" mixed>
-											{item.text2.map((el) =>
+											{item.text2.map((el, i) =>
 												el.url ? (
-													<Link to={el.url}>{` ${parse(el.text)} `}</Link>
+													<Link to={el.url} key={i}>{` ${parse(el.text)} `}</Link>
 												) : (
 													el.text
 												)

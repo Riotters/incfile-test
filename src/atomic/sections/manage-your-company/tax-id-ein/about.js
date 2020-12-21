@@ -26,11 +26,11 @@ const AboutSection = ({ className, content }) => (
     <Oval className="oval" height="570" width="570" y="-28">
       <OvalSVG />
     </Oval>
-    <ImageContent image="envelope-ein">
+    <ImageContent image="envelope-ein" alt="irs form">
       <Paragraph big bottomMargin="48">
         {content.text}
       </Paragraph>
-      <LightBoxVideo thumbnailVideo="how-to-get-tax-id-3437.png" videoID="8AuLOTqFHQ4" bottomMargin="64" />
+      <LightBoxVideo alt="how to get a Tax ID Number" thumbnailVideo="how-to-get-tax-id-3437.png" videoID="8AuLOTqFHQ4" bottomMargin="64" />
       <IconTextColorBox color={color.blue3} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve headingSize={2} left />
       <Heading size={2} template={3} left bottomMargin="24">
         {content.header}

@@ -259,7 +259,8 @@ const SearchToolSection = ({ content, businessIndustryList }) => {
 							</TopImageBox>
 							<TopImageBox
 								className="box box--right"
-								image="forming-a-corporation"
+                                image="forming-a-corporation"
+                                imageAlt="state of formation"
 								color={color.orange3}
 							>
 								<Heading size={3} template={4} center>

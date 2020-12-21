@@ -138,13 +138,13 @@ const Radio = ({ className, content, name, id, checked, value, description, onCl
         {description && (
           <>
             <span className="arrowInsideRadioButton" />
-            {description.map((el) => (
-              <div style={{ marginBottom: el.marginBottom ?? 0 }}>
+            {description.map((el, i) => (
+              <div style={{ marginBottom: el.marginBottom ?? 0 }} key={i}>
                 {el.content && <Paragraph bottomMargin={0}>{el.content}</Paragraph>}
                 {el.list && (
                   <ul>
-                    {el.list.map((listitem) => (
-                      <li>{parse(listitem)}</li>
+                    {el.list.map((listitem, j) => (
+                      <li key={j}>{parse(listitem)}</li>
                     ))}
                   </ul>
                 )}

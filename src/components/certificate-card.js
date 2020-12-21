@@ -186,7 +186,7 @@ const CertificateCard = ({
 	return (
 		<Wrapper className={className}>
 			<Heading size={3}>{headline}</Heading>
-			{image && <Image filename={image} />}
+			{image && <Image filename={image} alt={headline} />}
 			{dropdownOnePlaceholder && (
 				<Label className="label">
 					Entity Type

@@ -1,10 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../../atoms/styles/colors";
-import { shadow } from "../../atoms/styles/shadows";
-import Image from "../../atoms/image/image";
-import { Heading } from "../../atoms/typography/heading";
-import { Paragraph } from "../../atoms/typography/paragraph";
 import Whitebox from "../../atoms/boxes/white-box";
 
 const Wrapper = styled.div`

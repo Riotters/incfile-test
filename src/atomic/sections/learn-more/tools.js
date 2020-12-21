@@ -31,7 +31,7 @@ const ToolsSection = ({ className, content, bgLinear }) => (
         <HeadingCenter headline={content.header} headlineWidth="700" text={content.text} bottomMargin="80" />
         <CenterGrid columnsSM="1" columnsMD="2">
             {content.buttons.map((button, i) => (
-                <BoxedButton content={button} icon={icons[i]} iconColor={colors[i]} />
+                <BoxedButton key={i} content={button} icon={icons[i]} iconColor={colors[i]} />
             ))}
         </CenterGrid>
     </Tools>

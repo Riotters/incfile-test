@@ -43,9 +43,10 @@ const TabTitle = ({ content, arrow, icon }) => (
           )} */}
         </Content>
         <Circle
-          circleColor={color.orange3}
-          iconColor={color.orange1}
-          className="arrow-link"
+            circleColor={color.orange3}
+            iconColor={color.orange1}
+            className="arrow-link"
+            style={{marginRight: `16px`}}
         >
           <ArrowSVG />
         </Circle>
@@ -122,22 +123,6 @@ const Content = styled.div`
   }
 `;
 
-const Arrow = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 12px;
-  width: 12px;
-  margin-right: 10px;
-
-  svg {
-    path {
-      transition: fill 0.3s ease;
-      fill: #5088fd;
-    }
-  }
-`;
-
 const ButtonBoxStatic = styled.div`
   height: 78px;
   line-height: 78px;
@@ -146,7 +131,7 @@ const ButtonBoxStatic = styled.div`
   transition: box-shadow 0.3s ease;
   box-shadow: 0 20px 30px 0 #e6e6e6;
   display: flex;
-  // cursor: pointer;
+  align-items: center;
   position: relative;
   border-radius: 5px;
   overflow: hidden;

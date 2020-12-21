@@ -96,7 +96,6 @@ const IconTextColorBox = ({
 	headingSize = 4,
 	headingSizeTemplate = 4,
 	paragraphHeader = false,
-	left,
 	rounded,
 	curve,
 	curveColor,

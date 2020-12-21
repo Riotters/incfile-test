@@ -31,6 +31,7 @@ const ServiceSection = ({ className, content }) => (
         <HeadingCenter headline={content.header} textWidth="770" text={content.text} bottomMargin="48" bottomMarginLG="80" />
         <ContentCenter>
             <LightBoxVideo
+                alt="how to start a business"
                 thumbnailVideo="comparison-chart-video-3611"
                 videoID="372490609"
                 vimeo />

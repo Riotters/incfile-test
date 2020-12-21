@@ -60,11 +60,11 @@ const ImageWrapper = styled.div`
     }
 `;
 
-const RoundedTopImageBox = ({ className, image, color, content, noShadow, roundLeft, roundRight, align }) => {
+const RoundedTopImageBox = ({ className, image, imageAlt, color, content, noShadow, roundLeft, roundRight, align }) => {
   return (
     <Wrapper className={className} noShadow={noShadow} roundLeft={roundLeft} roundRight={roundRight} align={align}>
       <ImageWrapper className="top" roundLeft={roundLeft} roundRight={roundRight} color={color}>
-          {image && <Image filename={image} />}
+          {image && <Image filename={image} alt={imageAlt ?? content.header} />}
       </ImageWrapper>
       <div className="content">
         <Heading size="4" bottomMargin="16">

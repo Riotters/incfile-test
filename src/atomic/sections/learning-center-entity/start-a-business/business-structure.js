@@ -108,9 +108,9 @@ const BusinessStructureSection = ({ className, content }) => (
 					<Curve2SVG />
 				</Curve>
 				{content.cards.map((card, i) => (
-					<Box className={`box box--${i + 1}`}>
+					<Box className={`box box--${i + 1}`} key={i}>
 						<ColoredBox color={colors[i]}>
-							<Image filename={icons[i]} />
+							<Image filename={icons[i]} alt={card.alt ?? ''} />
 						</ColoredBox>
 						<Heading size={3} template={4} center bottomMargin="8">
 							{parser(card.header)}

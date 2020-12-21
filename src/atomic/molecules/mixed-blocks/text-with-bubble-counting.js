@@ -6,19 +6,19 @@ const TextWithBubbleCounting = ({children}) => (
     <Wrapper>
         <Bubbles>
             <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-color" />
+                <Image filename="mrs-bulb-final-comp-thumb-up-color" alt="icon" />
             </BubbleImage>
             <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
+                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="icon" />
             </BubbleImage>
             <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
+                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="icon" />
             </BubbleImage>
             <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
+                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="icon" />
             </BubbleImage>
             <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
+                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="icon" />
             </BubbleImage>
         </Bubbles>
         <Text>

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import FormSection from "./form-section";
 
 const FormContent = ({columns, children, paddingLeft, paddingRight, paddingTop, paddingBottom}) => (
     <Wrapper columns={columns} paddingLeft={paddingLeft} paddingRight={paddingRight} paddingTop={paddingTop} paddingBottom={paddingBottom}>

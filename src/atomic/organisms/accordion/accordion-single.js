@@ -1,12 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "gatsby";
 import styled from "styled-components";
-import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
-import { motion } from "framer-motion";
 import { color } from "../../atoms/styles/colors";
 import { shadow } from "../../atoms/styles/shadows";
-import CurveSVG from "../../../images/orange-curve.inline.svg";
-import VisibilitySensor from "../../../components/VisibilitySensor";
 import Whitebox from "../../atoms/boxes/white-box";
 import IconCircle from "../../../components/icons/circle";
 import ArrowSVG from "../../../images/arrow.inline.svg";

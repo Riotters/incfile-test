@@ -5,17 +5,13 @@ import { Tabs, Tab, TabList, TabPanel } from "react-tabs";
 //import "react-tabs/style/react-tabs.css";
 // import { motion } from "framer-motion"
 import Container from "../../container";
-import ArrowLink from "../../../components/arrow-link";
 import ProfitsSVG from "../../../images/icons/profits-and-taxes.inline.svg";
-import Profits2SVG from "../../../images/icons/with-no-money-icon3.inline.svg";
 import TaxSVG from "../../../images/icons/tax-rates.inline.svg";
 import StockSVG from "../../../images/icons/stock-dividends.inline.svg";
 import LegalSVG from "../../../images/icons/legal-requirements.inline.svg";
 import ArrowSVG from "../../../images/arrow.inline.svg";
 import { Collapse } from "react-collapse";
 import { color } from "../../atoms/styles/colors";
-import IconSVG from "../../../images/icons/generally-arrow.inline.svg";
-import IconTextColorBox from "../../molecules/text-blocks/icon-h4-text-color";
 import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
 //import VisibilitySensor from "../../../components/VisibilitySensor";
 import { Heading } from "../../atoms/typography/heading";
@@ -296,7 +292,7 @@ const CCorpTabs = ({ layout, columns, content }) => {
 						<Sticky layout={layout} columns={columns}>
 							<TabList>
 								{content.panels.map((panel, i) => (
-									<Tab>
+									<Tab key={i}>
 										<Button
 											onClick={() => {
 												scrollTop("tabs-wrapper-2");

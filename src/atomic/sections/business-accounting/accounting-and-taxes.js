@@ -34,7 +34,7 @@ const Wrapper = styled.div`
 
 const AccountingAndTaxes = ({ content }) => (
 	<Wrapper>
-		<ImageContent image="main-header-object-certificate-good-standing-5915">
+		<ImageContent image="main-header-object-certificate-good-standing-5915" alt="all your accounting and tax needs">
 			<Paragraph big mixed bottomMargin={48}>
 				{parse(content.text)}
 			</Paragraph>

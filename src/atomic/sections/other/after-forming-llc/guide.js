@@ -27,7 +27,7 @@ const GuideSection = ({ className, content, onClick }) => (
         <Oval className="oval" height="570" width="570" bottom="-3" right="-10">
             <Oval2SVG />
         </Oval>
-        <ImageContent image="after-formation-cta-7994" imageWidth="515">
+        <ImageContent image="after-formation-cta-7994" alt="forming an llc" imageWidth="515">
             <Heading size="2">
                 <Curve top="-20" left="-95" color={color.orange2} rotate="-10">
                     <CurveSVG />

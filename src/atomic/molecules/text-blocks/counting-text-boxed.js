@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import { color } from "../../atoms/styles/colors"
 import { shadow } from "../../atoms/styles/shadows"
-import PropsTypes from "prop-types";
 import IconCircle from "../../../components/icons/circle";
 
 const Wrapper = styled.div`

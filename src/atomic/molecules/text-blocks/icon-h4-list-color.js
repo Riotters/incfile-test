@@ -117,7 +117,7 @@ const IconTextColorBox = ({ className, color, headingSize = 3, headingTemplateSi
                     <Paragraph mixed big>{parse(content.text)}</Paragraph>
                 )}
 
-                <ul>{content.list.map((item) => (typeof item === "string" ? <li>{parse(item)}</li> : <li>{item.map((el) => (el.url ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text))}</li>))}</ul>
+                <ul>{content.list.map((item, i) => (typeof item === "string" ? <li key={i}>{parse(item)}</li> : <li>{item.map((el, j) => (el.url ? <Link key={j} to={el.url}>{` ${el.text} `}</Link> : el.text))}</li>))}</ul>
             </Colorbox>
         </Wrapper>
     );

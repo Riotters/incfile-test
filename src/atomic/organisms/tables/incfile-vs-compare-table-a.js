@@ -105,8 +105,8 @@ const IncfileVsCompareTableA = ({ className, content }) => (
 			headerSize={5}
 			badge={content.badge}
 		/>
-		{content.rows.map((row) => (
-			<GridTableRow className="table-row" content={row} />
+		{content.rows.map((row, i) => (
+			<GridTableRow className="table-row" content={row} key={i} />
 		))}
 	</Wrapper>
 );

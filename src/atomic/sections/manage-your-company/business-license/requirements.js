@@ -87,8 +87,8 @@ const RequirementsSection = ({ className, content }) => (
     <ContentCenter>
       <States>
         <CurveSVG />
-        {states.state.map((state) => (
-          <ArrowButton href={state.url} target="_blank" rel="noopener noreferrer">
+        {states.state.map((state, i) => (
+          <ArrowButton key={i} href={state.url} target="_blank" rel="noopener noreferrer">
             {state.name}
             <CircleIcon transform="rotate(90deg)" circleColor={color.orange3} iconColor={color.orange1}>
               <ArrowSVG />

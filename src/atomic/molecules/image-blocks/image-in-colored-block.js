@@ -25,7 +25,7 @@ const Wrapper = styled.div`
 
 const ImageInColoredBox = ({ boxColor, boxSize, image }) => (
 	<Wrapper boxColor={boxColor} boxSize={boxSize}>
-		<Image filename={image} />
+		<Image filename={image} alt="icon" />
 	</Wrapper>
 );
 

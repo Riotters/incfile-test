@@ -4,9 +4,6 @@ import { color } from "../../atoms/styles/colors";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import Whitebox from "../../atoms/boxes/white-box";
-import IconCircle from "../../atoms/icons/circle";
-import CheckSVG from "../../../images/circle-status-check.inline.svg";
-import ExSVG from "../../../images/circle-status-x.inline.svg";
 
 const Wrapper = styled(Whitebox)`
   display: grid;
@@ -39,8 +36,8 @@ const Cell = styled.div`
 
 const GridTableRow = ({ className, content, columns }) => (
   <Wrapper className={className} columns={columns}>
-    {content.map((item) => (
-      <Cell>
+    {content.map((item, i) => (
+      <Cell key={i}>
         {item.type === "header" && (
           <Heading size="5" bottomMargin="0">
             {item.text}

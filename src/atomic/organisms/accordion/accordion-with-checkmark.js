@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
+import parse from "html-react-parser";
 import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
+
 import { Paragraph } from "../../atoms/typography/paragraph";
 import { motion } from "framer-motion";
 import { color } from "../../atoms/styles/colors";
-import parse from "html-react-parser";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../../images/orange-curve.inline.svg";
-import VisibilitySensor from "../../../components/VisibilitySensor";
 import CheckmarkSVG from "../../../images/circle-status-check.inline.svg";
 import RedmarkSVG from "../../../images/circle-status-x.inline.svg";
 
@@ -278,8 +278,8 @@ const AccordionWithCounting = ({
 			)}
 			<Tabs>
 				<TabsWrapper>
-					{content.items.map((item) => (
-						<TabBox>
+					{content.items.map((item, i) => (
+						<TabBox key={i}>
 							<Tab>
 								<Content>
 									<Checkmark>
@@ -298,9 +298,9 @@ const AccordionWithCounting = ({
 									) : null}
 									{typeof item.answer === "object" ? (
 										<Paragraph bottomMargin="0">
-											{item.answer.map((el) =>
+											{item.answer.map((el, i) =>
 												el.url ? (
-													<Link to={el.url}>{` ${parse(el.text)} `}</Link>
+													<Link to={el.url} key={i}>{` ${parse(el.text)} `}</Link>
 												) : (
 													el.text
 												)
@@ -310,8 +310,8 @@ const AccordionWithCounting = ({
 									{/* <p>{item.answer}</p> */}
 									{item.list && (
 										<ListItems listColor={listColor}>
-											{item.list.map((listitem) => (
-												<li>{listitem}</li>
+											{item.list.map((listitem, j) => (
+												<li key={j}>{listitem}</li>
 											))}
 										</ListItems>
 									)}
@@ -323,9 +323,9 @@ const AccordionWithCounting = ({
 									) : null}
 									{typeof item.text === "object" ? (
 										<Paragraph topMargin="32" bottomMargin="0" mixed>
-											{item.text.map((el) =>
+											{item.text.map((el, i) =>
 												el.url ? (
-													<Link to={el.url}>{` ${parse(el.text)} `}</Link>
+													<Link to={el.url} key={i}>{` ${parse(el.text)} `}</Link>
 												) : (
 													el.text
 												)
@@ -340,9 +340,9 @@ const AccordionWithCounting = ({
 									) : null}
 									{typeof item.text2 === "object" ? (
 										<Paragraph topMargin="32" bottomMargin="0" mixed>
-											{item.text2.map((el) =>
+											{item.text2.map((el, j) =>
 												el.url ? (
-													<Link to={el.url}>{` ${parse(el.text)} `}</Link>
+													<Link to={el.url} key={j}>{` ${parse(el.text)} `}</Link>
 												) : (
 													el.text
 												)

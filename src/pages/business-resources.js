@@ -74,7 +74,7 @@ const BusinessResources = () => {
 			/>
 			<Top
 				imageName="mr-bulb-business-downloads-tools-7829"
-				imageAlt=""
+				imageAlt="business resources & tools for starting a company"
 				ovalColor="purple-2"
 				headlineWidth="585"
 			>

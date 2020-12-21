@@ -14,7 +14,7 @@ const LearnMore = () => (
     <Layout>
         <SEO title="LLC, Nonprofit and Incorporation Resource Center | Incfile" description="Learn about the LLC (Limited Liability Company) and Corporation are filed as well as other reporting and compliance requirements" />
 
-        <Top ovalColor="purple-2" imageName="research-tools" imageAlt="" headlineWidth={700}>
+        <Top ovalColor="purple-2" imageName="research-tools" imageAlt="learning about forming a business" headlineWidth={700}>
             <h1>Everything about forming a business at your fingertips.</h1>
             <p>Learn about the LLC (Limited Liability Company) and Corporation are filed as well as other reporting and compliance requirements</p>
         </Top>

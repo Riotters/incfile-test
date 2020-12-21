@@ -2,11 +2,9 @@ import React from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { motion } from "framer-motion";
 import parse from "html-react-parser";
-import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
+
 import ActionButton from "../../molecules/buttons/button-action";
-import Heading from "../../atoms/typography/heading";
 import ListWithDot from "../../states-llc/list-with-dot";
 import { color } from "../../atoms/styles/colors";
 import ArrowLink from "../../../components/arrow-link";
@@ -348,9 +346,9 @@ const AccordionFaq = ({
 										) : null}
 										{typeof item.answer === "object" ? (
 											<Paragraph bottomMargin="0" mixed>
-												{item.answer.map((el) =>
+												{item.answer.map((el, i) =>
 													el.url ? (
-														<Link to={el.url}>{` ${parse(el.text)} `}</Link>
+														<Link to={el.url} key={i}>{` ${parse(el.text)} `}</Link>
 													) : (
 														parse(el.text)
 													)
@@ -373,9 +371,9 @@ const AccordionFaq = ({
 										) : null}
 										{typeof item.text === "object" ? (
 											<Paragraph topMargin="32" bottomMargin="0" mixed>
-												{item.text.map((el) =>
+												{item.text.map((el, i) =>
 													el.url ? (
-														<Link to={el.url}>{` ${parse(el.text)} `}</Link>
+														<Link to={el.url} key={i}>{` ${parse(el.text)} `}</Link>
 													) : (
 														el.text
 													)
@@ -396,8 +394,9 @@ const AccordionFaq = ({
 													)}
 
 													{e.type === "arrow-links" &&
-														e.content.map((link) => (
-															<ArrowLink
+														e.content.map((link, i) => (
+                                                            <ArrowLink
+                                                                key={i}
 																url={link.url}
 																style={link.style}
 																externalLink={link.externalLink}

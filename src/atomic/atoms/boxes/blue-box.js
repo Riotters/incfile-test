@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { color } from "../styles/colors";
-import { shadow } from "../styles/shadows";
 
 const Wrapper = styled.div`
     width: 100%;

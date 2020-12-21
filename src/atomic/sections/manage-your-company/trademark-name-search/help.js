@@ -101,8 +101,8 @@ const HelpSection = ({ className, content }) => (
 					{content.text}
 				</Paragraph>
 				<ul className="numericlist">
-					{content.list.map((item) => (
-						<li>
+					{content.list.map((item, i) => (
+						<li key={i}>
 							<CheckBlueSVG />
 							{item}
 						</li>

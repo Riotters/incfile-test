@@ -52,11 +52,11 @@ const SCorporation = () => {
     return (
         <Layout>
             <SEO title="What is an S Corp? Your Guide to S Corporations | Incfile" description="The S Corp is a business entity that offers significant tax advantages while still preserving your ownership flexibility. Learn if it's right for you." />
-            <Top imageName="mr-bulb-s-corp-calculator-4821" imageAlt="Mrs Bulb and with checklist" ovalColor="purple" textWidth="550">
+            <Top imageName="mr-bulb-s-corp-calculator-4821" imageAlt="what is a s corporation" ovalColor="purple" textWidth="550">
                 <h1>{top.header}</h1>
                 <p>{top.text}</p>
                 <Buttonsbox>
-                    <Button content={top.button[0]} theme="primary56" arrow />
+                    <Button externalLink content={top.button[0]} theme="primary56" arrow />
                 </Buttonsbox>
                 <RatingRow>
                     <CartBlock />

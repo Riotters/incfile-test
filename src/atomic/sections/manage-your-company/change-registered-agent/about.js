@@ -27,7 +27,7 @@ const AboutSection = ({ className, content }) => (
         <Oval className="oval" height="570" width="570" y="-25">
             <OvalSVG />
         </Oval>
-        <ImageContent image="calendar-832">
+        <ImageContent image="calendar-832" alt="how to change a registered agent">
             <Paragraph big bottomMargin="48">{content.text}</Paragraph>
             <IconTextColorBox color={color.purple3} Icon={IconSVG} content={content.box} bottomMargin="56" rounded curve curveColor={color.babyblue1} headingSize={2} paragraphHeader left/>
             <Heading size={2} template={3} left bottomMargin="24">{content.header}</Heading>

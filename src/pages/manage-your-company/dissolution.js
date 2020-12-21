@@ -34,12 +34,12 @@ const Dissolution = () => (
 		/>
 		<Top
 			imageName="mrs-bulb-dissolution"
-			imageAlt="Mrs Bulb holding a closed sign"
+			imageAlt="Company Dissolution"
 			ovalColor="darkblue"
 		>
 			<h1>{top.header}</h1>
 			<Buttonsbox>
-				<Button content={top.button[0]} theme="primary56" width="200px" arrow />
+				<Button externalLink content={top.button[0]} theme="primary56" width="200px" arrow />
 			</Buttonsbox>
 		</Top>
 		<About content={about} />

@@ -23,48 +23,39 @@ const Service = styled.section`
 `;
 
 const ServiceSection = ({ className, content }) => (
-  <Service className={className}>
-    <Oval
-      className="oval"
-      height="652"
-      width="652"
-      bottom="0"
-      top="16"
-      left="0"
-    >
-      <OvalSVG />
-    </Oval>
-    <Oval className="oval" height="300" width="300" top="48" left="50" x="122">
-      <Oval2SVG />
-    </Oval>
-    <Curve bottom="270" left="80" color={color.purple2}>
-      <Curve2SVG />
-    </Curve>
-    <HeadingCenter
-      headline={content.header}
-      textWidth="770"
-      text={content.text}
-      bottomMargin="48"
-      bottomMarginLG="80"
-    />
-    <ContentCenter>
-      {/* <Video>
-        <Curve top="-25" right="-29" color={color.purple1}>
-          <CurveSVG />
+    <Service className={className}>
+        <Oval
+            className="oval"
+            height="652"
+            width="652"
+            bottom="0"
+            top="16"
+            left="0"
+        >
+            <OvalSVG />
+        </Oval>
+        <Oval className="oval" height="300" width="300" top="48" left="50" x="122">
+            <Oval2SVG />
+        </Oval>
+        <Curve bottom="270" left="80" color={color.purple2}>
+            <Curve2SVG />
         </Curve>
-        <Image filename="newspaper-433445" />
-        <PlayButton>
-          <span>
-            <PlayerSVG />
-          </span>
-        </PlayButton>
-      </Video> */}
-      <LightBoxVideo
-        thumbnailVideo="comparison-chart-video-3611"
-        videoID="_u4u3-PQ8a0"
-      />
-    </ContentCenter>
-  </Service>
+        <HeadingCenter
+            headline={content.header}
+            textWidth="770"
+            text={content.text}
+            bottomMargin="48"
+            bottomMarginLG="80"
+        />
+        <ContentCenter>
+        
+        <LightBoxVideo
+            alt="how to start a business"
+            thumbnailVideo="comparison-chart-video-3611"
+            videoID="_u4u3-PQ8a0"
+        />
+        </ContentCenter>
+    </Service>
 );
 
 export default ServiceSection;
