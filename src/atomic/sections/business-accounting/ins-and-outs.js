@@ -57,7 +57,8 @@ const InsAndOuts = ({ content }) => (
 			bottomMargin="40"
 		/>
 		<ImageContent
-			image={content.image}
+            image={content.image}
+            alt="business tax return"
 			contentCenter={false}
 			className="colorbox-content"
 		>

@@ -359,7 +359,7 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => {
 						<Sticky layout={layout} columns={columns}>
 							<TabList>
 								{content.panels.map((panel, i) => (
-									<Tab>
+									<Tab key={i}>
 										<TabButton
 											onClick={() => {
 												scrollTop("tabs-wrapper");
@@ -457,8 +457,8 @@ const CCorpTabs = ({ layout, columns, content, openHsForm }) => {
 									{content.content[2].header3}
 								</span>
 								<BoxesWrapper>
-									{content.content[2].table.map((item) => (
-										<Box>
+									{content.content[2].table.map((item, i) => (
+										<Box key={i}>
 											<div>
 												<span
 													style={{

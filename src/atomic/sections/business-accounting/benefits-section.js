@@ -30,8 +30,9 @@ const BusinessAccountingBenefitsSection = ({ content }) => (
 	<Wrapper>
 		<ContentCenter contentWidth={970}>
 			<GridWrapper>
-				{content.map((item) => (
-					<InfoCardWithImage
+				{content.map((item, i) => (
+                    <InfoCardWithImage
+                        key={i}
 						backgroundColor={item.backgroundColor}
 						title={item.title}
 						content={item.content}

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../../../atoms/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import ImageContent from "../../../partials/left-image-right-content";
@@ -24,7 +23,8 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="32">
 				{content.text}
 			</Paragraph>
-			<LightBoxVideo
+            <LightBoxVideo
+                alt="business license research package"
 				thumbnailVideo="do-i-need-a-business-license-6829"
 				videoID="ZHQDyf2-kYk"
 			/>

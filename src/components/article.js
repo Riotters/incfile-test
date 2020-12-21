@@ -81,12 +81,12 @@ const Arrow = styled.div`
 	}
 `;
 
-const Article = ({ children, img, top, topLG, scale, href }) => (
+const Article = ({ children, img, top, topLG, scale, href, imageAlt }) => (
 	<Wrapper>
 		<Content href={href}>
 			{img ? (
 				<ImageBox top={top} topLG={topLG} scale={scale}>
-					<img src={img} alt="Image" />
+					<img src={img} alt={imageAlt ?? 'image'} />
 				</ImageBox>
 			) : null}
 			<Text>

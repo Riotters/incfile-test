@@ -27,7 +27,7 @@ const AnnualReport = () => {
 			/>
 			<Top
 				imageName="mr-bulb-annual-report-due-date-tool"
-				imageAlt=""
+				imageAlt="business filing deadline tool"
 				ovalColor="sun"
 				headlineWidth="560"
 			>

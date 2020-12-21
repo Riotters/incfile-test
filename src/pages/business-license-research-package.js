@@ -39,7 +39,7 @@ const BusinessLicence = () => (
 		/>
 		<Top
 			imageName="mrs-bulb-business-license-882"
-			imageAlt=""
+			imageAlt="business license research"
 			ovalColor="darkblue"
 		>
 			<h1>{top.header}</h1>
