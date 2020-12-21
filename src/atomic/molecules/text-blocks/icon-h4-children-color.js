@@ -1,12 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Colorbox from "../../atoms/boxes/color-box";
-import { Heading } from "../../atoms/typography/heading";
-import { Paragraph } from "../../atoms/typography/paragraph";
 import { color } from "../../atoms/styles/colors";
 import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/top-left-bottom-right.inline.svg";
-import ArrowLink from "../buttons/text";
 
 const dotColor = (circleColor) => {
   switch (circleColor) {

@@ -5,7 +5,6 @@ import { Heading } from "../../atoms/typography/heading";
 import Icon from "../../../images/icons/question-orange.inline.svg";
 import { shadow } from "../../atoms/styles/shadows";
 import { color } from "../../atoms/styles/colors";
-import ChooseHeadingType from "../../atoms/typography/ConditionalHeading";
 
 const TitleWithInfoBox = ({ title, hasInfoBox, infoBoxText, questionMarkColor, paragraphHeading = false, ...rest }) => (
   <Header {...rest}>

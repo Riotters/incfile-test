@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
 import { shadow } from "../../atoms/styles/shadows";
-import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import Whitebox from "../../atoms/boxes/white-box";
 import TextCheck from "../../molecules/text-blocks/text-check";
@@ -199,7 +198,7 @@ const PricingCard = ({
         {content.text}
       </Paragraph>
       <ImageWrapper>
-        <Image filename={image} />
+        <Image filename={image} alt="select package" />
       </ImageWrapper>
       <Price>${content.price}</Price>
       <Paragraph>One time payment</Paragraph>
@@ -211,8 +210,8 @@ const PricingCard = ({
         arrow
       />
       <ul style={{ marginBottom: "48px" }}>
-        {content.fees.map((fee) => (
-          <li>
+        {content.fees.map((fee, i) => (
+          <li key={i}>
             <Fee>
               <div>
                 <span
@@ -240,8 +239,8 @@ const PricingCard = ({
           )}
           <ul className="list">
             {content.list &&
-              content.list.map((item) => (
-                <li>
+              content.list.map((item,i) => (
+                <li key={i}>
                   <TextCheck>{item}</TextCheck>
                 </li>
               ))}

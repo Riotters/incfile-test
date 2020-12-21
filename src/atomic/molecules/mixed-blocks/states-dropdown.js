@@ -104,8 +104,8 @@ const Arrow = styled.div`
 const StatesDropdown = ({  }) => {
     const [ selectedState, setSelectedState ] = React.useState("");
 
-    const options = states.state.map((item) => (
-        <State data-state={item.corporation}>
+    const options = states.state.map((item, i) => (
+        <State data-state={item.corporation} key={i}>
             <span>{item.name}</span>
         </State>
     ));

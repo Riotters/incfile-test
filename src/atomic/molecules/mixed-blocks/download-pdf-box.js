@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { shadow } from "../../atoms/styles/shadows";
-import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import Whitebox from "../../atoms/boxes/white-box";
 import ButtonLink from "../../molecules/buttons/button";

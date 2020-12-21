@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import parse from "html-react-parser";
 import { color } from "../../atoms/styles/colors";
-import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import Whitebox from "../../atoms/boxes/white-box";
 import IconCircle from "../../atoms/icons/circle";
@@ -164,8 +163,8 @@ const GridTableRow = ({
 					item !== "check-red" && (
 						<>
 						{Array.isArray(item) ? (
-							item.map((subitem) => (
-								<Paragraph mixed bottomMargin="0" center className={subitem?.className ?? ""}>
+							item.map((subitem, i) => (
+								<Paragraph key={i} mixed bottomMargin="0" center className={subitem?.className ?? ""}>
 									{parse(subitem?.content ?? subitem)}
 								</Paragraph>
 							))
@@ -179,16 +178,16 @@ const GridTableRow = ({
 				{item === "check-green" && <CheckSVG />}
 				{item === "check-red" && <ExSVG />}
 				{item === "incfile-logo" && (
-					<Image className="incfile-logo" filename="incfile-logo-3483" />
+					<Image className="incfile-logo" filename="incfile-logo-3483" alt="free llc with incfile" />
 				)}
 				{item === "legalzoom-logo" && (
-					<Image className="legalzoom-logo" filename="legalzoom-logo-3482" />
+					<Image className="legalzoom-logo" filename="legalzoom-logo-3482" alt="incfile vs legalzoom" />
 				)}
 				{item === "zenbusiness-logo" && (
-					<Image className="zenbusiness-logo" filename="zenbusiness-logo" />
+					<Image className="zenbusiness-logo" filename="zenbusiness-logo" alt="incfile vs zenbusiness" />
 				)}
 				{item === "rocket-lawyer-logo" && (
-					<Image className="rocket-lawyer-logo" filename="rocket-lawyer-logo" />
+					<Image className="rocket-lawyer-logo" filename="rocket-lawyer-logo" alt="incfile vs rocket lawer" />
 				)}
 				{item === "" && <IconCircle theme="empty" circleColor="#E7E7E7" />}
 			</Cell>

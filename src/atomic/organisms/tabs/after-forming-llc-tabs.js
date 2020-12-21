@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-//import { Tabs, Panel, useTabState } from "@bumaga/tabs";
-// import { motion } from "framer-motion"
 import { Tabs, Tab, TabList, TabPanel } from "react-tabs";
+import { Collapse } from "react-collapse";
+
 import Container from "../../container";
 import Tab1SVG from "../../../images/icons/llc-filing-requirements.inline.svg";
 import Tab2SVG from "../../../images/icons/business-name-trademark.inline.svg";
@@ -10,8 +10,6 @@ import Tab3SVG from "../../../images/icons/finances-and-accounting.inline.svg";
 import Tab4SVG from "../../../images/icons/set-up-business-operations.inline.svg";
 import Tab5SVG from "../../../images/icons/choose-business-tools.inline.svg";
 import ArrowSVG from "../../../images/arrow.inline.svg";
-import { Collapse } from "react-collapse";
-import VisibilitySensor from "../../../components/VisibilitySensor";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";

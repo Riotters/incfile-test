@@ -103,8 +103,8 @@ const Colorbox = ({
 			{content.text && <p>{content.text}</p>}
 			{content.list && (
 				<ul>
-					{content.list.map((item) => (
-						<li>{item}</li>
+					{content.list.map((item, i) => (
+						<li key={i}>{item}</li>
 					))}
 				</ul>
 			)}

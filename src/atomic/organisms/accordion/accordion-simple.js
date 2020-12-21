@@ -5,8 +5,6 @@ import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
 import { motion } from "framer-motion";
 import { color } from "../../atoms/styles/colors";
 import ArrowSVG from "../../../images/arrow-circle.inline.svg";
-import CurveSVG from "../../../images/orange-curve.inline.svg";
-import VisibilitySensor from "../../../components/VisibilitySensor";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -181,8 +179,8 @@ const Accordion = ({ content }) => {
 		>
 			<Tabs>
 				<TabsWrapper>
-					{content.items.map((item) => (
-						<TabBox>
+					{content.items.map((item, i) => (
+						<TabBox key={i}>
 							<Tab>
 								<Icon>
 									<ArrowSVG />
@@ -200,7 +198,7 @@ const Accordion = ({ content }) => {
 										<p>
 											{item.answer.map((el, id) =>
 												id % 2 ? (
-													<Link to={el.url}>{` ${el.text} `}</Link>
+													<Link to={el.url} key={id}>{` ${el.text} `}</Link>
 												) : (
 													el.text
 												)
@@ -210,8 +208,8 @@ const Accordion = ({ content }) => {
 									{/* <p>{item.answer}</p> */}
 									{item.list && (
 										<ul>
-											{item.list.map((listitem) => (
-												<li>{listitem}</li>
+											{item.list.map((listitem, i) => (
+												<li key={i}>{listitem}</li>
 											))}
 										</ul>
 									)}

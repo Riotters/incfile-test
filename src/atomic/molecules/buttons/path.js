@@ -1,9 +1,9 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Link } from "gatsby";
 import { color } from "../../atoms/styles/colors";
 import ArrowSVG from "../../../images/arrow.inline.svg";
-import PropTypes from "prop-types";
 
 const Wrapper = styled(Link)`
   display: inline-flex;

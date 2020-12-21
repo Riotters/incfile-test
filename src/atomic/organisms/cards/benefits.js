@@ -37,7 +37,7 @@ const BenefitsCards = ({ className, content }) => {
   return (
     <Wrapper className={className}>
         {content.map((card, i) => (
-            <Card content={card} color={colors[i]} image={icons[i]} />
+            <Card key={i} content={card} color={colors[i]} image={icons[i]} />
         ))}
     </Wrapper>
   )

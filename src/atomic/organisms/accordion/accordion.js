@@ -2,11 +2,9 @@ import React from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { motion } from "framer-motion";
 import parse from "html-react-parser";
-import { Tabs, useTabState, usePanelState } from "@bumaga/tabs";
+
 import ActionButton from "../../molecules/buttons/button-action";
-import Heading from "../../atoms/typography/heading";
 import ListWithDot from "../../states-llc/list-with-dot";
 import { color } from "../../atoms/styles/colors";
 import ArrowLink from "../../../components/arrow-link";

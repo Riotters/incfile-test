@@ -42,8 +42,9 @@ const SCorpQuizTable = ({ className, content }) => (
 			headerSize={5}
 			columns="1fr 160px 160px"
 		/>
-		{content.rows.map((row) => (
-			<GridTableRow
+		{content.rows.map((row, i) => (
+            <GridTableRow
+                key={i}
 				className="table-row"
 				content={row}
 				columns="1fr 160px 160px"
