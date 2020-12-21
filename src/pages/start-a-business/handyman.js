@@ -266,7 +266,7 @@ const Handyman = () => (
         <TabPanel>
           <PanelWrapper>
             <Heading size={2} template={3} left>
-              Helpful software for handyman business owners
+              Why You Should Start a New Handyman Business
             </Heading>
 
             <Paragraph big>
@@ -275,7 +275,7 @@ const Handyman = () => (
             </Paragraph>
 
             <BlueBoxWithAbsoluteText
-              absoluteText="$4 Bilion"
+              absoluteText="$4 BILLION"
               text="The overall revenues of handyman service franchise industry (groups of various types of tradesmen working together) a year in the U.S."
             />
 
@@ -314,9 +314,7 @@ const Handyman = () => (
               are some of the things you can expect.
             </Paragraph>
 
-            <Paragraph big style={{ fontWeight: "bold" }}>
-              A Day in the Life of a Handyman
-            </Paragraph>
+            <Heading size={3}>A Day in the Life of a Handyman</Heading>
 
             <Paragraph big>
               Here are some of the typical tasks you’ll be performing for your
@@ -379,9 +377,9 @@ const Handyman = () => (
               </Paragraph>
             </TextBoxed>
 
-            <Paragraph big style={{ fontWeight: "bold", marginTop: "48px" }}>
+            <Heading size={3} style={{ marginTop: "32px" }}>
               Skills Needed by a Handyman Business Entrepreneur
-            </Paragraph>
+            </Heading>
 
             <Paragraph big>
               The following skills will be very useful in your role as a
@@ -434,9 +432,9 @@ const Handyman = () => (
               </Paragraph>
             </TextBoxed>
 
-            <Paragraph big style={{ fontWeight: "bold", marginTop: "48px" }}>
+            <Heading size={3} style={{ marginTop: "32px" }}>
               What Your Handyman Customers Are Looking For
-            </Paragraph>
+            </Heading>
 
             <Paragraph big>
               Clients who hire a home handyman want reliability, quality and
@@ -471,7 +469,7 @@ const Handyman = () => (
       </OvalGreen2>
       <Container>
         <CenterBox>
-          <Heading size={2} template={1} left>
+          <Heading size={2} left>
             Your Handyman Business Needs a Plan
           </Heading>
 

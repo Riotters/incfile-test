@@ -348,7 +348,7 @@ const DogWalkingBusiness = () => (
               </TextBoxed>
             </div>
 
-            <Heading size={3}>
+            <Heading size={3} style={{ marginTop: "32px" }}>
               Skills Needed by a Dog Walking or Pet Sitting Business
               Entrepreneur
             </Heading>
@@ -465,7 +465,7 @@ const DogWalkingBusiness = () => (
 
     <Conclusion
       to={process.env.ORDER_URL + "/form-order-now.php"}
-      buttonTitle="Start your Dog Walking Business with us, today"
+      buttonTitle="Start your Dog Walking or Pet Sitting Business with us, today"
     >
       <Heading size={3} style={{ fontSize: "40px" }}>
         Conclusion

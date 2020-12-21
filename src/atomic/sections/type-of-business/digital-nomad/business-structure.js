@@ -5,8 +5,6 @@ import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import { color } from "../../../../components/styles/colors";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import ArrowSVG from "../../../../images/arrow.inline.svg";
-import IconCircle from "../../../../components/icons/circle";
 import PlaneIcon from "../../../../images/icons/plane.inline.svg";
 import RockerIcon from "../../../../images/icons/rocket.inline.svg";
 import LimitedIcon from "../../../../images/icons/limited-liability-company-or-llc.inline.svg";
@@ -19,6 +17,8 @@ import { gradient } from "../../../atoms/styles/colors";
 import RegisteredAgentIcon from "../../../../images/icons/registered-agent-service.inline.svg";
 import { Link } from "gatsby";
 import { HeadingP } from "../../../atoms/typography/heading-to-p";
+import Colorbox from "../../../../components/color-box";
+import IconSVG from "../../../../images/icons/megafon.inline.svg";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -32,9 +32,18 @@ const BusinessOwnerResponsibilities = styled.section`
 
 const OrangeContainer = styled.div`
   background: rgb(255, 255, 255);
-  background-image: ${gradient.orange3};
   padding-bottom: 100px;
   position: relative;
+
+  &::before {
+    content: "";
+    height: 2500px;
+    width: 100%;
+    background-image: ${gradient.orange3};
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 `;
 
 const Oval = styled.div`
@@ -270,6 +279,36 @@ const CoachBusinessStructure = () => (
           documents, even if you're out of the country.
         </Paragraph>
 
+        <Colorbox
+          className="box"
+          theme="icon"
+          Icon={IconSVG}
+          color={color.blue3}
+        >
+          <Heading size={3} template={4}>
+            Choose an LLC
+          </Heading>
+          <Paragraph bottomPadding={0} bottomMargin={0}>
+            Limited Liability Company is the perfect choice for a Digital Nomad
+          </Paragraph>
+        </Colorbox>
+
+        <Colorbox
+          className="box"
+          theme="icon"
+          Icon={IconSVG}
+          color={color.blue3}
+        >
+          <Heading size={3} template={4}>
+            Registered Agent service
+          </Heading>
+          <Paragraph bottomPadding={0} bottomMargin={0}>
+            Use Incfile’s Registered Agent service so that there’s always
+            someone available to receive official documents, even if you're out
+            of the country
+          </Paragraph>
+        </Colorbox>
+
         <Paragraph big style={{ marginTop: "48px" }}>
           Next, you have more choice than most entrepreneurs on which state to
           from your LLC in. If you're going to be in your home state and running
@@ -317,6 +356,37 @@ const CoachBusinessStructure = () => (
             to see what your tax filing and liability is going to be there, and
             hire a local accountant
           </p>
+        </Paragraph>
+
+        <Paragraph
+          big
+          style={{ paddingTop: "48px", paddingBottom: 0 }}
+          mixed={true}
+        >
+          For more information on the advantages and disadvantages of different
+          types of businesses,{" "}
+          <Link to="/business-entity-comparison/">
+            please see our in-depth guide
+          </Link>
+          . If you’ve still got questions,{" "}
+          <Link to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/">
+            we’ve answered them to help you choose the right business structure.
+          </Link>
+        </Paragraph>
+        <Paragraph
+          big
+          style={{ paddingTop: "48px", paddingBottom: 0 }}
+          mixed={true}
+        >
+          We’ve{" "}
+          <Link to="/form-an-llc/">
+            got a complete guide to everything you need to do to set up an LLC
+          </Link>
+          , and we can start one for your consulting business today.{" "}
+          <Link to="/llc-state-information/">
+            LLC formation does vary from state to state
+          </Link>
+          , but we’ve got you covered, wherever you are.
         </Paragraph>
 
         <Button

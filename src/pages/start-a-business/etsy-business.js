@@ -567,7 +567,7 @@ const EtsyBusiness = () => (
       </BusinessPlanOval2>
       <Container>
         <CenterBox>
-          <Heading size={2} template={1} left>
+          <Heading size={2} left>
             Write a Business Plan for Your Etsy Business
           </Heading>
 

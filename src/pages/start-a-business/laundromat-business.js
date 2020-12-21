@@ -322,9 +322,9 @@ const LandscapingBusiness = () => (
               understand the ins and outs of owning a laundromat company.
             </Paragraph>
 
-            <Paragraph big style={{ fontWeight: "bold" }}>
+            <Heading size={3}>
               What Your Laundromat Customers Are Looking for
-            </Paragraph>
+            </Heading>
 
             <Paragraph big>
               A laundromat is a simple concept: you provide reliable, efficient,
@@ -360,7 +360,7 @@ const LandscapingBusiness = () => (
         <TabPanel>
           <PanelWrapper>
             <Heading size={2} template={3} left>
-              What Are the Challenges and Benefits of a Laundromat Entrepreneur?
+              What Are the Challenges and Benefits of Owning a Laundromat?
             </Heading>
 
             <Paragraph big>
@@ -368,9 +368,7 @@ const LandscapingBusiness = () => (
               what to expect.
             </Paragraph>
 
-            <Paragraph big style={{ fontWeight: "bold" }}>
-              Challenges of Running a Laundromat
-            </Paragraph>
+            <Heading size={4}>Challenges of Running a Laundromat</Heading>
 
             <div style={{ marginBottom: "30px" }}>
               <Adventages
@@ -420,9 +418,7 @@ const LandscapingBusiness = () => (
               />
             </div>
 
-            <Paragraph big style={{ fontWeight: "bold" }}>
-              Benefits of Running a Laundromat
-            </Paragraph>
+            <Heading size={4}>Benefits of Running a Laundromat</Heading>
 
             <div style={{ marginBottom: "30px" }}>
               <Adventages
@@ -492,16 +488,9 @@ const LandscapingBusiness = () => (
       </CenterBox>
 
       <CenterBox>
-        <Paragraph
-          big
-          style={{
-            fontFamily: "Avenir",
-            fontWeight: "900",
-            color: color.black,
-          }}
-        >
+        <Heading size={3}>
           Do Market Research and Validate Your Laundromat Products and Services
-        </Paragraph>
+        </Heading>
         <Paragraph big>
           Before you launch your laundromat business, you need to understand if
           there’s a demand. That means carrying out market research and
@@ -637,7 +626,7 @@ const LandscapingBusiness = () => (
 
       <Container>
         <CenterBox>
-          <Heading size={2} template={1} left>
+          <Heading size={2} left>
             Write a Business Plan for Your Laundromat Business
           </Heading>
 
@@ -976,8 +965,8 @@ const LandscapingBusiness = () => (
       to={process.env.ORDER_URL + "/form-order-now.php"}
       buttonTitle="Start your Laundromat Business with us, today"
     >
-      <Heading size={3} style={{ fontSize: "40px" }}>
-        Conclusion
+      <Heading size={2} left>
+        Ready to form your Laundromat Business?
       </Heading>
       <Paragraph big>
         If you’re after a straightforward, easy-to-understand, in-demand
