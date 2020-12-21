@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
 import { shadow } from "../../atoms/styles/shadows";
 import Image from "../../atoms/image/image";
-import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import ArrowLink from "../buttons/text";
 import parse from "html-react-parser";
@@ -75,7 +74,7 @@ const TopImageBox = ({
 			noShadow={noShadow}
 			padding={padding}
 		>
-			<div className="top">{image && <Image filename={image} alt={content?.imgAlt ? content.imgAlt : ''} />}</div>
+			<div className="top">{image && <Image filename={image} alt={content?.imgAlt ? content.imgAlt : content.header} />}</div>
 			<div className="content">
 				<div>
 					<ChooseHeadingType

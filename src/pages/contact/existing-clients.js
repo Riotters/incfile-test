@@ -14,7 +14,7 @@ const ExistingClients = () => (
     <Layout>
         <SEO title="Existing Clients | Incfile Customer Service" description="Have a question about your Incfile order or need help with your dashboard? Find useful links or send us a message here." />
 
-        <Top imageName="hero-contact-existing-clients" heightSM="75vh" ovalColor="yellow" alt="existing clients">
+        <Top imageName="hero-contact-existing-clients" heightSM="75vh" ovalColor="yellow" imageAlt="existing clients">
             <h1>We're Here To Help</h1>
             <p>Phone support available Monday - Friday from 9am to 6pm CST or submit a question and we'll respond as quickly as possible.</p>
         </Top>

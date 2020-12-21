@@ -30,7 +30,8 @@ export const resources = {
 					{
 						header: `The Complete “Start Your Business Checklist”`,
 						text: `A clear and comprehensive guide to starting your business the right way.`,
-						hs_form_id: `d077bdb7-f266-4cc6-b69f-a8f4b53acf21`,
+                        hs_form_id: `d077bdb7-f266-4cc6-b69f-a8f4b53acf21`,
+                        imageAlt: `start your business checklist`,
 						button: {
 							text: `Download PDF`,
 							url: `#`,
@@ -39,7 +40,7 @@ export const resources = {
 					{
 						header: `How to Start an Amazon Business`,
 						text: `A complete guide to starting an ecommerce business so you can start selling on Amazon.`,
-						hs_form_id: `6b612f34-bef3-4de5-a0ac-f82999d0dde8`,
+                        hs_form_id: `6b612f34-bef3-4de5-a0ac-f82999d0dde8`,
 						button: {
 							text: `Download PDF`,
 							url: `#`,

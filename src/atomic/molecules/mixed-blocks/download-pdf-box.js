@@ -78,7 +78,7 @@ const DownloadPdfBox = ({ className, content, image, openModal }) => {
 	return (
 		<Wrapper className={className}>
 			<ImageBox>
-				<Image filename={image} />
+				<Image filename={image} alt={content.imageAlt ?? content.header} />
 			</ImageBox>
 			<TextWrapper>
 				{/* {content.header && (

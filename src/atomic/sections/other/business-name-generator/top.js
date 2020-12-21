@@ -15,7 +15,7 @@ const TopSection = ({ content }) => {
 		<Wrapper>
 			<Top
 				imageName="mrs-bulb-question-7726"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt="business name generator"
 				ovalColor="yellow"
 				headlineWidth="400"
 				textWidth="800"

@@ -23,7 +23,7 @@ const NewSales = () => (
 			imageName="hero-contact-new-sales"
 			heightSM="75vh"
 			ovalColor="yellow"
-			alt="existing clients"
+			imageAlt="help for new & potential customers"
 		>
 			<h1>We're Here To Help</h1>
 			<p>

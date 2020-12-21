@@ -126,7 +126,8 @@ const SearchToolSection = ({ content, getDataApi }) => {
 				<ImageBoxes>
 					<TopImageBox
 						className="box box--left"
-						image="lcsn-4343"
+                        image="lcsn-4343"
+                        imageAlt="entity type"
 						color={color.green3}
 					>
 						<PHeading size={4}>{cards[0]}</PHeading>
@@ -139,7 +140,8 @@ const SearchToolSection = ({ content, getDataApi }) => {
 					</TopImageBox>
 					<TopImageBox
 						className="box box--right"
-						image="your-state-7282"
+                        image="your-state-7282"
+                        imageAlt="state of formation"
 						color={color.blue3}
 					>
 						<PHeading size={4}>{cards[1]}</PHeading>

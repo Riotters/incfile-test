@@ -191,8 +191,8 @@ const BusinessResourcesTabs = ({ content, openModal }) => (
 		<Wrapper id="tabs-wrapper">
 			<TabsWrapper>
 				<Scroller>
-					{content.switchers.map((switcher) => (
-						<Tab>{switcher}</Tab>
+					{content.switchers.map((switcher, i) => (
+						<Tab key={i}>{switcher}</Tab>
 					))}
 				</Scroller>
 			</TabsWrapper>

@@ -36,7 +36,7 @@ const OngoingFilingRequirements = () => {
 			/>
 			<Top
 				imageName="mrs-bulb-ongoing-filing-requirements-7487"
-				imageAlt=""
+				imageAlt="state ongoing filing requirement"
 				ovalColor="green"
 			>
 				<h1>{top.header}</h1>
