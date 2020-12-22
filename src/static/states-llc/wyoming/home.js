@@ -1701,7 +1701,7 @@ export const requirements = {
 					},
 					{
 						header: `5 days`,
-						text: `Expected filling time`,
+						text: `Expected filing time`,
 					},
 				],
 			},

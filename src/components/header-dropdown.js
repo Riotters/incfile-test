@@ -45,8 +45,8 @@ const MobileWrapper = styled.nav`
 	height: calc(100vh - 150px);
 	min-height: -webkit-fill-available;
 	width: 100%;
-    padding: 40px 30px;
-    zIndex: 999;
+	padding: 40px 30px;
+	zindex: 999;
 
 	@media (min-width: 992px) {
 		display: flex;
@@ -72,10 +72,10 @@ const Navigation = styled.nav`
 	}
 
 	@media (max-width: 991px) {
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
-        max-height: calc(100vh - 150px);
-        height: auto;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+		max-height: calc(100vh - 150px);
+		height: auto;
 		align-items: flex-start;
 		position: relative;
 	}
@@ -172,11 +172,11 @@ const LoginWrapper = styled.div`
 	flex-direction: column;
 	align-items: flex-start;
 	//width: 200px;
-    margin-top: 25px;
-    
-    @media screen and (min-width: 1400px) {
-        width: 200px;
-    }
+	margin-top: 25px;
+
+	@media screen and (min-width: 1400px) {
+		width: 200px;
+	}
 
 	@media (min-width: 992px) {
 		flex-direction: row;
@@ -377,32 +377,32 @@ const SubmenuColumn = styled.ul`
 `;
 
 const Phone = styled.a`
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 0 !important;
-    font-size: 16px;
-    font-weight: bold;
-    color: #FD8550;
-    width: 100%;
-    justify-content: center;    
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 0 !important;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fd8550;
+	width: 100%;
+	justify-content: center;
 
-    @media screen and (min-width: 991px) and (max-width: 1390px) {
-        span{
-            display: none;
-        }
-    }
-`
+	@media screen and (min-width: 991px) and (max-width: 1390px) {
+		span {
+			display: none;
+		}
+	}
+`;
 
 const NavigationMobileScrollHidden = styled.div`
 	@media (max-width: 991px) {
 		position: relative;
 		//right: -15px;
 		max-height: 100%;
-        //overflow-y: scroll;
-        //-webkit-overflow-scrolling: touch;
-        width: 100%;
-        z-index: 999;
+		//overflow-y: scroll;
+		//-webkit-overflow-scrolling: touch;
+		width: 100%;
+		z-index: 999;
 	}
 `;
 
@@ -436,17 +436,16 @@ function handleHeaderClick(e) {
 	}
 }
 
-
 const Header = ({ siteTitle }) => {
 	const [menu, showMenu, active] = useState(false);
 
-    const [showPhone, setShowPhone] = useState(false);
+	const [showPhone, setShowPhone] = useState(false);
 
-    useEffect(() => {
-        getPhoneStatus().then(res => {
-            setShowPhone(res.status === 'show' ? true : false);
-        });
-    }, []);
+	useEffect(() => {
+		getPhoneStatus().then((res) => {
+			setShowPhone(res.status === "show" ? true : false);
+		});
+	}, []);
 
 	return (
 		<Wrapper>
@@ -752,7 +751,7 @@ const Header = ({ siteTitle }) => {
 								<DropdownMenu>
 									<SubmenuColumn>
 										<Heading size={5} bottomMargin={10}>
-											Get us to know
+											Get to know us
 										</Heading>
 										<MenuItem>
 											<MenuLink to="/about/">About Us</MenuLink>
@@ -791,15 +790,21 @@ const Header = ({ siteTitle }) => {
 						</Menu>
 					</NavigationMobileScrollHidden>
 				</Navigation>
-                <LoginWrapper>
-                    {showPhone &&
-                        <Phone href="tel:1(888)462-3453"><PhoneIconSVG /><span>1(888).462.3453</span></Phone>
-                    }
+				<LoginWrapper>
+					{showPhone && (
+						<Phone href="tel:1(888)462-3453">
+							<PhoneIconSVG />
+							<span>1(888).462.3453</span>
+						</Phone>
+					)}
 					<Login href={`${process.env.ORDER_URL}/dashboard`}>Login</Login>
-                    <Button
-                        externalLink
-                        theme="secondary40"
-                        content={{text: `Incorporate now`, url: `${process.env.ORDER_URL}/form-order-now.php`}}
+					<Button
+						externalLink
+						theme="secondary40"
+						content={{
+							text: `Incorporate now`,
+							url: `${process.env.ORDER_URL}/form-order-now.php`,
+						}}
 						width="100%"
 					/>
 				</LoginWrapper>

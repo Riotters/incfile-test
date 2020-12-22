@@ -100,7 +100,7 @@ export const setup = {
 			photo: `mattweik-11`,
 			name: `Jade B.`,
 			city: `California`,
-			text: `Very easy to use, there are no questions if I'm doing things wrong or if I'm forgetting anything. incfile has it covered.`,
+			text: `Very easy to use, there are no questions if I'm doing things wrong or if I'm forgetting anything. Incfile has it covered.`,
 		},
 		{
 			photo: `mattweik-12`,
