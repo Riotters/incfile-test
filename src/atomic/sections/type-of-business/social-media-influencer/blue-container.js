@@ -161,9 +161,9 @@ const BlueContainer = () => (
 
           <TextBoxed>
             <Paragraph bottomPadding={0} bottomMargin={0}>
-              YouTube success is all about being incredibly relevant to your
-              audience. Find a niche that balances your individual viewpoints
-              and opinions with a specialist subject matter.
+              Teach yourself videography, editing, lighting, framing and other
+              video skills. It’s vital that your videos look good so you can
+              stand out from the crowd.
             </Paragraph>
           </TextBoxed>
 

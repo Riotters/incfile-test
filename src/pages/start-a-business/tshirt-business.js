@@ -887,10 +887,10 @@ const TshirtBusiness = () => (
 
     <Conclusion
       to={process.env.ORDER_URL + "/form-order-now.php"}
-      buttonTitle="Start your Tshirt Business with us, today"
+      buttonTitle="Start your T-shirt Business with us, today"
     >
-      <Heading size={3} style={{ fontSize: "40px" }}>
-        Conclusion
+      <Heading size={2} left>
+        Ready to Start Your T-Shirt Business?
       </Heading>
       <Paragraph big>
         Starting a T-shirt business is a great way to get exposure to the

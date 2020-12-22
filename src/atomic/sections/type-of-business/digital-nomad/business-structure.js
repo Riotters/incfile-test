@@ -18,7 +18,8 @@ import RegisteredAgentIcon from "../../../../images/icons/registered-agent-servi
 import { Link } from "gatsby";
 import { HeadingP } from "../../../atoms/typography/heading-to-p";
 import Colorbox from "../../../../components/color-box";
-import IconSVG from "../../../../images/icons/megafon.inline.svg";
+import IconSVG from "../../../../images/icons/clock2.inline.svg";
+import Icon2SVG from "../../../../images/icons/icon10.inline.svg";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -296,7 +297,7 @@ const CoachBusinessStructure = () => (
         <Colorbox
           className="box"
           theme="icon"
-          Icon={IconSVG}
+          Icon={Icon2SVG}
           color={color.blue3}
         >
           <Heading size={3} template={4}>
