@@ -22,16 +22,32 @@ const Content = styled.div`
   overflow: ${(props) => (props.overflow ? props.overflow : "")};
 
   @media (min-width: 769px) {
-    max-width: ${(props) => (props.contentWidth ? `${props.contentWidth}px` : "")};
+    max-width: ${(props) =>
+      props.contentWidth ? `${props.contentWidth}px` : ""};
     overflow: visible;
   }
 `;
 
-const ContentCenter = ({ className, children, contentWidth, headlineWidth, textWidth, relative, overflow, ...rest }) => {
+const ContentCenter = ({
+  className,
+  children,
+  contentWidth,
+  headlineWidth,
+  textWidth,
+  relative,
+  overflow,
+  ...rest
+}) => {
   return (
     <Container>
       <Wrapper className={className} {...rest}>
-        <Content contentWidth={contentWidth} headlineWidth={headlineWidth} textWidth={textWidth} relative={relative} overflow={overflow}>
+        <Content
+          contentWidth={contentWidth}
+          headlineWidth={headlineWidth}
+          textWidth={textWidth}
+          relative={relative}
+          overflow={overflow}
+        >
           {children}
         </Content>
       </Wrapper>

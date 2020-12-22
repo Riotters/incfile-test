@@ -13,7 +13,7 @@ const Choose = styled.section`
   padding-top: 56px;
 
   @media (min-width: 992px) {
-    padding-top: 104px;
+    padding-top: 96px;
   }
 
   &::before {
@@ -35,7 +35,7 @@ const Grid = styled.div`
 
   @media (min-width: 992px) {
     grid-template-columns: repeat(3, 1fr);
-    padding: 56px 0 104px;
+    padding: 64px 0 80px;
   }
 
   & > div {
