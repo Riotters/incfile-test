@@ -40,6 +40,7 @@ import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/daycare-business";
 import { TabPanel } from "react-tabs";
 import CircleSvg from "../../images/chart-daycare.inline.svg";
+import UseFulTools from "../../atomic/sections/type-of-business/daycare-business/useful-tools";
 
 const DaycareBusiness = () => (
   <Layout>
@@ -355,6 +356,8 @@ const DaycareBusiness = () => (
     <Taxes />
 
     <ToolsAndLinks />
+
+    <UseFulTools />
 
     <Conclusion
       to={process.env.ORDER_URL + "/form-order-now.php"}

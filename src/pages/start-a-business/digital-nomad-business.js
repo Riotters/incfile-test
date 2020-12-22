@@ -245,11 +245,18 @@ const DigitalNomadBusiness = () => (
               width="100%"
             />
 
-            <Paragraph big>
+            <Paragraph big mixed>
               In fact, the only requirement to being a digital nomad is the
               ability to work remotely from anywhere. That means developers,
               creatives, sellers, marketers, freelance writers, gig providers
-              and more can all be digital nomads. The idea of the "gig economy"
+              and more can all be digital nomads. The idea of the{" "}
+              <a
+                href="https://www.investopedia.com/terms/g/gig-economy.asp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                "gig economy"
+              </a>
               and the digital nomad go hand-in-hand.
             </Paragraph>
 

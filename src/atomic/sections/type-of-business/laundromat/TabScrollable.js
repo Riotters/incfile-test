@@ -330,7 +330,7 @@ const TabScrollable = ({ layout, columns }) => {
                   <Paragraph big mixed={true}>
                     All businesses need to have a Registered Agent. These are
                     individuals or other businesses that can accept legal
-                    documents on behalf of your landscaping company.
+                    documents on behalf of your laundromat company.
                   </Paragraph>
                   <Paragraph big>
                     Although you can act as your own registered agent, we

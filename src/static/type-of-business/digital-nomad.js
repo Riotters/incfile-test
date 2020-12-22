@@ -181,7 +181,8 @@ export const toolsList = {
 };
 
 export const RingText = {
-  title: "Statistics about Real Estate businesses",
+  title:
+    "It's estimated that there will be around one billion digital nomads by 2035",
   list: [
     {
       color: color.blue1,
