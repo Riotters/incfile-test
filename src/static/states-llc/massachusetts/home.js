@@ -140,8 +140,8 @@ export const howToGuide = [
 		content: {
 			list: [
 				`<a href="https://www.sec.state.ma.us/cor/coridx.htm/" target="_blank" rel="noopener noreferrer">Massachusetts Corporations Division for forming and running your MA LLC</a>`,
-				`<a href="https://www.mass.gov/orgs/department-of-labor-standards/" target="_blank" rel="noopener noreferrer">Massachusetts Department of Labor Standards for MA employers and hiring</a>`,
-				`<a href="https://www.mass.gov/orgs/massachusetts-department-of-revenue/" target="_blank" rel="noopener noreferrer">Massachusetts Department of Revenue for MA taxes</a>`,
+				`<a href="https://www.mass.gov/orgs/department-of-labor-standards" target="_blank" rel="noopener noreferrer">Massachusetts Department of Labor Standards for MA employers and hiring</a>`,
+				`<a href="https://www.mass.gov/orgs/massachusetts-department-of-revenue" target="_blank" rel="noopener noreferrer">Massachusetts Department of Revenue for MA taxes</a>`,
 			],
 		},
 		marginBottom: 32,
@@ -1392,7 +1392,7 @@ export const businessTaxes = [
 	},
 	{
 		type: `text`,
-		content: `<a href="https://www.mass.gov/service-details/dor-tax-forms-and-instructions/" target="_blank" rel="noopener noreferrer" >Get details on the Massachusetts state tax online here.</a>`,
+		content: `<a href="https://www.mass.gov/service-details/dor-tax-forms-and-instructions" target="_blank" rel="noopener noreferrer" >Get details on the Massachusetts state tax online here.</a>`,
 		marginBottom: 32,
 	},
 	{
@@ -1433,7 +1433,7 @@ export const businessTaxes = [
 	},
 	{
 		type: `text`,
-		content: `Get details on the <a href="https://www.mass.gov/guides/sales-and-use-tax/" target="_blank" rel="noopener noreferrer">Massachusetts sales tax online here.</a>`,
+		content: `Get details on the <a href="https://www.mass.gov/guides/sales-and-use-tax" target="_blank" rel="noopener noreferrer">Massachusetts sales tax online here.</a>`,
 		marginBottom: 32,
 	},
 	{

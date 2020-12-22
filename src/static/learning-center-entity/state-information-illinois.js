@@ -803,7 +803,7 @@ export const corporation = [
 						"Choose a unique, distinct, original name for your Illinois corporation",
 						"This name cannot be used by another business in Illinois",
 						"This name cannot be confused with the name of another business in Illinois",
-						`See if the name is available by searching for it on the <a href="https://www.ilsos.gov/corporatellc/"target="_blank" rel="noopener noreferrer">Illinois Secretary of State website</a>`,
+						`See if the name is available by searching for it on the <a href="https://apps.ilsos.gov/corporatellc/"target="_blank" rel="noopener noreferrer">Illinois Secretary of State website</a>`,
 						"The name of your business must end with “Corporation,” “Incorporated,” “Limited” or an abbreviation of one of these",
 						"For example: “Illinois Natural Resources Survey Reports Corporation” or “Chicago Sports Appreciation, Inc”",
 						"If you’re not forming the business right away, you can reserve the name",
@@ -897,7 +897,7 @@ export const corporation = [
 		type: "arrow-link",
 		content: {
 			text: "Checking name availability for your Illinois corporation ",
-			url: "https://www.ilsos.gov/corporatellc/",
+			url: "https://apps.ilsos.gov/corporatellc/",
 		},
 		marginBottom: 52,
 	},
@@ -965,7 +965,7 @@ export const naming = [
 				"The name of your corporation needs to be unique and not used by another corporation or business operating in Illinois",
 				`The name cannot be confused with any other business operating in Illinois
         <ul></br>
-        <li>You can <a href="https://www.ilsos.gov/corporatellc/" target="_blank" rel="noopener noreferrer">search for other businesses in Illinois here</a></li>
+        <li>You can <a href="https://apps.ilsos.gov/corporatellc/" target="_blank" rel="noopener noreferrer">search for other businesses in Illinois here</a></li>
         <ul>`,
 				"The name of your business must end with “Corporation,” “Incorporated” or “Limited”",
 				"These suffixes can be abbreviated",
@@ -2088,7 +2088,7 @@ export const afterFormation = [
 			{
 				link: {
 					text: "Xero",
-					url: "https://www.xero.com/",
+					url: "https://www.xero.com/us/",
 				},
 				text:
 					"Xero is online accounting software that is a great option for those who find QuickBooks to be too complicated and difficult to understand. Their plans start out at $20 per month.",
@@ -2123,7 +2123,7 @@ export const afterFormation = [
 	{
 		type: "text",
 		content:
-			"If you use QuickBooks or Freshbooks, you’ll be able to accept credit cards to pay for invoices. If you have a brick and mortar location for your small business, you want to look into offering payments through a service such as <a href='https://shopify.com/'>Shopify</a> or <a href='https://squareup.com/us/en'>Square</a>.",
+			"If you use QuickBooks or Freshbooks, you’ll be able to accept credit cards to pay for invoices. If you have a brick and mortar location for your small business, you want to look into offering payments through a service such as <a href='https://www.shopify.com/'>Shopify</a> or <a href='https://squareup.com/us/en'>Square</a>.",
 		marginBottom: 48,
 	},
 	{

@@ -168,7 +168,7 @@ export const about = {
 				text8: [
 					{
 						text: `Xero:`,
-						url: `https://www.xero.com/`,
+						url: `https://www.xero.com/us/`,
 					},
 					{
 						text: `Xero is online accounting software that is a great option for those who find QuickBooks to be too complicated and difficult to understand. Their plans start out at $20 per month.`,

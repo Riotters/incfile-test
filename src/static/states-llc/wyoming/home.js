@@ -153,7 +153,7 @@ export const howToGuide = [
 		type: `list-dot`,
 		content: {
 			list: [
-				`<a href="https://soswy.state.wy.us/Business/StartABusiness.aspx">Wyoming Secretary of State for forming and running your WY LLC</a>`,
+				`<a href="https://sos.wyo.gov/Business/StartABusiness.aspx">Wyoming Secretary of State for forming and running your WY LLC</a>`,
 				`<a href="http://www.wyomingworkforce.org/">Wyoming Department of Workforce Services for WY employers and hiring</a>`,
 				`<a href="http://revenue.wyo.gov/">Wyoming Department of Revenue for WY taxes</a>`,
 			],
@@ -297,7 +297,7 @@ export const namingYourBusiness = [
 	},
 	{
 		type: `text`,
-		content: `<a href="https://wyobiz.wy.gov/business/filingsearch.aspx" target="_blank" rel="noopener noreferrer">Wyoming Secretary of State business name search tool</a>`,
+		content: `<a href="https://wyobiz.wyo.gov/" target="_blank" rel="noopener noreferrer">Wyoming Secretary of State business name search tool</a>`,
 		marginBottom: 48,
 	},
 	{
@@ -482,7 +482,7 @@ export const namingYourBusiness = [
 			items: [
 				{
 					question: `How Do I Search for My Wyoming LLC Business Name?`,
-					answer: `Just go to the <a href="https://wyobiz.wy.gov/business/filingsearch.aspx">business name search tool</a> and enter your proposed business name. You can search the
+					answer: `Just go to the <a href="https://wyobiz.wyo.gov/">business name search tool</a> and enter your proposed business name. You can search the
           register of the Wyoming Secretary of State, which will tell you if there are any WY corporations or LLCs with that name.`,
 				},
 				{
