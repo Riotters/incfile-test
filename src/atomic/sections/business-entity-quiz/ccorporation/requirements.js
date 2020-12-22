@@ -4,13 +4,15 @@ import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import { color } from "../../../../components/styles/colors";
 import styled from "styled-components";
-import GreenOval from "../../../../images/ovals/bottom-left-transparent-green2.inline.svg";
-import { Link } from "gatsby";
+import OvalSVG from "../../../../images/ovals/bottom-right-transparent-blue3.inline.svg";
 import { Heading } from "../../../atoms/typography/heading";
+import { gradient } from "../../../atoms/styles/colors";
+import Oval from "../../../atoms/icons/oval";
+
 const SettingBusiness = () => (
 	<GreenContainer>
-		<Oval>
-			<GreenOval />
+		<Oval height="570" width="570" top="30" right="0">
+			<OvalSVG />
 		</Oval>
 
 		<TextCenterLayout
@@ -23,7 +25,10 @@ const SettingBusiness = () => (
 
 		<Container>
 			<ImageBoxes>
-				<TopImageBox image="permits-licences" color={color.purple3}>
+				<TopImageBox
+					image="family-baby-and-pet-photography"
+					color={color.purple3}
+				>
 					<Heading size={3} template={4}>
 						Hold an Annual General Meeting (AGM) for the shareholders and the
 						board of directors
@@ -35,7 +40,10 @@ const SettingBusiness = () => (
 					</p>
 				</TopImageBox>
 
-				<TopImageBox image="sign-932" color={color.green3}>
+				<TopImageBox
+					image="understand-where-every-penny-is-going-6819"
+					color={color.green3}
+				>
 					<Heading size={3} template={4}>
 						Issue shares to investors as ownership of the business
 					</Heading>
@@ -47,7 +55,7 @@ const SettingBusiness = () => (
 				</TopImageBox>
 
 				<TopImageBox
-					image="sign-932"
+					image="we-doubled-the-size-of-customer-service-2772"
 					color={color.orange3}
 					style={{ height: "fit-content" }}
 				>
@@ -62,7 +70,10 @@ const SettingBusiness = () => (
 					</p>
 				</TopImageBox>
 
-				<TopImageBox image="sign-932" color={color.blue3}>
+				<TopImageBox
+					image="use-an-incfile-network-atorney-blue"
+					color={color.blue3}
+				>
 					<Heading size={3} template={4}>
 						Assign Certain Positions in the Corporation
 					</Heading>
@@ -101,8 +112,9 @@ const SettingBusiness = () => (
 );
 
 const GreenContainer = styled.div`
-	padding-bottom: 100px;
 	padding-top: 100px;
+	padding-bottom: 60px;
+	background-image: ${gradient.blue3};
 	position: relative;
 `;
 
@@ -120,17 +132,6 @@ const ImageBoxes = styled.div`
 
 	@media (min-width: 970px) {
 		margin: 0 auto;
-	}
-`;
-
-const Oval = styled.div`
-	position: absolute;
-	left: 0;
-	bottom: 164px;
-	width: 100%;
-
-	@media (min-width: 570px) {
-		width: 570px;
 	}
 `;
 

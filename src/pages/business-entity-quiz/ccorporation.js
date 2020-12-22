@@ -1,11 +1,8 @@
 import React from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
-import { Helmet } from "react-helmet";
 import {
-	choose,
 	top,
-	about,
 	types,
 	prosAndCons,
 	differences,

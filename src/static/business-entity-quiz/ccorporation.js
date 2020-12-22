@@ -3,8 +3,7 @@ import { shadow } from "../../atomic/atoms/styles/shadows";
 
 export const top = {
 	header: "You Should Consider Forming a C Corp!",
-	text:
-		"Everything you need to know about forming a C Corporation",
+	text: "Everything you need to know about forming a C Corporation",
 	button: {
 		text: "Form Your C Corp Today",
 		url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&utm_campaign=Lead%20Gen%20-%20Business%20Entity%20Quiz&utm_source=On_Page_Click&utm_medium=CCorp%20Results%20Page&utm_term=Order%20Form`,
@@ -27,7 +26,6 @@ export const types = {
 		text: `It has long been a successful way to do business and allows groups 
         of individuals to pool their resources and capital to pursue a common purpose, with their risk limited solely to the amount of stock they own. Although a C Corp is a popular business structure, there are other options for forming businesses in the US.`,
 	},
-	text2: `Check out our <a href="/llc-state-information/">LLC information by state</a> for more details on your state.`,
 	header2: `Consider a C corp if you..`,
 	list: [
 		`Plan on having a larger business`,
@@ -155,7 +153,7 @@ export const howForm = {
 		`Assign other positions in the business as required by law.`,
 	],
 	text2: `Forming a C Corporation can be tricky, so let us do the hard work for you. Here at Incfile, we’ve helped to form thousands of businesses, and our experts are on hand 
-    to help you, right now. Incorporate your business with Incfile for as little as $0 plus the state fee.`,
+    to help you, right now. <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&utm_campaign=Lead%20Gen%20-%20Business%20Entity%20Quiz&utm_source=On_Page_Click&utm_medium=CCorp%20Results%20Page&utm_term=Order%20Form">Incorporate your business with Incfile for as little as $0 plus the state fee.</a>`,
 	button: {
 		text: `From Your C Corp Today`,
 		url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&utm_campaign=Lead%20Gen%20-%20Business%20Entity%20Quiz&utm_source=On_Page_Click&utm_medium=CCorp%20Results%20Page&utm_term=Order%20Form`,
