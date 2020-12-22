@@ -17,6 +17,7 @@ const Wrapper = styled.section`
 	position: relative;
 	overflow-x: hidden;
 	overflow-y: visible;
+	min-height: 808px;
 
 	.main-top-content p,
 	h1,

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="33px" viewBox="0 0 22 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/clock</title>
+    <g id="Start-a-business/digital-nomad-business" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="start-a-business/digital-nomad-business-3" transform="translate(-790.000000, -7053.000000)">
+            <g id="Choose-the-Right-Business-Structure" transform="translate(0.000000, 4743.000000)">
+                <g id="1" transform="translate(755.000000, 2281.000000)">
+                    <g id="icon" transform="translate(8.000000, 8.000000)">
+                        <g id="Group" transform="translate(22.000000, 22.000000)">
+                            <g id="20200406_ICON_ICON-320" transform="translate(5.000000, 0.000000)">
+                                <path d="M19.5900353,7 L19.5900353,28.82 C19.592289,29.3468463 19.483241,29.8682319 19.27,30.35 C18.7769726,30.574213 18.2416156,30.6900001 17.7,30.6900001 L5,30.6900001 C2.88474941,30.6900001 1.17,28.9752506 1.17,26.86 L1.17,3.93 C1.15507941,3.4060132 1.25047546,2.88474194 1.45,2.4 C1.93649755,2.17739617 2.46499516,2.06146766 3,2.06 L14.31,2.06 L19.5900353,7 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                <path d="M21.18,8.39 L21.18,27.24 C21.1786535,28.7465791 20.2941828,30.1124209 18.92,30.73 C18.4273698,30.9554093 17.8917489,31.0714037 17.35,31.0700126 L4.61,31.0700126 C3.59422084,31.0700126 2.62004536,30.6664833 1.90178103,29.948219 C1.1835167,29.2299546 0.78,28.2557792 0.78,27.24 L0.78,4.31 C0.780250287,3.78236821 0.89273984,3.26082574 1.11,2.78 C1.71498516,1.38512077 3.08957512,0.481818793 4.61,0.48 L13,0.48 L21.18,8.39 Z" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <polyline id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" points="13.02 0.48 13.1 8.39 21.23 8.39"></polyline>
+                                <polyline id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" points="15.1 21.66 15.1 24.15 7.32 24.15 7.32 16.38 13.7 16.38"></polyline>
+                                <polyline id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" points="9.34 19.41 11.64 22.05 16.7 16.31"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

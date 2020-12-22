@@ -10,28 +10,28 @@ export const adventages = {
       imageName: "business-reports",
       headline: "Specialized Nonfiction Publisher",
       text:
-        "There’s another niche for catering to vacationers who want to experience specific activities. For example, some tourists may want high-adrenaline activities, while others will want a deeply artistic experience.",
+        "Nonfiction is a growing sector of the U.S. publishing industry. From creating how-to guides to courses and educational resources, there’s plenty of demand for insightful, informative, practical content.",
     },
     {
       circleText: 2,
       imageName: "news-and-current-affairs-publisher",
       headline: "News and Current Affairs Publisher",
       text:
-        "Some vacationers will seek out a travel agent that can help with their particular needs. For example, some travel agents may provide specialized services to people with disabilities, choosing locations and activities that can be enjoyed from a wheelchair.",
+        "Journalism requires a special type of publishing — information needs to get into the world quickly, and it relies not just on reporting but analysis and insight. Because it’s very difficult to be a generalist when it comes to news, you should choose and publish in a niche that you know well.",
     },
     {
       circleText: 3,
       imageName: "video-and-audio-content-publisher",
       headline: "Video and Audio Content Publisher",
       text:
-        "Other travelers may have preferences when it comes to diet, culture, religion or other aspects. A travel agent may choose to specialize in vegan or artisanal food and tours, while another may focus on all-female tour groups.",
+        "More people are choosing to consume published content in audio or video form. From publishing on YouTube to creating podcasts, there’s an ever-growing market for content you can interact with while doing other things.",
     },
     {
       circleText: 4,
       imageName: "start-blogging-and-writing",
       headline: "Blogger on Niche Topics",
       text:
-        "Some travel agents have deep expertise in a particular part of the world. For example, some travelers may want to go to Japan and will need an experienced guide who can explain all of the cultural differences and idiosyncrasies. Other travelers may want a specialized trip to the Baltics and Scandinavia.",
+        "Blogging is one of the easiest ways to become a publisher. In some cases you will create blog content yourself, and in others you may accept content from guest contributors in exchange for backlinks or other collateral.",
     },
     {
       circleText: 5,
@@ -80,8 +80,7 @@ export const adventages2 = {
     {
       circleText: 1,
       headline: "File an Annual Report",
-      text:
-        "There are certain forms and legalities you need to follow to keep your publishing business in good standing.",
+      text: `Most states require all businesses to file a report once a year. This report has details of any major changes to who owns a business and other major impacts on a business’ legal status. <a href="/manage-your-company/annual-report/">We can file your Annual Report on your behalf.</a>`,
       url: "/manage-your-company/annual-report",
       urlText: "Annual Report",
     },

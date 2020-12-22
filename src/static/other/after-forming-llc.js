@@ -2,7 +2,7 @@ export const top = {
 	header: `What to Do After Forming Your LLC`,
 	button: [
 		{
-			text: `Download out "What to do after formation" guide`,
+			text: `Download our "What to do after formation" guide`,
 			url: `/`,
 		},
 	],
@@ -168,7 +168,7 @@ export const about = {
 				text8: [
 					{
 						text: `Xero:`,
-						url: `https://www.xero.com/`,
+						url: `https://www.xero.com/us/`,
 					},
 					{
 						text: `Xero is online accounting software that is a great option for those who find QuickBooks to be too complicated and difficult to understand. Their plans start out at $20 per month.`,
@@ -377,8 +377,8 @@ export const guide = {
 export const hsForm = {
 	header: `Download our "What to Do After Formation" Guide.`,
 	text: `You filed your Articles of Organization and started your LLC—now what? Here are the most important next steps to ensuring your business is successful.`,
-    hs_form_id: `f8b25ab5-7a9a-4f21-b7db-425ede0e6750`,
-    fileDownload: `https://cdn2.hubspot.net/hubfs/3787982/Content%20Repurpose%20PDFs/July19%20-%20After%20Formation/July19%20-%20What%20to%20Do%20After%20Forming%20Your%20LLC%20PDF.pdf`,
+	hs_form_id: `f8b25ab5-7a9a-4f21-b7db-425ede0e6750`,
+	fileDownload: `https://cdn2.hubspot.net/hubfs/3787982/Content%20Repurpose%20PDFs/July19%20-%20After%20Formation/July19%20-%20What%20to%20Do%20After%20Forming%20Your%20LLC%20PDF.pdf`,
 	button: {
 		text: "Download now",
 		url: "/",

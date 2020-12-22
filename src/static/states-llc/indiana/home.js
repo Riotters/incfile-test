@@ -1405,7 +1405,7 @@ export const businessTaxes = [
 	},
 	{
 		type: `text`,
-		content: `Get details on the <a href="https://www.in.gov/dor/3986.htm" target="_blank" rel="noopener noreferrer">Indiana state tax online here</a>.`,
+		content: `Get details on the <a href="http://www.in.gov/dor/business-tax/sales-tax" target="_blank" rel="noopener noreferrer">Indiana state tax online here</a>.`,
 		marginBottom: 32,
 	},
 	{

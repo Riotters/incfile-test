@@ -29,7 +29,7 @@ export const opinions = {
 			photo: `mattweik-11`,
 			name: `Jade B.`,
 			city: `California`,
-			text: `Very easy to use, there are no questions if I'm doing things wrong or if I'm forgetting anything. incfile has it covered.`,
+			text: `Very easy to use, there are no questions if I'm doing things wrong or if I'm forgetting anything. Incfile has it covered.`,
 		},
 		{
 			photo: `mattweik-12`,
@@ -67,7 +67,7 @@ export const choose = {
 
 export const care = {
 	header: `We Take Care<br>Of Everything For You!`,
-	text: `There's a reason over <span>500,000</span> businesses have started with incfile.
+	text: `There's a reason over <span>500,000</span> businesses have started with Incfile.
     We include many amazing benefits with all packages.`,
 	list: [
 		`Company name verification`,

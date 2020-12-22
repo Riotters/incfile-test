@@ -7,30 +7,46 @@ import TextCenterLayout from "../../partials/heading-center";
 import PPCQuotesSection from "../../partials/ppc/quotes-section";
 
 const Opinions = styled.section`
-	position: relative;
-	padding-top: 100px;
+  position: relative;
+  padding-top: 56px;
+
+  @media (min-width: 769px) {
+    padding-top: 80px;
+  }
+
+  @media (min-width: 992px) {
+    padding-top: 104px;
+  }
 `;
 
-const OpinionsSection = ({ className, content, quotes, customers, stateName }) => (
-	<Opinions>
-		<Oval className="oval" height="570" width="570" top="0" left="0">
-			<TopLeftOvalSVG />
-		</Oval>
-		<TextCenterLayout
-			headline={content.header}
-			headlineWidth="770"
-			text={content.text}
-			textWidth="770"
-		/>
-        
-        {customers && 
-            <Customers content={{customers: customers}} padding="48px 0" />
-        }
-        
-        {quotes &&
-            <PPCQuotesSection quotes={quotes} stateName={stateName} />
-        }
-	</Opinions>
+const OpinionsSection = ({
+  className,
+  content,
+  quotes,
+  customers,
+  stateName,
+}) => (
+  <Opinions>
+    <Oval className="oval" height="570" width="570" top="0" left="0">
+      <TopLeftOvalSVG />
+    </Oval>
+    <TextCenterLayout
+      headline={content.header}
+      headlineWidth="770"
+      text={content.text}
+      textWidth="770"
+    />
+
+    {customers && (
+      <Customers
+        content={{ customers: customers }}
+        padding="0 0 16px 0"
+        paddingLG="48px 0"
+      />
+    )}
+
+    {quotes && <PPCQuotesSection quotes={quotes} stateName={stateName} />}
+  </Opinions>
 );
 
 export default OpinionsSection;

@@ -299,7 +299,7 @@ const Footer = () => {
 					</Copyright>
 					<Social>
 						<li>
-							<a href="https://facebook.com/incfile" title="Facebook">
+							<a href="https://www.facebook.com/incfile" title="Facebook">
 								<FacebookSVG />
 							</a>
 						</li>

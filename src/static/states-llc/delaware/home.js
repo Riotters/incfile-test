@@ -1443,7 +1443,7 @@ export const businessTaxes = [
 	},
 	{
 		type: `text`,
-		content: `Any salaried employees will also need to pay personal Delaware state taxes. The Delaware state tax rates are levied by how much you earn. You can <a href="https://revenue.delaware.gov/services/Business_Tax/TaxComputation.pdf" target="_blank" rel="noopener noreferrer"> find the DE state tax rate schedule here</a>.`,
+		content: `Any salaried employees will also need to pay personal Delaware state taxes. The Delaware state tax rates are levied by how much you earn. You can <a href="https://revenuefiles.delaware.gov/docs/TaxComputation.pdf" target="_blank" rel="noopener noreferrer"> find the DE state tax rate schedule here</a>.`,
 		marginBottom: 32,
 	},
 	{

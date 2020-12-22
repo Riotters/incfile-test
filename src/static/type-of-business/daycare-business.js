@@ -66,7 +66,7 @@ export const adventages2 = {
     {
       circleText: 1,
       headline: "File an Annual Report",
-      text: `Depending on the state you’re located in, you will probably have to file a report every year. This report tells the state about any major changes to your daycare business, and <a href="/manage-your-company/annual-report/">we can file your Annual Report on your behalf.</a>`,
+      text: `Depending on the state you’re located in, you will probably have to file a report every year. This report tells the state about any major changes to your business, and <a href="/manage-your-company/annual-report/">we can file your Annual Report on your behalf.</a>`,
       url: "/manage-your-company/annual-report",
       urlText: "Annual Report",
     },

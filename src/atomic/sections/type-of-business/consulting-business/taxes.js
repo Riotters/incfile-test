@@ -22,7 +22,7 @@ const Taxes = () => (
     <Service>
       <Container>
         <TextCenterLayout
-          headline="Maintaining Your Online Business"
+          headline="Maintaining Your Consulting Business"
           text="There are certain forms and legalities you need to follow to keep your consulting business in good standing."
         />
         <AdventagesBox>

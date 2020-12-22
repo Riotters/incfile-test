@@ -32,7 +32,7 @@ const SettingBusiness = () => (
       <ImageBoxes>
         <TopImageBox image="location" color={color.red3}>
           <Heading size={3} template={4}>
-            Location of your workshop
+            Location of your business
           </Heading>
           <p>
             If you’re using a print-on-demand service, you should be able to run

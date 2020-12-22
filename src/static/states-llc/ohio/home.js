@@ -1494,7 +1494,7 @@ export const businessTaxes = [
 	},
 	{
 		type: `text`,
-		content: `<a href="https://tax.ohio.gov/wps/portal/gov/tax/individual" target="_blank" rel="noopener noreferrer">Get details on the Ohio state tax here.</a> `,
+		content: `<a href="https://tax.ohio.gov/wps/portal/gov/tax/wps/portal/gov/tax/individual" target="_blank" rel="noopener noreferrer">Get details on the Ohio state tax here.</a> `,
 		marginBottom: 32,
 	},
 	{
@@ -1535,7 +1535,7 @@ export const businessTaxes = [
 	},
 	{
 		type: `text`,
-		content: `<a href="https://tax.ohio.gov/wps/portal/gov/tax/business/ohio-business-taxes/sales-and-use/Sales-Use-Tax" target="_blank" rel="noopener noreferrer">Get details on the Ohio sales tax online here.</a> `,
+		content: `<a href="https://tax.ohio.gov/wps/portal/gov/tax/wps/portal/gov/tax/business/ohio-business-taxes/sales-and-use/Sales-Use-Tax" target="_blank" rel="noopener noreferrer">Get details on the Ohio sales tax online here.</a> `,
 		marginBottom: 32,
 	},
 	{
@@ -1667,7 +1667,7 @@ export const businessTaxes = [
 						},
 						{
 							type: `text`,
-							content: `<a href="https://www.bwc.ohio.gov/" target="_blank" rel="noopener noreferrer">Get more requirements from the Ohio Bureau of Workers' Compensation website.</a>`,
+							content: `<a href="https://info.bwc.ohio.gov/" target="_blank" rel="noopener noreferrer">Get more requirements from the Ohio Bureau of Workers' Compensation website.</a>`,
 							marginBottom: 48,
 						},
 					],

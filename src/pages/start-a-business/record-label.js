@@ -106,7 +106,7 @@ const RecordLabel = () => (
                 we’re here to help.
               </Paragraph>
               <Paragraph style={{ marginBottom: 0 }}>
-                We’ve assisted over 100,000 people with forming their business
+                We’ve assisted over 500,000 people with forming their business
                 and provided answers, guidance and support to transform them
                 into entrepreneurs. We’ll guide you through what you need to
                 know to start your record label business and get it off the

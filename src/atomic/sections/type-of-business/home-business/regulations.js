@@ -21,8 +21,10 @@ const Regulations = () => (
         <Link to="/business-license-research-package/">
           we can also help out with researching your business licensing needs
         </Link>
-        .
       </Paragraph>
+      <Heading size={3} left>
+        Taxes
+      </Heading>
       <Paragraph big>
         Taxes are a fact of life if you’re in business, and there are various
         ways you will need to file and pay them. This can include

@@ -3,10 +3,6 @@ import styled from "styled-components";
 import TextCenterLayout from "../../../partials/heading-center";
 import Container from "../../../../components/container";
 import Adventages from "../../../../components/adventages";
-import ContentCenter from "../../../partials/content-center";
-import { Heading } from "../../../atoms/typography/heading";
-import { Paragraph } from "../../../atoms/typography/paragraph";
-import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import { color, gradient } from "../../../atoms/styles/colors";
 
 const IsItForYou = ({ content }) => (
@@ -35,17 +31,27 @@ const IsItForYou = ({ content }) => (
 );
 
 const Wrapper = styled.section`
-	padding-top: 120px;
+	padding-top: 100px;
 	padding-bottom: 100px;
 	position: relative;
 
 	&::before {
 		content: "";
-		height: 2008px;
+		height: 600px;
 		width: 100%;
 		background-image: ${gradient.blue3};
 		position: absolute;
 		top: 0;
+		left: 0;
+	}
+
+	&::after {
+		content: "";
+		height: 600px;
+		width: 100%;
+		background-image: ${gradient.blue3reverse};
+		position: absolute;
+		bottom: 0;
 		left: 0;
 	}
 `;
@@ -58,7 +64,6 @@ const AdventagesWrapper = styled.div`
 	column-gap: 30px;
 	row-gap: 0px;
 	margin-top: 76px;
-	margin-bottom: 76px;
 
 	@media (min-width: 490px) {
 		grid-template-columns: 1fr;
@@ -85,17 +90,6 @@ const AdventagesWrapper = styled.div`
 				margin-bottom: 32px;
 			}
 		}
-	}
-`;
-
-const Oval = styled.div`
-	position: absolute;
-	top: 447px;
-	left: 0;
-	width: 100%;
-
-	@media (min-width: 520px) {
-		width: 520px;
 	}
 `;
 

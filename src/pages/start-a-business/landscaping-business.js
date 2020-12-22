@@ -314,14 +314,9 @@ const LandscapingBusiness = () => (
               width={100}
               widthUnit="%"
             >
-              <Paragraph
-                big
-                flex
-                flexAlign={true}
-                style={{ fontWeight: "bold" }}
-              >
+              <Heading size={4}>
                 Landscape design, installation and makeover
-              </Paragraph>
+              </Heading>
 
               <Paragraph big>
                 A solid portfolio of work combined with a strong, reliable work
@@ -343,14 +338,7 @@ const LandscapingBusiness = () => (
               width={100}
               widthUnit="%"
             >
-              <Paragraph
-                big
-                flex
-                flexAlign={true}
-                style={{ fontWeight: "bold" }}
-              >
-                Lawn and yard maintenance
-              </Paragraph>
+              <Heading size={4}>Lawn and yard maintenance</Heading>
 
               <Paragraph big>
                 Reliable, well-priced services provided on a regular basis by
@@ -372,14 +360,7 @@ const LandscapingBusiness = () => (
               width={100}
               widthUnit="%"
             >
-              <Paragraph
-                big
-                flex
-                flexAlign={true}
-                style={{ fontWeight: "bold" }}
-              >
-                Residential customers
-              </Paragraph>
+              <Heading size={4}>Residential customers</Heading>
 
               <Paragraph big>
                 Competitively-priced services that provide a high value for
@@ -401,14 +382,7 @@ const LandscapingBusiness = () => (
               width={100}
               widthUnit="%"
             >
-              <Paragraph
-                big
-                flex
-                flexAlign={true}
-                style={{ fontWeight: "bold" }}
-              >
-                Commercial and industrial customers
-              </Paragraph>
+              <Heading size={4}>Commercial and industrial customers</Heading>
 
               <Paragraph big>
                 Reliable, trustworthy services provided quickly and efficiently
@@ -652,7 +626,7 @@ const LandscapingBusiness = () => (
       </Oval4>
       <Container>
         <CenterBox>
-          <Heading size={2} template={1} left>
+          <Heading size={2} left>
             Write a Business Plan for Your Landscaping Business
           </Heading>
 

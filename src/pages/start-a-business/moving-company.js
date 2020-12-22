@@ -20,6 +20,7 @@ import UseFulTools from "../../atomic/sections/type-of-business/moving-company/u
 import Conclusion from "../../atomic/sections/general/conclusion";
 import BusinessOwners from "../../atomic/sections/type-of-business/moving-company/business-owners";
 import TextCenterLayout from "../../atomic/partials/heading-left";
+import Taxes from "../../atomic/sections/type-of-business/moving-company/taxes";
 
 const MovingCompanyPage = () => (
   <Layout>
@@ -74,6 +75,8 @@ const MovingCompanyPage = () => (
     <Regulations />
 
     <InsuranceBusinessSection />
+
+    <Taxes />
 
     <BusinessOwners />
 

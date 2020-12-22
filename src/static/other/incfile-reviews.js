@@ -49,7 +49,7 @@ export const positiveReview = {
 		text1: `Clients on our <a href="https://www.facebook.com/incfile/">Incfile Facebook page</a> gave us an average rating of <b>4 out of 5</b>, with <br>people saying things like:`,
 		reviews: [
 			{
-				text: `Knowing nothing about business or forming a company was not a problem with Incfile. I am being honest when I say--as many agree-- that being budget-conscious is usually the first thing people look for in any walk of business. Not only was incfile one of the lowest prices, they made forming my LLC easy and was always helpful whether via email or phone call. I will be renewing my subscription and would absolutely recommend them to anyone looking to form a business--large or small.`,
+				text: `Knowing nothing about business or forming a company was not a problem with Incfile. I am being honest when I say--as many agree-- that being budget-conscious is usually the first thing people look for in any walk of business. Not only was Incfile one of the lowest prices, they made forming my LLC easy and was always helpful whether via email or phone call. I will be renewing my subscription and would absolutely recommend them to anyone looking to form a business--large or small.`,
 				user: `Facebook User`,
 			},
 			{
