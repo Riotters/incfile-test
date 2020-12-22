@@ -2,10 +2,10 @@ import React from "react";
 import Image from "../../atoms/image/image";
 import styled from "styled-components";
 
-const InfoCardColorBgHeader = ({backgroundColor, imageName}) => (
+const InfoCardColorBgHeader = ({backgroundColor, imageName, imageAlt}) => (
     <Wrapper backgroundColor={backgroundColor}>
         <ImageWrapper>
-            <Image filename={imageName}/>
+            <Image filename={imageName} alt={imageAlt ?? ''}/>
         </ImageWrapper>
     </Wrapper>
 );

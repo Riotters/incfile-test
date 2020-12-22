@@ -27,52 +27,6 @@ const WhiteBox = styled(Box)`
   }
 `;
 
-const InputWrapper = styled.div`
-  height: 32px;
-  position: relative;
-
-  .slider-bar {
-    display: block;
-    height: 16px;
-    background-color: ${color.blue1};
-    position: absolute;
-    top: 8px;
-    left: 0;
-    border-radius: 10px;
-    pointer-events: none;
-  }
-
-  input {
-    -webkit-appearance: none; /* Override default CSS styles */
-    appearance: none;
-    width: 100%; /* Full-width */
-    height: 16px; /* Specified height */
-    background: ${color.blue3};
-    outline: none; /* Remove outline */
-    -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
-    transition: opacity 0.2s;
-    margin: 8px 0;
-    border-radius: 10px;
-
-    &::-webkit-slider-thumb {
-      -webkit-appearance: none; /* Override default look */
-      appearance: none;
-      width: 32px; /* Set a specific slider handle width */
-      height: 32px; /* Slider handle height */
-      background: ${color.blue1};
-      cursor: pointer; /* Cursor on hover */
-      border-radius: 50%;
-    }
-
-    &::-moz-range-thumb {
-      width: 25px; /* Set a specific slider handle width */
-      height: 25px; /* Slider handle height */
-      background: #4caf50; /* Green background */
-      cursor: pointer; /* Cursor on hover */
-    }
-  }
-`;
-
 class Range extends React.Component {
   constructor(props) {
     super(props);

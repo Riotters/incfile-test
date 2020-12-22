@@ -2,7 +2,7 @@ import React from "react";
 import OverviewSVG from "../../../images/icons/coaching-business.inline.svg";
 import ArrowSVG from "../../../images/arrow.inline.svg";
 //import { useTabState } from "@bumaga/tabs";
-import { Tabs, Tab, TabList, TabPanel } from "react-tabs";
+import { Tab } from "react-tabs";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 

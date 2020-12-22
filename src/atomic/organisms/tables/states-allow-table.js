@@ -47,8 +47,7 @@ const Wrapper = styled.div`
 `;
 
 const TaxReturnTable = ({ className, content }) => {
-	const columnsNo = content.headers.length;
-
+	
 	return (
 		<Wrapper className={className}>
 			<GridTableRow
@@ -58,8 +57,8 @@ const TaxReturnTable = ({ className, content }) => {
 				headerSize={5}
 				columns="1fr 1fr 1fr 1fr"
 			/>
-			{content.rows.map((row) => (
-				<GridTableRow className="row" content={row} columns="1fr 1fr 1fr 1fr" />
+			{content.rows.map((row, i) => (
+				<GridTableRow key={i} className="row" content={row} columns="1fr 1fr 1fr 1fr" />
 			))}
 		</Wrapper>
 	);

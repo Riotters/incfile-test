@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import InfoCardColorBgHeader from "../../molecules/image-blocks/info-card-color-bg-header";
 import PropTypes from "prop-types";
+import InfoCardColorBgHeader from "../../molecules/image-blocks/info-card-color-bg-header";
 import { color } from "../../atoms/styles/colors";
 import InfoCardContent from "../../molecules/image-blocks/info-card-content";
 
@@ -11,7 +11,8 @@ const InfoCardWithImage = ({
 	roundBottomLeft,
 	roundBottomRight,
 	backgroundColor,
-	imageName,
+    imageName,
+    imageAlt,
 	title,
 	content,
 	headerSize,
@@ -25,7 +26,8 @@ const InfoCardWithImage = ({
 	>
 		<InfoCardColorBgHeader
 			backgroundColor={backgroundColor}
-			imageName={imageName}
+            imageName={imageName}
+            imageAlt={imageAlt ?? title}
 		/>
 		<InfoCardContent
 			title={title}

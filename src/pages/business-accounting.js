@@ -33,7 +33,7 @@ const BusinessAccountingV2 = () => (
 		/>
 		<Top
 			imageName="main-header-illustration-business-startup-guides-4593"
-			imageAlt="Business startup guides"
+			imageAlt="all your accounting and tax needs"
 			ovalColor="sun"
 			contentWidth={700}
 			headlineWidth={700}

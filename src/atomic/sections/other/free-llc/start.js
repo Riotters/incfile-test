@@ -42,7 +42,7 @@ const StartSection = ({ className, content }) => (
     </ContentLeft>
     <CenterGrid columnsSM="1" columnsMD="2">
       {content.buttons.map((button, i) => (
-        <BoxedButton content={button} icon={icons[i]} iconColor={colors[i]} />
+        <BoxedButton key={i} content={button} icon={icons[i]} iconColor={colors[i]} />
       ))}
     </CenterGrid>
     <ContentLeft contentWidth="770">

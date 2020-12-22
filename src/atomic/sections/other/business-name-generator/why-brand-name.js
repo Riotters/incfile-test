@@ -137,13 +137,13 @@ const WhyBrandNameSection = ({ content }) => {
 					<AbsoluteShapCure rotate={170} left="-25px" bottom="-25px">
 						<ShapeCurve color={color.orange1} />
 					</AbsoluteShapCure>
-					{content.lists.map((item) => (
-						<Fragment>
+					{content.lists.map((item, i) => (
+						<Fragment key={i}>
 							<div className="box">
 								<div className="icon">
 									<Image
 										filename={item.icon}
-										imageAlt="an comic speech bubble icon"
+										imageAlt={item.header}
 									/>
 								</div>
 								<Heading size={2} template={4} bottomMargin={16} left>

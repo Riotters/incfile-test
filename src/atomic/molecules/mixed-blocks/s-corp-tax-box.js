@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { color } from "../../atoms/styles/colors";
 import { shadow } from "../../atoms/styles/shadows";
 import Image from "../../atoms/image/image";
-import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import Curve from "../../atoms/icons/curve";
 import CurveSVG from "../../../images/curves/bottom-left-top-right.inline.svg";
@@ -55,7 +54,7 @@ const SCorpTaxBox = ({ className, image, imageAlt, headingSize = 3, headingSizeT
             </Curve>
         )}
         <ImageWrapper>
-            <Image filename={image} alt={imageAlt ?? ''} />
+            <Image filename={image} alt={imageAlt ?? content.header} />
         </ImageWrapper>
         <ChooseHeadingType
             headerSize={headingSize}

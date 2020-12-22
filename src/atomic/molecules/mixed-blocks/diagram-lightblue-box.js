@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../../atoms/styles/colors";
-import Circle from "../../atoms/icons/circle";
 import Bluebox from "../../atoms/boxes/blue-box";
 
 const Wrapper = styled.div`

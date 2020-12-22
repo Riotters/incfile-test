@@ -100,7 +100,7 @@ const ResearchPackageSection = ({ className, content }) => (
             </Curve>
             <div className="box">
                 <div className="icon">
-                <Image filename="determine-all-business-licenses" />
+                <Image filename="determine-all-business-licenses" alt="business license research" />
                 </div>
                 <p>Determine all business licenses and permits required at the federal, state, county and municipal level.</p>
             </div>
@@ -111,7 +111,7 @@ const ResearchPackageSection = ({ className, content }) => (
             </div>
             <div className="box">
                 <div className="icon">
-                <Image filename="select-a-package" />
+                <Image filename="select-a-package" alt="license & permit application" />
                 </div>
                 <p>Provide you with the proper license/permit applications.</p>
             </div>
@@ -122,7 +122,7 @@ const ResearchPackageSection = ({ className, content }) => (
             </div>
             <div className="box">
                 <div className="icon">
-                <Image filename="what-you-need" />
+                <Image filename="what-you-need" alt="filing instruction" />
                 </div>
                 <p>List filing instructions, supporting document requirements, and fees.</p>
             </div>

@@ -47,38 +47,6 @@ const Input = styled.input`
   margin-left: 16px;
 `;
 
-const States = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-`;
-
-const State = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-  width: 100%;
-  background-color: #fff;
-  border-top: 1px solid #f4f4f4;
-  padding: 0 40px;
-  cursor: pointer;
-
-  span {
-    color: #1e1e1e;
-    font-family: MarkPro;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: left;
-  }
-
-  &:hover {
-    svg {
-      transform: translateY(-2px);
-    }
-  }
-`;
-
 const Searchbar = () => {
   return (
     <Wrapper>

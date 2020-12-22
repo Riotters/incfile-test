@@ -56,36 +56,44 @@ export const faq = {
         {
             header: `Will filing a change of agent require me to sign any documents?`,
             text: `Some states require that a member or director of the entity sign the document required to change the registered agent. If your state requires a signature we will email you a copy of the documents for signature.`,
+            imgAlt: `change of agent` 
         },
         {
             header: `How much does it cost to file a Change of Agent?`,
             text: `The state fee varies by state. Our service fee to change the agent is $0. To review the fee in your state click on the “order now” button and select the state and entity type.`,
+            imgAlt: `change of agent`
         },
         {
             header: `Do I need to explain why I am changing registered agents?`,
             text: `No. Most states just require the name of the business entity, the current registered agent name and address, the name and address of the new registered agent, and the name and information of the authorized person 
             filling out the form on behalf of the entity.`,
+            imgAlt: `change of agent`
         },
         {
             header: `Can I choose a new registered agent from outside of my state?`,
             text: `Most states require that the registered agent be a resident of the state who is authorized to do business in the state. However, most states allow businesses to hire "service companies" (such as an attorney or accountant) 
             to provide registered agent services on their behalf.`,
+            imgAlt: `change of agent`
         },
         {
             header: `Is there anyway to expedite the process?`,
             text: `The price quickly increases from $100 to $2,000 depending on how fast you need this paperwork filed. In some states, you can complete it in as little as an hour.`,
+            imgAlt: `change of agent`
         },
         {
             header: `How do I resign my position as an LLC registered agent?`,
             text: `Registered agent may resign by sending notice to the business entity and the secretary of state.`,
+            imgAlt: `change of agent`
         },
         {
             header: `How Long does it take to file an Annual Report?`,
             text: `The filing time is dependent on the governing state agency and varies by state. In general, non-expedited filings takes about two to three weeks.`,
+            imgAlt: `change of agent`
         },
         {
             header: `What will I receive when the Change of Agent is completed?`,
             text: `The governing state agency will typically return a copy of the filed document which is then mailed to the client.`,
+            imgAlt: `change of agent`
         },
     ]
 }

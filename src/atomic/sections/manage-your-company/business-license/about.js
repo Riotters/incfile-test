@@ -33,7 +33,7 @@ const AboutSection = ({ className, content }) => (
 		<Oval className="oval" height="570" width="570" y="-32">
 			<OvalSVG />
 		</Oval>
-		<ImageContent image="registered-agents-about-9001">
+		<ImageContent image="registered-agents-about-9001" alt="business license research">
 			{/* <Heading size={3} bottomMargin="24">
 				{content.header}
 			</Heading> */}
@@ -43,7 +43,8 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="40">
 				{content.text2}
 			</Paragraph>
-			<Button
+            <Button
+                externalLink
 				content={content.button}
 				theme="primary56"
 				margin="0 auto 48px 0"

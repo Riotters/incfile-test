@@ -36,13 +36,13 @@ const TaxIdEin = () => (
 		/>
 		<Top
 			imageName="mrs-bulb-tax-number"
-			imageAlt="Mrs Bulb with tax numbers"
+			imageAlt="Employer Identification Number"
 			ovalColor="blackpink"
 		>
 			<h1 style={{ maxWidth: "520px" }}>{top.header}</h1>
 			<HeadingP size={2} big>{top.text}</HeadingP>
 			<Buttonsbox>
-				<Button content={top.button[0]} theme="primary56" width="200px" arrow />
+				<Button externalLink content={top.button[0]} theme="primary56" width="200px" arrow />
 			</Buttonsbox>
 		</Top>
 		<About content={about} />

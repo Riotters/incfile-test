@@ -28,7 +28,7 @@ const CorporateLlcKit = () => (
     />
     <Top
       imageName="mrs-bulb-llc-corporate-kit"
-      imageAlt="LLC or corporate kit"
+      imageAlt="business formation kit"
       ovalColor="blue"
     >
       <h1>{top.header}</h1>

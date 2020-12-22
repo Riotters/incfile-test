@@ -54,7 +54,7 @@ const AfterForming = () => {
 			/>
 			<Top
 				imageName="mr-bulb-compass-3979"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt="forming your llc"
 				ovalColor="sun"
 				headlineWidth="550"
 			>

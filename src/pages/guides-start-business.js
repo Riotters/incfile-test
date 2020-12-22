@@ -48,7 +48,7 @@ const GuideToStart = () => {
   return (
     <Layout>
       <SEO title="How to Start a Business: A Complete Guide" description="From developing your business idea to measuring success, our free guide has all the info you need to get your business off the ground. Download now." />
-      <Top imageName="mrs-bulb-complete-guide-to-starting-a-business" imageAlt="" ovalColor="darkblue">
+      <Top imageName="mrs-bulb-complete-guide-to-starting-a-business" imageAlt="guide to start a business" ovalColor="darkblue">
         <h1>{top.header}</h1>
         <p>{top.text}</p>
         <Buttonsbox>

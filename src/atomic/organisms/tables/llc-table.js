@@ -43,8 +43,8 @@ const LLCTable = ({ className, content }) => (
 			headerSize={5}
 			columns="1fr 1fr 1fr"
 		/>
-		{content.rows.map((row) => (
-			<GridTableRow className="table-row" content={row} columns="1fr 1fr 1f" />
+		{content.rows.map((row, i) => (
+			<GridTableRow key={i} className="table-row" content={row} columns="1fr 1fr 1f" />
 		))}
 	</Wrapper>
 );

@@ -24,7 +24,7 @@ const RequirementsSection = ({ className, content }) => (
         {content.text}
       </Paragraph>
     </Container>
-    <ContentImage image="clipboard-9010" contentPadding="0">
+    <ContentImage image="clipboard-9010" imageAlt="requirements for s corp" contentPadding="0">
       <NumericList content={content.list} bottomMargin="0" />
     </ContentImage>
   </Requirements>

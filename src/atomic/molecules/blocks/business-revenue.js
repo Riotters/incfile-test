@@ -1,6 +1,5 @@
 import React from "react";
 import { color } from "../../atoms/styles/colors";
-import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import styled from "styled-components";
 import WhiteBox from "../../atoms/boxes/white-box";

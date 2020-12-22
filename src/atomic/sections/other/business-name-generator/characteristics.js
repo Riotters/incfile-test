@@ -60,8 +60,8 @@ const Characteristics = ({ className, content }) => (
 			</Paragraph>
 
 			<ListContainer>
-				{content.list.map((item) => (
-					<Whitebox>
+				{content.list.map((item, i) => (
+					<Whitebox key={i}>
 						<CheckSVG />
 						<Paragraph mixed bottomMargin={0}>
 							{parse(item)}
@@ -76,8 +76,8 @@ const Characteristics = ({ className, content }) => (
 			</Paragraph>
 
 			<ListContainer>
-				{content.list2.map((item) => (
-					<Whitebox>
+				{content.list2.map((item, i) => (
+					<Whitebox key={i}>
 						<ExSVG />
 						<Paragraph mixed bottomMargin={0}>
 							{parse(item)}

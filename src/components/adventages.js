@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import parse from "html-react-parser";
 import { color } from "./styles/colors";
 import { shadow } from "./styles/shadows";
 import { Link } from "gatsby";
 import ArrowSVG from "../images/arrow.inline.svg";
 import IconCircle from "./icons/circle";
 import Image from "../atomic/atoms/image/image";
-import CloseIcon from "../images/icons/close.inline.svg";
-import parse from "html-react-parser";
 import { Heading } from "../atomic/atoms/typography/heading";
 
 const Wrapper = styled.div`
@@ -180,7 +179,7 @@ const Adventages = ({
 
 				{imageName && (
 					<ImageWrapper>
-						<Image filename={imageName} alt={imageAlt} />
+						<Image filename={imageName} alt={imageAlt ?? headline} />
 					</ImageWrapper>
 				)}
 				{headline && (

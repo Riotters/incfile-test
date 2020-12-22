@@ -182,7 +182,7 @@ const PricingCard = ({ className, content, image, fullInfo, ...rest }) => (
 		</Heading>
 		<Paragraph bottomMargin="8">{content.text}</Paragraph>
 		<ImageWrapper>
-			<Image filename={image} />
+			<Image filename={image} alt="select package" />
 		</ImageWrapper>
 		<Price>${content.price}</Price>
 		<Paragraph>One time payment</Paragraph>
@@ -193,8 +193,8 @@ const PricingCard = ({ className, content, image, fullInfo, ...rest }) => (
 			arrow
 		/>
 		<ul style={{ marginBottom: "48px" }}>
-			{content.fees.map((fee) => (
-				<li>
+			{content.fees.map((fee, i) => (
+				<li key={i}>
 					<Fee>
 						<div>
 							<span className="help-mark">
@@ -215,8 +215,8 @@ const PricingCard = ({ className, content, image, fullInfo, ...rest }) => (
 		<ul className="list">
 			{fullInfo === true &&
 				content.list &&
-				content.list.map((item) => (
-					<li>
+				content.list.map((item, i) => (
+					<li key={i}>
 						<TextCheck>{item}</TextCheck>
 					</li>
 				))}

@@ -1,8 +1,9 @@
+import React from "react";
+import styled from "styled-components";
+
 import Whitebox from "../../atoms/boxes/white-box";
 import WhiteboxLI from "../../atoms/boxes/white-box-li";
-import React from "react";
 import {Paragraph} from "../../atoms/typography/paragraph";
-import styled from "styled-components";
 
 const Wrapper = styled(Whitebox)`
     display: flex;

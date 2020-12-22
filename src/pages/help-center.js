@@ -25,7 +25,7 @@ const HelpCenter = () => (
 		/>
 		<Top
 			imageName="mrs-bulb-question-7726"
-			imageAlt=""
+			imageAlt="q & a for llc and incorporating"
 			ovalColor="darkblue"
 			overflowMD
 		>

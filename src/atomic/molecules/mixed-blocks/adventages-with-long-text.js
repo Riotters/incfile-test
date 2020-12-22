@@ -139,7 +139,7 @@ const AdventagesWithLongText = ({className, title, children, colorStroke, circle
 
                 {imageName &&
                 <ImageWrapper>
-                    <Image filename={imageName}/>
+                    <Image filename={imageName} alt={title ?? ''} />
                 </ImageWrapper>
                 }
                 {title &&

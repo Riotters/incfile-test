@@ -36,8 +36,6 @@ const Wrapper = styled.div`
     }
 `
 
-const Avatar = styled.span``;
-
 const ArticleFooter = ({ className }) => {
   return (
     <Wrapper className={className}>

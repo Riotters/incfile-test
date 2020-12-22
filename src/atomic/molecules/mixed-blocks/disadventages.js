@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 import { color } from "../../atoms/styles/colors";
 import { shadow } from "../../atoms/styles/shadows";
-import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import IconCircle from "../../atoms/icons/circle";
 import ArrowSVG from "../../../images/arrow.inline.svg";
@@ -95,7 +94,7 @@ const Disdventages = ({className, content, colorStroke, headingSize = 3, heading
 
                 {imageName &&
                     <ImageWrapper>
-                        <Image filename={imageName} />
+                        <Image filename={imageName} alt={content.header ?? ''} />
                     </ImageWrapper>
                 }
                 {content.header && (

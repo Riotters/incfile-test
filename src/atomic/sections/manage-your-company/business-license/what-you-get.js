@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { color } from "../../../atoms/styles/colors";
-import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import HeadingCenter from "../../../partials/heading-center";
 import ImageContent from "../../../partials/left-image-right-content";
@@ -76,7 +75,7 @@ const WhatYouGetSection = ({ className, content }) => (
             <OvalSVG />
         </Oval>
         <HeadingCenter className="headline" headline={content.header} headlineWidth="770" />
-        <ImageContent image="registered-agents-2">
+        <ImageContent image="registered-agents-2" alt="business license research">
             <Paragraph big bottomMargin="48">{content.text}</Paragraph>
             <PHeading size={3} bottomMargin="32">{content.header2}</PHeading>
             <div className="grid">
