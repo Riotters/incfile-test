@@ -32,15 +32,10 @@ const BusinessEntityQuizLLC = () => (
 		/>
 		<TopSection content={top} padding="220px 0" />
 		<About content={about} />
-		<WhatIs
-		//content={whatIs}
-		/>
-		{/* <ChooseEntitySection content={choose} /> */}
+		<WhatIs />
 		<Types content={types} />
 		<ProsAndCons content={prosAndCons} />
-		<Requirements
-		//content={requirements}
-		/>
+		<Requirements />
 		<Faq content={faq} />
 		<Checklist />
 

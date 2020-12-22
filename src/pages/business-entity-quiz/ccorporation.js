@@ -12,7 +12,7 @@ import {
 import TopSection from "../../atomic/sections/learning-center-entity/business-entity-quiz/top-section";
 import WhatIs from "../../atomic/sections/business-entity-quiz/ccorporation/what-is";
 import HowFormed from "../../atomic/sections/business-entity-quiz/ccorporation/how-formed";
-import Types from "../../atomic/sections/business-entity-quiz/llc/types";
+import Types from "../../atomic/sections/business-entity-quiz/ccorporation/types";
 import ProsAndCons from "../../atomic/sections/business-entity-quiz/llc/pros-and-cons";
 import AdvancesAndDisadvances from "../../atomic/sections/business-entity-quiz/ccorporation/advances-and-disadvances";
 import Requirements from "../../atomic/sections/business-entity-quiz/ccorporation/requirements";
