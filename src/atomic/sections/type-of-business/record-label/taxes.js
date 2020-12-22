@@ -34,7 +34,7 @@ const Taxes = () => (
             urlText={`Annual Report`}
             circleText={`1`}
             headline={`File an Annual Report`}
-            text={`Depending on the state you’re located in, you will probably have to file a report every year. This report tells the state about any major changes to your business, and we can file your annual report on your behalf.`}
+            text={`Depending on the state you’re located in, you will probably have to file a report every year. This report tells the state about any major changes to your business, and <a href='/manage-your-company/annual-report'>we can file your annual report on your behalf.</a>`}
             circlePosition="center"
             circleBackgroundColor={color.blue1}
             circleBackgroundShadow={shadow.blue1}
@@ -109,21 +109,21 @@ const Service = styled.div`
 
 const AdventagesBox = styled.div`
   display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 100%;
-    justify-content: center;
-    column-gap: 30px;
-    row-gap: 30px;
-    margin-top: 76px;
-    margin-bottom: 76px;; 
-    
-    @media (min-width: 490px){
-        grid-template-columns: 470px;
-    }
-    
-    @media (min-width: 992px){
-        grid-template-columns: 470px 470px;
-    }
+  grid-gap: 10px;
+  grid-template-columns: 100%;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 30px;
+  margin-top: 76px;
+  margin-bottom: 76px;
+
+  @media (min-width: 490px) {
+    grid-template-columns: 470px;
+  }
+
+  @media (min-width: 992px) {
+    grid-template-columns: 470px 470px;
+  }
 `;
 
 const Oval = styled.div`

@@ -215,7 +215,7 @@ const ConstructionCompany = () => (
         <TabPanel>
           <PanelWrapper>
             <Heading size={2} template={3} left>
-              Why You Should Start a New Travel Agency
+              Why You Should Start Your Own Publishing Business
             </Heading>
 
             <Paragraph big bottomMargin={52}>

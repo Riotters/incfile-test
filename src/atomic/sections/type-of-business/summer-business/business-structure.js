@@ -232,7 +232,8 @@ const BusinessStructure = () => (
 
           <Paragraph big>
             These are the largest and most complex types of businesses and are
-            typically far more than the average teen entrepreneur will need.
+            typically far more than the average entrepreneur or summer business
+            owner will need.
           </Paragraph>
         </TextBlockWithImage>
 
