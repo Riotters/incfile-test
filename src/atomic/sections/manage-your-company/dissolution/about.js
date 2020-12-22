@@ -48,6 +48,7 @@ const AboutSection = ({ className, content }) => (
         {content.header2}
             </Heading>
             <LightBox
+                bottomMargin="42"
                 alt="how to dissolve an llc"
                 thumbnailVideo="how-to-dissolved-an-llc-video-thumb-21122020"
                 videoID="G7xC0hdx2rk"
