@@ -9,91 +9,96 @@ import ContentCenter from "../../partials/content-center";
 import { replace } from "lodash";
 
 const Choose = styled.section`
-	position: relative;
-	padding-top: 100px;
+  position: relative;
+  padding-top: 56px;
 
-	&::before {
-		content: "";
-		height: 1484px;
-		width: 100%;
-		background-image: ${gradient.blue3};
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
+  @media (min-width: 992px) {
+    padding-top: 104px;
+  }
+
+  &::before {
+    content: "";
+    height: 1484px;
+    width: 100%;
+    background-image: ${gradient.blue3};
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 `;
 
 const Grid = styled.div`
-	display: grid;
-	grid-template-columns: 100%;
-	grid-gap: 30px;
-	padding: 56px 0 100px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 30px;
+  padding: 32px 0 56px;
 
-	@media (min-width: 992px) {
-		grid-template-columns: repeat(3, 1fr);
-	}
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 56px 0 104px;
+  }
 
-	& > div {
-		h4,
-		p {
-			text-align: center;
-		}
+  & > div {
+    h4,
+    p {
+      text-align: center;
+    }
 
-		@media (min-width: 992px) {
-			&:first-child {
-				border-radius: 50px 5px 5px 50px;
+    @media (min-width: 992px) {
+      &:first-child {
+        border-radius: 50px 5px 5px 50px;
 
-				.top {
-					border-radius: 35px 5px 5px 5px;
-				}
-			}
+        .top {
+          border-radius: 35px 5px 5px 5px;
+        }
+      }
 
-			&:last-child {
-				border-radius: 5px 50px 50px 5px;
+      &:last-child {
+        border-radius: 5px 50px 50px 5px;
 
-				.top {
-					border-radius: 5px 35px 5px 5px;
-				}
-			}
-		}
-	}
+        .top {
+          border-radius: 5px 35px 5px 5px;
+        }
+      }
+    }
+  }
 `;
 
 const ChooseSection = ({ className, content, stateName }) => {
-    const mixText = replace(content.text, `[STATE_NAME]`, stateName);
-    return (
-        <Choose>
-            <Oval
-                className="oval"
-                height="570"
-                width="570"
-                top="0"
-                right="0"
-                zIndex="0"
-            >
-                <OvalSVG />
-            </Oval>
-            <TextCenterLayout
-                headline={content.header}
-                headlineWidth="770"
-                text={mixText}
-                textWidth="770"
+  const mixText = replace(content.text, `[STATE_NAME]`, stateName);
+  return (
+    <Choose>
+      <Oval
+        className="oval"
+        height="570"
+        width="570"
+        top="0"
+        right="0"
+        zIndex="0"
+      >
+        <OvalSVG />
+      </Oval>
+      <TextCenterLayout
+        headline={content.header}
+        headlineWidth="770"
+        text={mixText}
+        textWidth="770"
+      />
+      <ContentCenter>
+        <Grid>
+          {content.boxes.map((box, i) => (
+            <TopImageBox
+              key={i}
+              content={box}
+              image={box.image}
+              color={box.color}
+              padding="16px 16px 56px"
             />
-            <ContentCenter>
-                <Grid>
-                    {content.boxes.map((box,i) => (
-                        <TopImageBox
-                            key={i}
-                            content={box}
-                            image={box.image}
-                            color={box.color}
-                            padding="16px 16px 56px"
-                        />
-                    ))}
-                </Grid>
-            </ContentCenter>
-        </Choose>
-    );
+          ))}
+        </Grid>
+      </ContentCenter>
+    </Choose>
+  );
 };
 
 export default ChooseSection;
