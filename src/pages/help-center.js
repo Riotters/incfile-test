@@ -20,7 +20,7 @@ import {
 const HelpCenter = () => (
 	<Layout>
 		<SEO
-			title="Incfile Business Help Center for LLC, Incorporating| Q & A"
+			title="Incfile Business Help Center for LLC, Incorporating | Q & A"
 			description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state."
 		/>
 		<Top
