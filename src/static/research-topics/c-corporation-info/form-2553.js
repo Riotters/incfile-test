@@ -11,9 +11,9 @@ export const about = {
   ],
   header: `What is the Form 2553?`,
   text: `If your business is a
-        <a href="/what-is-c-corporation" target="_blank">C Corporation</a>
+        <a href="/what-is-c-corporation/">C Corporation</a>
         but you have decided that you would rather file taxes as an
-        <a href="/what-is-s-corporation/" target="_blank">S Corporation,</a>
+        <a href="/what-is-s-corporation/">S Corporation,</a>
         you need to notify the IRS in advance by filing the appropriate paperwork.
         <a href="https://www.irs.gov/forms-pubs/about-form-2553" rel="noopener noreferrer nofollow" target="_blank">IRS Form 2553,</a>
         “Election By a Small Business Corporation,” is required to be filed with the IRS to switch a C Corporation to S Corporation status for purposes of federal taxation. To understand how much you could save in taxes by forming an S Corporation, check out our
@@ -52,7 +52,7 @@ export const about = {
   header6: `What is IRS Form 8832 and Why Would I Need It?`,
   text7: `<a href="https://www.irs.gov/pub/irs-pdf/f8832.pdf" rel="noopener noreferrer nofollow" target="_blank">IRS Form 8832</a>
         is necessary for situations where your business is an entity other than a corporation and you and you want to choose to be classified for federal tax purposes as an S Corporation, but you have not filed the usual paperwork within the specified timeframes. This situation is especially common for single-member
-        <a href="/limited-liability-company/" target="_blank">LLCs (Limited Liability Companies) </a>
+        <a href="/limited-liability-company/">LLCs (Limited Liability Companies) </a>
         that want S Corporation status for tax purposes.`,
   text8: `Form 8832 acts as a supplement to Form 2553 and lets you retroactively file both forms at once, getting retroactive classification and election as an S Corporation.`,
   text9: `But in order to qualify for relief from Form 8832, your corporation must meet these three criteria for eligibility:`,
