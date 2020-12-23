@@ -1,4 +1,6 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Buttonsbox from "../../atomic/atoms/boxes/top-buttons-box";
@@ -19,7 +21,6 @@ import {
 } from "../../static/manage-your-company/dissolution";
 import ProductSchema from "../../components/product-schema";
 import { servicePrice } from "../../helpers/global-variables";
-import { Helmet } from "react-helmet";
 
 const Dissolution = () => (
 	<Layout>
