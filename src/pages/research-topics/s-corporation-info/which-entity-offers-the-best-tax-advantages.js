@@ -46,7 +46,7 @@ const HelpCenter = () => {
 	return (
 		<Layout>
 			<SEO
-				title="Which entity offers the best tax advantages?"
+				title="Which entity offers the best tax advantages? | Archive articles"
 				description="Q & A for LLC and other forms of corporations. Learning Center for
     Incorporating in every state."
 			/>

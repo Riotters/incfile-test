@@ -9,36 +9,37 @@ import { Paragraph } from "../../../atoms/typography/paragraph";
 import Button from "../../../molecules/buttons/button";
 
 const Rocket = ({ content }) => (
-  <Wrapper>
-    <Oval>
-      <OvalSVG />
-    </Oval>
-    <Curve>
-      <CurveSVG />
-    </Curve>
-    <Moon>
-      <Image filename="moon" alt="moon" />
-    </Moon>
-    <Container>
-      <RocketWrapper>
-        <Image filename="rocket-2x" alt="rocket lunch" />
-      </RocketWrapper>
-      <Content>
-        <Heading size={2}>
-          {content.header} <br />
-          {content.header2}
-        </Heading>
-        <Paragraph bottomMargin="0">{content.text}</Paragraph>
-        <Paragraph>{content.text2}</Paragraph>
-        <Button
-          content={content.button}
-          theme="primary48"
-          margin="0 auto 0 0"
-          arrow
-        />
-      </Content>
-    </Container>
-  </Wrapper>
+    <Wrapper>
+        <Oval>
+            <OvalSVG />
+        </Oval>
+        <Curve>
+            <CurveSVG />
+        </Curve>
+        <Moon>
+            <Image filename="moon" alt="forming your business with incfile" />
+        </Moon>
+        <Container>
+            <RocketWrapper>
+                <Image filename="rocket-2x" alt="forming your business with incfile" />
+            </RocketWrapper>
+            <Content>
+                <Heading size={2}>
+                    {content.header} <br />
+                    {content.header2}
+                </Heading>
+                <Paragraph bottomMargin="0">{content.text}</Paragraph>
+                <Paragraph>{content.text2}</Paragraph>
+                <Button
+                    externalLink
+                    content={content.button}
+                    theme="primary48"
+                    margin="0 auto 0 0"
+                    arrow
+                />
+            </Content>
+        </Container>
+    </Wrapper>
 );
 
 const Wrapper = styled.div`

@@ -45,7 +45,7 @@ const HelpCenter = () => {
 	return (
 		<Layout>
 			<SEO
-				title="Can a foreign resident be a shareholder in an S Corporation?"
+				title="Can a foreign resident be a shareholder in an S Corporation? | Archive articles"
 				description="Q & A for LLC and other forms of corporations. Learning Center for Incorporating in every state."
 			/>
 			<Top

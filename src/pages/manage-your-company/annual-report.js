@@ -28,7 +28,7 @@ import { HeadingP } from "../../atomic/atoms/typography/heading-to-p";
 const AnnualReport = () => (
 	<Layout>
 		<SEO
-			title="Prepare and File an Annual LLC or Corporate Report"
+			title="Formal LLC & Corporate Annual Reports"
 			description=""
 		/>
 		<ProductSchema

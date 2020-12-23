@@ -28,7 +28,7 @@ import {HeadingP} from "../../../atomic/atoms/typography/heading-to-p";
 const HelpCenter = () => (
 	<Layout>
 		<SEO
-			title="Protect your personal assets"
+			title="Protect your personal assets | Archive articles"
 			description="Q & A for LLC and other forms of corporations. Learning Center for
     Incorporating in every state."
 		/>{" "}
