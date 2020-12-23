@@ -47,13 +47,13 @@ const HelpCenter = () => {
 	return (
 		<Layout>
 			<SEO
-				title="What happens if I require the signature of my Registered Agent?"
+				title="What happens if I require the signature of my Registered Agent? | Archive articles"
 				description="Q & A for LLC and other forms of corporations. Learning Center for
     Incorporating in every state."
 			/>{" "}
 			<Top
 				imageName="mrs-bulb-help-center-article"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt="incfile help articles"
 				ovalColor="green"
 			>
 				<Heading size={2} template={1} left>

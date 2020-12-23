@@ -45,7 +45,7 @@ const HelpCenter = () => {
 	return (
 		<Layout>
 			<SEO
-				title="Is there a limit to the amount of shareholders an S Corporation can have?"
+				title="Is there a limit to the amount of shareholders an S Corporation can have? | Archive articles"
 				description="Q & A for LLC and other forms of corporations. Learning Center for
     Incorporating in every state."
 			/>
