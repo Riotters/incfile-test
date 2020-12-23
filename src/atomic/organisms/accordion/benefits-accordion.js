@@ -181,7 +181,7 @@ const BenefitsAccordion = ({ page = "" }) => (
                             <Card content={{ header: "Order Registered Agent", text: "Order registered agent service and receive your new registered agent information immediately.", imgAlt:`registered agent`, link: { url: `/manage-your-company/registered-agent/`, text: `Learn more` } }} color={color.orange3} image={"bc-11"} />
                         )}
 
-                        <Card content={{ header: "Renew Registered Agent", text: "Click here if you have existing registered agent service and would like to renew it.", imgAlt:`renew registered agent`, link: { url: `${process.env.ORDER_URL}/dashboard/`, text: `Learn more` } }} color={color.green3} image={"bc-18"} />
+                        <Card content={{ header: "Renew Registered Agent", text: "Click here if you have existing registered agent service and would like to renew it.", imgAlt:`renew registered agent`, link: { url: `${process.env.ORDER_URL}/dashboard`, text: `Learn more` } }} color={color.green3} image={"bc-18"} />
 
                         {page !== "change-of-registered-agent" && (
                             <Card content={{ header: "Change Registered Agent", text: "Use to update the registered agent on file with the state of formation.", imgAlt: `change of agent`, link: { url: `/manage-your-company/change-of-registered-agent/`, text: `Learn more` } }} color={color.blue3} image={"bc-16"} />

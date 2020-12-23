@@ -7,7 +7,6 @@ import { getAggregrateReviews } from "../../../api/Api";
 import { formatNumber } from "../../../helpers/utils";
 import { color } from "../../atoms/styles/colors";
 import styled from "styled-components";
-import {Link} from "gatsby";
 
 const RatingBox = styled.a`
   display: flex;
@@ -41,7 +40,7 @@ const TextWrapper = styled.div`
     padding-left: 12px;
 `;
 
-const RatingHeader = styled(Link)`
+const RatingHeader = styled.div`
   font-family: Avenir, sans-serif;
   font-size: 15px;
   font-weight: 900;

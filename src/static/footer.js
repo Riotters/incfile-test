@@ -104,7 +104,7 @@ export const footer = {
           url: `${process.env.ORDER_URL}/dashboard`,
         },
         {
-          text: `Learn More`,
+          text: `Research Tool`,
           url: `/learn-more/`,
         },
         {

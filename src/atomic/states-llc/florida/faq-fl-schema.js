@@ -66,7 +66,7 @@ const FAQSchemaFL = () => {
                       "name": "How do I register a business name in Florida?",
                       "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Your Florida LLC name will automatically be registered when you file your Articles of Organization with the Division of Corporations or have <a href='https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=FL'>Incfile do so on your behalf.</a>"
+                        "text": "Your Florida LLC name will automatically be registered when you file your Articles of Organization with the Division of Corporations or have <a href='https://orders.incfile.com/form-order-now.php?entityType=LLC&entityState=FL'>Incfile do so on your behalf.</a>"
                       }
                     },{
                       "@type": "Question",
@@ -81,7 +81,7 @@ const FAQSchemaFL = () => {
                       "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "The form you need to file to start an LLC is called your “Articles of Organization.” You file this form with the Florida Division of Corporations, or we can help you gather the information needed and
-                          <a href='https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=FL'>file the form on your behalf.</a>"
+                          <a href='https://orders.incfile.com/form-order-now.php?entityType=LLC&entityState=FL'>file the form on your behalf.</a>"
                       }
                     },{
                       "@type": "Question",
@@ -112,7 +112,7 @@ const FAQSchemaFL = () => {
                       "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "The current fee for incorporating an LLC in Florida is $125, payable to the Division of Corporations. If you need your LLC formed quickly, Incfile can expedite the process for an additional fee of $50. Specialist incorporation businesses may also charge an additional fee for completing and submitting paperwork on your behalf. Incfile does not charge any additional fees, meaning you only pay the state fee of $125 for
-                                  <a href='https://www.incfile.com/form-order-now.php?entityType=LLC&entityState=FL'>LLC formation through us</a>."
+                                  <a href='https://orders.incfile.com/form-order-now.php?entityType=LLC&entityState=FL'>LLC formation through us</a>."
                       }
                     },{
                       "@type": "Question",

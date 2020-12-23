@@ -91,7 +91,7 @@ export const about = {
                     radius: "15px 15px 0 0",
                     color: color.green3,
                     header: `Incfile’s`,
-                    text: `has dedicated pages on each entity type, from LLCs to C Corporations, plus an interactive <a href="/">Business Entity Quiz</a> designed to give a prospective business owner deep insight into the business structure that’s best for them. It also has an <a href="/">overview page and comparison chart</a> highlighting the key benefits and drawbacks for each type of business entity.`,
+                    text: `has dedicated pages on each entity type, from LLCs to C Corporations, plus an interactive <a href="/business-entity-quiz/">Business Entity Quiz</a> designed to give a prospective business owner deep insight into the business structure that’s best for them. It also has an <a href="/start-your-company/">overview page and comparison chart</a> highlighting the key benefits and drawbacks for each type of business entity.`,
                     bottomMargin: "6",
                 },
                 {

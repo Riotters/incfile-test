@@ -106,7 +106,7 @@ PathLink.defaultProps = {
     textColor: color.orange1,
     arrowColor: color.black,
     hoverColor: color.blue1,
-    rel: "noopener noreferrer nofollow"
+    rel: "noopener noreferrer"
 };
 
 export default PathLink;
