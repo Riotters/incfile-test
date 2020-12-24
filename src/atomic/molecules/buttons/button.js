@@ -351,7 +351,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-    rel: "noopener noreferrer",
+    rel: "noopener noreferrer nofollow",
     target: "_blank",
 	width: "auto",
 	content: {
