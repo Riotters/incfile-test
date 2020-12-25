@@ -23,53 +23,6 @@ export const about = {
   text2: `If you form a corporation or LLC in a state and want to protect the name from being used by someone a trademark application will need to be filed with the United States Patent Office. If you own a trademark then it would provide you with legal recourse if another company in the same industry were to initiate a business using the same name.`,
 };
 
-export const related = {
-  header: `Related Questions`,
-  text: `Other users were also interested in knowing…`,
-  buttons: [
-    {
-      header: `Should I assume that if I form an LLC or incorporate that no one else can use the same name?`,
-      url: `/`,
-    },
-    {
-      header: `What paperwork is required in order to open a business checking account?`,
-      url: `/`,
-    },
-    {
-      header: `What paperwork is required in order to open a business checking account?`,
-      url: `/`,
-    },
-    {
-      header: `Does the designator “LLC” or "Inc." always need to be included in your companies name?`,
-      url: `/`,
-    },
-    {
-      header: `Does Incfile have a Discount or Coupon Code?`,
-      url: `/`,
-    },
-    {
-      header: `Which entity offers the best tax advantages?`,
-      url: `/`,
-    },
-    {
-      header: `What is the main function of the Registered Agent?`,
-      url: `/`,
-    },
-    {
-      header: `What steps do I need to take to ensure that my entity remains compliant?`,
-      url: `/`,
-    },
-    {
-      header: `Which entity type should I choose?`,
-      url: `/`,
-    },
-    {
-      header: `What is an LLC (Limited Liability Company)?`,
-      url: `/`,
-    },
-  ],
-};
-
 export const rocket = {
   header: `Launch`,
   header2: `your business with Incfile`,

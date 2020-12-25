@@ -1,37 +1,37 @@
 export const about = {
     links: [
-      {
-        text: `View All Topics`,
-        url: `/help-center/`,
-      },
-      {
-        text: `LLC Information`,
-        url: `/research-topics/llc-info`,
-      },
+        {
+            text: `View All Topics`,
+            url: `/help-center/`,
+        },
+        {
+            text: `LLC Information`,
+            url: `/research-topics/llc-info`,
+        },
     ],
     header: `Steps to starting a Limited Liability Company (LLC)`,
     header2: `Selecting a Company Name`,
     text: `Selecting a name is the first step to forming your LLC. The rules regarding the naming of your LLC are governed by the state agency that is responsible for the formation and regulation of LLCs (Typically the Secretary of State of the state of formation).The company name must be distinguishable from existing companies registered within the state of formation. The state will not accept an LLC name that is the same or deceptively similar to an existing LLC within the state of formation. Upon receiving an order our agents will search the state database to confirm name availability. If the company name is unavailable we will contact you to request alternate names.`,
     text2: `The name must include a designator that will signify that the company is organized as an LLC.`,
     list: {
-      header: `Typical designators include (although not all states accept all of these):`,
-      list: [
-        `LLC`,
-        `L.L.C.`,
-        `Limited Liability Company`,
-        `Limited Liability Co.`,
-        `Ltd. Liability Co.`,
-        `Limited Company`,
-        `Ltd. Co.`,
-        `LC`,
-        `L.C.`,
-      ],
+        header: `Typical designators include (although not all states accept all of these):`,
+        list: [
+            `LLC`,
+            `L.L.C.`,
+            `Limited Liability Company`,
+            `Limited Liability Co.`,
+            `Ltd. Liability Co.`,
+            `Limited Company`,
+            `Ltd. Co.`,
+            `LC`,
+            `L.C.`,
+        ],
     },
     list2: {
-      header: `NOTE:`,
-      list: [
-        `“LLC” is the most commonly used ending designator (e.g. XYZ ENTERPRISES LLC), and if no designator is submitted, we will automatically add the “LLC” to the end of your requested company name.`,
-      ],
+        header: `NOTE:`,
+        list: [
+            `“LLC” is the most commonly used ending designator (e.g. XYZ ENTERPRISES LLC), and if no designator is submitted, we will automatically add the “LLC” to the end of your requested company name.`,
+        ],
     },
     text3: `There are certain words that are prohibited or restricted by different states, often due to regulatory issues. A sample of some restricted words from some states may include; bank, insurance, education, engineering, university, architecture. If a given state restricts the use of these (or other) you may require state approval from the governing authority of that field.`,
     header3: `Providing a Company Business Address`,
@@ -51,10 +51,10 @@ export const about = {
     header7: `Filing the Articles of Organization`,
     text14: `Upon receipt of the information listed above in steps 1 – 4, the articles of organization required by your LLC state of formation will be drafted and filed with the designated state agency. If we have been elected to file the LLC on your behalf, we will collect and distribute the prescribed state fee and include it with your filing.`,
     list3: {
-      header: `NOTE:`,
-      list: [
-        `While many states do call the document that is filed to form an LLC the “Articles of Organization,” some states do call it by a different name, such as “Certificate of Organization” or “Certificate of Formation.”`,
-      ],
+        header: `NOTE:`,
+        list: [
+            `While many states do call the document that is filed to form an LLC the “Articles of Organization,” some states do call it by a different name, such as “Certificate of Organization” or “Certificate of Formation.”`,
+        ],
     },
     header8: `Completion and Delivery of your Filing`,
     text15: `Upon the successful filing and receipt of the filing documents for your LLC, we will complete any additional services included with your package and mail the documents to your contact address. An email will be sent to your contact email address notifying you that your order has been completed and is in transit.`,
@@ -64,97 +64,4 @@ export const about = {
     text18: `Furthermore, as an
       <a href="/" target="_blank">INCFILE.COM</a>
       client, our customer support staff will always be at your disposal in the event that you require assistance with additional filings and ongoing support for your existing LLC.`,
-}
-
-export const related = {
-  header: 
-      `Related Articles`,
-  text:
-      `Other users were also interested in knowing about…`,
-  buttons: [
-      {
-          header: `What Does LLC Mean?`,
-          url: `/research-topics/llc-info/llc-meaning`,
-      },
-      {
-          header: `Can another business entity be a member of an LLC?`,
-          url: `/research-topics/llc-info/can-another-business-entity-be-a-member-of-an-llc/`,
-      },
-      {
-          header: `Why it’s important for the members on an LLC to have an operating agreement in place?`,
-          url: `/research-topics/llc-info/llc-members-operating-agreement`,
-      },
-      {
-          header: `Can a Limited Liability Company (LLC) be taxed as an S Corporation?`,
-          url: `/research-topics/llc-info/can-a-limited-liability-company-llc-be-taxed-as-an-s-corporation/`,
-      },
-      {
-          header: `Which entity offers the best tax advantages?`,
-          url: `/research-topics/llc-info/tax-advantages`,
-      },
-      {
-          header: `Which entity type should I choose?`,
-          url: `/research-topics/llc-info/choosing-entity-type`,
-      },
-      {
-          header: `Is an LLC the best fit for your entity?`,
-          url: `/research-topics/llc-info/llc-for-your-entity`,
-      },
-      {
-          header: `LLC vs. S Corporation`,
-          url: `/research-topics/llc-info/llc-vs-s-corporation`,
-      },
-      {
-          header: `The LLC Operating Agreement`,
-          url: `/research-topics/llc-info/llc-operating-agreement`,
-      },
-      {
-          header: `The Benefits of Forming an LLC`,
-          url: `/research-topics/llc-info/forming-llc-benefits`,
-      },
-      {
-          header: `What is an LLC (Limited Liability Company)?`,
-          url: `/research-topics/llc-info/what-is-an-llc`,
-      },
-      {
-          header: `LLC vs. C Corporation`,
-          url: `/research-topics/llc-info/llc-vs-c-corporation`,
-      },
-      {
-          header: `Can I Form an LLC with just one Member?`,
-          url: `/research-topics/llc-info/forming-llc-with-one-member`,
-      },
-      {
-          header: `LLCs vs C-Corporation: Which Is Best for Your Business?`,
-          url: `/research-topics/llc-info/llcs-vs-c-corporation`,
-      },
-      {
-          header: `Steps to starting a Limited Liability Company (LLC)`,
-          url: `/research-topics/llc-info/steps-to-starting-a-limited-liability-company-llc/`,
-      },
-      {
-          header: `What is the process involved in changing the name of an LLC?`,
-          url: `/research-topics/llc-info/changing-llc-name`,
-      },
-      {
-          header: `Can an LLC be formed without listing the member on the articles of organization?`,
-          url: `/research-topics/llc-info/llc-without-listing-members`,
-      },
-      {
-          header: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
-          url: `/research-topics/llc-info/own-a-corporation-or-llc`,
-      },
-      {
-          header: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
-          url: `/research-topics/llc-info/require-an-attorney`,
-      },
-      {
-          header: `What is a Publication Requirement?`,
-          url: `/research-topics/llc-info/publication-requirement`,
-      },
-      {
-          header: `What is the Customized Corporate/LLC Kit?`,
-          url: `/research-topics/llc-info/customized-corp-llc-kit`,
-      },
-    ],
-}
+};
