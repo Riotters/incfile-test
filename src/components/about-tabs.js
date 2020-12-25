@@ -20,7 +20,6 @@ import NumericBoxedList from "../atomic/organisms/lists/numeric-boxed-list";
 import { Heading } from "../atomic/atoms/typography/heading";
 import { Paragraph } from "../atomic/atoms/typography/paragraph";
 import { Collapse } from "react-collapse";
-import VisibilitySensor from "./VisibilitySensor";
 import LightBox from "./LightBox";
 
 const Wrapper = styled.div`
