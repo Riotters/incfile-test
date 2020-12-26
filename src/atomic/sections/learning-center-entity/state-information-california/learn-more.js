@@ -55,8 +55,8 @@ const LearnMoreSection = ({ className, data }) => {
             <HeadingCenter headline={learnmores.header} headlineWidth="670" text={learnmores.text} bottomMargin="80" />
             <ContentCenter>
                 <Grid>
-                    {learnmores.buttons.map((button) => (
-                        <BoxedButton content={button} ellipsis />
+                    {learnmores.buttons.map((button, i) => (
+                        <BoxedButton key={i} content={button} ellipsis />
                     ))}
                 </Grid>
             </ContentCenter>

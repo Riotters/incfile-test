@@ -34,7 +34,7 @@ const QuickLinksSection = ({ className, content }) => (
     <ContentCenter contentWidth="970">
       <Grid>
         {quickLinks.cards.map((card, i) => (
-          <Card content={card} color={colors[i]} image={icons[i]} />
+          <Card key={i} content={card} color={colors[i]} image={icons[i]} />
         ))}
       </Grid>
     </ContentCenter>
