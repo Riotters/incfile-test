@@ -44,7 +44,7 @@ const NewYorkCorporation = () => {
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt="corporation in new york"
 				ovalColor="purple-2"
 				textWidth="530"
 			>
@@ -53,7 +53,7 @@ const NewYorkCorporation = () => {
 					{top.text}
 				</HeadingP>
 				<Buttonsbox>
-					<Button content={top.buttons[0]} theme="primary56" arrow />
+					<Button externalLink content={top.buttons[0]} theme="primary56" arrow />
 				</Buttonsbox>
 			</Top>
 			<CorporationLayout>

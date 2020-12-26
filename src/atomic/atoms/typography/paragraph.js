@@ -63,8 +63,8 @@ export const Paragraph = ({ children, maxWidth, mixed, center, ...rest }) => (
   <StyledParagraph maxWidth={maxWidth} center={center} {...rest}>
     {typeof children === "string" || mixed ? children : null}
     {typeof children === "object" && mixed === false
-      ? children.map((el) =>
-          el.url ? <Link to={el.url}>{` ${el.text} `}</Link> : el.text
+      ? children.map((el, i) =>
+          el.url ? <Link to={el.url} key={i}>{` ${el.text} `}</Link> : el.text
         )
       : null}
   </StyledParagraph>

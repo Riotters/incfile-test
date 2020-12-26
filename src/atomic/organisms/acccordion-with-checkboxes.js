@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import parse from "html-react-parser";
 import styled from "styled-components";
 import { motion } from "framer-motion";
@@ -11,7 +10,6 @@ import ArrowLink from "../../components/arrow-link";
 import { Paragraph } from "../atoms/typography/paragraph";
 import ArrowSVG from "../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../images/orange-curve.inline.svg";
-import VisibilitySensor from "../../components/VisibilitySensor";
 import Checkbox from "../atoms/controls/checkbox-round";
 
 const Wrapper = styled.div`
@@ -117,38 +115,6 @@ const PanelWrapper = styled.div`
 	}
 `;
 
-const ListItems = styled.ul`
-	list-style: none;
-	padding-left: 0;
-
-	li {
-		font-family: Avenir, sans-serif;
-		font-size: 16px;
-		line-height: 24px;
-		color: ${(props) =>
-			props.listColor ? `${color[props.listColor.item]}` : `${color.grey1}`};
-		padding-left: 26px;
-		padding-top: 0;
-		position: relative;
-
-		&::before {
-			content: "";
-			height: 4px;
-			width: 4px;
-			background-color: ${(props) =>
-				props.listColor ? `${color[props.listColor.dot]}` : `${color.grey1}`};
-			border-radius: 50%;
-			position: absolute;
-			top: 9px;
-			left: 6px;
-		}
-
-		&:not(:last-child) {
-			margin-bottom: 16px;
-		}
-	}
-`;
-
 const Button = styled.button`
 	min-width: 80px;
 	width: 100%;
@@ -205,21 +171,6 @@ const Icon = styled.div`
 		transform: rotate(180deg);
 		transition: transform 0.3s ease;
 	}
-`;
-
-const Counting = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 10px;
-	background-color: ${color.blue1};
-	color: white;
-	border-radius: 100px;
-	width: 30px;
-	min-width: 30px;
-	height: 30px;
-	margin-left: 30px;
-	margin-right: 30px;
 `;
 
 const cn = (...args) => args.filter(Boolean).join(" ");
@@ -287,8 +238,8 @@ const AccordionWithCheckmark = ({
 			)}
 			<Tabs>
 				<TabsWrapper>
-					{content.map((item) => (
-						<TabBox>
+					{content.map((item, i) => (
+						<TabBox key={i}>
 							<Tab>
 								<Content>
 									<Checkbox className="circleCheck" />
@@ -301,14 +252,14 @@ const AccordionWithCheckmark = ({
 							<Panel>
 								<PanelWrapper>
 									{item.answer.map((e, i) => (
-										<div>
+										<div key={i}>
 											{e.type === "paragraph" && (
 												<Paragraph mixed={true}>{parse(e.content)}</Paragraph>
 											)}
 
 											{e.type === "arrow-links" &&
-												e.content.map((link) => (
-													<ArrowLink url={link.url} style={link.style}>
+												e.content.map((link, i) => (
+													<ArrowLink key={i} url={link.url} style={link.style}>
 														{link.text}
 													</ArrowLink>
 												))}
