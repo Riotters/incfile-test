@@ -36,8 +36,8 @@ const AboutSection = ({ className, content }) => (
     </Oval>
     <ImageContent image="web-address-search">
       <LinksBox>
-        {content.links.map((link) => (
-          <ArrowLink content={link} />
+        {content.links.map((link, i) => (
+          <ArrowLink content={link} key={i} />
         ))}
       </LinksBox>
       <Heading size={3} bottomMargin="48">
