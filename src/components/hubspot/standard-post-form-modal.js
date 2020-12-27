@@ -12,7 +12,7 @@ import { useForm, Controller } from "react-hook-form";
 
 // texts
 import { _phoneFormat } from "../../helpers/input-parsers";
-import { validEmail, isUSPhone } from "../../helpers/form-validate";
+import { validEmail } from "../../helpers/form-validate";
 
 // API
 import { postHSForm } from "../../api/Api";
@@ -21,8 +21,7 @@ const HSFormModal = ({ content, postDownloadAction, hs_form_id, modalExit }) => 
     const [phoneNumber, setPhoneNumber] = React.useState("");
     const pageUrl = typeof window !== "undefined" ? window.location.href : "";
     const { register, handleSubmit, control, errors, formState, setValue } = useForm();
-    const { isSubmitting } = formState;
-
+    
     const handleForm = (data) => {
         const formData = new FormData();
         formData.set("pageTitle", document.title);

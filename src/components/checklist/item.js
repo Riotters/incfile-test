@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { color } from "../styles/colors";
 import { shadow } from "../styles/shadows";
 import Checkbox from "./checkbox";
-import _ from "lodash";
 import ArrowSVG from "../../images/arrow-circle.inline.svg";
 
 const headerMarginBottom = 32;

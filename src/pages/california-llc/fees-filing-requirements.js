@@ -14,7 +14,7 @@ import FeeFilingRequirementSection from "../../atomic/states-llc/california/fee-
 
 // Content
 import { filingFeeAndRequirementContent } from "../../static/states-llc/california/filingFeeAndRequirement";
-import { tabPages, rocket } from "../../static/states-llc/california/general";
+import { tabPages } from "../../static/states-llc/california/general";
 
 import { getFullPricesAndFilings } from '../../api/Api';
 import { Helmet } from "react-helmet";

@@ -5,8 +5,6 @@ import Image from "../atoms/image/image_nobase64";
 import Container from "../container";
 import TXMap from "../../images/tx-map.inline.svg";
 
-import VisibilitySensor from "../VisibilitySensor";
-
 const switch1 = (ovalColor) => {
 	switch (ovalColor) {
 		case "blue": {
@@ -63,32 +61,6 @@ const Wrapper = styled.div`
 	position: relative;
 	padding-top: 100px;
 	overflow-x: hidden;
-`;
-
-const IconMap = styled.div`
-	display: none;
-	width: 550px;
-	position: absolute;
-	top: 100px;
-	right: 75px;
-	z-index: -1;
-	transform: scale(0.9);
-
-	@media (min-width: 992px) {
-		display: block;
-	}
-
-	&::after {
-		content: "";
-		display: block;
-		padding-bottom: 100%;
-	}
-
-	& > svg {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-	}
 `;
 
 const Content = styled.div`
@@ -172,18 +144,13 @@ const ImageContainer = styled.div`
 	}
 `;
 
-const arrayMap = {
-	TX: <TXMap />,
-};
-
 const Top = ({
 	children,
 	imageName,
 	imageAlt,
 	headlineWidth,
 	imageWidthLG,
-	imageOffsetRightLG,
-	stateName,
+	imageOffsetRightLG
 }) => (
 	<Wrapper>
 		{/*<IconMap>*/}

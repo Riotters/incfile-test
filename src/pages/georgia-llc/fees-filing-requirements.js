@@ -14,7 +14,7 @@ import FeeFilingRequirementSection from "../../atomic/states-llc/georgia/fee-fil
 
 // Content
 import { filingFeeAndRequirementContent } from "../../static/states-llc/georgia/filingFeeAndRequirement";
-import { tabPages, rocket } from "../../static/states-llc/georgia/general";
+import { tabPages } from "../../static/states-llc/georgia/general";
 
 import { getFullPricesAndFilings } from "../../api/Api";
 import { Helmet } from "react-helmet";

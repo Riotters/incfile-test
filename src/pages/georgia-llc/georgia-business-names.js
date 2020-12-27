@@ -14,7 +14,7 @@ import BusinessNames from "../../atomic/states-llc/georgia/business-names";
 
 // Content
 import { businessNamesContent } from "../../static/states-llc/georgia/business-names";
-import { tabPages, rocket } from "../../static/states-llc/georgia/general";
+import { tabPages } from "../../static/states-llc/georgia/general";
 import { Helmet } from "react-helmet";
 
 const Wrapper = styled.div`

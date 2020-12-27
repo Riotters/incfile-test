@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import parse from "html-react-parser";
 import styled from "styled-components";
 import { motion } from "framer-motion";
@@ -11,8 +10,6 @@ import ArrowLink from "../../components/arrow-link";
 import { Paragraph } from "../atoms/typography/paragraph";
 import ArrowSVG from "../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../images/orange-curve.inline.svg";
-import VisibilitySensor from "../../components/VisibilitySensor";
-import { Heading } from "../atoms/typography/heading";
 import {HeadingP} from "../atoms/typography/heading-to-p";
 
 const Wrapper = styled.div`

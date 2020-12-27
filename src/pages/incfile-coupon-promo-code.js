@@ -1,11 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Buttonsbox from "../atomic/atoms/boxes/top-buttons-box";
-import Button from "../atomic/molecules/buttons/button";
-import RatingRow from "../atomic/atoms/boxes/rating-row";
-import CartBlock from "../atomic/molecules/blocks/cart-block";
-import RatingBlock from "../atomic/molecules/blocks/rating-block";
+
 //Sections
 import Top from "../atomic/partials/simple-top";
 import Save from "../atomic/sections/other/incfile-coupon-promo-code/save";

@@ -4,7 +4,6 @@ import { color } from "../../../atomic/atoms/styles/colors";
 import Image from "../../../atomic/atoms/image/image_nobase64";
 import Container from "../../container";
 import OvalSVG from "../../../images/oval.inline.svg";
-import VisibilitySensor from "../../VisibilitySensor";
 
 const switch1 = (ovalColor) => {
 	switch (ovalColor) {

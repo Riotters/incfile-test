@@ -20,10 +20,6 @@ import {
 	tabPages,
 	afterFormation,
 	launchBusiness,
-	requirements,
-	learnMore,
-	quickLinks,
-	variants,
 	subscription,
 } from "../../static/learning-center-entity/state-information-florida";
 import LeftTabPages from "../../atomic/sections/choose-your-business/left-tab-pages";
