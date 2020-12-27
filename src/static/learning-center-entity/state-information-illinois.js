@@ -780,7 +780,8 @@ export const corporation = [
 	{
 		type: "arrow-link",
 		content: {
-			text: "Start your Illinois S Corporation now ",
+            text: "Start your Illinois S Corporation now ",
+            externalLink: true,
 			url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=IL`,
 		},
 		marginBottom: 24,
@@ -788,7 +789,8 @@ export const corporation = [
 	{
 		type: "arrow-link",
 		content: {
-			text: "Start your Illinois C Corporation now ",
+            text: "Start your Illinois C Corporation now ",
+            externalLink: true,
 			url: ORDER_URL,
 		},
 		marginBottom: 56,
