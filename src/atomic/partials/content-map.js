@@ -78,15 +78,15 @@ const Content = ({ content, data, modalAction }) => {
 					)}
 					{item.type === "boxes" && (
 						<div style={{ "margin-bottom": item.marginBottom + "px" }}>
-							{item.content.map((box) => (
-								<IconTextBox content={box} />
+							{item.content.map((box, i) => (
+								<IconTextBox key={i} content={box} />
 							))}
 						</div>
 					)}
 					{item.type === "taxes" && (
 						<ul style={{ "margin-bottom": item.marginBottom + "px" }}>
-							{item.content.map((box) => (
-								<TextSpacedBox content={box} useListType={item.useListType} />
+							{item.content.map((box, i) => (
+								<TextSpacedBox key={i} content={box} useListType={item.useListType} />
 							))}
 						</ul>
 					)}
@@ -118,8 +118,9 @@ const Content = ({ content, data, modalAction }) => {
 					{item.type === "buttons" && (
 						<div style={{ "margin-bottom": item.marginBottom + "px" }}>
 							<Buttonsbox>
-								{item.content.map((button) => (
-									<Button
+								{item.content.map((button, i) => (
+                                    <Button
+                                        key={i}
 										content={button.content}
 										theme={button.theme}
 										arrow={button.arrow ?? true}
@@ -161,7 +162,7 @@ const Content = ({ content, data, modalAction }) => {
 						/>
 					)}
 					{item.type === "image" && (
-						<Image filename={item.content} bottomMargin={item.marginBottom} />
+						<Image filename={item.content} alt={item.imageAlt ?? 'start your business with Incfile'} bottomMargin={item.marginBottom} />
 					)}
 					{item.type === "tools-list" && (
 						<div style={{ "margin-bottom": "48px" }}>
@@ -175,8 +176,9 @@ const Content = ({ content, data, modalAction }) => {
 								"margin-top": "0",
 							}}
 						>
-							{item.content.map((box) => (
-								<TextBlockWithImage
+							{item.content.map((box, i) => (
+                                <TextBlockWithImage
+                                    key={i}
 									SvgImage={box.svg}
 									paddingLeft={0}
 									paddingRight={0}
@@ -216,8 +218,9 @@ const Content = ({ content, data, modalAction }) => {
 					)}
 					{item.type === "table-simple" && <LLCTable content={item.content} />}
 					{item.type === "whiteboxes" &&
-						item.content.map((box) => (
-							<div
+						item.content.map((box, i) => (
+                            <div
+                                key={i}
 								className="whitebox-wrapper"
 								style={{ "margin-bottom": box.marginBottom ?? "8px" }}
 							>
@@ -248,8 +251,9 @@ const Content = ({ content, data, modalAction }) => {
 							</Paragraph>
 							{item.buttons && (
 								<Buttonsbox>
-									{item.buttons.map((button) => (
-										<Button
+									{item.buttons.map((button, i) => (
+                                        <Button
+                                            key={i}
 											content={button.content}
 											theme={button.theme}
 											arrow={button.arrow ?? true}
@@ -262,8 +266,9 @@ const Content = ({ content, data, modalAction }) => {
 					)}
 					{item.type === "rounded-boxes" && (
 						<Grid marginBottom={item.marginBottom ?? 24}>
-							{item.content.map((box) => (
-								<RoundedTopImageBox
+							{item.content.map((box, i) => (
+                                <RoundedTopImageBox
+                                    key={i}
 									roundLeft={box.roundLeft}
 									roundRight={box.roundRight}
 									image={box.image}
@@ -286,9 +291,10 @@ const Content = ({ content, data, modalAction }) => {
 
           {item.type === "video" && (
             <LightBoxVideo
-              thumbnailVideo={item.image}
-              videoID={item.id}
-              bottomMargin={item.marginBottom}
+                thumbnailVideo={item.image}
+                alt={item.alt ?? 'how to start a business'}
+                videoID={item.id}
+                bottomMargin={item.marginBottom}
             />
           )}
         </>

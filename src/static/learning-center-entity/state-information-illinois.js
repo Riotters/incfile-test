@@ -90,7 +90,8 @@ export const corporation = [
 	},
 	{
 		type: "video",
-		image: "what-is-a-corporation-8899",
+        image: "what-is-a-corporation-8899",
+        alt: `what is a corporation`,
 		id: `oYZShvmf9eQ`,
 		marginBottom: 32,
 	},

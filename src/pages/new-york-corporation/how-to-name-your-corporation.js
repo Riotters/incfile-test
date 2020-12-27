@@ -53,7 +53,7 @@ const NewYorkCorporation = () => {
 					{top.text}
 				</HeadingP>
 				<Buttonsbox>
-					<Button content={top.buttons[0]} theme="primary56" arrow />
+					<Button externalLink content={top.buttons[0]} theme="primary56" arrow />
 				</Buttonsbox>
 			</Top>
 			<CorporationLayout>

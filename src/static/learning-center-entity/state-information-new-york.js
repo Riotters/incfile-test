@@ -32,13 +32,15 @@ import DollarUpSVG from "../../images/icons/icon-dollar-arrow-up.inline.svg";
 import { color } from "../../atomic/atoms/styles/colors";
 import { shadow } from "../../atomic/atoms/styles/shadows";
 
+const ORDER_URL = `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=NY`;
+
 export const top = {
 	header: `Why Form a Corporation in New York?`,
 	text: `$0 + State Fee & 1st Year FREE Registered Agent`,
 	buttons: [
 		{
 			text: `See detailed pricing`,
-			url: `${process.env.ORDER_URL}/form-order-now.php`,
+			url: ORDER_URL,
 		},
 	],
 };
@@ -48,7 +50,7 @@ export const launchBusiness = {
 	text: `No Contracts. No Surprises. Only $0 + State Fee to Launch Your Business.`,
 	button: {
 		text: `Launch your business!`,
-		url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=NY`,
+		url: ORDER_URL,
 	},
 };
 
@@ -131,7 +133,7 @@ export const corporation = [
 	{
 		type: "text",
 		content:
-			"Here’s a quick overview of each type of <a href='/new-york-entity-search'>business entity</a>.",
+			"Here’s a quick overview of each type of <a href='/new-york-entity-search/'>business entity</a>.",
 		// content: "Here’s a quick overview of each type of business entity.",
 		marginBottom: 24,
 	},
@@ -217,7 +219,7 @@ export const corporation = [
 			{
 				content: {
 					text: "Start Your New York C-Corporation",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=NY`,
+					url: ORDER_URL,
 				},
 				arrow: true,
 				theme: "primary56",
@@ -518,10 +520,11 @@ export const corporation = [
 				roundLeft: true,
 				image: "s-corp-certificate-5609",
 				content: {
-					header: "S Corporation",
+                    header: "S Corporation",
 					link: {
-						text: "Incorporate now",
-						url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=NY`,
+                        text: "Incorporate now",
+                        externalLink: true,
+						url: ORDER_URL,
 					},
 				},
 				noShadow: false,
@@ -533,8 +536,9 @@ export const corporation = [
 				content: {
 					header: "C Corporation",
 					link: {
-						text: "Incorporate now",
-						url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=NY`,
+                        text: "Incorporate now",
+                        externalLink: true,
+						url: ORDER_URL,
 					},
 				},
 				noShadow: false,
@@ -674,7 +678,7 @@ export const startCaCorp = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=NY`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -826,7 +830,7 @@ export const startCaCorp = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=NY`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -921,7 +925,7 @@ export const startCaCorp = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=NY`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -956,7 +960,7 @@ export const naming = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=NY`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1207,7 +1211,7 @@ export const naming = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=NY`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1263,7 +1267,7 @@ export const agents = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=NY`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1426,7 +1430,7 @@ export const agents = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=NY`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1513,7 +1517,7 @@ export const filing = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=NY`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1948,7 +1952,7 @@ export const filing = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=NY`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -2234,7 +2238,7 @@ export const taxes = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=NY`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},

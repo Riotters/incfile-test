@@ -529,7 +529,8 @@ export const corporation = [
 				content: {
 					header: "S Corporation",
 					link: {
-						text: "Incorporate now",
+                        text: "Incorporate now",
+                        externalLink: true,
 						url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=GA`,
 					},
 				},
@@ -542,7 +543,8 @@ export const corporation = [
 				content: {
 					header: "C Corporation",
 					link: {
-						text: "Incorporate now",
+                        text: "Incorporate now",
+                        externalLink: true,
 						url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=GA`,
 					},
 				},
