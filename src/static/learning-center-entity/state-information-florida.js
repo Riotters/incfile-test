@@ -545,7 +545,8 @@ export const corporation = [
 				content: {
 					header: "Start your S Corp with Incfile",
 					link: {
-						text: "Incorporate now",
+                        text: "Incorporate now",
+                        externalLink: true,
 						url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=FL`,
 					},
 				},
@@ -558,7 +559,8 @@ export const corporation = [
 				content: {
 					header: "Start your C Corp with Incfile",
 					link: {
-						text: "Incorporate now",
+                        text: "Incorporate now",
+                        externalLink: true,
 						url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=FL`,
 					},
 				},

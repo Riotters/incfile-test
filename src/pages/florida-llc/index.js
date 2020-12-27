@@ -4,7 +4,6 @@ import SEO from "../../components/seo";
 import styled from "styled-components";
 
 // Components
-import { color } from "../../components/styles/colors";
 import LinearBgHeader from "../../atomic/states-llc/linear-bg-header";
 import HomeHeader from "../../atomic/states-llc/home-header";
 import WrapperContent from "../../atomic/states-llc/wrapper-content";
@@ -14,8 +13,8 @@ import Rocket from "../../atomic/sections/rocket";
 import HowToGuide from "../../atomic/states-llc/florida/how-to-guide";
 
 // Content
-import { top, HomePageContent, hsForm } from "../../static/states-llc/florida/home";
-import { tabPages, rocket } from "../../static/states-llc/florida/general";
+import { HomePageContent, hsForm } from "../../static/states-llc/florida/home";
+import { tabPages } from "../../static/states-llc/florida/general";
 
 import { getFullPricesAndFilings } from "../../api/Api";
 import { Helmet } from "react-helmet";

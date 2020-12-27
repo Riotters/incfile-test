@@ -34,13 +34,15 @@ import DollarUpSVG from "../../images/icons/icon-dollar-arrow-up.inline.svg";
 import { color } from "../../atomic/atoms/styles/colors";
 import { shadow } from "../../atomic/atoms/styles/shadows";
 
+const ORDER_URL = `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=DE`;
+
 export const top = {
 	header: `Why Form a Corporation in Delaware?`,
 	text: `$0 + State Fee & 1st Year FREE Registered Agent`,
 	buttons: [
 		{
 			text: `See detailed pricing`,
-			url: `${process.env.ORDER_URL}/form-order-now.php`,
+			url: ORDER_URL,
 		},
 	],
 };
@@ -50,7 +52,7 @@ export const launchBusiness = {
 	text: `No Contracts. No Surprises. Only $0 + State Fee to Launch Your Business.`,
 	button: {
 		text: `Launch your business!`,
-		url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=DE`,
+		url: ORDER_URL,
 	},
 };
 
@@ -236,7 +238,7 @@ export const corporation = [
 			{
 				content: {
 					text: "Start Your C-Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=DE`,
+					url: ORDER_URL,
 				},
 				arrow: true,
 				theme: "primary56",
@@ -523,7 +525,7 @@ export const corporation = [
 	{
 		type: "arrow-link",
 		content: {
-			text: "Learn about Delaware corporation requirements . ",
+			text: "Learn about Delaware corporation requirements.",
 			url: "/delaware-corporation/form-filling-permit-requirements/",
 		},
 		marginBottom: 24,
@@ -531,7 +533,7 @@ export const corporation = [
 	{
 		type: "arrow-link",
 		content: {
-			text: "Learn about Delaware corporation taxes and fees . ",
+			text: "Learn about Delaware corporation taxes and fees.",
 			url: "/delaware-corporation/taxes-and-fees-for-your-corporation/",
 		},
 		marginBottom: 24,
@@ -552,7 +554,8 @@ export const corporation = [
 				content: {
 					header: "S Corporation",
 					link: {
-						text: "Incorporate now",
+                        text: "Incorporate now",
+                        externalLink: true,
 						url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=DE`,
 					},
 				},
@@ -565,8 +568,9 @@ export const corporation = [
 				content: {
 					header: "C Corporation",
 					link: {
-						text: "Incorporate now",
-						url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=DE`,
+                        text: "Incorporate now",
+                        externalLink: true,
+						url: ORDER_URL,
 					},
 				},
 				noShadow: false,
@@ -705,7 +709,7 @@ export const startCaCorp = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=DE`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -921,7 +925,7 @@ export const startCaCorp = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=DE`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -956,7 +960,7 @@ export const naming = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=DE`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1185,7 +1189,7 @@ export const naming = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=DE`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1240,7 +1244,7 @@ export const agents = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=DE`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1425,7 +1429,7 @@ export const agents = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=DE`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1506,7 +1510,7 @@ export const filing = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=DE`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1944,7 +1948,7 @@ export const filing = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=DE`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -2269,7 +2273,7 @@ export const taxes = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=DE`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},

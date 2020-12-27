@@ -17,7 +17,7 @@ import styled from "styled-components";
 import Container from "../atomic/container";
 
 // text
-import { seo, resultLists } from "../static/other/business-name-generator";
+import { seo } from "../static/other/business-name-generator";
 import ResultSection from "../atomic/sections/other/business-name-generator/result-lists";
 
 const Wrapper = styled.div`

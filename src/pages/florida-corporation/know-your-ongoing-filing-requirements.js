@@ -20,10 +20,6 @@ import {
 	tabPages,
 	afterFormation,
 	launchBusiness,
-	requirements,
-	learnMore,
-	quickLinks,
-	variants,
 	subscription,
 } from "../../static/learning-center-entity/state-information-florida";
 import LeftTabPages from "../../atomic/sections/choose-your-business/left-tab-pages";
@@ -57,7 +53,7 @@ const FloridaCorporation = () => {
 					{top.text}
 				</HeadingP>
 				<Buttonsbox>
-					<Button content={top.buttons[0]} theme="primary56" arrow />
+					<Button externalLink content={top.buttons[0]} theme="primary56" arrow />
 				</Buttonsbox>
 			</Top>
 			<CorporationLayout>
@@ -70,7 +66,7 @@ const FloridaCorporation = () => {
 			<Requirements data={dataApi} />
 			<LearnMore data={dataApi} />
 			<QuickLinks />
-			<Variants data={dataApi} />
+			<Variants data={dataApi} entityType="CCorporation" />
 			<Subscription content={subscription} />
 			<Articles />
 		</Layout>

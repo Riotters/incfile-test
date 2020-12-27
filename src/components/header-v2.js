@@ -109,59 +109,6 @@ const MenuLink = styled(Link)`
   }
 `;
 
-const LoginWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 200px;
-  margin-top: 25px;
-
-  @media (min-width: 992px) {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 0;
-  }
-
-  a {
-    &:nth-child(2) {
-      padding: 4px 24px;
-
-      @media (min-width: 1200px) {
-        padding: 6px 38px;
-      }
-    }
-  }
-`;
-
-const Login = styled.a`
-  display: flex;
-  align-items: center;
-  color: #1e1e1e;
-  font-family: Avenir;
-  font-size: 13px;
-  line-height: 16px;
-  text-align: center;
-  text-decoration: none;
-  margin-right: 16px;
-  transition: color 0.3s ease;
-  height: 50px;
-  margin-bottom: 25px;
-
-  @media (min-width: 992px) {
-    height: auto;
-    margin-bottom: 0;
-  }
-
-  @media (min-width: 1200px) {
-    font-size: 16px;
-    line-height: 19px;
-  }
-
-  &:hover {
-    color: #fd8550;
-  }
-`;
 
 const Hamburger = styled.div`
   display: block;

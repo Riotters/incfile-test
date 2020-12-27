@@ -480,23 +480,4 @@ const TabsWrapper = styled.section`
 	}
 `;
 
-const AdventagesBox = styled.div`
-  display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 100%;
-    justify-content: center;
-    column-gap: 30px;
-    row-gap: 20px;
-    margin-top: 76px;
-    margin-bottom 76px; 
-    
-    @media (min-width: 490px){
-        grid-template-columns: 470px;
-    }
-    
-    @media (min-width: 992px){
-        grid-template-columns: 470px 470px;
-    }
-`;
-
 export default AlabamaCorporation;

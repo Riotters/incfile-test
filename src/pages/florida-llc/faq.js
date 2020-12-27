@@ -15,7 +15,7 @@ import FaqSection from "../../atomic/states-llc/florida/faq";
 import Rocket from "../../atomic/sections/rocket";
 
 // Content
-import { tabPages, rocket } from "../../static/states-llc/florida/general";
+import { tabPages } from "../../static/states-llc/florida/general";
 import { faqContent } from "../../static/states-llc/florida/faq";
 import FAQSchemaFL from "../../atomic/states-llc/florida/faq-fl-schema";
 

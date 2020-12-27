@@ -87,7 +87,7 @@ const CertificateCard = ({
 	const [extraFee, setExtraFee] = useState(
 		extraFeeText ? extraFeeText : defaultExtraFee
 	);
-	const [showExtraFee, setShowExtraFee] = useState(true);
+	
 	const [entityTypeSelected, setEntityTypeSelected] = useState("LLC");
 	const [entityState, setEntityState] = useState("");
 	const [compState, setCompState] = useState("");

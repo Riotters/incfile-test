@@ -1,9 +1,8 @@
-import React, {useEffect} from "react";
+import React from "react";
 import styled from "styled-components";
 import Item from "./item";
 import _ from "lodash";
 import ShowUncompleted from "./show-uncompleted";
-import { color } from "../styles/colors";
 import { shadow } from "../styles/shadows";
 import parse from "html-react-parser";
 import {Heading} from "../../atomic/atoms/typography/heading";
@@ -23,7 +22,6 @@ const Header = styled.div`
   margin-bottom: 32px;
 `;
 
-const aaa = (props) => props.bgColor;
 
 const HeaderIcon = styled.div`
   width: 80px;
@@ -87,21 +85,6 @@ const Done = styled.div`
   
   &.stacked {
     height: 150px;  
-  }
-`;
-
-const ShadowCard = styled.div`
-  width: calc(100% - ${(props) => props.index * 16}px);
-  height: ${props => props.baseHeight ?? 80}px;
-  position: absolute;
-  top: ${(props) => props.index * 8}px;
-  left: ${(props) => props.index * 8}px;
-  border-radius: 5px;
-  background-color: #ffffff;
-
-  &:last-child {
-    top: 6px;
-    box-shadow: ${shadow.white1};
   }
 `;
 

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import ArrowLink from "../../arrow-link";
-import VisibilitySensor from "../../VisibilitySensor";
 import parse from "html-react-parser";
 import { Heading } from "../../../atomic/atoms/typography/heading";
 

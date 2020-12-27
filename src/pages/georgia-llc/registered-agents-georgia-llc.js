@@ -14,7 +14,7 @@ import Rocket from "../../atomic/sections/rocket";
 
 // Content
 import { agentPageContent } from "../../static/states-llc/georgia/ra";
-import { tabPages, rocket } from "../../static/states-llc/georgia/general";
+import { tabPages } from "../../static/states-llc/georgia/general";
 import RASchemaGA from "../../atomic/states-llc/georgia/ra-ga-schema";
 
 const Wrapper = styled.div`

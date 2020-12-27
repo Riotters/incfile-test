@@ -14,8 +14,7 @@ import Rocket from "../../atomic/sections/rocket";
 
 // Content
 import { agentPageContent } from "../../static/states-llc/illinois/ra";
-import { tabPages, rocket } from "../../static/states-llc/illinois/general";
-import RASchemaNY from "../../atomic/states-llc/new-york/ra-ny-schema";
+import { tabPages } from "../../static/states-llc/illinois/general";
 import RASchemaIL from "../../atomic/states-llc/illinois/ra-il-schema";
 
 const Wrapper = styled.div`

@@ -6,7 +6,7 @@ export const about = {
 		},
 		{
 			text: `Video Library`,
-			url: `/research-topics/video-library`,
+			url: `/research-topics/video-library/`,
 		},
 	],
 	header: `Protect Your Personal Assets`, //https://vimeo.com/144693528
