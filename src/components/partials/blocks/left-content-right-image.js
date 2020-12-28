@@ -46,12 +46,12 @@ const Imagebox = styled.div`
 	}
 `;
 
-const LeftContentRightImage = ({ children, image, imageWidth, textWidth }) => {
+const LeftContentRightImage = ({ children, image, imageAlt, imageWidth, textWidth }) => {
 	return (
 		<Wrapper>
 			<Content textWidth={textWidth}>{children}</Content>
 			<Imagebox imageWidth={imageWidth}>
-				<Image filename={image} />
+				<Image filename={image} alt={imageAlt ?? 'start your business'} />
 			</Imagebox>
 		</Wrapper>
 	);
