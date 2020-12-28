@@ -46,7 +46,7 @@ const BedAndBreakfast = () => (
     <Top
       ovalColor="purple-2"
       imageName="bed-and-breakfast-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="set up a bed and breakfast business"
       headlineWidth={700}
     >
       <h1>How to Start a Bed and Breakfast or Hotel Business</h1>
@@ -58,13 +58,14 @@ const BedAndBreakfast = () => (
       </p>
       <ButtonsBox>
         <Button
-          theme="primary56"
-          marginMD="0 24px 0 0"
-          arrow
-          content={{
-            url: `${process.env.ORDER_URL}/form-order-now.php`,
-            text: "Start Now",
-          }}
+            externalLink
+            theme="primary56"
+            marginMD="0 24px 0 0"
+            arrow
+            content={{
+                url: `${process.env.ORDER_URL}/form-order-now.php`,
+                text: "Start Now",
+            }}
         />
       </ButtonsBox>
 

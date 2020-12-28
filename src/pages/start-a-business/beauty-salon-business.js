@@ -53,6 +53,7 @@ import { color } from "../../atomic/atoms/styles/colors";
 import { Link } from "gatsby";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
+import ArrowLink from "../../components/arrow-link";
 
 const BeautySalon = () => (
   <Layout>
@@ -64,7 +65,7 @@ const BeautySalon = () => (
     <Top
       ovalColor="sun-2"
       imageName="beauty-salon-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="set up a beauty salon business"
       headlineWidth={700}
     >
       <h1>How to Start a Beauty Salon Business</h1>
@@ -75,6 +76,7 @@ const BeautySalon = () => (
       </p>
       <ButtonsBox>
         <Button
+            externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -660,7 +662,7 @@ const BeautySalon = () => (
       </Oval>
 
       <BusinessOwnerResponsibilities>
-        <ImageContent image="unique-business-2" paddingTop="60">
+        <ImageContent image="unique-business-2" imageAlt="choose right beauty salon business structure" paddingTop="60">
           <Heading size={2} template={3} left>
             Choose the Right Business Structure and Register Your Beauty Salon
             Business
@@ -721,13 +723,15 @@ const BeautySalon = () => (
               style={{ color: color.blue1, fontWeight: "bold" }}
               mixed={true}
             >
-              <Link
-                to={
+            <ArrowLink
+                externalLink
+                arrow={false}
+                url={
                   process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"
                 }
               >
                 Limited Liability Company or LLC
-              </Link>
+              </ArrowLink>
             </Paragraph>
 
             <Paragraph big>
@@ -757,13 +761,15 @@ const BeautySalon = () => (
               style={{ color: color.blue1, fontWeight: "bold" }}
               mixed={true}
             >
-              <Link
-                to={
+              <ArrowLink
+                externalLink
+                arrow={false}
+                url={
                   process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"
                 }
               >
                 Series LLC
-              </Link>
+              </ArrowLink>
             </Paragraph>
 
             <Paragraph big>
@@ -793,14 +799,16 @@ const BeautySalon = () => (
               style={{ color: color.blue1, fontWeight: "bold" }}
               mixed={true}
             >
-              <Link
-                to={
+              <ArrowLink
+                externalLink
+                arrow={false}
+                url={
                   process.env.ORDER_URL +
                   "/form-order-now.php?entityType=SCorporation"
                 }
               >
                 S Corporation
-              </Link>
+              </ArrowLink>
             </Paragraph>
 
             <Paragraph big>
@@ -828,14 +836,16 @@ const BeautySalon = () => (
               style={{ color: color.blue1, fontWeight: "bold" }}
               mixed={true}
             >
-              <Link
-                to={
+              <ArrowLink
+                externalLink
+                arrow={false}
+                url={
                   process.env.ORDER_URL +
                   "/form-order-now.php?entityType=CCorporation"
                 }
               >
                 C Corporation
-              </Link>
+              </ArrowLink>
             </Paragraph>
 
             <Paragraph big>
@@ -881,7 +891,8 @@ const BeautySalon = () => (
             but we’ve got you covered, wherever you are.
           </Paragraph>
 
-          <Button
+                    <Button
+                        externalLink
             theme="primary48"
             width="365px"
             arrow
