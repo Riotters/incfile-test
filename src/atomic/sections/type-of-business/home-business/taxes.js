@@ -6,7 +6,6 @@ import Adventages from "../../../../components/adventages";
 import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import OvalSvg from "../../../../images/ovals/top-left-transparent-blue3.inline.svg";
-import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 import {adventages2} from "../../../../static/type-of-business/home-business";
 import Curve from "../../../atoms/shapes/curve";
 

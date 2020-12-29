@@ -9,7 +9,6 @@ import OvalSvg from "../../../../images/ovals/top-left-transparent-blue2.inline.
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import AdventagesWithLongText from "../../../molecules/mixed-blocks/adventages-with-long-text";
 import {gradient} from "../../../atoms/styles/colors";
-import {Link} from "gatsby";
 
 const TypeBusiness = () => (
     <Wrapper>

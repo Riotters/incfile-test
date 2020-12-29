@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby";
 import styled from "styled-components"
 import parse from 'html-react-parser'
 
@@ -15,7 +14,6 @@ import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color"
 import AcccordionCounting from '../tab-acccordion-with-counting';
 import Accordion from "../../organisms/accordion/accordion";
 import TextBoxed from "../../molecules/static-check/circle-checkmark-text-boxed";
-import GridTableRow from "../../molecules/blocks/grid-table-row";
 
 import FilingRequirementBox from '../filing-requirement-box';
 import AnnualReportBoxOnly from '../annual-report-box-only';

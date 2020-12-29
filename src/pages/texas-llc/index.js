@@ -14,8 +14,8 @@ import HowToGuide from "../../atomic/states-llc/texas/how-to-guide";
 import HSSearchFormModal from "../../components/hubspot/search-name-form-modal";
 
 // Content
-import { top, HomePageContent, hsForm } from "../../static/states-llc/texas/home";
-import { tabPages, rocket } from "../../static/states-llc/texas/general";
+import { HomePageContent, hsForm } from "../../static/states-llc/texas/home";
+import { tabPages } from "../../static/states-llc/texas/general";
 
 import { getFullPricesAndFilings } from "../../api/Api";
 import { Helmet } from "react-helmet";

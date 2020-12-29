@@ -36,7 +36,6 @@ import {
 	MaintainingAccordionContent,
 	TaxesAccordionContent,
 } from "../../../../static/type-of-business/tshirt-business";
-import VisibilitySensor from "../../../../components/VisibilitySensor";
 import { InView } from "react-intersection-observer";
 
 const ButtonList = [
@@ -686,21 +685,10 @@ const Arrow = styled.div`
 	}
 `;
 
-const ListWrapper = styled.div`
-	display: flex;
-	flex-wrap: wrap;
-`;
-
-const ListBox = styled.div`
-	width: 50%;
-`;
-
 const StickyContainer = styled.div`
 	position: relative;
 	height: 100%;
 `;
-
-const cn = (...args) => args.filter(Boolean).join(" ");
 
 const Tab = ({ children, ...props }) => {
 	return <ButtonBox {...props}>{children}</ButtonBox>;

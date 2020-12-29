@@ -43,9 +43,6 @@ import HSFormModal from "../../components/hubspot/standard-post-form-modal";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
 
-{
-  /*HEADINGS O.K*/
-}
 const AmazonBusiness = () => {
   const [modalVisible, setModalVisible] = React.useState(false);
   const [formSubmitted, setFormSubmitted] = React.useState(false);

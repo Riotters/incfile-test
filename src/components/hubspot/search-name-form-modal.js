@@ -18,7 +18,7 @@ import { postHSForm } from "../../api/Api";
 
 const HSSearchFormModal = ({ content, postDownloadAction, hs_form_id, modalExit }) => {
     const pageUrl = typeof window !== "undefined" ? window.location.href : "";
-    const { register, handleSubmit, control, errors, formState, setValue } = useForm();
+    const { register, handleSubmit, control, errors, setValue } = useForm();
     
     const handleForm = (data) => {
         const formData = new FormData();

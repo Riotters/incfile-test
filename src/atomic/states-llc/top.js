@@ -1,59 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../atoms/styles/colors";
 import Image from "../atoms/image/image_nobase64";
 import Container from "../container";
-import TXMap from "../../images/tx-map.inline.svg";
-
-const switch1 = (ovalColor) => {
-	switch (ovalColor) {
-		case "blue": {
-			return color.blue1;
-		}
-		case "orange": {
-			return color.orange1;
-		}
-		case "purple": {
-			return color.purple1;
-		}
-		case "yellow": {
-			return color.yellow1;
-		}
-		case "green": {
-			return color.green1;
-		}
-		case "sun": {
-			return "#ffb059";
-		}
-		default:
-			return "";
-	}
-};
-
-const switch2 = (ovalColor) => {
-	switch (ovalColor) {
-		case "blue": {
-			return color.babyblue2;
-		}
-		case "orange": {
-			return color.orange2;
-		}
-		case "purple": {
-			return color.purple2;
-		}
-		case "green": {
-			return color.green2;
-		}
-		case "yellow": {
-			return color.yellow2;
-		}
-		case "sun": {
-			return "#ffe3c5";
-		}
-		default:
-			return "";
-	}
-};
 
 const Wrapper = styled.div`
 	display: flex;

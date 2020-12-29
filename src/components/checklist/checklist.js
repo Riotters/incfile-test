@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Item from "./item";
 import _ from "lodash";
 import ShowUncompleted from "./show-uncompleted";
-import { shadow } from "../styles/shadows";
 import parse from "html-react-parser";
 import {Heading} from "../../atomic/atoms/typography/heading";
 

@@ -9,8 +9,6 @@ import { shadow } from "../../../../components/styles/shadows";
 import { adventages } from "../../../../static/type-of-business/travel-agency";
 import Curve from "../../../atoms/shapes/curve";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-green3.inline.svg";
-import { Paragraph } from "../../../atoms/typography/paragraph";
-import ContentCenter from "../../../partials/content-center";
 
 const TypeOfBusiness = () => (
   <Wrapper>
