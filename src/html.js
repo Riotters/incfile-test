@@ -55,6 +55,7 @@ export default function HTML(props) {
                     <>
                         <script
                             key="click_attribution"
+                            defer={true}
                             dangerouslySetInnerHTML={{
                                 __html: `
                                 var clickAttributionData = clickAttributionData || {};
@@ -64,7 +65,7 @@ export default function HTML(props) {
                         />
                         <script
                             key="click_attribution_purchase"
-                            defer 
+                            defer={true} 
                             src="https://clickattribution.com/scripts/v2/path-to-purchase.min.js"
                         />
                     </>
@@ -74,7 +75,7 @@ export default function HTML(props) {
                 {process.env.ENABLE_HOTJAR && (
                     <script
                         key="hotjar_function"
-                        defer
+                        defer={true}
                         dangerouslySetInnerHTML={{
                             __html: `
                             (function(h,o,t,j,a,r){
@@ -94,7 +95,7 @@ export default function HTML(props) {
                 {process.env.ENABLE_VWO && (
                     <script
                         key="vwo_function"
-                        defer
+                        defer={true}
                         dangerouslySetInnerHTML={{
                             __html: `
                             var _vwo_code = (function () {
@@ -148,7 +149,7 @@ export default function HTML(props) {
 
                 <script
                     key="gtm_track_clicking_partner_links"
-                    defer
+                    defer={true}
                     dangerouslySetInnerHTML={{
                         __html: `
                             const linkPartners = document.querySelectorAll('a.partner_link');
