@@ -23,6 +23,7 @@ import Taxes from "../../atomic/sections/type-of-business/unique-business/taxes"
 import ToolsAndLinks from "../../atomic/sections/type-of-business/unique-business/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import OvalSvg from "../../images/ovals/bottom-left-transparent-pink1.inline.svg";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const UniqueBusiness = () => (
     <Layout>

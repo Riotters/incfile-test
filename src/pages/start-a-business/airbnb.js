@@ -34,9 +34,6 @@ import { tabs } from "../../static/type-of-business/airbnb";
 import { TabPanel } from "react-tabs";
 import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
-{
-  /*HEADINGS O.K*/
-}
 const Airbnb = () => (
   <Layout>
     <SEO

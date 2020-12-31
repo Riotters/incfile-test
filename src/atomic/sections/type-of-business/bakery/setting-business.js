@@ -65,7 +65,7 @@ const SettingBusiness = () => (
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="display-ads" image="Marketing Your Bakery Business" color={color.purple3}>
+                <TopImageBox image="display-ads" imageAlt="Marketing Your Bakery Business" color={color.purple3}>
                     <Heading size={3} template={4}>Marketing</Heading>
                     <p>
                         Marketing will probably be part of your bakery business. At the very least you’ll need signs to attract people in, but you should also look into local advertising, both offline and online. It’s also a good idea to create a website where you can share details and photos of what you bake.

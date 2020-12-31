@@ -14,7 +14,7 @@ import FeeFilingRequirementSection from "../../atomic/states-llc/illinois/fee-fi
 
 // Content
 import { filingFeeAndRequirementContent } from "../../static/states-llc/illinois/filingFeeAndRequirement";
-import { tabPages, rocket } from "../../static/states-llc/illinois/general";
+import { tabPages } from "../../static/states-llc/illinois/general";
 
 import { getFullPricesAndFilings } from '../../api/Api';
 import { Helmet } from "react-helmet";

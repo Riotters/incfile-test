@@ -30,6 +30,7 @@ import TabsOvalOneSvg from "../../images/ovals/bottom-left-transparent-orange.in
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/women-business";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const WomenBusiness = () => (
     <Layout>
