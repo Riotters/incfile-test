@@ -12,7 +12,7 @@ export const about = {
     header: `LLC vs. S Corporation`,
     header2: `S-Corporation vs LLC: Which Is Best for Your Business?`,
     text: `For many business owners, selecting the right entity comes down to a choice between the
-            <a href="/limited-liability-company/" target="_blank">Limited Liability Company (LLC)</a>
+            <a href="/limited-liability-company/">Limited Liability Company (LLC)</a>
             and the S-Corporation. These are the two most common forms of small business incorporation, with S-Corporations, or S-Corps, being the most popular business entity in America. While quite similar in many respects, LLCs and S-Corporations both have advantages over one another. Which one is right for your business?`,
     header3: `How LLCs and S-Corps Are Similar`,
     text2: `LLCs and S-Corporations share the same “separate entity” status enjoyed by corporations (meaning the company is a separate entity from its owners). This offers liability protection from the many risks of doing business.`,

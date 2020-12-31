@@ -62,6 +62,6 @@ export const about = {
     text16: `Once your order has been completed, we will continue to serve your company needs by informing you when important filings are due. This will assist you in keeping your company in good standing with the state.`,
     text17: `We will also retain digital copies of your filed LLC articles, EIN and or any internal documents associated with your order and deliver them to you (via email) upon request.`,
     text18: `Furthermore, as an
-      <a href="/" target="_blank">INCFILE.COM</a>
+      <a href="/">INCFILE.COM</a>
       client, our customer support staff will always be at your disposal in the event that you require assistance with additional filings and ongoing support for your existing LLC.`,
 };

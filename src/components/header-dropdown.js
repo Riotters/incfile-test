@@ -441,10 +441,22 @@ const Header = ({ siteTitle }) => {
 
 	const [showPhone, setShowPhone] = useState(false);
 
-	useEffect(() => {
-		getPhoneStatus().then((res) => {
-			setShowPhone(res.status === "show" ? true : false);
-		});
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            let showPhoneStatus = true;
+
+            if (sessionStorage.getItem('__phoneStatus')) {
+                showPhoneStatus = sessionStorage.getItem('__phoneStatus');
+            } else {
+                getPhoneStatus().then((res) => {
+                    showPhoneStatus = res.status === "show" ? true : false;
+                    sessionStorage.setItem('__phoneStatus', showPhoneStatus);
+                });
+            }
+
+            setShowPhone(showPhoneStatus);
+        }
+		
 	}, []);
 
 	return (

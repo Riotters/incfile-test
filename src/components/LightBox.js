@@ -96,7 +96,7 @@ const WrapperVideo = styled.div`
   }
 `;
 
-const PlayButton = styled.button`
+const PlayButton = styled.div`
   height: 30%;
   width: 16.87%;
   max-width: 80px;
@@ -110,7 +110,7 @@ const PlayButton = styled.button`
   transform: translate(-50%, -50%);
   transition: transform 0.3s ease;
   cursor: pointer;
-
+  
   span {
     display: block;
     height: 26%;
