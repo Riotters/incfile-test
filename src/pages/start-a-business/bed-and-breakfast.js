@@ -18,7 +18,6 @@ import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/bed-a
 import BusinessPlan from "../../atomic/sections/type-of-business/bed-and-breakfast/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/bed-and-breakfast/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/bed-and-breakfast/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/bed-and-breakfast/order-now";
 import Regulations from "../../atomic/sections/type-of-business/bed-and-breakfast/regulations";
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/bed-and-breakfast/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/bed-and-breakfast/taxes";
@@ -35,6 +34,7 @@ import TabsOvalSvg from "../../images/ovals/top-left-transparent-red3.inline.svg
 import { tabs } from "../../static/type-of-business/bed-and-breakfast";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const BedAndBreakfast = () => (
   <Layout>
@@ -481,7 +481,7 @@ const BedAndBreakfast = () => (
 
     <FurnishingsAndEquipment />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

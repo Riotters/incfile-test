@@ -5,7 +5,6 @@ import TextCenterLayout from "../../../partials/heading-center";
 import PathLink from "../../../molecules/buttons/path";
 import {shadow} from "../../../atoms/styles/shadows";
 import {color} from "../../../atoms/styles/colors";
-import {Paragraph} from "../../../atoms/typography/paragraph";
 
 const Links = () => (
     <Wrapper>

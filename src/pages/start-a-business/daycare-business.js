@@ -18,7 +18,6 @@ import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/dayca
 import BusinessPlan from "../../atomic/sections/type-of-business/daycare-business/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/daycare-business/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/daycare-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/daycare-business/order-now";
 import Regulations from "../../atomic/sections/type-of-business/daycare-business/regulations";
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/daycare-business/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/daycare-business/taxes";
@@ -34,6 +33,7 @@ import { tabs } from "../../static/type-of-business/daycare-business";
 import { TabPanel } from "react-tabs";
 import CircleSvg from "../../images/chart-daycare.inline.svg";
 import UseFulTools from "../../atomic/sections/type-of-business/daycare-business/useful-tools";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const DaycareBusiness = () => (
   <Layout>
@@ -45,7 +45,7 @@ const DaycareBusiness = () => (
     <Top
       ovalColor="green"
       imageName="daycare-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="set up a daycare business"
       headlineWidth={700}
     >
       <h1>How to Start a Daycare</h1>
@@ -56,13 +56,14 @@ const DaycareBusiness = () => (
       </p>
       <ButtonsBox>
         <Button
-          theme="primary56"
-          marginMD="0 24px 0 0"
-          arrow
-          content={{
-            url: `${process.env.ORDER_URL}/form-order-now.php`,
-            text: "Start Now",
-          }}
+            externalLink
+            theme="primary56"
+            marginMD="0 24px 0 0"
+            arrow
+            content={{
+                url: `${process.env.ORDER_URL}/form-order-now.php`,
+                text: "Start Now",
+            }}
         />
       </ButtonsBox>
 
@@ -340,7 +341,7 @@ const DaycareBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

@@ -8,7 +8,7 @@ import OvalLeftSvg from "../../../../images/ovals/top-left-transparent-orange2.i
 import OvalRightSvg from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
 import Curve from "../../../../images/curve-orange.inline.svg";
 
-const OrderNow = () => (
+const CompleteCheckListSection = () => (
     <OrderNowWrapper>
 
         <Oval>
@@ -21,9 +21,8 @@ const OrderNow = () => (
 
         <Container>
 
-            <LeftImageRightContent image="after-formation-image" imageWidth="515" textWidth="570">
-
-                <h2 style={{position: "relative"}}>
+            <LeftImageRightContent image="after-formation-image" imageAlt="start your business" imageWidth="515" textWidth="570">
+                <h2 style={{ position: "relative" }}>
                     <CurveWrapper>
                         <Curve />
                     </CurveWrapper>
@@ -32,7 +31,12 @@ const OrderNow = () => (
                 </h2>
                 <p>A Clear and Comprehensive Guide to Starting Your Business the Right Way</p>
                 <ButtonsBox>
-                    <Button theme="primary56" marginMD="0 24px 0 0" arrow content={{url: "/starting-a-business-checklist/", text: "Business Checklist"}}/>
+                    <Button
+                        theme="primary56"
+                        marginMD="0 24px 0 0"
+                        arrow
+                        content={{ url: "/starting-a-business-checklist/", text: "Business Checklist" }}
+                    />
                 </ButtonsBox>
             </LeftImageRightContent>
         </Container>
@@ -87,4 +91,4 @@ const CurveWrapper = styled.div`
     }
 `;
 
-export default OrderNow;
+export default CompleteCheckListSection;

@@ -22,17 +22,17 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="display-ads" color={color.purple3}>
+        <TopImageBox image="display-ads" imageAlt="marketing for beauty salon business" color={color.purple3}>
           <Heading size={3} template={4}>Marketing</Heading>
           <p>Local marketing and strong branding will be essential to your success. You will likely need a website and a strong social media presence too.</p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software" color={color.blue3}>
           <Heading size={3} template={4}>Software</Heading>
           <p>There are many types of beauty salon management software solutions that can help you manage your business much more efficiently and effectively.</p>
         </TopImageBox>
 
-        <TopImageBox image="measuring-business-success" color={color.babyblue3}>
+        <TopImageBox image="measuring-business-success" imageAlt="business maintenance" color={color.babyblue3}>
           <Heading size={3} template={4}>Business maintenance</Heading>
           <p>
             Most states require businesses to file an <Link to="/manage-your-company/annual-report/">Annual Report</Link> once a year. You will also be expected to pay estimated taxes on what you plan to earn in the current business year. Your federal, state, regional and city{" "}
@@ -40,17 +40,17 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="permits-licences" color={color.babyblue3}>
+        <TopImageBox image="permits-licences" imageAlt="permit and license" color={color.babyblue3}>
           <Heading size={3} template={4}>Permits and licenses</Heading>
           <p>What kind of bank account will you get? Do you need a business credit card? How will you pay your business taxes? These are important questions to consider so your beauty salon business stays in the green. Here at Incfile, we can even help you file your taxes.</p>
         </TopImageBox>
 
-        <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
+        <TopImageBox image="we-doubled-the-size-of-customer-service" imageAlt="employess for beauty salon business" color={color.orange3}>
           <Heading size={3} template={4}>Employees</Heading>
           <p>You will need to hire skilled, approachable employees. This is probably the area of the business you should spend the most time on — your people are the face of your beauty salon, and customer advocacy will be driven by how well they treat your clientele.</p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finance and taxes for beauty salon business" color={color.yellow3}>
           <Heading size={3} template={4}>Finances and taxes</Heading>
           <p>
             What kind of bank account will you get? Do you need a <a href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">business credit card</a>? How will you pay your business taxes? These are important questions to consider so your
@@ -58,7 +58,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side-4" color={color.green3}>
+        <TopImageBox image="side-4" imageAlt="equiment for beauty salon business" color={color.green3}>
           <Heading size={3} template={4}>Equipment</Heading>
           <p>You will need equipment, furniture, fixtures, consumables and inventory to sell. Think about any hardware and transportation you might need. Make sure you understand exactly what you need to spend so you can write it off against business expenses.</p>
           <GreenCurve>
@@ -66,7 +66,7 @@ const SettingBusiness = () => (
           </GreenCurve>
         </TopImageBox>
 
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="location for beauty salon business" color={color.red3}>
           <Heading size={3} template={4}>Location of your business</Heading>
           <p>A great location is essential. You will want to be in an area with lots of foot traffic and accessibility, preferably around other businesses who are targeting the same type of clientele as you.</p>
         </TopImageBox>

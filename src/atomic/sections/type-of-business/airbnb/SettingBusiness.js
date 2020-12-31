@@ -48,7 +48,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="globe with pins in it" color={color.red3}>
           <Heading size={3} template={4}>
             Location of your Airbnb Business
           </Heading>
@@ -60,7 +60,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side" color={color.purple3}>
+        <TopImageBox image="side" imageAlt="laptop and smart phone" color={color.purple3}>
           <Heading size={3} template={4}>
             Equipment for Your Airbnb Business
           </Heading>
@@ -72,8 +72,9 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox
-          image="we-doubled-the-size-of-customer-service"
-          color={color.orange3}
+            image="we-doubled-the-size-of-customer-service"
+            imageAlt="employees"
+            color={color.orange3}
         >
           <Heading size={3} template={4}>
             Employees
@@ -89,7 +90,7 @@ const SettingBusiness = () => (
           </GreenCurve>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software and processes" color={color.blue3}>
           <Heading size={3} template={4}>
             Software and Processes
           </Heading>

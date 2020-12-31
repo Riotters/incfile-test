@@ -9,7 +9,6 @@ import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 import styled from "styled-components";
 import BlueContainer from "../../atomic/sections/type-of-business/boutique-clothing-business/blue-container";
 import SettingBusiness from "../../atomic/sections/type-of-business/boutique-clothing-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/boutique-clothing-business/order-now";
 import Regulations from "../../atomic/sections/type-of-business/boutique-clothing-business/regulations";
 import BoutiqueTaxes from "../../atomic/sections/type-of-business/boutique-clothing-business/boutique-taxes";
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/boutique-clothing-business/insurance-business";
@@ -22,6 +21,7 @@ import BoutiqueBusinessStructure from "../../atomic/sections/type-of-business/bo
 import { Heading } from "../../atomic/atoms/typography/heading";
 import { Paragraph } from "../../atomic/atoms/typography/paragraph";
 import { Helmet } from "react-helmet";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const BoutiqueClothingBusiness = () => (
   <Layout>
@@ -73,7 +73,7 @@ const BoutiqueClothingBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

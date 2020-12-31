@@ -26,15 +26,6 @@ const Regulations = () => (
   </Wrapper>
 );
 
-const ContainerBox = styled.div`
-  padding-bottom: 0px;
-  padding-top: 100px;
-
-  @media (min-width: 576px) {
-    padding-bottom: 100px;
-  }
-`;
-
 const Wrapper = styled.div`
   position: relative;
 `;

@@ -26,11 +26,11 @@ import ToolsAndLinks from "../../atomic/sections/type-of-business/franchise-busi
 import Conclusion from "../../atomic/sections/general/conclusion";
 import TabOvalSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import styled from "styled-components";
-import OrderNow from "../../atomic/sections/type-of-business/franchise-business/order-now";
 import { color } from "../../atomic/atoms/styles/colors";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const FranchiseBusiness = () => (
   <Layout>
@@ -249,7 +249,7 @@ const FranchiseBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <ToolsAndLinks />
 

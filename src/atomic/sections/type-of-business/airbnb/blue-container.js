@@ -1,3 +1,5 @@
+import React from "react";
+import styled from "styled-components";
 import Container from "../../../container";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
@@ -8,8 +10,6 @@ import LookIcon from "../../../../images/icons/look-at-who-your-competitors-are-
 import MarketIcon from "../../../../images/icons/understand-your-market.inline.svg";
 import InvolvedIcon from "../../../../images/icons/get-involved-with-business-communities.inline.svg";
 import { color } from "../../../../components/styles/colors";
-import React from "react";
-import styled from "styled-components";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import OvalBlueSVG from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
@@ -134,7 +134,7 @@ const BlueContainer = () => (
         </Heading>
         <Paragraph big mixed style={{ marginBottom: "80px" }}>
           When it comes to{" "}
-          <a href="${process.env.ORDER_URL}/form-order-now.php">
+          <a href={`${process.env.ORDER_URL}/form-order-now.php`}>
             starting an Airbnb business
           </a>
           , you want to make sure that your property and listings are unique, so

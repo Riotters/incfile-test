@@ -18,7 +18,6 @@ import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/gym-p
 import BusinessPlan from "../../atomic/sections/type-of-business/gym-personal-training/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/gym-personal-training/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/gym-personal-training/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/gym-personal-training/order-now";
 import Regulations from "../../atomic/sections/type-of-business/gym-personal-training/regulations";
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/gym-personal-training/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/gym-personal-training/taxes";
@@ -33,6 +32,7 @@ import OvalSvg from "../../images/ovals/bottom-left-transparent-orange.inline.sv
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/gym-personal-training";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const GymPersonalTraining = () => (
   <Layout>
@@ -44,7 +44,7 @@ const GymPersonalTraining = () => (
     <Top
       ovalColor="blue"
       imageName="gym-personal-training-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="how to start a gym, fitness business"
       headlineWidth={700}
     >
       <h1>
@@ -56,7 +56,8 @@ const GymPersonalTraining = () => (
         want to find interesting ways to be active.
       </p>
       <ButtonsBox>
-        <Button
+                <Button
+                    externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -486,7 +487,7 @@ const GymPersonalTraining = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

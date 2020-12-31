@@ -18,7 +18,6 @@ import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/brewe
 import BusinessPlan from "../../atomic/sections/type-of-business/brewery-business/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/brewery-business/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/brewery-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/brewery-business/order-now";
 import Regulations from "../../atomic/sections/type-of-business/brewery-business/regulations";
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/brewery-business/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/brewery-business/taxes";
@@ -34,6 +33,7 @@ import TabsOvalSvg from "../../images/ovals/bottom-left-transparent-blue3.inline
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/brewery-business";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const GymPersonalTraining = () => (
   <Layout>
@@ -45,7 +45,7 @@ const GymPersonalTraining = () => (
     <Top
       ovalColor="sun"
       imageName="brewery-business-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="set up a brewery business"
       headlineWidth={700}
     >
       <h1>How to Start a Brewery Business</h1>
@@ -56,7 +56,8 @@ const GymPersonalTraining = () => (
         additional benefits like a bar, food, music and more.
       </p>
       <ButtonsBox>
-        <Button
+            <Button
+                externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -500,7 +501,7 @@ const GymPersonalTraining = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 
