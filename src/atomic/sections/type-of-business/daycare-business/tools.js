@@ -5,8 +5,6 @@ import TextCenterLayout from "../../../partials/heading-center";
 import PathLink from "../../../molecules/buttons/path";
 import { shadow } from "../../../atoms/styles/shadows";
 import { color } from "../../../atoms/styles/colors";
-import UsefulTools from "../../../partials/useful-tools";
-import { toolsList } from "../../../../static/type-of-business/daycare-business";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
 import OvalSvg2 from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 const ToolsAndLinks = () => (

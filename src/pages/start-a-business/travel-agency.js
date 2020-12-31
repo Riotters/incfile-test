@@ -22,7 +22,6 @@ import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/trave
 import BusinessPlan from "../../atomic/sections/type-of-business/travel-agency/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/travel-agency/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/travel-agency/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/travel-agency/order-now";
 import Regulations from "../../atomic/sections/type-of-business/travel-agency/regulations";
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/travel-agency/insurance-business";
 import UsefulTools from "../../atomic/partials/useful-tools";
@@ -35,6 +34,7 @@ import Top from "../../atomic/partials/top";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
 import CircleSvg from "../../images/chart-travel-agency.inline.svg";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const TravelAgency = () => (
   <Layout>
@@ -46,7 +46,7 @@ const TravelAgency = () => (
     <Top
       ovalColor="green"
       imageName="travel-agency-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="set up a travel agent"
       headlineWidth={700}
     >
       <h1>How to Start a Travel Agency</h1>
@@ -57,6 +57,7 @@ const TravelAgency = () => (
       </p>
       <ButtonsBox>
         <Button
+            externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -383,7 +384,7 @@ in the U.S. by 2020"
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

@@ -11,7 +11,6 @@ import AirbnbBusinessPlan from "../../atomic/sections/type-of-business/airbnb/ai
 import AirBnB1BusinessStructure from "../../atomic/sections/type-of-business/airbnb/business-structure";
 import BlueContainer from "../../atomic/sections/type-of-business/airbnb/blue-container";
 import SettingBusiness from "../../atomic/sections/type-of-business/airbnb/SettingBusiness";
-import OrderNow from "../../atomic/sections/type-of-business/airbnb/order-now";
 import Regulations from "../../atomic/sections/type-of-business/airbnb/regulations";
 import AirbnbTaxes from "../../atomic/sections/type-of-business/airbnb/airbnb-taxes";
 import InsuranceAirBnb from "../../atomic/sections/type-of-business/airbnb/insurance-airbnb";
@@ -33,10 +32,8 @@ import CircleSvg from "../../images/chart-airbnb.inline.svg";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/airbnb";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
-{
-  /*HEADINGS O.K*/
-}
 const Airbnb = () => (
   <Layout>
     <SEO
@@ -47,7 +44,7 @@ const Airbnb = () => (
     <Top
       ovalColor="sun"
       imageName="airbnb-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="how to start an airbnb"
       headlineWidth={700}
     >
       <h1>How to Start an Airbnb</h1>
@@ -57,13 +54,14 @@ const Airbnb = () => (
       </p>
       <ButtonsBox>
         <Button
-          theme="primary56"
-          marginMD="0 24px 0 0"
-          arrow
-          content={{
-            text: `Start Now`,
-            url: `${process.env.ORDER_URL}/form-order-now.php`,
-          }}
+            externalLink
+            theme="primary56"
+            marginMD="0 24px 0 0"
+            arrow
+            content={{
+                text: `Start Now`,
+                url: `${process.env.ORDER_URL}/form-order-now.php`,
+            }}
         />
       </ButtonsBox>
 
@@ -480,7 +478,7 @@ const Airbnb = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

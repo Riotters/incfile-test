@@ -12,7 +12,6 @@ import { Heading } from "../../atomic/atoms/typography/heading";
 import { Paragraph } from "../../atomic/atoms/typography/paragraph";
 import BusinessStructure from "../../atomic/sections/type-of-business/digital-nomad/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/digital-nomad/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/digital-nomad/order-now";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/digital-nomad/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import Adventages from "../../components/adventages";
@@ -26,6 +25,7 @@ import OvalSvg2 from "../../images/ovals/bottom-right-transparent-green3.inline.
 import { color } from "../../atomic/atoms/styles/colors";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const DigitalNomadBusiness = () => (
   <Layout>
@@ -37,7 +37,7 @@ const DigitalNomadBusiness = () => (
     <Top
       ovalColor="darkblue"
       imageName="digital-nomad-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="become a digital nomad"
       headlineWidth={700}
     >
       <h1>Travel & Work from Anywhere as a Digital Nomad</h1>
@@ -48,6 +48,7 @@ const DigitalNomadBusiness = () => (
       </p>
       <ButtonsBox>
         <Button
+            externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -364,7 +365,7 @@ const DigitalNomadBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <ToolsAndLinks />
 

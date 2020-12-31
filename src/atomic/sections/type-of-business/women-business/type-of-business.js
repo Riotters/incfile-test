@@ -382,23 +382,6 @@ const GridSection = styled.div`
   width: 100%;
 `;
 
-const TitleBox = styled.div`
-  width: 100%;
-  position: relative;
-  max-width: 750px;
-
-  @media (min-width: 750px) {
-    margin: 0 auto;
-  }
-
-  h2 {
-    color: #1d1d1d;
-    font-size: 40px;
-    text-align: left;
-    margin-bottom: 24px;
-  }
-`;
-
 const GridSectionList = styled.div`
   display: grid;
   grid-gap: 10px;
@@ -416,13 +399,6 @@ const GridSectionList = styled.div`
   @media (min-width: 992px) {
     grid-template-columns: 470px 470px;
   }
-`;
-
-const AbsoluteCurve = styled.div`
-  position: absolute;
-  left: -27px;
-  top: -16px;
-  transform: rotate(-90deg);
 `;
 
 export default TypeBusiness;

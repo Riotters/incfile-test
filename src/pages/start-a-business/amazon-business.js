@@ -23,7 +23,6 @@ import TextBoxed from "../../atomic/molecules/text-blocks/text-boxed";
 import CkeckText from "../../components/static-check/text-only";
 import BusinessStructure from "../../atomic/sections/type-of-business/amazon-business/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/amazon-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/amazon-business/order-now";
 import AmazonLinks from "../../atomic/sections/type-of-business/boutique-clothing-business/links";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import UsefulTools from "../../atomic/partials/useful-tools";
@@ -42,10 +41,8 @@ import { ThankYouContent } from "../../components/hubspot/thank-you-modal";
 import HSFormModal from "../../components/hubspot/standard-post-form-modal";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
-{
-  /*HEADINGS O.K*/
-}
 const AmazonBusiness = () => {
   const [modalVisible, setModalVisible] = React.useState(false);
   const [formSubmitted, setFormSubmitted] = React.useState(false);
@@ -674,7 +671,7 @@ const AmazonBusiness = () => {
 
       <SettingBusiness />
 
-      <OrderNow />
+      <CompleteCheckListSection />
 
       <AmazonLinks />
 

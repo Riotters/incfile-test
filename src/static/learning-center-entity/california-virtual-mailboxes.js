@@ -11,7 +11,8 @@ export const top = {
 };
 
 export const advantages = {
-  header: "Advantages of a California Street Address\n" + "and Virtual Mailbox",
+    header: "Advantages of a California Street Address\n" +
+        " and Virtual Mailbox",
   text:
     "There are several advantages to having a real California address with mail scanning. They include:",
   cards: [

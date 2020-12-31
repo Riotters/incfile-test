@@ -65,7 +65,7 @@ const OregonCorporation = () => {
       />
       <Top
         imageName="mr-bulb-corporation-california-8302"
-        imageAlt="Mrs Bulb and with checklist"
+        imageAlt="corporation in oregon"
         ovalColor="purple-2"
         headlineWidth="560"
       >
@@ -112,7 +112,8 @@ const OregonCorporation = () => {
                 You can reserve a name for up to 120 days from the state filing
                 office website for $50.
               </Paragraph>
-              <LightBoxVideo
+                          <LightBoxVideo
+                              alt="what is a corporation"
                 thumbnailVideo="what-is-a-corporation-8899"
                 videoID="oYZShvmf9eQ"
               />
@@ -467,10 +468,6 @@ const OregonCorporation = () => {
   );
 };
 
-const InfoSection = styled.section`
-  margin-bottom: 148px;
-`;
-
 const QuestionSection = styled.section`
   background-image: ${gradient.orange3};
   position: relative;
@@ -478,8 +475,6 @@ const QuestionSection = styled.section`
   margin-top: 52px;
   margin-bottom: 148px;
 `;
-
-
 
 const ServiceSection = styled.section`
   background-image: ${gradient.blue3};
@@ -497,7 +492,5 @@ const TabsWrapper = styled.section`
     margin-top: 21px;
   }
 `;
-
-
 
 export default OregonCorporation;

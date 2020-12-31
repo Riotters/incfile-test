@@ -27,7 +27,6 @@ import SeriesIcon from "../../images/icons/limited-liability-company.inline.svg"
 import PlaneIcon from "../../images/icons/plane.inline.svg";
 import RockerIcon from "../../images/icons/rocket.inline.svg";
 import SettingBusiness from "../../atomic/sections/type-of-business/laundromat/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/laundromat/order-now";
 import {
   RingText,
   RingText2,
@@ -54,6 +53,7 @@ import { shadow } from "../../atomic/atoms/styles/shadows";
 import { Link } from "gatsby";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const LandscapingBusiness = () => (
   <Layout>
@@ -65,7 +65,7 @@ const LandscapingBusiness = () => (
     <Top
       ovalColor="sun"
       imageName="laundromat-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="how to start a laundromat business"
       headlineWidth={700}
     >
       <h1>How to Start a Laundromat Business</h1>
@@ -75,7 +75,8 @@ const LandscapingBusiness = () => (
         business
       </p>
       <ButtonsBox>
-        <Button
+                <Button
+                    externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -945,7 +946,7 @@ const LandscapingBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <HireEmployees />
 

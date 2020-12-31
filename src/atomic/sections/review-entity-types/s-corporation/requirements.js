@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../../../atoms/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import ContentImage from "../../../partials/left-content-right-image";

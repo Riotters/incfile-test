@@ -20,7 +20,7 @@ import { postHSForm } from "../../api/Api";
 const HSFormModal = ({ content, postDownloadAction, hs_form_id, modalExit }) => {
     const [phoneNumber, setPhoneNumber] = React.useState("");
     const pageUrl = typeof window !== "undefined" ? window.location.href : "";
-    const { register, handleSubmit, control, errors, formState, setValue } = useForm();
+    const { register, handleSubmit, control, errors, setValue } = useForm();
     
     const handleForm = (data) => {
         const formData = new FormData();

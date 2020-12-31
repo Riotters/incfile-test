@@ -4,7 +4,6 @@ import TextCenterLayout from "../../../partials/heading-center";
 import TopImageBox from "../../../../components/top-image-box";
 import {color} from "../../../../components/styles/colors";
 import styled from "styled-components";
-import Curve from "../../../../images/green-curve.inline.svg";
 import OvalSvg from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import ContentCenter from "../../../partials/content-center";
 import {Heading} from "../../../atoms/typography/heading";
@@ -28,28 +27,28 @@ const SettingBusiness = () => (
         <Container>
 
             <ImageBoxes>
-                <TopImageBox image="location" color={color.red3}>
+                <TopImageBox image="location" imageAlt="bar and club's location" color={color.red3}>
                     <Heading size={3} template={4}>Your Bar or Club's Location</Heading>
                     <p>
                         As we’ve discussed before, location is everything for this type of business. It’s worth holding out for a great location, since local traffic and pedestrian patterns will have a major impact on your success.
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="display-ads" color={color.purple3}>
+                <TopImageBox image="display-ads" color={color.purple3} imageAlt="marketing a bar and club">
                     <Heading size={3} template={4}>Marketing a Bar or Nightclub</Heading>
                     <p>
                         You will probably need to build a website and should also get professional branding, marketing and business cards.
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="side-yellow" color={color.yellow3}>
+                <TopImageBox image="side-yellow" color={color.yellow3} imageAlt="equiment needed for bar and club">
                     <Heading size={3} template={4}>Equipment Needed</Heading>
                     <p>
                         Running a bar or club is all about the furniture, fixtures and fittings. You’ll need to outfit your space first and then develop a good inventory of the stock you’re going to be selling. Depending on what your bar does, you may need other specialized equipment like commercial cooking and kitchen facilities or brewing gear.
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
+                <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3} imageAlt="employess">
                     <Heading size={3} template={4}>Employees</Heading>
                     <p>
                         You will almost certainly need to hire employees
@@ -86,13 +85,6 @@ const ImageBoxes = styled.div`
   @media (min-width: 970px) {
     margin: 0 auto;
   }
-`;
-
-const GreenCurve = styled.div`
-    position: absolute;
-    right: -115px;
-    bottom: -122px;
-    width: 115px;
 `;
 
 const Oval = styled.div`

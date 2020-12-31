@@ -8,7 +8,6 @@ import { shadow } from "../../../../components/styles/shadows";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 import AdventagesWithLongText from "../../../molecules/mixed-blocks/adventages-with-long-text";
 import { Paragraph } from "../../../atoms/typography/paragraph";
-import { Link } from "gatsby";
 
 const TypeBusiness = () => (
   <Wrapper>
@@ -269,16 +268,6 @@ const AdventagesBox = styled.div`
 
   @media (min-width: 992px) {
     grid-template-columns: 470px 470px;
-  }
-`;
-
-const CurveWrapper = styled.div`
-  position: absolute;
-  right: -24px;
-  top: 0px;
-
-  @media (max-width: 1200px) {
-    display: none;
   }
 `;
 

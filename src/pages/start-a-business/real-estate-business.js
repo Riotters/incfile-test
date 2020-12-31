@@ -13,7 +13,6 @@ import { Paragraph } from "../../atomic/atoms/typography/paragraph";
 import SvgChart from "../../images/chart-real-estate.inline.svg";
 import BusinessStructure from "../../atomic/sections/type-of-business/real-estate-business/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/real-estate-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/real-estate-business/order-now";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/real-estate-business/tools";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import Adventages from "../../components/adventages";
@@ -28,11 +27,11 @@ import Rocket from "../../atomic/sections/type-of-business/real-estate-business/
 import OvalTabsSvg from "../../images/ovals/bottom-left-transparent-pink.inline.svg";
 import OvalTabsSvg2 from "../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import { color } from "../../atomic/atoms/styles/colors";
-import { Link } from "@reach/router";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
 import { Helmet } from "react-helmet";
 import LightBoxVideo from "../../components/LightBox";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const RealEstateBusiness = () => (
   <Layout>
@@ -44,7 +43,7 @@ const RealEstateBusiness = () => (
     <Top
       ovalColor="sun"
       imageName="real-estate-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="how to start a real estate business"
       headlineWidth={700}
     >
       <h1>How to Start a Real Estate Business</h1>
@@ -53,7 +52,8 @@ const RealEstateBusiness = () => (
         are plenty of opportunities in the residential and commercial sectors.
       </p>
       <ButtonsBox>
-        <Button
+                <Button
+                    externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -561,7 +561,7 @@ const RealEstateBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <ToolsAndLinks />
 

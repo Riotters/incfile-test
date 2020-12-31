@@ -597,8 +597,9 @@ const Header = ({ siteTitle }) => {
 										</MenuItem>
 									</SubmenuColumn>
 									<BottomLink>
-										<ArrowLink
-											content={{
+                                        <ArrowLink
+                                            content={{
+                                                externalLink: true,
 												url: `${process.env.ORDER_URL}/dashboard`,
 												text: "View Your Dashboard",
 											}}

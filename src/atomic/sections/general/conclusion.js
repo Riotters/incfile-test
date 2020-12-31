@@ -12,7 +12,7 @@ const Conclusion = ({buttonTitle, children, to}) => (
         </Oval>
         <Container>
             <ImageBox>
-                <Image filename="conclusion-main" />
+                <Image filename="conclusion-main" alt="start your business" />
             </ImageBox>
             <Content>
                 <TextBox>

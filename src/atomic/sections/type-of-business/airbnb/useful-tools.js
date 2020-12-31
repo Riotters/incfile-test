@@ -12,8 +12,10 @@ const UseFulTools = () => (
             <OvalSvg/>
         </Oval>
         <Padding>
-            <TextCenterLayout headline="Useful Online Tools for Your Airbnb Business"
-                              text="The right software and apps will make it much easier to run your Airbnb business. Here are our recommendations for some of the best tools out there to make business operations a breeze."/>
+            <TextCenterLayout
+                headline="Useful Online Tools for Your Airbnb Business"
+                text="The right software and apps will make it much easier to run your Airbnb business. Here are our recommendations for some of the best tools out there to make business operations a breeze."
+            />
         </Padding>
 
         <Container>

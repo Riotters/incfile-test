@@ -1,4 +1,3 @@
-import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
@@ -6,6 +5,7 @@ import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import { color } from "../../../../components/styles/colors";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
+import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import PlaneIcon from "../../../../images/icons/plane.inline.svg";
 import RockerIcon from "../../../../images/icons/rocket.inline.svg";
 import UmbrellaIcon from "../../../../images/icons/umbrella.inline.svg";
@@ -15,6 +15,7 @@ import Button from "../../../molecules/buttons/button";
 import OvalGreen3 from "../../../../images/ovals/top-right-transparent-babyblue2.inline.svg";
 import { shadow } from "../../../atoms/styles/shadows";
 import { HeadingP } from "../../../atoms/typography/heading-to-p";
+import ArrowLink from "../../../../components/arrow-link";
 
 const BusinessOwnerResponsibilities = styled.section`
 	position: relative;
@@ -51,7 +52,7 @@ const BusinessStructure = () => (
 		</Oval>
 
 		<BusinessOwnerResponsibilities>
-			<ImageContent image="unique-business-green" paddingTop="60">
+			<ImageContent image="unique-business-green" alt="choose right business structure" paddingTop="60">
 				<Heading size={2} template={3}>
 					Choose the Right Business Structure and Register Your Bed and
 					Breakfast
@@ -113,11 +114,13 @@ const BusinessStructure = () => (
 						style={{ color: color.blue1, fontWeight: "bold" }}
 						mixed={true}
 					>
-						<Link
-							to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
+                        <ArrowLink
+                            externalLink
+                            arrow={false}
+							url={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
 						>
 							Partnership Company or LLC
-						</Link>
+						</ArrowLink>
 					</HeadingP>
 
 					<Paragraph big>
@@ -148,11 +151,13 @@ const BusinessStructure = () => (
 						style={{ color: color.blue1, fontWeight: "bold" }}
 						mixed={true}
 					>
-						<Link
-							to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
+                        <ArrowLink
+                            externalLink
+                            arrow={false}
+							url={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
 						>
 							Limited Liability Company or LLC
-						</Link>
+						</ArrowLink>
 					</HeadingP>
 
 					<Paragraph big>
@@ -182,14 +187,13 @@ const BusinessStructure = () => (
 						style={{ color: color.blue1, fontWeight: "bold" }}
 						mixed={true}
 					>
-						<Link
-							to={
-								process.env.ORDER_URL +
-								"/form-order-now.php?entityType=SCorporation"
-							}
+                        <ArrowLink
+                            externalLink
+                            arrow={false}
+							url={process.env.ORDER_URL + "/form-order-now.php?entityType=SCorporation"}
 						>
 							S Corporation
-						</Link>
+						</ArrowLink>
 					</Paragraph>
 
 					<Paragraph big>
@@ -217,14 +221,13 @@ const BusinessStructure = () => (
 						style={{ color: color.blue1, fontWeight: "bold" }}
 						mixed={true}
 					>
-						<Link
-							to={
-								process.env.ORDER_URL +
-								"/form-order-now.php?entityType=CCorporation"
-							}
+                        <ArrowLink
+                            externalLink
+                            arrow={false}
+							url={process.env.ORDER_URL + "/form-order-now.php?entityType=CCorporation"}
 						>
 							C Corporation
-						</Link>
+						</ArrowLink>
 					</Paragraph>
 
 					<Paragraph big>
@@ -271,7 +274,8 @@ const BusinessStructure = () => (
 					, but we’ve got you covered, wherever you are.
 				</Paragraph>
 
-				<Button
+                <Button
+                    externalLink
 					theme="primary48"
 					width="365px"
 					arrow

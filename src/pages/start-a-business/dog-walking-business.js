@@ -18,7 +18,6 @@ import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/dog-w
 import BusinessPlan from "../../atomic/sections/type-of-business/dog-walking/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/dog-walking/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/dog-walking/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/dog-walking/order-now";
 import Regulations from "../../atomic/sections/type-of-business/dog-walking/regulations";
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/dog-walking/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/dog-walking/taxes";
@@ -34,6 +33,7 @@ import TabsOvalSvg from "../../images/ovals/bottom-left-transparent-orange.inlin
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/dog-walking";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const DogWalkingBusiness = () => (
   <Layout>
@@ -45,7 +45,7 @@ const DogWalkingBusiness = () => (
     <Top
       ovalColor="sun"
       imageName="dog-walking-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="how to start a dog walking"
       headlineWidth={700}
     >
       <h1>How to Start a Dog Walking, Pet Sitting or Other Canine Business</h1>
@@ -56,7 +56,8 @@ const DogWalkingBusiness = () => (
         companion.
       </p>
       <ButtonsBox>
-        <Button
+                <Button
+                    externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -453,7 +454,7 @@ const DogWalkingBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

@@ -30,43 +30,43 @@ const HireEmployees = () => (
 
     <ContentCenter>
       <ImageBoxes>
-        <TopImageBox image="will-filing-a-change-of-agent-reqiure-me-to-sign-any-documents" color={color.purple3}>
+        <TopImageBox image="will-filing-a-change-of-agent-reqiure-me-to-sign-any-documents" imageAlt="report employess" color={color.purple3}>
           <Heading size={3} template={4}>Report employees as "new hires"</Heading>
           <p>In most cases, you will need to report the hiring of employees to your state.</p>
         </TopImageBox>
 
-        <TopImageBox image="seting-up-monthly-payroll-01" color={color.yellow3}>
+        <TopImageBox image="seting-up-monthly-payroll-01" imageAlt="pay for employess" color={color.yellow3}>
           <Heading size={3} template={4}>Pay employees</Heading>
           <p>On a raff and workers typically receive a low hourly wage which is supplemented by tips from patrons.</p>
         </TopImageBox>
 
-        <TopImageBox image="side-yellow" color={color.yellow3}>
+        <TopImageBox image="side-yellow" imageAlt="compensation insurance" color={color.yellow3}>
           <Heading size={3} template={4}>Get worker's compensation insurance in place</Heading>
           <p>As listed above, you will need to make sure you have proper worker compensation insurance to cover injuries, illness, medical costs and the like.</p>
         </TopImageBox>
 
-        <TopImageBox image="ongoing-filling-requirements-02" color={color.babyblue3}>
+        <TopImageBox image="ongoing-filling-requirements-02" imageAlt="employess" color={color.babyblue3}>
           <Heading size={3} template={4}>Make sure your employees can work in the U.S</Heading>
           <p>Your employees must be legally able to work here. Carry out background checks and ensure they have any necessary legal documentation.</p>
         </TopImageBox>
 
-        <TopImageBox image="tax-id" color={color.red3}>
+        <TopImageBox image="tax-id" imageAlt="ein" color={color.red3}>
           <Heading size={3} template={4}>Get an Employer Identification Number (EIN)</Heading>
           <p>
             Contact the IRS and let them know you will need an EIN for your bar business. This is a number you will use to file and pay your taxes. We put together this <Link style={{ fontWeight: "bold" }} to="/manage-your-company/tax-id-ein/">guide to getting your EIN</Link>.
           </p>
         </TopImageBox>
 
-        <TopImageBox image="additional-accounting-fees" color={color.red3}>
+        <TopImageBox image="additional-accounting-fees" imageAlt="payroll" color={color.red3}>
           <Heading size={3} template={4}>Withhold income and payroll taxes</Heading>
           <p>You will need to calculate and keep back income tax so you can pay the appropriate bodies. You will also need to pay the employer portion of the payroll tax.</p>
         </TopImageBox>
 
-        <TopImageBox image="using-your-knowledge" color={color.orange3}>
+        <TopImageBox image="using-your-knowledge" imageAlt="learn about legal requirements" color={color.orange3}>
           <Heading size={3} template={4}>Learn about legal requirements and responsibilities to employees</Heading>
           <p>
             You do have certain responsibilities and requirements for hiring employees. In addition to getting a proper employment contract in place with them, you have a duty to provide them with a safe working environment, proper training, regular pay and certain other criteria.{" "}
-            <Link style={{ fontWeight: "bold" }} to="https://www.osha.gov/as/opa/worker/employer-responsibility.html">OSHA</Link> covers your health and safety requirements, while the <Link style={{ fontWeight: "bold" }} to="https://www.dol.gov/general/topics">U.S. Department</Link> of Labor provides information on other responsibilities.
+            <a style={{ fontWeight: "bold" }} href="https://www.osha.gov/as/opa/worker/employer-responsibility.html">OSHA</a> covers your health and safety requirements, while the <a style={{ fontWeight: "bold" }} href="https://www.dol.gov/general/topics">U.S. Department</a> of Labor provides information on other responsibilities.
           </p>
         </TopImageBox>
       </ImageBoxes>

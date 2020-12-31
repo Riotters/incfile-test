@@ -1,3 +1,6 @@
+import React from "react";
+import styled from "styled-components";
+
 import Container from "../../../container";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
@@ -6,8 +9,6 @@ import OkIcon from "../../../../images/icons/talk-to-clients.inline.svg";
 import IdetifyIcon from "../../../../images/icons/identify-your-unique-selling-point.inline.svg";
 import MarketIcon from "../../../../images/icons/understand-your-market.inline.svg";
 import { color, gradient } from "../../../atoms/styles/colors";
-import React from "react";
-import styled from "styled-components";
 import OvalSVG from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import MountainsIcon from "../../../../images/icons/and-dont-assume-just-because-you-have-a-great-idea.inline.svg";
 import InvolvedIcon from "../../../../images/icons/get-involved-with-business-communities.inline.svg";
@@ -83,13 +84,6 @@ const OvalBottom = styled.div`
   @media (min-width: 570px) {
     width: 570px;
   }
-`;
-
-const AbsoluteCurve = styled.div`
-  position: absolute;
-  left: -27px;
-  top: -16px;
-  transform: rotate(-90deg);
 `;
 
 const ValidatingBusinessIdea = () => (

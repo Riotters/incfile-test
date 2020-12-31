@@ -13,7 +13,6 @@ import BlueContainer from "../../atomic/sections/type-of-business/coach/blue-con
 import CoachBusinessPlan from "../../atomic/sections/type-of-business/coach/coach-business-plan";
 import CoachBusinessStructure from "../../atomic/sections/type-of-business/coach/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/coach/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/coach/order-now";
 import Regulations from "../../atomic/sections/type-of-business/coach/regulations";
 import CoachTaxes from "../../atomic/sections/type-of-business/coach/coach-taxes";
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/coach/insurance-business";
@@ -21,6 +20,7 @@ import UseFulTools from "../../atomic/sections/type-of-business/coach/useful-too
 import Conclusion from "../../atomic/sections/general/conclusion";
 import { Heading } from "../../atomic/atoms/typography/heading";
 import { Paragraph } from "../../atomic/atoms/typography/paragraph";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const CoachBusiness = () => (
   <Layout>
@@ -32,7 +32,7 @@ const CoachBusiness = () => (
     <Top
       ovalColor="darkblue"
       imageName="coach-2"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="set up a coach business"
       headlineWidth={700}
     >
       <h1>How to Become a Life or Business Coach</h1>
@@ -41,7 +41,8 @@ const CoachBusiness = () => (
         lives or our businesses.
       </p>
       <ButtonsBox>
-        <Button
+                <Button
+                    externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -70,7 +71,7 @@ const CoachBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

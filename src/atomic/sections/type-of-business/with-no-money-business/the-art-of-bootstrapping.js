@@ -46,7 +46,7 @@ const TheArtOfBootstrapping = () => (
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="how-ready-are-you-to-start-a-business" color={color.blue3}>
+                <TopImageBox image="how-ready-are-you-to-start-a-business" imageAlt="launch your business" color={color.blue3}>
                     <Heading size={3} template={4}>Launch as Soon as You Can</Heading>
                     <p>
                         You need a business model that lets you get your product or service out there as soon as possible. You don’t need to be perfect before you launch; you just need to be “good enough.” Work out what “good enough” looks like, and when you have a product
@@ -54,14 +54,14 @@ const TheArtOfBootstrapping = () => (
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="measuring-business-success" color={color.babyblue3}>
+                <TopImageBox image="measuring-business-success" imageAlt="software, hardware" color={color.babyblue3}>
                     <Heading size={3} template={4}>Know Your Profit Margins</Heading>
                     <p>
                         A healthy profit margin is essential to your success. Work out exactly how much money goes into the products and services you sell - that includes the base cost, packing, shipping, distribution, customer service and more. It also includes shared costs that your business is responsible for like utilities, rent, software, hardware and other areas.
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="total-revenue-from-sales" color={color.yellow3}>
+                <TopImageBox image="total-revenue-from-sales" imageAlt="investment" color={color.yellow3}>
                     <Heading size={3} template={4}>Maximize Your Return on Investment</Heading>
                     <p>
                         Only spend money on activities or things that are going to either help you create more revenue
@@ -70,7 +70,7 @@ const TheArtOfBootstrapping = () => (
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="work-out-your-personal-budget" color={color.purple3}>
+                <TopImageBox image="work-out-your-personal-budget" imageAlt="personal budget" color={color.purple3}>
                     <Heading size={3} template={4}>Work Out Your Personal Budget</Heading>
                     <p>
                         Your business has to make enough money for you
@@ -78,7 +78,7 @@ const TheArtOfBootstrapping = () => (
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="executive-relationship-and-culture-coaching" color={color.blue3}>
+                <TopImageBox image="executive-relationship-and-culture-coaching" imageAlt="entrepreneur" color={color.blue3}>
                     <Heading size={3} template={4}>Partner With Other Entrepreneurs</Heading>
                     <p>
                         If you need expertise but don’t want to do something yourself, look for other small businesses with those skills and see if you can exchange services. Entrepreneurs are often happy to barter - perhaps you can get a designer to build a website for you
@@ -114,13 +114,6 @@ const ImageBoxes = styled.div`
     
     margin: 0 auto;
   }
-`;
-
-const GreenCurve = styled.div`
-    position: absolute;
-    right: -115px;
-    bottom: -122px;
-    width: 115px;
 `;
 
 const Oval = styled.div`

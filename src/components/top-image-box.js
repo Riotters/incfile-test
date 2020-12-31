@@ -96,7 +96,7 @@ const TopImageBox = ({
 		>
 			<div className="top">
 				{" "}
-				{image && <Image filename={image} alt={imageAlt} />}{" "}
+				{image && <Image filename={image} alt={imageAlt ?? 'how to start a business'} />}{" "}
 			</div>
 			<div className="content"> {children} </div>
 		</Wrapper>

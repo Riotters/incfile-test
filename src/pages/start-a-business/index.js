@@ -18,8 +18,7 @@ import {
 	top,
 	about,
 	checkType,
-	businessStructure,
-	launchBusiness,
+	businessStructure
 } from "../../static/learning-center-entity/start-a-business";
 import Articles from "../../atomic/sections/articles";
 import { Helmet } from "react-helmet";

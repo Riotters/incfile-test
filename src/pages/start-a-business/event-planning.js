@@ -21,7 +21,6 @@ import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/event
 import BusinessPlan from "../../atomic/sections/type-of-business/event-planning/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/event-planning/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/event-planning/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/event-planning/order-now";
 import Regulations from "../../atomic/sections/type-of-business/event-planning/regulations";
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/event-planning/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/event-planning/taxes";
@@ -32,6 +31,7 @@ import FireworksIcon from "../../images/icons/you-will-also-need-to-look-at-fina
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/event-planning";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const EventPlanning = () => (
   <Layout>
@@ -43,7 +43,7 @@ const EventPlanning = () => (
     <Top
       ovalColor="purple-2"
       imageName="event-planing-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="how to start an event business"
       headlineWidth={700}
     >
       <h1>How to Start a Party or Event Planning Business</h1>
@@ -56,6 +56,7 @@ const EventPlanning = () => (
       </p>
       <ButtonsBox>
         <Button
+            externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -451,7 +452,7 @@ const EventPlanning = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

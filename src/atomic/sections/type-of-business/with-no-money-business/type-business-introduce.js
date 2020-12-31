@@ -22,12 +22,6 @@ const OrangeContainer = styled.div`
     position: relative;
 `;
 
-const Oval = styled.div`
-  position: absolute;
-  left: 0;
-  top: 200px;
-`
-
 const TypeBusinessIntroduce = () => (
     <OrangeContainer>
 

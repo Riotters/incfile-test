@@ -15,9 +15,11 @@ const ToolsAndLinks = () => (
             <OvalSvg2/>
         </Oval2>
 
-        <UsefulTools toolsList={toolsList.tools} headlineText={toolsList.headlineText}
-                     description={toolsList.description}/>
-
+        <UsefulTools
+            toolsList={toolsList.tools}
+            headlineText={toolsList.headlineText}
+            description={toolsList.description}
+        />
     </Wrapper>
 );
 

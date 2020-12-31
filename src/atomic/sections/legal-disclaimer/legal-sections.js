@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import React from "react";
+import styled from "styled-components";
 import ContentCenter from "../../partials/content-center";
 
 const Wrapper = styled.section`

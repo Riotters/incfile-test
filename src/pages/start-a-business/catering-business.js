@@ -23,7 +23,6 @@ import SeriesIcon from "../../images/icons/limited-liability-company.inline.svg"
 import PlaneIcon from "../../images/icons/plane.inline.svg";
 import RockerIcon from "../../images/icons/rocket.inline.svg";
 import SettingBusiness from "../../atomic/sections/type-of-business/catering-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/catering-business/order-now";
 import {
   RingText,
   tabs,
@@ -47,6 +46,7 @@ import OvalSvg4 from "../../images/ovals/top-right-transparent-green3.inline.svg
 import { Link } from "gatsby";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const CateringBusiness = () => (
   <Layout>
@@ -58,7 +58,7 @@ const CateringBusiness = () => (
     <Top
       ovalColor="sun-2"
       imageName="catering-business-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="how to start a catering business"
       headlineWidth={700}
     >
       <h1>How to Start a Catering Business</h1>
@@ -67,7 +67,8 @@ const CateringBusiness = () => (
         way to make a living.
       </p>
       <ButtonsBox>
-        <Button
+                <Button
+                    externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -806,7 +807,7 @@ const CateringBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Links />
 

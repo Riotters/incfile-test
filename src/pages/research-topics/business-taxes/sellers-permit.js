@@ -22,7 +22,6 @@ import {
 import { about } from "../../../static/research-topics/business-taxes/sellers-permit";
 import { related } from "../../../static/research-topics/business-taxes";
 import { Helmet } from "react-helmet";
-import {PHeading} from "../../../atomic/atoms/typography/p-to-heading";
 import {HeadingP} from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => {

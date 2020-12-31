@@ -19,10 +19,10 @@ import TypeBusiness from "../../atomic/sections/type-of-business/with-no-money-b
 import BusinessPlan from "../../atomic/sections/type-of-business/with-no-money-business/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/with-no-money-business/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/with-no-money-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/with-no-money-business/order-now";
 import Regulations from "../../atomic/sections/type-of-business/with-no-money-business/regulations";
 import Taxes from "../../atomic/sections/type-of-business/with-no-money-business/taxes";
 import TaxesIntroduce from "../../atomic/sections/type-of-business/with-no-money-business/taxes-introduce";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const WithNoMoneyBusiness = () => (
   <Layout>
@@ -83,7 +83,7 @@ const WithNoMoneyBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

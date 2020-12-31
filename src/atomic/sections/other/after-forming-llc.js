@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import styled from "styled-components";
 import parse from "html-react-parser";
 
@@ -98,8 +97,8 @@ const AfterFormingLLCSection = ({ content }) => {
           )}
 
           {item.type === "arrow-links" &&
-            item.content.map((link) => (
-              <ArrowLink url={link.url} style={link.style}>
+            item.content.map((link, i) => (
+              <ArrowLink key={item} url={link.url} style={link.style}>
                 {link.text}
               </ArrowLink>
             ))}
@@ -115,8 +114,8 @@ const AfterFormingLLCSection = ({ content }) => {
           {item.type === "iconListColorBox" && <IconListColorBox color={item.boxColor} style={item.styles} content={item.content} rounded />}
 
           {item.type === "textBoxWithCheckIcon" &&
-            item.content.map((i) => (
-              <TextBoxed style={{ marginBottom: "8px" }}>
+            item.content.map((i, j) => (
+              <TextBoxed key={j} style={{ marginBottom: "8px" }}>
                 <Paragraph bottomMargin={0}>{i}</Paragraph>
               </TextBoxed>
             ))}
@@ -144,8 +143,8 @@ const AfterFormingLLCSection = ({ content }) => {
               <AbsoluteShapeCurve right="-25px" top="-30px">
                 <ShapeCurve color={color.purple1} />
               </AbsoluteShapeCurve>
-              {item.content.map((item) => (
-                <Whitebox className="flex-2-columns" flex padding="20px" style={{ marginBottom: "8px" }}>
+              {item.content.map((item, i) => (
+                <Whitebox key={i} className="flex-2-columns" flex padding="20px" style={{ marginBottom: "8px" }}>
                   <p>{item.text1}</p>
                   <p>{parse(item.text2)}</p>
                 </Whitebox>

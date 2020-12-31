@@ -15,6 +15,7 @@ import OvalOrange2Svg from "../../../../images/ovals/top-left-transparent-orange
 import { shadow } from "../../../atoms/styles/shadows";
 import { Link } from "gatsby";
 import { HeadingP } from "../../../atoms/typography/heading-to-p";
+import ArrowLink from "../../../../components/arrow-link";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -125,11 +126,13 @@ const AirBnB1BusinessStructure = () => (
             style={{ color: color.blue1, fontWeight: "bold" }}
             mixed={true}
           >
-            <Link
-              to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
+            <ArrowLink
+                externalLink
+                arrow={false}
+                url={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
             >
               Partnership
-            </Link>
+            </ArrowLink>
           </HeadingP>
 
           <Paragraph big>
@@ -160,11 +163,13 @@ const AirBnB1BusinessStructure = () => (
             style={{ color: color.blue1, fontWeight: "bold" }}
             mixed={true}
           >
-            <Link
-              to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
+            <ArrowLink
+              externalLink
+              arrow={false}
+              url={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
             >
               Limited Liability Company or LLC
-            </Link>
+            </ArrowLink>
           </HeadingP>
 
           <Paragraph big>
@@ -194,14 +199,16 @@ const AirBnB1BusinessStructure = () => (
             style={{ color: color.blue1, fontWeight: "bold" }}
             mixed={true}
           >
-            <Link
-              to={
+            <ArrowLink
+              externalLink
+              arrow={false}
+              url={
                 process.env.ORDER_URL +
                 "/form-order-now.php?entityType=SCorporation"
               }
             >
               S Corporation
-            </Link>
+            </ArrowLink>
           </HeadingP>
 
           <Paragraph big>
@@ -230,14 +237,16 @@ const AirBnB1BusinessStructure = () => (
             style={{ color: color.blue1, fontWeight: "bold" }}
             mixed={true}
           >
-            <Link
-              to={
+            <ArrowLink
+              externalLink
+              arrow={false}
+              url={
                 process.env.ORDER_URL +
                 "/form-order-now.php?entityType=CCorporation"
               }
             >
               C Corporation
-            </Link>
+            </ArrowLink>
           </HeadingP>
 
           <Paragraph big>
@@ -283,13 +292,14 @@ const AirBnB1BusinessStructure = () => (
         </Paragraph>
 
         <Button
-          theme="primary48"
-          width="365px"
-          arrow
-          content={{
-            url: `${process.env.ORDER_URL}/form-order-now.php`,
-            text: "Start your business with us, today!",
-          }}
+            externalLink
+            theme="primary48"
+            width="365px"
+            arrow
+            content={{
+                url: `${process.env.ORDER_URL}/form-order-now.php`,
+                text: "Start your business with us, today!",
+            }}
         />
       </ImageContent>
     </BusinessOwnerResponsibilities>

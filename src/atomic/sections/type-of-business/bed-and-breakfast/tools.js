@@ -28,15 +28,23 @@ const ToolsAndLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="http://www.innspiring.com/" textColor={color.blue1} hoverColor={color.orange1}
-                              arrowColor={color.blue1}>
+                    <PathLink 
+                        externalLink 
+                        to="http://www.innspiring.com/" 
+                        textColor={color.blue1} 
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         Innspiring forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.facebook.com/managersforum/" textColor={color.blue1}
-                              hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink 
+                        externalLink 
+                        to="https://www.facebook.com/managersforum/"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         Hotel Owners and Managers Facebook Group
                     </PathLink>
                 </LinkItem>

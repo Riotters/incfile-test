@@ -24,7 +24,7 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="location" color={color.red3}>
           <Heading size={3} template={4}>
             Location
           </Heading>
@@ -37,7 +37,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="display-ads" color={color.purple3}>
+        <TopImageBox image="display-ads" imageAlt="marketing" color={color.purple3}>
           <Heading size={3} template={4}>
             Marketing
           </Heading>
@@ -51,7 +51,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software" color={color.blue3}>
           <Heading size={3} template={4}>
             Software
           </Heading>
@@ -62,7 +62,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side-4" color={color.green3}>
+        <TopImageBox image="side-4" imageAlt="equiment" color={color.green3}>
           <Heading size={3} template={4}>
             Equipment
           </Heading>
@@ -74,8 +74,9 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox
-          image="we-doubled-the-size-of-customer-service"
-          color={color.orange3}
+            image="we-doubled-the-size-of-customer-service"
+            imageAlt="employment"
+            color={color.orange3}
         >
           <Heading size={3} template={4}>
             Employees
@@ -88,7 +89,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.blue3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finance and taxes" color={color.blue3}>
           <Heading size={3} template={4}>
             Finances and Taxes
           </Heading>
@@ -144,13 +145,6 @@ const ImageBoxes = styled.div`
   @media (min-width: 970px) {
     margin: 0 auto;
   }
-`;
-
-const GreenCurve = styled.div`
-  position: absolute;
-  right: -115px;
-  bottom: -122px;
-  width: 115px;
 `;
 
 const Oval = styled.div`
