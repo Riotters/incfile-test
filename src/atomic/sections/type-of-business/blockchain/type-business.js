@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import {gradient} from "../../../atoms/styles/colors";
 import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-center";
 import Adventages from "../../../../components/adventages";

@@ -129,13 +129,6 @@ const ImageBoxes = styled.div`
   }
 `;
 
-const GreenCurve = styled.div`
-  position: absolute;
-  right: -115px;
-  bottom: -122px;
-  width: 115px;
-`;
-
 const Oval = styled.div`
   position: absolute;
   left: 0;

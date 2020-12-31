@@ -1,17 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import Container from "../../../container";
-import { Paragraph } from "../../../atoms/typography/paragraph";
 import TextCenterLayout from "../../../partials/heading-center";
 import Adventages from "../../../../components/adventages";
 import { color } from "../../../../components/styles/colors";
 import { shadow } from "../../../../components/styles/shadows";
-import Curve from "../../../atoms/shapes/curve";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-babyblue1.inline.svg";
 import OvalSvgBottom from "../../../../images/ovals/top-right-transparent-babyblue2.inline.svg";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 import { adventages2 } from "../../../../static/type-of-business/boutique-clothing-business";
-import { Link } from "gatsby";
 
 const BoutiqueTaxes = () => (
   <BabyBlueContainer>
@@ -66,16 +63,6 @@ const BabyBlueContainer = styled.div`
   padding-top: 100px;
   position: relative;
   overflow: hidden;
-`;
-
-const TextWrapper = styled.div`
-  width: 100%;
-  max-width: 750px;
-  position: relative;
-
-  @media (min-width: 750px) {
-    margin: 48px auto 100px;
-  }
 `;
 
 const Service = styled.div`

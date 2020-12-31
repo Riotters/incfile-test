@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { color, gradient } from "../../../atoms/styles/colors";
 import Tabs from "../../../organisms/tabs/c-corp-tabs-rq";
-import Oval from "../../../atoms/icons/oval";
-import OvalSVG from "../../../../images/ovals/top-left-transparent-orange2.inline.svg";
 
 const Requirements = styled.section`
   background-image: ${gradient.orange3};

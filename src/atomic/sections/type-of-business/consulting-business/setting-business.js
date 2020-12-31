@@ -29,7 +29,7 @@ const SettingBusiness = () => (
                 <TopImageBox image="state-filling-fees" imageAlt="finances & taxes" color={color.yellow3}>
                     <Heading size={3} template={4}>Finances and Taxes</Heading>
                     <p>
-                        What kind of bank account will you get? Will you need a <a target="_blank" href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">business credit card</a>? And how will you pay your business taxes? These are all important things to consider so your consulting business stays in the green. Here at Incfile we can even <Link to="/business-accounting/">help you file your taxes</Link>.
+                        What kind of bank account will you get? Will you need a <a rel="noopener noreferrer" target="_blank" href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">business credit card</a>? And how will you pay your business taxes? These are all important things to consider so your consulting business stays in the green. Here at Incfile we can even <Link to="/business-accounting/">help you file your taxes</Link>.
                     </p>
                 </TopImageBox>
 

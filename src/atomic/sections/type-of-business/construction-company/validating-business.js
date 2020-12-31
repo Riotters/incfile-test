@@ -73,19 +73,6 @@ const OvalCenter = styled.div`
     width: 420px;
   }
 `
-
-const AbsoluteCurve = styled.div`
-    position: absolute;
-    left: -27px;
-    top: -16px;
-    transform: rotate(-90deg);
-    display: none;
-  
-  @media (min-width: 1200px){
-    display: block;
-  }
-`;
-
 const ValidatingBusinessIdea = () => (
     <ContainerWrapper>
         <OvalCenter>
