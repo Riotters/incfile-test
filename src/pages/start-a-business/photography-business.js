@@ -12,7 +12,6 @@ import { Heading } from "../../atomic/atoms/typography/heading";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import BusinessStructure from "../../atomic/sections/type-of-business/photography-business/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/photography-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/photography-business/order-now";
 import WorldOfPhotography from "../../atomic/sections/type-of-business/photography-business/world-of-photography";
 import PhotographyIntroduce from "../../atomic/sections/type-of-business/photography-business/photography-introduce";
 import Statistics from "../../atomic/sections/type-of-business/photography-business/statistics";
@@ -20,6 +19,7 @@ import QuestionToAsk from "../../atomic/sections/type-of-business/photography-bu
 import MainSkils from "../../atomic/sections/type-of-business/photography-business/main-skils";
 import MainChallenges from "../../atomic/sections/type-of-business/photography-business/main-challenges";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/photography-business/tools";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const WithNoMoneyBusiness = () => (
   <Layout>
@@ -76,7 +76,7 @@ const WithNoMoneyBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <ToolsAndLinks />
 

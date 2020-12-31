@@ -22,7 +22,6 @@ import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/publi
 import BusinessPlan from "../../atomic/sections/type-of-business/publishing-company-business/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/publishing-company-business/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/publishing-company-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/publishing-company-business/order-now";
 import Regulations from "../../atomic/sections/type-of-business/publishing-company-business/regulations";
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/publishing-company-business/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/publishing-company-business/taxes";
@@ -37,6 +36,7 @@ import {
 import OvalSvg from "../../images/ovals/bottom-left-transparent-pink.inline.svg";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const ConstructionCompany = () => (
   <Layout>
@@ -48,7 +48,7 @@ const ConstructionCompany = () => (
     <Top
       ovalColor="blue"
       imageName="publishing-company-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="how to start a publishing company business"
       headlineWidth={700}
     >
       <h1>How to Start a Publishing Company</h1>
@@ -57,7 +57,8 @@ const ConstructionCompany = () => (
         and unique approach, you can create a thriving publishing business.
       </p>
       <ButtonsBox>
-        <Button
+                <Button
+                    externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -428,7 +429,7 @@ const ConstructionCompany = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

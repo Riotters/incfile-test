@@ -20,7 +20,6 @@ import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/onlin
 import BusinessPlan from "../../atomic/sections/type-of-business/online-business/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/online-business/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/online-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/online-business/order-now";
 import Regulations from "../../atomic/sections/type-of-business/online-business/regulations";
 import Taxes from "../../atomic/sections/type-of-business/online-business/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/online-business/tools";
@@ -33,6 +32,7 @@ import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/online-business";
 import { TabPanel } from "react-tabs";
 import { Helmet } from "react-helmet";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const OnlineBusiness = () => (
   <Layout>
@@ -44,7 +44,7 @@ const OnlineBusiness = () => (
     <Top
       ovalColor="yellow"
       imageName="online-business-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="how to start an online business"
       headlineWidth={700}
     >
       <h1>How to Start an Online Business</h1>
@@ -56,7 +56,8 @@ const OnlineBusiness = () => (
         entrepreneur.
       </p>
       <ButtonsBox>
-        <Button
+                <Button
+                    externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -200,7 +201,7 @@ const OnlineBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

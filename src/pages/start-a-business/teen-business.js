@@ -19,7 +19,6 @@ import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/teen-
 import BusinessPlan from "../../atomic/sections/type-of-business/teen-business/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/teen-business/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/teen-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/teen-business/order-now";
 import Regulations from "../../atomic/sections/type-of-business/teen-business/regulations";
 import Taxes from "../../atomic/sections/type-of-business/teen-business/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/teen-business/tools";
@@ -40,7 +39,7 @@ const TeenBusiness = () => (
     <Top
       ovalColor="sun"
       imageName="teen-business-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="set up a business ideas"
       headlineWidth={700}
     >
       <h1>How to Start a Teen Business</h1>
@@ -53,7 +52,8 @@ const TeenBusiness = () => (
         it might be worth going a step further.
       </p>
       <ButtonsBox>
-        <Button
+                <Button
+                    externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -232,7 +232,7 @@ const TeenBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

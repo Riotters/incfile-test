@@ -21,7 +21,6 @@ import AboutCreating from "../../atomic/sections/type-of-business/record-label/a
 import BusinessPlan from "../../atomic/sections/type-of-business/record-label/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/record-label/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/record-label/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/record-label/order-now";
 import Regulations from "../../atomic/sections/type-of-business/record-label/regulations";
 import Taxes from "../../atomic/sections/type-of-business/record-label/taxes";
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/record-label/insurance-business";
@@ -32,6 +31,7 @@ import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block
 import { TabPanel } from "react-tabs";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/record-label";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const RecordLabel = () => (
   <Layout>
@@ -54,7 +54,8 @@ const RecordLabel = () => (
         the talents of others, owning a record label gives you options.
       </p>
       <ButtonsBox>
-        <Button
+                <Button
+                    externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -452,7 +453,7 @@ const RecordLabel = () => (
     <BusinessPlan />
     <BusinessStructure />
     <SettingBusiness />
-    <OrderNow />
+    <CompleteCheckListSection />
     <Regulations />
     <Taxes />
     <InsuranceBusinessSection />
