@@ -462,7 +462,7 @@ const Header = ({ siteTitle }) => {
 	return (
 		<Wrapper>
 			<Logo>
-				<Link to="/">
+				<Link to="/" aria-label="return to home page">
 					<LogoSVG />
 				</Link>
 			</Logo>

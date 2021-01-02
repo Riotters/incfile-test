@@ -26,129 +26,81 @@ const SettingBusiness = () => (
             />
             <ImageBoxes>
                 <TopImageBox image="location" imageAlt="business location" color={color.red3}>
-                    <Heading size={3} template={4}>
-                        Business Location
-          </Heading>
+                    <Heading size={3} template={4}> Business Location </Heading>
                     <p>
                         Where are you going to run your business? Will you work from home,
                         get an office, use a shared working space or something else? In most
                         cases, unless you are planning to store products, it’s best to start
                         an Amazon business from your home.
-          </p>
+                    </p>
                 </TopImageBox>
 
                 <TopImageBox image="permits-licences" imageAlt="permit & license" color={color.blue3}>
-                    <Heading size={3} template={4}>
-                        Permits & Licenses
-          </Heading>
+                    <Heading size={3} template={4}> Permits & Licenses </Heading>
                     <p>
-                        Running an Amazon business could come with certain rules,
-                        regulations and legalities you need to be aware of. Incfile can
-            conduct a{" "}
-                        <Link to="/business-license-research-package/">
-                            Business License Research
-            </Link>{" "}
-            package for you, or you can take the time to do the research
-            yourself.
-          </p>
+                        Running an Amazon business could come with certain rules, regulations and legalities you need to be aware of. Incfile can conduct a <Link to="/business-license-research-package/"> Business License Research </Link> package for you, or you can take the time to do the research yourself.
+                    </p>
                     <AbsoluteCurve>
                         <Curve />
                     </AbsoluteCurve>
                 </TopImageBox>
 
-                <TopImageBox image="state-filling-fees" imageAlt="finace & taxes" color={color.yellow3}>
-                    <Heading size={3} template={4}>
-                        Finances & Taxes
-          </Heading>
+                <TopImageBox image="state-filling-fees" imageAlt="finance & taxes" color={color.yellow3}>
+                    <Heading size={3} template={4}> Finances & Taxes </Heading>
                     <p>
-                        What kind of{" "}
-                        <a class="partner_link" data-name="Bank of America" href="https://utility.bankofamerica.com/alliance/?formid=IF1">
-                            bank account
-            </a>{" "}
-            will you get? And how will you pay your business taxes? How do you
-            find the{" "}
-                        <a class="partner_link" data-name="CardRatings" href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">
-                            best business credit card
-            </a>
-            ? These are all important things to consider, so your Amazon
-            business stays in the green.{" "}
-                        <Link to="https://www.incfile.com/blog/post/amazon-sellers-finances-taxes/">
-                            Check out our quick guide to finances and taxes for Amazon sellers
-            </Link>
-            .
-          </p>
+                        What kind of <a class="partner_link" data-name="Bank of America" href="https://utility.bankofamerica.com/alliance/?formid=IF1"> bank account </a> will you get? And how will you pay your business taxes? How do you find the
+                        <a class="partner_link" data-name="CardRatings" href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">best business credit card</a>? These are all important things to consider, so your Amazon business stays in the green. <a href="https://www.incfile.com/blog/post/amazon-sellers-finances-taxes/">
+                            Check out our quick guide to finances and taxes for Amazon sellers</a>.
+                    </p>
                 </TopImageBox>
 
                 <TopImageBox image="organization-change-02" imageAlt="process" color={color.green3}>
-                    <Heading size={3} template={4}>
-                        Processes
-          </Heading>
+                    <Heading size={3} template={4}> Processes </Heading>
                     <p>
                         What business processes are you going to use to run your business
                         efficiently and effectively? You will need efficient processes for
                         managing inventory, dealing with suppliers, ordering stock, looking
                         at competitors and completing market research.
-          </p>
+                    </p>
                 </TopImageBox>
 
                 <TopImageBox image="side-4" imageAlt="equiment" color={color.purple3}>
-                    <Heading size={3} template={4}>
-                        Equipment
-          </Heading>
+                    <Heading size={3} template={4}> Equipment </Heading>
                     <p>
                         What equipment do you need to manage your Amazon business? Make sure
                         you understand exactly what you need to spend, so you can write it
                         off against business expenses. In most cases, you won’t need any
                         specialized equipment or supplies unless you are planning to ship
                         products yourself.
-          </p>
+                    </p>
                 </TopImageBox>
 
                 <TopImageBox image="measuring-business-success" imageAlt="business maintenace" color={color.babyblue3}>
-                    <Heading size={3} template={4}>
-                        Business Maintenance
-          </Heading>
+                    <Heading size={3} template={4}> Business Maintenance </Heading>
                     <p>
-                        Most states require businesses to file an{" "}
-                        <Link to="/manage-your-company/annual-report/">Annual Report</Link>{" "}
-            report once a year. You will also be expected to pay estimated taxes
-            on what you plan to earn in the current business year. And, your
-            federal, state, regional and city{" "}
-                        <Link to="/business-license-research-package/">
-                            business licenses and permits
-            </Link>{" "}
-            may need to be renewed on a regular basis, typically once a year.
-          </p>
+                        Most states require businesses to file an <Link to="/manage-your-company/annual-report/">Annual Report</Link> report once a year. You will also be expected to pay estimated taxes on what you plan to earn in the current business year. And, your federal, state, regional and city
+                        <Link to="/business-license-research-package/">business licenses and permits</Link> may need to be renewed on a regular basis, typically once a year.
+                    </p>
                 </TopImageBox>
 
                 <TopImageBox
                     image="we-doubled-the-size-of-customer-service"
                     imageAlt="employment"
-                    color={color.orange3}
-                >
-                    <Heading size={3} template={4}>
-                        Employees
-          </Heading>
+                    color={color.orange3}>
+                    <Heading size={3} template={4}> Employees </Heading>
                     <p>
                         Do you need to hire employees to help you out? This may change as
                         your business grows, but try to think ahead about what sort of
                         experts you may need.
-          </p>
+                </p>
                 </TopImageBox>
 
                 <TopImageBox image="software" imageAlt="software" color={color.blue3}>
-                    <Heading size={3} template={4}>
-                        Software
-          </Heading>
+                    <Heading size={3} template={4}> Software </Heading>
                     <p>
                         Is there software that can help you manage and market your business?
-                        There are dozens of software applications designed specifically to
-            help Amazon sellers.{" "}
-                        <a href="https://www.avalara.com/us/en/blog/2015/07/6-must-have-tools-for-successful-amazon-sellers.html">
-                            Here are some great starting points
-            </a>
-            .
-          </p>
+                        There are dozens of software applications designed specifically to help Amazon sellers. <a href="https://www.avalara.com/us/en/blog/2015/07/6-must-have-tools-for-successful-amazon-sellers.html" target="_blank" rel="noopener noreferrer">Here are some great starting points</a>.
+                    </p>
                 </TopImageBox>
             </ImageBoxes>
 

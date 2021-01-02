@@ -31,28 +31,28 @@ const SettingBusiness = () => (
 
         <Container>
             <ImageBoxes>
-                <TopImageBox image="location" color={color.red3}>
+                <TopImageBox image="location" imageAlt="location of cleaning business" color={color.red3}>
                     <Heading size={3} template={4}>Location of your workshop</Heading>
                     <p>
                         Where are you going to run your business from? Will you work from home, get an office, use a shared working space or something else? You will likely run your cleaning business from home, but spend most of your working time in other locations. Alternatively, you may have a small office or commercial space where you can keep materials, provide training and work with employees.
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="side-yellow" color={color.yellow3}>
+                <TopImageBox image="side-yellow" imageAlt="equipment of cleaning business" color={color.yellow3}>
                     <Heading size={3} template={4}>Equipment</Heading>
                     <p>
                         What equipment do you need to manage your cleaning business? You will need a laptop, computer or smartphone to communicate with clients. You will also need transportation and cleaning supplies. Don’t forget equipment like vacuum cleaners, extendable dusters, steam cleaners and the like. Make sure you understand exactly what you need to spend so you can write it off against business expenses.
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="display-ads" color={color.purple3}>
+                <TopImageBox image="display-ads" imageAlt="marketing of cleaning business" color={color.purple3}>
                     <Heading size={3} template={4}>Marketing</Heading>
                     <p>
                         You will probably need to build a website and have a brand and logo professionally designed. You should also look into local search advertising.
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="organization-change-02" color={color.green3}>
+                <TopImageBox image="organization-change-02" imageAlt="process of cleaning business" color={color.green3}>
                     <Heading size={3} template={4}>Process</Heading>
                     <p>
                         Think about the business processes and software that you’re going to use to run your business efficiently and effectively.
@@ -63,7 +63,7 @@ const SettingBusiness = () => (
                     </GreenCurve>
                 </TopImageBox>
 
-                <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
+                <TopImageBox image="we-doubled-the-size-of-customer-service" imageAlt="employess of cleaning business" color={color.orange3}>
                     <Heading size={3} template={4}>Employees</Heading>
                     <p>
                         If you’re not doing all the cleaning yourself, you will need to hire employees to help you out. More on that below.

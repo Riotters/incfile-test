@@ -21,7 +21,7 @@ const Conclusion = () => (
     </Moon>
     <Container>
       <RocketWrapper>
-        <Image filename="lunching-rocket-6969" alt="rocket lunch" />
+        <Image filename="lunching-rocket-6969" alt="launch your business with incfile" />
       </RocketWrapper>
       <Content>
         <Heading size={4} style={{ fontFamily: "MarkPro-Bold, sans-serif", fontSize: "40px" }}>

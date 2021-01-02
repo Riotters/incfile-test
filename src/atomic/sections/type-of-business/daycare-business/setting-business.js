@@ -22,7 +22,7 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="location of daycare business" color={color.red3}>
           <h4>Location of Your Daycare: In Home or Out?</h4>
           <p>
             The location of your business will be critical. You want somewhere with a good amount of potential customers, but also with the right pricing so you don’t spend all your money on rent. You will need to make sure that the location is childproof to reduce the risk of injuries or incidents.
@@ -30,7 +30,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="display-ads" color={color.purple3}>
+        <TopImageBox image="display-ads" imageAlt="marketing of daycare business" color={color.purple3}>
           <Heading size={3} template={4}>Marketing Your Daycare Business</Heading>
           <p>
             Marketing will be a huge part of your daycare business. Naturally, you will need an awesome website, but you'll also need to get branding, newsletters, digital ads, social media accounts and other channels in place. Make sure that you clearly explain the unique approach you take with
@@ -38,12 +38,12 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side-4" color={color.green3}>
+        <TopImageBox image="side-4" imageAlt="equipment of daycare business" color={color.green3}>
           <Heading size={3} template={4}>Equipment for Your Daycare</Heading>
           <p>In addition to the computer equipment you will need to manage your business, you will also need toys, games, art supplies and more to keep the children occupied and entertained. This could include both inside and outside activities, so plan for both.</p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finance and taxes of daycare business" color={color.yellow3}>
           <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             You will need a separate business bank account for your construction business. You might also want to consider a business credit card. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile{" "}
@@ -51,12 +51,12 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
+        <TopImageBox image="we-doubled-the-size-of-customer-service" imageAlt="employess of daycare business" color={color.orange3}>
           <Heading size={3} template={4}>Employees</Heading>
           <p>Many daycare business owners don’t employ anyone else to begin with. Once your business gets off the ground you can look into hiring other qualified childcare professionals.</p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software process of daycare business" color={color.blue3}>
           <Heading size={3} template={4}>Software and Process</Heading>
           <p>The right software and processes will make running your daycare business much easier. See our list of the best apps and software at the end of this guide.</p>
         </TopImageBox>

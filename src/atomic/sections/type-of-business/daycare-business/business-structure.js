@@ -1,9 +1,9 @@
-import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import React from "react";
 import styled from "styled-components";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import { color } from "../../../../components/styles/colors";
+import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
 import PlaneIcon from "../../../../images/icons/plane.inline.svg";
 import RockerIcon from "../../../../images/icons/rocket.inline.svg";
@@ -51,7 +51,7 @@ const CoachBusinessStructure = () => (
     </Oval>
 
     <BusinessOwnerResponsibilities>
-      <ImageContent image="unique-business-green" paddingTop="60">
+      <ImageContent image="unique-business-green" imageAlt="choose right daycare business structure" paddingTop="60">
         <Heading size={2} template={3} left>
           Choose the Right Business Structure and Register Your Daycare Business
         </Heading>
@@ -270,13 +270,14 @@ const CoachBusinessStructure = () => (
         </Paragraph>
 
         <Button
-          theme="primary48"
-          width="365px"
-          arrow
-          content={{
-            url: `${process.env.ORDER_URL}/form-order-now.php`,
-            text: `Start your business with us, today!`,
-          }}
+            externalLink
+            theme="primary48"
+            width="365px"
+            arrow
+            content={{
+                url: `${process.env.ORDER_URL}/form-order-now.php`,
+                text: `Start your business with us, today!`,
+            }}
         />
       </ImageContent>
     </BusinessOwnerResponsibilities>

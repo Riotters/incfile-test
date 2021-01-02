@@ -16,7 +16,6 @@ export default function HTML(props) {
                 {process.env.ENABLE_GTM && (
                     <script
                     key="google_tag_manager"
-                    defer
                     dangerouslySetInnerHTML={{
                         __html: `
                         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -55,7 +54,7 @@ export default function HTML(props) {
                     <>
                         <script
                             key="click_attribution"
-                            defer={true}
+                            defer
                             dangerouslySetInnerHTML={{
                                 __html: `
                                 var clickAttributionData = clickAttributionData || {};
@@ -65,7 +64,7 @@ export default function HTML(props) {
                         />
                         <script
                             key="click_attribution_purchase"
-                            defer={true} 
+                            defer
                             src="https://clickattribution.com/scripts/v2/path-to-purchase.min.js"
                         />
                     </>
@@ -75,7 +74,7 @@ export default function HTML(props) {
                 {process.env.ENABLE_HOTJAR && (
                     <script
                         key="hotjar_function"
-                        defer={true}
+                        defer
                         dangerouslySetInnerHTML={{
                             __html: `
                             (function(h,o,t,j,a,r){
@@ -95,16 +94,11 @@ export default function HTML(props) {
                 {process.env.ENABLE_VWO && (
                     <script
                         key="vwo_function"
-                        defer={true}
+                        defer
                         dangerouslySetInnerHTML={{
                             __html: `
                             var _vwo_code = (function () {
-                                var account_id = 326263,
-                                    settings_tolerance = 2000,
-                                    library_tolerance = 2500,
-                                    use_existing_jquery = false,
-                                    
-                                    f = false, d = document;
+                                var account_id = 326263,settings_tolerance = 2000, library_tolerance = 2500, use_existing_jquery = false, f = false, d = document;
                                 return {
                                     use_existing_jquery: function () {
                                         return use_existing_jquery;
@@ -121,6 +115,7 @@ export default function HTML(props) {
                                     }, load: function (a) {
                                         var b = d.createElement('script');
                                         b.src = a;
+                                        b.async = true;
                                         b.type = 'text/javascript';
                                         b.innerText;
                                         b.onerror = function () {
@@ -152,21 +147,23 @@ export default function HTML(props) {
                     defer={true}
                     dangerouslySetInnerHTML={{
                         __html: `
-                            const linkPartners = document.querySelectorAll('a.partner_link');
+                            document.addEventListener('DOMContentLoaded', function(event) {
+                                const linkPartners = document.querySelectorAll('a.partner_link');
 
-                            linkPartners.forEach((link) => {
-                                link.addEventListener('click', (e) => {
-                                    e.preventDefault();
-                                    let partnerName = link.getAttribute('data-name');
-                                    let url = link.getAttribute('href');
-                            
-                                    dataLayer.push({
-                                        partnerName: partnerName,
-                                        event: 'partnerLinkClick'
-                                    });
-                                    window.open(url, '_blank');
-                                })
-                            });
+                                linkPartners.forEach((link) => {
+                                    link.addEventListener('click', function(e) {
+                                        e.preventDefault();
+                                        let partnerName = link.getAttribute('data-name');
+                                        let url = link.getAttribute('href');
+                                
+                                        dataLayer.push({
+                                            partnerName: partnerName,
+                                            event: 'partnerLinkClick'
+                                        });
+                                        window.open(url, '_blank', 'noopener, noreferrer');
+                                    })
+                                });
+                            })
                         `
                     }}
                 />

@@ -59,12 +59,15 @@ const FooterItem = styled.div`
 		font-size: 16px;
 		letter-spacing: 1px;
 		line-height: 14px;
-		text-transform: uppercase;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 10px;
 
 		@media (min-width: 992px) {
 			font-size: 12px;
 			letter-spacing: 1px;
-			opacity: 0.9;
+            opacity: 0.9;
+            margin-bottom: 24px;
 		}
 	}
 `;
@@ -118,9 +121,7 @@ const FooterSingle = ({ content }) => {
 			{content && (
 				<FooterItem>
 					{content.header && (
-						<button>
-							<h4>{content.header}</h4>
-						</button>
+						<h4>{content.header}</h4>
 					)}
 					{content.list && (
 						<List isOpen={menu}>
