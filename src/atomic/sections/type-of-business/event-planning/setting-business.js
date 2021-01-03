@@ -25,7 +25,7 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="display-ads" color={color.purple3}>
+        <TopImageBox image="display-ads" imageAlt="marketing of party planning business" color={color.purple3}>
           <Heading size={3} template={4}>
             Marketing Your Party Planning Business
           </Heading>
@@ -39,7 +39,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side-4" color={color.green3}>
+        <TopImageBox image="side-4" imageAlt="equipment of party planning business" color={color.green3}>
           <Heading size={3} template={4}>
             Equipment Needed by an Event Planner
           </Heading>
@@ -53,7 +53,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finance and taxes of party planning business" color={color.yellow3}>
           <Heading size={3} template={4}>
             Finances and Taxes
           </Heading>
@@ -69,7 +69,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software of party planning business" color={color.blue3}>
           <Heading size={3} template={4}>
             Software and Process
           </Heading>
@@ -84,7 +84,8 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox
-          image="we-doubled-the-size-of-customer-service"
+            image="we-doubled-the-size-of-customer-service"
+            imageAlt="employess of party planning business"
           color={color.orange3}
         >
           <Heading size={3} template={4}>
@@ -100,7 +101,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="location of party planning business" color={color.red3}>
           <Heading size={3} template={4}>
             Location of Your Planning Business
           </Heading>
@@ -151,14 +152,6 @@ const ImageBoxes = styled.div`
     margin: 0 auto;
   }
 `;
-
-const GreenCurve = styled.div`
-  position: absolute;
-  right: -115px;
-  bottom: -122px;
-  width: 115px;
-`;
-
 const Oval = styled.div`
   position: absolute;
   right: 0;

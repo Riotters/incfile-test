@@ -1,13 +1,13 @@
 import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
 import AccordionWithCounting from "../../../../atomic/organisms/accordion/accordion-with-counting";
 import { AccordionCounting } from "../../../../static/type-of-business/etsy-business";
 import ContentCenter from "../../../../atomic/partials/content-center";
 import TextCenterLayout from "../../../../atomic/partials/heading-left";
-import styled from "styled-components";
 import EtsyLinks from "../../../../atomic/sections/type-of-business/etsy-business/links";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 import { Paragraph } from "../../../atoms/typography/paragraph";
-import { Link } from "gatsby";
 
 const HireEmployees = () => (
   <BlueContainer>
@@ -26,7 +26,7 @@ const HireEmployees = () => (
           If you’re just running your Etsy business solo, you don’t need to worry about employees. If you are hiring people to work for you, you will need to know what to do. See <Link to="https://www.incfile.com/blog/post/avoid-confusion-when-hiring/">our 10 tips on hiring employees.</Link>
         </Paragraph>
       </div>
-      <AccordionWithCounting content={AccordionCounting} />
+      <AccordionWithCounting content={AccordionCounting} header />
     </ContentCenter>
 
     <EtsyLinks />

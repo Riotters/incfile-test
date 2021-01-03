@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState} from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
 
@@ -6,9 +6,7 @@ import { color } from "../../../atoms/styles/colors";
 import { shadow } from "../../../atoms/styles/shadows";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
-
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-
 import Accordion from "../../../organisms/accordion/accordion";
 
 import Container from "../../../container";
@@ -82,8 +80,6 @@ const ButtonList = [
     tabId: "finance",
   },
 ];
-
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
 const TabScrollable = ({ layout, columns }) => {
   const [isActive, setActive] = useState(0);
@@ -267,12 +263,13 @@ const TabScrollable = ({ layout, columns }) => {
 
                   <Paragraph big mixed>
                     The Small Business Administration provides{" "}
-                    <Link
-                      to="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits"
-                      target="_blank"
+                    <a
+                        href="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                       national or federal licenses and permits
-                    </Link>{" "}
+                    </a>{" "}
                     you might need.
                   </Paragraph>
                 </TextBlockWithImage>

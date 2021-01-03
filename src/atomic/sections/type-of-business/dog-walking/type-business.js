@@ -7,7 +7,6 @@ import {color} from "../../../../components/styles/colors";
 import {shadow} from "../../../../components/styles/shadows";
 import {typeBusiness} from "../../../../static/type-of-business/dog-walking";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-orange.inline.svg";
-import {Paragraph} from "../../../atoms/typography/paragraph";
 import {gradient} from "../../../atoms/styles/colors";
 
 const TypeBusiness = () => (
@@ -23,8 +22,9 @@ const TypeBusiness = () => (
         <Container>
             <Service>
                 <AdventagesBox>
-                    {typeBusiness.items.map(item => (
+                    {typeBusiness.items.map((item, i) => (
                         <Adventages
+                            key={i}
                             style={{textAlign: "center"}}
                             url={item.url}
                             urlText={item.urlText}

@@ -26,36 +26,56 @@ const ToolsAndLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="https://www.facebook.com/groups/1189572621083821/?ref=br_rs" textColor={color.blue1}
-                              hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink 
+                    externalLink 
+                        to="https://www.facebook.com/groups/1189572621083821/?ref=br_rs"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         Facebook — Event Planners Club
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.facebook.com/groups/5570471382/?ref=br_rs" textColor={color.blue1}
-                              hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink 
+                    externalLink 
+                        to="https://www.facebook.com/groups/5570471382/?ref=br_rs"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         Facebook — Event Planners Forum
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="http://classic.party411.com/cgi-bin/yabb/YaBB.cgi?board=professionals"
-                              textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink 
+                    externalLink 
+                    to="http://classic.party411.com/cgi-bin/yabb/YaBB.cgi?board=professionals"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         Party411 Party Planning Forum
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.facebook.com/groups/eventplannersgather/?ref=br_rs"
-                              textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink
+                        externalLink
+                        to="https://www.facebook.com/groups/eventplannersgather/?ref=br_rs"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         Facebook — Event Planners Gather
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.facebook.com/groups/eventplannerssociety/" textColor={color.blue1}
-                              hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink 
+                        externalLink 
+                        to="https://www.facebook.com/groups/eventplannerssociety/"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         Facebook — Event Planning Blueprint:
                         Community Forum For Event Planners
                     </PathLink>

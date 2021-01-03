@@ -19,7 +19,7 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="location of dog walking business" color={color.red3}>
           <Heading size={3} template={4}>Location of your Dog Walking or Pet Sitting business</Heading>
           <p>
             Your business location depends entirely on the type of canine business you’re running. If you’re walking dogs, you only need a place to administer your business, like a small home office. If you’re running a doggy daycare or a groomer, you may well need a specialized facility. It’s best
@@ -27,7 +27,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="display-ads" color={color.red3}>
+        <TopImageBox image="display-ads" imageAlt="marketing of dog walking business" color={color.red3}>
           <Heading size={3} template={4}>Marketing Your Dog Walking or Pet Sitting Business</Heading>
           <p>
             Marketing will be a huge part of your dog walking, pet sitting or other business. Naturally, you will need an awesome website, but you'll also need to get branding, digital ads, social media accounts and other channels in place. Most of your advertising will be local, and you may want to
@@ -35,22 +35,22 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
+        <TopImageBox image="we-doubled-the-size-of-customer-service" imageAlt="employess of dog walking business" color={color.orange3}>
           <Heading size={3} template={4}>Employees</Heading>
           <p>To start with, you will probably be running your business by yourself. Don’t think about hiring anyone else until you have a good customer base and can afford to expand.</p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software and process of dog walking business" color={color.blue3}>
           <Heading size={3} template={4}>Software and Process</Heading>
           <p>The right software and processes will make running your dog walking or pet sitting business much easier. See our list of the best apps and software at the end of this guide.</p>
         </TopImageBox>
 
-        <TopImageBox image="side-4" color={color.green3}>
+        <TopImageBox image="side-4" imageAlt="equipment of dog walking business" color={color.green3}>
           <Heading size={3} template={4}>Equipment for Your Dog Walking or Pet Sitting business</Heading>
           <p>Like the location, your equipment needs will vary depending on the type of business you run. A dog walking business might only need leashes, collars and treats, whereas a groomer will need all sorts of specialized tools and products.</p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finance and taxes of dog walking business" color={color.yellow3}>
           <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             If you’re set up as an LLC or corporation, you will need a separate business bank account for your canine concern. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile{" "}
@@ -85,13 +85,6 @@ const ImageBoxes = styled.div`
   @media (min-width: 970px) {
     margin: 0 auto;
   }
-`;
-
-const GreenCurve = styled.div`
-  position: absolute;
-  right: -115px;
-  bottom: -122px;
-  width: 115px;
 `;
 
 const Oval = styled.div`

@@ -50,9 +50,4 @@ const Wrapper = styled.div`
   position: relative;
 `;
 
-const Oval = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-`;
 export default Regulations;
