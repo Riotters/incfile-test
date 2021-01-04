@@ -5,7 +5,7 @@ export const top = {
   text: `$0 + State Fee & 1st Year FREE Registered Agent`,
   buttons: [
     {
-      text: `See detailed pricing`,
+      text: `See Detailed Pricing`,
       url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=PA`,
     },
   ],
@@ -515,7 +515,7 @@ export const namingYourBusiness = [
   {
     type: `button`,
     content: {
-      text: `Incfile trademark search and registration service`,
+      text: `Incfile Trademark Search and Registration Service`,
       url: `/trademark-name-search/`,
     },
     theme: `primary48`,
@@ -999,7 +999,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Get a foreign qualification/certificate of authority through Incfile`,
+      text: `Get a Foreign Qualification/Certificate of Authority Through Incfile`,
       url: `/manage-your-company/foreign-qualification/`,
     },
     theme: `primary48`,

@@ -12,15 +12,8 @@ import QuoteCard from "../../organisms/cards/quote-card";
 
 const Care = styled.section`
   position: relative;
-  padding-top: 48px;
-
-  @media (min-width: 769px) {
-    padding-top: 80px;
-  }
-
-  @media (min-width: 992px) {
-    padding-top: 104px;
-  }
+  padding-top: 56px;
+  padding-bottom: 64px;
 
   p {
     span {
@@ -72,15 +65,16 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 100%;
   grid-gap: 30px;
-  padding-top: 80px;
-  padding-bottom: 160px;
+  padding-top: 72px;
+  padding-bottom: 64px;
 
   @media (min-width: 769px) {
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: 992px) {
-    padding-top: 96px;
+    padding-top: 80px;
+    padding-bottom: 152px;
   }
 `;
 

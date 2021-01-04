@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   padding-top: 50px;
   position: relative;
   ${(props) => props.bgImage && `background-image: ${props.bgImage};`}
-  
+
   @media (min-width: 769px) {
     padding-top: 105px;
   }
@@ -20,10 +20,17 @@ const Benefits = ({ bgImage, page }) => {
     <Wrapper bgImage={bgImage}>
       <ContentCenter>
         <Heading size="2" template={3} style={{ textAlign: "center" }}>
-          Providing everything you need when you need it
+          Providing Everything You Need When You Need It
         </Heading>
-        <Paragraph big bottomMargin="48" maxWidth="770" style={{ textAlign: "center" }}>
-          As your business grows we'll be there every step of the way to make sure that you have the resources at hand to service your companies ongoing needs.
+        <Paragraph
+          big
+          bottomMargin="48"
+          maxWidth="770"
+          style={{ textAlign: "center" }}
+        >
+          As your business grows we'll be there every step of the way to make
+          sure that you have the resources at hand to service your companies
+          ongoing needs.
         </Paragraph>
         <Accordion page={page} />
       </ContentCenter>

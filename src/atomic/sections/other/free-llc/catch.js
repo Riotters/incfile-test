@@ -33,16 +33,20 @@ const CatchSection = ({ className, content }) => (
     <Oval className="oval" height="420" width="420" top="10" right="0">
       <Oval2SVG />
     </Oval>
-    <HeadingCenter headline={content.header} headlineWidth="700" bottomMargin="80" />
+    <HeadingCenter
+      headline={content.header}
+      headlineWidth="700"
+      bottomMargin="80"
+    />
     <ContentCenter contentWidth="970">
-      <Paragraph big maxWidth="770" bottomMargin="64">
+      <Paragraph big maxWidth="770">
         {content.text}
       </Paragraph>
       {/*<Table content={content.table} />*/}
-      <Paragraph big maxWidth="770" topMargin="64">
+      <Paragraph big maxWidth="770">
         {content.text2}
       </Paragraph>
-      <Paragraph big maxWidth="770" topMargin="64">
+      <Paragraph big maxWidth="770" bottomMargin="64">
         {content.text3}
       </Paragraph>
       <Button externalLink content={content.button} theme="primary56" arrow />

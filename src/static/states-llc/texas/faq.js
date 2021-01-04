@@ -81,7 +81,7 @@ export const faqContent = {
       },
       bgImage: [MrsLeftThumUp],
       content: {
-        title: `Incorporate through Incfile for $0 + the Texas state fee — and get a free Registered Agent for a year.`,
+        title: `Incorporate Through Incfile for $0 + the Texas State Fee — and Get a Free Registered Agent for a Year.`,
         button: {
           text: `Incorporate Your Texas LLC Now`,
           url: ORDER_URL,
@@ -135,10 +135,10 @@ export const faqContent = {
       },
       bgImage: [SCN],
       content: {
-        title: `Is your business name available in your state?`,
+        title: `Is Your Business Name Available in Your State?`,
         subtitle: `Find out using Incfile’s Business Name Search Tool.`,
         button: {
-          text: `Free Business name Search`,
+          text: `Free Business Name Search`,
           url: `/business-name-search/`,
         },
       },
@@ -173,7 +173,7 @@ export const faqContent = {
       },
       bgImage: [LightingOrange],
       content: {
-        title: `Trying to come up with a creative business name?`,
+        title: `Trying To Come up With a Creative Business Name?`,
         subtitle: `Try Incfile’s Business Name Generator to brainstorm ideas.`,
         button: {
           text: `Business Name Generator`,
@@ -196,7 +196,7 @@ export const faqContent = {
       template: 3,
       marginBottom: 24,
       left: true,
-      content: `What are Texas Articles of Incorporation?`,
+      content: `What Are Texas Articles of Incorporation?`,
     },
     {
       type: `paragraph`,
@@ -236,10 +236,10 @@ export const faqContent = {
       },
       bgImage: [BgBoxTrust],
       content: {
-        title: `Have Incfile act as your registered agent for only $119 a year, or get your first year free when you incorporate your business through us.`,
+        title: `Have Incfile Act as Your Registered Agent for Only $119 a Year, or Get Your First Year Free When You Incorporate Your Business Through Us.`,
         arrayButtons: [
           {
-            text: `Registered Agennt Service`,
+            text: `Registered Agent Service`,
             theme: `primary56`,
             url: `/manage-your-company/registered-agent/`,
           },
@@ -272,9 +272,9 @@ export const faqContent = {
       },
       bgImage: [BgBoxChangeOfAgent],
       content: {
-        title: `Need to change your registered agent? Have Incfile file the paperwork for you.`,
+        title: `Need To Change Your Registered Agent? Have Incfile File the Paperwork for You.`,
         button: {
-          text: `Change Of Registred Agent Service`,
+          text: `Change Of Registered Agent Service`,
           url: `/manage-your-company/change-of-registered-agent/`,
         },
       },
@@ -369,7 +369,7 @@ export const faqContent = {
       template: 3,
       marginBottom: 24,
       left: true,
-      content: `When is Texas Sales Tax Due?`,
+      content: `When Is Texas Sales Tax Due?`,
     },
     {
       type: `paragraph`,
@@ -409,7 +409,7 @@ export const faqContent = {
       template: 3,
       marginBottom: 24,
       left: true,
-      content: `Do I Need a License to Do Business in Texas?`,
+      content: `Do I Need a License To Do Business in Texas?`,
     },
     {
       type: `paragraph`,

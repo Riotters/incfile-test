@@ -18,13 +18,17 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding-top: 100px;
+  padding-top: 32px;
 
   @media screen and (max-width: 512px) {
     .oval {
       max-width: 100vw;
       overflow: hidden;
     }
+  }
+
+  @media (min-width: 769px) {
+    padding-top: 80px;
   }
 
   @media (min-width: 992px) {
@@ -50,7 +54,11 @@ const PacketsSection = ({ className, fullInfo, data, compacted = false }) => {
       image: "",
       button: {
         text: "Get the Silver package",
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=${shortState(entityState)}`,
+        url: `${
+          process.env.ORDER_URL
+        }/form-order-now.php?entityType=CCorporation&entityState=${shortState(
+          entityState
+        )}`,
       },
       fees: [
         {
@@ -63,7 +71,11 @@ const PacketsSection = ({ className, fullInfo, data, compacted = false }) => {
         },
       ],
       include: "The Silver Services includes:",
-      list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+      list: [
+        "Preparing & Filing the Articles \n" + "of Organization",
+        "Unlimited Name Searches",
+        "FREE Registered Agent Service for \n" + "a year!",
+      ],
       fee: "",
       savings: "",
     },
@@ -75,7 +87,11 @@ const PacketsSection = ({ className, fullInfo, data, compacted = false }) => {
       image: "",
       button: {
         text: "Get the Gold package",
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=${shortState(entityState)}`,
+        url: `${
+          process.env.ORDER_URL
+        }/form-order-now.php?entityType=CCorporation&entityState=${shortState(
+          entityState
+        )}`,
       },
       fees: [
         {
@@ -88,7 +104,11 @@ const PacketsSection = ({ className, fullInfo, data, compacted = false }) => {
         },
       ],
       include: "The Gold Services includes:",
-      list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+      list: [
+        "Preparing & Filing the Articles \n" + "of Organization",
+        "Unlimited Name Searches",
+        "FREE Registered Agent Service for \n" + "a year!",
+      ],
       fee: "",
       savings: "SAVE $468",
     },
@@ -100,7 +120,11 @@ const PacketsSection = ({ className, fullInfo, data, compacted = false }) => {
       image: "",
       button: {
         text: "Get the Platinum package",
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=${shortState(entityState)}`,
+        url: `${
+          process.env.ORDER_URL
+        }/form-order-now.php?entityType=CCorporation&entityState=${shortState(
+          entityState
+        )}`,
       },
       fees: [
         {
@@ -113,7 +137,11 @@ const PacketsSection = ({ className, fullInfo, data, compacted = false }) => {
         },
       ],
       include: "The Platinum Services includes:",
-      list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+      list: [
+        "Preparing & Filing the Articles \n" + "of Organization",
+        "Unlimited Name Searches",
+        "FREE Registered Agent Service for \n" + "a year!",
+      ],
       fee: "",
       savings: "SAVE $908",
     },
@@ -128,10 +156,19 @@ const PacketsSection = ({ className, fullInfo, data, compacted = false }) => {
         </Oval>
         <ContentCenter>
           <div style={{ position: "relative" }}>
-            <Curve top="53" left="-35" color={color.purple1} className="curve-left">
+            <Curve
+              top="53"
+              left="-35"
+              color={color.purple1}
+              className="curve-left"
+            >
               <CurveSVG />
             </Curve>
-            <Cards content={priceOptions} fullInfo={fullInfo} compacted={compacted} />
+            <Cards
+              content={priceOptions}
+              fullInfo={fullInfo}
+              compacted={compacted}
+            />
           </div>
         </ContentCenter>
       </Wrapper>

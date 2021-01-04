@@ -1,16 +1,16 @@
-import React from 'react';
+import React from "react";
 import Helmet from "react-helmet";
 
 const FAQSchemaFL = () => {
-    return (
-        <Helmet>
-            <script type="application/ld+json">{`
+  return (
+    <Helmet>
+      <script type="application/ld+json">{`
                 {
                     "@context": "https://schema.org",
                     "@type": "FAQPage",
                     "mainEntity": [{
                       "@type": "Question",
-                      "name": "What do I need to form an LLC in Florida?",
+                      "name": "What Do I Need To Form an LLC in Florida?",
                       "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "Start by determining who will be involved in your LLC and get the relevant information from them. Next, <a href='https://www.incfile.com/business-name-search/'>search for your proposed business name</a> for your Florida LLC to see if it’s already in use. After that, provide an official business address and
@@ -25,7 +25,7 @@ const FAQSchemaFL = () => {
                       }
                     },{
                       "@type": "Question",
-                      "name": "Does a Florida LLC need an EIN?",
+                      "name": "Does a Florida LLC Need an Ein?",
                       "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "Single-member Florida LLCs don’t strictly need an Employer Identification Number (EIN) unless you’re going to hire employees, but we recommend obtaining one anyway. Multi-member Florida LLCs must have an EIN. You can get an EIN directly from the IRS or have
@@ -33,7 +33,7 @@ const FAQSchemaFL = () => {
                       }
                     },{
                       "@type": "Question",
-                      "name": "Do I need a business license in Florida?",
+                      "name": "Do I Need a Business License in Florida?",
                       "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "The types of business licenses your Florida LLC may need are based on several factors. These include: local licenses for the city, county or municipality where you’re doing business; specialized licenses depending on the products and services you provide and other licenses for the industry you operate in. Incfile provides a
@@ -41,14 +41,14 @@ const FAQSchemaFL = () => {
                       }
                     },{
                       "@type": "Question",
-                      "name": "Do LLCs pay taxes in Florida?",
+                      "name": "Do LLCs Pay Taxes in Florida?",
                       "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "Florida LLCs do not pay income or self-employment tax. These taxes are “passed through” to the owners and are taxed when the individual files their 1040 income tax returns. Florida LLCs do need to pay sales tax if they sell taxable products or services."
                       }
                     },{
                       "@type": "Question",
-                      "name": "What’s the tax rate for LLCs in the State of Florida?",
+                      "name": "What’s the Tax Rate for LLCs in the State of Florida?",
                       "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "Florida LLCs themselves don’t pay income or self-employment taxes. Those taxes “pass-through” to the members’ 1040 individual income tax forms where <a href='https://www.incfile.com/blog/post/2020-tax-brackets/'>federal income tax</a> (rates start at 10 percent) and
@@ -56,28 +56,28 @@ const FAQSchemaFL = () => {
                       }
                     },{
                       "@type": "Question",
-                      "name": "Where do I go to file Florida sales tax?",
+                      "name": "Where Do I Go To File Florida Sales Tax?",
                       "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "You can apply for a sales tax ID and file your sales tax through the <a href='https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx' target='_blank'>Florida Department of Revenue website.</a>"
                       }
                     },{
                       "@type": "Question",
-                      "name": "How do I register a business name in Florida?",
+                      "name": "How Do I Register a Business Name in Florida?",
                       "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "Your Florida LLC name will automatically be registered when you file your Articles of Organization with the Division of Corporations or have <a href='https://orders.incfile.com/form-order-now.php?entityType=LLC&entityState=FL'>Incfile do so on your behalf.</a>"
                       }
                     },{
                       "@type": "Question",
-                      "name": "Where do I go to file my LLC paperwork in Florida?",
+                      "name": "Where Do I Go To File My LLC Paperwork in Florida?",
                       "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "You can file most of the LLC business paperwork you need through Sunbiz.org, the Florida Division of Corporations’ online portal. This includes your Articles of Organization, annual reports, fictitious names, dissolutions and certificates of status."
                       }
                     },{
                       "@type": "Question",
-                      "name": "What’s the form to file an LLC in Florida?",
+                      "name": "What’s the Form To File an LLC in Florida?",
                       "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "The form you need to file to start an LLC is called your “Articles of Organization.” You file this form with the Florida Division of Corporations, or we can help you gather the information needed and
@@ -101,14 +101,14 @@ const FAQSchemaFL = () => {
                       }
                     },{
                       "@type": "Question",
-                      "name": "Does Florida have Professional LLCs?",
+                      "name": "Does Florida Have Professional LLCs?",
                       "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "Yes. Florida allows certain professions to form professional LLCs in the state. The professions allowed are: certified public accountants, public accountants, chiropractic physicians, dentists, osteopathic physicians, physicians and surgeons, doctors of medicine, doctors of dentistry, podiatric physicians, chiropodists, architects, veterinarians, attorneys at law and life insurance agents."
                       }
                     },{
                       "@type": "Question",
-                      "name": "How much does it cost to get an LLC in Florida?",
+                      "name": "How Much Does It Cost To Get an LLC in Florida?",
                       "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "The current fee for incorporating an LLC in Florida is $125, payable to the Division of Corporations. If you need your LLC formed quickly, Incfile can expedite the process for an additional fee of $50. Specialist incorporation businesses may also charge an additional fee for completing and submitting paperwork on your behalf. Incfile does not charge any additional fees, meaning you only pay the state fee of $125 for
@@ -116,14 +116,14 @@ const FAQSchemaFL = () => {
                       }
                     },{
                       "@type": "Question",
-                      "name": "How long does it take to file an LLC in Florida?",
+                      "name": "How Long Does It Take To File an LLC in Florida?",
                       "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "If filing your Florida LLC with Incfile, the standard processing time from filing your Articles of Organization to being legally created as a Florida LLC is 15 business days. You can also pay an expedited filing fee to have your Florida LLC created in five days."
                       }
                     },{
                       "@type": "Question",
-                      "name": "How do I find available business names in Florida?",
+                      "name": "How Do I Find Available Business Names in Florida?",
                       "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "You will need to find a unique business name for your Florida LLC that’s not already in use in the state. You can <a href='https://www.incfile.com/business-name-search/'>search for business names</a> on the Sunbiz website, or Incfile can search for business names on your behalf. Florida
@@ -131,14 +131,14 @@ const FAQSchemaFL = () => {
                       }
                     },{
                       "@type": "Question",
-                      "name": "Do I need an Operating Agreement in Florida?",
+                      "name": "Do I Need an Operating Agreement in Florida? in Florida?",
                       "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "You are not required to have an Operating Agreement for a Florida LLC. We do recommend <a href='https://www.incfile.com/research-topics/llc-info/the-llc-operating-agreement/'>creating an Operating Agreement anyway</a>, as this agreement will specify how the business is run, how profits will be split, the ways that members will interact and other important factors."
                       }
                     },{
                       "@type": "Question",
-                      "name": "How do I dissolve an LLC in Florida?",
+                      "name": "How Do I Dissolve an LLC in Florida?",
                       "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "If you want to dissolve your business, you will need to complete and file “Articles of Dissolution.” These are available on the Sunbiz.org website."
@@ -146,8 +146,8 @@ const FAQSchemaFL = () => {
                     }]
                 }
             `}</script>
-        </Helmet>
-    )
-}
+    </Helmet>
+  );
+};
 
 export default FAQSchemaFL;

@@ -26,9 +26,13 @@ const Rocket = ({ urlParams }) => (
       <Content>
         <Heading
           size={4}
-          style={{ fontFamily: "MarkPro, sans-serif", fontSize: "40px", lineHeight: `48px` }}
+          style={{
+            fontFamily: "MarkPro, sans-serif",
+            fontSize: "40px",
+            lineHeight: `48px`,
+          }}
         >
-          Launch your business with Incfile
+          Launch Your Business With Incfile
         </Heading>
         <Paragraph big mixed>
           No Contracts. No Surprises.
@@ -40,7 +44,9 @@ const Rocket = ({ urlParams }) => (
           arrow
           width="240px"
           content={{
-            url: `${process.env.ORDER_URL}/form-order-now.php${urlParams ?? ''}`,
+            url: `${process.env.ORDER_URL}/form-order-now.php${
+              urlParams ?? ""
+            }`,
             text: "Launch your business!",
           }}
         />

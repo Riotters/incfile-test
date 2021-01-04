@@ -28,15 +28,15 @@ const Grid = styled.div`
   grid-template-columns: 100%;
   grid-gap: 30px;
   padding-top: 48px;
-  padding-bottom: 32px;
+  padding-bottom: 24px;
 
   @media (min-width: 769px) {
     grid-template-columns: 1fr 1fr;
-    padding-top: 80px;
+    padding-top: 72px;
   }
 
   @media (min-width: 992px) {
-    padding-top: 128px;
+    padding-top: 96px;
     padding-bottom: 64px;
   }
 `;
