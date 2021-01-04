@@ -1,15 +1,18 @@
 import React from 'react';
-import { getFullPricesAndFilings } from '../../api/Api';
-import ContentMap from "../../atomic/partials/content-map";
-import LLCLayout from "../../atomic/partials/states-llc/arizona";
-// Components
-import LeftTabPages from '../../atomic/states-llc/left-tab-pages';
-import MainPageContent from '../../atomic/states-llc/page-content';
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
-import { tabPages } from "../../static/states-llc/alabama/general";
+
+// Components
+import LeftTabPages from '../../atomic/states-llc/left-tab-pages'
+import MainPageContent from '../../atomic/states-llc/page-content'
+import LLCLayout from "../../atomic/partials/states-llc/arizona"
+import ContentMap from "../../atomic/partials/content-map";
+
 // Content
-import { namingYourBusiness, top } from "../../static/states-llc/alabama/home";
+import { top, namingYourBusiness } from "../../static/states-llc/alabama/home";
+import { tabPages } from "../../static/states-llc/alabama/general";
+import { getFullPricesAndFilings } from '../../api/Api';
+
 
 const BusinessNamesPage = () => {
     const [dataApi, setDataApi] = React.useState({});

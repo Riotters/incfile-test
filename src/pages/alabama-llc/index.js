@@ -1,15 +1,17 @@
 import React from "react";
-import { getFullPricesAndFilings } from '../../api/Api';
-import ContentMap from "../../atomic/partials/content-map";
-import LLCLayout from "../../atomic/partials/states-llc/louisiana";
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
+
 // Components
 import LeftTabPages from "../../atomic/states-llc/left-tab-pages";
 import MainPageContent from "../../atomic/states-llc/page-content";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import { tabPages } from "../../static/states-llc/alabama/general";
+import LLCLayout from "../../atomic/partials/states-llc/louisiana";
+import ContentMap from "../../atomic/partials/content-map";
+
 // Content
-import { howToGuide, top } from "../../static/states-llc/alabama/home";
+import { top, howToGuide } from "../../static/states-llc/alabama/home";
+import { tabPages } from "../../static/states-llc/alabama/general";
+import { getFullPricesAndFilings } from '../../api/Api';
 
 
 function AlabamaIndexPage() {
