@@ -15,6 +15,7 @@ import SEO from "../../../components/seo";
 import Top from "../top";
 import ButtonVideo from "../../molecules/buttons/button-video";
 import { statesArray } from "../../../static/states-v2";
+import { getUrlParam } from "../../../helpers/utils";
 
 const PPCIncfileLayout = ({
   stateCode,
@@ -26,63 +27,66 @@ const PPCIncfileLayout = ({
   robots,
   content,
 }) => {
-  const state = stateCode
-    ? statesArray.filter((state) => state.code === stateCode)[0]
-    : "";
-  const buttonInfo = {
-    text: `Get Started`,
-    url: `${process.env.ORDER_URL}/form-order-now.php?entityType=${entityType}&entityState=${stateCode}`,
-  };
+    const gclidQuery = getUrlParam('gclid') ? `&gclid=${getUrlParam('gclid')}` : '';
+    
+    const state = stateCode
+        ? statesArray.filter((state) => state.code === stateCode)[0]
+        : "";
+    
+    const buttonInfo = {
+        text: `Get Started`,
+        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=${entityType}${stateCode ? `&entityState=${stateCode}` : ''}${gclidQuery}`,
+    };
 
-  const customers = [
-    {
-      star: true,
-      name: `John F.`,
-      city: ``,
-      text: `I had an issue with a report that I had filed and received a call from
+    const customers = [
+        {
+            star: true,
+            name: `John F.`,
+            city: ``,
+            text: `I had an issue with a report that I had filed and received a call from
 			Andrew in a very timely manner and he cleared everything up for me and
 			got me the documents that I needed. He went above and beyond than
 			expected and I greatly appreciated it.`,
-    },
-    {
-      star: true,
-      name: `Jade B.`,
-      city: ``,
-      text: `Very easy to use, there are no questions if I'm doing things wrong or if
+        },
+        {
+            star: true,
+            name: `Jade B.`,
+            city: ``,
+            text: `Very easy to use, there are no questions if I'm doing things wrong or if
 			I'm forgetting anything. Incfile has it covered.`,
-    },
-    {
-      star: true,
-      name: `- Charne T.`,
-      city: ``,
-      text: `The product information is clear and orders are simple and easy to complete. Incfile.com has been a great help! `,
-    },
-    {
-      star: true,
-      name: `Linda D.`,
-      city: ``,
-      text: `I am very satisfied with the services I received from Incfile. My
+        },
+        {
+            star: true,
+            name: `- Charne T.`,
+            city: ``,
+            text: `The product information is clear and orders are simple and easy to complete. Incfile.com has been a great help! `,
+        },
+        {
+            star: true,
+            name: `Linda D.`,
+            city: ``,
+            text: `I am very satisfied with the services I received from Incfile. My
 			business has been using this service for 3years, keeping me updated on
 			all facets pertaining to business. Easy access to my account. Overall a
 			great asset to my business.`,
-    },
-    {
-      star: true,
-      name: `Susan H.`,
-      city: ``,
-      text: `I normally get my corp filings from another company, but after
+        },
+        {
+            star: true,
+            name: `Susan H.`,
+            city: ``,
+            text: `I normally get my corp filings from another company, but after
 			purchasing a corp thru Incfile.com, and how fast I received everything,
 			this is my new go-to for legal business filings. Highly recommend!`,
-    },
-    {
-      star: true,
-      name: `David D.`,
-      city: ``,
-      text: `I have had a great experience starting and maintaining my business
+        },
+        {
+            star: true,
+            name: `David D.`,
+            city: ``,
+            text: `I have had a great experience starting and maintaining my business
 			through incfile.com. They take care of the details / reporting documents
 			so I can tend to the success of my business!`,
-    },
-  ];
+        },
+    ];
 
   return (
     <>
@@ -146,7 +150,7 @@ const PPCIncfileLayout = ({
         text1={content.rocket.text1}
         text2=" "
         textButton={content.rocket.textButton}
-        url={`?entityType=${entityType}&entityState=${stateCode}`}
+        url={`?entityType=${entityType}${stateCode ? `&entityState=${stateCode}` : ''}${gclidQuery}`}
       />
     </>
   );
