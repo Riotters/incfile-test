@@ -35,9 +35,13 @@ const Benefits = () => {
         <Oval2SVG />
       </Oval>
       <ContentCenter className="heading">
-        <Heading size={2} template={3}>Providing everything you need when you need it</Heading>
+        <Heading size={2} template={3}>
+          Providing Everything You Need When You Need It
+        </Heading>
         <Paragraph big bottomMargin="48" maxWidth="770">
-            As your business grows we'll be there every step of the way to make sure that you have the resources at hand to service your companies ongoing needs.
+          As your business grows we'll be there every step of the way to make
+          sure that you have the resources at hand to service your companies
+          ongoing needs.
         </Paragraph>
       </ContentCenter>
       <Container>

@@ -5,7 +5,7 @@ export const top = {
   text: `$0 + State Fee & 1st Year FREE Registered Agent`,
   buttons: [
     {
-      text: `See detailed pricing`,
+      text: `See Detailed Pricing`,
       url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=AK`,
     },
   ],
@@ -95,7 +95,7 @@ export const howToGuide = [
           <a href="/alaska-llc/registered-agents-alaska-llc/">Learn more about Alaska Registered Agents.</a>`,
         },
         {
-          question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
+          question: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
           answer: `You will need an EIN to identify your business with the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Alaska LLC business formation process.`,
         },
         {
@@ -528,7 +528,7 @@ export const namingYourBusiness = [
   {
     type: `button`,
     content: {
-      text: `Incfile trademark search and registration service`,
+      text: `Incfile Trademark Search and Registration Service`,
       url: `/trademark-name-search/`,
     },
     theme: `primary48`,
@@ -687,11 +687,12 @@ export const registeredAgent = [
     content: `We are authorized to conduct business in Alaska and can legally act as your Registered Agent. `,
     marginBottom: 16,
   },
-    {
-        type: "text",
-        content: "Here’s what the Incfile Alaska Registered Agent service provides for your LLC:",
-        marginBottom: 24
-    },
+  {
+    type: "text",
+    content:
+      "Here’s what the Incfile Alaska Registered Agent service provides for your LLC:",
+    marginBottom: 24,
+  },
   {
     type: `list-dot`,
     content: {
@@ -1048,7 +1049,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Get a foreign qualification/certificate of authority through Incfile`,
+      text: `Get a Foreign Qualification/Certificate of Authority Through Incfile`,
       url: `/manage-your-company/foreign-qualification/`,
     },
     theme: `primary48`,
@@ -1248,11 +1249,12 @@ export const feesAndRequirments = [
     content: `Your business formation documents state certain facts about your Alaska business when it was originally formed. Over time, these facts might change — if they do, you need to file “Articles of Amendment” with the Division of Corporations. You can do this yourself or have Incfile complete the filing on your behalf. `,
     marginBottom: 16,
   },
-    {
-        type: "text",
-        content: "Areas you might want to file Alaska Articles of Amendment for include:",
-        marginBottom: 16
-    },
+  {
+    type: "text",
+    content:
+      "Areas you might want to file Alaska Articles of Amendment for include:",
+    marginBottom: 16,
+  },
   {
     type: `list-dot`,
     content: {
@@ -1425,11 +1427,11 @@ export const businessTaxes = [
     content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to your local or regional authority. Alaska sales tax is collected at the point of purchase. Alaska sales tax rates do vary depending on the region, county or city where you are located, although Alaska does not have a statewide sales tax rate.`,
     marginBottom: 16,
   },
-    {
-        type: "text",
-        content: "You will typically need to collect Alaska sales tax on:",
-        marginBottom: 16
-    },
+  {
+    type: "text",
+    content: "You will typically need to collect Alaska sales tax on:",
+    marginBottom: 16,
+  },
   {
     type: `list-dot`,
     content: {

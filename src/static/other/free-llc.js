@@ -78,7 +78,7 @@ export const start = {
 };
 
 export const industry = {
-  header: `Incfile is an industry stalwart`,
+  header: `Incfile Is an Industry Stalwart`,
   text: [
     {
       text: `We're entrepreneurs, just like you. Since starting, we have assisted more than 500,000 entrepreneurs and small business owners form and grow their businesses. Our team is down-to-earth, and we know our stuff. Our mission is to provide you with a superior and modern experience at an unparalleled value. Read about our customer service team and`,
@@ -92,7 +92,7 @@ export const industry = {
 };
 
 export const isCatch = {
-  header: `Is there a Catch?`,
+  header: `Is There a Catch?`,
   text: `$0 business formation might appear too good to be true when there are other providers charge you $150+ for the same service (and going to an attorney will cost you even more).`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`],
@@ -104,7 +104,7 @@ export const isCatch = {
   text2: `Since 2004 we’ve been perfecting our service and as a result of our tech-enabled process efficiencies, we’re able to keep the costs down. So, we wanted to pass this incredible value on to you. And when we work with you for the lifetime of your business, it’s your participation that truly fuels our service and success.`,
   text3: `The catch-free result is low-cost, personalized business formation with fast and friendly service. For clever people with big ideas.`,
   button: {
-    text: `Start your LLC Now`,
+    text: `Start Your LLC Now`,
     url: `${process.env.ORDER_URL}/form-order-now.php`,
   },
 };

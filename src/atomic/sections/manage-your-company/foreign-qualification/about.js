@@ -26,28 +26,36 @@ const AboutSection = ({ className, content }) => (
       <OvalSVG />
     </Oval>
     <ImageContent image="fqualification" alt="Filing a Foreign Qualification">
-        {content.header && (
-            <Heading size={2} template={3} left bottomMargin="24">
-                {parse(content.header)}
-            </Heading>
-        )}
-        {content.text && (
-            <Paragraph big bottomMargin="40">
-                {parse(content.text)}
-            </Paragraph>
-        )}
-      <IconTextColorBox color={color.babyblue3} Icon={IconSVG} content={content.box} bottomMargin="48" rounded curve curveColor={color.yellow1} />
-        {content.text2 && (
-            <Paragraph big bottomMargin="48">
-                {parse(content.text2)}
-            </Paragraph>
-        )}
-        {content.header2 && (
-            <Heading size={2} template={3} left bottomMargin="32">
-                {parse(content.header2)}
-            </Heading>
-        )}
-        {content.link && <ArrowLink bottomMargin="0" content={content.link} />}
+      {content.header && (
+        <Heading size={2} template={3} left bottomMargin="24">
+          {parse(content.header)}
+        </Heading>
+      )}
+      {content.text && (
+        <Paragraph big bottomMargin="40">
+          {parse(content.text)}
+        </Paragraph>
+      )}
+      <IconTextColorBox
+        color={color.babyblue3}
+        Icon={IconSVG}
+        content={content.box}
+        bottomMargin="48"
+        rounded
+        curve
+        curveColor={color.yellow1}
+      />
+      {content.text2 && (
+        <Paragraph big bottomMargin="48">
+          {parse(content.text2)}
+        </Paragraph>
+      )}
+      {content.header2 && (
+        <Heading size={2} template={3} left bottomMargin="32">
+          {parse(content.header2)}
+        </Heading>
+      )}
+      {content.link && <ArrowLink bottomMargin="0" content={content.link} />}
     </ImageContent>
   </About>
 );

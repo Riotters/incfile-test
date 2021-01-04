@@ -137,7 +137,7 @@ export const filingFeeAndRequirementContent = {
       theme: `secondary56`,
       width: "600px",
       content: {
-        text: `Get A Foreign Qualification/Certificate Of Authority Through Incfile`,
+        text: `Get a Foreign Qualification/Certificate of Authority Through Incfile`,
         url: `/manage-your-company/foreign-qualification/`,
       },
     },
@@ -187,10 +187,10 @@ export const filingFeeAndRequirementContent = {
       type: `paragraph`,
       content: `Your Florida LLC may need certain licenses and permits to comply with specific requirements. These business permits and licenses might be issued by Florida , regional or federal organizations. Some of the associated fees only need to be paid once, while others have ongoing charges. `,
     },
-      {
-          type: "paragraph",
-          content: "Permits and licenses vary based on:",
-      },
+    {
+      type: "paragraph",
+      content: "Permits and licenses vary based on:",
+    },
     {
       type: `iconListColorBox`,
       styles: { marginBottom: `55px` },
@@ -332,7 +332,8 @@ export const filingFeeAndRequirementContent = {
       styles: { marginBottom: `55px` },
       boxColor: color.blue3,
       content: {
-        text: "Areas you might want to file a Florida Certificate of Amendment for include:",
+        text:
+          "Areas you might want to file a Florida Certificate of Amendment for include:",
         list: [
           `Adding, removing or changing a Florida LLC member or manager`,
           `Changing the business address of your LLC`,
