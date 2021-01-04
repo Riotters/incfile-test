@@ -129,7 +129,7 @@ export const howToGuide = [
 		type: `list-dot`,
 		content: {
 			list: [
-				`<a href="https://sos.kansas.gov/business/" target="_blank" rel="noopener noreferrer">Kansas Secretary of State for forming and running your KS LLC</a>`,
+				`<a href="https://sos.ks.gov/business/" target="_blank" rel="noopener noreferrer">Kansas Secretary of State for forming and running your KS LLC</a>`,
 				`<a href="https://www.dol.ks.gov/" target="_blank" rel="noopener noreferrer">Kansas Department of Labor for KS employers and hiring</a>`,
 				`<a href="https://www.ksrevenue.org/business.html" target="_blank" rel="noopener noreferrer">Kansas Department of Revenue for KS taxes</a>`,
 			],
@@ -524,7 +524,7 @@ export const namingYourBusiness = [
 			items: [
 				{
 					question: `How Do I Search for My Kansas LLC Business Name?`,
-					answer: `Just go to the <a href="https://www.kansas.gov/bess/flow/main;jsessionid=75A489D3F7DC1B9EB12A5554F21768D4.aptcs03-inst0?execution=e1s1" target="_blank" rel="noopener noreferrer">business name search tool</a> and enter your proposed business name. You can search the register of the Kansas Secretary of State, which will tell you if there are any KS corporations or LLCs with that name.`,
+					answer: `Just go to the <a href="https://www.kansas.gov/bess/flow/main;jsessionid=9AC89C4BF99688812C57FB1ADA34D015.aptcs03-inst0" target="_blank" rel="noopener noreferrer">business name search tool</a> and enter your proposed business name. You can search the register of the Kansas Secretary of State, which will tell you if there are any KS corporations or LLCs with that name.`,
 				},
 				{
 					question: `Are There Any Rules on Naming My Kansas LLC?`,
@@ -1628,7 +1628,7 @@ export const businessTaxes = [
 						},
 						{
 							type: `paragraph`,
-							content: `<a href="https://www.dol.ks.gov/KansasEmployer.aspx" target="_blank" rel="noopener noreferrer">Get more requirements from the Kansas Department of Labor website.</a>`,
+							content: `<a href="https://www.dol.ks.gov/employers" target="_blank" rel="noopener noreferrer">Get more requirements from the Kansas Department of Labor website.</a>`,
 							marginBottom: 48,
 						},
 					],

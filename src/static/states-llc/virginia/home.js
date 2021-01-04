@@ -138,7 +138,7 @@ export const howToGuide = [
 		type: `list-dot`,
 		content: {
 			list: [
-				`<a href="https://www.scc.virginia.gov/index.aspx" target="_blank" rel="noopener noreferrer">Virginia State Corporation Commission for forming and running your VA LLC</a>`,
+				`<a href="https://www.scc.virginia.gov/pages/Home" target="_blank" rel="noopener noreferrer">Virginia State Corporation Commission for forming and running your VA LLC</a>`,
 				`<a href="https://www.vec.virginia.gov/employers/agricultural-services/labor-laws" target="_blank" rel="noopener noreferrer">Virginia Department of Labor and Industry for VA employers and hiring</a>`,
 				`<a href="https://www.tax.virginia.gov/" target="_blank" rel="noopener noreferrer">Virginia Department of Taxation for VA taxes</a>`,
 			],
@@ -304,7 +304,7 @@ export const namingYourBusiness = [
 	},
 	{
 		type: `text`,
-		content: `<a href="https://sccefile.scc.virginia.gov/NameAvailability" target="_blank" rel="noopener noreferrer">Virginia State Corporation Commission business name search tool</a>`,
+		content: `<a href="https://cis.scc.virginia.gov/" target="_blank" rel="noopener noreferrer">Virginia State Corporation Commission business name search tool</a>`,
 		marginBottom: 48,
 	},
 	{
@@ -428,7 +428,7 @@ export const namingYourBusiness = [
 	},
 	{
 		type: `text`,
-		content: `<a href="https://www.scc.virginia.gov/clk/befaq/name.aspx#a7" target="_blank" rel="noopener noreferrer">More on Virginia State Corporation Commission business naming rules.</a>`,
+		content: `<a href="https://www.scc.virginia.gov/pages/Business-Entity-Names#a7" target="_blank" rel="noopener noreferrer">More on Virginia State Corporation Commission business naming rules.</a>`,
 		marginBottom: 48,
 	},
 	{
@@ -504,7 +504,7 @@ export const namingYourBusiness = [
 			items: [
 				{
 					question: `How Do I Search for My Virginia LLC Business Name?`,
-					answer: `<p>Just go to the <a href="https://sccefile.scc.virginia.gov/NameAvailability" target="_blank" rel="noopener noreferrer">business name search tool</a> and enter your proposed business name. You can search the register of the Virginia State Corporation Commission, which will tell you if there are any VA corporations or LLCs with that name.`,
+					answer: `<p>Just go to the <a href="https://cis.scc.virginia.gov/" target="_blank" rel="noopener noreferrer">business name search tool</a> and enter your proposed business name. You can search the register of the Virginia State Corporation Commission, which will tell you if there are any VA corporations or LLCs with that name.`,
 				},
 				{
 					question: `Are There Any Rules on Naming My Virginia LLC?`,

@@ -413,7 +413,7 @@ export const namingYourBusiness = [
 		content: {
 			list: [
 				`If you don’t want to form your Nebraska LLC right now, you can reserve the business name with the Nebraska Secretary of State. You will need to complete an Application for Reservation of Limited Liability Company Name and file it with the NE SOS. You do not need to reserve a name if you are forming your business right away.
-                <a href="http://www.sos.ne.gov/business/corp_serv/pdf/llcafter2011/Form%20Reservation%20of%20LLC%20Name%20_Form_.pdf/" target="_blank" rel="noopener noreferrer">Nebraska SOS LLC name reservation form.</a>`,
+                <a href="https://sos.nebraska.gov/business/corp_serv/pdf/llcafter2011/Form%20Reservation%20of%20LLC%20Name%20_Form_.pdf/" target="_blank" rel="noopener noreferrer">Nebraska SOS LLC name reservation form.</a>`,
 				`If you’re ready to start your Nebraska LLC, you can formally file your Certificate of Organization with the Nebraska SOS, or <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=NE">let Incfile take care of it for you</a>.`,
 			],
 		},

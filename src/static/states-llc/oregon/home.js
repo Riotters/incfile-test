@@ -1376,7 +1376,7 @@ export const businessTaxes = [
 	},
 	{
 		type: `text`,
-		content: `<a href="https://revenueonline.dor.oregon.gov/tap/_/"  target="_blank" rel="noopener noreferrer">Get details on the Oregon state tax here.</a> `,
+		content: `<a href="https://revenueonline.dor.oregon.gov/tap/GetWlbToken?WLB_REDIRECT=_%2F&WLB_SIG=UlR49vvrUcmVgHS95%2BHz9aZM2bQ2CfsRKK9g%2Fj5e7Vo%3D"  target="_blank" rel="noopener noreferrer">Get details on the Oregon state tax here.</a> `,
 		marginBottom: 32,
 	},
 	{

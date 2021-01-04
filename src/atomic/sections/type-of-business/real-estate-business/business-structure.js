@@ -134,7 +134,6 @@ const BusinessStructure = () => (
             The most common type of business entity. An LLC is fast, simple and
             inexpensive to setup and maintain. It protects your personal
             finances and assets and is a great way to start your real estate.
-
           </Paragraph>
         </TextBlockWithImage>
 
@@ -284,7 +283,7 @@ const BusinessStructure = () => (
           </Link>
         </Paragraph>
 
-        <Heading size={3} style={{ maxWidth: "100%" }} bottomMargin={0}>
+        <Heading size={3} style={{ maxWidth: "100%" }}>
           Special Considerations for Setting up a Real Estate Business Entity
         </Heading>
 
@@ -297,7 +296,7 @@ const BusinessStructure = () => (
 
         <Paragraph
           big
-          style={{ paddingTop: "48px", paddingBottom: 0 }}
+          style={{ paddingTop: "120px", paddingBottom: 0 }}
           mixed={true}
         >
           For more information on the advantages and disadvantages of different

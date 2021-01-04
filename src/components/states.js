@@ -24,12 +24,12 @@ export const states = {
 		},
 		{
 			name: "California",
-			url: "http://www.calgold.ca.gov/",
+			url: "https://www.calgold.ca.gov/",
 			corporation: "/california-corporation/",
 		},
 		{
 			name: "Colorado",
-			url: "https://www.colorado.gov/pacific/dora/licenses-permits-and-filings",
+			url: "https://dora.colorado.gov/licensing-and-permitting",
 			corporation: "/colorado-corporation/",
 		},
 		{
@@ -50,7 +50,7 @@ export const states = {
 		},
 		{
 			name: "Georgia",
-			url: "http://sos.ga.gov/index.php/?section=licensing",
+			url: "https://sos.ga.gov/index.php/licensing",
 			corporation: "/georgia-corporation/",
 		},
 		{
@@ -151,7 +151,7 @@ export const states = {
 		},
 		{
 			name: "New Jersey",
-			url: "https://www.nj.gov/njbusiness/licenses/",
+			url: "https://business.nj.gov/licensing-and-certification-guide",
 			corporation: "/new-jersey-corporation/",
 		},
 		{
@@ -176,7 +176,7 @@ export const states = {
 		},
 		{
 			name: "Ohio",
-			url: "http://business.ohio.gov/licensing/",
+			url: "https://ohio.gov/wps/portal/gov/site/business",
 			corporation: "/ohio-corporation/",
 		},
 		{
@@ -203,7 +203,7 @@ export const states = {
 		},
 		{
 			name: "South Carolina",
-			url: "http://sc.gov/business/Pages/LICENSESANDPERMITSBUSINESS.aspx",
+			url: "https://sc.gov/business/Pages/LICENSESANDPERMITSBUSINESS.aspx",
 			corporation: "/south-carolina-corporation/",
 		},
 		{
@@ -223,7 +223,7 @@ export const states = {
 		},
 		{
 			name: "Utah",
-			url: "http://www.dopl.utah.gov/renewal.html",
+			url: "https://dopl.utah.gov/renewal.html",
 			corporation: "/utah-corporation/",
 		},
 		{
@@ -254,7 +254,7 @@ export const states = {
 		},
 		{
 			name: "Wisconsin",
-			url: "http://dsps.wi.gov/Licenses-Permits/Credentialing",
+			url: "https://dsps.wi.gov/pages/Professions/Default.aspx",
 			corporation: "/wisconsin-corporation/",
 		},
 		{

@@ -7,16 +7,26 @@ import { Link } from "gatsby";
 
 const Regulations = () => (
   <Wrapper>
-    <Container style={{ paddingTop: "100px", paddingBottom: "100px" }} width={750}>
-      <Heading size={2} template={4} left style={{ fontSize: "40px", lineHeight: `45px` }}>
+    <Container
+      style={{ paddingTop: "100px", paddingBottom: "100px" }}
+      width={750}
+    >
+      <Heading
+        size={2}
+        template={4}
+        left
+        style={{ fontSize: "40px", lineHeight: `45px` }}
+      >
         Rules, Regulations and Taxes for Your Business
       </Heading>
       <Paragraph big mixed={true}>
-        Of course, along with running a business there are certain rules, regulations and legalities you need to be aware of. You will need to explore local, state and federal licenses and permits, and{" "}
-        <Link to="/business-license-research-package/">we can also help out with your licensing needs</Link>.
-      </Paragraph>
-      <Paragraph big mixed>
-        As a rule of thumb, we recommend keeping back around a third of your earnings to pay your taxes. We can <Link to="/business-accounting/">prepare and file your tax returns for you</Link>.
+        Of course, along with running a business there are certain rules,
+        regulations and legalities you need to be aware of. You will need to
+        explore local, state and federal licenses and permits, and{" "}
+        <Link to="/business-license-research-package/">
+          we can also help out with your licensing needs
+        </Link>
+        .
       </Paragraph>
     </Container>
   </Wrapper>

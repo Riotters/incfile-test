@@ -267,16 +267,7 @@ const RealEstateBusiness = () => (
               business opportunities.
             </Paragraph>
 
-            <Paragraph
-              big
-              style={{
-                fontFamily: "Avenir",
-                fontWeight: "900",
-                color: color.black,
-              }}
-            >
-              How to Invest in Real Estate
-            </Paragraph>
+            <Heading size={3}>How to Invest in Real Estate</Heading>
 
             <Paragraph big>
               There are several ways to create a real estate investing business,
@@ -489,10 +480,10 @@ const RealEstateBusiness = () => (
               partnering with other related businesses for mutual benefit.
             </Paragraph>
 
-            <Paragraph big style={{ marginTop: "48px", fontWeight: "bold" }}>
+            <Heading size={4}>
               What Does a Day in the Life of a Real Estate Entrepreneur Look
               Like?
-            </Paragraph>
+            </Heading>
             <Paragraph big>
               Each day is going to be different, but you'll likely be doing the
               following:

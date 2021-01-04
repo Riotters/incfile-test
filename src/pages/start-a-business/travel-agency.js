@@ -251,6 +251,10 @@ in the U.S. by 2020"
               headline="Over the last five years, the number of travel agency businesses has grown by almost 4 percent"
               width="100%"
             />
+            <Paragraph big marginTop={32}>
+              The time to take advantage is now — we’ll help you be a part of
+              that success!
+            </Paragraph>
           </PanelWrapper>
         </TabPanel>
         <TabPanel>
