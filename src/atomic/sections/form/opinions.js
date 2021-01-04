@@ -8,14 +8,14 @@ import PPCQuotesSection from "../../partials/ppc/quotes-section";
 
 const Opinions = styled.section`
   position: relative;
-  padding-top: 56px;
+  padding-top: 64px;
 
   @media (min-width: 769px) {
     padding-top: 80px;
   }
 
   @media (min-width: 992px) {
-    padding-top: 104px;
+    padding-top: 64px;
   }
 `;
 
@@ -40,7 +40,7 @@ const OpinionsSection = ({
     {customers && (
       <Customers
         content={{ customers: customers }}
-        padding="0 0 16px 0"
+        padding="0 0 24px 0"
         paddingLG="48px 0"
       />
     )}

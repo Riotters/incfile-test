@@ -101,9 +101,9 @@ const PPCCorporationLayoutV2 = ({ stateCode, videoID, content }) => {
           textWidth="590"
           text={service.text}
           bottomMargin="48"
-          bottomMarginLG="80"
+          bottomMarginLG="48"
         />
-        <ContentCenter style={{ marginBottom: "149px" }}>
+        <ContentCenter style={{ marginBottom: "120px" }}>
           <Curve top="-115" left="80" rotate={180} color={color.blue2}>
             <Curve2SVG />
           </Curve>
@@ -166,16 +166,26 @@ const QuestionSection = styled.section`
   background-image: ${gradient.orange3};
   position: relative;
   padding-top: 100px;
-  margin-top: 52px;
-  margin-bottom: 148px;
+  margin-top: 24px;
+  margin-bottom: 56px;
+
+  @media (min-width: 769px) {
+    margin-top: 56px;
+    margin-bottom: 148px;
+  }
 `;
 
 const ServiceSection = styled.section`
   background-image: ${gradient.blue3};
-  padding-top: 100px;
+  padding-top: 56px;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 56px;
   overflow: hidden;
+
+  @media (min-width: 769px) {
+    padding-top: 120px;
+    margin-bottom: 104px;
+  }
 `;
 
 export default PPCCorporationLayoutV2;

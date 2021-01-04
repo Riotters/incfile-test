@@ -8,7 +8,7 @@ import Container from "../../container";
 
 const Section = styled.section`
   position: relative;
-  padding: 72px 0 24px;
+  padding: 64px 0 32px;
   background: linear-gradient(
     rgba(255, 255, 255, 0) 4%,
     rgb(254, 246, 237) 99%
@@ -18,11 +18,11 @@ const Section = styled.section`
   }
 
   @media (min-width: 769px) {
-    padding: 104px 0 40px;
+    padding: 104px 0 48px;
   }
 
   @media (min-width: 992px) {
-    padding: 144px 0 56px;
+    padding: 144px 0 88px;
   }
 `;
 
