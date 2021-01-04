@@ -1,79 +1,20 @@
-import React from "react";
-import { Link } from "gatsby";
-import styled from "styled-components";
 import parse from "html-react-parser";
-
-// Components
-import BoxCTA from "../box-cta";
+import React from "react";
+import styled from "styled-components";
+import { Heading } from "../../atoms/typography/heading";
+import { Paragraph } from "../../atoms/typography/paragraph";
 import Button from "../../molecules/buttons/button";
 import ArrowLink from "../../molecules/buttons/text";
-import { Heading } from "../../atoms/typography/heading";
-import { color } from "../../../components/styles/colors";
-import { Paragraph } from "../../atoms/typography/paragraph";
-import NumericBoxedList from "../../organisms/lists/numeric-boxed-list";
-import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
-import AcccordionCounting from "../tab-acccordion-with-counting";
-import Accordion from "../../organisms/accordion/accordion";
 import TextBoxed from "../../molecules/static-check/circle-checkmark-text-boxed";
+import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
+import Accordion from "../../organisms/accordion/accordion";
 import NumericList from "../../organisms/lists/numeric-boxed-list";
+// Components
+import BoxCTA from "../box-cta";
+import AcccordionCounting from "../tab-acccordion-with-counting";
+
 
 const Wrapper = styled.div``;
-
-const ListFlex = styled.div`
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  gap: 15px;
-  margin: 40px 0;
-
-  @media (min-width: 400px) {
-    flex-flow: row wrap;
-  }
-
-  @media (min-width: 992px) {
-    justify-content: flex-start;
-  }
-
-  & > div {
-    width: 100%;
-    max-width: calc(50% - 30px);
-
-    @media (min-width: 769px) {
-      max-width: 100%;
-    }
-
-    p {
-      width: 100%;
-    }
-  }
-`;
-
-const WrapperLink = styled(Link)`
-  margin-bottom: 8px;
-
-  .box {
-    display: flex;
-    align-items: flex-started;
-    border-radius: 5px;
-    padding: 24px;
-
-    .circle {
-      transform: rotate(90deg);
-      margin-right: 24px;
-    }
-
-    p {
-      margin-bottom: 0;
-    }
-  }
-`;
-
-const BoxButtonLinks = styled.div`
-  .article-link:not(:last-child) {
-    display: block;
-    margin-bottom: 8px;
-  }
-`;
 
 const BusinessNames = ({ content }) => {
   return (
