@@ -5,7 +5,7 @@ export const top = {
   text: `$0 + State Fee & 1st Year FREE Registered Agent`,
   buttons: [
     {
-      text: `See detailed pricing`,
+      text: `See Detailed Pricing`,
       url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MT`,
     },
   ],
@@ -93,7 +93,7 @@ export const howToGuide = [
           <a href="/montana-llc/registered-agents-montana-llc/">Learn more about Montana Registered Agents.</a>`,
         },
         {
-          question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
+          question: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
           answer: `You will need an EIN to identify your business with the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Montana LLC business formation process.`,
         },
         {
@@ -510,7 +510,7 @@ export const namingYourBusiness = [
   {
     type: `button`,
     content: {
-      text: `Incfile trademark search and registration service`,
+      text: `Incfile Trademark Search and Registration Service`,
       url: `/trademark-name-search/`,
     },
     theme: `primary48`,
@@ -1019,7 +1019,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Get a foreign qualification/certificate of authority through Incfile`,
+      text: `Get a Foreign Qualification/Certificate of Authority Through Incfile`,
       url: `/manage-your-company/foreign-qualification/`,
     },
     theme: `primary48`,

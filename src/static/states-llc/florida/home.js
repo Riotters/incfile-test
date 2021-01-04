@@ -343,7 +343,8 @@ export const HomePageContent = {
 
 export const hsForm = {
   header: "Please enter the business name information",
-  header2: "Let us know where we can let you know if your business name is available",
+  header2:
+    "Let us know where we can let you know if your business name is available",
   hs_form_id: `7d5d3157-09f4-40f0-bfee-eff448ed0e24`,
   fileDownload: ``, // TODO: Add the correct file for download
   button: {

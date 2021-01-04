@@ -20,7 +20,7 @@ export const faqContent = {
     {
       type: `heading`,
       size: 2,
-      content: `What do I need to form an LLC in Florida?`,
+      content: `What Do I Need To Form an LLC in Florida?`,
     },
     {
       type: `paragraph`,
@@ -35,7 +35,7 @@ export const faqContent = {
     {
       type: `heading`,
       size: 2,
-      content: `Does a Florida LLC need an EIN?`,
+      content: `Does a Florida LLC Need an Ein?`,
     },
     {
       type: `paragraph`,
@@ -44,7 +44,7 @@ export const faqContent = {
     {
       type: `heading`,
       size: 2,
-      content: `Do I need a business license in Florida?`,
+      content: `Do I Need a Business License in Florida?`,
     },
     {
       type: `paragraph`,
@@ -55,7 +55,7 @@ export const faqContent = {
     {
       type: `heading`,
       size: 2,
-      content: `Do LLCs pay taxes in Florida?`,
+      content: `Do LLCs Pay Taxes in Florida?`,
     },
     {
       type: `paragraph`,
@@ -65,7 +65,7 @@ export const faqContent = {
     {
       type: `heading`,
       size: 2,
-      content: `What’s the tax rate for LLCs in the State of Florida?`,
+      content: `What’s the Tax Rate for LLCs in the State of Florida?`,
     },
     {
       type: `paragraph`,
@@ -84,7 +84,7 @@ export const faqContent = {
     {
       type: `heading`,
       size: 2,
-      content: `Where do I go to file Florida sales tax?`,
+      content: `Where Do I Go To File Florida Sales Tax?`,
     },
     {
       type: `paragraph`,
@@ -93,7 +93,7 @@ export const faqContent = {
     {
       type: `heading`,
       size: 2,
-      content: `How do I register a business name in Florida?`,
+      content: `How Do I Register a Business Name in Florida?`,
     },
     {
       type: `paragraph`,
@@ -102,7 +102,7 @@ export const faqContent = {
     {
       type: `heading`,
       size: 2,
-      content: `Where do I go to file my LLC paperwork in Florida?`,
+      content: `Where Do I Go To File My LLC Paperwork in Florida?`,
     },
     {
       type: `paragraph`,
@@ -111,7 +111,7 @@ export const faqContent = {
     {
       type: `heading`,
       size: 2,
-      content: `What’s the form to file an LLC in Florida?`,
+      content: `What’s the Form To File an LLC in Florida?`,
     },
     {
       type: `paragraph`,
@@ -129,7 +129,7 @@ export const faqContent = {
     {
       type: `heading`,
       size: 2,
-      content: `Does Florida have Professional LLCs?`,
+      content: `Does Florida Have Professional LLCs?`,
     },
     {
       type: `paragraph`,
@@ -138,7 +138,7 @@ export const faqContent = {
     {
       type: `heading`,
       size: 2,
-      content: `How much does it cost to get an LLC in Florida?`,
+      content: `How Much Does It Cost To Get an LLC in Florida?`,
     },
     {
       type: `paragraph`,
@@ -147,7 +147,7 @@ export const faqContent = {
     {
       type: `heading`,
       size: 2,
-      content: `How long does it take to file an LLC in Florida?`,
+      content: `How Long Does It Take To File an LLC in Florida?`,
     },
     {
       type: `paragraph`,
@@ -156,11 +156,11 @@ export const faqContent = {
     {
       type: `heading`,
       size: 2,
-      content: `How do I find available business names in Florida?`,
+      content: `How Do I Find Available Business Names in Florida?`,
     },
     {
       type: `paragraph`,
-      content: `ou will need to find a unique business name for your Florida LLC that’s not already in use in the state. You can search for business names on the Sunbiz website, or Incfile can search for business names on your behalf. Florida does have certain rules about words you can and can’t use in your business name.`,
+      content: `You will need to find a unique business name for your Florida LLC that’s not already in use in the state. You can search for business names on the Sunbiz website, or Incfile can search for business names on your behalf. Florida does have certain rules about words you can and can’t use in your business name.`,
     },
     {
       type: `box-cta`,
@@ -168,10 +168,10 @@ export const faqContent = {
       styles: { fontSize: `22px` },
       bgImage: [BgBoxChangeOfAgent],
       content: {
-        title: `Is your business name available in your state?`,
+        title: `Is Your Business Name Available in Your State?`,
         subtitle: `Find out using Incfile’s Business Name Search Tool.`,
         button: {
-          text: `Free business name search`,
+          text: `Free Business Name Search`,
           url: `/business-name-search/`,
         },
       },
@@ -182,10 +182,10 @@ export const faqContent = {
       styles: { fontSize: `22px` },
       bgImage: [BgBoxChangeOfAgent],
       content: {
-        title: `Trying to come up with a creative business name?`,
+        title: `Trying To Come up With a Creative Business Name?`,
         subtitle: `Try Incfile’s Business Name Generator to brainstorm ideas.`,
         button: {
-          text: `Business name generator`,
+          text: `Business Name Generator`,
           url: `/business-name-generator/`,
         },
       },
@@ -193,7 +193,7 @@ export const faqContent = {
     {
       type: `heading`,
       size: 2,
-      content: `Do I need an Operating Agreement in Florida?`,
+      content: `Do I Need an Operating Agreement in Florida? in Florida?`,
     },
     {
       type: `paragraph`,
@@ -204,7 +204,7 @@ export const faqContent = {
     {
       type: `heading`,
       size: 2,
-      content: `How do I dissolve an LLC in Florida?`,
+      content: `How Do I Dissolve an LLC in Florida?`,
     },
     {
       type: `paragraph`,

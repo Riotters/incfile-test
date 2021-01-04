@@ -39,10 +39,10 @@ const Benefits = () => {
     <Wrapper>
       <Container>
         <TextCenterLayout
-            headline="Providing everything you need when you need it"
-            text="As your business grows we'll be there every step of the way to make sure that you
+          headline="Providing Everything You Need When You Need It"
+          text="As your business grows we'll be there every step of the way to make sure that you
                 have the resources at hand to serve your companies ongoing needs."
-            headlineWidth="700"
+          headlineWidth="700"
         />
         <Grid>
           <Benefit
@@ -57,10 +57,26 @@ const Benefits = () => {
             text="Required by govermental and private agencies to validate a companies status in 
                     order to facilitate specified transactions."
           />
-          <Benefit Icon={Icon7} headline="Foreign Qualification" text="Filed when you need to expand your entity to new states." />
-          <Benefit Icon={Icon4} headline="Amendment" text="Filed if a company requires changes to membership, addresses or company name." />
-          <Benefit Icon={Icon5} headline="Dissolution" text="Used to formally terminate the existence of an entity." />
-          <Benefit Icon={Icon6} headline="Order Registered Agent" text="Order registered agent service and receive your new registered agent information immediately." />
+          <Benefit
+            Icon={Icon7}
+            headline="Foreign Qualification"
+            text="Filed when you need to expand your entity to new states."
+          />
+          <Benefit
+            Icon={Icon4}
+            headline="Amendment"
+            text="Filed if a company requires changes to membership, addresses or company name."
+          />
+          <Benefit
+            Icon={Icon5}
+            headline="Dissolution"
+            text="Used to formally terminate the existence of an entity."
+          />
+          <Benefit
+            Icon={Icon6}
+            headline="Order Registered Agent"
+            text="Order registered agent service and receive your new registered agent information immediately."
+          />
           <Benefit
             Icon={Icon3}
             headline="Corporate LLC Kit"
@@ -74,7 +90,11 @@ const Benefits = () => {
             text="Determine all business licenses and permits required at the federal, state, county and 
                     municipal level"
           />
-          <Benefit Icon={Icon9} headline="EIN/TAX ID#" text="An EIN is required to open a bank account, file taxes and sumbit payroll taxes." />
+          <Benefit
+            Icon={Icon9}
+            headline="EIN/TAX ID#"
+            text="An EIN is required to open a bank account, file taxes and sumbit payroll taxes."
+          />
         </Grid>
       </Container>
     </Wrapper>

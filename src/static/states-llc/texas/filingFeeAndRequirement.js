@@ -140,7 +140,7 @@ export const filingFeeAndRequirementContent = {
       theme: `secondary56`,
       width: "600px",
       content: {
-        text: `Get A Foreign Qualification/Certificate Of Authority Through Incfile`,
+        text: `Get a Foreign Qualification/Certificate of Authority Through Incfile`,
         url: `/manage-your-company/foreign-qualification/`,
       },
     },

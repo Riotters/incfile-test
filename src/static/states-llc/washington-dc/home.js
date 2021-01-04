@@ -5,7 +5,7 @@ export const top = {
   text: `$0 + State Fee & 1st Year FREE Registered Agent`,
   buttons: [
     {
-      text: `See detailed pricing`,
+      text: `See Detailed Pricing`,
       url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DC`,
     },
   ],
@@ -442,7 +442,7 @@ export const namingYourBusiness = [
   {
     type: `button`,
     content: {
-      text: `Incfile Trademark Search and Registration service`,
+      text: `Incfile Trademark Search and Registration Service`,
       url: `/trademark-name-search/`,
     },
     theme: `primary48`,
@@ -895,7 +895,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `INCORPORATE YOUR Washington DC LLC THROUGH INCFILE TODAY`,
+      text: `Incorporate Your Washington DC LLC Through Incfile Today`,
       url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=DC`,
     },
     theme: `primary48`,
@@ -917,7 +917,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `GET AN EIN FOR YOUR Washington DC LLC THROUGH INCFILE`,
+      text: `Get an EIN for Your Washington DC LLC Through Incfile`,
       url: `/manage-your-company/tax-id-ein/`,
     },
     theme: `primary48`,
