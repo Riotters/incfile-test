@@ -25,7 +25,6 @@ import AbsoluteShapeCurveElement from "../../elements/absolute-shape-curve-e";
 import ActionButton from "../../molecules/buttons/button-action";
 
 // Bg box CTA
-import BgBoxPersonalOA from "../../../images/icons/states/personal-oa.inline.png";
 import BgBoxHandlePaperWorks from "../../../images/icons/states/handle-paperwork.inline.png";
 import BgBoxBusinessNameSearchTool from "../../../images/icons/states/business-name-search-tool.inline.png";
 import AnnualReportFilingBox from "../annual-report-and-filing-box";
@@ -113,8 +112,8 @@ const HowToGuide = ({ content, data, modalAction }) => {
 			</Paragraph>
 
 			<ListFlex>
-				{content.whyChoose.lists.map((item) => (
-					<TextCheck>
+				{content.whyChoose.lists.map((item, i) => (
+					<TextCheck key={i}>
 						<p>{item}</p>
 					</TextCheck>
 				))}
@@ -137,14 +136,15 @@ const HowToGuide = ({ content, data, modalAction }) => {
 
 			<div id="video">
 				<LightBoxVideo
-					thumbnailVideo="ny-llc-video-thumbnail-01"
+                    thumbnailVideo="ny-llc-video-thumbnail-01"
+                    alt="how to start an LLC in new york"
 					videoID="8ddZw2R7Hig"
 					bottomMargin="32"
 				/>
 			</div>
 
-			{content.mainSteps.navSteps.map((step) => (
-				<Link to="/#" onClick={(e) => handleMenuStepClick(step.blockID, e)}>
+			{content.mainSteps.navSteps.map((step, i) => (
+				<Link key={i} to="/#" onClick={(e) => handleMenuStepClick(step.blockID, e)}>
 					<WhiteBoxLink bottomMargin="8px" padding="24px" flex>
 						<Circle
 							circleColor={color.orange3}
@@ -248,8 +248,8 @@ const HowToGuide = ({ content, data, modalAction }) => {
 				</Paragraph>
 
 				<BoxButtonLinks>
-					{content.mainSteps.step3.groupBtn1.map((button) => (
-						<BoxedButton className="article-link" content={button} ellipsis />
+					{content.mainSteps.step3.groupBtn1.map((button, j) => (
+						<BoxedButton key={j} className="article-link" content={button} ellipsis />
 					))}
 				</BoxButtonLinks>
 			</TextBlockWithNumberCounting>
@@ -295,8 +295,8 @@ const HowToGuide = ({ content, data, modalAction }) => {
 					<AbsoluteShapeCurveElement right="0" top="-30px">
 						<ShapeCurve color={color.purple1} />
 					</AbsoluteShapeCurveElement>
-					{content.mainSteps.step4.certificate_info.map((item) => (
-						<WhiteBoxColumn padding="24px" bottomMargin="8px">
+					{content.mainSteps.step4.certificate_info.map((item, i) => (
+						<WhiteBoxColumn padding="24px" bottomMargin="8px" key={i}>
 							<Paragraph
 								mixed={true}
 								bottomMargin={0}
@@ -425,7 +425,7 @@ const HowToGuide = ({ content, data, modalAction }) => {
 			</TextBlockWithNumberCounting>
 
 			{content.otherInfo.map((item, i) => (
-				<div>
+				<div key={i}>
 					{item.type === "heading" && (
 						<Heading size={item.size} style={{ marginTop: `42px` }}>
 							{item.content}
@@ -439,8 +439,8 @@ const HowToGuide = ({ content, data, modalAction }) => {
 					)}
 
 					{item.type === "arrow-links" &&
-						item.content.map((link) => (
-							<ArrowLink url={link.url} style={link.style}>
+						item.content.map((link, i) => (
+							<ArrowLink key={i} url={link.url} style={link.style}>
 								{link.text}
 							</ArrowLink>
 						))}

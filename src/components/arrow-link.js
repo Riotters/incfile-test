@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "gatsby";
 import styled from "styled-components";
+import PropTypes from "prop-types";
+import { Link } from "gatsby";
 import ArrowSVG from "../images/arrow.inline.svg";
 
 const Wrapper = styled(Link)`
@@ -73,23 +74,39 @@ const Arrow = styled.div`
   }
 `;
 
-const ArrowLink = ({ children, className, url, externalLink, ...rest }) => (
-  <>
-    {!externalLink ? (
-      <Wrapper to={url ?? "/"} className={className} {...rest}>
-        <Arrow>
-          <ArrowSVG />
-        </Arrow>
-        <span>{children}</span>
-      </Wrapper>
-    ) : (
-      <WrapperExternal href={url ?? "#"} className={className} target="_blank" rel="noopener noreferrer" {...rest}>
-        <Arrow>
-          <ArrowSVG />
-        </Arrow>
-        <span>{children}</span>
-      </WrapperExternal>
-    )}
-  </>
+const ArrowLink = ({ children, className, url, externalLink, arrow, rel, target, ...rest }) => (
+    <>
+        {!externalLink ? (
+            <Wrapper to={url ?? "/"} className={className} {...rest}>
+                <Arrow>
+                    <ArrowSVG />
+                </Arrow>
+                <span>{children}</span>
+            </Wrapper>
+        ) : (
+                <WrapperExternal href={url ?? "#"} className={className} target={target} rel={rel} {...rest}>
+                    { arrow &&
+                        <Arrow>
+                            <ArrowSVG />
+                        </Arrow>
+                    }
+                    <span>{children}</span>
+                </WrapperExternal>
+            )}
+    </>
 );
+
 export default ArrowLink;
+
+ArrowLink.propTypes = {
+    rel: PropTypes.string,
+    arrow: PropTypes.bool,
+    externalLink: PropTypes.bool,
+}
+
+ArrowLink.defaultProps = {
+    rel: `noopener noreferrer nofollow`,
+    target: `_blank`,
+    arrow: true,
+    externalLink: false,
+}

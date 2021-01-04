@@ -17,7 +17,6 @@ import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/books
 import BusinessPlan from "../../atomic/sections/type-of-business/bookstore/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/bookstore/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/bookstore/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/bookstore/order-now";
 import Regulations from "../../atomic/sections/type-of-business/bookstore/regulations";
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/bookstore/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/bookstore/taxes";
@@ -31,6 +30,7 @@ import OvalSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.svg
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/bookstore";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const GymPersonalTraining = () => (
   <Layout>
@@ -42,7 +42,7 @@ const GymPersonalTraining = () => (
     <Top
       ovalColor="sun"
       imageName="bookstore-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="set up a bookstore business"
       headlineWidth={700}
     >
       <h1>How to Open an Independent Bookstore Business</h1>
@@ -54,13 +54,14 @@ const GymPersonalTraining = () => (
       </p>
       <ButtonsBox>
         <Button
-          theme="primary56"
-          marginMD="0 24px 0 0"
-          arrow
-          content={{
-            url: `${process.env.ORDER_URL}/form-order-now.php`,
-            text: "Start Now",
-          }}
+            externalLink
+            theme="primary56"
+            marginMD="0 24px 0 0"
+            arrow
+            content={{
+                url: `${process.env.ORDER_URL}/form-order-now.php`,
+                text: "Start Now",
+            }}
         />
       </ButtonsBox>
 
@@ -490,7 +491,7 @@ const GymPersonalTraining = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

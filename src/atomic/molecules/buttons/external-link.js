@@ -111,7 +111,25 @@ const Arrow = styled.div`
 `;
 
 const ExternalLink = ({ content, id, className, theme, height, width, arrow, arrow2, margin, marginSM, marginMD, marginLG, padding, right, wrap, onClick, target }) => (
-  <Wrapper id={id} className={className} href={content.url ? content.url : content} target={target} height={height} width={width} arrow={arrow} arrow2={arrow2} theme={theme} margin={margin} marginSM={marginSM} marginMD={marginMD} marginLG={marginLG} padding={padding} wrap={wrap} onClick={onClick}>
+    <Wrapper
+        id={id}
+        className={className}
+        href={content.url ? content.url : content}
+        target={target}
+        rel="noopener noreferrer nofollow"
+        height={height}
+        width={width}
+        arrow={arrow}
+        arrow2={arrow2}
+        theme={theme}
+        margin={margin}
+        marginSM={marginSM}
+        marginMD={marginMD}
+        marginLG={marginLG}
+        padding={padding}
+        wrap={wrap}
+        onClick={onClick}
+    >
     {content.text ? content.text : content}
     {arrow && (
       <Arrow className="arrow1" theme={theme} right={right}>

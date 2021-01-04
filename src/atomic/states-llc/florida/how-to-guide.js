@@ -163,7 +163,6 @@ const HowToGuide = ({ content, data, modalAction }) => {
         imageBackgroundColor={color.white}
         imageShadowColor={shadow.white2}
         imageShadowOpacity={0.5}
-        boxShadow={false}
         paddingLeft={0}
         style={{ marginTop: "100px" }}
         circleShadowY={40}
@@ -194,7 +193,6 @@ const HowToGuide = ({ content, data, modalAction }) => {
         imageBackgroundColor={color.white}
         imageShadowColor={shadow.white2}
         imageShadowOpacity={0.5}
-        boxShadow={false}
         paddingLeft={0}
         style={{ marginTop: "70px" }}
         circleShadowY={40}
@@ -217,7 +215,6 @@ const HowToGuide = ({ content, data, modalAction }) => {
         imageBackgroundColor={color.white}
         imageShadowColor={shadow.white2}
         imageShadowOpacity={0.5}
-        boxShadow={false}
         paddingLeft={0}
         style={{ marginTop: "70px" }}
         circleShadowY={40}
@@ -252,7 +249,6 @@ const HowToGuide = ({ content, data, modalAction }) => {
         imageBackgroundColor={color.white}
         imageShadowColor={shadow.white2}
         imageShadowOpacity={0.5}
-        boxShadow={false}
         paddingLeft={0}
         style={{ marginTop: "70px" }}
         circleShadowY={40}
@@ -325,7 +321,6 @@ const HowToGuide = ({ content, data, modalAction }) => {
         imageBackgroundColor={color.white}
         imageShadowColor={shadow.white2}
         imageShadowOpacity={0.5}
-        boxShadow={false}
         paddingLeft={0}
         style={{ marginTop: "70px" }}
         circleShadowY={40}
@@ -348,7 +343,6 @@ const HowToGuide = ({ content, data, modalAction }) => {
         imageBackgroundColor={color.white}
         imageShadowColor={shadow.white2}
         imageShadowOpacity={0.5}
-        boxShadow={false}
         paddingLeft={0}
         style={{ marginTop: "70px" }}
         circleShadowY={40}

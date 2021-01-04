@@ -43,7 +43,7 @@ const TexasCorporation = () => {
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt="taxes in texas"
 				ovalColor="purple-2"
 				textWidth="530"
 			>
@@ -65,7 +65,7 @@ const TexasCorporation = () => {
 			<Requirements data={dataApi} />
 			<LearnMore data={dataApi} />
 			<QuickLinks />
-			<Variants data={dataApi} />
+			<Variants data={dataApi} entityType="CCorporation" />
 			<Subscription content={subscription} />
 			<Articles />
 		</Layout>

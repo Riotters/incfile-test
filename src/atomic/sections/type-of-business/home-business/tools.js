@@ -7,7 +7,6 @@ import {shadow} from "../../../atoms/styles/shadows";
 import {color} from "../../../atoms/styles/colors";
 import UsefulTools from "../../../partials/useful-tools";
 import {toolsList} from "../../../../static/type-of-business/home-business";
-import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
 import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
 import {gradient} from "../../../atoms/styles/colors";
 
@@ -91,17 +90,6 @@ const LinkItem = styled.div`
     background-color: white;
     box-shadow: ${shadow.white1};
     width: 100%;
-`;
-
-const Oval = styled.div`
-    position: absolute;
-    right: 0;
-    bottom: 626px;
-    width: 100%;
-  
-    @media (min-width: 420px) {
-        width: 420px;
-    }
 `;
 
 const Oval2 = styled.div`

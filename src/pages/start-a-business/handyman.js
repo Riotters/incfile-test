@@ -24,7 +24,6 @@ import SeriesIcon from "../../images/icons/limited-liability-company.inline.svg"
 import PlaneIcon from "../../images/icons/plane.inline.svg";
 import RockerIcon from "../../images/icons/rocket.inline.svg";
 import SettingBusiness from "../../atomic/sections/type-of-business/handyman/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/handyman/order-now";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import Adventages from "../../components/adventages";
@@ -46,6 +45,7 @@ import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/handyman";
 import { TabPanel } from "react-tabs";
 import CircleRing from "../../images/chart-handyman.inline.svg";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const Handyman = () => (
   <Layout>
@@ -67,7 +67,7 @@ const Handyman = () => (
       </p>
       <ButtonsBox>
         <Button
-          extends
+          externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -818,7 +818,7 @@ const Handyman = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

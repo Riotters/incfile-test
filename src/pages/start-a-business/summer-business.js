@@ -16,85 +16,86 @@ import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/summe
 import BusinessPlan from "../../atomic/sections/type-of-business/summer-business/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/summer-business/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/summer-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/summer-business/order-now";
 import Regulations from "../../atomic/sections/type-of-business/summer-business/regulations";
 import Taxes from "../../atomic/sections/type-of-business/summer-business/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/summer-business/tools";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const SummerBusiness = () => (
-  <Layout>
-    <SEO
-      title="Summer Business Ideas | Starting a Summer Business"
-      description="We want to help you get your summer business off the ground! Read our guide for ideas, tips, and important things to know before starting a business."
-    />
-
-    <Top
-      ovalColor="babyblue"
-      imageName="summer-business-main"
-      imageAlt="Mr Bulb with seedling"
-      headlineWidth={700}
-    >
-      <h1>How to Start a Summer Business</h1>
-      <p>
-        If you’re not ready to jump into running your own business full time, a
-        summer business could be ideal. These types of ventures are seasonal and
-        designed around the warmer times of the year, when tourists travel and
-        everyone wants to enjoy the sunshine.
-      </p>
-      <ButtonsBox>
-        <Button
-          theme="primary56"
-          marginMD="0 24px 0 0"
-          arrow
-          content={{
-            url: `${process.env.ORDER_URL}/form-order-now.php`,
-            text: "Start Now",
-          }}
+    <Layout>
+        <SEO
+            title="Summer Business Ideas | Starting a Summer Business"
+            description="We want to help you get your summer business off the ground! Read our guide for ideas, tips, and important things to know before starting a business."
         />
-      </ButtonsBox>
 
-      <RatingRow>
-        <CartBlock />
-        <RatingBlock />
-      </RatingRow>
-    </Top>
+        <Top
+            ovalColor="babyblue"
+            imageName="summer-business-main"
+            imageAlt="how to start a summer business"
+            headlineWidth={700}
+        >
+            <h1>How to Start a Summer Business</h1>
+            <p>
+                If you’re not ready to jump into running your own business full time, a
+                summer business could be ideal. These types of ventures are seasonal and
+                designed around the warmer times of the year, when tourists travel and
+                everyone wants to enjoy the sunshine.
+      </p>
+            <ButtonsBox>
+                <Button
+                    externalLink
+                    theme="primary56"
+                    marginMD="0 24px 0 0"
+                    arrow
+                    content={{
+                        url: `${process.env.ORDER_URL}/form-order-now.php`,
+                        text: "Start Now",
+                    }}
+                />
+            </ButtonsBox>
 
-    <Bootstrapping />
+            <RatingRow>
+                <CartBlock />
+                <RatingBlock />
+            </RatingRow>
+        </Top>
 
-    <SummerBusinessIdea />
+        <Bootstrapping />
 
-    <ValidatingBusinessIdea />
+        <SummerBusinessIdea />
 
-    <BusinessPlan />
+        <ValidatingBusinessIdea />
 
-    <BusinessStructure />
+        <BusinessPlan />
 
-    <SettingBusiness />
+        <BusinessStructure />
 
-    <OrderNow />
+        <SettingBusiness />
 
-    <Regulations />
+        <CompleteCheckListSection />
 
-    <Taxes />
+        <Regulations />
 
-    <ToolsAndLinks />
+        <Taxes />
 
-    <Conclusion
-      to={process.env.ORDER_URL + "/form-order-now.php"}
-      buttonTitle="Start your Summer Business with us, today"
-    >
-      <Heading size={3} style={{ fontSize: "40px" }}>
-        Conclusion
+        <ToolsAndLinks />
+
+        <Conclusion
+            to={process.env.ORDER_URL + "/form-order-now.php"}
+            buttonTitle="Start your Summer Business with us, today"
+        >
+            <Heading size={3} style={{ fontSize: "40px" }}>
+                Conclusion
       </Heading>
-      <Paragraph big>
-        A seasonal business is a great way to see if you want to go into
-        entrepreneurship full time. Summer businesses are a low-risk way to test
-        the waters and see if owning a business is right for you. If you can
-        find a great niche, understand your competitors and put together a solid
-        business plan, you will have every chance for success.
+            <Paragraph big>
+                A seasonal business is a great way to see if you want to go into
+                entrepreneurship full time. Summer businesses are a low-risk way to test
+                the waters and see if owning a business is right for you. If you can
+                find a great niche, understand your competitors and put together a solid
+                business plan, you will have every chance for success.
       </Paragraph>
-    </Conclusion>
-  </Layout>
+        </Conclusion>
+    </Layout>
 );
 
 const ButtonsBox = styled.div`

@@ -345,9 +345,9 @@ const TabScrollable = ({ layout, columns }) => {
 
                 <Paragraph big mixed={true}>
                   When you{" "}
-                  <Link to={`${process.env.ORDER_URL}/form-order-now.php`}>
+                  <a href={`${process.env.ORDER_URL}/form-order-now.php`}>
                     incorporate through us
-                  </Link>
+                  </a>
                   , we provide a{" "}
                   <Link to="/manage-your-company/registered-agent/">
                     complete Registered Agent service free

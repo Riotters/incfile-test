@@ -17,7 +17,6 @@ import Adventages from "../../components/adventages";
 import TypeBusiness from "../../atomic/sections/type-of-business/consulting-business/type-business";
 import BusinessStructure from "../../atomic/sections/type-of-business/consulting-business/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/consulting-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/consulting-business/order-now";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/consulting-business/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
@@ -35,6 +34,7 @@ import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
 import { Helmet } from "react-helmet";
 import LightBoxVideo from "../../components/LightBox";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const ConsultingBusiness = () => {
   const [modalVisible, setModalVisible] = React.useState(false);
@@ -431,7 +431,7 @@ const ConsultingBusiness = () => {
 
       <SettingBusiness />
 
-      <OrderNow />
+      <CompleteCheckListSection />
 
       <ToolsAndLinks />
 

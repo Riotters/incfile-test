@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { color, gradient } from "../../../atoms/styles/colors";
+import { color } from "../../../atoms/styles/colors";
 import HeadingCenter from "../../../partials/heading-center";
 import ContentCenter from "../../../partials/content-center";
-import StatesMap from "../../../../components/states-map/states-map";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-right-transparent-red2.inline.svg";
 import StateLink from "../../../atoms/links/bluebox-link.js";
@@ -50,8 +49,8 @@ const StatesSection = ({ className, content }) => (
         <Curve top="-115" left="-115" rotate="-15" color={color.red2}>
           <CurveSVG />
         </Curve>
-        {content.list.map((state) => (
-          <StateLink content={state} />
+        {content.list.map((state, i) => (
+          <StateLink content={state} key={i} />
         ))}
       </Grid>
     </ContentCenter>

@@ -14,7 +14,6 @@ import { tabPages } from "../../static/states-llc/delaware/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 import {ThankYouContent} from "../../components/hubspot/thank-you-modal";
 import styled from "styled-components";
-import HSFormModal from "../../components/hubspot/standard-post-form-modal";
 import HSSearchFormModal from "../../components/hubspot/search-name-form-modal";
 
 const BusinessNamesPage = () => {

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import parse from "html-react-parser";
-import ArrowLink from "../../../molecules/buttons/text";
 import { color } from "../../../atoms/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
@@ -11,6 +10,7 @@ import IconTextColorBox from "../../../molecules/text-blocks/icon-h4-text-color"
 import NumericList from "../../../organisms/lists/numeric-boxed-list";
 import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-green3.inline.svg";
+import LightBox from "../../../../components/LightBox";
 
 const About = styled.section`
   position: relative;
@@ -46,7 +46,13 @@ const AboutSection = ({ className, content }) => (
       </Paragraph>
       <Heading size={2} template={3} left bottomMargin="24">
         {content.header2}
-      </Heading>
+            </Heading>
+            <LightBox
+                bottomMargin="42"
+                alt="how to dissolve an llc"
+                thumbnailVideo="how-to-dissolved-an-llc-video-thumb-21122020"
+                videoID="G7xC0hdx2rk"
+            />
       <Paragraph big bottomMargin="40">
         {content.text4}
       </Paragraph>

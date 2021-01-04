@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import styled from "styled-components";
 import parse from "html-react-parser";
 
@@ -53,7 +52,7 @@ const FeeFilingRequirementSection = ({ content, data }) => {
   return (
     <Wrapper>
       {content.map((item, i) => (
-        <div>
+        <div key={i}>
           {item.type === "heading" && (
             <Heading
               size={item.size}
@@ -73,8 +72,8 @@ const FeeFilingRequirementSection = ({ content, data }) => {
           )}
 
           {item.type === "arrow-links" &&
-            item.content.map((link) => (
-              <ArrowLink url={link.url} style={link.style}>
+            item.content.map((link, i) => (
+              <ArrowLink key={i} url={link.url} style={link.style}>
                 {link.text}
               </ArrowLink>
             ))}
@@ -120,8 +119,8 @@ const FeeFilingRequirementSection = ({ content, data }) => {
           )}
 
           {item.type === "textBoxWithCheckIcon" &&
-            item.content.map((i) => (
-              <TextBoxed style={{ marginBottom: "8px" }}>
+            item.content.map((i, j) => (
+              <TextBoxed key={j} style={{ marginBottom: "8px" }}>
                 <Paragraph bottomMargin={0}>{i}</Paragraph>
               </TextBoxed>
             ))}

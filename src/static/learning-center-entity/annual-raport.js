@@ -50,67 +50,7 @@ export const nextStateDue = {
 	},
 };
 
-export const nextStateFiling = {
-	header: `Next state filing due date for Riotters`,
-	box: {
-		header: `Mar 31, 2020`,
-		text: `Statement of Information due date for Riotters`,
-		details: [
-			{
-				title: `State Requirement`,
-				text: `Statement of Information`,
-			},
-			{
-				title: `Due date`,
-				text: `Mar 31, 2020`,
-			},
-		],
-		header: `What are the ongoing compliance requirements in California?`,
-		header: `Statement of Information`,
-		table: [
-			{
-				title: `Frequency:`,
-				text: `Annualy`,
-			},
-			{
-				title: `Due Date:`,
-				text: `During six-month period ending on last day of anniversary month of incorporation or qualification.`,
-			},
-			{
-				title: `Filing Fee:`,
-				text: `$25`,
-			},
-			{
-				title: `Important:`,
-				text: `The initial Statement of Information filing is due within 90 days of the entity formation date.`,
-			},
-		],
-		header: `California Franchise Tax`,
-		table2: [
-			{
-				title: `Frequency:`,
-				text: `Annually`,
-			},
-			{
-				title: `Fee:`,
-				text: `$800 (minimum)`,
-				text: `The California Franchise Tax Board requires that all corporations registered in the State of California pay a franchise tax. For new corporations, the minimum franchise tax is $800 per year. However, Franchise Tax  is waived the 1st year for corporations but not LLCs. 
-                New corporations that incorporate in California  are exempt from the 1st year minimum tax, however the corporate owners are still responsible for paying the applicable franchise tax on any net income earned during the 1st year. Starting in the second year corporations are subject to the annual $800 minimum franchise tax rule.`,
-				text: `(We do not assist in the filing of the Franchise Tax Report)`,
-			},
-		],
-		buttons: [
-			{
-				text: `File Your Annual or Biennal Report`,
-				utl: `${process.env.ORDER_URL}/annual-report.php`,
-			},
-			{
-				text: `Check Another Due Date`,
-				utl: `/`,
-			},
-		],
-	},
-};
+
 export const faq = {
 	header: `Common Questions About Your Business Report`,
 	faq: {

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { color } from "../atoms/styles/colors";
-import VisibilitySensor from "../VisibilitySensor";
 import Container from "../container";
 import Image from "../atoms/image/image_nobase64";
 import OvalSVG from "../../images/oval.inline.svg";

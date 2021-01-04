@@ -14,7 +14,7 @@ import FeeFilingRequirementSection from "../../atomic/states-llc/texas/fee-filin
 
 // Content
 import { filingFeeAndRequirementContent } from "../../static/states-llc/texas/filingFeeAndRequirement";
-import { tabPages, rocket } from "../../static/states-llc/texas/general";
+import { tabPages } from "../../static/states-llc/texas/general";
 
 import { getFullPricesAndFilings } from '../../api/Api';
 import { Helmet } from "react-helmet";

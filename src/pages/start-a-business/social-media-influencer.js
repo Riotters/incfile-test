@@ -27,7 +27,7 @@ const SocialMediaInfluencer = () => (
     <Top
       ovalColor="green"
       imageName="social-media-influencer"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="set up a social influencer"
       headlineWidth={700}
     >
       <h1>How to Start a Business as a Social Media Influencer</h1>
@@ -36,7 +36,8 @@ const SocialMediaInfluencer = () => (
         companies, brands, products and services.
       </p>
       <ButtonsBox>
-        <Button
+                <Button
+                    externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow

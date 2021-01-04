@@ -11,7 +11,6 @@ import ArrowLeft from "../images/arrow-circle.inline.svg";
 import Oval from "../atomic/atoms/icons/oval";
 import OvalSVG from "../images/ovals/top-left-transparent-babyblue1.inline.svg";
 import OvalSVG2 from "../images/medium-571.inline.svg";
-import HeadingCenter from "../atomic/partials/heading-center";
 import SEO from "../components/seo";
 import Layout from "../components/layout";
 // text

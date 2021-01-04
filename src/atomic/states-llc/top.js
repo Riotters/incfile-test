@@ -1,61 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../atoms/styles/colors";
 import Image from "../atoms/image/image_nobase64";
 import Container from "../container";
-import TXMap from "../../images/tx-map.inline.svg";
-
-import VisibilitySensor from "../VisibilitySensor";
-
-const switch1 = (ovalColor) => {
-	switch (ovalColor) {
-		case "blue": {
-			return color.blue1;
-		}
-		case "orange": {
-			return color.orange1;
-		}
-		case "purple": {
-			return color.purple1;
-		}
-		case "yellow": {
-			return color.yellow1;
-		}
-		case "green": {
-			return color.green1;
-		}
-		case "sun": {
-			return "#ffb059";
-		}
-		default:
-			return "";
-	}
-};
-
-const switch2 = (ovalColor) => {
-	switch (ovalColor) {
-		case "blue": {
-			return color.babyblue2;
-		}
-		case "orange": {
-			return color.orange2;
-		}
-		case "purple": {
-			return color.purple2;
-		}
-		case "green": {
-			return color.green2;
-		}
-		case "yellow": {
-			return color.yellow2;
-		}
-		case "sun": {
-			return "#ffe3c5";
-		}
-		default:
-			return "";
-	}
-};
 
 const Wrapper = styled.div`
 	display: flex;
@@ -63,32 +9,6 @@ const Wrapper = styled.div`
 	position: relative;
 	padding-top: 100px;
 	overflow-x: hidden;
-`;
-
-const IconMap = styled.div`
-	display: none;
-	width: 550px;
-	position: absolute;
-	top: 100px;
-	right: 75px;
-	z-index: -1;
-	transform: scale(0.9);
-
-	@media (min-width: 992px) {
-		display: block;
-	}
-
-	&::after {
-		content: "";
-		display: block;
-		padding-bottom: 100%;
-	}
-
-	& > svg {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-	}
 `;
 
 const Content = styled.div`
@@ -172,18 +92,13 @@ const ImageContainer = styled.div`
 	}
 `;
 
-const arrayMap = {
-	TX: <TXMap />,
-};
-
 const Top = ({
 	children,
 	imageName,
 	imageAlt,
 	headlineWidth,
 	imageWidthLG,
-	imageOffsetRightLG,
-	stateName,
+	imageOffsetRightLG
 }) => (
 	<Wrapper>
 		{/*<IconMap>*/}

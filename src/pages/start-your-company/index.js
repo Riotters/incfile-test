@@ -65,8 +65,6 @@ const LightBoxContent = styled.div`
 	pointer-events: all;
 
 	@media screen and (min-width: 768px) {
-		// max-height: 289px;
-		// height: 289px;
 		overflow-y: visible;
 	}
 
@@ -155,7 +153,7 @@ const ReviewEntityType = () => {
 	const hutk =
 		typeof window !== "undefined"
 			? document.cookie.replace(
-					/(?:(?:^|.*;\s*)hubspotutk\s*\=\s*([^;]*).*$)|^.*$/,
+					/(?:(?:^|.*;\s*)hubspotutk\s*\s*([^;]*).*$)|^.*$/,
 					"$1"
 			  )
 			: "";

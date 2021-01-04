@@ -29,7 +29,6 @@ import SeriesIcon from "../../images/icons/limited-liability-company-2.inline.sv
 import PlaneIcon from "../../images/icons/plane.inline.svg";
 import RockerIcon from "../../images/icons/rocket.inline.svg";
 import SettingBusiness from "../../atomic/sections/type-of-business/etsy-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/etsy-business/order-now";
 import {
   RingText,
   tabs,
@@ -52,6 +51,7 @@ import { Link } from "gatsby";
 import { shadow } from "../../atomic/atoms/styles/shadows";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const EtsyBusiness = () => (
   <Layout>
@@ -63,7 +63,7 @@ const EtsyBusiness = () => (
     <Top
       ovalColor="yellow"
       imageName="etsy-bussines"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="how to start an etsy business"
       headlineWidth={700}
     >
       <h1>How to Start an Etsy Business</h1>
@@ -75,6 +75,7 @@ const EtsyBusiness = () => (
       </p>
       <ButtonsBox>
         <Button
+        externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -880,7 +881,7 @@ const EtsyBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <HireEmployees />
 

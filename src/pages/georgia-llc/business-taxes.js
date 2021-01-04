@@ -14,7 +14,7 @@ import Rocket from "../../atomic/sections/rocket";
 
 // Content
 import { businessTaxesPageContent } from "../../static/states-llc/georgia/business-taxes";
-import { tabPages, rocket } from "../../static/states-llc/georgia/general";
+import { tabPages } from "../../static/states-llc/georgia/general";
 import { Helmet } from "react-helmet";
 
 const Wrapper = styled.div`

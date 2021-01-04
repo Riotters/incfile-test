@@ -9,8 +9,6 @@ import {adventages} from "../../../../static/type-of-business/home-business";
 import Curve from "../../../../images/curve-orange.inline.svg";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-blue.inline.svg";
 import OvalSvg2 from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
-import {Paragraph} from "../../../atoms/typography/paragraph";
-import AdventagesWithLongText from "../../../molecules/mixed-blocks/adventages-with-long-text";
 import {gradient} from "../../../atoms/styles/colors";
 
 const TypeOfBusiness = () => (

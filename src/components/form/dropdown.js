@@ -1,4 +1,4 @@
-import React, { component, Component } from "react"
+import React, { Component } from "react"
 import Dropdown from 'react-dropdown';
 import styled from "styled-components"
 import { color } from "../styles/colors"

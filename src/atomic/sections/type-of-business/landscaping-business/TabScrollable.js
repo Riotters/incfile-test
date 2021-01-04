@@ -37,7 +37,6 @@ import {
   MaintainingAccordionContent,
   TaxesAccordionContent,
 } from "../../../../static/type-of-business/landscaping-business";
-import VisibilitySensor from "../../../../components/VisibilitySensor";
 import { InView } from "react-intersection-observer";
 
 const ButtonList = [
@@ -671,15 +670,6 @@ const Arrow = styled.div`
       fill: #5088fd;
     }
   }
-`;
-
-const ListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const ListBox = styled.div`
-  width: 50%;
 `;
 
 const StickyContainer = styled.div`

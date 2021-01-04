@@ -13,7 +13,6 @@ import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/movin
 import MovingBusinessPlan from "../../atomic/sections/type-of-business/moving-company/business-plan";
 import MovingBusinessStructure from "../../atomic/sections/type-of-business/moving-company/business-structure";
 import BusinessOperations from "../../atomic/sections/type-of-business/moving-company/business-operations";
-import OrderNow from "../../atomic/sections/type-of-business/moving-company/order-now";
 import Regulations from "../../atomic/sections/type-of-business/moving-company/regulations";
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/moving-company/insurance-business";
 import UseFulTools from "../../atomic/sections/type-of-business/moving-company/useful-tools";
@@ -21,18 +20,19 @@ import Conclusion from "../../atomic/sections/general/conclusion";
 import BusinessOwners from "../../atomic/sections/type-of-business/moving-company/business-owners";
 import TextCenterLayout from "../../atomic/partials/heading-left";
 import Taxes from "../../atomic/sections/type-of-business/moving-company/taxes";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const MovingCompanyPage = () => (
   <Layout>
     <SEO
-      title="Moving Company"
+      title="How to Start a Moving Company | Starting a Moving Business"
       description="Starting a moving or relocation company? Read our guide to understand what you need to do to build a successful moving business."
     />
 
     <Top
       ovalColor="orange"
       imageName="moving-company-bg"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="how to start a moving company"
       headlineWidth={700}
     >
       <h1>How to Start a Moving Company</h1>
@@ -41,7 +41,8 @@ const MovingCompanyPage = () => (
         to start a successful company.
       </p>
       <ButtonsBox>
-        <Button
+                <Button
+                    externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -70,7 +71,7 @@ const MovingCompanyPage = () => (
 
     <BusinessOperations />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

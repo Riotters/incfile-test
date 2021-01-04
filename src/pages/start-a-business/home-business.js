@@ -21,7 +21,6 @@ import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/home-
 import BusinessPlan from "../../atomic/sections/type-of-business/home-business/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/home-business/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/home-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/home-business/order-now";
 import Regulations from "../../atomic/sections/type-of-business/home-business/regulations";
 import Taxes from "../../atomic/sections/type-of-business/home-business/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/home-business/tools";
@@ -29,6 +28,8 @@ import Conclusion from "../../atomic/sections/general/conclusion";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/home-business";
 import { TabPanel } from "react-tabs";
+import { Link } from "gatsby";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const HomeBusiness = () => (
   <Layout>
@@ -40,22 +41,23 @@ const HomeBusiness = () => (
     <Top
       ovalColor="green"
       imageName="home-business-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="set up a home business"
       headlineWidth={700}
     >
       <h1>How to Start a Home-Based Business</h1>
       <p>
         Starting a new business can be a major undertaking, so for entrepreneurs
         wanting to start off small,{" "}
-        <a href="https://www.incfile.com/blog/post/how-start-home-business/">
+        <Link to="https://www.incfile.com/blog/post/how-start-home-business/">
           a home-based business is a great idea
-        </a>
+        </Link>
         . You’ll learn a great deal about running a business successfully, while
         avoiding many of the costs associated with larger businesses, like
         office rental, utilities or hiring employees.
       </p>
       <ButtonsBox>
-        <Button
+                <Button
+                    externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -181,7 +183,7 @@ const HomeBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

@@ -30,7 +30,6 @@ import SeriesIcon from "../../images/icons/limited-liability-company.inline.svg"
 import PlaneIcon from "../../images/icons/plane.inline.svg";
 import RockerIcon from "../../images/icons/rocket.inline.svg";
 import SettingBusiness from "../../atomic/sections/type-of-business/cleaning-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/cleaning-business/order-now";
 import {
   RingText,
   tabs,
@@ -54,6 +53,7 @@ import { shadow } from "../../atomic/atoms/styles/shadows";
 import OvalSvg6 from "../../images/ovals/top-right-transparent-green3.inline.svg";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const CleaningBusiness = () => (
   <Layout>
@@ -65,7 +65,7 @@ const CleaningBusiness = () => (
     <Top
       ovalColor="green"
       imageName="cleaning-business-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="how to start a cleaning business"
       headlineWidth={700}
     >
       <h1>How to Start a Cleaning Business</h1>
@@ -75,7 +75,8 @@ const CleaningBusiness = () => (
         have a lot going for them.
       </p>
       <ButtonsBox>
-        <Button
+                <Button
+                    externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -911,7 +912,7 @@ const CleaningBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <HireEmployees />
 

@@ -7,17 +7,10 @@ import CartBlock from "../../atomic/molecules/blocks/cart-block";
 import RatingBlock from "../../atomic/molecules/blocks/rating-block";
 import Top from "../../atomic/partials/top";
 import styled from "styled-components";
-import TabHeading from "../../atomic/organisms/tabs/TabHeading";
-import TabTitle from "../../atomic/molecules/tabs/tab-title";
-import Tab2Icon from "../../images/icons/light.inline.svg";
-import Tab3Icon from "../../images/icons/series-is-this-business-for-you.inline.svg";
-import CollapseWrapper from "../../atomic/organisms/tabs/collapse";
 import PanelWrapper from "../../atomic/organisms/tabs/panel";
 import { Heading } from "../../atomic/atoms/typography/heading";
 import { Paragraph } from "../../atomic/atoms/typography/paragraph";
-import TabsSection from "../../atomic/partials/tabs";
 import Colorbox from "../../components/color-box";
-import DaycareIcon from "../../images/icons/daycare.inline.svg";
 import MegafonIcon from "../../images/icons/we-want-to-help-you-get-your-daycare-business-of-the-ground.inline.svg";
 import { color } from "../../components/styles/colors";
 import TypeBusiness from "../../atomic/sections/type-of-business/daycare-business/type-business";
@@ -25,7 +18,6 @@ import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/dayca
 import BusinessPlan from "../../atomic/sections/type-of-business/daycare-business/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/daycare-business/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/daycare-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/daycare-business/order-now";
 import Regulations from "../../atomic/sections/type-of-business/daycare-business/regulations";
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/daycare-business/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/daycare-business/taxes";
@@ -41,6 +33,7 @@ import { tabs } from "../../static/type-of-business/daycare-business";
 import { TabPanel } from "react-tabs";
 import CircleSvg from "../../images/chart-daycare.inline.svg";
 import UseFulTools from "../../atomic/sections/type-of-business/daycare-business/useful-tools";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const DaycareBusiness = () => (
   <Layout>
@@ -52,7 +45,7 @@ const DaycareBusiness = () => (
     <Top
       ovalColor="green"
       imageName="daycare-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="set up a daycare business"
       headlineWidth={700}
     >
       <h1>How to Start a Daycare</h1>
@@ -63,13 +56,14 @@ const DaycareBusiness = () => (
       </p>
       <ButtonsBox>
         <Button
-          theme="primary56"
-          marginMD="0 24px 0 0"
-          arrow
-          content={{
-            url: `${process.env.ORDER_URL}/form-order-now.php`,
-            text: "Start Now",
-          }}
+            externalLink
+            theme="primary56"
+            marginMD="0 24px 0 0"
+            arrow
+            content={{
+                url: `${process.env.ORDER_URL}/form-order-now.php`,
+                text: "Start Now",
+            }}
         />
       </ButtonsBox>
 
@@ -347,7 +341,7 @@ const DaycareBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

@@ -45,12 +45,12 @@ const HelpCenter = () => {
 	return (
 		<Layout>
 			<SEO
-				title="Forming a Nonprofit Corporation"
+				title="Forming a Nonprofit Corporation | Archive articles"
 				description="Learn about the key differences between nonprofit and not-for-profit organizations, including legal status, purpose, tax exemption and more."
 			/>
 			<Top
 				imageName="mrs-bulb-help-center-article"
-				imageAlt="Mrs Bulb and with checklist"
+				imageAlt="incfile help article"
 				ovalColor="green"
 			>
 				<Heading size={2} template={1} left>

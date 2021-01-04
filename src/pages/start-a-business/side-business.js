@@ -22,7 +22,6 @@ import SeriesIcon from "../../images/icons/limited-liability-company.inline.svg"
 import PlaneIcon from "../../images/icons/plane.inline.svg";
 import RockerIcon from "../../images/icons/rocket.inline.svg";
 import SettingBusiness from "../../atomic/sections/type-of-business/side-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/side-business/order-now";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import Adventages from "../../components/adventages";
 import TypeOfBusiness from "../../atomic/sections/type-of-business/side-business/type-of-business";
@@ -41,6 +40,7 @@ import { Link } from "gatsby";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/side-business";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const SideBusiness = () => (
   <Layout>
@@ -52,7 +52,7 @@ const SideBusiness = () => (
     <Top
       ovalColor="babyblue"
       imageName="side-business-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="how to start a side business"
       headlineWidth={700}
     >
       <h1>How to Start a Side Business</h1>
@@ -63,7 +63,8 @@ const SideBusiness = () => (
         position if the side business doesn’t work out.
       </p>
       <ButtonsBox>
-        <Button
+                <Button
+                    externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -557,7 +558,7 @@ const SideBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

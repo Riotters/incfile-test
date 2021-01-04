@@ -14,7 +14,7 @@ import FeeFilingRequirementSection from "../../atomic/states-llc/florida/fee-fil
 
 // Content
 import { filingFeeAndRequirementContent } from "../../static/states-llc/florida/filingFeeAndRequirement";
-import { tabPages, rocket } from "../../static/states-llc/florida/general";
+import { tabPages } from "../../static/states-llc/florida/general";
 
 import { getFullPricesAndFilings } from '../../api/Api';
 import { Helmet } from "react-helmet";

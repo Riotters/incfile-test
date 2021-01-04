@@ -21,7 +21,7 @@ const Rocket = ({ headingSize = 2, headingSeizeTemplate = 4, left = true }) => (
     </Moon>
     <Container>
       <RocketWrapper>
-        <Image filename="rocket-2x" alt="rocket lunch" />
+        <Image filename="rocket-2x" alt="launch your business with incfile" />
       </RocketWrapper>
       <Content>
         <Heading size={2} left={true}>
@@ -34,13 +34,14 @@ const Rocket = ({ headingSize = 2, headingSeizeTemplate = 4, left = true }) => (
           plan, you will have every chance for success
         </Paragraph>
         <Button
-          theme="primary48"
-          arrow
-          width="410px"
-          content={{
-            url: `${process.env.ORDER_URL}/form-order-now.php`,
-            text: "Start your Airbnb Business with us, today!",
-          }}
+            externalLink
+            theme="primary48"
+            arrow
+            width="410px"
+            content={{
+                url: `${process.env.ORDER_URL}/form-order-now.php`,
+                text: "Start your Airbnb Business with us, today!",
+            }}
         />
       </Content>
     </Container>

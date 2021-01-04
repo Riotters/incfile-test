@@ -78,13 +78,6 @@ const OvalCenter = styled.div`
   }
 `
 
-const AbsoluteCurve = styled.div`
-    position: absolute;
-    left: -27px;
-    top: -16px;
-    transform: rotate(-90deg);
-`;
-
 const Expecting = () => (
     <ContainerWrapper>
         <OvalCenter>

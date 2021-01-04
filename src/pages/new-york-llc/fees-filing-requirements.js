@@ -14,7 +14,7 @@ import FeeFilingRequirementSection from "../../atomic/states-llc/new-york/fee-fi
 
 // Content
 import { filingFeeAndRequirementContent } from "../../static/states-llc/new-york/filingFeeAndRequirement";
-import { tabPages, rocket } from "../../static/states-llc/new-york/general";
+import { tabPages } from "../../static/states-llc/new-york/general";
 import { getFullPricesAndFilings } from '../../api/Api';
 import { Helmet } from "react-helmet";
 

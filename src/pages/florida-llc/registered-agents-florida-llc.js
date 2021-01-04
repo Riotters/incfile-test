@@ -14,7 +14,7 @@ import Rocket from "../../atomic/sections/rocket";
 
 // Content
 import { agentPageContent } from "../../static/states-llc/florida/ra";
-import { tabPages, rocket } from "../../static/states-llc/florida/general";
+import { tabPages } from "../../static/states-llc/florida/general";
 import RASchemaFL from "../../atomic/states-llc/florida/ra-fl-schema";
 
 const Wrapper = styled.div`

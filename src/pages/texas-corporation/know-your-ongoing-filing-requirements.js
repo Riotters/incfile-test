@@ -65,7 +65,7 @@ const TexasCorporation = () => {
 			<Requirements data={dataApi} />
 			<LearnMore data={dataApi} />
 			<QuickLinks />
-			<Variants data={dataApi} />
+			<Variants data={dataApi} entityType="CCorporation" />
 			<Subscription content={subscription} />
 			<Articles />
 		</Layout>

@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React from "react";
 import {Link} from "gatsby";
 import Container from "../../container";
 import styled from "styled-components";
@@ -12,8 +12,7 @@ const FeesTable = () => {
     const [ccorpSort, setCCorpSort] = React.useState(false);
     const [scorpSort, setSCorpSort] = React.useState(false);
     const [nonSort, setNonSort] = React.useState(false);
-    const [visible, setVisible] = React.useState([  ]);
-
+    
     const fetchData = async () => {
         const response = await fetch(`${process.env.INCFILE_API_URL}/getStatePrices`).then(response => response.json());
         return response;
@@ -38,7 +37,7 @@ const FeesTable = () => {
             }
         });
 
-        setPrices(reSort);
+        return setPrices(reSort);
     };
 
     React.useEffect(() => {
@@ -46,15 +45,6 @@ const FeesTable = () => {
             setPrices(data);
         })
     }, []);
-
-    const setItemState = (i) => {
-        let state = visible;
-        state[i] = false;
-
-        return state;
-    };
-
-    const itemRef = useRef();
 
     return (
         <Wrapper>
@@ -70,7 +60,7 @@ const FeesTable = () => {
 
                     {prices.length && prices.map((price, i) => {
                         return (
-                            <FeesTableRow price={price} i={i} />
+                            <FeesTableRow price={price} i={i} key={i} />
                         );
                     })}
             

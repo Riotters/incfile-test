@@ -26,7 +26,6 @@ import UmbrellaIcon from "../../images/icons/umbrella.inline.svg";
 import PlaneIcon from "../../images/icons/plane.inline.svg";
 import RockerIcon from "../../images/icons/rocket.inline.svg";
 import SettingBusiness from "../../atomic/sections/type-of-business/bakery/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/bakery/order-now";
 import {
   RingText2,
   tabs,
@@ -55,6 +54,8 @@ import Curve from "../../atomic/atoms/icons/curve";
 import Curve2SVG from "../../images/curves/top-left-bottom-right-big.inline.svg";
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { TabPanel } from "react-tabs";
+import ArrowLink from "../../components/arrow-link";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const Bakery = () => (
   <Layout>
@@ -66,7 +67,7 @@ const Bakery = () => (
     <Top
       ovalColor="sun-2"
       imageName="bakery-main-header"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="how to start a bakery business"
       headlineWidth={700}
     >
       <h1>How to Start a Bakery Business</h1>
@@ -78,13 +79,14 @@ const Bakery = () => (
       </p>
       <ButtonsBox>
         <Button
-          theme="primary56"
-          marginMD="0 24px 0 0"
-          arrow
-          content={{
-            url: `${process.env.ORDER_URL}/form-order-now.php`,
-            text: "Start Now",
-          }}
+            externalLink
+            theme="primary56"
+            marginMD="0 24px 0 0"
+            arrow
+            content={{
+                url: `${process.env.ORDER_URL}/form-order-now.php`,
+                text: "Start Now",
+            }}
         />
       </ButtonsBox>
 
@@ -684,7 +686,7 @@ const Bakery = () => (
       </Oval6>
 
       <BusinessOwnerResponsibilities>
-        <ImageContent image="unique-business-2" paddingTop="60">
+        <ImageContent image="unique-business-2" imageAlt="choose right structure for a bakery business" paddingTop="60">
           <Heading size={2} template={3} left>
             Choose the Right Business Structure and Register Your Bakery
             Business
@@ -744,13 +746,15 @@ const Bakery = () => (
               style={{ color: color.blue1, fontWeight: "bold" }}
               mixed={true}
             >
-              <Link
-                to={
+            <ArrowLink
+                externalLink
+                arrow={false}
+                url={
                   process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"
                 }
               >
                 Partnership
-              </Link>
+            </ArrowLink>
             </Paragraph>
 
             <Paragraph big>
@@ -780,13 +784,15 @@ const Bakery = () => (
               style={{ color: color.blue1, fontWeight: "bold" }}
               mixed={true}
             >
-              <Link
-                to={
+              <ArrowLink
+                externalLink
+                arrow={false}
+                url={
                   process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"
                 }
               >
                 Limited Liability Company or LLC
-              </Link>
+              </ArrowLink>
             </Paragraph>
 
             <Paragraph big>
@@ -816,14 +822,16 @@ const Bakery = () => (
               style={{ color: color.blue1, fontWeight: "bold" }}
               mixed={true}
             >
-              <Link
-                to={
+              <ArrowLink
+                externalLink
+                arrow={false}
+                url={
                   process.env.ORDER_URL +
                   "/form-order-now.php?entityType=SCorporation"
                 }
               >
                 S Corporation
-              </Link>
+              </ArrowLink>
             </Paragraph>
 
             <Paragraph big>
@@ -851,14 +859,16 @@ const Bakery = () => (
               style={{ color: color.blue1, fontWeight: "bold" }}
               mixed={true}
             >
-              <Link
-                to={
+              <ArrowLink
+                externalLink
+                arrow={false}
+                url={
                   process.env.ORDER_URL +
                   "/form-order-now.php?entityType=CCorporation"
                 }
               >
                 C Corporation
-              </Link>
+              </ArrowLink>
             </Paragraph>
 
             <Paragraph big>
@@ -906,22 +916,23 @@ const Bakery = () => (
             , but we’ve got you covered, wherever you are.
           </Paragraph>
 
-          <Button
-            theme="primary48"
-            width="365px"
-            arrow
-            content={{
-              url: `${process.env.ORDER_URL}/form-order-now.php`,
-              text: `Start your business with us, today!`,
-            }}
-          />
+            <Button
+                externalLink
+                theme="primary48"
+                width="365px"
+                arrow
+                content={{
+                url: `${process.env.ORDER_URL}/form-order-now.php`,
+                text: `Start your business with us, today!`,
+                }}
+            />
         </ImageContent>
       </BusinessOwnerResponsibilities>
     </OrangeContainer>
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

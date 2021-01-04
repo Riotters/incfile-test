@@ -11,9 +11,9 @@ export const about = {
   ],
   header: `What is the Form 2553?`,
   text: `If your business is a
-        <a href="/what-is-c-corporation" target="_blank">C Corporation</a>
+        <a href="/what-is-c-corporation/">C Corporation</a>
         but you have decided that you would rather file taxes as an
-        <a href="/what-is-s-corporation/" target="_blank">S Corporation,</a>
+        <a href="/what-is-s-corporation/">S Corporation,</a>
         you need to notify the IRS in advance by filing the appropriate paperwork.
         <a href="https://www.irs.gov/forms-pubs/about-form-2553" rel="noopener noreferrer nofollow" target="_blank">IRS Form 2553,</a>
         “Election By a Small Business Corporation,” is required to be filed with the IRS to switch a C Corporation to S Corporation status for purposes of federal taxation. To understand how much you could save in taxes by forming an S Corporation, check out our
@@ -52,7 +52,7 @@ export const about = {
   header6: `What is IRS Form 8832 and Why Would I Need It?`,
   text7: `<a href="https://www.irs.gov/pub/irs-pdf/f8832.pdf" rel="noopener noreferrer nofollow" target="_blank">IRS Form 8832</a>
         is necessary for situations where your business is an entity other than a corporation and you and you want to choose to be classified for federal tax purposes as an S Corporation, but you have not filed the usual paperwork within the specified timeframes. This situation is especially common for single-member
-        <a href="/limited-liability-company/" target="_blank">LLCs (Limited Liability Companies) </a>
+        <a href="/limited-liability-company/">LLCs (Limited Liability Companies) </a>
         that want S Corporation status for tax purposes.`,
   text8: `Form 8832 acts as a supplement to Form 2553 and lets you retroactively file both forms at once, getting retroactive classification and election as an S Corporation.`,
   text9: `But in order to qualify for relief from Form 8832, your corporation must meet these three criteria for eligibility:`,
@@ -84,75 +84,4 @@ export const about = {
   text16: `Yes. Not all states recognize Form 2553 for state income tax purposes, so you might need to file a separate form with your state tax authorities. Check with your state’s Department of Revenue or other relevant authorities, or ask your accountant for advice.`,
   text17: `For more information on Form 2553,
         <a href="https://www.irs.gov/forms-pubs/about-form-2553" rel="noopener noreferrer nofollow" target="_blank">Penalty Relief due to Reasonable Cause.</a>`,
-};
-
-export const related = {
-  header: `Related Articles`,
-  text: `Other users were also interested in knowing about…`,
-  buttons: [
-    {
-      header: `What is a Corporate Seal?`,
-      url: `/research-topics/c-corporation-info/corp-seal/`,
-    },
-    {
-      header: `Which entity offers the best tax advantages?`,
-      url: `/research-topics/c-corporation-info/tax-advantages/`,
-    },
-    {
-      header: `The benefits of filing a C-corporation`,
-      url: `/research-topics/c-corporation-info/filing-a-c-corporation/`,
-    },
-    {
-      header: `LLCs vs C-Corporation: Which Is Best for Your Business?`,
-      url: `/research-topics/c-corporation-info/llcs-vs-c-corporation-which-is-best-for-your-business/`,
-    },
-    {
-      header: `How is a Corporation Managed?`,
-      url: `/research-topics/c-corporation-info/corp-managing/`,
-    },
-    {
-      header: `How is a C Corporation Taxed?`,
-      url: `/research-topics/c-corporation-info/c-corp-taxing/`,
-    },
-    {
-      header: `Am I Required to Hold Corporate Meetings?`,
-      url: `/research-topics/c-corporation-info/corporate-meetings/`,
-    },
-    {
-      header: `How Many Shares of Stock will my Corporation Need?`,
-      url: `/research-topics/c-corporation-info/corporation-need/`,
-    },
-    {
-      header: `What are Bylaws?`,
-      url: `/research-topics/c-corporation-info/what-are-bylaws/`,
-    },
-    {
-      header: `What is Stock Par Value?`,
-      url: `/research-topics/c-corporation-info/stock-par-value/`,
-    },
-    {
-      header: `What is the Form 2553?`,
-      url: `/research-topics/c-corporation-info/what-is-the-form-2553/`,
-    },
-    {
-      header: `What are the Differences Between Officers, Directors and Shareholders?`,
-      url: `/research-topics/c-corporation-info/directors-and-shareholders/`,
-    },
-    {
-      header: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
-      url: `/research-topics/c-corporation-info/own-a-corporation-or-llc/`,
-    },
-    {
-      header: `Does Forming an LLC (Limited Liability Company) or Corporation Require an Attorney?`,
-      url: `/research-topics/c-corporation-info/require-an-attorney/`,
-    },
-    {
-      header: `What is a Publication Requirement?`,
-      url: `/research-topics/c-corporation-info/publication-requirement/`,
-    },
-    {
-      header: `What is the Customized Corporate/LLC Kit?`,
-      url: `/research-topics/c-corporation-info/customized-corp-llc-kit/`,
-    },
-  ],
 };

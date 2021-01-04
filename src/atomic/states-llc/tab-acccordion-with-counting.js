@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import parse from "html-react-parser";
 import styled from "styled-components";
 import { motion } from "framer-motion";
@@ -11,8 +10,6 @@ import ArrowLink from "../../components/arrow-link";
 import { Paragraph } from "../atoms/typography/paragraph";
 import ArrowSVG from "../../images/arrow-circle.inline.svg";
 import CurveSVG from "../../images/orange-curve.inline.svg";
-import VisibilitySensor from "../../components/VisibilitySensor";
-import { Heading } from "../atoms/typography/heading";
 import {HeadingP} from "../atoms/typography/heading-to-p";
 
 const Wrapper = styled.div`
@@ -111,38 +108,6 @@ const PanelWrapper = styled.div`
   }
 `;
 
-const ListItems = styled.ul`
-  list-style: none;
-  padding-left: 0;
-
-  li {
-    font-family: Avenir, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    color: ${(props) =>
-      props.listColor ? `${color[props.listColor.item]}` : `${color.grey1}`};
-    padding-left: 26px;
-    padding-top: 0;
-    position: relative;
-
-    &::before {
-      content: "";
-      height: 4px;
-      width: 4px;
-      background-color: ${(props) =>
-        props.listColor ? `${color[props.listColor.dot]}` : `${color.grey1}`};
-      border-radius: 50%;
-      position: absolute;
-      top: 9px;
-      left: 6px;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    }
-  }
-`;
-
 const Button = styled.button`
   display: grid;
   grid-template-columns: 30px 1fr;
@@ -182,22 +147,6 @@ const Button = styled.button`
   }
 `;
 
-const Content = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-grow: 1;
-  padding: 16px 40px 16px 0;
-
-  span {
-    color: #4e4e4e;
-    font-family: Avenir;
-    font-size: 16px;
-    text-align: left;
-    width: 100%;
-    line-height: 24px;
-  }
-`;
 const Text = styled.span`
   color: #4e4e4e;
   font-family: Avenir;
@@ -311,8 +260,8 @@ const AccordionWithCounting = ({
       )}
       <Tabs>
         <TabsWrapper>
-          {content.map((item) => (
-            <TabBox>
+          {content.map((item, i) => (
+            <TabBox key={i}>
               <Tab>
                 {/* <Content> */}
                 <CountingWrapper>

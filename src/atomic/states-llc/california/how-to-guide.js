@@ -135,8 +135,8 @@ const HowToGuide = ({ content, data, modalAction }) => {
         />
       </div>
 
-      {content.mainSteps.navSteps.map((step) => (
-        <Link to="/#" onClick={(e) => handleMenuStepClick(step.blockID, e)}>
+      {content.mainSteps.navSteps.map((step, i) => (
+        <Link key={i} to="/#" onClick={(e) => handleMenuStepClick(step.blockID, e)}>
           <WhiteBoxLink bottomMargin="8px" padding="24px" flex>
             <Circle
               circleColor={color.orange3}
@@ -163,7 +163,6 @@ const HowToGuide = ({ content, data, modalAction }) => {
         imageBackgroundColor={color.white}
         imageShadowColor={shadow.white2}
         imageShadowOpacity={0.5}
-        boxShadow={false}
         paddingLeft={0}
         style={{ marginTop: "100px" }}
         circleShadowY={40}
@@ -197,7 +196,6 @@ const HowToGuide = ({ content, data, modalAction }) => {
         imageBackgroundColor={color.white}
         imageShadowColor={shadow.white2}
         imageShadowOpacity={0.5}
-        boxShadow={false}
         paddingLeft={0}
         style={{ marginTop: "70px" }}
         circleShadowY={40}
@@ -220,7 +218,6 @@ const HowToGuide = ({ content, data, modalAction }) => {
         imageBackgroundColor={color.white}
         imageShadowColor={shadow.white2}
         imageShadowOpacity={0.5}
-        boxShadow={false}
         paddingLeft={0}
         style={{ marginTop: "70px" }}
         circleShadowY={40}
@@ -240,8 +237,8 @@ const HowToGuide = ({ content, data, modalAction }) => {
         </Paragraph>
 
         <BoxButtonLinks>
-          {content.mainSteps.step3.groupBtn1.map((button) => (
-            <BoxedButton className="article-link" content={button} ellipsis />
+          {content.mainSteps.step3.groupBtn1.map((button, i) => (
+            <BoxedButton key={i} className="article-link" content={button} ellipsis />
           ))}
         </BoxButtonLinks>
       </TextBlockWithNumberCounting>
@@ -255,7 +252,6 @@ const HowToGuide = ({ content, data, modalAction }) => {
         imageBackgroundColor={color.white}
         imageShadowColor={shadow.white2}
         imageShadowOpacity={0.5}
-        boxShadow={false}
         paddingLeft={0}
         style={{ marginTop: "70px" }}
         circleShadowY={40}
@@ -326,7 +322,6 @@ const HowToGuide = ({ content, data, modalAction }) => {
         imageBackgroundColor={color.white}
         imageShadowColor={shadow.white2}
         imageShadowOpacity={0.5}
-        boxShadow={false}
         paddingLeft={0}
         style={{ marginTop: "70px" }}
         circleShadowY={40}
@@ -349,7 +344,6 @@ const HowToGuide = ({ content, data, modalAction }) => {
         imageBackgroundColor={color.white}
         imageShadowColor={shadow.white2}
         imageShadowOpacity={0.5}
-        boxShadow={false}
         paddingLeft={0}
         style={{ marginTop: "70px" }}
         circleShadowY={40}
@@ -395,7 +389,7 @@ const HowToGuide = ({ content, data, modalAction }) => {
 
           {item.type === "arrow-links" &&
             item.content.map((link) => (
-              <ArrowLink url={link.url} style={link.style}>
+              <ArrowLink externalLink={link.externalLink ?? false} url={link.url} style={link.style}>
                 {link.text}
               </ArrowLink>
             ))}

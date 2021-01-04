@@ -14,8 +14,8 @@ import HowToGuide from "../../atomic/states-llc/texas/how-to-guide";
 import HSSearchFormModal from "../../components/hubspot/search-name-form-modal";
 
 // Content
-import { top, HomePageContent, hsForm } from "../../static/states-llc/texas/home";
-import { tabPages, rocket } from "../../static/states-llc/texas/general";
+import { HomePageContent, hsForm } from "../../static/states-llc/texas/home";
+import { tabPages } from "../../static/states-llc/texas/general";
 
 import { getFullPricesAndFilings } from "../../api/Api";
 import { Helmet } from "react-helmet";
@@ -112,7 +112,7 @@ function TexasLLCIndex() {
                         "@context": "http://schema.org",
                         "@type": "VideoObject",
                         "name": "Forming an LLC in Texas by Incfile",
-                        "description": "Want to form a Texas LLC but not sure where to start? We'll walk you through the steps to starting your Texas business, including securing a unique business name, getting a registered agent, writing an operating agreement, and filing Form 501 (your certificate of formation) with the Texas Secretary of State. Incorporate your new Texas LLC today!  Here are a few additional resources that are useful for forming an LLC in the state of Texas: Incfile’s Business Name Search tool: https://www.incfile.com/business-name-search/.   Incfile Information Regarding Registered Agents: https://www.incfile.com/registered-agents/.  Incfile Register Your LLC Packages: https://www.incfile.com/form-order-now.php?entityType=&entityState=.",
+                        "description": "Want to form a Texas LLC but not sure where to start? We'll walk you through the steps to starting your Texas business, including securing a unique business name, getting a registered agent, writing an operating agreement, and filing Form 501 (your certificate of formation) with the Texas Secretary of State. Incorporate your new Texas LLC today!  Here are a few additional resources that are useful for forming an LLC in the state of Texas: Incfile’s Business Name Search tool: https://www.incfile.com/business-name-search/.   Incfile Information Regarding Registered Agents: https://www.incfile.com/registered-agents/.  Incfile Register Your LLC Packages: https://orders.incfile.com/form-order-now.php",
                         "thumbnailUrl": "https://i.ytimg.com/vi/wGAzGRmy6m8/default.jpg",
                         "uploadDate": "2020-06-03T14:52:33Z",
                         "duration": "PT1M49S",

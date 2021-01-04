@@ -20,7 +20,8 @@ import BillSVG from "../../images/icons/icon-person-bill.inline.svg";
 import FolderProcentSVG from "../../images/icons/icon-folder-procent.inline.svg";
 import { color } from "../../atomic/atoms/styles/colors";
 import { shadow } from "../../atomic/atoms/styles/shadows";
-import { xor } from "lodash";
+
+const ORDER_URL = `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`;
 
 export const top = {
 	header: `Why Form a Corporation in Wyoming.`,
@@ -28,7 +29,7 @@ export const top = {
 	buttons: [
 		{
 			text: `See detailed pricing`,
-			url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
+			url: ORDER_URL,
 		},
 	],
 };
@@ -38,7 +39,7 @@ export const launchBusiness = {
 	text: `No Contracts. No Surprises. Only $0 + State Fee to Launch Your Business.`,
 	button: {
 		text: `Launch your business!`,
-		url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
+		url: ORDER_URL,
 	},
 };
 
@@ -213,7 +214,7 @@ export const corporation = [
 			{
 				content: {
 					text: "Start Your C-Corp",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
+					url: ORDER_URL,
 				},
 				arrow: true,
 				theme: "primary56",
@@ -861,7 +862,7 @@ export const corporation = [
 		type: "arrow-link",
 		content: {
 			text: "Start your Wyoming C Corporation now ",
-			url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
+			url: ORDER_URL,
 		},
 		marginBottom: 32,
 	},
@@ -918,7 +919,7 @@ export const corporation = [
 				{
 					question:
 						"Step Five — File Your Articles of Incorporation With the Wyoming Secretary of State",
-					answer: `Once your articles are drafted, you can file them with the Wyoming Secretary of State. Filing your Articles of Incorporation creates your Wyoming corporation. You can do this online, mail in a form or have <a href="${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY">Incfile do it on your behalf.</a>`,
+					answer: `Once your articles are drafted, you can file them with the Wyoming Secretary of State. Filing your Articles of Incorporation creates your Wyoming corporation. You can do this online, mail in a form or have <a href="${ORDER_URL}">Incfile do it on your behalf.</a>`,
 				},
 				{
 					question:
@@ -999,7 +1000,7 @@ export const corporation = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1196,7 +1197,7 @@ export const naming = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1257,7 +1258,7 @@ export const agents = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1406,7 +1407,7 @@ export const agents = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1487,7 +1488,7 @@ export const filing = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -1814,7 +1815,7 @@ export const filing = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},
@@ -2013,7 +2014,7 @@ export const taxes = [
 			{
 				content: {
 					text: "Start Your C Corp with Incfile",
-					url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=WY`,
+					url: ORDER_URL,
 				},
 				theme: "primary56",
 			},

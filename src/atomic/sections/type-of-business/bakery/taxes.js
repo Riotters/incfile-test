@@ -8,7 +8,6 @@ import { shadow } from "../../../../components/styles/shadows";
 import OvalSvgBottom from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 import { adventages2 } from "../../../../static/type-of-business/bakery";
-import Curve2SVG from "../../../../images/curves/top-left-bottom-right-big.inline.svg";
 import Curve from "../../../atoms/icons/curve";
 
 const Taxes = () => (

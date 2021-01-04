@@ -1,3 +1,6 @@
+import React from "react";
+import styled from "styled-components";
+
 import Container from "../../../container";
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
@@ -8,13 +11,9 @@ import LookIcon from "../../../../images/icons/look-at-who-your-competitors-are-
 import MarketIcon from "../../../../images/icons/understand-your-market.inline.svg"
 import InvolvedIcon from "../../../../images/icons/get-involved-with-business-communities.inline.svg";
 import {color} from "../../../../components/styles/colors";
-import React from "react";
-import styled from "styled-components";
 import Curve from "../../../atoms/shapes/curve";
 import BigCurve from "../../../../images/curve-orange.inline.svg";
 import {gradient} from "../../../atoms/styles/colors";
-import Colorbox from "../../../../components/color-box";
-import StarIcon from "../../../../images/icons/star-with-base.inline.svg";
 
 const ContainerWrapper = styled.div`
     background-image: ${gradient.orange3};

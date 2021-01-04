@@ -1,12 +1,10 @@
-import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import React from "react";
 import styled from "styled-components";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import { color } from "../../../../components/styles/colors";
+import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import ArrowSVG from "../../../../images/arrow.inline.svg";
-import IconCircle from "../../../../components/icons/circle";
 import PlaneIcon from "../../../../images/icons/plane.inline.svg";
 import RockerIcon from "../../../../images/icons/rocket.inline.svg";
 import SeriesIcon from "../../../../images/icons/limited-liability-company.inline.svg";
@@ -17,6 +15,7 @@ import OvalGreen3 from "../../../../images/ovals/top-left-transparent-pink.inlin
 import { shadow } from "../../../atoms/styles/shadows";
 import { Link } from "gatsby";
 import { HeadingP } from "../../../atoms/typography/heading-to-p";
+import ArrowLink from "../../../../components/arrow-link";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -52,7 +51,7 @@ const BusinessStructure = () => (
     </Oval>
 
     <BusinessOwnerResponsibilities>
-      <ImageContent image="unique-business-2" paddingTop="60">
+      <ImageContent image="unique-business-2" imageAlt="choose right business structure" paddingTop="60">
         <Heading size={2} template={3} left>
           Choose the Right Business Structure and Register Your Business
         </Heading>
@@ -114,11 +113,13 @@ const BusinessStructure = () => (
             style={{ color: color.blue1, fontWeight: "bold" }}
             mixed={true}
           >
-            <Link
-              to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
+            <ArrowLink
+                externalLink
+                arrow={false}
+                url={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
             >
               Limited Liability Company or LLC
-            </Link>
+            </ArrowLink>
           </HeadingP>
 
           <Paragraph big>
@@ -148,11 +149,13 @@ const BusinessStructure = () => (
             style={{ color: color.blue1, fontWeight: "bold" }}
             mixed={true}
           >
-            <Link
-              to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
+            <ArrowLink
+                externalLink
+                arrow={false}
+                url={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
             >
               Series LLC
-            </Link>
+            </ArrowLink>
           </Paragraph>
           <Paragraph big>
             This is a special type of LLC entity that's only available in
@@ -182,14 +185,16 @@ const BusinessStructure = () => (
             style={{ color: color.blue1, fontWeight: "bold" }}
             mixed={true}
           >
-            <Link
-              to={
+            <ArrowLink
+                externalLink
+                arrow={false}
+                url={
                 process.env.ORDER_URL +
                 "/form-order-now.php?entityType=SCorporation"
               }
             >
               S Corporation
-            </Link>
+            </ArrowLink>
           </HeadingP>
 
           <Paragraph big>
@@ -218,14 +223,16 @@ const BusinessStructure = () => (
             style={{ color: color.blue1, fontWeight: "bold" }}
             mixed={true}
           >
-            <Link
-              to={
+            <ArrowLink
+                externalLink
+                arrow={false}
+                url={
                 process.env.ORDER_URL +
                 "/form-order-now.php?entityType=CCorporation"
               }
             >
               C Corporation
-            </Link>
+            </ArrowLink>
           </HeadingP>
 
           <Paragraph big>
@@ -271,13 +278,14 @@ const BusinessStructure = () => (
         </Paragraph>
 
         <Button
-          theme="primary48"
-          width="365px"
-          arrow
-          content={{
-            url: `${process.env.ORDER_URL}/form-order-now.php`,
-            text: `Start your business with us, today!`,
-          }}
+            externalLink
+            theme="primary48"
+            width="365px"
+            arrow
+            content={{
+                url: `${process.env.ORDER_URL}/form-order-now.php`,
+                text: `Start your business with us, today!`,
+            }}
         />
       </ImageContent>
     </BusinessOwnerResponsibilities>

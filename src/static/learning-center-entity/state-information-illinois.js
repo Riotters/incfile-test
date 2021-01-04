@@ -90,7 +90,8 @@ export const corporation = [
 	},
 	{
 		type: "video",
-		image: "what-is-a-corporation-8899",
+        image: "what-is-a-corporation-8899",
+        alt: `what is a corporation`,
 		id: `oYZShvmf9eQ`,
 		marginBottom: 32,
 	},
@@ -779,7 +780,8 @@ export const corporation = [
 	{
 		type: "arrow-link",
 		content: {
-			text: "Start your Illinois S Corporation now ",
+            text: "Start your Illinois S Corporation now ",
+            externalLink: true,
 			url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=IL`,
 		},
 		marginBottom: 24,
@@ -787,7 +789,8 @@ export const corporation = [
 	{
 		type: "arrow-link",
 		content: {
-			text: "Start your Illinois C Corporation now ",
+            text: "Start your Illinois C Corporation now ",
+            externalLink: true,
 			url: ORDER_URL,
 		},
 		marginBottom: 56,

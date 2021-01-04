@@ -15,13 +15,11 @@ import { validEmail } from "../../helpers/form-validate";
 
 // API
 import { postHSForm } from "../../api/Api";
-import ArrowLink from "../../atomic/molecules/buttons/text";
 
 const HSSearchFormModal = ({ content, postDownloadAction, hs_form_id, modalExit }) => {
     const pageUrl = typeof window !== "undefined" ? window.location.href : "";
-    const { register, handleSubmit, control, errors, formState, setValue } = useForm();
-    const { isSubmitting } = formState;
-
+    const { register, handleSubmit, control, errors, setValue } = useForm();
+    
     const handleForm = (data) => {
         const formData = new FormData();
         formData.set("pageTitle", document.title);

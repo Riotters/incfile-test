@@ -10,7 +10,6 @@ import Whitebox from "../../atoms/boxes/white-box";
 import { shadow } from "../../atoms/styles/shadows";
 import Button from "../../molecules/buttons/button";
 import ShapeCurve from "../../atoms/shapes/curve";
-import BoxedButton from "../../molecules/buttons/boxed";
 import ArrowLink from "../../../components/arrow-link";
 import { Heading } from "../../atoms/typography/heading";
 import RelativeElement from "../../elements/relative-e";
@@ -58,13 +57,6 @@ const ListFlex = styled.div`
     p {
       max-width: 100%;
     }
-  }
-`;
-
-const BoxButtonLinks = styled.div`
-  .article-link:not(:last-child) {
-    display: block;
-    margin-bottom: 8px;
   }
 `;
 

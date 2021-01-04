@@ -21,7 +21,6 @@ import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/const
 import BusinessPlan from "../../atomic/sections/type-of-business/construction-company/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/construction-company/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/construction-company/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/construction-company/order-now";
 import Regulations from "../../atomic/sections/type-of-business/construction-company/regulations";
 import InsuranceBusinessSection from "../../atomic/sections/type-of-business/construction-company/insurance-business";
 import Taxes from "../../atomic/sections/type-of-business/construction-company/taxes";
@@ -32,6 +31,7 @@ import OvalSvg from "../../images/ovals/bottom-left-transparent-orange.inline.sv
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/construction-company";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const ConstructionCompany = () => (
   <Layout>
@@ -53,7 +53,7 @@ const ConstructionCompany = () => (
       </p>
       <ButtonsBox>
         <Button
-          extends
+          externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -397,7 +397,7 @@ const ConstructionCompany = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <Regulations />
 

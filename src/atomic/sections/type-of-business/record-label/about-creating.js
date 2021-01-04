@@ -1,10 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Container from "../../../container";
-import Adventages from "../../../../components/adventages";
 import AdventagesWithLongText from "../../../molecules/mixed-blocks/adventages-with-long-text";
 import {Paragraph} from "../../../atoms/typography/paragraph";
-import {Heading} from "../../../atoms/typography/heading";
 import TextCenterLayout from "../../../partials/heading-center";
 import {gradient} from "../../../atoms/styles/colors";
 import {color} from "../../../../components/styles/colors";
@@ -89,7 +87,7 @@ const AboutCreating = () => (
                         Making use of digital services is very useful.
                     </Paragraph>
                     <Paragraph style={{marginBottom: 0}} mixed>
-                        Music services like <a href="https://soundcloud.com/" target="_BLANK">SoundCloud</a>, <a href="https://bandcamp.com/" target="_BLANK">Bandcamp</a>, <a href="https://www.apple.com/itunes/" target="_BLANK">iTunes</a>, <a href="https://music.amazon.com/" target="_BLANK">Amazon Music</a>, <a href="https://www.pandora.com/" target="_BLANK">Pandora</a>, <a href="https://play.google.com/music" target="_BLANK">Google Play Music</a> or <a href="https://www.spotify.com/" target="_BLANK">Spotify</a> make distribution easier and can help potential fans discover your music.
+                        Music services like <a href="https://soundcloud.com/" target="_blank" rel="noopener noreferrer">SoundCloud</a>, <a href="https://bandcamp.com/" target="_BLANK">Bandcamp</a>, <a href="https://www.apple.com/itunes/" target="_blank" rel="noopener noreferrer">iTunes</a>, <a href="https://music.amazon.com/" target="_blank" rel="noopener noreferrer">Amazon Music</a>, <a href="https://www.pandora.com/" target="_blank" rel="noopener noreferrer">Pandora</a>, <a href="https://play.google.com/music" target="_blank" rel="noopener noreferrer">Google Play Music</a> or <a href="https://www.spotify.com/" target="_blank" rel="noopener noreferrer">Spotify</a> make distribution easier and can help potential fans discover your music.
                     </Paragraph>
                 </AdventagesWithLongText>
             </AdventagesBox>

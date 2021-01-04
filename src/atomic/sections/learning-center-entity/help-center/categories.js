@@ -1,11 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { color, gradient } from "../../../atoms/styles/colors";
+import { color } from "../../../atoms/styles/colors";
 import HeadingCenter from "../../../partials/heading-center";
 import List from "../../../organisms/lists/browse-by-category-list";
-import { Heading } from "../../../atoms/typography/heading";
-import { Paragraph } from "../../../atoms/typography/paragraph";
-import { states } from "../../../../components/states";
 import CenterGrid from "../../../partials/center-grid";
 import PaperPlaneSVG from "../../../../images/icons/icon-learning-center-white-latter.inline.svg";
 import SpaceShipSVG from "../../../../images/icons/icon-learning-center-white-l-corpo.inline.svg";

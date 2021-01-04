@@ -10,7 +10,6 @@ import ColorBox from "../../../molecules/colored-blocks/color-box-with-top-icon"
 import ArrowLink from "../../../molecules/buttons/text";
 import ClockSVG from "../../../../images/icons/clock.inline.svg";
 import FilingRequirementBox from "../../../states-llc/filing-requirement-box";
-import { SpanHeading } from "../../../atoms/typography/span-as-heading";
 
 const Requirements = styled.section`
 	position: relative;
@@ -150,9 +149,9 @@ const RequirementsSection = ({ className, content, data }) => {
 				contentWidth="900"
 			>
 				<Grid>
-					{FirstSectionColumns.map((column) => (
-						<TextWrapper>
-							{column.content.map((item, i) => (
+					{FirstSectionColumns.map((column, i) => (
+						<TextWrapper key={i}>
+							{column.content.map((item, j) => (
 								<>
 									{item.type === "heading" && (
 										<Heading

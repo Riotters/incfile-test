@@ -6,7 +6,6 @@ import "react-multi-carousel/lib/styles.css";
 import Article from "../../article";
 import PurpleCurveSVG from "../../../images/purple-curve.inline.svg";
 import PinkCurveSVG from "../../../images/pink-curve.inline.svg";
-import VisibilitySensor from "../../VisibilitySensor";
 import Oval from "../../../atomic/atoms/icons/oval";
 import OvalSVG from "../../../images/ovals/top-right-transparent-purple2.inline.svg";
 
@@ -86,19 +85,6 @@ const CarouselWrapper = styled.div`
 				}
 			}
 		}
-	}
-`;
-
-const MobileWrapper = styled.div`
-	display: flex;
-	flex-direction: column;
-
-	@media (min-width: 769px) {
-		display: none;
-	}
-
-	a {
-		box-shadow: 0 20px 30px 0 #e6e6e6;
 	}
 `;
 

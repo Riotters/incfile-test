@@ -46,16 +46,6 @@ const Wrapper = styled.div`
     overflow: hidden;
 `;
 
-const TextWrapper = styled.div`
-    width: 100%;
-    position: relative;
-    
-    @media (min-width: 750px) {
-        width: 750px;
-        margin: 48px auto 100px;
-    }
-`;
-
 const Service = styled.div`
   padding: 64px 0;
 `;

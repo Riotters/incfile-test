@@ -103,7 +103,8 @@ const BusinessQuizTypeForm = () => {
 			<Wrapper>
 				<Fragment>
 					<div id="type-form">
-						<iframe
+                        <iframe
+                            title="business entity quiz"
 							id="js-typeform"
 							src="https://ray007277.typeform.com/to/w5A28E"
 							style={{ width: `100%`, height: `100%`, border: 0 }}

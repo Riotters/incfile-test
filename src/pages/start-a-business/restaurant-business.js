@@ -14,7 +14,6 @@ import Adventages from "../../components/adventages";
 import TypeBusiness from "../../atomic/sections/type-of-business/restaurant-business/type-business";
 import BusinessStructure from "../../atomic/sections/type-of-business/restaurant-business/business-structure";
 import SettingBusiness from "../../atomic/sections/type-of-business/restaurant-business/setting-business";
-import OrderNow from "../../atomic/sections/type-of-business/restaurant-business/order-now";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/restaurant-business/tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
 import Chart from "../../images/chart.inline.svg";
@@ -26,6 +25,7 @@ import TabOvalSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.
 import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/restaurant-business";
 import { TabPanel } from "react-tabs";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const RestaurantBusiness = () => (
   <Layout>
@@ -37,7 +37,7 @@ const RestaurantBusiness = () => (
     <Top
       ovalColor="sun"
       imageName="restaurant-business-main"
-      imageAlt="Mr Bulb with seedling"
+      imageAlt="how to start a restaurant business"
       headlineWidth={700}
     >
       <h1>How to Start a Restaurant Business</h1>
@@ -48,7 +48,8 @@ const RestaurantBusiness = () => (
         patrons.
       </p>
       <ButtonsBox>
-        <Button
+                <Button
+                    externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -245,7 +246,7 @@ const RestaurantBusiness = () => (
 
     <SettingBusiness />
 
-    <OrderNow />
+    <CompleteCheckListSection />
 
     <ToolsAndLinks />
 
