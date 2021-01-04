@@ -22,28 +22,42 @@ const ToolsAndLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="https://www.smallbusinessforums.org/forumdisplay.php?16-Home-Based-Business" textColor={color.blue1}
-                              hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink 
+                        externalLink 
+                        to="https://www.smallbusinessforums.org/forumdisplay.php?16-Home-Based-Business"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         Small Business Forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="http://www.homebusinessonline.com/forum/" textColor={color.blue1}
-                              hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink 
+                        externalLink 
+                        to="http://www.homebusinessonline.com/forum/"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         The Home Business Forum
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://community.startupnation.com/categories/homepreneurs" textColor={color.blue1} hoverColor={color.orange1}
-                              arrowColor={color.blue1}>
+                    <PathLink 
+                        externalLink 
+                        to="https://community.startupnation.com/categories/homepreneurs"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         Startup Nation Home-Based Businesses
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.facebook.com/groups/posthereaddhere/?ref=br_rs" textColor={color.blue1} hoverColor={color.orange1}
+                    <PathLink 
+                        externalLink 
+                        to="https://www.facebook.com/groups/posthereaddhere/?ref=br_rs" textColor={color.blue1} hoverColor={color.orange1}
                               arrowColor={color.blue1}>
                         Home-Based Business on Facebook
                     </PathLink>

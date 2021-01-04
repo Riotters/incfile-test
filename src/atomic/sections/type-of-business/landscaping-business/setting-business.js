@@ -29,7 +29,7 @@ const SettingBusiness = () => (
         <Container>
 
             <ImageBoxes>
-                <TopImageBox image="location" color={color.red3}>
+                <TopImageBox image="location" imageAlt="location" color={color.red3}>
                     <Heading size={3} template={4}>Location of Your Business</Heading>
                     <p>
                         Where are you going to run your business from? Will you work from home, get an office or
@@ -38,7 +38,7 @@ const SettingBusiness = () => (
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="display-ads" color={color.purple3}>
+                <TopImageBox image="display-ads" imageAlt="marketing" color={color.purple3}>
                     <Heading size={3} template={4}>Marketing</Heading>
                     <p>
                         You will probably need to build a website, and you will definitely need excellent local
@@ -46,7 +46,7 @@ const SettingBusiness = () => (
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
+                <TopImageBox image="we-doubled-the-size-of-customer-service" imageAlt="employees" color={color.orange3}>
                     <Heading size={3} template={4}>Employees</Heading>
                     <p>
                         It’s unlikely that you will need to hire employees in the early days of your business. Instead,
@@ -54,14 +54,14 @@ const SettingBusiness = () => (
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="software" color={color.green3}>
+                <TopImageBox image="software" imageAlt="software" color={color.green3}>
                     <Heading size={3} template={4}>Software</Heading>
                     <p>
                         Special software exists to make it easier to run your landscaping business.
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="measuring-business-success" color={color.babyblue3}>
+                <TopImageBox image="measuring-business-success" imageAlt="business maintenance" color={color.babyblue3}>
                     <Heading size={3} template={4}>Business maintenance</Heading>
                     <p>
                         Most states require businesses to file an <Link to="/manage-your-company/annual-report/">Annual Report</Link> once a year. You will also be expected
@@ -71,7 +71,7 @@ const SettingBusiness = () => (
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="state-filling-fees" color={color.yellow3}>
+                <TopImageBox image="state-filling-fees" imageAlt="finance and taxes" color={color.yellow3}>
                     <Heading size={3} template={4}>Finances and taxes</Heading>
                     <p>
                         What kind of bank account will you get? Do you need a business credit card? How will you pay
@@ -80,7 +80,7 @@ const SettingBusiness = () => (
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="side-yellow" color={color.yellow3}>
+                <TopImageBox image="side-yellow" imageAlt="equipment" color={color.yellow3}>
                     <Heading size={3} template={4}>Equipment</Heading>
                     <p>
                         What equipment do you need to manage your landscaping business? Depending on the types of
@@ -118,13 +118,6 @@ const ImageBoxes = styled.div`
   @media (min-width: 970px) {
     margin: 0 auto;
   }
-`;
-
-const GreenCurve = styled.div`
-    position: absolute;
-    right: -115px;
-    bottom: -122px;
-    width: 115px;
 `;
 
 const Oval = styled.div`

@@ -28,7 +28,7 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="permits-licences" color={color.babyblue3}>
+        <TopImageBox image="permits-licences" imageAlt="permit and license" color={color.babyblue3}>
           <Heading size={3} template={4}>
             Permits & Licenses
           </Heading>
@@ -48,7 +48,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="display-ads" color={color.red3}>
+        <TopImageBox image="display-ads" imageAlt="marketing" color={color.red3}>
           <Heading size={3} template={4}>
             Marketing
           </Heading>
@@ -61,7 +61,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="location" color={color.red3}>
           <Heading size={3} template={4}>
             Business Location
           </Heading>
@@ -72,7 +72,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="organization-change-02" color={color.green3}>
+        <TopImageBox image="organization-change-02" imageAlt="process" color={color.green3}>
           <Heading size={3} template={4}>
             Process
           </Heading>
@@ -83,7 +83,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software" color={color.blue3}>
           <Heading size={3} template={4}>
             Software
           </Heading>
@@ -95,7 +95,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side-yellow" color={color.yellow3}>
+        <TopImageBox image="side-yellow" imageAlt="equipment" color={color.yellow3}>
           <Heading size={3} template={4}>
             Equipment
           </Heading>
@@ -107,7 +107,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="measuring-business-success" color={color.babyblue3}>
+        <TopImageBox image="measuring-business-success" imageAlt="business maintenances" color={color.babyblue3}>
           <Heading size={3} template={4}>
             Business Maintenance
           </Heading>
@@ -121,7 +121,8 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox
-          image="we-doubled-the-size-of-customer-service"
+            image="we-doubled-the-size-of-customer-service"
+            imageAlt="employees"
           color={color.orange3}
         >
           <Heading size={3} template={4}>
@@ -172,13 +173,6 @@ const ImageBoxes = styled.div`
   @media (min-width: 992px) {
     padding-top: 104px;
   }
-`;
-
-const GreenCurve = styled.div`
-  position: absolute;
-  right: -115px;
-  bottom: -122px;
-  width: 115px;
 `;
 
 const Oval = styled.div`

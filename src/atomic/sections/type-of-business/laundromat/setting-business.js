@@ -25,17 +25,17 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="location" color={color.red3}>
           <Heading size={3} template={4}>Location of Your Business</Heading>
           <p>This is one of the most essential parts of your laundromat. Finding the right location with the perfect demographics, great access, a good footprint and other factors will be essential to your success.</p>
         </TopImageBox>
 
-        <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
+        <TopImageBox image="we-doubled-the-size-of-customer-service" imageAlt="employees" color={color.orange3}>
           <Heading size={3} template={4}>Employees</Heading>
           <p>Do you need to hire employees to help you? Although it’s possible to just run the laundromat yourself, you may want to hire janitorial staff who can look after it in your absence.</p>
         </TopImageBox>
 
-        <TopImageBox image="measuring-business-success" color={color.babyblue3}>
+        <TopImageBox image="measuring-business-success" imageAlt="business maintenance" color={color.babyblue3}>
           <Heading size={3} template={4}>Business maintenance</Heading>
           <p>
             Most states require businesses to file an Annual Report once a year. You will also be expected to pay estimated taxes on what you plan to earn in the current business year. Your federal, state, regional and city business licenses and permits may need to be renewed on a regular basis,
@@ -43,12 +43,12 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="display-ads" color={color.purple3}>
+        <TopImageBox image="display-ads" imageAlt="marketing" color={color.purple3}>
           <Heading size={3} template={4}>Marketing</Heading>
           <p>Most of your marketing is likely to be shop front, local advertising and word of mouth. Focus on local SEO and listings and take out ads in papers and other local media.</p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finance and taxes" color={color.yellow3}>
           <Heading size={3} template={4}>Finances and taxes</Heading>
           <p>
             What kind of bank account will you get? Do you need a business credit card? How will you pay your business taxes? These are important questions to consider so your laundromat business stays in the green. Here at Incfile,{" "}
@@ -56,12 +56,12 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="permits-licences" color={color.green3}>
+        <TopImageBox image="permits-licences" imageAlt="permit and license" color={color.green3}>
           <Heading size={3} template={4}>Premits and licenses</Heading>
           <p>Running a laundromat business comes with certain rules, regulations and legalities you need to be aware of. Incfile offers a Business License Research Package for you, or you can take the time to do the research yourself. Some states do require a specific laundromat license.</p>
         </TopImageBox>
 
-        <TopImageBox image="side-3" color={color.orange3}>
+        <TopImageBox image="side-3" imageAlt="equipment" color={color.orange3}>
           <Heading size={3} template={4}>Equipment</Heading>
           <p>
             What equipment do you need to manage your laundromat business? You will need enough washers and dryers to handle peak demand and may also want to invest in other equipment like coin changers, soap dispensers, furniture, computers and other areas. You may want to buy a van or other
@@ -69,7 +69,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="organization-change-02" color={color.green3}>
+        <TopImageBox image="organization-change-02" imageAlt="process" color={color.green3}>
           <Heading size={3} template={4}>Process</Heading>
           <p>
             You will want an efficient way to collect revenue from your laundromat. Since much of your money is going to be in the form of cash and coins, it makes sense to process all that money in an efficient way. Make sure you have good banking processes. You should also have good processes in

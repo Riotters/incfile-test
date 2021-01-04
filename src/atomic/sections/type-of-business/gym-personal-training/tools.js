@@ -25,22 +25,34 @@ const ToolsAndLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="https://www.ideafit.com/fit-pro-forum/" textColor={color.blue1}
-                              hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink 
+                        externalLink 
+                        to="https://www.ideafit.com/fit-pro-forum/"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         Idea Health and Fitness Forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://bodyspace.bodybuilding.com/" textColor={color.blue1}
-                              hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink 
+                        externalLink 
+                        to="https://bodyspace.bodybuilding.com/"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         BodySpace Bodybuilding Forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.shapefit.com/forum/" textColor={color.blue1} hoverColor={color.orange1}
-                              arrowColor={color.blue1}>
+                    <PathLink 
+                        externalLink 
+                        to="https://www.shapefit.com/forum/"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         Facebook ShapeFit Forums
                     </PathLink>
                 </LinkItem>

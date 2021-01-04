@@ -23,7 +23,7 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="location" color={color.babyblue3}>
+        <TopImageBox image="location" imageAlt="location for your gym" color={color.babyblue3}>
           <Heading size={3} template={4}>Location of Your Gym</Heading>
           <p>
             If you’re running a gym, the location will be vital. You’ll need somewhere that’s easily accessible, with enough space for all the equipment you’ll need and classes you want to run. These types of spaces can be hard to find, so engage a commercial real estate agent who can provide
@@ -31,7 +31,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="general-gym-and-fitness-ceter" color={color.red3}>
+        <TopImageBox image="general-gym-and-fitness-ceter" imageAlt="equipment for your gym" color={color.red3}>
           <Heading size={3} template={4}>Equipment for Your Gym</Heading>
           <p>
             One of your main expenses for your gym will be fitness equipment. You’ll need special training devices for cardiovascular workouts like treadmills, rowing machines and cross trainers. You’ll also need other equipment like weights, balance balls, resistance machines and much more. Don’t
@@ -39,17 +39,17 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
+        <TopImageBox image="we-doubled-the-size-of-customer-service" imageAlt="employess for your gym" color={color.orange3}>
           <Heading size={3} template={4}>Employees</Heading>
           <p>If you’re a personal trainer, you probably won't need to hire anyone else. If you’re running a gym, it’s likely you’ll need to take on some staff to help you with administration, providing fitness classes and other tasks.</p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software and process for your gym" color={color.blue3}>
           <Heading size={3} template={4}>Software and Process</Heading>
           <p>The right software and processes will make running your gym, fitness or personal training business much easier. See our list of the best apps and software at the end of this guide.</p>
         </TopImageBox>
 
-        <TopImageBox image="franchise-2" color={color.green3}>
+        <TopImageBox image="franchise-2" imageAlt="location for your gym" color={color.green3}>
           <Heading size={3} template={4}>Location of Your Personal Training Business</Heading>
           <p>
             If you’re running a personal training business, you’ll have more flexibility. You may be able to rent a hall or event space when you need it for classes, or work with a local gym owner to provide services at their location. Some personal trainers may choose to provide classes in the
@@ -57,12 +57,12 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="display-ads" color={color.red3}>
+        <TopImageBox image="display-ads" imageAlt="marketing for your gym" color={color.red3}>
           <Heading size={3} template={4}>Marketing Your Gym, Fitness or Personal Training Business</Heading>
           <p>Marketing will be a huge part of your gym, fitness or personal training business. Naturally, you will need an awesome website, but you'll also need to get branding, newsletters, digital ads, social media accounts and other channels in place.</p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finance and taxes for your gym" color={color.yellow3}>
           <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             You will need a separate business bank account for your gym or personal training business. You might also want to consider a business credit card. Additionally, you will need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile{" "}
@@ -70,7 +70,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side-4" color={color.green3}>
+        <TopImageBox image="side-4" imageAlt="equipment for your gym" color={color.green3}>
           <Heading size={3} template={4}>Equipment for Your Personal Training Business</Heading>
           <p>As a personal trainer, you’ll need far less equipment. Your exact needs will vary depending on the type of training you offer, but you will at least need some good sets of gym clothes and shoes, a mobile device to track signups and schedules and a reliable mode of transportation.</p>
         </TopImageBox>
@@ -102,13 +102,6 @@ const ImageBoxes = styled.div`
   @media (min-width: 970px) {
     margin: 0 auto;
   }
-`;
-
-const GreenCurve = styled.div`
-  position: absolute;
-  right: -115px;
-  bottom: -122px;
-  width: 115px;
 `;
 
 const Oval = styled.div`

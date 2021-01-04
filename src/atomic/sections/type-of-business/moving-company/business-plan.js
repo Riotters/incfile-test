@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { color } from "../../../../components/styles/colors";
 import { Heading } from "../../../atoms/typography/heading";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import { Paragraph } from "../../../atoms/typography/paragraph";

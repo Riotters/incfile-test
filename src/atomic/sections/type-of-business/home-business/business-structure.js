@@ -50,7 +50,7 @@ const BusinessStructure = () => (
 		</Oval>
 
 		<BusinessOwnerResponsibilities>
-			<ImageContent image="unique-business-green" paddingTop="60">
+			<ImageContent image="unique-business-green" imageAlt="choose right home business" paddingTop="60">
 				<Heading size={2} template={3} left>
 					Choose the Right Business Structure and Register Your Home-Based
 					Business
@@ -247,9 +247,12 @@ const BusinessStructure = () => (
 						please see our in-depth guide
 					</Link>
 					. If you've still got questions,{" "}
-					<Link to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/">
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/">
 						we've answered them to help you choose the right business structure
-					</Link>
+					</a>
 					.
 				</Paragraph>
 				<Paragraph
@@ -268,7 +271,8 @@ const BusinessStructure = () => (
 					, but we've got you covered, wherever you are.
 				</Paragraph>
 
-				<Button
+                <Button
+                    externalLink
 					theme="primary48"
 					width="365px"
 					arrow

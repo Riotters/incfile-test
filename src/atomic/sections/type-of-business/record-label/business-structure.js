@@ -52,7 +52,7 @@ const BusinessStructure = () => (
 		</Oval>
 
 		<BusinessOwnerResponsibilities>
-			<ImageContent image="unique-business-2" paddingTop="60">
+			<ImageContent image="unique-business-2" imageAlt="choose right record label business" paddingTop="60">
 				<Heading size={3} template={3}>
 					Choose the Right Business Structure and Register Your Record Label
 					Business
@@ -276,6 +276,7 @@ const BusinessStructure = () => (
 				</Paragraph>
 
 				<Button
+                    externalLink
 					theme="primary48"
 					width="365px"
 					arrow

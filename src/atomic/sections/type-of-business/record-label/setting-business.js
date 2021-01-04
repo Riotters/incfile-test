@@ -24,7 +24,7 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="display-ads" color={color.purple3}>
+        <TopImageBox image="display-ads" imageAlt="marketing record label business" color={color.purple3}>
           <Heading size={3} template={4}>
             Marketing Your Record Label Business
           </Heading>
@@ -38,7 +38,8 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox
-          image="we-doubled-the-size-of-customer-service"
+                    image="we-doubled-the-size-of-customer-service"
+                    imageAlt="employees record label business"
           color={color.orange3}
         >
           <Heading size={3} template={4}>
@@ -53,15 +54,15 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finance and taxes record label business" color={color.yellow3}>
           <Heading size={3} template={4}>
             Finances and Taxes
           </Heading>
           <p>
             You will need a separate{" "}
-            <Link to="https://utility.bankofamerica.com/alliance/?formid=IF1">
+            <a className="partner_link" data-name="Bank of America" href="https://utility.bankofamerica.com/alliance/?formid=IF1">
               business bank account
-            </Link>{" "}
+            </a>{" "}
             for your record label business. You might also want to consider a
             business credit card. Additionally, you will need to keep careful
             bookkeeping records and file business and personal taxes. Here at
@@ -73,7 +74,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="location record label business" color={color.red3}>
           <Heading size={3} template={4}>
             Location of Your Record Label business
           </Heading>
@@ -90,7 +91,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side-4" color={color.green3}>
+        <TopImageBox image="side-4" imageAlt="equipment record label business" color={color.green3}>
           <Heading size={3} template={4}>
             Equipment for Your Record Label business
           </Heading>
@@ -102,7 +103,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software record label business" color={color.blue3}>
           <Heading size={3} template={4}>
             Software and Process
           </Heading>

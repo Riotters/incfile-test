@@ -5,8 +5,6 @@ import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import { color } from "../../../../components/styles/colors";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import ArrowSVG from "../../../../images/arrow.inline.svg";
-import IconCircle from "../../../../components/icons/circle";
 import PlaneIcon from "../../../../images/icons/plane.inline.svg";
 import RockerIcon from "../../../../images/icons/rocket.inline.svg";
 import SeriesIcon from "../../../../images/icons/limited-liability-company.inline.svg";
@@ -54,7 +52,7 @@ const BusinessStructure = () => (
 		</Oval>
 
 		<BusinessOwnerResponsibilities>
-			<ImageContent image="unique-business-green" paddingTop="60">
+			<ImageContent image="unique-business-green" imageAlt="choose right internet business structure" paddingTop="60">
 				<Heading size={2} template={4} left style={{ fontSize: "24px" }}>
 					Choose the Right Business Structure and Register Your Internet
 					Business
@@ -273,7 +271,8 @@ const BusinessStructure = () => (
 					, but we’ve got you covered, wherever you are.
 				</Paragraph>
 
-				<Button
+                <Button
+                    externalLink
 					theme="primary48"
 					width="365px"
 					arrow

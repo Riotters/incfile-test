@@ -25,7 +25,7 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="location of handyman" color={color.red3}>
           <Heading size={3} template={4}>Location of Your Handyman Business</Heading>
           <p>
             Although it’s likely that you can run much of your handyman business from a home office, there are a couple of areas where you may need more space. First, if you’re building items offsite for installation at a client’s home, you’ll need a shop with the right space and tools for whatever
@@ -35,7 +35,7 @@ const SettingBusiness = () => (
           <p>Don't forget that if you work from home, you can write off part of your utility and housing costs against your taxes.</p>
         </TopImageBox>
 
-        <TopImageBox image="providing-products-and-services" color={color.green3}>
+        <TopImageBox image="providing-products-and-services" imageAlt="equipment of handyman" color={color.green3}>
           <Heading size={3} template={4}>Equipment for Your Handyman Business</Heading>
           <p>
             Like any modern business, you’ll need a computer and a smartphone to help you run your business. In addition to that, you’ll need tools and possibly specialized equipment. Good tools are likely to be a significant portion of your startup budget, whether that’s simple hand tools or large,
@@ -45,7 +45,7 @@ const SettingBusiness = () => (
           <p>You’ll also need to buy materials for your handyman jobs, although you can build that pricing into your quotes and estimates. If you need a truck or van for your handyman business, you can normally depreciate that against your profits so you pay less tax.</p>
         </TopImageBox>
 
-        <TopImageBox image="display-ads" color={color.purple3}>
+        <TopImageBox image="display-ads" imageAlt="marketing of handyman" color={color.purple3}>
           <Heading size={3} template={4}>Marketing Your Handyman Business</Heading>
           <p>
             Marketing will be a huge part of your handyman business. Naturally, you will need an awesome website, but you'll also need to get branding, newsletters, digital ads, social media accounts and other channels in place. You will probably want to focus most of your attention on local
@@ -53,23 +53,23 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finances and taxes of handyman" color={color.yellow3}>
           <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             You will need a separate{" "}
-            <a href="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">
+            <a className="partner_link" data-name="Bank of America" href="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">
               business bank account
             </a>{" "}
             for your handyman business. You might also want to consider a business credit card. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile <Link to="/business-accounting/">we can even help you file your taxes</Link>.
           </p>
         </TopImageBox>
 
-        <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
+        <TopImageBox image="we-doubled-the-size-of-customer-service" imageAlt="employess of handyman" color={color.orange3}>
           <Heading size={3} template={4}>Employees</Heading>
           <p>To begin with, you probably won’t need to hire anyone else for your handyman business, especially if you’re a good administrator. As you get busier, you might want to go into partnership with another handyman, or even train an apprentice.</p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software of handyman" color={color.blue3}>
           <Heading size={3} template={4}>Software</Heading>
           <p>The right software and processes will make running your handyman business much easier. See our list of the best apps and software at the end of this guide.</p>
         </TopImageBox>
