@@ -1,18 +1,15 @@
 import React from 'react';
+import { getFullPricesAndFilings } from '../../api/Api';
+import ContentMap from "../../atomic/partials/content-map";
+import LLCLayout from "../../atomic/partials/states-llc/arizona";
+// Components
+import LeftTabPages from '../../atomic/states-llc/left-tab-pages';
+import MainPageContent from '../../atomic/states-llc/page-content';
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
-
-// Components
-import LeftTabPages from '../../atomic/states-llc/left-tab-pages'
-import MainPageContent from '../../atomic/states-llc/page-content'
-import LLCLayout from "../../atomic/partials/states-llc/arizona"
-import ContentMap from "../../atomic/partials/content-map";
-
-// Content
-import { top, businessTaxes } from "../../static/states-llc/alabama/home";
 import { tabPages } from "../../static/states-llc/alabama/general";
-
-import { getFullPricesAndFilings } from '../../api/Api';
+// Content
+import { businessTaxes, top } from "../../static/states-llc/alabama/home";
 
 
 const BusinessTaxesPage = () => {
