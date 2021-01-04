@@ -1,16 +1,16 @@
-import Container from "../../../container";
-import { Heading } from "../../../atoms/typography/heading";
-import { Paragraph } from "../../../atoms/typography/paragraph";
-import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import TalkIcon from "../../../../images/icons/talk-to-clients.inline.svg";
-import IdetifyIcon from "../../../../images/icons/identify-your-unique-selling-point.inline.svg";
-import InvolvedIcon from "../../../../images/icons/get-involved-with-business-communities.inline.svg";
-import { color } from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
+import { color } from "../../../../components/styles/colors";
+import InvolvedIcon from "../../../../images/icons/get-involved-with-business-communities.inline.svg";
+import IdetifyIcon from "../../../../images/icons/identify-your-unique-selling-point.inline.svg";
+import TalkIcon from "../../../../images/icons/talk-to-clients.inline.svg";
 import OvalSvg from "../../../../images/ovals/top-left-transparent-red3.inline.svg";
 import Curve from "../../../atoms/shapes/curve";
 import { gradient } from "../../../atoms/styles/colors";
+import { Heading } from "../../../atoms/typography/heading";
+import { Paragraph } from "../../../atoms/typography/paragraph";
+import Container from "../../../container";
+import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
 
 const ContainerWrapper = styled.div`
   background: rgb(255, 255, 255);

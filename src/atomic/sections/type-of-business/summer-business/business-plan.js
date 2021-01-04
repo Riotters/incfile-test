@@ -1,11 +1,11 @@
+import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
-import { Link } from "gatsby";
-import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
+import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import OvalSmallSVG from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalSmallSVG from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
-import OvalSvg from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 import TextCenterLayout from "../../../partials/heading-left";
 
 const BusinessOwnerResponsibilities = styled.section`

@@ -1,12 +1,12 @@
-import React from "react";
 import { Link } from "gatsby";
-import Container from "../../../container";
-import TextCenterLayout from "../../../partials/heading-center";
-import TopImageBox from "../../../../components/top-image-box";
-import { color } from "../../../../components/styles/colors";
+import React from "react";
 import styled from "styled-components";
+import { color } from "../../../../components/styles/colors";
+import TopImageBox from "../../../../components/top-image-box";
 import GreenOval from "../../../../images/ovals/top-right-transparent-green3.inline.svg";
 import { Heading } from "../../../atoms/typography/heading";
+import Container from "../../../container";
+import TextCenterLayout from "../../../partials/heading-center";
 
 const SettingBusiness = () => (
   <GreenContainer>
@@ -23,7 +23,7 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="display-ads" color={color.purple3}>
+        <TopImageBox image="display-ads" imageAlt="marketing" color={color.purple3}>
           <Heading size={3} template={4}>
             Marketing
           </Heading>
@@ -39,7 +39,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="location" color={color.red3}>
           <Heading size={3} template={4}>
             Location
           </Heading>
@@ -54,7 +54,8 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox
-          image="we-doubled-the-size-of-customer-service"
+                    image="we-doubled-the-size-of-customer-service"
+                    imageAlt="equipment"
           color={color.orange3}
         >
           <Heading size={3} template={4}>
@@ -67,7 +68,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software" color={color.blue3}>
           <Heading size={3} template={4}>
             Software and Processes
           </Heading>
@@ -77,13 +78,15 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finance and taxes" color={color.yellow3}>
           <Heading size={3} template={4}>
             Finances and taxes
           </Heading>
           <p>
             You will need a separate{" "}
-            <a
+                <a
+                    className="partner_link"
+                    data-name="Bank of America"
               href="https://utility.bankofamerica.com/alliance/?formid=IF1"
               target="_blank"
               rel="noopener noreferrer"
@@ -102,7 +105,8 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox
-          image="business-planning-and-funding"
+                    image="business-planning-and-funding"
+                    imageAlt="planning during the downtime"
           color={color.babyblue3}
         >
           <Heading size={3} template={4}>
@@ -118,7 +122,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side-4" color={color.green3}>
+        <TopImageBox image="side-4" imageAlt="equipment" color={color.green3}>
           <Heading size={3} template={4}>
             Equipment
           </Heading>

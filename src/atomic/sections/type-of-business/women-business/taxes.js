@@ -26,8 +26,8 @@ const Taxes = () => (
                     <CurveWrapper>
                         <CurveSvg/>
                     </CurveWrapper>
-                    {adventages2.items.map(item => (
-                        <Adventages style={{textAlign: "center"}} url={item.url} urlText={item.urlText}
+                    {adventages2.items.map((item, i) => (
+                        <Adventages key={i} style={{textAlign: "center"}} url={item.url} urlText={item.urlText}
                                     circleText={item.circleText} headline={item.headline} text={item.text}
                                     circlePosition="center" circleBackgroundColor={color.blue1}
                                     circleBackgroundShadow={shadow.blue1}/>

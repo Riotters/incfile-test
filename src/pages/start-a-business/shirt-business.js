@@ -1,59 +1,59 @@
+import { Link } from "gatsby";
 import React from "react";
+import { TabPanel } from "react-tabs";
 import styled from "styled-components";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import Top from "../../atomic/partials/top";
-import Button from "../../atomic/molecules/buttons/button";
 import RatingRow from "../../atomic/atoms/boxes/rating-row";
-import CartBlock from "../../atomic/molecules/blocks/cart-block";
-import RatingBlock from "../../atomic/molecules/blocks/rating-block";
-import PanelWrapper from "../../atomic/organisms/tabs/panel";
+import { shadow } from "../../atomic/atoms/styles/shadows";
 import { Heading } from "../../atomic/atoms/typography/heading";
 import { Paragraph } from "../../atomic/atoms/typography/paragraph";
-import CkeckText from "../../components/static-check/text-only";
-import TextCenterLayout from "../../atomic/partials/heading-left";
 import Container from "../../atomic/container";
+import CartBlock from "../../atomic/molecules/blocks/cart-block";
+import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
+import RatingBlock from "../../atomic/molecules/blocks/rating-block";
+import Button from "../../atomic/molecules/buttons/button";
 import TextBlockWithImage from "../../atomic/molecules/mixed-blocks/text-block-with-absolute-image";
-import IdentifyIcon from "../../images/icons/identify-your-unique-selling-point.inline.svg";
-import LookIcon from "../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg";
-import ValidateIcon from "../../images/icons/validate-your-products-and-services.inline.svg";
-import TalkIcon from "../../images/icons/talk-to-clients.inline.svg";
-import MarketIcon from "../../images/icons/look-for-market-research.inline.svg";
-import InvolvedIcon from "../../images/icons/get-involved-with-business-communities.inline.svg";
-import { color } from "../../components/styles/colors";
+import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
 import CountingTextBoxed from "../../atomic/molecules/text-blocks/counting-text-boxed";
-import OvalOrange2Svg from "../../images/ovals/top-left-transparent-orange2.inline.svg";
-import ImageContent from "../../components/partials/blocks/left-image-right-content";
-import HandsIcon from "../../images/icons/hands.inline.svg";
-import LimitedIcon from "../../images/icons/limited-liability-company-or-llc.inline.svg";
-import SeriesIcon from "../../images/icons/limited-liability-company.inline.svg";
-import PlaneIcon from "../../images/icons/plane.inline.svg";
-import RockerIcon from "../../images/icons/rocket.inline.svg";
-import SettingBusiness from "../../atomic/sections/type-of-business/tshirt-business/setting-business";
-import {
-  AccordionCounting,
-  RingText,
-  tabs,
-  toolsList,
-} from "../../static/type-of-business/tshirt-business";
-import HireEmployees from "../../atomic/sections/type-of-business/tshirt-business/hire-employees";
+import AccordionWithCounting from "../../atomic/organisms/accordion/accordion-with-counting";
+import PanelWrapper from "../../atomic/organisms/tabs/panel";
+import ContentCenter from "../../atomic/partials/content-center";
+import TextCenterLayout from "../../atomic/partials/heading-left";
+import ReactTabs from "../../atomic/partials/ReactTabs";
+import Top from "../../atomic/partials/top";
 import UsefulTools from "../../atomic/partials/useful-tools";
 import Conclusion from "../../atomic/sections/general/conclusion";
-import Adventages from "../../components/adventages";
-import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
-import ColorFulCircleWithTextAndList from "../../atomic/molecules/blocks/colorful-circle-with-text-and-list";
-import ColorfulRing from "../../images/rings-2.inline.svg";
-import AccordionWithCounting from "../../atomic/organisms/accordion/accordion-with-counting";
-import ContentCenter from "../../atomic/partials/content-center";
-import TabOvalSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.svg";
-import TabOvalSvg2 from "../../images/ovals/bottom-right-transparent-green3.inline.svg";
-import Oval2Svg from "../../images/ovals/bottom-right-transparent-blue2.inline.svg";
-import Oval4Svg from "../../images/ovals/top-left-transparent-pink.inline.svg";
-import { shadow } from "../../atomic/atoms/styles/shadows";
-import { Link } from "gatsby";
-import ReactTabs from "../../atomic/partials/ReactTabs";
-import { TabPanel } from "react-tabs";
 import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
+import HireEmployees from "../../atomic/sections/type-of-business/tshirt-business/hire-employees";
+import SettingBusiness from "../../atomic/sections/type-of-business/tshirt-business/setting-business";
+import Adventages from "../../components/adventages";
+import Layout from "../../components/layout";
+import ImageContent from "../../components/partials/blocks/left-image-right-content";
+import SEO from "../../components/seo";
+import CkeckText from "../../components/static-check/text-only";
+import { color } from "../../components/styles/colors";
+import InvolvedIcon from "../../images/icons/get-involved-with-business-communities.inline.svg";
+import HandsIcon from "../../images/icons/hands.inline.svg";
+import IdentifyIcon from "../../images/icons/identify-your-unique-selling-point.inline.svg";
+import LimitedIcon from "../../images/icons/limited-liability-company-or-llc.inline.svg";
+import SeriesIcon from "../../images/icons/limited-liability-company.inline.svg";
+import LookIcon from "../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg";
+import MarketIcon from "../../images/icons/look-for-market-research.inline.svg";
+import PlaneIcon from "../../images/icons/plane.inline.svg";
+import RockerIcon from "../../images/icons/rocket.inline.svg";
+import TalkIcon from "../../images/icons/talk-to-clients.inline.svg";
+import ValidateIcon from "../../images/icons/validate-your-products-and-services.inline.svg";
+import TabOvalSvg from "../../images/ovals/bottom-left-transparent-blue3.inline.svg";
+import Oval2Svg from "../../images/ovals/bottom-right-transparent-blue2.inline.svg";
+import TabOvalSvg2 from "../../images/ovals/bottom-right-transparent-green3.inline.svg";
+import OvalOrange2Svg from "../../images/ovals/top-left-transparent-orange2.inline.svg";
+import Oval4Svg from "../../images/ovals/top-left-transparent-pink.inline.svg";
+import ColorfulRing from "../../images/rings-2.inline.svg";
+import {
+    AccordionCounting,
+    RingText,
+    tabs,
+    toolsList
+} from "../../static/type-of-business/tshirt-business";
 
 const TshirtBusiness = () => (
     <Layout>
@@ -393,7 +393,7 @@ const TshirtBusiness = () => (
             </Container>
 
             <ContentCenter contentWidth={770}>
-                <AccordionWithCounting content={AccordionCounting} />
+                <AccordionWithCounting content={AccordionCounting} header />
             </ContentCenter>
 
             <Container>
@@ -626,7 +626,7 @@ const TshirtBusiness = () => (
             </Oval5>
 
             <BusinessOwnerResponsibilities>
-                <ImageContent image="unique-business-2" paddingTop="60">
+                <ImageContent image="unique-business-2" imageAlt="choose right t-shirt business" paddingTop="60">
                     <Heading size={2} template={3} left>
                         Choose the Right Business Structure and Register Your T-Shirt
                         Business

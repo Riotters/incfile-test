@@ -15,7 +15,7 @@ const HireEmployees = () => (
         <ContentCenter contentWidth={770}>
             <TextCenterLayout headline="Hire Employees for Your T-Shirt Business"
                               text="If you’re just running your T-shirt business solo, you don’t need to worry about employees. If you are hiring people to work for you, you will need to know what to do. See our 10 tips on hiring employees."/>
-            <AccordionWithCounting content={HiringAccordionContent}/>
+            <AccordionWithCounting content={HiringAccordionContent} header />
         </ContentCenter>
 
     </BlueContainer>

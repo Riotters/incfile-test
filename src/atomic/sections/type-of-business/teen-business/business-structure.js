@@ -1,21 +1,22 @@
+import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
-import { Heading } from "../../../atoms/typography/heading";
-import { Paragraph } from "../../../atoms/typography/paragraph";
-import { color } from "../../../../components/styles/colors";
 import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
-import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
+import { color } from "../../../../components/styles/colors";
+import ArrowsIcon from "../../../../images/icons/arrows.inline.svg";
+import HandsIcon from "../../../../images/icons/hands.inline.svg";
 import PlaneIcon from "../../../../images/icons/plane.inline.svg";
 import RockerIcon from "../../../../images/icons/rocket.inline.svg";
 import UmbrellaIcon from "../../../../images/icons/umbrella.inline.svg";
-import HandsIcon from "../../../../images/icons/hands.inline.svg";
-import ArrowsIcon from "../../../../images/icons/arrows.inline.svg";
-import Button from "../../../molecules/buttons/button";
 import OvalGreen3 from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
-import { shadow } from "../../../atoms/styles/shadows";
 import { gradient } from "../../../atoms/styles/colors";
-import { Link } from "gatsby";
+import { shadow } from "../../../atoms/styles/shadows";
+import { Heading } from "../../../atoms/typography/heading";
 import { HeadingP } from "../../../atoms/typography/heading-to-p";
+import { Paragraph } from "../../../atoms/typography/paragraph";
+import Button from "../../../molecules/buttons/button";
+import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
+import ArrowLink from "../../../../components/arrow-link";
 
 const BusinessOwnerResponsibilities = styled.section`
 	position: relative;
@@ -52,7 +53,7 @@ const BusinessStructure = () => (
         </Oval>
 
         <BusinessOwnerResponsibilities>
-            <ImageContent image="unique-business-2" paddingTop="60">
+            <ImageContent image="unique-business-2" imageAlt="choose right teen business" paddingTop="60">
                 <Heading size={2} template={3} left>
                     Choose the Right Business Structure and Register Your Teen Business
 				</Heading>
@@ -115,11 +116,13 @@ const BusinessStructure = () => (
                         style={{ color: color.blue1, fontWeight: "bold" }}
                         mixed={true}
                     >
-                        <Link
-                            to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
+                        <ArrowLink
+                            externalLink
+                            arrow={false}
+                            url={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
                         >
                             Partnership Company or LLC
-						</Link>
+						</ArrowLink>
                     </HeadingP>
 
                     <Paragraph big>
@@ -152,11 +155,13 @@ const BusinessStructure = () => (
                         style={{ color: color.blue1, fontWeight: "bold" }}
                         mixed={true}
                     >
-                        <Link
-                            to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
+                        <ArrowLink
+                            externalLink
+                            arrow={false}
+                            url={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
                         >
                             Limited Liability Company or LLC
-						</Link>
+						</ArrowLink>
                     </HeadingP>
 
                     <Paragraph big>
@@ -187,14 +192,16 @@ const BusinessStructure = () => (
                         style={{ color: color.blue1, fontWeight: "bold" }}
                         mixed={true}
                     >
-                        <Link
-                            to={
+                        <ArrowLink
+                            externalLink
+                            arrow={false}
+                            url={
                                 process.env.ORDER_URL +
                                 "/form-order-now.php?entityType=SCorporation"
                             }
                         >
                             S Corporation
-						</Link>
+						</ArrowLink>
                     </HeadingP>
 
                     <Paragraph big>
@@ -223,14 +230,16 @@ const BusinessStructure = () => (
                         style={{ color: color.blue1, fontWeight: "bold" }}
                         mixed={true}
                     >
-                        <Link
-                            to={
+                        <ArrowLink
+                            externalLink
+                            arrow={false}
+                            url={
                                 process.env.ORDER_URL +
                                 "/form-order-now.php?entityType=CCorporation"
                             }
                         >
                             C Corporation
-						</Link>
+						</ArrowLink>
                     </HeadingP>
 
                     <Paragraph big>

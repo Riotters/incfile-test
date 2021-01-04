@@ -1,7 +1,7 @@
-import Container from "../../../container";
-import { Heading } from "../../../atoms/typography/heading";
-import { Paragraph } from "../../../atoms/typography/paragraph";
-import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
+import { Link } from "gatsby";
+import React from "react";
+import styled from "styled-components";
+import { color } from "../../../../components/styles/colors";
 import Icon1 from "../../../../images/icons/with-no-money-icon1.inline.svg";
 import Icon2 from "../../../../images/icons/with-no-money-icon2.inline.svg";
 import Icon3 from "../../../../images/icons/with-no-money-icon3.inline.svg";
@@ -10,13 +10,13 @@ import Icon5 from "../../../../images/icons/with-no-money-icon5.inline.svg";
 import Icon6 from "../../../../images/icons/with-no-money-icon6.inline.svg";
 import Icon7 from "../../../../images/icons/with-no-money-icon7.inline.svg";
 import Icon8 from "../../../../images/icons/with-no-money-icon8.inline.svg";
-
-import { color } from "../../../../components/styles/colors";
-import React from "react";
-import styled from "styled-components";
 import OvalSvg from "../../../../images/ovals/bottom-left-transparent-green2.inline.svg";
 import { gradient } from "../../../atoms/styles/colors";
-import { Link } from "gatsby";
+import { Heading } from "../../../atoms/typography/heading";
+import { Paragraph } from "../../../atoms/typography/paragraph";
+import Container from "../../../container";
+import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
+
 
 const ContainerWrapper = styled.div`
   background: rgb(255, 255, 255);

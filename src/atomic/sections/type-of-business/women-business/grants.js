@@ -1,15 +1,15 @@
+import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
-import TextCenterLayout from "../../../partials/heading-center";
-import Container from "../../../container";
-import Image from "../../../atoms/image/image";
-import { Link } from "gatsby";
-import Arrow from "../../../../images/arrow-circle.inline.svg";
-import { color, gradient } from "../../../atoms/styles/colors";
-import { Paragraph } from "../../../atoms/typography/paragraph";
 import Adventages from "../../../../components/adventages";
+import Arrow from "../../../../images/arrow-circle.inline.svg";
+import Image from "../../../atoms/image/image";
+import { color, gradient } from "../../../atoms/styles/colors";
 import { shadow } from "../../../atoms/styles/shadows";
+import { Paragraph } from "../../../atoms/typography/paragraph";
+import Container from "../../../container";
 import ContentCenter from "../../../partials/content-center";
+import TextCenterLayout from "../../../partials/heading-center";
 
 const Grants = () => (
 	<Wrapper>
@@ -66,7 +66,7 @@ const Grants = () => (
 				>
 					<TopContent width={129} height={33} className="topContent">
 						<div>
-							<Image filename="girlboss-logo" />
+							<Image filename="girlboss-logo" alt="set up a women business" />
 						</div>
 					</TopContent>
 					<BottomContent>
@@ -87,7 +87,7 @@ const Grants = () => (
 				>
 					<TopContent width={84} height={48} className="topContent">
 						<div>
-							<Image filename="sba-logo" />
+							<Image filename="sba-logo" alt="set up a women business" />
 						</div>
 					</TopContent>
 					<BottomContent>
@@ -108,7 +108,7 @@ const Grants = () => (
 				>
 					<TopContent width={102} height={68} className="topContent">
 						<div>
-							<Image filename="womensnet-logo" />
+							<Image filename="womensnet-logo" alt="set up a women business" />
 						</div>
 					</TopContent>
 					<BottomContent>
@@ -129,7 +129,7 @@ const Grants = () => (
 				>
 					<TopContent width={83} height={41} className="topContent">
 						<div>
-							<Image filename="eileen-fisher-2-logo" />
+							<Image filename="eileen-fisher-2-logo" alt="set up a women business" />
 						</div>
 					</TopContent>
 					<BottomContent>
@@ -150,7 +150,7 @@ const Grants = () => (
 				>
 					<TopContent width={80} height={80} className="topContent">
 						<div>
-							<Image filename="open-logo" />
+							<Image filename="open-logo" alt="set up a women business" />
 						</div>
 					</TopContent>
 					<BottomContent>
@@ -171,7 +171,7 @@ const Grants = () => (
 				>
 					<TopContent width={102} height={50} className="topContent">
 						<div>
-							<Image filename="grants-for-women-logo" />
+							<Image filename="grants-for-women-logo" alt="set up a women business" />
 						</div>
 					</TopContent>
 					<BottomContent>
@@ -192,7 +192,7 @@ const Grants = () => (
 				>
 					<TopContent width={60} height={60} className="topContent">
 						<div>
-							<Image filename="eileen-fisher-logo" />
+							<Image filename="eileen-fisher-logo" alt="set up a women business" />
 						</div>
 					</TopContent>
 					<BottomContent>

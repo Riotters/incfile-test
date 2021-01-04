@@ -954,7 +954,7 @@ export const list = {
 								},
 								{
 									text: `T-shirt Business`,
-									url: `/start-a-business/tshirt-business/`,
+									url: `/start-a-business/shirt-business/`,
 								},
 								{
 									text: `Beauty Salon Business`,

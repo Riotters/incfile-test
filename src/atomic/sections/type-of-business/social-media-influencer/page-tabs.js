@@ -284,34 +284,34 @@ const PageTabs = () => (
           <BubblesWrapper>
             <Bubbles>
               <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-color" />
+                <Image filename="mrs-bulb-final-comp-thumb-up-color" alt="thumb up" />
               </BubbleImage>
               <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-color" />
+                <Image filename="mrs-bulb-final-comp-thumb-up-color" alt="thumb up" />
               </BubbleImage>
               <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-color" />
+                <Image filename="mrs-bulb-final-comp-thumb-up-color" alt="thumb up" />
               </BubbleImage>
               <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-color" />
+                <Image filename="mrs-bulb-final-comp-thumb-up-color" alt="thumb up" />
               </BubbleImage>
               <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
+                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="thumb up" />
               </BubbleImage>
               <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
+                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="thumb up" />
               </BubbleImage>
               <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
+                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="thumb up" />
               </BubbleImage>
               <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
+                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="thumb up" />
               </BubbleImage>
               <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
+                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="thumb up" />
               </BubbleImage>
               <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" />
+                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="thumb up" />
               </BubbleImage>
             </Bubbles>
             <Text>

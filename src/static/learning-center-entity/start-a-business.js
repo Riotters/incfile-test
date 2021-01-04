@@ -115,7 +115,7 @@ export const checkType = {
 					},
 					{
 						header: `T-shirt Printing`,
-                        url: `/start-a-business/tshirt-business/`,
+                        url: `/start-a-business/shirt-business/`,
                         imageAlt: `t-shirt business`
 					},
 					{

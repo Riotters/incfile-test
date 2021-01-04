@@ -5,7 +5,6 @@ import {Panel, Tabs, useTabState} from "@bumaga/tabs"
 import OverviewSVG from "../../../../images/icons/coaching-business.inline.svg"
 import ArrowSVG from "../../../../images/arrow.inline.svg"
 import {Collapse} from "react-collapse"
-import VisibilitySensor from "../../../../components/VisibilitySensor"
 import LightIcon from "../../../../images/icons/light.inline.svg";
 import CalcIcon from "../../../../images/icons/series-is-this-business-for-you.inline.svg";
 import {Heading} from "../../../atoms/typography/heading";

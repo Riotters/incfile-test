@@ -1,36 +1,36 @@
 import React from "react";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import Button from "../../atomic/molecules/buttons/button";
-import RatingRow from "../../atomic/atoms/boxes/rating-row";
-import CartBlock from "../../atomic/molecules/blocks/cart-block";
-import RatingBlock from "../../atomic/molecules/blocks/rating-block";
-import Top from "../../atomic/partials/top";
+import { TabPanel } from "react-tabs";
 import styled from "styled-components";
-import PanelWrapper from "../../atomic/organisms/tabs/panel";
-import { Paragraph } from "../../atomic/atoms/typography/paragraph";
-import Colorbox from "../../components/color-box";
-import StarIcon from "../../images/icons/star-with-base.inline.svg";
-import { color } from "../../components/styles/colors";
+import RatingRow from "../../atomic/atoms/boxes/rating-row";
 import { Heading } from "../../atomic/atoms/typography/heading";
-import Adventages from "../../components/adventages";
-import TypeBusiness from "../../atomic/sections/type-of-business/women-business/type-of-business";
-import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/women-business/validating-business";
+import { Paragraph } from "../../atomic/atoms/typography/paragraph";
+import CartBlock from "../../atomic/molecules/blocks/cart-block";
+import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block";
+import RatingBlock from "../../atomic/molecules/blocks/rating-block";
+import Button from "../../atomic/molecules/buttons/button";
+import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
+import PanelWrapper from "../../atomic/organisms/tabs/panel";
+import ReactTabs from "../../atomic/partials/ReactTabs";
+import Top from "../../atomic/partials/top";
+import Conclusion from "../../atomic/sections/general/conclusion";
+import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 import BusinessPlan from "../../atomic/sections/type-of-business/women-business/business-plan";
 import BusinessStructure from "../../atomic/sections/type-of-business/women-business/business-structure";
+import Grants from "../../atomic/sections/type-of-business/women-business/grants";
 import Regulations from "../../atomic/sections/type-of-business/women-business/regulations";
 import Taxes from "../../atomic/sections/type-of-business/women-business/taxes";
 import ToolsAndLinks from "../../atomic/sections/type-of-business/women-business/tools";
-import Conclusion from "../../atomic/sections/general/conclusion";
-import Grants from "../../atomic/sections/type-of-business/women-business/grants";
-import BlueBoxWithAbsoluteText from "../../atomic/molecules/text-blocks/blue-box-with-absolute-text";
-import CircleWithText from "../../atomic/molecules/blocks/circle-with-text-block";
+import TypeBusiness from "../../atomic/sections/type-of-business/women-business/type-of-business";
+import ValidatingBusinessIdea from "../../atomic/sections/type-of-business/women-business/validating-business";
+import Adventages from "../../components/adventages";
+import Colorbox from "../../components/color-box";
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
+import { color } from "../../components/styles/colors";
 import Chart from "../../images/icons/circle-2.inline.svg";
+import StarIcon from "../../images/icons/star-with-base.inline.svg";
 import TabsOvalOneSvg from "../../images/ovals/bottom-left-transparent-orange.inline.svg";
-import ReactTabs from "../../atomic/partials/ReactTabs";
 import { tabs } from "../../static/type-of-business/women-business";
-import { TabPanel } from "react-tabs";
-import CompleteCheckListSection from "../../atomic/sections/type-of-business/general/complete-checklist-section";
 
 const WomenBusiness = () => (
     <Layout>
@@ -42,7 +42,7 @@ const WomenBusiness = () => (
         <Top
             ovalColor="yellow"
             imageName="women-business-main"
-            imageAlt="set up a woman business"
+            imageAlt="set up a women business"
             headlineWidth={700}
         >
             <h1>Business Ideas for Women</h1>

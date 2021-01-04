@@ -26,28 +26,28 @@ const SettingBusiness = () => (
 
             <ImageBoxes>
 
-                <TopImageBox image="location" color={color.red3}>
+                <TopImageBox image="location" imageAlt="location" color={color.red3}>
                     <Heading size={3} template={4}>Location of your business</Heading>
                     <p>
                         Setup a location to run your business from. To keep costs down, you will likely start by working from home, a shared workspace or even a coffee shop.
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="side-yellow" color={color.yellow3}>
+                <TopImageBox image="side-yellow" imageAlt="equipment" color={color.yellow3}>
                     <Heading size={3} template={4}>Equipment</Heading>
                     <p>
                         Get the equipment you need to run your business. Ideally you should already have everything you need, but you might be able to beg, borrow or buy secondhand.
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="display-ads" color={color.purple3}>
+                <TopImageBox image="display-ads" imageAlt="marketing" color={color.purple3}>
                     <Heading size={3} template={4}>Marketing</Heading>
                     <p>
                         You will likely focus on word of mouth and referral marketing in the beginning since it’s low cost and can create good buzz around your business.
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="software" color={color.blue3}>
+                <TopImageBox image="software" imageAlt="software and process" color={color.blue3}>
                     <Heading size={3} template={4}>Software and processes</Heading>
                     <p>
                         Establish the various software and business processes you need to run your new venture in the most efficient, optimized way.
