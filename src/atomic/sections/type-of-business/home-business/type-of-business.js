@@ -29,8 +29,9 @@ const TypeOfBusiness = () => (
                     <CurveWrapper>
                         <Curve/>
                     </CurveWrapper>
-                    {adventages.items.map(item => (
+                    {adventages.items.map((item, i) => (
                         <Adventages
+                            key={i}
                             style={{textAlign: "left"}}
                             url={item.url}
                             urlText={item.urlText}

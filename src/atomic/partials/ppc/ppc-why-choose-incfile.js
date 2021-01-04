@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "../../atoms/image/image";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
-import Image from "../../atoms/image/image";
 //import IncludedInAll from "./included-in-all-packages";
 import Container from "../../container";
 
@@ -75,7 +75,7 @@ const PPCWhyChooseIncfile = ({ className, content }) => (
             {content.header}
           </Heading>
           <ImageWrapper width={330} height={223} top={-50} right={-220}>
-            <Image filename="bronze-stevie-winner-0419" />
+            <Image filename="bronze-stevie-winner-0419" alt="why choose incfile" />
           </ImageWrapper>
         </Anchor>
         <Paragraph big>{content.text1}</Paragraph>
@@ -83,7 +83,7 @@ const PPCWhyChooseIncfile = ({ className, content }) => (
         <Anchor>
           <Paragraph big>{content.text2}</Paragraph>
           <ImageWrapper width={335} height={211} top={0} right={-387}>
-            <Image filename="enterpreneur-360-5900" />
+            <Image filename="enterpreneur-360-5900" alt="entrepreneur" />
           </ImageWrapper>
         </Anchor>
         <Paragraph big>{content.text3}</Paragraph>

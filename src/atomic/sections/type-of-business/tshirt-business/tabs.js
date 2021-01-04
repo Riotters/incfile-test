@@ -1,21 +1,19 @@
-import React from "react";
-import styled from "styled-components";
 import { Panel, Tabs, useTabState } from "@bumaga/tabs";
-// import { motion } from "framer-motion"
-import OverviewSVG from "../../../../images/icons/coaching-business.inline.svg";
-import ArrowSVG from "../../../../images/arrow.inline.svg";
+import React from "react";
 import { Collapse } from "react-collapse";
-import VisibilitySensor from "../../../../components/VisibilitySensor";
+import styled from "styled-components";
+import Adventages from "../../../../components/adventages";
+import Container from "../../../../components/container";
+import CkeckText from "../../../../components/static-check/text-only";
+import ArrowSVG from "../../../../images/arrow.inline.svg";
+import OverviewSVG from "../../../../images/icons/coaching-business.inline.svg";
 import LightIcon from "../../../../images/icons/light.inline.svg";
 import CalcIcon from "../../../../images/icons/series-is-this-business-for-you.inline.svg";
-import { Heading } from "../../../atoms/typography/heading";
-import { Paragraph } from "../../../atoms/typography/paragraph";
-import CkeckText from "../../../../components/static-check/text-only";
 import OvalSVG from "../../../../images/oval-blue-2.inline.svg";
 import OvalGreenSVG from "../../../../images/oval-green.inline.svg";
-import Container from "../../../../components/container";
+import { Heading } from "../../../atoms/typography/heading";
+import { Paragraph } from "../../../atoms/typography/paragraph";
 import BlueBoxWithAbsoluteText from "../../../molecules/text-blocks/blue-box-with-absolute-text";
-import Adventages from "../../../../components/adventages";
 import CountingTextBoxed from "../../../molecules/text-blocks/counting-text-boxed";
 
 const cn = (...args) => args.filter(Boolean).join(" ");

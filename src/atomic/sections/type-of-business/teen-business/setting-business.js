@@ -1,13 +1,13 @@
+import { Link } from "gatsby";
 import React from "react";
-import Container from "../../../container";
-import TextCenterLayout from "../../../partials/heading-center";
-import TopImageBox from "../../../../components/top-image-box";
-import { color } from "../../../../components/styles/colors";
 import styled from "styled-components";
+import { color } from "../../../../components/styles/colors";
+import TopImageBox from "../../../../components/top-image-box";
 import GreenOval from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import { gradient } from "../../../atoms/styles/colors";
-import { Link } from "gatsby";
-import {Heading} from "../../../atoms/typography/heading";
+import { Heading } from "../../../atoms/typography/heading";
+import Container from "../../../container";
+import TextCenterLayout from "../../../partials/heading-center";
 
 const SettingBusiness = () => (
   <GreenContainer>
@@ -19,17 +19,17 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="location" color={color.red3}>
           <Heading size={3} template={4}>Location</Heading>
           <p>The location you work from will be defined by the type of teen business you start. Some businesses can be run successfully from home, although others may need a specific location.</p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software" color={color.blue3}>
           <Heading size={3} template={4}>Software and Process</Heading>
           <p>The right software and processes will make running your teen business much easier. See our list of the best apps and software at the end of this guide.</p>
         </TopImageBox>
 
-        <TopImageBox image="display-ads" color={color.purple3}>
+        <TopImageBox image="display-ads" imageAlt="marketing" color={color.purple3}>
           <Heading size={3} template={4}>Marketing</Heading>
           <p>
             Marketing to your local neighborhood is much easier than marketing to a broader audience. Spend some time and effort identifying who your audience is and the best channels to reach them. If you’re selling online, you will probably want an awesome website, but you'll also need to get
@@ -37,7 +37,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finance and taxes" color={color.yellow3}>
           <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             If you make more than $400 a year (around $8 a week) from your teen business, you will need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile <Link to="/business-accounting/">we can even help you file your taxes</Link>. If you have an LLC, you will
@@ -45,7 +45,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side-4" color={color.green3}>
+        <TopImageBox image="side-4" imageAlt="equipment" color={color.green3}>
           <Heading size={3} template={4}>Equipment</Heading>
           <p>Depending on the type of teen business you run, equipment needs will vary widely.</p>
         </TopImageBox>
@@ -77,13 +77,6 @@ const ImageBoxes = styled.div`
   @media (min-width: 970px) {
     margin: 0 auto;
   }
-`;
-
-const GreenCurve = styled.div`
-  position: absolute;
-  right: -115px;
-  bottom: -122px;
-  width: 115px;
 `;
 
 const Oval = styled.div`

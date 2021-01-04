@@ -17,78 +17,80 @@ import { Paragraph } from "../../../atoms/typography/paragraph";
 import ContentCenter from "../../../partials/content-center";
 
 const TypeOfBusiness = () => (
-  <Wrapper>
-    <Oval>
-      <OvalSvg />
-    </Oval>
-    <Oval2>
-      <OvalSvg2 />
-    </Oval2>
-    <TextCenterLayout
-      headlineWidth={770}
-      textWidth={770}
-      headline="What Type of Cleaning Business Do You Want to Run?"
-      text="One of the first things you’ll need to decide on is the type of cleaning business you want to run. You have a few different options:"
-    />
+    <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
+        <Oval2>
+            <OvalSvg2 />
+        </Oval2>
+        <TextCenterLayout
+            headlineWidth={770}
+            textWidth={770}
+            headline="What Type of Cleaning Business Do You Want to Run?"
+            text="One of the first things you’ll need to decide on is the type of cleaning business you want to run. You have a few different options:"
+        />
 
-    <Service>
-      <Container>
-        <AdventagesBox>
-          <CurveWrapper>
-            <Curve color={color.red1} />
-          </CurveWrapper>
-          {adventages.items.map((item) => (
-            <Adventages
-              style={{ textAlign: "center" }}
-              url={item.url}
-              urlText={item.urlText}
-              circleText={item.circleText}
-              headline={item.headline}
-              text={item.text}
-              circlePosition="center"
-              circleBackgroundColor={color.blue1}
-              circleBackgroundShadow={shadow.blue1}
-              imageName={item.imageName}
-              width="100%"
-            />
-          ))}
-        </AdventagesBox>
-      </Container>
+        <Service>
+            <Container>
+                <AdventagesBox>
+                    <CurveWrapper>
+                        <Curve color={color.red1} />
+                    </CurveWrapper>
+                    {adventages.items.map((item, i) => (
+                        <Adventages
+                            key={i}
+                            style={{ textAlign: "center" }}
+                            url={item.url}
+                            urlText={item.urlText}
+                            circleText={item.circleText}
+                            headline={item.headline}
+                            text={item.text}
+                            circlePosition="center"
+                            circleBackgroundColor={color.blue1}
+                            circleBackgroundShadow={shadow.blue1}
+                            imageName={item.imageName}
+                            width="100%"
+                        />
+                    ))}
+                </AdventagesBox>
+            </Container>
 
-      <ContentCenter contentWidth={770}>
-        <Paragraph big style={{ marginBottom: "70px" }}>
-          You can go even more detailed than this and focus on narrower areas of
-          cleaning. This might include:
+            <ContentCenter contentWidth={770}>
+                <Paragraph big style={{ marginBottom: "70px" }}>
+                    You can go even more detailed than this and focus on narrower areas of
+                    cleaning. This might include:
         </Paragraph>
-      </ContentCenter>
+            </ContentCenter>
 
-      <Container>
-        <AdventagesBox>
-          {adventages2.items.map((item) => (
-            <Adventages
-              style={{ textAlign: "center" }}
-              url={item.url}
-              urlText={item.urlText}
-              circleText={item.circleText}
-              headline={item.headline}
-              text={item.text}
-              circlePosition="center"
-              circleBackgroundColor={color.blue1}
-              circleBackgroundShadow={shadow.blue1}
-              imageName={item.imageName}
-              width="100%"
-            />
-          ))}
-        </AdventagesBox>
-      </Container>
-      <ContentCenter contentWidth={770}>
-        <Paragraph big style={{ marginBottom: "70px" }}>
-          Explore the market opportunities in your area to see where you can
-          make the most impact.
+            <Container>
+                <AdventagesBox>
+                    {adventages2.items.map((item, i) => (
+                        <Adventages
+                            key={i}
+                            style={{ textAlign: "center" }}
+                            url={item.url}
+                            urlText={item.urlText}
+                            circleText={item.circleText}
+                            headline={item.headline}
+                            text={item.text}
+                            circlePosition="center"
+                            circleBackgroundColor={color.blue1}
+                            circleBackgroundShadow={shadow.blue1}
+                            imageName={item.imageName}
+                            width="100%"
+                        />
+                    ))}
+                </AdventagesBox>
+            </Container>
+            <ContentCenter contentWidth={770}>
+                <Paragraph big style={{ marginBottom: "70px" }}>
+                    Explore the market opportunities in your area to see where you can
+                    make the most impact.
         </Paragraph>
-      </ContentCenter>
-    </Service>
-  </Wrapper>
+            </ContentCenter>
+        </Service>
+    </Wrapper>
 );
 
 const Wrapper = styled.div`

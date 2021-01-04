@@ -61,7 +61,7 @@ const BusinessStructure = () => (
     </Oval>
 
     <BusinessOwnerResponsibilities>
-      <ImageContent image="unique-business-green" paddingTop="60">
+      <ImageContent image="unique-business-green" imageAlt="choose right real estate business structure" paddingTop="60">
         <Heading size={2} template={3} left>
           Formally Registering Your Real Estate Investment Business
         </Heading>
@@ -331,6 +331,7 @@ const BusinessStructure = () => (
         </Paragraph>
 
         <Button
+            externalLink
           theme="primary48"
           width="365px"
           arrow

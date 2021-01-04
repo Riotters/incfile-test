@@ -35,7 +35,6 @@ import {
   MaintainingAccordionContent,
   TaxesAccordionContent,
 } from "../../../../static/type-of-business/catering-business";
-import VisibilitySensor from "../../../../components/VisibilitySensor";
 import { InView } from "react-intersection-observer";
 
 const ButtonList = [
@@ -125,12 +124,7 @@ const TabScrollable = ({ layout, columns }) => {
               Rules, Regulations and Laws for Your Catering Business
             </Heading>
             <Paragraph big mixed={true}>
-              Of course, along with running a business there are certain rules,
-              regulations and legalities you need to be aware of.{" "}
-              <Link to="/business-license-research-package/">
-                We can also help with researching your business licensing needs
-              </Link>
-              .
+              Of course, along with running a business there are certain rules, regulations and legalities you need to be aware of. <Link to="/business-license-research-package/">We can also help with researching your business licensing needs</Link> .
             </Paragraph>
 
             <InView
@@ -204,21 +198,7 @@ const TabScrollable = ({ layout, columns }) => {
                   </Paragraph>
 
                   <Paragraph big mixed={true}>
-                    You can find all the information you need about statewide
-                    licenses and permits on your state’s Secretary of State
-                    website. You can also find those details in our{" "}
-                    <Link to="/llc-state-information/">
-                      state-by-state guides to company formation
-                    </Link>
-                    . Alternatively, the Small Business Administration website
-                    has a{" "}
-                    <a
-                      href="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      list of licenses and permits by state.
-                    </a>
+                    You can find all the information you need about statewide licenses and permits on your state’s Secretary of State website. You can also find those details in our <Link to="/llc-state-information/">state-by-state guides to company formation</Link> . Alternatively, the Small Business Administration website has a <a href="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits" target="_blank" rel="noopener noreferrer" > list of licenses and permits by state. </a>
                   </Paragraph>
                 </TextBlockWithImage>
               </div>
@@ -356,9 +336,9 @@ const TabScrollable = ({ layout, columns }) => {
                   </Paragraph>
                   <Paragraph big mixed={true}>
                     When you{" "}
-                    <Link to={`${process.env.ORDER_URL}/form-order-now.php`}>
+                    <a href={`${process.env.ORDER_URL}/form-order-now.php`}>
                       incorporate through us
-                    </Link>
+                    </a>
                     , we provide a{" "}
                     <Link to="/manage-your-company/registered-agent/">
                       complete Registered Agent service free
@@ -629,15 +609,6 @@ const Arrow = styled.div`
       fill: #5088fd;
     }
   }
-`;
-
-const ListWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const ListBox = styled.div`
-  width: 50%;
 `;
 
 const StickyContainer = styled.div`

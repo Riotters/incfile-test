@@ -1,7 +1,7 @@
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
-import PropTypes from "prop-types";
-import { Link } from "gatsby";
 import ArrowSVG from "../images/arrow.inline.svg";
 
 const Wrapper = styled(Link)`

@@ -1,12 +1,10 @@
-import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import React from "react";
 import styled from "styled-components";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import { color } from "../../../../components/styles/colors";
+import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import ArrowSVG from "../../../../images/arrow.inline.svg";
-import IconCircle from "../../../../components/icons/circle";
 import PlaneIcon from "../../../../images/icons/plane.inline.svg";
 import RockerIcon from "../../../../images/icons/rocket.inline.svg";
 import UmbrellaIcon from "../../../../images/icons/umbrella.inline.svg";
@@ -52,7 +50,7 @@ const BusinessStructure = () => (
     </Oval>
 
     <BusinessOwnerResponsibilities>
-      <ImageContent image="unique-business-green" paddingTop="60">
+      <ImageContent image="unique-business-green" imageAlt="choose right dog walking business" paddingTop="60">
         <Heading size={2} template={3} left>
           Choose the Right Business Structure and Register Your Brewery Business
         </Heading>
@@ -272,6 +270,7 @@ const BusinessStructure = () => (
         </Paragraph>
 
         <Button
+            externalLink
           theme="primary48"
           width="365px"
           arrow

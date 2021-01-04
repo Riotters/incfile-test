@@ -6,9 +6,7 @@ import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import { color } from "../../../../components/styles/colors";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import ArrowSVG from "../../../../images/arrow.inline.svg";
-import IconCircle from "../../../../components/icons/circle";
-import PlaneIcon from "../../../../images/icons/plane.inline.svg";
+ import PlaneIcon from "../../../../images/icons/plane.inline.svg";
 import RockerIcon from "../../../../images/icons/rocket.inline.svg";
 import UmbrellaIcon from "../../../../images/icons/umbrella.inline.svg";
 import HandsIcon from "../../../../images/icons/hands.inline.svg";
@@ -54,7 +52,7 @@ const MovingBusinessStructure = () => (
 
     <Container>
       <BusinessOwnerResponsibilities>
-        <ImageContent image="unique-business-2" paddingTop="60">
+        <ImageContent image="unique-business-2" imageAlt="choose right moving company business structure" paddingTop="60">
           <Heading size={2} template={3} left>
             Choose the Right Business Structure and Register Your Moving Business
           </Heading>
@@ -96,7 +94,7 @@ const MovingBusinessStructure = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Partnership</Link>
+              <a href={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Partnership</a>
             </Paragraph>
 
             <Paragraph big>Similar to a sole proprietorship, if you go into business with someone else without forming a legal business entity, you will be treated as a partnership. This doesn’t give you limited liability protections, so we don’t recommend it for your moving business.</Paragraph>
@@ -117,7 +115,7 @@ const MovingBusinessStructure = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Limited Liability Company or LLC</Link>
+              <a href={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}>Limited Liability Company or LLC</a>
             </Paragraph>
 
             <Paragraph big>The most common type of business entity. An LLC is fast, simple and inexpensive to set up and maintain. It protects your personal finances and assets and is a great way to start your moving business.</Paragraph>
@@ -138,7 +136,7 @@ const MovingBusinessStructure = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=SCorporation"}>S Corporation</Link>
+              <a href={process.env.ORDER_URL + "/form-order-now.php?entityType=SCorporation"}>S Corporation</a>
             </Paragraph>
 
             <Paragraph big>This is a more complex type of business and isn't generally recommended for smaller organizations.</Paragraph>
@@ -159,7 +157,7 @@ const MovingBusinessStructure = () => (
             widthUnit="%"
           >
             <Paragraph big style={{ color: color.blue1, fontWeight: "bold" }} mixed={true}>
-              <Link to={process.env.ORDER_URL + "/form-order-now.php?entityType=CCorporation"}>C Corporation</Link>
+              <a href={process.env.ORDER_URL + "/form-order-now.php?entityType=CCorporation"}>C Corporation</a>
             </Paragraph>
 
             <Paragraph big>These are the largest and most complex types of businesses, and they are typically far more than the average entrepreneur or moving business owner will need.</Paragraph>
@@ -177,7 +175,7 @@ const MovingBusinessStructure = () => (
             wherever you are.
           </Paragraph>
 
-          <Button theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />
+          <Button externalLink theme="primary48" width="365px" arrow content={{ url: `${process.env.ORDER_URL}/form-order-now.php`, text: `Start your business with us, today!` }} />
         </ImageContent>
       </BusinessOwnerResponsibilities>
     </Container>

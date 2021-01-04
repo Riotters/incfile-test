@@ -91,7 +91,6 @@ const CarouselWrapper = styled.div`
 		overflow: visible;
 
 		.react-multi-carousel-item {
-			//opacity: 0;
 			pointer-events: none;
 			transition: opacity 0.3s ease;
 
@@ -126,7 +125,23 @@ const CarouselWrapper = styled.div`
 					width: 16px;
 					background-color: #fd8550;
 				}
-			}
+            }
+            
+            // improvement for SEO on mobile
+            @media screen and (max-width: 560px) {
+                button{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50px;
+                    margin: 0 8px;
+                }
+
+                &--active{
+                    button{
+                        width: 32px;
+                    }
+                }
+            }
 		}
 	}
 `;
@@ -204,7 +219,7 @@ const SlideReviews = ({ content }) => (
                                 <Star />
                             </WrapperStars>
                             : <ImageWrapper>
-                                <Image filename={item.photo} />
+                                <Image filename={item.photo} alt={item.name ?? 'rating'} />
                             </ImageWrapper>
                         }
 

@@ -1,9 +1,9 @@
+import { Link } from "gatsby";
 import React from "react";
+import styled from "styled-components";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import styled from "styled-components";
-import { Link } from "gatsby";
 
 const Regulations = () => (
   <Wrapper>

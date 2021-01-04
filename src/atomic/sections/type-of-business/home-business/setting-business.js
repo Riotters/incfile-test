@@ -28,7 +28,7 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="location of home business" color={color.red3}>
           <Heading size={3} template={4}>
             Location
           </Heading>
@@ -42,7 +42,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side-4" color={color.green3}>
+        <TopImageBox image="side-4" imageAlt="equipment of home business" color={color.green3}>
           <Heading size={3} template={4}>
             Equipment
           </Heading>
@@ -57,7 +57,8 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox
-          image="we-doubled-the-size-of-customer-service"
+                    image="we-doubled-the-size-of-customer-service"
+                    imageAlt="employees of home business"
           color={color.orange3}
         >
           <Heading size={3} template={4}>
@@ -71,7 +72,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software of home business" color={color.blue3}>
           <Heading size={3} template={4}>
             Software and Process
           </Heading>
@@ -82,7 +83,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="display-ads" color={color.purple3}>
+        <TopImageBox image="display-ads" imageAlt="marketing of home business" color={color.purple3}>
           <Heading size={3} template={4}>
             Marketing
           </Heading>
@@ -94,19 +95,19 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finances and taxes of home business" color={color.yellow3}>
           <Heading size={3} template={4}>
             Finances and Taxes
           </Heading>
           <p>
             You will need a separate{" "}
-            <Link to="https://utility.bankofamerica.com/alliance/?formid=IF1">
+            <a className="partner_link" data-name="Bank of America" target="_blank" href="https://utility.bankofamerica.com/alliance/?formid=IF1">
               business bank account
-            </Link>{" "}
+            </a>{" "}
             for your home-based business. You might also want to consider a{" "}
-            <Link to="https://www.cardratings.com/advisors/incfile?&CCID=20415686204666272&QTR=ZZf201908011042310Za20415686Zg255Zw0Zm0Zc204666272Zs7273ZZ&CLK=719201129032210073&src=663024&&exp=y">
+            <a className="partner_link" data-name="CardRatings" target="_blank" href="https://www.cardratings.com/advisors/incfile?&CCID=20415686204666272&QTR=ZZf201908011042310Za20415686Zg255Zw0Zm0Zc204666272Zs7273ZZ&CLK=719201129032210073&src=663024&&exp=y">
               business credit card
-            </Link>
+            </a>
             . Additionally, you will need to keep careful bookkeeping records
             and file business and personal taxes. Here at Incfile{" "}
             <Link to="/business-accounting/">

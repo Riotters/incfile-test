@@ -28,7 +28,7 @@ const SettingBusiness = () => (
 
             <ImageBoxes>
 
-                <TopImageBox image="location" color={color.red3}>
+                <TopImageBox image="location" imageAlt="location" color={color.red3}>
                     <Heading size={3} template={4}>Business location</Heading>
                     <p>
                         This is one of the most important choices for a restaurant owner. You will need to find a
@@ -38,7 +38,7 @@ const SettingBusiness = () => (
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="side-4" color={color.green3}>
+                <TopImageBox image="side-4" imageAlt="equipment and ingredients" color={color.green3}>
                     <Heading size={3} template={4}>Equipment and ingredients</Heading>
                     <p>
                         Restaurants need a lot of upfront capital outlay on equipment, fixtures, furniture and
@@ -48,16 +48,16 @@ const SettingBusiness = () => (
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="state-filling-fees" color={color.yellow3}>
+                <TopImageBox image="state-filling-fees" imageAlt="finance and taxes" color={color.yellow3}>
                     <Heading size={3} template={4}>Finances and Taxes</Heading>
                     <Paragraph mixed>
-                        What kind of bank account will you get? Do you need a <a href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">business credit card</a>? How will you pay
+                        What kind of bank account will you get? Do you need a <a className="partner_link" data-name="CardRatings" target="_blank" href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">business credit card</a>? How will you pay
                         your business taxes? These are important questions to consider so your restaurant business stays
                         in the green. Here at Incfile, we can even <Link to="/business-accounting/">help you file your taxes</Link>.
                     </Paragraph>
                 </TopImageBox>
 
-                <TopImageBox image="we-doubled-the-size-of-customer-service" color={color.orange3}>
+                <TopImageBox image="we-doubled-the-size-of-customer-service" imageAlt="employees" color={color.orange3}>
                     <Heading size={3} template={4}>Employees</Heading>
                     <p>
                         You will need to hire employees throughout your restaurant business. From executive chefs to bar
@@ -66,7 +66,7 @@ const SettingBusiness = () => (
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="display-ads" color={color.purple3}>
+                <TopImageBox image="display-ads" imageAlt="marketing" color={color.purple3}>
                     <Heading size={3} template={4}>Marketing</Heading>
                     <p>
                         Your restaurant likely needs its own website, and you will also need to develop a local brand,
@@ -75,7 +75,7 @@ const SettingBusiness = () => (
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="permits-licences" color={color.blue3}>
+                <TopImageBox image="permits-licences" imageAlt="permit and license" color={color.blue3}>
                     <Heading size={3} template={4}>Permits and licenses</Heading>
                     <p>
                         Running a restaurant business comes with certain rules, regulations and legalities you need to
@@ -86,7 +86,7 @@ const SettingBusiness = () => (
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="measuring-business-success" color={color.babyblue3}>
+                <TopImageBox image="measuring-business-success" imageAlt="business maintenance" color={color.babyblue3}>
                     <Heading size={3} template={4}>Business maintenance</Heading>
                     <p>
                         Most states require businesses to file an <Link to="/manage-your-company/annual-report">Annual Report</Link> report once a year. You will also be
@@ -96,7 +96,7 @@ const SettingBusiness = () => (
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="software" color={color.blue3}>
+                <TopImageBox image="software" imageAlt="software" color={color.blue3}>
                     <Heading size={3} template={4}>Software</Heading>
                     <p>
                         There’s a variety of software products specifically

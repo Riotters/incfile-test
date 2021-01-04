@@ -266,7 +266,8 @@ const Footer = () => {
 						<Newsletter
 							className={errors.email ? "invalid" : ""}
 							placeholder="Your E-mail"
-							name="email"
+                            name="email"
+                            id="newsletter"
 							type="text"
 							ref={register({
 								required: true,

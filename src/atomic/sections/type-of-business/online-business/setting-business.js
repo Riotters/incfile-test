@@ -25,7 +25,7 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="location" color={color.red3}>
           <Heading size={3} template={4}>
             Location of your business
           </Heading>
@@ -37,7 +37,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="display-ads" color={color.purple3}>
+        <TopImageBox image="display-ads" imageAlt="marketing" color={color.purple3}>
           <Heading size={3} template={4}>
             Marketing
           </Heading>
@@ -49,7 +49,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side-4" color={color.green3}>
+        <TopImageBox image="side-4" imageAlt="equipment" color={color.green3}>
           <Heading size={3} template={4}>
             Equipment
           </Heading>
@@ -59,7 +59,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software" color={color.blue3}>
           <Heading size={3} template={4}>
             Software and Process
           </Heading>
@@ -70,7 +70,8 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox
-          image="we-doubled-the-size-of-customer-service"
+                    image="we-doubled-the-size-of-customer-service"
+                    imageAlt="employees"
           color={color.orange3}
         >
           <Heading size={3} template={4}>
@@ -82,16 +83,18 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finance and taxes" color={color.yellow3}>
           <Heading size={3} template={4}>
             Finances and Taxes
           </Heading>
           <p>
             You will need a separate{" "}
             <a
-              href="https://utility.bankofamerica.com/alliance/?formid=IF1"
-              target="_blank"
-              rel="noopener noreferrer"
+                className="partner_link"
+                data-name="Bank of America"
+                href="https://utility.bankofamerica.com/alliance/?formid=IF1"
+                target="_blank"
+                rel="noopener noreferrer"
             >
               business bank account
             </a>{" "}

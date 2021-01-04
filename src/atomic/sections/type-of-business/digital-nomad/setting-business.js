@@ -28,11 +28,13 @@ const SettingBusiness = () => (
 
 		<Container>
 			<ImageBoxes>
-				<TopImageBox image="state-filling-fees" color={color.yellow3}>
+				<TopImageBox image="state-filling-fees" imageAlt="finance and taxes of digital nomad business" color={color.yellow3}>
 					<Heading size={3} template={4}>Finances and Taxes</Heading>
 					<p>
 						What kind of{" "}
-						<a
+                        <a
+                            className="partner_link"
+                            data-name="Bank of America"
 							href="https://utility.bankofamerica.com/alliance/?formid=IF1"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -40,7 +42,9 @@ const SettingBusiness = () => (
 							bank account
 						</a>{" "}
 						will you get? How do you find the{" "}
-						<a
+                        <a
+                            className="partner_link"
+                            data-name="CardRatings"
 							href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -53,7 +57,7 @@ const SettingBusiness = () => (
 					</p>
 				</TopImageBox>
 
-				<TopImageBox image="software" color={color.blue3}>
+				<TopImageBox image="software" imageAlt="software of digital nomad business" color={color.blue3}>
 					<Heading size={3} template={4}>Software and Process</Heading>
 					<p>
 						Is there software that can help you manage and market your business?
@@ -62,7 +66,7 @@ const SettingBusiness = () => (
 					</p>
 				</TopImageBox>
 
-				<TopImageBox image="organization-change-02" color={color.green3}>
+				<TopImageBox image="organization-change-02" imageAlt="process of digital nomad business" color={color.green3}>
 					<Heading size={3} template={4}>Processes</Heading>
 					<p>
 						What business processes are you going to use to run your business
@@ -74,7 +78,7 @@ const SettingBusiness = () => (
 					</p>
 				</TopImageBox>
 
-				<TopImageBox image="display-ads" color={color.red3}>
+				<TopImageBox image="display-ads" imageAlt="marketing of digital nomad business" color={color.red3}>
 					<Heading size={3} template={4}>Marketing</Heading>
 					<p>
 						Do you need to build a website for your digital nomad business?
@@ -85,7 +89,7 @@ const SettingBusiness = () => (
 					</p>
 				</TopImageBox>
 
-				<TopImageBox image="measuring-business-success" color={color.babyblue3}>
+				<TopImageBox image="measuring-business-success" imageAlt="business maintenance of digital nomad business" color={color.babyblue3}>
 					<Heading size={3} template={4}>Business Maintenance</Heading>
 					<p>
 						Most states require businesses to file an{" "}
@@ -100,7 +104,7 @@ const SettingBusiness = () => (
 					</p>
 				</TopImageBox>
 
-				<TopImageBox image="location" color={color.red3}>
+				<TopImageBox image="location" imageAlt="location of digital nomad business" color={color.red3}>
 					<Heading size={3} template={4}>Business Location</Heading>
 					<p>
 						Where are you going to run your business from? The joy of being a
@@ -110,7 +114,7 @@ const SettingBusiness = () => (
 					</p>
 				</TopImageBox>
 
-				<TopImageBox image="side-3" color={color.orange3}>
+				<TopImageBox image="side-3" imageAlt="equipment of digital nomad business" color={color.orange3}>
 					<Heading size={3} template={4}>Equipment</Heading>
 					<p>
 						What equipment do you need to manage your digital nomad business
@@ -150,13 +154,6 @@ const ImageBoxes = styled.div`
 	@media (min-width: 970px) {
 		margin: 0 auto;
 	}
-`;
-
-const GreenCurve = styled.div`
-	position: absolute;
-	right: -115px;
-	bottom: -122px;
-	width: 115px;
 `;
 
 const Oval = styled.div`

@@ -1,20 +1,19 @@
-import React from "react"
-import { Link } from "gatsby";
-import styled from "styled-components"
-import parse from 'html-react-parser'
-
+import parse from 'html-react-parser';
+import React from "react";
+import styled from "styled-components";
+import ArrowLink from "../../../components/arrow-link";
+import { color } from "../../../components/styles/colors";
+import { Heading } from "../../atoms/typography/heading";
+import { Paragraph } from "../../atoms/typography/paragraph";
+import Button from "../../molecules/buttons/button";
+import TextBoxed from "../../molecules/static-check/circle-checkmark-text-boxed";
+import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
+import Accordion from "../../organisms/accordion/accordion";
+import NumericBoxedList from '../../organisms/lists/numeric-boxed-list';
 // Components
 import BoxCTA from '../box-cta';
-import Button from "../../molecules/buttons/button";
-import ArrowLink from "../../../components/arrow-link"
-import { Heading } from "../../atoms/typography/heading"
-import { color } from "../../../components/styles/colors"
-import { Paragraph } from "../../atoms/typography/paragraph"
-import NumericBoxedList from '../../organisms/lists/numeric-boxed-list'
-import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color"
 import AcccordionCounting from '../tab-acccordion-with-counting';
-import Accordion from "../../organisms/accordion/accordion";
-import TextBoxed from "../../molecules/static-check/circle-checkmark-text-boxed";
+
 
 const Wrapper = styled.div`
     h2, h3{

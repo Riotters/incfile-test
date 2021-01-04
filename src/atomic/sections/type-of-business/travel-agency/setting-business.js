@@ -1,12 +1,12 @@
+import { Link } from "gatsby";
 import React from "react";
+import styled from "styled-components";
+import { color } from "../../../../components/styles/colors";
+import TopImageBox from "../../../../components/top-image-box";
+import OvalSvg from "../../../../images/ovals/bottom-right-transparent-blue3.inline.svg";
+import { Heading } from "../../../atoms/typography/heading";
 import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-center";
-import TopImageBox from "../../../../components/top-image-box";
-import { color } from "../../../../components/styles/colors";
-import styled from "styled-components";
-import OvalSvg from "../../../../images/ovals/bottom-right-transparent-blue3.inline.svg";
-import { Link } from "gatsby";
-import { Heading } from "../../../atoms/typography/heading";
 
 const SettingBusiness = () => (
   <WrapperContainer>
@@ -27,7 +27,7 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="location" color={color.red3}>
           <Heading size={3} template={4}>
             Location of Your Travel Agency
           </Heading>
@@ -41,7 +41,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finance and taxes" color={color.yellow3}>
           <Heading size={3} template={4}>
             Finances and Taxes
           </Heading>
@@ -57,7 +57,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="display-ads" color={color.purple3}>
+        <TopImageBox image="display-ads" imageAlt="marketing" color={color.purple3}>
           <Heading size={3} template={4}>
             Marketing Your Travel Agency
           </Heading>
@@ -71,7 +71,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software" color={color.blue3}>
           <Heading size={3} template={4}>
             Software and Processes
           </Heading>
@@ -85,7 +85,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side-4" color={color.green3}>
+        <TopImageBox image="side-4" imageAlt="social network" color={color.green3}>
           <Heading size={3} template={4}>
             Use the Right Social Networks
           </Heading>
@@ -98,7 +98,8 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox
-          image="we-doubled-the-size-of-customer-service"
+            image="we-doubled-the-size-of-customer-service"
+            imageAlt="employees"
           color={color.orange3}
         >
           <Heading size={3} template={4}>
@@ -143,12 +144,6 @@ const ImageBoxes = styled.div`
   }
 `;
 
-const GreenCurve = styled.div`
-  position: absolute;
-  right: -115px;
-  bottom: -122px;
-  width: 115px;
-`;
 
 const Oval = styled.div`
   position: absolute;

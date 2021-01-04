@@ -66,11 +66,11 @@ export const about = {
   header3: `How do Operating Agreements Differ from State to State?`,
   text5: `The biggest difference in operating agreements across states is whether or not they’re required. California, New York, Missouri, Maine and Delaware all require the members of an LLC to have an operating agreement at varying levels of complexity and precision. For instance, New York requires LLCs to have a written operating agreement with provisions relating to its business while Delaware only requires that at some time before, during, or after the filing of LLC formation paperwork a written, oral or even implied operating agreement is made — in other words, the law is lenient.`,
   text6: `In most states however, operating agreements are not required by law. However, this doesn’t make them any less important or useful. One consideration to make though is the
-        <a href="/llc-state-information" target="_blank">state’s default rules for LLC,</a>
+        <a href="/llc-state-information/">state’s default rules for LLC,</a>
         as many of them can be altered slightly by an agreement. Some states, for instance, have a default rule that requires LLC members to divide profits and losses equally, regardless of the level of each member’s investment in the business. If all members did not invest equal amounts in the LLC, it’s unlikely that all members will want to allocate the profits equally. To avoid this, operating agreements can spell out how members want to split profits and losses.`,
   header4: `Taking the Next Step`,
   text7: `Simplicity is a wonderful thing, but in the current business climate it seems in short supply. LLC members may shirk the task of creating an operating agreement because the more contingencies and possibilities it covers, the more complex it is. However, having a concise and well defined plan in both times of upheaval or calm is invaluable.`,
   text8: `We’ve only noted a few of the highlights in terms of what an LLC Operating Agreement needs to cover; specific requirements will depend on the laws of an LLC’s home state and exactly how it wants to run its business. A baseline LLC operating agreement is included in most of our packages or can be added to our base package. Examine our
-        <a href="/limited-liability-company/" target="_blank">options for starting your LLC</a>
+        <a href="/limited-liability-company/">options for starting your LLC</a>
         today to take the next step in building an your operating agreement.`,
 };

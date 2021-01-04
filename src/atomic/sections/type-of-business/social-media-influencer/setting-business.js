@@ -21,28 +21,28 @@ const SettingBusiness = () => (
                 text="If you’re interested in becoming a social media influencer, it’s worth exploring how exactly you’re going to turn your follower count and original content into a money making marketing machine."
             />
             <ImageBoxes>
-                <TopImageBox image="measuring-business-success" color={color.babyblue3}>
+                <TopImageBox image="measuring-business-success" imageAlt="follower and fan" color={color.babyblue3}>
                     <Heading size={3} template={4}>Research and Track the Posts That Get Interactions to Increase Followers and Fans</Heading>
                     <p>
                         Although influencer marketing is all about connecting with people, you’ll also need to rely on data and analysis to make sure you’re spending your time wisely. Experiment with different types of posts, images and interactive content. Track the posts that get you the most attention, shares and followers. Carefully analyze the content that gets you noticed, and build that into your own marketing strategy.
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="marketing-and-advertising-photographer" color={color.blue3}>
+                <TopImageBox image="marketing-and-advertising-photographer" imageAlt="personal brand" color={color.blue3}>
                     <Heading size={3} template={4}>Build Your Own Personal Brand and Identity</Heading>
                     <p>
                         Being a great social media marketer means building your own personal brand. You should be sharing authentic stories, interesting viewpoints and building connections with your followers. Make sure you have something unique and interesting to say and offer a fresh perspective in your chosen field. Learn about your followers and create content that speaks to their needs, while showing yourself in the best possible light.
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="use-the-right-social-network" color={color.purple3}>
+                <TopImageBox image="use-the-right-social-network" imageAlt="social network" color={color.purple3}>
                     <Heading size={3} template={4}>Use the Right Social Networks</Heading>
                     <p>
                         You can’t spread yourself too thin as an influencer, so it’s important to focus your attention on the right social networks. Brands and marketing agencies are seeking out influencers on Instagram, YouTube, and Facebook. Other networks like Twitter and Pinterest can also be popular for the right niches. We recommend starting on just one or two social media networks and building up your engagement, reputation and follower count.
                     </p>
                 </TopImageBox>
 
-                <TopImageBox image="confirm-that-a-blockchain-application-is-the-best-for-your-need" color={color.orange3}>
+                <TopImageBox image="confirm-that-a-blockchain-application-is-the-best-for-your-need" imageAlt="produce content" color={color.orange3}>
                     <Heading size={3} template={4}>Produce Consistently Excellent Content</Heading>
                     <p>
                         You’ll be defined by the content you create. Make sure you have a content strategy that shows your talent and viewpoints, while creating content of several different types to engage with your followers. Create a strong visual identity and hashtags so it’s easy to identify you.
@@ -76,13 +76,6 @@ const ImageBoxes = styled.div`
     width: 970px;
     margin: 0 auto;
   }
-`;
-
-const GreenCurve = styled.div`
-    position: absolute;
-    right: -115px;
-    bottom: -122px;
-    width: 115px;
 `;
 
 const Oval = styled.div`

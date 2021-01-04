@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import InfoCardsSection from "../../../partials/info-cards-section";
-import {InfoCards} from "../../../../static/type-of-business/event-planning";
-import {gradient} from "../../../atoms/styles/colors";
+import { InfoCards } from "../../../../static/type-of-business/event-planning";
+import { gradient } from "../../../atoms/styles/colors";
 import TextCenterLayout from "../../../partials/heading-center";
+import InfoCardsSection from "../../../partials/info-cards-section";
 
 const InsuranceBusiness = () => (
     <Wrapper>

@@ -25,7 +25,7 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location"  imageAlt="location" color={color.red3}>
           <Heading size={3} template={4}>Location of your business</Heading>
           <p>
             The location of your side business will depend on the type of business you run. In almost all cases, you’ll run your side business mainly from home, even if your main place of work is your car or property that you’re renting out. Remember that if you’re selling products, you will need
@@ -33,12 +33,12 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side-3" color={color.orange3}>
+        <TopImageBox image="side-3" imageAlt="equipment" color={color.orange3}>
           <Heading size={3} template={4}>Equipment</Heading>
           <p>Just like the location of your business, the equipment you need will depend on the type of side business you’re running. In most cases a laptop and smartphone will be sufficient, although other types of side businesses may need more specialized equipment.</p>
         </TopImageBox>
 
-        <TopImageBox image="display-ads" color={color.purple3}>
+        <TopImageBox image="display-ads" imageAlt="marketing" color={color.purple3}>
           <Heading size={3} template={4}>Marketing</Heading>
           <p>
             If you’re in an online marketplace, you probably won’t need to do much marketing. It’s important to represent yourself in the best possible way and gather good reviews. For people with another type of side business, your marketing needs will vary depending on the specifics of what you’re
@@ -46,18 +46,18 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finance and taxes" color={color.yellow3}>
           <Heading size={3} template={4}>Finances and Taxes</Heading>
           <p>
             You will need a separate{" "}
-            <a href="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">
+            <a className="partner_link" data-name="Bank of America" href="https://utility.bankofamerica.com/alliance/?formid=IF1" target="_blank" rel="noopener noreferrer">
               business bank account
             </a>{" "}
             for your side business. You might also want to consider a business credit card. Additionally, you will also need to keep careful bookkeeping records and file business and personal taxes. Here at Incfile <Link to="/business-accounting/">we can even help you file your taxes</Link>.
           </p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software" color={color.blue3}>
           <Heading size={3} template={4}>Software and Processes</Heading>
           <p>The right software can make running your side business quicker and more efficient. See our great list of the top apps at the end of this guide.</p>
         </TopImageBox>

@@ -1,9 +1,9 @@
+import { Link } from "gatsby";
 import React from "react";
+import styled from "styled-components";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import styled from "styled-components";
-import { Link } from "gatsby";
 
 const Regulations = () => (
   <Wrapper>
@@ -27,21 +27,25 @@ const Regulations = () => (
       <Paragraph big mixed={true}>
         In most cases, you will want to keep your personal and business finances
         separate. We recommend a{" "}
-        <Link
-          to="https://utility.bankofamerica.com/alliance/?formid=IF1"
+        <a
+            className="partner_link"
+            data-name="Bank of America"
+          href="https://utility.bankofamerica.com/alliance/?formid=IF1"
           target="_blank"
           rel="noopener noreferrer"
         >
           business bank account
-        </Link>{" "}
+        </a>{" "}
         for your women business. You might also want to consider a{" "}
-        <Link
-          to="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024"
+        <a
+            className="partner_link"
+            data-name="CardRatings"
+          href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024"
           target="_blank"
           rel="noopener noreferrer"
         >
           business credit card
-        </Link>
+        </a>
         . Additionally, you will also need to keep careful bookkeeping records
         and file business and personal taxes.
       </Paragraph>

@@ -17,16 +17,20 @@ const Taxes = () => (
         </Oval>
 
         <Service>
-            <TextCenterLayout headlineWidth={770} textWidth={770} headline="Maintaining Your Party Planning Business"
-                              text="There are certain forms and legalities you need to follow to keep your event planning business in good standing."/>
+            <TextCenterLayout 
+                headlineWidth={770} 
+                textWidth={770} 
+                headline="Maintaining Your Party Planning Business"
+                text="There are certain forms and legalities you need to follow to keep your event planning business in good standing."
+            />
 
             <Container>
                 <AdventagesBox>
                     <CurveWrapper>
                         <CurveSvg/>
                     </CurveWrapper>
-                    {adventages2.items.map(item => (
-                        <Adventages className="containerMargin" style={{textAlign: "center"}} url={item.url} urlText={item.urlText}
+                    {adventages2.items.map((item, i) => (
+                        <Adventages key={i} className="containerMargin" style={{textAlign: "center"}} url={item.url} urlText={item.urlText}
                                     circleText={item.circleText} headline={item.headline} text={item.text}
                                     circlePosition="center" circleBackgroundColor={color.blue1}
                                     circleBackgroundShadow={shadow.blue1}/>

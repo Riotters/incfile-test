@@ -48,239 +48,240 @@ const Oval = styled.div`
 `;
 
 const CoachBusinessStructure = () => (
-  <OrangeContainer>
-    <Oval>
-      <OvalOrange2Svg />
-    </Oval>
+    <OrangeContainer>
+        <Oval>
+            <OvalOrange2Svg />
+        </Oval>
 
-    <BusinessOwnerResponsibilities>
-      <ImageContent image="unique-business-2" paddingTop="60">
-        <Heading
-          size={2}
-          template={4}
-          left
-          style={{ fontSize: "24px", "max-width": "unset" }}
-        >
-          Choose the Right Business Structure and Register Your Coaching
-          Organization
+        <BusinessOwnerResponsibilities>
+            <ImageContent image="unique-business-2" imageAlt="choose right coach business structure" paddingTop="60">
+                <Heading
+                    size={2}
+                    template={4}
+                    left
+                    style={{ fontSize: "24px", "max-width": "unset" }}
+                >
+                    Choose the Right Business Structure and Register Your Coaching
+                    Organization
         </Heading>
-        <Paragraph big>
-          There are five main business structures you can have in the U.S., and
-          it’s important to choose the right one. We’ve shared your options
-          below. They are:
+                <Paragraph big>
+                    There are five main business structures you can have in the U.S., and
+                    it’s important to choose the right one. We’ve shared your options
+                    below. They are:
         </Paragraph>
 
-        <TextBlockWithImage
-          SvgImage={HandsIcon}
-          textBackgroundColor="transparent"
-          imageBackgroundColor={color.white}
-          imageShadowColor={shadow.white2}
-          imageShadowOpacity={0.5}
-          boxShadow={false}
-          paddingLeft={0}
-          style={{ marginTop: "40px" }}
-          circleShadowY={40}
-          circleShadowBlure={80}
-          width={100}
-          widthUnit="%"
-        >
-          <Paragraph
-            big
-            style={{ color: color.blue1, fontWeight: "bold" }}
-            mixed
-          >
-            Sole Proprietorship
+                <TextBlockWithImage
+                    SvgImage={HandsIcon}
+                    textBackgroundColor="transparent"
+                    imageBackgroundColor={color.white}
+                    imageShadowColor={shadow.white2}
+                    imageShadowOpacity={0.5}
+                    boxShadow={false}
+                    paddingLeft={0}
+                    style={{ marginTop: "40px" }}
+                    circleShadowY={40}
+                    circleShadowBlure={80}
+                    width={100}
+                    widthUnit="%"
+                >
+                    <Paragraph
+                        big
+                        style={{ color: color.blue1, fontWeight: "bold" }}
+                        mixed
+                    >
+                        Sole Proprietorship
           </Paragraph>
 
-          <Paragraph big>
-            This is the "default" business structure and is what your life or
-            business coaching venture will be if you decide not to create a more
-            formal structure. We don't recommend this type of business as it
-            doesn't give you the legal protections you need.
+                    <Paragraph big>
+                        This is the "default" business structure and is what your life or
+                        business coaching venture will be if you decide not to create a more
+                        formal structure. We don't recommend this type of business as it
+                        doesn't give you the legal protections you need.
           </Paragraph>
-        </TextBlockWithImage>
+                </TextBlockWithImage>
 
-        <TextBlockWithImage
-          SvgImage={UmbrellaIcon}
-          textBackgroundColor="transparent"
-          imageBackgroundColor={color.white}
-          imageShadowColor={shadow.white2}
-          imageShadowOpacity={0.5}
-          boxShadow={false}
-          paddingLeft={0}
-          style={{ marginTop: "40px" }}
-          circleShadowY={40}
-          circleShadowBlure={80}
-          width={100}
-          widthUnit="%"
-        >
-          <Paragraph
-            big
-            style={{ color: color.blue1, fontWeight: "bold" }}
-            mixed={true}
-          >
-            <Link
-              to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
-            >
-              Partnership
+                <TextBlockWithImage
+                    SvgImage={UmbrellaIcon}
+                    textBackgroundColor="transparent"
+                    imageBackgroundColor={color.white}
+                    imageShadowColor={shadow.white2}
+                    imageShadowOpacity={0.5}
+                    boxShadow={false}
+                    paddingLeft={0}
+                    style={{ marginTop: "40px" }}
+                    circleShadowY={40}
+                    circleShadowBlure={80}
+                    width={100}
+                    widthUnit="%"
+                >
+                    <Paragraph
+                        big
+                        style={{ color: color.blue1, fontWeight: "bold" }}
+                        mixed={true}
+                    >
+                        <Link
+                            to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
+                        >
+                            Partnership
             </Link>
-          </Paragraph>
+                    </Paragraph>
 
-          <Paragraph big>
-            This is a type of business that is formed when two or more people
-            work together without creating a more formal business entity. Like a
-            sole proprietorship, it may not give you all the protections your
-            life or business coaching organization may need.
+                    <Paragraph big>
+                        This is a type of business that is formed when two or more people
+                        work together without creating a more formal business entity. Like a
+                        sole proprietorship, it may not give you all the protections your
+                        life or business coaching organization may need.
           </Paragraph>
-        </TextBlockWithImage>
+                </TextBlockWithImage>
 
-        <TextBlockWithImage
-          SvgImage={ArrowsIcon}
-          textBackgroundColor="transparent"
-          imageBackgroundColor={color.white}
-          imageShadowColor={shadow.white2}
-          imageShadowOpacity={0.5}
-          boxShadow={false}
-          paddingLeft={0}
-          style={{ marginTop: "40px" }}
-          circleShadowY={40}
-          circleShadowBlure={80}
-          width={100}
-          widthUnit="%"
-        >
-          <Paragraph
-            big
-            style={{ color: color.blue1, fontWeight: "bold" }}
-            mixed={true}
-          >
-            <Link
-              to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
-            >
-              Limited Liability Company or LLC
+                <TextBlockWithImage
+                    SvgImage={ArrowsIcon}
+                    textBackgroundColor="transparent"
+                    imageBackgroundColor={color.white}
+                    imageShadowColor={shadow.white2}
+                    imageShadowOpacity={0.5}
+                    boxShadow={false}
+                    paddingLeft={0}
+                    style={{ marginTop: "40px" }}
+                    circleShadowY={40}
+                    circleShadowBlure={80}
+                    width={100}
+                    widthUnit="%"
+                >
+                    <Paragraph
+                        big
+                        style={{ color: color.blue1, fontWeight: "bold" }}
+                        mixed={true}
+                    >
+                        <Link
+                            to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
+                        >
+                            Limited Liability Company or LLC
             </Link>
-          </Paragraph>
+                    </Paragraph>
 
-          <Paragraph big>
-            The Limited Liability Company (LLC) is ideal for most life or
-            business coaching startups. An LLC is easy and inexpensive to set
-            up, and has the least administrative requirements of any formal
-            business entity.
+                    <Paragraph big>
+                        The Limited Liability Company (LLC) is ideal for most life or
+                        business coaching startups. An LLC is easy and inexpensive to set
+                        up, and has the least administrative requirements of any formal
+                        business entity.
           </Paragraph>
-        </TextBlockWithImage>
+                </TextBlockWithImage>
 
-        <TextBlockWithImage
-          SvgImage={PlaneIcon}
-          textBackgroundColor="transparent"
-          imageBackgroundColor={color.white}
-          imageShadowColor={shadow.white2}
-          imageShadowOpacity={0.5}
-          boxShadow={false}
-          paddingLeft={0}
-          style={{ marginTop: "40px" }}
-          circleShadowY={40}
-          circleShadowBlure={80}
-          width={100}
-          widthUnit="%"
-        >
-          <Paragraph
-            big
-            style={{ color: color.blue1, fontWeight: "bold" }}
-            mixed={true}
-          >
-            <Link
-              to={
-                process.env.ORDER_URL +
-                "/form-order-now.php?entityType=SCorporation"
-              }
-            >
-              S Corporation
+                <TextBlockWithImage
+                    SvgImage={PlaneIcon}
+                    textBackgroundColor="transparent"
+                    imageBackgroundColor={color.white}
+                    imageShadowColor={shadow.white2}
+                    imageShadowOpacity={0.5}
+                    boxShadow={false}
+                    paddingLeft={0}
+                    style={{ marginTop: "40px" }}
+                    circleShadowY={40}
+                    circleShadowBlure={80}
+                    width={100}
+                    widthUnit="%"
+                >
+                    <Paragraph
+                        big
+                        style={{ color: color.blue1, fontWeight: "bold" }}
+                        mixed={true}
+                    >
+                        <Link
+                            to={
+                                process.env.ORDER_URL +
+                                "/form-order-now.php?entityType=SCorporation"
+                            }
+                        >
+                            S Corporation
             </Link>
-          </Paragraph>
+                    </Paragraph>
 
-          <Paragraph big>
-            This is a more complex type of business and isn't generally
-            recommended for smaller organizations.
+                    <Paragraph big>
+                        This is a more complex type of business and isn't generally
+                        recommended for smaller organizations.
           </Paragraph>
-        </TextBlockWithImage>
+                </TextBlockWithImage>
 
-        <TextBlockWithImage
-          SvgImage={RockerIcon}
-          textBackgroundColor="transparent"
-          imageBackgroundColor={color.white}
-          imageShadowColor={shadow.white2}
-          imageShadowOpacity={0.5}
-          boxShadow={false}
-          paddingLeft={0}
-          style={{ marginTop: "40px" }}
-          circleShadowY={40}
-          circleShadowBlure={80}
-          width={100}
-          widthUnit="%"
-        >
-          <Paragraph
-            big
-            style={{ color: color.blue1, fontWeight: "bold" }}
-            mixed={true}
-          >
-            <Link
-              to={
-                process.env.ORDER_URL +
-                "/form-order-now.php?entityType=CCorporation"
-              }
-            >
-              C Corporation
+                <TextBlockWithImage
+                    SvgImage={RockerIcon}
+                    textBackgroundColor="transparent"
+                    imageBackgroundColor={color.white}
+                    imageShadowColor={shadow.white2}
+                    imageShadowOpacity={0.5}
+                    boxShadow={false}
+                    paddingLeft={0}
+                    style={{ marginTop: "40px" }}
+                    circleShadowY={40}
+                    circleShadowBlure={80}
+                    width={100}
+                    widthUnit="%"
+                >
+                    <Paragraph
+                        big
+                        style={{ color: color.blue1, fontWeight: "bold" }}
+                        mixed={true}
+                    >
+                        <Link
+                            to={
+                                process.env.ORDER_URL +
+                                "/form-order-now.php?entityType=CCorporation"
+                            }
+                        >
+                            C Corporation
             </Link>
-          </Paragraph>
+                    </Paragraph>
 
-          <Paragraph big>
-            These are the largest and most complex types of businesses and are
-            typically far more than the average entrepreneur will need.
+                    <Paragraph big>
+                        These are the largest and most complex types of businesses and are
+                        typically far more than the average entrepreneur will need.
           </Paragraph>
-        </TextBlockWithImage>
+                </TextBlockWithImage>
 
-        <Paragraph
-          big
-          style={{ paddingTop: "48px", paddingBottom: 0 }}
-          mixed={true}
-        >
-          For more information on the advantages and disadvantages of different
+                <Paragraph
+                    big
+                    style={{ paddingTop: "48px", paddingBottom: 0 }}
+                    mixed={true}
+                >
+                    For more information on the advantages and disadvantages of different
           types of businesses,{" "}
-          <Link to="/business-entity-comparison/">
-            please see our in-depth guide
+                    <Link to="/business-entity-comparison/">
+                        please see our in-depth guide
           </Link>
           . If you’ve still got questions,{" "}
-          <Link to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/">
-            we’ve answered them to help you choose the right business structure
-          </Link>{" "}
+                    <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
+                        we’ve answered them to help you choose the right business structure
+          </a>{" "}
           for your coaching business.
         </Paragraph>
-        <Paragraph
-          big
-          style={{ paddingTop: "48px", paddingBottom: 0 }}
-          mixed={true}
-        >
-          In most cases, our recommendation for a coaching business would be to
+                <Paragraph
+                    big
+                    style={{ paddingTop: "48px", paddingBottom: 0 }}
+                    mixed={true}
+                >
+                    In most cases, our recommendation for a coaching business would be to
           create an LLC. We’ve{" "}
-          <Link to="/form-an-llc/">got a complete guide</Link> to everything you
+                    <Link to="/form-an-llc/">got a complete guide</Link> to everything you
           need to do.{" "}
-          <Link to="/llc-state-information/">
-            LLC formation does vary from state to state
+                    <Link to="/llc-state-information/">
+                        LLC formation does vary from state to state
           </Link>
           , but we’ve got you covered, wherever you are.
         </Paragraph>
 
-        <Button
-          theme="primary48"
-          width="365px"
-          arrow
-          content={{
-            url: `${process.env.ORDER_URL}/form-order-now.php`,
-            text: `Start your business with us, today!`,
-          }}
-        />
-      </ImageContent>
-    </BusinessOwnerResponsibilities>
-  </OrangeContainer>
+                <Button
+                    externalLink
+                    theme="primary48"
+                    width="365px"
+                    arrow
+                    content={{
+                        url: `${process.env.ORDER_URL}/form-order-now.php`,
+                        text: `Start your business with us, today!`,
+                    }}
+                />
+            </ImageContent>
+        </BusinessOwnerResponsibilities>
+    </OrangeContainer>
 );
 
 export default CoachBusinessStructure;

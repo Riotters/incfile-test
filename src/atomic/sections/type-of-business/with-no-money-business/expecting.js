@@ -1,20 +1,20 @@
-import Container from "../../../container";
-import {Heading} from "../../../atoms/typography/heading";
-import {Paragraph} from "../../../atoms/typography/paragraph";
-import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import {color} from "../../../../components/styles/colors";
 import React from "react";
 import styled from "styled-components";
-import OvalBlueSVG from "../../../../images/ovals/top-right-transparent-blue3.inline.svg";
-import TextCenterLayout from "../../../partials/heading-center";
+import { color } from "../../../../components/styles/colors";
 import BoltIcon from "../../../../images/icons/expect-to-be-stressed-and-anxious.inline.svg";
 import BookIcon from "../../../../images/icons/grow-organically.inline.svg";
 import LearnIcon from "../../../../images/icons/learn-from-your-mistakes.inline.svg";
-import BallsIcon from "../../../../images/icons/there-will-always-be-too-much-to-do-and-too-little-money.inline.svg";
-import HeartIcon from "../../../../images/icons/there-are-plenty-of-people-out-there-who-can-help.inline.svg";
-import CompetitionIcon from "../../../../images/icons/theres-lots-and-lots-of-competition.inline.svg";
-import BombIcon from "../../../../images/icons/the-biggest-issue-you-will-have-is-cash-flow.inline.svg";
 import PaperIcon from "../../../../images/icons/prepare-and-file-the-articles-of-incorporation.inline.svg";
+import BombIcon from "../../../../images/icons/the-biggest-issue-you-will-have-is-cash-flow.inline.svg";
+import HeartIcon from "../../../../images/icons/there-are-plenty-of-people-out-there-who-can-help.inline.svg";
+import BallsIcon from "../../../../images/icons/there-will-always-be-too-much-to-do-and-too-little-money.inline.svg";
+import CompetitionIcon from "../../../../images/icons/theres-lots-and-lots-of-competition.inline.svg";
+import OvalBlueSVG from "../../../../images/ovals/top-right-transparent-blue3.inline.svg";
+import { Heading } from "../../../atoms/typography/heading";
+import { Paragraph } from "../../../atoms/typography/paragraph";
+import Container from "../../../container";
+import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
+import TextCenterLayout from "../../../partials/heading-center";
 
 const ContainerWrapper = styled.div`
     background: rgb(255,255,255);

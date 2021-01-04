@@ -40,6 +40,7 @@ const Rocket = () => (
           estate business
         </Paragraph>
         <Button
+            externalLink
           theme="primary48"
           arrow
           width="max-content"

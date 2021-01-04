@@ -33,6 +33,7 @@ const Links = () => (
 						<CurveSvg />
 					</CurveWrapper>
 					<PathLink
+                        externalLink
 						to="https://www.contractortalk.com//"
 						textColor={color.blue1}
 						hoverColor={color.orange1}
@@ -44,6 +45,7 @@ const Links = () => (
 
 				<LinkItem>
 					<PathLink
+                        externalLink
 						to="https://www.diychatroom.com/"
 						textColor={color.blue1}
 						hoverColor={color.orange1}
@@ -55,6 +57,7 @@ const Links = () => (
 
 				<LinkItem>
 					<PathLink
+                        externalLink
 						to="https://www.construct-ed.com/contractor-forums/"
 						textColor={color.blue1}
 						hoverColor={color.orange1}
@@ -66,6 +69,7 @@ const Links = () => (
 
 				<LinkItem>
 					<PathLink
+                        externalLink
 						to="https://forums.jlconline.com/forums/"
 						textColor={color.blue1}
 						hoverColor={color.orange1}

@@ -27,21 +27,30 @@ const ToolsAndLinks = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="https://petsits.com/articles/pet-sitting-forums" textColor={color.blue1}
-                              hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink externalLink 
+                        to="https://petsits.com/articles/pet-sitting-forums"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         Professional United Pet Sitters Forums
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.doggieresidence.com/community/" textColor={color.blue1}
-                              hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink externalLink 
+                        to="https://www.doggieresidence.com/community/"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         Doggie Residence
                     </PathLink>
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://petsitters.org/" textColor={color.blue1} hoverColor={color.orange1}
+                    <PathLink externalLink 
+                        to="https://petsitters.org/"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
                               arrowColor={color.blue1}>
                         National Association of Professional Pet Sitters
                         (Membership Required)

@@ -1,10 +1,10 @@
-import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import React from "react";
 import styled from "styled-components";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import { color } from "../../../../components/styles/colors";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
+import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import PlaneIcon from "../../../../images/icons/plane.inline.svg";
 import RockerIcon from "../../../../images/icons/rocket.inline.svg";
 import LimitedIcon from "../../../../images/icons/limited-liability-company-or-llc.inline.svg";
@@ -81,7 +81,7 @@ const CoachBusinessStructure = () => (
     </Oval2>
 
     <BusinessOwnerResponsibilities>
-      <ImageContent image="unique-business-green" paddingTop="60">
+      <ImageContent image="unique-business-green" imageAlt="starting a digital nomad business" paddingTop="60">
         <Heading size={2} template={3} left>
           Starting Your Digital Nomad Business
         </Heading>
@@ -370,9 +370,9 @@ const CoachBusinessStructure = () => (
             please see our in-depth guide
           </Link>
           . If you’ve still got questions,{" "}
-          <Link to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/">
+          <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
             we’ve answered them to help you choose the right business structure.
-          </Link>
+          </a>
         </Paragraph>
         <Paragraph
           big
@@ -391,41 +391,18 @@ const CoachBusinessStructure = () => (
         </Paragraph>
 
         <Button
-          theme="primary48"
-          width="365px"
-          arrow
-          content={{
-            url: `${process.env.ORDER_URL}/form-order-now.php`,
-            text: `Start your business with us, today!`,
-          }}
+            externalLink
+            theme="primary48"
+            width="365px"
+            arrow
+            content={{
+                url: `${process.env.ORDER_URL}/form-order-now.php`,
+                text: `Start your business with us, today!`,
+            }}
         />
       </ImageContent>
     </BusinessOwnerResponsibilities>
   </OrangeContainer>
 );
-
-const SpecialBox = styled.div`
-  width: 100%;
-  background-color: ${color.blue3};
-  margin-bottom: 8px;
-  padding: 30px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-
-  ${(props) =>
-    props.radiusTop &&
-    "border-top-left-radius: 30px;" + "border-top-right-radius: 30px;"}
-
-  ${(props) =>
-    props.radiusBottom &&
-    "border-bottom-left-radius: 30px;" + "border-bottom-right-radius: 30px;"}
-`;
-
-const Icon = styled.div`
-  width: 49px;
-`;
-
-const Text = styled.div``;
 
 export default CoachBusinessStructure;

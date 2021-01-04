@@ -36,7 +36,7 @@ const SettingBusiness = () => (
 
     <Container>
       <ImageBoxes>
-        <TopImageBox image="location" color={color.red3}>
+        <TopImageBox image="location" imageAlt="location of etsy business" color={color.red3}>
           <Heading size={3} template={4}>
             Location of your workshop
           </Heading>
@@ -50,7 +50,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="software" color={color.blue3}>
+        <TopImageBox image="software" imageAlt="software of etsy business" color={color.blue3}>
           <Heading size={3} template={4}>
             Software that Integrates with Etsy
           </Heading>
@@ -65,7 +65,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="display-ads" color={color.purple3}>
+        <TopImageBox image="display-ads" imageAlt="marketing of etsy business" color={color.purple3}>
           <Heading size={3} template={4}>
             Marketing on Etsy
           </Heading>
@@ -80,7 +80,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side-4" color={color.green3}>
+        <TopImageBox image="side-4" imageAlt="equipment of etsy business" color={color.green3}>
           <Heading size={3} template={4}>
             Equipment
           </Heading>
@@ -93,17 +93,17 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="finance and taxes of etsy business" color={color.yellow3}>
           <Heading size={3} template={4}>
             Finances and Taxes
           </Heading>
           <p>
             What kind of{" "}
-            <a href="https://utility.bankofamerica.com/alliance/?formid=IF1">
+            <a href="https://utility.bankofamerica.com/alliance/?formid=IF1" className="partner_link" data-name="Bank of America">
               bank account
             </a>{" "}
             will you get? Do you need a{" "}
-            <a href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024">
+            <a href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024" className="partner_link" data-name="CardRatings">
               business credit card
             </a>
             ? How will you pay your business taxes? These are important
@@ -143,7 +143,8 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox
-          image="we-doubled-the-size-of-customer-service"
+                    image="we-doubled-the-size-of-customer-service"
+                    imageAlt="employess of etsy business"
           color={color.orange3}
         >
           <Heading size={3} template={4}>
@@ -156,7 +157,7 @@ const SettingBusiness = () => (
           </GreenCurve>
         </TopImageBox>
 
-        <TopImageBox image="organization-change-02" color={color.green3}>
+        <TopImageBox image="organization-change-02" imageAlt="process of etsy business" color={color.green3}>
           <Heading size={3} template={4}>
             Processes
           </Heading>

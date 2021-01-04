@@ -17,6 +17,7 @@ const BusinessOwners = () => (
       <LinksContainer>
         <LinkItem>
           <PathLink
+            externalLink
             to="https://www.facebook.com/groups/286259695128425/"
             textColor={color.blue1}
             hoverColor={color.orange1}
@@ -29,6 +30,7 @@ const BusinessOwners = () => (
 
         <LinkItem>
           <PathLink
+            externalLink
             to="https://www.movingscam.com/forum/"
             textColor={color.blue1}
             hoverColor={color.orange1}
@@ -40,6 +42,7 @@ const BusinessOwners = () => (
 
         <LinkItem>
           <PathLink
+            externalLink
             to="http://reviewamover.com/forum/"
             textColor={color.blue1}
             hoverColor={color.orange1}

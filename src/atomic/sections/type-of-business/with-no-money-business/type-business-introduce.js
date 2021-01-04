@@ -1,10 +1,10 @@
-import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import React from "react";
 import styled from "styled-components";
-import {Heading} from "../../../atoms/typography/heading";
-import {Paragraph} from "../../../atoms/typography/paragraph";
-import Container from "../../../container";
+import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import CkeckText from "../../../../components/static-check/text-only";
+import { Heading } from "../../../atoms/typography/heading";
+import { Paragraph } from "../../../atoms/typography/paragraph";
+import Container from "../../../container";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -27,7 +27,7 @@ const TypeBusinessIntroduce = () => (
 
         <Container>
             <BusinessOwnerResponsibilities>
-                <ImageContent image="with-no-money-business-2" paddingTop="60">
+                <ImageContent image="with-no-money-business-2" imageAlt="choose right no money business" paddingTop="60">
                     <Heading size={2} template={3} left>
                         Choosing a Type of Business to Start with Little
                         or No Money

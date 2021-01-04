@@ -1,11 +1,11 @@
-import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import React from "react";
 import styled from "styled-components";
-import { Paragraph } from "../../../atoms/typography/paragraph";
-import { color } from "../../../../components/styles/colors";
 import Colorbox from "../../../../components/color-box";
+import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import CkeckText from "../../../../components/static-check/text-only";
+import { color } from "../../../../components/styles/colors";
 import FingerIcon from "../../../../images/icons/here-at-incfile-we-know-a-thing-or-two-about-starting-your-business.inline.svg";
+import { Paragraph } from "../../../atoms/typography/paragraph";
 
 const BusinessOwnerResponsibilities = styled.section`
   position: relative;
@@ -30,7 +30,7 @@ const WrapperContainer = styled.div`
 const Bootstrapping = () => (
   <WrapperContainer>
     <BusinessOwnerResponsibilities>
-      <ImageContent image="with-no-money-business-1" paddingTop="60">
+      <ImageContent image="with-no-money-business-1" imageAlt="set up a no money business" paddingTop="60">
         <Paragraph big style={{ paddingBottom: 0 }}>
           Bootstrapping is the discipline of starting a business with very
           little upfront cash. It means you don’t typically take out loans or

@@ -51,7 +51,7 @@ const BusinessStructure = () => (
     </Oval>
 
     <BusinessOwnerResponsibilities>
-      <ImageContent image="unique-business-green" paddingTop="60">
+      <ImageContent image="unique-business-green" imageAlt="choose right business structure" paddingTop="60">
         <Heading size={2} template={3} left>
           Choose the Right Business Structure and Register Your Brewery Business
         </Heading>
@@ -243,10 +243,10 @@ const BusinessStructure = () => (
           types of businesses, please{" "}
           <Link to="/business-entity-comparison/">see our in-depth guide</Link>.
           If you’ve still got questions,{" "}
-          <Link to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/">
+          <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
             we’ve answered them to help you choose the right business structure
             for your brewery business
-          </Link>
+          </a>
           .
         </Paragraph>
         <Paragraph
@@ -265,13 +265,14 @@ const BusinessStructure = () => (
         </Paragraph>
 
         <Button
-          theme="primary48"
-          width="365px"
-          arrow
-          content={{
-            url: `${process.env.ORDER_URL}/form-order-now.php`,
-            text: `Start your business with us, today!`,
-          }}
+            externalLink
+            theme="primary48"
+            width="365px"
+            arrow
+            content={{
+                url: `${process.env.ORDER_URL}/form-order-now.php`,
+                text: `Start your business with us, today!`,
+            }}
         />
       </ImageContent>
     </BusinessOwnerResponsibilities>

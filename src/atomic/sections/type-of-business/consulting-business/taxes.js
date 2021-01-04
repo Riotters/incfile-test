@@ -11,41 +11,42 @@ import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
 import { adventages2 } from "../../../../static/type-of-business/online-business";
 
 const Taxes = () => (
-  <Wrapper>
-    <Oval>
-      <OvalSvg />
-    </Oval>
-    <OvalBottom>
-      <OvalSvgBottom />
-    </OvalBottom>
+    <Wrapper>
+        <Oval>
+            <OvalSvg />
+        </Oval>
+        <OvalBottom>
+            <OvalSvgBottom />
+        </OvalBottom>
 
-    <Service>
-      <Container>
-        <TextCenterLayout
-          headline="Maintaining Your Consulting Business"
-          text="There are certain forms and legalities you need to follow to keep your consulting business in good standing."
-        />
-        <AdventagesBox>
-          <CurveWrapper>
-            <CurveSvg />
-          </CurveWrapper>
-          {adventages2.items.map((item) => (
-            <Adventages
-              style={{ textAlign: "center" }}
-              url={item.url}
-              urlText={item.urlText}
-              circleText={item.circleText}
-              headline={item.headline}
-              text={item.text}
-              circlePosition="center"
-              circleBackgroundColor={color.blue1}
-              circleBackgroundShadow={shadow.blue1}
-            />
-          ))}
-        </AdventagesBox>
-      </Container>
-    </Service>
-  </Wrapper>
+        <Service>
+            <Container>
+                <TextCenterLayout
+                    headline="Maintaining Your Consulting Business"
+                    text="There are certain forms and legalities you need to follow to keep your consulting business in good standing."
+                />
+                <AdventagesBox>
+                    <CurveWrapper>
+                        <CurveSvg />
+                    </CurveWrapper>
+                    {adventages2.items.map((item, i) => (
+                        <Adventages
+                            key={i}
+                            style={{ textAlign: "center" }}
+                            url={item.url}
+                            urlText={item.urlText}
+                            circleText={item.circleText}
+                            headline={item.headline}
+                            text={item.text}
+                            circlePosition="center"
+                            circleBackgroundColor={color.blue1}
+                            circleBackgroundShadow={shadow.blue1}
+                        />
+                    ))}
+                </AdventagesBox>
+            </Container>
+        </Service>
+    </Wrapper>
 );
 
 const Wrapper = styled.div`

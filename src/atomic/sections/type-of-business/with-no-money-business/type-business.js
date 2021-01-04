@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { gradient } from "../../../atoms/styles/colors";
-import Container from "../../../container";
-import TextCenterLayout from "../../../partials/heading-center";
 import { color } from "../../../../components/styles/colors";
 import { shadow } from "../../../../components/styles/shadows";
 import OvalSvg from "../../../../images/ovals/top-right-transparent-blue2.inline.svg";
-import AdventagesWithLongText from "../../../molecules/mixed-blocks/adventages-with-long-text";
+import { gradient } from "../../../atoms/styles/colors";
 import { Paragraph } from "../../../atoms/typography/paragraph";
+import Container from "../../../container";
+import AdventagesWithLongText from "../../../molecules/mixed-blocks/adventages-with-long-text";
+import TextCenterLayout from "../../../partials/heading-center";
 
 const TypeBusiness = () => (
   <Wrapper>
@@ -236,8 +236,7 @@ const TypeBusiness = () => (
       </Service>
       <TextCenterLayout
         textWidth={770}
-        text="There are many other great lists with <a href='https://www.theworkathomewoman.com/businesses-start-no-money/' target='_blank'>ideas for low cost startup
-      businesses.</a>"
+        text={`There are many other great lists with <a href="https://www.theworkathomewoman.com/businesses-start-no-money/" target="_blank" rel="noopener noreferrer">ideas for low cost startup businesses.</a>`}
       />
     </Container>
   </Wrapper>

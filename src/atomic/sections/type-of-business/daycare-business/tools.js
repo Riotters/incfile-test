@@ -30,6 +30,7 @@ const ToolsAndLinks = () => (
 			<LinksContainer>
 				<LinkItem>
 					<PathLink
+                        externalLink
 						to="https://daycare.com"
 						textColor={color.blue1}
 						hoverColor={color.orange1}
@@ -41,6 +42,7 @@ const ToolsAndLinks = () => (
 
 				<LinkItem>
 					<PathLink
+                        externalLink
 						to="https://infantandtoddlerforum.org/"
 						textColor={color.blue1}
 						hoverColor={color.orange1}
@@ -52,6 +54,7 @@ const ToolsAndLinks = () => (
 
 				<LinkItem>
 					<PathLink
+                        externalLink
 						to="https://www.facebook.com/Daycare-Providers-Networking-Group-192651797531950/"
 						textColor={color.blue1}
 						hoverColor={color.orange1}
@@ -63,6 +66,7 @@ const ToolsAndLinks = () => (
 
 				<LinkItem>
 					<PathLink
+                        externalLink
 						to="https://www.facebook.com/Home-Daycare-Providers-314058115271/"
 						textColor={color.blue1}
 						hoverColor={color.orange1}
@@ -74,6 +78,7 @@ const ToolsAndLinks = () => (
 
 				<LinkItem>
 					<PathLink
+                        externalLink
 						to="https://www.facebook.com/groups/daycareproviders/"
 						textColor={color.blue1}
 						hoverColor={color.orange1}

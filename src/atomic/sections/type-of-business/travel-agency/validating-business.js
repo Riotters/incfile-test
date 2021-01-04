@@ -1,21 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-
-import Container from "../../../container";
-
-import {Heading} from "../../../atoms/typography/heading";
-import {Paragraph} from "../../../atoms/typography/paragraph";
-import {color} from "../../../atoms/styles/colors";
-import Curve from "../../../atoms/shapes/curve";
-
-import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-
+import Icon5 from "../../../../images/icons/get-involved-with-business-communities.inline.svg";
 import Icon1 from "../../../../images/icons/identify-your-unique-selling-point.inline.svg";
-import Icon2 from "../../../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg"
-import Icon3 from "../../../../images/icons/understand-your-market.inline.svg"
-import Icon4 from "../../../../images/icons/talk-to-clients.inline.svg"
-import Icon5 from "../../../../images/icons/get-involved-with-business-communities.inline.svg"
+import Icon2 from "../../../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg";
+import Icon4 from "../../../../images/icons/talk-to-clients.inline.svg";
+import Icon3 from "../../../../images/icons/understand-your-market.inline.svg";
 import OvalBlueSVG from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
+import Curve from "../../../atoms/shapes/curve";
+import { color } from "../../../atoms/styles/colors";
+import { Heading } from "../../../atoms/typography/heading";
+import { Paragraph } from "../../../atoms/typography/paragraph";
+import Container from "../../../container";
+import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
 
 const ContainerWrapper = styled.div`
     background-color: white;

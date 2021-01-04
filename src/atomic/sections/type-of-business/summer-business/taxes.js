@@ -29,8 +29,9 @@ const Taxes = () => (
           <CurveWrapper>
             <CurveSvg />
           </CurveWrapper>
-          {adventages2.items.map((item) => (
-            <Adventages
+          {adventages2.items.map((item, i) => (
+              <Adventages
+                  key={i}
               className="containerMargin"
               style={{ textAlign: "center" }}
               url={item.url}

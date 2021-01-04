@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import Adventages from "../../../../components/adventages";
+import { color } from "../../../../components/styles/colors";
+import { shadow } from "../../../../components/styles/shadows";
+import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
+import OvalSvgBottom from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-red3.inline.svg";
+import { adventages2 } from "../../../../static/type-of-business/teen-business";
 import Container from "../../../container";
 import TextCenterLayout from "../../../partials/heading-center";
-import Adventages from "../../../../components/adventages";
-import {color} from "../../../../components/styles/colors";
-import {shadow} from "../../../../components/styles/shadows";
-import OvalSvg from "../../../../images/ovals/top-left-transparent-red3.inline.svg";
-import OvalSvgBottom from "../../../../images/ovals/top-left-transparent-orange.inline.svg";
-import CurveSvg from "../../../../images/curve-babyblue-1.inline.svg";
-import {adventages2} from "../../../../static/type-of-business/teen-business";
 
 const Taxes = () => (
     <Wrapper>
@@ -28,8 +28,8 @@ const Taxes = () => (
                     <CurveWrapper>
                         <CurveSvg/>
                     </CurveWrapper>
-                    {adventages2.items.map(item => (
-                        <Adventages className="containerMargin" style={{textAlign: "center"}} url={item.url} urlText={item.urlText}
+                    {adventages2.items.map((item, i) => (
+                        <Adventages key={i} className="containerMargin" style={{textAlign: "center"}} url={item.url} urlText={item.urlText}
                                     circleText={item.circleText} headline={item.headline} text={item.text}
                                     circlePosition="center" circleBackgroundColor={color.blue1}
                                     circleBackgroundShadow={shadow.blue1}/>

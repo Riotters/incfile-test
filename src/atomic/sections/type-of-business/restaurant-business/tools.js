@@ -36,6 +36,7 @@ const ToolsAndLinks = () => (
 				<LinksContainer>
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://www.reddit.com/r/restaurateur/"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -53,6 +54,7 @@ const ToolsAndLinks = () => (
 							<Curve color={color.orange1} />
 						</CurveWrapper>
 						<PathLink
+                            externalLink
 							to="https://www.topix.com/forum/business/restaurant-management"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -67,6 +69,7 @@ const ToolsAndLinks = () => (
 
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://www.restaurantowner.com/public/Restaurant-Discussion-Forum.cfm"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -94,6 +97,7 @@ const ToolsAndLinks = () => (
 				<LinksContainer>
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://restaurantleadership.com/"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -105,6 +109,7 @@ const ToolsAndLinks = () => (
 
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://www.restaurant.org/events"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -116,6 +121,7 @@ const ToolsAndLinks = () => (
 
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://www.nrn.com/news/restaurant-trends-watch-2020"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -127,6 +133,7 @@ const ToolsAndLinks = () => (
 
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://fastcasualsummit.com/"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -138,6 +145,7 @@ const ToolsAndLinks = () => (
 
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://www.internationalrestaurantny.com/"
 							textColor={color.blue1}
 							hoverColor={color.orange1}

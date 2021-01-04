@@ -1,13 +1,13 @@
-import React from "react";
-import Container from "../../../container";
-import TextCenterLayout from "../../../partials/heading-left";
-import TopImageBox from "../../../../components/top-image-box";
-import { color } from "../../../../components/styles/colors";
-import styled from "styled-components";
-import GreenOval from "../../../../images/ovals/top-left-transparent-green1.inline.svg";
-import ContentCenter from "../../../partials/content-center";
 import { Link } from "gatsby";
+import React from "react";
+import styled from "styled-components";
+import { color } from "../../../../components/styles/colors";
+import TopImageBox from "../../../../components/top-image-box";
+import GreenOval from "../../../../images/ovals/top-left-transparent-green1.inline.svg";
 import { Heading } from "../../../atoms/typography/heading";
+import Container from "../../../container";
+import ContentCenter from "../../../partials/content-center";
+import TextCenterLayout from "../../../partials/heading-left";
 
 const SettingBusiness = () => (
   <GreenContainer>
@@ -41,7 +41,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="permits-licences" color={color.blue3}>
+        <TopImageBox image="permits-licences" imageAlt="t-shirt business license" color={color.blue3}>
           <Heading size={3} template={4}>
             Permits and licenses
           </Heading>
@@ -55,7 +55,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="display-ads" color={color.purple3}>
+        <TopImageBox image="display-ads" imageAlt="business processes" color={color.purple3}>
           <Heading size={3} template={4}>
             Marketing
           </Heading>
@@ -66,7 +66,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="organization-change-02" color={color.green3}>
+        <TopImageBox image="organization-change-02" imageAlt="megaphone" color={color.green3}>
           <Heading size={3} template={4}>
             Processes
           </Heading>
@@ -78,7 +78,8 @@ const SettingBusiness = () => (
         </TopImageBox>
 
         <TopImageBox
-          image="we-doubled-the-size-of-customer-service"
+                    image="we-doubled-the-size-of-customer-service"
+                    imageAlt="employees"
           color={color.orange3}
         >
           <Heading size={3} template={4}>
@@ -90,7 +91,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="side-yellow" color={color.yellow3}>
+        <TopImageBox image="side-yellow" imageAlt="computer and mobile phone" color={color.yellow3}>
           <Heading size={3} template={4}>
             Equipment
           </Heading>
@@ -101,13 +102,15 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="state-filling-fees" color={color.yellow3}>
+        <TopImageBox image="state-filling-fees" imageAlt="paid taxes" color={color.yellow3}>
           <Heading size={3} template={4}>
             Finances and taxes
           </Heading>
           <p>
             What kind of bank account will you get? Do you need a{" "}
             <a
+                className="partner_link"
+                data-name="CardRatings"
               href="http://t.tihop.com/cgi/r?;n=203;c=1666272;s=7273;x=7936;f=201908011042310;u=j;z=TIMESTAMP;src=663024"
               target="_blank"
               rel="noopener noreferrer"
@@ -121,7 +124,7 @@ const SettingBusiness = () => (
           </p>
         </TopImageBox>
 
-        <TopImageBox image="measuring-business-success" color={color.babyblue3}>
+        <TopImageBox image="measuring-business-success" imageAlt="briefcase and tools" color={color.babyblue3}>
           <Heading size={3} template={4}>
             Business maintenance
           </Heading>

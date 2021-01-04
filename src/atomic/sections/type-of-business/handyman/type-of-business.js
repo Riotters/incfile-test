@@ -21,8 +21,12 @@ const TypeOfBusiness = () => (
             <OvalSvg2/>
         </OvalBottom>
 
-        <TextCenterLayout headlineWidth={770} textWidth={770} headline="What Type of Home Handyman Business Should You Start?"
-                          text="When it comes to starting a handyman business, you have plenty of choices. When you want to turn your hobbies or fix-it skills into a successful business, these are some good places to start."/>
+        <TextCenterLayout 
+            headlineWidth={770} 
+            textWidth={770} 
+            headline="What Type of Home Handyman Business Should You Start?"
+            text="When it comes to starting a handyman business, you have plenty of choices. When you want to turn your hobbies or fix-it skills into a successful business, these are some good places to start."
+        />
 
         <Container>
             <Service>
@@ -30,8 +34,9 @@ const TypeOfBusiness = () => (
                     <CurveWrapper>
                         <Curve/>
                     </CurveWrapper>
-                    {adventages.items.map(item => (
+                    {adventages.items.map((item, i) => (
                         <Adventages
+                            key={i}
                             style={{textAlign: "left"}}
                             url={item.url}
                             urlText={item.urlText}

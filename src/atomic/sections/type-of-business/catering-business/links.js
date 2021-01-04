@@ -21,7 +21,11 @@ const Links = () => (
             <LinksContainer>
 
                 <LinkItem>
-                    <PathLink to="https://cheftalk.com/forums/professional-catering.27/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink externalLink 
+                        to="https://cheftalk.com/forums/professional-catering.27/"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         Chef Talk
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -30,7 +34,8 @@ const Links = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.ifsqn.com/forum/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink externalLink 
+                        to="https://www.ifsqn.com/forum/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
                         International Food Safety and Quality Forum
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -39,7 +44,11 @@ const Links = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.reddit.com/r/KitchenConfidential/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink externalLink 
+                        to="https://www.reddit.com/r/KitchenConfidential/"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         Kitchen Confidential subreddit
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -48,7 +57,11 @@ const Links = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.reddit.com/r/foodtrucks/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink externalLink 
+                        to="https://www.reddit.com/r/foodtrucks/"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         Food Trucks subreddit
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>
@@ -57,7 +70,11 @@ const Links = () => (
                 </LinkItem>
 
                 <LinkItem>
-                    <PathLink to="https://www.tapatalk.com/groups/mobilecatering/" textColor={color.blue1} hoverColor={color.orange1} arrowColor={color.blue1}>
+                    <PathLink externalLink 
+                        to="https://www.tapatalk.com/groups/mobilecatering/"
+                        textColor={color.blue1}
+                        hoverColor={color.orange1}
+                        arrowColor={color.blue1}>
                         Tapatalk
                     </PathLink>
                     <Paragraph style={{marginTop: "20px"}} bottomMargin={0}>

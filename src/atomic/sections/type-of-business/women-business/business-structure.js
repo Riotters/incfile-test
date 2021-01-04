@@ -1,20 +1,20 @@
-import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
+import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
-import { Heading } from "../../../atoms/typography/heading";
-import { Paragraph } from "../../../atoms/typography/paragraph";
+import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import { color } from "../../../../components/styles/colors";
-import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
+import ArrowsIcon from "../../../../images/icons/arrows.inline.svg";
+import HandsIcon from "../../../../images/icons/hands.inline.svg";
 import PlaneIcon from "../../../../images/icons/plane.inline.svg";
 import RockerIcon from "../../../../images/icons/rocket.inline.svg";
 import UmbrellaIcon from "../../../../images/icons/umbrella.inline.svg";
-import HandsIcon from "../../../../images/icons/hands.inline.svg";
-import ArrowsIcon from "../../../../images/icons/arrows.inline.svg";
-import Button from "../../../molecules/buttons/button";
 import OvalGreen3 from "../../../../images/ovals/top-left-transparent-pink.inline.svg";
 import { shadow } from "../../../atoms/styles/shadows";
-import { Link } from "gatsby";
+import { Heading } from "../../../atoms/typography/heading";
 import { HeadingP } from "../../../atoms/typography/heading-to-p";
+import { Paragraph } from "../../../atoms/typography/paragraph";
+import Button from "../../../molecules/buttons/button";
+import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
 
 const BusinessOwnerResponsibilities = styled.section`
 	position: relative;
@@ -49,7 +49,7 @@ const BusinessStructure = () => (
 		</Oval>
 
 		<BusinessOwnerResponsibilities>
-			<ImageContent image="unique-business-2" paddingTop="60">
+			<ImageContent image="unique-business-2" imageAlt="choose right women business" paddingTop="60">
 				<Heading size={2} template={3} left>
 					Choose the Right Business Structure and Register Your Business
 				</Heading>
@@ -261,7 +261,8 @@ const BusinessStructure = () => (
 					, — and we can even set up your LLC for you
 				</Paragraph>
 
-				<Button
+                <Button
+                    externalLink
 					theme="primary48"
 					width="365px"
 					arrow

@@ -2,13 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 import Container from "../../../container";
-
 import {Heading} from "../../../atoms/typography/heading";
 import {Paragraph} from "../../../atoms/typography/paragraph";
 import {color} from "../../../atoms/styles/colors";
-
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-
 import Icon1 from "../../../../images/icons/identify-your-unique-selling-point.inline.svg";
 import Icon2 from "../../../../images/icons/look-at-who-your-competitors-are-in-the-space.inline.svg"
 import Icon3 from "../../../../images/icons/understand-your-market.inline.svg"

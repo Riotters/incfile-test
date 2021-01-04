@@ -20,6 +20,7 @@ const EtsyLinks = () => (
 			<LinksContainer>
 				<LinkItem>
 					<PathLink
+                        externalLink
 						to="https://www.lawnsite.com/"
 						textColor={color.blue1}
 						hoverColor={color.orange1}
@@ -34,6 +35,7 @@ const EtsyLinks = () => (
 
 				<LinkItem>
 					<PathLink
+                        externalLink
 						to="http://www.groundtradesxchange.com/forums/"
 						textColor={color.blue1}
 						hoverColor={color.orange1}
@@ -48,6 +50,7 @@ const EtsyLinks = () => (
 
 				<LinkItem>
 					<PathLink
+                        externalLink
 						to="https://www.lawnserviceforum.com/"
 						textColor={color.blue1}
 						hoverColor={color.orange1}
@@ -62,6 +65,7 @@ const EtsyLinks = () => (
 
 				<LinkItem>
 					<PathLink
+                        externalLink
 						to="http://www.gopherforum.com/"
 						textColor={color.blue1}
 						hoverColor={color.orange1}
@@ -76,6 +80,7 @@ const EtsyLinks = () => (
 
 				<LinkItem>
 					<PathLink
+                        externalLink
 						to="http://lawncare.forumsmotion.com/"
 						textColor={color.blue1}
 						hoverColor={color.orange1}
@@ -91,6 +96,7 @@ const EtsyLinks = () => (
 
 				<LinkItem>
 					<PathLink
+                        externalLink
 						to="https://www.contractortalk.com/f7/"
 						textColor={color.blue1}
 						hoverColor={color.orange1}

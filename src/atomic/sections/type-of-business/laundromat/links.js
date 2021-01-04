@@ -18,6 +18,7 @@ const Links = () => (
       <LinksContainer>
         <LinkItem>
           <PathLink
+            externalLink
             to="https://www.facebook.com/groups/laundromatowners/?ref=br_rs"
             textColor={color.blue1}
             hoverColor={color.orange1}
@@ -33,6 +34,7 @@ const Links = () => (
 
         <LinkItem>
           <PathLink
+            externalLink
             to="https://community.coinlaundry.org/home"
             textColor={color.blue1}
             hoverColor={color.orange1}
@@ -48,6 +50,7 @@ const Links = () => (
 
         <LinkItem>
           <PathLink
+            externalLink
             to="http://www.thelaundryforum.com/forums/"
             textColor={color.blue1}
             hoverColor={color.orange1}
@@ -63,6 +66,7 @@ const Links = () => (
 
         <LinkItem>
           <PathLink
+            externalLink
             to="http://www.coinwash.com/mb/"
             textColor={color.blue1}
             hoverColor={color.orange1}

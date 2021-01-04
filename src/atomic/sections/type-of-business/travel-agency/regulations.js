@@ -1,11 +1,11 @@
+import { Link } from "gatsby";
 import React from "react";
+import styled from "styled-components";
+import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import OvalSvg from "../../../../images/ovals/top-left-transparent-green3.inline.svg";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import Container from "../../../container";
-import OvalSvg from "../../../../images/ovals/top-left-transparent-green3.inline.svg";
-import OvalSvg2 from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
-import styled from "styled-components";
-import { Link } from "gatsby";
 
 const Regulations = () => (
   <Wrapper>

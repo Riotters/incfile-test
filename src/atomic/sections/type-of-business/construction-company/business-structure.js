@@ -1,9 +1,9 @@
-import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import React from "react";
 import styled from "styled-components";
 import { Heading } from "../../../atoms/typography/heading";
 import { Paragraph } from "../../../atoms/typography/paragraph";
 import { color } from "../../../../components/styles/colors";
+import ImageContent from "../../../../components/partials/blocks/left-image-right-content";
 import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
 import PlaneIcon from "../../../../images/icons/plane.inline.svg";
 import RockerIcon from "../../../../images/icons/rocket.inline.svg";
@@ -15,6 +15,7 @@ import OvalGreen3 from "../../../../images/ovals/top-right-transparent-green3.in
 import { shadow } from "../../../atoms/styles/shadows";
 import { Link } from "gatsby";
 import { HeadingP } from "../../../atoms/typography/heading-to-p";
+import ArrowLink from "../../../../components/arrow-link";
 
 const BusinessOwnerResponsibilities = styled.section`
 	position: relative;
@@ -51,7 +52,7 @@ const CoachBusinessStructure = () => (
 		</Oval>
 
 		<BusinessOwnerResponsibilities>
-			<ImageContent image="unique-business-green" paddingTop="60">
+			<ImageContent image="unique-business-green"  imageAlt="choose right construction company structure" paddingTop="60">
 				<Heading size={2} template={3} left>
 					Choose the Right Business Structure and Register Your Construction
 					Business
@@ -114,11 +115,13 @@ const CoachBusinessStructure = () => (
 						style={{ color: color.blue1, fontWeight: "bold" }}
 						mixed={true}
 					>
-						<Link
-							to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
+                        <ArrowLink
+                            externalLink
+                            arrow={false}
+							url={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
 						>
 							Partnership Company or LLC
-						</Link>
+						</ArrowLink>
 					</HeadingP>
 
 					<Paragraph big>
@@ -150,11 +153,13 @@ const CoachBusinessStructure = () => (
 						style={{ color: color.blue1, fontWeight: "bold" }}
 						mixed={true}
 					>
-						<Link
-							to={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
+                        <ArrowLink
+                            externalLink
+                            arrow={false}
+							url={process.env.ORDER_URL + "/form-order-now.php?entityType=LLC"}
 						>
 							Limited Liability Company or LLC
-						</Link>
+						</ArrowLink>
 					</HeadingP>
 
 					<Paragraph big>
@@ -185,14 +190,16 @@ const CoachBusinessStructure = () => (
 						style={{ color: color.blue1, fontWeight: "bold" }}
 						mixed={true}
 					>
-						<Link
-							to={
+                        <ArrowLink
+                            externalLink
+                            arrow={false}
+							url={
 								process.env.ORDER_URL +
 								"/form-order-now.php?entityType=SCorporation"
 							}
 						>
 							S Corporation
-						</Link>
+						</ArrowLink>
 					</HeadingP>
 
 					<Paragraph big>
@@ -222,14 +229,16 @@ const CoachBusinessStructure = () => (
 						style={{ color: color.blue1, fontWeight: "bold" }}
 						mixed={true}
 					>
-						<Link
-							to={
+                        <ArrowLink
+                            externalLink
+                            arrow={false}
+							url={
 								process.env.ORDER_URL +
 								"/form-order-now.php?entityType=CCorporation"
 							}
 						>
 							C Corporation
-						</Link>
+						</ArrowLink>
 					</HeadingP>
 
 					<Paragraph big>
@@ -250,9 +259,9 @@ const CoachBusinessStructure = () => (
 						please see our in-depth guide
 					</Link>
 					. If you’ve still got questions,{" "}
-					<Link to="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/">
+					<a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
 						we’ve answered them to help you choose the right business structure
-					</Link>{" "}
+					</a>{" "}
 					for your construction business.
 				</Paragraph>
 				<Paragraph
@@ -270,7 +279,8 @@ const CoachBusinessStructure = () => (
 					, but we’ve got you covered, wherever you are.
 				</Paragraph>
 
-				<Button
+                <Button
+                    externalLink
 					theme="primary48"
 					width="365px"
 					arrow

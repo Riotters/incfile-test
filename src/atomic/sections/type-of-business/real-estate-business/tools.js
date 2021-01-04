@@ -40,6 +40,7 @@ const ToolsAndLinks = () => (
 				<LinksContainer>
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://www.facebook.com/realestateforums/"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -51,6 +52,7 @@ const ToolsAndLinks = () => (
 
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://www.facebook.com/groups/RaiseTheBar/?fref=ts"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -62,6 +64,7 @@ const ToolsAndLinks = () => (
 
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://www.facebook.com/groups/labcoatagents/"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -73,6 +76,7 @@ const ToolsAndLinks = () => (
 
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://www.facebook.com/groups/174889399279972/"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -84,6 +88,7 @@ const ToolsAndLinks = () => (
 
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://www.facebook.com/NARdotRealtor/"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -103,6 +108,7 @@ const ToolsAndLinks = () => (
 				<LinksContainer>
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://www.linkedin.com/groups/1812050/profile"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -114,6 +120,7 @@ const ToolsAndLinks = () => (
 
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://www.linkedin.com/groups/97046/profile"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -125,6 +132,7 @@ const ToolsAndLinks = () => (
 
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://www.linkedin.com/groups/134657/profile"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -145,6 +153,7 @@ const ToolsAndLinks = () => (
 				<LinksContainer>
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://www.biggerpockets.com/forums/21-real-estate-agents"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -156,6 +165,7 @@ const ToolsAndLinks = () => (
 
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://forum.creonline.com/forum/real-estate-investing-forum"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -167,6 +177,7 @@ const ToolsAndLinks = () => (
 
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="http://www.agentsonline.net/forums/ubbthreads.php"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -178,6 +189,7 @@ const ToolsAndLinks = () => (
 
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="http://bestconstructionmanagementdegree.com/2011/top-50-web-forums-for-construction-and-real-estate-professionals/"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -198,6 +210,7 @@ const ToolsAndLinks = () => (
 				<LinksContainer>
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://crs.com/events/sell-a-bration"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -209,6 +222,7 @@ const ToolsAndLinks = () => (
 
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://www.conference.realtor/"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -220,6 +234,7 @@ const ToolsAndLinks = () => (
 
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="http://fitsmallbusiness.com/real-estate-conference-and-convention-guide/"
 							textColor={color.blue1}
 							hoverColor={color.orange1}
@@ -231,6 +246,7 @@ const ToolsAndLinks = () => (
 
 					<LinkItem>
 						<PathLink
+                            externalLink
 							to="https://www.imn.org/group/real-estate/"
 							textColor={color.blue1}
 							hoverColor={color.orange1}

@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-
-import Container from "../../../container";
-import { Heading } from "../../../atoms/typography/heading";
-import { Paragraph } from "../../../atoms/typography/paragraph";
-import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
-import OkIcon from "../../../../images/icons/talk-to-clients.inline.svg";
-import IdetifyIcon from "../../../../images/icons/identify-your-unique-selling-point.inline.svg";
-import MarketIcon from "../../../../images/icons/understand-your-market.inline.svg";
-import { color, gradient } from "../../../atoms/styles/colors";
-import OvalSVG from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import Colorbox from "../../../../components/color-box";
 import MountainsIcon from "../../../../images/icons/and-dont-assume-just-because-you-have-a-great-idea.inline.svg";
 import InvolvedIcon from "../../../../images/icons/get-involved-with-business-communities.inline.svg";
-import Colorbox from "../../../../components/color-box";
+import IdetifyIcon from "../../../../images/icons/identify-your-unique-selling-point.inline.svg";
+import OkIcon from "../../../../images/icons/talk-to-clients.inline.svg";
+import MarketIcon from "../../../../images/icons/understand-your-market.inline.svg";
+import OvalSVG from "../../../../images/ovals/bottom-left-transparent-orange.inline.svg";
+import { color, gradient } from "../../../atoms/styles/colors";
+import { Heading } from "../../../atoms/typography/heading";
+import { Paragraph } from "../../../atoms/typography/paragraph";
+import Container from "../../../container";
+import TextBlockWithImage from "../../../molecules/mixed-blocks/text-block-with-absolute-image";
+
 
 const BlueContainerWrapper = styled.div`
   background-image: ${gradient.orange3};

@@ -31,6 +31,7 @@ const ToolsAndLinks = () => (
 			<LinksContainer>
 				<LinkItem>
 					<PathLink
+                        externalLink
 						to="https://www.contractortalk.com//"
 						textColor={color.blue1}
 						hoverColor={color.orange1}
@@ -45,6 +46,7 @@ const ToolsAndLinks = () => (
 						<Curve color={color.orange1} />
 					</CurveWrapper>
 					<PathLink
+                        externalLink
 						to="https://forums.jlconline.com/forums/forum"
 						textColor={color.blue1}
 						hoverColor={color.orange1}
@@ -56,6 +58,7 @@ const ToolsAndLinks = () => (
 
 				<LinkItem>
 					<PathLink
+                        externalLink
 						to="https://www.facebook.com/AGCofA/"
 						textColor={color.blue1}
 						hoverColor={color.orange1}

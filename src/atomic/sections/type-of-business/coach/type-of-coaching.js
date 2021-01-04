@@ -30,8 +30,9 @@ const TypeOfCoaching = () => (
                     <CurveWrapper>
                         <Curve color={color.orange1}/>
                     </CurveWrapper>
-                    {adventages.items.map(item => (
+                    {adventages.items.map((item, i) => (
                         <Adventages
+                            key={i}
                             style={{textAlign: "center"}}
                             url={item.url}
                             urlText={item.urlText}
