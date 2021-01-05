@@ -34,7 +34,7 @@ import { statesArray } from "../../../static/states-v2";
 
 
 const PPCCorporationLayoutV2 = ({ stateCode, videoID, content }) => {
-    const gclidQuery = getUrlParam('gclid') ? `&gclid=${getUrlParam('gclid')}` : '';
+    const [gclidQuery, setGclidQuery] = React.useState('');
     const state = statesArray.filter((state) => state.code === stateCode)[0];
     const stateName = state ? state.name : "";
     const [dataApi, setDataApi] = React.useState({});
@@ -50,6 +50,9 @@ const PPCCorporationLayoutV2 = ({ stateCode, videoID, content }) => {
                 `Learn more about incorporating in ${data.prices.state}`
             );
         });
+
+        setGclidQuery(getUrlParam('gclid') ? `&gclid=${getUrlParam('gclid')}` : '');
+        
     }, [state.name]);
 
     return (

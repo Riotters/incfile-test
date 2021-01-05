@@ -9,6 +9,7 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.s
 import Oval2SVG from "../../../../images/ovals/top-right-transparent-babyblue2.inline.svg";
 import parse from "html-react-parser";
 import {PHeading} from "../../../atoms/typography/p-to-heading";
+import LightBox from "../../../../components/LightBox";
 
 const About = styled.section`
   position: relative;
@@ -34,8 +35,14 @@ const AboutSection = ({ className, content }) => (
       <PHeading size={3}>{content.header}</PHeading>
       <Paragraph big mixed bottomMargin="72">
         {parse(content.text)}
-      </Paragraph>
-      <Button extends content={content.button[0]} theme="secondary56" arrow margin="0 auto 0 0" className="small" />
+            </Paragraph>
+            <LightBox
+                bottomMargin="48"
+                alt="s corporation tax election"
+                videoID="BgD6mwznGI8"
+                thumbnailVideo="scorp-electronic-video-thumb-01"
+            />
+      <Button externalLink content={content.button[0]} theme="secondary56" arrow margin="0 auto 0 0" className="small" />
     </ImageContent>
   </About>
 );
