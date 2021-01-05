@@ -40,6 +40,7 @@ import parse from "html-react-parser";
 import Articles from "../atomic/sections/articles";
 import ProductSchema from "../components/product-schema";
 import {PHeading} from "../atomic/atoms/typography/p-to-heading";
+import { Helmet } from "react-helmet";
 
 const LLCsTax = styled.section`
 	position: relative;
@@ -327,7 +328,23 @@ const CorpElection = () => (
 			</ContentCenter>
 		</Help>
 		{/*<Benefits />*/}
-		<Articles categoryId={293} />
+        <Articles categoryId={293} />
+        
+        <Helmet>
+            <script type="application/ld+json">
+                {`{
+                    "@context": "http://schema.org",
+                    "@type": "VideoObject",
+                    "name": "Choosing S Corp Election with Form 2553 by Incfile",
+                    "description": "If you’re an LLC owner looking to lessen your tax burden, one way to do it is through an S Corp election.  S Corporation taxes are different than an LLC, because shareholders can allocate some profits to be paid to them as a distribution, which is exempt from self-employment tax.  Here’s how to be taxed as an S Corp.  Step 1: Incorporate your LLC in the state where you’ll conduct the majority of your business.  Step 2: Confirm your company meets requirements to elect an S Corp status.  Step 3: Prepare Form 2553.   Step 4: File it with the IRS no more than 2 months and 15 days after the beginning of the tax year the election takes effect, or at any time during the preceding tax year.  You could do these steps yourself, or you can save yourself the time and have Incfile handle your S Corp election.  Check out the link below to get started.  File an S Corporation Tax Election: https://www.incfile.com/llc-s-corp-election/",
+                    "thumbnailUrl": "https://i.ytimg.com/vi/BgD6mwznGI8/default.jpg",
+                    "uploadDate": "2020-12-21T19:21:59Z",
+                    "duration": "PT1M1S",
+                    "embedUrl": "https://www.youtube.com/embed/BgD6mwznGI8",
+                    "interactionCount": "1"
+                }`}
+            </script>
+        </Helmet>
 	</Layout>
 );
 

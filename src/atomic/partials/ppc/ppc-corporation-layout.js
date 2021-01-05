@@ -18,7 +18,7 @@ import Top from "../top";
 import PPCWhyChooseIncfile from "./ppc-why-choose-incfile";
 
 const PPCCorporationLayout = ({ stateCode, videoID, vimeo, quotes }) => {
-    const gclidQuery = getUrlParam('gclid') ? `&gclid=${getUrlParam('gclid')}` : '';
+    const [gclidQuery, setGclidQuery] = React.useState('');
     const state = stateCode
         ? statesArray.filter((state) => state.code === stateCode)[0]
         : false;
@@ -26,26 +26,30 @@ const PPCCorporationLayout = ({ stateCode, videoID, vimeo, quotes }) => {
     const firstCharacterState = state ? state.name.slice(0, 1) : "";
     const addLetter =
         state && ["A", "E", "I", "O", "U", "H"].includes(firstCharacterState)
-        ? "An"
-        : "A";
+            ? "An"
+            : "A";
 
     const buttonInfo = {
         text: `Launch My Corporation`,
         url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation${stateCode ? `&entityState=${stateCode}` : ''}${gclidQuery}`
     };
 
-  const top = {
-    header: `The Fastest & Easiest Way To Set Up Your ${stateName} Corporation`,
-    text: `Join Over <span>500,000</span> Businesses Launched With Incfile Since <span>2004</span>`,
-  };
+    const top = {
+        header: `The Fastest & Easiest Way To Set Up Your ${stateName} Corporation`,
+        text: `Join Over <span>500,000</span> Businesses Launched With Incfile Since <span>2004</span>`,
+    };
 
-  const whyChooseIncfile = {
-    header: `Why Choose Incfile For Your ${stateName} Corporation?`,
-    text1: "We're entrepreneurs - just like you.",
-    text2: `${addLetter} ${stateName} Corporation can be the fastest and easiest way to start a business in ${stateName}.`,
-    text3: `We make registering a company as easy as possible, so you can focus on the important things. Beyond that, we have a full suite of startup services (like banking and bookkeeping), which means Incfile not only helps you get started, but supports you in your continued success as your one-stop shop.`,
-    text4: `Our mission is to provide you with a superior and modern experience at an unparalleled value.`,
-  };
+    const whyChooseIncfile = {
+        header: `Why Choose Incfile For Your ${stateName} Corporation?`,
+        text1: "We're entrepreneurs - just like you.",
+        text2: `${addLetter} ${stateName} Corporation can be the fastest and easiest way to start a business in ${stateName}.`,
+        text3: `We make registering a company as easy as possible, so you can focus on the important things. Beyond that, we have a full suite of startup services (like banking and bookkeeping), which means Incfile not only helps you get started, but supports you in your continued success as your one-stop shop.`,
+        text4: `Our mission is to provide you with a superior and modern experience at an unparalleled value.`,
+    };
+
+    React.useEffect(() => {
+        setGclidQuery(getUrlParam('gclid') ? `&gclid=${getUrlParam('gclid')}` : '');
+    });
 
     return (
         <>

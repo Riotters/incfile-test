@@ -49,6 +49,7 @@ export const help = {
     link: {
         text: `Incfile will handle the paperwork for your Certificate of Good Standing`,
         url: `${process.env.ORDER_URL}/cert-good-standing.php`,
+        externalLink: true,
     },
     card: {
         price: `49`,

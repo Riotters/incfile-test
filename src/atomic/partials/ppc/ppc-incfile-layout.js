@@ -27,7 +27,7 @@ const PPCIncfileLayout = ({
   robots,
   content,
 }) => {
-    const gclidQuery = getUrlParam('gclid') ? `&gclid=${getUrlParam('gclid')}` : '';
+    const [gclidQuery, setGclidQuery] = React.useState('');
     
     const state = stateCode
         ? statesArray.filter((state) => state.code === stateCode)[0]
@@ -88,6 +88,10 @@ const PPCIncfileLayout = ({
         },
     ];
 
+    React.useEffect(() => {
+        setGclidQuery(getUrlParam('gclid') ? `&gclid=${getUrlParam('gclid')}` : '');
+    });
+
   return (
     <>
       <SEO robots={robots} title={seoTitle} description={seoDesc} />
@@ -95,7 +99,7 @@ const PPCIncfileLayout = ({
       <Top
         ovalColor="darkblue"
         imageName="mr-bulb-get-started-2927"
-        imageAlt=""
+        imageAlt="forming your business with incfile"
         headlineWidth={700}
         textWidth={400}
         imageMobilePosition="-8%"
