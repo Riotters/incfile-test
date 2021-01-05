@@ -195,7 +195,7 @@ const Content = styled.div`
 
 	span {
 		color: #4e4e4e;
-		font-family: Avenir;
+		font-family: Engram;
 		font-size: 16px;
 		white-space: nowrap;
 	}
@@ -337,12 +337,14 @@ const CCorpTabs = ({ layout, columns, content }) => {
 								//className={isVisible ? "slideUp enter panel1" : "slideUp panel1"}
 								layout={layout}
 							>
-								<Heading size="2" template={3} left>{content.content[0].header}</Heading>
+								<Heading size="2" template={3} left>
+									{content.content[0].header}
+								</Heading>
 								<Paragraph big bottomMargin="48">
 									{content.content[0].text}
 								</Paragraph>
-                                <LightBoxVideo
-                                    alt="business entity structure"
+								<LightBoxVideo
+									alt="business entity structure"
 									thumbnailVideo="business-for-you-3432"
 									videoID="_u4u3-PQ8a0"
 								/>

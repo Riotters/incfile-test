@@ -242,7 +242,7 @@ const TennesseeCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -457,8 +457,6 @@ const TennesseeCorporation = () => {
 	);
 };
 
-
-
 const QuestionSection = styled.section`
 	background-image: ${gradient.orange3};
 	position: relative;
@@ -466,8 +464,6 @@ const QuestionSection = styled.section`
 	margin-top: 52px;
 	margin-bottom: 148px;
 `;
-
-
 
 const ServiceSection = styled.section`
 	background-image: ${gradient.blue3};
@@ -485,7 +481,5 @@ const TabsWrapper = styled.section`
 		margin-top: 21px;
 	}
 `;
-
-
 
 export default TennesseeCorporation;

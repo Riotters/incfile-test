@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { color } from "../styles/colors";
 const HeadingWrapper = styled.div`
-    font-family: Avenir, sans-serif;
+    font-family: Engram, sans-serif;
     font-size: ${(props) => (props.big ? "20" : "16")}px;
     line-height: ${(props) => (props.big ? "32" : "24")}px;
     font-weight: 400;
@@ -18,10 +18,10 @@ const HeadingWrapper = styled.div`
 			props.flexAlign && "align-items: " + props.flexAlignValue + ";"}
     ${(props) =>
 			props.flexJustify && "justify-content: " + props.flexJustifyValue + ";"}
-    ${props => props.left ? "text-align: left;" : "text-align: initial;"}
+    ${(props) => (props.left ? "text-align: left;" : "text-align: initial;")}
     
     span.big {
-        font-family: Avenir, sans-serif;
+        font-family: Engram, sans-serif;
         font-weight: 900;
     }
     
@@ -35,7 +35,7 @@ const HeadingWrapper = styled.div`
         line-height: ${(props) => (props.big ? "32" : "24")}px;
         
         ${(props) =>
-					props.big && "font-family: Avenir, sans-serif; font-weight: 900;"}
+					props.big && "font-family: Engram, sans-serif; font-weight: 900;"}
 
         transition: all 0.3s ease-in-out;
         
@@ -57,7 +57,7 @@ export const HeadingP = ({
 	topMargin,
 	bottomPadding,
 	maxWidth,
-    left,
+	left,
 	color,
 	className,
 	style,
@@ -73,9 +73,9 @@ export const HeadingP = ({
 		maxWidth={maxWidth}
 		color={color}
 		relative={relative}
-        className={className ? `${className} p` : "p"}
+		className={className ? `${className} p` : "p"}
 		style={style}
-        left={left}
+		left={left}
 		big={big}
 	>
 		{children}

@@ -122,7 +122,7 @@ const PanelWrapper = styled.div`
   p,
   li {
     color: ${color.grey1};
-    font-family: Avenir, sans-serif;
+    font-family: Engram, sans-serif;
     max-width: 650px;
     text-align: left;
   }
@@ -208,7 +208,7 @@ const Content = styled.div`
 	h4,
 	h5 {
 		color: #4e4e4e;
-		font-family: Avenir;
+		font-family: Engram;
 		font-size: 16px;
 		font-weight: normal;
 		text-align: left;
@@ -348,7 +348,9 @@ const AccordionFaq = ({
 											<Paragraph bottomMargin="0" mixed>
 												{item.answer.map((el, i) =>
 													el.url ? (
-														<Link to={el.url} key={i}>{` ${parse(el.text)} `}</Link>
+														<Link to={el.url} key={i}>{` ${parse(
+															el.text
+														)} `}</Link>
 													) : (
 														parse(el.text)
 													)
@@ -373,7 +375,9 @@ const AccordionFaq = ({
 											<Paragraph topMargin="32" bottomMargin="0" mixed>
 												{item.text.map((el, i) =>
 													el.url ? (
-														<Link to={el.url} key={i}>{` ${parse(el.text)} `}</Link>
+														<Link to={el.url} key={i}>{` ${parse(
+															el.text
+														)} `}</Link>
 													) : (
 														el.text
 													)
@@ -395,8 +399,8 @@ const AccordionFaq = ({
 
 													{e.type === "arrow-links" &&
 														e.content.map((link, i) => (
-                                                            <ArrowLink
-                                                                key={i}
+															<ArrowLink
+																key={i}
 																url={link.url}
 																style={link.style}
 																externalLink={link.externalLink}

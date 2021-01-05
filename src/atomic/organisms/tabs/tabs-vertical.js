@@ -181,7 +181,7 @@ const Content = styled.div`
 
 	span {
 		color: #4e4e4e;
-		font-family: Avenir;
+		font-family: Engram;
 		font-size: 13px;
 		white-space: nowrap;
 
@@ -273,7 +273,7 @@ const ColorboxIcon = styled.span`
 
 const Text = styled.span`
 	display: inline;
-	font-family: Avenir, sans-serif;
+	font-family: Engram, sans-serif;
 	font-size: 20px;
 	font-weight: 900;
 	font-stretch: normal;

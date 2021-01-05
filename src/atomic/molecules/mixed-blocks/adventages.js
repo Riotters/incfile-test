@@ -10,7 +10,7 @@ import ArrowSVG from "../../../images/arrow.inline.svg";
 import Image from "../../atoms/image/image";
 import Whitebox from "../../atoms/boxes/white-box";
 import parse from "html-react-parser";
-import {PHeading} from "../../atoms/typography/p-to-heading";
+import { PHeading } from "../../atoms/typography/p-to-heading";
 
 const Wrapper = styled.div`
 	width: 100%;
@@ -46,7 +46,7 @@ const Circle = styled.span`
 		props.position && props.position === "center" && "left: calc(50% - 24px);"}
 
 	span {
-		font-family: Avenir, sans-serif;
+		font-family: Engram, sans-serif;
 		font-weight: 900;
 		color: white;
 		font-size: 16px;
@@ -69,7 +69,7 @@ const Circle = styled.span`
 `;
 
 const AdeventageLink = styled(Link)`
-	font-family: Avenir, sans-serif;
+	font-family: Engram, sans-serif;
 	font-weight: 900;
 	margin-top: 24px;
 	display: flex;
@@ -81,13 +81,34 @@ const AdeventageLink = styled(Link)`
 	}
 `;
 
-const ChooseHeadingType = ({ paragraphHeader, headerSize, headerSizeTemplate, left, content, ...rest }) => (
+const ChooseHeadingType = ({
+	paragraphHeader,
+	headerSize,
+	headerSizeTemplate,
+	left,
+	content,
+	...rest
+}) => (
 	<>
 		{paragraphHeader && (
-			<PHeading size={headerSize} template={headerSizeTemplate} left={left} {...rest}>{parse(content)}</PHeading>
+			<PHeading
+				size={headerSize}
+				template={headerSizeTemplate}
+				left={left}
+				{...rest}
+			>
+				{parse(content)}
+			</PHeading>
 		)}
 		{!paragraphHeader && (
-			<Heading size={headerSize} template={headerSizeTemplate} left={left} {...rest}>{parse(content)}</Heading>
+			<Heading
+				size={headerSize}
+				template={headerSizeTemplate}
+				left={left}
+				{...rest}
+			>
+				{parse(content)}
+			</Heading>
 		)}
 	</>
 );
@@ -127,11 +148,17 @@ const Adventages = ({
 
 				{imageName && (
 					<ImageWrapper>
-						<Image filename={imageName} alt={content.header ?? ''} />
+						<Image filename={imageName} alt={content.header ?? ""} />
 					</ImageWrapper>
 				)}
 				{content.header && (
-					<ChooseHeadingType headerSize={3} headerSizeTemplate={4} content={content.header} marginBottom={16} paragraphHeader={paragraphHeader} />
+					<ChooseHeadingType
+						headerSize={3}
+						headerSizeTemplate={4}
+						content={content.header}
+						marginBottom={16}
+						paragraphHeader={paragraphHeader}
+					/>
 				)}
 				{content.text && (
 					<Paragraph mixed bottomMargin="0">

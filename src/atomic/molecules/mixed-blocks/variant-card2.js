@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 		list-style: none;
 
 		li {
-			font-family: Avenir, sans-serif;
+			font-family: Engram, sans-serif;
 			font-size: 16px;
 			line-height: 24px;
 			color: ${color.grey1};
@@ -64,7 +64,7 @@ const Box = styled.div`
 	transform: translate(-50%, -50%);
 
 	span {
-		font-family: MarkPro, sans-serif;
+		font-family: Engram-Bold, sans-serif;
 		font-weight: 900;
 		font-size: 12px;
 		line-height: 12px;
@@ -80,7 +80,7 @@ const ImageWrapper = styled.div`
 `;
 
 const Price = styled.span`
-	font-family: MarkPro, sans-serif;
+	font-family: Engram-Bold, sans-serif;
 	font-size: 40px;
 	line-height: 48px;
 	color: ${color.black};
@@ -95,7 +95,7 @@ const Package = styled(Whitebox)`
 	margin-bottom: 24px;
 
 	span {
-		font-family: Avenir, sans-serif;
+		font-family: Engram, sans-serif;
 		font-size: 12px;
 		line-height: 1;
 		font-weight: 900;
@@ -125,7 +125,7 @@ const Fee = styled.div`
 
 	.text,
 	.price {
-		font-family: Avenir, sans-serif;
+		font-family: Engram, sans-serif;
 		font-size: 16px;
 		line-height: 24px;
 	}

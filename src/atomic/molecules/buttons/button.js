@@ -26,7 +26,7 @@ const Wrapper = styled(Link)`
 		props.theme === "primary56"
 			? color.white
 			: color.orange1};
-	font-family: MarkPro;
+	font-family: Engram-Bold;
 	font-size: 16px;
 	line-height: 24px;
 	text-align: center;
@@ -126,7 +126,7 @@ const WrapperExternal = styled.a`
 		props.theme === "primary56"
 			? color.white
 			: color.orange1};
-	font-family: MarkPro;
+	font-family: Engram-Bold;
 	font-size: 16px;
 	line-height: 24px;
 	text-align: center;
@@ -267,9 +267,9 @@ const Button = ({
 	right,
 	wrap,
 	onClick,
-    externalLink,
-    target,
-    rel
+	externalLink,
+	target,
+	rel,
 }) => (
 	<>
 		{!externalLink ? (
@@ -341,9 +341,9 @@ const Button = ({
 export default Button;
 
 Button.propTypes = {
-    width: PropTypes.string,
-    target: PropTypes.string,
-    rel: PropTypes.string,
+	width: PropTypes.string,
+	target: PropTypes.string,
+	rel: PropTypes.string,
 	content: {
 		text: PropTypes.string.isRequired,
 		url: PropTypes.string.isRequired,
@@ -351,8 +351,8 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-    rel: "noopener noreferrer nofollow",
-    target: "_blank",
+	rel: "noopener noreferrer nofollow",
+	target: "_blank",
 	width: "auto",
 	content: {
 		text: "Start your business with us, today!",

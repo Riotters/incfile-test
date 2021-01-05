@@ -38,7 +38,7 @@ const Care = styled.section`
       min-height: 32px;
       position: relative;
       padding-left: 52px;
-      font-family: Avenir, sans-serif;
+      font-family: Engram, sans-serif;
       font-size: 16px;
       line-height: 24px;
       color: ${color.black};
@@ -62,63 +62,63 @@ const Care = styled.section`
 `;
 
 const Grid = styled.div`
-  display: grid;
-  grid-template-columns: 100%;
-  grid-gap: 30px;
-  padding-top: 72px;
-  padding-bottom: 64px;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-gap: 30px;
+	padding-top: 72px;
+	padding-bottom: 64px;
 
-  @media (min-width: 769px) {
-    grid-template-columns: 1fr 1fr;
-  }
+	@media (min-width: 769px) {
+		grid-template-columns: 1fr 1fr;
+	}
 
-  @media (min-width: 992px) {
-    padding-top: 80px;
-    padding-bottom: 152px;
-  }
+	@media (min-width: 992px) {
+		padding-top: 80px;
+		padding-bottom: 152px;
+	}
 `;
 
 const CareSection = ({ className, content, showQuotes }) => (
-  <Care>
-    <LeftContentRightImage
-      image="after-formation-cta-7994"
-      contentWidth="545"
-      contentPadding="45"
-    >
-      <Heading size="2" bottomMargin="32">
-        {parse(content.header)}
-      </Heading>
-      <Paragraph big mixed bottomMargin="48">
-        {parse(content.text)}
-      </Paragraph>
-      <ul className="numericlist">
-        {content.list.map((item, i) => (
-          <li key={i}>
-            <CheckBlueSVG />
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
-    </LeftContentRightImage>
+	<Care>
+		<LeftContentRightImage
+			image="after-formation-cta-7994"
+			contentWidth="545"
+			contentPadding="45"
+		>
+			<Heading size="2" bottomMargin="32">
+				{parse(content.header)}
+			</Heading>
+			<Paragraph big mixed bottomMargin="48">
+				{parse(content.text)}
+			</Paragraph>
+			<ul className="numericlist">
+				{content.list.map((item, i) => (
+					<li key={i}>
+						<CheckBlueSVG />
+						<span>{item}</span>
+					</li>
+				))}
+			</ul>
+		</LeftContentRightImage>
 
-    {showQuotes && (
-      <ContentCenter>
-        <Grid>
-          {content.cards.map((card, i) => (
-            <QuoteCard content={card} key={i} />
-          ))}
-        </Grid>
-      </ContentCenter>
-    )}
-  </Care>
+		{showQuotes && (
+			<ContentCenter>
+				<Grid>
+					{content.cards.map((card, i) => (
+						<QuoteCard content={card} key={i} />
+					))}
+				</Grid>
+			</ContentCenter>
+		)}
+	</Care>
 );
 
 export default CareSection;
 
 CareSection.propTypes = {
-  showQuotes: PropTypes.bool,
+	showQuotes: PropTypes.bool,
 };
 
 CareSection.defaultProps = {
-  showQuotes: false,
+	showQuotes: false,
 };
