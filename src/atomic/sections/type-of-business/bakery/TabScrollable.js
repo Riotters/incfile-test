@@ -342,7 +342,7 @@ const TabScrollable = ({ layout, columns }) => {
                     documents on behalf of your laundromat company.
                   </Paragraph>
                   <Paragraph big>
-                    Although you can act as your own registered agent, we
+                    Although you can act as your own Registered Agent, we
                     recommend using a professional service. It ensures there
                     will always be someone available to receive important legal
                     documentation on your behalf and also removes your name and

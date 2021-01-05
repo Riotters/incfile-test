@@ -81,7 +81,7 @@ function CaliforniaLLCIndex() {
 	return (
 		<Layout>
 			<SEO
-				title="How to Start an LLC in California | Incfile.com"
+				title="How To Start an LLC in California | Incfile.com"
 				description="Ready to form your California LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
 			/>
 

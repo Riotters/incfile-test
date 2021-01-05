@@ -11,12 +11,27 @@ import Next from "../atomic/sections/other/how-it-works/next";
 import Essentials from "../atomic/sections/other/how-it-works/essentials";
 import Info from "../atomic/sections/other/how-it-works/info";
 //Texts
-import { top, steps, next, essentials, info } from "../static/other/how-it-works";
+import {
+  top,
+  steps,
+  next,
+  essentials,
+  info,
+} from "../static/other/how-it-works";
 
 const GeneralResearchTopics = () => (
   <Layout>
-    <SEO title="How Incfile Works | Using a Business Formation Service" description="LLC formation, registered agent, compliance, and startup services — all in one place.  Learn how to make forming a business easy." />
-    <Top imageName="mr-bulb-how-it-works-2002" imageAlt="how it works" ovalColor="purple-2" headlineWidth="500" textWidth="800">
+    <SEO
+      title="How Incfile Works | Using a Business Formation Service"
+      description="LLC formation, Registered Agent, compliance, and startup services — all in one place.  Learn how to make forming a business easy."
+    />
+    <Top
+      imageName="mr-bulb-how-it-works-2002"
+      imageAlt="how it works"
+      ovalColor="purple-2"
+      headlineWidth="500"
+      textWidth="800"
+    >
       <h1>{top.header}</h1>
       <p>{top.text}</p>
       <RatingRow topMargin="0">

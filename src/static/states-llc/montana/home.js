@@ -93,7 +93,7 @@ export const howToGuide = [
           <a href="/montana-llc/registered-agents-montana-llc/">Learn more about Montana Registered Agents.</a>`,
         },
         {
-          question: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
+          question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
           answer: `You will need an EIN to identify your business with the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Montana LLC business formation process.`,
         },
         {
@@ -580,7 +580,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `“A registered agent’s primary purpose is to accept service of process on behalf of the entities it represents. Over time, it has become common for business entities to use as their registered agents businesses whose principal activity is the provision of registered agent services. An entity registered with the Secretary of State as a registered agent must maintain an active good standing status and an address within the State of Montana whether as a Commercial or Noncommercial Registered Agent. A business entity cannot serve as its own registered agent.”`,
+    content: `“A Registered Agent’s primary purpose is to accept service of process on behalf of the entities it represents. Over time, it has become common for business entities to use as their Registered Agents businesses whose principal activity is the provision of Registered Agent services. An entity registered with the Secretary of State as a Registered Agent must maintain an active good standing status and an address within the State of Montana whether as a Commercial or Noncommercial Registered Agent. A business entity cannot serve as its own Registered Agent.”`,
     marginBottom: 16,
   },
   {
@@ -675,7 +675,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Montana registered agent service`,
+      text: `Order Incfile's Montana Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -777,7 +777,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Montana registered agent service`,
+      text: `Order Incfile's Montana Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1193,7 +1193,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Montana registered agent service`,
+      text: `Incfile's Montana Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,

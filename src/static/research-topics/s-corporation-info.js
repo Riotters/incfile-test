@@ -5,11 +5,11 @@ export const about = {
       url: `/help-center/`,
     },
   ],
-  header: `S-Corporation`,
+  header: `S Corporation`,
 };
 
 export const related = {
-  header: `S-Corporation`,
+  header: `S Corporation`,
   text: `Other users were also interested in knowing about…`,
   buttons: [
     {

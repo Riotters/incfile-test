@@ -1,17 +1,17 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-import styled from "styled-components"
-import Container from "../container"
-import Button from "../button"
-import LogoSVG from "../../images/logo.inline.svg"
-import ArrowSVG from "../../images/arrow.inline.svg"
-import FacebookSVG from "../../images/facebook.inline.svg"
-import TwitterSVG from "../../images/twitter.inline.svg"
-import YoutubeSVG from "../../images/youtube.inline.svg"
-import LinkedinSVG from "../../images/linkedin.inline.svg"
-import PinterestSVG from "../../images/pinterest.inline.svg"
-import CurveSVG from "../../images/green-curve.inline.svg"
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
+import styled from "styled-components";
+import Container from "../container";
+import Button from "../button";
+import LogoSVG from "../../images/logo.inline.svg";
+import ArrowSVG from "../../images/arrow.inline.svg";
+import FacebookSVG from "../../images/facebook.inline.svg";
+import TwitterSVG from "../../images/twitter.inline.svg";
+import YoutubeSVG from "../../images/youtube.inline.svg";
+import LinkedinSVG from "../../images/linkedin.inline.svg";
+import PinterestSVG from "../../images/pinterest.inline.svg";
+import CurveSVG from "../../images/green-curve.inline.svg";
 
 const Wrapper = styled.div`
   display: flex;
@@ -24,7 +24,7 @@ const Wrapper = styled.div`
     flex-direction: row;
     height: 80px;
   }
-`
+`;
 const Logo = styled.div`
   height: 24px;
   margin-bottom: 25px;
@@ -32,7 +32,7 @@ const Logo = styled.div`
   @media (min-width: 769px) {
     margin-bottom: 0;
   }
-`
+`;
 
 const NewsletterWrapper = styled.div`
   display: flex;
@@ -55,7 +55,7 @@ const NewsletterWrapper = styled.div`
       font-family: Avenir;
     }
   }
-`
+`;
 
 const Label = styled.label`
   position: absolute;
@@ -91,7 +91,7 @@ const Newsletter = styled.input`
   &:focus {
     border-color: #fd8550;
   }
-`
+`;
 
 const Arrow = styled.div`
   width: 12px;
@@ -112,7 +112,7 @@ const Arrow = styled.div`
       transform: rotate(0);
     }
   }
-`
+`;
 
 const Navigation = styled.nav`
   display: flex;
@@ -190,7 +190,7 @@ const Navigation = styled.nav`
       }
     }
   }
-`
+`;
 
 const Curve = styled.div`
   height: 75px;
@@ -210,7 +210,7 @@ const Curve = styled.div`
     right: -115px;
     bottom: 75px;
   }
-`
+`;
 
 const Copyright = styled.p`
   color: #4f4f4f;
@@ -224,7 +224,7 @@ const Copyright = styled.p`
   @media (min-width: 769px) {
     padding: 0;
   }
-`
+`;
 
 const Social = styled.ul`
   display: flex;
@@ -246,7 +246,7 @@ const Social = styled.ul`
       width: 100%;
     }
   }
-`
+`;
 
 const Footer = () => (
   <div>
@@ -263,7 +263,12 @@ const Footer = () => (
             <ArrowSVG />
           </Arrow>
           <Label for="newsletter">Newsletter</Label>
-          <Newsletter placeholder="Your E-mail" name="newsletter" id="newsletter" type="text" />
+          <Newsletter
+            placeholder="Your E-mail"
+            name="newsletter"
+            id="newsletter"
+            type="text"
+          />
           <Button theme="secondary40" arrow="yes" right="14px">
             Subscribe
           </Button>
@@ -280,10 +285,10 @@ const Footer = () => (
               <Link to="#">LLC</Link>
             </li>
             <li>
-              <Link to="#">S-Corporation</Link>
+              <Link to="#">S Corporation</Link>
             </li>
             <li>
-              <Link to="#">C-Corporation</Link>
+              <Link to="#">C Corporation</Link>
             </li>
             <li>
               <Link to="#">Nonprofit</Link>
@@ -450,6 +455,6 @@ const Footer = () => (
       </Wrapper>
     </Container>
   </div>
-)
+);
 
-export default Footer
+export default Footer;

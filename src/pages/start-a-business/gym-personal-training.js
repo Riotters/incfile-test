@@ -56,8 +56,8 @@ const GymPersonalTraining = () => (
         want to find interesting ways to be active.
       </p>
       <ButtonsBox>
-                <Button
-                    externalLink
+        <Button
+          externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -221,7 +221,7 @@ const GymPersonalTraining = () => (
               text="Increase of U.S. revenues from gym, personal training and related businesses between 2015 and 2016"
             />
             <BlueBoxWithAbsoluteText
-              absoluteText="4% - 7%"
+              absoluteText="4 percent - 7 percent"
               text="Growth of fitness industry in the U.S. a year."
             />
             <BlueBoxWithAbsoluteText

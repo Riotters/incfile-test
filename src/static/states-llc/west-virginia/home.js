@@ -1147,7 +1147,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's West Virginia registered agent service`,
+      text: `Incfile's West Virginia Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,

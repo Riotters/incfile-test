@@ -95,7 +95,7 @@ export const howToGuide = [
           <a href="/new-hampshire-llc/registered-agents-new-hampshire-llc/">Learn more about New Hampshire Registered Agents.</a>`,
         },
         {
-          question: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
+          question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
           answer: `You will need an EIN to identify your business with the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the New Hampshire LLC business formation process.`,
         },
         {
@@ -658,7 +658,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's New Hampshire registered agent service`,
+      text: `Order Incfile's New Hampshire Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -755,7 +755,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's New Hampshire registered agent service`,
+      text: `Order Incfile's New Hampshire Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1169,7 +1169,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's New Hampshire registered agent service`,
+      text: `Incfile's New Hampshire Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,

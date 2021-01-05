@@ -93,7 +93,7 @@ export const HomePageContent = {
           url: `/texas-llc/registered-agents-texas-llc/`,
         },
         button2: {
-          text: `Get A Free Registered Agent When You Incorporate With Incfile`,
+          text: `Get a Free Registered Agent When You Incorporate with Incfile`,
           url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`,
         },
       },
@@ -133,10 +133,10 @@ export const HomePageContent = {
 
         text3: `You only need to file your Certificate of Formation once, but every year after you will also need to file an annual report for your LLC. This is also something Incfile can remind you to do / do for you if you choose to have us handle the paperwork.`,
         cta: {
-          title: `Have Incfile Handle <br>all the Paperwork`,
+          title: `Have Incfile Handle <br>All the Paperwork`,
           subtitle: `for You for $0 + the Texas State fee`,
           button: {
-            text: `Form Your LLC Now For Free`,
+            text: `Form Your LLC Now for Free`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`,
           },
         },
@@ -155,7 +155,7 @@ export const HomePageContent = {
         },
         cta: {
           title: `Receive a personalized <br>operating agreement`,
-          subtitle: `when you select Incfile’s Gold package`,
+          subtitle: `when you select Incfile’s Gold package.`,
           button: {
             text: `Form Your LLC Now`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`,

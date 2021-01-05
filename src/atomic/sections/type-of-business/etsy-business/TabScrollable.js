@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
 
@@ -264,9 +264,9 @@ const TabScrollable = ({ layout, columns }) => {
                   <Paragraph big mixed>
                     The Small Business Administration provides{" "}
                     <a
-                        href="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      href="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       national or federal licenses and permits
                     </a>{" "}
@@ -355,7 +355,7 @@ const TabScrollable = ({ layout, columns }) => {
                     legal documents on behalf of your Etsy company.
                   </Paragraph>
                   <Paragraph big>
-                    Although you can act as your own registered agent, we
+                    Although you can act as your own Registered Agent, we
                     recommend using a professional service. It ensures there
                     will always be someone available to receive important legal
                     documentation on your behalf and also removes your name and

@@ -168,7 +168,7 @@ const toolTipTexts = {
   "Package fee":
     "<p class='tooltip-content'>The Package Price covers the cost to create, prepare and file all required legal paperwork on your behalf to properly form your new business entity. It also includes the cost for additional services and products in your chosen package.</p>",
   "State fee":
-    "<p class='tooltip-content'>The State Fee is what your selected state charges to file a new business entity. This amount is pass-through and goes 100% directly to the Secretary of State; Incfile does not keep any part of this fee.</p>",
+    "<p class='tooltip-content'>The State Fee is what your selected state charges to file a new business entity. This amount is pass-through and goes 100 percent directly to the Secretary of State; Incfile does not keep any part of this fee.</p>",
 };
 
 const PricingCard = ({
@@ -239,7 +239,7 @@ const PricingCard = ({
           )}
           <ul className="list">
             {content.list &&
-              content.list.map((item,i) => (
+              content.list.map((item, i) => (
                 <li key={i}>
                   <TextCheck>{item}</TextCheck>
                 </li>

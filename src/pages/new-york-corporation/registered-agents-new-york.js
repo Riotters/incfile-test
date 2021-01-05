@@ -16,11 +16,11 @@ import Subscription from "../../atomic/sections/learning-center-entity/state-inf
 import Articles from "../../atomic/sections/articles";
 //Texts
 import {
-	top,
-	tabPages,
-	agents,
-	launchBusiness,
-	subscription,
+  top,
+  tabPages,
+  agents,
+  launchBusiness,
+  subscription,
 } from "../../static/learning-center-entity/state-information-new-york";
 import LeftTabPages from "../../atomic/sections/choose-your-business/left-tab-pages";
 import MainPageContent from "../../atomic/states-llc/page-content";
@@ -30,47 +30,52 @@ import CorporationLayout from "../../atomic/partials/corporation-layout";
 import { getFullPricesAndFilings } from "../../api/Api";
 
 const NewYorkCorporation = () => {
-	const [dataApi, setDataApi] = React.useState({});
-	React.useEffect(() => {
-		getFullPricesAndFilings("New York", "Corporation").then((data) => {
-			setDataApi(data);
-		});
-	}, []);
-	return (
-		<Layout>
-			<SEO
-				title="Registered Agent Rules for New York S Corps & C Corps"
-				description="Do you need a registered agent for your New York corporation? Learn about the rules, requirements, and how a registered agent can benefit your business."
-			/>
-			<Top
-				imageName="mr-bulb-corporation-california-8302"
-				imageAlt="registered agent in new york"
-				ovalColor="purple-2"
-				textWidth="530"
-			>
-				<h1>{top.header}</h1>
-				<HeadingP size={2} big color={color.grey2}>
-					{top.text}
-				</HeadingP>
-				<Buttonsbox>
-					<Button externalLink content={top.buttons[0]} theme="primary56" arrow />
-				</Buttonsbox>
-			</Top>
-			<CorporationLayout>
-				<LeftTabPages content={tabPages} nonDIY />
-				<MainPageContent>
-					<ContentMap content={agents} />
-				</MainPageContent>
-			</CorporationLayout>
-			<Rocket content={launchBusiness} />
-			<Requirements data={dataApi} />
-			<LearnMore data={dataApi} />
-			<QuickLinks />
-			<Variants data={dataApi} entityType="CCorporation" />
-			<Subscription content={subscription} />
-			<Articles />
-		</Layout>
-	);
+  const [dataApi, setDataApi] = React.useState({});
+  React.useEffect(() => {
+    getFullPricesAndFilings("New York", "Corporation").then((data) => {
+      setDataApi(data);
+    });
+  }, []);
+  return (
+    <Layout>
+      <SEO
+        title="Registered Agent Rules for New York S Corps & C Corps"
+        description="Do you need a Registered Agent for your New York corporation? Learn about the rules, requirements, and how a Registered Agent can benefit your business."
+      />
+      <Top
+        imageName="mr-bulb-corporation-california-8302"
+        imageAlt="registered agent in new york"
+        ovalColor="purple-2"
+        textWidth="530"
+      >
+        <h1>{top.header}</h1>
+        <HeadingP size={2} big color={color.grey2}>
+          {top.text}
+        </HeadingP>
+        <Buttonsbox>
+          <Button
+            externalLink
+            content={top.buttons[0]}
+            theme="primary56"
+            arrow
+          />
+        </Buttonsbox>
+      </Top>
+      <CorporationLayout>
+        <LeftTabPages content={tabPages} nonDIY />
+        <MainPageContent>
+          <ContentMap content={agents} />
+        </MainPageContent>
+      </CorporationLayout>
+      <Rocket content={launchBusiness} />
+      <Requirements data={dataApi} />
+      <LearnMore data={dataApi} />
+      <QuickLinks />
+      <Variants data={dataApi} entityType="CCorporation" />
+      <Subscription content={subscription} />
+      <Articles />
+    </Layout>
+  );
 };
 
 export default NewYorkCorporation;

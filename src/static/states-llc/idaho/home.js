@@ -95,7 +95,7 @@ export const howToGuide = [
             <p><a href="/idaho-llc/registered-agents-idaho-llc/" target="_blank">Learn more about Idaho Registered Agents</a></p>`,
         },
         {
-          question: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
+          question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
           answer: `You will need an EIN to identify your business with the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Idaho LLC business formation process.`,
         },
         {
@@ -679,7 +679,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Idaho registered agent service`,
+      text: `Order Incfile's Idaho Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -776,7 +776,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Idaho registered agent service`,
+      text: `Order Incfile's Idaho Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1188,7 +1188,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Idaho registered agent service`,
+      text: `Incfile's Idaho Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1396,7 +1396,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `The Idaho state tax rates vary between 1.125% to 6.925% on taxable income. Individual income tax is graduated so higher earnings are taxed at a higher rate.`,
+    content: `The Idaho state tax rates vary between 1.125 percent to 6.925 percent on taxable income. Individual income tax is graduated so higher earnings are taxed at a higher rate.`,
     marginBottom: 16,
   },
   {
@@ -1642,7 +1642,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more for less.`,
+  header: `How We Compare <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

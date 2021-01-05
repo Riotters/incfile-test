@@ -17,7 +17,7 @@ const VariantsSection = ({ data, entityType, paragraphHeading = false }) => {
   let stateFee = data?.prices ? data.prices.statefee : 0;
   let entityState = data?.prices ? data.prices.state : "";
   const headerSection = {
-    header: `See how easy it can be to get your business incorporated`,
+    header: `See How Easy It Can Be To Get Your Business Incorporated`,
     link: {
       text: ``,
       url: ``,
@@ -31,7 +31,11 @@ const VariantsSection = ({ data, entityType, paragraphHeading = false }) => {
       price: `${packagePrice.silver + stateFee}`,
       button: {
         text: `Get the Silver package`,
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=${entityType}&entityState=${shortState(entityState)}`,
+        url: `${
+          process.env.ORDER_URL
+        }/form-order-now.php?entityType=${entityType}&entityState=${shortState(
+          entityState
+        )}`,
       },
       fees: [
         {
@@ -46,7 +50,11 @@ const VariantsSection = ({ data, entityType, paragraphHeading = false }) => {
         },
       ],
       include: `The sliver services includes:`,
-      list: [`Prepare & Filing the Articles of Organization`, `Unlimited Name Searches`, `FREE Registered Agent for a year!`],
+      list: [
+        `Prepare & Filing the Articles of Organization`,
+        `Unlimited Name Searches`,
+        `FREE Registered Agent for a year!`,
+      ],
     },
     {
       variant: `Most popular`,
@@ -55,7 +63,11 @@ const VariantsSection = ({ data, entityType, paragraphHeading = false }) => {
       price: `${packagePrice.gold + stateFee}`,
       button: {
         text: `Get the Gold package`,
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=${entityType}&entityState=${shortState(entityState)}`,
+        url: `${
+          process.env.ORDER_URL
+        }/form-order-now.php?entityType=${entityType}&entityState=${shortState(
+          entityState
+        )}`,
       },
       fees: [
         {
@@ -70,7 +82,17 @@ const VariantsSection = ({ data, entityType, paragraphHeading = false }) => {
         },
       ],
       include: `The sliver package, and:`,
-      list: [`EIN Business Tax Number`, `IRS Form 2553`, `Operating Agreement`, `Banking Resolution`, `Lifetime Company Alerts`, `Online Access Dashboard`, `Unlimited Phone & Email Support`, `Business Banking Account`, `Business Tax Consultation`],
+      list: [
+        `EIN Business Tax Number`,
+        `IRS Form 2553`,
+        `Operating Agreement`,
+        `Banking Resolution`,
+        `Lifetime Company Alerts`,
+        `Online Access Dashboard`,
+        `Unlimited Phone & Email Support`,
+        `Business Banking Account`,
+        `Business Tax Consultation`,
+      ],
     },
     {
       variant: `Best value`,
@@ -79,7 +101,11 @@ const VariantsSection = ({ data, entityType, paragraphHeading = false }) => {
       price: `${packagePrice.platinum + stateFee}`,
       button: {
         text: `Get the Platinum package`,
-        url: `${process.env.ORDER_URL}/form-order-now.php?entityType=${entityType}&entityState=${shortState(entityState)}`,
+        url: `${
+          process.env.ORDER_URL
+        }/form-order-now.php?entityType=${entityType}&entityState=${shortState(
+          entityState
+        )}`,
       },
       fees: [
         {
@@ -94,13 +120,23 @@ const VariantsSection = ({ data, entityType, paragraphHeading = false }) => {
         },
       ],
       include: `The gold package, and:`,
-      list: [`Business Contract Templates`, `Expedited Filing`, `Domain Name + Business Email`],
+      list: [
+        `Business Contract Templates`,
+        `Expedited Filing`,
+        `Domain Name + Business Email`,
+      ],
     },
   ];
 
   return (
     <Variants>
-      <HeadingCenter headline={headerSection.header} headlineWidth="640" linkText={headerSection.link.text} linkUrl={headerSection.link.url} paragraphHeading={paragraphHeading} />
+      <HeadingCenter
+        headline={headerSection.header}
+        headlineWidth="640"
+        linkText={headerSection.link.text}
+        linkUrl={headerSection.link.url}
+        paragraphHeading={paragraphHeading}
+      />
       <ContentCenter>
         <VariantsCards content={cards} />
       </ContentCenter>
@@ -111,9 +147,9 @@ const VariantsSection = ({ data, entityType, paragraphHeading = false }) => {
 export default VariantsSection;
 
 VariantsSection.propTypes = {
-    entityType: PropTypes.string
-}
+  entityType: PropTypes.string,
+};
 
 VariantsSection.defaultProps = {
-    entityType: 'LLC'
-}
+  entityType: "LLC",
+};

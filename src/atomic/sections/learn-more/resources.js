@@ -50,7 +50,7 @@ const Resources = () => (
         <Icon>
           <SCIcon />
         </Icon>
-        S-Corporation
+        S Corporation
         <Circle
           circleColor={color.orange3}
           iconColor={color.orange1}
@@ -63,7 +63,7 @@ const Resources = () => (
         <Icon>
           <CCIcon />
         </Icon>
-        C-Corporation
+        C Corporation
         <Circle
           circleColor={color.orange3}
           iconColor={color.orange1}

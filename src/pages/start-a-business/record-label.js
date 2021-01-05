@@ -54,8 +54,8 @@ const RecordLabel = () => (
         the talents of others, owning a record label gives you options.
       </p>
       <ButtonsBox>
-                <Button
-                    externalLink
+        <Button
+          externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -238,12 +238,12 @@ const RecordLabel = () => (
             />
 
             <Adventages
-              headline="Streaming is a major growth industry, with a 33% increase in paid streaming in 2018."
+              headline="Streaming is a major growth industry, with a 33 percent increase in paid streaming in 2018."
               width="100%"
             />
 
             <Adventages
-              headline="Independent record label income is increasing at around 2.5% a year."
+              headline="Independent record label income is increasing at around 2.5 percent a year."
               width="100%"
             />
 

@@ -100,7 +100,7 @@ export const HomePageContent = {
             url: `/georgia-llc/registered-agents-georgia-llc/`,
           },
           {
-            header: `Get A Free Registered Agent When You Incorporate With Incfile`,
+            header: `Get a Free Registered Agent When You Incorporate with Incfile`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=GA`,
           },
         ],
@@ -129,10 +129,10 @@ export const HomePageContent = {
 
         text6: `You only need to file your Articles of Organization with the State of Georgia once, but you will need to file an annual report for your LLC, which has its own fees. This is also something Incfile can remind you to do or do for you if you choose to have us handle the paperwork.`,
         cta: {
-          title: `Have Incfile Handle <br>all the Paperwork`,
+          title: `Have Incfile Handle <br>All the Paperwork`,
           subtitle: `for You for $0 + the Georgia State fee`,
           button: {
-            text: `Form Your LLC Now For Free`,
+            text: `Form Your LLC Now for Free`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=GA`,
           },
         },
@@ -151,7 +151,7 @@ export const HomePageContent = {
         },
         cta: {
           title: `Receive a personalized <br>operating agreement`,
-          subtitle: `when you select Incfile’s Gold package`,
+          subtitle: `when you select Incfile’s Gold package.`,
           button: {
             text: `Form Your LLC Now`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=GA`,

@@ -526,7 +526,7 @@ export const namingYourBusiness = [
         },
         {
           question: `Get a Street Address for Your Delaware LLC`,
-          answer: `<p>If you want a street address in Delaware, Incfile provides a convenient and safe virtual mailbox service. Please note that this may not meet the requirements of the Secretary of State for a registered office or registered agent address, but it is an excellent way to securely access your physical mail from anywhere.</p></br></br>
+          answer: `<p>If you want a street address in Delaware, Incfile provides a convenient and safe virtual mailbox service. Please note that this may not meet the requirements of the Secretary of State for a registered office or Registered Agent address, but it is an excellent way to securely access your physical mail from anywhere.</p></br></br>
                    <p>The benefits of our virtual Delaware mailbox service include:</p></br>
                    <ul>
                    <li>One address for all correspondence</li>
@@ -747,7 +747,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Delaware registered agent service`,
+      text: `Order Incfile's Delaware Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -845,7 +845,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Delaware registered agent service`,
+      text: `Order Incfile's Delaware Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1254,7 +1254,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Delaware registered agent service`,
+      text: `Incfile's Delaware Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1664,7 +1664,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more for less.`,
+  header: `How We Compare <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

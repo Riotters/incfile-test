@@ -56,14 +56,14 @@ const DaycareBusiness = () => (
       </p>
       <ButtonsBox>
         <Button
-            externalLink
-            theme="primary56"
-            marginMD="0 24px 0 0"
-            arrow
-            content={{
-                url: `${process.env.ORDER_URL}/form-order-now.php`,
-                text: "Start Now",
-            }}
+          externalLink
+          theme="primary56"
+          marginMD="0 24px 0 0"
+          arrow
+          content={{
+            url: `${process.env.ORDER_URL}/form-order-now.php`,
+            text: "Start Now",
+          }}
         />
       </ButtonsBox>
 
@@ -166,7 +166,7 @@ const DaycareBusiness = () => (
             />
 
             <Adventages
-              headline="Childcare and daycare business revenue is projected to grow by almost 2% a year"
+              headline="Childcare and daycare business revenue is projected to grow by almost 2 percent a year"
               width="100%"
             />
 

@@ -590,7 +590,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `“All business entities filed in Wyoming shall have and continuously maintain in this state a registered agent to accept service of process. Failure to maintain a registered agent results in the dissolution or revocation of the business entity. The registered agent may be an individual resident in Wyoming or a business entity (foreign or domestic) authorized to transact business in Wyoming. The registered agent must have a physical address in Wyoming.”`,
+    content: `“All business entities filed in Wyoming shall have and continuously maintain in this state a Registered Agent to accept service of process. Failure to maintain a Registered Agent results in the dissolution or revocation of the business entity. The Registered Agent may be an individual resident in Wyoming or a business entity (foreign or domestic) authorized to transact business in Wyoming. The Registered Agent must have a physical address in Wyoming.”`,
     marginBottom: 48,
   },
   {
@@ -1670,7 +1670,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more for less.`,
+  header: `How We Compare <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

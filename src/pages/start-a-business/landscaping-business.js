@@ -80,8 +80,8 @@ const LandscapingBusiness = () => (
         services, you can build a thriving local landscaping business.
       </p>
       <ButtonsBox>
-                <Button
-                    externalLink
+        <Button
+          externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -267,14 +267,14 @@ const LandscapingBusiness = () => (
 
             <div style={{ marginBottom: "10px" }}>
               <Adventages
-                headline="Commercial landscaping services account for about 50% of industry revenue, while residential services account for about 30%"
+                headline="Commercial landscaping services account for about 50 percent of industry revenue, while residential services account for about 30 percent"
                 width="100%"
               />
             </div>
 
             <div style={{ marginBottom: "30px" }}>
               <Adventages
-                headline="57% of businesses made $300,000 or less per year, while 19% made between $300,000 and $1 million and 24% $1 million or more"
+                headline="57 percent of businesses made $300,000 or less per year, while 19 percent made between $300,000 and $1 million and 24 percent $1 million or more"
                 width="100%"
               />
             </div>

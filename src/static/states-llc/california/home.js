@@ -1,7 +1,7 @@
 export const HomePageContent = {
   header: {
     title: `How to Start an LLC in California`,
-    subline: `aaa`,
+    subline: ``,
     boxes: [
       {
         title: `Learn how to form a <br>California LLC yourself`,
@@ -100,7 +100,7 @@ export const HomePageContent = {
             url: `/california-llc/registered-agents-california-llc/`,
           },
           {
-            header: `Get A Free Registered Agent When You Incorporate With Incfile`,
+            header: `Get a Free Registered Agent When You Incorporate with Incfile`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CA`,
           },
         ],
@@ -144,7 +144,7 @@ export const HomePageContent = {
           title: `Have Incfile Handle all the Paperwork <br>`,
           subtitle: `for You for $0 + the California State fee`,
           button: {
-            text: `Form Your LLC Now For Free`,
+            text: `Form Your LLC Now for Free`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CA`,
           },
         },
@@ -163,7 +163,7 @@ export const HomePageContent = {
         },
         cta: {
           title: `Receive a personalized <br>operating agreement`,
-          subtitle: `when you select Incfile’s Gold package`,
+          subtitle: `when you select Incfile’s Gold package.`,
           button: {
             text: `Form Your LLC Now`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CA`,

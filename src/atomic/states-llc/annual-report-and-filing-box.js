@@ -10,7 +10,7 @@ function AnnualReportFilingBox({ data }) {
   return (
     <>
       <PHeading size={4} topMargin={40}>
-        What are the fees and requirements to form a business in{" "}
+        What Are the Fees and Requirements to Form a Business in{" "}
         {data.prices?.state}?
       </PHeading>
       <Box padding="24px" bottomMargin="8px">

@@ -69,14 +69,14 @@ const BarNightclub = () => (
       </p>
       <ButtonsBox>
         <Button
-            externalLink
-            theme="primary56"
-            marginMD="0 24px 0 0"
-            arrow
-            content={{
-                url: `${process.env.ORDER_URL}/form-order-now.php`,
-                text: "Start Now",
-            }}
+          externalLink
+          theme="primary56"
+          marginMD="0 24px 0 0"
+          arrow
+          content={{
+            url: `${process.env.ORDER_URL}/form-order-now.php`,
+            text: "Start Now",
+          }}
         />
       </ButtonsBox>
 
@@ -256,7 +256,7 @@ const BarNightclub = () => (
 
             <div style={{ marginBottom: "30px" }}>
               <Adventages
-                headline="The split of alcohol sold tends to be 42% beer, 31% spirits, 10% wine and the remainder as food and non-alcoholic drinks."
+                headline="The split of alcohol sold tends to be 42 percent beer, 31 percent spirits, 10 percent wine and the remainder as food and non-alcoholic drinks."
                 width="100%"
               />
             </div>
@@ -689,7 +689,11 @@ const BarNightclub = () => (
       </Oval>
 
       <BusinessOwnerResponsibilities>
-        <ImageContent image="unique-business-2" imageAlt="choose right structure for a bar nightclub" paddingTop="60">
+        <ImageContent
+          image="unique-business-2"
+          imageAlt="choose right structure for a bar nightclub"
+          paddingTop="60"
+        >
           <Heading size={2} template={3} left>
             Choose the Right Business Structure and Register Your Bar or Club
             Business
@@ -912,16 +916,16 @@ const BarNightclub = () => (
             , but we’ve got you covered, wherever you are.
           </Paragraph>
 
-            <Button
-                externalLink
-                theme="primary48"
-                width="365px"
-                arrow
-                content={{
-                url: `${process.env.ORDER_URL}/form-order-now.php`,
-                text: `Start your business with us, today!`,
-                }}
-            />
+          <Button
+            externalLink
+            theme="primary48"
+            width="365px"
+            arrow
+            content={{
+              url: `${process.env.ORDER_URL}/form-order-now.php`,
+              text: `Start your business with us, today!`,
+            }}
+          />
         </ImageContent>
       </BusinessOwnerResponsibilities>
     </WhiteContainer>

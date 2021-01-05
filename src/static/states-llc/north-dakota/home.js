@@ -556,7 +556,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `“An entity registered with the Secretary of State must continuously maintain a commercial or noncommercial registered agent and address in North Dakota. An entity cannot serve itself as registered agent.`,
+    content: `“An entity registered with the Secretary of State must continuously maintain a commercial or noncommercial Registered Agent and address in North Dakota. An entity cannot serve itself as Registered Agent.`,
     marginBottom: 16,
   },
   {
@@ -568,7 +568,7 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       list: [
-        `A commercial registered agent has a Commercial Registered Agent Listing Statement filed with the Secretary of State and may be one of the following: An individual residing in North Dakota,`,
+        `A commercial Registered Agent has a Commercial Registered Agent Listing Statement filed with the Secretary of State and may be one of the following: An individual residing in North Dakota,`,
         `A domestic or foreign corporation registered with the Secretary of State and having a business office in the State of North Dakota, or`,
         `A domestic or foreign limited liability company registered with the Secretary of State and having a business office in the State of North Dakota.`,
       ],
@@ -689,7 +689,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's North Dakota registered agent service`,
+      text: `Order Incfile's North Dakota Registered Agent service`,
       url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ND`,
     },
     theme: `primary48`,
@@ -786,7 +786,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's North Dakota registered agent service`,
+      text: `Order Incfile's North Dakota Registered Agent service`,
       url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ND`,
     },
     theme: `primary48`,
@@ -1661,7 +1661,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more for less.`,
+  header: `How We Compare <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

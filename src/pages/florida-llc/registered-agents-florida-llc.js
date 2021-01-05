@@ -41,26 +41,29 @@ const Wrapper = styled.div`
 `;
 
 const RegisteredAgentFlorida = () => (
-    <Layout>
-        <SEO title="Registered Agents for Your Florida LLC | Incfile.com" description="Do you need a registered agent for your Florida LLC? Learn what registered agents do and how to get one with Incfile's helpful guide." />
-        
-        <RASchemaFL />
+  <Layout>
+    <SEO
+      title="Registered Agents for Your Florida LLC | Incfile.com"
+      description="Do you need a Registered Agent for your Florida LLC? Learn what Registered Agents do and how to get one with Incfile's helpful guide."
+    />
 
-        <LinearBgHeader imageMapName="tx-map-2x">
-            <TaxesHeader content={agentPageContent.header} />
-        </LinearBgHeader>
+    <RASchemaFL />
 
-        <WrapperContent>
-            <Wrapper>
-                <LeftTabPages content={tabPages} />
-                <MainPageContent>
-                    <RegisteredAgentSection content={agentPageContent.content} />
-                </MainPageContent>
-            </Wrapper>
-        </WrapperContent>
+    <LinearBgHeader imageMapName="tx-map-2x">
+      <TaxesHeader content={agentPageContent.header} />
+    </LinearBgHeader>
 
-        <Rocket url="?entityType=LLC&entityState=FL" />
-    </Layout>
+    <WrapperContent>
+      <Wrapper>
+        <LeftTabPages content={tabPages} />
+        <MainPageContent>
+          <RegisteredAgentSection content={agentPageContent.content} />
+        </MainPageContent>
+      </Wrapper>
+    </WrapperContent>
+
+    <Rocket url="?entityType=LLC&entityState=FL" />
+  </Layout>
 );
 
 export default RegisteredAgentFlorida;

@@ -124,7 +124,12 @@ const TabScrollable = ({ layout, columns }) => {
               Rules, Regulations and Laws for Your Catering Business
             </Heading>
             <Paragraph big mixed={true}>
-              Of course, along with running a business there are certain rules, regulations and legalities you need to be aware of. <Link to="/business-license-research-package/">We can also help with researching your business licensing needs</Link> .
+              Of course, along with running a business there are certain rules,
+              regulations and legalities you need to be aware of.{" "}
+              <Link to="/business-license-research-package/">
+                We can also help with researching your business licensing needs
+              </Link>{" "}
+              .
             </Paragraph>
 
             <InView
@@ -198,7 +203,22 @@ const TabScrollable = ({ layout, columns }) => {
                   </Paragraph>
 
                   <Paragraph big mixed={true}>
-                    You can find all the information you need about statewide licenses and permits on your state’s Secretary of State website. You can also find those details in our <Link to="/llc-state-information/">state-by-state guides to company formation</Link> . Alternatively, the Small Business Administration website has a <a href="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits" target="_blank" rel="noopener noreferrer" > list of licenses and permits by state. </a>
+                    You can find all the information you need about statewide
+                    licenses and permits on your state’s Secretary of State
+                    website. You can also find those details in our{" "}
+                    <Link to="/llc-state-information/">
+                      state-by-state guides to company formation
+                    </Link>{" "}
+                    . Alternatively, the Small Business Administration website
+                    has a{" "}
+                    <a
+                      href="https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {" "}
+                      list of licenses and permits by state.{" "}
+                    </a>
                   </Paragraph>
                 </TextBlockWithImage>
               </div>
@@ -328,7 +348,7 @@ const TabScrollable = ({ layout, columns }) => {
                     legal documents on behalf of your catering company.
                   </Paragraph>
                   <Paragraph big>
-                    Although you can act as your own registered agent, we
+                    Although you can act as your own Registered Agent, we
                     recommend using a professional service. It ensures there
                     will always be someone available to receive important legal
                     documentation on your behalf and also removes your name and

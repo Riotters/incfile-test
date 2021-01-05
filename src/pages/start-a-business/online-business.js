@@ -56,8 +56,8 @@ const OnlineBusiness = () => (
         entrepreneur.
       </p>
       <ButtonsBox>
-                <Button
-                    externalLink
+        <Button
+          externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -163,7 +163,7 @@ const OnlineBusiness = () => (
 
             <div style={{ marginBottom: "30px", marginTop: "48px" }}>
               <Adventages
-                headline="Online retail is expected to grow by between 8% and 12% year-on-year, compared to just 4% for traditional retail"
+                headline="Online retail is expected to grow by between 8 percent and 12 percent year-on-year, compared to just 4 percent for traditional retail"
                 width="100%"
               />
             </div>

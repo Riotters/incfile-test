@@ -188,7 +188,7 @@ const NewMexicoCorporation = () => {
                 Registered Agent and Office
               </Heading>
               <Paragraph big>
-                Every New Mexico corporation must have a registered agent in the
+                Every New Mexico corporation must have a Registered Agent in the
                 state-the person or office designated to receive official state
                 correspondence, both administrative and legal. The registered
                 agent must be either a New Mexico resident whose business office
@@ -327,7 +327,7 @@ const NewMexicoCorporation = () => {
               </TextBoxed>
               <TextBoxed style={{ marginBottom: "8px" }}>
                 <Paragraph bottomMargin={0}>
-                  The name of the corporation’s registered agent there
+                  The name of the corporation’s Registered Agent there
                 </Paragraph>
               </TextBoxed>
               <TextBoxed style={{ marginBottom: "8px" }}>
@@ -460,7 +460,7 @@ const NewMexicoCorporation = () => {
                         "@context": "http://schema.org",
                         "@type": "VideoObject",
                         "name": "What is a Corporation? by Incfile",
-                        "description": "What is a corporation and how does it work? One of the most important decisions you'll make when starting a business is its legal structure. A popular option is a “corporation“—but what does this mean for business owners?   A corporation is its own legal entity separate from the owners. It has nearly all the legal rights of an individual: It can hire employees, own assets, enter into contracts, sue and be sued, loan and borrow money, and pay taxes. But since the corporation exists as a separate entity, it limits the liability of its owners. That means shareholders have the right to participate in profits, but they’re not held personally liable for the company’s debts. And since a corporation isn’t linked to a single person, it doesn’t dissolve when its owners or shareholders change or die, so liability protection is passed on to the next in line.  The Three Main Types of Corporations:  - C Corporations - S Corporations - Non-profits   Learn more about the three main types of corporations by visiting these links below:   - What is an S Corporation? https://www.incfile.com/what-is-s-corporation/ - What is a C Corporation? https://www.incfile.com/what-is-c-corporation/ - What is a Nonprofit? https://www.incfile.com/what-is-non-profit-corporation/",
+                        "description": "What is a corporation and how does it work? One of the most important decisions you'll make when starting a business is its legal structure. A popular option is a “corporation“—but what does this mean for business owners?   A corporation is its own legal entity separate from the owners. It has nearly all the legal rights of an individual: It can hire employees, own assets, enter into contracts, sue and be sued, loan and borrow money, and pay taxes. But since the corporation exists as a separate entity, it limits the liability of its owners. That means shareholders have the right to participate in profits, but they’re not held personally liable for the company’s debts. And since a corporation isn’t linked to a single person, it doesn’t dissolve when its owners or shareholders change or die, so liability protection is passed on to the next in line.  The Three Main Types of Corporations:  - C Corporations - S Corporations - Nonprofits   Learn more about the three main types of corporations by visiting these links below:   - What is an S Corporation? https://www.incfile.com/what-is-s-corporation/ - What is a C Corporation? https://www.incfile.com/what-is-c-corporation/ - What is a Nonprofit? https://www.incfile.com/what-is-non-profit-corporation/",
                         "thumbnailUrl": "https://i.ytimg.com/vi/oYZShvmf9eQ/default.jpg",
                         "uploadDate": "2020-09-07T17:00:19Z",
                         "duration": "PT1M41S",
@@ -481,8 +481,6 @@ const QuestionSection = styled.section`
   margin-bottom: 148px;
 `;
 
-
-
 const ServiceSection = styled.section`
   background-image: ${gradient.blue3};
   padding-top: 100px;
@@ -499,7 +497,5 @@ const TabsWrapper = styled.section`
     margin-top: 21px;
   }
 `;
-
-
 
 export default NewMexicoCorporation;
