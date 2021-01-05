@@ -223,7 +223,7 @@ const ConnecticutCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

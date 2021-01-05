@@ -15,7 +15,7 @@ import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
 import CheckText from "../../../components/static-check/text-boxed";
 import LightBoxVideo from "../../../components/LightBox";
-import {PHeading} from "../../atoms/typography/p-to-heading";
+import { PHeading } from "../../atoms/typography/p-to-heading";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -192,7 +192,7 @@ const Content = styled.div`
 
 	span {
 		color: #4e4e4e;
-		font-family: Avenir;
+		font-family: Engram;
 		font-size: 16px;
 		white-space: nowrap;
 	}
@@ -334,9 +334,11 @@ const CCorpTabs = ({ layout, columns, content }) => {
 								//className={isVisible ? "slideUp enter panel1" : "slideUp panel1"}
 								layout={layout}
 							>
-								<Heading size="2" template={3} left>{content.content[0].header}</Heading>
-                                <LightBoxVideo
-                                    alt="what is a c corporation"
+								<Heading size="2" template={3} left>
+									{content.content[0].header}
+								</Heading>
+								<LightBoxVideo
+									alt="what is a c corporation"
 									thumbnailVideo="what-is-a-c-corporation-2737"
 									videoID="BmZ7zyLd710"
 									bottomMargin="32"

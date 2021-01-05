@@ -55,19 +55,19 @@ const FooterItem = styled.div`
 
 	h4 {
 		color: ${color.grey2};
-		font-family: MarkPro;
+		font-family: Engram-Bold;
 		font-size: 16px;
 		letter-spacing: 1px;
 		line-height: 14px;
-        text-transform: uppercase;
-        margin-top: 10px;
-        margin-bottom: 10px;
+		text-transform: uppercase;
+		margin-top: 10px;
+		margin-bottom: 10px;
 
 		@media (min-width: 992px) {
 			font-size: 12px;
 			letter-spacing: 1px;
-            opacity: 0.9;
-            margin-bottom: 24px;
+			opacity: 0.9;
+			margin-bottom: 24px;
 		}
 	}
 `;
@@ -92,7 +92,7 @@ const List = styled.ul`
 		a {
 			text-decoration: none;
 			color: ${color.grey2};
-			font-family: Avenir;
+			font-family: Engram;
 			font-size: 18px;
 			line-height: 24px;
 			transition: color 0.3s ease;
@@ -120,9 +120,7 @@ const FooterSingle = ({ content }) => {
 		<Wrapper isOpen={menu} onClick={handleClick}>
 			{content && (
 				<FooterItem>
-					{content.header && (
-						<h4>{content.header}</h4>
-					)}
+					{content.header && <h4>{content.header}</h4>}
 					{content.list && (
 						<List isOpen={menu}>
 							{content.list.map((item, index) => (
