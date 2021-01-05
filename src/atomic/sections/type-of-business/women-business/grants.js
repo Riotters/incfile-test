@@ -129,7 +129,10 @@ const Grants = () => (
 				>
 					<TopContent width={83} height={41} className="topContent">
 						<div>
-							<Image filename="eileen-fisher-2-logo" alt="set up a women business" />
+							<Image
+								filename="eileen-fisher-2-logo"
+								alt="set up a women business"
+							/>
 						</div>
 					</TopContent>
 					<BottomContent>
@@ -171,7 +174,10 @@ const Grants = () => (
 				>
 					<TopContent width={102} height={50} className="topContent">
 						<div>
-							<Image filename="grants-for-women-logo" alt="set up a women business" />
+							<Image
+								filename="grants-for-women-logo"
+								alt="set up a women business"
+							/>
 						</div>
 					</TopContent>
 					<BottomContent>
@@ -192,7 +198,10 @@ const Grants = () => (
 				>
 					<TopContent width={60} height={60} className="topContent">
 						<div>
-							<Image filename="eileen-fisher-logo" alt="set up a women business" />
+							<Image
+								filename="eileen-fisher-logo"
+								alt="set up a women business"
+							/>
 						</div>
 					</TopContent>
 					<BottomContent>
@@ -287,14 +296,14 @@ const Content = styled.div``;
 
 const Title = styled.div`
 	font-weight: 900;
-	font-family: "Avenir", sans-serif;
+	font-family: "Engram", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	color: #1d1d1d;
 `;
 
 const Description = styled.div`
-	font-family: "Avenir", sans-serif;
+	font-family: "Engram", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	color: #4e4e4e;

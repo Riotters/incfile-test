@@ -324,7 +324,7 @@ const Content = styled.div`
 
 	span {
 		color: #4e4e4e;
-		font-family: Avenir;
+		font-family: Engram;
 		font-size: 13px;
 		white-space: nowrap;
 

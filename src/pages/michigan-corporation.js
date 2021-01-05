@@ -73,7 +73,12 @@ const MichiganCorporation = () => {
 				<h1>{top.header}</h1>
 				<p>{top.text}</p>
 				<Buttonsbox>
-					<Button externalLink content={top.buttons[0]} theme="primary56" arrow />
+					<Button
+						externalLink
+						content={top.buttons[0]}
+						theme="primary56"
+						arrow
+					/>
 				</Buttonsbox>
 
 				<RatingRow>
@@ -263,7 +268,7 @@ state law. The name must include one of the following terms or its abbreviation:
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -498,8 +503,6 @@ state law. The name must include one of the following terms or its abbreviation:
 	);
 };
 
-
-
 const QuestionSection = styled.section`
 	background-image: ${gradient.orange3};
 	position: relative;
@@ -507,8 +510,6 @@ const QuestionSection = styled.section`
 	margin-top: 52px;
 	margin-bottom: 148px;
 `;
-
-
 
 const ServiceSection = styled.section`
 	background-image: ${gradient.blue3};
@@ -526,7 +527,5 @@ const TabsWrapper = styled.section`
 		margin-top: 21px;
 	}
 `;
-
-
 
 export default MichiganCorporation;

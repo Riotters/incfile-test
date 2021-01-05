@@ -50,7 +50,7 @@ class ButtonVideo extends Component {
                                 frameborder="0" 
                                 allow="autoplay; fullscreen" 
                                 allowfullscreen></iframe>`)
-                                : parse(`<iframe
+								: parse(`<iframe
                                 src="https://www.youtube.com/embed/${videoID}?rel=0&autoplay=1"
                                 width="500"
                                 height="349"
@@ -80,7 +80,7 @@ const PlayButton = styled.button`
 	border: 2px solid ${color.orange1};
 	border-radius: 50px;
 	color: ${color.orange1};
-	font-family: MarkPro;
+	font-family: Engram-Bold;
 	font-size: 16px;
 	line-height: 24px;
 	text-align: center;
