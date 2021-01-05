@@ -12,7 +12,7 @@ import QuoteCard from "../../organisms/cards/quote-card";
 
 const Care = styled.section`
   position: relative;
-  padding-top: 56px;
+  padding-top: 72px;
   padding-bottom: 64px;
 
   p {
