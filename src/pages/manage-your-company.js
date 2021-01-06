@@ -11,29 +11,29 @@ import { top, help, certificates } from "../static/manage-your-company";
 import { HeadingP } from "../atomic/atoms/typography/heading-to-p";
 
 const ManageYourCompany = () => (
-	<Layout>
-		<SEO
-			title="Documents Needed to Manage your LLC or Corporation"
-			description=""
-		/>
-		<Top
-			imageName="mrs-bulb-final-paper-stock"
-			imageAlt="manage your company"
-			ovalColor="purple"
-			tabletVariantClass="tablet--shopper"
-			tabletImgScale={0.8}
-			tabletImgPosX={40}
-		>
-			<h1>{top.header}</h1>
-			<HeadingP size={2} left big>
-				{top.text}
-			</HeadingP>
-		</Top>
-		<Benefits />
-		<Certificates content={certificates} />
-		<Help content={help} />
-		<Articles oval categoryId={310} />
-	</Layout>
+  <Layout>
+    <SEO
+      title="Documents Needed to Manage your LLC or Corporation"
+      description=""
+    />
+    <Top
+      imageName="mrs-bulb-final-paper-stock"
+      imageAlt="manage your company"
+      ovalColor="purple"
+      tabletVariantClass="tablet--shopper"
+      tabletImgScale={0.8}
+      tabletImgPosX={40}
+    >
+      <h1>{top.header}</h1>
+      <HeadingP size={2} left big>
+        {top.text}
+      </HeadingP>
+    </Top>
+    <Benefits />
+    <Certificates content={certificates} />
+    <Help content={help} />
+    <Articles oval categoryId={310} />
+  </Layout>
 );
 
 export default ManageYourCompany;
