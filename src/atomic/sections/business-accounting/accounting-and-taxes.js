@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 			display: block;
 			margin-bottom: 24px;
 			text-align: left;
-			font-family: Avenir;
+			font-family: Engram;
 			font-weight: 900;
 			font-size: 20px;
 			line-height: 28px;
@@ -34,7 +34,10 @@ const Wrapper = styled.div`
 
 const AccountingAndTaxes = ({ content }) => (
 	<Wrapper>
-		<ImageContent image="main-header-object-certificate-good-standing-5915" alt="all your accounting and tax needs">
+		<ImageContent
+			image="main-header-object-certificate-good-standing-5915"
+			alt="all your accounting and tax needs"
+		>
 			<Paragraph big mixed bottomMargin={48}>
 				{parse(content.text)}
 			</Paragraph>
@@ -49,7 +52,7 @@ const AccountingAndTaxes = ({ content }) => (
 				style={{
 					marginTop: "24px",
 					marginBottom: "24px",
-					fontFamily: "MarkPro",
+					fontFamily: "Engram-Bold",
 					fontSize: "16px",
 					lineHeight: "24px",
 				}}

@@ -26,7 +26,7 @@ const Filing = styled.div`
 
 	h3,
 	h4 {
-		font-family: Avenir;
+		font-family: Engram;
 		font-weight: 900;
 		font-size: 20px;
 		line-height: 28px;
@@ -63,7 +63,7 @@ const Filing = styled.div`
 		strong {
 			display: flex;
 			align-items: center;
-			font-family: Avenir, sans-serif;
+			font-family: Engram, sans-serif;
 			font-size: 16px;
 			line-height: 24px;
 			margin-bottom: 0px;

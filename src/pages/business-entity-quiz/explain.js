@@ -43,14 +43,14 @@ const SideBar = styled.div`
 
 	h1 {
 		font-size: 24px;
-		font-family: Avenir, sans-serif;
+		font-family: Engram, sans-serif;
 		font-weight: normal;
 	}
 `;
 
 const Copyright = styled.p`
 	color: #4f4f4f;
-	font-family: Avenir, sans-serif;
+	font-family: Engram, sans-serif;
 	font-size: 16px;
 	line-height: 19px;
 	width: 290px;
@@ -103,8 +103,8 @@ const BusinessQuizTypeForm = () => {
 			<Wrapper>
 				<Fragment>
 					<div id="type-form">
-                        <iframe
-                            title="business entity quiz"
+						<iframe
+							title="business entity quiz"
 							id="js-typeform"
 							src="https://ray007277.typeform.com/to/w5A28E"
 							style={{ width: `100%`, height: `100%`, border: 0 }}

@@ -98,7 +98,7 @@ const NextStateSection = ({ className, content, id }) => {
 						<Paragraph
 							style={{
 								marginBottom: "24px",
-								fontFamily: "Avenir",
+								fontFamily: "Engram",
 								fontWeight: "900",
 								fontSize: "20px",
 								lineHeight: "28px",
