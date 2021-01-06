@@ -81,7 +81,11 @@ const CoachBusinessStructure = () => (
     </Oval2>
 
     <BusinessOwnerResponsibilities>
-      <ImageContent image="unique-business-green" imageAlt="starting a digital nomad business" paddingTop="60">
+      <ImageContent
+        image="unique-business-green"
+        imageAlt="starting a digital nomad business"
+        paddingTop="60"
+      >
         <Heading size={2} template={3} left>
           Starting Your Digital Nomad Business
         </Heading>
@@ -322,7 +326,7 @@ const CoachBusinessStructure = () => (
           Finally, think about the addresses you're going to use in the U.S. for
           your company. Could you use a parent or relative's house? Do you want
           to receive documents other than official legal documents (that would
-          go to your registered agent) there? Answering these questions ahead of
+          go to your Registered Agent) there? Answering these questions ahead of
           time will make setting up your digital nomad business much easier.
         </Paragraph>
 
@@ -370,7 +374,11 @@ const CoachBusinessStructure = () => (
             please see our in-depth guide
           </Link>
           . If you’ve still got questions,{" "}
-          <a href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://grasshopper.com/blog/llc-vs-corporation-8-entrepreneur-questions-answered/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             we’ve answered them to help you choose the right business structure.
           </a>
         </Paragraph>
@@ -391,14 +399,14 @@ const CoachBusinessStructure = () => (
         </Paragraph>
 
         <Button
-            externalLink
-            theme="primary48"
-            width="365px"
-            arrow
-            content={{
-                url: `${process.env.ORDER_URL}/form-order-now.php`,
-                text: `Start your business with us, today!`,
-            }}
+          externalLink
+          theme="primary48"
+          width="365px"
+          arrow
+          content={{
+            url: `${process.env.ORDER_URL}/form-order-now.php`,
+            text: `Start your business with us, today!`,
+          }}
         />
       </ImageContent>
     </BusinessOwnerResponsibilities>

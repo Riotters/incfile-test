@@ -187,27 +187,27 @@ export const RingText = {
     {
       color: color.blue1,
       text:
-        "The 30% of the U.S. population who spend some time freelancing in 2017 will grow to over 50 percent by 2035",
+        "The 30 percent of the U.S. population who spend some time freelancing in 2017 will grow to over 50 percent by 2035",
     },
     {
       color: color.green1,
       text:
-        "90% of digital nomads and location independent workers are happier than when they were working in an office environment",
+        "90 percent of digital nomads and location independent workers are happier than when they were working in an office environment",
     },
     {
       color: color.red1,
       text:
-        'Nearly 40% of people in 2015 described themselves as a "digital nomad"',
+        'Nearly 40 percent of people in 2015 described themselves as a "digital nomad"',
     },
     {
       color: color.purple1,
       text:
-        "Nearly 60% of people saw a rise in income once they became a digital nomad",
+        "Nearly 60 percent of people saw a rise in income once they became a digital nomad",
     },
     {
       color: color.yellow1,
       text:
-        "Nearly 80% of people said they would not go from being a digital nomad back into a more traditional job role",
+        "Nearly 80 percent of people said they would not go from being a digital nomad back into a more traditional job role",
     },
   ],
 };

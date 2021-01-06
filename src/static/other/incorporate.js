@@ -7,7 +7,7 @@ export const top = {
     dropdown: {
       options: [
         {
-          label: "C-Corporation",
+          label: "C Corporation",
           value: "c-corporation",
         },
         {
@@ -15,7 +15,7 @@ export const top = {
           value: "llc",
         },
         {
-          label: "S-Corporation",
+          label: "S Corporation",
           value: "s-corporation",
         },
         {
@@ -116,7 +116,11 @@ export const variants = {
             },
           ],
           include: "The Basic Silver Services includes:",
-          list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+          list: [
+            "Preparing & Filing the Articles \n" + "of Organization",
+            "Unlimited Name Searches",
+            "FREE Registered Agent Service for \n" + "a year!",
+          ],
           fee: "",
           savings: "",
         },
@@ -141,7 +145,18 @@ export const variants = {
             },
           ],
           include: "The Silver Package, and:",
-          list: ["EIN Business Tax Number", "IRS Form 2553", "Operating Agreement", "Banking Resolution", "Express Shipping", "Lifetime Company Alerts", "Online Access Dashboard", "Unlimited Phone & Email Support", "Business Banking Account", "Business Tax Consultation"],
+          list: [
+            "EIN Business Tax Number",
+            "IRS Form 2553",
+            "Operating Agreement",
+            "Banking Resolution",
+            "Express Shipping",
+            "Lifetime Company Alerts",
+            "Online Access Dashboard",
+            "Unlimited Phone & Email Support",
+            "Business Banking Account",
+            "Business Tax Consultation",
+          ],
           fee: "",
           savings: "SAVE $468",
         },
@@ -166,7 +181,12 @@ export const variants = {
             },
           ],
           include: "The Gold package, and:",
-          list: ["Business Contract Templates", "Expedited Filing", "FedEx Delivery", "Domain Name + Business Email"],
+          list: [
+            "Business Contract Templates",
+            "Expedited Filing",
+            "FedEx Delivery",
+            "Domain Name + Business Email",
+          ],
           fee: "",
           savings: "SAVE $908",
         },
@@ -195,7 +215,8 @@ export const variants = {
                 style: { "font-weight": "bold" },
               },
               {
-                label: "Annual Year: April 15th Fiscal Year: 3½ months after beginning of tax year",
+                label:
+                  "Annual Year: April 15th Fiscal Year: 3½ months after beginning of tax year",
                 type: "label",
                 textCenter: true,
               },
@@ -207,7 +228,8 @@ export const variants = {
                 style: { "font-weight": "bold" },
               },
               {
-                label: "Schedule AL-CAR filed with Business Privilege Tax Return is accepted in lieu of a separate Annual Report. C Corps must file Form CPT. S Corps must file Form PPT.",
+                label:
+                  "Schedule AL-CAR filed with Business Privilege Tax Return is accepted in lieu of a separate Annual Report. C Corps must file Form CPT. S Corps must file Form PPT.",
                 type: "label",
               },
             ],
@@ -219,7 +241,8 @@ export const variants = {
       },
       services: {
         header: "All plans include:",
-        text: "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
+        text:
+          "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
         benefits: [
           {
             label: "Setup Business Banking Account",
@@ -233,7 +256,8 @@ export const variants = {
           {
             label: "Next Business Day Processing",
             header: "Next Business Day Processing",
-            text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
+            text:
+              "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
           },
           {
             label: "Certified Copy - Articles of Organization",
@@ -299,10 +323,14 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We will review the information, prepare your organization documents, and send them\n" + "to the state of formation.",
+                          text:
+                            "We will review the information, prepare your organization documents, and send them\n" +
+                            "to the state of formation.",
                         },
                         {
-                          text: " Every LLC must have Articles of organization — they are often\n" + "required to show proof of your business formation status to banks and other entities.\n",
+                          text:
+                            " Every LLC must have Articles of organization — they are often\n" +
+                            "required to show proof of your business formation status to banks and other entities.\n",
                           header: "Why You Need It",
                         },
                       ],
@@ -338,10 +366,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We conduct a thorough name search with the state corporation database and will\n" + "work with you as long as needed to find an available company name.",
+                          text:
+                            "We conduct a thorough name search with the state corporation database and will\n" +
+                            "work with you as long as needed to find an available company name.",
                         },
                         {
-                          text: "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
+                          text:
+                            "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
                           header: "Why You Need It",
                         },
                       ],
@@ -384,21 +415,31 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
+                          text:
+                            "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
                         },
                         {
-                          text: "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" + "an invaluable\n" + "service that will eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" +
+                            "an invaluable\n" +
+                            "service that will eliminate junk mail and limit personal information available to third parties.",
                         },
                         {
-                          text: " Registered Agent service is included on all packages for 1 full year\n" + "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" + "renew or cancel service.",
+                          text:
+                            " Registered Agent service is included on all packages for 1 full year\n" +
+                            "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" +
+                            "renew or cancel service.",
                           header: "Important",
                         },
                         {
-                          text: "The annual fee for Registered Agent service is $119",
+                          text:
+                            "The annual fee for Registered Agent service is $119",
                         },
                         {
                           header: "Why You Need It:",
-                          text: " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" + "eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" +
+                            "eliminate junk mail and limit personal information available to third parties.",
                         },
                       ],
                     },
@@ -453,7 +494,8 @@ export const variants = {
                             "We teamed up with Bank of America® to help you take advantage of perks they offer to entrepreneurs to help their small business grow. Incfile clients have the opportunity to receive an exclusive offer from Bank of America® to help establish your small business banking account.",
                         },
                         {
-                          text: "It’s important to keep your personal & business expenses separate when you have an an LLC.",
+                          text:
+                            "It’s important to keep your personal & business expenses separate when you have an an LLC.",
                           header: "Why You Need It",
                         },
                       ],
@@ -493,7 +535,8 @@ export const variants = {
                             "The Statement and Resignation of the Incorporator is a document signed by the Incorporator which identifies the initial members of the Limited Liability Company. A signed statement will be included with your filing packet and can be used to assist in the establishment of a business checking account.",
                         },
                         {
-                          text: "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
+                          text:
+                            "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
                           header: "Why You Need It",
                         },
                       ],
@@ -529,10 +572,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
+                          text:
+                            "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
                         },
                         {
-                          text: "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
+                          text:
+                            "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -580,10 +625,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This feature allows you to review the status of your order in real time.",
+                          text:
+                            "This feature allows you to review the status of your order in real time.",
                         },
                         {
-                          text: "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
+                          text:
+                            "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
                           header: "Why You Need It",
                         },
                       ],
@@ -623,7 +670,8 @@ export const variants = {
                             "Incorporating a new business can burden owners with complicated tax filings . As a client you are entitled to receive a free no obligation 30 minutes consultation with a certified tax professional who can answer questions regarding the tax commitments of your company. ",
                         },
                         {
-                          text: "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
+                          text:
+                            "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -659,10 +707,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
+                          text:
+                            "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
                         },
                         {
-                          text: "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
+                          text:
+                            "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -698,10 +748,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
+                          text:
+                            "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
                         },
                         {
-                          text: "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
+                          text:
+                            "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -744,10 +796,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
+                          text:
+                            "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
                         },
                         {
-                          text: "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
+                          text:
+                            "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -795,13 +849,16 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
+                          text:
+                            "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
                         },
                         {
-                          header: "All free websites are subject to Xoopah.com's $20/month hosting rates.",
+                          header:
+                            "All free websites are subject to Xoopah.com's $20/month hosting rates.",
                         },
                         {
-                          text: "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
+                          text:
+                            "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -859,7 +916,8 @@ export const variants = {
                             "An Employer Identification Number (EIN) is a nine-digit number that is assigned by the IRS and used to identify taxpayers. Providing an EIN is required to open a business bank account and is required to file business tax returns. We will apply and obtain your EIN from the IRS electronically. This option is the fastest way to obtain the EIN. ",
                         },
                         {
-                          text: "An EIN is required to open a business bank account and to file business tax returns. ",
+                          text:
+                            "An EIN is required to open a business bank account and to file business tax returns. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -906,7 +964,8 @@ export const variants = {
                             "The bylaws of a corporation are an internal document that details the operating rules for the corporation. The bylaws of a corporation are typically adopted at the organizational meeting of the board of directors after the corporation has been filed with the state. The bylaws we will provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
                         },
                         {
-                          text: "Your bylaws will act as “internal rules,” ensuring that everything runs smoothly and keeps all employees, executives and shareholders in agreement and on the same page. ",
+                          text:
+                            "Your bylaws will act as “internal rules,” ensuring that everything runs smoothly and keeps all employees, executives and shareholders in agreement and on the same page. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -949,7 +1008,8 @@ export const variants = {
                             'After the corporation has been filed with the state, the directors of the corporation are required to have a "first," or organizational meeting to take care of things such as issuing shares of stock, adopting bylaws, appointing officers, etc., and keeping minutes of directors meetings and corporate resolutions is a required part of your internal corporate compliance. The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ',
                         },
                         {
-                          text: "The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
+                          text:
+                            "The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -988,10 +1048,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
+                          text:
+                            "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
                         },
                         {
-                          text: "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
+                          text:
+                            "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
                           header: "Why You Need It",
                         },
                       ],
@@ -1030,10 +1092,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
+                          text:
+                            "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
                         },
                         {
-                          text: "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
+                          text:
+                            "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -1075,10 +1139,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
+                          text:
+                            "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
                         },
                         {
-                          text: "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
+                          text:
+                            "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -1139,10 +1205,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
+                          text:
+                            "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -1197,7 +1265,8 @@ export const variants = {
                             "The Business Formation Kit is a professional binder enclosed in a matching slip case, customized with the name of your company on the insert. It includes a metal die-cast corporate embossing seal, customized with the name of your company as well as the date and state of formation spine. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -1334,11 +1403,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
+                          text:
+                            "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
                         },
                         {
                           header: "Why You Need It:",
-                          text: "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
+                          text:
+                            "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
                         },
                       ],
                     },
@@ -1373,10 +1444,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
+                          text:
+                            "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
                         },
                         {
-                          text: "In a rush to set up your business and get started with making money? We got you. ",
+                          text:
+                            "In a rush to set up your business and get started with making money? We got you. ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -1435,7 +1508,11 @@ export const variants = {
             },
           ],
           include: "The Basic Silver Services includes:",
-          list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+          list: [
+            "Preparing & Filing the Articles \n" + "of Organization",
+            "Unlimited Name Searches",
+            "FREE Registered Agent Service for \n" + "a year!",
+          ],
           fee: "",
           savings: "",
         },
@@ -1460,7 +1537,18 @@ export const variants = {
             },
           ],
           include: "The Silver Package, and:",
-          list: ["EIN Business Tax Number", "IRS Form 2553", "Operating Agreement", "Banking Resolution", "Express Shipping", "Lifetime Company Alerts", "Online Access Dashboard", "Unlimited Phone & Email Support", "Business Banking Account", "Business Tax Consultation"],
+          list: [
+            "EIN Business Tax Number",
+            "IRS Form 2553",
+            "Operating Agreement",
+            "Banking Resolution",
+            "Express Shipping",
+            "Lifetime Company Alerts",
+            "Online Access Dashboard",
+            "Unlimited Phone & Email Support",
+            "Business Banking Account",
+            "Business Tax Consultation",
+          ],
           fee: "",
           savings: "SAVE $468",
         },
@@ -1485,7 +1573,12 @@ export const variants = {
             },
           ],
           include: "The Gold package, and:",
-          list: ["Business Contract Templates", "Expedited Filing", "FedEx Delivery", "Domain Name + Business Email"],
+          list: [
+            "Business Contract Templates",
+            "Expedited Filing",
+            "FedEx Delivery",
+            "Domain Name + Business Email",
+          ],
           fee: "",
           savings: "SAVE $908",
         },
@@ -1514,7 +1607,8 @@ export const variants = {
                 style: { "font-weight": "bold" },
               },
               {
-                label: "Annual Year: April 15th Fiscal Year: 3½ months after beginning of tax year",
+                label:
+                  "Annual Year: April 15th Fiscal Year: 3½ months after beginning of tax year",
                 type: "label",
                 textCenter: true,
               },
@@ -1526,7 +1620,8 @@ export const variants = {
                 style: { "font-weight": "bold" },
               },
               {
-                label: "Schedule AL-CAR filed with Business Privilege Tax Return is accepted in lieu of a separate Annual Report. C Corps must file Form CPT. S Corps must file Form PPT.",
+                label:
+                  "Schedule AL-CAR filed with Business Privilege Tax Return is accepted in lieu of a separate Annual Report. C Corps must file Form CPT. S Corps must file Form PPT.",
                 type: "label",
               },
             ],
@@ -1538,7 +1633,8 @@ export const variants = {
       },
       services: {
         header: "All plans include:",
-        text: "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
+        text:
+          "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
         benefits: [
           {
             label: "Setup Business Banking Account",
@@ -1552,7 +1648,8 @@ export const variants = {
           {
             label: "Next Business Day Processing",
             header: "Next Business Day Processing",
-            text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
+            text:
+              "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
           },
           {
             label: "Certified Copy - Articles of Organization",
@@ -1618,10 +1715,14 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We will review the information, prepare your organization documents, and send them\n" + "to the state of formation.",
+                          text:
+                            "We will review the information, prepare your organization documents, and send them\n" +
+                            "to the state of formation.",
                         },
                         {
-                          text: " Every LLC must have Articles of organization — they are often\n" + "required to show proof of your business formation status to banks and other entities.\n",
+                          text:
+                            " Every LLC must have Articles of organization — they are often\n" +
+                            "required to show proof of your business formation status to banks and other entities.\n",
                           header: "Why You Need It",
                         },
                       ],
@@ -1657,10 +1758,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We conduct a thorough name search with the state corporation database and will\n" + "work with you as long as needed to find an available company name.",
+                          text:
+                            "We conduct a thorough name search with the state corporation database and will\n" +
+                            "work with you as long as needed to find an available company name.",
                         },
                         {
-                          text: "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
+                          text:
+                            "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
                           header: "Why You Need It",
                         },
                       ],
@@ -1703,21 +1807,31 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
+                          text:
+                            "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
                         },
                         {
-                          text: "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" + "an invaluable\n" + "service that will eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" +
+                            "an invaluable\n" +
+                            "service that will eliminate junk mail and limit personal information available to third parties.",
                         },
                         {
-                          text: " Registered Agent service is included on all packages for 1 full year\n" + "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" + "renew or cancel service.",
+                          text:
+                            " Registered Agent service is included on all packages for 1 full year\n" +
+                            "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" +
+                            "renew or cancel service.",
                           header: "Important",
                         },
                         {
-                          text: "The annual fee for Registered Agent service is $119",
+                          text:
+                            "The annual fee for Registered Agent service is $119",
                         },
                         {
                           header: "Why You Need It:",
-                          text: " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" + "eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" +
+                            "eliminate junk mail and limit personal information available to third parties.",
                         },
                       ],
                     },
@@ -1772,7 +1886,8 @@ export const variants = {
                             "We teamed up with Bank of America® to help you take advantage of perks they offer to entrepreneurs to help their small business grow. Incfile clients have the opportunity to receive an exclusive offer from Bank of America® to help establish your small business banking account.",
                         },
                         {
-                          text: "It’s important to keep your personal & business expenses separate when you have an an LLC.",
+                          text:
+                            "It’s important to keep your personal & business expenses separate when you have an an LLC.",
                           header: "Why You Need It",
                         },
                       ],
@@ -1812,7 +1927,8 @@ export const variants = {
                             "The Statement and Resignation of the Incorporator is a document signed by the Incorporator which identifies the initial members of the Limited Liability Company. A signed statement will be included with your filing packet and can be used to assist in the establishment of a business checking account.",
                         },
                         {
-                          text: "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
+                          text:
+                            "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
                           header: "Why You Need It",
                         },
                       ],
@@ -1848,10 +1964,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
+                          text:
+                            "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
                         },
                         {
-                          text: "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
+                          text:
+                            "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -1899,10 +2017,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This feature allows you to review the status of your order in real time.",
+                          text:
+                            "This feature allows you to review the status of your order in real time.",
                         },
                         {
-                          text: "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
+                          text:
+                            "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
                           header: "Why You Need It",
                         },
                       ],
@@ -1942,7 +2062,8 @@ export const variants = {
                             "Incorporating a new business can burden owners with complicated tax filings . As a client you are entitled to receive a free no obligation 30 minutes consultation with a certified tax professional who can answer questions regarding the tax commitments of your company. ",
                         },
                         {
-                          text: "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
+                          text:
+                            "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -1978,10 +2099,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
+                          text:
+                            "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
                         },
                         {
-                          text: "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
+                          text:
+                            "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -2017,10 +2140,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
+                          text:
+                            "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
                         },
                         {
-                          text: "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
+                          text:
+                            "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -2063,10 +2188,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
+                          text:
+                            "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
                         },
                         {
-                          text: "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
+                          text:
+                            "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -2114,13 +2241,16 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
+                          text:
+                            "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
                         },
                         {
-                          header: "All free websites are subject to Xoopah.com's $20/month hosting rates.",
+                          header:
+                            "All free websites are subject to Xoopah.com's $20/month hosting rates.",
                         },
                         {
-                          text: "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
+                          text:
+                            "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -2178,7 +2308,8 @@ export const variants = {
                             "An Employer Identification Number (EIN) is a nine-digit number that is assigned by the IRS and used to identify taxpayers. Providing an EIN is required to open a business bank account and is required to file business tax returns. We will apply and obtain your EIN from the IRS electronically. This option is the fastest way to obtain the EIN. ",
                         },
                         {
-                          text: "An EIN is required to open a business bank account and to file business tax returns. ",
+                          text:
+                            "An EIN is required to open a business bank account and to file business tax returns. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -2225,7 +2356,8 @@ export const variants = {
                             "The bylaws of a corporation are an internal document that details the operating rules for the corporation. The bylaws of a corporation are typically adopted at the organizational meeting of the board of directors after the corporation has been filed with the state. The bylaws we will provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
                         },
                         {
-                          text: "Your bylaws will act as “internal rules,” ensuring that everything runs smoothly and keeps all employees, executives and shareholders in agreement and on the same page. ",
+                          text:
+                            "Your bylaws will act as “internal rules,” ensuring that everything runs smoothly and keeps all employees, executives and shareholders in agreement and on the same page. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -2268,7 +2400,8 @@ export const variants = {
                             'After the corporation has been filed with the state, the directors of the corporation are required to have a "first," or organizational meeting to take care of things such as issuing shares of stock, adopting bylaws, appointing officers, etc., and keeping minutes of directors meetings and corporate resolutions is a required part of your internal corporate compliance. The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ',
                         },
                         {
-                          text: "The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
+                          text:
+                            "The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -2307,10 +2440,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
+                          text:
+                            "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
                         },
                         {
-                          text: "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
+                          text:
+                            "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
                           header: "Why You Need It",
                         },
                       ],
@@ -2349,10 +2484,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
+                          text:
+                            "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
                         },
                         {
-                          text: "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
+                          text:
+                            "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -2394,10 +2531,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
+                          text:
+                            "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
                         },
                         {
-                          text: "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
+                          text:
+                            "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -2458,10 +2597,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
+                          text:
+                            "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -2516,7 +2657,8 @@ export const variants = {
                             "The Business Formation Kit is a professional binder enclosed in a matching slip case, customized with the name of your company on the insert. It includes a metal die-cast corporate embossing seal, customized with the name of your company as well as the date and state of formation spine. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -2653,11 +2795,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
+                          text:
+                            "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
                         },
                         {
                           header: "Why You Need It:",
-                          text: "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
+                          text:
+                            "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
                         },
                       ],
                     },
@@ -2692,10 +2836,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
+                          text:
+                            "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
                         },
                         {
-                          text: "In a rush to set up your business and get started with making money? We got you. ",
+                          text:
+                            "In a rush to set up your business and get started with making money? We got you. ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -2754,7 +2900,11 @@ export const variants = {
             },
           ],
           include: "The Basic Silver Services includes:",
-          list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+          list: [
+            "Preparing & Filing the Articles \n" + "of Organization",
+            "Unlimited Name Searches",
+            "FREE Registered Agent Service for \n" + "a year!",
+          ],
           fee: "",
           savings: "",
         },
@@ -2779,7 +2929,18 @@ export const variants = {
             },
           ],
           include: "The Silver Package, and:",
-          list: ["EIN Business Tax Number", "IRS Form 2553", "Operating Agreement", "Banking Resolution", "Express Shipping", "Lifetime Company Alerts", "Online Access Dashboard", "Unlimited Phone & Email Support", "Business Banking Account", "Business Tax Consultation"],
+          list: [
+            "EIN Business Tax Number",
+            "IRS Form 2553",
+            "Operating Agreement",
+            "Banking Resolution",
+            "Express Shipping",
+            "Lifetime Company Alerts",
+            "Online Access Dashboard",
+            "Unlimited Phone & Email Support",
+            "Business Banking Account",
+            "Business Tax Consultation",
+          ],
           fee: "",
           savings: "SAVE $468",
         },
@@ -2804,7 +2965,12 @@ export const variants = {
             },
           ],
           include: "The Gold package, and:",
-          list: ["Business Contract Templates", "Expedited Filing", "FedEx Delivery", "Domain Name + Business Email"],
+          list: [
+            "Business Contract Templates",
+            "Expedited Filing",
+            "FedEx Delivery",
+            "Domain Name + Business Email",
+          ],
           fee: "",
           savings: "SAVE $908",
         },
@@ -2816,7 +2982,8 @@ export const variants = {
           rows: [
             [
               {
-                label: "Nonprofit Corporations are not subject to annual report filings. ",
+                label:
+                  "Nonprofit Corporations are not subject to annual report filings. ",
                 type: "label",
                 textCenter: true,
               },
@@ -2829,7 +2996,8 @@ export const variants = {
       },
       services: {
         header: "All plans include:",
-        text: "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
+        text:
+          "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
         benefits: [
           {
             label: "Setup Business Banking Account",
@@ -2843,7 +3011,8 @@ export const variants = {
           {
             label: "Next Business Day Processing",
             header: "Next Business Day Processing",
-            text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
+            text:
+              "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
           },
           {
             label: "Certified Copy - Articles of Organization",
@@ -2909,10 +3078,14 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We will review the information, prepare your organization documents, and send them\n" + "to the state of formation.",
+                          text:
+                            "We will review the information, prepare your organization documents, and send them\n" +
+                            "to the state of formation.",
                         },
                         {
-                          text: " Every LLC must have Articles of organization — they are often\n" + "required to show proof of your business formation status to banks and other entities.\n",
+                          text:
+                            " Every LLC must have Articles of organization — they are often\n" +
+                            "required to show proof of your business formation status to banks and other entities.\n",
                           header: "Why You Need It",
                         },
                       ],
@@ -2948,10 +3121,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We conduct a thorough name search with the state corporation database and will\n" + "work with you as long as needed to find an available company name.",
+                          text:
+                            "We conduct a thorough name search with the state corporation database and will\n" +
+                            "work with you as long as needed to find an available company name.",
                         },
                         {
-                          text: "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
+                          text:
+                            "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
                           header: "Why You Need It",
                         },
                       ],
@@ -2994,21 +3170,31 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
+                          text:
+                            "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
                         },
                         {
-                          text: "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" + "an invaluable\n" + "service that will eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" +
+                            "an invaluable\n" +
+                            "service that will eliminate junk mail and limit personal information available to third parties.",
                         },
                         {
-                          text: " Registered Agent service is included on all packages for 1 full year\n" + "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" + "renew or cancel service.",
+                          text:
+                            " Registered Agent service is included on all packages for 1 full year\n" +
+                            "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" +
+                            "renew or cancel service.",
                           header: "Important",
                         },
                         {
-                          text: "The annual fee for Registered Agent service is $119",
+                          text:
+                            "The annual fee for Registered Agent service is $119",
                         },
                         {
                           header: "Why You Need It:",
-                          text: " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" + "eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" +
+                            "eliminate junk mail and limit personal information available to third parties.",
                         },
                       ],
                     },
@@ -3063,7 +3249,8 @@ export const variants = {
                             "We teamed up with Bank of America® to help you take advantage of perks they offer to entrepreneurs to help their small business grow. Incfile clients have the opportunity to receive an exclusive offer from Bank of America® to help establish your small business banking account.",
                         },
                         {
-                          text: "It’s important to keep your personal & business expenses separate when you have an an LLC.",
+                          text:
+                            "It’s important to keep your personal & business expenses separate when you have an an LLC.",
                           header: "Why You Need It",
                         },
                       ],
@@ -3103,7 +3290,8 @@ export const variants = {
                             "The Statement and Resignation of the Incorporator is a document signed by the Incorporator which identifies the initial members of the Limited Liability Company. A signed statement will be included with your filing packet and can be used to assist in the establishment of a business checking account.",
                         },
                         {
-                          text: "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
+                          text:
+                            "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
                           header: "Why You Need It",
                         },
                       ],
@@ -3139,10 +3327,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
+                          text:
+                            "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
                         },
                         {
-                          text: "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
+                          text:
+                            "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -3190,10 +3380,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This feature allows you to review the status of your order in real time.",
+                          text:
+                            "This feature allows you to review the status of your order in real time.",
                         },
                         {
-                          text: "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
+                          text:
+                            "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
                           header: "Why You Need It",
                         },
                       ],
@@ -3233,7 +3425,8 @@ export const variants = {
                             "Incorporating a new business can burden owners with complicated tax filings . As a client you are entitled to receive a free no obligation 30 minutes consultation with a certified tax professional who can answer questions regarding the tax commitments of your company. ",
                         },
                         {
-                          text: "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
+                          text:
+                            "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -3269,10 +3462,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
+                          text:
+                            "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
                         },
                         {
-                          text: "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
+                          text:
+                            "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -3308,10 +3503,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
+                          text:
+                            "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
                         },
                         {
-                          text: "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
+                          text:
+                            "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -3354,10 +3551,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
+                          text:
+                            "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
                         },
                         {
-                          text: "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
+                          text:
+                            "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -3405,13 +3604,16 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
+                          text:
+                            "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
                         },
                         {
-                          header: "All free websites are subject to Xoopah.com's $20/month hosting rates.",
+                          header:
+                            "All free websites are subject to Xoopah.com's $20/month hosting rates.",
                         },
                         {
-                          text: "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
+                          text:
+                            "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -3469,7 +3671,8 @@ export const variants = {
                             "An Employer Identification Number (EIN) is a nine-digit number that is assigned by the IRS and used to identify taxpayers. Providing an EIN is required to open a business bank account and is required to file business tax returns. We will apply and obtain your EIN from the IRS electronically. This option is the fastest way to obtain the EIN. ",
                         },
                         {
-                          text: "An EIN is required to open a business bank account and to file business tax returns. ",
+                          text:
+                            "An EIN is required to open a business bank account and to file business tax returns. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -3512,11 +3715,21 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Corporate Forms / Bylaws Minutes\n" + "The Corporate Forms includes, customizable templates of documents needed for compliance, record-keeping and meeting business formalities, such as operating agreements, organizational minutes and bylaws. ",
+                          text:
+                            "Corporate Forms / Bylaws Minutes\n" +
+                            "The Corporate Forms includes, customizable templates of documents needed for compliance, record-keeping and meeting business formalities, such as operating agreements, organizational minutes and bylaws. ",
                         },
                         {
                           header: "Corporate Forms:",
-                          items: ["Bylaws", "Consent by Incorporator", "Resignation of Incorporator", "Waiver of Notice", "Minutes of an Organizational Meeting", "Consent in Lieu of Organizational Meeting", "Investment Representation Letter"],
+                          items: [
+                            "Bylaws",
+                            "Consent by Incorporator",
+                            "Resignation of Incorporator",
+                            "Waiver of Notice",
+                            "Minutes of an Organizational Meeting",
+                            "Consent in Lieu of Organizational Meeting",
+                            "Investment Representation Letter",
+                          ],
                         },
                       ],
                     },
@@ -3554,10 +3767,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
+                          text:
+                            "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
                         },
                         {
-                          text: "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
+                          text:
+                            "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
                           header: "Why You Need It",
                         },
                       ],
@@ -3596,10 +3811,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
+                          text:
+                            "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
                         },
                         {
-                          text: "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
+                          text:
+                            "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -3641,10 +3858,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
+                          text:
+                            "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
                         },
                         {
-                          text: "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
+                          text:
+                            "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -3705,10 +3924,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
+                          text:
+                            "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -3763,7 +3984,8 @@ export const variants = {
                             "The Business Formation Kit is a professional binder enclosed in a matching slip case, customized with the name of your company on the insert. It includes a metal die-cast corporate embossing seal, customized with the name of your company as well as the date and state of formation spine. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -3900,11 +4122,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
+                          text:
+                            "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
                         },
                         {
                           header: "Why You Need It:",
-                          text: "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
+                          text:
+                            "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
                         },
                       ],
                     },
@@ -3939,10 +4163,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
+                          text:
+                            "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
                         },
                         {
-                          text: "In a rush to set up your business and get started with making money? We got you. ",
+                          text:
+                            "In a rush to set up your business and get started with making money? We got you. ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -4001,7 +4227,11 @@ export const variants = {
             },
           ],
           include: "The Basic Silver Services includes:",
-          list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+          list: [
+            "Preparing & Filing the Articles \n" + "of Organization",
+            "Unlimited Name Searches",
+            "FREE Registered Agent Service for \n" + "a year!",
+          ],
           fee: "",
           savings: "",
         },
@@ -4026,7 +4256,18 @@ export const variants = {
             },
           ],
           include: "The Silver Package, and:",
-          list: ["EIN Business Tax Number", "IRS Form 2553", "Operating Agreement", "Banking Resolution", "Express Shipping", "Lifetime Company Alerts", "Online Access Dashboard", "Unlimited Phone & Email Support", "Business Banking Account", "Business Tax Consultation"],
+          list: [
+            "EIN Business Tax Number",
+            "IRS Form 2553",
+            "Operating Agreement",
+            "Banking Resolution",
+            "Express Shipping",
+            "Lifetime Company Alerts",
+            "Online Access Dashboard",
+            "Unlimited Phone & Email Support",
+            "Business Banking Account",
+            "Business Tax Consultation",
+          ],
           fee: "",
           savings: "SAVE $468",
         },
@@ -4051,7 +4292,12 @@ export const variants = {
             },
           ],
           include: "The Gold package, and:",
-          list: ["Business Contract Templates", "Expedited Filing", "FedEx Delivery", "Domain Name + Business Email"],
+          list: [
+            "Business Contract Templates",
+            "Expedited Filing",
+            "FedEx Delivery",
+            "Domain Name + Business Email",
+          ],
           fee: "",
           savings: "SAVE $908",
         },
@@ -4080,7 +4326,8 @@ export const variants = {
                 style: { "font-weight": "bold" },
               },
               {
-                label: "Annual Year: April 15th Fiscal Year: 3½ months after beginning of tax year",
+                label:
+                  "Annual Year: April 15th Fiscal Year: 3½ months after beginning of tax year",
                 type: "label",
                 textCenter: true,
               },
@@ -4092,7 +4339,8 @@ export const variants = {
                 style: { "font-weight": "bold" },
               },
               {
-                label: "LLCs elected to be taxed as corporations follow corporation rules.",
+                label:
+                  "LLCs elected to be taxed as corporations follow corporation rules.",
                 type: "label",
               },
             ],
@@ -4104,7 +4352,8 @@ export const variants = {
       },
       services: {
         header: "All plans include:",
-        text: "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
+        text:
+          "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
         benefits: [
           {
             label: "Setup Business Banking Account",
@@ -4118,7 +4367,8 @@ export const variants = {
           {
             label: "Next Business Day Processing",
             header: "Next Business Day Processing",
-            text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
+            text:
+              "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
           },
           {
             label: "Certified Copy - Articles of Organization",
@@ -4184,10 +4434,14 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We will review the information, prepare your organization documents, and send them\n" + "to the state of formation.",
+                          text:
+                            "We will review the information, prepare your organization documents, and send them\n" +
+                            "to the state of formation.",
                         },
                         {
-                          text: " Every LLC must have Articles of organization — they are often\n" + "required to show proof of your business formation status to banks and other entities.\n",
+                          text:
+                            " Every LLC must have Articles of organization — they are often\n" +
+                            "required to show proof of your business formation status to banks and other entities.\n",
                           header: "Why You Need It",
                         },
                       ],
@@ -4223,10 +4477,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We conduct a thorough name search with the state corporation database and will\n" + "work with you as long as needed to find an available company name.",
+                          text:
+                            "We conduct a thorough name search with the state corporation database and will\n" +
+                            "work with you as long as needed to find an available company name.",
                         },
                         {
-                          text: "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
+                          text:
+                            "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
                           header: "Why You Need It",
                         },
                       ],
@@ -4269,21 +4526,31 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
+                          text:
+                            "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
                         },
                         {
-                          text: "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" + "an invaluable\n" + "service that will eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" +
+                            "an invaluable\n" +
+                            "service that will eliminate junk mail and limit personal information available to third parties.",
                         },
                         {
-                          text: " Registered Agent service is included on all packages for 1 full year\n" + "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" + "renew or cancel service.",
+                          text:
+                            " Registered Agent service is included on all packages for 1 full year\n" +
+                            "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" +
+                            "renew or cancel service.",
                           header: "Important",
                         },
                         {
-                          text: "The annual fee for Registered Agent service is $119",
+                          text:
+                            "The annual fee for Registered Agent service is $119",
                         },
                         {
                           header: "Why You Need It:",
-                          text: " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" + "eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" +
+                            "eliminate junk mail and limit personal information available to third parties.",
                         },
                       ],
                     },
@@ -4338,7 +4605,8 @@ export const variants = {
                             "We teamed up with Bank of America® to help you take advantage of perks they offer to entrepreneurs to help their small business grow. Incfile clients have the opportunity to receive an exclusive offer from Bank of America® to help establish your small business banking account.",
                         },
                         {
-                          text: "It’s important to keep your personal & business expenses separate when you have an an LLC.",
+                          text:
+                            "It’s important to keep your personal & business expenses separate when you have an an LLC.",
                           header: "Why You Need It",
                         },
                       ],
@@ -4378,7 +4646,8 @@ export const variants = {
                             "The Statement and Resignation of the Organizer is a document signed by the Organizer which identifies the initial members of the Limited Liability Company. A signed statement will be included with your filing packet and can be used to assist in the establishment of a business checking account.",
                         },
                         {
-                          text: "This document relinquishes the Organizer’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Organization.",
+                          text:
+                            "This document relinquishes the Organizer’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Organization.",
                           header: "Why You Need It",
                         },
                       ],
@@ -4414,10 +4683,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
+                          text:
+                            "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
                         },
                         {
-                          text: "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
+                          text:
+                            "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -4465,10 +4736,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This feature allows you to review the status of your order in real time.",
+                          text:
+                            "This feature allows you to review the status of your order in real time.",
                         },
                         {
-                          text: "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
+                          text:
+                            "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
                           header: "Why You Need It",
                         },
                       ],
@@ -4508,7 +4781,8 @@ export const variants = {
                             "Incorporating a new business can burden owners with complicated tax filings . As a client you are entitled to receive a free no obligation 30 minutes consultation with a certified tax professional who can answer questions regarding the tax commitments of your company. ",
                         },
                         {
-                          text: "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
+                          text:
+                            "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -4544,10 +4818,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
+                          text:
+                            "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
                         },
                         {
-                          text: "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
+                          text:
+                            "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -4583,10 +4859,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
+                          text:
+                            "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
                         },
                         {
-                          text: "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
+                          text:
+                            "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -4629,10 +4907,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
+                          text:
+                            "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
                         },
                         {
-                          text: "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
+                          text:
+                            "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -4680,13 +4960,16 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
+                          text:
+                            "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
                         },
                         {
-                          header: "All free websites are subject to Xoopah.com's $20/month hosting rates.",
+                          header:
+                            "All free websites are subject to Xoopah.com's $20/month hosting rates.",
                         },
                         {
-                          text: "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
+                          text:
+                            "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -4744,7 +5027,8 @@ export const variants = {
                             "An Employer Identification Number (EIN) is a nine-digit number that is assigned by the IRS and used to identify taxpayers. Providing an EIN is required to open a business bank account and is required to file business tax returns. We will apply and obtain your EIN from the IRS electronically. This option is the fastest way to obtain the EIN. ",
                         },
                         {
-                          text: "An EIN is required to open a business bank account and to file business tax returns. ",
+                          text:
+                            "An EIN is required to open a business bank account and to file business tax returns. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -4788,16 +5072,18 @@ export const variants = {
                       items: [
                         {
                           text:
-                            "Many LLCs elect to be treated as an S-Corporation for tax purposes, as such all Gold and Platinum LLC orders include the preparation and filing of the IRS Form 2553.\n" +
+                            "Many LLCs elect to be treated as an S Corporation for tax purposes, as such all Gold and Platinum LLC orders include the preparation and filing of the IRS Form 2553.\n" +
                             "If you decide that this is the right tax classification for your LLC you can initiate the preparation and filing of the IRS Form 2553 directly from the services tab of your client dashboard.\n" +
                             "The form will be generated upon request at which time a request will be for the digital signature from the members. Upon receipt of the signature(s) the form will be submitted directly to the IRS.",
                         },
                         {
-                          text: "Please note the Form 2553 is time sensitive and must be filed with the IRS within 75 days of your corporation filing date in order to obtain S-corporation tax status for the current year. ",
+                          text:
+                            "Please note the Form 2553 is time sensitive and must be filed with the IRS within 75 days of your corporation filing date in order to obtain S-corporation tax status for the current year. ",
                           header: "IMPORTANT",
                         },
                         {
-                          text: "Electing to be taxed as an S-Corp can save you thousands of dollars a year. It’s best to consult with a tax specialist to see if this is the right business move for you (we offer a free 30-minute tax consultation with every order). ",
+                          text:
+                            "Electing to be taxed as an S Corp can save you thousands of dollars a year. It’s best to consult with a tax specialist to see if this is the right business move for you (we offer a free 30-minute tax consultation with every order). ",
                           header: "Why You Need It",
                         },
                       ],
@@ -4840,7 +5126,8 @@ export const variants = {
                             "The operating agreement for a limited liability company is a private agreement between the members/owners of the LLC, and it details the ownership, rights, and responsibilities of the LLC members. The operating agreement we provide for your use covers all of the most commonly used provisions and will be customized based on your specific company information provided during the placing of your order. ",
                         },
                         {
-                          text: "Perhaps the most important document for an LLC, this is where you will “put in stone” your LLC’s rules and structure that will create a framework for your entire business. ",
+                          text:
+                            "Perhaps the most important document for an LLC, this is where you will “put in stone” your LLC’s rules and structure that will create a framework for your entire business. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -4879,10 +5166,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
+                          text:
+                            "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
                         },
                         {
-                          text: "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
+                          text:
+                            "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
                           header: "Why You Need It",
                         },
                       ],
@@ -4921,10 +5210,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
+                          text:
+                            "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
                         },
                         {
-                          text: "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
+                          text:
+                            "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -4966,10 +5257,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
+                          text:
+                            "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
                         },
                         {
-                          text: "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
+                          text:
+                            "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -5030,10 +5323,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
+                          text:
+                            "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -5088,7 +5383,8 @@ export const variants = {
                             "The Business Formation Kit is a professional binder enclosed in a matching slip case, customized with the name of your company on the insert. It includes a metal die-cast corporate embossing seal, customized with the name of your company as well as the date and state of formation spine. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -5225,11 +5521,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
+                          text:
+                            "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
                         },
                         {
                           header: "Why You Need It:",
-                          text: "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
+                          text:
+                            "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
                         },
                       ],
                     },
@@ -5264,10 +5562,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
+                          text:
+                            "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
                         },
                         {
-                          text: "In a rush to set up your business and get started with making money? We got you. ",
+                          text:
+                            "In a rush to set up your business and get started with making money? We got you. ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -5328,7 +5628,11 @@ export const variants = {
             },
           ],
           include: "The Basic Silver Services includes:",
-          list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+          list: [
+            "Preparing & Filing the Articles \n" + "of Organization",
+            "Unlimited Name Searches",
+            "FREE Registered Agent Service for \n" + "a year!",
+          ],
           fee: "",
           savings: "",
         },
@@ -5353,7 +5657,18 @@ export const variants = {
             },
           ],
           include: "The Silver Package, and:",
-          list: ["EIN Business Tax Number", "IRS Form 2553", "Operating Agreement", "Banking Resolution", "Express Shipping", "Lifetime Company Alerts", "Online Access Dashboard", "Unlimited Phone & Email Support", "Business Banking Account", "Business Tax Consultation"],
+          list: [
+            "EIN Business Tax Number",
+            "IRS Form 2553",
+            "Operating Agreement",
+            "Banking Resolution",
+            "Express Shipping",
+            "Lifetime Company Alerts",
+            "Online Access Dashboard",
+            "Unlimited Phone & Email Support",
+            "Business Banking Account",
+            "Business Tax Consultation",
+          ],
           fee: "",
           savings: "SAVE $468",
         },
@@ -5378,7 +5693,12 @@ export const variants = {
             },
           ],
           include: "The Gold package, and:",
-          list: ["Business Contract Templates", "Expedited Filing", "FedEx Delivery", "Domain Name + Business Email"],
+          list: [
+            "Business Contract Templates",
+            "Expedited Filing",
+            "FedEx Delivery",
+            "Domain Name + Business Email",
+          ],
           fee: "",
           savings: "SAVE $908",
         },
@@ -5396,7 +5716,8 @@ export const variants = {
                 style: { "font-weight": "bold" },
               },
               {
-                label: "Domestic (Alaskan) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
+                label:
+                  "Domestic (Alaskan) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
                 type: "label",
               },
             ],
@@ -5479,7 +5800,8 @@ export const variants = {
               },
               {
                 type: "label",
-                label: "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
+                label:
+                  "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
               },
             ],
           ],
@@ -5490,7 +5812,8 @@ export const variants = {
       },
       services: {
         header: "All plans include:",
-        text: "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
+        text:
+          "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
         benefits: [
           {
             label: "Setup Business Banking Account",
@@ -5504,7 +5827,8 @@ export const variants = {
           {
             label: "Next Business Day Processing",
             header: "Next Business Day Processing",
-            text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
+            text:
+              "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
           },
           {
             label: "Certified Copy - Articles of Organization",
@@ -5570,10 +5894,14 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We will review the information, prepare your organization documents, and send them\n" + "to the state of formation.",
+                          text:
+                            "We will review the information, prepare your organization documents, and send them\n" +
+                            "to the state of formation.",
                         },
                         {
-                          text: " Every LLC must have Articles of organization — they are often\n" + "required to show proof of your business formation status to banks and other entities.\n",
+                          text:
+                            " Every LLC must have Articles of organization — they are often\n" +
+                            "required to show proof of your business formation status to banks and other entities.\n",
                           header: "Why You Need It",
                         },
                       ],
@@ -5609,10 +5937,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We conduct a thorough name search with the state corporation database and will\n" + "work with you as long as needed to find an available company name.",
+                          text:
+                            "We conduct a thorough name search with the state corporation database and will\n" +
+                            "work with you as long as needed to find an available company name.",
                         },
                         {
-                          text: "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
+                          text:
+                            "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
                           header: "Why You Need It",
                         },
                       ],
@@ -5655,21 +5986,31 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
+                          text:
+                            "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
                         },
                         {
-                          text: "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" + "an invaluable\n" + "service that will eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" +
+                            "an invaluable\n" +
+                            "service that will eliminate junk mail and limit personal information available to third parties.",
                         },
                         {
-                          text: " Registered Agent service is included on all packages for 1 full year\n" + "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" + "renew or cancel service.",
+                          text:
+                            " Registered Agent service is included on all packages for 1 full year\n" +
+                            "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" +
+                            "renew or cancel service.",
                           header: "Important",
                         },
                         {
-                          text: "The annual fee for Registered Agent service is $119",
+                          text:
+                            "The annual fee for Registered Agent service is $119",
                         },
                         {
                           header: "Why You Need It:",
-                          text: " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" + "eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" +
+                            "eliminate junk mail and limit personal information available to third parties.",
                         },
                       ],
                     },
@@ -5724,7 +6065,8 @@ export const variants = {
                             "We teamed up with Bank of America® to help you take advantage of perks they offer to entrepreneurs to help their small business grow. Incfile clients have the opportunity to receive an exclusive offer from Bank of America® to help establish your small business banking account.",
                         },
                         {
-                          text: "It’s important to keep your personal & business expenses separate when you have an an LLC.",
+                          text:
+                            "It’s important to keep your personal & business expenses separate when you have an an LLC.",
                           header: "Why You Need It",
                         },
                       ],
@@ -5764,7 +6106,8 @@ export const variants = {
                             "The Statement and Resignation of the Incorporator is a document signed by the Incorporator which identifies the initial members of the Limited Liability Company. A signed statement will be included with your filing packet and can be used to assist in the establishment of a business checking account.",
                         },
                         {
-                          text: "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
+                          text:
+                            "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
                           header: "Why You Need It",
                         },
                       ],
@@ -5800,10 +6143,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
+                          text:
+                            "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
                         },
                         {
-                          text: "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
+                          text:
+                            "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -5851,10 +6196,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This feature allows you to review the status of your order in real time.",
+                          text:
+                            "This feature allows you to review the status of your order in real time.",
                         },
                         {
-                          text: "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
+                          text:
+                            "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
                           header: "Why You Need It",
                         },
                       ],
@@ -5894,7 +6241,8 @@ export const variants = {
                             "Incorporating a new business can burden owners with complicated tax filings . As a client you are entitled to receive a free no obligation 30 minutes consultation with a certified tax professional who can answer questions regarding the tax commitments of your company. ",
                         },
                         {
-                          text: "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
+                          text:
+                            "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -5930,10 +6278,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
+                          text:
+                            "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
                         },
                         {
-                          text: "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
+                          text:
+                            "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -5969,10 +6319,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
+                          text:
+                            "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
                         },
                         {
-                          text: "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
+                          text:
+                            "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -6015,10 +6367,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
+                          text:
+                            "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
                         },
                         {
-                          text: "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
+                          text:
+                            "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -6066,13 +6420,16 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
+                          text:
+                            "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
                         },
                         {
-                          header: "All free websites are subject to Xoopah.com's $20/month hosting rates.",
+                          header:
+                            "All free websites are subject to Xoopah.com's $20/month hosting rates.",
                         },
                         {
-                          text: "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
+                          text:
+                            "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -6130,7 +6487,8 @@ export const variants = {
                             "An Employer Identification Number (EIN) is a nine-digit number that is assigned by the IRS and used to identify taxpayers. Providing an EIN is required to open a business bank account and is required to file business tax returns. We will apply and obtain your EIN from the IRS electronically. This option is the fastest way to obtain the EIN. ",
                         },
                         {
-                          text: "An EIN is required to open a business bank account and to file business tax returns. ",
+                          text:
+                            "An EIN is required to open a business bank account and to file business tax returns. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -6177,7 +6535,8 @@ export const variants = {
                             "The bylaws of a corporation are an internal document that details the operating rules for the corporation. The bylaws of a corporation are typically adopted at the organizational meeting of the board of directors after the corporation has been filed with the state. The bylaws we will provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
                         },
                         {
-                          text: "Your bylaws will act as “internal rules,” ensuring that everything runs smoothly and keeps all employees, executives and shareholders in agreement and on the same page. ",
+                          text:
+                            "Your bylaws will act as “internal rules,” ensuring that everything runs smoothly and keeps all employees, executives and shareholders in agreement and on the same page. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -6220,7 +6579,8 @@ export const variants = {
                             'After the corporation has been filed with the state, the directors of the corporation are required to have a "first," or organizational meeting to take care of things such as issuing shares of stock, adopting bylaws, appointing officers, etc., and keeping minutes of directors meetings and corporate resolutions is a required part of your internal corporate compliance. The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ',
                         },
                         {
-                          text: "The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
+                          text:
+                            "The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -6259,10 +6619,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
+                          text:
+                            "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
                         },
                         {
-                          text: "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
+                          text:
+                            "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
                           header: "Why You Need It",
                         },
                       ],
@@ -6301,10 +6663,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
+                          text:
+                            "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
                         },
                         {
-                          text: "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
+                          text:
+                            "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -6346,10 +6710,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
+                          text:
+                            "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
                         },
                         {
-                          text: "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
+                          text:
+                            "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -6410,10 +6776,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
+                          text:
+                            "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -6468,7 +6836,8 @@ export const variants = {
                             "The Business Formation Kit is a professional binder enclosed in a matching slip case, customized with the name of your company on the insert. It includes a metal die-cast corporate embossing seal, customized with the name of your company as well as the date and state of formation spine. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -6605,11 +6974,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
+                          text:
+                            "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
                         },
                         {
                           header: "Why You Need It:",
-                          text: "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
+                          text:
+                            "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
                         },
                       ],
                     },
@@ -6644,10 +7015,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
+                          text:
+                            "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
                         },
                         {
-                          text: "In a rush to set up your business and get started with making money? We got you. ",
+                          text:
+                            "In a rush to set up your business and get started with making money? We got you. ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -6706,7 +7079,11 @@ export const variants = {
             },
           ],
           include: "The Basic Silver Services includes:",
-          list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+          list: [
+            "Preparing & Filing the Articles \n" + "of Organization",
+            "Unlimited Name Searches",
+            "FREE Registered Agent Service for \n" + "a year!",
+          ],
           fee: "",
           savings: "",
         },
@@ -6731,7 +7108,18 @@ export const variants = {
             },
           ],
           include: "The Silver Package, and:",
-          list: ["EIN Business Tax Number", "IRS Form 2553", "Operating Agreement", "Banking Resolution", "Express Shipping", "Lifetime Company Alerts", "Online Access Dashboard", "Unlimited Phone & Email Support", "Business Banking Account", "Business Tax Consultation"],
+          list: [
+            "EIN Business Tax Number",
+            "IRS Form 2553",
+            "Operating Agreement",
+            "Banking Resolution",
+            "Express Shipping",
+            "Lifetime Company Alerts",
+            "Online Access Dashboard",
+            "Unlimited Phone & Email Support",
+            "Business Banking Account",
+            "Business Tax Consultation",
+          ],
           fee: "",
           savings: "SAVE $468",
         },
@@ -6756,7 +7144,12 @@ export const variants = {
             },
           ],
           include: "The Gold package, and:",
-          list: ["Business Contract Templates", "Expedited Filing", "FedEx Delivery", "Domain Name + Business Email"],
+          list: [
+            "Business Contract Templates",
+            "Expedited Filing",
+            "FedEx Delivery",
+            "Domain Name + Business Email",
+          ],
           fee: "",
           savings: "SAVE $908",
         },
@@ -6774,7 +7167,8 @@ export const variants = {
                 style: { "font-weight": "bold" },
               },
               {
-                label: "Domestic (Alaskan) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
+                label:
+                  "Domestic (Alaskan) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
                 type: "label",
               },
             ],
@@ -6857,7 +7251,8 @@ export const variants = {
               },
               {
                 type: "label",
-                label: "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
+                label:
+                  "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
               },
             ],
           ],
@@ -6868,7 +7263,8 @@ export const variants = {
       },
       services: {
         header: "All plans include:",
-        text: "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
+        text:
+          "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
         benefits: [
           {
             label: "Setup Business Banking Account",
@@ -6882,7 +7278,8 @@ export const variants = {
           {
             label: "Next Business Day Processing",
             header: "Next Business Day Processing",
-            text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
+            text:
+              "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
           },
           {
             label: "Certified Copy - Articles of Organization",
@@ -6948,10 +7345,14 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We will review the information, prepare your organization documents, and send them\n" + "to the state of formation.",
+                          text:
+                            "We will review the information, prepare your organization documents, and send them\n" +
+                            "to the state of formation.",
                         },
                         {
-                          text: " Every LLC must have Articles of organization — they are often\n" + "required to show proof of your business formation status to banks and other entities.\n",
+                          text:
+                            " Every LLC must have Articles of organization — they are often\n" +
+                            "required to show proof of your business formation status to banks and other entities.\n",
                           header: "Why You Need It",
                         },
                       ],
@@ -6987,10 +7388,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We conduct a thorough name search with the state corporation database and will\n" + "work with you as long as needed to find an available company name.",
+                          text:
+                            "We conduct a thorough name search with the state corporation database and will\n" +
+                            "work with you as long as needed to find an available company name.",
                         },
                         {
-                          text: "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
+                          text:
+                            "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
                           header: "Why You Need It",
                         },
                       ],
@@ -7033,21 +7437,31 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
+                          text:
+                            "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
                         },
                         {
-                          text: "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" + "an invaluable\n" + "service that will eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" +
+                            "an invaluable\n" +
+                            "service that will eliminate junk mail and limit personal information available to third parties.",
                         },
                         {
-                          text: " Registered Agent service is included on all packages for 1 full year\n" + "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" + "renew or cancel service.",
+                          text:
+                            " Registered Agent service is included on all packages for 1 full year\n" +
+                            "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" +
+                            "renew or cancel service.",
                           header: "Important",
                         },
                         {
-                          text: "The annual fee for Registered Agent service is $119",
+                          text:
+                            "The annual fee for Registered Agent service is $119",
                         },
                         {
                           header: "Why You Need It:",
-                          text: " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" + "eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" +
+                            "eliminate junk mail and limit personal information available to third parties.",
                         },
                       ],
                     },
@@ -7102,7 +7516,8 @@ export const variants = {
                             "We teamed up with Bank of America® to help you take advantage of perks they offer to entrepreneurs to help their small business grow. Incfile clients have the opportunity to receive an exclusive offer from Bank of America® to help establish your small business banking account.",
                         },
                         {
-                          text: "It’s important to keep your personal & business expenses separate when you have an an LLC.",
+                          text:
+                            "It’s important to keep your personal & business expenses separate when you have an an LLC.",
                           header: "Why You Need It",
                         },
                       ],
@@ -7142,7 +7557,8 @@ export const variants = {
                             "The Statement and Resignation of the Incorporator is a document signed by the Incorporator which identifies the initial members of the Limited Liability Company. A signed statement will be included with your filing packet and can be used to assist in the establishment of a business checking account.",
                         },
                         {
-                          text: "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
+                          text:
+                            "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
                           header: "Why You Need It",
                         },
                       ],
@@ -7178,10 +7594,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
+                          text:
+                            "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
                         },
                         {
-                          text: "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
+                          text:
+                            "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -7229,10 +7647,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This feature allows you to review the status of your order in real time.",
+                          text:
+                            "This feature allows you to review the status of your order in real time.",
                         },
                         {
-                          text: "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
+                          text:
+                            "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
                           header: "Why You Need It",
                         },
                       ],
@@ -7272,7 +7692,8 @@ export const variants = {
                             "Incorporating a new business can burden owners with complicated tax filings . As a client you are entitled to receive a free no obligation 30 minutes consultation with a certified tax professional who can answer questions regarding the tax commitments of your company. ",
                         },
                         {
-                          text: "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
+                          text:
+                            "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -7308,10 +7729,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
+                          text:
+                            "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
                         },
                         {
-                          text: "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
+                          text:
+                            "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -7347,10 +7770,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
+                          text:
+                            "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
                         },
                         {
-                          text: "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
+                          text:
+                            "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -7393,10 +7818,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
+                          text:
+                            "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
                         },
                         {
-                          text: "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
+                          text:
+                            "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -7444,13 +7871,16 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
+                          text:
+                            "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
                         },
                         {
-                          header: "All free websites are subject to Xoopah.com's $20/month hosting rates.",
+                          header:
+                            "All free websites are subject to Xoopah.com's $20/month hosting rates.",
                         },
                         {
-                          text: "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
+                          text:
+                            "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -7508,7 +7938,8 @@ export const variants = {
                             "An Employer Identification Number (EIN) is a nine-digit number that is assigned by the IRS and used to identify taxpayers. Providing an EIN is required to open a business bank account and is required to file business tax returns. We will apply and obtain your EIN from the IRS electronically. This option is the fastest way to obtain the EIN. ",
                         },
                         {
-                          text: "An EIN is required to open a business bank account and to file business tax returns. ",
+                          text:
+                            "An EIN is required to open a business bank account and to file business tax returns. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -7555,7 +7986,8 @@ export const variants = {
                             "The bylaws of a corporation are an internal document that details the operating rules for the corporation. The bylaws of a corporation are typically adopted at the organizational meeting of the board of directors after the corporation has been filed with the state. The bylaws we will provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
                         },
                         {
-                          text: "Your bylaws will act as “internal rules,” ensuring that everything runs smoothly and keeps all employees, executives and shareholders in agreement and on the same page. ",
+                          text:
+                            "Your bylaws will act as “internal rules,” ensuring that everything runs smoothly and keeps all employees, executives and shareholders in agreement and on the same page. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -7598,7 +8030,8 @@ export const variants = {
                             'After the corporation has been filed with the state, the directors of the corporation are required to have a "first," or organizational meeting to take care of things such as issuing shares of stock, adopting bylaws, appointing officers, etc., and keeping minutes of directors meetings and corporate resolutions is a required part of your internal corporate compliance. The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ',
                         },
                         {
-                          text: "The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
+                          text:
+                            "The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -7637,10 +8070,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
+                          text:
+                            "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
                         },
                         {
-                          text: "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
+                          text:
+                            "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
                           header: "Why You Need It",
                         },
                       ],
@@ -7679,10 +8114,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
+                          text:
+                            "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
                         },
                         {
-                          text: "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
+                          text:
+                            "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -7724,10 +8161,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
+                          text:
+                            "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
                         },
                         {
-                          text: "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
+                          text:
+                            "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -7788,10 +8227,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
+                          text:
+                            "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -7846,7 +8287,8 @@ export const variants = {
                             "The Business Formation Kit is a professional binder enclosed in a matching slip case, customized with the name of your company on the insert. It includes a metal die-cast corporate embossing seal, customized with the name of your company as well as the date and state of formation spine. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -7983,11 +8425,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
+                          text:
+                            "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
                         },
                         {
                           header: "Why You Need It:",
-                          text: "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
+                          text:
+                            "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
                         },
                       ],
                     },
@@ -8022,10 +8466,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
+                          text:
+                            "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
                         },
                         {
-                          text: "In a rush to set up your business and get started with making money? We got you. ",
+                          text:
+                            "In a rush to set up your business and get started with making money? We got you. ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -8084,7 +8530,11 @@ export const variants = {
             },
           ],
           include: "The Basic Silver Services includes:",
-          list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+          list: [
+            "Preparing & Filing the Articles \n" + "of Organization",
+            "Unlimited Name Searches",
+            "FREE Registered Agent Service for \n" + "a year!",
+          ],
           fee: "",
           savings: "",
         },
@@ -8109,7 +8559,18 @@ export const variants = {
             },
           ],
           include: "The Silver Package, and:",
-          list: ["EIN Business Tax Number", "IRS Form 2553", "Operating Agreement", "Banking Resolution", "Express Shipping", "Lifetime Company Alerts", "Online Access Dashboard", "Unlimited Phone & Email Support", "Business Banking Account", "Business Tax Consultation"],
+          list: [
+            "EIN Business Tax Number",
+            "IRS Form 2553",
+            "Operating Agreement",
+            "Banking Resolution",
+            "Express Shipping",
+            "Lifetime Company Alerts",
+            "Online Access Dashboard",
+            "Unlimited Phone & Email Support",
+            "Business Banking Account",
+            "Business Tax Consultation",
+          ],
           fee: "",
           savings: "SAVE $468",
         },
@@ -8134,7 +8595,12 @@ export const variants = {
             },
           ],
           include: "The Gold package, and:",
-          list: ["Business Contract Templates", "Expedited Filing", "FedEx Delivery", "Domain Name + Business Email"],
+          list: [
+            "Business Contract Templates",
+            "Expedited Filing",
+            "FedEx Delivery",
+            "Domain Name + Business Email",
+          ],
           fee: "",
           savings: "SAVE $908",
         },
@@ -8152,7 +8618,8 @@ export const variants = {
                 style: { "font-weight": "bold" },
               },
               {
-                label: "Domestic (Alaskan) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
+                label:
+                  "Domestic (Alaskan) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
                 type: "label",
               },
             ],
@@ -8235,7 +8702,8 @@ export const variants = {
               },
               {
                 type: "label",
-                label: "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
+                label:
+                  "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
               },
             ],
           ],
@@ -8246,7 +8714,8 @@ export const variants = {
       },
       services: {
         header: "All plans include:",
-        text: "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
+        text:
+          "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
         benefits: [
           {
             label: "Setup Business Banking Account",
@@ -8260,7 +8729,8 @@ export const variants = {
           {
             label: "Next Business Day Processing",
             header: "Next Business Day Processing",
-            text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
+            text:
+              "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
           },
           {
             label: "Certified Copy - Articles of Organization",
@@ -8326,10 +8796,14 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We will review the information, prepare your organization documents, and send them\n" + "to the state of formation.",
+                          text:
+                            "We will review the information, prepare your organization documents, and send them\n" +
+                            "to the state of formation.",
                         },
                         {
-                          text: " Every LLC must have Articles of organization — they are often\n" + "required to show proof of your business formation status to banks and other entities.\n",
+                          text:
+                            " Every LLC must have Articles of organization — they are often\n" +
+                            "required to show proof of your business formation status to banks and other entities.\n",
                           header: "Why You Need It",
                         },
                       ],
@@ -8365,10 +8839,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We conduct a thorough name search with the state corporation database and will\n" + "work with you as long as needed to find an available company name.",
+                          text:
+                            "We conduct a thorough name search with the state corporation database and will\n" +
+                            "work with you as long as needed to find an available company name.",
                         },
                         {
-                          text: "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
+                          text:
+                            "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
                           header: "Why You Need It",
                         },
                       ],
@@ -8411,21 +8888,31 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
+                          text:
+                            "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
                         },
                         {
-                          text: "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" + "an invaluable\n" + "service that will eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" +
+                            "an invaluable\n" +
+                            "service that will eliminate junk mail and limit personal information available to third parties.",
                         },
                         {
-                          text: " Registered Agent service is included on all packages for 1 full year\n" + "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" + "renew or cancel service.",
+                          text:
+                            " Registered Agent service is included on all packages for 1 full year\n" +
+                            "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" +
+                            "renew or cancel service.",
                           header: "Important",
                         },
                         {
-                          text: "The annual fee for Registered Agent service is $119",
+                          text:
+                            "The annual fee for Registered Agent service is $119",
                         },
                         {
                           header: "Why You Need It:",
-                          text: " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" + "eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" +
+                            "eliminate junk mail and limit personal information available to third parties.",
                         },
                       ],
                     },
@@ -8480,7 +8967,8 @@ export const variants = {
                             "We teamed up with Bank of America® to help you take advantage of perks they offer to entrepreneurs to help their small business grow. Incfile clients have the opportunity to receive an exclusive offer from Bank of America® to help establish your small business banking account.",
                         },
                         {
-                          text: "It’s important to keep your personal & business expenses separate when you have an an LLC.",
+                          text:
+                            "It’s important to keep your personal & business expenses separate when you have an an LLC.",
                           header: "Why You Need It",
                         },
                       ],
@@ -8520,7 +9008,8 @@ export const variants = {
                             "The Statement and Resignation of the Incorporator is a document signed by the Incorporator which identifies the initial members of the Limited Liability Company. A signed statement will be included with your filing packet and can be used to assist in the establishment of a business checking account.",
                         },
                         {
-                          text: "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
+                          text:
+                            "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
                           header: "Why You Need It",
                         },
                       ],
@@ -8556,10 +9045,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
+                          text:
+                            "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
                         },
                         {
-                          text: "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
+                          text:
+                            "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -8607,10 +9098,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This feature allows you to review the status of your order in real time.",
+                          text:
+                            "This feature allows you to review the status of your order in real time.",
                         },
                         {
-                          text: "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
+                          text:
+                            "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
                           header: "Why You Need It",
                         },
                       ],
@@ -8650,7 +9143,8 @@ export const variants = {
                             "Incorporating a new business can burden owners with complicated tax filings . As a client you are entitled to receive a free no obligation 30 minutes consultation with a certified tax professional who can answer questions regarding the tax commitments of your company. ",
                         },
                         {
-                          text: "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
+                          text:
+                            "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -8686,10 +9180,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
+                          text:
+                            "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
                         },
                         {
-                          text: "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
+                          text:
+                            "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -8725,10 +9221,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
+                          text:
+                            "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
                         },
                         {
-                          text: "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
+                          text:
+                            "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -8771,10 +9269,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
+                          text:
+                            "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
                         },
                         {
-                          text: "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
+                          text:
+                            "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -8822,13 +9322,16 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
+                          text:
+                            "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
                         },
                         {
-                          header: "All free websites are subject to Xoopah.com's $20/month hosting rates.",
+                          header:
+                            "All free websites are subject to Xoopah.com's $20/month hosting rates.",
                         },
                         {
-                          text: "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
+                          text:
+                            "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -8886,7 +9389,8 @@ export const variants = {
                             "An Employer Identification Number (EIN) is a nine-digit number that is assigned by the IRS and used to identify taxpayers. Providing an EIN is required to open a business bank account and is required to file business tax returns. We will apply and obtain your EIN from the IRS electronically. This option is the fastest way to obtain the EIN. ",
                         },
                         {
-                          text: "An EIN is required to open a business bank account and to file business tax returns. ",
+                          text:
+                            "An EIN is required to open a business bank account and to file business tax returns. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -8929,11 +9433,21 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Corporate Forms / Bylaws Minutes\n" + "The Corporate Forms includes, customizable templates of documents needed for compliance, record-keeping and meeting business formalities, such as operating agreements, organizational minutes and bylaws. ",
+                          text:
+                            "Corporate Forms / Bylaws Minutes\n" +
+                            "The Corporate Forms includes, customizable templates of documents needed for compliance, record-keeping and meeting business formalities, such as operating agreements, organizational minutes and bylaws. ",
                         },
                         {
                           header: "Corporate Forms:",
-                          items: ["Bylaws", "Consent by Incorporator", "Resignation of Incorporator", "Waiver of Notice", "Minutes of an Organizational Meeting", "Consent in Lieu of Organizational Meeting", "Investment Representation Letter"],
+                          items: [
+                            "Bylaws",
+                            "Consent by Incorporator",
+                            "Resignation of Incorporator",
+                            "Waiver of Notice",
+                            "Minutes of an Organizational Meeting",
+                            "Consent in Lieu of Organizational Meeting",
+                            "Investment Representation Letter",
+                          ],
                         },
                       ],
                     },
@@ -8971,10 +9485,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
+                          text:
+                            "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
                         },
                         {
-                          text: "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
+                          text:
+                            "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
                           header: "Why You Need It",
                         },
                       ],
@@ -9013,10 +9529,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
+                          text:
+                            "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
                         },
                         {
-                          text: "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
+                          text:
+                            "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -9058,10 +9576,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
+                          text:
+                            "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
                         },
                         {
-                          text: "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
+                          text:
+                            "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -9122,10 +9642,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
+                          text:
+                            "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -9180,7 +9702,8 @@ export const variants = {
                             "The Business Formation Kit is a professional binder enclosed in a matching slip case, customized with the name of your company on the insert. It includes a metal die-cast corporate embossing seal, customized with the name of your company as well as the date and state of formation spine. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -9317,11 +9840,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
+                          text:
+                            "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
                         },
                         {
                           header: "Why You Need It:",
-                          text: "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
+                          text:
+                            "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
                         },
                       ],
                     },
@@ -9356,10 +9881,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
+                          text:
+                            "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
                         },
                         {
-                          text: "In a rush to set up your business and get started with making money? We got you. ",
+                          text:
+                            "In a rush to set up your business and get started with making money? We got you. ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -9418,7 +9945,11 @@ export const variants = {
             },
           ],
           include: "The Basic Silver Services includes:",
-          list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+          list: [
+            "Preparing & Filing the Articles \n" + "of Organization",
+            "Unlimited Name Searches",
+            "FREE Registered Agent Service for \n" + "a year!",
+          ],
           fee: "",
           savings: "",
         },
@@ -9443,7 +9974,18 @@ export const variants = {
             },
           ],
           include: "The Silver Package, and:",
-          list: ["EIN Business Tax Number", "IRS Form 2553", "Operating Agreement", "Banking Resolution", "Express Shipping", "Lifetime Company Alerts", "Online Access Dashboard", "Unlimited Phone & Email Support", "Business Banking Account", "Business Tax Consultation"],
+          list: [
+            "EIN Business Tax Number",
+            "IRS Form 2553",
+            "Operating Agreement",
+            "Banking Resolution",
+            "Express Shipping",
+            "Lifetime Company Alerts",
+            "Online Access Dashboard",
+            "Unlimited Phone & Email Support",
+            "Business Banking Account",
+            "Business Tax Consultation",
+          ],
           fee: "",
           savings: "SAVE $468",
         },
@@ -9468,7 +10010,12 @@ export const variants = {
             },
           ],
           include: "The Gold package, and:",
-          list: ["Business Contract Templates", "Expedited Filing", "FedEx Delivery", "Domain Name + Business Email"],
+          list: [
+            "Business Contract Templates",
+            "Expedited Filing",
+            "FedEx Delivery",
+            "Domain Name + Business Email",
+          ],
           fee: "",
           savings: "SAVE $908",
         },
@@ -9486,7 +10033,8 @@ export const variants = {
                 style: { "font-weight": "bold" },
               },
               {
-                label: "Domestic (Alaskan) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
+                label:
+                  "Domestic (Alaskan) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
                 type: "label",
               },
             ],
@@ -9569,7 +10117,8 @@ export const variants = {
               },
               {
                 type: "label",
-                label: "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
+                label:
+                  "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
               },
             ],
           ],
@@ -9580,7 +10129,8 @@ export const variants = {
       },
       services: {
         header: "All plans include:",
-        text: "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
+        text:
+          "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
         benefits: [
           {
             label: "Setup Business Banking Account",
@@ -9594,7 +10144,8 @@ export const variants = {
           {
             label: "Next Business Day Processing",
             header: "Next Business Day Processing",
-            text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
+            text:
+              "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
           },
           {
             label: "Certified Copy - Articles of Organization",
@@ -9660,10 +10211,14 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We will review the information, prepare your organization documents, and send them\n" + "to the state of formation.",
+                          text:
+                            "We will review the information, prepare your organization documents, and send them\n" +
+                            "to the state of formation.",
                         },
                         {
-                          text: " Every LLC must have Articles of organization — they are often\n" + "required to show proof of your business formation status to banks and other entities.\n",
+                          text:
+                            " Every LLC must have Articles of organization — they are often\n" +
+                            "required to show proof of your business formation status to banks and other entities.\n",
                           header: "Why You Need It",
                         },
                       ],
@@ -9699,10 +10254,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We conduct a thorough name search with the state corporation database and will\n" + "work with you as long as needed to find an available company name.",
+                          text:
+                            "We conduct a thorough name search with the state corporation database and will\n" +
+                            "work with you as long as needed to find an available company name.",
                         },
                         {
-                          text: "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
+                          text:
+                            "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
                           header: "Why You Need It",
                         },
                       ],
@@ -9745,21 +10303,31 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
+                          text:
+                            "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
                         },
                         {
-                          text: "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" + "an invaluable\n" + "service that will eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" +
+                            "an invaluable\n" +
+                            "service that will eliminate junk mail and limit personal information available to third parties.",
                         },
                         {
-                          text: " Registered Agent service is included on all packages for 1 full year\n" + "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" + "renew or cancel service.",
+                          text:
+                            " Registered Agent service is included on all packages for 1 full year\n" +
+                            "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" +
+                            "renew or cancel service.",
                           header: "Important",
                         },
                         {
-                          text: "The annual fee for Registered Agent service is $119",
+                          text:
+                            "The annual fee for Registered Agent service is $119",
                         },
                         {
                           header: "Why You Need It:",
-                          text: " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" + "eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" +
+                            "eliminate junk mail and limit personal information available to third parties.",
                         },
                       ],
                     },
@@ -9814,7 +10382,8 @@ export const variants = {
                             "We teamed up with Bank of America® to help you take advantage of perks they offer to entrepreneurs to help their small business grow. Incfile clients have the opportunity to receive an exclusive offer from Bank of America® to help establish your small business banking account.",
                         },
                         {
-                          text: "It’s important to keep your personal & business expenses separate when you have an an LLC.",
+                          text:
+                            "It’s important to keep your personal & business expenses separate when you have an an LLC.",
                           header: "Why You Need It",
                         },
                       ],
@@ -9854,7 +10423,8 @@ export const variants = {
                             "The Statement and Resignation of the Organizer is a document signed by the Organizer which identifies the initial members of the Limited Liability Company. A signed statement will be included with your filing packet and can be used to assist in the establishment of a business checking account.",
                         },
                         {
-                          text: "This document relinquishes the Organizer’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Organization.",
+                          text:
+                            "This document relinquishes the Organizer’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Organization.",
                           header: "Why You Need It",
                         },
                       ],
@@ -9890,10 +10460,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
+                          text:
+                            "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
                         },
                         {
-                          text: "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
+                          text:
+                            "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -9941,10 +10513,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This feature allows you to review the status of your order in real time.",
+                          text:
+                            "This feature allows you to review the status of your order in real time.",
                         },
                         {
-                          text: "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
+                          text:
+                            "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
                           header: "Why You Need It",
                         },
                       ],
@@ -9984,7 +10558,8 @@ export const variants = {
                             "Incorporating a new business can burden owners with complicated tax filings . As a client you are entitled to receive a free no obligation 30 minutes consultation with a certified tax professional who can answer questions regarding the tax commitments of your company. ",
                         },
                         {
-                          text: "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
+                          text:
+                            "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -10020,10 +10595,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
+                          text:
+                            "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
                         },
                         {
-                          text: "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
+                          text:
+                            "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -10059,10 +10636,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
+                          text:
+                            "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
                         },
                         {
-                          text: "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
+                          text:
+                            "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -10105,10 +10684,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
+                          text:
+                            "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
                         },
                         {
-                          text: "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
+                          text:
+                            "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -10156,13 +10737,16 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
+                          text:
+                            "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
                         },
                         {
-                          header: "All free websites are subject to Xoopah.com's $20/month hosting rates.",
+                          header:
+                            "All free websites are subject to Xoopah.com's $20/month hosting rates.",
                         },
                         {
-                          text: "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
+                          text:
+                            "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -10220,7 +10804,8 @@ export const variants = {
                             "An Employer Identification Number (EIN) is a nine-digit number that is assigned by the IRS and used to identify taxpayers. Providing an EIN is required to open a business bank account and is required to file business tax returns. We will apply and obtain your EIN from the IRS electronically. This option is the fastest way to obtain the EIN. ",
                         },
                         {
-                          text: "An EIN is required to open a business bank account and to file business tax returns. ",
+                          text:
+                            "An EIN is required to open a business bank account and to file business tax returns. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -10264,16 +10849,18 @@ export const variants = {
                       items: [
                         {
                           text:
-                            "Many LLCs elect to be treated as an S-Corporation for tax purposes, as such all Gold and Platinum LLC orders include the preparation and filing of the IRS Form 2553.\n" +
+                            "Many LLCs elect to be treated as an S Corporation for tax purposes, as such all Gold and Platinum LLC orders include the preparation and filing of the IRS Form 2553.\n" +
                             "If you decide that this is the right tax classification for your LLC you can initiate the preparation and filing of the IRS Form 2553 directly from the services tab of your client dashboard.\n" +
                             "The form will be generated upon request at which time a request will be for the digital signature from the members. Upon receipt of the signature(s) the form will be submitted directly to the IRS.",
                         },
                         {
-                          text: "Please note the Form 2553 is time sensitive and must be filed with the IRS within 75 days of your corporation filing date in order to obtain S-corporation tax status for the current year. ",
+                          text:
+                            "Please note the Form 2553 is time sensitive and must be filed with the IRS within 75 days of your corporation filing date in order to obtain S-corporation tax status for the current year. ",
                           header: "IMPORTANT",
                         },
                         {
-                          text: "Electing to be taxed as an S-Corp can save you thousands of dollars a year. It’s best to consult with a tax specialist to see if this is the right business move for you (we offer a free 30-minute tax consultation with every order). ",
+                          text:
+                            "Electing to be taxed as an S Corp can save you thousands of dollars a year. It’s best to consult with a tax specialist to see if this is the right business move for you (we offer a free 30-minute tax consultation with every order). ",
                           header: "Why You Need It",
                         },
                       ],
@@ -10316,7 +10903,8 @@ export const variants = {
                             "The operating agreement for a limited liability company is a private agreement between the members/owners of the LLC, and it details the ownership, rights, and responsibilities of the LLC members. The operating agreement we provide for your use covers all of the most commonly used provisions and will be customized based on your specific company information provided during the placing of your order. ",
                         },
                         {
-                          text: "Perhaps the most important document for an LLC, this is where you will “put in stone” your LLC’s rules and structure that will create a framework for your entire business. ",
+                          text:
+                            "Perhaps the most important document for an LLC, this is where you will “put in stone” your LLC’s rules and structure that will create a framework for your entire business. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -10355,10 +10943,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
+                          text:
+                            "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
                         },
                         {
-                          text: "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
+                          text:
+                            "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
                           header: "Why You Need It",
                         },
                       ],
@@ -10397,10 +10987,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
+                          text:
+                            "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
                         },
                         {
-                          text: "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
+                          text:
+                            "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -10442,10 +11034,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
+                          text:
+                            "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
                         },
                         {
-                          text: "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
+                          text:
+                            "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -10506,10 +11100,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
+                          text:
+                            "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -10564,7 +11160,8 @@ export const variants = {
                             "The Business Formation Kit is a professional binder enclosed in a matching slip case, customized with the name of your company on the insert. It includes a metal die-cast corporate embossing seal, customized with the name of your company as well as the date and state of formation spine. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -10701,11 +11298,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
+                          text:
+                            "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
                         },
                         {
                           header: "Why You Need It:",
-                          text: "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
+                          text:
+                            "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
                         },
                       ],
                     },
@@ -10740,10 +11339,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
+                          text:
+                            "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
                         },
                         {
-                          text: "In a rush to set up your business and get started with making money? We got you. ",
+                          text:
+                            "In a rush to set up your business and get started with making money? We got you. ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -10804,7 +11405,11 @@ export const variants = {
             },
           ],
           include: "The Basic Silver Services includes:",
-          list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+          list: [
+            "Preparing & Filing the Articles \n" + "of Organization",
+            "Unlimited Name Searches",
+            "FREE Registered Agent Service for \n" + "a year!",
+          ],
           fee: "",
           savings: "",
         },
@@ -10829,7 +11434,18 @@ export const variants = {
             },
           ],
           include: "The Silver Package, and:",
-          list: ["EIN Business Tax Number", "IRS Form 2553", "Operating Agreement", "Banking Resolution", "Express Shipping", "Lifetime Company Alerts", "Online Access Dashboard", "Unlimited Phone & Email Support", "Business Banking Account", "Business Tax Consultation"],
+          list: [
+            "EIN Business Tax Number",
+            "IRS Form 2553",
+            "Operating Agreement",
+            "Banking Resolution",
+            "Express Shipping",
+            "Lifetime Company Alerts",
+            "Online Access Dashboard",
+            "Unlimited Phone & Email Support",
+            "Business Banking Account",
+            "Business Tax Consultation",
+          ],
           fee: "",
           savings: "SAVE $468",
         },
@@ -10854,7 +11470,12 @@ export const variants = {
             },
           ],
           include: "The Gold package, and:",
-          list: ["Business Contract Templates", "Expedited Filing", "FedEx Delivery", "Domain Name + Business Email"],
+          list: [
+            "Business Contract Templates",
+            "Expedited Filing",
+            "FedEx Delivery",
+            "Domain Name + Business Email",
+          ],
           fee: "",
           savings: "SAVE $908",
         },
@@ -10882,7 +11503,8 @@ export const variants = {
                 style: { "font-weight": "bold" },
               },
               {
-                label: "Corporations are required to file an Annual Report with the Arizona Corporation Commision. The Annual Report is due by the anniversary date of the filing.",
+                label:
+                  "Corporations are required to file an Annual Report with the Arizona Corporation Commision. The Annual Report is due by the anniversary date of the filing.",
                 type: "label",
               },
             ],
@@ -10929,7 +11551,8 @@ export const variants = {
                 type: "label",
               },
               {
-                label: "(We do not assist in the filing of the Publication Requirement)",
+                label:
+                  "(We do not assist in the filing of the Publication Requirement)",
                 type: "label",
                 style: { "font-weight": "bold" },
               },
@@ -10942,7 +11565,8 @@ export const variants = {
       },
       services: {
         header: "All plans include:",
-        text: "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
+        text:
+          "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
         benefits: [
           {
             label: "Setup Business Banking Account",
@@ -10956,7 +11580,8 @@ export const variants = {
           {
             label: "Next Business Day Processing",
             header: "Next Business Day Processing",
-            text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
+            text:
+              "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
           },
           {
             label: "Certified Copy - Articles of Organization",
@@ -11022,10 +11647,14 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We will review the information, prepare your organization documents, and send them\n" + "to the state of formation.",
+                          text:
+                            "We will review the information, prepare your organization documents, and send them\n" +
+                            "to the state of formation.",
                         },
                         {
-                          text: " Every LLC must have Articles of organization — they are often\n" + "required to show proof of your business formation status to banks and other entities.\n",
+                          text:
+                            " Every LLC must have Articles of organization — they are often\n" +
+                            "required to show proof of your business formation status to banks and other entities.\n",
                           header: "Why You Need It",
                         },
                       ],
@@ -11061,10 +11690,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We conduct a thorough name search with the state corporation database and will\n" + "work with you as long as needed to find an available company name.",
+                          text:
+                            "We conduct a thorough name search with the state corporation database and will\n" +
+                            "work with you as long as needed to find an available company name.",
                         },
                         {
-                          text: "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
+                          text:
+                            "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
                           header: "Why You Need It",
                         },
                       ],
@@ -11107,21 +11739,31 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
+                          text:
+                            "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
                         },
                         {
-                          text: "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" + "an invaluable\n" + "service that will eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" +
+                            "an invaluable\n" +
+                            "service that will eliminate junk mail and limit personal information available to third parties.",
                         },
                         {
-                          text: " Registered Agent service is included on all packages for 1 full year\n" + "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" + "renew or cancel service.",
+                          text:
+                            " Registered Agent service is included on all packages for 1 full year\n" +
+                            "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" +
+                            "renew or cancel service.",
                           header: "Important",
                         },
                         {
-                          text: "The annual fee for Registered Agent service is $119",
+                          text:
+                            "The annual fee for Registered Agent service is $119",
                         },
                         {
                           header: "Why You Need It:",
-                          text: " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" + "eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" +
+                            "eliminate junk mail and limit personal information available to third parties.",
                         },
                       ],
                     },
@@ -11176,7 +11818,8 @@ export const variants = {
                             "We teamed up with Bank of America® to help you take advantage of perks they offer to entrepreneurs to help their small business grow. Incfile clients have the opportunity to receive an exclusive offer from Bank of America® to help establish your small business banking account.",
                         },
                         {
-                          text: "It’s important to keep your personal & business expenses separate when you have an an LLC.",
+                          text:
+                            "It’s important to keep your personal & business expenses separate when you have an an LLC.",
                           header: "Why You Need It",
                         },
                       ],
@@ -11216,7 +11859,8 @@ export const variants = {
                             "The Statement and Resignation of the Incorporator is a document signed by the Incorporator which identifies the initial members of the Limited Liability Company. A signed statement will be included with your filing packet and can be used to assist in the establishment of a business checking account.",
                         },
                         {
-                          text: "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
+                          text:
+                            "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
                           header: "Why You Need It",
                         },
                       ],
@@ -11252,10 +11896,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
+                          text:
+                            "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
                         },
                         {
-                          text: "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
+                          text:
+                            "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -11303,10 +11949,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This feature allows you to review the status of your order in real time.",
+                          text:
+                            "This feature allows you to review the status of your order in real time.",
                         },
                         {
-                          text: "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
+                          text:
+                            "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
                           header: "Why You Need It",
                         },
                       ],
@@ -11346,7 +11994,8 @@ export const variants = {
                             "Incorporating a new business can burden owners with complicated tax filings . As a client you are entitled to receive a free no obligation 30 minutes consultation with a certified tax professional who can answer questions regarding the tax commitments of your company. ",
                         },
                         {
-                          text: "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
+                          text:
+                            "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -11382,10 +12031,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
+                          text:
+                            "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
                         },
                         {
-                          text: "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
+                          text:
+                            "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -11421,10 +12072,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
+                          text:
+                            "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
                         },
                         {
-                          text: "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
+                          text:
+                            "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -11467,10 +12120,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
+                          text:
+                            "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
                         },
                         {
-                          text: "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
+                          text:
+                            "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -11518,13 +12173,16 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
+                          text:
+                            "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
                         },
                         {
-                          header: "All free websites are subject to Xoopah.com's $20/month hosting rates.",
+                          header:
+                            "All free websites are subject to Xoopah.com's $20/month hosting rates.",
                         },
                         {
-                          text: "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
+                          text:
+                            "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -11582,7 +12240,8 @@ export const variants = {
                             "An Employer Identification Number (EIN) is a nine-digit number that is assigned by the IRS and used to identify taxpayers. Providing an EIN is required to open a business bank account and is required to file business tax returns. We will apply and obtain your EIN from the IRS electronically. This option is the fastest way to obtain the EIN. ",
                         },
                         {
-                          text: "An EIN is required to open a business bank account and to file business tax returns. ",
+                          text:
+                            "An EIN is required to open a business bank account and to file business tax returns. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -11629,7 +12288,8 @@ export const variants = {
                             "The bylaws of a corporation are an internal document that details the operating rules for the corporation. The bylaws of a corporation are typically adopted at the organizational meeting of the board of directors after the corporation has been filed with the state. The bylaws we will provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
                         },
                         {
-                          text: "Your bylaws will act as “internal rules,” ensuring that everything runs smoothly and keeps all employees, executives and shareholders in agreement and on the same page. ",
+                          text:
+                            "Your bylaws will act as “internal rules,” ensuring that everything runs smoothly and keeps all employees, executives and shareholders in agreement and on the same page. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -11672,7 +12332,8 @@ export const variants = {
                             'After the corporation has been filed with the state, the directors of the corporation are required to have a "first," or organizational meeting to take care of things such as issuing shares of stock, adopting bylaws, appointing officers, etc., and keeping minutes of directors meetings and corporate resolutions is a required part of your internal corporate compliance. The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ',
                         },
                         {
-                          text: "The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
+                          text:
+                            "The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -11711,10 +12372,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
+                          text:
+                            "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
                         },
                         {
-                          text: "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
+                          text:
+                            "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
                           header: "Why You Need It",
                         },
                       ],
@@ -11753,10 +12416,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
+                          text:
+                            "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
                         },
                         {
-                          text: "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
+                          text:
+                            "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -11798,10 +12463,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
+                          text:
+                            "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
                         },
                         {
-                          text: "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
+                          text:
+                            "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -11862,10 +12529,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
+                          text:
+                            "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -11920,7 +12589,8 @@ export const variants = {
                             "The Business Formation Kit is a professional binder enclosed in a matching slip case, customized with the name of your company on the insert. It includes a metal die-cast corporate embossing seal, customized with the name of your company as well as the date and state of formation spine. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -12057,11 +12727,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
+                          text:
+                            "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
                         },
                         {
                           header: "Why You Need It:",
-                          text: "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
+                          text:
+                            "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
                         },
                       ],
                     },
@@ -12096,10 +12768,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
+                          text:
+                            "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
                         },
                         {
-                          text: "In a rush to set up your business and get started with making money? We got you. ",
+                          text:
+                            "In a rush to set up your business and get started with making money? We got you. ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -12158,7 +12832,11 @@ export const variants = {
             },
           ],
           include: "The Basic Silver Services includes:",
-          list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+          list: [
+            "Preparing & Filing the Articles \n" + "of Organization",
+            "Unlimited Name Searches",
+            "FREE Registered Agent Service for \n" + "a year!",
+          ],
           fee: "",
           savings: "",
         },
@@ -12183,7 +12861,18 @@ export const variants = {
             },
           ],
           include: "The Silver Package, and:",
-          list: ["EIN Business Tax Number", "IRS Form 2553", "Operating Agreement", "Banking Resolution", "Express Shipping", "Lifetime Company Alerts", "Online Access Dashboard", "Unlimited Phone & Email Support", "Business Banking Account", "Business Tax Consultation"],
+          list: [
+            "EIN Business Tax Number",
+            "IRS Form 2553",
+            "Operating Agreement",
+            "Banking Resolution",
+            "Express Shipping",
+            "Lifetime Company Alerts",
+            "Online Access Dashboard",
+            "Unlimited Phone & Email Support",
+            "Business Banking Account",
+            "Business Tax Consultation",
+          ],
           fee: "",
           savings: "SAVE $468",
         },
@@ -12208,7 +12897,12 @@ export const variants = {
             },
           ],
           include: "The Gold package, and:",
-          list: ["Business Contract Templates", "Expedited Filing", "FedEx Delivery", "Domain Name + Business Email"],
+          list: [
+            "Business Contract Templates",
+            "Expedited Filing",
+            "FedEx Delivery",
+            "Domain Name + Business Email",
+          ],
           fee: "",
           savings: "SAVE $908",
         },
@@ -12236,7 +12930,8 @@ export const variants = {
                 style: { "font-weight": "bold" },
               },
               {
-                label: "Corporations are required to file an Annual Report with the Arizona Corporation Commision. The Annual Report is due by the anniversary date of the filing.",
+                label:
+                  "Corporations are required to file an Annual Report with the Arizona Corporation Commision. The Annual Report is due by the anniversary date of the filing.",
                 type: "label",
               },
             ],
@@ -12283,7 +12978,8 @@ export const variants = {
                 type: "label",
               },
               {
-                label: "(We do not assist in the filing of the Publication Requirement)",
+                label:
+                  "(We do not assist in the filing of the Publication Requirement)",
                 type: "label",
                 style: { "font-weight": "bold" },
               },
@@ -12296,7 +12992,8 @@ export const variants = {
       },
       services: {
         header: "All plans include:",
-        text: "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
+        text:
+          "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
         benefits: [
           {
             label: "Setup Business Banking Account",
@@ -12310,7 +13007,8 @@ export const variants = {
           {
             label: "Next Business Day Processing",
             header: "Next Business Day Processing",
-            text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
+            text:
+              "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
           },
           {
             label: "Certified Copy - Articles of Organization",
@@ -12376,10 +13074,14 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We will review the information, prepare your organization documents, and send them\n" + "to the state of formation.",
+                          text:
+                            "We will review the information, prepare your organization documents, and send them\n" +
+                            "to the state of formation.",
                         },
                         {
-                          text: " Every LLC must have Articles of organization — they are often\n" + "required to show proof of your business formation status to banks and other entities.\n",
+                          text:
+                            " Every LLC must have Articles of organization — they are often\n" +
+                            "required to show proof of your business formation status to banks and other entities.\n",
                           header: "Why You Need It",
                         },
                       ],
@@ -12415,10 +13117,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We conduct a thorough name search with the state corporation database and will\n" + "work with you as long as needed to find an available company name.",
+                          text:
+                            "We conduct a thorough name search with the state corporation database and will\n" +
+                            "work with you as long as needed to find an available company name.",
                         },
                         {
-                          text: "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
+                          text:
+                            "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
                           header: "Why You Need It",
                         },
                       ],
@@ -12461,21 +13166,31 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
+                          text:
+                            "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
                         },
                         {
-                          text: "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" + "an invaluable\n" + "service that will eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" +
+                            "an invaluable\n" +
+                            "service that will eliminate junk mail and limit personal information available to third parties.",
                         },
                         {
-                          text: " Registered Agent service is included on all packages for 1 full year\n" + "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" + "renew or cancel service.",
+                          text:
+                            " Registered Agent service is included on all packages for 1 full year\n" +
+                            "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" +
+                            "renew or cancel service.",
                           header: "Important",
                         },
                         {
-                          text: "The annual fee for Registered Agent service is $119",
+                          text:
+                            "The annual fee for Registered Agent service is $119",
                         },
                         {
                           header: "Why You Need It:",
-                          text: " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" + "eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" +
+                            "eliminate junk mail and limit personal information available to third parties.",
                         },
                       ],
                     },
@@ -12530,7 +13245,8 @@ export const variants = {
                             "We teamed up with Bank of America® to help you take advantage of perks they offer to entrepreneurs to help their small business grow. Incfile clients have the opportunity to receive an exclusive offer from Bank of America® to help establish your small business banking account.",
                         },
                         {
-                          text: "It’s important to keep your personal & business expenses separate when you have an an LLC.",
+                          text:
+                            "It’s important to keep your personal & business expenses separate when you have an an LLC.",
                           header: "Why You Need It",
                         },
                       ],
@@ -12570,7 +13286,8 @@ export const variants = {
                             "The Statement and Resignation of the Incorporator is a document signed by the Incorporator which identifies the initial members of the Limited Liability Company. A signed statement will be included with your filing packet and can be used to assist in the establishment of a business checking account.",
                         },
                         {
-                          text: "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
+                          text:
+                            "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
                           header: "Why You Need It",
                         },
                       ],
@@ -12606,10 +13323,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
+                          text:
+                            "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
                         },
                         {
-                          text: "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
+                          text:
+                            "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -12657,10 +13376,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This feature allows you to review the status of your order in real time.",
+                          text:
+                            "This feature allows you to review the status of your order in real time.",
                         },
                         {
-                          text: "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
+                          text:
+                            "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
                           header: "Why You Need It",
                         },
                       ],
@@ -12700,7 +13421,8 @@ export const variants = {
                             "Incorporating a new business can burden owners with complicated tax filings . As a client you are entitled to receive a free no obligation 30 minutes consultation with a certified tax professional who can answer questions regarding the tax commitments of your company. ",
                         },
                         {
-                          text: "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
+                          text:
+                            "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -12736,10 +13458,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
+                          text:
+                            "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
                         },
                         {
-                          text: "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
+                          text:
+                            "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -12775,10 +13499,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
+                          text:
+                            "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
                         },
                         {
-                          text: "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
+                          text:
+                            "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -12821,10 +13547,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
+                          text:
+                            "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
                         },
                         {
-                          text: "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
+                          text:
+                            "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -12872,13 +13600,16 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
+                          text:
+                            "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
                         },
                         {
-                          header: "All free websites are subject to Xoopah.com's $20/month hosting rates.",
+                          header:
+                            "All free websites are subject to Xoopah.com's $20/month hosting rates.",
                         },
                         {
-                          text: "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
+                          text:
+                            "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -12936,7 +13667,8 @@ export const variants = {
                             "An Employer Identification Number (EIN) is a nine-digit number that is assigned by the IRS and used to identify taxpayers. Providing an EIN is required to open a business bank account and is required to file business tax returns. We will apply and obtain your EIN from the IRS electronically. This option is the fastest way to obtain the EIN. ",
                         },
                         {
-                          text: "An EIN is required to open a business bank account and to file business tax returns. ",
+                          text:
+                            "An EIN is required to open a business bank account and to file business tax returns. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -12983,7 +13715,8 @@ export const variants = {
                             "The bylaws of a corporation are an internal document that details the operating rules for the corporation. The bylaws of a corporation are typically adopted at the organizational meeting of the board of directors after the corporation has been filed with the state. The bylaws we will provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
                         },
                         {
-                          text: "Your bylaws will act as “internal rules,” ensuring that everything runs smoothly and keeps all employees, executives and shareholders in agreement and on the same page. ",
+                          text:
+                            "Your bylaws will act as “internal rules,” ensuring that everything runs smoothly and keeps all employees, executives and shareholders in agreement and on the same page. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -13026,7 +13759,8 @@ export const variants = {
                             'After the corporation has been filed with the state, the directors of the corporation are required to have a "first," or organizational meeting to take care of things such as issuing shares of stock, adopting bylaws, appointing officers, etc., and keeping minutes of directors meetings and corporate resolutions is a required part of your internal corporate compliance. The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ',
                         },
                         {
-                          text: "The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
+                          text:
+                            "The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -13065,10 +13799,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
+                          text:
+                            "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
                         },
                         {
-                          text: "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
+                          text:
+                            "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
                           header: "Why You Need It",
                         },
                       ],
@@ -13107,10 +13843,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
+                          text:
+                            "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
                         },
                         {
-                          text: "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
+                          text:
+                            "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -13152,10 +13890,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
+                          text:
+                            "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
                         },
                         {
-                          text: "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
+                          text:
+                            "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -13216,10 +13956,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
+                          text:
+                            "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -13274,7 +14016,8 @@ export const variants = {
                             "The Business Formation Kit is a professional binder enclosed in a matching slip case, customized with the name of your company on the insert. It includes a metal die-cast corporate embossing seal, customized with the name of your company as well as the date and state of formation spine. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -13411,11 +14154,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
+                          text:
+                            "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
                         },
                         {
                           header: "Why You Need It:",
-                          text: "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
+                          text:
+                            "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
                         },
                       ],
                     },
@@ -13450,10 +14195,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
+                          text:
+                            "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
                         },
                         {
-                          text: "In a rush to set up your business and get started with making money? We got you. ",
+                          text:
+                            "In a rush to set up your business and get started with making money? We got you. ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -13512,7 +14259,11 @@ export const variants = {
             },
           ],
           include: "The Basic Silver Services includes:",
-          list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+          list: [
+            "Preparing & Filing the Articles \n" + "of Organization",
+            "Unlimited Name Searches",
+            "FREE Registered Agent Service for \n" + "a year!",
+          ],
           fee: "",
           savings: "",
         },
@@ -13537,7 +14288,18 @@ export const variants = {
             },
           ],
           include: "The Silver Package, and:",
-          list: ["EIN Business Tax Number", "IRS Form 2553", "Operating Agreement", "Banking Resolution", "Express Shipping", "Lifetime Company Alerts", "Online Access Dashboard", "Unlimited Phone & Email Support", "Business Banking Account", "Business Tax Consultation"],
+          list: [
+            "EIN Business Tax Number",
+            "IRS Form 2553",
+            "Operating Agreement",
+            "Banking Resolution",
+            "Express Shipping",
+            "Lifetime Company Alerts",
+            "Online Access Dashboard",
+            "Unlimited Phone & Email Support",
+            "Business Banking Account",
+            "Business Tax Consultation",
+          ],
           fee: "",
           savings: "SAVE $468",
         },
@@ -13562,7 +14324,12 @@ export const variants = {
             },
           ],
           include: "The Gold package, and:",
-          list: ["Business Contract Templates", "Expedited Filing", "FedEx Delivery", "Domain Name + Business Email"],
+          list: [
+            "Business Contract Templates",
+            "Expedited Filing",
+            "FedEx Delivery",
+            "Domain Name + Business Email",
+          ],
           fee: "",
           savings: "SAVE $908",
         },
@@ -13590,7 +14357,8 @@ export const variants = {
                 style: { "font-weight": "bold" },
               },
               {
-                label: "Corporations are required to file an Annual Report with the Arizona Corporation Commision. The Annual Report is due by the anniversary date of the filing.",
+                label:
+                  "Corporations are required to file an Annual Report with the Arizona Corporation Commision. The Annual Report is due by the anniversary date of the filing.",
                 type: "label",
               },
             ],
@@ -13637,7 +14405,8 @@ export const variants = {
                 type: "label",
               },
               {
-                label: "(We do not assist in the filing of the Publication Requirement)",
+                label:
+                  "(We do not assist in the filing of the Publication Requirement)",
                 type: "label",
                 style: { "font-weight": "bold" },
               },
@@ -13650,7 +14419,8 @@ export const variants = {
       },
       services: {
         header: "All plans include:",
-        text: "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
+        text:
+          "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
         benefits: [
           {
             label: "Setup Business Banking Account",
@@ -13664,7 +14434,8 @@ export const variants = {
           {
             label: "Next Business Day Processing",
             header: "Next Business Day Processing",
-            text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
+            text:
+              "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
           },
           {
             label: "Certified Copy - Articles of Organization",
@@ -13730,10 +14501,14 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We will review the information, prepare your organization documents, and send them\n" + "to the state of formation.",
+                          text:
+                            "We will review the information, prepare your organization documents, and send them\n" +
+                            "to the state of formation.",
                         },
                         {
-                          text: " Every LLC must have Articles of organization — they are often\n" + "required to show proof of your business formation status to banks and other entities.\n",
+                          text:
+                            " Every LLC must have Articles of organization — they are often\n" +
+                            "required to show proof of your business formation status to banks and other entities.\n",
                           header: "Why You Need It",
                         },
                       ],
@@ -13769,10 +14544,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We conduct a thorough name search with the state corporation database and will\n" + "work with you as long as needed to find an available company name.",
+                          text:
+                            "We conduct a thorough name search with the state corporation database and will\n" +
+                            "work with you as long as needed to find an available company name.",
                         },
                         {
-                          text: "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
+                          text:
+                            "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
                           header: "Why You Need It",
                         },
                       ],
@@ -13815,21 +14593,31 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
+                          text:
+                            "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
                         },
                         {
-                          text: "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" + "an invaluable\n" + "service that will eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" +
+                            "an invaluable\n" +
+                            "service that will eliminate junk mail and limit personal information available to third parties.",
                         },
                         {
-                          text: " Registered Agent service is included on all packages for 1 full year\n" + "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" + "renew or cancel service.",
+                          text:
+                            " Registered Agent service is included on all packages for 1 full year\n" +
+                            "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" +
+                            "renew or cancel service.",
                           header: "Important",
                         },
                         {
-                          text: "The annual fee for Registered Agent service is $119",
+                          text:
+                            "The annual fee for Registered Agent service is $119",
                         },
                         {
                           header: "Why You Need It:",
-                          text: " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" + "eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" +
+                            "eliminate junk mail and limit personal information available to third parties.",
                         },
                       ],
                     },
@@ -13884,7 +14672,8 @@ export const variants = {
                             "We teamed up with Bank of America® to help you take advantage of perks they offer to entrepreneurs to help their small business grow. Incfile clients have the opportunity to receive an exclusive offer from Bank of America® to help establish your small business banking account.",
                         },
                         {
-                          text: "It’s important to keep your personal & business expenses separate when you have an an LLC.",
+                          text:
+                            "It’s important to keep your personal & business expenses separate when you have an an LLC.",
                           header: "Why You Need It",
                         },
                       ],
@@ -13924,7 +14713,8 @@ export const variants = {
                             "The Statement and Resignation of the Incorporator is a document signed by the Incorporator which identifies the initial members of the Limited Liability Company. A signed statement will be included with your filing packet and can be used to assist in the establishment of a business checking account.",
                         },
                         {
-                          text: "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
+                          text:
+                            "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
                           header: "Why You Need It",
                         },
                       ],
@@ -13960,10 +14750,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
+                          text:
+                            "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
                         },
                         {
-                          text: "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
+                          text:
+                            "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -14011,10 +14803,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This feature allows you to review the status of your order in real time.",
+                          text:
+                            "This feature allows you to review the status of your order in real time.",
                         },
                         {
-                          text: "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
+                          text:
+                            "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
                           header: "Why You Need It",
                         },
                       ],
@@ -14054,7 +14848,8 @@ export const variants = {
                             "Incorporating a new business can burden owners with complicated tax filings . As a client you are entitled to receive a free no obligation 30 minutes consultation with a certified tax professional who can answer questions regarding the tax commitments of your company. ",
                         },
                         {
-                          text: "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
+                          text:
+                            "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -14090,10 +14885,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
+                          text:
+                            "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
                         },
                         {
-                          text: "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
+                          text:
+                            "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -14129,10 +14926,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
+                          text:
+                            "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
                         },
                         {
-                          text: "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
+                          text:
+                            "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -14175,10 +14974,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
+                          text:
+                            "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
                         },
                         {
-                          text: "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
+                          text:
+                            "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -14226,13 +15027,16 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
+                          text:
+                            "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
                         },
                         {
-                          header: "All free websites are subject to Xoopah.com's $20/month hosting rates.",
+                          header:
+                            "All free websites are subject to Xoopah.com's $20/month hosting rates.",
                         },
                         {
-                          text: "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
+                          text:
+                            "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -14290,7 +15094,8 @@ export const variants = {
                             "An Employer Identification Number (EIN) is a nine-digit number that is assigned by the IRS and used to identify taxpayers. Providing an EIN is required to open a business bank account and is required to file business tax returns. We will apply and obtain your EIN from the IRS electronically. This option is the fastest way to obtain the EIN. ",
                         },
                         {
-                          text: "An EIN is required to open a business bank account and to file business tax returns. ",
+                          text:
+                            "An EIN is required to open a business bank account and to file business tax returns. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -14333,11 +15138,21 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Corporate Forms / Bylaws Minutes\n" + "The Corporate Forms includes, customizable templates of documents needed for compliance, record-keeping and meeting business formalities, such as operating agreements, organizational minutes and bylaws. ",
+                          text:
+                            "Corporate Forms / Bylaws Minutes\n" +
+                            "The Corporate Forms includes, customizable templates of documents needed for compliance, record-keeping and meeting business formalities, such as operating agreements, organizational minutes and bylaws. ",
                         },
                         {
                           header: "Corporate Forms:",
-                          items: ["Bylaws", "Consent by Incorporator", "Resignation of Incorporator", "Waiver of Notice", "Minutes of an Organizational Meeting", "Consent in Lieu of Organizational Meeting", "Investment Representation Letter"],
+                          items: [
+                            "Bylaws",
+                            "Consent by Incorporator",
+                            "Resignation of Incorporator",
+                            "Waiver of Notice",
+                            "Minutes of an Organizational Meeting",
+                            "Consent in Lieu of Organizational Meeting",
+                            "Investment Representation Letter",
+                          ],
                         },
                       ],
                     },
@@ -14375,10 +15190,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
+                          text:
+                            "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
                         },
                         {
-                          text: "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
+                          text:
+                            "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
                           header: "Why You Need It",
                         },
                       ],
@@ -14417,10 +15234,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
+                          text:
+                            "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
                         },
                         {
-                          text: "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
+                          text:
+                            "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -14462,10 +15281,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
+                          text:
+                            "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
                         },
                         {
-                          text: "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
+                          text:
+                            "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -14526,10 +15347,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
+                          text:
+                            "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -14584,7 +15407,8 @@ export const variants = {
                             "The Business Formation Kit is a professional binder enclosed in a matching slip case, customized with the name of your company on the insert. It includes a metal die-cast corporate embossing seal, customized with the name of your company as well as the date and state of formation spine. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -14721,11 +15545,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
+                          text:
+                            "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
                         },
                         {
                           header: "Why You Need It:",
-                          text: "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
+                          text:
+                            "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
                         },
                       ],
                     },
@@ -14760,10 +15586,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
+                          text:
+                            "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
                         },
                         {
-                          text: "In a rush to set up your business and get started with making money? We got you. ",
+                          text:
+                            "In a rush to set up your business and get started with making money? We got you. ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -14822,7 +15650,11 @@ export const variants = {
             },
           ],
           include: "The Basic Silver Services includes:",
-          list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+          list: [
+            "Preparing & Filing the Articles \n" + "of Organization",
+            "Unlimited Name Searches",
+            "FREE Registered Agent Service for \n" + "a year!",
+          ],
           fee: "",
           savings: "",
         },
@@ -14847,7 +15679,18 @@ export const variants = {
             },
           ],
           include: "The Silver Package, and:",
-          list: ["EIN Business Tax Number", "IRS Form 2553", "Operating Agreement", "Banking Resolution", "Express Shipping", "Lifetime Company Alerts", "Online Access Dashboard", "Unlimited Phone & Email Support", "Business Banking Account", "Business Tax Consultation"],
+          list: [
+            "EIN Business Tax Number",
+            "IRS Form 2553",
+            "Operating Agreement",
+            "Banking Resolution",
+            "Express Shipping",
+            "Lifetime Company Alerts",
+            "Online Access Dashboard",
+            "Unlimited Phone & Email Support",
+            "Business Banking Account",
+            "Business Tax Consultation",
+          ],
           fee: "",
           savings: "SAVE $468",
         },
@@ -14872,7 +15715,12 @@ export const variants = {
             },
           ],
           include: "The Gold package, and:",
-          list: ["Business Contract Templates", "Expedited Filing", "FedEx Delivery", "Domain Name + Business Email"],
+          list: [
+            "Business Contract Templates",
+            "Expedited Filing",
+            "FedEx Delivery",
+            "Domain Name + Business Email",
+          ],
           fee: "",
           savings: "SAVE $908",
         },
@@ -14923,7 +15771,8 @@ export const variants = {
                 type: "label",
               },
               {
-                label: "(We do not assist in the filing of the Publication Requirement)",
+                label:
+                  "(We do not assist in the filing of the Publication Requirement)",
                 type: "label",
                 style: { "font-weight": "bold" },
               },
@@ -14936,7 +15785,8 @@ export const variants = {
       },
       services: {
         header: "All plans include:",
-        text: "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
+        text:
+          "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
         benefits: [
           {
             label: "Setup Business Banking Account",
@@ -14950,7 +15800,8 @@ export const variants = {
           {
             label: "Next Business Day Processing",
             header: "Next Business Day Processing",
-            text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
+            text:
+              "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
           },
           {
             label: "Certified Copy - Articles of Organization",
@@ -15016,10 +15867,14 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We will review the information, prepare your organization documents, and send them\n" + "to the state of formation.",
+                          text:
+                            "We will review the information, prepare your organization documents, and send them\n" +
+                            "to the state of formation.",
                         },
                         {
-                          text: " Every LLC must have Articles of organization — they are often\n" + "required to show proof of your business formation status to banks and other entities.\n",
+                          text:
+                            " Every LLC must have Articles of organization — they are often\n" +
+                            "required to show proof of your business formation status to banks and other entities.\n",
                           header: "Why You Need It",
                         },
                       ],
@@ -15055,10 +15910,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We conduct a thorough name search with the state corporation database and will\n" + "work with you as long as needed to find an available company name.",
+                          text:
+                            "We conduct a thorough name search with the state corporation database and will\n" +
+                            "work with you as long as needed to find an available company name.",
                         },
                         {
-                          text: "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
+                          text:
+                            "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
                           header: "Why You Need It",
                         },
                       ],
@@ -15101,21 +15959,31 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
+                          text:
+                            "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
                         },
                         {
-                          text: "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" + "an invaluable\n" + "service that will eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" +
+                            "an invaluable\n" +
+                            "service that will eliminate junk mail and limit personal information available to third parties.",
                         },
                         {
-                          text: " Registered Agent service is included on all packages for 1 full year\n" + "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" + "renew or cancel service.",
+                          text:
+                            " Registered Agent service is included on all packages for 1 full year\n" +
+                            "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" +
+                            "renew or cancel service.",
                           header: "Important",
                         },
                         {
-                          text: "The annual fee for Registered Agent service is $119",
+                          text:
+                            "The annual fee for Registered Agent service is $119",
                         },
                         {
                           header: "Why You Need It:",
-                          text: " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" + "eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" +
+                            "eliminate junk mail and limit personal information available to third parties.",
                         },
                       ],
                     },
@@ -15170,7 +16038,8 @@ export const variants = {
                             "We teamed up with Bank of America® to help you take advantage of perks they offer to entrepreneurs to help their small business grow. Incfile clients have the opportunity to receive an exclusive offer from Bank of America® to help establish your small business banking account.",
                         },
                         {
-                          text: "It’s important to keep your personal & business expenses separate when you have an an LLC.",
+                          text:
+                            "It’s important to keep your personal & business expenses separate when you have an an LLC.",
                           header: "Why You Need It",
                         },
                       ],
@@ -15210,7 +16079,8 @@ export const variants = {
                             "The Statement and Resignation of the Organizer is a document signed by the Organizer which identifies the initial members of the Limited Liability Company. A signed statement will be included with your filing packet and can be used to assist in the establishment of a business checking account.",
                         },
                         {
-                          text: "This document relinquishes the Organizer’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Organization.",
+                          text:
+                            "This document relinquishes the Organizer’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Organization.",
                           header: "Why You Need It",
                         },
                       ],
@@ -15246,10 +16116,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
+                          text:
+                            "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
                         },
                         {
-                          text: "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
+                          text:
+                            "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -15297,10 +16169,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This feature allows you to review the status of your order in real time.",
+                          text:
+                            "This feature allows you to review the status of your order in real time.",
                         },
                         {
-                          text: "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
+                          text:
+                            "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
                           header: "Why You Need It",
                         },
                       ],
@@ -15340,7 +16214,8 @@ export const variants = {
                             "Incorporating a new business can burden owners with complicated tax filings . As a client you are entitled to receive a free no obligation 30 minutes consultation with a certified tax professional who can answer questions regarding the tax commitments of your company. ",
                         },
                         {
-                          text: "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
+                          text:
+                            "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -15376,10 +16251,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
+                          text:
+                            "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
                         },
                         {
-                          text: "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
+                          text:
+                            "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -15415,10 +16292,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
+                          text:
+                            "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
                         },
                         {
-                          text: "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
+                          text:
+                            "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -15461,10 +16340,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
+                          text:
+                            "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
                         },
                         {
-                          text: "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
+                          text:
+                            "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -15512,13 +16393,16 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
+                          text:
+                            "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
                         },
                         {
-                          header: "All free websites are subject to Xoopah.com's $20/month hosting rates.",
+                          header:
+                            "All free websites are subject to Xoopah.com's $20/month hosting rates.",
                         },
                         {
-                          text: "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
+                          text:
+                            "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -15576,7 +16460,8 @@ export const variants = {
                             "An Employer Identification Number (EIN) is a nine-digit number that is assigned by the IRS and used to identify taxpayers. Providing an EIN is required to open a business bank account and is required to file business tax returns. We will apply and obtain your EIN from the IRS electronically. This option is the fastest way to obtain the EIN. ",
                         },
                         {
-                          text: "An EIN is required to open a business bank account and to file business tax returns. ",
+                          text:
+                            "An EIN is required to open a business bank account and to file business tax returns. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -15620,16 +16505,18 @@ export const variants = {
                       items: [
                         {
                           text:
-                            "Many LLCs elect to be treated as an S-Corporation for tax purposes, as such all Gold and Platinum LLC orders include the preparation and filing of the IRS Form 2553.\n" +
+                            "Many LLCs elect to be treated as an S Corporation for tax purposes, as such all Gold and Platinum LLC orders include the preparation and filing of the IRS Form 2553.\n" +
                             "If you decide that this is the right tax classification for your LLC you can initiate the preparation and filing of the IRS Form 2553 directly from the services tab of your client dashboard.\n" +
                             "The form will be generated upon request at which time a request will be for the digital signature from the members. Upon receipt of the signature(s) the form will be submitted directly to the IRS.",
                         },
                         {
-                          text: "Please note the Form 2553 is time sensitive and must be filed with the IRS within 75 days of your corporation filing date in order to obtain S-corporation tax status for the current year. ",
+                          text:
+                            "Please note the Form 2553 is time sensitive and must be filed with the IRS within 75 days of your corporation filing date in order to obtain S-corporation tax status for the current year. ",
                           header: "IMPORTANT",
                         },
                         {
-                          text: "Electing to be taxed as an S-Corp can save you thousands of dollars a year. It’s best to consult with a tax specialist to see if this is the right business move for you (we offer a free 30-minute tax consultation with every order). ",
+                          text:
+                            "Electing to be taxed as an S Corp can save you thousands of dollars a year. It’s best to consult with a tax specialist to see if this is the right business move for you (we offer a free 30-minute tax consultation with every order). ",
                           header: "Why You Need It",
                         },
                       ],
@@ -15672,7 +16559,8 @@ export const variants = {
                             "The operating agreement for a limited liability company is a private agreement between the members/owners of the LLC, and it details the ownership, rights, and responsibilities of the LLC members. The operating agreement we provide for your use covers all of the most commonly used provisions and will be customized based on your specific company information provided during the placing of your order. ",
                         },
                         {
-                          text: "Perhaps the most important document for an LLC, this is where you will “put in stone” your LLC’s rules and structure that will create a framework for your entire business. ",
+                          text:
+                            "Perhaps the most important document for an LLC, this is where you will “put in stone” your LLC’s rules and structure that will create a framework for your entire business. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -15711,10 +16599,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
+                          text:
+                            "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
                         },
                         {
-                          text: "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
+                          text:
+                            "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
                           header: "Why You Need It",
                         },
                       ],
@@ -15753,10 +16643,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
+                          text:
+                            "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
                         },
                         {
-                          text: "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
+                          text:
+                            "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -15798,10 +16690,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
+                          text:
+                            "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
                         },
                         {
-                          text: "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
+                          text:
+                            "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -15862,10 +16756,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
+                          text:
+                            "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -15920,7 +16816,8 @@ export const variants = {
                             "The Business Formation Kit is a professional binder enclosed in a matching slip case, customized with the name of your company on the insert. It includes a metal die-cast corporate embossing seal, customized with the name of your company as well as the date and state of formation spine. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -16057,11 +16954,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
+                          text:
+                            "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
                         },
                         {
                           header: "Why You Need It:",
-                          text: "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
+                          text:
+                            "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
                         },
                       ],
                     },
@@ -16096,10 +16995,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
+                          text:
+                            "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
                         },
                         {
-                          text: "In a rush to set up your business and get started with making money? We got you. ",
+                          text:
+                            "In a rush to set up your business and get started with making money? We got you. ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -16160,7 +17061,11 @@ export const variants = {
             },
           ],
           include: "The Basic Silver Services includes:",
-          list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+          list: [
+            "Preparing & Filing the Articles \n" + "of Organization",
+            "Unlimited Name Searches",
+            "FREE Registered Agent Service for \n" + "a year!",
+          ],
           fee: "",
           savings: "",
         },
@@ -16185,7 +17090,18 @@ export const variants = {
             },
           ],
           include: "The Silver Package, and:",
-          list: ["EIN Business Tax Number", "IRS Form 2553", "Operating Agreement", "Banking Resolution", "Express Shipping", "Lifetime Company Alerts", "Online Access Dashboard", "Unlimited Phone & Email Support", "Business Banking Account", "Business Tax Consultation"],
+          list: [
+            "EIN Business Tax Number",
+            "IRS Form 2553",
+            "Operating Agreement",
+            "Banking Resolution",
+            "Express Shipping",
+            "Lifetime Company Alerts",
+            "Online Access Dashboard",
+            "Unlimited Phone & Email Support",
+            "Business Banking Account",
+            "Business Tax Consultation",
+          ],
           fee: "",
           savings: "SAVE $468",
         },
@@ -16210,7 +17126,12 @@ export const variants = {
             },
           ],
           include: "The Gold package, and:",
-          list: ["Business Contract Templates", "Expedited Filing", "FedEx Delivery", "Domain Name + Business Email"],
+          list: [
+            "Business Contract Templates",
+            "Expedited Filing",
+            "FedEx Delivery",
+            "Domain Name + Business Email",
+          ],
           fee: "",
           savings: "SAVE $908",
         },
@@ -16264,7 +17185,8 @@ export const variants = {
                 },
               },
               {
-                label: "Initial report due May 1st of the year following formation or qualification.",
+                label:
+                  "Initial report due May 1st of the year following formation or qualification.",
                 type: "label",
               },
             ],
@@ -16276,7 +17198,8 @@ export const variants = {
       },
       services: {
         header: "All plans include:",
-        text: "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
+        text:
+          "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
         benefits: [
           {
             label: "Setup Business Banking Account",
@@ -16290,7 +17213,8 @@ export const variants = {
           {
             label: "Next Business Day Processing",
             header: "Next Business Day Processing",
-            text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
+            text:
+              "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
           },
           {
             label: "Certified Copy - Articles of Organization",
@@ -16356,10 +17280,14 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We will review the information, prepare your organization documents, and send them\n" + "to the state of formation.",
+                          text:
+                            "We will review the information, prepare your organization documents, and send them\n" +
+                            "to the state of formation.",
                         },
                         {
-                          text: " Every LLC must have Articles of organization — they are often\n" + "required to show proof of your business formation status to banks and other entities.\n",
+                          text:
+                            " Every LLC must have Articles of organization — they are often\n" +
+                            "required to show proof of your business formation status to banks and other entities.\n",
                           header: "Why You Need It",
                         },
                       ],
@@ -16395,10 +17323,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We conduct a thorough name search with the state corporation database and will\n" + "work with you as long as needed to find an available company name.",
+                          text:
+                            "We conduct a thorough name search with the state corporation database and will\n" +
+                            "work with you as long as needed to find an available company name.",
                         },
                         {
-                          text: "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
+                          text:
+                            "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
                           header: "Why You Need It",
                         },
                       ],
@@ -16441,21 +17372,31 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
+                          text:
+                            "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
                         },
                         {
-                          text: "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" + "an invaluable\n" + "service that will eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" +
+                            "an invaluable\n" +
+                            "service that will eliminate junk mail and limit personal information available to third parties.",
                         },
                         {
-                          text: " Registered Agent service is included on all packages for 1 full year\n" + "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" + "renew or cancel service.",
+                          text:
+                            " Registered Agent service is included on all packages for 1 full year\n" +
+                            "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" +
+                            "renew or cancel service.",
                           header: "Important",
                         },
                         {
-                          text: "The annual fee for Registered Agent service is $119",
+                          text:
+                            "The annual fee for Registered Agent service is $119",
                         },
                         {
                           header: "Why You Need It:",
-                          text: " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" + "eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" +
+                            "eliminate junk mail and limit personal information available to third parties.",
                         },
                       ],
                     },
@@ -16510,7 +17451,8 @@ export const variants = {
                             "We teamed up with Bank of America® to help you take advantage of perks they offer to entrepreneurs to help their small business grow. Incfile clients have the opportunity to receive an exclusive offer from Bank of America® to help establish your small business banking account.",
                         },
                         {
-                          text: "It’s important to keep your personal & business expenses separate when you have an an LLC.",
+                          text:
+                            "It’s important to keep your personal & business expenses separate when you have an an LLC.",
                           header: "Why You Need It",
                         },
                       ],
@@ -16550,7 +17492,8 @@ export const variants = {
                             "The Statement and Resignation of the Incorporator is a document signed by the Incorporator which identifies the initial members of the Limited Liability Company. A signed statement will be included with your filing packet and can be used to assist in the establishment of a business checking account.",
                         },
                         {
-                          text: "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
+                          text:
+                            "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
                           header: "Why You Need It",
                         },
                       ],
@@ -16586,10 +17529,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
+                          text:
+                            "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
                         },
                         {
-                          text: "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
+                          text:
+                            "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -16637,10 +17582,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This feature allows you to review the status of your order in real time.",
+                          text:
+                            "This feature allows you to review the status of your order in real time.",
                         },
                         {
-                          text: "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
+                          text:
+                            "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
                           header: "Why You Need It",
                         },
                       ],
@@ -16680,7 +17627,8 @@ export const variants = {
                             "Incorporating a new business can burden owners with complicated tax filings . As a client you are entitled to receive a free no obligation 30 minutes consultation with a certified tax professional who can answer questions regarding the tax commitments of your company. ",
                         },
                         {
-                          text: "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
+                          text:
+                            "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -16716,10 +17664,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
+                          text:
+                            "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
                         },
                         {
-                          text: "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
+                          text:
+                            "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -16755,10 +17705,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
+                          text:
+                            "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
                         },
                         {
-                          text: "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
+                          text:
+                            "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -16801,10 +17753,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
+                          text:
+                            "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
                         },
                         {
-                          text: "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
+                          text:
+                            "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -16852,13 +17806,16 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
+                          text:
+                            "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
                         },
                         {
-                          header: "All free websites are subject to Xoopah.com's $20/month hosting rates.",
+                          header:
+                            "All free websites are subject to Xoopah.com's $20/month hosting rates.",
                         },
                         {
-                          text: "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
+                          text:
+                            "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -16916,7 +17873,8 @@ export const variants = {
                             "An Employer Identification Number (EIN) is a nine-digit number that is assigned by the IRS and used to identify taxpayers. Providing an EIN is required to open a business bank account and is required to file business tax returns. We will apply and obtain your EIN from the IRS electronically. This option is the fastest way to obtain the EIN. ",
                         },
                         {
-                          text: "An EIN is required to open a business bank account and to file business tax returns. ",
+                          text:
+                            "An EIN is required to open a business bank account and to file business tax returns. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -16963,7 +17921,8 @@ export const variants = {
                             "The bylaws of a corporation are an internal document that details the operating rules for the corporation. The bylaws of a corporation are typically adopted at the organizational meeting of the board of directors after the corporation has been filed with the state. The bylaws we will provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
                         },
                         {
-                          text: "Your bylaws will act as “internal rules,” ensuring that everything runs smoothly and keeps all employees, executives and shareholders in agreement and on the same page. ",
+                          text:
+                            "Your bylaws will act as “internal rules,” ensuring that everything runs smoothly and keeps all employees, executives and shareholders in agreement and on the same page. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -17006,7 +17965,8 @@ export const variants = {
                             'After the corporation has been filed with the state, the directors of the corporation are required to have a "first," or organizational meeting to take care of things such as issuing shares of stock, adopting bylaws, appointing officers, etc., and keeping minutes of directors meetings and corporate resolutions is a required part of your internal corporate compliance. The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ',
                         },
                         {
-                          text: "The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
+                          text:
+                            "The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -17045,10 +18005,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
+                          text:
+                            "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
                         },
                         {
-                          text: "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
+                          text:
+                            "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
                           header: "Why You Need It",
                         },
                       ],
@@ -17087,10 +18049,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
+                          text:
+                            "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
                         },
                         {
-                          text: "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
+                          text:
+                            "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -17132,10 +18096,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
+                          text:
+                            "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
                         },
                         {
-                          text: "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
+                          text:
+                            "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -17196,10 +18162,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
+                          text:
+                            "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -17254,7 +18222,8 @@ export const variants = {
                             "The Business Formation Kit is a professional binder enclosed in a matching slip case, customized with the name of your company on the insert. It includes a metal die-cast corporate embossing seal, customized with the name of your company as well as the date and state of formation spine. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -17391,11 +18360,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
+                          text:
+                            "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
                         },
                         {
                           header: "Why You Need It:",
-                          text: "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
+                          text:
+                            "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
                         },
                       ],
                     },
@@ -17430,10 +18401,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
+                          text:
+                            "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
                         },
                         {
-                          text: "In a rush to set up your business and get started with making money? We got you. ",
+                          text:
+                            "In a rush to set up your business and get started with making money? We got you. ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -17492,7 +18465,11 @@ export const variants = {
             },
           ],
           include: "The Basic Silver Services includes:",
-          list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+          list: [
+            "Preparing & Filing the Articles \n" + "of Organization",
+            "Unlimited Name Searches",
+            "FREE Registered Agent Service for \n" + "a year!",
+          ],
           fee: "",
           savings: "",
         },
@@ -17517,7 +18494,18 @@ export const variants = {
             },
           ],
           include: "The Silver Package, and:",
-          list: ["EIN Business Tax Number", "IRS Form 2553", "Operating Agreement", "Banking Resolution", "Express Shipping", "Lifetime Company Alerts", "Online Access Dashboard", "Unlimited Phone & Email Support", "Business Banking Account", "Business Tax Consultation"],
+          list: [
+            "EIN Business Tax Number",
+            "IRS Form 2553",
+            "Operating Agreement",
+            "Banking Resolution",
+            "Express Shipping",
+            "Lifetime Company Alerts",
+            "Online Access Dashboard",
+            "Unlimited Phone & Email Support",
+            "Business Banking Account",
+            "Business Tax Consultation",
+          ],
           fee: "",
           savings: "SAVE $468",
         },
@@ -17542,7 +18530,12 @@ export const variants = {
             },
           ],
           include: "The Gold package, and:",
-          list: ["Business Contract Templates", "Expedited Filing", "FedEx Delivery", "Domain Name + Business Email"],
+          list: [
+            "Business Contract Templates",
+            "Expedited Filing",
+            "FedEx Delivery",
+            "Domain Name + Business Email",
+          ],
           fee: "",
           savings: "SAVE $908",
         },
@@ -17596,7 +18589,8 @@ export const variants = {
                 },
               },
               {
-                label: "Initial report due May 1st of the year following formation or qualification.",
+                label:
+                  "Initial report due May 1st of the year following formation or qualification.",
                 type: "label",
               },
             ],
@@ -17608,7 +18602,8 @@ export const variants = {
       },
       services: {
         header: "All plans include:",
-        text: "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
+        text:
+          "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
         benefits: [
           {
             label: "Setup Business Banking Account",
@@ -17622,7 +18617,8 @@ export const variants = {
           {
             label: "Next Business Day Processing",
             header: "Next Business Day Processing",
-            text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
+            text:
+              "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
           },
           {
             label: "Certified Copy - Articles of Organization",
@@ -17688,10 +18684,14 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We will review the information, prepare your organization documents, and send them\n" + "to the state of formation.",
+                          text:
+                            "We will review the information, prepare your organization documents, and send them\n" +
+                            "to the state of formation.",
                         },
                         {
-                          text: " Every LLC must have Articles of organization — they are often\n" + "required to show proof of your business formation status to banks and other entities.\n",
+                          text:
+                            " Every LLC must have Articles of organization — they are often\n" +
+                            "required to show proof of your business formation status to banks and other entities.\n",
                           header: "Why You Need It",
                         },
                       ],
@@ -17727,10 +18727,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We conduct a thorough name search with the state corporation database and will\n" + "work with you as long as needed to find an available company name.",
+                          text:
+                            "We conduct a thorough name search with the state corporation database and will\n" +
+                            "work with you as long as needed to find an available company name.",
                         },
                         {
-                          text: "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
+                          text:
+                            "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
                           header: "Why You Need It",
                         },
                       ],
@@ -17773,21 +18776,31 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
+                          text:
+                            "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
                         },
                         {
-                          text: "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" + "an invaluable\n" + "service that will eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" +
+                            "an invaluable\n" +
+                            "service that will eliminate junk mail and limit personal information available to third parties.",
                         },
                         {
-                          text: " Registered Agent service is included on all packages for 1 full year\n" + "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" + "renew or cancel service.",
+                          text:
+                            " Registered Agent service is included on all packages for 1 full year\n" +
+                            "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" +
+                            "renew or cancel service.",
                           header: "Important",
                         },
                         {
-                          text: "The annual fee for Registered Agent service is $119",
+                          text:
+                            "The annual fee for Registered Agent service is $119",
                         },
                         {
                           header: "Why You Need It:",
-                          text: " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" + "eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" +
+                            "eliminate junk mail and limit personal information available to third parties.",
                         },
                       ],
                     },
@@ -17842,7 +18855,8 @@ export const variants = {
                             "We teamed up with Bank of America® to help you take advantage of perks they offer to entrepreneurs to help their small business grow. Incfile clients have the opportunity to receive an exclusive offer from Bank of America® to help establish your small business banking account.",
                         },
                         {
-                          text: "It’s important to keep your personal & business expenses separate when you have an an LLC.",
+                          text:
+                            "It’s important to keep your personal & business expenses separate when you have an an LLC.",
                           header: "Why You Need It",
                         },
                       ],
@@ -17882,7 +18896,8 @@ export const variants = {
                             "The Statement and Resignation of the Incorporator is a document signed by the Incorporator which identifies the initial members of the Limited Liability Company. A signed statement will be included with your filing packet and can be used to assist in the establishment of a business checking account.",
                         },
                         {
-                          text: "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
+                          text:
+                            "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
                           header: "Why You Need It",
                         },
                       ],
@@ -17918,10 +18933,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
+                          text:
+                            "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
                         },
                         {
-                          text: "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
+                          text:
+                            "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -17969,10 +18986,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This feature allows you to review the status of your order in real time.",
+                          text:
+                            "This feature allows you to review the status of your order in real time.",
                         },
                         {
-                          text: "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
+                          text:
+                            "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
                           header: "Why You Need It",
                         },
                       ],
@@ -18012,7 +19031,8 @@ export const variants = {
                             "Incorporating a new business can burden owners with complicated tax filings . As a client you are entitled to receive a free no obligation 30 minutes consultation with a certified tax professional who can answer questions regarding the tax commitments of your company. ",
                         },
                         {
-                          text: "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
+                          text:
+                            "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -18048,10 +19068,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
+                          text:
+                            "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
                         },
                         {
-                          text: "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
+                          text:
+                            "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -18087,10 +19109,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
+                          text:
+                            "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
                         },
                         {
-                          text: "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
+                          text:
+                            "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -18133,10 +19157,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
+                          text:
+                            "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
                         },
                         {
-                          text: "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
+                          text:
+                            "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -18184,13 +19210,16 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
+                          text:
+                            "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
                         },
                         {
-                          header: "All free websites are subject to Xoopah.com's $20/month hosting rates.",
+                          header:
+                            "All free websites are subject to Xoopah.com's $20/month hosting rates.",
                         },
                         {
-                          text: "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
+                          text:
+                            "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -18248,7 +19277,8 @@ export const variants = {
                             "An Employer Identification Number (EIN) is a nine-digit number that is assigned by the IRS and used to identify taxpayers. Providing an EIN is required to open a business bank account and is required to file business tax returns. We will apply and obtain your EIN from the IRS electronically. This option is the fastest way to obtain the EIN. ",
                         },
                         {
-                          text: "An EIN is required to open a business bank account and to file business tax returns. ",
+                          text:
+                            "An EIN is required to open a business bank account and to file business tax returns. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -18295,7 +19325,8 @@ export const variants = {
                             "The bylaws of a corporation are an internal document that details the operating rules for the corporation. The bylaws of a corporation are typically adopted at the organizational meeting of the board of directors after the corporation has been filed with the state. The bylaws we will provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
                         },
                         {
-                          text: "Your bylaws will act as “internal rules,” ensuring that everything runs smoothly and keeps all employees, executives and shareholders in agreement and on the same page. ",
+                          text:
+                            "Your bylaws will act as “internal rules,” ensuring that everything runs smoothly and keeps all employees, executives and shareholders in agreement and on the same page. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -18338,7 +19369,8 @@ export const variants = {
                             'After the corporation has been filed with the state, the directors of the corporation are required to have a "first," or organizational meeting to take care of things such as issuing shares of stock, adopting bylaws, appointing officers, etc., and keeping minutes of directors meetings and corporate resolutions is a required part of your internal corporate compliance. The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ',
                         },
                         {
-                          text: "The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
+                          text:
+                            "The organizational minutes we provide for your use cover all of the most commonly used provisions and will be customized based on your specific company information. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -18377,10 +19409,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
+                          text:
+                            "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
                         },
                         {
-                          text: "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
+                          text:
+                            "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
                           header: "Why You Need It",
                         },
                       ],
@@ -18419,10 +19453,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
+                          text:
+                            "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
                         },
                         {
-                          text: "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
+                          text:
+                            "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -18464,10 +19500,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
+                          text:
+                            "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
                         },
                         {
-                          text: "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
+                          text:
+                            "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -18528,10 +19566,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
+                          text:
+                            "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -18586,7 +19626,8 @@ export const variants = {
                             "The Business Formation Kit is a professional binder enclosed in a matching slip case, customized with the name of your company on the insert. It includes a metal die-cast corporate embossing seal, customized with the name of your company as well as the date and state of formation spine. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -18723,11 +19764,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
+                          text:
+                            "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
                         },
                         {
                           header: "Why You Need It:",
-                          text: "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
+                          text:
+                            "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
                         },
                       ],
                     },
@@ -18762,10 +19805,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
+                          text:
+                            "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
                         },
                         {
-                          text: "In a rush to set up your business and get started with making money? We got you. ",
+                          text:
+                            "In a rush to set up your business and get started with making money? We got you. ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -18824,7 +19869,11 @@ export const variants = {
             },
           ],
           include: "The Basic Silver Services includes:",
-          list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+          list: [
+            "Preparing & Filing the Articles \n" + "of Organization",
+            "Unlimited Name Searches",
+            "FREE Registered Agent Service for \n" + "a year!",
+          ],
           fee: "",
           savings: "",
         },
@@ -18849,7 +19898,18 @@ export const variants = {
             },
           ],
           include: "The Silver Package, and:",
-          list: ["EIN Business Tax Number", "IRS Form 2553", "Operating Agreement", "Banking Resolution", "Express Shipping", "Lifetime Company Alerts", "Online Access Dashboard", "Unlimited Phone & Email Support", "Business Banking Account", "Business Tax Consultation"],
+          list: [
+            "EIN Business Tax Number",
+            "IRS Form 2553",
+            "Operating Agreement",
+            "Banking Resolution",
+            "Express Shipping",
+            "Lifetime Company Alerts",
+            "Online Access Dashboard",
+            "Unlimited Phone & Email Support",
+            "Business Banking Account",
+            "Business Tax Consultation",
+          ],
           fee: "",
           savings: "SAVE $468",
         },
@@ -18874,7 +19934,12 @@ export const variants = {
             },
           ],
           include: "The Gold package, and:",
-          list: ["Business Contract Templates", "Expedited Filing", "FedEx Delivery", "Domain Name + Business Email"],
+          list: [
+            "Business Contract Templates",
+            "Expedited Filing",
+            "FedEx Delivery",
+            "Domain Name + Business Email",
+          ],
           fee: "",
           savings: "SAVE $908",
         },
@@ -18928,7 +19993,8 @@ export const variants = {
                 },
               },
               {
-                label: "Initial report due May 1st of the year following formation or qualification.",
+                label:
+                  "Initial report due May 1st of the year following formation or qualification.",
                 type: "label",
               },
             ],
@@ -18940,7 +20006,8 @@ export const variants = {
       },
       services: {
         header: "All plans include:",
-        text: "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
+        text:
+          "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
         benefits: [
           {
             label: "Setup Business Banking Account",
@@ -18954,7 +20021,8 @@ export const variants = {
           {
             label: "Next Business Day Processing",
             header: "Next Business Day Processing",
-            text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
+            text:
+              "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
           },
           {
             label: "Certified Copy - Articles of Organization",
@@ -19020,10 +20088,14 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We will review the information, prepare your organization documents, and send them\n" + "to the state of formation.",
+                          text:
+                            "We will review the information, prepare your organization documents, and send them\n" +
+                            "to the state of formation.",
                         },
                         {
-                          text: " Every LLC must have Articles of organization — they are often\n" + "required to show proof of your business formation status to banks and other entities.\n",
+                          text:
+                            " Every LLC must have Articles of organization — they are often\n" +
+                            "required to show proof of your business formation status to banks and other entities.\n",
                           header: "Why You Need It",
                         },
                       ],
@@ -19059,10 +20131,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We conduct a thorough name search with the state corporation database and will\n" + "work with you as long as needed to find an available company name.",
+                          text:
+                            "We conduct a thorough name search with the state corporation database and will\n" +
+                            "work with you as long as needed to find an available company name.",
                         },
                         {
-                          text: "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
+                          text:
+                            "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
                           header: "Why You Need It",
                         },
                       ],
@@ -19105,21 +20180,31 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
+                          text:
+                            "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
                         },
                         {
-                          text: "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" + "an invaluable\n" + "service that will eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" +
+                            "an invaluable\n" +
+                            "service that will eliminate junk mail and limit personal information available to third parties.",
                         },
                         {
-                          text: " Registered Agent service is included on all packages for 1 full year\n" + "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" + "renew or cancel service.",
+                          text:
+                            " Registered Agent service is included on all packages for 1 full year\n" +
+                            "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" +
+                            "renew or cancel service.",
                           header: "Important",
                         },
                         {
-                          text: "The annual fee for Registered Agent service is $119",
+                          text:
+                            "The annual fee for Registered Agent service is $119",
                         },
                         {
                           header: "Why You Need It:",
-                          text: " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" + "eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" +
+                            "eliminate junk mail and limit personal information available to third parties.",
                         },
                       ],
                     },
@@ -19174,7 +20259,8 @@ export const variants = {
                             "We teamed up with Bank of America® to help you take advantage of perks they offer to entrepreneurs to help their small business grow. Incfile clients have the opportunity to receive an exclusive offer from Bank of America® to help establish your small business banking account.",
                         },
                         {
-                          text: "It’s important to keep your personal & business expenses separate when you have an an LLC.",
+                          text:
+                            "It’s important to keep your personal & business expenses separate when you have an an LLC.",
                           header: "Why You Need It",
                         },
                       ],
@@ -19214,7 +20300,8 @@ export const variants = {
                             "The Statement and Resignation of the Incorporator is a document signed by the Incorporator which identifies the initial members of the Limited Liability Company. A signed statement will be included with your filing packet and can be used to assist in the establishment of a business checking account.",
                         },
                         {
-                          text: "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
+                          text:
+                            "This document relinquishes the Incorporator’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Incorporation.",
                           header: "Why You Need It",
                         },
                       ],
@@ -19250,10 +20337,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
+                          text:
+                            "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
                         },
                         {
-                          text: "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
+                          text:
+                            "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -19301,10 +20390,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This feature allows you to review the status of your order in real time.",
+                          text:
+                            "This feature allows you to review the status of your order in real time.",
                         },
                         {
-                          text: "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
+                          text:
+                            "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
                           header: "Why You Need It",
                         },
                       ],
@@ -19344,7 +20435,8 @@ export const variants = {
                             "Incorporating a new business can burden owners with complicated tax filings . As a client you are entitled to receive a free no obligation 30 minutes consultation with a certified tax professional who can answer questions regarding the tax commitments of your company. ",
                         },
                         {
-                          text: "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
+                          text:
+                            "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -19380,10 +20472,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
+                          text:
+                            "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
                         },
                         {
-                          text: "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
+                          text:
+                            "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -19419,10 +20513,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
+                          text:
+                            "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
                         },
                         {
-                          text: "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
+                          text:
+                            "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -19465,10 +20561,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
+                          text:
+                            "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
                         },
                         {
-                          text: "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
+                          text:
+                            "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -19516,13 +20614,16 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
+                          text:
+                            "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
                         },
                         {
-                          header: "All free websites are subject to Xoopah.com's $20/month hosting rates.",
+                          header:
+                            "All free websites are subject to Xoopah.com's $20/month hosting rates.",
                         },
                         {
-                          text: "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
+                          text:
+                            "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -19580,7 +20681,8 @@ export const variants = {
                             "An Employer Identification Number (EIN) is a nine-digit number that is assigned by the IRS and used to identify taxpayers. Providing an EIN is required to open a business bank account and is required to file business tax returns. We will apply and obtain your EIN from the IRS electronically. This option is the fastest way to obtain the EIN. ",
                         },
                         {
-                          text: "An EIN is required to open a business bank account and to file business tax returns. ",
+                          text:
+                            "An EIN is required to open a business bank account and to file business tax returns. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -19623,11 +20725,21 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Corporate Forms / Bylaws Minutes\n" + "The Corporate Forms includes, customizable templates of documents needed for compliance, record-keeping and meeting business formalities, such as operating agreements, organizational minutes and bylaws. ",
+                          text:
+                            "Corporate Forms / Bylaws Minutes\n" +
+                            "The Corporate Forms includes, customizable templates of documents needed for compliance, record-keeping and meeting business formalities, such as operating agreements, organizational minutes and bylaws. ",
                         },
                         {
                           header: "Corporate Forms:",
-                          items: ["Bylaws", "Consent by Incorporator", "Resignation of Incorporator", "Waiver of Notice", "Minutes of an Organizational Meeting", "Consent in Lieu of Organizational Meeting", "Investment Representation Letter"],
+                          items: [
+                            "Bylaws",
+                            "Consent by Incorporator",
+                            "Resignation of Incorporator",
+                            "Waiver of Notice",
+                            "Minutes of an Organizational Meeting",
+                            "Consent in Lieu of Organizational Meeting",
+                            "Investment Representation Letter",
+                          ],
                         },
                       ],
                     },
@@ -19665,10 +20777,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
+                          text:
+                            "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
                         },
                         {
-                          text: "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
+                          text:
+                            "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
                           header: "Why You Need It",
                         },
                       ],
@@ -19707,10 +20821,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
+                          text:
+                            "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
                         },
                         {
-                          text: "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
+                          text:
+                            "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -19752,10 +20868,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
+                          text:
+                            "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
                         },
                         {
-                          text: "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
+                          text:
+                            "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -19816,10 +20934,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
+                          text:
+                            "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -19874,7 +20994,8 @@ export const variants = {
                             "The Business Formation Kit is a professional binder enclosed in a matching slip case, customized with the name of your company on the insert. It includes a metal die-cast corporate embossing seal, customized with the name of your company as well as the date and state of formation spine. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -20011,11 +21132,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
+                          text:
+                            "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
                         },
                         {
                           header: "Why You Need It:",
-                          text: "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
+                          text:
+                            "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
                         },
                       ],
                     },
@@ -20050,10 +21173,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
+                          text:
+                            "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
                         },
                         {
-                          text: "In a rush to set up your business and get started with making money? We got you. ",
+                          text:
+                            "In a rush to set up your business and get started with making money? We got you. ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -20112,7 +21237,11 @@ export const variants = {
             },
           ],
           include: "The Basic Silver Services includes:",
-          list: ["Preparing & Filing the Articles \n" + "of Organization", "Unlimited Name Searches", "FREE Registered Agent Service for \n" + "a year!"],
+          list: [
+            "Preparing & Filing the Articles \n" + "of Organization",
+            "Unlimited Name Searches",
+            "FREE Registered Agent Service for \n" + "a year!",
+          ],
           fee: "",
           savings: "",
         },
@@ -20137,7 +21266,18 @@ export const variants = {
             },
           ],
           include: "The Silver Package, and:",
-          list: ["EIN Business Tax Number", "IRS Form 2553", "Operating Agreement", "Banking Resolution", "Express Shipping", "Lifetime Company Alerts", "Online Access Dashboard", "Unlimited Phone & Email Support", "Business Banking Account", "Business Tax Consultation"],
+          list: [
+            "EIN Business Tax Number",
+            "IRS Form 2553",
+            "Operating Agreement",
+            "Banking Resolution",
+            "Express Shipping",
+            "Lifetime Company Alerts",
+            "Online Access Dashboard",
+            "Unlimited Phone & Email Support",
+            "Business Banking Account",
+            "Business Tax Consultation",
+          ],
           fee: "",
           savings: "SAVE $468",
         },
@@ -20162,7 +21302,12 @@ export const variants = {
             },
           ],
           include: "The Gold package, and:",
-          list: ["Business Contract Templates", "Expedited Filing", "FedEx Delivery", "Domain Name + Business Email"],
+          list: [
+            "Business Contract Templates",
+            "Expedited Filing",
+            "FedEx Delivery",
+            "Domain Name + Business Email",
+          ],
           fee: "",
           savings: "SAVE $908",
         },
@@ -20216,7 +21361,8 @@ export const variants = {
                 },
               },
               {
-                label: "Initial report due May 1st of the year following formation or qualification.",
+                label:
+                  "Initial report due May 1st of the year following formation or qualification.",
                 type: "label",
               },
             ],
@@ -20228,7 +21374,8 @@ export const variants = {
       },
       services: {
         header: "All plans include:",
-        text: "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
+        text:
+          "No matter if you run a small business, startup, or a large company. Our pricing is designed to help you scale your business and do high-quality work every time you need to get things done. ",
         benefits: [
           {
             label: "Setup Business Banking Account",
@@ -20242,7 +21389,8 @@ export const variants = {
           {
             label: "Next Business Day Processing",
             header: "Next Business Day Processing",
-            text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
+            text:
+              "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day.\n\nWhy You Need It: State filing times can already feel long sometimes, we don’t want to contribute to the wait.",
           },
           {
             label: "Certified Copy - Articles of Organization",
@@ -20308,10 +21456,14 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We will review the information, prepare your organization documents, and send them\n" + "to the state of formation.",
+                          text:
+                            "We will review the information, prepare your organization documents, and send them\n" +
+                            "to the state of formation.",
                         },
                         {
-                          text: " Every LLC must have Articles of organization — they are often\n" + "required to show proof of your business formation status to banks and other entities.\n",
+                          text:
+                            " Every LLC must have Articles of organization — they are often\n" +
+                            "required to show proof of your business formation status to banks and other entities.\n",
                           header: "Why You Need It",
                         },
                       ],
@@ -20347,10 +21499,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We conduct a thorough name search with the state corporation database and will\n" + "work with you as long as needed to find an available company name.",
+                          text:
+                            "We conduct a thorough name search with the state corporation database and will\n" +
+                            "work with you as long as needed to find an available company name.",
                         },
                         {
-                          text: "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
+                          text:
+                            "Two businesses cannot be named the same thing, so you need to find a business name unique to you.",
                           header: "Why You Need It",
                         },
                       ],
@@ -20393,21 +21548,31 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
+                          text:
+                            "Every new incorporation order is eligible for 1 full year of FREE Registered Agent service.",
                         },
                         {
-                          text: "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" + "an invaluable\n" + "service that will eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            "As your Registered Agent, we will use our address to accept official legal correspondence and then deliver it to you. This is\n" +
+                            "an invaluable\n" +
+                            "service that will eliminate junk mail and limit personal information available to third parties.",
                         },
                         {
-                          text: " Registered Agent service is included on all packages for 1 full year\n" + "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" + "renew or cancel service.",
+                          text:
+                            " Registered Agent service is included on all packages for 1 full year\n" +
+                            "not the typical 6 months that some of our competitors advertise. At the end of the year you will be invoiced and have the option to\n" +
+                            "renew or cancel service.",
                           header: "Important",
                         },
                         {
-                          text: "The annual fee for Registered Agent service is $119",
+                          text:
+                            "The annual fee for Registered Agent service is $119",
                         },
                         {
                           header: "Why You Need It:",
-                          text: " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" + "eliminate junk mail and limit personal information available to third parties.",
+                          text:
+                            " It is required for LLCs to have a Registered Agent. It is also an invaluable service that will\n" +
+                            "eliminate junk mail and limit personal information available to third parties.",
                         },
                       ],
                     },
@@ -20462,7 +21627,8 @@ export const variants = {
                             "We teamed up with Bank of America® to help you take advantage of perks they offer to entrepreneurs to help their small business grow. Incfile clients have the opportunity to receive an exclusive offer from Bank of America® to help establish your small business banking account.",
                         },
                         {
-                          text: "It’s important to keep your personal & business expenses separate when you have an an LLC.",
+                          text:
+                            "It’s important to keep your personal & business expenses separate when you have an an LLC.",
                           header: "Why You Need It",
                         },
                       ],
@@ -20502,7 +21668,8 @@ export const variants = {
                             "The Statement and Resignation of the Organizer is a document signed by the Organizer which identifies the initial members of the Limited Liability Company. A signed statement will be included with your filing packet and can be used to assist in the establishment of a business checking account.",
                         },
                         {
-                          text: "This document relinquishes the Organizer’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Organization.",
+                          text:
+                            "This document relinquishes the Organizer’s duties and provides official documentation stating who the Members (and Managers, if applicable) are. This might be required to establish a business bank account or show proof of ownership to other Organization.",
                           header: "Why You Need It",
                         },
                       ],
@@ -20538,10 +21705,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
+                          text:
+                            "We are always here to help no matter how long ago you placed your order, whether you have a general question or need a copy of a previously filed document. ",
                         },
                         {
-                          text: "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
+                          text:
+                            "Sometimes just picking up the phone and getting a quick answer from a business specialist is good for the soul. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -20589,10 +21758,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This feature allows you to review the status of your order in real time.",
+                          text:
+                            "This feature allows you to review the status of your order in real time.",
                         },
                         {
-                          text: "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
+                          text:
+                            "State filing times can be longer than expected, so this gives you full access to understanding your order status.",
                           header: "Why You Need It",
                         },
                       ],
@@ -20632,7 +21803,8 @@ export const variants = {
                             "Incorporating a new business can burden owners with complicated tax filings . As a client you are entitled to receive a free no obligation 30 minutes consultation with a certified tax professional who can answer questions regarding the tax commitments of your company. ",
                         },
                         {
-                          text: "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
+                          text:
+                            "Get advice right from the start so you’re not stuck doing something that could cost you additional tax dollars. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -20668,10 +21840,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
+                          text:
+                            "You will be able to access your incorporation documents online 24/7. You can also download your documents at anytime you wish, review company information, and track all orders in real-time. ",
                         },
                         {
-                          text: "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
+                          text:
+                            "So you have a one-stop-shop for all your business management needs — beyond just your business formation — for the lifetime of your LLC. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -20707,10 +21881,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
+                          text:
+                            "We strive to ensure that every order received is prepared and forwarded to the state within 1 business day. ",
                         },
                         {
-                          text: "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
+                          text:
+                            "State filing times can already feel long sometimes, we don’t want to contribute to the wait. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -20753,10 +21929,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
+                          text:
+                            "Never miss an important filing date again. Lifetime Company Alerts is designed to send email and text notifications informing clients of compulsory state filings such as Annual Reports, Business Licenses, Statement of Information etc. ",
                         },
                         {
-                          text: "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
+                          text:
+                            "Who has time to track the date you need to review your Annual Report, Business Licenses and other official documents? We got you. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -20804,13 +21982,16 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
+                          text:
+                            "An email will be sent shortly after the completion of your order. You have the option to redeem a website that will be user-friendly on all devices and give your business a professional appearance.",
                         },
                         {
-                          header: "All free websites are subject to Xoopah.com's $20/month hosting rates.",
+                          header:
+                            "All free websites are subject to Xoopah.com's $20/month hosting rates.",
                         },
                         {
-                          text: "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
+                          text:
+                            "Your business website is your digital business card — don’t lose customers by appearing out of date. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -20868,7 +22049,8 @@ export const variants = {
                             "An Employer Identification Number (EIN) is a nine-digit number that is assigned by the IRS and used to identify taxpayers. Providing an EIN is required to open a business bank account and is required to file business tax returns. We will apply and obtain your EIN from the IRS electronically. This option is the fastest way to obtain the EIN. ",
                         },
                         {
-                          text: "An EIN is required to open a business bank account and to file business tax returns. ",
+                          text:
+                            "An EIN is required to open a business bank account and to file business tax returns. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -20912,16 +22094,18 @@ export const variants = {
                       items: [
                         {
                           text:
-                            "Many LLCs elect to be treated as an S-Corporation for tax purposes, as such all Gold and Platinum LLC orders include the preparation and filing of the IRS Form 2553.\n" +
+                            "Many LLCs elect to be treated as an S Corporation for tax purposes, as such all Gold and Platinum LLC orders include the preparation and filing of the IRS Form 2553.\n" +
                             "If you decide that this is the right tax classification for your LLC you can initiate the preparation and filing of the IRS Form 2553 directly from the services tab of your client dashboard.\n" +
                             "The form will be generated upon request at which time a request will be for the digital signature from the members. Upon receipt of the signature(s) the form will be submitted directly to the IRS.",
                         },
                         {
-                          text: "Please note the Form 2553 is time sensitive and must be filed with the IRS within 75 days of your corporation filing date in order to obtain S-corporation tax status for the current year. ",
+                          text:
+                            "Please note the Form 2553 is time sensitive and must be filed with the IRS within 75 days of your corporation filing date in order to obtain S-corporation tax status for the current year. ",
                           header: "IMPORTANT",
                         },
                         {
-                          text: "Electing to be taxed as an S-Corp can save you thousands of dollars a year. It’s best to consult with a tax specialist to see if this is the right business move for you (we offer a free 30-minute tax consultation with every order). ",
+                          text:
+                            "Electing to be taxed as an S Corp can save you thousands of dollars a year. It’s best to consult with a tax specialist to see if this is the right business move for you (we offer a free 30-minute tax consultation with every order). ",
                           header: "Why You Need It",
                         },
                       ],
@@ -20964,7 +22148,8 @@ export const variants = {
                             "The operating agreement for a limited liability company is a private agreement between the members/owners of the LLC, and it details the ownership, rights, and responsibilities of the LLC members. The operating agreement we provide for your use covers all of the most commonly used provisions and will be customized based on your specific company information provided during the placing of your order. ",
                         },
                         {
-                          text: "Perhaps the most important document for an LLC, this is where you will “put in stone” your LLC’s rules and structure that will create a framework for your entire business. ",
+                          text:
+                            "Perhaps the most important document for an LLC, this is where you will “put in stone” your LLC’s rules and structure that will create a framework for your entire business. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -21003,10 +22188,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
+                          text:
+                            "The banking resolution is a resolution which may be adopted by the members to authorize the opening of a bank account, and it also designates who has signature authority for the bank account. ",
                         },
                         {
-                          text: "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
+                          text:
+                            "This document will authorize the opening of a bank account and designate who has signature authority on the account ",
                           header: "Why You Need It",
                         },
                       ],
@@ -21045,10 +22232,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
+                          text:
+                            "Your search for the right legal template stops here. Get access to 25+ high quality legal documents written by a business attorney to help aid in keeping your business contractually protected. ",
                         },
                         {
-                          text: "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
+                          text:
+                            "It’s important to keep your business contractually protected, but it’s hard to know where to go to get an agreement or legal form and paying an attorney to draft them can be expensive. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -21090,10 +22279,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
+                          text:
+                            "Platinum packages are eligible for 1 full year of FREE domain name & email service. At the end of the year you will be invoiced and have the option to renew or cancel service. ",
                         },
                         {
-                          text: "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
+                          text:
+                            "Every website needs its own domain, so this will save you a necessary expense and help your business appear more official by using a matching domain email versus an email address from an automated service like Gmail or Hotmail. ",
                           header: "Why You Need It",
                         },
                       ],
@@ -21154,10 +22345,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
+                          text:
+                            "The Business Formation Kit is a professional box to organize your company documents. Each quality box is personalized with the name of your company on the spine and includes easy to use tabs and a transfer ledger. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -21212,7 +22405,8 @@ export const variants = {
                             "The Business Formation Kit is a professional binder enclosed in a matching slip case, customized with the name of your company on the insert. It includes a metal die-cast corporate embossing seal, customized with the name of your company as well as the date and state of formation spine. ",
                         },
                         {
-                          text: "Keep all of your LLC documents in one easy-to-locate spot ",
+                          text:
+                            "Keep all of your LLC documents in one easy-to-locate spot ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -21349,11 +22543,13 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
+                          text:
+                            "As a courtesy, your filed documents will be made available online from your client dashboard immediately upon the state returning the filed documents. You will receive a notification when your company formation documents are available. (Included with all packages) ",
                         },
                         {
                           header: "Why You Need It:",
-                          text: "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
+                          text:
+                            "Never lose a document or need to keep a paper trail again — anytime you need anything you’ve purchased, it will be available to you in your dashboard ",
                         },
                       ],
                     },
@@ -21388,10 +22584,12 @@ export const variants = {
                     subcontent: {
                       items: [
                         {
-                          text: "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
+                          text:
+                            "This option uses express shipping to deliver completed documents within 1 - 3 business days. (Included with Gold and Platinum Package) ",
                         },
                         {
-                          text: "In a rush to set up your business and get started with making money? We got you. ",
+                          text:
+                            "In a rush to set up your business and get started with making money? We got you. ",
                           header: "Why You Need It:",
                         },
                       ],
@@ -21432,7 +22630,9 @@ export const variants = {
 
 export const trusted = {
   header: "Trusted by over 500,000+ business owners since 2004.",
-  text: "We have dedicated much time and effort to being fully transparent by providing you exact final pricing before getting started. We also inform you of any necessary annual \n" + "filings and fees required by the state.",
+  text:
+    "We have dedicated much time and effort to being fully transparent by providing you exact final pricing before getting started. We also inform you of any necessary annual \n" +
+    "filings and fees required by the state.",
   cards: [
     {
       image: "entrepreneur-360-6691",
@@ -21471,7 +22671,8 @@ export const trusted = {
       items: [
         {
           question: "Does the price quoted include the state filing fee?",
-          answer: "Yes, the price you see at the bottom of the page includes the state prescribed fee that is required to file the Articles of Incorporation / Organization.",
+          answer:
+            "Yes, the price you see at the bottom of the page includes the state prescribed fee that is required to file the Articles of Incorporation / Organization.",
         },
         {
           question: "Should I reserve my company name before placing an order?",

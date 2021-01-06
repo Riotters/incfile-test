@@ -57,7 +57,7 @@ const TravelAgency = () => (
       </p>
       <ButtonsBox>
         <Button
-            externalLink
+          externalLink
           theme="primary56"
           marginMD="0 24px 0 0"
           arrow
@@ -239,7 +239,7 @@ in the U.S. by 2020"
             />
 
             <Adventages
-              headline="Travel agency profits have also doubled from around 6% of revenue to 12%"
+              headline="Travel agency profits have also doubled from around 6 percent of revenue to 12 percent"
               width="100%"
             />
 

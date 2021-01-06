@@ -10,7 +10,11 @@ export const top = {
 
 export const perks = {
   header: `Perks Included When You Create`,
-  list: [`Answer a faw easy questions in 5 minutes or less`, `We prepare and file your articles directly with the Secretary of State`, `Receive your filed documents in the mail.`],
+  list: [
+    `Answer a faw easy questions in 5 minutes or less`,
+    `We prepare and file your articles directly with the Secretary of State`,
+    `Receive your filed documents in the mail.`,
+  ],
 };
 
 export const trust = {
@@ -33,7 +37,11 @@ export const trust = {
 
 export const steps = {
   header: `Start Your Business in 3 Easy Steps`,
-  list: [`Our packages start at $0 plus state filing fees.`, `All orders are filed using next business day processing.`, `Form you LLC in 3 easy steps in 5 minutes or less.`],
+  list: [
+    `Our packages start at $0 plus state filing fees.`,
+    `All orders are filed using next business day processing.`,
+    `Form you LLC in 3 easy steps in 5 minutes or less.`,
+  ],
   button: {
     text: `Start my LLC`,
     url: `/`,
@@ -47,7 +55,7 @@ export const differences = {
     {
       header: `LLC`,
       header2: `Ongoing File Requirements`,
-      text: `Unlike the corporation the LLC is not required to hold meetings annually or maintain bylaws furthermore ownership is expressed by the % each member owns unlike the corporation where ownership is represented by shares of stock.`,
+      text: `Unlike the corporation the LLC is not required to hold meetings annually or maintain bylaws furthermore ownership is expressed by the percent each member owns unlike the corporation where ownership is represented by shares of stock.`,
       header3: `Most Versatile`,
       text2: `The LLC is the most versatile of all entity types as members can elect receive the same tax treatment of an S or C Corporation. The ease of management, limited liability and ability to designate corporate tax treatment make the LLC our most favored entity type.`,
       header4: `Pass through Tax Entity`,
@@ -98,7 +106,11 @@ export const variants = {
         },
       ],
       include: `The sliver services includes:`,
-      list: [`Prepare & Filing the Articles of Organization`, `Unlimited Name Searches`, `FREE Registered Agent for a year!`],
+      list: [
+        `Prepare & Filing the Articles of Organization`,
+        `Unlimited Name Searches`,
+        `FREE Registered Agent for a year!`,
+      ],
     },
     {
       variant: `Most popular`,
@@ -122,7 +134,18 @@ export const variants = {
         },
       ],
       include: `The sliver package, and:`,
-      list: [`EIN Business Tax Number`, `IRS Form 2553`, `Operating Agreement`, `Banking Resolution`, `Express Shipping`, `Lifetime Company Alerts`, `Online Access Dashboard`, `Unlimited Phone & Email Support`, `Business Banking Account`, `Business Tax Consultation`],
+      list: [
+        `EIN Business Tax Number`,
+        `IRS Form 2553`,
+        `Operating Agreement`,
+        `Banking Resolution`,
+        `Express Shipping`,
+        `Lifetime Company Alerts`,
+        `Online Access Dashboard`,
+        `Unlimited Phone & Email Support`,
+        `Business Banking Account`,
+        `Business Tax Consultation`,
+      ],
     },
     {
       variant: `Best value`,
@@ -146,7 +169,12 @@ export const variants = {
         },
       ],
       include: `The gold package, and:`,
-      list: [`Business Contract Templates`, `Expedited Filing`, `FedEx Delivery`, `Domain Name + Business Email`],
+      list: [
+        `Business Contract Templates`,
+        `Expedited Filing`,
+        `FedEx Delivery`,
+        `Domain Name + Business Email`,
+      ],
     },
   ],
 };

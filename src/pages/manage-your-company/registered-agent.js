@@ -34,7 +34,7 @@ const RegisteredAgent = () => (
       productUrl={`${process.env.ORDER_URL}/ra-form.php`}
       productName="Registered Agent Service"
       productPrice={servicePrice.ra}
-      productDescription="Get an official registered agent to receive legal correspondence and tax documents for your business."
+      productDescription="Get an official Registered Agent to receive legal correspondence and tax documents for your business."
     />
     <Top
       imageName="mrs-bulb-registered-agent"

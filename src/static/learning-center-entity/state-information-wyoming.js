@@ -44,7 +44,7 @@ export const launchBusiness = {
 };
 
 export const subscription = {
-  header: `Subscribe now to learn more about LLC and starting a business`,
+  header: `Subscribe Now To Learn More About LLC and Starting a Business`,
   button: {
     text: `Subscribe Now`,
     url: `/`,
@@ -205,7 +205,7 @@ export const corporation = [
     buttons: [
       {
         content: {
-          text: "Start Your S-Corp",
+          text: "Start Your S Corp",
           url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=WY`,
         },
         arrow: true,
@@ -213,7 +213,7 @@ export const corporation = [
       },
       {
         content: {
-          text: "Start Your C-Corp",
+          text: "Start Your C Corp",
           url: ORDER_URL,
         },
         arrow: true,
@@ -898,7 +898,7 @@ export const corporation = [
           list: [
             "Some people establish companies outside of the state they live in and will use a Registered Agentservice to provide an address for receiving legal documentation in the state.",
             "The Registered Agent address is listed on public records on the Secretary of State's website. If you do not want your own name and address to be registered, you should use a Registered Agent service.",
-            "The Registered Agent must be present or available during normal business hours (9 a.m. to 5 p.m. Monday to Friday) to receive any legal correspondence delivered, since the type of documents delivered to the registered agent require a signature on delivery.",
+            "The Registered Agent must be present or available during normal business hours (9 a.m. to 5 p.m. Monday to Friday) to receive any legal correspondence delivered, since the type of documents delivered to the Registered Agent require a signature on delivery.",
             "Some people travel or are not always at their business location to receive these documents.",
           ],
           text:

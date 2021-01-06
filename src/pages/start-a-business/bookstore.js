@@ -54,14 +54,14 @@ const GymPersonalTraining = () => (
       </p>
       <ButtonsBox>
         <Button
-            externalLink
-            theme="primary56"
-            marginMD="0 24px 0 0"
-            arrow
-            content={{
-                url: `${process.env.ORDER_URL}/form-order-now.php`,
-                text: "Start Now",
-            }}
+          externalLink
+          theme="primary56"
+          marginMD="0 24px 0 0"
+          arrow
+          content={{
+            url: `${process.env.ORDER_URL}/form-order-now.php`,
+            text: "Start Now",
+          }}
         />
       </ButtonsBox>
 
@@ -209,14 +209,14 @@ const GymPersonalTraining = () => (
 
             <div style={{ marginBottom: "30px", marginTop: "80px" }}>
               <Adventages
-                headline="The number of independent bookstores grew by 35% between 2009 and 2015, with nearly 600 stores opened"
+                headline="The number of independent bookstores grew by 35 percent between 2009 and 2015, with nearly 600 stores opened"
                 width="100%"
               />
             </div>
 
             <div style={{ marginBottom: "30px" }}>
               <Adventages
-                headline="In 2017, print book sales were up almost 11% from 2013, and sales of printed books have increased every year for the last five years."
+                headline="In 2017, print book sales were up almost 11 percent from 2013, and sales of printed books have increased every year for the last five years."
                 width="100%"
               />
             </div>

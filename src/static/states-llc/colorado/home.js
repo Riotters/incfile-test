@@ -579,7 +579,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `“The registered agent is the individual or business responsible for accepting service of process for an entity and isn’t necessarily an owner or director. The registered agent is responsible for forwarding service of process to the entity.“`,
+    content: `“The Registered Agent is the individual or business responsible for accepting service of process for an entity and isn’t necessarily an owner or director. The Registered Agent is responsible for forwarding service of process to the entity.“`,
     marginBottom: 48,
   },
   {
@@ -770,7 +770,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Colorado registered agent service`,
+      text: `Order Incfile's Colorado Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1188,7 +1188,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Colorado registered agent service`,
+      text: `Incfile's Colorado Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1669,7 +1669,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more for less.`,
+  header: `How We Compare <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

@@ -16,11 +16,11 @@ import Subscription from "../../atomic/sections/learning-center-entity/state-inf
 import Articles from "../../atomic/sections/articles";
 //Texts
 import {
-	top,
-	tabPages,
-	agents,
-	launchBusiness,
-	subscription,
+  top,
+  tabPages,
+  agents,
+  launchBusiness,
+  subscription,
 } from "../../static/learning-center-entity/state-information-wyoming";
 import LeftTabPages from "../../atomic/sections/choose-your-business/left-tab-pages";
 import MainPageContent from "../../atomic/states-llc/page-content";
@@ -30,48 +30,48 @@ import CorporationLayout from "../../atomic/partials/corporation-layout";
 import { getFullPricesAndFilings } from "../../api/Api";
 
 const WyomingCorporation = () => {
-	const [dataApi, setDataApi] = React.useState({});
-	React.useEffect(() => {
-		getFullPricesAndFilings("Wyoming", "Corporation").then((data) => {
-			setDataApi(data);
-		});
-	}, []);
+  const [dataApi, setDataApi] = React.useState({});
+  React.useEffect(() => {
+    getFullPricesAndFilings("Wyoming", "Corporation").then((data) => {
+      setDataApi(data);
+    });
+  }, []);
 
-	return (
-		<Layout>
-			<SEO
-				title="Registered Agents for your Wyoming Corporation | Incfile.com "
-				description="Does your corporation need a registered agent? Learn more about finding a qualified registered agent in Wyoming here."
-			/>
-			<Top
-				imageName="mr-bulb-corporation-california-8302"
-				imageAlt="Mrs Bulb and with checklist"
-				ovalColor="purple-2"
-				textWidth="530"
-			>
-				<h1>{top.header}</h1>
-				<HeadingP size={2} big color={color.grey2}>
-					{top.text}
-				</HeadingP>
-				<Buttonsbox>
-					<Button content={top.buttons[0]} theme="primary56" arrow />
-				</Buttonsbox>
-			</Top>
-			<CorporationLayout>
-				<LeftTabPages content={tabPages} nonDIY />
-				<MainPageContent>
-					<ContentMap content={agents} />
-				</MainPageContent>
-			</CorporationLayout>
-			<Rocket content={launchBusiness} />
-			<Requirements data={dataApi} />
-			<LearnMore data={dataApi} />
-			<QuickLinks />
-			<Variants data={dataApi} />
-			<Subscription content={subscription} />
-			<Articles />
-		</Layout>
-	);
+  return (
+    <Layout>
+      <SEO
+        title="Registered Agents for your Wyoming Corporation | Incfile.com "
+        description="Does your corporation need a Registered Agent? Learn more about finding a qualified Registered Agent in Wyoming here."
+      />
+      <Top
+        imageName="mr-bulb-corporation-california-8302"
+        imageAlt="Mrs Bulb and with checklist"
+        ovalColor="purple-2"
+        textWidth="530"
+      >
+        <h1>{top.header}</h1>
+        <HeadingP size={2} big color={color.grey2}>
+          {top.text}
+        </HeadingP>
+        <Buttonsbox>
+          <Button content={top.buttons[0]} theme="primary56" arrow />
+        </Buttonsbox>
+      </Top>
+      <CorporationLayout>
+        <LeftTabPages content={tabPages} nonDIY />
+        <MainPageContent>
+          <ContentMap content={agents} />
+        </MainPageContent>
+      </CorporationLayout>
+      <Rocket content={launchBusiness} />
+      <Requirements data={dataApi} />
+      <LearnMore data={dataApi} />
+      <QuickLinks />
+      <Variants data={dataApi} />
+      <Subscription content={subscription} />
+      <Articles />
+    </Layout>
+  );
 };
 
 export default WyomingCorporation;

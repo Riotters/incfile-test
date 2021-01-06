@@ -85,14 +85,14 @@ export const businessTaxesPageContent = {
       type: `paragraph`,
       content: `<b>New York Single Filer Tax Brackets:</b> </br></br>    
                       <ul>
-                      <li>For tax bracket: <b>$0.00+</b>, tax rate is <b> 4% </b> </li>
-                      <li>For tax bracket:<b> $8,500.00+</b>, tax rate is <b> 4.5% </b></li> 
-                      <li>For tax bracket:<b> $11,700.00+</b>, tax rate is <b> 5.25% </b> </li> 
-                      <li>For tax bracket:<b> $13,900.00+</b>, tax rate is <b> 5.9% </b></li> 
-                      <li>For tax bracket:<b> $21,400.00+</b>, tax rate is <b> 6.21% </b></li> 
-                      <li>For tax bracket:<b> $80,650.00+</b>, tax rate is<b> 6.49% </b></li> 
-                      <li>For tax bracket:<b> $215,400.00+</b>, tax rate is <b> 6.85% </b></li> 
-                      <li>For tax bracket:<b> $1,077,550.00+</b>, tax rate is <b> 8.82% </b></li> 
+                      <li>For tax bracket: <b>$0.00+</b>, tax rate is <b> 4 percent </b> </li>
+                      <li>For tax bracket:<b> $8,500.00+</b>, tax rate is <b> 4.5 percent </b></li> 
+                      <li>For tax bracket:<b> $11,700.00+</b>, tax rate is <b> 5.25 percent </b> </li> 
+                      <li>For tax bracket:<b> $13,900.00+</b>, tax rate is <b> 5.9 percent </b></li> 
+                      <li>For tax bracket:<b> $21,400.00+</b>, tax rate is <b> 6.21 percent </b></li> 
+                      <li>For tax bracket:<b> $80,650.00+</b>, tax rate is<b> 6.49 percent </b></li> 
+                      <li>For tax bracket:<b> $215,400.00+</b>, tax rate is <b> 6.85 percent </b></li> 
+                      <li>For tax bracket:<b> $1,077,550.00+</b>, tax rate is <b> 8.82 percent </b></li> 
                       </ul>`,
     },
 
@@ -161,10 +161,10 @@ export const businessTaxesPageContent = {
       styles: { margin: `56px 0` },
       content: {
         list: [
-          `<strong>New York, NY</strong> sales tax rate is <strong>8.875%</strong>`,
-          `<strong>Buffalo, NY</strong> sales tax rate is <strong>8.75%</strong>`,
-          `<strong>Rochester, NY</strong> sales tax rate is <strong>8%</strong>`,
-          `<strong>Albany, NY</strong> sales tax rate is <strong>8%</strong>`,
+          `<strong>New York, NY</strong> sales tax rate is <strong>8.875 percent</strong>`,
+          `<strong>Buffalo, NY</strong> sales tax rate is <strong>8.75 percent</strong>`,
+          `<strong>Rochester, NY</strong> sales tax rate is <strong>8 percent</strong>`,
+          `<strong>Albany, NY</strong> sales tax rate is <strong>8 percent</strong>`,
         ],
       },
     },
@@ -190,7 +190,7 @@ export const businessTaxesPageContent = {
     },
     {
       type: `paragraph`,
-      content: `All New York LLC business members or managers who take profits out of the LLC will need to pay self-employment tax. This tax is also known as FICA, Social Security or Medicare tax. It applies to all the earnings you withdraw from your New York business. The current self-employment tax rate is 15.3%.`,
+      content: `All New York LLC business members or managers who take profits out of the LLC will need to pay self-employment tax. This tax is also known as FICA, Social Security or Medicare tax. It applies to all the earnings you withdraw from your New York business. The current self-employment tax rate is 15.3 percent.`,
     },
     {
       type: `paragraph`,

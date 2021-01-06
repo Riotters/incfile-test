@@ -95,7 +95,7 @@ const ImageBoxes = styled.div`
   }
 `;
 
-const dropdownOptions = ["LLC", "S-Corporation", "C-Corporation", "Nonprofit"];
+const dropdownOptions = ["LLC", "S Corporation", "C Corporation", "Nonprofit"];
 const dropdownOptions2 = states.state.map((state) => state.name);
 
 const SeletionsSection = ({ content, id }) => {

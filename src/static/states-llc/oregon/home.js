@@ -93,7 +93,7 @@ export const howToGuide = [
           <a href="/oregon-llc/registered-agents-oregon-llc/">Learn more about Oregon Registered Agents.</a>`,
         },
         {
-          question: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
+          question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
           answer: `You will need an EIN to identify your business with the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Oregon LLC business formation process.`,
         },
         {
@@ -539,7 +539,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `“A registered agent is an individual or a business entity located at a physical street address in Oregon, whose sole responsibility is to accept legal documents (service of process, lawsuits, liens, subpoenas, etc.) on behalf of the business. An entity cannot designate itself as its own registered agent.<br>The registered office is the physical street address where the registered agent is located during normal business hours. The registered office address may be the same as the business' place of business. The registered office address must be a physical street address located in Oregon.<br>The registered office address is where the Corporation Division mails correspondence, renewal and late notices, unless a separate mailing address for the business is provided.​​”`,
+    content: `“A Registered Agent is an individual or a business entity located at a physical street address in Oregon, whose sole responsibility is to accept legal documents (service of process, lawsuits, liens, subpoenas, etc.) on behalf of the business. An entity cannot designate itself as its own Registered Agent.<br>The registered office is the physical street address where the Registered Agent is located during normal business hours. The registered office address may be the same as the business' place of business. The registered office address must be a physical street address located in Oregon.<br>The registered office address is where the Corporation Division mails correspondence, renewal and late notices, unless a separate mailing address for the business is provided.​​”`,
     marginBottom: 16,
   },
   {
@@ -640,7 +640,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Oregon registered agent service`,
+      text: `Order Incfile's Oregon Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -742,7 +742,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Oregon registered agent service`,
+      text: `Order Incfile's Oregon Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1155,7 +1155,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Oregon registered agent service`,
+      text: `Incfile's Oregon Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1591,7 +1591,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more for less.`,
+  header: `How We Compare <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

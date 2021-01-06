@@ -95,7 +95,7 @@ export const howToGuide = [
           <a href="/hawaii-llc/registered-agents-hawaii-llc/">Learn more about Hawaii Registered Agents.</a>`,
         },
         {
-          question: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
+          question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
           answer: `You will need an EIN to identify your business with the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Hawaii LLC business formation process.`,
         },
         {
@@ -554,7 +554,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `“A registered agent is the agent for service of process for a business, as identified by the business in its business filings. A registered agent must be an individual or entity authorized to transact business in this State and must be physically present in the State. In general, the duty of the registered agent is to receive service of process, notice or demand on behalf of the business the agent is hired to represent and to inform the business of such service.”`,
+    content: `“A Registered Agent is the agent for service of process for a business, as identified by the business in its business filings. A Registered Agent must be an individual or entity authorized to transact business in this State and must be physically present in the State. In general, the duty of the Registered Agent is to receive service of process, notice or demand on behalf of the business the agent is hired to represent and to inform the business of such service.”`,
     marginBottom: 40,
   },
   {
@@ -650,7 +650,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Hawaii registered agent service`,
+      text: `Order Incfile's Hawaii Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -747,7 +747,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Hawaii registered agent service`,
+      text: `Order Incfile's Hawaii Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1157,7 +1157,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Hawaii registered agent service`,
+      text: `Incfile's Hawaii Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1625,7 +1625,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more for less.`,
+  header: `How We Compare <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [
