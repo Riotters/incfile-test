@@ -55,7 +55,7 @@ export const launchBusiness = {
 };
 
 export const subscription = {
-  header: `Subscribe now to learn more about LLC and starting a business`,
+  header: `Subscribe Now To Learn More About LLC and Starting a Business`,
   button: {
     text: `Subscribe Now`,
     url: `/`,
@@ -219,7 +219,7 @@ export const corporation = [
     buttons: [
       {
         content: {
-          text: "Start Your S-Corp",
+          text: "Start Your S Corp",
           url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=FL`,
         },
         arrow: true,
@@ -227,7 +227,7 @@ export const corporation = [
       },
       {
         content: {
-          text: "Start Your C-Corp",
+          text: "Start Your C Corp",
           url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=FL`,
         },
         arrow: true,
@@ -2112,7 +2112,7 @@ export const taxes = [
   {
     type: "button",
     content: {
-      text: "File Your Florida S-Corp Tax Election with Incfile",
+      text: "File Your Florida S Corp Tax Election with Incfile",
       url: "/llc-s-corp-election/",
     },
     theme: "primary56",

@@ -22,6 +22,7 @@ import TextCheck from "../../../components/static-check/text-only";
 import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
 import TextBlockWithNumberCounting from "../../molecules/mixed-blocks/text-block-with-absolute-number";
 import AbsoluteShapeCurveElement from "../../elements/absolute-shape-curve-e";
+import Accordion from "../../../atomic/organisms/accordion/accordion";
 
 // Bg box CTA
 import BgBoxPersonalOA from "../../../images/icons/states/personal-oa.inline.png";
@@ -100,7 +101,9 @@ const HowToGuide = ({ content, data, modalAction }) => {
   return (
     <Wrapper>
       {/* Why choose section */}
-      <Heading size={2} template={3} left>{parse(content.whyChoose.heading)}</Heading>
+      <Heading size={2} template={3} left>
+        {parse(content.whyChoose.heading)}
+      </Heading>
       <Paragraph big mixed>
         {parse(content.whyChoose.text1)}
       </Paragraph>
@@ -123,7 +126,13 @@ const HowToGuide = ({ content, data, modalAction }) => {
       <Paragraph big>{content.whyChoose.text4}</Paragraph>
 
       {/* Main Steps */}
-      <Heading size={2} template={3} left bottomMargin="40" style={{ marginTop: `48px` }}>
+      <Heading
+        size={2}
+        template={3}
+        left
+        bottomMargin="40"
+        style={{ marginTop: `48px` }}
+      >
         {content.mainSteps.heading3}
       </Heading>
 
@@ -304,7 +313,9 @@ const HowToGuide = ({ content, data, modalAction }) => {
           content={content.mainSteps.step4.cta}
         />
 
-        <Heading size={4} template={3}>{content.mainSteps.step4.heading2}</Heading>
+        <Heading size={4} template={3}>
+          {content.mainSteps.step4.heading2}
+        </Heading>
         <Paragraph big mixed={true}>
           {parse(content.mainSteps.step4.text4)}
         </Paragraph>
@@ -375,7 +386,13 @@ const HowToGuide = ({ content, data, modalAction }) => {
       {content.otherInfo.map((item, i) => (
         <div>
           {item.type === "heading" && (
-            <Heading size={item.size} style={{ marginTop: `42px` }} template={item.template} center={item.center} left={item.left}>
+            <Heading
+              size={item.size}
+              style={{ marginTop: `42px` }}
+              template={item.template}
+              center={item.center}
+              left={item.left}
+            >
               {item.content}
             </Heading>
           )}
@@ -384,6 +401,10 @@ const HowToGuide = ({ content, data, modalAction }) => {
             <Paragraph big mixed={true}>
               {parse(item.content)}
             </Paragraph>
+          )}
+
+          {item.type === "accordion" && (
+            <Accordion content={item.content} tab />
           )}
 
           {item.type === "arrow-links" &&
@@ -412,18 +433,19 @@ const HowToGuide = ({ content, data, modalAction }) => {
             />
           )}
 
-            {item.type === "modal-trigger" && (typeof modalAction === "function") && (
-                <ActionButton
-                    content={item.content}
-                    theme={item.theme}
-                    arrow={item.arrow ?? true}
-                    onClick={modalAction}
-                    margin={
-                        item.marginBottom ? `0 auto ${item.marginBottom}px 0` : false
-                    }
-                    marginSM={item.marginBottom ? false : "24px auto 24px 0"}
-                    marginMD={item.marginBottom ? false : "42px auto 56px 0"}
-                />
+          {item.type === "modal-trigger" &&
+            typeof modalAction === "function" && (
+              <ActionButton
+                content={item.content}
+                theme={item.theme}
+                arrow={item.arrow ?? true}
+                onClick={modalAction}
+                margin={
+                  item.marginBottom ? `0 auto ${item.marginBottom}px 0` : false
+                }
+                marginSM={item.marginBottom ? false : "24px auto 24px 0"}
+                marginMD={item.marginBottom ? false : "42px auto 56px 0"}
+              />
             )}
         </div>
       ))}

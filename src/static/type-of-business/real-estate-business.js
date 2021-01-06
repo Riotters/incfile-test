@@ -186,12 +186,12 @@ export const RingText = {
     {
       color: color.blue1,
       text:
-        "The industry has been growing by 9% year on year over the last five years.",
+        "The industry has been growing by 9 percent year on year over the last five years.",
     },
     {
       color: color.yellow1,
       text:
-        "The sale and rental of residential property accounts for around 72% of real estate business income in the US.",
+        "The sale and rental of residential property accounts for around 72 percent of real estate business income in the US.",
     },
   ],
 };

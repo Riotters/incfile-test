@@ -762,7 +762,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Pennsylvania registered agent service`,
+      text: `Order Incfile's Pennsylvania Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1654,7 +1654,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more for less.`,
+  header: `How We Compare <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

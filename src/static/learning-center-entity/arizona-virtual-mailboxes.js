@@ -14,7 +14,7 @@ export const top = {
 };
 
 export const advantages = {
-  header: "Advantages of a Arizona Street Address and Virtual Mailbox",
+  header: "Advantages of an Arizona Street Address and Virtual Mailbox",
   text:
     "There are several advantages to having a real Arizona address with mail scanning. They include:",
   cards: [
@@ -47,7 +47,7 @@ export const faqs = {
     items: [
       {
         question:
-          "Can I use a AZ virtual address as my Registered Agent address?",
+          "Can I use an AZ virtual address as my Registered Agent address?",
         answer: `No, we do not recommend it. Generally speaking, your Arizona Registered Agent should have a real AZ street address where they can receive official, legal correspondence. If you need a Registered Agent in Arizona, Incfile provides a <a href="/manage-your-company/registered-agent/" target="_blank">Registered Agent service</a> that will meet your needs.`,
       },
       {

@@ -53,7 +53,7 @@ export const launchBusiness = {
 };
 
 export const subscription = {
-  header: `Subscribe now to learn more about LLC and starting a business`,
+  header: `Subscribe Now To Learn More About LLC and Starting a Business`,
   button: {
     text: `Subscribe Now`,
     url: `/`,
@@ -209,7 +209,7 @@ export const corporation = [
     button: [
       {
         content: {
-          text: "Start Your S-Corp",
+          text: "Start Your S Corp",
           url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=GA`,
         },
         arrow: true,
@@ -217,7 +217,7 @@ export const corporation = [
       },
       {
         content: {
-          text: "Start Your C-Corp",
+          text: "Start Your C Corp",
           url: `${process.env.ORDER_URL}/form-order-now.php?entityType=CCorporation&entityState=GA`,
         },
         arrow: true,
@@ -1291,7 +1291,7 @@ export const agents = [
   {
     type: "text",
     content:
-      "“The registered agent is the “mailbox” for the corporation. The registered agent is the person or entity located in this state designated by the entity to receive any service of process, documents, or other official communication on its behalf. The registered agent may or may not be an owner, shareholder or officer of the entity. Many entities use their attorney or a professional corporate service company for this service. The registered agent’s address must be a street address in Georgia, and the agent must be located at that address. A post office box or “mail drop” may not be used as the registered agent address.”",
+      "“The Registered Agent is the “mailbox” for the corporation. The Registered Agent is the person or entity located in this state designated by the entity to receive any service of process, documents, or other official communication on its behalf. The Registered Agent may or may not be an owner, shareholder or officer of the entity. Many entities use their attorney or a professional corporate service company for this service. The Registered Agent’s address must be a street address in Georgia, and the agent must be located at that address. A post office box or “mail drop” may not be used as the Registered Agent address.”",
     marginBottom: 48,
   },
   {
@@ -2158,7 +2158,7 @@ export const taxes = [
       {
         header: "Self-Employment Tax",
         text:
-          "In a Georgia S Corporation, your earnings “flow through” from the business to your personal tax return. This means you must pay self-employment tax on those earnings, at a rate of 15.3%. Note that you can deduct standard tax deductions and business expenses.",
+          "In a Georgia S Corporation, your earnings “flow through” from the business to your personal tax return. This means you must pay self-employment tax on those earnings, at a rate of 15.3 percent. Note that you can deduct standard tax deductions and business expenses.",
         svg: SelfEmployedTaxSVG,
         backgroundColor: color.orange2,
         shadowColor: shadow.orange2,
@@ -2207,7 +2207,7 @@ export const taxes = [
   {
     type: "button",
     content: {
-      text: "File Your Georgia S-Corp Tax Election with Incfile",
+      text: "File Your Georgia S Corp Tax Election with Incfile",
       url: "/llc-s-corp-election/",
     },
     theme: "primary56",

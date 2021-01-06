@@ -101,7 +101,7 @@ export const howToGuide = [
             <a href="/north-carolina-llc/registered-agents-north-carolina-llc/">Learn more about North Carolina Registered Agents.</a>`,
         },
         {
-          question: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
+          question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
           answer: `You will need an EIN to identify your business to the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the North Carolina LLC business formation process.`,
         },
         {
@@ -665,7 +665,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's North Carolina registered agent service`,
+      text: `Order Incfile's North Carolina Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -762,7 +762,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's North Carolina registered agent service`,
+      text: `Order Incfile's North Carolina Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1165,7 +1165,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's North Carolina registered agent service`,
+      text: `Incfile's North Carolina Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1629,7 +1629,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more for less.`,
+  header: `How We Compare <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

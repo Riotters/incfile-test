@@ -94,7 +94,7 @@ export const howToGuide = [
             <p><a href="/kentucky-llc/registered-agents-kentucky-llc/" target="_blank">Learn more about Kentucky Registered Agents.</a></p>`,
         },
         {
-          question: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
+          question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
           answer: `You will need an EIN to identify your business to the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Kentucky LLC business formation process.`,
         },
         {
@@ -654,7 +654,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `More about registered agent service`,
+      text: `More about Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -759,7 +759,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Kentucky registered agent service`,
+      text: `Order Incfile's Kentucky Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1161,7 +1161,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Kentucky registered agent service`,
+      text: `Incfile's Kentucky Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1614,7 +1614,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more for less.`,
+  header: `How We Compare <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

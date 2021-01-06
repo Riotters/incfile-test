@@ -11,7 +11,14 @@ export const top = {
 
 export const about = {
   tabs: {
-    panels: [`Starting your LLC`, `Who Can Start an LLC?`, `Where to Start Your LLC?`, `When to Form an LLC`, `Responsibilities for an LLC`, `Create an affordable LLC`],
+    panels: [
+      `Starting your LLC`,
+      `Who Can Start an LLC?`,
+      `Where to Start Your LLC?`,
+      `When to Form an LLC`,
+      `Responsibilities for an LLC`,
+      `Create an affordable LLC`,
+    ],
     content: [
       {
         header: `Starting your Limited Liability Company`,
@@ -78,14 +85,14 @@ export const about = {
                   text: `Every LLC must have a`,
                 },
                 {
-                  text: `registered agent.`,
+                  text: `Registered Agent.`,
                   url: `/manage-your-company/registered-agent/`,
                 },
                 {
                   text: `For small LLCs, this is generally the same person as the managing director or owner.`,
                 },
               ],
-              text: `For small LLCs, this is generally the same person as the managing director or owner. The member — or owner — of an LLC can also serve as the registered agent, but some members will prefer to assign those responsibilities to another individual or company. The registered agent is simply the person who receives official legal and tax correspondence.`,
+              text: `For small LLCs, this is generally the same person as the managing director or owner. The member — or owner — of an LLC can also serve as the Registered Agent, but some members will prefer to assign those responsibilities to another individual or company. The Registered Agent is simply the person who receives official legal and tax correspondence.`,
               text2: [
                 {
                   text: `All of our online`,
@@ -95,7 +102,7 @@ export const about = {
                   url: `${process.env.ORDER_URL}/form-order-now.php`,
                 },
                 {
-                  text: `include a “registered agent” service free for the first year and $119 per year thereafter.`,
+                  text: `include a “Registered Agent” service free for the first year and $119 per year thereafter.`,
                 },
               ],
             },
@@ -183,8 +190,8 @@ export const about = {
       },
       {
         header: "How to Create an LLC without Breaking the Bank",
-        text: `Incfile provides a cost effective service to help you create your LLC. We guide you through the process and handle most of the administrative steps, such as filing the articles of organization, on your behalf. Our basic package also provides a free registered agent service for the first year. If you're looking for help to start an LLC, our comprehensive online formation services provide outstanding value. `,
-      }
+        text: `Incfile provides a cost effective service to help you create your LLC. We guide you through the process and handle most of the administrative steps, such as filing the articles of organization, on your behalf. Our basic package also provides a free Registered Agent service for the first year. If you're looking for help to start an LLC, our comprehensive online formation services provide outstanding value. `,
+      },
     ],
   },
 };
@@ -215,7 +222,7 @@ export const faq = {
       },
       {
         question: `Are Non-US Residents allowed to own a Corporation of LLC?`,
-        answer: `There are no citizenship or residence requirements for ownership of a C Corporation or an LLC. The S Corporation however does not allow nonresident aliens to be shareholders (owner), but any US citizen or resident alien may be a shareholder (owner). You would, of course, require an in state street address for the state to forward official legal and tax correspondence including service of process, known as the registered agent address, but neither residency nor citizenship is required for ownership of a C Corporation or an LLC.`,
+        answer: `There are no citizenship or residence requirements for ownership of a C Corporation or an LLC. The S Corporation however does not allow nonresident aliens to be shareholders (owner), but any US citizen or resident alien may be a shareholder (owner). You would, of course, require an in state street address for the state to forward official legal and tax correspondence including service of process, known as the Registered Agent address, but neither residency nor citizenship is required for ownership of a C Corporation or an LLC.`,
       },
       {
         question: `Can I form an LLC with just one member?`,
