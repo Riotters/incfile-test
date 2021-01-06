@@ -14,8 +14,13 @@ import Oval2SVG from "../../../../images/ovals/top-left-transparent-babyblue1.in
 const Offering = styled.section`
   position: relative;
   background-color: ${color.babyblue3};
-  padding-top: 104px;
-  padding-bottom: 80px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  @media (min-width: 769px) {
+    padding-top: 104px;
+    padding-bottom: 80px;
+  }
 `;
 
 const OfferingSection = ({ className, content }) => (
@@ -30,7 +35,15 @@ const OfferingSection = ({ className, content }) => (
     <ContentCenter>
       <Adventages content={content.cards} paragraphHeader />
     </ContentCenter>
-    <HeadingCenter headline={content.header2} headlineWidth="640" text={content.text} textWidth="770" linkText={content.button.text} linkUrl={content.button.url} useButton={true} />
+    <HeadingCenter
+      headline={content.header2}
+      headlineWidth="640"
+      text={content.text}
+      textWidth="770"
+      linkText={content.button.text}
+      linkUrl={content.button.url}
+      useButton={true}
+    />
   </Offering>
 );
 

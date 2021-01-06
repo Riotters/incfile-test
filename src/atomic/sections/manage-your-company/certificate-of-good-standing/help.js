@@ -12,12 +12,17 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.
 import Oval2SVG from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
 import ArrowLink from "../../../molecules/buttons/text";
-import {PHeading} from "../../../atoms/typography/p-to-heading";
+import { PHeading } from "../../../atoms/typography/p-to-heading";
 
 const Help = styled.section`
   position: relative;
-  padding-top: 75px;
+  padding-top: 64px;
   padding-bottom: 64px;
+
+  @media (min-width: 992px) {
+    padding-top: 144px;
+    padding-bottom: 64px;
+  }
 
   &::before {
     content: "";
@@ -70,7 +75,9 @@ const HelpSection = ({ className, content }) => (
         <Heading size="2" bottomMargin="80" maxWidth="468">
           {content.header}
         </Heading>
-        <PHeading size="3" template={4}>{content.header2}</PHeading>
+        <PHeading size="3" template={4}>
+          {content.header2}
+        </PHeading>
         <Paragraph big>{content.text}</Paragraph>
         <ArrowLink content={content.link} />
       </TextWrapper>

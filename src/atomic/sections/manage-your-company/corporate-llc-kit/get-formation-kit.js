@@ -16,7 +16,7 @@ import CurveSVG from "../../../../images/curves/top-left-bottom-right-big.inline
 const GetFormationKit = styled.section`
   position: relative;
   padding-top: 48px;
-  
+
   @media (min-width: 576px) {
     padding-top: 75px;
   }
@@ -65,7 +65,7 @@ const GetFormationKit = styled.section`
   }
 
   .content-center {
-    padding-top: 88px;
+    padding-top: 96px;
 
     h3 {
       text-align: center;
@@ -82,15 +82,26 @@ const GetFormationKitSection = ({ className, content }) => (
     <Oval className="oval" height="720" width="720" top="35" left="0">
       <Oval2SVG />
     </Oval>
-    <TextImage className="text-image" image="standard-kit-5602" contentWidth="550" contentPadding="85">
-      <Curve top="25" left="-90" color={color.green1} className="curve-svg">
+    <TextImage
+      className="text-image"
+      image="standard-kit-5602"
+      contentWidth="550"
+      contentPadding="85"
+    >
+      <Curve top="25" left="-40" color={color.green1} className="curve-svg">
         <CurveSVG />
       </Curve>
       <Heading size="2">{content.header}</Heading>
       <Paragraph big maxWidth="500">
         {content.text}
       </Paragraph>
-      <Button content={content.button} theme="primary56" marginSM="0 auto" marginLG="0 auto 0 0" arrow />
+      <Button
+        content={content.button}
+        theme="primary56"
+        marginSM="0 auto"
+        marginLG="0 auto 0 0"
+        arrow
+      />
     </TextImage>
     <ContentCenter className="content-center">
       <Heading size="2" maxWidth="770" bottomMargin="0">

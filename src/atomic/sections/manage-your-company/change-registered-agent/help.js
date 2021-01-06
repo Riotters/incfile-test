@@ -14,7 +14,7 @@ import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg
 
 const Help = styled.section`
   position: relative;
-  padding-top: 75px;
+  padding-top: 96px;
   padding-bottom: 48px;
 
   &::before {
@@ -39,7 +39,7 @@ const content2 = {
   button: {
     text: `Order Now`,
     url: `/`,
-  }
+  },
 };
 const dropdownTwoOptions = states.state.map((state) => state.name);
 
@@ -55,15 +55,18 @@ const HelpSection = ({ className, content }) => (
       className="help"
       headlineWidth="450"
       objectWidth="550"
-      object={<Card className="card"
-        headline="Change of Agent"
-        content={content2}
-        dropdownOnePlaceholder="Select Entity Type"
-        dropdownTwoPlaceholder="Select State"
-        dropdownTwoOptions={dropdownTwoOptions}
-        priceColumn="raChange"
-        orderPage="/change-agent.php"
-        fields="state,raChangeLLC,raChangeCorp,raChangeNpc" />
+      object={
+        <Card
+          className="card"
+          headline="Change of Agent"
+          content={content2}
+          dropdownOnePlaceholder="Select Entity Type"
+          dropdownTwoPlaceholder="Select State"
+          dropdownTwoOptions={dropdownTwoOptions}
+          priceColumn="raChange"
+          orderPage="/change-agent.php"
+          fields="state,raChangeLLC,raChangeCorp,raChangeNpc"
+        />
       }
     >
       <TextWrapper>
@@ -73,7 +76,9 @@ const HelpSection = ({ className, content }) => (
         <Heading size="2" bottomMargin="48" maxWidth="468">
           {content.header}
         </Heading>
-        <Heading size="3" template={4}>{content.header2}</Heading>
+        <Heading size="3" template={4}>
+          {content.header2}
+        </Heading>
         <Paragraph big bottomMargin="0">
           {content.text}
         </Paragraph>
