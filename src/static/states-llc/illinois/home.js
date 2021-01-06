@@ -129,8 +129,8 @@ export const HomePageContent = {
         ],
         text3: `You only need to file your Articles of Organization once, but every year after you need to file an annual report for your LLC. This is also something Incfile can remind you to do or do for you if you choose to have us handle the paperwork.`,
         cta: {
-          title: `Have Incfile Handle All the Paperwork <br>`,
-          subtitle: `for You for $0 + the Illinois State fee`,
+          title: `Have Incfile Handle <br>All the Paperwork for You`,
+          subtitle: `For $0 + the Illinois State fee.`,
           button: {
             text: `Form Your LLC Now for Free`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IL`,
@@ -150,8 +150,8 @@ export const HomePageContent = {
           url: `https://www.incfile.com/blog/post/operating-agreement-llc/`,
         },
         cta: {
-          title: `Receive a personalized <br>operating agreement`,
-          subtitle: `when you select Incfile’s Gold package.`,
+          title: `Receive a Personalized <br>Operating Agreement`,
+          subtitle: `When you select Incfile’s Gold package.`,
           button: {
             text: `Form Your LLC Now`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=IL`,

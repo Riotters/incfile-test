@@ -61,7 +61,7 @@ export const HomePageContent = {
           blockID: `step4`,
         },
         {
-          text: `<b>Step 5</b> - Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
+          text: `<b>Step 5</b> - Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
           blockID: `step5`,
         },
         {
@@ -141,8 +141,8 @@ export const HomePageContent = {
                   <a href="https://www.incfile.com/blog/post/form-llc-12-california-llc/" target="_blank" rel="noopener noreferrer">Statement of Information (Form LLC-12)</a>
                    is due within 90 days of your entity formation date. This is also something Incfile can remind you to do or do for you if you choose to have us handle the paperwork.`,
         cta: {
-          title: `Have Incfile Handle all the Paperwork <br>`,
-          subtitle: `for You for $0 + the California State fee`,
+          title: `Have Incfile Handle <br>All the Paperwork for You`,
+          subtitle: `For $0 + the California State fee.`,
           button: {
             text: `Form Your LLC Now for Free`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CA`,
@@ -150,7 +150,7 @@ export const HomePageContent = {
         },
       },
       step5: {
-        heading1: `Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
+        heading1: `Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
         text1: `You will need an EIN to identify your business to the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. An EIN number is also required to open a business bank account. You can obtain one directly from the IRS, or Incfile can get one for you as part of the California LLC business formation process.`,
       },
       step6: {
@@ -162,8 +162,8 @@ export const HomePageContent = {
           url: `https://www.incfile.com/blog/post/operating-agreement-llc/`,
         },
         cta: {
-          title: `Receive a personalized <br>operating agreement`,
-          subtitle: `when you select Incfile’s Gold package.`,
+          title: `Receive a Personalized <br>Operating Agreement`,
+          subtitle: `When you select Incfile’s Gold package.`,
           button: {
             text: `Form Your LLC Now`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=CA`,
