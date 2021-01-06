@@ -63,13 +63,13 @@ const NewsletterWrapper = styled.div`
 
 	p {
 		color: #1e1e1e;
-		font-family: Engram-Bold;
+		font-family: MarkPro;
 		font-size: 16px;
 		line-height: 19px;
 
 		span {
 			color: #757575;
-			font-family: Engram;
+			font-family: Avenir;
 		}
 	}
 `;
@@ -89,7 +89,7 @@ const Newsletter = styled.input`
 	margin-right: 8px;
 	padding: 6px 24px;
 	color: #1e1e1e;
-	font-family: Engram;
+	font-family: Avenir;
 	font-size: 14px;
 	line-height: 17px;
 	text-align: left;
@@ -162,7 +162,7 @@ const Navigation = styled.nav`
 
 		h4 {
 			color: #757575;
-			font-family: Engram-Bold;
+			font-family: MarkPro;
 			font-size: 16px;
 			letter-spacing: 1px;
 			line-height: 14px;
@@ -197,7 +197,7 @@ const Navigation = styled.nav`
 			a {
 				text-decoration: none;
 				color: #797a79;
-				font-family: Engram;
+				font-family: Avenir;
 				font-size: 14px;
 				line-height: 17px;
 				transition: color 0.3s ease;
@@ -232,7 +232,7 @@ const Curve = styled.div`
 
 const Copyright = styled.p`
 	color: #4f4f4f;
-	font-family: Engram;
+	font-family: Avenir;
 	font-size: 16px;
 	line-height: 19px;
 	width: 290px;

@@ -137,7 +137,7 @@ const Content = styled.div`
 
 	span {
 		color: #4e4e4e;
-		font-family: Engram;
+		font-family: Avenir;
 		font-size: 13px;
 		white-space: nowrap;
 
