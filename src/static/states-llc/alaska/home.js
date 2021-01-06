@@ -14,9 +14,10 @@ export const top = {
 export const howToGuide = [
   {
     type: `header`,
-    content: `How to Start an LLC in Alaska`,
+    content: `How To Start an LLC in Alaska`,
     size: 1,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 40,
   },
   {
@@ -31,7 +32,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Briefly, the benefits of starting a Alaska LLC include:`,
+    content: `Briefly, the benefits of starting an Alaska LLC include:`,
     marginBottom: 16,
   },
   {
@@ -86,16 +87,16 @@ export const howToGuide = [
           answer: `Every Alaska LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address must be inside the state of Alaska, but it cannot be a P.O. Box.`,
         },
         {
-          question: `STEP 4: Assign a Alaska Registered Agent`,
+          question: `STEP 4: Assign an Alaska Registered Agent`,
           answer: `<p>Every Alaska LLC must have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Alaska Division of Corporations.</p></br>
 
           <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Alaska and must be present to receive important documents for your company during business hours.</p></br>
           
-          <p>At Incfile, all of our packages include a Alaska Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
+          <p>At Incfile, all of our packages include an Alaska Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
           <a href="/alaska-llc/registered-agents-alaska-llc/">Learn more about Alaska Registered Agents.</a>`,
         },
         {
-          question: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
+          question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
           answer: `You will need an EIN to identify your business with the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Alaska LLC business formation process.`,
         },
         {
@@ -116,7 +117,7 @@ export const howToGuide = [
   },
   {
     type: `header`,
-    content: `Review Information from the Alaska Division of Corporations`,
+    content: `Review Information From the Alaska Division of Corporations`,
     size: 2,
     template: 3,
     style: { fontSize: `28px`, lineHeight: `36px` },
@@ -137,7 +138,7 @@ export const howToGuide = [
       ],
     },
     marginBottom: 48,
-    color: color.yellow3,
+    color: color.babyblue3,
   },
   {
     type: `header`,
@@ -157,7 +158,6 @@ export const howToGuide = [
     content: `Professional Alaska LLCs`,
     size: 2,
     template: 3,
-    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 16,
   },
   {
@@ -170,7 +170,6 @@ export const howToGuide = [
     content: `Form a Foreign LLC in Alaska`,
     size: 2,
     template: 3,
-    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 16,
   },
   {
@@ -181,7 +180,7 @@ export const howToGuide = [
   },
   {
     type: `header`,
-    content: `What to Do After Forming Your Alaska LLC`,
+    content: `What To Do After Forming Your Alaska LLC`,
     size: 2,
     template: 3,
     style: { fontSize: `28px`, lineHeight: `36px` },
@@ -213,7 +212,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `How to search the Alaska business registry of the Division of Corporations and find the right name. Includes information on naming rules, fictitious names, reserving a Alaska LLC name and more.`,
+    content: `How to search the Alaska business registry of the Division of Corporations and find the right name. Includes information on naming rules, fictitious names, reserving an Alaska LLC name and more.`,
     marginBottom: 32,
   },
   {
@@ -598,7 +597,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `“The registered agent of a corporation is an agent upon who may be served processes, notices, or demands required or permitted by law to be served upon the corporation.`,
+    content: `“The Registered Agent of a corporation is an agent upon who may be served processes, notices, or demands required or permitted by law to be served upon the corporation.`,
     marginBottom: 16,
   },
   {
@@ -608,7 +607,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `The registered agent is statutorily responsible for receiving and forwarding processes, notices, or demands on to the last known address of the entity.”`,
+    content: `The Registered Agent is statutorily responsible for receiving and forwarding processes, notices, or demands on to the last known address of the entity.”`,
     marginBottom: 32,
   },
   {
@@ -621,7 +620,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing a Alaska Registered Agent service for your business. They are:`,
+    content: `There are certain rules that you must follow when you’re appointing an Alaska Registered Agent service for your business. They are:`,
     marginBottom: 16,
   },
   {
@@ -644,7 +643,7 @@ export const registeredAgent = [
   },
   {
     type: `header`,
-    content: `Services Provided by a Alaska Registered Agent`,
+    content: `Services Provided by an Alaska Registered Agent`,
     size: 2,
     template: 3,
     style: { fontSize: `28px`, lineHeight: `36px` },
@@ -710,7 +709,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Alaska registered agent service`,
+      text: `Order Incfile's Alaska Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -737,7 +736,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Your business needs to have a Alaska Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
+    content: `Your business needs to have an Alaska Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
     marginBottom: 40,
   },
   {
@@ -807,7 +806,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Alaska registered agent service`,
+      text: `Order Incfile's Alaska Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -850,7 +849,7 @@ export const registeredAgent = [
       list: [
         `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing with the Alaska Division of Corporations:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
-        `<b>Losing your status as a Alaska LLC:</b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
+        `<b>Losing your status as an Alaska LLC:</b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
       ],
     },
     marginBottom: 48,
@@ -896,11 +895,11 @@ export const registeredAgent = [
     content: {
       items: [
         {
-          question: `Do I Need to Appoint a Alaska Registered Agent?`,
+          question: `Do I Need to Appoint an Alaska Registered Agent?`,
           answer: `Yes. All AK LLCs are required to have a Registered Agent. This is mandated by the Alaska Division of Corporations.`,
         },
         {
-          question: `When Can I Assign a Alaska Registered Agent Service?`,
+          question: `When Can I Assign an Alaska Registered Agent Service?`,
           answer: `You can either do it when you incorporate your Alaska business through paperwork filed with the Division of Corporations or afterward by filing the correct form. If you form your business through Incfile, we will file all necessary forms on your behalf.`,
         },
         {
@@ -932,9 +931,9 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       list: [
-        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Alaska Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of an Alaska Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Alaska Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Alaska Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What an Alaska Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1221,7 +1220,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Alaska registered agent service`,
+      text: `Incfile's Alaska Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1259,7 +1258,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       list: [
-        `Adding, removing or changing a Alaska LLC member or manager`,
+        `Adding, removing or changing an Alaska LLC member or manager`,
         `Changing the business address of your LLC`,
         `Altering the stated business activities of your Alaska LLC`,
       ],
@@ -1372,7 +1371,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `The profits of a Alaska LLC are not taxed at the business level like those of C Corporations. Instead, taxes for a Alaska LLC work as follows:`,
+    content: `The profits of an Alaska LLC are not taxed at the business level like those of C Corporations. Instead, taxes for an Alaska LLC work as follows:`,
     marginBottom: 16,
   },
   {
@@ -1646,7 +1645,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more for less.`,
+  header: `How We Compare <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

@@ -262,7 +262,7 @@ export const faqContent = {
     },
     {
       type: `paragraph`,
-      content: `You change your Texas registered agent or office by filing Texas Form 401 with the TX Secretary of State. Here at Incfile, we provide a free Texas Registered Agent service for the first year if you file through us. If you’ve been using a different registered agent and want to switch to us, we’ll file Form 401 on your behalf.`,
+      content: `You change your Texas Registered Agent or office by filing Texas Form 401 with the TX Secretary of State. Here at Incfile, we provide a free Texas Registered Agent service for the first year if you file through us. If you’ve been using a different Registered Agent and want to switch to us, we’ll file Form 401 on your behalf.`,
     },
     {
       type: `box-cta`,

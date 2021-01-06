@@ -99,7 +99,7 @@ export const howToGuide = [
           <a href="/mississippi-llc/registered-agents-mississippi-llc/">Learn more about Mississippi Registered Agents.</a>`,
         },
         {
-          question: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
+          question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
           answer: `You will need an EIN to identify your business with the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Mississippi LLC business formation process.`,
         },
         {
@@ -611,7 +611,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `“Any individual, corporation or LLC may act as registered agent for any Mississippi company provided the agent has a physical address in the state of Mississippi. Noncommercial registered agents will not be listed on the Secretary of State's website. Companies seeking to utilize a noncommercial registered agent must obtain that agent’s permission prior to listing the agent on any forms filed with the Secretary of State.<br>Noncommercial registered agents will not be notified of their selection as a registered agent. If a company chooses a noncommercial registered agent without permission, that agent has no obligation to the company and may refuse to perform the duties of registered agent without penalty.<br>If properly selected, both commercial and noncommercial registered agents have the same duties and obligations to their clients. The same forms are used for naming, amending or terminating registered agents regardless of type. Those forms are found with all of the other business forms on the Business Services page.”`,
+    content: `“Any individual, corporation or LLC may act as Registered Agent for any Mississippi company provided the agent has a physical address in the state of Mississippi. Noncommercial Registered Agents will not be listed on the Secretary of State's website. Companies seeking to utilize a noncommercial Registered Agent must obtain that agent’s permission prior to listing the agent on any forms filed with the Secretary of State.<br>Noncommercial Registered Agents will not be notified of their selection as a Registered Agent. If a company chooses a noncommercial Registered Agent without permission, that agent has no obligation to the company and may refuse to perform the duties of Registered Agent without penalty.<br>If properly selected, both commercial and noncommercial Registered Agents have the same duties and obligations to their clients. The same forms are used for naming, amending or terminating Registered Agents regardless of type. Those forms are found with all of the other business forms on the Business Services page.”`,
     marginBottom: 48,
   },
   {
@@ -711,7 +711,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Mississippi registered agent service`,
+      text: `Order Incfile's Mississippi Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -813,7 +813,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Mississippi registered agent service`,
+      text: `Order Incfile's Mississippi Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1227,7 +1227,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Mississippi registered agent service`,
+      text: `Incfile's Mississippi Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1731,7 +1731,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more for less.`,
+  header: `How We Compare <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

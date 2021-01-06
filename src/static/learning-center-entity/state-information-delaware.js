@@ -57,7 +57,7 @@ export const launchBusiness = {
 };
 
 export const subscription = {
-  header: `Subscribe now to learn more about LLC and starting a business`,
+  header: `Subscribe Now To Learn More About LLC and Starting a Business`,
   button: {
     text: `Subscribe Now`,
     url: `/`,
@@ -229,7 +229,7 @@ export const corporation = [
     buttons: [
       {
         content: {
-          text: "Start Your S-Corp with Incfile",
+          text: "Start Your S Corp with Incfile",
           url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=DE`,
         },
         arrow: true,
@@ -237,7 +237,7 @@ export const corporation = [
       },
       {
         content: {
-          text: "Start Your C-Corp with Incfile",
+          text: "Start Your C Corp with Incfile",
           url: ORDER_URL,
         },
         arrow: true,
@@ -2057,8 +2057,8 @@ export const taxes = [
             "You may need to pay other taxes and fees, depending on the type of Delaware corporation you run. Find out more on the <a href='https://revenue.delaware.gov/'>Delaware Division of Revenue website</a>. One type of fee that you will need to pay is when you file your annual Franchise Tax report, with fees due as follows:<br />" +
             "“All corporations incorporated in the State of Delaware are required to file an Annual Report and to pay a franchise tax. Exempt domestic corporations do not pay a tax but must file an Annual Report. The Annual Report filing fee for all other domestic corporations is $50.00 plus taxes due upon filing of the Annual Report.<br/><br/>" +
             "Taxes and Annual Reports are to be received no later than March 1st of each year. The minimum tax is $175.00 for corporations using the Authorized Shares method and a minimum tax of $400.00 for corporations using the Assumed Par Value Capital Method.<br /><br/>" +
-            "All corporations using either method will have a maximum tax of $200,000.00 unless it has been identified as a Large Corporate Filer, then their tax will be $250,000.00. Taxpayers owing $5,000.00 or more pay estimated taxes in quarterly installments with 40% due June 1, 20% due by September 1, 20% due by December 1, and the remainder due March 1. The penalty for not filing a completed Annual Report on or before March 1st is $200.00 Interest at 1.5% per month is applied to any unpaid tax balance. <br/><br/>" +
-            "Although Limited Partnerships, Limited Liability Companies and General Partnerships formed in the State of Delaware do not file an Annual Report, they are required to pay an annual tax of $300.00. Taxes for these entities are due on or before June 1st of each year. Penalty for non-payment or late payment is $200.00. Interest accrues on the tax and penalty at the rate of 1.5% per month.”",
+            "All corporations using either method will have a maximum tax of $200,000.00 unless it has been identified as a Large Corporate Filer, then their tax will be $250,000.00. Taxpayers owing $5,000.00 or more pay estimated taxes in quarterly installments with 40 percent due June 1, 20 percent due by September 1, 20 percent due by December 1, and the remainder due March 1. The penalty for not filing a completed Annual Report on or before March 1st is $200.00 Interest at 1.5 percent per month is applied to any unpaid tax balance. <br/><br/>" +
+            "Although Limited Partnerships, Limited Liability Companies and General Partnerships formed in the State of Delaware do not file an Annual Report, they are required to pay an annual tax of $300.00. Taxes for these entities are due on or before June 1st of each year. Penalty for non-payment or late payment is $200.00. Interest accrues on the tax and penalty at the rate of 1.5 percent per month.”",
         },
       ],
     },
@@ -2200,7 +2200,7 @@ export const taxes = [
   {
     type: "button",
     content: {
-      text: "File Your Delaware S-Corp Tax Election with Incfile",
+      text: "File Your Delaware S Corp Tax Election with Incfile",
       url: "/llc-s-corp-election/",
     },
     theme: "primary56",

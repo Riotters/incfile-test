@@ -52,7 +52,7 @@ export const launchBusiness = {
   },
 };
 export const subscription = {
-  header: `Subscribe now to learn more about LLC and starting a business`,
+  header: `Subscribe Now To Learn More About LLC and Starting a Business`,
   button: {
     text: `Subscribe Now`,
     url: `/`,
@@ -1345,19 +1345,19 @@ export const agents = [
   {
     type: "text",
     content:
-      "“The Texas Business Organizations Code (“BOC”) requires every domestic or foreign filing entity to maintain a registered agent and office in Texas. The BOC also permits the filing of an appointment of agent for service of process by an unincorporated nonprofit association. Additionally, the Texas Finance Code permits a Texas financial institution to appoint an agent for service of process.",
+      "“The Texas Business Organizations Code (“BOC”) requires every domestic or foreign filing entity to maintain a Registered Agent and office in Texas. The BOC also permits the filing of an appointment of agent for service of process by an unincorporated nonprofit association. Additionally, the Texas Finance Code permits a Texas financial institution to appoint an agent for service of process.",
     marginBottom: 48,
   },
   {
     type: "text",
     content:
-      "An entity’s registered agent is an agent of the entity on whom may be served any process, notice or demand required or permitted by law to be served on the entity.",
+      "An entity’s Registered Agent is an agent of the entity on whom may be served any process, notice or demand required or permitted by law to be served on the entity.",
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "An entity’s registered office must be a physical address in Texas where the registered agent can be served with process during business hours. The registered office is also where the Office of the Secretary of State will mail correspondence. A registered office is the business office address of the registered agent and may be the same as the entity’s place of business. It cannot, however, be a post office box that is part of a commercial mail or message service unless that commercial enterprise is the registered agent.”",
+      "An entity’s registered office must be a physical address in Texas where the Registered Agent can be served with process during business hours. The registered office is also where the Office of the Secretary of State will mail correspondence. A registered office is the business office address of the Registered Agent and may be the same as the entity’s place of business. It cannot, however, be a post office box that is part of a commercial mail or message service unless that commercial enterprise is the Registered Agent.”",
     marginBottom: 24,
   },
   {
@@ -2258,7 +2258,7 @@ export const taxes = [
   {
     type: "button",
     content: {
-      text: "File Your Texas S-Corp Tax Election with Incfile",
+      text: "File Your Texas S Corp Tax Election with Incfile",
       url: "/llc-s-corp-election/",
     },
     theme: "primary56",

@@ -92,18 +92,41 @@ export const differences = {
     text: `One of the main differences between C Corps and S Corps / LLCs are how income from the different types of businesses are taxed.`,
   },
   table: {
-    headers: [`Entity Type`, `LLC`, `C-Corp`, `S-Corp`, `Non-Profit`],
+    headers: [`Entity Type`, `LLC`, `C Corp`, `S Corp`, `Nonprofit`],
     rows: [
-      [`Has to file a separate tax return`, `Varies`, `check-red`, `check-red`, `check-green`],
-      [`Can pass on their profits to shareholders as dividends`, `Varies`, `check-red`, `check-green`, `check-green`],
-      [`Is Limited to having a maximum of 100 shareholders`, `Varies`, `check-green`, `check-red`, `check-green`],
+      [
+        `Has to file a separate tax return`,
+        `Varies`,
+        `check-red`,
+        `check-red`,
+        `check-green`,
+      ],
+      [
+        `Can pass on their profits to shareholders as dividends`,
+        `Varies`,
+        `check-red`,
+        `check-green`,
+        `check-green`,
+      ],
+      [
+        `Is Limited to having a maximum of 100 shareholders`,
+        `Varies`,
+        `check-green`,
+        `check-red`,
+        `check-green`,
+      ],
     ],
   },
 };
 
 export const requirements = {
   tabs: {
-    panels: [`Profits and Taxes`, `Tax Rates`, `Stock Dividends`, `Legal Requirements`],
+    panels: [
+      `Profits and Taxes`,
+      `Tax Rates`,
+      `Stock Dividends`,
+      `Legal Requirements`,
+    ],
     content: [
       {
         header: `What Is a C Corporation?`,
@@ -198,12 +221,13 @@ export const forming = {
 };
 
 export const hsForm = {
-    header: "Download our Complete Guide to C Corporation",
-    text: "Not sure if a C-Corp is right for your business? This guide has everything you'll need to know!",
-    hs_form_id: `9814bd64-2da0-4ccc-84ea-736519d2a373`,
-    fileDownload: `https://cdn2.hubspot.net/hubfs/3787982/Content%20Repurpose%20PDFs/October-19/Incfile%20-%20What%20is%20C%20Corp.pdf`,
-    button: {
-        text: "Download now",
-        url: "/",
-    },
+  header: "Download our Complete Guide to C Corporation",
+  text:
+    "Not sure if a C Corp is right for your business? This guide has everything you'll need to know!",
+  hs_form_id: `9814bd64-2da0-4ccc-84ea-736519d2a373`,
+  fileDownload: `https://cdn2.hubspot.net/hubfs/3787982/Content%20Repurpose%20PDFs/October-19/Incfile%20-%20What%20is%20C%20Corp.pdf`,
+  button: {
+    text: "Download now",
+    url: "/",
+  },
 };

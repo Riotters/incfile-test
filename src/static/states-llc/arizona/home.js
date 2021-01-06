@@ -17,6 +17,7 @@ export const howToGuide = [
     content: `Creating an LLC in Arizona`,
     size: 1,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 40,
   },
   {
@@ -65,7 +66,7 @@ export const howToGuide = [
   },
   {
     type: `header`,
-    content: `Six Quick Steps to Form an LLC in Arizona`,
+    content: `Six Quick Steps To Form an LLC in Arizona`,
     size: 2,
     template: 3,
     style: { fontSize: `28px`, lineHeight: `36px` },
@@ -73,7 +74,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `This guide has plenty of information on how to start an LLC in Arizona, but you can break down the basics of creating a business in AZ into just a few simple steps.`,
+    content: `This guide has plenty of information on , but you can break down the basics of creating a business in AZ into just a few simple steps.`,
     marginBottom: 32,
   },
   {
@@ -152,7 +153,7 @@ export const howToGuide = [
       ],
     },
     marginBottom: 32,
-    color: color.blue3,
+    color: color.babyblue3,
   },
   {
     type: `header`,
@@ -190,7 +191,7 @@ export const howToGuide = [
   },
   {
     type: `header`,
-    content: `What to Do After Forming Your LLC`,
+    content: `What To Do After Forming Your LLC`,
     size: 2,
     template: 3,
     style: { fontSize: `28px`, lineHeight: `36px` },
@@ -203,7 +204,7 @@ export const howToGuide = [
   },
   {
     type: `header`,
-    content: `Learn More About Arizona LLCs a`,
+    content: `Learn More About Arizona LLCs`,
     size: 2,
     template: 3,
     style: { fontSize: `28px`, lineHeight: `36px` },
@@ -783,7 +784,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Arizona registered agent service`,
+      text: `Order Incfile's Arizona Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1172,7 +1173,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Arizona registered agent service`,
+      text: `Incfile's Arizona Registered Agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1643,7 +1644,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more for less.`,
+  header: `How We Compare <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

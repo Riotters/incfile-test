@@ -512,7 +512,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `“Any business required to register with the Corporations Division is required to maintain a registered agent. Said registered agent may be a bona fide Washington DC resident or a company physically located in the Washington DC. The registered agent’s office may or may not be the same address as the place of business.”`,
+    content: `“Any business required to register with the Corporations Division is required to maintain a Registered Agent. Said Registered Agent may be a bona fide Washington DC resident or a company physically located in the Washington DC. The Registered Agent’s office may or may not be the same address as the place of business.”`,
     marginBottom: 48,
   },
   {
@@ -1508,7 +1508,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare. <br>Get more for less.`,
+  header: `How We Compare <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

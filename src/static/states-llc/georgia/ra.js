@@ -45,9 +45,9 @@ export const agentPageContent = {
     {
       type: `paragraph`,
       content: `<ul>
-                      <li>The registered agent is the ‘mailbox’ for the corporation. The registered agent is the person or entity located in this state designated by the entity to receive any service of process, documents or other official communication on its behalf.</li>
-                      <li>The registered agent may or may not be an owner, shareholder or officer of the entity. Many entities use their attorney or a professional corporate service company for this service.</li>
-                      <li>The registered agent’s address must be a street address in Georgia, and the agent must be located at that address. A post office box or “mail drop” may not be used as the registered agent address.</li>
+                      <li>The Registered Agent is the ‘mailbox’ for the corporation. The Registered Agent is the person or entity located in this state designated by the entity to receive any service of process, documents or other official communication on its behalf.</li>
+                      <li>The Registered Agent may or may not be an owner, shareholder or officer of the entity. Many entities use their attorney or a professional corporate service company for this service.</li>
+                      <li>The Registered Agent’s address must be a street address in Georgia, and the agent must be located at that address. A post office box or “mail drop” may not be used as the Registered Agent address.</li>
                       </ul>`,
     },
 

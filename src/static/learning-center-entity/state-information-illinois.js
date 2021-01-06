@@ -38,7 +38,7 @@ export const launchBusiness = {
 };
 
 export const subscription = {
-  header: `Subscribe now to learn more about LLC and starting a business`,
+  header: `Subscribe Now To Learn More About LLC and Starting a Business`,
   button: {
     text: `Subscribe Now`,
     url: `/`,
@@ -827,7 +827,7 @@ export const corporation = [
           list: [
             "Some people establish companies outside of the state they live in and will use a Registered Agentservice to provide an address for receiving legal documentation in the state.",
             "The Registered Agent address is listed on public records on the Secretary of State's website. If you do not want your own name and address to be registered, you should use a Registered Agent service.",
-            "The Registered Agent must be present or available during normal business hours (9 a.m. to 5 p.m. Monday to Friday) to receive any legal correspondence delivered, since the type of documents delivered to the registered agent require a signature on delivery.",
+            "The Registered Agent must be present or available during normal business hours (9 a.m. to 5 p.m. Monday to Friday) to receive any legal correspondence delivered, since the type of documents delivered to the Registered Agent require a signature on delivery.",
             "Some people travel or are not always at their business location to receive these documents.",
           ],
           text: `At Incfile, all of our packages include a <a href="/manage-your-company/registered-agent/">Registered Agent service</a> that is free for the first year and $99 per year thereafter. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf. `,

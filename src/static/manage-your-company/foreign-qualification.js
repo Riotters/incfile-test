@@ -79,7 +79,7 @@ export const basics = {
         answer: `Every process has paperwork and proper steps to follow. To give you an understanding of what we’ll be doing on your behalf, let’s review the process below:`,
         list: [
           `Name Search: Your corporation’s name will be compared to the database in each state to ensure no other company is using it. Hopefully, there will be no contradiction, but if there is then you’ll be asked to operate under a fictitious or assumed name. If you'd like to conduct your own name search for your LLC, we've created <a href='https://www.incfile.com/blog/post/llc-name-search-50-states/'>How to Search & Choose Your Business Entity Name in all 50 States</a>.`,
-          `Registered Agent: You will need to select a <a href='/manage-your-company/registered-agent'>registered agent</a> in that state.`,
+          `Registered Agent: You will need to select a <a href='/manage-your-company/registered-agent'>Registered Agent</a> in that state.`,
           `Certificate of Authority: Finally, you register for the right to do business in the state. This is similar to the process of incorporation and requires some paperwork and fees be submitted.`,
         ],
       },
