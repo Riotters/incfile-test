@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   padding: 32px 0 64px;
 
   @media (min-width: 992px) {
-    padding: 32px 0 148px;
+    padding: 32px 0 120px;
   }
 
   .gatsby-image-wrapper {
@@ -104,14 +104,22 @@ const FramesBoxBottom = styled.div`
   }
 `;
 
-const Icons = [Line1SVG, Line2SVG, Line3SVG, Line4SVG, Line5SVG, Line6SVG, Line7SVG];
+const Icons = [
+  Line1SVG,
+  Line2SVG,
+  Line3SVG,
+  Line4SVG,
+  Line5SVG,
+  Line6SVG,
+  Line7SVG,
+];
 
 const UnboxingFormationKit = ({ className, content }) => {
   return (
     <Wrapper className={className}>
       <FramesBoxTop>
         {content.top.map((box, i) => (
-            <AccordionSingle content={box} key={i}  />
+          <AccordionSingle content={box} key={i} />
         ))}
       </FramesBoxTop>
       <Image filename="testing" alt="business formation kit" />

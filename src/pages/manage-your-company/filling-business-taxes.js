@@ -9,12 +9,25 @@ import Pricing from "../../atomic/sections/manage-your-company/filling-business-
 import Benefits from "../../atomic/sections/manage-your-company/filling-business-taxes/benefits";
 import Articles from "../../components/partials/sections/articles";
 //texts
-import { top, typesOfTaxes, taxReturn, pricing, benefits } from "../../static/filling-business-taxes";
+import {
+  top,
+  typesOfTaxes,
+  taxReturn,
+  pricing,
+  benefits,
+} from "../../static/filling-business-taxes";
 
 const FillingBusinessTaxes = () => (
   <Layout>
-    <SEO title="Small Business Accounting & Bookkeeping Services | Incfile" description="Looking for a business accountant to handle your tax filing and bookkeeping? Incfile helps make it easy. Get a free tax consultation today." />
-    <Top imageName="mrs-bulb-filling-taxes" imageAlt="mr. bulb filling tax form" ovalColor="sun">
+    <SEO
+      title="Small Business Accounting & Bookkeeping Services | Incfile"
+      description="Looking for a business accountant to handle your tax filing and bookkeeping? Incfile helps make it easy. Get a free tax consultation today."
+    />
+    <Top
+      imageName="mrs-bulb-filling-taxes"
+      imageAlt="mr. bulb filling tax form"
+      ovalColor="sun"
+    >
       <h1>{top.header}</h1>
       <p>{top.text}</p>
     </Top>

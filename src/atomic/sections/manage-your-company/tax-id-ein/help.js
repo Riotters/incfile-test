@@ -10,12 +10,17 @@ import Curve from "../../../atoms/icons/curve";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import Oval2SVG from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
-import {PHeading} from "../../../atoms/typography/p-to-heading";
+import { PHeading } from "../../../atoms/typography/p-to-heading";
 
 const Help = styled.section`
   position: relative;
-  padding-top: 75px;
+  padding-top: 64px;
   padding-bottom: 64px;
+
+  @media (min-width: 769px) {
+    padding-top: 104px;
+    padding-bottom: 64px;
+  }
 
   &::before {
     content: "";
@@ -49,9 +54,25 @@ const HelpSection = ({ className, content }) => (
     <Oval className="oval" height="570" width="570" y="20" bottom="0" right="0">
       <Oval2SVG />
     </Oval>
-    <ContentObject object={<Card className="card" headline="TAX ID / EIN" content={content.card} image="entity-comparison-9288" orderPage="/ein-form.php" />}>
+    <ContentObject
+      object={
+        <Card
+          className="card"
+          headline="TAX ID / EIN"
+          content={content.card}
+          image="entity-comparison-9288"
+          orderPage="/ein-form.php"
+        />
+      }
+    >
       <TextWrapper>
-        <Curve top="-15" topXL="-5" right="-20" rightXL="110" color={color.blue1}>
+        <Curve
+          top="-15"
+          topXL="-5"
+          right="-20"
+          rightXL="88"
+          color={color.blue1}
+        >
           <CurveSVG />
         </Curve>
         <Heading size={2} bottomMargin="56" maxWidth="500">

@@ -13,21 +13,20 @@ const Faq = styled.section`
   background-color: #fff;
 
   .headline {
-      margin-bottom: 80px;
+    margin-bottom: 80px;
   }
-  
 `;
 
 const FaqSection = ({ className, content }) => (
-    <Faq className={className}>
-        <Oval className="oval" height="420" width="420" bottom="0" left="0" y="-50">
-            <OvalSVG />
-        </Oval>
-        <HeadingCenter headline={content.header} headlineWidth="640" />
-        <ContentCenter>
-            <Accordion content={content.faq} />
-        </ContentCenter>
+  <Faq className={className}>
+    <Oval className="oval" height="420" width="420" bottom="0" left="0" y="-50">
+      <OvalSVG />
+    </Oval>
+    <HeadingCenter headline={content.header} headlineWidth="640" />
+    <ContentCenter>
+      <Accordion content={content.faq} />
+    </ContentCenter>
   </Faq>
-  );
-  
-  export default FaqSection;
+);
+
+export default FaqSection;

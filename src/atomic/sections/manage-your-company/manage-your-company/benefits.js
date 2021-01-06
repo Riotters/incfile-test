@@ -10,12 +10,8 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-pink.inline.s
 import Oval2SVG from "../../../../images/ovals/top-right-transparent-babyblue2.inline.svg";
 
 const Wrapper = styled.div`
-  padding-top: 104px;
+  padding-top: 56px;
   position: relative;
-
-  @media (min-width: 769px) {
-    padding-top: 48px;
-  }
 
   .heading {
     h3,
