@@ -9,7 +9,7 @@ import Oval from "../../../atoms/icons/oval";
 import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.svg";
 import Oval2SVG from "../../../../images/ovals/bottom-right-transparent-blue2.inline.svg";
 import CheckBlueSVG from "../../../../images/circle-status-check-blue.inline.svg";
-import { PHeading } from "../../../atoms/typography/p-to-heading";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const Help = styled.section`
 	position: relative;
@@ -48,7 +48,7 @@ const Help = styled.section`
 			min-height: 32px;
 			position: relative;
 			padding-left: 52px;
-			font-family: Engram, sans-serif;
+			font-family: Avenir, sans-serif;
 			font-size: 16px;
 			line-height: 24px;
 			color: ${color.grey2};
@@ -96,9 +96,7 @@ const HelpSection = ({ className, content }) => (
 				<Heading size="2" bottomMargin="56" maxWidth="460">
 					{content.header}
 				</Heading>
-				<PHeading size={3} template={4}>
-					{content.header2}
-				</PHeading>
+				<PHeading size={3} template={4}>{content.header2}</PHeading>
 				<Paragraph big bottomMargin="0">
 					{content.text}
 				</Paragraph>

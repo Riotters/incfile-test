@@ -1,38 +1,39 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
-import { shadow } from "../../atoms/styles/shadows";
-import ExSVG from "../../../images/circle-status-x.inline.svg";
+import {shadow} from "../../atoms/styles/shadows";
+import ExSVG from "../../../images/circle-status-x.inline.svg"
 
 const FeesTableRow = ({ price, i }) => {
-	const [visible, setVisible] = useState(1);
+    const [visible, setVisible] = useState(1);
 
-	return (
-		<>
-			{visible && (
-				<TableRow key={i}>
-					<TableCell>
-						<IconWrapper onClick={() => setVisible(!visible)}>
-							<ExSVG />
-						</IconWrapper>
-						{price.state}
-					</TableCell>
-					<TableCell>
-						<Price>${price.LLC}</Price>
-					</TableCell>
-					<TableCell>
-						<Price>${price.CCorporation}</Price>
-					</TableCell>
-					<TableCell>
-						<Price>${price.SCorporation}</Price>
-					</TableCell>
-					<TableCell>
-						<Price>${price.nonprofit}</Price>
-					</TableCell>
-				</TableRow>
-			)}
-		</>
-	);
+    return (
+        <>
+            {visible && (
+                <TableRow key={i}>
+                    <TableCell>
+                        <IconWrapper onClick={ () => setVisible( !visible ) }>
+                            <ExSVG/>
+                        </IconWrapper>
+                        {price.state}
+                    </TableCell>
+                    <TableCell>
+                        <Price>${price.LLC}</Price>
+                    </TableCell>
+                    <TableCell>
+                        <Price>${price.CCorporation}</Price>
+                    </TableCell>
+                    <TableCell>
+                        <Price>${price.SCorporation}</Price>
+                    </TableCell>
+                    <TableCell>
+                        <Price>${price.nonprofit}</Price>
+                    </TableCell>
+                </TableRow>
+            )}
+        </>
+    )
 };
+
 
 const TableRow = styled.div`
     display: grid;
@@ -40,13 +41,13 @@ const TableRow = styled.div`
     align-items: center;
     box-shadow: ${shadow.white1};
     background-color: white;
-    font-family: 'Engram';
+    font-family: 'Avenir';
     font-size: 16px;
     line-height 24px;
     border-radius: 5px;
         
     &:first-child{
-        font-family: 'Engram';
+        font-family: 'Avenir';
         font-weight: 700;       
     }
     
@@ -56,31 +57,31 @@ const TableRow = styled.div`
 `;
 
 const TableCell = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 28px;
-	border-right: 1px solid #f4f4f4;
-
-	&:first-child {
-		justify-content: flex-start;
-	}
-
-	&:last-child {
-		border-right: none;
-	}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    border-right: 1px solid #f4f4f4;
+    
+    &:first-child{
+        justify-content: flex-start;
+    }
+    
+    &:last-child{
+        border-right: none;
+    }
 `;
 
 const Price = styled.span`
-	padding: 8px 26px;
-	border-radius: 20px;
-	background-color: #f2f8f3;
+    padding: 8px 26px;
+    border-radius: 20px;
+    background-color: #f2f8f3;
 `;
 
 const IconWrapper = styled.div`
-	margin-right: 15px;
-	cursor: pointer;
-	padding-top: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+    padding-top: 5px;
 `;
 
 export default FeesTableRow;

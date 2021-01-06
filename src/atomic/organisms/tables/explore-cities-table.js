@@ -4,82 +4,65 @@ import GridTableRow from "../../molecules/blocks/grid-table-row";
 import { color } from "../../atoms/styles/colors";
 
 const Wrapper = styled.div`
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	h5 {
-		font-family: Engram, sans-serif;
-	}
+  h5 {
+    font-family: Avenir, sans-serif;
+  }
 
-	.head,
-	.row {
-		width: fit-content;
+  .head,
+  .row {
+    width: fit-content;
 
-		@media (min-width: 769px) {
-			width: 100%;
-		}
+    @media (min-width: 769px) {
+      width: 100%;
+    }
 
-		& > div {
-			@media (min-width: 769px) {
-				min-width: 120px;
-			}
+    & > div {
+      @media (min-width: 769px) {
+        min-width: 120px;
+      }
 
-			&:not(:first-child) {
-				justify-content: center;
+      &:not(:first-child) {
+        justify-content: center;
 
-				h5,
-				p {
-					text-align: center;
-				}
-			}
-		}
-	}
+        h5,
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
 
-	.row {
-		& > div {
-			&:not(:first-child) {
-				p {
-					background-color: ${color.green3};
-					border-radius: 20px;
-					padding: 8px 16px;
-				}
-			}
-		}
-	}
+  .row {
+    & > div {
+      &:not(:first-child) {
+        p {
+          background-color: ${color.green3};
+          border-radius: 20px;
+          padding: 8px 16px;
+        }
+      }
+    }
+  }
 
-	p {
-		font-size: 16px;
-		line-height: 24px;
-		color: ${color.black};
-	}
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: ${color.black};
+  }
 `;
 
-const TaxReturnTable = ({
-	className,
-	headerSize = 3,
-	headerSizeTemplate = 5,
-	content,
-}) => {
-	return (
-		<Wrapper className={className}>
-			<GridTableRow
-				className="head"
-				content={content.headers}
-				header
-				headerSize={headerSize}
-				headerSizeTemplate={headerSizeTemplate}
-				columns="3fr 1fr 1fr 1fr 1fr"
-			/>
-			{content.rows.map((row, i) => (
-				<GridTableRow
-					key={i}
-					className="row"
-					content={row}
-					columns="3fr 1fr 1fr 1fr 1fr"
-				/>
-			))}
-		</Wrapper>
-	);
+const TaxReturnTable = ({ className, headerSize = 3, headerSizeTemplate = 5, content }) => {
+  return (
+    <Wrapper className={className}>
+      <GridTableRow className="head" content={content.headers} header headerSize={headerSize} headerSizeTemplate={headerSizeTemplate} columns="3fr 1fr 1fr 1fr 1fr" />
+      {content.rows.map((row, i) => (
+        <GridTableRow key={i} className="row" content={row} columns="3fr 1fr 1fr 1fr 1fr" />
+      ))}
+    </Wrapper>
+  );
 };
 
 export default TaxReturnTable;

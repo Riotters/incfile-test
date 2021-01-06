@@ -75,7 +75,7 @@ const Cell = styled.div`
 		align-items: center;
 		height: 32px;
 		width: 143px;
-		font-family: Engram-Bold, sans-serif;
+		font-family: MarkPro, sans-serif;
 		font-size: 12px;
 		font-weight: bold;
 		text-transform: uppercase;
@@ -88,7 +88,7 @@ const Cell = styled.div`
 		left: 50%;
 		transform: translateX(-50%);
 	}
-
+	
 	.nobox {
 		margin-top: 8px;
 	}
@@ -162,54 +162,32 @@ const GridTableRow = ({
 					item !== "check-green" &&
 					item !== "check-red" && (
 						<>
-							{Array.isArray(item) ? (
-								item.map((subitem, i) => (
-									<Paragraph
-										key={i}
-										mixed
-										bottomMargin="0"
-										center
-										className={subitem?.className ?? ""}
-									>
-										{parse(subitem?.content ?? subitem)}
-									</Paragraph>
-								))
-							) : (
-								<Paragraph mixed bottomMargin="0" center>
-									{parse(item)}
+						{Array.isArray(item) ? (
+							item.map((subitem, i) => (
+								<Paragraph key={i} mixed bottomMargin="0" center className={subitem?.className ?? ""}>
+									{parse(subitem?.content ?? subitem)}
 								</Paragraph>
-							)}
+							))
+							) : (
+							<Paragraph mixed bottomMargin="0" center>
+								{parse(item)}
+							</Paragraph>
+						)}
 						</>
 					)}
 				{item === "check-green" && <CheckSVG />}
 				{item === "check-red" && <ExSVG />}
 				{item === "incfile-logo" && (
-					<Image
-						className="incfile-logo"
-						filename="incfile-logo-3483"
-						alt="free llc with incfile"
-					/>
+					<Image className="incfile-logo" filename="incfile-logo-3483" alt="free llc with incfile" />
 				)}
 				{item === "legalzoom-logo" && (
-					<Image
-						className="legalzoom-logo"
-						filename="legalzoom-logo-3482"
-						alt="incfile vs legalzoom"
-					/>
+					<Image className="legalzoom-logo" filename="legalzoom-logo-3482" alt="incfile vs legalzoom" />
 				)}
 				{item === "zenbusiness-logo" && (
-					<Image
-						className="zenbusiness-logo"
-						filename="zenbusiness-logo"
-						alt="incfile vs zenbusiness"
-					/>
+					<Image className="zenbusiness-logo" filename="zenbusiness-logo" alt="incfile vs zenbusiness" />
 				)}
 				{item === "rocket-lawyer-logo" && (
-					<Image
-						className="rocket-lawyer-logo"
-						filename="rocket-lawyer-logo"
-						alt="incfile vs rocket lawer"
-					/>
+					<Image className="rocket-lawyer-logo" filename="rocket-lawyer-logo" alt="incfile vs rocket lawer" />
 				)}
 				{item === "" && <IconCircle theme="empty" circleColor="#E7E7E7" />}
 			</Cell>
