@@ -84,7 +84,7 @@ const Content = styled.div`
 
 	span {
 		color: #4e4e4e;
-		font-family: Avenir;
+		font-family: Engram;
 		font-size: 13px;
 		white-space: nowrap;
 
@@ -138,10 +138,15 @@ const LeftTabPages = ({ layout, columns, content, pointerEventsTab }) => {
 				pointerEventsTab={pointerEventsTab}
 			>
 				{content.pages.map((page, i) => (
-                    <Link
-                        key={i}
-                        to={typeof page.path !== 'undefined' ? page.path.replace(/\/?$/, '/') : page.path}
-                        activeClassName="active">
+					<Link
+						key={i}
+						to={
+							typeof page.path !== "undefined"
+								? page.path.replace(/\/?$/, "/")
+								: page.path
+						}
+						activeClassName="active"
+					>
 						<Icon>
 							<page.icon />
 						</Icon>

@@ -166,7 +166,7 @@ const Content = styled.div`
 
 	span {
 		color: inherit;
-		font-family: Avenir;
+		font-family: Engram;
 		font-size: 16px;
 		white-space: nowrap;
 
@@ -304,12 +304,14 @@ const AboutTabs = ({ layout, columns, content, openModal }) => (
 
 				<Panel>
 					<PanelWrapper className="panel2" layout={layout}>
-                        <Heading size={2} template={3} left>{content.content[1].header}</Heading>
-                        <LightBox
-                            bottomMargin={42}
-                            thumbnailVideo="what-is-a-corporation-8899"
-                            videoID="oYZShvmf9eQ"
-                        />
+						<Heading size={2} template={3} left>
+							{content.content[1].header}
+						</Heading>
+						<LightBox
+							bottomMargin={42}
+							thumbnailVideo="what-is-a-corporation-8899"
+							videoID="oYZShvmf9eQ"
+						/>
 						<Paragraph big>{content.content[1].text1}</Paragraph>
 						<Paragraph big>{content.content[1].text2}</Paragraph>
 						<Paragraph big>{content.content[1].text3}</Paragraph>
@@ -318,7 +320,9 @@ const AboutTabs = ({ layout, columns, content, openModal }) => (
 
 				<Panel>
 					<PanelWrapper className="panel2" layout={layout}>
-						<Heading size={2} template={3} left>{content.content[2].header}</Heading>
+						<Heading size={2} template={3} left>
+							{content.content[2].header}
+						</Heading>
 						<Paragraph big>{content.content[2].text}</Paragraph>
 						<IconListColorBox
 							color={color.blue3}
@@ -333,7 +337,9 @@ const AboutTabs = ({ layout, columns, content, openModal }) => (
 
 				<Panel>
 					<PanelWrapper className="panel2" layout={layout}>
-						<Heading size={2} template={3} left>{content.content[3].header}</Heading>
+						<Heading size={2} template={3} left>
+							{content.content[3].header}
+						</Heading>
 						<Paragraph big>{content.content[3].text1}</Paragraph>
 						<Paragraph big>{content.content[3].text2}</Paragraph>
 						<Paragraph big>{content.content[3].text3}</Paragraph>
@@ -350,7 +356,9 @@ const AboutTabs = ({ layout, columns, content, openModal }) => (
 
 				<Panel>
 					<PanelWrapper className="panel2" layout={layout}>
-						<Heading size={2} template={3} left>{content.content[4].header}</Heading>
+						<Heading size={2} template={3} left>
+							{content.content[4].header}
+						</Heading>
 						<Paragraph big>{content.content[4].text}</Paragraph>
 						<AcccordionCounting content={content.content[4]} tab header />
 						<Paragraph big topMargin={24}>
@@ -370,7 +378,9 @@ const AboutTabs = ({ layout, columns, content, openModal }) => (
 
 				<Panel>
 					<PanelWrapper className="panel2" layout={layout}>
-						<Heading size={2} template={3} left>{content.content[5].header}</Heading>
+						<Heading size={2} template={3} left>
+							{content.content[5].header}
+						</Heading>
 						<Paragraph big>{content.content[5].text}</Paragraph>
 						<NumericBoxedList content={content.content[5].items} />
 						<Paragraph big topMargin={24} mixed={true}>
@@ -386,12 +396,14 @@ const AboutTabs = ({ layout, columns, content, openModal }) => (
 
 				<Panel>
 					<PanelWrapper className="panel2" layout={layout}>
-						<Heading size={2} template={3} left>{content.content[6].header}</Heading>
+						<Heading size={2} template={3} left>
+							{content.content[6].header}
+						</Heading>
 						<AcccordionCounting
 							content={content.content[6]}
 							listColor={{ item: `grey2`, dot: `orange1` }}
-                            tab
-                            header
+							tab
+							header
 						/>
 					</PanelWrapper>
 				</Panel>
