@@ -34,7 +34,7 @@ const CareSection = ({ className, content, id }) => {
 						color: color.black,
 						fontSize: "24px",
 						lineHeight: "32px",
-						fontFamily: "MarkPro",
+						fontFamily: "Engram-Bold",
 					}}
 				>
 					We’ll Take Care of the Entity Search.

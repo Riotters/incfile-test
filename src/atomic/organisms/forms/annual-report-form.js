@@ -93,7 +93,7 @@ const AnnualReportForm = ({ className, content, checkDueDate }) => {
 					marginBottom: "16px",
 					fontSize: "16px",
 					lineHeight: "24px",
-					fontFamily: "MarkPro",
+					fontFamily: "Engram-Bold",
 				}}
 			>
 				{content.header}

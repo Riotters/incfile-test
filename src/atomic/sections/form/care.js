@@ -38,7 +38,7 @@ const Care = styled.section`
       min-height: 32px;
       position: relative;
       padding-left: 52px;
-      font-family: Avenir, sans-serif;
+      font-family: Engram, sans-serif;
       font-size: 16px;
       line-height: 24px;
       color: ${color.black};

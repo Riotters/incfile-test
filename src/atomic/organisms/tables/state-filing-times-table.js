@@ -8,7 +8,7 @@ const Wrapper = styled.div`
 	flex-direction: column;
 
 	h5 {
-		font-family: Avenir, sans-serif;
+		font-family: Engram, sans-serif;
 	}
 
 	.head,

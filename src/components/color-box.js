@@ -1,126 +1,139 @@
-import React from "react"
-import styled from "styled-components"
-import Curve from "../images/purple-curve.inline.svg"
-import { color } from "./styles/colors"
+import React from "react";
+import styled from "styled-components";
+import Curve from "../images/purple-curve.inline.svg";
+import { color } from "./styles/colors";
 
 const Wrapper = styled.div`
-    padding: 16px 16px 0 0;
-    position: relative;
-    
-    ${props => props.maxWidth &&
-        "max-width: " + props.maxWidth +"px;"
-    }
+	padding: 16px 16px 0 0;
+	position: relative;
 
-    > div {
-        background-color: ${props => (props.color ? props.color : "")};
-        border-radius: 5px 50px 50px 5px;
-        padding: 40px;
+	${(props) => props.maxWidth && "max-width: " + props.maxWidth + "px;"}
 
-        @media (min-width: 576px) {
-            padding: ${props => (props.theme==="icon" ? "40px 40px 40px 112px" : "40px")};
-        }
-        
-        h2, h2.h4 {
-            padding-bottom: ${props => (props.theme==="icon" ? "16px" : "24px")};
-        }
-    
-        p {
-            color: ${color.grey1};
-        }
+	> div {
+		background-color: ${(props) => (props.color ? props.color : "")};
+		border-radius: 5px 50px 50px 5px;
+		padding: 40px;
 
-        ul {
-            list-style: none;
+		@media (min-width: 576px) {
+			padding: ${(props) =>
+				props.theme === "icon" ? "40px 40px 40px 112px" : "40px"};
+		}
 
-            li {
-                font-family: Avenir, sans-serif;
-                font-size: 16px;
-                line-height: 24px;
-                color: #63666E;
-                padding-left: 26px;
-                position: relative;
+		h2,
+		h2.h4 {
+			padding-bottom: ${(props) => (props.theme === "icon" ? "16px" : "24px")};
+		}
 
-                &::before {
-                    content: '';
-                    height: 4px;
-                    width: 4px;
-                    background-color: ${props => (props.dotsColor ? props.dotsColor : "")};
-                    border-radius: 50%;
-                    position: absolute;
-                    top: 9px;
-                    left: 6px;
-                }
+		p {
+			color: ${color.grey1};
+		}
 
-                &:not(:last-child) {
-                    margin-bottom: 12px;
-                }
-            }
-        }
-        
-        ul.display-list {
-            list-style: none;
+		ul {
+			list-style: none;
 
-            li {
-                font-family: Avenir, sans-serif;
-                font-size: 16px;
-                line-height: 24px;
-                color: #63666E;
-                padding-left: 26px;
-                position: relative;
+			li {
+				font-family: Engram, sans-serif;
+				font-size: 16px;
+				line-height: 24px;
+				color: #63666e;
+				padding-left: 26px;
+				position: relative;
 
-                &::before {
-                    content: '\\2022';
-                    color: ${color.blue1};
-                    border-radius: 50%;
-                    position: absolute;
-                    top: 0px;
-                    left: 6px;
-                }
+				&::before {
+					content: "";
+					height: 4px;
+					width: 4px;
+					background-color: ${(props) =>
+						props.dotsColor ? props.dotsColor : ""};
+					border-radius: 50%;
+					position: absolute;
+					top: 9px;
+					left: 6px;
+				}
 
-                &:not(:last-child) {
-                    margin-bottom: 12px;
-                }
-            }
-        }
-    }
+				&:not(:last-child) {
+					margin-bottom: 12px;
+				}
+			}
+		}
 
-    & > svg {
-        position: absolute;
-        top: 0;
-        right: 0;
+		ul.display-list {
+			list-style: none;
 
-        path {
-            fill: ${props => props.curveColor ? props.curveColor : ""}
-        }
-    }
+			li {
+				font-family: Engram, sans-serif;
+				font-size: 16px;
+				line-height: 24px;
+				color: #63666e;
+				padding-left: 26px;
+				position: relative;
 
-    & > div {
-        svg {
-            position: absolute;
-            left: 44px;
-            display: none;
-        
-            @media (min-width: 576px){
-                display: block;
-            }
-        }
-    }
-`
+				&::before {
+					content: "\\2022";
+					color: ${color.blue1};
+					border-radius: 50%;
+					position: absolute;
+					top: 0px;
+					left: 6px;
+				}
 
-const Colorbox = ({ className, theme, Icon, color, dotsColor, children, curve, curveColor, maxWidth }) => {
+				&:not(:last-child) {
+					margin-bottom: 12px;
+				}
+			}
+		}
+	}
 
-  return (
-    <Wrapper maxWidth={maxWidth} className={className} theme={theme} color={color} dotsColor={dotsColor} curveColor={curveColor}>
-        {curve && (
-            <Curve />
-        )}
-        <div>
-            {Icon && theme === "icon" ? (
-                <Icon />
-            ) : null}   
-            {children}
-        </div>
-    </Wrapper>
-  )
-}
+	& > svg {
+		position: absolute;
+		top: 0;
+		right: 0;
 
-export default Colorbox
+		path {
+			fill: ${(props) => (props.curveColor ? props.curveColor : "")};
+		}
+	}
+
+	& > div {
+		svg {
+			position: absolute;
+			left: 44px;
+			display: none;
+
+			@media (min-width: 576px) {
+				display: block;
+			}
+		}
+	}
+`;
+
+const Colorbox = ({
+	className,
+	theme,
+	Icon,
+	color,
+	dotsColor,
+	children,
+	curve,
+	curveColor,
+	maxWidth,
+}) => {
+	return (
+		<Wrapper
+			maxWidth={maxWidth}
+			className={className}
+			theme={theme}
+			color={color}
+			dotsColor={dotsColor}
+			curveColor={curveColor}
+		>
+			{curve && <Curve />}
+			<div>
+				{Icon && theme === "icon" ? <Icon /> : null}
+				{children}
+			</div>
+		</Wrapper>
+	);
+};
+
+export default Colorbox;

@@ -17,7 +17,10 @@ const AboutSection = ({ className, content }) => (
 		<Oval className="oval" height="720" width="720" y="-40">
 			<OvalSVG />
 		</Oval>
-		<ImageContent image="business-name-search-about-7420" alt="business name search">
+		<ImageContent
+			image="business-name-search-about-7420"
+			alt="business name search"
+		>
 			<Paragraph big>{content.text}</Paragraph>
 			<Paragraph
 				big
@@ -27,7 +30,7 @@ const AboutSection = ({ className, content }) => (
 					color: color.black,
 					fontSize: "24px",
 					lineHeight: "32px",
-					fontFamily: "MarkPro",
+					fontFamily: "Engram-Bold",
 				}}
 			>
 				{content.header2}
@@ -35,8 +38,8 @@ const AboutSection = ({ className, content }) => (
 			<Paragraph big bottomMargin="56">
 				{content.text2}
 			</Paragraph>
-            <LightBoxVideo
-                alt="perform a business name"
+			<LightBoxVideo
+				alt="perform a business name"
 				thumbnailVideo="how-do-i-perform-a-business-name-search-5332"
 				videoID="XePRillB3UE"
 			/>
