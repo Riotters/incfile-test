@@ -24,7 +24,7 @@ const Wrapper = styled.div`
         list-style: none;
 
         li {
-            font-family: Engram, sans-serif;
+            font-family: Avenir, sans-serif;
             font-size: 16px;
             line-height: 24px;
             color: #63666E;

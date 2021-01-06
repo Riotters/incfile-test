@@ -18,10 +18,10 @@
             <rect id="Rectangle" fill="#F2F6FF" x="40" y="180" width="390" height="72" rx="20"></rect>
             <rect id="Rectangle" fill="#D2E0FE" x="64" y="220" width="250" height="8" rx="4"></rect>
             <rect id="Rectangle-Copy" fill="#5089FD" x="64" y="204" width="80" height="8" rx="4"></rect>
-            <text id="Entity-Type" font-family="Engram-Bold-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24" fill="#7A7A7A">
+            <text id="Entity-Type" font-family="MarkPro-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24" fill="#7A7A7A">
                 <tspan x="40" y="44">Entity Type</tspan>
             </text>
-            <text id="Select-State" font-family="Engram-Bold-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24" fill="#7A7A7A">
+            <text id="Select-State" font-family="MarkPro-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24" fill="#7A7A7A">
                 <tspan x="40" y="156">Select State</tspan>
             </text>
             <g id="Group" transform="translate(40.000000, 68.000000)">

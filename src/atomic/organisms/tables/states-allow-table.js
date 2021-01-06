@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 	//padding-top: 72px;
 
 	h5 {
-		font-family: Engram, sans-serif;
+		font-family: Avenir, sans-serif;
 	}
 
 	.head,
@@ -47,6 +47,7 @@ const Wrapper = styled.div`
 `;
 
 const TaxReturnTable = ({ className, content }) => {
+	
 	return (
 		<Wrapper className={className}>
 			<GridTableRow
@@ -57,12 +58,7 @@ const TaxReturnTable = ({ className, content }) => {
 				columns="1fr 1fr 1fr 1fr"
 			/>
 			{content.rows.map((row, i) => (
-				<GridTableRow
-					key={i}
-					className="row"
-					content={row}
-					columns="1fr 1fr 1fr 1fr"
-				/>
+				<GridTableRow key={i} className="row" content={row} columns="1fr 1fr 1fr 1fr" />
 			))}
 		</Wrapper>
 	);

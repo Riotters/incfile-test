@@ -240,7 +240,7 @@ const AlaskaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -435,6 +435,8 @@ const AlaskaCorporation = () => {
 	);
 };
 
+
+
 const QuestionSection = styled.section`
 	background-image: ${gradient.orange3};
 	position: relative;
@@ -459,5 +461,7 @@ const TabsWrapper = styled.section`
 		margin-top: 21px;
 	}
 `;
+
+
 
 export default AlaskaCorporation;

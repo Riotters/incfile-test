@@ -74,12 +74,7 @@ const VirginiaCorporation = () => {
 				<h1>{top.header}</h1>
 				<p>{top.text}</p>
 				<Buttonsbox>
-					<Button
-						externalLink
-						content={top.buttons[0]}
-						theme="primary56"
-						arrow
-					/>
+					<Button externalLink content={top.buttons[0]} theme="primary56" arrow />
 				</Buttonsbox>
 
 				<RatingRow>
@@ -131,8 +126,8 @@ const VirginiaCorporation = () => {
 								}}
 								style={{ marginBottom: "32px" }}
 							/>
-							<LightBoxVideo
-								alt="what is a corporation"
+                            <LightBoxVideo
+                                alt="what is a corporation"
 								thumbnailVideo="what-is-a-corporation-8899"
 								videoID="oYZShvmf9eQ"
 							/>
@@ -262,7 +257,7 @@ const VirginiaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -347,7 +342,7 @@ const VirginiaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

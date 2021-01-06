@@ -12,138 +12,136 @@ import OvalSVG from "../../../../images/ovals/top-right-transparent-blue.inline.
 import Oval2SVG from "../../../../images/ovals/bottom-left-transparent-blue3.inline.svg";
 import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg";
 import CheckBlueSVG from "../../../../images/circle-status-check-blue.inline.svg";
-import { PHeading } from "../../../atoms/typography/p-to-heading";
+import {PHeading} from "../../../atoms/typography/p-to-heading";
 
 const Help = styled.section`
-	position: relative;
-	padding-top: 75px;
-	padding-bottom: 64px;
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 64px;
 
-	&::before {
-		content: "";
-		height: 1085px;
-		width: 100%;
-		background-image: ${gradient.blue3};
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
+  &::before {
+    content: "";
+    height: 1085px;
+    width: 100%;
+    background-image: ${gradient.blue3};
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-	.numericlist {
-		display: grid;
-		grid-template-columns: 100%;
-		grid-gap: 30px;
-		list-style: none;
-		margin: 40px 0;
+  .numericlist {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 30px;
+    list-style: none;
+    margin: 40px 0;
 
-		@media (min-width: 1200px) {
-			grid-template-columns: repeat(2, 270px);
-		}
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(2, 270px);
+    }
 
-		li {
-			display: flex;
-			align-items: center;
-			min-height: 32px;
-			position: relative;
-			padding-left: 52px;
-			font-family: Engram, sans-serif;
-			font-size: 16px;
-			line-height: 24px;
-			color: ${color.grey2};
+    li {
+      display: flex;
+      align-items: center;
+      min-height: 32px;
+      position: relative;
+      padding-left: 52px;
+      font-family: Avenir, sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: ${color.grey2};
 
-			@media (min-width: 1200px) {
-				align-items: flex-start;
-			}
+      @media (min-width: 1200px) {
+        align-items: flex-start;
+      }
 
-			svg {
-				position: absolute;
-				top: 0;
-				left: 0;
-			}
-		}
-	}
+      svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
 `;
 
 const TextWrapper = styled.div`
-	width: 100%;
-	position: relative;
+  width: 100%;
+  position: relative;
 `;
 
 const content2 = {
-	price: `149`,
-	fee: `+ $0 State Fee`,
-	button: {
-		text: `Order Now`,
-		url: `/`,
-	},
+  price: `149`,
+  fee: `+ $0 State Fee`,
+  button: {
+    text: `Order Now`,
+    url: `/`,
+  }
 };
 
 const dropdownTwoOptions = states.state.map((state) => state.name);
 const dropdownThreeOptions = states.state.map((state) => state.name);
 
 const HelpSection = ({ className, content }) => (
-	<Help className={className}>
-		<Oval height="136" width="136" top="0" right="0">
-			<OvalSVG />
-		</Oval>
-		<Oval height="420" width="420" bottom="15" left="0">
-			<Oval2SVG />
-		</Oval>
-		<ObjectContent
-			className="help"
-			headlineWidth="450"
-			objectWidth="550"
-			object={
-				<Card
-					className="card"
-					headline="Foreign Qualification"
-					content={content2}
-					dropdownOnePlaceholder="Select Entity Type"
-					dropdownTwoPlaceholder="Select State"
-					dropdownTwoOptions={dropdownTwoOptions}
-					dropdownThreePlaceholder="Select State"
-					dropdownThreeOptions={dropdownThreeOptions}
-					priceColumn="foreignQual"
-					orderPage="/foreign-qual.php"
-					fields="state,foreignQualLLC,foreignQualCorp,foreignQualNpc"
-				/>
-			}
-		>
-			<TextWrapper>
-				<Curve top="-15" right="180" color={color.blue1}>
-					<CurveSVG />
-				</Curve>
-				<Heading size="2" bottomMargin="48">
-					{content.header}
-				</Heading>
-				<PHeading size={3} template={4}>
-					{content.header2}
-				</PHeading>
-				<Paragraph big bottomMargin="0" maxWidth="500">
-					{content.text}
-				</Paragraph>
-				<ul className="numericlist">
-					{content.list.map((item) => (
-						<li>
-							<CheckBlueSVG />
-							{item}
-						</li>
-					))}
-				</ul>
-				<Paragraph big bottomMargin="0" maxWidth="500">
-					{content.text2}
-				</Paragraph>
-				<ul className="numericlist">
-					{content.list2.map((item) => (
-						<li>
-							<CheckBlueSVG />
-							{item}
-						</li>
-					))}
-				</ul>
-			</TextWrapper>
-		</ObjectContent>
-	</Help>
+  <Help className={className}>
+    <Oval height="136" width="136" top="0" right="0">
+      <OvalSVG />
+    </Oval>
+    <Oval height="420" width="420" bottom="15" left="0">
+      <Oval2SVG />
+    </Oval>
+    <ObjectContent
+      className="help"
+      headlineWidth="450"
+      objectWidth="550"
+      object={
+        <Card
+          className="card"
+          headline="Foreign Qualification"
+          content={content2}
+          dropdownOnePlaceholder="Select Entity Type"
+          dropdownTwoPlaceholder="Select State"
+          dropdownTwoOptions={dropdownTwoOptions}
+          dropdownThreePlaceholder="Select State"
+          dropdownThreeOptions={dropdownThreeOptions}
+          priceColumn="foreignQual"
+          orderPage="/foreign-qual.php"
+          fields="state,foreignQualLLC,foreignQualCorp,foreignQualNpc"
+        />
+      }
+    >
+      <TextWrapper>
+        <Curve top="-15" right="180" color={color.blue1}>
+          <CurveSVG />
+        </Curve>
+        <Heading size="2" bottomMargin="48">
+          {content.header}
+        </Heading>
+        <PHeading size={3} template={4}>{content.header2}</PHeading>
+        <Paragraph big bottomMargin="0" maxWidth="500">
+          {content.text}
+        </Paragraph>
+        <ul className="numericlist">
+          {content.list.map((item) => (
+            <li>
+              <CheckBlueSVG />
+              {item}
+            </li>
+          ))}
+        </ul>
+        <Paragraph big bottomMargin="0" maxWidth="500">
+          {content.text2}
+        </Paragraph>
+        <ul className="numericlist">
+          {content.list2.map((item) => (
+            <li>
+              <CheckBlueSVG />
+              {item}
+            </li>
+          ))}
+        </ul>
+      </TextWrapper>
+    </ObjectContent>
+  </Help>
 );
 
 export default HelpSection;

@@ -110,7 +110,8 @@ const LicenseItemWrapper = styled.ul`
 	margin-bottom: 32px;
 `;
 
-const Icon = styled.div``;
+const Icon = styled.div`
+`
 
 const LicenseItem = styled.li`
 	display: flex;
@@ -118,7 +119,7 @@ const LicenseItem = styled.li`
 	justify-content: center;
 	flex-direction: column;
 	background-color: ${color.orange3};
-	font-family: "Engram", san-serif;
+	font-family: "Avenir", san-serif;
 	margin-bottom: 8px;
 	padding: 12px 24px;
 
@@ -242,8 +243,8 @@ const SearchToolSection = ({ content, businessIndustryList }) => {
 						<ImageBoxes>
 							<TopImageBox
 								className="box box--left"
-								image="your-state-7282"
-								imageAlt="business license search tool"
+                                image="your-state-7282"
+                                imageAlt="business license search tool"
 								color={color.blue3}
 							>
 								<Heading size={3} template={4} center>
@@ -258,8 +259,8 @@ const SearchToolSection = ({ content, businessIndustryList }) => {
 							</TopImageBox>
 							<TopImageBox
 								className="box box--right"
-								image="forming-a-corporation"
-								imageAlt="state of formation"
+                                image="forming-a-corporation"
+                                imageAlt="state of formation"
 								color={color.orange3}
 							>
 								<Heading size={3} template={4} center>

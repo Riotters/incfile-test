@@ -26,7 +26,7 @@ import ContentButton from "../../molecules/buttons/button";
 import Accordion from "../../organisms/accordion/accordion";
 import PlusSVG from "../../../images/icons/plus.inline.svg";
 import Advantages from "../../organisms/accordion/accordion-with-checkmark";
-import { PHeading } from "../../atoms/typography/p-to-heading";
+import {PHeading} from "../../atoms/typography/p-to-heading";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -203,7 +203,7 @@ const Content = styled.div`
 
 	span {
 		color: #4e4e4e;
-		font-family: Engram;
+		font-family: Avenir;
 		font-size: 16px;
 		white-space: nowrap;
 	}
@@ -419,9 +419,7 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => {
 									rounded
 									curve
 								/>
-								<Heading size={2} template={3} left>
-									{content.content[0].header}
-								</Heading>
+								<Heading size={2} template={3} left>{content.content[0].header}</Heading>
 								<LightBoxVideo
 									thumbnailVideo="what-is-an-llc-7280"
 									videoID="ZuadTwgek5U"
@@ -453,9 +451,7 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel2" layout={layout}>
-								<Heading size={2} template={3} left>
-									{content.content[1].header}
-								</Heading>
+								<Heading size={2} template={3} left>{content.content[1].header}</Heading>
 								<Paragraph big>{content.content[1].text}</Paragraph>
 								<Paragraph big mixed>
 									{parse(content.content[1].text2)}
@@ -471,9 +467,7 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel2" layout={layout}>
-								<Heading size={2} template={3} left>
-									{content.content[2].header}
-								</Heading>
+								<Heading size={2} template={3} left>{content.content[2].header}</Heading>
 								<Paragraph big>{content.content[2].text}</Paragraph>
 								<Heading size="3">{content.content[2].header2}</Heading>
 								<Advantages content={content.content[2].advantages} tab />
@@ -489,9 +483,7 @@ const CCorpTabs = ({ layout, columns, content, clickOpenModal }) => {
 						</TabPanel>
 						<TabPanel>
 							<PanelWrapper className="panel2" layout={layout}>
-								<Heading size={2} template={3} left>
-									{content.content[3].header}
-								</Heading>
+								<Heading size={2} template={3} left>{content.content[3].header}</Heading>
 								<Paragraph big>{content.content[3].text}</Paragraph>
 								<IconTextColorBox
 									color={color.yellow3}

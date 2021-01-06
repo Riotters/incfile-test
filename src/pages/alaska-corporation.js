@@ -122,8 +122,8 @@ const AlaskaCorporation = () => {
 								does not allow businesses to register fictitious or assumed
 								(“doing business as”) names.
 							</Paragraph>
-							<LightBoxVideo
-								alt="what is a corporation"
+                            <LightBoxVideo
+                                alt="what is a corporation"
 								thumbnailVideo="what-is-a-corporation-8899"
 								videoID="oYZShvmf9eQ"
 							/>
@@ -224,7 +224,7 @@ const AlaskaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -336,7 +336,7 @@ const AlaskaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

@@ -114,7 +114,7 @@ const Item = styled.div`
 	gap: 1em;
 	font-size: 14px;
 	color: #4e4e4e;
-	font-family: Engram;
+	font-family: Avenir;
 	border-radius: 5px;
 
 	span {

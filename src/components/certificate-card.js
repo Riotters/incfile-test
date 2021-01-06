@@ -46,7 +46,7 @@ const Wrapper = styled.div`
 	}
 
 	.price {
-		font-family: Engram-Bold, sans-serif;
+		font-family: MarkPro, sans-serif;
 		font-size: 48px;
 		line-height: 56px;
 		color: ${color.black};
@@ -54,7 +54,7 @@ const Wrapper = styled.div`
 	}
 
 	.fee {
-		font-family: Engram, sans-serif;
+		font-family: Avenir, sans-serif;
 		font-size: 16px;
 		line-height: 24px;
 		color: ${color.grey2};
@@ -87,7 +87,7 @@ const CertificateCard = ({
 	const [extraFee, setExtraFee] = useState(
 		extraFeeText ? extraFeeText : defaultExtraFee
 	);
-
+	
 	const [entityTypeSelected, setEntityTypeSelected] = useState("LLC");
 	const [entityState, setEntityState] = useState("");
 	const [compState, setCompState] = useState("");

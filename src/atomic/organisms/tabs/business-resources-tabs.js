@@ -105,7 +105,7 @@ const Button = styled.button`
 		border-radius: 24px;
 		border: none;
 		color: ${color.grey1};
-		font-family: Engram, sans-serif;
+		font-family: Avenir, sans-serif;
 		font-weight: 400;
 		line-height: 24px;
 		flex-grow: 1;
@@ -201,12 +201,7 @@ const BusinessResourcesTabs = ({ content, openModal }) => (
 					<Panel key={i}>
 						<Grid>
 							{panel.cards.map((card, j) => (
-								<Card
-									key={j}
-									content={card}
-									image={pdfs[i][j]}
-									openModal={openModal}
-								/>
+								<Card key={j} content={card} image={pdfs[i][j]} openModal={openModal} />
 							))}
 						</Grid>
 					</Panel>

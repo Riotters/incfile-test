@@ -33,7 +33,7 @@ const Filing = styled.div`
     margin: ${(props) => (props.margin ? props.margin : "52px 0 42px 0")};
 
     h3, h4{
-        font-family: Engram;
+        font-family: Avenir;
         font-weight: 900;
         font-size: 20px;
         line-height
@@ -55,7 +55,7 @@ const Filing = styled.div`
         line-height: 24px;
         padding: 24px;
         color: #1d1d1d;
-        font-family: Engram,sans-serif;
+        font-family: Avenir,sans-serif;
     }
 
     p{
@@ -69,7 +69,7 @@ const Filing = styled.div`
         font-size: 16px;
         line-height: 24px;
         color: #1d1d1d;
-        font-family: Engram,sans-serif;
+        font-family: Avenir,sans-serif;
 
         strong, span{
             padding: 24px;

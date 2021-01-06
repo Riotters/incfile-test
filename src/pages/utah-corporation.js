@@ -72,12 +72,7 @@ const UtahCorporation = () => {
 				<h1>{top.header}</h1>
 				<p>{top.text}</p>
 				<Buttonsbox>
-					<Button
-						externalLink
-						content={top.buttons[0]}
-						theme="primary56"
-						arrow
-					/>
+					<Button externalLink content={top.buttons[0]} theme="primary56" arrow />
 				</Buttonsbox>
 
 				<RatingRow>
@@ -127,8 +122,8 @@ const UtahCorporation = () => {
 								phrases in business names, such as “Olympics,” “Olympiad,”
 								“College,” “University,” and “Institute.”
 							</Paragraph>
-							<LightBoxVideo
-								alt="what is a corporation"
+                            <LightBoxVideo
+                                alt="what is a corporation"
 								thumbnailVideo="what-is-a-corporation-8899"
 								videoID="oYZShvmf9eQ"
 							/>
@@ -227,7 +222,7 @@ const UtahCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

@@ -26,16 +26,16 @@
                     <rect id="Rectangle" fill="#F2F6FF" x="40" y="62" width="390" height="72" rx="20"></rect>
                     <rect id="Rectangle-Copy" fill="#709EFF" x="64" y="86" width="168" height="8" rx="4"></rect>
                     <rect id="Rectangle" fill="#D2E0FE" x="64" y="102" width="120" height="8" rx="4"></rect>
-                    <text id="Your-name" font-family="Engram-Bold-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24" fill="#7A7A7A">
+                    <text id="Your-name" font-family="MarkPro-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24" fill="#7A7A7A">
                         <tspan x="40" y="46">Your name</tspan>
                     </text>
                     <rect id="Rectangle" fill="#F2F6FF" x="40" y="280" width="390" height="72" rx="20"></rect>
                     <rect id="Rectangle-Copy" fill="#709EFF" x="64" y="304" width="168" height="8" rx="4"></rect>
                     <rect id="Rectangle" fill="#D2E0FE" x="64" y="320" width="120" height="8" rx="4"></rect>
-                    <text id="Your-name" font-family="Engram-Bold-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24" fill="#7A7A7A">
+                    <text id="Your-name" font-family="MarkPro-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24" fill="#7A7A7A">
                         <tspan x="40" y="264">Your name</tspan>
                     </text>
-                    <text id="Select-Entity-Type*" font-family="Engram-Bold-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24" fill="#7A7A7A">
+                    <text id="Select-Entity-Type*" font-family="MarkPro-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24" fill="#7A7A7A">
                         <tspan x="40" y="174">Select Entity Type*</tspan>
                     </text>
                     <circle id="Oval" fill="#F2F6FF" cx="56" cy="208" r="16"></circle>

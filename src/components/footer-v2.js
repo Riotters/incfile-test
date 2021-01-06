@@ -77,7 +77,7 @@ const NewsletterWrapper = styled.form`
 
 	p {
 		color: #1e1e1e;
-		font-family: Engram-Bold, sans-serif;
+		font-family: MarkPro, sans-serif;
 		font-size: 16px;
 		line-height: 19px;
 		margin-bottom: 16px;
@@ -88,7 +88,7 @@ const NewsletterWrapper = styled.form`
 
 		span {
 			color: ${color.grey2};
-			font-family: Engram, sans-serif;
+			font-family: Avenir, sans-serif;
 			padding-left: 5px;
 		}
 	}
@@ -109,7 +109,7 @@ const Newsletter = styled.input`
 	margin-right: 8px;
 	padding: 6px 24px;
 	color: #1e1e1e;
-	font-family: Engram, sans-serif;
+	font-family: Avenir, sans-serif;
 	font-size: 14px;
 	line-height: 17px;
 	text-align: left;
@@ -174,7 +174,7 @@ const Navigation = styled.nav`
 
 const Copyright = styled.p`
 	color: #4f4f4f;
-	font-family: Engram, sans-serif;
+	font-family: Avenir, sans-serif;
 	font-size: 16px;
 	line-height: 19px;
 	width: 290px;
@@ -266,8 +266,8 @@ const Footer = () => {
 						<Newsletter
 							className={errors.email ? "invalid" : ""}
 							placeholder="Your E-mail"
-							name="email"
-							id="newsletter"
+                            name="email"
+                            id="newsletter"
 							type="text"
 							ref={register({
 								required: true,

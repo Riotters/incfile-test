@@ -192,7 +192,7 @@ const Content = styled.div`
 
 	span {
 		color: #4e4e4e;
-		font-family: Engram;
+		font-family: Avenir;
 		font-size: 16px;
 		white-space: nowrap;
 	}
@@ -334,13 +334,13 @@ const CCorpTabs = ({ layout, columns, content }) => {
 								//className={isVisible ? "slideUp enter panel1" : "slideUp panel1"}
 								layout={layout}
 							>
-								<Heading size="3">{content.content[0].header}</Heading>
-								<LightBoxVideo
-									bottomMargin={42}
-									thumbnailVideo="what-is-an-s-corp-7321"
-									videoID="fAlXeIWEoT0"
-									alt="what is a s corporation"
-								/>
+                                <Heading size="3">{content.content[0].header}</Heading>
+                                <LightBoxVideo
+                                    bottomMargin={42}
+                                    thumbnailVideo="what-is-an-s-corp-7321"
+                                    videoID="fAlXeIWEoT0"
+                                    alt="what is a s corporation"
+                                />
 								<Paragraph big>{content.content[0].text}</Paragraph>
 								<IconTextColorBox
 									color={color.yellow3}
