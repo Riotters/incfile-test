@@ -13,7 +13,7 @@ const Choose = styled.section`
   padding-top: 56px;
 
   @media (min-width: 992px) {
-    padding-top: 96px;
+    padding-top: 120px;
   }
 
   &::before {

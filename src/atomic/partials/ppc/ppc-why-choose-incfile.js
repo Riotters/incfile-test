@@ -33,6 +33,7 @@ const Anchor = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    order: -1;
   }
 `;
 
@@ -48,6 +49,22 @@ const ImageWrapper = styled.div`
   @media screen and (max-width: 768px) {
     display: block;
     position: static;
+    ${(props) => "order: " + props.order ?? ""};
+    ${(props) => "margin-top: " + props.marginTopMD ?? ""};
+    ${(props) => "margin-right: " + props.marginRightMD ?? ""};
+    ${(props) => "margin-bottom: " + props.marginBottomMD ?? ""};
+    ${(props) => "margin-left: " + props.marginLeftMD ?? ""};
+    ${(props) => "width: " + props.widthMD + "px" ?? ""};
+    ${(props) => "height: " + props.heightMD + "px" ?? ""};
+  }
+
+  @media (min-width: 769px) and (max-width: 1200px) {
+    ${(props) => "top: " + props.topMDLG ?? ""};
+    ${(props) => "left: " + props.leftMDLG ?? ""};
+    ${(props) => "right: " + props.rightMDLG ?? ""};
+    ${(props) => "bottom: " + props.bottomMDLG ?? ""};
+    ${(props) => "width: " + props.widthMDLG ?? ""};
+    ${(props) => "height: " + props.heightMDLG ?? ""};
   }
 `;
 
@@ -59,6 +76,12 @@ const Content = styled.div`
   @media (min-width: 769px) {
     max-width: ${(props) =>
       props.contentWidth ? `${props.contentWidth}px` : ""};
+  }
+
+  @media (min-width: 769px) and (max-width: 1200px) {
+    p {
+      width: 64.16666666666667vw;
+    }
   }
 
   h2 {
@@ -74,15 +97,44 @@ const PPCWhyChooseIncfile = ({ className, content }) => (
           <Heading size={2} style={{ maxWidth: `560px` }}>
             {content.header}
           </Heading>
-          <ImageWrapper width={330} height={223} top={-50} right={-220}>
-            <Image filename="bronze-stevie-winner-0419" alt="why choose incfile" />
+          <ImageWrapper
+            width={330}
+            height={223}
+            top={-50}
+            right={-220}
+            widthMD={248}
+            heightMD={167}
+            marginRightMD="25vw"
+            topMDLG="56px"
+            leftMDLG="59vw"
+            widthMDLG="35.83333333333333%"
+            heightMDLG="35.83333333333333%"
+          >
+            <Image
+              filename="bronze-stevie-winner-0419"
+              alt="why choose incfile"
+            />
           </ImageWrapper>
         </Anchor>
         <Paragraph big>{content.text1}</Paragraph>
 
         <Anchor>
           <Paragraph big>{content.text2}</Paragraph>
-          <ImageWrapper width={335} height={211} top={0} right={-387}>
+          <ImageWrapper
+            order={-1}
+            width={335}
+            height={211}
+            top={0}
+            right={-387}
+            widthMD={251}
+            heightMD={166}
+            marginLeftMD="25vw"
+            marginBottomMD="16px"
+            topMDLG="224px"
+            leftMDLG="59vw"
+            widthMDLG="35.83333333333333%"
+            heightMDLG="35.83333333333333%"
+          >
             <Image filename="enterpreneur-360-5900" alt="entrepreneur" />
           </ImageWrapper>
         </Anchor>
