@@ -3,12 +3,11 @@ import Layout from "../../components/layout";
 import PPCCorporationLayout from "../../atomic/partials/ppc/ppc-corporation-layout";
 
 const FormALCorporation = () => {
-    return (
-        <Layout>
-            <PPCCorporationLayout stateCode="AL" />
-        </Layout>
-    );
+  return (
+    <Layout>
+      <PPCCorporationLayout stateCode="AL" />
+    </Layout>
+  );
 };
-
 
 export default FormALCorporation;
