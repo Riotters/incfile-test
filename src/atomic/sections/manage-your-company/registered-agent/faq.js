@@ -10,11 +10,7 @@ import Oval2SVG from "../../../../images/ovals/top-right-transparent-orange.inli
 
 const Faq = styled.section`
   position: relative;
-  padding-top: 64px;
-
-  @media (min-width: 769px) {
-    padding-top: 88px;
-  }
+  padding-top: 75px;
 
   &::before {
     content: "";
@@ -38,22 +34,10 @@ const FaqSection = ({ className, content }) => (
     <Oval className="oval" height="570" width="570" top="0" left="0">
       <OvalSVG />
     </Oval>
-    <Oval
-      className="oval"
-      height="570"
-      width="570"
-      bottom="0"
-      right="0"
-      y="142"
-      opacity="0.6"
-    >
+    <Oval className="oval" height="570" width="570" bottom="0" right="0" y="142" opacity="0.6">
       <Oval2SVG />
     </Oval>
-    <HeadingCenter
-      className="headline"
-      headline={content.header}
-      headlineWidth="640"
-    />
+    <HeadingCenter className="headline" headline={content.header} headlineWidth="640" />
     <ContentCenter>
       <Accordion content={content.faq} />
     </ContentCenter>
