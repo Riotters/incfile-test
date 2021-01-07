@@ -207,7 +207,7 @@ const MontanaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -297,7 +297,7 @@ const MontanaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -468,6 +468,8 @@ const MontanaCorporation = () => {
 	);
 };
 
+
+
 const QuestionSection = styled.section`
 	background-image: ${gradient.orange3};
 	position: relative;
@@ -475,6 +477,8 @@ const QuestionSection = styled.section`
 	margin-top: 52px;
 	margin-bottom: 148px;
 `;
+
+
 
 const ServiceSection = styled.section`
 	background-image: ${gradient.blue3};
@@ -492,5 +496,7 @@ const TabsWrapper = styled.section`
 		margin-top: 21px;
 	}
 `;
+
+
 
 export default MontanaCorporation;

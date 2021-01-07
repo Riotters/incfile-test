@@ -24,7 +24,7 @@ const About = styled.section`
 			display: block;
 			width: 100%;
 			max-width: 670px;
-			font-family: Engram-Bold;
+			font-family: MarkPro;
 			font-size: 24px;
 			line-height: 32px;
 			color: ${color.black};

@@ -251,7 +251,7 @@ const BoutiqueClothingTabs = () => (
 						style={{
 							fontSize: "20px",
 							textAlign: "left",
-							fontFamily: "Engram",
+							fontFamily: "Avenir",
 							fontWeight: "900",
 						}}
 					>
@@ -263,7 +263,7 @@ const BoutiqueClothingTabs = () => (
 						style={{
 							fontSize: "20px",
 							textAlign: "left",
-							fontFamily: "Engram",
+							fontFamily: "Avenir",
 							fontWeight: "900",
 						}}
 					>
@@ -305,7 +305,7 @@ const BoutiqueClothingTabs = () => (
 						style={{
 							fontSize: "20px",
 							textAlign: "left",
-							fontFamily: "Engram",
+							fontFamily: "Avenir",
 							fontWeight: "900",
 							marginTop: "48px",
 						}}
@@ -362,7 +362,7 @@ const BoutiqueClothingTabs = () => (
 						style={{
 							fontSize: "20px",
 							textAlign: "left",
-							fontFamily: "Engram",
+							fontFamily: "Avenir",
 							fontWeight: "900",
 							marginTop: "48px",
 						}}
@@ -446,7 +446,7 @@ const BoutiqueClothingTabs = () => (
 						style={{
 							fontSize: "20px",
 							textAlign: "left",
-							fontFamily: "Engram",
+							fontFamily: "Avenir",
 							fontWeight: "900",
 						}}
 					>
@@ -508,7 +508,7 @@ const BoutiqueClothingTabs = () => (
 						style={{
 							fontSize: "20px",
 							textAlign: "left",
-							fontFamily: "Engram",
+							fontFamily: "Avenir",
 							fontWeight: "900",
 							marginTop: "48px",
 							color: color.black,

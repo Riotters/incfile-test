@@ -7,7 +7,7 @@ const templateStyle = (template) => {
 	switch (template) {
 		case 1: {
 			return `
-                font-family: Engram-Bold;
+                font-family: MarkPro;
                 font-size: 40px;
                 line-height: 48px;
 
@@ -19,7 +19,7 @@ const templateStyle = (template) => {
 		}
 		case 2: {
 			return `
-                font-family: Engram-Bold;
+                font-family: MarkPro;
                 font-size: 32px;
                 line-height: 40px;
                 font-weight: 700;
@@ -32,7 +32,7 @@ const templateStyle = (template) => {
 		}
 		case 3: {
 			return `
-                font-family: Engram-Bold;
+                font-family: MarkPro;
                 font-size: 24px;
                 line-height: 32px;
                 font-weight: 700;
@@ -40,7 +40,7 @@ const templateStyle = (template) => {
 		}
 		case 4: {
 			return `
-                font-family: Engram;
+                font-family: Avenir;
                 font-weight: 900;
                 font-size: 20px;
                 line-height: 28px;
@@ -48,7 +48,7 @@ const templateStyle = (template) => {
 		}
 		case 5: {
 			return `
-                font-family: Engram-Bold;
+                font-family: MarkPro;
                 font-size: 16px;
                 line-height: 24px;
                 font-weight: 900;
@@ -56,7 +56,7 @@ const templateStyle = (template) => {
 		}
 		case 6: {
 			return `
-                font-family: Engram-Bold;
+                font-family: MarkPro;
                 font-size: 12px;
                 line-height: 1;
             `;

@@ -21,7 +21,7 @@
             <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
             <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.933365091   0 0 0 0 0.933365091  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
         </filter>
-        <text id="text-7" font-family="Engram-Bold-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24">
+        <text id="text-7" font-family="MarkPro-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24">
             <tspan x="0" y="16">Name 2</tspan>
         </text>
         <filter x="-152.5%" y="-250.0%" width="405.1%" height="850.0%" filterUnits="objectBoundingBox" id="filter-8">
@@ -36,7 +36,7 @@
             <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
             <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.933365091   0 0 0 0 0.933365091  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
         </filter>
-        <text id="text-11" font-family="Engram-Bold-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24">
+        <text id="text-11" font-family="MarkPro-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24">
             <tspan x="0" y="16">Name 3</tspan>
         </text>
         <filter x="-150.0%" y="-250.0%" width="400.0%" height="850.0%" filterUnits="objectBoundingBox" id="filter-12">
@@ -57,7 +57,7 @@
             </g>
             <g id="Group-9" transform="translate(40.000000, 35.000000)">
                 <rect id="Rectangle" fill="#F2F6FF" x="0" y="32" width="450" height="72" rx="20"></rect>
-                <text id="Company-name" fill="#868788" fill-rule="nonzero" font-family="Engram-Bold-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24">
+                <text id="Company-name" fill="#868788" fill-rule="nonzero" font-family="MarkPro-Bold, Mark Pro" font-size="16" font-weight="bold" line-spacing="24">
                     <tspan x="0" y="16">Company name</tspan>
                 </text>
                 <rect id="Rectangle" fill="#709EFF" x="30" y="56" width="181" height="8" rx="4"></rect>

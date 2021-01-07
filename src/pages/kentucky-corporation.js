@@ -228,7 +228,7 @@ const KentuckyCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -329,7 +329,7 @@ const KentuckyCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -471,6 +471,8 @@ const KentuckyCorporation = () => {
 	);
 };
 
+
+
 const QuestionSection = styled.section`
 	background-image: ${gradient.orange3};
 	position: relative;
@@ -495,5 +497,7 @@ const TabsWrapper = styled.section`
 		margin-top: 21px;
 	}
 `;
+
+
 
 export default KentuckyCorporation;

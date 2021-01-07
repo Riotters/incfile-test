@@ -82,7 +82,7 @@ const PanelWrapper = styled.div`
 	p,
 	li {
 		color: ${color.grey1};
-		font-family: Engram, sans-serif;
+		font-family: Avenir, sans-serif;
 		max-width: 650px;
 		text-align: left;
 	}
@@ -124,7 +124,7 @@ const ListItems = styled.ul`
 	padding-left: 0;
 
 	li {
-		font-family: Engram, sans-serif;
+		font-family: Avenir, sans-serif;
 		font-size: 16px;
 		line-height: 24px;
 		color: ${(props) =>
@@ -183,7 +183,7 @@ const Content = styled.div`
 
 	span {
 		color: #4e4e4e;
-		font-family: Engram;
+		font-family: Avenir;
 		font-size: 16px;
 		text-align: left;
 		width: 100%;
@@ -300,9 +300,7 @@ const AccordionWithCounting = ({
 										<Paragraph bottomMargin="0">
 											{item.answer.map((el, i) =>
 												el.url ? (
-													<Link to={el.url} key={i}>{` ${parse(
-														el.text
-													)} `}</Link>
+													<Link to={el.url} key={i}>{` ${parse(el.text)} `}</Link>
 												) : (
 													el.text
 												)
@@ -327,9 +325,7 @@ const AccordionWithCounting = ({
 										<Paragraph topMargin="32" bottomMargin="0" mixed>
 											{item.text.map((el, i) =>
 												el.url ? (
-													<Link to={el.url} key={i}>{` ${parse(
-														el.text
-													)} `}</Link>
+													<Link to={el.url} key={i}>{` ${parse(el.text)} `}</Link>
 												) : (
 													el.text
 												)
@@ -346,9 +342,7 @@ const AccordionWithCounting = ({
 										<Paragraph topMargin="32" bottomMargin="0" mixed>
 											{item.text2.map((el, j) =>
 												el.url ? (
-													<Link to={el.url} key={j}>{` ${parse(
-														el.text
-													)} `}</Link>
+													<Link to={el.url} key={j}>{` ${parse(el.text)} `}</Link>
 												) : (
 													el.text
 												)
