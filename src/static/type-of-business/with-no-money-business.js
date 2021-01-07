@@ -112,7 +112,7 @@ export const adventages2 = {
       circleText: 2,
       headline: "Maintain a valid Registered Agent",
       text:
-        "Most states require you to have a Registered Agent on file for your business. This is a party available at a physical address (not a P.O. Box) who can sign for and receive legal notices and documents on your behalf.",
+        "Most states require you to have a registered agent on file for your business. This is a party available at a physical address (not a P.O. Box) who can sign for and receive legal notices and documents on your behalf.",
       url: "/manage-your-company/registered-agent",
       urlText: "Registered Agent Service",
     },

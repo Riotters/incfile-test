@@ -13,62 +13,62 @@ import Rocket from "../../../atomic/sections/review-entity-types/c-corporation/r
 import Searchbar from "../../../atomic/molecules/form/help-center-searchbar";
 //Texts
 import {
-  top,
-  rocket,
-  categories,
-  service,
-  tools,
+	top,
+	rocket,
+	categories,
+	service,
+	tools,
 } from "../../../static/learning-center-entity/help-center-article";
 import { about } from "../../../static/research-topics/nonprofit-info/profit-from-nonprofit";
 import { related } from "../../../static/research-topics/nonprofit-info";
 import { Helmet } from "react-helmet";
-import { HeadingP } from "../../../atomic/atoms/typography/heading-to-p";
+import {HeadingP} from "../../../atomic/atoms/typography/heading-to-p";
 
 const HelpCenter = () => {
-  const currentUri =
-    typeof window !== "undefined" ? window.location.pathname : "";
-  const relatedInfo = {
-    header: `Related Articles`,
-    text: `Other users were also interested in knowing about…`,
-    buttons: related.buttons.filter((item) => {
-      return item.url !== currentUri;
-    }),
-  };
+	const currentUri =
+		typeof window !== "undefined" ? window.location.pathname : "";
+	const relatedInfo = {
+		header: `Related Articles`,
+		text: `Other users were also interested in knowing about…`,
+		buttons: related.buttons.filter((item) => {
+			return item.url !== currentUri;
+		}),
+	};
 
-  React.useEffect(() => {
-    const el = document.getElementById("answers");
-    el.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  });
+	React.useEffect(() => {
+		const el = document.getElementById("answers");
+		el.scrollIntoView({
+			behavior: "smooth",
+			block: "start",
+		});
+	});
 
-  return (
-    <Layout>
-      <SEO
-        title="Can a Nonprofit make a profit?"
-        description="Learn about the key differences between nonprofit and not-for-profit organizations, including legal status, purpose, tax exemption and more."
-      />
-      <Top
-        imageName="mrs-bulb-help-center-article"
-        imageAlt="Mrs Bulb and with checklist"
-        ovalColor="green"
-      >
-        <Heading size={2} template={1} left>
-          {top.header}
-        </Heading>
-        <HeadingP size={3}>{top.text}</HeadingP>
-        <Searchbar />
-      </Top>
-      <About content={about} />
-      <Related content={relatedInfo} />
-      <Categories content={categories} />
-      <Service content={service} />
-      <Tools content={tools} />
-      <Rocket content={rocket} />
-      <Helmet>
-        <script type="application/ld+json">
-          {`{
+	return (
+		<Layout>
+			<SEO
+				title="Can a Nonprofit make a profit?"
+				description="Learn about the key differences between nonprofit and not-for-profit organizations, including legal status, purpose, tax exemption and more."
+			/>
+			<Top
+				imageName="mrs-bulb-help-center-article"
+				imageAlt="Mrs Bulb and with checklist"
+				ovalColor="green"
+			>
+				<Heading size={2} template={1} left>
+					{top.header}
+				</Heading>
+				<HeadingP size={3}>{top.text}</HeadingP>
+				<Searchbar />
+			</Top>
+			<About content={about} />
+			<Related content={relatedInfo} />
+			<Categories content={categories} />
+			<Service content={service} />
+			<Tools content={tools} />
+			<Rocket content={rocket} />
+			<Helmet>
+				<script type="application/ld+json">
+					{`{
                         "@context": "https://schema.org",
                         "@type": "FAQPage",
                         "mainEntity": {
@@ -76,17 +76,17 @@ const HelpCenter = () => {
                         "name": "Can a Nonprofit Corporation Make a Profit?",
                         "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes, a Nonprofit Corporation may generate a profit. Nonprofit does not literally mean
+                        "text": "Yes, a Nonprofit Corporation may generate a profit. Non-profit does not literally mean
                         that a Corporation cannot make a profit. A Nonprofit Corporation can acquire more income that
                         it spends on its exempt purpose. This profit can be utilized for operating expenses, including
                         salaries. However, a Nonprofit Corporation may not utilize its income to profit any director or
                         officer."
                         }}
                     }`}
-        </script>
-      </Helmet>
-    </Layout>
-  );
+				</script>
+			</Helmet>
+		</Layout>
+	);
 };
 
 export default HelpCenter;

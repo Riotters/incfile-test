@@ -44,7 +44,7 @@ export const top = {
     text1: `Overall Rating`,
   },
   box4: {
-    text1: `96 percent`,
+    text1: `96%`,
     text2: `of customers that buy from this merchant give them a 4 or 5 Star rating`,
   },
 };

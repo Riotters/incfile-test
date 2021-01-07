@@ -46,11 +46,11 @@ export const categories = {
       url: `/research-topics/llc-info/`,
     },
     {
-      header: `S Corporation`,
+      header: `S-Corporation`,
       url: `/research-topics/s-corporation-info/`,
     },
     {
-      header: `C Corporation`,
+      header: `C-Corporation`,
       url: `/research-topics/c-corporation-info/`,
     },
     {

@@ -619,7 +619,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `<i>Every Virginia and foreign business entity authorized to transact business in Virginia is required by law to continuously maintain in the Commonwealth a registered office and a Registered Agent. The sole statutory duty of the Registered Agent is to forward to the business entity at its last known address any process, notice or demand that is served on the Registered Agent. A business entity may not have, at any given time, more than one person serving as its Registered Agent in Virginia.”</i>`,
+    content: `<i>Every Virginia and foreign business entity authorized to transact business in Virginia is required by law to continuously maintain in the Commonwealth a registered office and a registered agent. The sole statutory duty of the registered agent is to forward to the business entity at its last known address any process, notice or demand that is served on the registered agent. A business entity may not have, at any given time, more than one person serving as its registered agent in Virginia.”</i>`,
     marginBottom: 48,
   },
   {
@@ -713,7 +713,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Virginia Registered Agent service`,
+      text: `Order Incfile's Virginia registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -810,7 +810,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Virginia Registered Agent service`,
+      text: `Order Incfile's Virginia registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1213,7 +1213,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Virginia Registered Agent service`,
+      text: `Incfile's Virginia registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1669,7 +1669,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare <br>Get more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

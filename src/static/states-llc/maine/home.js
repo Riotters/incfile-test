@@ -93,7 +93,7 @@ export const howToGuide = [
             <p><a href="/maine-llc/registered-agents-maine-llc/" target="_blank">Learn more about Maine Registered Agents.</a></p>`,
         },
         {
-          question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
+          question: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
           answer: `You will need an EIN to identify your business with the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Maine LLC business formation process.`,
         },
         {
@@ -656,7 +656,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Maine Registered Agent service`,
+      text: `Order Incfile's Maine registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -753,7 +753,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Maine Registered Agent service`,
+      text: `Order Incfile's Maine registered agent service`,
       url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=ME`,
     },
     theme: `primary48`,
@@ -1165,7 +1165,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Maine Registered Agent service`,
+      text: `Incfile's Maine registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1612,7 +1612,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare <br>Get more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

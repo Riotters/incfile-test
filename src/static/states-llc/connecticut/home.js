@@ -567,7 +567,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `“A Registered Agent is a responsible third-party who is registered in the same state in which a business entity was established and who is designated to receive service of process notices and correspondence on behalf of the corporation or LLC.”`,
+    content: `“A registered agent is a responsible third-party who is registered in the same state in which a business entity was established and who is designated to receive service of process notices and correspondence on behalf of the corporation or LLC.”`,
     marginBottom: 40,
   },
   {
@@ -663,7 +663,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Connecticut Registered Agent service`,
+      text: `Order Incfile's Connecticut registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -760,7 +760,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Connecticut Registered Agent service`,
+      text: `Order Incfile's Connecticut registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1183,7 +1183,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Connecticut Registered Agent service`,
+      text: `Incfile's Connecticut registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1657,7 +1657,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare <br>Get more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

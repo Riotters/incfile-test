@@ -43,16 +43,16 @@ const BoutiqueClothingBusiness = () => (
         you.
       </p>
       <ButtonsBox>
-        <Button
-          externalLink
-          theme="primary56"
-          marginMD="0 24px 0 0"
-          arrow
-          content={{
-            url: `${process.env.ORDER_URL}/form-order-now.php`,
-            text: "Start Now",
-          }}
-        />
+            <Button
+                externalLink
+                theme="primary56"
+                marginMD="0 24px 0 0"
+                arrow
+                content={{
+                    url: `${process.env.ORDER_URL}/form-order-now.php`,
+                    text: "Start Now",
+                }}
+            />
       </ButtonsBox>
 
       <RatingRow>
@@ -97,23 +97,23 @@ const BoutiqueClothingBusiness = () => (
         understand your competitors and put together a solid business plan, you
         will have every chance for success.
       </Paragraph>
-    </Conclusion>
-
-    <Helmet>
-      <script type="application/ld+json">
-        {`{
+        </Conclusion>
+        
+        <Helmet>
+            <script type="application/ld+json">
+                {`{
                     "@context": "http://schema.org",
                     "@type": "VideoObject",
                     "name": "How to Start a Retail Business by Incfile",
-                    "description": "Starting a retail business is a dream that many people have. In fact, 1 in 4 jobs in the U.S. are retail, and 98 percent of those jobs are in small shops that employ fewer than 50 people.  Before you jump in, there’s a lot to think about. But we’re here to help!  Incfile has business ideas and in-depth guides to teach you how to open a retail business.   And with a $0 LLC plus state fee business formation package, taking that first step is even easier.   Click the links in the box below to get started.  - File an LLC for free: https://www.incfile.com/free-llc/ - The complete guide to starting a business: https://www.incfile.com/guides-start-business/ - How to start an LLC: https://www.incfile.com/form-an-llc/",
+                    "description": "Starting a retail business is a dream that many people have. In fact, 1 in 4 jobs in the U.S. are retail, and 98% of those jobs are in small shops that employ fewer than 50 people.  Before you jump in, there’s a lot to think about. But we’re here to help!  Incfile has business ideas and in-depth guides to teach you how to open a retail business.   And with a $0 LLC plus state fee business formation package, taking that first step is even easier.   Click the links in the box below to get started.  - File an LLC for free: https://www.incfile.com/free-llc/ - The complete guide to starting a business: https://www.incfile.com/guides-start-business/ - How to start an LLC: https://www.incfile.com/form-an-llc/",
                     "thumbnailUrl": "https://i.ytimg.com/vi/F336c6HKzXM/default.jpg",
                     "uploadDate": "2020-12-11T18:56:05Z",
                     "duration": "PT1M32S",
                     "embedUrl": "https://www.youtube.com/embed/F336c6HKzXM",
                     "interactionCount": "8"
                 }`}
-      </script>
-    </Helmet>
+            </script>
+        </Helmet>
   </Layout>
 );
 

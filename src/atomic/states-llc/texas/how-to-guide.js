@@ -17,7 +17,6 @@ import ArrowSVG from "../../../images/arrow.inline.svg";
 import LightBoxVideo from "../../../components/LightBox";
 import { color } from "../../../components/styles/colors";
 import { Paragraph } from "../../atoms/typography/paragraph";
-import Accordion from "../../../atomic/organisms/accordion/accordion";
 import TextCheck from "../../../components/static-check/text-only";
 import IconListColorBox from "../../molecules/text-blocks/icon-h4-list-color";
 import TextBlockWithNumberCounting from "../../molecules/mixed-blocks/text-block-with-absolute-number";
@@ -373,12 +372,7 @@ const HowToGuide = ({ content, data, modalAction }) => {
       {content.otherInfo.map((item, i) => (
         <div>
           {item.type === "heading" && (
-            <Heading
-              size={item.size}
-              template={item.template}
-              left={true}
-              style={{ marginTop: `42px` }}
-            >
+            <Heading size={item.size} style={{ marginTop: `42px` }}>
               {item.content}
             </Heading>
           )}
@@ -387,16 +381,6 @@ const HowToGuide = ({ content, data, modalAction }) => {
             <Paragraph big mixed={true}>
               {parse(item.content)}
             </Paragraph>
-          )}
-
-          {item.type === "accordion" && (
-            <Accordion
-              tab
-              content={item.content}
-              bottomMargin={item.marginBottom}
-              header={item.header}
-              action={modalAction}
-            />
           )}
 
           {item.type === "arrow-links" &&
@@ -425,20 +409,20 @@ const HowToGuide = ({ content, data, modalAction }) => {
             />
           )}
 
-          {item.type === "modal-trigger" &&
-            typeof modalAction === "function" && (
-              <ActionButton
-                content={item.content}
-                theme={item.theme}
-                arrow={item.arrow ?? true}
-                onClick={modalAction}
-                margin={
-                  item.marginBottom ? `0 auto ${item.marginBottom}px 0` : false
-                }
-                marginSM={item.marginBottom ? false : "24px auto 24px 0"}
-                marginMD={item.marginBottom ? false : "42px auto 56px 0"}
-              />
+            {item.type === "modal-trigger" && (typeof modalAction === "function") && (
+                <ActionButton
+                    content={item.content}
+                    theme={item.theme}
+                    arrow={item.arrow ?? true}
+                    onClick={modalAction}
+                    margin={
+                        item.marginBottom ? `0 auto ${item.marginBottom}px 0` : false
+                    }
+                    marginSM={item.marginBottom ? false : "24px auto 24px 0"}
+                    marginMD={item.marginBottom ? false : "42px auto 56px 0"}
+                />
             )}
+
         </div>
       ))}
     </Wrapper>

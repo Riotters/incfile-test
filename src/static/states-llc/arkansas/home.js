@@ -14,10 +14,9 @@ export const top = {
 export const howToGuide = [
   {
     type: `header`,
-    content: `How To Start an LLC in Arkansas`,
+    content: `How to Start an LLC in Arkansas`,
     size: 1,
     template: 3,
-    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 40,
   },
   {
@@ -32,7 +31,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `Briefly, the benefits of starting an Arkansas LLC include:`,
+    content: `Briefly, the benefits of starting a Arkansas LLC include:`,
     marginBottom: 24,
   },
   {
@@ -56,7 +55,7 @@ export const howToGuide = [
   },
   {
     type: `header`,
-    content: `Six Quick Steps To Forming Your Arkansas LLC`,
+    content: `Six Quick Steps to Forming Your Arkansas LLC`,
     size: 2,
     template: 3,
     style: { fontSize: `28px`, lineHeight: `36px` },
@@ -87,16 +86,16 @@ export const howToGuide = [
           answer: `Every Arkansas LLC must have a designated street address. That could be your home address (if you’re running the company from your residence), your company’s office building or any physical address of your preference. The address must be inside the state of Arkansas, but it cannot be a P.O. Box.`,
         },
         {
-          question: `STEP 4: Assign an Arkansas Registered Agent`,
+          question: `STEP 4: Assign a Arkansas Registered Agent`,
           answer: `<p>Every AR LLC must have a “Registered Agent.” This is an official position; the Registered Agent is someone who receives official legal and tax correspondence and has responsibility for filing reports with the Arkansas Secretary of State.</p></br>
 
           <p>This position can be filled by you, another manager in the business or a dedicated Registered Agent service. Your Registered Agent must have a physical street address in Arkansas and must be present to receive important documents for your company during business hours.</p></br>
           
-          <p>At Incfile, all of our packages include an Arkansas Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
+          <p>At Incfile, all of our packages include a Arkansas Registered Agent service that is free for the first year and just $119 per year afterward. We also have a dashboard where you can log in and easily view any document your Registered Agent has received on your behalf.</p></br>
           <a href="/arkansas-llc/registered-agents-arkansas-llc/">Learn more about Arkansas Registered Agents.</a>`,
         },
         {
-          question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
+          question: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
           answer: `You will need an EIN to identify your business with the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Arkansas LLC business formation process.`,
         },
         {
@@ -157,6 +156,7 @@ export const howToGuide = [
     content: `Arkansas Series LLCs`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 32,
   },
   {
@@ -167,13 +167,14 @@ export const howToGuide = [
   {
     type: `text`,
     content: `<a href="https://www.incfile.com/blog/post/series-llc-why-need-one/" target="_blank">Decide if an Arkansas Series LLC is right for your new business</a>`,
-    marginBottom: 32,
+    marginBottom: 24,
   },
   {
     type: `header`,
     content: `Professional Arkansas LLCs`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 32,
   },
   {
@@ -186,6 +187,7 @@ export const howToGuide = [
     content: `Foreign LLC in Arkansas`,
     size: 2,
     template: 3,
+    style: { fontSize: `28px`, lineHeight: `36px` },
     marginBottom: 32,
   },
   {
@@ -196,7 +198,7 @@ export const howToGuide = [
   },
   {
     type: `header`,
-    content: `What To Do After Forming Your Arkansas LLC`,
+    content: `What to Do After Forming Your Arkansas LLC`,
     size: 2,
     template: 3,
     style: { fontSize: `28px`, lineHeight: `36px` },
@@ -228,7 +230,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `How to search the Arkansas business registry of the Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving an Arkansas LLC name and more.`,
+    content: `How to search the Arkansas business registry of the Secretary of State and find the right name. Includes information on naming rules, fictitious names, reserving a Arkansas LLC name and more.`,
     marginBottom: 32,
   },
   {
@@ -239,7 +241,7 @@ export const howToGuide = [
   },
   {
     type: `text`,
-    content: `How to appoint a Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching for Arkansas Registered Agents.`,
+    content: `How to appoint a Registered Agent to your new LLC or change to a different Registered Agent. Includes information on Registered Agent rules and searching forArkansas Registered Agents.`,
     marginBottom: 32,
   },
   {
@@ -568,7 +570,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `There are certain rules that you must follow when you’re appointing an Arkansas Registered Agent service for your business. They are:`,
+    content: `There are certain rules that you must follow when you’re appointing a Arkansas Registered Agent service for your business. They are:`,
     marginBottom: 16,
   },
   {
@@ -657,7 +659,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Arkansas Registered Agent service`,
+      text: `Order Incfile's Arkansas registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -684,7 +686,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `Your business needs to have an Arkansas Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
+    content: `Your business needs to have a Arkansas Registered Agent Service as soon as it’s formed. You can achieve this through one of the following methods.`,
     marginBottom: 32,
   },
   {
@@ -754,7 +756,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Arkansas Registered Agent service`,
+      text: `Order Incfile's Arkansas registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -797,7 +799,7 @@ export const registeredAgent = [
       list: [
         `<b>Getting served or sued and not finding out about it:</b> If your LLC is sued and you don’t know about it, you could lose to a default judgment in your absence.`,
         `<b>Falling out of good standing with the Arkansas Secretary of State:</b> If you don’t respond to certain correspondence (like the request for your annual report), certain states may revoke your right to do business.`,
-        `<b>Losing your status as an Arkansas LLC:</b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
+        `<b>Losing your status as a Arkansas LLC:</b> A Registered Agent “proves” to the state that your business exists. Without it, you could lose your business entity protections and your LLC may be dissolved.`,
       ],
     },
     marginBottom: 40,
@@ -843,7 +845,7 @@ export const registeredAgent = [
     content: {
       items: [
         {
-          question: `Do I Need to Appoint an Arkansas Registered Agent?`,
+          question: `Do I Need to Appoint a Arkansas Registered Agent?`,
           answer: `Yes. All AR LLCs are required to have a Registered Agent. This is mandated by the Arkansas Secretary of State.`,
         },
         {
@@ -879,9 +881,9 @@ export const registeredAgent = [
     type: `list-dot`,
     content: {
       list: [
-        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of an Arkansas Registered Agent</a>`,
+        `<a href="/research-topics/registered-agent-help/what-is-the-main-function-of-the-registered-agent/">The Main Functions of a Arkansas Registered Agent</a>`,
         `<a href="/manage-your-company/change-of-registered-agent/">Changing Your Arkansas Registered Agent</a>`,
-        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What an Arkansas Registered Agent Does</a>`,
+        `<a href="/research-topics/registered-agent-help/what-does-a-registered-agent-do/">What a Arkansas Registered Agent Does</a>`,
       ],
     },
     marginBottom: 48,
@@ -1168,7 +1170,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Arkansas Registered Agent service`,
+      text: `Incfile's Arkansas registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1206,7 +1208,7 @@ export const feesAndRequirments = [
     type: `list-dot`,
     content: {
       list: [
-        `Adding, removing or changing an Arkansas LLC member or manager`,
+        `Adding, removing or changing a Arkansas LLC member or manager`,
         `Changing the business address of your LLC`,
         `Altering the stated business activities of your Arkansas LLC`,
       ],
@@ -1319,7 +1321,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `The profits of an Arkansas LLC are not taxed at the business level like those of C Corporations. Instead, taxes for an Arkansas LLC work as follows:`,
+    content: `The profits of a Arkansas LLC are not taxed at the business level like those of C Corporations. Instead, taxes for a Arkansas LLC work as follows:`,
     marginBottom: 24,
   },
   {
@@ -1381,7 +1383,7 @@ export const businessTaxes = [
   },
   {
     type: `text`,
-    content: `The Arkansas state tax rates vary between 1.125 percent to 6.925 percent on taxable income. Individual income tax is graduated so higher earnings are taxed at a higher rate.`,
+    content: `The Arkansas state tax rates vary between 1.125% to 6.925% on taxable income. Individual income tax is graduated so higher earnings are taxed at a higher rate.`,
     marginBottom: 16,
   },
   {
@@ -1625,7 +1627,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare <br>Get more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

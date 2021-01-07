@@ -1,18 +1,18 @@
 export const HomePageContent = {
   header: {
     title: `How to Start an LLC in Texas`,
-    subline: ``,
+    subline: `aaa`,
     boxes: [
       {
-        title: `Learn How to Form a Texas <br>LLC Yourself`,
+        title: `Learn how to form a Texas <br>LLC yourself`,
         desc: `Read our DIY guide to Texas LLC formation, with information on Registered Agents, naming rules, business licenses, and more.`,
         button: {
-          text: `Read the Guide`,
+          text: `Read The Guide`,
           url: "#video",
         },
       },
       {
-        title: `Have Incfile Do the Work for You <br><span style="color:#FD8550">$0 + State Fee</span>`,
+        title: `Have Incfile do the work for you <br><span style="color:#FD8550">$0 + State fee</span>`,
         desc: `Incfile can take care of all your LLC formation paperwork—and we’ll do it for free. Just pay the required Texas state fee ($[STATE_FEE]).`,
         button: {
           text: `Form Your LLC Now`,
@@ -54,11 +54,11 @@ export const HomePageContent = {
           blockID: `step3`,
         },
         {
-          text: `<b>Step 4</b> - File Your Certificate of Formation (Form 205) with the Texas Secretary of State`,
+          text: `<b>Step 4</b> - File Your Certificate of Formation (Form 205) With the Texas Secretary of State`,
           blockID: `step4`,
         },
         {
-          text: `<b>Step 5</b> - Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
+          text: `<b>Step 5</b> - Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
           blockID: `step5`,
         },
         {
@@ -93,12 +93,12 @@ export const HomePageContent = {
           url: `/texas-llc/registered-agents-texas-llc/`,
         },
         button2: {
-          text: `Get a Free Registered Agent When You Incorporate with Incfile`,
+          text: `Get A Free Registered Agent When You Incorporate With Incfile`,
           url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`,
         },
       },
       step4: {
-        heading1: `File Your Certificate of Formation (Form 205) with the Texas Secretary of State`,
+        heading1: `File Your Certificate of Formation (Form 205) With the Texas Secretary of State`,
         text1: `Once you've gathered all the information for your Texas LLC, you’ll need to file a formal document with the Texas Secretary of State. This document is known as your “Certificate of Formation,” and filing the document officially creates your Texas LLC. Here’s what is typically included:`,
         lists: {
           list: [
@@ -133,16 +133,16 @@ export const HomePageContent = {
 
         text3: `You only need to file your Certificate of Formation once, but every year after you will also need to file an annual report for your LLC. This is also something Incfile can remind you to do / do for you if you choose to have us handle the paperwork.`,
         cta: {
-          title: `Have Incfile Handle <br>All the Paperwork for You`,
-          subtitle: `For $0 + the Texas State fee.`,
+          title: `Have Incfile Handle <br>all the Paperwork`,
+          subtitle: `for You for $0 + the Texas State fee`,
           button: {
-            text: `Form Your LLC Now for Free`,
+            text: `Form Your LLC Now For Free`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`,
           },
         },
       },
       step5: {
-        heading1: `Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
+        heading1: `Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
         text1: `You will need an EIN to identify your business to the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. An EIN number is also required to open a business bank account. You can obtain one directly from the IRS, or Incfile can get one for you as part of the Texas LLC business formation process.`,
       },
       step6: {
@@ -154,8 +154,8 @@ export const HomePageContent = {
           url: `https://www.incfile.com/blog/post/operating-agreement-llc/`,
         },
         cta: {
-          title: `Receive a Personalized <br>Operating Agreement`,
-          subtitle: `When you select Incfile’s Gold package.`,
+          title: `Receive a personalized <br>operating agreement`,
+          subtitle: `when you select Incfile’s Gold package`,
           button: {
             text: `Form Your LLC Now`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=TX`,
@@ -175,7 +175,6 @@ export const HomePageContent = {
       {
         type: `heading`,
         size: 3,
-        template: 4,
         content: `Special Types of LLCs in Texas`,
       },
       {
@@ -183,40 +182,73 @@ export const HomePageContent = {
         content: `A regular Texas LLC is suitable for most business needs, but you also have a few other options to incorporate a special type of LLC.`,
       },
       {
-        type: `accordion`,
-        header: 3,
+        type: `heading`,
+        size: 4,
+        content: `Series LLCs`,
+      },
+      {
+        type: `paragraph`,
+        content: `In Texas, you also have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master, umbrella LLC. These can be very useful if you don’t want to set up a separate Texas LLC for every individual business you run.`,
+      },
+      {
+        type: "arrow-links",
+        content: [
+          {
+            text: `Decide if a Texas Series LLC is right for your new business.`,
+            url: `https://www.incfile.com/blog/post/series-llc-why-need-one/`,
+          },
+          {
+            text: `What Is a Series LLC in Texas and Why Might You Need One?`,
+            url: `https://www.incfile.com/blog/post/series-llc-in-texas/`,
+          },
+        ],
+      },
+      {
+        type: `heading`,
+        size: 4,
+        content: `Professional LLCs`,
+      },
+      {
+        type: `paragraph`,
+        content: `Some states, including Texas, allow certain occupations to form “Professional LLCs.” These types of business typically have specialized requirements and licensing. Here are the occupations that the TX Secretary of State allows to form Texas professional LLCs:`,
+      },
+      {
+        type: `list-dot`,
         content: {
-          items: [
-            {
-              question: `Series LLCs`,
-              answer: `<p>In Texas, you also have the option to set up a “Series LLC” — these are specialized LLCs designed to allow you to manage multiple separate LLCs under one master, umbrella LLC. These can be very useful if you don’t want to set up a separate Texas LLC for every individual business you run.</p></br>
-                      <p><a href='/blog/post/series-llc-why-need-one/'>Decide if a Texas Series LLC is right for your new business.</a></p></br>
-                      <p><a href='/blog/post/series-llc-in-texas/'>What is a Series LLC in Texas and why might you need one?</a></p>`,
-            },
-            {
-              question: `Professional LLCs`,
-              answer: `<p>Some states, including Texas, allow certain occupations to form “Professional LLCs.” These types of business typically have specialized requirements and licensing. Here are the occupations that the TX Secretary of State allows to form Texas professional LLCs:</p></br>
-                <p><ul>
-                <li>Doctors of medicine</li>
-                <li>Doctors of osteopathy</li>
-                <li>Podiatrists</li>
-                <li>Mental health professionals</li>
-                <li>Optometrists</li>
-                <li>Therapeutic optometrists</li>
-                <li>Chiropractors</li>
-                <li>Dentists</li>
-                <li>Veterinarians</li>
-                </ul></p></br>
-                <p>A Professional LLC is also subject to a state franchise tax.</p>`,
-            },
-            {
-              question: `Out-of-State / Foreign LLCs`,
-              answer: `<p>If your business is already operating in another state and expanding to Texas, you’ll need to form a Foreign LLC.</p></br>
-                <p><a href="/texas-llc/fees-filing-requirements/">More information on Texas filing and licensing requirements can be found here.</a></p>`,
-            },
+          list: [
+            `Doctors of medicine`,
+            `Doctors of osteopathy`,
+            `Podiatrists`,
+            `Mental health professionals`,
+            `Optometrists`,
+            `Therapeutic optometrists`,
+            `Chiropractors`,
+            `Dentists`,
+            `Veterinarians`,
           ],
         },
-        marginBottom: 48,
+      },
+      {
+        type: `paragraph`,
+        content: `A Professional LLC is also subject to a state franchise tax.`,
+      },
+      {
+        type: `heading`,
+        size: 4,
+        content: `Out-of-State / Foreign LLCs`,
+      },
+      {
+        type: `paragraph`,
+        content: `If your business is already operating in another state and expanding to Texas, you’ll need to form a foreign LLC.`,
+      },
+      {
+        type: "arrow-links",
+        content: [
+          {
+            text: `More information on Texas filing and licensing requirements can be found here.`,
+            url: `/texas-llc/fees-filing-requirements/`,
+          },
+        ],
       },
       // Helpful resource
       {
@@ -276,7 +308,7 @@ export const HomePageContent = {
         type: "modal-trigger",
         theme: `secondary56`,
         content: {
-          text: `Search for Your Texas LLC Name`,
+          text: `Search For Your texas LLC Name`,
           url: `/`, // okienko
         },
       },

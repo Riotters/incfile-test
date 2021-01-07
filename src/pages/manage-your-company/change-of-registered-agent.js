@@ -25,7 +25,7 @@ const ChangeOfRegisteredAgent = () => (
   <Layout>
     <SEO
       title="Change Your Registered Agent | How to File a Change of Agent"
-      description="Find out how to change your business's Registered Agent with your state, or have Incfile file the forms for you for only $0. Learn more"
+      description="Find out how to change your business's registered agent with your state, or have Incfile file the forms for you for only $0. Learn more"
     />
     <ProductSchema
       productUrl={`${process.env.ORDER_URL}/change-agent.php`}

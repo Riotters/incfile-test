@@ -187,7 +187,7 @@ export const questions = {
   items: [
     {
       question: `How is a Corporation Taxed?`,
-      answer: `Unlike many other business entities in which the profits pass through to the owners' personal tax return (e.g. LLCs, S Corporations, etc.), the C Corporation is a completely separate taxable entity. The C Corporation pays federal taxes on the net profits (after all expenses, including salaries and bonuses) of the business by filing the 1120 form with the IRS. The after tax profits can be paid out to the owners (shareholders) in the form of dividends, or retained for reinvestment of the business. The first $50,000 of net income is only federally taxed at 15 percent rate, and the next $25,000 is taxed at a 25 percent rate. Different states have different rules on how they tax corporations.`,
+      answer: `Unlike many other business entities in which the profits pass through to the owners' personal tax return (e.g. LLCs, S Corporations, etc.), the C Corporation is a completely separate taxable entity. The C Corporation pays federal taxes on the net profits (after all expenses, including salaries and bonuses) of the business by filing the 1120 form with the IRS. The after tax profits can be paid out to the owners (shareholders) in the form of dividends, or retained for reinvestment of the business. The first $50,000 of net income is only federally taxed at 15% rate, and the next $25,000 is taxed at a 25% rate. Different states have different rules on how they tax corporations.`,
     },
     {
       question: `What is the Management Structure of an Corporation?`,
@@ -195,7 +195,7 @@ export const questions = {
     },
     {
       question: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
-      answer: `There are no citizenship or residence requirements for ownership of a C Corporation or an LLC. The S Corporation however does not allow nonresident aliens to be shareholders (owner), but any US citizen or resident alien may be a shareholder (owner). You would, of course, require an in state street address for the state to forward official legal and tax correspondence including service of process, known as the Registered Agent address, but neither residency nor citizenship is required for ownership of a C Corporation or an LLC.`,
+      answer: `There are no citizenship or residence requirements for ownership of a C Corporation or an LLC. The S Corporation however does not allow nonresident aliens to be shareholders (owner), but any US citizen or resident alien may be a shareholder (owner). You would, of course, require an in state street address for the state to forward official legal and tax correspondence including service of process, known as the registered agent address, but neither residency nor citizenship is required for ownership of a C Corporation or an LLC.`,
     },
     {
       question: `Can I form an Corporation with just one member?`,
@@ -270,7 +270,7 @@ export const articlesOfIncorporation = {
       `If more than one class of shares is authorized, the articles must prescribe a distinguishing designation for each class, as well as its preferences, limitations, and relative rights`,
       `The articles of incorporation must authorize (a) at least one class of shares that has unlimited voting rights; and (b) at least one class of shares, which may be the same class or classes as those with voting rights, that is entitled to receive the corporation’s dissolved assets`,
       `The street address of the corporation’s initial registered office`,
-      `The signature of the initial Registered Agent`,
+      `The signature of the initial registered agent`,
     ],
   },
   box2: {

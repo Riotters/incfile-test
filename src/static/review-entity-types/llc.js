@@ -1,6 +1,6 @@
 export const top = {
   header: `Should You Form a Limited Liability Company (LLC)?`,
-  text: `For over 80 percent of small businesses, the right choice of business structure is a simple one: the LLC.`,
+  text: `For over 80% of small businesses, the right choice of business structure is a simple one: the LLC.`,
   button: [
     {
       text: "Form Your LLC Now",
@@ -10,56 +10,55 @@ export const top = {
 };
 
 export const form = {
-  header: "Download our Complete LLC Guide.",
-  text:
-    "The total who, what, where, when and how guide to forming & maintaining a LLC.",
-  hs_form_id: `993baef6-066e-4d18-a813-c12bc3b3fff9`,
-  button: {
-    text: "Download now",
-    url: "/",
-  },
-  fields: [
-    {
-      label: "Email",
-      type: "email",
-      name: "email",
-      required: "required",
-      placeholder: "",
+    header: "Download our Complete LLC Guide.",
+    text: "The total who, what, where, when and how guide to forming & maintaining a LLC.",
+    hs_form_id: `993baef6-066e-4d18-a813-c12bc3b3fff9`,
+    button: {
+        text: "Download now",
+        url: "/"
     },
-    {
-      label: "First Name",
-      name: "firstname",
-      required: "required",
-      type: "text",
-      placeholder: "",
-    },
-    {
-      label: "Last Name",
-      name: "lastname",
-      required: "required",
-      type: "text",
-      placeholder: "",
-    },
-    {
-      label: "Phone number",
-      name: "phone",
-      required: "required",
-      type: "text",
-      placeholder: "",
-    },
-    {
-      label: "I want to...",
-      name: "intent_path",
-      required: "required",
-      type: "select",
-      placeholder: "Please select",
-      options: [
-        "Start a Business Soon",
-        "Start a Business Now",
-        "Grow a Business",
-      ],
-    },
-  ],
+    fields: [
+        {
+            label: "Email",
+            type: "email",
+            name: 'email',
+            required: 'required',
+            placeholder: "",
+        },
+        {
+            label: "First Name",
+            name: 'firstname',
+            required: 'required',
+            type: "text",
+            placeholder: "",
+        },
+        {
+            label: "Last Name",
+            name: 'lastname',
+            required: 'required',
+            type: "text",
+            placeholder: "",
+        },
+        {
+            label: "Phone number",
+            name: 'phone',
+            required: 'required',
+            type: "text",
+            placeholder: "",
+        },
+        {
+            label: "I want to...",
+            name: 'intent_path',
+            required: 'required',
+            type: "select",
+            placeholder: "Please select",
+            options: [
+                "Start a Business Soon",
+                "Start a Business Now",
+                "Grow a Business",
+            ]
+        },
+    ]
 };
 
 export const thanks_form = {
@@ -67,19 +66,13 @@ export const thanks_form = {
   text: "Thank you for your submission. Click below to download your guide!",
   button: {
     text: "Close",
-    url: "#",
-  },
+    url: "#"
+  }
 };
 
 export const about = {
   tabs: {
-    panels: [
-      `General Information`,
-      `When choose an LLC?`,
-      `Pros and cons of an LLC`,
-      `LLC requirements`,
-      `Types of LLCs`,
-    ],
+    panels: [`General Information`, `When choose an LLC?`, `Pros and cons of an LLC`, `LLC requirements`, `Types of LLCs`],
     content: [
       {
         text: `Now that your small business is growing, it’s important to protect both your company and your own assets. Forming an LLC can help do that — but is it the best business entity choice for you? We've written a complete guide to forming an LLC to help with your decision.`,
@@ -119,59 +112,59 @@ export const about = {
         text: `The LLC structure has many benefits that make it perfect for a wide variety of companies. However, there are also some disadvantages to creating an LLC. Here are some of the biggest pros and cons to keep in mind.`,
         header2: `Advantages`,
         advantages: {
-          items: [
-            {
-              question: `Limited Liability Protection`,
-              answer: `By forming an LLC, only the LLC is liable for the debts and liabilities incurred by the business — not the members. The members liability is limited to the personal interest they have invested in the company thus protecting the personal assets of the individual member that are separate from the LLC.`,
-            },
-            {
-              question: `Pass Through Taxation`,
-              answer: `The LLC typically does not pay taxes for itself. Instead, the net income/loss is "passed through" to the personal income of the owner(s)/member(s), and is simply taxed as personal income. Federally, LLC taxation is handled very much the same as a partnership or sole proprietorship, in the case of a single member LLC.`,
-            },
-            {
-              question: `Member-Managed LLC`,
-              answer: `This type of LLC is where all owners (members) are operating the business themselves, equally. This is the most common type of LLC.`,
-            },
-            {
-              question: `No Ownership Restrictions`,
-              answer: `The LLC does not have any residency or citizenship restrictions, which allows foreign nationals to have ownership in an LLC, if desired.`,
-              text: `In addition, other corporate entities may be LLC members which means that <a href="/research-topics/llc-info/can-another-business-entity-be-a-member-of-an-llc/">other corporations or LLCs (or other entities)</a> may be a member of the LLC, or may be the sole member (although an LLC with a sole member that is a corporation or LLC is treated for tax purposes as a partnership or multi-member LLC).`,
-            },
-            {
-              question: `Versatile Tax Status`,
-              answer: `One of the most advantageous aspects of the LLC is that it has the ability to choose how it is treated as a taxable entity. According to the IRS an LLC is, by default, federally taxed as a partnership (in the case of a multi-member LLC) or as a sole proprietor (in the case of a single member LLC). The LLC, however, may elect to be taxed as a C- or S-corporation at any time the members so choose.`,
-            },
-            {
-              question: `Flexible Profit Distribution`,
-              answer: `For an LLC, if the members choose, the net income/profits of the LLC may be allocated to the members in different proportions to their ownership percentage in the LLC. This is different from a corporation, as corporations are required to distribute profits exactly accordance with the proportion/percentage of ownership of each shareholder.`,
-            },
-            {
-              question: `Minimal Compliance Requirements`,
-              answer: `LLCs are subject to limited state mandated annual filing requirements and ongoing formalities. While corporations are typically required to have at least an annual meeting of directors and shareholders (and initial meeting of the same), adopt bylaws, and keep minutes of all meetings and all formal corporate resolutions, an LLC is not required to do any of those things (see the explanation of an operating agreement, above). The LLC members may have whatever meetings they wish and may document any such things as they wish, however they are not required to do so.`,
-            },
-          ],
+            items: [
+              {
+                question: `Limited Liability Protection`,
+                answer: `By forming an LLC, only the LLC is liable for the debts and liabilities incurred by the business — not the members. The members liability is limited to the personal interest they have invested in the company thus protecting the personal assets of the individual member that are separate from the LLC.`,
+              },
+              {
+                question: `Pass Through Taxation`,
+                answer: `The LLC typically does not pay taxes for itself. Instead, the net income/loss is "passed through" to the personal income of the owner(s)/member(s), and is simply taxed as personal income. Federally, LLC taxation is handled very much the same as a partnership or sole proprietorship, in the case of a single member LLC.`,
+              },
+              {
+                question: `Member-Managed LLC`,
+                answer: `This type of LLC is where all owners (members) are operating the business themselves, equally. This is the most common type of LLC.`,
+              },
+              {
+                question: `No Ownership Restrictions`,
+                answer: `The LLC does not have any residency or citizenship restrictions, which allows foreign nationals to have ownership in an LLC, if desired.`,
+                text: `In addition, other corporate entities may be LLC members which means that <a href="/research-topics/llc-info/can-another-business-entity-be-a-member-of-an-llc/">other corporations or LLCs (or other entities)</a> may be a member of the LLC, or may be the sole member (although an LLC with a sole member that is a corporation or LLC is treated for tax purposes as a partnership or multi-member LLC).`,
+              },
+              {
+                question: `Versatile Tax Status`,
+                answer: `One of the most advantageous aspects of the LLC is that it has the ability to choose how it is treated as a taxable entity. According to the IRS an LLC is, by default, federally taxed as a partnership (in the case of a multi-member LLC) or as a sole proprietor (in the case of a single member LLC). The LLC, however, may elect to be taxed as a C- or S-corporation at any time the members so choose.`,
+              },
+              {
+                question: `Flexible Profit Distribution`,
+                answer: `For an LLC, if the members choose, the net income/profits of the LLC may be allocated to the members in different proportions to their ownership percentage in the LLC. This is different from a corporation, as corporations are required to distribute profits exactly accordance with the proportion/percentage of ownership of each shareholder.`,
+              },
+              {
+                question: `Minimal Compliance Requirements`,
+                answer: `LLCs are subject to limited state mandated annual filing requirements and ongoing formalities. While corporations are typically required to have at least an annual meeting of directors and shareholders (and initial meeting of the same), adopt bylaws, and keep minutes of all meetings and all formal corporate resolutions, an LLC is not required to do any of those things (see the explanation of an operating agreement, above). The LLC members may have whatever meetings they wish and may document any such things as they wish, however they are not required to do so.`,
+              },
+            ],
         },
         header3: `Disadvantages`,
         disadvantages: {
-          items: [
-            {
-              question: `Self Employment Taxes`,
-              answer: `Although we listed Pass Through Taxation as an LLC benefit, it can also be a disadvantage. Oftentimes the taxes that are passed through and reported as personal income of LLC members will be higher than the taxes at a corporate level. You will also still pay for federal inclusions such as Medicare and Social Security. If you're confused if this business structure will be the right tax choice for you, it's a good idea to speak to your accountant or financial advisor.`,
-            },
-            {
-              question: `Careful Personal Records`,
-              answer: `As the owner of an LLC, you need to keep careful records of your business expenses — separate from your personal finances. This is the only way to ensure limited liability. Therefore, you should have separate bank accounts and cards to track business expenses.`,
-            },
-            {
-              question: `LLC Termination`,
-              answer: `Usually, if a member departs an LLC, then the LLC is terminated and ceases to exist. This is unlike a corporation where it still exists regardless of what shareholders come and go.`,
-            },
-            {
-              question: `Banking`,
-              answer: `Since it's required to keep your business finances separate from your personal finances, you'll need a business checking account. Banks usually charge a number of different fees and monthly expenses for these types of accounts. Also, If a check is made out to your LLC, then it is required to be deposited into a business bank account and cannot just be cashed. And some banks might charge extra for this type of deposit.
+            items: [
+              {
+                question: `Self Employment Taxes`,
+                answer: `Although we listed Pass Through Taxation as an LLC benefit, it can also be a disadvantage. Oftentimes the taxes that are passed through and reported as personal income of LLC members will be higher than the taxes at a corporate level. You will also still pay for federal inclusions such as Medicare and Social Security. If you're confused if this business structure will be the right tax choice for you, it's a good idea to speak to your accountant or financial advisor.`,
+              },
+              {
+                question: `Careful Personal Records`,
+                answer: `As the owner of an LLC, you need to keep careful records of your business expenses — separate from your personal finances. This is the only way to ensure limited liability. Therefore, you should have separate bank accounts and cards to track business expenses.`,
+              },
+              {
+                question: `LLC Termination`,
+                answer: `Usually, if a member departs an LLC, then the LLC is terminated and ceases to exist. This is unlike a corporation where it still exists regardless of what shareholders come and go.`,
+              },
+              {
+                question: `Banking`,
+                answer: `Since it's required to keep your business finances separate from your personal finances, you'll need a business checking account. Banks usually charge a number of different fees and monthly expenses for these types of accounts. Also, If a check is made out to your LLC, then it is required to be deposited into a business bank account and cannot just be cashed. And some banks might charge extra for this type of deposit.
                 `,
-            },
-          ],
+              },
+            ],
         },
       },
       {

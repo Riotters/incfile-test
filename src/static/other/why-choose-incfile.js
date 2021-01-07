@@ -5,7 +5,7 @@ export const seo = {
 
 export const hero = {
   header: `Why Thousands of Small Business Owners Choose Incfile`,
-  // subtitle: `Everything you need to know about Registered Agents for your LLC or Corporation`,
+  // subtitle: `Everything you need to know about registered agents for your LLC or Corporation`,
   button: {
     text: `Sign up now`,
     url: `${process.env.ORDER_URL}/form-order-now.php`,
@@ -40,11 +40,11 @@ export const whyChoose = {
       answer: [
         {
           type: `paragraph`,
-          content: `Each of our 3 packages include a 1 free year of Registered Agent service, if you do not need us to act as your Registered Agent you are not obliged to do so and you can name yourself or whomever you wish.`,
+          content: `Each of our 3 packages include a 1 free year of registered agent service, if you do not need us to act as your registered agent you are not obliged to do so and you can name yourself or whomever you wish.`,
         },
         {
           type: `paragraph`,
-          content: `We only point this out because there are companies that will offer the Registered Agent service for a pre specified time lets say 6 weeks or 3 months and then auto charge your payment card for whatever there annual fee is and then keep charging every year thereafter going forward making the assumption that the company is still active or that you have not changed the agent on file with the state.`,
+          content: `We only point this out because there are companies that will offer the registered agent service for a pre specified time lets say 6 weeks or 3 months and then auto charge your payment card for whatever there annual fee is and then keep charging every year thereafter going forward making the assumption that the company is still active or that you have not changed the agent on file with the state.`,
         },
       ],
     },

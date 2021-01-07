@@ -161,7 +161,7 @@ const Blockchain = () => (
 
             <CircleWithText
               textInsideCircle="80"
-              textLine="The cryptocurrency market is extremely volatile. Bitcoin alone fell in value by over 80 percent in a year, and other cryptocurrencies also saw massive devaluation."
+              textLine="The cryptocurrency market is extremely volatile. Bitcoin alone fell in value by over 80% in a year, and other cryptocurrencies also saw massive devaluation."
               SvgChart={CircleSvg}
               withBg={true}
               symbol="%"

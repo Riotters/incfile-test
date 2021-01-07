@@ -19,121 +19,100 @@ import { tabPages } from "../../static/states-llc/texas/general";
 
 import { getFullPricesAndFilings } from "../../api/Api";
 import { Helmet } from "react-helmet";
-import { ThankYouContent } from "../../components/hubspot/thank-you-modal";
+import {ThankYouContent} from "../../components/hubspot/thank-you-modal";
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  @media (min-width: 769px) {
-    flex-direction: ${(props) => (props.layout !== "grid" ? "row" : "column")};
-  }
+	@media (min-width: 769px) {
+		flex-direction: ${(props) => (props.layout !== "grid" ? "row" : "column")};
+	}
 
-  .ReactCollapse--collapse {
-    width: 100%;
-    transition: height 500ms;
-    margin-left: auto;
+	.ReactCollapse--collapse {
+		width: 100%;
+		transition: height 500ms;
+		margin-left: auto;
 
-    @media (min-width: 769px) {
-      max-width: ${(props) => (props.layout !== "grid" ? "55%" : "")};
-    }
+		@media (min-width: 769px) {
+			max-width: ${(props) => (props.layout !== "grid" ? "55%" : "")};
+		}
 
-    @media (min-width: 1200px) {
-      max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
-    }
-  }
+		@media (min-width: 1200px) {
+			max-width: ${(props) => (props.layout !== "grid" ? "670px" : "")};
+		}
+	}
 `;
 
 function TexasLLCIndex() {
-  const [dataApi, setDataApi] = React.useState({});
+	const [dataApi, setDataApi] = React.useState({});
 
-  React.useEffect(() => {
-    getFullPricesAndFilings("Texas").then((data) => {
-      setDataApi(data);
-    });
-  }, []);
+	React.useEffect(() => {
+		getFullPricesAndFilings("Texas").then((data) => {
+			setDataApi(data);
+		});
+	}, []);
 
-  const [modalVisible, setModalVisible] = React.useState(false);
-  const [formSubmitted, setFormSubmitted] = React.useState(false);
-  const [modalClases, setModalClases] = React.useState(["lightbox-content"]);
+	const [modalVisible, setModalVisible] = React.useState(false);
+	const [formSubmitted, setFormSubmitted] = React.useState(false);
+	const [modalClases, setModalClases] = React.useState(["lightbox-content"]);
 
-  React.useEffect(() => {
-    if (formSubmitted) {
-      setModalClases((modalClases) => [...modalClases, "form-submitted"]);
-    }
-  }, [formSubmitted]);
+	React.useEffect(() => {
+		if (formSubmitted) {
+			setModalClases((modalClases) => [...modalClases, "form-submitted"]);
+		}
+	}, [formSubmitted]);
 
-  const popup = (e) => {
-    e.preventDefault();
+	const popup = (e) => {
+		e.preventDefault();
 
-    if (
-      !e.target.className.includes("modal-overlay") &&
-      !e.target.className.includes("modal-close") &&
-      modalVisible
-    )
-      return;
+		if (!e.target.className.includes("modal-overlay") && !e.target.className.includes("modal-close") && modalVisible) return;
 
-    setModalVisible(!modalVisible);
-    setFormSubmitted(false);
-  };
+		setModalVisible(!modalVisible);
+		setFormSubmitted(false);
+	};
 
-  const postDownload = (formData) => {
-    setModalVisible(modalVisible);
-    setFormSubmitted(true);
-  };
+	const postDownload = (formData) => {
+		setModalVisible(modalVisible);
+		setFormSubmitted(true);
+	};
 
-  return (
-    <Layout>
-      <SEO
-        title="LLCs in Texas | Guide to Forming an LLC in TX"
-        description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
-      />
+	return (
+		<Layout>
+			<SEO
+				title="LLCs in Texas | Guide to Forming an LLC in TX"
+				description="Ready to form your Texas LLC? Here are the steps you need to take, plus helpful tips and resources to make it easy. Read more."
+			/>
 
-      <LinearBgHeader imageMapName="tx-map-2x">
-        <HomeHeader content={HomePageContent.header} data={dataApi} />
-      </LinearBgHeader>
+			<LinearBgHeader imageMapName="tx-map-2x">
+				<HomeHeader content={HomePageContent.header} data={dataApi} />
+			</LinearBgHeader>
 
-      <WrapperContent>
-        <Wrapper>
-          <LeftTabPages content={tabPages} />
-          <MainPageContent>
-            <HowToGuide
-              content={HomePageContent.content}
-              data={dataApi}
-              modalAction={popup}
-            />
-          </MainPageContent>
-          <LightBoxModal visible={modalVisible} className="modal-overlay">
-            <LightBoxContent className={modalClases.join(" ")}>
-              {!formSubmitted && (
-                <HSSearchFormModal
-                  hs_form_id={hsForm.hs_form_id}
-                  content={hsForm}
-                  modalExit={popup}
-                  postDownloadAction={postDownload}
-                />
-              )}
+			<WrapperContent>
+				<Wrapper>
+					<LeftTabPages content={tabPages} />
+					<MainPageContent>
+						<HowToGuide content={HomePageContent.content} data={dataApi} modalAction={popup} />
+					</MainPageContent>
+					<LightBoxModal visible={modalVisible} className="modal-overlay">
+						<LightBoxContent className={modalClases.join(" ")}>
+							{!formSubmitted && <HSSearchFormModal hs_form_id={hsForm.hs_form_id} content={hsForm} modalExit={popup} postDownloadAction={postDownload} />}
 
-              {formSubmitted && (
-                <ThankYouContent
-                  modalExit={popup}
-                  fileDownload={hsForm.fileDownload}
-                />
-              )}
-            </LightBoxContent>
-          </LightBoxModal>
-        </Wrapper>
-      </WrapperContent>
+							{formSubmitted && <ThankYouContent modalExit={popup} fileDownload={hsForm.fileDownload} />}
+						</LightBoxContent>
+					</LightBoxModal>
+				</Wrapper>
+			</WrapperContent>
 
-      <Rocket url="?entityType=LLC&entityState=TX" />
+			<Rocket url="?entityType=LLC&entityState=TX" />
 
-      <Helmet>
-        <script type="application/ld+json">{`
+			<Helmet>
+				<script type="application/ld+json">{`
                     {
                         "@context": "http://schema.org",
                         "@type": "VideoObject",
                         "name": "Forming an LLC in Texas by Incfile",
-                        "description": "Want to form a Texas LLC but not sure where to start? We'll walk you through the steps to starting your Texas business, including securing a unique business name, getting a Registered Agent, writing an operating agreement, and filing Form 501 (your certificate of formation) with the Texas Secretary of State. Incorporate your new Texas LLC today!  Here are a few additional resources that are useful for forming an LLC in the state of Texas: Incfile’s Business Name Search tool: https://www.incfile.com/business-name-search/.   Incfile Information Regarding Registered Agents: https://www.incfile.com/registered-agents/.  Incfile Register Your LLC Packages: https://orders.incfile.com/form-order-now.php",
+                        "description": "Want to form a Texas LLC but not sure where to start? We'll walk you through the steps to starting your Texas business, including securing a unique business name, getting a registered agent, writing an operating agreement, and filing Form 501 (your certificate of formation) with the Texas Secretary of State. Incorporate your new Texas LLC today!  Here are a few additional resources that are useful for forming an LLC in the state of Texas: Incfile’s Business Name Search tool: https://www.incfile.com/business-name-search/.   Incfile Information Regarding Registered Agents: https://www.incfile.com/registered-agents/.  Incfile Register Your LLC Packages: https://orders.incfile.com/form-order-now.php",
                         "thumbnailUrl": "https://i.ytimg.com/vi/wGAzGRmy6m8/default.jpg",
                         "uploadDate": "2020-06-03T14:52:33Z",
                         "duration": "PT1M49S",
@@ -141,9 +120,9 @@ function TexasLLCIndex() {
                         "interactionCount": "5"
                     }
                 `}</script>
-      </Helmet>
-    </Layout>
-  );
+			</Helmet>
+		</Layout>
+	);
 }
 
 const LightBoxModal = styled.div`
@@ -181,7 +160,7 @@ const LightBoxContent = styled.div`
   @media screen and (min-width: 769px) {
     padding-top: 0;
     max-height: 80vh;
-  }
+}
 `;
 
 export default TexasLLCIndex;

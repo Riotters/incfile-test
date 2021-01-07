@@ -2,7 +2,8 @@ import Tab1Icon from "../../images/icons/icon-manage-your-company-color-business
 import Tab2Icon from "../../images/icons/light.inline.svg";
 import Tab3Icon from "../../images/icons/icon-32-multi-color-registered-agent.inline.svg";
 import Tab4Icon from "../../images/icons/icon-learning-center-color-how-to-guide.inline.svg";
-import Tab5Icon from "../../images/icons/icon-learning-center-color-all-ca-corporations-must-have-elected-board-of-directors.inline.svg";
+import Tab5Icon
+  from "../../images/icons/icon-learning-center-color-all-ca-corporations-must-have-elected-board-of-directors.inline.svg";
 import Tab6Icon from "../../images/icons/icon-start-a-business-color-maintaining-your-cleaning-business.inline.svg";
 import Tab7Icon from "../../images/icons/icon-learning-center-color-business-taxes.inline.svg";
 
@@ -83,8 +84,7 @@ export const fillingRequirements = {
           style: { "font-weight": "bold" },
         },
         {
-          label:
-            "Domestic (Ohion) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
+          label: "Domestic (Ohion) Entities are required to file within 6 months of creation. Failure to file will cause non-compliance and may lead to administrative dissolution.",
           type: "label",
           textCenter: true,
           className: "text-left",
@@ -169,8 +169,7 @@ export const fillingRequirements = {
           style: { "font-weight": "bold" },
         },
         {
-          label:
-            "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
+          label: "Entity organized or qualified in even-numbered years must file in even-numbered years; those in odd-numbered years file in odd-numbered years.",
           type: "label",
           textCenter: true,
           className: "text-left",
@@ -186,7 +185,7 @@ export const questions = {
   items: [
     {
       question: `How is a Corporation Taxed?`,
-      answer: `Unlike many other business entities in which the profits pass through to the owners' personal tax return (e.g. LLCs, S Corporations, etc.), the C Corporation is a completely separate taxable entity. The C Corporation pays federal taxes on the net profits (after all expenses, including salaries and bonuses) of the business by filing the 1120 form with the IRS. The after tax profits can be paid out to the owners (shareholders) in the form of dividends, or retained for reinvestment of the business. The first $50,000 of net income is only federally taxed at 15 percent rate, and the next $25,000 is taxed at a 25 percent rate. Different states have different rules on how they tax corporations.`,
+      answer: `Unlike many other business entities in which the profits pass through to the owners' personal tax return (e.g. LLCs, S Corporations, etc.), the C Corporation is a completely separate taxable entity. The C Corporation pays federal taxes on the net profits (after all expenses, including salaries and bonuses) of the business by filing the 1120 form with the IRS. The after tax profits can be paid out to the owners (shareholders) in the form of dividends, or retained for reinvestment of the business. The first $50,000 of net income is only federally taxed at 15% rate, and the next $25,000 is taxed at a 25% rate. Different states have different rules on how they tax corporations.`,
     },
     {
       question: `What is the Management Structure of an Corporation?`,
@@ -194,7 +193,7 @@ export const questions = {
     },
     {
       question: `Are Non-U.S. Residents Allowed to Own a Corporation or LLC?`,
-      answer: `There are no citizenship or residence requirements for ownership of a C Corporation or an LLC. The S Corporation however does not allow nonresident aliens to be shareholders (owner), but any US citizen or resident alien may be a shareholder (owner). You would, of course, require an in state street address for the state to forward official legal and tax correspondence including service of process, known as the Registered Agent address, but neither residency nor citizenship is required for ownership of a C Corporation or an LLC.`,
+      answer: `There are no citizenship or residence requirements for ownership of a C Corporation or an LLC. The S Corporation however does not allow nonresident aliens to be shareholders (owner), but any US citizen or resident alien may be a shareholder (owner). You would, of course, require an in state street address for the state to forward official legal and tax correspondence including service of process, known as the registered agent address, but neither residency nor citizenship is required for ownership of a C Corporation or an LLC.`,
     },
     {
       question: `Can I form an Corporation with just one member?`,
@@ -266,7 +265,7 @@ export const articlesOfIncorporation = {
     list: [
       `The corporation’s name`,
       `Its business purpose, which can be the general statement: “the transaction of any lawful business allowed by the Ohio Corporation Code”`,
-      `The name of the corporation’s initial Registered Agent`,
+      `The name of the corporation’s initial registered agent`,
       `The address of the corporation’s initial registered office`,
       `The address of the corporation’s principal office`,
       `Number of shares authorized for the corporation to issue (par value is not required to be designated)`,
@@ -296,31 +295,31 @@ export const tabs = {
   panels: [
     {
       icon: Tab1Icon,
-      name: `Corporation Name`,
+      name: `Corporation Name`
     },
     {
       icon: Tab2Icon,
-      name: `Articles of Incorporation`,
+      name: `Articles of Incorporation`
     },
     {
       icon: Tab3Icon,
-      name: `Registered Agent`,
+      name: `Registered Agent`
     },
     {
       icon: Tab4Icon,
-      name: `Bylaws`,
+      name: `Bylaws`
     },
     {
       icon: Tab5Icon,
-      name: `Directors`,
+      name: `Directors`
     },
     {
       icon: Tab6Icon,
-      name: `Required Reports`,
+      name: `Required Reports`
     },
     {
       icon: Tab7Icon,
-      name: `Taxes`,
+      name: `Taxes`
     },
-  ],
-};
+  ]
+}

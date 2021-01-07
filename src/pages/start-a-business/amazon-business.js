@@ -321,8 +321,8 @@ const AmazonBusiness = () => {
                 expensive than “Fulfilled by Amazon.” But if you’re just a “Sold
                 by Amazon” seller, you will have to take care of your own
                 logistics, customer service and storage, which can be costly. As
-                a result, nearly 80 percent of Amazon sellers use the “Fulfilled
-                By Amazon” service for some or all of their products.
+                a result, nearly 80% of Amazon sellers use the “Fulfilled By
+                Amazon” service for some or all of their products.
               </Paragraph>
               <Paragraph big>
                 Typically, Amazon sellers source products from large supplier

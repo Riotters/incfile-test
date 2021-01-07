@@ -55,7 +55,7 @@ export const launchBusiness = {
 };
 
 export const subscription = {
-  header: `Subscribe Now To Learn More About LLC and Starting a Business`,
+  header: `Subscribe now to learn more about LLC and starting a business`,
   button: {
     text: `Subscribe Now`,
     url: `/`,
@@ -210,7 +210,7 @@ export const corporation = [
     button: [
       {
         content: {
-          text: "Start Your New York S Corporation",
+          text: "Start Your New York S-Corporation",
           url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=NY`,
         },
         arrow: true,
@@ -218,7 +218,7 @@ export const corporation = [
       },
       {
         content: {
-          text: "Start Your New York C Corporation",
+          text: "Start Your New York C-Corporation",
           url: ORDER_URL,
         },
         arrow: true,
@@ -2143,7 +2143,7 @@ export const taxes = [
   {
     type: "button",
     content: {
-      text: "File Your New York S Corp Tax Election with Incfile",
+      text: "File Your New York S-Corp Tax Election with Incfile",
       url: "/llc-s-corp-election/",
     },
     theme: "primary56",

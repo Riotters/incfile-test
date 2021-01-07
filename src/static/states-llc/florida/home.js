@@ -1,10 +1,10 @@
 export const HomePageContent = {
   header: {
     title: `How to Start an LLC in Florida`,
-    subline: ``,
+    subline: `aaa`,
     boxes: [
       {
-        title: `Learn How to Form a <br> Florida LLC Yourself`,
+        title: `Learn how to form a <br> Florida LLC yourself`,
         desc: `Read our DIY guide to Florida LLC formation, with information on Registered Agents, naming rules, business licenses, and more.`,
         button: {
           text: `Read The Guide`,
@@ -12,7 +12,7 @@ export const HomePageContent = {
         },
       },
       {
-        title: `Have Incfile Do the Work for You <br><span style="color:#FD8550">$0 + State Fee</span>`,
+        title: `Have Incfile do the work for you <br><span style="color:#FD8550">$0 + State fee</span>`,
         desc: `Incfile can take care of all your LLC formation paperwork—and we’ll do it for free. Just pay the required Florida state fee ($[STATE_FEE]).`,
         button: {
           text: `Form Your LLC Now`,
@@ -57,7 +57,7 @@ export const HomePageContent = {
           blockID: `step4`,
         },
         {
-          text: `<b>Step 5</b> - Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
+          text: `<b>Step 5</b> - Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
           blockID: `step5`,
         },
         {
@@ -93,13 +93,13 @@ export const HomePageContent = {
             url: `/florida-llc/registered-agents-florida-llc/`,
           },
           {
-            header: `Get a Free Registered Agent When You Incorporate with Incfile`,
+            header: `Get A Free Registered Agent When You Incorporate With Incfile`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=FL`,
           },
         ],
       },
       step4: {
-        heading1: `File Your Certificate of Formation (Form 205) with the Florida Secretary of State`,
+        heading1: `File Your Certificate of Formation (Form 205) With the Florida Secretary of State`,
         text1: `Once you've gathered all the information for your Florida LLC, you’ll need to file a formal document with the FL Department of State. This document is known as your Articles of Organization, and filing the document creates your Florida LLC. Here’s what is typically included:`,
         lists: {
           list: [
@@ -128,10 +128,10 @@ export const HomePageContent = {
 
         text3: `You only need to file your Articles of Organization with the State of Florida once, but every year after you will need to file an annual report for your LLC, which has its own fees. This is also something Incfile can remind you to do or do for you if you choose to have us handle the paperwork.`,
         cta: {
-          title: `Have Incfile Handle <br>All the Paperwork for You`,
-          subtitle: `For $0 + the Florida State fee.`,
+          title: `Have Incfile Handle <br>all the Paperwork`,
+          subtitle: `for You for $0 + the Florida State fee`,
           button: {
-            text: `Form Your LLC Now for Free`,
+            text: `Form Your LLC Now For Free`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=FL`,
           },
         },
@@ -139,7 +139,7 @@ export const HomePageContent = {
         text4: `The State of Florida does not offer expedited filing for LLCs and will process online filings in the order in which they are received. Incfile can internally expedite your order to ensure the fastest delivery to the state for filing.`,
       },
       step5: {
-        heading1: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
+        heading1: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
         text1: `You will need an EIN to identify your business to the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Florida LLC business formation process.`,
       },
       step6: {
@@ -151,8 +151,8 @@ export const HomePageContent = {
           url: `https://www.incfile.com/blog/post/operating-agreement-llc/`,
         },
         cta: {
-          title: `Receive a Personalized <br>Operating Agreement`,
-          subtitle: `When you select Incfile’s Gold package.`,
+          title: `Receive a personalized <br>operating agreement`,
+          subtitle: `when you select Incfile’s Gold package`,
           button: {
             text: `Form Your LLC Now`,
             url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=FL`,
@@ -179,40 +179,53 @@ export const HomePageContent = {
         content: `A regular Florida LLC is suitable for most business needs, but you also have a couple other options to incorporate a special type of LLC.`,
       },
       {
-        type: `accordion`,
-        header: 3,
+        type: `heading`,
+        size: 4,
+        content: `Professional LLCs`,
+      },
+      {
+        type: `paragraph`,
+        content: `Some states, including Florida, allow certain occupations to form “Professional LLCs.” These types of business typically have specialized requirements and licensing. Here are the occupations that the FL Secretary of State allows to form Florida professional LLCs:`,
+      },
+      {
+        type: `list-dot`,
         content: {
-          items: [
-            {
-              question: `Professional LLCs`,
-              answer: `<p>Some states, including Florida, allow certain occupations to form “Professional LLCs.” These types of business typically have specialized requirements and licensing. Here are the occupations that the FL Secretary of State allows to form Florida professional LLCs:</p></br>
-                <p><ul>
-                <li>Certified public accountants</li>
-                <li>Public accountants</li>
-                <li>Chiropractic physicians</li>
-                <li>Dentists</li>
-                <li>Osteopathic physicians</li>
-                <li>Physicians and surgeons</li>
-                <li>Doctors of medicine</li>
-                <li>Doctors of dentistry</li>
-                <li>Podiatric physicians</li>
-                <li>Chiropodists</li>
-                <li>Architects</li>
-                <li>Veterinarians</li>
-                <li>Attorneys at law</li>
-                <li>Life insurance agents</li>
-                </ul></p>`,
-            },
-            {
-              question: `Foreign LLCs in Florida`,
-              answer: `<p>If your business is already operating in another state and expanding to Florida, you’ll need to form a Foreign LLC.</p></br>
-                <p><a href="/florida-llc/fees-filing-requirements/">More information on Florida filing and licensing requirements can be found here.</a></p>`,
-            },
+          list: [
+            `Certified public accountants`,
+            `Public accountants`,
+            `Chiropractic physicians`,
+            `Dentists`,
+            `Osteopathic physicians`,
+            `Physicians and surgeons`,
+            `Doctors of medicine`,
+            `Doctors of dentistry`,
+            `Podiatric physicians`,
+            `Chiropodists`,
+            `Architects`,
+            `Veterinarians`,
+            `Attorneys at law`,
+            `Life insurance agents`,
           ],
         },
-        marginBottom: 48,
       },
-
+      {
+        type: `heading`,
+        size: 4,
+        content: `Foreign LLCs in Florida`,
+      },
+      {
+        type: `paragraph`,
+        content: `If your business is already operating in another state and expanding to Florida, you’ll need to form a Foreign LLC.`,
+      },
+      {
+        type: "arrow-links",
+        content: [
+          {
+            text: `More information on Florida filing and licensing requirements can be found here.`,
+            url: `/florida-llc/fees-filing-requirements/`,
+          },
+        ],
+      },
       // Helpful resource
       {
         type: `heading`,
@@ -272,7 +285,7 @@ export const HomePageContent = {
         type: "modal-trigger",
         theme: `secondary56`,
         content: {
-          text: `Search for Your Florida LLC Name`,
+          text: `Search For Your Florida LLC Name`,
           url: `/`, // okienko
         },
       },

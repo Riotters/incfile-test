@@ -98,7 +98,7 @@ export const howToGuide = [
             <p><a href="/missouri-llc/registered-agents-missouri-llc/" target="_blank">Learn more about Missouri Registered Agents.</a></p>`,
         },
         {
-          question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
+          question: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
           answer: `You will need an EIN to identify your business to the IRS. You use this number when filing and paying taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS, or we can get one for you as part of the Missouri LLC business formation process.`,
         },
         {
@@ -555,7 +555,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `<i>“All foreign and domestic corporations, limited liability companies, limited partnerships and limited liability partnerships registered in Missouri must maintain a Registered Agent. The Registered Agent must have a Missouri address. The Registered Agent's business office must be identical to the entity's registered office. Each entity must notify the Secretary of State in case of a change of the Registered Agent or a change of his or her address.”</i>`,
+    content: `<i>“All foreign and domestic corporations, limited liability companies, limited partnerships and limited liability partnerships registered in Missouri must maintain a registered agent. The registered agent must have a Missouri address. The registered agent's business office must be identical to the entity's registered office. Each entity must notify the Secretary of State in case of a change of the registered agent or a change of his or her address.”</i>`,
     marginBottom: 16,
   },
   {
@@ -649,7 +649,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `More about Registered Agent service`,
+      text: `More about registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -746,7 +746,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Missouri Registered Agent service`,
+      text: `Order Incfile's Missouri registered agent service`,
       url: `${process.env.ORDER_URL}/form-order-now.php?entityType=LLC&entityState=MO`,
     },
     theme: `primary48`,
@@ -1140,7 +1140,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Missouri Registered Agent service`,
+      text: `Incfile's Missouri registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1622,7 +1622,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare <br>Get more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

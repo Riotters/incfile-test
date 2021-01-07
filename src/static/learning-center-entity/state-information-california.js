@@ -59,7 +59,7 @@ export const launchBusiness = {
 };
 
 export const subscription = {
-  header: `Subscribe Now To Learn More About LLC and Starting a Business`,
+  header: `Subscribe now to learn more about LLC and starting a business`,
   button: {
     text: `Subscribe Now`,
     url: `/`,
@@ -226,7 +226,7 @@ export const corporation = [
     buttons: [
       {
         content: {
-          text: "Start Your S Corp",
+          text: "Start Your S-Corp",
           url: `${process.env.ORDER_URL}/form-order-now.php?entityType=SCorporation&entityState=CA`,
         },
         arrow: true,
@@ -234,7 +234,7 @@ export const corporation = [
       },
       {
         content: {
-          text: "Start Your C Corp",
+          text: "Start Your C-Corp",
           url: ORDER_URL,
         },
         arrow: true,
@@ -2225,7 +2225,7 @@ export const taxes = [
   {
     type: "button",
     content: {
-      text: "File Your California S Corp Tax Election with Incfile",
+      text: "File Your California S-Corp Tax Election with Incfile",
       url: "/llc-s-corp-election/",
     },
     theme: "primary56",
@@ -2331,7 +2331,7 @@ export const afterFormation = [
   },
   {
     type: "header",
-    content: "Statement of Information (both S Corporation and C Corporation)",
+    content: "Statement of Information (both S-Corporation and C-Corporation)",
     size: 3,
     template: 4,
     marginBottom: 24,

@@ -106,7 +106,7 @@ export const howToGuide = [
           <a href="/louisiana-llc/registered-agents-louisiana-llc/">Learn more about California Agents for Service of Process.</a>`,
         },
         {
-          question: `STEP 5: Get an Employer Identification Number (EIN) from the Internal Revenue Service`,
+          question: `STEP 5: Get an Employer Identification Number (EIN) From the Internal Revenue Service`,
           answer: `You will need an EIN to identify your business to the IRS. You use this number when filing and paying
            taxes or when submitting payroll information and payments for your employees. You can obtain one directly from the IRS,
            or Incfile can get one for you as part of the Louisiana LLC business formation process.`,
@@ -620,7 +620,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `More about Registered Agent service`,
+      text: `More about registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -717,7 +717,7 @@ export const registeredAgent = [
   {
     type: `button`,
     content: {
-      text: `Order Incfile's Louisiana Registered Agent service`,
+      text: `Order Incfile's Louisiana registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1121,7 +1121,7 @@ export const feesAndRequirments = [
   {
     type: `button`,
     content: {
-      text: `Incfile's Louisiana Registered Agent service`,
+      text: `Incfile's Louisiana registered agent service`,
       url: `/manage-your-company/registered-agent/`,
     },
     theme: `primary48`,
@@ -1578,7 +1578,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare <br>Get more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

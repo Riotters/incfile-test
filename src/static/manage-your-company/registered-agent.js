@@ -70,8 +70,8 @@ export const offering = {
   //       text: `We offer forming your LLC or a corporation free of charge. We take care of the paperwork while you can focus on running your business!`,
   //     },
   //     {
-  //       header: `Free Registered Agent`,
-  //       text: `Incfile’s Registered Agent service cover all areas like filing forms to the IRS or receiving government communication.`,
+  //       header: `Free registered agent`,
+  //       text: `Incfile’s registered agent service cover all areas like filing forms to the IRS or receiving government communication.`,
   //     },
   //   ],
   text2: `Our radical offerings like $0 business formation and a free Registered Agent with incorporation are a direct result of client loyalty. 

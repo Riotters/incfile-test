@@ -75,7 +75,7 @@ const Benefits = () => {
           <Benefit
             Icon={Icon6}
             headline="Order Registered Agent"
-            text="Order Registered Agent service and receive your new Registered Agent information immediately."
+            text="Order registered agent service and receive your new registered agent information immediately."
           />
           <Benefit
             Icon={Icon3}

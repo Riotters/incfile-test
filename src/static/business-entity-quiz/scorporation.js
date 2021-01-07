@@ -230,12 +230,12 @@ export const choose = {
     {
       header: "Limited Liability Company (LLC)",
       text:
-        "Should You Form a Limited Liability Company (LLC)? For over 80 percent of small businesses, the right choice of business structure is a simple one: the LLC.",
+        "Should You Form a Limited Liability Company (LLC)? For over 80% of small businesses, the right choice of business structure is a simple one: the LLC.",
       color: color.blue3,
       image: "llc-cert-4502",
     },
     {
-      header: "S Corporation",
+      header: "S - Corporation",
       text:
         "Want to keep more of your tax money? See \n" +
         "if an S Corporation could be the right choice to help your business save money on taxes each year.",
@@ -243,14 +243,14 @@ export const choose = {
       image: "s-corp-cert-7631",
     },
     {
-      header: "C Corporation",
+      header: "C - Corporation",
       text:
         "A C Corporation structure is generally better for larger businesses. Is it right for your business?",
       color: color.orange3,
       image: "c-corp-cert-5502",
     },
     {
-      header: "Nonprofit",
+      header: "Non-Profit",
       text:
         "Starting a nonprofit can truly help make the world a better place. Is a Nonprofit best for your business?",
       color: color.green3,

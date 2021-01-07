@@ -966,7 +966,7 @@ export const entityType = [
     type: "list-dot",
     content: {
       list: [
-        "They are easier than running a C Corp or S Corp",
+        "They are easier than running a C-Corp or S-Corp",
         "They have fewer rules, regulations and legal compliance issues",
         "They are formed and regulated on a state level",
       ],
@@ -979,7 +979,7 @@ export const entityType = [
   {
     type: "text",
     content:
-      "Just like C Corps and S Corps, LLC owners are protected with limited liability. This means that business assets are owned by the company itself. As an owner, your personal assets are not affected by any liability that your business incurs (debt, equipment costs, depreciation, lawsuits, etc.).",
+      "Just like C-Corps and S-Corps, LLC owners are protected with limited liability. This means that business assets are owned by the company itself. As an owner, your personal assets are not affected by any liability that your business incurs (debt, equipment costs, depreciation, lawsuits, etc.).",
     marginBottom: 24,
   },
   {
@@ -1010,27 +1010,27 @@ export const entityType = [
   },
   {
     type: "header",
-    content: "The C Corporation (C Corp)",
+    content: "The C-Corporation (C-Corp)",
     size: 3,
     template: 4,
   },
   {
     type: "text",
     content:
-      "On the other end of the spectrum, we have the C Corp which is the most formal type of business entity. These are larger companies with many moving parts that issue stock. They are regulated at a state level and formed by filing “Articles of Incorporation” with the secretary of state within the state of incorporation. These are the details:",
+      "On the other end of the spectrum, we have the C-Corp which is the most formal type of business entity. These are larger companies with many moving parts that issue stock. They are regulated at a state level and formed by filing “Articles of Incorporation” with the secretary of state within the state of incorporation. These are the details:",
     marginBottom: 49,
   },
   {
     type: "list-dot",
     content: {
       list: [
-        "A C Corp must have a board of directors and hold an Annual General Meeting",
-        "A C Corp has limited liability, so the investors and owners of a C Corp are not generally liable for business debts or other liabilities Ownership of a C Corp is determined by who owns stock in the company",
-        "C Corps MUST issue stock, and these stocks can be bought and sold on a public stock market if the C Corp holds an Initial Public Offering, or “IPO”",
+        "A C-Corp must have a board of directors and hold an Annual General Meeting",
+        "A C-Corp has limited liability, so the investors and owners of a C-Corp are not generally liable for business debts or other liabilities Ownership of a C-Corp is determined by who owns stock in the company",
+        "C-Corps MUST issue stock, and these stocks can be bought and sold on a public stock market if the C-Corp holds an Initial Public Offering, or “IPO”",
         "These companies can raise more finances by issuing stock",
         "The ownership can be fluid and transferred depending on who holds stock at a particular time",
-        "C Corps must meet numerous rules and regulations",
-        "C Corps file corporate tax returns and pay taxes on their profits unlike LLCs and S Corps, so money earned may be subject to double taxation. This means that shareholder dividends have personal income tax deducted even though the C Corp itself has already paid taxes on its annual earnings.",
+        "C-Corps must meet numerous rules and regulations",
+        "C-Corps file corporate tax returns and pay taxes on their profits unlike LLCs and S-Corps, so money earned may be subject to double taxation. This means that shareholder dividends have personal income tax deducted even though the C-Corp itself has already paid taxes on its annual earnings.",
       ],
     },
     color: color.blue3,
@@ -1040,7 +1040,7 @@ export const entityType = [
   },
   {
     type: "text",
-    content: "Here’s what C Corporation tax rates look like at a glance:",
+    content: "Here’s what C-Corporation tax rates look like at a glance:",
     marginBottom: 24,
   },
   {
@@ -1049,60 +1049,60 @@ export const entityType = [
     content: [
       {
         text1: "Up to $50,000",
-        text2: "15 percent",
+        text2: "15%",
       },
       {
         text1: "50 000-75 000 USD",
-        text2: "25 percent",
+        text2: "25%",
       },
       {
         text1: "75 000–100 000 USD",
-        text2: "34 percent",
+        text2: "34%",
       },
       {
         text1: "100 000 - 335 000 USD",
-        text2: "39 percent",
+        text2: "39%",
       },
       {
         text1: "335 000–10 000 000 USD",
-        text2: "34 percent",
+        text2: "34%",
       },
       {
         text1: "10 000 000 - 15 000 000 USD",
-        text2: "35 percent",
+        text2: "35%",
       },
       {
         text1: "15 000 000 $ - 18 333 333 $",
-        text2: "38 percent",
+        text2: "38%",
       },
       {
         text1: "More than $18,333,333",
-        text2: "35 percent",
+        text2: "35%",
       },
     ],
     marginBottom: 48,
   },
   {
     type: "header",
-    content: "The Subchapter or Small Business Corporation (S Corp)",
+    content: "The Subchapter or Small Business Corporation (S-Corp)",
     size: 3,
     template: 4,
   },
   {
     type: "text",
     content:
-      "S Corps are similar to C Corps as you may expect, but they’re a little simpler and easier to run. They are formed at a state level and were enacted into law in 1958 to encourage the creation of small and family businesses – without the double taxation element. That sounds great, right? Here are some of the conditions and qualities of an S Corp:",
+      "S-Corps are similar to C-Corps as you may expect, but they’re a little simpler and easier to run. They are formed at a state level and were enacted into law in 1958 to encourage the creation of small and family businesses – without the double taxation element. That sounds great, right? Here are some of the conditions and qualities of an S-Corp:",
     marginBottom: 49,
   },
   {
     type: "list-dot",
     content: {
       list: [
-        "Owners and investors have personal liability that is separate from the S Corp’s liability, and the owner’s personal liability is limited to the value of their investment (same goes for investors)",
+        "Owners and investors have personal liability that is separate from the S-Corp’s liability, and the owner’s personal liability is limited to the value of their investment (same goes for investors)",
         "The owners aren’t personally liable for business debts, claims, or other liabilities",
-        "Compared to an LLC, there are more legalities, rules, and compliance requirements for an S Corp",
+        "Compared to an LLC, there are more legalities, rules, and compliance requirements for an S-Corp",
         "The corporate structure is more complex",
-        "S Corps are capped at 100 shareholders and cannot exceed this limit",
+        "S-Corps are capped at 100 shareholders and cannot exceed this limit",
       ],
     },
     color: color.green3,
@@ -1112,21 +1112,21 @@ export const entityType = [
   {
     type: "text",
     content:
-      "S Corps don’t need to pay corporate income taxes like C Corps do. S Corps fall under a different designation with the IRS that is similar to that of an LLC. The net profit or loss generated by an S Corp will flow through to the owners and shareholders who will file personal returns and pay income tax on these amounts.",
+      "S-Corps don’t need to pay corporate income taxes like C-Corps do. S-Corps fall under a different designation with the IRS that is similar to that of an LLC. The net profit or loss generated by an S-Corp will flow through to the owners and shareholders who will file personal returns and pay income tax on these amounts.",
     marginBottom: 24,
   },
   {
     type: "text",
     content:
-      "Now, if you form an LLC, you can choose to be treated as an S Corp for tax purposes. This results in the best of both worlds to an extent:",
+      "Now, if you form an LLC, you can choose to be treated as an S-Corp for tax purposes. This results in the best of both worlds to an extent:",
     marginBottom: 49,
   },
   {
     type: "list-dot",
     content: {
       list: [
-        "The rules for LLCs are less of a burden than the rules of an S Corp",
-        "There may be advantages to being taxed as an S Corp with regards to owners and members taking money out of the business",
+        "The rules for LLCs are less of a burden than the rules of an S-Corp",
+        "There may be advantages to being taxed as an S-Corp with regards to owners and members taking money out of the business",
         "You can choose to pay yourself a modest salary and deduct anything above that amount as share dividend income – income that isn’t reduced by self-employment tax,but personal income tax instead.",
       ],
     },

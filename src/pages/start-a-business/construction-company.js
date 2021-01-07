@@ -246,7 +246,7 @@ const ConstructionCompany = () => (
 
             <div style={{ marginTop: "70px" }}>
               <Adventages
-                headline="The U.S. construction industry is responsible for over 4 percent of U.S. GDP"
+                headline="The U.S. construction industry is responsible for over 4% of U.S. GDP"
                 width="100%"
               />
             </div>

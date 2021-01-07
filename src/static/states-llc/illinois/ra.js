@@ -45,8 +45,8 @@ export const agentPageContent = {
       boxColor: color.orange3,
       content: {
         list: [
-          `Every domestic and foreign corporation must, at all times, maintain a Registered Agent with a registered office within the State of Illinois`,
-          `The Registered Agent can be either a natural person or a domestic or foreign (licensed to transact business in this State) artificial legal entity (Corporation, LLC, LP or LLP)`,
+          `Every domestic and foreign corporation must, at all times, maintain a registered agent with a registered office within the State of Illinois`,
+          `The registered agent can be either a natural person or a domestic or foreign (licensed to transact business in this State) artificial legal entity (Corporation, LLC, LP or LLP)`,
           `The Registered Office must be located at a street address (a P.O. Box alone is not acceptable) within the State of Illinois`,
         ],
       },
@@ -185,7 +185,7 @@ export const agentPageContent = {
           ],
         },
       ],
-      header: 4,
+      header: 4
     },
     {
       type: `button`,
@@ -232,7 +232,7 @@ export const agentPageContent = {
           ],
         },
       ],
-      header: 4,
+      header: 4
     },
     {
       type: `button`,

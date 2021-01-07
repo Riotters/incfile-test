@@ -569,7 +569,7 @@ export const registeredAgent = [
   },
   {
     type: `text`,
-    content: `“The Registered Agent is the person, resident in Wisconsin, designated by the corporation to receive official communications on its behalf, such as service of process, annual report forms, tax forms, etc. It may be an officer or employee of the corporation, or someone not directly involved, such as an attorney. It is important to keep the Registered Agent and registered office information current, as significant consequences could arise for failure to receive and act on important papers sent to the corporation's Registered Agent.”`,
+    content: `“The registered agent is the person, resident in Wisconsin, designated by the corporation to receive official communications on its behalf, such as service of process, annual report forms, tax forms, etc. It may be an officer or employee of the corporation, or someone not directly involved, such as an attorney. It is important to keep the registered agent and registered office information current, as significant consequences could arise for failure to receive and act on important papers sent to the corporation's registered agent.”`,
     marginBottom: 48,
   },
 
@@ -1632,7 +1632,7 @@ export const businessTaxes = [
 ];
 
 export const compare = {
-  header: `How We Compare <br>Get more for less.`,
+  header: `How We Compare. <br>Get more for less.`,
   table: {
     headers: [null, `Incfile`, `LegalZoom`, `ZenBusiness`],
     rows: [

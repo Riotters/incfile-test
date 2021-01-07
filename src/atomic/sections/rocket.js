@@ -83,7 +83,7 @@ const Rocket = ({
               <Heading size={2}>
                 {" "}
                 Launch <br />
-                Your Business with Incfile
+                Your Business With Incfile
               </Heading>
             </>
           ) : (

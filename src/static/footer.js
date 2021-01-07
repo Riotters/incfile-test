@@ -18,11 +18,11 @@ export const footer = {
           url: `/limited-liability-company/`,
         },
         {
-          text: `S Corporation`,
+          text: `S-Corporation`,
           url: `/what-is-s-corporation/`,
         },
         {
-          text: `C Corporation`,
+          text: `C-Corporation`,
           url: `/what-is-c-corporation/`,
         },
         {

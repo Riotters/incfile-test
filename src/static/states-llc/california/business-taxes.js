@@ -97,8 +97,8 @@ export const businessTaxesPageContent = {
       content: `If you sell physical products or certain types of services, you may need to collect sales tax (also known as sales and use tax) and then pay it to the TX Comptroller. California sales tax is collected at the point of purchase. California sales tax rates do vary depending on the region, county or city where you are located. `,
     },
     {
-      type: "paragraph",
-      content: "You will typically need to collect California sales tax on:",
+        type: "paragraph",
+        content: "You will typically need to collect California sales tax on:",
     },
     {
       type: `iconListColorBox`,
@@ -142,10 +142,10 @@ export const businessTaxesPageContent = {
       styles: { margin: `56px 0` },
       content: {
         list: [
-          `<strong>Los Angeles, CA</strong> sales tax rate is <strong>9.5 percent</strong>`,
-          `<strong>San Francisco, CA</strong> sales tax rate is <strong>8.5 percent</strong>`,
-          `<strong>San Jose, CA </strong> sales tax rate is <strong>9.25 percent</strong>`,
-          `<strong>San Diego, CA</strong> sales tax rate is <strong>7.75 percent</strong>`,
+          `<strong>Los Angeles, CA</strong> sales tax rate is <strong>9.5%</strong>`,
+          `<strong>San Francisco, CA</strong> sales tax rate is <strong>8.5%</strong>`,
+          `<strong>San Jose, CA </strong> sales tax rate is <strong>9.25%</strong>`,
+          `<strong>San Diego, CA</strong> sales tax rate is <strong>7.75%</strong>`,
         ],
       },
     },
@@ -168,7 +168,7 @@ export const businessTaxesPageContent = {
     },
     {
       type: `paragraph`,
-      content: `All California LLC business members or managers who take profits out of the LLC will need to pay self-employment tax. This tax is also known as FICA, Social Security or Medicare tax. It applies to all the earnings you withdraw from your California business. The current self-employment tax rate is 15.3 percent.`,
+      content: `All California LLC business members or managers who take profits out of the LLC will need to pay self-employment tax. This tax is also known as FICA, Social Security or Medicare tax. It applies to all the earnings you withdraw from your California business. The current self-employment tax rate is 15.3%.`,
     },
     {
       type: `paragraph`,
