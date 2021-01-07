@@ -8,25 +8,24 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-blue2.inline.
 
 const Faq = styled.section`
   position: relative;
-  padding-top: 75px;
-  padding-bottom: 64px;
+  padding-top: 64px;
+  padding-bottom: 56px;
 
   .headline {
-      margin-bottom: 80px;
+    margin-bottom: 80px;
   }
-  
 `;
 
 const FaqSection = ({ className, content }) => (
-    <Faq className={className}>
-        <Oval className="oval" height="570" width="570" top="50" left="0">
-            <OvalSVG />
-        </Oval>
-        <HeadingCenter headline={content.header} headlineWidth="640" />
-        <ContentCenter>
-            <Accordion content={content.faq} />
-        </ContentCenter>
+  <Faq className={className}>
+    <Oval className="oval" height="570" width="570" top="50" left="0">
+      <OvalSVG />
+    </Oval>
+    <HeadingCenter headline={content.header} headlineWidth="640" />
+    <ContentCenter>
+      <Accordion content={content.faq} />
+    </ContentCenter>
   </Faq>
-  );
-  
-  export default FaqSection;
+);
+
+export default FaqSection;

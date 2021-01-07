@@ -24,22 +24,37 @@ const About = styled.section`
 `;
 
 const AboutSection = ({ className, content }) => (
-    <About className={className}>
-        <Oval className="oval" height="570" width="570" y="-40">
-            <OvalSVG />
-        </Oval>
-        <ImageContent image="main-header-object-amendment-name-change" alt="amendment">
-            <Heading size={2} template={3} left bottomMargin="24">{content.header}</Heading>
-            {console.log(content)}
-            <Paragraph big mixed bottomMargin="40" >
-            {parse(content.text2)}
-            </Paragraph>
-            <Paragraph big mixed bottomMargin="72">
-            {parse(content.text3)}
-            </Paragraph>
-            <IconTextColorBox color={color.orange3} rounded curve curveColor={color.blue1} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve/>
-        </ImageContent>
-    </About>
-  );
-  
-  export default AboutSection;
+  <About className={className}>
+    <Oval className="oval" height="570" width="570" y="-40">
+      <OvalSVG />
+    </Oval>
+    <ImageContent
+      image="main-header-object-amendment-name-change"
+      alt="amendment"
+    >
+      <Heading size={2} template={3} left bottomMargin="24">
+        {content.header}
+      </Heading>
+      {console.log(content)}
+      <Paragraph big mixed bottomMargin="40">
+        {parse(content.text2)}
+      </Paragraph>
+      <Paragraph big mixed bottomMargin="72">
+        {parse(content.text3)}
+      </Paragraph>
+      <IconTextColorBox
+        color={color.orange3}
+        rounded
+        curve
+        curveColor={color.blue1}
+        Icon={IconSVG}
+        content={content.box}
+        bottomMargin="72"
+        rounded
+        curve
+      />
+    </ImageContent>
+  </About>
+);
+
+export default AboutSection;

@@ -13,8 +13,13 @@ import CurveSVG from "../../../../images/curves/top-left-bottom-right.inline.svg
 
 const Offering = styled.section`
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 120px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  @media (min-width: 769px) {
+    padding-top: 104px;
+    padding-bottom: 120px;
+  }
 
   h2,
   p {

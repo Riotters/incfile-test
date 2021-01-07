@@ -12,7 +12,11 @@ import Oval2SVG from "../../../../images/ovals/top-right-transparent-green3.inli
 
 const About = styled.section`
   position: relative;
-  padding-bottom: 124px;
+  padding-bottom: 64px;
+
+  @media (min-width: 769px) {
+    padding-bottom: 124px;
+  }
 
   p {
     color: ${color.grey2};
@@ -31,7 +35,16 @@ const AboutSection = ({ className, content }) => (
       <Paragraph big bottomMargin="32">
         {content.text}
       </Paragraph>
-      <IconTextColorBox color={color.orange3} Icon={IconSVG} content={content.box} bottomMargin="72" rounded curve headingSize={2} left />
+      <IconTextColorBox
+        color={color.orange3}
+        Icon={IconSVG}
+        content={content.box}
+        bottomMargin="72"
+        rounded
+        curve
+        headingSize={2}
+        left
+      />
       <Paragraph big bottomMargin="40">
         {content.text2}
       </Paragraph>
