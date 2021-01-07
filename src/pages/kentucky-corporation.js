@@ -195,12 +195,12 @@ const KentuckyCorporation = () => {
 							</Heading>
 							<Paragraph big>
 								The articles of incorporation should also include the name and
-								address of your corporation’s initial registered agent-the
+								address of your corporation’s initial Registered Agent-the
 								person appointed to receive official legal and administrative
 								correspondence from the state on behalf of your corporation.
 							</Paragraph>
 							<Paragraph big>
-								The registered agent must be either an individual who lives in
+								The Registered Agent must be either an individual who lives in
 								Kentucky and whose business office is the same as the registered
 								office, or a domestic corporation, LLC, or limited partnership
 								with a business office that is the same as the registered
@@ -228,7 +228,7 @@ const KentuckyCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -329,7 +329,7 @@ const KentuckyCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -347,7 +347,7 @@ const KentuckyCorporation = () => {
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
 									The address of the corporation’s registered office and the
-									name of its registered agent at that office
+									name of its Registered Agent at that office
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

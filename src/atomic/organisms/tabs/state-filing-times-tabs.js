@@ -64,7 +64,7 @@ const Button = styled.button`
 	cursor: pointer;
 	transition: background-color 0.3s ease, color 0.2s ease;
 	color: ${color.grey1};
-	font-family: Engram, sans-serif;
+	font-family: Avenir, sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;

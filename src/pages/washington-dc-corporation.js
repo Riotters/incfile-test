@@ -210,7 +210,7 @@ const AlaskaCorporation = () => {
 								indicating acceptance of the appointment as such.
 							</Paragraph>
 							<Paragraph big>
-								The registered agent must be either a DC resident or a
+								The Registered Agent must be either a DC resident or a
 								corporation authorized to conduct business there. In either
 								case, the agent’s business office must be the same as the
 								registered office. The registered office may be the same as the
@@ -240,7 +240,7 @@ const AlaskaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

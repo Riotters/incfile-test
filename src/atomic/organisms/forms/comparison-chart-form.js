@@ -162,7 +162,7 @@ const BusinessNameSearchForm = ({ className, content }) => {
 						marginBottom: "16px",
 						fontSize: "16px",
 						lineHeight: "24px",
-						fontFamily: "Engram-Bold",
+						fontFamily: "MarkPro",
 					}}
 				>
 					{content.header}

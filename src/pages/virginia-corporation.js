@@ -207,7 +207,7 @@ const VirginiaCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								Virginia corporations must maintain a registered agent within
+								Virginia corporations must maintain a Registered Agent within
 								the state-a person or office appointed to receive official state
 								correspondence, both administrative and legal. The agent must
 								have the same business office address as the registered office
@@ -262,7 +262,7 @@ const VirginiaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -347,7 +347,7 @@ const VirginiaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -380,7 +380,7 @@ const VirginiaCorporation = () => {
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
-									The name of the corporation’s registered agent at the
+									The name of the corporation’s Registered Agent at the
 									registered office.
 								</Paragraph>
 							</TextBoxed>

@@ -206,7 +206,7 @@ const IdahoCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -293,7 +293,7 @@ const IdahoCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									color: "#757575",
 								}}
 							>
@@ -310,7 +310,7 @@ const IdahoCorporation = () => {
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
 									The address of its registered in-state office and the name of
-									its registered agent at that office
+									its Registered Agent at that office
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

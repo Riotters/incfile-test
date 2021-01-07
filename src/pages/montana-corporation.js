@@ -175,12 +175,12 @@ const MontanaCorporation = () => {
 								Montana corporations must have a registered in-state
 								agent-either a natural person who is a resident of Montana or a
 								corporation authorized to conduct business in the Big Sky State.
-								The registered agent is responsible for receiving official state
+								The Registered Agent is responsible for receiving official state
 								administrative and legal correspondence on behalf of the
 								corporation.
 							</Paragraph>
 							<Paragraph big>
-								The registered agent must have a business office that is the
+								The Registered Agent must have a business office that is the
 								same as the registered office.
 							</Paragraph>
 						</PanelWrapper>
@@ -207,7 +207,7 @@ const MontanaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -297,7 +297,7 @@ const MontanaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -318,7 +318,7 @@ const MontanaCorporation = () => {
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
-									The name of its registered agent there
+									The name of its Registered Agent there
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

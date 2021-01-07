@@ -209,12 +209,12 @@ state law. The name must include one of the following terms or its abbreviation:
 							<Paragraph big>
 								All corporations authorized to conduct business in Michigan must
 								have and maintain both a registered office (which may be the
-								same as its place of business) and a registered agent in the
+								same as its place of business) and a Registered Agent in the
 								state-someone designated to receive official state
 								correspondence, including notice if the corporation is “served”
 								with a lawsuit.
 							</Paragraph>
-							<Paragraph big>The registered agent must be either:</Paragraph>
+							<Paragraph big>The Registered Agent must be either:</Paragraph>
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
 									An individual resident in Michigan whose business office or
@@ -268,7 +268,7 @@ state law. The name must include one of the following terms or its abbreviation:
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

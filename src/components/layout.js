@@ -11,9 +11,9 @@ import { useStaticQuery, graphql } from "gatsby";
 import { createGlobalStyle } from "styled-components";
 import Header from "./header-dropdown";
 import Footer from "./footer-v2";
-//import Engram400 from "../fonts/avenir/Engram-12.woff2"
-//import Engram600 from "../fonts/avenir/Engram-Heavy-05.woff2"
-//import Engram-Bold from "../fonts/mark-pro/Engram-Bold-Bold.woff2"
+//import Avenir400 from "../fonts/avenir/Avenir-12.woff2"
+//import Avenir600 from "../fonts/avenir/Avenir-Heavy-05.woff2"
+//import MarkPro from "../fonts/mark-pro/MarkPro-Bold.woff2"
 import "../fonts/fonts.css";
 import { color } from "./styles/colors";
 import HeaderAlt from "./header-v2";
@@ -31,7 +31,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: Engram, sans-serif;
+  font-family: Avenir, sans-serif;
 }
 
 html,
@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1, h2, h3, h5, h6 {
-  font-family: Engram-Bold;
+  font-family: MarkPro;
 }
 
 h1 {
@@ -101,7 +101,7 @@ h3 {
 }
 
 h4 {
-  font-family: Engram;
+  font-family: Avenir;
   font-weight: 900;
   font-size: 20px;
   line-height: 28px;
@@ -120,14 +120,14 @@ h6 {
 
 p {
   color: #757575;
-  font-family: Engram;
+  font-family: Avenir;
   font-size: 20px;
   line-height: 31px;
 }
 
 a {
   color: ${color.blue1};
-  font-family: Engram;
+  font-family: Avenir;
   font-size: 20px;
   line-height: 24px;
   text-decoration: none;

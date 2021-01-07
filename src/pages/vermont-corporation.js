@@ -172,12 +172,12 @@ const VermontCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								Every Vermont corporation must have a registered agent in the
+								Every Vermont corporation must have a Registered Agent in the
 								state—the person or office designated to receive official state
 								administrative and legal correspondence.
 							</Paragraph>
 							<Paragraph big>
-								The registered agent must be either a Vermont resident whose
+								The Registered Agent must be either a Vermont resident whose
 								business office is the same as the registered office, or a
 								corporation authorized to conduct business in Vermont that has a
 								business office identical to the registered office.
@@ -212,7 +212,7 @@ const VermontCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -297,7 +297,7 @@ const VermontCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -316,7 +316,7 @@ const VermontCorporation = () => {
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
-									The name of its registered agent there
+									The name of its Registered Agent there
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

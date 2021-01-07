@@ -183,7 +183,7 @@ const HawaiiCorporation = () => {
 							</Heading>
 							<Paragraph big>
 								The articles of incorporation should also include the name and
-								address of your corporation’s initial registered agent-the
+								address of your corporation’s initial Registered Agent-the
 								person you designate to receive official correspondence (legal
 								or administrative) on behalf of your corporation. The registered
 								agent must be either an individual who lives in Hawaii and whose
@@ -213,7 +213,7 @@ const HawaiiCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -307,7 +307,7 @@ const HawaiiCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -323,7 +323,7 @@ const HawaiiCorporation = () => {
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
 									The company’s principal office mailing address, its registered
-									office address in Hawaii, and the name of its registered agent
+									office address in Hawaii, and the name of its Registered Agent
 									at its registered office in Hawaii.
 								</Paragraph>
 							</TextBoxed>

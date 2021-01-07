@@ -205,14 +205,14 @@ const TennesseeCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								Every Tennessee corporation must have a registered agent in the
+								Every Tennessee corporation must have a Registered Agent in the
 								state—the person or office designated to receive official state
 								correspondence, both administrative and legal. The registered
 								agent is required to sign the articles of incorporation,
-								indicating acceptance of the appointment as registered agent.
+								indicating acceptance of the appointment as Registered Agent.
 							</Paragraph>
 							<Paragraph big>
-								The registered agent must be either a Tennessee resident whose
+								The Registered Agent must be either a Tennessee resident whose
 								business office is the same as the registered office, or a
 								corporation authorized to conduct business in the Volunteer
 								State that has a business office identical to the registered
@@ -242,7 +242,7 @@ const TennesseeCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

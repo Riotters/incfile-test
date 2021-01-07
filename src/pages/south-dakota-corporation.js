@@ -191,15 +191,15 @@ const SouthDakotaCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								Every South Dakota corporation must have a registered agent in
+								Every South Dakota corporation must have a Registered Agent in
 								the state—the person or office designated to receive official
 								state correspondence, both administrative and legal. The
-								registered agent is required to sign the articles of
+								Registered Agent is required to sign the articles of
 								incorporation, indicating acceptance of the appointment as
-								registered agent.
+								Registered Agent.
 							</Paragraph>
 							<Paragraph big>
-								The registered agent must be either a South Dakota resident
+								The Registered Agent must be either a South Dakota resident
 								whose business office is the same as the registered office, or a
 								corporation authorized to conduct business in the Mount Rushmore
 								State that has a business office identical to the registered
@@ -229,7 +229,7 @@ const SouthDakotaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -315,7 +315,7 @@ const SouthDakotaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -335,7 +335,7 @@ const SouthDakotaCorporation = () => {
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
-									The name of its registered agent there
+									The name of its Registered Agent there
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

@@ -168,7 +168,7 @@ const LouisianaCorporation = () => {
 								with the articles of incorporation, containing the name and
 								address of any initial directors and the street address and
 								municipal location of the corporation’s registered office and
-								registered agent.
+								Registered Agent.
 							</Paragraph>
 						</PanelWrapper>
 					</TabPanel>
@@ -183,12 +183,12 @@ const LouisianaCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								Louisiana corporations must have a registered agent in the
+								Louisiana corporations must have a Registered Agent in the
 								state-the person or office designated to receive official
 								administrative and legal correspondence from the state.
 							</Paragraph>
 							<Paragraph big>
-								The registered agent must be: a resident individual of
+								The Registered Agent must be: a resident individual of
 								Louisiana; a business corporation; a partnership or professional
 								law corporation authorized to conduct business in Louisiana; or
 								a foreign (out-of-state) corporation authorized to transact
@@ -224,7 +224,7 @@ const LouisianaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -319,7 +319,7 @@ const LouisianaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -329,7 +329,7 @@ const LouisianaCorporation = () => {
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
 									The street address and municipal location of the corporation’s
-									registered office, registered agent, directors, and officers
+									registered office, Registered Agent, directors, and officers
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

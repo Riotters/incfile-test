@@ -87,7 +87,7 @@ const PanelWrapper = styled.div`
 	p,
 	li {
 		color: ${color.grey1};
-		font-family: Engram, sans-serif;
+		font-family: Avenir, sans-serif;
 		max-width: 650px;
 		text-align: left;
 	}
@@ -147,7 +147,7 @@ const Content = styled.div`
 
 	span {
 		color: #4e4e4e;
-		font-family: Engram;
+		font-family: Avenir;
 		font-size: 16px;
 		text-align: left;
 		width: 100%;

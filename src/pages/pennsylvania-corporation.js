@@ -233,10 +233,10 @@ const PennsylvaniaCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								Every Pennsylvania Corporation must have a registered agent in
+								Every Pennsylvania Corporation must have a Registered Agent in
 								the state – someone designated to receive official state
 								correspondence, including notice if the corporation is “served”
-								with a lawsuit. The registered agent must be either a
+								with a lawsuit. The Registered Agent must be either a
 								Pennsylvania resident whose business office is the same as the
 								registered office, or a corporation with a business office
 								identical with the registered office.
@@ -276,7 +276,7 @@ const PennsylvaniaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

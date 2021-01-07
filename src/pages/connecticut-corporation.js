@@ -160,7 +160,7 @@ const ConnecticutCorporation = () => {
 								required to be listed in the certificate.
 							</Paragraph>
 							<Paragraph big>
-								The registered agent must also sign the articles of
+								The Registered Agent must also sign the articles of
 								incorporation, indicating acceptance of the appointment.
 							</Paragraph>
 							<Paragraph big>
@@ -197,7 +197,7 @@ const ConnecticutCorporation = () => {
 								Connecticut corporations must have a registered in-state agent-a
 								natural person who is a Connecticut resident-who is designated
 								to receive official correspondence from the state. The
-								registered agent must have a business office that is the same as
+								Registered Agent must have a business office that is the same as
 								the registered office.
 							</Paragraph>
 						</PanelWrapper>
@@ -223,7 +223,7 @@ const ConnecticutCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

@@ -10,7 +10,7 @@ import CurveSVG from "../../../images/orange-curve.inline.svg";
 import VisibilitySensor from "../../../components/VisibilitySensor";
 import { Heading } from "../../atoms/typography/heading";
 import { Paragraph } from "../../atoms/typography/paragraph";
-import { PHeading } from "../../atoms/typography/p-to-heading";
+import {PHeading} from "../../atoms/typography/p-to-heading";
 
 const Wrapper = styled.div`
 	display: flex;
@@ -95,7 +95,7 @@ const PanelWrapper = styled.div`
 	p,
 	li {
 		color: ${color.grey1};
-		font-family: Engram, sans-serif;
+		font-family: Avenir, sans-serif;
 		max-width: 650px;
 		text-align: left;
 	}
@@ -216,7 +216,7 @@ const Separator = styled.div`
 	margin-bottom: 8px;
 
 	span {
-		font-family: Engram, sans-serif;
+		font-family: Avenir, sans-serif;
 		font-weight: 900;
 		font-size: 12px;
 		line-height: 12px;

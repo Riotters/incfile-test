@@ -237,7 +237,7 @@ const TabScrollable = ({ layout, columns }) => {
 										legal documents on behalf of your cleaning company.
 									</Paragraph>
 									<Paragraph big>
-										Although you can act as your own registered agent, we
+										Although you can act as your own Registered Agent, we
 										recommend using a professional service. It ensures there
 										will always be someone available to receive important legal
 										documentation on your behalf and also removes your name and
@@ -475,7 +475,7 @@ const Content = styled.div`
 
 	span {
 		color: #4e4e4e;
-		font-family: Engram;
+		font-family: Avenir, sans-serif;
 		font-size: 13px;
 		white-space: nowrap;
 

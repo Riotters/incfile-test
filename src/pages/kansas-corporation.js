@@ -198,10 +198,10 @@ const KansasCorporation = () => {
 							</Heading>
 							<Paragraph big>
 								The articles of incorporation should also include the name and
-								address of your corporation’s initial registered agent-the
+								address of your corporation’s initial Registered Agent-the
 								person you designate to receive official legal and
 								administrative correspondence on behalf of your corporation. The
-								registered agent must be either an individual who lives in
+								Registered Agent must be either an individual who lives in
 								Kansas and whose business office is the same as the registered
 								office, or a domestic corporation with a business office that is
 								the same as the registered office.
@@ -228,7 +228,7 @@ const KansasCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -326,7 +326,7 @@ const KansasCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

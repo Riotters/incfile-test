@@ -191,7 +191,7 @@ const AlaskaCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								Alaska corporations must have a registered agent in the state-a
+								Alaska corporations must have a Registered Agent in the state-a
 								person or office designated to receive official state
 								administrative and legal correspondence. The agent must be
 								either an adult who is a resident of Alaska whose business
@@ -224,7 +224,7 @@ const AlaskaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -336,7 +336,7 @@ const AlaskaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -351,8 +351,7 @@ const AlaskaCorporation = () => {
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
-									The name and address of its registered agent and registered
-									office
+									The name and address of its Registered Agent and registered office
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

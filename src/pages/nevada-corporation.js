@@ -165,7 +165,7 @@ const NevadaCorporation = () => {
 								authorized. It will be a minimum of $105 total, which includes
 								$30 for certifying one copy of your articles of
 								incorporation-Nevada law requires you to keep a certified copy
-								of your filed articles at the corporation’s registered agent’s
+								of your filed articles at the corporation’s Registered Agent’s
 								location. The fee also includes a minimum $75 authorized capital
 								fee.
 							</Paragraph>
@@ -196,7 +196,7 @@ const NevadaCorporation = () => {
 							</Paragraph>
 							<Paragraph big>
 								Many new corporations use one of the initial directors or
-								officers as the registered agent and list the street address of
+								officers as the Registered Agent and list the street address of
 								the corporation for the registered office.
 							</Paragraph>
 						</PanelWrapper>
@@ -222,7 +222,7 @@ const NevadaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -300,7 +300,7 @@ const NevadaCorporation = () => {
 							</Heading>
 							<Paragraph big>
 								Nevada corporations must update their list of directors,
-								officers, and registered agent each year. The annual filing fee
+								officers, and Registered Agent each year. The annual filing fee
 								is $125.
 							</Paragraph>
 						</PanelWrapper>

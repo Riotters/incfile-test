@@ -76,7 +76,7 @@ const Button = styled.button`
 	cursor: pointer;
 	transition: background-color 0.3s ease, color 0.2s ease;
 	color: ${color.grey1};
-	font-family: Engram, sans-serif;
+	font-family: Avenir, sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
@@ -256,7 +256,7 @@ const BenefitsAccordion = ({ page = "" }) => (
 								content={{
 									header: "Order Registered Agent",
 									text:
-										"Order registered agent service and receive your new registered agent information immediately.",
+										"Order Registered Agent service and receive your new Registered Agent information immediately.",
 									imgAlt: `registered agent`,
 									link: {
 										url: `/manage-your-company/registered-agent/`,
@@ -272,7 +272,7 @@ const BenefitsAccordion = ({ page = "" }) => (
 							content={{
 								header: "Renew Registered Agent",
 								text:
-									"Click here if you have existing registered agent service and would like to renew it.",
+									"Click here if you have existing Registered Agent service and would like to renew it.",
 								imgAlt: `renew registered agent`,
 								link: {
 									url: `${process.env.ORDER_URL}/dashboard`,
@@ -288,7 +288,7 @@ const BenefitsAccordion = ({ page = "" }) => (
 								content={{
 									header: "Change Registered Agent",
 									text:
-										"Use to update the registered agent on file with the state of formation.",
+										"Use to update the Registered Agent on file with the state of formation.",
 									imgAlt: `change of agent`,
 									link: {
 										url: `/manage-your-company/change-of-registered-agent/`,

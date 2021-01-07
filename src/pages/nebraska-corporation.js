@@ -209,7 +209,7 @@ const NebraskaCorporation = () => {
 								Nebraska corporations must have a registered in-state agent-the
 								person or office designated to receive official state
 								administrative and legal correspondence on behalf of the
-								corporation. The registered agent must have a business office
+								corporation. The Registered Agent must have a business office
 								that is the same as the registered office and must be either an
 								individual state resident or a corporation authorized to conduct
 								business in the Cornhusker State.
@@ -242,7 +242,7 @@ const NebraskaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -332,7 +332,7 @@ const NebraskaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -353,7 +353,7 @@ const NebraskaCorporation = () => {
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
-									The name of the corporation’s registered agent there
+									The name of the corporation’s Registered Agent there
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

@@ -143,7 +143,7 @@ const MissouriCorporation = () => {
 								corporation to be formed for any lawful business activity. The
 								articles must include whether the corporation is to be perpetual
 								or of limited duration and the name and address of the
-								corporation’s initial registered agent. The articles should also
+								corporation’s initial Registered Agent. The articles should also
 								define any limits to (or specify the elimination of) directors’
 								liability to the corporation or the shareholders for monetary
 								damages.
@@ -188,14 +188,14 @@ const MissouriCorporation = () => {
 							</Heading>
 							<Paragraph big>
 								Missouri corporations must each have a registered, in-state
-								agent. The registered agent is the person or business entity
+								agent. The Registered Agent is the person or business entity
 								designated to receive official state correspondence, including
 								notice if the corporation is “served” with a lawsuit.
 							</Paragraph>
 							<Paragraph big>
 								Likewise, the state requires that all corporations maintain a
 								registered, in-state office that may be its primary place of
-								business. The registered agent must maintain a business office
+								business. The Registered Agent must maintain a business office
 								identical to the registered office, and must be either an
 								individual person living in Missouri or a corporation authorized
 								to conduct business in the “Show Me” State.
@@ -229,7 +229,7 @@ const MissouriCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

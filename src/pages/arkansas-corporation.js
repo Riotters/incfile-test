@@ -164,9 +164,9 @@ const ArkansasCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								Arkansas corporations must have a registered agent in Arkansas
+								Arkansas corporations must have a Registered Agent in Arkansas
 								who is designated to receive official state administrative and
-								legal correspondence. The registered agent must be either an
+								legal correspondenRegistered Agented agent must be either an
 								individual Arkansas resident whose business office is the same
 								as the registered office, or a corporation whose business office
 								is the same as the registered office.
@@ -193,7 +193,7 @@ const ArkansasCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -283,7 +283,7 @@ const ArkansasCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

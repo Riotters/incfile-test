@@ -171,7 +171,7 @@ const ColoradoCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								Every Colorado corporation must have a registered agent in the
+								Every Colorado corporation must have a Registered Agent in the
 								state-a natural person with a primary residence in Colorado, or
 								a registered business entity authorized to conduct business in
 								the state.
@@ -199,7 +199,7 @@ const ColoradoCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Engram",
+									fontFamily: "Avenir",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
