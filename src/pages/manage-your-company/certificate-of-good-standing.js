@@ -14,58 +14,40 @@ import Faq from "../../atomic/sections/manage-your-company/certificate-of-good-s
 import Benefits from "../../atomic/sections/benefits";
 import Articles from "../../atomic/sections/articles";
 //Texts
-import {
-  top,
-  about,
-  help,
-  faq,
-} from "../../static/manage-your-company/certificate-of-good-standing";
+import { top, about, help, faq } from "../../static/manage-your-company/certificate-of-good-standing";
 import ProductSchema from "../../components/product-schema";
 import { servicePrice } from "../../helpers/global-variables";
 import { Helmet } from "react-helmet";
 
 const CertificateOfGoodStanding = () => (
-  <Layout>
-    <SEO
-      title="Certificate of Good Standing for LLCs & Corporations"
-      description="Learn why your business might need a Certificate of Good Standing and how to easily get one from your Secretary of State. Read more."
-    />
-    <ProductSchema
-      productUrl={`${process.env.ORDER_URL}/cert-good-standing.php`}
-      productName="File a Certificate of Good Standing"
-      productPrice={servicePrice.cgs}
-      productDescription="Also known as a Certificate of Existence, Certificate of Authorization, or a Certificate of Status, the Good Standing Certificate is a one-page document provided by the secretary of state and provides conclusive evidence of the status of your business entity."
-    />
-    <Top
-      imageName="mrs-bulb-buildings"
-      imageAlt="File a Certificate of Good Standing"
-      ovalColor="blue"
-    >
-      <h1>{top.header}</h1>
-      <p>{top.text}</p>
-      <Buttonsbox>
-        <Button
-          externalLink
-          content={top.button[0]}
-          theme="primary56"
-          width="200px"
-          arrow
+    <Layout>
+        <SEO title="Certificate of Good Standing for LLCs & Corporations" description="Learn why your business might need a Certificate of Good Standing and how to easily get one from your Secretary of State. Read more." />
+        <ProductSchema
+            productUrl={`${process.env.ORDER_URL}/cert-good-standing.php`}
+            productName="File a Certificate of Good Standing"
+            productPrice={servicePrice.cgs}
+            productDescription="Also known as a Certificate of Existence, Certificate of Authorization, or a Certificate of Status, the Good Standing Certificate is a one-page document provided by the secretary of state and provides conclusive evidence of the status of your business entity."
         />
-      </Buttonsbox>
-      <RatingRow>
-        <CartBlock />
-        <RatingBlock />
-      </RatingRow>
-    </Top>
-    <About content={about} />
-    <Help content={help} />
-    <Faq content={faq} />
-    <Benefits page="certificate-of-good-standing" />
-    <Articles categoryId={335} />
+        <Top imageName="mrs-bulb-buildings" imageAlt="File a Certificate of Good Standing" ovalColor="blue">
+            <h1>{top.header}</h1>
+            <p>{top.text}</p>
+            <Buttonsbox>
+                <Button externalLink content={top.button[0]} theme="primary56" width="200px" arrow />
+            </Buttonsbox>
+            <RatingRow>
+                <CartBlock />
+                <RatingBlock />
+            </RatingRow>
+        </Top>
+        <About content={about} />
+        <Help content={help} />
+        <Faq content={faq} />
+        <Benefits page="certificate-of-good-standing" />
+        <Articles categoryId={335} />
 
-    <Helmet>
-      <script type="application/ld+json">
-        {`{
+        <Helmet>
+            <script type="application/ld+json">
+                {`{
                     "@context": "http://schema.org",
                     "@type": "VideoObject",
                     "name": "What Is a Certificate of Good Standing? by Incfile",
@@ -76,9 +58,9 @@ const CertificateOfGoodStanding = () => (
                     "embedUrl": "https://www.youtube.com/embed/dDySCoYAh5Q",
                     "interactionCount": "0"
                 }`}
-      </script>
-    </Helmet>
-  </Layout>
+            </script>
+        </Helmet>
+    </Layout>
 );
 
 export default CertificateOfGoodStanding;

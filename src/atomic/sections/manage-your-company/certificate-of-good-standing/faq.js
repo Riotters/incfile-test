@@ -8,10 +8,10 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-blue3.inline.
 
 const Faq = styled.section`
   position: relative;
-  padding-bottom: 48px;
+  padding-bottom: 64px;
 
   @media (min-width: 769px) {
-    padding-top: 72px;
+    padding-top: 75px;
   }
 `;
 

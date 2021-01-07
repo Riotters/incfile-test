@@ -8,12 +8,8 @@ import OvalSVG from "../../../../images/ovals/top-left-transparent-green3.inline
 
 const Faq = styled.section`
   position: relative;
-  padding-top: 40px;
+  padding-top: 75px;
   padding-bottom: 64px;
-
-  @media (min-width: 992px) {
-    padding-top: 96px;
-  }
 
   .headline {
     margin-bottom: 80px;
