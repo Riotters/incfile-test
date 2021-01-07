@@ -194,14 +194,14 @@ const MarylandCorporation = () => {
 							</Heading>
 							<Paragraph big>
 								Maryland corporations must each have a registered, in-state
-								agent. The Registered Agent is the person or business entity
+								agent. The registered agent is the person or business entity
 								designated to receive official state correspondence, including
 								notice if the corporation is “served” with a lawsuit.
 							</Paragraph>
 							<Paragraph big>
 								Likewise, the state requires that all corporations maintain a
 								registered, in-state office that may be its primary place of
-								business. The Registered Agent must maintain a business office
+								business. The registered agent must maintain a business office
 								identical to the registered office, and must be either an
 								individual person living in Maryland or a corporation authorized
 								to conduct business in the “Old Line” State.
@@ -235,7 +235,7 @@ const MarylandCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

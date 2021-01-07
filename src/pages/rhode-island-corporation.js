@@ -172,20 +172,20 @@ const AlaskaCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								Every Rhode Island corporation must have a Registered Agent in
+								Every Rhode Island corporation must have a registered agent in
 								the state-the person or office designated to receive official
 								state correspondence, both administrative and legal. The
-								Registered Agent is required to acknowledge acceptance of the
+								registered agent is required to acknowledge acceptance of the
 								appointment as such in writing.
 							</Paragraph>
 							<Paragraph big>
-								The Registered Agent must be either a Rhode Island resident
+								The registered agent must be either a Rhode Island resident
 								whose business office is the same as the registered office, or a
 								corporation authorized to conduct business in the state that has
 								a business office identical to the registered office.
 							</Paragraph>
 							<Paragraph big>
-								When a corporation’s Registered Agent is an attorney, the
+								When a corporation’s registered agent is an attorney, the
 								business address of the agent does not have to be identical to
 								the registered office, but may be the usual business address of
 								the attorney.
@@ -214,7 +214,7 @@ const AlaskaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -297,7 +297,7 @@ const AlaskaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

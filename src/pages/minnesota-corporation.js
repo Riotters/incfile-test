@@ -193,13 +193,13 @@ const MinnesotaCorporation = () => {
 							</Heading>
 							<Paragraph big>
 								A Minnesota corporation may-but is not required to-designate or
-								appoint a Registered Agent in its articles of organization. The
-								Registered Agent may be a natural person residing in Minnesota
+								appoint a registered agent in its articles of organization. The
+								registered agent may be a natural person residing in Minnesota
 								or a business entity authorized to operate in Minnesota.
 							</Paragraph>
 							<Paragraph big>
 								The state does, however, require that every corporation maintain
-								a registered office in the state. The Registered Agent must have
+								a registered office in the state. The registered agent must have
 								a business office that is the same as the registered office.
 							</Paragraph>
 						</PanelWrapper>
@@ -237,7 +237,7 @@ const MinnesotaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -317,7 +317,7 @@ const MinnesotaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -336,7 +336,7 @@ const MinnesotaCorporation = () => {
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
-									The name of its Registered Agent at that office
+									The name of its registered agent at that office
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

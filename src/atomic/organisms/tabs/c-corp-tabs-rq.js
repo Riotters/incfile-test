@@ -192,7 +192,7 @@ const Content = styled.div`
 
 	span {
 		color: #4e4e4e;
-		font-family: Avenir;
+		font-family: Engram;
 		font-size: 16px;
 		white-space: nowrap;
 	}
@@ -403,7 +403,9 @@ const CCorpTabs = ({ layout, columns, content }) => {
 									of shares. The management of the corporation is governed by a
 									board of directors who are elected by the shareholders.
 								</Paragraph>
-								<Heading size="3" template={4}>Appoint a board of directors</Heading>
+								<Heading size="3" template={4}>
+									Appoint a board of directors
+								</Heading>
 								<Paragraph big>
 									The board of directors select officers who manage the day to
 									day activities of the corporation. The board of directors also

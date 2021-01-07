@@ -184,9 +184,9 @@ const AlabamaCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								Every Alabama corporation must have a Registered Agent in the
+								Every Alabama corporation must have a registered agent in the
 								state-someone designated to receive official state
-								administrative and legal correspondence. The Registered Agent
+								administrative and legal correspondence. The registered agent
 								must be either an adult Alabama resident, or a corporation with
 								a business office identical to the registered office. The
 								registered office may be at any of the corporation’s places of
@@ -215,7 +215,7 @@ const AlabamaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -317,7 +317,7 @@ const AlabamaCorporation = () => {
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
-									The name of its Registered Agent at that office.
+									The name of its registered agent at that office.
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

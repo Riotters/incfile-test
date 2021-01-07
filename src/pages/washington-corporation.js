@@ -177,7 +177,7 @@ const AlaskaCorporation = () => {
 								Washington corporations must have a registered in-state
 								agent-either a natural person who is a resident of Washington or
 								a business entity (corporation or LLC) authorized to conduct
-								business in the Evergreen State. The Registered Agent must have
+								business in the Evergreen State. The registered agent must have
 								a business office that is the same as the registered office.
 							</Paragraph>
 						</PanelWrapper>
@@ -204,7 +204,7 @@ const AlaskaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

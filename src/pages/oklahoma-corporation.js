@@ -62,7 +62,7 @@ const OklahomaCorporation = () => {
 		<Layout>
 			<SEO
 				title="Oklahoma Corporation | How to Incorporate in Oklahoma | Learn About Incorporating in Oklahoma"
-				description="Forming a corporation in Oklahoma? Find filing times and fees, a list of required documents, Registered Agent details, compliance info and more. "
+				description="Forming a corporation in Oklahoma? Find filing times and fees, a list of required documents, registered agent details, compliance info and more. "
 			/>
 			<Top
 				imageName="mr-bulb-corporation-california-8302"
@@ -244,12 +244,12 @@ const OklahomaCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								Every Oklahoma corporation must have a Registered Agent in the
+								Every Oklahoma corporation must have a registered agent in the
 								state-the person or office designated to receive official state
 								correspondence, both administrative and legal.
 							</Paragraph>
 							<Paragraph big>
-								The Registered Agent must be an Oklahoma resident whose business
+								The registered agent must be an Oklahoma resident whose business
 								office is the same as the registered office, the corporation
 								itself, or a business entity authorized to conduct business in
 								the Sooner State that has a business office identical to the
@@ -280,7 +280,7 @@ const OklahomaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -364,7 +364,7 @@ const OklahomaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

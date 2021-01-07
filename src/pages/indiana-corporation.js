@@ -195,12 +195,12 @@ const IndianaCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								Indiana corporations must have a Registered Agent in the
+								Indiana corporations must have a registered agent in the
 								state-someone officially designated to receive state legal and
-								administrative correspondence. A corporation’s Registered Agent
+								administrative correspondence. A corporation’s registered agent
 								may be an individual who resides in Indiana, or a business
 								entity authorized to conduct business in the state. In either
-								circumstance, the Registered Agent’s business office must be the
+								circumstance, the registered agent’s business office must be the
 								same as the corporation’s registered office.
 							</Paragraph>
 						</PanelWrapper>
@@ -226,7 +226,7 @@ const IndianaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -314,7 +314,7 @@ const IndianaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -334,7 +334,7 @@ const IndianaCorporation = () => {
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
-									The name of its Registered Agent at that in-state office
+									The name of its registered agent at that in-state office
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

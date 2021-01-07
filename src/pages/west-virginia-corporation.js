@@ -190,7 +190,7 @@ const AlaskaCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								West Virginia corporations must maintain a Registered Agent
+								West Virginia corporations must maintain a registered agent
 								within the state—a person or office appointed to receive
 								official state administrative and legal correspondence. The
 								agent must have the same business office address as the
@@ -230,7 +230,7 @@ const AlaskaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -329,7 +329,7 @@ const AlaskaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

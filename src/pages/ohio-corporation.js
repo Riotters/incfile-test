@@ -183,14 +183,14 @@ const OhioCorporation = () => {
 							</Paragraph>
 							<Paragraph big>
 								Usually, an initial director or shareholder is designated as the
-								initial Registered Agent, who is the person authorized to
+								initial registered agent, who is the person authorized to
 								receive legal documents on behalf of the corporation. The street
 								address of the corporation can be given as the registered
 								agent’s business address, which also constitutes the registered
 								office of the corporation.
 							</Paragraph>
 							<Paragraph big>
-								The Registered Agent must be an Ohio resident, and his or her
+								The registered agent must be an Ohio resident, and his or her
 								business address must be in-state, also. The incorporator who
 								signed the articles as the authorized representative must also
 								sign the appointment form as the authorized representative, and
@@ -218,7 +218,7 @@ const OhioCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -317,7 +317,7 @@ const OhioCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

@@ -228,10 +228,10 @@ const NorthDakotaCorporation = () => {
 							</Heading>
 							<Paragraph big>
 								The articles of incorporation should also include the name and
-								address of your corporation’s initial Registered Agent-the
+								address of your corporation’s initial registered agent-the
 								person appointed to receive official legal and administrative
 								correspondence from the state on behalf of your corporation. The
-								Registered Agent must be either an individual who lives in North
+								registered agent must be either an individual who lives in North
 								Dakota, or a corporation authorized to conduct business in the
 								state. In either case, the agent’s business office must be the
 								same as the corporation’s registered office.
@@ -259,7 +259,7 @@ const NorthDakotaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -362,7 +362,7 @@ const NorthDakotaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -382,7 +382,7 @@ const NorthDakotaCorporation = () => {
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
-									The name of the corporation’s Registered Agent
+									The name of the corporation’s registered agent
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

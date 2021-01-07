@@ -186,7 +186,7 @@ const MaineCorporation = () => {
 							<Paragraph big>
 								Every Maine corporation must have a clerk, who must be a natural
 								person who is a Maine resident. (In other states, this position
-								is usually called the “Registered Agent.”) The clerk is the
+								is usually called the “registered agent.”) The clerk is the
 								person designated to receive official state administrative and
 								legal correspondence, including notice if the corporation is
 								served with a lawsuit. The clerk may be-but is not required to
@@ -229,7 +229,7 @@ const MaineCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -331,7 +331,7 @@ const MaineCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}

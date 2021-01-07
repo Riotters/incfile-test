@@ -125,29 +125,29 @@ const CarouselWrapper = styled.div`
 					width: 16px;
 					background-color: #fd8550;
 				}
-            }
-            
-            // improvement for SEO on mobile
-            @media screen and (max-width: 560px) {
-                button{
-                    width: 32px;
-                    height: 32px;
-                    border-radius: 50px;
-                    margin: 0 8px;
-                }
+			}
 
-                &--active{
-                    button{
-                        width: 32px;
-                    }
-                }
-            }
+			// improvement for SEO on mobile
+			@media screen and (max-width: 560px) {
+				button {
+					width: 32px;
+					height: 32px;
+					border-radius: 50px;
+					margin: 0 8px;
+				}
+
+				&--active {
+					button {
+						width: 32px;
+					}
+				}
+			}
 		}
 	}
 `;
 
 const Name = styled.span`
-	font-family: Avenir;
+	font-family: Engram;
 	font-weight: 900;
 	font-size: 20px;
 	line-height: 28px;
@@ -156,7 +156,7 @@ const Name = styled.span`
 `;
 
 const State = styled.span`
-	font-family: MarkPro, sans-serif;
+	font-family: Engram-Bold, sans-serif;
 	font-size: 12px;
 	font-weight: bold;
 	font-stretch: normal;
@@ -178,8 +178,7 @@ const ImageWrapper = styled.div`
 	background-color: ${color.orange3};
 `;
 
-const WrapperStars = styled.div`
-`
+const WrapperStars = styled.div``;
 
 const responsive = {
 	all: {
@@ -210,18 +209,19 @@ const SlideReviews = ({ content }) => (
 			>
 				{content.map((item, i) => (
 					<Whitebox className="slide__item" flex key={i}>
-                        {item.star
-                            ? <WrapperStars>
-                                <Star />
-                                <Star />
-                                <Star />
-                                <Star />
-                                <Star />
-                            </WrapperStars>
-                            : <ImageWrapper>
-                                <Image filename={item.photo} alt={item.name ?? 'rating'} />
-                            </ImageWrapper>
-                        }
+						{item.star ? (
+							<WrapperStars>
+								<Star />
+								<Star />
+								<Star />
+								<Star />
+								<Star />
+							</WrapperStars>
+						) : (
+							<ImageWrapper>
+								<Image filename={item.photo} alt={item.name ?? "rating"} />
+							</ImageWrapper>
+						)}
 
 						<Name>{item.name}</Name>
 						<State>{item.city}</State>

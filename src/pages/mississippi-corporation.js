@@ -194,10 +194,10 @@ const MississippiCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								Every Mississippi corporation must have a Registered Agent in
+								Every Mississippi corporation must have a registered agent in
 								the state-the person or office designated to receive official
 								state correspondence, both administrative and legal. The
-								Registered Agent must be either a Mississippi resident whose
+								registered agent must be either a Mississippi resident whose
 								business office is the same as the registered office, or a
 								corporation with a business office identical to the registered
 								office.
@@ -234,7 +234,7 @@ const MississippiCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -317,7 +317,7 @@ const MississippiCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -338,7 +338,7 @@ const MississippiCorporation = () => {
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
-									The name of its Registered Agent there
+									The name of its registered agent there
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

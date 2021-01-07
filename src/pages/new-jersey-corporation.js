@@ -180,7 +180,7 @@ const NewJerseyCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								New Jersey corporations must maintain a Registered Agent in the
+								New Jersey corporations must maintain a registered agent in the
 								state-a person or office designated to receive official state
 								administrative and legal correspondence. The agent must have a
 								business office that is identical to the registered office and
@@ -217,7 +217,7 @@ const NewJerseyCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -304,7 +304,7 @@ const NewJerseyCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -324,7 +324,7 @@ const NewJerseyCorporation = () => {
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
-									The name of its Registered Agent
+									The name of its registered agent
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

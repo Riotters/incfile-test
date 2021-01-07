@@ -33,7 +33,7 @@ const Wrapper = styled.section`
 		align-self: flex-start;
 	}
 	p {
-		font-family: Avenir, sans-serif;
+		font-family: Engram, sans-serif;
 		font-size: 20px;
 		line-height: 32px;
 		margin-bottom: 42px;
@@ -41,7 +41,7 @@ const Wrapper = styled.section`
 
 	strong {
 		color: rgb(29, 29, 29);
-		font-family: Avenir;
+		font-family: Engram;
 		font-weight: 900;
 	}
 `;
@@ -178,12 +178,12 @@ const LegalSections = ({ className, content, contentWidth }) => (
 			<p>
 				A service provided by IncFile.com may automatically renew to keep a
 				company in compliance with state requirements. A current and active
-				credit card on file will be charged by Incfile.com’s Registered Agent
+				credit card on file will be charged by IncFile.com’s registered agent
 				partner, LegalInc, for the annual renewal of the Registered Agent
 				service. The current Registered Agent service annual renewal fee is
 				available on this site and the Customer Dashboard. Customer has the
 				option to cancel the Registered Agent service at any time by assigning a
-				new Registered Agent with state and notifying Incfile.com of the change.
+				new registered agent with state and notifying IncFile.com of the change.
 				If such notification is not provided to IncFile.com by the expiration
 				date of the existing Registered Agent service, IncFile.com may
 				automatically renewal the service. If IncFile.com is unable to complete

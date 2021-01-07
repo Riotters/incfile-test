@@ -182,7 +182,7 @@ const IowaCorporation = () => {
 							</Heading>
 							<Paragraph big>
 								The articles of incorporation should also include the name and
-								address of your corporation’s initial Registered Agent-the
+								address of your corporation’s initial registered agent-the
 								person you designate to receive official correspondence (legal
 								or administrative) on behalf of your corporation. The registered
 								agent must be either an individual who lives in Iowa and whose
@@ -212,7 +212,7 @@ const IowaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -306,7 +306,7 @@ const IowaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -324,7 +324,7 @@ const IowaCorporation = () => {
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
 									The address of the corporation’s registered office and the
-									name of its Registered Agent at that in-state office.
+									name of its registered agent at that in-state office.
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>
@@ -358,6 +358,7 @@ const IowaCorporation = () => {
 					</TabPanel>
 				</ReactTabs>
 			</TabsWrapper>
+
 			<ServiceSection>
 				<Oval className="oval" height={420} width={420} top="20" right="0">
 					<OvalSvg2 />

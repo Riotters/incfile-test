@@ -196,15 +196,15 @@ const SouthCarolinaCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								Every South Carolina corporation must have a Registered Agent in
+								Every South Carolina corporation must have a registered agent in
 								the state-the person or office designated to receive official
 								state correspondence, both administrative and legal. The
-								Registered Agent is required to sign the articles of
+								registered agent is required to sign the articles of
 								incorporation, indicating acceptance of the appointment as
-								Registered Agent.
+								registered agent.
 							</Paragraph>
 							<Paragraph big>
-								The Registered Agent must be either a South Carolina resident
+								The registered agent must be either a South Carolina resident
 								whose business office is the same as the registered office, or a
 								corporation authorized to conduct business in the Palmetto State
 								that has a business office identical to the registered office.
@@ -237,7 +237,7 @@ const SouthCarolinaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -320,7 +320,7 @@ const SouthCarolinaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -346,7 +346,7 @@ const SouthCarolinaCorporation = () => {
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
-									The name of the corporation’s Registered Agent there
+									The name of the corporation’s registered agent there
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

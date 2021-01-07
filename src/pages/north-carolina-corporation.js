@@ -196,10 +196,10 @@ const NorthCarolinaCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								Every North Carolina corporation must have a Registered Agent in
+								Every North Carolina corporation must have a registered agent in
 								the state-someone designated to receive official state
 								correspondence, including notice if the corporation is “served”
-								with a lawsuit. The Registered Agent must be either a North
+								with a lawsuit. The registered agent must be either a North
 								Carolina resident whose business office is the same as the
 								registered office, or a corporation with a business office
 								identical with the registered office.
@@ -235,7 +235,7 @@ const NorthCarolinaCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -318,7 +318,7 @@ const NorthCarolinaCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -334,9 +334,9 @@ const NorthCarolinaCorporation = () => {
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
 									The county, street address, and mailing address (if different)
-									of its registered office, the Registered Agent at that office,
+									of its registered office, the registered agent at that office,
 									and a statement of change regarding any change of the
-									Registered Agent and/or registered office.
+									registered agent and/or registered office.
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

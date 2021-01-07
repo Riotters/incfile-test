@@ -188,7 +188,7 @@ const NewMexicoCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								Every New Mexico corporation must have a Registered Agent in the
+								Every New Mexico corporation must have a registered agent in the
 								state-the person or office designated to receive official state
 								correspondence, both administrative and legal. The registered
 								agent must be either a New Mexico resident whose business office
@@ -223,7 +223,7 @@ const NewMexicoCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -309,7 +309,7 @@ const NewMexicoCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -327,7 +327,7 @@ const NewMexicoCorporation = () => {
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
-									The name of the corporation’s Registered Agent there
+									The name of the corporation’s registered agent there
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

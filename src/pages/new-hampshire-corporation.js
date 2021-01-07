@@ -203,13 +203,13 @@ const NewHampshireCorporation = () => {
 								Registered Agent and Office
 							</Heading>
 							<Paragraph big>
-								All New Hampshire corporations must have a Registered Agent the
-								state. The Registered Agent is the person or office designated
+								All New Hampshire corporations must have a registered agent the
+								state. The registered agent is the person or office designated
 								to receive official state administrative and legal
 								correspondence.
 							</Paragraph>
 							<Paragraph big>
-								The corporation’s Registered Agent must have a business office
+								The corporation’s registered agent must have a business office
 								that is the same as the registered office and must be either a
 								natural person who resides in New Hampshire, or a corporation
 								authorized to conduct business there.
@@ -249,7 +249,7 @@ const NewHampshireCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -340,7 +340,7 @@ const NewHampshireCorporation = () => {
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
 									The address of the corporation’s registered New Hampshire
-									office and the name of its Registered Agent there
+									office and the name of its registered agent there
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>

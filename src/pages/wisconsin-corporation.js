@@ -178,12 +178,12 @@ const WisconsinCorporation = () => {
 							<Paragraph big>
 								All Wisconsin corporations must have and maintain both a
 								registered office (which may be the same as its place of
-								business) and a Registered Agent in the state—the person or
+								business) and a registered agent in the state—the person or
 								office designated to receive official state legal and
 								administrative correspondence.
 							</Paragraph>
 							<Paragraph big>
-								The Registered Agent must be an individual resident in Wisconsin
+								The registered agent must be an individual resident in Wisconsin
 								whose business office is the same as the registered office, or a
 								business entity authorized to conduct business in the state.
 							</Paragraph>
@@ -221,7 +221,7 @@ const WisconsinCorporation = () => {
 							<Paragraph
 								big
 								style={{
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -301,7 +301,7 @@ const WisconsinCorporation = () => {
 								big
 								style={{
 									marginBottom: "24px",
-									fontFamily: "Avenir",
+									fontFamily: "Engram",
 									fontWeight: "900",
 									color: "#1e1e1e",
 								}}
@@ -330,7 +330,7 @@ const WisconsinCorporation = () => {
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>
 								<Paragraph bottomMargin={0}>
-									The name of the corporation’s Registered Agent there
+									The name of the corporation’s registered agent there
 								</Paragraph>
 							</TextBoxed>
 							<TextBoxed style={{ marginBottom: "8px" }}>
