@@ -58,7 +58,7 @@ const TextWrapper = styled.div`
 	span {
 		display: block;
 		min-height: 48px;
-		font-family: Avenir;
+		font-family: Engram;
 		font-weight: 900;
 		font-size: 20px;
 		line-height: 28px;

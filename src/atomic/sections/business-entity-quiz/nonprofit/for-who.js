@@ -54,7 +54,7 @@ const Iconbox = styled.div`
 	}
 
 	span {
-		font-family: MarkPro;
+		font-family: Engram-Bold;
 		font-size: 16px;
 		font-weight: bold;
 		color: ${color.black};

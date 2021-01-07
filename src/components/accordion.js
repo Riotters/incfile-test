@@ -69,7 +69,7 @@ const PanelWrapper = styled.div`
 	p,
 	li {
 		color: ${color.grey1};
-		font-family: Avenir, sans-serif;
+		font-family: Engram, sans-serif;
 		max-width: 650px;
 		text-align: left;
 	}
@@ -139,7 +139,7 @@ const Content = styled.div`
 
 	span {
 		color: #4e4e4e;
-		font-family: Avenir;
+		font-family: Engram;
 		font-size: 16px;
 	}
 `;

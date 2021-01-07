@@ -24,7 +24,7 @@ const Wrapper = styled(Link)`
 		props.theme === "primary56"
 			? "#fff"
 			: "#FD8550"};
-	font-family: MarkPro;
+	font-family: Engram-Bold;
 	font-size: 16px;
 	line-height: 32px;
 	text-align: center;

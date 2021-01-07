@@ -4,7 +4,7 @@ import { Paragraph } from "../../atoms/typography/paragraph";
 import styled from "styled-components";
 import WhiteBox from "../../atoms/boxes/white-box";
 import CircleSVG from "../../../images/circle-graph.inline.svg";
-import {PHeading} from "../../atoms/typography/p-to-heading";
+import { PHeading } from "../../atoms/typography/p-to-heading";
 
 const Wrapper = styled(WhiteBox)`
 	display: flex;
@@ -50,7 +50,7 @@ const Circle = styled.div`
 			position: absolute;
 			top: -10px;
 			right: -5px;
-			font-family: Avenir, sans-serif;
+			font-family: Engram, sans-serif;
 			font-size: 16px;
 			font-weight: 400;
 			color: ${color.grey2};

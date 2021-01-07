@@ -63,7 +63,7 @@ const Diagram = styled.div`
 			justify-content: center;
 			align-items: center;
 			position: relative;
-			font-family: "Avenir", san-serif;
+			font-family: "Engram", san-serif;
 
 			&:nth-child(n + 2) {
 				border-top: 1px solid #f2f2f2;
@@ -156,7 +156,7 @@ const Diagram = styled.div`
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			font-family: Avenir, sans-serif;
+			font-family: Engram, sans-serif;
 			font-size: 16px;
 			line-height: 24px;
 			font-weight: 900;
@@ -264,7 +264,10 @@ const UniqueSection = ({ content }) => {
 					<Paragraph big mixed={true}>
 						Your business identity, or brand, shapes how customers see you and
 						influences their decision to buy.
-						<a href="https://www.incfile.com/blog/post/golden-rules-business-naming/" target="_blank">
+						<a
+							href="https://www.incfile.com/blog/post/golden-rules-business-naming/"
+							target="_blank"
+						>
 							{" "}
 							A short, distinctive name{" "}
 						</a>

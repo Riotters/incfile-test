@@ -151,7 +151,7 @@ const MenuLink = styled(Link)`
 	align-items: center;
 	height: 100%;
 	color: #1e1e1e;
-	font-family: Avenir;
+	font-family: Engram;
 	font-size: 13px;
 	line-height: 16px;
 	text-decoration: none;
@@ -278,7 +278,7 @@ const Login = styled.a`
 	display: flex;
 	align-items: center;
 	color: #1e1e1e;
-	font-family: Avenir;
+	font-family: Engram;
 	font-size: 13px;
 	line-height: 16px;
 	text-align: center;
@@ -308,7 +308,7 @@ const Login = styled.a`
 		border: 2px solid #fd8550;
 		border-radius: 50px;
 		color: ${color.white};
-		font-family: MarkPro;
+		font-family: Engram-Bold;
 		font-size: 16px;
 		line-height: 32px;
 		text-align: center;
@@ -441,22 +441,21 @@ const Header = ({ siteTitle }) => {
 
 	const [showPhone, setShowPhone] = useState(false);
 
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-            let showPhoneStatus = true;
+	useEffect(() => {
+		if (typeof window !== "undefined") {
+			let showPhoneStatus = true;
 
-            if (sessionStorage.getItem('__phoneStatus')) {
-                showPhoneStatus = sessionStorage.getItem('__phoneStatus');
-            } else {
-                getPhoneStatus().then((res) => {
-                    showPhoneStatus = res.status === "show" ? true : false;
-                    sessionStorage.setItem('__phoneStatus', showPhoneStatus);
-                });
-            }
+			if (sessionStorage.getItem("__phoneStatus")) {
+				showPhoneStatus = sessionStorage.getItem("__phoneStatus");
+			} else {
+				getPhoneStatus().then((res) => {
+					showPhoneStatus = res.status === "show" ? true : false;
+					sessionStorage.setItem("__phoneStatus", showPhoneStatus);
+				});
+			}
 
-            setShowPhone(showPhoneStatus);
-        }
-		
+			setShowPhone(showPhoneStatus);
+		}
 	}, []);
 
 	return (
@@ -609,9 +608,9 @@ const Header = ({ siteTitle }) => {
 										</MenuItem>
 									</SubmenuColumn>
 									<BottomLink>
-                                        <ArrowLink
-                                            content={{
-                                                externalLink: true,
+										<ArrowLink
+											content={{
+												externalLink: true,
 												url: `${process.env.ORDER_URL}/dashboard`,
 												text: "View Your Dashboard",
 											}}

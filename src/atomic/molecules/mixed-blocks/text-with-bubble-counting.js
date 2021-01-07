@@ -2,61 +2,59 @@ import React from "react";
 import styled from "styled-components";
 import Image from "../../atoms/image/image";
 
-const TextWithBubbleCounting = ({children}) => (
-    <Wrapper>
-        <Bubbles>
-            <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-color" alt="icon" />
-            </BubbleImage>
-            <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="icon" />
-            </BubbleImage>
-            <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="icon" />
-            </BubbleImage>
-            <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="icon" />
-            </BubbleImage>
-            <BubbleImage>
-                <Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="icon" />
-            </BubbleImage>
-        </Bubbles>
-        <Text>
-            {children}
-        </Text>
-    </Wrapper>
+const TextWithBubbleCounting = ({ children }) => (
+	<Wrapper>
+		<Bubbles>
+			<BubbleImage>
+				<Image filename="mrs-bulb-final-comp-thumb-up-color" alt="icon" />
+			</BubbleImage>
+			<BubbleImage>
+				<Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="icon" />
+			</BubbleImage>
+			<BubbleImage>
+				<Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="icon" />
+			</BubbleImage>
+			<BubbleImage>
+				<Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="icon" />
+			</BubbleImage>
+			<BubbleImage>
+				<Image filename="mrs-bulb-final-comp-thumb-up-copy-4" alt="icon" />
+			</BubbleImage>
+		</Bubbles>
+		<Text>{children}</Text>
+	</Wrapper>
 );
 
 const Wrapper = styled.div`
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding: 30px;
-    margin-bottom: 50px;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding: 30px;
+	margin-bottom: 50px;
 `;
 
 const Bubbles = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
 `;
 
 const Text = styled.div`
-    text-align: center;
-    font-family: Avenir, sans-serif;
-    font-weight: 900;
-    font-size: 20px;
-    color: #1d1d1d;
-    max-width: 590px;
-    margin: 0 auto;
+	text-align: center;
+	font-family: Engram, sans-serif;
+	font-weight: 900;
+	font-size: 20px;
+	color: #1d1d1d;
+	max-width: 590px;
+	margin: 0 auto;
 `;
 
 const BubbleImage = styled.div`
-    width: 78px;
-    height: 110px; 
-`
+	width: 78px;
+	height: 110px;
+`;
 
 export default TextWithBubbleCounting;
