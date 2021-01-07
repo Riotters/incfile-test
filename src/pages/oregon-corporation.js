@@ -166,6 +166,7 @@ const OregonCorporation = () => {
               </Paragraph>
             </PanelWrapper>
           </TabPanel>
+
           <TabPanel>
             <PanelWrapper>
               <Heading
