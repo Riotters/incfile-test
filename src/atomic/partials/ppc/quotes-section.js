@@ -37,6 +37,6 @@ const Grid = styled.div`
 
   @media (min-width: 992px) {
     padding-top: 96px;
-    padding-bottom: 72px;
+    padding-bottom: 64px;
   }
 `;
