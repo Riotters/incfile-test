@@ -42,6 +42,7 @@ const RegisteredAgent = () => (
 			ovalColor="purple"
 		>
 			<h1>{top.header}</h1>
+
 			<HeadingP size={2} big>{top.text}</HeadingP>
 			<Buttonsbox>
 				<Button externalLink content={top.button[0]} theme="primary56" width="200px" arrow />
