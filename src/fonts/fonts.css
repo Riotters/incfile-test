@@ -2,28 +2,34 @@
 This CSS resource incorporates links to font software which is the valuable copyrighted property of Monotype and/or its suppliers. You may not attempt to copy, install, redistribute, convert, modify or reverse engineer this font software. Please contact Monotype with any questions regarding Web Fonts: http://www.fontshop.com
 */
 
-@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=918b11ad-bc0e-4ad9-b14e-871706b7365a&fontids=1475520,1475544");
+/* @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=918b11ad-bc0e-4ad9-b14e-871706b7365a&fontids=1475520,1475544"); */
 @font-face {
 	font-family: "Avenir";
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
-	src: url("1475520/b290e775-e0f9-4980-914b-a4c32a5e3e36.woff2") format("woff2"),
-		url("1475520/4b978f72-bb48-46c3-909a-2a8cd2f8819c.woff") format("woff");
+	/* src: url("1475520/b290e775-e0f9-4980-914b-a4c32a5e3e36.woff2") format("woff2"),
+        url("1475520/4b978f72-bb48-46c3-909a-2a8cd2f8819c.woff") format("woff"); */
+	src: url("engram/Riotters-Regular.woff2") format("woff2"),
+		url("engram/Riotters-Regular.woff") format("woff");
 }
 @font-face {
 	font-family: "Avenir";
 	font-weight: 900;
 	font-style: normal;
 	font-display: swap;
-	src: url("1475544/d513e15e-8f35-4129-ad05-481815e52625.woff2") format("woff2"),
-		url("1475544/61bd362e-7162-46bd-b67e-28f366c4afbe.woff") format("woff");
+	/* src: url("1475544/d513e15e-8f35-4129-ad05-481815e52625.woff2") format("woff2"),
+		url("1475544/61bd362e-7162-46bd-b67e-28f366c4afbe.woff") format("woff"); */
+	src: url("engram/Riotters-Bold.woff2") format("woff2"),
+		url("engram/Riotters-Bold.woff") format("woff");
 }
 
 @font-face {
 	font-family: "MarkPro";
-	src: url("5423411/41c8162d-c2a6-49b0-8139-8bebab187588.woff2") format("woff2"),
-		url("5423411/4fe94f2e-7892-4785-9663-0350a7adf8c0.woff") format("woff");
+	src: url("engram/Riotters-Bold.woff2") format("woff2"),
+		url("engram/Riotters-Bold.woff") format("woff");
+	/* src: url("5423411/41c8162d-c2a6-49b0-8139-8bebab187588.woff2") format("woff2"),
+		url("5423411/4fe94f2e-7892-4785-9663-0350a7adf8c0.woff") format("woff"); */
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
